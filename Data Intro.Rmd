@@ -102,9 +102,13 @@ tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
 ggplot(tempdata,aes(Year,debtgdp,color=Country)) +
   geom_line()     # this produces the scatter plot
 
+tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
+ggplot(tempdata,aes(Year,dRGDP,color=Country)) +
+  geom_line(size=1)     # this produces the scatter plot
+
 ```
 
-You can clearly see that the data, from year to year, are dependent.
+You can clearly see that the `debtgdp` data, from year to year, are dependent. Also, the `dRGDP` plot reveals that there is a fair bit of correlation between the growth rates in economies.
 
 # Some data cuts
 
@@ -119,11 +123,11 @@ ggplot(tempdata,aes(debtgdp,dRGDP,color=Country)) +
 
 From here you can see that different countries appear to have quite different patterns.
 
-Let's calculate average and median growth rates and debt to gdp ratios for these countries. To achieve this we will first group the data by Country `group_by(Country)` and then summarise the variables `dRGDP` and `debtgdp` (`summarise_at(c("dRGDP", "debtgdp"), ...)`) in the resulting groups by applying the mean and median function (funs(mean, median)).
+Let's calculate average and median growth rates and debt to gdp ratios for these countries. To achieve this we will first group the data by Country `group_by(Country)` and then summarise the variables `dRGDP` and `debtgdp` (`summarise_at(c("dRGDP", "debtgdp"), ...)`) in the resulting groups by applying the mean and median function (`funs(mean, median, sd)`).
 
 ```{r}
 tempdata %>% group_by(Country) %>% 
-            summarise_at(c("dRGDP", "debtgdp"), funs(mean, median)) %>% 
+            summarise_at(c("dRGDP", "debtgdp"), funs(mean, median,sd)) %>% 
             print()
 ```
 
@@ -162,3 +166,16 @@ t.test(RRData$dRGDP, mu=3.3, alternative="greater")
 ```
 
 Changing the alternative does not change the t-test but change the p-value. Now the p-value is 0.0683 and whether we reject or do not reject $H_0$ depends on our chosen significance level.
+
+At this stage a we need to mention a huge caveat to the above tests. Our standard tests are based on the assumption that the data are identically and independently distributed. In some sense we have already seen that the this assumption cannot be defended with the data at hand. We saw the time-series plot above which showed that observations are correlated between years and ountries, so they are not independent observations. But let's, for the sake of this introduction, ignore this complication, but note that we need to interpret results with caution.
+
+Above we sliced the data into different subsets. Let's use the debt level categories and compare means of growth between the subsets.
+
+```{r}
+temp_high <- RRData %>% filter(dgcat == "(90,Inf]")
+temp_middle <- RRData %>% filter(dgcat == "(60,90]")
+
+t.test(temp_high$dRGDP,temp_middle$dRGDP)
+```
+
+At the bottom of the output you can see the respective sample means (which replicates the sample means we printed earlier in a table). The hyothesis tested is $H_0: mu_{high}=mu_{middle}$ with the alternative that the respective population means are different ($H_a:mu_{high}\neq mu_{middle}$). As above we could have elected to test an alternative of $>$ or $<$ as well.

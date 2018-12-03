@@ -1,0 +1,157 @@
+---
+title: "Introduction to Handling Data"
+subtitle: "ECON20222 - Lecture 1"
+author: "Ralf Becker and Martyn Andrews"
+date: "30 October 2018"
+output: 
+  beamer_presentation:
+    includes:
+      in_header: latex_template.tex  # use for full version
+#     in_header: latex_student.tex  # use for student version
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## What is this course unit about?
+
+\begin{itemize}
+  \item Help you implement and interpret the main inference techniques used in Economics
+  \item Focus on:
+      \begin{itemize}
+        \item causal inference
+        \itemm the main pitfalls of time-series analysis
+      \end{itemize}
+\end{itemize}
+
+## At the end of this unit ...
+
+You will be able to:
+
+\begin{itemize}
+  \item Do intermediate data work in R
+  \item Confidently apply regression analysis in R
+  \item Apply more advanced causal inference techniques in R
+  \item Find coding help for any new challenges in R
+  \item Identify inference appropriate for the occasion
+  \item Discuss strengths and weaknesses of particular empirical applications
+  \item Interpret empirical results (with due caution!)
+\end{itemize}
+
+## What you need to do
+
+
+## Issues that arise
+
+- "Why do I have to do this?"/"Is this on the exam?"
+- Too little resources to run frequent labs
+- Many students with no programming exposure
+
+## Aim for today
+
+Develop ideas on how to help students to become resilient "coders"
+
+- Gain motivation
+- Don't be thrown off the rails by problems
+- Develop self-help skills
+
+## Let's assume the following
+
+The statistical techniques we want students to be able to implement are:
+
+- Importing data
+- Cleaning data
+- Merging data
+- Summary stats
+- Plotting data
+- Regressions analysis
+- Hypothesis testing
+
+## The traditional way 
+
+Here is how we tend to deliver the R-component
+
+- Make code and data for analysis used in lectures available
+- Set extra weekly worksheets (see "Week3practice.pdf")
+- Have [\textcolor{blue}{website}](http://eclr.humanities.manchester.ac.uk/index.php/R) with material to learn R (Google "ECLR R" to find it)
+- Have "smallish" assessment items which assume that students have done some data work (see "CW3 201516.pdf")
+- Drop-in help sessions
+- Perhaps one introductory lab
+- Link to Datacamp
+
+But self-learning has limitations
+
+## The things that trip students up
+
+\begin{itemize}
+  \item<1-> RStudio architecture
+  \item<1-> Having to write a code file (and not click)
+  \item<1-> Using packages
+  \item<1-> What the heck is a function???
+  \item<2-> Error messages			
+
+  \item<3-> They think they need to know everything - they Google everything else, but not how to solve their problem
+  \item<4-> The fear of plagiarism 
+  \item<5-> They think they will break the computer if they make a mistake
+\end{itemize}
+
+
+## Plan for today
+
+Think about how we can help students to develop these vital coding skills
+
+## Our testbed
+
+
+
+## The projects
+
+- Measuring climate change
+- Collecting and analysing data from experiments
+- Measuring the effect of a sugar tax
+- Measuring wellbeing
+- Measuring inequality: Lorenz curves and Gini coefficients
+- Measuring management practices
+- Supply and demand
+- Measuring the non-monetary cost of unemployment
+- Credit-excluded households in a developing country
+- Characteristics of banking systems around the world
+- Measuring willingness to pay for climate change mitigation
+- Government policies and popularity: Hong Kong cash handout
+
+## Measuring the effect of a sugar tax
+
+
+## Basic data structure
+
+`dat_c` contains observations for products (`product_id`) for which prices are observed in the same store (`store_id`) at three points in time (`time` - DEC2014, JUN2015, MAR2016).
+
+A sugar tax was introduced on some products (`dat_c$taxed == "taxed"`), sometime between DEC2014 and MAR2016.
+
+
+
+
+## Things we do in the project
+
+- Find out how many products and stores there are
+- Frequency Tables
+- Calculating the
+- Column/Bar chats
+- Testing for statistical significance in Price changes
+
+## Your task
+
+Think how you could use the available data to introduce students to one of the vital, generic programming skills
+
+\begin{itemize}
+  \item Understand the RStudio architecture
+  \item The need to write a code file (.r or .Rmd)
+  \item Understand and learn from error messages			
+  \item How to google effectively for help
+  \item How to pick someone else's code and adapt it
+  \item Trial and error
+\end{itemize}
+
+Email finished products to ralffbecker@gmail.com (yes, two fs)
