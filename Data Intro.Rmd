@@ -14,7 +14,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Preparing your workfile
 
-R is a powerful software for statistical analysis.
+R is a powerful software for statistical analysis. It is open source and hence FREE software. It is constantly developped and functionality is being improved. The "price" we pay for this is that we have to do a little more set-up work to make it work.
+
+In particular we need packages which are provided for free by researchers/programmers that provide useful functionality.
 
 But we add libraries which enhance its capabilities. 
 
