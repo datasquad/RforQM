@@ -184,4 +184,45 @@ So yes there seems to be some negative correlation between the level of debt and
 
 # Reinhard-Rogoff Analysis II
 
-The reason why the work by Reinhard and Rogoff was so controversial was that it wasn't the numbers above the reported. They reported numbers after 
+The reason why the work by Reinhard and Rogoff was so controversial was that it wasn't the numbers as reported above they published. They reported numbers after changing the dataset as follows:
+
+1. They excluded early-postwar data for New Zealand, Australia and Canada, arguing that these data are atypical for later periods, essentially they are outliers
+
+```{r}
+## Selective treatment of early years
+
+RRselective <- RRData %>% filter(!((Year<1950 & Country=="New Zealand") | (Year<1951 & Country=="Australia") | (Year<1951 & Country=="Canada") ))
+```
+
+2. A spreadsheet error resulted in data for the five countries (Australia, Austria, Belgium, Canada and Denmark) to not be included: 
+
+```{r}
+RRselective <- RRselective %>% filter(!( Country %in% c("Australia","Austria","Belgium","Canada","Denmark") ))
+```
+
+And now we repeat the mean and median calculations we performed above on teh complete dataset.
+
+```{r}
+RRselective %>% group_by(dgcat) %>% 
+            summarise_at("dRGDP", funs(mean, median)) %>% 
+            print()
+```
+
+This by itself changes the results somewhat (the mean growth rate of the highest indebted group drops from 2.17% to 1.69%) but the differences aren't all that dramatic. It is the combination of the above and the following third change that result in a dramatic change.
+
+3. Observations are re-weighted according to the following scheme:
+
+```{r}
+RRselective2 <- RRselective %>%
+                group_by(dgcat,Country) %>%                           # create category and country groups
+                summarize( m1 = mean(dRGDP, na.rm = TRUE)) %>%        # calculate average growth in each category
+                group_by(dgcat) %>%                                   # group again by category
+                summarize(  n = n(), mean = mean(m1, na.rm = TRUE), median = median(m1, na.rm = TRUE)) %>%  # calculate mean in each category 
+                print()
+```
+
+Clearly, this scheme delivers clearly lower average and median growth for the highest debt category.
+
+The main difference in this new scheme is that not each country-year receives the same weight. The authors calculate groups of data by `dgcat` and `Country` and then calculate average growth rates. That means that for instance France receives one average growth rate for each of the the three lowest debt categories (not in any tear did it exceed the 90% threshold) and Germany receives an average growth for the two lowest debt categories (as it never exceeded the 60% threshold in the sample period). Then the country averages in each category are averaged again.
+
+This may seem totally arbitrary
