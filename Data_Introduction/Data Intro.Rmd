@@ -131,7 +131,7 @@ tempdata %>% group_by(Country) %>%
             print()
 ```
 
-# Create categorical debt to GDP ratios
+# Create categorical debt to GDP ratios - Reinhard-Rogoff analysis I
 
 In order to replicate some of the analysis in Reinhard and Rogoff and the subsequent critique in Herndon et al. we will want to create categorical variables for the Debt to GDP ratio. In other words we want to 
 
@@ -179,3 +179,9 @@ t.test(temp_high$dRGDP,temp_middle$dRGDP)
 ```
 
 At the bottom of the output you can see the respective sample means (which replicates the sample means we printed earlier in a table). The hyothesis tested is $H_0: mu_{high}=mu_{middle}$ with the alternative that the respective population means are different ($H_a:mu_{high}\neq mu_{middle}$). As above we could have elected to test an alternative of $>$ or $<$ as well.
+
+So yes there seems to be some negative correlation between the level of debt and the economic growth. So what was all the fuss about?
+
+# Reinhard-Rogoff Analysis II
+
+The reason why the work by Reinhard and Rogoff was so controversial was that it wasn't the numbers above the reported. They reported numbers after 

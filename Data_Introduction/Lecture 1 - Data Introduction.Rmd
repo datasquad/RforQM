@@ -6,8 +6,8 @@ date: "30 October 2018"
 output: 
   beamer_presentation:
     includes:
-      in_header: latex_template.tex  # use for full version
-#     in_header: latex_student.tex  # use for student version
+      in_header: ../latex_template.tex  # use for full version
+#     in_header: ../latex_student.tex  # use for student version
 ---
 
 ```{r setup, include=FALSE}
@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
   \item Focus on:
       \begin{itemize}
         \item causal inference
-        \itemm the main pitfalls of time-series analysis
+        \item the main pitfalls of time-series analysis
       \end{itemize}
 \end{itemize}
 
@@ -42,20 +42,76 @@ You will be able to:
 
 ## What you need to do
 
+To learn in this unit you need to:
 
-## Issues that arise
+\begin{figure}
+	\centering
+	\includegraphics[width=8cm]{Embrace.jpg}\\
+\end{figure}
 
-- "Why do I have to do this?"/"Is this on the exam?"
-- Too little resources to run frequent labs
-- Many students with no programming exposure
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \textcolor{student}{coding, cleaning data, struggling, amazement at what you can do}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \textcolor{student}{answering real questions, that there is not always a clear answer}
+  \end{column}
+    
+\end{columns}
+
 
 ## Aim for today
 
-Develop ideas on how to help students to become resilient "coders"
 
-- Gain motivation
-- Don't be thrown off the rails by problems
-- Develop self-help skills
+\begin{columns}
+  
+  \begin{column}{0.5\textwidth}
+    \underline{Statistics/Econometrics}
+    \begin{itemize}
+      \item Summary Statistics
+      \item Difference between population and sample
+      \item Hypothesis testing
+      \item Graphical Data Representations
+      \item Simple regression analysis
+    \end{itemize}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \underline{R Coding}
+    \begin{itemize}
+      \item Introduce you to R and RStudio
+      \item How do I learn R
+      \item Import data into R
+      \item Perform some basic data manipulation
+      \item Perform hypothesis tests
+      \item Estimate a regression
+    \end{itemize}
+  \end{column}
+    
+\end{columns}
+
+
+## Why Data Matter
+
+\begin{columns}
+  
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=3cm]{CarmenReinhart.jpg}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=3cm]{KennethRogoff.jpg}\\
+    \end{figure}
+
+  \end{column}
+    
+\end{columns}
+
+
 
 ## Let's assume the following
 
