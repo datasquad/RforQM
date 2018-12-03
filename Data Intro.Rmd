@@ -138,3 +138,27 @@ RRData %>% group_by(dgcat) %>%
             summarise_at("dRGDP", funs(mean, median)) %>% 
             print()
 ```
+
+# Hypothesis Testing - means and differences in mean
+
+Hypothesis testing is at the core of much empirical analysis. Here we will show how to perform hyothesis tests. We are using the `t.test` function. Often hypothesis tests will be testing hypotheses about the mean of a random variable. We also learn how to perform hypothesis on regression coefficients (often these are nothing else but ways to estimate means!).
+
+Let's start by testing a hypothesis on the sample mean of the GDP growth rate (`dRGDP`) Let's say we want to test the hypothesis that the mean growth rate is 3.3% (note that 3.3% in the dat aiis represented as 3.3). Let's get one calculated and then diiscuss what we really did:
+
+```{r}
+t.test(RRData$dRGDP, mu=3.3)
+```
+
+You may remember that, in order to perform a hypothesis test you, the applied economist, has to set the null ($H_0$) and alternative ($H_A$) hypothesis. Here you set the null hypothesis that the mean (`mu`) is equal to 3 ($H_0$:`mu=3.3`). You also need to specify an alternative hypothesis. We didn't specify any so R (or better `t.test`) used it's default option, two sided alternative ($H_A: mu \neq 3.3$). 
+
+The judgemment here is that it is possible that the true, yet unknown population mean is equal to 3.3. The test statistic is 1.4896 and the p-value is 0.1366. Only if the p-value is smaller than our chosen level of significance (often 0.01, 0.05 or 0.1) would we reject the null hypothesis $H_0$. 
+
+Make sure you use the help function (type `?t.test` into the command window) or search for help (type "R t.test" into your favourite search engine) to understand more details of the function.
+
+Let's calculate a one sided test with the alternative that ($H_A: mu > 3.3$):
+
+```{r}
+t.test(RRData$dRGDP, mu=3.3, alternative="greater")
+```
+
+Changing the alternative does not change the t-test but change the p-value. Now the p-value is 0.0683 and whether we reject or do not reject $H_0$ depends on our chosen significance level.
