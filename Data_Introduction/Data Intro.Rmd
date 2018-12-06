@@ -43,7 +43,7 @@ RRData <- read_excel("RRdata.xlsx")
 str(RRData)  # prints some basic info on variables
 ```
 
-We can see that three variables are numeric (`num`) variables which is as we expect. The fourth variable `Country` is labeled as a character (`chr`) variable, basically text. It will pay off for later toindicate to R that this is a categorical (nominal) variable. This is done as follows:
+We can see that three variables are numeric (`num`) variables which is as we expect. The fourth variable `Country` is labeled as a character (`chr`) variable, basically text. It will pay off for later to indicate to R that this is a categorical (nominal) variable. This is done as follows:
 
 ```{r}
 RRData$Country <- as.factor(RRData$Country)

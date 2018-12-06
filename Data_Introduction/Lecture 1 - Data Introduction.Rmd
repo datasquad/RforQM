@@ -51,7 +51,7 @@ To learn in this unit you need to:
 
 \begin{columns}
   \begin{column}{0.5\textwidth}
-    \textcolor{student}{coding, cleaning data, struggling, amazement at what you can do}
+    \textcolor{student}{coding, cleaning data, struggling, self-learning, amazement at what you can do}
   \end{column}
   \begin{column}{0.5\textwidth}
     \textcolor{student}{answering real questions, that there is not always a clear answer}
@@ -171,7 +171,8 @@ Important issues that arise from this
 ## The Plan for today
 
 \begin{itemize}
-  \item Replicate why the above summary statistics in R
+  \item Replicate the above summary statistics in R
+  \item Why one can get two very different results based on the same data
   \item Use this example to 
     \begin{itemize}
       \item introduce you to R
@@ -263,19 +264,128 @@ Replication of work is actually at the core of the Reinhard/Rogoff controversy!
 
 ## Prepare your code
 
+We start by uploading the extra packages we need in our code.
 
-```{r, echo = FALSE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
+The first time you need these packaes at a computer you may need to install these. Use the following code to do this
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=FALSE}
+install.packages(c("readxl","tidyverse","ggplot2","stargazer"))
+```
+
+This only needs to be done once on a particular computer. However, every time you want to use any of these packages in a code you need to make them available to your code (load them):
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
 library(tidyverse)    # for almost all data handling tasks
 library(readxl)       # to import Excel data
 library(ggplot2)      # to produce nice graphiscs
 library(stargazer)    # to produce nice results tables
-RRData <- read_excel("RRdata.xlsx")
-str(RRData)  # prints some basic info on variables
 ```
 
 ## The data
 
-Upload the data
-and check years and countries
+Then we load the data from excel
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
+RRData <- read_excel("RRdata.xlsx")
+```
+
+and check some charecteristics of the data which are now stored in \texttt{RRData}:
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+str(RRData)  # prints some basic info on variables
+```
+
+\textcolor{student}{Discuss data.frame, number of obs and number of variables, their names and variable types}
+
+## Variable types
+
+These are the basic data types.
+
+\begin{itemize}
+  \item \texttt{character: "a", "swc"}
+  \item \texttt{numeric: 2, 15.5}
+  \item \texttt{integer: 2L (the L tells R to store this as an integer)}
+  \item \texttt{logical: TRUE, FALSE}
+  \item \texttt{complex: 1+4i (complex numbers with real and imaginary parts)}
+\end{itemize}
+
+It is important that you know what data types variables have as some operations only work for particular datatypes. For instance we need to \texttt{num} or \texttt{int} for any mathematical operations.
+In our data.frame three variables ar e\texttt{num} and one is of \texttt{chr} type. 
+\texttt{logical} variables we will encounter frequently, they are very powerful.
+
+## \texttt{factor} variables
+
+It will prove useful to change variables which are categorical variables (here \texttt{Country}) to \texttt{factor} variables.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+RRData$Country <- as.factor(RRData$Country)
+str(RRData)
+```
+
+\begin{itemize}
+  \item \texttt{RRData\$Country} calls variable \texttt{Country} in dataframe \texttt{RRData}
+  \item \texttt{<-} assigns what is on the right \texttt{as.factor(RRData\$Country)} to the variable on the left \texttt{RRData\$Country}
+  \item \texttt{as.factor(RRData\$Country)} calls a function \texttt{as.factor} and applies it to \texttt{RRData\$Country}
+\end{itemize}
+
+## \texttt{factor} variables
+
+\texttt{factor} variables are variables with discrete categories. Which ones they are you can find out with the \texttt{levels()} function:
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+levels(RRData$Country)
+```
+
+## Learn more about your data
+
+Use the \texttt{summary} function for some initial summary stats for \texttt{num} or \texttt{int} variables
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+summary(RRData$Year)    # Year is the year of observation
+summary(RRData$debtgdp) # the debt to GDP ratio
+summary(RRData$dRGDP)   # the GDP growth rate
+```
+
 
 ## Scatter plot of the data
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+p1 <- ggplot(RRData,aes(debtgdp,dRGDP)) +
+  geom_point(size=0.5) +    # this produces the scatter plot
+  geom_smooth(method = "lm", se = FALSE)  # adds the line 
+p1
+```
+
+## Regression Line
+
+The line in the previous plot is the line of best fit coming for a linear regression 
+
+\[ rGDP_{it} = \alpha + \beta debtgdp_{it} + u_{it} ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
+
+\begin{itemize}
+  \item Here we have two subscripts as the data have a cross-section (\texttt{\textcolor{student}{i}}) and a time-series dimension (\texttt{\textcolor{student}{t}}).
+  \item The population model is defined by unknown parameters $\alpha$ and $\beta$ and the unknown error terms $u_{it}$. We will use sample data to obtain sample estimates of these parameters.
+\end{itemize}
+
+\[ rGDP_{it} = \widehat{\alpha} + \widehat{\beta} debtgdp_{it} + \widehat{u}_{it} ~\text{(\textcolor{student}{Sample} ~~~~Model)}\]
+
+The regression line in the previous figure is represented by 
+
+\[ \widehat{rGDP}_{it} = \widehat{\alpha} + \widehat{\beta} debtgdp_{it} ~~~\text{(~~~\textcolor{student}{Regression Line}~~~~~~)}\]
+
+## Ordinary Least Squares - Simple Regression
+
+Regression analysis is the core technique used in Econometrics. It is based on certain assumptions about the \emph{Population Model} and the error terms $u_{it}$ (more on this in the next few weeks).
+
+How to estimate parameters (get $\widehat{\alpha}$ and $\widehat{\beta}$) using the available sample of data?
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mod1 <- lm(dRGDP~debtgdp, data= RRData)
+summary(mod1)
+```
+
+## OLS - nice output
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, size = "tiny"}
+stargazer(mod1,type="text")
+```
