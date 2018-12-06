@@ -2,11 +2,11 @@
 title: "Introduction to Handling Data"
 subtitle: "ECON20222 - Lecture 1"
 author: "Ralf Becker and Martyn Andrews"
-date: "30 October 2018"
+date: "January 2019"
 output: 
   beamer_presentation:
     includes:
-      in_header: ../latex_template.tex  # use for full version
+      in_header: ../latex_template.tex
 #     in_header: ../latex_student.tex  # use for student version
 ---
 
@@ -360,17 +360,22 @@ p1
 
 The line in the previous plot is the line of best fit coming for a linear regression 
 
-\[ rGDP_{it} = \alpha + \beta debtgdp_{it} + u_{it} ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
+\vskip -0.5cm
+\[rGDP_{it} = \alpha + \beta debtgdp_{it} + u_{it} ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
+\vskip -0.2cm
 
 \begin{itemize}
   \item Here we have two subscripts as the data have a cross-section (\texttt{\textcolor{student}{i}}) and a time-series dimension (\texttt{\textcolor{student}{t}}).
   \item The population model is defined by unknown parameters $\alpha$ and $\beta$ and the unknown error terms $u_{it}$. We will use sample data to obtain sample estimates of these parameters.
+  \item The error terms $u_{it}$ contain the effects of any omitted variables and reflect that any modelled relationship will only be an approximation. The $u_{it}$s are \textcolor{student}{random variables}
 \end{itemize}
 
+\vskip -0.5cm
 \[ rGDP_{it} = \widehat{\alpha} + \widehat{\beta} debtgdp_{it} + \widehat{u}_{it} ~\text{(\textcolor{student}{Sample} ~~~~Model)}\]
+\vskip -0.2cm
 
 The regression line in the previous figure is represented by 
-
+\vskip -0.5cm
 \[ \widehat{rGDP}_{it} = \widehat{\alpha} + \widehat{\beta} debtgdp_{it} ~~~\text{(~~~\textcolor{student}{Regression Line}~~~~~~)}\]
 
 ## Ordinary Least Squares - Simple Regression
@@ -379,13 +384,68 @@ Regression analysis is the core technique used in Econometrics. It is based on c
 
 How to estimate parameters (get $\widehat{\alpha}$ and $\widehat{\beta}$) using the available sample of data?
 
+## Ordinary Least Squares - Simple Regression
+
+\footnotesize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 mod1 <- lm(dRGDP~debtgdp, data= RRData)
 summary(mod1)
 ```
+\normalsize
 
 ## OLS - nice output
-
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, size = "tiny"}
+\footnotesize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 stargazer(mod1,type="text")
 ```
+\normalsize
+
+## OLS - calculation and interpretation
+
+How were $\widehat{beta}$ and $\widehat{\alpha}$ calculated?
+
+\begin{eqnarray*}
+  \widehat{\beta}&=&\dfrac{Cov(dRGDP_{it},debtgdp_{it})}{Var(debtgdp_{it})}\\
+  \widehat{\alpha}&=&\overline{dRGDP}_{it}-\widehat{\beta}*\overline{debtgdp}_{it}
+\end{eqnarray*}
+
+
+How to interpret $\widehat{\beta}=-0.018$?
+
+\textcolor{student}{An increase of one unit in \texttt{debtgdp} (=1\%) is related to a decrease of GDP growth of 0.018 units (=0.018\%)}
+
+Have we established that higher debt levels \textbf{cause} lower GDP growth?
+
+\textcolor{student}{NO}
+
+## OLS - estimator properties
+
+We need to recognise that paramter estimator is a random variable.
+
+Let's use $y_{it}=\alpha + \beta x_{it} + u_{it}$ for ease of notation:
+\vskip -0.5cm
+\begin{eqnarray*}
+  \widehat{\beta}&=&\dfrac{Cov(y_{it},x_{it})}{Var(x_{it})}\\
+   &=&\dfrac{~~Cov({\alpha} + {\beta} x_{it} + {u}_{it}~,x_{it})}{Var(x_{it})}\\
+   &=&\dfrac{~~Cov({\alpha},x_{it}) + Cov({\beta} x_{it},x_{it}) + Cov({u}_{it},x_{it})}{Var(x_{it})}\\
+\end{eqnarray*}
+
+\vskip -0.5cm
+
+\begin{eqnarray*}
+  \widehat{\beta}&=&\textcolor{student}{\dfrac{~~Cov({\alpha},x_{it})}{Var(x_{it})} + \beta\dfrac{Cov( x_{it},x_{it})}{Var(x_{it})} + \dfrac{Cov({u}_{it},x_{it})}{Var(x_{it})}}\\
+   &=&\textcolor{student}{0 + \beta\dfrac{Var( x_{it})}{Var(x_{it})} + \dfrac{Cov({u}_{it},x_{it})}{Var(x_{it})}}\\
+   &=&\textcolor{student}{ \beta + \dfrac{Cov({u}_{it},x_{it})}{Var(x_{it})}}
+\end{eqnarray*}
+
+## OLS - estimator properties
+
+What can we learn from this?
+
+\begin{itemize}
+  \item If $u_{it}$ is a random variable, so is \textcolor{student}{ $\widehat{\beta}$}
+  \item Any particular value we get is a \textcolor{student}{draw from a random distribution}
+  \item An estimator is \textcolor{red}{unbiased} if, on average, the estimates would be equal to the unknown $\beta$
+  \item For this to happen we need to \textcolor{red}{assume} that $Cov({u}_{it},x_{it})=0$ as then \\
+        $\widehat{\beta}=$ \textcolor{student}{$\beta$}
+\end{itemize}

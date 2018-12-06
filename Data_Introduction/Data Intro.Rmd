@@ -90,7 +90,8 @@ We could actually run this regression
 
 ```{r}
 mod1 <- lm(dRGDP~debtgdp, data= RRData)
-stargazer(mod1,type="text")
+summary(mod1)   # this is the standard R way for results
+stargazer(mod1,type="text") # a nicer way
 ```
 
 There are issues with running a regression like this. Perhaps most importantly that the observations cannot be argued to be independent. The growth rate and debt to GDP ratios of, say, the UK in 1981 is clearly not independent of the data in 1980. In particular debt to GDP ratios are slow moving data.
