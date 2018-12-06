@@ -112,21 +112,157 @@ To learn in this unit you need to:
 \end{columns}
 
 
-\textcolor{student}
 Average GDP growth rates (High Income countries - 1946 to 2009):
 
 \begin{tabular}{|c|c|c|c|c|}
 	\hline 
-	Debts Category & 0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	Debt Category & 0,30] & (30,60] & (60,90] & (90,Inf] \\ 
 	\hline 
-	Avg Growth Rate &  \textcolor{student}{4.09\%} & \textcolor{student}{2.87\%}  &  \textcolor{student}{3.40\%} & \textcolor{student}{-0.02\%}  \\ 
+	Avg Growth Rate (RR) &  \textcolor{student}{4.09\%} & \textcolor{student}{2.87\%}  &  \textcolor{student}{3.40\%} & \textcolor{student}{-0.02\%}  \\ 
 	\hline 
 \end{tabular} 
 
+
+## Why Data Matter
+
+\begin{itemize}
+  \item Reinhard and Rogoff seem to suggest that there is a level of debt (debt/GDP > 90\%) beyond which higher debt levels will significantly reduce growth.
+  \item While they often provided caveats in their arguments, their results were referred to when austerity policies were justified.\\
+  For example George Osborn:\\
+  here on Channel 4: (https://www.channel4.com/news/george-osborne-defends-austerity-plan)\\
+  here in a Conference Speech: (https://conservative-speeches.sayit.mysociety.org/speech/601526)
+
+\end{itemize}
+
+
+Average GDP growth rates (High Income countries - 1946 to 2009):
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline 
+	Debt Category & 0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	\hline 
+	Avg Growth Rate (RR) &  4.09\% & 2.87\%  &  3.40\% & -0.02\%  \\ 
+		\hline 
+	Avg Growth Rate (HAP) &  \textcolor{student}{4.17\%} & \textcolor{student}{3.12\%}  &  \textcolor{student}{3.22\%} & \textcolor{student}{2.17\%}  \\
+	\hline 
+\end{tabular} 
+
+## Why Data Matter
+
+Some summaries are available here
+
+\begin{tabular}{cl|}
+	\hline 
+	The New Yorker &  \href{https://www.newyorker.com/news/john-cassidy/the-reinhart-and-rogoff-controversy-a-summing-up}{The Reinhart and Rogoff Controversy: A Summing Up}\\ 
+	The Economist & \href{https://www.economist.com/finance-and-economics/2013/04/20/the-90-question}{The 90\% question}  \\ 
+	Financial Times &  Interviews with Carmen Reinhard [\href{https://www.ft.com/video/1a4ad970-f9c7-34ba-b1ff-3769cb79d6ea}{1}, \href{https://www.ft.com/video/0d0fc983-8e6c-3d81-81cc-6aeed22e3e4a}{2}, \href{https://www.ft.com/video/b27b212e-a52c-383d-abd5-be89cb05da67}{3}, \href{https://www.ft.com/video/0d16f9ee-662f-3e10-b9ab-991386543230}{4}]  \\
+	\hline 
+\end{tabular} 
+
+Important issues that arise from this
+
+\begin{itemize}
+  \item Which way is the causality? Debt to Growth or Growth to Debt?\\
+  Reinhard and Rogoff are suitably careful to not associate any direct causality from the summary statistics. 
+  \item But in thepolitical discourse such "subtleties" often go lost
+  \item Would different summary stats have changed the narrative?
+\end{itemize}
+
+## The Plan for today
+
+\begin{itemize}
+  \item Replicate why the above summary statistics in R
+  \item Use this example to 
+    \begin{itemize}
+      \item introduce you to R
+      \item review some summary satistics
+      \item review simple regression and its implementation
+      \item introduce some basic visualisations
+    \end{itemize}
+\end{itemize}
+
 ## Introduce R/R-Studio
 
+\begin{columns}
+  
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=2cm]{Rimage.jpeg}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.8\textwidth}
+    \begin{itemize}
+      \item R is a statistical software package, it is open source and free 
+      \item a lot of useful functionality is added by independent researchers via packages (also for free)
+    \end{itemize}
+  \end{column}
+    
+\end{columns}
+
+
+\begin{columns}
+  
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=2cm]{RStudio_image.png}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.8\textwidth}
+    \begin{itemize}
+      \item RStudio is a user interface which makes working with R easier. You need to install R before you \href{https://youtu.be/EHjakj38Nnw}{install RStudio}. 
+    \end{itemize}
+    
+  \end{column}
+    
+\end{columns}
+
+\begin{columns}
+  
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=2cm]{ECLR.jpg}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.8\textwidth}
+    \begin{itemize}
+      \item \href{http://eclr.humanities.manchester.ac.uk/index.php/R}{ECLR} is a web-resource we have set up to support you in your R work. 
+    \end{itemize}
+    
+  \end{column}
+    
+\end{columns}
+
+
+## Welcome to RStudio
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=12cm]{RStudio_screen.jpg}\\
+\end{figure}
 
 ## Write Code Files or the Basic Workflow
+
+\begin{itemize}
+  \item keep an original data file (usually `.xlsx` or `.csv`) and do not overwrite this file
+  \item any manipulation we make to the data (data cleaning, statistical analysis etc.) is command based and we collect all these commands in a script file. R will then interpret and execute these commands. It is hence like a recepie which you present to a chef. These script files have extension `.r`
+  \item you can also learn to write Rmarkdown files (`.rmd`). They combine code with normal text and output. 
+  \item When you write code you should ensure that you add comments to your code. Comments are bit of text which is ignored by R (everything after an `\#`) but helps you or someone else to decipher what the code does.
+
+\end{itemize}
+
+
+By following the above examples you make it easy for yourself and others to replicate your work.
+Replication of work is actually at the core of the Reinhard/Rogoff controversy!
+
+## Prepare your code
+
 
 ```{r, echo = FALSE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
 library(tidyverse)    # for almost all data handling tasks
