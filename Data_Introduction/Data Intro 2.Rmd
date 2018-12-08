@@ -30,13 +30,11 @@ The example we are using here is taken from the CORE - Doing Economics resource.
 
 The data have been prepared as demonstrated in the Doing Economics Project 8, up to and including Walk-Through 8.3. Please have a look at this to understand the amount of data work required before an empirical analysis can begin. The datafile is saved as an R data structure (wellbeing_data.RDS).
 
-
 ```{r}
-wb_data <- readRDS("wellbeing_data.RDS")   # load RDS file
+#wb_data <- readRDS("wellbeing_data.RDS")   # load RDS file
+load("WBdata.Rdata")
 str(wb_data)  # prints some basic info on variables
 ```
-
-
 
 The data represent several waves of data from the European Value Study (EVS). 
 
