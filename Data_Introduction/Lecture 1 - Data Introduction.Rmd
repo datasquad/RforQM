@@ -59,6 +59,10 @@ To learn in this unit you need to:
     
 \end{columns}
 
+## Assessment Structure and feedback
+
+Details need to be added
+
 
 ## Aim for today
 
@@ -116,7 +120,7 @@ Average GDP growth rates (High Income countries - 1946 to 2009):
 
 \begin{tabular}{|c|c|c|c|c|}
 	\hline 
-	Debt Category & 0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	Debt Category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
 	\hline 
 	Avg Growth Rate (RR) &  \textcolor{student}{4.09\%} & \textcolor{student}{2.87\%}  &  \textcolor{student}{3.40\%} & \textcolor{student}{-0.02\%}  \\ 
 	\hline 
@@ -139,7 +143,7 @@ Average GDP growth rates (High Income countries - 1946 to 2009):
 
 \begin{tabular}{|c|c|c|c|c|}
 	\hline 
-	Debt Category & 0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	Debt Category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
 	\hline 
 	Avg Growth Rate (RR) &  4.09\% & 2.87\%  &  3.40\% & -0.02\%  \\ 
 		\hline 
@@ -356,6 +360,10 @@ p1 <- ggplot(RRData,aes(debtgdp,dRGDP)) +
 p1
 ```
 
+\footnotesize
+\textcolor{student}{Point out that each dot represents one country/year's data, e.g. France in 1991. Point out line of best fit}
+\normalsize
+
 ## Regression Line
 
 The line in the previous plot is the line of best fit coming for a linear regression 
@@ -402,7 +410,7 @@ stargazer(mod1,type="text")
 
 ## OLS - calculation and interpretation
 
-How were $\widehat{beta}$ and $\widehat{\alpha}$ calculated?
+How were $\widehat{\beta}$ and $\widehat{\alpha}$ calculated?
 
 \begin{eqnarray*}
   \widehat{\beta}&=&\dfrac{Cov(dRGDP_{it},debtgdp_{it})}{Var(debtgdp_{it})}\\
@@ -445,7 +453,203 @@ What can we learn from this?
 \begin{itemize}
   \item If $u_{it}$ is a random variable, so is \textcolor{student}{ $\widehat{\beta}$}
   \item Any particular value we get is a \textcolor{student}{draw from a random distribution}
-  \item An estimator is \textcolor{red}{unbiased} if, on average, the estimates would be equal to the unknown $\beta$
+  \item An estimator is \textcolor{red}{unbiased} if, on average, the estimates would be equal to the unknown $\beta$\\
+  \textcolor{student}{at this stage the concept of unbiasedness may still be a little hazy and that is fine}
   \item For this to happen we need to \textcolor{red}{assume} that $Cov({u}_{it},x_{it})=0$ as then \\
-        $\widehat{\beta}=$ \textcolor{student}{$\beta$}
+        $E(\widehat{\beta})=$ \textcolor{student}{$\beta$}\\
+        \textcolor{student}{Why do we need to assume this? Because while we do have values for $x_{it}$ we do not have values for the unobserved error terms $u_{it}$. Hence we cannot test this. As you will find out this is mainly a thinking exercise and one at the core of much of what we do.}
+\end{itemize}
+
+
+## OLS - the exogeneity assumption
+
+For $\widehat{\beta}$ in $y_{it}=\alpha + \beta x_{it} + u_{it}$ to be unbiased (i.e. on average correct) we needed
+
+\[Cov({u}_{it},x_{it})=0\]
+
+This is sometimes called the \textcolor{red}{Exogeneity assumption}. The error term has to be uncorrelated to the explanatory variable $x_{it}$
+
+There are a lot of reasons why this assumption may be breached.
+
+\begin{itemize}
+  \item Simultaneity ($debtgdp \rightarrow dRGDP$ and $dRGDP \rightarrow debtgdp$)\\
+  \footnotesize
+  \textcolor{student}{Discuss the fact that we have to assume that causailty here goes in both directions. Hence we cannot attach one one-directional causal interpretation to the estimated coefficient. If you can estimate the model the other way round} \normalsize
+  \item Measurement error in $x_{it}$ (not dealt with here)
+  \item Omitted relevant variables or unobserved heterogeneity 
+\end{itemize}
+
+
+## Excursion - Omitted variable bias
+
+Let's imagine I would get all your first year statistics final grades ($gr_i$) and how often you attended lectures during the semester ($att_i$). (Note, no time series dimension here. All obs from same year hence no time subscript $t$.)
+
+\[gr_{i}=\alpha + \beta ~att_{i} + u_{i}\]
+
+What value would you expect $\widehat{\beta}$ to take?
+
+\textcolor{student}{positive, more lecture attendance better grade}
+
+Can we say that lecture attendances causes higher grades?
+\textcolor{student}{What do we think is hidden in the error term? Intelligence, Attitude, Aptitude for quants. How are they related to $att_i$? Presumably some positively, e.g. attitude to studies. But all of tehse variables should really be in the model, right? So some of their effect is going to be capured by $att_i$ and this may bias the estimate $\widehat{\beta}$ up as it now captures, say, the effec of an increase in attendance but also in attitude. }
+
+
+## Reinhard/Rogoff Example - debtgdp
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, fig.height = 2, fig.width = 5}
+tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
+ggplot(tempdata,aes(Year,debtgdp,color=Country)) +
+  geom_line(size=1)     # this produces the line plot
+```
+
+\textcolor{student}{Point out the piping operator and the filter function and then ggplot and geom\_line}\normalsize
+
+## Reinhard/Rogoff Example - dRGDP
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, fig.height = 2.8, fig.width = 5}
+tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
+ggplot(tempdata,aes(Year,dRGDP,color=Country)) +
+  geom_line(size=1)     # this produces the line plot
+```
+
+\normalsize
+
+## Reinhard/Rogoff Example - dRGDP v debtgdp
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, fig.height = 2.7, fig.width = 5}
+tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
+ggplot(tempdata,aes(debtgdp,dRGDP,color=Country)) +
+  geom_point()     # this produces the scatter plot
+```
+\normalsize
+
+## Reinhard/Rogoff Example
+
+What have we learned?
+
+\begin{itemize}
+  \item dept data are persistant
+  \item growth data as well but less so
+  \item data for different countries have different characteristics
+\end{itemize}
+
+## Group the data into debt categories
+
+Let's create the four debt categories: (0,30], (30,60], (60,90], (90,Inf].
+
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+RRData <- RRData %>% mutate(dgcat = cut(RRData$debtgdp, breaks=c(0,30,60,90,Inf)))
+
+RRData %>% group_by(dgcat) %>% 
+            summarise_at("dRGDP", funs(mean, median)) %>% 
+            print()
+```
+
+\textcolor{student}{Pint out the mutate function in combination with the cut function and the pipe, then the group\_by and summarise\_at function}
+\normalsize
+
+These are the statistics we saw before (not the one reported by Reinhard and Rogoff)
+
+## Why did Reinhard and Rogoff report different results?
+
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline 
+	Debt Category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	\hline 
+	Avg Growth Rate (RR) &  4.09\% & 2.87\%  &  3.40\% & \textcolor{red}{-0.02}\%  \\ 
+		\hline 
+	Avg Growth Rate (HAP) &  4.17\% & 3.12\%  &  3.22\% & 2.17\%  \\
+	\hline 
+\end{tabular} 
+
+Why did RR get so much lower growth for the highest debt category, (90,Inf]?
+
+\href{https://academic.oup.com/cje/article-abstract/38/2/257/1714018?redirectedFrom=fulltext}{Thomas Herndon, Michael Ash and Robert Pollin} (2014) replicated the work. They identified the following differences to the above analysis.
+
+\begin{enumerate}
+  \item They excluded early-postwar data for New Zealand, Australia and Canada, arguing that these data are atypical for later periods, essentially they are outliers
+  \item A spreadsheet error resulted in data for the five countries (Australia, Austria, Belgium, Canada and Denmark) to not be included.
+  \item Observations are not weighted equally.
+\end{enumerate}
+
+
+## Replicate Reinhard and Rogoff's results
+
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+## Selective treatment of early years
+RRselective <- RRData %>% 
+  filter(!((Year<1950 & Country=="New Zealand") | 
+             (Year<1951 & Country=="Australia") | 
+             (Year<1951 & Country=="Canada") ))
+
+## Spreadsheet error omitting five countries
+RRselective <- RRselective %>% 
+  filter(!( Country %in%
+              c("Australia","Austria","Belgium","Canada","Denmark") ))
+
+RRselective %>% group_by(dgcat) %>% 
+            summarise_at("dRGDP", funs(mean, median)) %>% 
+            print()
+```
+\normalsize
+
+## Replicate Reinhard and Rogoff's results
+
+So the first two differences explain some but not all of the differences. Let's implement the different weighting.
+
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+RRselective2 <- RRselective %>%
+    group_by(dgcat,Country) %>%       # create category and country groups
+    summarize( m1 = mean(dRGDP, na.rm = TRUE)) %>%  # calculate cat average
+    group_by(dgcat) %>%               # group again by category
+    summarize(  n = n(), mean = mean(m1, na.rm = TRUE), 
+                median = median(m1, na.rm = TRUE)) %>% 
+    print()
+```
+
+\textcolor{student}{Don't worry too much about the full details of this weighting scheme.}
+
+\normalsize
+The combination of the three changes make a massive difference
+
+## Why data (and their treatment) matter
+
+The combination of these changes made a significant difference to the summary statistics.
+
+Remember, the data were very persistent.\vskip 0.5cm
+
+
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \textbf{Reinhard and Rogoff}\\
+      For each country all years which fall into one of the four categories are averaged and then treated as one observation
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \textbf{Herndon, Ash and Pollin}\\
+    Each country/year observationis treated as one independent observation.
+  \end{column}
+\end{columns}
+\vskip 0.5cm
+
+Perhaps it is right to not treat each observation as a new piece of information. But the RR weighting scheme seems to discard a lot of information.
+
+These results made a significant difference in the political discourse.
+
+## Outlook
+
+Over the next weeks you will learn
+
+\begin{itemize}
+  \item to perform more advanced statistical analysis in R, such as:
+      \begin{itemize}
+        \item Hypothesis testing
+        \item Multivariate regression analysis
+        \item specification testing
+      \end{itemize}
+  \item to devise methods to draw causal inference
+  \item to understand the main pitfalls of time-series modelling and forecasting
 \end{itemize}

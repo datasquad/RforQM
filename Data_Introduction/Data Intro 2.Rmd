@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Data Handling and Statistics"
+title: "Introduction to Data Handling and Statistics 2"
 author: "Ralf Becker"
 date: "29 November 2018"
 output:
@@ -14,11 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Preparing your workfile
 
-R is a powerful software for statistical analysis. It is open source and hence FREE software. It is constantly developped and functionality is being improved. The "price" we pay for this is that we have to do a little more set-up work to make it work.
-
-In particular we need packages which are provided for free by researchers/programmers that provide useful functionality.
-
-But we add libraries which enhance its capabilities. 
+We add the basic libraries needed for this week's work: 
 
 ```{r}
 library(tidyverse)    # for almost all data handling tasks
@@ -29,6 +25,26 @@ library(stargazer)    # to produce nice results tables
 
 
 # Introduction
+
+The example we are using here is taken from the CORE - Doing Economics resource. In particular we are using Project 8 which deals with international data on well-being.
+
+The data have been prepared as demonstrated in the Doing Economics Project 8, up to and including Walk-Through 8.3. Please have a look at this to understand the amount of data work required before an empirical analysis can begin. The datafile is saved as an R data structure (wellbeing_data.RDS).
+
+
+```{r}
+wb_data <- readRDS("wellbeing_data.RDS")   # load RDS file
+str(wb_data)  # prints some basic info on variables
+```
+
+
+
+The data represent several waves of data from the European Value Study (EVS). 
+
+
+
+
+
+
 
 Here we use an example which, at the time, made a lot of waves.  Carmen Reinhart and Kenneth Rogoff (2010) wrote work that attempted to examine the [relationship between Debt to GDP levels and GDP growth](https://scholar.harvard.edu/files/rogoff/files/growth_in_time_debt_aer.pdf). Their general conclusion was that, as long as the debt to GDP ration does not exceed 90% there seems to be no clear relationship between the two. However, countries eunning higher debt to GDP ratios are paying a sizeable growth penalty.
 
