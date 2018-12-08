@@ -43,13 +43,6 @@ The data represent several waves of data from the European Value Study (EVS).
 
 
 
-
-
-
-Here we use an example which, at the time, made a lot of waves.  Carmen Reinhart and Kenneth Rogoff (2010) wrote work that attempted to examine the [relationship between Debt to GDP levels and GDP growth](https://scholar.harvard.edu/files/rogoff/files/growth_in_time_debt_aer.pdf). Their general conclusion was that, as long as the debt to GDP ration does not exceed 90% there seems to be no clear relationship between the two. However, countries eunning higher debt to GDP ratios are paying a sizeable growth penalty.
-
-The empirical work of Reinhard and Rogoff was critised on three aspects by Thomas Herndon, Michael Ash and Robert Pollin. This work was published in the [Cambridge Journal of Economics in 2014](https://academic.oup.com/cje/article-abstract/38/2/257/1714018?redirectedFrom=fulltext) and previous to that as a working paper. The [working paper's website](https://www.peri.umass.edu/publication/item/526-does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff) also contains all the relevant data and code.
-
 # Importing Data
 
 This is a simplified spreadsheet (based on the work of Herndon et al.)
