@@ -3,8 +3,8 @@ title: "Introduction to Data Handling and Statistics 2"
 author: "Ralf Becker"
 date: "29 November 2018"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 We add the basic libraries needed for this week's work: 
 
-```{r}
+```{r, message=FALSE, warning = FALSE}
 library(tidyverse)    # for almost all data handling tasks
 library(readxl)       # to import Excel data
 library(ggplot2)      # to produce nice graphiscs
@@ -26,9 +26,17 @@ library(stargazer)    # to produce nice results tables
 
 # Introduction
 
-The example we are using here is taken from the CORE - Doing Economics resource. In particular we are using Project 8 which deals with international data on well-being.
+The example we are using here is taken from the CORE - Doing Economics resource. In particular we are using Project 8 which deals with international data on well-being. The data represent several waves of data from the European Value Study (EVS). A wave means that the same surevey is repeated at regular intervals (waves).
 
-The data have been prepared as demonstrated in the Doing Economics Project 8, up to and including Walk-Through 8.3. Please have a look at this to understand the amount of data work required before an empirical analysis can begin. The datafile is saved as an R data structure (wellbeing_data.RDS).
+
+# Aim of this lesson
+
+In this lesson we will revise some hypothesis testing and basic (simple) regression analysis. 
+
+
+# Importing Data
+
+The data have been prepared as demonstrated in the Doing Economics Project 8, up to and including Walk-Through 8.3. Please have a look at this to understand the amount of data work required before an empirical analysis can begin. The datafile is saved as an R data structure (wb_data.Rdata).
 
 ```{r}
 #wb_data <- readRDS("wellbeing_data.RDS")   # load RDS file
@@ -36,201 +44,83 @@ load("WBdata.Rdata")
 str(wb_data)  # prints some basic info on variables
 ```
 
-The data represent several waves of data from the European Value Study (EVS). 
-
-
-
-
-# Importing Data
-
-This is a simplified spreadsheet (based on the work of Herndon et al.)
+Checking your environment you will see two objects. Along the proper datafile (`wb_data`) you will find `wb_data_Des` which contains some information for each of the variables. It will help us to navigate the obscure variable names.
 
 ```{r}
-RRData <- read_excel("RRdata.xlsx")
-str(RRData)  # prints some basic info on variables
+wb_data_Des
 ```
 
-We can see that three variables are numeric (`num`) variables which is as we expect. The fourth variable `Country` is labeled as a character (`chr`) variable, basically text. It will pay off for later to indicate to R that this is a categorical (nominal) variable. This is done as follows:
+As you can see there are a number of interesting questions in this dataset. These questions will allow us to investigate whether attitudes to work differ between coountries and whether such differences correlate to different levels of self-reported happiness/life satisfaction.
+
+# Some initial data analysis and summary statistics
+
+Let us investigate some of the features of this dataset. It has `r nrow(wb_data)` observations and `r length(wb_data)` variables. Let's see which countries are represented in our dataset.
 
 ```{r}
-RRData$Country <- as.factor(RRData$Country)
-str(RRData)
+unique(wb_data$S003)   # unque finds all the different values in a variable
 ```
 
-There are 1171 country-year observations. In the dataset are data from 20 countries:
+As you can see these are 48 countries, almost all European, Canada and the U.S. being the exceptions. In the same manner we can find out how many waves of data we have available.
+
 
 ```{r}
-unique(RRData$Country)
+unique(wb_data$S002EVS)
 ```
 
-And data from 1946 to 2009.
+Let's find out how many observations/respondents we have for each country in each year. To do this we will resort to the powerful piping technique delievered through the functionality of the `tidyverse`
 
 ```{r}
-summary(RRData$Year)
-```
-
-`debtgdp` is the debt to GDP ratio
-
-```{r}
-summary(RRData$debtgdp)
-```
-
-`dRGDP` is GDP growth rate
-
-```{r}
-summary(RRData$dRGDP)
-```
-
-
-# An initial basic data plots
-
-Let's have a look at some of the data. We will first look at a scatterplot (using the amazing `ggplot` library).
-
-```{r}
-p1 <- ggplot(RRData,aes(debtgdp,dRGDP)) +
-  geom_point() +    # this produces the scatter plot
-  geom_smooth(method = "lm", se = FALSE)  # this adds the linear line of best fit
-p1
-```
-
-We could actually run this regression
-
-```{r}
-mod1 <- lm(dRGDP~debtgdp, data= RRData)
-summary(mod1)   # this is the standard R way for results
-stargazer(mod1,type="text") # a nicer way
-```
-
-There are issues with running a regression like this. Perhaps most importantly that the observations cannot be argued to be independent. The growth rate and debt to GDP ratios of, say, the UK in 1981 is clearly not independent of the data in 1980. In particular debt to GDP ratios are slow moving data.
-
-To illustrate this point we should look at the data as time series.
-
-```{r}
-tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
-ggplot(tempdata,aes(Year,debtgdp,color=Country)) +
-  geom_line()     # this produces the line plot
-
-tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
-ggplot(tempdata,aes(Year,dRGDP,color=Country)) +
-  geom_line(size=1)     # this produces the line plot
+table1 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
+            summarise(n = n()) %>%               # summarises each group by calculating obs
+            spread(S002EVS,n) %>%                # put Waves across columns
+            print(n=Inf)                         # n = Inf makes sure that all rows are printed
 
 ```
 
-You can clearly see that the `debtgdp` data, from year to year, are dependent. Also, the `dRGDP` plot reveals that there is a fair bit of correlation between the growth rates in economies.
+You can see that the number of countries have increased through time, although Canada and the U.S. have dropped out. 
 
-# Some data cuts
+If you look at the dataframe itself (either `view(wb_data)` or double click on the little spreadsheet icon on the right hand edge of the Environment window) you will recognise that there are a lot of missing observations (codes as `NA`). Ordinarily we would be interested in finding out how many effective observations we have for the life satisfaction variable (`A170`). However, the initial datawork in [https://www.core-econ.org/doing-economics/book/text/08-03.html#part-81-cleaning-and-summarizing-the-data](Project 8 of Doing Economics, Walk-Through 8.2), has made sure that all the observations you can see are those with available data for this variable.
 
-Let's look at the data for a few countries
+Let's look at a couple of graphical representations of our data. For instance we may be interested in figuring out whether life satisfaction and self-reported health are related to each other. We shall look at this on the basis of data aggregated for country-waves.
 
 ```{r}
-tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
-ggplot(tempdata,aes(debtgdp,dRGDP,color=Country)) +
-  geom_point()     # this produces the scatter plot
+table2 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
+            summarise(Avg_LifeSatis = mean(A170),Avg_Health = mean(A009))     # summarises each group by calculating obs
+            
+ggplot(table2,aes(Avg_Health,Avg_LifeSatis, colour=S002EVS)) +
+  geom_point() +
+  ggtitle("Health v Life Satisfaction")
+```
+We can see a clear positive relation between the two variables.
+
+Let's see whether we can see a similarly clear relationship between life satisfaction and respondent's attitude towards work (`C041` - "Work should come first even if it means less spare time, 1 = Strongly Agree, 5 = Strongly Disagree"). What would you expect to see?
+
+```{r}
+table2 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
+            summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))    # summarises each group by calculating obs
+
+ggplot(table2,aes( Avg_WorkFirst, Avg_LifeSatis,colour=S002EVS)) +
+  geom_point() +
+  ggtitle("Work First v Life Satisfaction")
+```
+
+The relationship is less clear. Recall that small values for the "Work First" questions relate t othe countries where,m on average, respondents agreed more strongly with the statement!
+
+```{r}
+table3 <- wb_data %>% filter(S002EVS == "2008-2010") %>% 
+            group_by(S003) %>% # groups by Country
+            summarise(cor_LS_WF = cor(A170,C041,use = "pairwise.complete.obs"),
+                      med_income = median(X047D)) %>%    # correlation, remove missing data
+            arrange(cor_LS_WF) 
+
+ggplot(table3,aes( cor_LS_WF, med_income)) +
+  geom_point() +
+  ggtitle("Corr(Life Satisfaction, Work First) v Median Income")
 
 ```
 
-From here you can see that different countries appear to have quite different patterns.
+# Hypothesis testing
 
-Let's calculate average and median growth rates and debt to gdp ratios for these countries. To achieve this we will first group the data by Country `group_by(Country)` and then summarise the variables `dRGDP` and `debtgdp` (`summarise_at(c("dRGDP", "debtgdp"), ...)`) in the resulting groups by applying the mean and median function (`funs(mean, median, sd)`).
+Let's investigate whether there are di
 
-```{r}
-tempdata %>% group_by(Country) %>% 
-            summarise_at(c("dRGDP", "debtgdp"), funs(mean, median,sd)) %>% 
-            print()
-```
 
-# Create categorical debt to GDP ratios - Reinhard-Rogoff analysis I
-
-In order to replicate some of the analysis in Reinhard and Rogoff and the subsequent critique in Herndon et al. we will want to create categorical variables for the Debt to GDP ratio. In other words we want to 
-
-```{r}
-RRData <- RRData %>% mutate(dgcat = cut(RRData$debtgdp, breaks=c(0,30,60,90,Inf)))
-
-RRData %>% group_by(dgcat) %>% 
-            summarise_at("dRGDP", funs(mean, median)) %>% 
-            print()
-```
-
-# Hypothesis Testing - means and differences in mean
-
-Hypothesis testing is at the core of much empirical analysis. Here we will show how to perform hyothesis tests. We are using the `t.test` function. Often hypothesis tests will be testing hypotheses about the mean of a random variable. We also learn how to perform hypothesis on regression coefficients (often these are nothing else but ways to estimate means!).
-
-Let's start by testing a hypothesis on the sample mean of the GDP growth rate (`dRGDP`) Let's say we want to test the hypothesis that the mean growth rate is 3.3% (note that 3.3% in the dat aiis represented as 3.3). Let's get one calculated and then diiscuss what we really did:
-
-```{r}
-t.test(RRData$dRGDP, mu=3.3)
-```
-
-You may remember that, in order to perform a hypothesis test you, the applied economist, has to set the null ($H_0$) and alternative ($H_A$) hypothesis. Here you set the null hypothesis that the mean (`mu`) is equal to 3 ($H_0$:`mu=3.3`). You also need to specify an alternative hypothesis. We didn't specify any so R (or better `t.test`) used it's default option, two sided alternative ($H_A: mu \neq 3.3$). 
-
-The judgemment here is that it is possible that the true, yet unknown population mean is equal to 3.3. The test statistic is 1.4896 and the p-value is 0.1366. Only if the p-value is smaller than our chosen level of significance (often 0.01, 0.05 or 0.1) would we reject the null hypothesis $H_0$. 
-
-Make sure you use the help function (type `?t.test` into the command window) or search for help (type "R t.test" into your favourite search engine) to understand more details of the function.
-
-Let's calculate a one sided test with the alternative that ($H_A: mu > 3.3$):
-
-```{r}
-t.test(RRData$dRGDP, mu=3.3, alternative="greater")
-```
-
-Changing the alternative does not change the t-test but change the p-value. Now the p-value is 0.0683 and whether we reject or do not reject $H_0$ depends on our chosen significance level.
-
-At this stage a we need to mention a huge caveat to the above tests. Our standard tests are based on the assumption that the data are identically and independently distributed. In some sense we have already seen that the this assumption cannot be defended with the data at hand. We saw the time-series plot above which showed that observations are correlated between years and ountries, so they are not independent observations. But let's, for the sake of this introduction, ignore this complication, but note that we need to interpret results with caution.
-
-Above we sliced the data into different subsets. Let's use the debt level categories and compare means of growth between the subsets.
-
-```{r}
-temp_high <- RRData %>% filter(dgcat == "(90,Inf]")
-temp_middle <- RRData %>% filter(dgcat == "(60,90]")
-
-t.test(temp_high$dRGDP,temp_middle$dRGDP)
-```
-
-At the bottom of the output you can see the respective sample means (which replicates the sample means we printed earlier in a table). The hyothesis tested is $H_0: mu_{high}=mu_{middle}$ with the alternative that the respective population means are different ($H_a:mu_{high}\neq mu_{middle}$). As above we could have elected to test an alternative of $>$ or $<$ as well.
-
-So yes there seems to be some negative correlation between the level of debt and the economic growth. So what was all the fuss about?
-
-# Reinhard-Rogoff Analysis II
-
-The reason why the work by Reinhard and Rogoff was so controversial was that it wasn't the numbers as reported above they published. They reported numbers after changing the dataset as follows:
-
-1. They excluded early-postwar data for New Zealand, Australia and Canada, arguing that these data are atypical for later periods, essentially they are outliers
-
-```{r}
-## Selective treatment of early years
-
-RRselective <- RRData %>% filter(!((Year<1950 & Country=="New Zealand") | (Year<1951 & Country=="Australia") | (Year<1951 & Country=="Canada") ))
-```
-
-2. A spreadsheet error resulted in data for the five countries (Australia, Austria, Belgium, Canada and Denmark) to not be included: 
-
-```{r}
-RRselective <- RRselective %>% filter(!( Country %in% c("Australia","Austria","Belgium","Canada","Denmark") ))
-```
-
-And now we repeat the mean and median calculations we performed above on teh complete dataset.
-
-```{r}
-RRselective %>% group_by(dgcat) %>% 
-            summarise_at("dRGDP", funs(mean, median)) %>% 
-            print()
-```
-
-This by itself changes the results somewhat (the mean growth rate of the highest indebted group drops from 2.17% to 1.69%) but the differences aren't all that dramatic. It is the combination of the above and the following third change that result in a dramatic change.
-
-3. Observations are re-weighted according to the following scheme:
-
-```{r}
-RRselective2 <- RRselective %>%
-                group_by(dgcat,Country) %>%                           # create category and country groups
-                summarize( m1 = mean(dRGDP, na.rm = TRUE)) %>%        # calculate average growth in each category
-                group_by(dgcat) %>%                                   # group again by category
-                summarize(  n = n(), mean = mean(m1, na.rm = TRUE), median = median(m1, na.rm = TRUE)) %>%  # calculate mean in each category 
-                print()
-```
-
-Clearly, this scheme delivers clearly lower average and median growth for the highest debt category.
-
-The main difference in this new scheme is that not each country-year receives the same weight. The authors calculate groups of data by `dgcat` and `Country` and then calculate average growth rates. That means that for instance France receives one average growth rate for each of the the three lowest debt categories (not in any tear did it exceed the 90% threshold) and Germany receives an average growth for the two lowest debt categories (as it never exceeded the 60% threshold in the sample period). Then the country averages in each category are averaged again.
-
-This may seem totally arbitrary
