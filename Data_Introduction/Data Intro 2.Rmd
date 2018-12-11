@@ -271,7 +271,7 @@ test_data <- wb_data %>%
   filter(S002EVS == "2008-2010")         # pick latest wave
 ```
 
-Then
+Then we run a regression with the Life Expectancy as the dependent variable and a constant and a dummy variable which takes the value 1 if the respondent is from Sweden and 0 if the repondent is from Britain. This is achieved by specifying the model as `A170~S003`. The variable name before the `~` 
 
 ```{r}
 mod1 <- lm(A170~S003,data=test_data)
