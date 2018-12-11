@@ -3,8 +3,8 @@ title: "Introduction to Data Handling and Statistics"
 author: "Ralf Becker"
 date: "29 November 2018"
 output:
-  pdf_document: default
-  html_document: default
+  html_document:
+    self_contained: no
 ---
 
 ```{r setup, include=FALSE}
