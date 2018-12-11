@@ -278,4 +278,4 @@ mod1 <- lm(A170~S003,data=test_data)
 stargazer(mod1, type="text")
 ```
 
-This regresison 
+This regresison shows

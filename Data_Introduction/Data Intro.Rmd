@@ -227,3 +227,7 @@ Clearly, this scheme delivers clearly lower average and median growth for the hi
 The main difference in this new scheme is that not each country-year receives the same weight. The authors calculate groups of data by `dgcat` and `Country` and then calculate average growth rates. That means that for instance France receives one average growth rate for each of the the three lowest debt categories (not in any tear did it exceed the 90% threshold) and Germany receives an average growth for the two lowest debt categories (as it never exceeded the 60% threshold in the sample period). Then the country averages in each category are averaged again.
 
 This may seem totally arbitrary
+
+# R programming concepts used
+
+* 
