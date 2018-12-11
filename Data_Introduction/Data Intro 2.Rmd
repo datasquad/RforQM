@@ -3,8 +3,8 @@ title: "Introduction to Data Handling and Statistics 2"
 author: "Ralf Becker"
 date: "29 November 2018"
 output:
-  html_document: default
-  pdf_document: default
+  html_document:
+    self_contained: no
 ---
 
 ```{r setup, include=FALSE}
@@ -271,7 +271,7 @@ test_data <- wb_data %>%
   filter(S002EVS == "2008-2010")         # pick latest wave
 ```
 
-Then we run a regression with the Life Expectancy as the dependent variable and a constant and a dummy variable which takes the value 1 if the respondent is from Sweden and 0 if the repondent is from Britain. This is achieved by specifying the model as `A170~S003`. The variable name before the `~` 
+Then we run a regression with the Life Expectancy as the dependent variable and a constant and a dummy variable which takes the value 1 if the respondent is from Sweden and 0 if the repondent is from Britain. This is achieved by specifying the model as `A170~S003`. The variable name before the `~` is the dependent variable, here `A170`. The variable after the `~` is the explanatory variable
 
 ```{r}
 mod1 <- lm(A170~S003,data=test_data)
