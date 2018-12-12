@@ -267,26 +267,64 @@ test_data <- wb_data %>%
   filter(S002EVS == "2008-2010")         # pick latest wave
 ```
 
-Now we run a regresison of the Life Satisfaction variable (`A170`) against a constant only
+Now we run a regresison of the Life Satisfaction variable (`A170`) against a constant only.
+
+$LifeSatis_{i} = \alpha + u_{i}$
 
 ```{r}
 mod1 <- lm(A170~1,data=test_data)
 stargazer(mod1, type="text")
 ```
 
-Let's create a new dataset which only contains the Swedish and British data. 
+What we will find is that the estimated value for $\alpha$, $\widehat{\alpha}=7.530$ is nothig else but the sample mean of all British observations in the 2008-2010 wave. We could now calculate a t-test $=\widehat{\alpha}/se{\widehat{\alpha}}$ $=7.530/0.063=119.524$ which tests the hypothesis that the average response to the Life Satisfaction question is equal to 0 (Yes, this makes no sense as the smallest possible response is 1, but R doesn't know that!). This could also be calculated
+
+```{r}
+t.test(test_data$A170, mu=0)  # testing that mu = 0
+```
+
+The differences are rounding differences.
+
+Let's see how we could use a regression to test for the difference in means. First we adjust our dataset `test_data` to include British and Swedish data. Note her how we use the increadibly useful `S003 %in% c("Sweden","Great Britain")` condition which selects all observations for which the country variable (`S003`) is included in the list `c("Sweden","Great Britain")`. Type `?c` in the console to see what the `c90` function does.
 
 ```{r}
 test_data <- wb_data %>% 
-  filter(S003 %in% c("Sweden","Great Britain")) %>%  # pick British data
+  filter(S003 %in% c("Sweden","Great Britain")) %>%  # pick British and Swedish data
   filter(S002EVS == "2008-2010")         # pick latest wave
 ```
 
-Then we run a regression with the Life Expectancy as the dependent variable and a constant and a dummy variable which takes the value 1 if the respondent is from Sweden and 0 if the repondent is from Britain. This is achieved by specifying the model as `A170~S003`. The variable name before the `~` is the dependent variable, here `A170`. The variable after the `~` is the explanatory variable, here `S003`.
+Then we run a regression with the Life Expectancy as the dependent variable and a constant and a dummy variable which takes the value 1 if the respondent is from Sweden and 0 if the repondent is from Britain. This is achieved by specifying the model as `A170~S003`. The variable name before the `~` is the dependent variable, here `A170`. The variable after the `~` is the explanatory variable, here `S003`. (Note that R automatically includes a constant into the regression model, even if you do not specify it explicitely.)
 
 ```{r}
 mod1 <- lm(A170~S003,data=test_data)
 stargazer(mod1, type="text")
 ```
 
-This regresison is a very special one as it uses the country variable as the explanatiry variable. Recall that `test_data` only contain British and Swedish data. The regresion picked one country as the base country (here Britain) 
+This regresison is a very special one as it uses the country variable as the explanatiry variable. Recall that `test_data` only contain British and Swedish data. The regresion picked one country as the base country (here Britain as it is first in the alphabet) and for the other it created a dummy variable. Basically a variable ($Sweden_i$) which takes the value 1 if the observation comes from Sweden and 0 otherwise. 
+
+
+$LifeSatis_{i} = \alpha + \beta~ Sweden_{i} + u_{i}$
+
+You can see that the constant ($\widehat{\alpha}$) still reports the sample average for the British observations. It is identical to the value we saw in the previous regression. But what is the meaning of $\widehat{\beta}=0.149$? This is not the average response value for Swedish respondents, but the difference between the British and Swedish average. As it is positive it means that the Swedish average response is larger than the British. In fact it is 7.530+0.149=7.679. 
+
+You can now test whether that difference is significantly different from 0 ($H_0:\beta = 0$) which is equivalent to testing that the two averages are identical. The t-test for this hypothesis test would be $0.149/0.097=1.536$ which, but for rounding differences, is identical to the test on equality of two means we performed previously.
+
+The regressions we ran so far were special in the sense that they involved explanatory variables which were either a constant (i.e. ones) or dummy variables (0s or 1s). The result of this was that the resulting estimates represented sample means or differences in sample means.
+
+The interpretation of coefficient estimates changes as explanatory variables take a more general form. Let's look again at the dataset of all observations coming from the 2008-2010 wave.
+
+```{r}
+test_data <- wb_data %>% 
+  filter(S002EVS == "2008-2010")       # pick latest wave
+```
+
+We now estimate a regression model which includes a constant and the household's monthly income as an explanatory variable ($iNC_I$ OR VARIABLE `x047D` in our dataset).
+
+$LifeSatis_{i} = \alpha + \beta~ Inc_{i} + u_{i}$
+
+```{r}
+mod1 <- lm(A170~X047D,data=test_data)
+stargazer(mod1, type="text")
+plot(mod1)
+```
+
+Before we interpret the estimated coefficient values, let us visualise the data.
