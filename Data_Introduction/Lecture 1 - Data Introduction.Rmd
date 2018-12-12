@@ -291,6 +291,7 @@ Then we load the data from excel
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
 RRData <- read_excel("RRdata.xlsx")
+RRData <- as.data.frame(RRData) # forces data.frame structure
 ```
 
 and check some charecteristics of the data which are now stored in \texttt{RRData}:
@@ -342,14 +343,14 @@ levels(RRData$Country)
 
 ## Learn more about your data
 
-Use the \texttt{summary} function for some initial summary stats for \texttt{num} or \texttt{int} variables
+Use the \texttt{stargazer} function for some initial summary stats for \texttt{num} or \texttt{int} variables
+\footnotesize
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-summary(RRData$Year)    # Year is the year of observation
-summary(RRData$debtgdp) # the debt to GDP ratio
-summary(RRData$dRGDP)   # the GDP growth rate
+stargazer(RRData, type = "text")
 ```
 
+\normalsize
 
 ## Scatter plot of the data
 

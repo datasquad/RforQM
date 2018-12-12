@@ -259,6 +259,21 @@ As is obvious from the visualisation we have many more rejections about 90%. For
 
 Hypothesis testing is a crucial tool of empirical analysis. Another tool we will use repeatedly is that of regresison analysis. In fact, sometimes, running a regression is a convenient way to deliver a hyothesis test. Let us demonstrate this with one of the above examples, the difference in average life satisfaction between Great Britain and Sweden.
 
+Let's start by creating a new dataset which only contains the British data. 
+
+```{r}
+test_data <- wb_data %>% 
+  filter(S003 =="Great Britain") %>%  # pick British data
+  filter(S002EVS == "2008-2010")         # pick latest wave
+```
+
+Now we run a regresison of the Life Satisfaction variable (`A170`) against a constant only
+
+```{r}
+mod1 <- lm(A170~1,data=test_data)
+stargazer(mod1, type="text")
+```
+
 Let's create a new dataset which only contains the Swedish and British data. 
 
 ```{r}
@@ -274,4 +289,4 @@ mod1 <- lm(A170~S003,data=test_data)
 stargazer(mod1, type="text")
 ```
 
-This regresison shows
+This regresison is a very special one as it uses the country variable as the explanatiry variable. Recall that `test_data` only contain British and Swedish data. The regresion picked one country as the base country (here Britain) 

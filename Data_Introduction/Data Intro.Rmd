@@ -40,6 +40,7 @@ This is a simplified spreadsheet (based on the work of Herndon et al.)
 
 ```{r}
 RRData <- read_excel("RRdata.xlsx")
+RRData <- as.data.frame(RRData)
 str(RRData)  # prints some basic info on variables
 ```
 
@@ -72,6 +73,12 @@ summary(RRData$debtgdp)
 
 ```{r}
 summary(RRData$dRGDP)
+```
+
+The typical `summary` output does not include two pieces of info which we would often like to see, the number of observations and the standard deviation. To the rescue comes the `stargazer` package.
+
+```{r}
+stargazer(RRData,type="text") # other types available: "latex", "html"
 ```
 
 
@@ -228,6 +235,23 @@ The main difference in this new scheme is that not each country-year receives th
 
 This may seem totally arbitrary
 
+# How to learn R
+
+Learning any programming language, and yes, that is what R essentially is, can only be done by doing. Here we are not exposing you to a bottom-up introduction of R, but we are immediately exposing you to the exciting possibilities of R and the beauty and excitement of working with real-life data. As we do so we expose you to the basic tools of working with data in R and help you to learn these.
+
+However, you have to accept from the outset that this is going to be a bumby raod! The most crucial skill you will have to embrace and develop is that of finding solutions to prolems. You will, as any programmer, yes, even the most experienced ones, search the internet for solutions to your problem. Don't think that you can remember all the important commands from the top of your mind.
+
+Whenever we introduce a new R functionality we will briefly explain it, but importantly we will also give you links to further resources where you can find more usage examples and details. Also do not frget to use the build-in help function in R (type `?FUNCTIONNAME` into the Console and press Enter). This is important as it is the help that will be available offline as well.
+
 # R programming concepts used
 
-* 
+The following R programming concepts were used in this document. The links lead to pages that provide help with these issues.
+
+* use of packages/libraries: [ECLR](http://eclr.humanities.manchester.ac.uk/index.php/R_Packages)
+* importing of data: [csv.read](http://eclr.humanities.manchester.ac.uk/index.php/R_Data), [read_excel](https://www.datacamp.com/community/tutorials/r-tutorial-read-excel-into-r)
+* Summarising data: [descriptive statistics](http://eclr.humanities.manchester.ac.uk/index.php/R_Analysis#Summary_Statistics_-_Take_1)
+* Plotting data using ggplot: [Cookbook for R](http://www.cookbook-r.com/Graphs/), [free 1st chapter of datacamp interactive tutorial](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
+* running regressions: [ECLR](http://eclr.humanities.manchester.ac.uk/index.php/R_Regression)
+* using the [stargazer package](https://www.jakeruss.com/cheatsheets/stargazer/) for summary statistics and regresison output 
+* using the tidverse to produce [subsets and groupings of data and summarise these](http://eclr.humanities.manchester.ac.uk/index.php/R_AnalysisTidy)
+* hypothesis tests on sample means, using the [t.test function](https://www.statmethods.net/stats/ttest.html)
