@@ -1,0 +1,128 @@
+---
+title: "Introduction to Handling Data"
+subtitle: "ECON20222 - Lecture 2"
+author: "Ralf Becker and Martyn Andrews"
+date: "January 2019"
+output: 
+  beamer_presentation:
+    includes:
+      in_header: ../latex_template.tex
+#     in_header: ../latex_student.tex  # use for student version
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## What is today's aim
+
+\begin{itemize}
+  \item Review hypothesis testing
+  \item Review simple regresisona anlysis
+  \item Become more familiar with R
+\end{itemize}
+
+
+
+## Preparing your workfile
+
+We add the basic libraries needed for this week's work: 
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=TRUE}
+library(tidyverse)    # for almost all data handling tasks
+library(readxl)       # to import Excel data
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+```
+
+
+## New Dataset - Wellbeing
+
+[Doing Economics Project 8](https://www.core-econ.org/doing-economics/book/text/08-03.html) deals with international wellbeing data.
+
+Data are from the [European Value Survey](https://europeanvaluesstudy.eu/). 
+
+* A large catalogue of questions on Perceptions of Life, Politics and Society, Work, Religiona etc
+* 48, mainly European countries
+* Four waves of data (1981, 1990, 1999 and 2008)
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=TRUE}
+load("WBdata.Rdata")
+```
+
+This will load two objects into your environment
+
+* `wb_data` - the actual data file
+* `wb_data_Des` - a table which contains some description to each variable
+
+To get to this dataset a significant amount of data handling and cleaning had to happen (see Project 8 in Doing Economics.)
+
+## Wellbeing Data
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+str(wb_data)  # prints some basic info on variables
+```
+\normalsize
+
+
+## Data Description
+
+\tiny
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+wb_data_Des  # prints some basic info on variables
+```
+\normalsize
+
+## Data - Countries
+
+Let's find out which countries are in the sample:
+
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+unique(wb_data$S003)   # unque finds all the different values in a variable
+```
+\normalsize
+\textcolor{student}{Point out what unique does.}
+
+## Data - Waves
+
+Let's find out how many observations/respondents we have for each country (`S003`) in each wave (`S002EVS`). 
+
+Use piping technique of the `tidyverse`
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+table1 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
+      summarise(n = n()) %>%               # summarises each group by calculating obs
+      spread(S002EVS,n) %>%                # put Waves across columns
+      print()                         # n = Inf makes sure that all rows are printed
+```
+\normalsize
+
+## Data - Some graphical representation
+
+Let's summarise data by country and wave. 
+
+* A170: All things considered, how satisfied are you with your life as a whole these days? (1 Dissatisfied to 10 Satisfied)
+* A009: All in all, how would you describe your state of health these days? Would you say it is ... 1 Very good to 5 Very poor
+
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+table2 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
+            summarise(Avg_LifeSatis = mean(A170),Avg_Health = mean(A009))     
+head(table2,4)
+```
+\normalsize
+
+\textcolor{student}{table2 now contains an observation for each country year with Avg\_LifeSatis and Avg\_Health}
+
+
+## Data - Some graphical representation
+
+\tiny
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+ggplot(table2,aes(Avg_Health,Avg_LifeSatis, colour=S002EVS)) +
+  geom_point() +
+  ggtitle("Health v Life Satisfaction")
+```
+\normalsize

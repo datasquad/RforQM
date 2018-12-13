@@ -52,6 +52,8 @@ wb_data_Des
 
 As you can see there are a number of interesting questions in this dataset. These questions will allow us to investigate whether attitudes to work differ between coountries and whether such differences correlate to different levels of self-reported happiness/life satisfaction.
 
+Details on the variables are avialable from [here](https://dbk.gesis.org/EVS/Variables/compview.asp) (chose EVS Longitudinal Data Files 1981-2008).
+
 # Some initial data analysis and summary statistics
 
 Let us investigate some of the features of this dataset. It has `r nrow(wb_data)` observations and `r length(wb_data)` variables. Let's see which countries are represented in our dataset.
@@ -310,21 +312,29 @@ You can now test whether that difference is significantly different from 0 ($H_0
 
 The regressions we ran so far were special in the sense that they involved explanatory variables which were either a constant (i.e. ones) or dummy variables (0s or 1s). The result of this was that the resulting estimates represented sample means or differences in sample means.
 
-The interpretation of coefficient estimates changes as explanatory variables take a more general form. Let's look again at the dataset of all observations coming from the 2008-2010 wave.
+The interpretation of coefficient estimates changes as explanatory variables take a more general form. 
 
 ```{r}
 test_data <- wb_data %>% 
   filter(S002EVS == "2008-2010")       # pick latest wave
 ```
 
-We now estimate a regression model which includes a constant and the household's monthly income as an explanatory variable ($iNC_I$ OR VARIABLE `x047D` in our dataset).
+We now estimate a regression model which includes a constant and the household's monthly income (in 1,000 Euros) as an explanatory variable ($iNC_I$ OR VARIABLE `x047D` in our dataset).
 
 $LifeSatis_{i} = \alpha + \beta~ Inc_{i} + u_{i}$
 
 ```{r}
 mod1 <- lm(A170~X047D,data=test_data)
 stargazer(mod1, type="text")
-plot(mod1)
 ```
 
-Before we interpret the estimated coefficient values, let us visualise the data.
+Here you see that $\widehat{\beta}=0.235$. What does this mean? As the income increases by one unit (here that represents an increase of Euro 1,000) we should expect that Life Satisfaction increases by 0.235 units. What is the interpretation for $\widehat{\alpha}=6.452$? For someone with 0 income we should expect the Life Satifaction to be 7.119. Let's present a graphical representation.
+
+```{r}
+ggplot(test_data, aes(x=X047D, y=A170, colour = S003)) +
+    geom_jitter(width=0.2) +    # Use jitter rather than point so we can see indiv obs
+    geom_abline(intercept = mod1$coefficients[1], slope = mod1$coefficients[2])+
+    ggtitle("Income v Life Satisfaction, Britain and Sweden")
+```
+
+Note a few tweaks in the graphical representation. We use `geom_jitter` rather than `geom_point`. This adds some random noise to the data so that we can see the individual observation (replace `geom_jitter(width=0.2)` with `geom_point()` to see the difference it makes). `geom_abline` adds a line. We specify the intercept and slope from our regression model (`mod1$coefficients[1]` and `mod1$coefficients[2]`). `ggtitle` adds the title to the graph.

@@ -87,13 +87,15 @@ stargazer(RRData,type="text") # other types available: "latex", "html"
 Let's have a look at some of the data. We will first look at a scatterplot (using the amazing `ggplot` library).
 
 ```{r}
-p1 <- ggplot(RRData,aes(debtgdp,dRGDP)) +
+ggplot(RRData,aes(x=debtgdp,y=dRGDP)) +
   geom_point() +    # this produces the scatter plot
   geom_smooth(method = "lm", se = FALSE)  # this adds the linear line of best fit
-p1
+
 ```
 
-We could actually run this regression
+Note a few points about how this graph is being called. `ggplot(RRData,aes(debtgdp,dRGDP))` Sets up the graph. The first input (`RRData`) tells R which data to use. In the `aes()` section (`aes` for aesthetics) we determine which variable should appear on the x-axis (`x=debtgdp`) and which is to go onto the y-axis (`y=dRGDP`). At this stage we havn't actually produced a graph yet, we just did the ground work. Then we add the graph we want, here a scatterplot, in R `geom_point()`. As you can see, the first line and the second line are linked with a `+`. This has to come at the end of the first line so that R knows that it should expect more information. The last line (again attached to the previous line via a `+`)  `geom_smooth(method = "lm", se = FALSE)` adds the regression line (`lm` = linear model). Try what happens if you take out `, se = FALSE`.
+
+We could actually run this regression:
 
 ```{r}
 mod1 <- lm(dRGDP~debtgdp, data= RRData)
