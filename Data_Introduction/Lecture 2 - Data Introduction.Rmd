@@ -90,14 +90,16 @@ unique(wb_data$S003)   # unque finds all the different values in a variable
 Let's find out how many observations/respondents we have for each country (`S003`) in each wave (`S002EVS`). 
 
 Use piping technique of the `tidyverse`
-\scriptsize
+\tiny
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 table1 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
-      summarise(n = n()) %>%               # summarises each group by calculating obs
+      summarise(n = n()) %>%               # calculating no of obs
       spread(S002EVS,n) %>%                # put Waves across columns
-      print()                         # n = Inf makes sure that all rows are printed
+      print(n=4)                         
 ```
 \normalsize
+
+For each country ($j=1,...,48$) we have observations from potentially four waves ($t=1,...,4$). For each country-year ($jt$) we have ($i=1,...,n_{jt}$) observations, e.g. $n_{Austria, 1990}=1432$. Each observation can be identified/indexed by $ijt$.
 
 ## Data - Some graphical representation
 
@@ -114,7 +116,7 @@ head(table2,4)
 ```
 \normalsize
 
-\textcolor{student}{table2 now contains an observation for each country year with Avg\_LifeSatis and Avg\_Health}
+\textcolor{student}{table2 now contains an observation for each country-year with Avg\_LifeSatis and Avg\_Health}
 
 
 ## Data - Some graphical representation
@@ -126,3 +128,118 @@ ggplot(table2,aes(Avg_Health,Avg_LifeSatis, colour=S002EVS)) +
   ggtitle("Health v Life Satisfaction")
 ```
 \normalsize
+
+## Data - Some graphical representation
+
+Summarise data by country and wave. 
+
+* A170: All things considered, how satisfied are you with your life as a whole these days? (1 Dissatisfied to 10 Satisfied)
+* C041: Work should come first even if it means less spare time, 1 = Strongly Agree, 5 = Strongly Disagree
+
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+table2 <- wb_data %>% group_by(S002EVS,S003) %>% 
+            summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))   
+```
+\normalsize
+
+## Data - Some graphical representation
+
+\tiny
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+ggplot(table2,aes( x=Avg_WorkFirst, y=Avg_LifeSatis,colour=S002EVS)) +
+  geom_point() +
+  ggtitle("Work First v Life Satisfaction")
+```
+\normalsize
+
+## Data - Some graphical representation
+
+If at all there seemed to be a negative relationship between Attitude to Work ($WC$) and Life Satisfaction ($LS$) (in countries with a "work-centric" ethic people were on average happier.)
+
+Is there such a relationship inside countries as well?
+
+We will calculate correlations for each country-wave, e.g. Austria in 2008:
+
+\scriptsize
+$Corr_{Aut,2008}(LS_{i,Aut,2008},WC_{i,Aut,2008})$ \textcolor{student}{ $=\dfrac{Cov_{Aut,2008}(LS_{i,Aut,2008},WC_{i,Aut,2008})}{s_{LS,Aut,2008}~s_{WC,Aut,2008}}$}
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+table3 <- wb_data %>% filter(S002EVS == "2008-2010") %>% 
+            group_by(S003) %>% # groups by Country
+            summarise(cor_LS_WF = cor(A170,C041,use = "pairwise.complete.obs"),
+                      med_income = median(X047D)) %>%    
+            arrange(cor_LS_WF) 
+```
+\normalsize
+
+\textcolor{student}{Point out that correlations are in $[-1,1]$. They are standardised covariances. Ensure you revise how to calculate sample s.d. and covariances!}
+
+## Data - Some graphical representation
+
+\tiny
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2, fig.width = 3}
+ggplot(table3,aes( cor_LS_WF, med_income)) +
+  geom_point() +
+  ggtitle("Corr(Life Satisfaction, Work First) v Median Income")
+```
+\normalsize
+
+\textcolor{student}{Note that the correlation between $LS$ and $WC$ is close to 0 in most countries}
+
+## Data on Maps
+
+Create maps here
+
+## Hypothesis Testing - Introduction
+
+Hypothesis testing is a core technique used in empirical analysis. Use sample data to infer something about the population mean (or correlation, or variance, etc). 
+
+We recognise that the particular sample we have is one of many different possible samples. Whatever conclusion we arrive at is not characterised by certainty.
+
+**Example**
+
+Are average life satisfaction in Germany and Britain the same? (for 2008-2010 wave)
+\vskip -1cm
+\begin{eqnarray*}
+  H_0&:& \mu_{LS,Ger,2008} = \mu_{LS,GB,2008}\\
+  H_A&:& \mu_{LS,Ger,2008} \neq \mu_{LS,GB,2008}
+\end{eqnarray*}
+
+\textcolor{student}{The truth is either represented by $H_0$ or $H_A$}
+
+When performing a test we need to calibrate some level of uncertainty. We typically fix the Probability with which we reject a correct null hypothesis (Type I error). This is also called the significance level.
+
+
+## Hypothesis Testing - Introduction
+
+Depending on the type of hypothesis there will be a \textcolor{blue}{test statistic} which will be used to come to a decision.
+
+**Assuming that $H_0$ is true** this test statistic has a random distribution (frequently t, N, $\chi^2$ or F). We can then use this distribution to evaluate how likely it would have been to get the type of sample we have if the null hypothesis was true (\textcolor{student}{~~p-value~~}).
+
+If that probability is smaller than our pre-specified significance level, then we \textcolor{student}{~~reject~~} \textcolor{red}{$H_0$}. If however that p-value is larger than our pre-specified significance level then we will \textcolor{student}{~~not reject~~} \textcolor{red}{$H_0$}.
+
+**Example**
+The test statistic
+
+\[t = \dfrac{\bar{LS}_{Ger,2008} - \bar{LS}_{GB,2008}}{\sqrt{\frac{s_{LS,Ger,2008}}{n_{Ger,2008}}+\frac{s_{LS,GB,2008}}{n_{GB,2008}}}}\]
+
+## Hypothesis Testing - Introduction
+
+How is this test statistic, \textcolor{blue}{t} distributed (assuming $H_0$ is true)? \textcolor{red}{**If**}
+
+1. The two samples are independent
+2. The random variables $LS_{i,Ger,2008}$ and $LS_{i,GB,2008}$ are either normally distributed or we have sufficiently large samples
+3. The variances in the two samples are identical
+
+then $t \sim$ \textcolor{student}{$t$ distributed with $(n_{Ger,2008}+n_{GB,2008}-2)$ degrees of freedom.}
+
+## Hypothesis Testing - Introduction
+
+
+```{r, echo = FALSE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 4, fig.width = 5}
+ggplot(table3,aes( cor_LS_WF, med_income)) +
+  geom_point() +
+  ggtitle("Corr(Life Satisfaction, Work First) v Median Income")
+```
+						

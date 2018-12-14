@@ -106,7 +106,7 @@ ggplot(table2,aes( Avg_WorkFirst, Avg_LifeSatis,colour=S002EVS)) +
   ggtitle("Work First v Life Satisfaction")
 ```
 
-The relationship is less clear. Recall that small values for the "Work First" questions relate t othe countries where,m on average, respondents agreed more strongly with the statement!
+The relationship is less clear. Recall that small values for the "Work First" questions relate to the countries where, on average, respondents agreed more strongly with the statement!
 
 ```{r}
 table3 <- wb_data %>% filter(S002EVS == "2008-2010") %>% 
@@ -120,6 +120,12 @@ ggplot(table3,aes( cor_LS_WF, med_income)) +
   ggtitle("Corr(Life Satisfaction, Work First) v Median Income")
 
 ```
+
+There isn't any really obvious relation between these correlations and the median income.
+
+Let's create acouple of couloured maps which illustrate how median income and the above correlations are distributed across Europe.
+
+XXXXX Create maps XXXXX
 
 # Hypothesis testing
 
