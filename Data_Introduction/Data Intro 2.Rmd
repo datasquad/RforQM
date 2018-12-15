@@ -125,7 +125,85 @@ There isn't any really obvious relation between these correlations and the media
 
 Let's create acouple of couloured maps which illustrate how median income and the above correlations are distributed across Europe.
 
-XXXXX Create maps XXXXX
+## Mapping Data
+
+A great tool to visualise the differences between regional entities (e.g. countries) is to produce a map where a color scale represents the values of some statistic. The first time you create maps, we are afraid, you will have to struggle a little. But the rewards are great!
+
+We start by uploading a few libraries we will need to work with maps. We follow the advice of the [Lovelace et al.](https://geocompr.robinlovelace.net/) and use the `tmap` package. Recall that you will have to install these packages first in case you havn't done so yet.
+
+```{r}
+library(tmap)   # mapping package
+library(sf)     # required to deal with shape files
+library(spData) # delivers shape files
+```
+
+We want visualise data, for instance those on LIfe Satisfaction or Work Ethic and how they differe between countries. Perhaps we will be able to see regional differences. Let's start by creating a list of countries for which we have data. Recall `S003` is the variable in our dataset which provides the country name.
+
+```{r}
+count_list <- unique(wb_data$S003) # List of countries in well-being dataset
+count_list
+```
+
+Let's start by restricting this list. In particular we will remove non-European countries (Canada and the United States) and we will actually also remove the Russian Federation. This is purely for to restrict the size of the map. If we left the Russian Federation in the data its size would dwarf many smaller countries. 
+
+```{r}
+count_list <- count_list[!(count_list %in% c("United States","Canada","Russian Federation"))]
+```
+
+If you ran the above command without the `!` it would have slected only the three countries. The `!` negates that and hence selects only the countries which are not in the list.
+
+Now we need to get the map data in. What we need is a list of countries and their respective shapes, sometimes this info is called a shape-file. There are a lot of ways to get these and shape files exist for countries, parliamentary constituencies, postcodes and many more things. For some objects (like the countries of the world) there is a package which makes these data available, it is called [SpData](https://www.rdocumentation.org/packages/spData/versions/0.2.9.6). Once this package is loaded (as we have done above) you can get the shape files for all the countries in the world using the `world` command.
+
+```{r}
+d_world <- world  # save country shape files
+head(d_world)
+```
+
+You can see from the dataextract what type of data are contained. Importantly, `name_long` is the countryname. We will use that infor to extract the shape information for the countries we have in our datafile. In particular we will 
+
+```{r}
+d_sel <- d_world %>% 
+            filter(name_long %in% count_list)
+```
+
+Let's see whether this did indeed
+selected all the countries we wanted
+
+```{r}
+count_map <- d_sel$name_long   # countries included in d_sel
+
+setdiff(count_list,count_map)
+```
+
+Why are these countries not included in `count_map` (ther are in `count_list`, also confirm in your environment that `count_map` has only 41, and not 45 countries). The reason for Great Britain and Northern Ireland to not be included is most likely that the map data includes the United Kingdom (which is GB plu Northern Ireland). But it is not immediately obvious why Malta and Bosnia Herzegovina are not included. We need to investigate.
+
+The following commands find those countries in the `d_world` dataset which match the specified pattern. You don't need to understand how this exactly works at this stage. But if you try (and you should start by finding out what `grepl` does) you will learn a lot.
+
+```{r}
+d_world$name_long[grepl("Bosnia",d_world$name_long)]
+d_world$name_long[grepl("Malta",d_world$name_long)]
+d_world$name_long[grepl("United",d_world$name_long)]
+```
+
+We see that in the `d_world` the country is called "Bonia and Herzegovina" whereas in the well-being data it is merely called "Bosnia Herzegovina". It is a small difference but any difference means that R doesn't match! There was no country Malta in the `d_world` file and indeed there is the "United Kingdom". As we certainly want the UK data we need to change the name in one of the two datasources. In our well-being dataset we will temporarily change the names of Bosnia Herzegovina and Great Britain
+
+```{r}
+tm_shape(d) +
+  tm_fill()
+
+
+
+
+tm_shape(d_sel) +
+  tm_fill()
+
+
+unique(d_sel$iso_a2)
+unique(d_sel$name_long)
+
+plot(d_europe)
+
+```
 
 # Hypothesis testing
 
