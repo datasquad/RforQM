@@ -159,20 +159,18 @@ d_world <- world  # save country shape files
 head(d_world)
 ```
 
-You can see from the dataextract what type of data are contained. Importantly, `name_long` is the countryname. We will use that infor to extract the shape information for the countries we have in our datafile. In particular we will 
+You can see from the data extract what type of data are contained. The actual geographical shapes of the countries are contained in the `geom` information. Basically they are coordinate points (latitude and longitude) which, when connected, describe the shape of a country. Importantly, `name_long` is the countryname. We will use that infor to extract the shape information for the countries we have in our datafile. In particular we will 
 
 ```{r}
 d_sel <- d_world %>% 
             filter(name_long %in% count_list)
 ```
 
-Let's see whether this did indeed
-selected all the countries we wanted
+Let's see whether this did indeed select all the countries we wanted
 
 ```{r}
 count_map <- d_sel$name_long   # countries included in d_sel
-
-setdiff(count_list,count_map)
+setdiff(count_list,count_map)  # finds the difference between the two arguments
 ```
 
 Why are these countries not included in `count_map` (ther are in `count_list`, also confirm in your environment that `count_map` has only 41, and not 45 countries). The reason for Great Britain and Northern Ireland to not be included is most likely that the map data includes the United Kingdom (which is GB plu Northern Ireland). But it is not immediately obvious why Malta and Bosnia Herzegovina are not included. We need to investigate.
@@ -227,8 +225,6 @@ map2 <- tm_shape(d_sel) +
   tm_layout(title = "GDP per capita across Europe") 
 
 tmap_arrange(map1, map2)   # this arranges the maps next to each other
-
-
 ```
 
 Now, all we need to do, is add the variable which we want to visualise with a map to the `d_sel` dataframe. For `table2` above we calculated the average life satisfaction and the the average attitude to the "Work First" question. Let's repeat these calculations (copy and past the code here and replace `wb_data` with `wb_data_map`). The only reason we got to do this again is because of the country name inconsistency which we fixed in `wb_data_map`.
@@ -238,13 +234,34 @@ table2_map <- wb_data_map %>% group_by(S002EVS,S003) %>% # groups by Wave and Co
             summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))    # summarises each group by calculating obs
 ```
 
-Now we merge 
+Now we merge the geography data set (`d_sel`) with the data in `table2_map`. We can do that as both data sets contain country names. So R can match the data using this country information. As the country variable has different names in the two datafiles we have to tell the merge function by what colums it should merge (`by.x = "name_long",by.y="S003"`).
+
+```{r}
+d_sel_merged <- merge(x = d_sel,y = table2_map,by.x = "name_long",by.y="S003") # merge the data in x and y
+```
+
+Now we merely have to go back and recreate maps. As we still have data of all waves in this data structure we will first filter out the last wave.
 
 ```{r}
 
-test <- merge(d_sel,table2_map,by.x = "name_long",by.y="S003")
+d_sel_2018 <- d_sel_merged %>% filter(S002EVS == "2008-2010")
 
+map1 <- tm_shape(d_sel_2018) +
+  tm_borders() +
+  tm_fill(col = "Avg_LifeSatis", title = "Satisfaction with your life") +
+  tm_style("cobalt") +
+  tm_layout(title = "Average Life Satisfaction") 
+
+map2 <- tm_shape(d_sel_2018) +
+  tm_borders() +
+  tm_fill(col = "Avg_WorkFirst", title = "1 = Strongly Agree, 5 = Strongly Disagree") +
+  tm_style("cobalt") +
+  tm_layout(title = "Average Attitude to Work First") 
+
+tmap_arrange(map1, map2)   # this arranges the maps next to each other
 ```
+
+Note that smaller values for the "Work First" question indicate stronger agreement with the statement "Work should come first even if it means less spare time". So it does appear as if, broadly, people are heappier where they also think that work is more important. But, be careful, no causal interpretation can be attributed to this.
 
 # Hypothesis testing
 

@@ -189,7 +189,47 @@ ggplot(table3,aes( cor_LS_WF, med_income)) +
 
 ## Data on Maps
 
-Create maps here
+Geographical relationships are sometimes best illustrtaed with maps.
+
+Sometimes these will reveal a pattern.
+
+R can create great maps (but it requires a bit of setup).
+
+## Data on Maps
+
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2, fig.width = 3}
+library(tmap)   # mapping package
+library(sf)     # required to deal with shape files
+library(spData) # delivers shape files
+wb_data_map <- wb_data   # duplicate the dataset so we keep the original unchanged
+wb_data_map$S003[wb_data_map$S003 == "Bosnia Herzegovina"] <- "Bosnia and Herzegovina"
+wb_data_map$S003[wb_data_map$S003 == "Great Britain"] <- "United Kingdom"
+count_list <- unique(wb_data_map$S003)
+count_list <- count_list[!(count_list %in% c("United States","Canada","Russian Federation"))]
+d_world <- world
+d_sel <- d_world %>% 
+            filter(name_long %in% count_list)
+table2_map <- wb_data_map %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
+            summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))    # summarises each group by calculating obs
+d_sel_merged <- merge(x = d_sel,y = table2_map,by.x = "name_long",by.y="S003") # merge the data in x and y
+d_sel_2018 <- d_sel_merged %>% filter(S002EVS == "2008-2010")
+
+map1 <- tm_shape(d_sel_2018) +
+  tm_borders() +
+  tm_fill(col = "Avg_LifeSatis", title = "Satisfaction with your life") +
+  tm_style("cobalt") +
+  tm_layout(title = "Average Life Satisfaction") 
+
+map2 <- tm_shape(d_sel_2018) +
+  tm_borders() +
+  tm_fill(col = "Avg_WorkFirst", title = "1 = Strongly Agree, 5 = Strongly Disagree") +
+  tm_style("cobalt") +
+  tm_layout(title = "Average Attitude to Work First") 
+
+tmap_arrange(map1, map2)   # this arranges the maps next to each other
+```
+
+
 
 ## Hypothesis Testing - Introduction
 
