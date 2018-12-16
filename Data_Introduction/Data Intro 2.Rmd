@@ -185,23 +185,64 @@ d_world$name_long[grepl("Malta",d_world$name_long)]
 d_world$name_long[grepl("United",d_world$name_long)]
 ```
 
-We see that in the `d_world` the country is called "Bonia and Herzegovina" whereas in the well-being data it is merely called "Bosnia Herzegovina". It is a small difference but any difference means that R doesn't match! There was no country Malta in the `d_world` file and indeed there is the "United Kingdom". As we certainly want the UK data we need to change the name in one of the two datasources. In our well-being dataset we will temporarily change the names of Bosnia Herzegovina and Great Britain
+We see that in the `d_world` the country is called "Bonia and Herzegovina" whereas in the well-being data it is merely called "Bosnia Herzegovina". It is a small difference but any difference means that R doesn't match! There was no country Malta in the `d_world` file and indeed there is the "United Kingdom". As we certainly want the UK data we need to change the name in one of the two datasources. We will create a dublicate of our well-being dataset (`wb_data_map`) in which we will change the names of Bosnia Herzegovina and Great Britain.
+
+Look at the lines of code below, `wb_data_map$S003[wb_data_map$S003 == "Bosnia Herzegovina"]` identifies that element of `wb_data_map$S003` which is equal to "Bosnia Herzegovina" and then replaces it with "Bosnia and Herzegovina".
 
 ```{r}
-tm_shape(d) +
-  tm_fill()
+wb_data_map <- wb_data   # duplicate the dataset so we keep the original unchanged
+wb_data_map$S003[wb_data_map$S003 == "Bosnia Herzegovina"] <- "Bosnia and Herzegovina"
+wb_data_map$S003[wb_data_map$S003 == "Great Britain"] <- "United Kingdom"
+```
+
+Before the Northern Irish amongst you complain, I know that the code above assigns the Great Britain data to the entire UK (ignoring Northern Ireland). We do this to simplify the work here and hope that doing so does not erase the slight lead Northern Irish (7.82) have in terms of Life Satisfaction to the British (7.53).
+
+With these changes done we will repeat the above process of wittling down the country shape file information
+
+```{r}
+count_list <- unique(wb_data_map$S003)
+count_list <- count_list[!(count_list %in% c("United States","Canada","Russian Federation"))]
+d_sel <- d_world %>% 
+            filter(name_long %in% count_list)
+```
+
+By checking `d_sel` you can confirm that we now have extracted information on 43 countries rather than the previous 41 countries.
+
+Let's create a first map. As it so happens, `d_sel` contains a number of numerical variables.
+
+```{r}
+names(d_sel)
+```
+
+Let's create a very basic map of Europe (`map`) and then one which looks a little nicer and has the country color-filled depending on the `gdpPercap` variable (`map2`). For more guidance look at the exc exellent (Chapter 8 of Geocomputing with R by Lovelace et al.)[https://geocompr.robinlovelace.net/adv-map.html]
+
+```{r}
+map1 <- tm_shape(d_sel) +  # basic map
+  tm_borders()             # adds borders 
+
+map2 <- tm_shape(d_sel) +
+  tm_borders() +
+  tm_fill(col = "gdpPercap") +
+  tm_style("cobalt") +
+  tm_layout(title = "GDP per capita across Europe") 
+
+tmap_arrange(map1, map2)   # this arranges the maps next to each other
 
 
+```
 
+Now, all we need to do, is add the variable which we want to visualise with a map to the `d_sel` dataframe. For `table2` above we calculated the average life satisfaction and the the average attitude to the "Work First" question. Let's repeat these calculations (copy and past the code here and replace `wb_data` with `wb_data_map`). The only reason we got to do this again is because of the country name inconsistency which we fixed in `wb_data_map`.
 
-tm_shape(d_sel) +
-  tm_fill()
+```{r}
+table2_map <- wb_data_map %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
+            summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))    # summarises each group by calculating obs
+```
 
+Now we merge 
 
-unique(d_sel$iso_a2)
-unique(d_sel$name_long)
+```{r}
 
-plot(d_europe)
+test <- merge(d_sel,table2_map,by.x = "name_long",by.y="S003")
 
 ```
 
