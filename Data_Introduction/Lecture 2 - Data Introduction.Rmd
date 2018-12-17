@@ -193,11 +193,17 @@ Geographical relationships are sometimes best illustrtaed with maps.
 
 Sometimes these will reveal a pattern.
 
-R can create great maps (but it requires a bit of setup).
+R can create great maps (but it requires a bit of setup - see the additional file on BB). YOu need the following
+
+* A shape file for each country
+* The statistics for each country
+* a procedure to merge these bits of information in one data-frame (`merge`)
+
+Let's look at average life satisfaction average attitude to the "work first" statement as these statistics vary by country.
 
 ## Data on Maps
 
-```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2, fig.width = 3}
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 3, fig.width = 4.5}
 library(tmap)   # mapping package
 library(sf)     # required to deal with shape files
 library(spData) # delivers shape files
@@ -255,31 +261,358 @@ When performing a test we need to calibrate some level of uncertainty. We typica
 
 Depending on the type of hypothesis there will be a \textcolor{blue}{test statistic} which will be used to come to a decision.
 
-**Assuming that $H_0$ is true** this test statistic has a random distribution (frequently t, N, $\chi^2$ or F). We can then use this distribution to evaluate how likely it would have been to get the type of sample we have if the null hypothesis was true (\textcolor{student}{~~p-value~~}).
+**Assuming that $H_0$ is true** this test statistic has a random distribution (frequently t, N, $\chi^2$ or F). We can then use this distribution to evaluate how likely it would have been to get the type of sample we have if the null hypothesis was true (\textcolor{student}{~~p-value~~}) or obtain \textcolor{student}{critical values}.
 
-If that probability is smaller than our pre-specified significance level, then we \textcolor{student}{~~reject~~} \textcolor{red}{$H_0$}. If however that p-value is larger than our pre-specified significance level then we will \textcolor{student}{~~not reject~~} \textcolor{red}{$H_0$}.
+**Decision Rule 1**: If that probability is smaller than our pre-specified significance level, then we \textcolor{student}{~~reject~~} \textcolor{red}{$H_0$}. If, however, that p-value is larger than our pre-specified significance level then we will \textcolor{student}{~~not reject~~} \textcolor{red}{$H_0$}.
+
+**Decision Rule 2**: If the absolute value of the test statistic is larger than the critical value (obtain from the Null distribution - see next slide), then we \textcolor{student}{~~reject~~} \textcolor{red}{$H_0$}. If, however, the absolute value of the test statistic is smaller than the critical value, then we will \textcolor{student}{~~not reject~~} \textcolor{red}{$H_0$}.
+
+
+## Hypothesis Testing - Introduction
 
 **Example**
 The test statistic
 
 \[t = \dfrac{\bar{LS}_{Ger,2008} - \bar{LS}_{GB,2008}}{\sqrt{\frac{s_{LS,Ger,2008}}{n_{Ger,2008}}+\frac{s_{LS,GB,2008}}{n_{GB,2008}}}}\]
 
-## Hypothesis Testing - Introduction
-
-How is this test statistic, \textcolor{blue}{t} distributed (assuming $H_0$ is true)? \textcolor{red}{**If**}
+How is this test statistic, \textcolor{blue}{t}, distributed (assuming $H_0$ is true)? \textcolor{red}{**If**}
 
 1. The two samples are independent
 2. The random variables $LS_{i,Ger,2008}$ and $LS_{i,GB,2008}$ are either normally distributed or we have sufficiently large samples
 3. The variances in the two samples are identical
 
-then $t \sim$ \textcolor{student}{$t$ distributed with $(n_{Ger,2008}+n_{GB,2008}-2)$ degrees of freedom.}
+then $t \sim$ \textcolor{student}{$t$ distributed 
+with $(n_{Ger,2008}+n_{GB,2008}-2)$ degrees of freedom.}
 
-## Hypothesis Testing - Introduction
+The above assumptions are crucial (and they differ from test to test). If they are not met then the resulting p-value (or critical values) are not correct. \textcolor{student}{Other tests will have different distributions and require different assumptions!}
 
+## Hypothesis Testing - Example 1
 
-```{r, echo = FALSE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 4, fig.width = 5}
-ggplot(table3,aes( cor_LS_WF, med_income)) +
-  geom_point() +
-  ggtitle("Corr(Life Satisfaction, Work First) v Median Income")
+Let's create a sample statistic:
+
+\scriptsize
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+test_data_G <- wb_data %>% 
+  filter(S003 == "Germany") %>%     # pick German data
+  filter(S002EVS == "2008-2010")    # pick latest wave
+mean_G <- mean(test_data_G$A170)
+
+test_data_GB <- wb_data %>% 
+  filter(S003 == "Great Britain") %>%  # pick British data
+  filter(S002EVS == "2008-2010")       # pick latest wave
+mean_GB <- mean(test_data_GB$A170)
+
+sample_diff <- mean_G - mean_GB
+sample_diff
 ```
-						
+\normalsize
+
+Is this different \textcolor{student}{~~~statistically and/or economically~~~} signifficant?
+
+## Hypothesis Testing - Example 1
+
+Formulate a null hypothesis. Here that the difference in population means (`mu`) is equal to 0 using the `t.test` function. We deliver the `A170` series for oth countries to `t.test`.
+
+\scriptsize
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+t.test(test_data_G$A170,test_data_GB$A170, mu=0)  # testing that mu = 0
+```
+
+\normalsize
+
+The p-value is very small and hence \textcolor{student}{it is very unlikely that this difference would have arisen by chance if the null hypothesis WAS correct.}
+
+## Hypothesis Testing - Example 2
+
+What about the difference between Great Britain and Sweden though?
+\scriptsize
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+test_data_SW <- wb_data %>% 
+  filter(S003 == "Sweden") %>%  # pick British data
+  filter(S002EVS == "2008-2010")       # pick latest wave
+
+t.test(test_data_SW$A170,test_data_GB$A170, mu=0)  # testing that mu = 0
+```
+\normalsize
+The p-value is 0.1251 and hence \textcolor{student}{there is a 12.5\% probability of this or a more extreme difference arising if the null hypothesis was true.}
+
+
+## Hypothesis Testing - To reject or to not reject
+
+\scriptsize
+
+When comparing between Germany and Britain the p-value was app. 0: \textcolor{student}{Reject $H_0$}
+
+When comparing between Sweden and Britain the p-value was 0.1251: \textcolor{student}{hmmmm....}
+
+* Conventional significance levels are 10\%, 5\%, 1\% or 0.1\%
+* But what do they mean?
+
+To illustrtate we add a random variable (`rvar`) to all observations. The value comes from the identical distribution for all observations, the standard normal ($N(0,1)$ or `rnorm` in R):
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+wb_data$rvar <- rnorm(nrow(wb_data))   # add random variable
+
+test_data <- wb_data %>% 
+  filter(S002EVS == "2008-2010")       # pick latest wave
+
+countries <- unique(test_data$S003)  # List of all countries
+n_countries <- length(countries)   # Number of countries, 46
+```
+
+By construction we know that the true underlying mean is identical in all countries. 
+
+But what happens if we calculate sample means of `rvar` in all countries and then compare between countries? \textcolor{student}{$(46*46-46)/2=1035$ comparisons}
+
+\normalsize
+
+## Hypothesis Testing - To reject or to not reject
+
+\scriptsize
+
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+save_pvalue <- matrix(NA,n_countries,n_countries)
+
+for (i in seq(2,n_countries)){
+  for (j in seq(1,(i-1))){
+    test_data_1 <- test_data %>% 
+    filter(S003 == countries[i]) 
+    mean_1 <- mean(test_data_1$A170)
+
+    test_data_2 <- test_data %>% 
+    filter(S003 == countries[j]) 
+    mean_2 <- mean(test_data_2$A170)
+    
+    tt <- t.test(test_data_1$rvar,test_data_2$rvar, mu=0)  # testing that mu = 0
+    save_pvalue[i,j] <- unlist(tt["p.value"])    # this will just pick the p-value
+  }
+}
+
+tre <- (save_pvalue<0.1)   # value of TRUE if pvalue < 0.1
+cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
+```
+
+We have 1035 hypothesis tests, all testing a \textcolor{red}{correct}. If a p-value is smaller than 10\% we \textcolor{red}{decide} to reject $H_0$.
+
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+table(tre)
+```
+
+\vskip -2cm
+
+\begincols
+  \begincol{0.3\textwidth}
+    Let's present a graphical representation of these results. Every green square representing a rejection of the null hypothesis.
+  \endcol
+  \begincol{0.7\textwidth}
+    ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 4, fig.width = 4.5}
+    image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
+    ```
+  \endcol
+    
+\endcols
+
+Is this what we would expect?
+\normalsize
+
+## Hypothesis Testing - To reject or to not reject
+
+\scriptsize
+
+Let's return to the Life Satisfaction data and repeat the above comparison between the average Life Satisfaction.
+
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+save_pvalue <- matrix(NA,n_countries,n_countries)
+
+for (i in seq(2,n_countries)){
+  for (j in seq(1,(i-1))){
+    test_data_1 <- test_data %>% 
+    filter(S003 == countries[i]) 
+    mean_1 <- mean(test_data_1$A170)
+
+    test_data_2 <- test_data %>% 
+    filter(S003 == countries[j]) 
+    mean_2 <- mean(test_data_2$A170)
+    
+    tt <- t.test(test_data_1$A170,test_data_2$A170, mu=0)  # testing that mu = 0
+    save_pvalue[i,j] <- unlist(tt["p.value"])    # this will just pick the p-value
+  }
+}
+
+tre <- (save_pvalue<0.1)   # value of TRUE if pvalue < 0.1
+cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
+```
+
+
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+table(tre)
+```
+
+\vskip -2cm
+
+\begincols
+  \begincol{0.3\textwidth}
+    Every green square representing a rejection of the null hypothesis. \textcolor{student}{But are all these differences substantially/economically significant? Most likely not.}
+  \endcol
+  \begincol{0.7\textwidth}
+    ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 4, fig.width = 4.5}
+    image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
+    ```
+  \endcol
+    
+\endcols
+
+\normalsize
+
+
+## Regression Analysis - Introduction
+
+Tool on which most of the work in this unit is based
+
+* Allows to quantify relationshis between \textcolor{blue}{2 or more} variables
+* It can be used to implement hypothesis tests
+* Per-se it does \textcolor{red}{not deliver causal relationships}!
+
+It is very easy to compute for everyone! Results will often have to be interpretated very carefully.
+
+Your skill will be to interpret correctly!!!!
+
+## Regression Analysis - Example 1
+
+Let's start by creating a new dataset which only contains the British data. 
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+test_data <- wb_data %>% 
+  filter(S003 =="Great Britain") %>%  # pick British data
+  filter(S002EVS == "2008-2010")         # pick latest wave
+```
+
+Now we run a regresison of the Life Satisfaction variable (`A170`) against a constant only.
+
+$LifeSatis_{i} = \alpha + u_{i}$
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mod1 <- lm(A170~1,data=test_data)
+```
+
+## Regression Analysis - Example 1
+
+We use the `stargazer` function to display regression results
+
+\scriptsize
+
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+stargazer(mod1, type="text")
+```
+\normalsize
+
+The estimate for the constant, $\widehat{\alpha}$, is merely the sample mean.
+
+## Regression Analysis - Example 1
+
+Testing $H_0: \mu_{A170}=0$ can be achieved by
+\scriptsize
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+t.test(test_data$A170, mu=0)  # testing that mu = 0
+```
+\normalsize
+
+We can use the above regression to achieve the same:
+
+$t-test =\widehat{\alpha}/se_{\widehat{\alpha}}$ \textcolor{student}{$=7.530/0.063=119.524$} 
+
+\textcolor{student}{That $H_0$ makes no sense as smallest answer to A170 is 1.}
+
+
+## Regression Analysis - Example 2
+
+We now estimate a regression model which includes a constant and the household's monthly income (in 1,000 Euros) as an explanatory variable ($Inc_i$ or variable `x047D` in our dataset).
+
+$LifeSatis_{i} = \alpha + \beta~ Inc_{i} + u_{i}$
+\footnotesize
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mod1 <- lm(A170~X047D,data=test_data)
+```
+\normalsize
+
+We will look at the interpretation of the estimate of $\widehat{\beta}$.
+
+## Regression Analysis - Example 2
+
+\scriptsize
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+stargazer(mod1, type="text")
+```
+\vskip -1cm
+
+As the income increases by one unit (increase of Euro 1,000) we should expect that Life Satisfaction increases by 0.184 units.
+
+\normalsize
+
+## Regression Analysis - Example 2
+
+\scriptsize
+Let's present a graphical representation.
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2.0, fig.width = 4.5}
+ggplot(test_data, aes(x=X047D, y=A170)) +
+    labs(x = "Income", y = "Life Satisfaction") +
+    geom_jitter(width=0.2, size = 0.5) +    # Use jitter - try geom_point() instead
+    geom_abline(intercept = mod1$coefficients[1], 
+                slope = mod1$coefficients[2], col = "blue")+
+    ggtitle("Income v Life Satisfaction, Britain")
+```
+\normalsize
+
+
+## Regression Analysis - What does it actually do?
+
+Two interpretations
+
+1) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that \textcolor{student}{~~minimises~~} the residual sum of squares $\Sigma (LifeSatis_{i} - \widehat{\alpha} - \widehat{\beta}~ Inc_{i})^2$.
+$\rightarrow$ \textcolor{red}{Ordinary Least Squares (OLS)}
+2) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that ensures that the residuals ($\widehat{u}_{i} = LifeSatis_{i} - \widehat{\alpha} - \widehat{\beta}~ Inc_{i}$) are \textcolor{student}{~~uncorrelated~~} with the explanatory variable(s) (here $Inc_{i}$).
+
+In many ways 2) is the more insightful one. 
+
+## Regression Analysis - What does it actually do?
+
+$LifeSatis_{i} = \alpha + \beta~ Inc_{i} + u_{i}$
+
+**Assumptions**
+
+One of the regression assumptions is that the (unobserved) error terms $u_{i}$ are uncorrelated with the explanatory variable(s), here $Inc_{i}$. Then we call \textcolor{orange}{$Inc_i$ exogenous}.
+
+This implies that $Cov(Inc_{i},u_{i})=Corr(Inc_{i},u_{i})=0$
+
+**In sample**
+
+$LifeSatis_{i} =$ \textcolor{blue}{$~~~\widehat{\alpha} + \widehat{\beta}~ Inc_{i}~~~$} $+ \widehat{u}$
+
+Where \textcolor{blue}{$\widehat{\alpha} + \widehat{\beta}~ Inc_{i}$} is the regression-line. 
+
+In sample $Corr(Inc_{i},\widehat{u}_{i})=0$ ALWAYS.
+
+## Regression Analysis - The Exogeneity Assumption
+
+Why is **assuming** $Corr(Inc_{i},u_{i})=0$ important when, in sample, we are guaranteed $Corr(Inc_{i},\widehat{u}_{i})=0$?
+
+If $Corr(Inc_{i},u_{i})=0$ is **not true**, then
+
+1) Estimating the model by OLS \textcolor{student}{imposes a relationship which is not found in the data}
+2) As a result, the estimated coefficients  \textcolor{blue}{$\widehat{\alpha}$ and $\widehat{\beta}$} are \textcolor{student}{biased (on average incorrect if we had many samples)}
+3) The regression model has no \textcolor{student}{causal interpretation}
+
+As we cannot observe $u_i$, the assumption of exogeneity cannot be tested directly and we need to make an argument using economic understanding.
+
+## Regression Analysis - Outlook
+
+Much of empirical econometric analysis is about making the exogeneity assumption more plausible/as plausible as possible.
+
+1) Most models have reasonable more than one explanatory variable.
+2) Including more relevant explanatory variables can make the exogeneity assumption more plausible.
+3) Sometimes we need to apply some econometric/statistical tricks to make this assumption plausible, e.g. Instrumental Variable regression
+
+

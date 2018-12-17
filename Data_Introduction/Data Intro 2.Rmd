@@ -480,3 +480,11 @@ ggplot(test_data, aes(x=X047D, y=A170, colour = S003)) +
 ```
 
 Note a few tweaks in the graphical representation. We use `geom_jitter` rather than `geom_point`. This adds some random noise to the data so that we can see the individual observation (replace `geom_jitter(width=0.2)` with `geom_point()` to see the difference it makes). `geom_abline` adds a line. We specify the intercept and slope from our regression model (`mod1$coefficients[1]` and `mod1$coefficients[2]`). `ggtitle` adds the title to the graph.
+
+The regression parameters, which deliver the line of best fit, are estimated by Ordinary Least Squares (OLS). The name comes from the fact that these parameters are the ones which minimise the sum of squared residuals, $\Sigma \widehat{u}^2_i = \Sigma (LifeSatis_{i} - \widehat{\alpha} - \widehat{\beta}~ Inc_{i})^2$. These parameters achieve another thing, they ensure that $Corr(Inc_{i},\widehat{u}_{i})=0$ is true.
+
+This last point is increadibly important, as one of the assumptions underpinning the estimation of regression models by OLS is that $Corr(Inc_{i},u_{i})=0$. Why is that assumption important? If the assumtion was not true, then we need to accept that the OLS estimation imposes a feature into the model that is not appropriate for the data. As a result the resulting regression coefficients are biased. As a consequence the resulting regression model cannot be said to have any causal interpretation. 
+
+As we cannot observe $u_i$, the assumption of exogeneity cannot be tested directly and we need to make an argument using economic understanding.
+
+A lot of econometric work is therefore directed at building either models or estimation methods (alternatives to OLS) which make this assumption more defendable. This could be the inclusion of additional explanatory variables (leading to multivariate regression analysis) or the application of alternative estimation methods (like instrumental variables estimation).
