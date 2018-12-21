@@ -4,7 +4,6 @@ author: "Ralf Becker"
 date: "29 November 2018"
 output:
   html_document:
-    self_contained: no
     keep_md: yes
 ---
 
@@ -94,7 +93,7 @@ If you look at the dataframe itself (either `view(wb_data)` or double click on t
 
 Let's look at a couple of graphical representations of our data. For instance we may be interested in figuring out whether life satisfaction (1 (dissatisfied) to 10 (satisfied)) and self-reported health are related to each other. We shall look at this on the basis of data aggregated for country-waves.
 
-```{r}
+```{r scatter_HvLS}
 table2 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
             summarise(Avg_LifeSatis = mean(A170),Avg_Health = mean(A009))     # summarises each group by calculating obs
             
@@ -106,7 +105,7 @@ We can see a clear positive relation between the two variables.
 
 Let's see whether we can see a similarly clear relationship between life satisfaction and respondent's attitude towards work (`C041` - "Work should come first even if it means less spare time, 1 = Strongly Agree, 5 = Strongly Disagree"). What would you expect to see?
 
-```{r}
+```{r scatter_WFvLS}
 table2 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
             summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))    # summarises each group by calculating obs
 
@@ -117,7 +116,7 @@ ggplot(table2,aes( Avg_WorkFirst, Avg_LifeSatis,colour=S002EVS)) +
 
 The relationship is less clear. Recall that small values for the "Work First" questions relate to the countries where, on average, respondents agreed more strongly with the statement!
 
-```{r}
+```{r scatter_cLSWFvMedInc}
 table3 <- wb_data %>% filter(S002EVS == "2008-2010") %>% 
             group_by(S003) %>% # groups by Country
             summarise(cor_LS_WF = cor(A170,C041,use = "pairwise.complete.obs"),
@@ -223,7 +222,7 @@ names(d_sel)
 
 Let's create a very basic map of Europe (`map`) and then one which looks a little nicer and has the country color-filled depending on the `gdpPercap` variable (`map2`). For more guidance look at the exc exellent (Chapter 8 of Geocomputing with R by Lovelace et al.)[https://geocompr.robinlovelace.net/adv-map.html]
 
-```{r}
+```{r map1}
 map1 <- tm_shape(d_sel) +  # basic map
   tm_borders()             # adds borders 
 
@@ -251,8 +250,7 @@ d_sel_merged <- merge(x = d_sel,y = table2_map,by.x = "name_long",by.y="S003") #
 
 Now we merely have to go back and recreate maps. As we still have data of all waves in this data structure we will first filter out the last wave.
 
-```{r}
-
+```{r map2}
 d_sel_2018 <- d_sel_merged %>% filter(S002EVS == "2008-2010")
 
 map1 <- tm_shape(d_sel_2018) +
@@ -361,7 +359,7 @@ for (i in seq(2,n_countries)){
 
 This leaves us with (46*46-46)/2=1035 hypothesis tests. All of which of a null hypothesis which we know to be true (population means are identical). Let's see how many of these hypothesis tests delivered p-values which are smaller than 10%.
 
-```{r}
+```{r HypTest1}
 tre <- (save_pvalue<0.1)   # value of TRUE if pvalue < 0.1
 
 cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
@@ -379,7 +377,7 @@ You may wonder then why we do not use a threshold as small as possible, after al
 
 Let's return to the Life Satisfaction data and repeat the above calculations.
 
-```{r}
+```{r HypTest2}
 save_pvalue <- matrix(NA,n_countries,n_countries)
 
 for (i in seq(2,n_countries)){
@@ -481,7 +479,7 @@ stargazer(mod1, type="text")
 
 Here you see that $\widehat{\beta}=0.235$. What does this mean? As the income increases by one unit (here that represents an increase of Euro 1,000) we should expect that Life Satisfaction increases by 0.235 units. What is the interpretation for $\widehat{\alpha}=6.452$? For someone with 0 income we should expect the Life Satifaction to be 7.119. Let's present a graphical representation.
 
-```{r}
+```{r RegPlot1}
 ggplot(test_data, aes(x=X047D, y=A170, colour = S003)) +
     geom_jitter(width=0.2) +    # Use jitter rather than point so we can see indiv obs
     geom_abline(intercept = mod1$coefficients[1], slope = mod1$coefficients[2])+

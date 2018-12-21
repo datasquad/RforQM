@@ -254,7 +254,7 @@ ggplot(table2,aes(Avg_Health,Avg_LifeSatis, colour=S002EVS)) +
 ## Warning: Removed 24 rows containing missing values (geom_point).
 ```
 
-![](Data_Intro_2_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](Data_Intro_2_files/figure-html/scatter_HvLS-1.png)<!-- -->
 We can see a clear positive relation between the two variables.
 
 Let's see whether we can see a similarly clear relationship between life satisfaction and respondent's attitude towards work (`C041` - "Work should come first even if it means less spare time, 1 = Strongly Agree, 5 = Strongly Disagree"). What would you expect to see?
@@ -273,7 +273,7 @@ ggplot(table2,aes( Avg_WorkFirst, Avg_LifeSatis,colour=S002EVS)) +
 ## Warning: Removed 44 rows containing missing values (geom_point).
 ```
 
-![](Data_Intro_2_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](Data_Intro_2_files/figure-html/scatter_WFvLS-1.png)<!-- -->
 
 The relationship is less clear. Recall that small values for the "Work First" questions relate to the countries where, on average, respondents agreed more strongly with the statement!
 
@@ -290,7 +290,7 @@ ggplot(table3,aes( cor_LS_WF, med_income)) +
   ggtitle("Corr(Life Satisfaction, Work First) v Median Income")
 ```
 
-![](Data_Intro_2_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](Data_Intro_2_files/figure-html/scatter_cLSWFvMedInc-1.png)<!-- -->
 
 There isn't any really obvious relation between these correlations and the median income.
 
@@ -500,7 +500,7 @@ map2 <- tm_shape(d_sel) +
 tmap_arrange(map1, map2)   # this arranges the maps next to each other
 ```
 
-![](Data_Intro_2_files/figure-html/unnamed-chunk-20-1.png)<!-- -->
+![](Data_Intro_2_files/figure-html/map1-1.png)<!-- -->
 
 Now, all we need to do, is add the variable which we want to visualise with a map to the `d_sel` dataframe. For `table2` above we calculated the average life satisfaction and the the average attitude to the "Work First" question. Let's repeat these calculations (copy and past the code here and replace `wb_data` with `wb_data_map`). The only reason we got to do this again is because of the country name inconsistency which we fixed in `wb_data_map`.
 
@@ -538,7 +538,7 @@ map2 <- tm_shape(d_sel_2018) +
 tmap_arrange(map1, map2)   # this arranges the maps next to each other
 ```
 
-![](Data_Intro_2_files/figure-html/unnamed-chunk-23-1.png)<!-- -->
+![](Data_Intro_2_files/figure-html/map2-1.png)<!-- -->
 
 Note that smaller values for the "Work First" question indicate stronger agreement with the statement "Work should come first even if it means less spare time". So it does appear as if, broadly, people are heappier where they also think that work is more important. But, be careful, no causal interpretation can be attributed to this.
 
@@ -672,7 +672,7 @@ cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
 image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
 ```
 
-![](Data_Intro_2_files/figure-html/unnamed-chunk-30-1.png)<!-- -->
+![](Data_Intro_2_files/figure-html/HypTest1-1.png)<!-- -->
 
 ```r
 table(tre)
@@ -681,10 +681,10 @@ table(tre)
 ```
 ## tre
 ## FALSE  TRUE 
-##   852   183
+##   894   141
 ```
 
-The green blots on the graph indicate rejections of the null hypothesis. As you can see, 183 of the 1035 tests produced a test statistic with a p-value smaller than 10%. So for these we may be tempted to say that we reject the null hypothesis. So here we have arrived at the point where we can perhaps understand what it means to perform a hypothesis test. Even if the null hypothesis is correct (which in reality we will of course not know) we may actually reject the null hypothesis. We call this making a Type 1 error. Vice versa, if in truth the null hypothesis is incorrect we may come to the conclusion not to reject the null hypothesis (this is what is called a Type 2 error).
+The green blots on the graph indicate rejections of the null hypothesis. As you can see, 141 of the 1035 tests produced a test statistic with a p-value smaller than 10%. So for these we may be tempted to say that we reject the null hypothesis. So here we have arrived at the point where we can perhaps understand what it means to perform a hypothesis test. Even if the null hypothesis is correct (which in reality we will of course not know) we may actually reject the null hypothesis. We call this making a Type 1 error. Vice versa, if in truth the null hypothesis is incorrect we may come to the conclusion not to reject the null hypothesis (this is what is called a Type 2 error).
 
 As you can see here we have made a Type 1 error in about 10% of cases. This is no accident. If we had checked what percentage of these tests (remember for all the null hypothesis is true) had p-values < 5% we would have found approximately 5% of tests that had p-values smaller than 5%. In fact this is what a hypothesis test is designed to do. So this gives us now a clue of the role of this threshold against which we compare the p-value. 
 
@@ -718,7 +718,7 @@ cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
 image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
 ```
 
-![](Data_Intro_2_files/figure-html/unnamed-chunk-31-1.png)<!-- -->
+![](Data_Intro_2_files/figure-html/HypTest2-1.png)<!-- -->
 
 ```r
 table(tre)
@@ -899,7 +899,7 @@ ggplot(test_data, aes(x=X047D, y=A170, colour = S003)) +
     ggtitle("Income v Life Satisfaction, Britain and Sweden")
 ```
 
-![](Data_Intro_2_files/figure-html/unnamed-chunk-39-1.png)<!-- -->
+![](Data_Intro_2_files/figure-html/RegPlot1-1.png)<!-- -->
 
 Note a few tweaks in the graphical representation. We use `geom_jitter` rather than `geom_point`. This adds some random noise to the data so that we can see the individual observation (replace `geom_jitter(width=0.2)` with `geom_point()` to see the difference it makes). `geom_abline` adds a line. We specify the intercept and slope from our regression model (`mod1$coefficients[1]` and `mod1$coefficients[2]`). `ggtitle` adds the title to the graph.
 
