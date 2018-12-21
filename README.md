@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## Welcome to R Projects for Quantitative Methods
 
-You can use the [editor on GitHub](https://github.com/datasquad/RforQM/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This site will link to small empirical projects which are designed to support students of Econometrics and Quantitative Methods at The University of Manchester. These projects are written for users of R.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Some basic introductory material for those who want to learn R can be found on the [ECLR Wiki](http://eclr.humanities.manchester.ac.uk/index.php/R). The projects on this page are meant to support students who study substantial econometric and statistical techniques. The discussion of these techniques is fairly rudimentary here and we assume that you supplement your studies with teh respective material.
 
-### Markdown
+Some bigger empirical projects are provided on the [Doing Economics Section](https://www.core-econ.org/doing-economics/) or the [CORE-ECON Project](https://www.core-econ.org/).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Simple Data Handling and Data Analysis
 
-```markdown
-Syntax highlighted code block
+These projects give some exposure to basic data-handling and fairly straightforward statistical analysis.
 
-# Nothing to see yet
-## Still nothing to see
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/datasquad/RforQM/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* (Reinhard and Rogoff Controversy)[https://github.com/datasquad/RforQM/blob/master/Data_Introduction/Data_Intro.html]
+* (Wellbeing Data)[https://github.com/datasquad/RforQM/blob/master/Data_Introduction/Data_Intro_2.html]
