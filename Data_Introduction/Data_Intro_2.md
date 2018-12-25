@@ -4,7 +4,6 @@ author: "Ralf Becker"
 date: "29 November 2018"
 output:
   html_document:
-    self_contained: no
     keep_md: yes
 ---
 
@@ -305,7 +304,18 @@ We start by uploading a few libraries we will need to work with maps. We follow 
 
 ```r
 library(tmap)   # mapping package
+```
+
+```
+## Warning: package 'tmap' was built under R version 3.5.1
+```
+
+```r
 library(sf)     # required to deal with shape files
+```
+
+```
+## Warning: package 'sf' was built under R version 3.5.1
 ```
 
 ```
@@ -314,6 +324,10 @@ library(sf)     # required to deal with shape files
 
 ```r
 library(spData) # delivers shape files
+```
+
+```
+## Warning: package 'spData' was built under R version 3.5.1
 ```
 
 ```
@@ -681,10 +695,10 @@ table(tre)
 ```
 ## tre
 ## FALSE  TRUE 
-##   894   141
+##   985    50
 ```
 
-The green blots on the graph indicate rejections of the null hypothesis. As you can see, 141 of the 1035 tests produced a test statistic with a p-value smaller than 10%. So for these we may be tempted to say that we reject the null hypothesis. So here we have arrived at the point where we can perhaps understand what it means to perform a hypothesis test. Even if the null hypothesis is correct (which in reality we will of course not know) we may actually reject the null hypothesis. We call this making a Type 1 error. Vice versa, if in truth the null hypothesis is incorrect we may come to the conclusion not to reject the null hypothesis (this is what is called a Type 2 error).
+The green blots on the graph indicate rejections of the null hypothesis. As you can see, 50 of the 1035 tests produced a test statistic with a p-value smaller than 10%. So for these we may be tempted to say that we reject the null hypothesis. So here we have arrived at the point where we can perhaps understand what it means to perform a hypothesis test. Even if the null hypothesis is correct (which in reality we will of course not know) we may actually reject the null hypothesis. We call this making a Type 1 error. Vice versa, if in truth the null hypothesis is incorrect we may come to the conclusion not to reject the null hypothesis (this is what is called a Type 2 error).
 
 As you can see here we have made a Type 1 error in about 10% of cases. This is no accident. If we had checked what percentage of these tests (remember for all the null hypothesis is true) had p-values < 5% we would have found approximately 5% of tests that had p-values smaller than 5%. In fact this is what a hypothesis test is designed to do. So this gives us now a clue of the role of this threshold against which we compare the p-value. 
 

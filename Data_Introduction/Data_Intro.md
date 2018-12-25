@@ -4,7 +4,6 @@ author: "Ralf Becker"
 date: "29 November 2018"
 output:
   html_document:
-    self_contained: no
     keep_md: yes
 ---
 
@@ -25,24 +24,35 @@ library(tidyverse)    # for almost all data handling tasks
 ```
 
 ```
-## -- Attaching packages ------------------------------------------------------------------------------------------------------------------ tidyverse 1.2.1 --
+## Warning: package 'tidyverse' was built under R version 3.5.1
 ```
 
 ```
-## v ggplot2 3.0.0     v purrr   0.2.5
-## v tibble  1.4.2     v dplyr   0.7.6
-## v tidyr   0.8.1     v stringr 1.3.1
+## -- Attaching packages -------------------------------------------------------------------------------- tidyverse 1.2.1 --
+```
+
+```
+## v ggplot2 2.2.1     v purrr   0.2.4
+## v tibble  1.4.2     v dplyr   0.7.4
+## v tidyr   0.8.0     v stringr 1.3.0
 ## v readr   1.1.1     v forcats 0.3.0
 ```
 
 ```
-## -- Conflicts --------------------------------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+## -- Conflicts ----------------------------------------------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ```
 
 ```r
 library(readxl)       # to import Excel data
+```
+
+```
+## Warning: package 'readxl' was built under R version 3.5.1
+```
+
+```r
 library(ggplot2)      # to produce nice graphiscs
 library(stargazer)    # to produce nice results tables
 ```
@@ -66,6 +76,27 @@ library(stargazer)    # to produce nice results tables
 Here we use an example which, at the time, made a lot of waves.  Carmen Reinhart and Kenneth Rogoff (2010) wrote work that attempted to examine the [relationship between Debt to GDP levels and GDP growth](https://scholar.harvard.edu/files/rogoff/files/growth_in_time_debt_aer.pdf). Their general conclusion was that, as long as the debt to GDP ration does not exceed 90% there seems to be no clear relationship between the two. However, countries eunning higher debt to GDP ratios are paying a sizeable growth penalty.
 
 The empirical work of Reinhard and Rogoff was critised on three aspects by Thomas Herndon, Michael Ash and Robert Pollin. This work was published in the [Cambridge Journal of Economics in 2014](https://academic.oup.com/cje/article-abstract/38/2/257/1714018?redirectedFrom=fulltext) and previous to that as a working paper. The [working paper's website](https://www.peri.umass.edu/publication/item/526-does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff) also contains all the relevant data and code.
+
+# How to learn R
+
+Learning any programming language, and yes, that is what R essentially is, can only be done by doing. Here we are not exposing you to a bottom-up introduction of R, but we are immediately exposing you to the exciting possibilities of R and the beauty and excitement of working with real-life data. As we do so we expose you to the basic tools of working with data in R and help you to learn these.
+
+However, you have to accept from the outset that this is going to be a bumby raod! The most crucial skill you will have to embrace and develop is that of finding solutions to prolems. You will, as any programmer, yes, even the most experienced ones, search the internet for solutions to your problem. Don't think that you can remember all the important commands from the top of your mind.
+
+Whenever we introduce a new R functionality we will briefly explain it, but importantly we will also give you links to further resources where you can find more usage examples and details. Also do not frget to use the build-in help function in R (type `?FUNCTIONNAME` into the Console and press Enter). This is important as it is the help that will be available offline as well.
+
+# R programming concepts used
+
+The following R programming concepts were used in this document. The links lead to pages that provide help with these issues.
+
+* use of packages/libraries: [ECLR](http://eclr.humanities.manchester.ac.uk/index.php/R_Packages)
+* importing of data: [csv.read](http://eclr.humanities.manchester.ac.uk/index.php/R_Data), [read_excel](https://www.datacamp.com/community/tutorials/r-tutorial-read-excel-into-r)
+* Summarising data: [descriptive statistics](http://eclr.humanities.manchester.ac.uk/index.php/R_Analysis#Summary_Statistics_-_Take_1)
+* Plotting data using ggplot: [Cookbook for R](http://www.cookbook-r.com/Graphs/), [free 1st chapter of datacamp interactive tutorial](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
+* running regressions: [ECLR](http://eclr.humanities.manchester.ac.uk/index.php/R_Regression)
+* using the [stargazer package](https://www.jakeruss.com/cheatsheets/stargazer/) for summary statistics and regresison output 
+* using the tidverse to produce [subsets and groupings of data and summarise these](http://eclr.humanities.manchester.ac.uk/index.php/R_AnalysisTidy)
+* hypothesis tests on sample means, using the [t.test function](https://www.statmethods.net/stats/ttest.html)
 
 # Importing Data
 
@@ -183,7 +214,7 @@ ggplot(RRData,aes(x=debtgdp,y=dRGDP)) +
   geom_smooth(method = "lm", se = FALSE)  # this adds the linear line of best fit
 ```
 
-![](Data_Intro_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](Data_Intro_files/figure-html/scatter_DEvGDP-1.png)<!-- -->
 
 Note a few points about how this graph is being called. `ggplot(RRData,aes(debtgdp,dRGDP))` Sets up the graph. The first input (`RRData`) tells R which data to use. In the `aes()` section (`aes` for aesthetics) we determine which variable should appear on the x-axis (`x=debtgdp`) and which is to go onto the y-axis (`y=dRGDP`). At this stage we havn't actually produced a graph yet, we just did the ground work. Then we add the graph we want, here a scatterplot, in R `geom_point()`. As you can see, the first line and the second line are linked with a `+`. This has to come at the end of the first line so that R knows that it should expect more information. The last line (again attached to the previous line via a `+`)  `geom_smooth(method = "lm", se = FALSE)` adds the regression line (`lm` = linear model). Try what happens if you take out `, se = FALSE`.
 
@@ -254,7 +285,7 @@ ggplot(tempdata,aes(Year,debtgdp,color=Country)) +
   geom_line()     # this produces the line plot
 ```
 
-![](Data_Intro_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](Data_Intro_files/figure-html/lineplot-1.png)<!-- -->
 
 ```r
 tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
@@ -262,7 +293,7 @@ ggplot(tempdata,aes(Year,dRGDP,color=Country)) +
   geom_line(size=1)     # this produces the line plot
 ```
 
-![](Data_Intro_files/figure-html/unnamed-chunk-11-2.png)<!-- -->
+![](Data_Intro_files/figure-html/lineplot-2.png)<!-- -->
 
 You can clearly see that the `debtgdp` data, from year to year, are dependent. Also, the `dRGDP` plot reveals that there is a fair bit of correlation between the growth rates in economies.
 
@@ -277,7 +308,7 @@ ggplot(tempdata,aes(debtgdp,dRGDP,color=Country)) +
   geom_point()     # this produces the scatter plot
 ```
 
-![](Data_Intro_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](Data_Intro_files/figure-html/scatter_sel-1.png)<!-- -->
 
 From here you can see that different countries appear to have quite different patterns.
 
@@ -477,23 +508,3 @@ The main difference in this new scheme is that not each country-year receives th
 
 This may seem totally arbitrary and indeed the justification provided by Reinhard and Rogoff seems to be, at best, deficient. Having said that, it is not unreasonable to think carefully about the weighting> previously we saw that there is a lot of persistence in the data. This may be a reason for perhaps not weighting every year as its own, equally weighted, observation.
 
-# How to learn R
-
-Learning any programming language, and yes, that is what R essentially is, can only be done by doing. Here we are not exposing you to a bottom-up introduction of R, but we are immediately exposing you to the exciting possibilities of R and the beauty and excitement of working with real-life data. As we do so we expose you to the basic tools of working with data in R and help you to learn these.
-
-However, you have to accept from the outset that this is going to be a bumby raod! The most crucial skill you will have to embrace and develop is that of finding solutions to prolems. You will, as any programmer, yes, even the most experienced ones, search the internet for solutions to your problem. Don't think that you can remember all the important commands from the top of your mind.
-
-Whenever we introduce a new R functionality we will briefly explain it, but importantly we will also give you links to further resources where you can find more usage examples and details. Also do not frget to use the build-in help function in R (type `?FUNCTIONNAME` into the Console and press Enter). This is important as it is the help that will be available offline as well.
-
-# R programming concepts used
-
-The following R programming concepts were used in this document. The links lead to pages that provide help with these issues.
-
-* use of packages/libraries: [ECLR](http://eclr.humanities.manchester.ac.uk/index.php/R_Packages)
-* importing of data: [csv.read](http://eclr.humanities.manchester.ac.uk/index.php/R_Data), [read_excel](https://www.datacamp.com/community/tutorials/r-tutorial-read-excel-into-r)
-* Summarising data: [descriptive statistics](http://eclr.humanities.manchester.ac.uk/index.php/R_Analysis#Summary_Statistics_-_Take_1)
-* Plotting data using ggplot: [Cookbook for R](http://www.cookbook-r.com/Graphs/), [free 1st chapter of datacamp interactive tutorial](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
-* running regressions: [ECLR](http://eclr.humanities.manchester.ac.uk/index.php/R_Regression)
-* using the [stargazer package](https://www.jakeruss.com/cheatsheets/stargazer/) for summary statistics and regresison output 
-* using the tidverse to produce [subsets and groupings of data and summarise these](http://eclr.humanities.manchester.ac.uk/index.php/R_AnalysisTidy)
-* hypothesis tests on sample means, using the [t.test function](https://www.statmethods.net/stats/ttest.html)
