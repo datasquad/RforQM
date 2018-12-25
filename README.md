@@ -10,5 +10,5 @@ Some larger empirical projects are provided on the [Doing Economics Section](htt
 
 These projects give some exposure to basic data-handling and fairly straightforward statistical analysis.
 
-* [Reinhard and Rogoff Controversy](https://github.com/datasquad/RforQM/blob/master/Data_Introduction/Data_Intro.md)
-* [Wellbeing Data](https://github.com/datasquad/RforQM/blob/master/Data_Introduction/Data_Intro_2.md)
+* [Reinhard and Rogoff Controversy](https://github.com/datasquad/RforQM/blob/master/Data_Introduction/Data_Intro.html)
+* [Wellbeing Data](https://github.com/datasquad/RforQM/blob/master/Data_Introduction/Data_Intro_2.html)
