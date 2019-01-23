@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## What is this course unit about?
 
 \begin{itemize}
-  \item Help you implement and interpret the main inference techniques used in Economics
+  \item Help you implement and interpret the main estimation and inference techniques used in Economics
   \item Focus on:
       \begin{itemize}
         \item causal inference
@@ -35,7 +35,7 @@ You will be able to:
   \item Confidently apply regression analysis in R
   \item Apply more advanced causal inference techniques in R
   \item Find coding help for any new challenges in R
-  \item Identify inference appropriate for the occasion
+  \item Identify inference appropriate for the model being estimated
   \item Discuss strengths and weaknesses of particular empirical applications
   \item Interpret empirical results (with due caution!)
 \end{itemize}
@@ -120,7 +120,7 @@ Average GDP growth rates (High Income countries - 1946 to 2009):
 
 \begin{tabular}{|c|c|c|c|c|}
 	\hline 
-	Debt Category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	Debt/GDP category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
 	\hline 
 	Avg Growth Rate (RR) &  \textcolor{student}{4.09\%} & \textcolor{student}{2.87\%}  &  \textcolor{student}{3.40\%} & \textcolor{student}{-0.02\%}  \\ 
 	\hline 
@@ -130,20 +130,20 @@ Average GDP growth rates (High Income countries - 1946 to 2009):
 ## Why Data Matter
 
 \begin{itemize}
-  \item Reinhard and Rogoff seem to suggest that there is a level of debt (debt/GDP > 90\%) beyond which higher debt levels will significantly reduce growth.
+  \item Reinhard and Rogoff seem to suggest that there is a level of debt (debt/GDP > 90\%) beyond which higher debt levels will significantly reduce growth. \textcolor{student}{Caution: Debt <> Deficit}
   \item While they often provided caveats in their arguments, their results were referred to when austerity policies were justified.\\
-  For example George Osborn:\\
+  For example George Osborne:\\
   here on Channel 4: (https://www.channel4.com/news/george-osborne-defends-austerity-plan)\\
   here in a Conference Speech: (https://conservative-speeches.sayit.mysociety.org/speech/601526)
 
 \end{itemize}
 
 
-Average GDP growth rates (High Income countries - 1946 to 2009):
+Average GDP growth rates (High Income countries - 1946 to 2009, RR - Reinhard and Rogoff, HAP - Herndon, Ash and Pollin):
 
 \begin{tabular}{|c|c|c|c|c|}
 	\hline 
-	Debt Category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	Debt/GDP Category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
 	\hline 
 	Avg Growth Rate (RR) &  4.09\% & 2.87\%  &  3.40\% & -0.02\%  \\ 
 		\hline 
@@ -157,7 +157,7 @@ Some summaries are available here
 
 \begin{tabular}{cl|}
 	\hline 
-	The New Yorker &  \href{https://www.newyorker.com/news/john-cassidy/the-reinhart-and-rogoff-controversy-a-summing-up}{The Reinhart and Rogoff Controversy: A Summing Up}\\ 
+	The New Yorker &  \href{https://www.newyorker.com/news/john-cassidy/the-reinhart-and-rogoff-controversy-a-summing-up}{The Reinhart and Rogoff Controversy: Summing Up}\\ 
 	The Economist & \href{https://www.economist.com/finance-and-economics/2013/04/20/the-90-question}{The 90\% question}  \\ 
 	Financial Times &  Interviews with Carmen Reinhard [\href{https://www.ft.com/video/1a4ad970-f9c7-34ba-b1ff-3769cb79d6ea}{1}, \href{https://www.ft.com/video/0d0fc983-8e6c-3d81-81cc-6aeed22e3e4a}{2}, \href{https://www.ft.com/video/b27b212e-a52c-383d-abd5-be89cb05da67}{3}, \href{https://www.ft.com/video/0d16f9ee-662f-3e10-b9ab-991386543230}{4}]  \\
 	\hline 
@@ -168,8 +168,8 @@ Important issues that arise from this
 \begin{itemize}
   \item Which way is the causality? Debt to Growth or Growth to Debt?\\
   Reinhard and Rogoff are suitably careful to not associate any direct causality from the summary statistics. 
-  \item But in thepolitical discourse such "subtleties" often go lost
-  \item Would different summary stats have changed the narrative?
+  \item But in the political discourse such "subtleties" often get lost
+  \item Would different summary statistics have changed the narrative?
 \end{itemize}
 
 ## The Plan for today
@@ -180,7 +180,7 @@ Important issues that arise from this
   \item Use this example to 
     \begin{itemize}
       \item introduce you to R
-      \item review some summary satistics
+      \item review some summary statistics
       \item review simple regression and its implementation
       \item introduce some basic visualisations
     \end{itemize}
@@ -264,13 +264,13 @@ Important issues that arise from this
 
 
 By following the above examples you make it easy for yourself and others to replicate your work.
-Replication of work is actually at the core of the Reinhard/Rogoff controversy!
+At the core of the Reinhard/Rogoff controversy was the ability of independent researchers to replicate their work!
 
 ## Prepare your code
 
 We start by uploading the extra packages we need in our code.
 
-The first time you need these packaes at a computer you may need to install these. Use the following code to do this
+The first time you need these packages at a computer you may need to install these. Use the following code to do this
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=FALSE}
 install.packages(c("readxl","tidyverse","ggplot2","stargazer"))
@@ -294,7 +294,7 @@ RRData <- read_excel("RRdata.xlsx")
 RRData <- as.data.frame(RRData) # forces data.frame structure
 ```
 
-and check some charecteristics of the data which are now stored in \texttt{RRData}:
+and check some characteristics of the data which are now stored in \texttt{RRData}:
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 str(RRData)  # prints some basic info on variables
@@ -304,23 +304,24 @@ str(RRData)  # prints some basic info on variables
 
 ## Variable types
 
-These are the basic data types.
+These are four basic data types.
 
 \begin{itemize}
   \item \texttt{character: "a", "swc"}
   \item \texttt{numeric: 2, 15.5}
   \item \texttt{integer: 2L (the L tells R to store this as an integer)}
   \item \texttt{logical: TRUE, FALSE}
-  \item \texttt{complex: 1+4i (complex numbers with real and imaginary parts)}
 \end{itemize}
 
-It is important that you know what data types variables have as some operations only work for particular datatypes. For instance we need to \texttt{num} or \texttt{int} for any mathematical operations.
-In our data.frame three variables ar e\texttt{num} and one is of \texttt{chr} type. 
-\texttt{logical} variables we will encounter frequently, they are very powerful.
+It is important that you know and understand differences between data types. Each variable has has a particular type and some operations only work for particular datatypes. For instance, we need \texttt{num} or \texttt{int} for any mathematical operations.
+
+In our data.frame three variables are \texttt{num} and one is of \texttt{chr} type. 
+
+We will encounter \texttt{logical} variables frequently. \textcolor{student}{they are very powerful}
 
 ## \texttt{factor} variables
 
-It will prove useful to change variables which are categorical variables (here \texttt{Country}) to \texttt{factor} variables.
+It is necessary to change categorical variables (here \texttt{Country}) to \texttt{factor} variables.
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 RRData$Country <- as.factor(RRData$Country)
@@ -370,18 +371,19 @@ p1
 The line in the previous plot is the line of best fit coming for a linear regression 
 
 \vskip -0.5cm
-\[rGDP_{it} = \alpha + \beta debtgdp_{it} + u_{it} ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
+\[rGDP = \alpha + \beta debtgdp + u ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
 \vskip -0.2cm
 
 \begin{itemize}
-  \item Here we have two subscripts as the data have a cross-section (\texttt{\textcolor{student}{i}}) and a time-series dimension (\texttt{\textcolor{student}{t}}).
-  \item The population model is defined by unknown parameters $\alpha$ and $\beta$ and the unknown error terms $u_{it}$. We will use sample data to obtain sample estimates of these parameters.
-  \item The error terms $u_{it}$ contain the effects of any omitted variables and reflect that any modelled relationship will only be an approximation. The $u_{it}$s are \textcolor{student}{random variables}
+  \item The population model is defined by unknown parameters $\alpha$ and $\beta$ and the unknown error terms $u$. We will use sample data to obtain sample estimates of these parameters.
+  \item The error terms $u$ contain the effects of any omitted variables and reflect that any modelled relationship will only be an approximation. The $u$ are \textcolor{student}{random variables}
 \end{itemize}
 
 \vskip -0.5cm
-\[ rGDP_{it} = \widehat{\alpha} + \widehat{\beta} debtgdp_{it} + \widehat{u}_{it} ~\text{(\textcolor{student}{Sample} ~~~~Model)}\]
+\[ rGDP_{it} = \widehat{\alpha} + \widehat{\beta} ~ debtgdp_{it} + \widehat{u}_{it} ~\text{(\textcolor{student}{Estimated Sample} ~~~~Model)}\]
 \vskip -0.2cm
+
+Here we have two subscripts as the data have a cross-section (\texttt{\textcolor{student}{i}}) and a time-series dimension (\texttt{\textcolor{student}{t}}).
 
 The regression line in the previous figure is represented by 
 \vskip -0.5cm
@@ -393,7 +395,7 @@ Regression analysis is the core technique used in Econometrics. It is based on c
 
 How to estimate parameters (get $\widehat{\alpha}$ and $\widehat{\beta}$) using the available sample of data?
 
-## Ordinary Least Squares - Simple Regression
+## Ordinary Least Squares and the Simple Regression Model
 
 \footnotesize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
@@ -421,7 +423,7 @@ How were $\widehat{\beta}$ and $\widehat{\alpha}$ calculated?
 
 How to interpret $\widehat{\beta}=-0.018$?
 
-\textcolor{student}{An increase of one unit in \texttt{debtgdp} (=1\%) is related to a decrease of GDP growth of 0.018 units (=0.018\%)}
+\textcolor{student}{An increase of one unit in \texttt{debtgdp} (=1\% point) is related to a decrease of GDP growth of 0.018 units (=0.018\% points - pp)}
 
 Have we established that higher debt levels \textbf{cause} lower GDP growth?
 
