@@ -6,7 +6,7 @@ date: "January 2019"
 output: 
   beamer_presentation:
     includes:
-      in_header: ../latex_template.tex
+     in_header: ../latex_template.tex
 #     in_header: ../latex_student.tex  # use for student version
 ---
 
@@ -61,7 +61,12 @@ To learn in this unit you need to:
 
 ## Assessment Structure and feedback
 
-Details need to be added
+\begin{itemize}
+  \item Online test (on the use of R) - 10\%
+  \item End-of-Term exam (MC and short answer questions) - 50\%
+  \item	Group coursework - 40\% (see extra info)
+
+\end{itemize}
 
 
 ## Aim for today
@@ -389,13 +394,13 @@ The regression line in the previous figure is represented by
 \vskip -0.5cm
 \[ \widehat{rGDP}_{it} = \widehat{\alpha} + \widehat{\beta} debtgdp_{it} ~~~\text{(~~~\textcolor{student}{Regression Line}~~~~~~)}\]
 
-## Ordinary Least Squares - Simple Regression
+## Simple Regression Model and OLS
 
-Regression analysis is the core technique used in Econometrics. It is based on certain assumptions about the \emph{Population Model} and the error terms $u_{it}$ (more on this in the next few weeks).
+Regression analysis is the core technique used in Econometrics. It is based on certain assumptions about the \emph{Population Model} and the error terms $u$ (more on this in the next few weeks).
 
-How to estimate parameters (get $\widehat{\alpha}$ and $\widehat{\beta}$) using the available sample of data?
+How to estimate parameters (get $\widehat{\alpha}$ and $\widehat{\beta}$) using the available sample of data? This is typically done by Ordinary Least Squares (OLS).
 
-## Ordinary Least Squares and the Simple Regression Model
+## Simple Regression Model and OLS
 
 \footnotesize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
@@ -416,7 +421,7 @@ stargazer(mod1,type="text")
 How were $\widehat{\beta}$ and $\widehat{\alpha}$ calculated?
 
 \begin{eqnarray*}
-  \widehat{\beta}&=&\dfrac{Cov(dRGDP_{it},debtgdp_{it})}{Var(debtgdp_{it})}\\
+  \widehat{\beta}&=&\dfrac{\widehat{Cov}(dRGDP_{it},debtgdp_{it})}{\widehat{Var}(debtgdp_{it})}\\
   \widehat{\alpha}&=&\overline{dRGDP}_{it}-\widehat{\beta}*\overline{debtgdp}_{it}
 \end{eqnarray*}
 

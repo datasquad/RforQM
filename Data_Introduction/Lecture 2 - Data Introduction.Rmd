@@ -6,8 +6,8 @@ date: "January 2019"
 output: 
   beamer_presentation:
     includes:
-      in_header: ../latex_template.tex
-#     in_header: ../latex_student.tex  # use for student version
+#      in_header: ../latex_template.tex
+      in_header: ../latex_student.tex  # use for student version
 ---
 
 ```{r setup, include=FALSE}
@@ -603,7 +603,8 @@ In sample $Corr(Inc_{i},\widehat{u}_{i})=0$ (is \textcolor{red}{ALWAYS TRUE BY C
 
 $LifeSatis = \alpha + \beta~ Inc + u$ 
 
-**What happens if you call** \\
+**What happens if you call** 
+
 `mod1 <- lm(A170~X047D,data=test_data)`?
 
 You will recall the following from Year 1 stats:
