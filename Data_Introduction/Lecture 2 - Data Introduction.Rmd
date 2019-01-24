@@ -475,7 +475,7 @@ Tool on which most of the work in this unit is based
 
 * Allows to quantify relationshis between \textcolor{blue}{2 or more} variables
 * It can be used to implement hypothesis tests
-* Per-se it does \textcolor{red}{not deliver causal relationships}!
+* However it does \textcolor{red}{not necessarily deliver causal relationships}!
 
 It is very easy to compute for everyone! Results will often have to be interpretated very carefully.
 
@@ -510,7 +510,7 @@ stargazer(mod1, type="text")
 ```
 \normalsize
 
-The estimate for the constant, $\widehat{\alpha}$, is merely the sample mean.
+The estimate for the constant, $\widehat{\alpha}$, is the sample mean.
 
 ## Regression Analysis - Example 1
 
@@ -530,7 +530,7 @@ $t-test =\widehat{\alpha}/se_{\widehat{\alpha}}$ \textcolor{student}{$=7.530/0.0
 
 ## Regression Analysis - Example 2
 
-We now estimate a regression model which includes a constant and the household's monthly income (in 1,000 Euros) as an explanatory variable ($Inc_i$ or variable `x047D` in our dataset).
+We now estimate a regression model which includes a constant and the household's monthly income (in 1,000 Euros) as an explanatory variable ($Inc_i$ or variable `X047D` in our dataset).
 
 $LifeSatis_{i} = \alpha + \beta~ Inc_{i} + u_{i}$
 \footnotesize
@@ -539,19 +539,19 @@ mod1 <- lm(A170~X047D,data=test_data)
 ```
 \normalsize
 
-We will look at the interpretation of the estimate of $\widehat{\beta}$.
+How do we interprete the estimate of $\widehat{\beta}$?
 
 ## Regression Analysis - Example 2
 
-\scriptsize
+
+\tiny
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 stargazer(mod1, type="text")
 ```
-\vskip -1cm
-
+\normalsize
 As the income increases by one unit (increase of Euro 1,000) we should expect that Life Satisfaction increases by 0.184 units.
 
-\normalsize
+
 
 ## Regression Analysis - Example 2
 
@@ -581,13 +581,13 @@ In many ways 2) is the more insightful one.
 
 ## Regression Analysis - What does it actually do?
 
-$LifeSatis_{i} = \alpha + \beta~ Inc_{i} + u_{i}$
+$LifeSatis = \alpha + \beta~ Inc + u$
 
 **Assumptions**
 
-One of the regression assumptions is that the (unobserved) error terms $u_{i}$ are uncorrelated with the explanatory variable(s), here $Inc_{i}$. Then we call \textcolor{orange}{$Inc_i$ exogenous}.
+One of the regression assumptions is that the (unobserved) error terms $u$ are uncorrelated with the explanatory variable(s), here $Inc$. Then we call \textcolor{orange}{$Inc$ exogenous}.
 
-This implies that $Cov(Inc_{i},u_{i})=Corr(Inc_{i},u_{i})=0$
+This implies that $Cov(Inc,u)=Corr(Inc,u)=0$
 
 **In sample**
 
@@ -595,26 +595,59 @@ $LifeSatis_{i} =$ \textcolor{blue}{$~~~\widehat{\alpha} + \widehat{\beta}~ Inc_{
 
 Where \textcolor{blue}{$\widehat{\alpha} + \widehat{\beta}~ Inc_{i}$} is the regression-line. 
 
-In sample $Corr(Inc_{i},\widehat{u}_{i})=0$ ALWAYS.
+In sample $Corr(Inc_{i},\widehat{u}_{i})=0$ (is \textcolor{red}{ALWAYS TRUE BY CONSTRUCTION}).
+
+
+
+## Regression Analysis - Underneath the hood?
+
+$LifeSatis = \alpha + \beta~ Inc + u$ 
+
+**What happens if you call** \\
+`mod1 <- lm(A170~X047D,data=test_data)`?
+
+You will recall the following from Year 1 stats:
+\begin{eqnarray*}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(LifeSatis,Inc)}{\widehat{Var}(Inc)}\\
+\hat{\alpha} &=& \overline{LifeSatis} - \hat{\beta} ~ \overline{Inc}
+\end{eqnarray*}
+
+The software will then replace $\widehat{Cov}(LifeSatis,Inc)$ and $\widehat{Var}(Inc)$ with their sample estimates to obtain $\hat{\beta}$ and then use that and the two sample means to get $\hat{\alpha}$.
+
+## Regression Analysis - Underneath the hood?
+
+Need to recognise that in a sample $\hat{\beta}$ and $\hat{\alpha}$ are really \textcolor{student}{random variables}.
+
+\begin{eqnarray*}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(LifeSatis,Inc)}{\widehat{Var}(Inc)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ Inc + u,Inc)}{\widehat{Var}(Inc)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha,Inc) + \beta \widehat{Cov}(Inc,Inc) + \widehat{Cov}(u,Inc)}{\widehat{Var}(Inc)}\\
+          &=& \beta ~\dfrac{\widehat{Var}(Inc)}{\widehat{Var}(Inc)}  + \dfrac{\widehat{Cov}(u,Inc)}{\widehat{Var}(Inc)}= \beta  + \dfrac{\widehat{Cov}(u,Inc)}{\widehat{Var}(Inc)}
+\end{eqnarray*}
+
+So $\hat{\beta}$ is a function of the random term $u$ and hence is itself a random variable.
+Once $\widehat{Cov}(LifeSatis,Inc)$ and $\widehat{Var}(Inc)$ are replaced by sample estimates we get \textcolor{student}{~ONE~} value which is draw from a \textcolor{student}{random distribution.}
 
 ## Regression Analysis - The Exogeneity Assumption
 
-Why is **assuming** $Corr(Inc_{i},u_{i})=0$ important when, in sample, we are guaranteed $Corr(Inc_{i},\widehat{u}_{i})=0$?
+Why is **assuming** $Cov(Inc,u)=0$ important when, in sample, we are guaranteed $Cov(Inc_{i},\widehat{u}_{i})=0$?
 
-If $Corr(Inc_{i},u_{i})=0$ is **not true**, then
+If $Cov(Inc_{i},u_{i})=0$ is **not true**, then
 
-1) Estimating the model by OLS \textcolor{student}{imposes a relationship which is not found in the data}
-2) As a result, the estimated coefficients  \textcolor{blue}{$\widehat{\alpha}$ and $\widehat{\beta}$} are \textcolor{student}{biased (on average incorrect if we had many samples)}
+1) Estimating the model by OLS \textcolor{student}{imposes an incorrect relationship}
+2) The estimated coefficients  \textcolor{blue}{$\widehat{\alpha}$ and $\widehat{\beta}$} are \textcolor{student}{biased (on average incorrect if we had many samples)}
 3) The regression model has no \textcolor{student}{causal interpretation}
 
-As we cannot observe $u_i$, the assumption of exogeneity cannot be tested directly and we need to make an argument using economic understanding.
+As we cannot observe $u_i$, the assumption of exogeneity cannot be tested and we need to make an argument using economic understanding.
 
 ## Regression Analysis - Outlook
 
-Much of empirical econometric analysis is about making the exogeneity assumption more plausible/as plausible as possible.
+$y = \alpha + \beta ~ x + u$
 
-1) Most models have reasonable more than one explanatory variable.
+Much of empirical econometric analysis is about making the exogeneity assumption ($Corr(x,u)=0$) more plausible/as plausible as possible. But this begins with thinking why an explanatory variable $x$ is endogenous.
+
+1) Most models have more than one explanatory variable.
 2) Including more relevant explanatory variables can make the exogeneity assumption more plausible.
-3) Sometimes we need to apply some econometric/statistical tricks to make this assumption plausible, e.g. Instrumental Variable regression
+3) But fundamentally, if $Cov(u,x)=0$ is implausible we need to find another variable $z$ for which $Cov(u,z)=0$ is plausible. \textcolor{student}{A lot of the remainder of this unit is about elaborating on this issue.}
 
 
