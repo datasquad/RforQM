@@ -6,8 +6,8 @@ date: "January 2019"
 output: 
   beamer_presentation:
     includes:
-     in_header: ../latex_template.tex
-#     in_header: ../latex_student.tex  # use for student version
+#     in_header: ../latex_template.tex
+     in_header: ../latex_student.tex  # use for student version
 ---
 
 ```{r setup, include=FALSE}
@@ -434,25 +434,20 @@ Have we established that higher debt levels \textbf{cause} lower GDP growth?
 
 \textcolor{student}{NO}
 
-## OLS - estimator properties
 
-We need to recognise that paramter estimator is a random variable.
+## Regression Analysis - Underneath the hood
 
-Let's use $y_{it}=\alpha + \beta x_{it} + u_{it}$ for ease of notation:
-\vskip -0.5cm
-\begin{eqnarray*}
-  \widehat{\beta}&=&\dfrac{Cov(y_{it},x_{it})}{Var(x_{it})}\\
-   &=&\dfrac{~~Cov({\alpha} + {\beta} x_{it} + {u}_{it}~,x_{it})}{Var(x_{it})}\\
-   &=&\dfrac{~~Cov({\alpha},x_{it}) + Cov({\beta} x_{it},x_{it}) + Cov({u}_{it},x_{it})}{Var(x_{it})}\\
-\end{eqnarray*}
-
-\vskip -0.5cm
+Need to recognise that in a sample $\hat{\beta}$ and $\hat{\alpha}$ are really \textcolor{student}{random variables}.
 
 \begin{eqnarray*}
-  \widehat{\beta}&=&\textcolor{student}{\dfrac{~~Cov({\alpha},x_{it})}{Var(x_{it})} + \beta\dfrac{Cov( x_{it},x_{it})}{Var(x_{it})} + \dfrac{Cov({u}_{it},x_{it})}{Var(x_{it})}}\\
-   &=&\textcolor{student}{0 + \beta\dfrac{Var( x_{it})}{Var(x_{it})} + \dfrac{Cov({u}_{it},x_{it})}{Var(x_{it})}}\\
-   &=&\textcolor{student}{ \beta + \dfrac{Cov({u}_{it},x_{it})}{Var(x_{it})}}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(dRGDP,debtgdp)}{\widehat{Var}(debtgdp)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ debtgdp + u,debtgdp)}{\widehat{Var}(debtgdp)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha,debtgdp) + \beta \widehat{Cov}(debtgdp,debtgdp) + \widehat{Cov}(u,debtgdp)}{\widehat{Var}(debtgdp)}\\
+          &=& \beta ~\dfrac{\widehat{Var}(debtgdp)}{\widehat{Var}(debtgdp)}  + \dfrac{\widehat{Cov}(u,debtgdp)}{\widehat{Var}(debtgdp)}= \beta  + \dfrac{\widehat{Cov}(u,debtgdp)}{\widehat{Var}(debtgdp)}
 \end{eqnarray*}
+
+So $\hat{\beta}$ is a function of the random term $u$ and hence is itself a random variable.
+Once $\widehat{Cov}(dRGDP,debtgdp)$ and $\widehat{Var}(debtgdp)$ are replaced by sample estimates we get \textcolor{student}{~ONE~} value which is draw from a \textcolor{student}{random distribution.}
 
 ## OLS - estimator properties
 
@@ -463,7 +458,7 @@ What can we learn from this?
   \item Any particular value we get is a \textcolor{student}{draw from a random distribution}
   \item An estimator is \textcolor{red}{unbiased} if, on average, the estimates would be equal to the unknown $\beta$\\
   \textcolor{student}{at this stage the concept of unbiasedness may still be a little hazy and that is fine}
-  \item For this to happen we need to \textcolor{red}{assume} that $Cov({u}_{it},x_{it})=0$ as then \\
+  \item For this to happen we need to \textcolor{red}{assume} that $Cov(u,x)=0$ as then \\
         $E(\widehat{\beta})=$ \textcolor{student}{$\beta$}\\
         \textcolor{student}{Why do we need to assume this? Because while we do have values for $x_{it}$ we do not have values for the unobserved error terms $u_{it}$. Hence we cannot test this. As you will find out this is mainly a thinking exercise and one at the core of much of what we do.}
 \end{itemize}
@@ -483,23 +478,9 @@ There are a lot of reasons why this assumption may be breached.
   \item Simultaneity ($debtgdp \rightarrow dRGDP$ and $dRGDP \rightarrow debtgdp$)\\
   \footnotesize
   \textcolor{student}{Discuss the fact that we have to assume that causailty here goes in both directions. Hence we cannot attach one one-directional causal interpretation to the estimated coefficient. If you can estimate the model the other way round} \normalsize
-  \item Measurement error in $x_{it}$ (not dealt with here)
+  \item Measurement error in $x_{it}$ 
   \item Omitted relevant variables or unobserved heterogeneity 
 \end{itemize}
-
-
-## Excursion - Omitted variable bias
-
-Let's imagine I would get all your first year statistics final grades ($gr_i$) and how often you attended lectures during the semester ($att_i$). (Note, no time series dimension here. All obs from same year hence no time subscript $t$.)
-
-\[gr_{i}=\alpha + \beta ~att_{i} + u_{i}\]
-
-What value would you expect $\widehat{\beta}$ to take?
-
-\textcolor{student}{positive, more lecture attendance better grade}
-
-Can we say that lecture attendances causes higher grades?
-\textcolor{student}{What do we think is hidden in the error term? Intelligence, Attitude, Aptitude for quants. How are they related to $att_i$? Presumably some positively, e.g. attitude to studies. But all of tehse variables should really be in the model, right? So some of their effect is going to be capured by $att_i$ and this may bias the estimate $\widehat{\beta}$ up as it now captures, say, the effec of an increase in attendance but also in attitude. }
 
 
 ## Reinhard/Rogoff Example - debtgdp
