@@ -1,0 +1,219 @@
+---
+title: "Quantitative Methods - Computer Lab 1"
+author: "Ralf Becker"
+date: "1 February 2019"
+output:
+  pdf_document: default
+  html_document:
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, error = FALSE)
+```
+
+For this computer lab we are using exactly the same data as for the first lecture. So please make sure that you have the datafile `RRdata.xlsx` in the folder you want to work from.
+
+# Preparing your script file 
+
+Via the RStudio menu (FILE - NEW FILE - R SCRIPT) open a new script file and safe it in the folder from which you want to work (best to create a dedicated folder for your R work). 
+
+Start by creating a comment line at the top of that file which may say something like
+
+```{r, eval = FALSE}
+# File for first QM Computer Lab
+# February 2019
+```
+
+If not mentioned otherwise all the following code should be added to that script file and executed from there.
+
+Next you should ensure that you set the working directory to the directory where your scriptfile is in.
+
+```{r, eval = FALSE}
+setwd("P:/Rcode/QM")   # replace the specific path with your path
+```
+
+Note that R only understands forward slashes `/`.
+
+Load the libraries which we want to use. 
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(readxl)       # to import Excel data
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+```
+
+If RStudio tells you that one or more of these libraries are not installed then install these (not any others) on the machine you are working from. For instance, if `stargazer` was not installed you would receive an error message like "Error in library(stargazer) : there is no package called ‘stargazer’", and in that case you should run:
+
+```{r, eval = FALSE}
+install.packages("stargazer")
+```
+
+# Data Upload
+
+Make sure you have set the working directory to the directory in which you saved your script file (see above). Make sure that your data upload is successful. 
+
+```{r}
+RRData <- read_excel("RRdata.xlsx")
+RRData <- as.data.frame(RRData)
+str(RRData)  # prints some basic info on variables
+```
+
+You should now see the `RRData` object in your Environment (right hand pane).
+
+Change the `Country` variable into a factor variable and confirm that the change of data type worked.
+
+```{r, echo=FALSE,results='hide'}
+RRData$Country <- as.factor(RRData$Country)
+str(RRData)
+```
+
+Check whether Poland is one of the countries in the dataset.
+
+```{r, echo=FALSE,results='hide'}
+# unique(RRData$Country)
+levels(RRData$Country)
+```
+
+# Analyse early post-war years
+
+The analysis undertaken by Reinhard and Rogoff was for the years 1946 to 2009. Here in this lab we shall repeat some of the analysis but for a subsample of data. The argument is that some of the early postwar data were so atypical that they shouldn't be included in the analysis.
+
+To determine which of the early years we should exclude we will first investigate how the variables behaved in these years. We will do this mainly graphically.
+
+Complete the code below to replicate the following image, by finding the right variables to replace the `XXXX` terms.
+
+```{r, eval = FALSE}
+ggplot(RRData,aes(x = XXXX,y=XXXX,color = Country)) +
+  geom_line()
+```
+
+```{r, echo = FALSE}
+ggplot(RRData,aes(x=Year,y=dRGDP,color = Country)) +
+  geom_line()
+```
+
+As you can see there are some very erratic growth rates up until approximately 1952. Let's repeat the same for the Debt to GDP ratios.
+
+```{r, eval = FALSE}
+ggplot(RRData,aes(x = XXXX,y=XXXX,color = Country)) +
+  geom_line()
+```
+
+```{r, echo = FALSE}
+ggplot(RRData,aes(x=Year,y=debtgdp,color = Country)) +
+  geom_line()
+```
+
+We can again see that until the early 1950s there were dramatic debt reductions almost across the bord. Most countries had very significant post-war debt which they were able to rapidly reduce.
+
+On the basis of this analysis we decide to start our analysis from 1955
+
+# Restrict the data
+
+We want to restrict the dataset to start at 1955 and save this restricted dataset in `RR1955p`. What does `XXXX` below need to be replaced with?
+
+```{r, eval = FALSE}
+## Remove early post-war years
+RR1955p <- RRData %>% filter(XXXX)
+```
+
+```{r, echo = FALSE}
+## Remove early post-war years
+RR1955p <- RRData %>% filter(Year > 1954)
+```
+
+Use the`stargazer` function to confirm that the average `debtgdp` value is 43.803 and the upper quartile of `dRGDP` is 4.974.
+
+```{r, echo=FALSE, results='hide'}
+stargazer(RR1955p,type="text") # other types available: "latex", "html"
+```
+
+# Analysis - New dataset
+
+Create a scatterplot (x-axis: `debtgdp`, y-axis: `dRGDP`) and a line of best fit for `RR1955p`. Replace all `XXXX` terms below.
+
+```{r, eval = FALSE}
+p1 <- ggplot(XXXX,aes(x = XXXX,y = XXXX)) +
+  geom_XXXX(size=0.5) +    # this produces the scatter plot
+  XXXX(method = "lm", se = FALSE)  # adds the line 
+p1
+```
+
+```{r, echo = FALSE}
+p1 <- ggplot(RR1955p,aes(x = debtgdp,y = dRGDP)) +
+  geom_point(size=0.5) +    # this produces the scatter plot
+  geom_smooth(method = "lm", se = FALSE)  # adds the line 
+p1
+```
+
+Use a simple regression model 
+
+\[dRGDP = \beta_0 + \beta_1~debtgdp + u\]
+
+to investigate whether the negative relationship displayed in your graph is stronger for the full dataset (`RRData`) or the restricted dataset (`RR1955p`). Complete the following code and also find the typos in the code (easiest to be guided by any error messages)
+
+```{r, eval = FALSE}
+model_full <- lm(dGDP ~ XXXX, data = RRData)
+model_1955p <- XXXX
+stargazer(model_full,model_1955, type = "text")
+```
+
+```{r, echo = FALSE, results = 'hide'}
+model_full <- lm(dRGDP ~ debtgdp, data = RRData)
+model_1955p <- lm(dRGDP ~ debtgdp, data = RR1955p)
+stargazer(model_full,model_1955p, type = "text")
+```
+
+YOu got it right if the Adjusted R2 for the models are 0.039 and 0.050. If at all it is slightly stronger in the `RR1955p` data.
+
+# Create categorical debt to GDP ratios - Reinhard-Rogoff analysis I
+
+In order to replicate some of the analysis in Reinhard and Rogoff we create categorical variables (`dgcat`) for the Debt to GDP ratio. For this we use piping and the mutate command. First we do that for the full dataset, `RRData`:
+
+```{r}
+RRData <- RRData %>% mutate(dgcat = cut(RRData$debtgdp, breaks=c(0,30,60,90,Inf)))
+
+RRData %>% group_by(dgcat) %>% 
+            summarise_at("dRGDP", funs(mean, median)) %>% 
+            print()
+```
+
+Repeat this analysis for `RR1955p`.
+
+```{r, echo = FALSE, results='hide'}
+RR1955p <- RR1955p %>% mutate(dgcat = cut(RR1955p$debtgdp, breaks=c(0,30,60,90,Inf)))
+
+RR1955p %>% group_by(dgcat) %>% 
+            summarise_at("dRGDP", funs(mean, median)) %>% 
+            print()
+```
+
+You have worked correctly if your median growth rate in the highest debt category is 2.152.
+
+# Create categorical debt to GDP ratios - Reinhard-Rogoff analysis II
+
+Now we implement the Reinhard-Rogoff weighting scheme to the complete and the restricted dataset. First for the complete dataset.
+
+```{r}
+RRData_w <- RRData %>%
+        group_by(dgcat,Country) %>%          # create category and country groups
+        summarize( m1 = mean(dRGDP, na.rm = TRUE)) %>%  # calculate average growth in each cat
+        group_by(dgcat) %>%                                   # group again by category
+        summarize(  n = n(), mean = mean(m1, na.rm = TRUE), median = median(m1, na.rm = TRUE)) %>%  # calculate mean in each category 
+        print()
+```     
+
+Repeat this analysis for the restricted dataset (`RR1955p`).
+
+```{r, echo = FALSE, results='hide'}
+RR1955p_w <- RR1955p %>%
+        group_by(dgcat,Country) %>%          # create category and country groups
+        summarize( m1 = mean(dRGDP, na.rm = TRUE)) %>%  # calculate average growth in each cat
+        group_by(dgcat) %>%                                   # group again by category
+        summarize(  n = n(), mean = mean(m1, na.rm = TRUE), median = median(m1, na.rm = TRUE)) %>%  # calculate mean in each category 
+        print()
+```    
+
+Is there any evidence for a large drop in growth rate for Debt/GDP ratios larger than 90%?
