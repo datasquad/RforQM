@@ -1,0 +1,644 @@
+---
+title: "Introduction to Handling Data"
+subtitle: "ECON20222 - Lecture 1"
+author: "Ralf Becker and Martyn Andrews"
+date: "January 2019"
+output: 
+  beamer_presentation:
+    includes:
+#     in_header: ../latex_template.tex
+     in_header: ../latex_student.tex  # use for student version
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## What is this course unit about?
+
+\begin{itemize}
+  \item Help you implement and interpret the main estimation and inference techniques used in Economics
+  \item Focus on:
+      \begin{itemize}
+        \item causal inference
+        \item the main pitfalls of time-series analysis
+      \end{itemize}
+\end{itemize}
+
+## At the end of this unit ...
+
+You will be able to:
+
+\begin{itemize}
+  \item Do intermediate data work in R
+  \item Confidently apply regression analysis in R
+  \item Apply more advanced causal inference techniques in R
+  \item Find coding help for any new challenges in R
+  \item Identify inference appropriate for the model being estimated
+  \item Discuss strengths and weaknesses of particular empirical applications
+  \item Interpret empirical results (with due caution!)
+\end{itemize}
+
+## What you need to do
+
+To learn in this unit you need to:
+
+\begin{figure}
+	\centering
+	\includegraphics[width=8cm]{Embrace.jpg}\\
+\end{figure}
+
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \textcolor{student}{coding, cleaning data, struggling, self-learning, amazement at what you can do}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \textcolor{student}{answering real questions, that there is not always a clear answer}
+  \end{column}
+    
+\end{columns}
+
+## Assessment Structure and feedback
+
+\begin{itemize}
+  \item Online test (on the use of R) - 10\%
+  \item End-of-Term exam (MC and short answer questions) - 50\%
+  \item	Group coursework - 40\% (see extra info)
+
+\end{itemize}
+
+
+## Aim for today
+
+
+\begin{columns}
+  
+  \begin{column}{0.5\textwidth}
+    \underline{Statistics/Econometrics}
+    \begin{itemize}
+      \item Summary Statistics
+      \item Difference between population and sample
+      \item Hypothesis testing
+      \item Graphical Data Representations
+      \item Simple regression analysis
+    \end{itemize}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \underline{R Coding}
+    \begin{itemize}
+      \item Introduce you to R and RStudio
+      \item How do I learn R
+      \item Import data into R
+      \item Perform some basic data manipulation
+      \item Perform hypothesis tests
+      \item Estimate a regression
+    \end{itemize}
+  \end{column}
+    
+\end{columns}
+
+
+## Why Data Matter
+
+\begin{columns}
+  
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=3cm]{CarmenReinhart.jpg}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=3cm]{KennethRogoff.jpg}\\
+    \end{figure}
+
+  \end{column}
+    
+\end{columns}
+
+
+Average GDP growth rates (High Income countries - 1946 to 2009):
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline 
+	Debt/GDP category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	\hline 
+	Avg Growth Rate (RR) &  \textcolor{student}{4.09\%} & \textcolor{student}{2.87\%}  &  \textcolor{student}{3.40\%} & \textcolor{student}{-0.02\%}  \\ 
+	\hline 
+\end{tabular} 
+
+
+## Why Data Matter
+
+\begin{itemize}
+  \item Reinhard and Rogoff seem to suggest that there is a level of debt (debt/GDP > 90\%) beyond which higher debt levels will significantly reduce growth. \textcolor{student}{Caution: Debt <> Deficit}
+  \item While they often provided caveats in their arguments, their results were referred to when austerity policies were justified.\\
+  For example George Osborne:\\
+  here on Channel 4: (https://www.channel4.com/news/george-osborne-defends-austerity-plan)\\
+  here in a Conference Speech: (https://conservative-speeches.sayit.mysociety.org/speech/601526)
+
+\end{itemize}
+
+
+Average GDP growth rates (High Income countries - 1946 to 2009, RR - Reinhard and Rogoff, HAP - Herndon, Ash and Pollin):
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline 
+	Debt/GDP Category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	\hline 
+	Avg Growth Rate (RR) &  4.09\% & 2.87\%  &  3.40\% & -0.02\%  \\ 
+		\hline 
+	Avg Growth Rate (HAP) &  \textcolor{student}{4.17\%} & \textcolor{student}{3.12\%}  &  \textcolor{student}{3.22\%} & \textcolor{student}{2.17\%}  \\
+	\hline 
+\end{tabular} 
+
+## Why Data Matter
+
+Some summaries are available here
+
+\begin{tabular}{cl|}
+	\hline 
+	The New Yorker &  \href{https://www.newyorker.com/news/john-cassidy/the-reinhart-and-rogoff-controversy-a-summing-up}{The Reinhart and Rogoff Controversy: Summing Up}\\ 
+	The Economist & \href{https://www.economist.com/finance-and-economics/2013/04/20/the-90-question}{The 90\% question}  \\ 
+	Financial Times &  Interviews with Carmen Reinhard [\href{https://www.ft.com/video/1a4ad970-f9c7-34ba-b1ff-3769cb79d6ea}{1}, \href{https://www.ft.com/video/0d0fc983-8e6c-3d81-81cc-6aeed22e3e4a}{2}, \href{https://www.ft.com/video/b27b212e-a52c-383d-abd5-be89cb05da67}{3}, \href{https://www.ft.com/video/0d16f9ee-662f-3e10-b9ab-991386543230}{4}]  \\
+	\hline 
+\end{tabular} 
+
+Important issues that arise from this
+
+\begin{itemize}
+  \item Which way is the causality? Debt to Growth or Growth to Debt?\\
+  Reinhard and Rogoff are suitably careful to not associate any direct causality from the summary statistics. 
+  \item But in the political discourse such "subtleties" often get lost
+  \item Would different summary statistics have changed the narrative?
+\end{itemize}
+
+## The Plan for today
+
+\begin{itemize}
+  \item Replicate the above summary statistics in R
+  \item Why one can get two very different results based on the same data
+  \item Use this example to 
+    \begin{itemize}
+      \item introduce you to R
+      \item review some summary statistics
+      \item review simple regression and its implementation
+      \item introduce some basic visualisations
+    \end{itemize}
+\end{itemize}
+
+## Introduce R/R-Studio
+
+\begin{columns}
+  
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=2cm]{Rimage.jpeg}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.8\textwidth}
+    \begin{itemize}
+      \item R is a statistical software package, it is open source and free 
+      \item a lot of useful functionality is added by independent researchers via packages (also for free)
+    \end{itemize}
+  \end{column}
+    
+\end{columns}
+
+
+\begin{columns}
+  
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=2cm]{RStudio_image.png}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.8\textwidth}
+    \begin{itemize}
+      \item RStudio is a user interface which makes working with R easier. You need to install R before you \href{https://youtu.be/EHjakj38Nnw}{install RStudio}. 
+    \end{itemize}
+    
+  \end{column}
+    
+\end{columns}
+
+\begin{columns}
+  
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=2cm]{ECLR.jpg}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.8\textwidth}
+    \begin{itemize}
+      \item \href{http://eclr.humanities.manchester.ac.uk/index.php/R}{ECLR} is a web-resource we have set up to support you in your R work. 
+    \end{itemize}
+    
+  \end{column}
+    
+\end{columns}
+
+
+## Welcome to RStudio
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=12cm]{RStudio_screen.jpg}\\
+\end{figure}
+
+## Write Code Files or the Basic Workflow
+
+\begin{itemize}
+  \item keep an original data file (usually `.xlsx` or `.csv`) and do not overwrite this file
+  \item any manipulation we make to the data (data cleaning, statistical analysis etc.) is command based and we collect all these commands in a script file. R will then interpret and execute these commands. It is hence like a recepie which you present to a chef. These script files have extension `.r`
+  \item you can also learn to write Rmarkdown files (`.rmd`). They combine code with normal text and output. 
+  \item When you write code you should ensure that you add comments to your code. Comments are bit of text which is ignored by R (everything after an `\#`) but helps you or someone else to decipher what the code does.
+
+\end{itemize}
+
+
+By following the above examples you make it easy for yourself and others to replicate your work.
+At the core of the Reinhard/Rogoff controversy was the ability of independent researchers to replicate their work!
+
+## Prepare your code
+
+We start by uploading the extra packages we need in our code.
+
+The first time you need these packages at a computer you may need to install these. Use the following code to do this
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=FALSE}
+install.packages(c("readxl","tidyverse","ggplot2","stargazer"))
+```
+
+This only needs to be done once on a particular computer. However, every time you want to use any of these packages in a code you need to make them available to your code (load them):
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
+library(tidyverse)    # for almost all data handling tasks
+library(readxl)       # to import Excel data
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+```
+
+## The data
+
+Then we load the data from excel
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
+RRData <- read_excel("RRdata.xlsx")
+RRData <- as.data.frame(RRData) # forces data.frame structure
+```
+
+and check some characteristics of the data which are now stored in \texttt{RRData}:
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+str(RRData)  # prints some basic info on variables
+```
+
+\textcolor{student}{Discuss data.frame, number of obs and number of variables, their names and variable types}
+
+## Variable types
+
+These are four basic data types.
+
+\begin{itemize}
+  \item \texttt{character: "a", "swc"}
+  \item \texttt{numeric: 2, 15.5}
+  \item \texttt{integer: 2L (the L tells R to store this as an integer)}
+  \item \texttt{logical: TRUE, FALSE}
+\end{itemize}
+
+It is important that you know and understand differences between data types. Each variable has has a particular type and some operations only work for particular datatypes. For instance, we need \texttt{num} or \texttt{int} for any mathematical operations.
+
+In our data.frame three variables are \texttt{num} and one is of \texttt{chr} type. 
+
+We will encounter \texttt{logical} variables frequently. \textcolor{student}{they are very powerful}
+
+## \texttt{factor} variables
+
+It is necessary to change categorical variables (here \texttt{Country}) to \texttt{factor} variables.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+RRData$Country <- as.factor(RRData$Country)
+str(RRData)
+```
+
+\begin{itemize}
+  \item \texttt{RRData\$Country} calls variable \texttt{Country} in dataframe \texttt{RRData}
+  \item \texttt{<-} assigns what is on the right \texttt{as.factor(RRData\$Country)} to the variable on the left \texttt{RRData\$Country}
+  \item \texttt{as.factor(RRData\$Country)} calls a function \texttt{as.factor} and applies it to \texttt{RRData\$Country}
+\end{itemize}
+
+## \texttt{factor} variables
+
+\texttt{factor} variables are variables with discrete categories. Which ones they are you can find out with the \texttt{levels()} function:
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+levels(RRData$Country)
+```
+
+## Learn more about your data
+
+Use the \texttt{stargazer} function for some initial summary stats for \texttt{num} or \texttt{int} variables
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+stargazer(RRData, type = "text")
+```
+
+\normalsize
+
+## Scatter plot of the data
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+p1 <- ggplot(RRData,aes(debtgdp,dRGDP)) +
+  geom_point(size=0.5) +    # this produces the scatter plot
+  geom_smooth(method = "lm", se = FALSE)  # adds the line 
+p1
+```
+
+\footnotesize
+\textcolor{student}{Point out that each dot represents one country/year's data, e.g. France in 1991. Point out line of best fit}
+\normalsize
+
+## Regression Line
+
+The line in the previous plot is the line of best fit coming for a linear regression 
+
+\vskip -0.5cm
+\[rGDP = \alpha + \beta debtgdp + u ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
+\vskip -0.2cm
+
+\begin{itemize}
+  \item The population model is defined by unknown parameters $\alpha$ and $\beta$ and the unknown error terms $u$. We will use sample data to obtain sample estimates of these parameters.
+  \item The error terms $u$ contain the effects of any omitted variables and reflect that any modelled relationship will only be an approximation. The $u$ are \textcolor{student}{random variables}
+\end{itemize}
+
+\vskip -0.5cm
+\[ rGDP_{it} = \widehat{\alpha} + \widehat{\beta} ~ debtgdp_{it} + \widehat{u}_{it} ~\text{(\textcolor{student}{Estimated Sample} ~~~~Model)}\]
+\vskip -0.2cm
+
+Here we have two subscripts as the data have a cross-section (\texttt{\textcolor{student}{i}}) and a time-series dimension (\texttt{\textcolor{student}{t}}).
+
+The regression line in the previous figure is represented by 
+\vskip -0.5cm
+\[ \widehat{rGDP}_{it} = \widehat{\alpha} + \widehat{\beta} debtgdp_{it} ~~~\text{(~~~\textcolor{student}{Regression Line}~~~~~~)}\]
+
+## Simple Regression Model and OLS
+
+Regression analysis is the core technique used in Econometrics. It is based on certain assumptions about the \emph{Population Model} and the error terms $u$ (more on this in the next few weeks).
+
+How to estimate parameters (get $\widehat{\alpha}$ and $\widehat{\beta}$) using the available sample of data? This is typically done by Ordinary Least Squares (OLS).
+
+## Simple Regression Model and OLS
+
+\footnotesize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mod1 <- lm(dRGDP~debtgdp, data= RRData)
+summary(mod1)
+```
+\normalsize
+
+## OLS - nice output
+\footnotesize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+stargazer(mod1,type="text")
+```
+\normalsize
+
+## OLS - calculation and interpretation
+
+How were $\widehat{\beta}$ and $\widehat{\alpha}$ calculated?
+
+\begin{eqnarray*}
+  \widehat{\beta}&=&\dfrac{\widehat{Cov}(dRGDP_{it},debtgdp_{it})}{\widehat{Var}(debtgdp_{it})}\\
+  \widehat{\alpha}&=&\overline{dRGDP}_{it}-\widehat{\beta}*\overline{debtgdp}_{it}
+\end{eqnarray*}
+
+
+How to interpret $\widehat{\beta}=-0.018$?
+
+\textcolor{student}{An increase of one unit in \texttt{debtgdp} (=1\% point) is related to a decrease of GDP growth of 0.018 units (=0.018\% points - pp)}
+
+Have we established that higher debt levels \textbf{cause} lower GDP growth?
+
+\textcolor{student}{NO}
+
+
+## Regression Analysis - Underneath the hood
+
+Need to recognise that in a sample $\hat{\beta}$ and $\hat{\alpha}$ are really \textcolor{student}{random variables}.
+
+\begin{eqnarray*}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(dRGDP,debtgdp)}{\widehat{Var}(debtgdp)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ debtgdp + u,debtgdp)}{\widehat{Var}(debtgdp)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha,debtgdp) + \beta \widehat{Cov}(debtgdp,debtgdp) + \widehat{Cov}(u,debtgdp)}{\widehat{Var}(debtgdp)}\\
+          &=& \beta ~\dfrac{\widehat{Var}(debtgdp)}{\widehat{Var}(debtgdp)}  + \dfrac{\widehat{Cov}(u,debtgdp)}{\widehat{Var}(debtgdp)}= \beta  + \dfrac{\widehat{Cov}(u,debtgdp)}{\widehat{Var}(debtgdp)}
+\end{eqnarray*}
+
+So $\hat{\beta}$ is a function of the random term $u$ and hence is itself a random variable.
+Once $\widehat{Cov}(dRGDP,debtgdp)$ and $\widehat{Var}(debtgdp)$ are replaced by sample estimates we get \textcolor{student}{~ONE~} value which is draw from a \textcolor{student}{random distribution.}
+
+## OLS - estimator properties
+
+What can we learn from this?
+
+\begin{itemize}
+  \item If $u_{it}$ is a random variable, so is \textcolor{student}{ $\widehat{\beta}$}
+  \item Any particular value we get is a \textcolor{student}{draw from a random distribution}
+  \item An estimator is \textcolor{red}{unbiased} if, on average, the estimates would be equal to the unknown $\beta$\\
+  \textcolor{student}{at this stage the concept of unbiasedness may still be a little hazy and that is fine}
+  \item For this to happen we need to \textcolor{red}{assume} that $Cov(u,x)=0$ as then \\
+        $E(\widehat{\beta})=$ \textcolor{student}{$\beta$}\\
+        \textcolor{student}{Why do we need to assume this? Because while we do have values for $x_{it}$ we do not have values for the unobserved error terms $u_{it}$. Hence we cannot test this. As you will find out this is mainly a thinking exercise and one at the core of much of what we do.}
+\end{itemize}
+
+
+## OLS - the exogeneity assumption
+
+For $\widehat{\beta}$ in $y_{it}=\alpha + \beta x_{it} + u_{it}$ to be unbiased (i.e. on average correct) we needed
+
+\[Cov({u}_{it},x_{it})=0\]
+
+This is sometimes called the \textcolor{red}{Exogeneity assumption}. The error term has to be uncorrelated to the explanatory variable $x_{it}$
+
+There are a lot of reasons why this assumption may be breached.
+
+\begin{itemize}
+  \item Simultaneity ($debtgdp \rightarrow dRGDP$ and $dRGDP \rightarrow debtgdp$)\\
+  \footnotesize
+  \textcolor{student}{Discuss the fact that we have to assume that causailty here goes in both directions. Hence we cannot attach one one-directional causal interpretation to the estimated coefficient. If you can estimate the model the other way round} \normalsize
+  \item Measurement error in $x_{it}$ 
+  \item Omitted relevant variables or unobserved heterogeneity 
+\end{itemize}
+
+
+## Reinhard/Rogoff Example - debtgdp
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, fig.height = 2, fig.width = 5}
+tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
+ggplot(tempdata,aes(Year,debtgdp,color=Country)) +
+  geom_line(size=1)     # this produces the line plot
+```
+
+\textcolor{student}{Point out the piping operator and the filter function and then ggplot and geom\_line}\normalsize
+
+## Reinhard/Rogoff Example - dRGDP
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, fig.height = 2.8, fig.width = 5}
+tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
+ggplot(tempdata,aes(Year,dRGDP,color=Country)) +
+  geom_line(size=1)     # this produces the line plot
+```
+
+\normalsize
+
+## Reinhard/Rogoff Example - dRGDP v debtgdp
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, fig.height = 2.7, fig.width = 5}
+tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
+ggplot(tempdata,aes(debtgdp,dRGDP,color=Country)) +
+  geom_point()     # this produces the scatter plot
+```
+\normalsize
+
+## Reinhard/Rogoff Example
+
+What have we learned?
+
+\begin{itemize}
+  \item dept data are persistant
+  \item growth data as well but less so
+  \item data for different countries have different characteristics
+\end{itemize}
+
+## Group the data into debt categories
+
+Let's create the four debt categories: (0,30], (30,60], (60,90], (90,Inf].
+
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+RRData <- RRData %>% mutate(dgcat = cut(RRData$debtgdp, breaks=c(0,30,60,90,Inf)))
+
+RRData %>% group_by(dgcat) %>% 
+            summarise_at("dRGDP", funs(mean, median)) %>% 
+            print()
+```
+
+\textcolor{student}{Pint out the mutate function in combination with the cut function and the pipe, then the group\_by and summarise\_at function}
+\normalsize
+
+These are the statistics we saw before (not the one reported by Reinhard and Rogoff)
+
+## Why did Reinhard and Rogoff report different results?
+
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline 
+	Debt Category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
+	\hline 
+	Avg Growth Rate (RR) &  4.09\% & 2.87\%  &  3.40\% & \textcolor{red}{-0.02}\%  \\ 
+		\hline 
+	Avg Growth Rate (HAP) &  4.17\% & 3.12\%  &  3.22\% & 2.17\%  \\
+	\hline 
+\end{tabular} 
+
+Why did RR get so much lower growth for the highest debt category, (90,Inf]?
+
+\href{https://academic.oup.com/cje/article-abstract/38/2/257/1714018?redirectedFrom=fulltext}{Thomas Herndon, Michael Ash and Robert Pollin} (2014) replicated the work. They identified the following differences to the above analysis.
+
+\begin{enumerate}
+  \item They excluded early-postwar data for New Zealand, Australia and Canada, arguing that these data are atypical for later periods, essentially they are outliers
+  \item A spreadsheet error resulted in data for the five countries (Australia, Austria, Belgium, Canada and Denmark) to not be included.
+  \item Observations are not weighted equally.
+\end{enumerate}
+
+
+## Replicate Reinhard and Rogoff's results
+
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+## Selective treatment of early years
+RRselective <- RRData %>% 
+  filter(!((Year<1950 & Country=="New Zealand") | 
+             (Year<1951 & Country=="Australia") | 
+             (Year<1951 & Country=="Canada") ))
+
+## Spreadsheet error omitting five countries
+RRselective <- RRselective %>% 
+  filter(!( Country %in%
+              c("Australia","Austria","Belgium","Canada","Denmark") ))
+
+RRselective %>% group_by(dgcat) %>% 
+            summarise_at("dRGDP", funs(mean, median)) %>% 
+            print()
+```
+\normalsize
+
+## Replicate Reinhard and Rogoff's results
+
+So the first two differences explain some but not all of the differences. Let's implement the different weighting.
+
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+RRselective2 <- RRselective %>%
+    group_by(dgcat,Country) %>%       # create category and country groups
+    summarize( m1 = mean(dRGDP, na.rm = TRUE)) %>%  # calculate cat average
+    group_by(dgcat) %>%               # group again by category
+    summarize(  n = n(), mean = mean(m1, na.rm = TRUE), 
+                median = median(m1, na.rm = TRUE)) %>% 
+    print()
+```
+
+\textcolor{student}{Don't worry too much about the full details of this weighting scheme.}
+
+\normalsize
+The combination of the three changes make a massive difference
+
+## Why data (and their treatment) matter
+
+The combination of these changes made a significant difference to the summary statistics.
+
+Remember, the data were very persistent.\vskip 0.5cm
+
+
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \textbf{Reinhard and Rogoff}\\
+      For each country all years which fall into one of the four categories are averaged and then treated as one observation
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \textbf{Herndon, Ash and Pollin}\\
+    Each country/year observationis treated as one independent observation.
+  \end{column}
+\end{columns}
+\vskip 0.5cm
+
+Perhaps it is right to not treat each observation as a new piece of information. But the RR weighting scheme seems to discard a lot of information.
+
+These results made a significant difference in the political discourse.
+
+## Outlook
+
+Over the next weeks you will learn
+
+\begin{itemize}
+  \item to perform more advanced statistical analysis in R, such as:
+      \begin{itemize}
+        \item Hypothesis testing
+        \item Multivariate regression analysis
+        \item specification testing
+      \end{itemize}
+  \item to devise methods to draw causal inference
+  \item to understand the main pitfalls of time-series modelling and forecasting
+\end{itemize}

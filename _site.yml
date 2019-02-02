@@ -1,0 +1,8 @@
+name: "RforQM"
+navbar:
+  title: "R for Quantitative Methods"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
