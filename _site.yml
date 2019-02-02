@@ -1,4 +1,5 @@
 name: "RforQM"
+output_dir: "docs"
 navbar:
   title: "R for Quantitative Methods"
   left:
