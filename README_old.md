@@ -1,4 +1,4 @@
-## Welcome to R Projects for Quantitative Methods
+## Welcome to R Projects for Quantitative Methods (old)
 
 This site will link to small empirical projects which are designed to support students of Econometrics and Quantitative Methods at The University of Manchester. These projects are written for users of R.
 
