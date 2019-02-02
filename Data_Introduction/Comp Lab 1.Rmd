@@ -50,6 +50,8 @@ If RStudio tells you that one or more of these libraries are not installed then 
 install.packages("stargazer")
 ```
 
+Once you have done that you can call `library(stargazer)` again without running into problems.
+
 # Data Upload
 
 Make sure you have set the working directory to the directory in which you saved your script file (see above). Make sure that your data upload is successful. 
@@ -94,16 +96,20 @@ ggplot(RRData,aes(x=Year,y=dRGDP,color = Country)) +
   geom_line()
 ```
 
-As you can see there are some very erratic growth rates up until approximately 1952. Let's repeat the same for the Debt to GDP ratios.
+As you can see there are some very erratic growth rates up until approximately 1952. Try what happens if you run the above figure without the `color = Country` option. Also google to figure out how you can add a Title to the figure.
+
+Let's repeat the same for the Debt to GDP ratios.
 
 ```{r, eval = FALSE}
 ggplot(RRData,aes(x = XXXX,y=XXXX,color = Country)) +
-  geom_line()
+  geom_line() +  # adds the line graph
+  XXXX           # adds the title
 ```
 
 ```{r, echo = FALSE}
 ggplot(RRData,aes(x=Year,y=debtgdp,color = Country)) +
-  geom_line()
+  geom_line() +   # adds the line graph
+  ggtitle("Post-War Debt/GDP ratios")         # adds the title
 ```
 
 We can again see that until the early 1950s there were dramatic debt reductions almost across the bord. Most countries had very significant post-war debt which they were able to rapidly reduce.
