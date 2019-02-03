@@ -1,5 +1,5 @@
 name: "RforQM"
-output_dir: "docs"
+output_dir: "."
 navbar:
   title: "R for Quantitative Methods"
   left:
@@ -7,3 +7,6 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+output:
+  html_document:
+ theme: cosmo
