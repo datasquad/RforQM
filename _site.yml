@@ -11,3 +11,6 @@ navbar:
       href: Data_Introduction/Data_Intro_2.html      
     - text: "About"
       href: about.html
+output:
+  html_document:
+    theme: flatly
