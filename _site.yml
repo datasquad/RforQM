@@ -5,10 +5,13 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Data Intro 1"
-      href: Data_Introduction/Data_Intro.html
-    - text: "Data Intro 2"
-      href: Data_Introduction/Data_Intro_2.html      
+    - text: "Data_Introduction"
+      icon: fa-gear
+      menu:
+        - text: "Data Intro 1"
+          href: Data_Introduction/Data_Intro.html
+        - text: "Data Intro 2"
+          href: Data_Introduction/Data_Intro_2.html  
     - text: "About"
       href: about.html
 output:
