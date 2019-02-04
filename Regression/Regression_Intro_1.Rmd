@@ -1,0 +1,146 @@
+---
+title: "Introduction to Regression Analysis 1"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+```
+
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work: 
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(readxl)       # to import Excel data
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+```
+
+
+# Introduction
+
+
+
+# Data Upload - and understanding data structure
+
+```{r}
+data_USoc <- read_dta("20222_USoc_extract.dta")
+data_USoc <- as.data.frame(data_USoc)
+names(data_USoc)
+
+data_USoc$region <- as_factor(data_USoc$region)
+data_USoc$male <- as_factor(data_USoc$male)
+data_USoc$degree <- as_factor(data_USoc$degree)
+data_USoc$race <- as_factor(data_USoc$race)
+```
+
+Click on the little table simple in your environment tab to see the top of the 
+
+The variable `pidp` contains a unique person identifier and the variable `wave` indicates the wave and `year` the year of observation.
+
+To explain the meaning of these let us just pick out all the observations that pertain to one particular individual (`pidp == 272395767`). The following command does the following in words: "Take `data_USoc` filter/keep all observations which belong to individual pidp == 272395767, then select a list of variables (we don't need to see all 14 variables) and print the result":
+
+```{r}
+data_USoc %>% filter(pidp == 272395767) %>% 
+              select(c("pidp","male","wave","year","paygu","age","educ")) %>% 
+              print()
+```
+
+The same person (female) was observed three years in a row (from 2009 to 2011). Their gross monthly income changed, as did, of course, their age, but not their education. This particular person was observed in three consequitive waves. Let's se whether this is a commom pattern.
+
+The code below figures out for how many individuals we have 1, 2 and 3 waves of observations. It is not important to understand that code.
+
+```{r}
+pattern <- data_USoc %>% group_by(pidp) %>% 
+                      mutate(n_wave = n()) %>%  
+                      select(pidp,n_wave) %>% 
+                      unique() %>% 
+                      group_by(n_wave)%>% 
+                      summarise(n_pat = n()) %>% 
+                      print()
+```
+
+As you can see only just over half of individuals have records for three waves. Let us look at the observations for an individual (`pidp == 2670365`) which only has observations for two waves.
+
+```{r}
+data_USoc %>% filter(pidp == 2670365) %>% 
+              select(c("pidp","male","wave","year","paygu","age","educ")) %>% 
+              print()
+```
+
+# Some summary statistics
+
+Let's use the `stargazer` function to produce a nice summary table
+
+```{r, message=FALSE, warning = FALSE}
+stargazer(data_USoc, type = "text")
+```
+
+
+Here are some frequency tables
+
+```{r}
+
+data_USoc %>% count(wave) 
+data_USoc %>% count(region) 
+data_USoc %>% count(male) 
+data_USoc %>% count(year) 
+data_USoc %>% count(race) 
+data_USoc %>% count(educ) 
+data_USoc %>% count(degree) 
+data_USoc %>% add_count(mfsize9) 
+
+```
+
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for dy we shall also adjust for increasing price levels ( as measured`mutate` function. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
+
+```{r}
+data_USoc <- data_USoc %>% 
+              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>% 
+              mutate(lnhrpay = log(hrpay))
+```
+
+As we wanted to save these additional variables we assign the result of the operation to `data_USoc`.
+
+Let's check whether the log of the hourly pay dfferes if we analyse the data by certain criteria.
+
+```{r}
+data_USoc %>% 
+```
+
+
+to calculate the actual percentage points raw differential
+.   di (exp(_b[male])-1)*100
+20.082048
+
+
+We want a scatter (x = dummy, y = lnhrpay) + geom_smooth
+.   predict lnhrpayhat
+(option xb assumed; fitted values)
+
+Histograms of lnhrpay conditional on gender (in two picture) including standard normal fits.
+. 
+. twoway (hist lnhrpay if male==0 & lnhrpay> 0 & lnhrpay<5, bin(20) /*
+> */ title(females) ylabel(0(.10).8 )) /*
+> */ (function y=normalden(x, 2.20,.598), range( 0 5) )
+
+gap between male and female pay
+
+let's look at grad or not
+
+recode degree (1/2=1), generate(grad)
+label define grad 1 "any degree" 0 "no degree"
+label values grad grad
+tab degree grad
+
+regress lnhrpay grad, robust
+  di (exp(_b[grad])-1)*100
+  
+Also big gap
+
+regress lnhrpay grad male, robust
+
+then add interaction
+first: create interaction, then by grad*male
