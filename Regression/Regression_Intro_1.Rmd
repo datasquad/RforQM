@@ -149,6 +149,35 @@ robust_se <- sqrt(diag(cov1))
 stargazer(mod1,type="text",se=list(NULL, robust_se))
 ```
 
+In the regression output you can see the variable `male` but it says `malemale`. 
+
+The coefficient 
+So these are three extra lines of code and this is a little clumsy. Let's write a little function which does add the HC robust standard errors to the output.
+
+It is not so important that you fully understand what is hapening here. Copy and paste this into the a new script file and save it as `stargazer_HC.r` into your working directory. 
+
+```{r}
+stargazer_HC <- function(mod) {
+  cov1 <- vcovHC(mod, type = "HC1")
+  robust_se <- sqrt(diag(cov1))
+  stargazer(mod,type="text",se=list(NULL, robust_se))
+}
+```
+
+Once you have saved `stargazer_HC.r` into your working directory you need to make it accessible to your code by including
+
+```{r}
+source("stargazer_HC.r")
+```
+
+into your script. It is possibly best to do that right at the top where you load the packages (`library` commands).
+
+Then we call a regresison and if we want robust standard errors we merely call `stargazer_HC` rather than `stargazer`). Added bonus is that you don't have to use the `type
+
+```{r}
+mod1 <- lm(lnhrpay~male,data = data_USoc)
+stargazer_HC(mod1)
+```
 
 to calculate the actual percentage points raw differential
 .   di (exp(_b[male])-1)*100
