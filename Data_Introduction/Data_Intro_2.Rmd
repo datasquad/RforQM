@@ -463,7 +463,7 @@ test_data <- wb_data %>%
   filter(S002EVS == "2008-2010")       # pick latest wave
 ```
 
-We now estimate a regression model which includes a constant and the household's monthly income (in 1,000 Euros) as an explanatory variable ($iNC_I$ OR VARIABLE `x047D` in our dataset).
+We now estimate a regression model which includes a constant and the household's monthly income (in 1,000 Euros) as an explanatory variable ($INC_i$ OR VARIABLE `x047D` in our dataset).
 
 $LifeSatis_{i} = \alpha + \beta~ Inc_{i} + u_{i}$
 
@@ -476,7 +476,7 @@ Here you see that $\widehat{\beta}=0.235$. What does this mean? As the income in
 
 ```{r RegPlot1}
 ggplot(test_data, aes(x=X047D, y=A170, colour = S003)) +
-    geom_jitter(width=0.2) +    # Use jitter rather than point so we can see indiv obs
+    geom_jitter(width=0.2, size = 0.5) +    # Use jitter rather than point so we can see indiv obs
     geom_abline(intercept = mod1$coefficients[1], slope = mod1$coefficients[2])+
     ggtitle("Income v Life Satisfaction, Britain and Sweden")
 ```

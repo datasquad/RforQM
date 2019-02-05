@@ -27,18 +27,24 @@ library(AER)          # access to HS robust standard errors
 
 # Data Upload - and understanding data structure
 
+Upload the data, which are saved in a STATA datafile (extension `.dta`). There is a function which loads STATA file. It is called `read_dta` and is supplied by the `haven` package.
+
 ```{r}
 data_USoc <- read_dta("20222_USoc_extract.dta")
-data_USoc <- as.data.frame(data_USoc)
+data_USoc <- as.data.frame(data_USoc)    # ensure data frame structure
 names(data_USoc)
+```
 
+Let us ensure that categorical variables are stored as `factor` variables. It is easiest to work with these in R.
+
+```{r}
 data_USoc$region <- as_factor(data_USoc$region)
 data_USoc$male <- as_factor(data_USoc$male)
 data_USoc$degree <- as_factor(data_USoc$degree)
 data_USoc$race <- as_factor(data_USoc$race)
 ```
 
-Click on the little table simple in your environment tab to see the top of the 
+Click on the little table symbol in your environment tab to see the actual data table. 
 
 The variable `pidp` contains a unique person identifier and the variable `wave` indicates the wave and `year` the year of observation.
 
@@ -84,7 +90,6 @@ stargazer(data_USoc, type = "text")
 Here are some frequency tables
 
 ```{r}
-
 data_USoc %>% count(wave) 
 data_USoc %>% count(region) 
 data_USoc %>% count(male) 
@@ -92,8 +97,7 @@ data_USoc %>% count(year)
 data_USoc %>% count(race) 
 data_USoc %>% count(educ) 
 data_USoc %>% count(degree) 
-data_USoc %>% add_count(mfsize9) 
-
+data_USoc %>% count(mfsize9) 
 ```
 
 The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for dy we shall also adjust for increasing price levels ( as measured`mutate` function. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
@@ -125,6 +129,7 @@ data_USoc %>% group_by(male) %>%
                         sd = sd(lnhrpay,na.rm=TRUE))
 ```
 
+You can see that difference in the averages for `lnhrpay` is about 0.183.
 
 # Testing for differences
 
@@ -138,7 +143,7 @@ t.test(lnhrpay~male, mu=0, data = data_USoc)  # testing that mu = 0
 
 So here the p-value is extremely small indicating that the raw differential in log hourly wages between males and females is certainly statistically significant.
 
-# A regression
+# A regression - Gender differences
 
 Regression analysis is our bread-and-butter technique and we can obtain the same result with a regression model.
 
@@ -149,18 +154,19 @@ robust_se <- sqrt(diag(cov1))
 stargazer(mod1,type="text",se=list(NULL, robust_se))
 ```
 
-In the regression output you can see the variable `male` but it says `malemale`. 
+In the regression output you can see the variable `male` but it says `malemale` which is indication that basically a dummy variable has been included into your regression that takes the value 1 for every male respondent and 0 for everyone else.
 
-The coefficient 
-So these are three extra lines of code and this is a little clumsy. Let's write a little function which does add the HC robust standard errors to the output.
+The coefficient you can see for that is 0.183 which is exactly the difference between the male and female averages for `lnhrpay`. 
 
-It is not so important that you fully understand what is hapening here. Copy and paste this into the a new script file and save it as `stargazer_HC.r` into your working directory. 
+If you were to merely calculate the regression model (`mod1 <- lm(lnhrpay~male,data = data_USoc)`) and then show the results with `stargazer`) you would get a very similar regression output, but the standard errors for the parameter estimates would have been calculated on the basis of a homoskedasticity assumption. Without any further details, this is an assumption which on many occasions is breached. However, the consequences are not too worrysome as long as we change how we calculate the standard errors. And that is what the extra lines achieve. 
+
+We can actually write a little function which does add the HC robust standard errors to the usual output. It is not so important that you fully understand what is hapening here. Copy and paste the next code chunk into a new script file and save it as `stargazer_HC.r` into your working directory. 
 
 ```{r}
-stargazer_HC <- function(mod) {
+stargazer_HC <- function(mod, type_in = "text") {
   cov1 <- vcovHC(mod, type = "HC1")
   robust_se <- sqrt(diag(cov1))
-  stargazer(mod,type="text",se=list(NULL, robust_se))
+  stargazer(mod,type=type_in,se=list(NULL, robust_se))
 }
 ```
 
@@ -172,43 +178,136 @@ source("stargazer_HC.r")
 
 into your script. It is possibly best to do that right at the top where you load the packages (`library` commands).
 
-Then we call a regresison and if we want robust standard errors we merely call `stargazer_HC` rather than `stargazer`). Added bonus is that you don't have to use the `type
+Then we call a regresison and if we want robust standard errors we merely call `stargazer_HC` rather than `stargazer`). Added bonus is that you don't have to use the `type = "text"` option any longer as I used it as the default.
 
 ```{r}
 mod1 <- lm(lnhrpay~male,data = data_USoc)
 stargazer_HC(mod1)
 ```
 
-to calculate the actual percentage points raw differential
-.   di (exp(_b[male])-1)*100
-20.082048
+Sometimes it is useful to extract the actual estimated coefficient and use it for some subsequent calculation. On this occasion let us extract the estimated cooefficient for `male`. When we estimated the regresison model we saved the output in `mod1`. In fact `mod1` contains a lot of information we may want to use, most notably the coefficient estimates, estimated residuals, fitted values etc. We access these as follows
 
+```{r}
+mod1$coefficients
+# mod1$residuals       # uncomment if you want to see these
+# mod1$fitted.values
+```
+And if want a particular coefficient we can get that as follows
 
-We want a scatter (x = dummy, y = lnhrpay) + geom_smooth
-.   predict lnhrpayhat
-(option xb assumed; fitted values)
+```{r}
+mod1$coefficients["malemale"]    # or
+# mod1$coefficients[1]
+```
 
-Histograms of lnhrpay conditional on gender (in two picture) including standard normal fits.
-. 
-. twoway (hist lnhrpay if male==0 & lnhrpay> 0 & lnhrpay<5, bin(20) /*
-> */ title(females) ylabel(0(.10).8 )) /*
-> */ (function y=normalden(x, 2.20,.598), range( 0 5) )
+where we use the coefficient name we also saw in the regression output.
 
-gap between male and female pay
+Let say we want to calculate the actual percentage points raw differential which is a function of this coefficient:
 
-let's look at grad or not
+```{r}
+(exp(mod1$coefficients["malemale"])-1)*100
+```
 
-recode degree (1/2=1), generate(grad)
-label define grad 1 "any degree" 0 "no degree"
-label values grad grad
-tab degree grad
+Let's produce a scatter plot of the data on which the above regression is based.
 
-regress lnhrpay grad, robust
-  di (exp(_b[grad])-1)*100
-  
-Also big gap
+```{r, warning=FALSE}
+ggplot(data_USoc, aes(x = male, y = lnhrpay))  +
+  geom_point() +
+  geom_abline(intercept = mod1$coefficients[1], slope = mod1$coefficients[2])
+```
 
-regress lnhrpay grad male, robust
+As you can see this plot has limited informative value as, on the horizontal axis, we only have two possible outcomes, female and male. On each of these we have a wide range of outcomes for `lnhrpay`. We want to find a way to illustrate the distribution of outcomes on the `lnhrpay` scale depending on the value for `male`.
 
-then add interaction
-first: create interaction, then by grad*male
+```{r, message=FALSE, warning=FALSE}
+ggplot(subset(data_USoc, (lnhrpay>0) & (lnhrpay<5)), aes(x = lnhrpay))  +
+  geom_histogram() +
+  facet_grid(rows = vars(male))
+```
+
+You could, if you wanted to, fit a normal distribution to these (remember the variables are the log hourly pay rates). This is not super straightforward and it turns out that in this case you would want to generate the graphs seperately. I had to google "R ggplot add normal distribution fit to geom_histogram" and came across [https://stackoverflow.com/questions/1376967/using-stat-function-and-facet-wrap-together-in-ggplot2-in-r/1379074#1379074](this) which helped me to adopt a solution. The normal density is added with a `stat_function`:
+
+```{r, message=FALSE, warning=FALSE}
+# first create a relevant subset of the data
+data_temp <- data_USoc %>% 
+            filter((lnhrpay>0) & (lnhrpay<5)) %>% # remove negative (wage < $1/hour) and wage > 148/hour = log wage > 5)
+            filter(male == "male") 
+
+# now create the plot  
+ggplot(data_temp,aes(x = lnhrpay))  +
+      geom_histogram(binwidth = 0.25,aes(y = ..density..)) +   # aes(y = ..density..) buts the histogram on a density scale
+      stat_function(fun = dnorm, args=list(mean=mean(data_temp$lnhrpay), 
+                            sd=sd(data_temp$lnhrpay)), color = "darkred", size = 1) 
+
+```
+
+And now we can do the same for females.
+
+```{r, message=FALSE, warning=FALSE}
+# first create a relevant subset of the data
+data_temp <- data_USoc %>% 
+            filter((lnhrpay>0) & (lnhrpay<5)) %>% # remove negative (wage < $1/hour) and wage > 148/hour = log wage > 5)
+            filter(male == "female") 
+
+# now create the plot  
+ggplot(data_temp,aes(x = lnhrpay))  +
+      geom_histogram(binwidth = 0.25,aes(y = ..density..)) +   # aes(y = ..density..) buts the histogram on a density scale
+      stat_function(fun = dnorm, args=list(mean=mean(data_temp$lnhrpay), 
+                            sd=sd(data_temp$lnhrpay)), color = "darkred", size = 1) 
+
+```
+
+# A regression - Education differences
+
+After looking at gender differences we will now look at differences in earnings according to education differences.
+
+Let's first look at the `degree` vari8able in our dataset.
+
+```{r}
+data_USoc %>% count(degree) 
+```
+
+Let us create a new variable which merely differentiates between having any degree or no degree. So we essentially want to collapse the `first degree` and `higher degree` categories into a `any degree` category. Recall that this is a factor variable and there is a very convenient function (`fct_recode`) which allows you to change the levels. The `mutate(grad = ...)` function creates a new variable with the definition of that variable following the equal sign.
+
+```{r}
+data_USoc <- data_USoc %>%
+    mutate(grad = fct_recode(degree,
+    "no degree"    = "no degree",    # new level = old level
+    "any degree"  = "first degree",
+    "any degree" = "higher degree"))
+```
+
+And now let's look at the counts of this new variable.
+
+```{r}
+data_USoc %>% count(grad) 
+```
+
+And now we run a regression just as we did for gender differences.
+
+```{r}
+mod1 <- lm(lnhrpay~grad,data = data_USoc)
+stargazer_HC(mod1)
+```
+
+And let's calculate the actual percentage points raw differential which is a function of the estimated coefficient to the grad variable:
+
+```{r}
+(exp(mod1$coefficients["gradany degree"])-1)*100
+```
+
+Clearly there is a massive difference. Graduates, on average, earn more than 60% higher hourly wages.
+
+# A regression - gender and education differences
+
+We found that, individually, gender and degree status make significant differences to hourly pay. Let's use the full power of regression analysis and see how hourly pay changes as a function of both these factors.
+
+```{r}
+mod1 <- lm(lnhrpay~grad+male,data = data_USoc)
+stargazer_HC(mod1)
+```
+
+Now with interaction terms. MARTYN this uses an interaction variable not like the "#" in stata!
+
+```{r}
+mod2 <- lm(lnhrpay~grad*male,data = data_USoc)
+stargazer_HC(mod2)
+```
