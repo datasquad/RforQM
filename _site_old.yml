@@ -1,0 +1,24 @@
+name: "RforQM"
+output_dir: "."
+navbar:
+  title: "R for Quantitative Methods"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Data_Introduction"
+      icon: fa-gear
+      menu:
+        - text: "Data Intro 1"
+          href: Data_Introduction/Data_Intro.html
+        - text: "Data Intro 2"
+          href: Data_Introduction/Data_Intro_2.html  
+    - text: "Regression"
+      icon: fa-gear
+      menu:
+        - text: "Regression 1"
+          href: Regression/Regression_Intro_1.html  
+    - text: "About"
+      href: about.html
+output:
+  html_document:
+    theme: flatly
