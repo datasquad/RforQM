@@ -16,6 +16,8 @@ library(tidyverse)    # for almost all data handling tasks
 library(readxl)       # to import Excel data
 library(ggplot2)      # to produce nice graphiscs
 library(stargazer)    # to produce nice results tables
+library(haven)        # to import stata file
+library(AER)          # access to HS robust standard errors
 ```
 
 
@@ -107,7 +109,44 @@ As we wanted to save these additional variables we assign the result of the oper
 Let's check whether the log of the hourly pay dfferes if we analyse the data by certain criteria.
 
 ```{r}
-data_USoc %>% 
+data_USoc %>% group_by(degree) %>% 
+              summarise(n = sum(!is.na(lnhrpay)), 
+                        mean = mean(lnhrpay,na.rm=TRUE),
+                        sd = sd(lnhrpay,na.rm=TRUE))
+
+data_USoc %>% group_by(educ) %>% 
+              summarise(n = sum(!is.na(lnhrpay)), 
+                        mean = mean(lnhrpay,na.rm=TRUE),
+                        sd = sd(lnhrpay,na.rm=TRUE))
+
+data_USoc %>% group_by(male) %>% 
+              summarise(n = sum(!is.na(lnhrpay)), 
+                        mean = mean(lnhrpay,na.rm=TRUE),
+                        sd = sd(lnhrpay,na.rm=TRUE))
+```
+
+
+# Testing for differences
+
+The first hypothesis test we may want to implement is to test whether the difference in the raw data is statistically significant (recall this is not the same economically significant difference).
+
+We use the `t.test` function. We could create two subsets of data for `lnhrpay`, one for males and one for females and could then feed these two series into the `t.test` function (`t.test(data_male,data_female, mu = 0)`) but there is a more straightforward way to achieve this. We shall call `t.test(lnhrpay~male, mu=0, data = data_USoc)`. The `lnhrpay~male` is almost like a regression call, the variable we are interested in is `lnhrpay` but we want to know whether it differs according to `male`. The other inputs set the data farme (`data = data_USoc`) and the null hypothesis (`mu=0`).
+
+```{r}
+t.test(lnhrpay~male, mu=0, data = data_USoc)  # testing that mu = 0
+```
+
+So here the p-value is extremely small indicating that the raw differential in log hourly wages between males and females is certainly statistically significant.
+
+# A regression
+
+Regression analysis is our bread-and-butter technique and we can obtain the same result with a regression model.
+
+```{r}
+mod1 <- lm(lnhrpay~male,data = data_USoc)
+cov1 <- vcovHC(mod1, type = "HC1")
+robust_se <- sqrt(diag(cov1))
+stargazer(mod1,type="text",se=list(NULL, robust_se))
 ```
 
 
