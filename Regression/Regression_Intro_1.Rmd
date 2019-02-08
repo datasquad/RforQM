@@ -1,5 +1,6 @@
 ---
 title: "Introduction to Regression Analysis 1"
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -18,6 +19,7 @@ library(ggplot2)      # to produce nice graphiscs
 library(stargazer)    # to produce nice results tables
 library(haven)        # to import stata file
 library(AER)          # access to HS robust standard errors
+library(estimatr)     # use robust se
 ```
 
 
@@ -220,7 +222,8 @@ As you can see this plot has limited informative value as, on the horizontal axi
 ```{r, message=FALSE, warning=FALSE}
 ggplot(subset(data_USoc, (lnhrpay>0) & (lnhrpay<5)), aes(x = lnhrpay))  +
   geom_histogram() +
-  facet_grid(rows = vars(male))
+  facet_grid(~male)
+
 ```
 
 You could, if you wanted to, fit a normal distribution to these (remember the variables are the log hourly pay rates). This is not super straightforward and it turns out that in this case you would want to generate the graphs seperately. I had to google "R ggplot add normal distribution fit to geom_histogram" and came across [https://stackoverflow.com/questions/1376967/using-stat-function-and-facet-wrap-together-in-ggplot2-in-r/1379074#1379074](this) which helped me to adopt a solution. The normal density is added with a `stat_function`:

@@ -1,0 +1,133 @@
+---
+title: "Introduction to Regression Analysis 1"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+```
+
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work: 
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(readxl)       # to import Excel data
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+library(haven)        # to import stata file
+library(AER)          # access to HS robust standard errors
+library(estimatr)     # use robust se
+```
+
+
+# Introduction
+
+
+
+# Data Upload - and understanding data structure
+
+Upload the data, which are saved in a STATA datafile (extension `.dta`). There is a function which loads STATA file. It is called `read_dta` and is supplied by the `haven` package.
+
+```{r}
+data_USoc <- read_dta("20222_USoc_extract.dta")
+data_USoc <- as.data.frame(data_USoc)    # ensure data frame structure
+names(data_USoc)
+```
+
+Let us ensure that categorical variables are stored as `factor` variables. It is easiest to work with these in R.
+
+```{r}
+data_USoc$region <- as_factor(data_USoc$region)
+data_USoc$male <- as_factor(data_USoc$male)
+data_USoc$degree <- as_factor(data_USoc$degree)
+data_USoc$race <- as_factor(data_USoc$race)
+```
+
+Calculate log houry pay
+
+```{r}
+data_USoc <- data_USoc %>% 
+              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>% 
+              mutate(lnhrpay = log(hrpay))
+```
+
+
+# A regression - Gender differences
+
+Testing whether we can add robust errors to stargazer output:
+
+```{r}
+mod1 <- lm(lnhrpay~male,data = data_USoc)
+cov1 <- vcovHC(mod1, type = "HC1")
+robust_se <- sqrt(diag(cov1))
+stargazer(mod1,type="text",se=list(NULL, robust_se))
+```
+
+That works well. But I sort of want to avoid students having to write all these lines if they want to use robust ses ... after all we want to make that standard. So I decided to write a little function
+
+```{r}
+stargazer_HC <- function(mod, type_in = "text") {
+  cov1 <- vcovHC(mod, type = "HC1")
+  robust_se <- sqrt(diag(cov1))
+  stargazer(mod,type=type_in,se=list(NULL, robust_se))
+  # I actually don't fully understand why we need to add the NULL list, but it doesn't work without
+}
+```
+
+And that works well. All students need to call is.
+
+```{r}
+mod1 <- lm(lnhrpay~male,data = data_USoc)
+stargazer_HC(mod1)
+```
+
+One of the great features of stargazer is that you can plot several regression results next to each other.
+
+
+```{r}
+mod2 <- lm(lnhrpay~educ,data = data_USoc)
+mod3 <- lm(lnhrpay~male+educ,data = data_USoc)
+stargazer(mod1,mod2,mod3, type = "text")
+```
+
+Alternatively one can hand in a list of models
+
+```{r}
+stargazer(list(mod1,mod2,mod3), type = "text")
+```
+
+I am now trying to produce a version of `stargazer_HC(mod1)` which allows for multiple models and robust errors in these, but so far I am failing. Here is my best attempt:
+
+```{r}
+stargazer_HCm <- function(mod, type_in = "text") {
+# model collection should come in as a list of models
+  rep_se <- list(NULL)  # use this to replace se
+
+  # if extra models process them here
+  for (mod_i in mod_all){
+    cov1 <- vcovHC(mod_i[[1]], type = "HC1") # calculate next rob se
+    robust_se <- sqrt(diag(cov1))
+    rep_se <- list(rep_se, list(robust_se))  # add next se
+  }
+
+  stargazer(mod,type="text",se=rep_se)
+}
+```
+
+```{r}
+stargazer_HCm(list(mod1,mod2,mod3))
+```
+
+This doesn't work. 
+
+Interestingly I found a package (`estimatr`) which includes a function to easily run regerssions with robust errors
+
+```{r}
+lm_robust(lnhrpay~educ,data = data_USoc, se_type = "HC1")
+```
+
+However, the output is not compatible with stargazer.
+
+Any ideas?
