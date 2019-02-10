@@ -1,0 +1,296 @@
+---
+title: "Data Handling and Statistics - Computer Lab 2"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work: 
+
+```{r, message=FALSE, warning = FALSE}
+library(tidyverse)    # for almost all data handling tasks
+library(readxl)       # to import Excel data
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+```
+
+
+# Introduction
+
+For this Comuter lab we will work with the same datafile as we did for the 2nd Lecture. We will repeat some of the work done in the lecture with slight variations. 
+
+The example we are using here is taken from the CORE - Doing Economics resource. In particular we are using Project 8 which deals with international data on well-being. The data represent several waves of data from the European Value Study (EVS). A wave means that the same surevey is repeated at regular intervals (waves).
+
+# Aim of this lesson
+
+In this lesson we will revise some hypothesis testing and basic (simple) regression analysis. 
+
+In terms of R skills you learn how to
+
+* create summary tables using the `group_by`, `summarise` and `spread` commands
+* create scatter plots using `ggplot` and `geom_point` 
+* conduct simple hypothesis tests on one or two sample means using `t.test`
+* run simple regression models using `lm`
+
+# Importing Data
+
+The data have been prepared as demonstrated in the Doing Economics Project 8, up to and including Walk-Through 8.3. Please have a look at this to understand the amount of data work required before an empirical analysis can begin. The datafile is saved as an R data structure (wb_data.Rdata). Load this datafile into your work folder. Then start a new script file which you should save into the same folder (use a filename that does not contain any spaces!) and then ensure that you set, in your script file, the working directory to that folder by using the `setwd("PATH/TO/YOUR/FOLDER")`.
+
+Details on the variables are avialable from [here](https://dbk.gesis.org/EVS/Variables/compview.asp) (chose EVS Longitudinal Data Files 1981-2008).
+
+```{r}
+load("WBdata.Rdata")
+str(wb_data)  # prints some basic info on variables
+```
+
+Checking your environment you will see two objects. Along the proper datafile (`wb_data`) you will find `wb_data_Des` which contains some information for each of the variables. It will help us to navigate the obscure variable names. Use the information in that object to understand what the variales `C038` and `C039` represent.
+
+
+```{r, results = 'hide'}
+wb_data_Des[wb_data_Des$Names == "C038",]
+```
+
+```{r, echo = FALSE, results = 'hide'}
+wb_data_Des[wb_data_Des$Names == "C039",]
+```
+
+
+# Some initial data analysis and summary statistics
+
+Let us investigate what the different categories of education status.
+
+```{r, echo = FALSE, results = 'hide'}
+wb_data %>% count(Education_1)
+wb_data %>% count(Education_2)
+```
+
+You can see that both variables `Education_1` and `Education_2` describe the same variable. The latter has short descriptions to the educational levels while the former represents these with numbers. You will notice that he ordering of `Education_2` is different to that in `Education_1`.
+
+What is the variable type for `Education_2`? You may remember a command to do that or google. There are several ways to get that information. But you should not use the `typeof` function.
+
+```{r, echo = FALSE, results='hide'}
+str(wb_data$Education_2)
+```
+
+In R it is best to deal with categorical variables like `Education_2` as factor variables rather than character variables. Change the variable type of `Education_2` to a factor variable.
+
+```{r}
+wb_data$Education_2 <- as.factor(wb_data$Education_2)
+wb_data %>% count(Education_2)
+```
+
+As you can see in the above table, the different answer options for this variable are ordered according to the alphabet. That is the logical default in R. It would be nicer to see the order in terms of how much education they represent. We can re-order he outcomes. Google "r reorder factor levels" to find out how to achieve this. Note, "NA" is not a factor level and you can ignore it in the re-ordering.
+
+```{r, eval = FALSE}
+wb_data$Education_2 <- factor(wb_data$Education_2,XXXX)
+```
+
+```{r, echo = FALSE}
+wb_data$Education_2 <- factor(wb_data$Education_2,levels(wb_data$Education_2)[c(5,6,3,1,4,2,7)])
+```
+
+If you have done it correctly, you should be able to get the following result 
+
+```{r}
+wb_data %>% count(Education_2)
+```
+
+Let's pick two countries (Germany and Turkey) for a particular year (`S002EVS == "2008-2010"`) and find out how many respondents fall into the different education categories. To do this we will resort to the powerful piping technique delievered through the functionality of the `tidyverse`
+
+```{r}
+table1a <- wb_data %>% 
+            filter(S002EVS == "2008-2010") %>%      # select year
+            filter(S003 %in% c("Germany","Turkey")) %>% # select countries
+            group_by(Education_2,S003) %>%          # groups by Wave and Country
+            summarise(n = n()) %>%                  # summarises each group by calculating obs
+            spread(S003,n) %>%                      # put Countries across columns
+            print()
+
+```
+
+You can see that the distribution of highest educational achievement varies significantly between these two countries. If you wonder what the `spread(S003,n) %>%` part of the above code does, re-run the code without that line to see the difference.
+
+It is important to realise that most things can be achieved in different ways (i.e. there is not one correct way of doing things but many!). Here is an alternative way. First we create the subsample we are interested in (`temp_data`), and then we apply the `table` function 
+
+```{r}
+temp_data <- wb_data %>% 
+            filter(S002EVS == "2008-2010") %>%      # select year
+            filter(S003 %in% c("Germany","Turkey")) # select countries
+
+table1b <- table(temp_data$Education_2,temp_data$S003) %>% print()
+```
+
+Sometime you actually want proportions rather than counts. The easiest way to achieve this is by using the already existing `table1b` and send that through the `prop.table` function. Recall that you can call `?prop.table` from the Console/Command Window to get some help on that function.
+
+```{r}
+prop.table(table1b)
+```
+
+Perhaps you can see that all the proportions sum up to 1. But what we really want is proportions that sum up to 1 by country
+
+```{r}
+prop.table(table1b,margin = 2)
+```
+
+See what happens if you set `margin = 1`.
+
+To parctice you should create a table which shows the proportion of respondents answering 1 to 5 on question `C039` (Work is a duty to society), comparing Great Britain with France for the last available wave (`S002EVS == "2008-2010"`).
+
+```{r, echo=FALSE, results='hide'}
+temp_data <- wb_data %>% 
+            filter(S002EVS == "2008-2010") %>%      # select year
+            filter(S003 %in% c("Great Britain","France")) # select countries
+
+table2 <- table(temp_data$C039,temp_data$S003)
+prop.table(table2, margin=2)
+```
+
+You've got it right if you find that 36% of French respondents strongly disagree with the statement "Work is a duty to society". Recall that 1 represents strong agreement and 5 strong disagreement with that statement. 
+
+An additional exercise is to see whether the answers to the life satisfaction question (`A170`) have changed through time. Create a table with proportions of responses to `A170` for Great Britain across the four waves.
+
+```{r, eval = FALSE}
+temp_data <- wb_data %>% 
+            filter(XXXX == XXXX) # select GB
+
+table3 <- XXXX(temp_data$XXXX,XXXX$S002EVS)
+prop.table(XXXX, XXXX)
+```
+
+```{r, echo = FALSE}
+temp_data <- wb_data %>% 
+            filter(S003 == "Great Britain") # select GB
+
+table3 <- table(temp_data$A170,temp_data$S002EVS)
+prop.table(table3, margin=2)
+```
+
+Have the responses to that question changed through time?
+
+There are two ways how to make the result easier to look at. First you could put the command `options(digits=2)` before you prnt the table. Try it and see what happens. Second, we could find a graphical representation.
+
+```{r}
+ggplot(temp_data, aes(x=S002EVS, fill=factor(A170))) +
+  geom_bar(position = 'fill')
+```
+
+To find this solution I googled "R ggplot geom_bar proportions". From this plot it is not obvious that there weresignificant changes in the distribution across time.
+
+
+# Hypothesis testing
+
+Let's investigate whether there are differences in some of the responses between countries. In particular we shall test whether the proportion of respondents with any tertiary education (degree) is different in different countries.
+
+To make this job as simple as possible we should first calculate a new variable in our dataset, which indicates whether a respondend has any tertiary education (`Education_2 %in% c(" First stage of tertiary education"," Second stage of tertiary education")`). There are several ways to do this, but here we use the `mutate` function in a pipe.
+
+
+```{r}
+wb_data <- wb_data %>%
+    mutate(grad = fct_recode(Education_2,
+    "no degree"    = " Pre-primary education or none education",    # new level = old level
+    "no degree"    = " Primary education or first stage of basic education",
+    "no degree"    = " Lower secondary or second stage of basic education",
+    "no degree"    = " (Upper) secondary education",
+    "no degree"    = " Post-secondary non-tertiary education",
+    "degree"  = " First stage of tertiary education",
+    "degree" = " Second stage of tertiary education"))
+```
+
+Let's check that this did what we wanted.
+
+```{r}
+table4 <- wb_data %>% count(grad) %>% print()
+```
+
+Yes, great! Let's create a similar table but for two countries
+
+```{r}
+temp_data <- wb_data %>% 
+            filter(S003 %in% c("France","Spain")) # select France and Spain
+
+table(temp_data$grad,temp_data$S003)
+
+```
+
+Now we can feed this information into the `prop.test` function. How this works is that we feed in the two counts of successes (degree observation) and then the number of observations. By default `prop.test` will test that the two proportions are equal.
+
+```{r}
+prop.test(c(420,154), c(1341, 908), alternative = "two.sided")
+```
+
+In the test output you get the two sample propportions (0.31 for Italy and 0.17 for Spain) and we get a very small p-value (p-value = 3e-14). This means that it is extremely unlikely that we would have received such different sample proportions if the null hypothesis of equal proportions had been correct and hence we reject the null hypothesis.
+
+Repeat this analysis by testig whether the proportions of respondents with degrees is different in Denmark and Sweden.
+
+```{r, eval = FALSE}
+temp_data <- wb_data %>% 
+            XXXX(XXXX %in% c("Denmark",XXXX)) # select France and Spain
+
+table(XXXX$grad,XXXX$XXXX)
+```
+
+```{r, echo = FALSE, results = 'hide'}
+temp_data <- wb_data %>% 
+            filter(S003 %in% c("Denmark","Sweden")) # select France and Spain
+
+table(temp_data$grad,temp_data$S003)
+```
+
+You got the correct frequencies if you find 405 Danish respondents with degree.
+
+```{r, eval = FALSE}
+prop.test(c(XXXX,XXXX), XXXX, alternative = XXXX)
+```
+
+```{r, echo = FALSE, results = 'hide'}
+prop.test(c(405,283), c(1060, 788), alternative = "two.sided")
+```
+
+You should find a p-value for the test of 0.3. How do you interpret this?
+
+If the null hypothesis was true there was a 30% probability to get two sample proportions as different or more different as the ones we see. At 30% we judge that this is quite likely (larger than $\alpha$) and hence we do not reject the null hypothesis.
+
+
+# Regression Analysis
+
+Let us estimate a simple regression model for all data from Great Britain.
+
+\[A170 = \alpha + \beta ~ X011_01\]
+
+where `A170` refers to the Life Satisfaction variable and `X011_01` to the number of children. We looked already at the Life Satisfaction variable. Let's first have a look at the number of children variable in Great Britain
+
+```{r}
+wb_data_GB <- wb_data %>%  filter(S003 == "Great Britain")
+table6 <- table(wb_data_GB$X011_01)
+prop.table(table6)
+```
+
+As you can see we have a lot of 0s here (23.7% of the observations), i.e. about a third of respondents have no children. 
+
+We will shortly see that running such a regression has a lot of problematic issues, but the computer doesn't know that and will happily estimate such a regression model. 
+
+Now we run a regresison 
+
+```{r}
+mod1 <- lm(A170~X011_01,data=wb_data_GB)
+stargazer(mod1, type="text")
+```
+
+Taken at face value this seems to suggest that "increasing" your number of children by one will, on average, increase your Life Satisfaction measure by 0.1.
+
+Let's represent these data in a plot:
+
+```{r RegPlot1}
+ggplot(wb_data_GB, aes(x=X011_01, y=A170)) +
+    geom_jitter(width=0.2, size = 0.5) +    # Use jitter rather than point so we can see indiv obs
+    geom_abline(intercept = mod1$coefficients[1], slope = mod1$coefficients[2])+
+    ggtitle("Number of Children v Life Satisfaction, Britain and Sweden")
+```
+
+Note that we use `geom_jitter` rather than `geom_point`. This adds some random noise to the data so that we can see the individual observation (replace `geom_jitter(width=0.2)` with `geom_point()` to see the difference it makes). `geom_abline` adds a line. We specify the intercept and slope from our regression model (`mod1$coefficients[1]` and `mod1$coefficients[2]`). `ggtitle` adds the title to the graph.
