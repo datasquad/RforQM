@@ -1,5 +1,6 @@
 ---
 title: "Introduction to Regression Analysis 1"
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -23,7 +24,7 @@ library(AER)          # access to HS robust standard errors
 
 # Introduction
 
-
+The data are an extract from the [Understanding Society Survey](https://www.understandingsociety.ac.uk/) (formerly the British Household Survey Panel).
 
 # Data Upload - and understanding data structure
 
