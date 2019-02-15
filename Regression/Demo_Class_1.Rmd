@@ -1,0 +1,138 @@
+---
+title: "Demonstration Class 1"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+```
+
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work: 
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(readxl)       # to import Excel data
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+library(haven)        # to import stata file
+library(AER)          # access to HS robust standard errors
+library(estimatr)     # use robust se
+source("stargazer_HC.r")
+```
+
+
+# Introduction
+
+The data are an extract from the [Understanding Society Survey](https://www.understandingsociety.ac.uk/) (formerly the British Household Survey Panel).
+
+# Data Upload - and understanding data structure
+
+Upload the data, which are saved in a STATA datafile (extension `.dta`). There is a function which loads STATA file. It is called `read_dta` and is supplied by the `haven` package.
+
+```{r}
+data_USoc <- read_dta("20222_USoc_extract.dta")
+data_USoc <- as.data.frame(data_USoc)    # ensure data frame structure
+names(data_USoc)
+```
+
+Let us ensure that categorical variables are stored as `factor` variables. It is easiest to work with these in R.
+
+```{r}
+data_USoc$region <- as_factor(data_USoc$region)
+data_USoc$male <- as_factor(data_USoc$male)
+data_USoc$degree <- as_factor(data_USoc$degree)
+data_USoc$race <- as_factor(data_USoc$race)
+```
+
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for dy we shall also adjust for increasing price levels ( as measured`mutate` function. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
+
+```{r}
+data_USoc <- data_USoc %>% 
+              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>% 
+              mutate(lnhrpay = log(hrpay))
+```
+
+
+We will also calculate a modified race variable
+
+```{r}
+data_USoc %>% count(race)
+```
+
+We shall create a variable called `white` which re-groups this into two categories, white and non-white.
+
+```{r}
+data_USoc <- data_USoc %>%
+    mutate(white = fct_recode(race,
+    "white"    = "white",    # new level = old level
+    "non-white"  = "mixed",
+    "non-white"  = "asian",
+    "non-white"  = "black",
+    "non-white"  = "other"))
+```
+
+Let's estimate a regression, allowing average hourly pay to differ between whites and non-whites
+
+```{r}
+mod1 <- lm(lnhrpay~white,data = data_USoc)
+stargazer_HC(mod1,type="text")
+```
+
+
+Now we calculate inflation adjusted figures for gross monthly pay (`paygu`) and scale it to annual pay (`annualpay`).
+
+```{r}
+data_USoc <- data_USoc %>% 
+              mutate(annualpay = paygu*12/(cpi/100))
+summary(data_USoc$annualpay)
+```
+
+Now we look at estimating the following model
+
+\[anualpay = \beta_0 + \beta_1 ~ age + v\]
+
+```{r}
+mod1 <- lm(annualpay~age,data = data_USoc,subset=(degree == "first degree"))
+mod2 <- lm(annualpay~age,data = data_USoc,subset=(degree == "no degree"))
+stargazer(mod1,mod2, type = "text", 
+          column.labels = c("first degree","without degree"),omit.stat = "all") 
+```
+
+Now we use these models to predict annual wages at the age of 20 and 65 depending on whether someone has a degree or not.
+
+```{r}
+# with degree, use mod1
+y20_1 <- mod1$coefficients[1]+mod1$coefficients[2]*20
+y65_1 <- mod1$coefficients[1]+mod1$coefficients[2]*65
+
+# without degree, use mod2
+y20_0 <- mod2$coefficients[1]+mod2$coefficients[2]*20
+y65_0 <- mod2$coefficients[1]+mod2$coefficients[2]*65
+```
+
+Let's create a plot with the two fitted regression lines. But before we do that we create a temporary dataset which only contaisn obs with the two `degree` outcomes we consider here, i.e. "no degree" and "first degree".
+
+```{r}
+temp <- data_USoc %>% filter(degree %in% c("no degree", "first degree"))
+ggplot(temp, aes(x=age,y=annualpay,color = degree))+
+  geom_point(size=0.01) +
+  geom_smooth(method = "lm", se = FALSE)
+
+```
+
+To calculate the lifetime earnings premium for a graduate (earnings between 20 and 65) we calculate the lifetime earnings of a graduate and substract the lifetime earnings of a non-graduate.
+
+```{r}
+L1 = (65-20)*(y20_1+y65_1)/2
+L0 = (65-20)*(y20_0+y65_0)/2
+D = L1 - L0
+unname(L1)   # If you don't use unname then
+unname(L0)   # all these values will inherit the
+unname(D)    # name "intercept" from coefficients
+
+```
+
+So this almost half a million pounds over a lifetime. Is that the value of a degree?

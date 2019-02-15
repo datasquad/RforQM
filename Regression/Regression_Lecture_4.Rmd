@@ -1,0 +1,82 @@
+---
+title: "Introduction to Regression Analysis - Multivariate Regression"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+```
+
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work: 
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+library(haven)        # to import stata file
+library(AER)          # access to HS robust standard errors
+source("stargazer_HC.r")  # includes the robust regression display
+```
+
+
+# Introduction
+
+The data are an extract from the [Understanding Society Survey](https://www.understandingsociety.ac.uk/) (formerly the British Household Survey Panel).
+
+# Data Upload - and understanding data structure
+
+Upload the data, which are saved in a STATA datafile (extension `.dta`). There is a function which loads STATA file. It is called `read_dta` and is supplied by the `haven` package.
+
+```{r}
+data_USoc <- read_dta("20222_USoc_extract.dta")
+data_USoc <- as.data.frame(data_USoc)    # ensure data frame structure
+names(data_USoc)
+```
+
+Let us ensure that categorical variables are stored as `factor` variables. It is easiest to work with these in R.
+
+```{r}
+data_USoc$region <- as_factor(data_USoc$region)
+data_USoc$male <- as_factor(data_USoc$male)
+data_USoc$degree <- as_factor(data_USoc$degree)
+data_USoc$race <- as_factor(data_USoc$race)
+```
+
+Click on the little table symbol in your environment tab to see the actual data table. 
+
+
+
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for dy we shall also adjust for increasing price levels ( as measured`mutate` function. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
+
+```{r}
+data_USoc <- data_USoc %>% 
+              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>% 
+              mutate(lnhrpay = log(hrpay))
+```
+
+As we wanted to save these additional variables we assign the result of the operation to `data_USoc`.
+
+Let's run a simple regression of `lnhrpay` on `educ` which is a variable which counts the years of formal education.
+
+```{r}
+mod1 <- lm(lnhrpay~educ,data = data_USoc)
+stargazer_HC(mod1)
+```
+
+Before we continue we create a squared age variable
+
+```{r}
+data_USoc <- data_USoc %>% mutate(agesq = age*age/100)
+```
+
+Now we allow for age as an additional explanatory variable. But we will allow for the effect of `age` to be nonlinear, in particular quadratic.
+
+```{r}
+mod2 <- lm(lnhrpay~educ+age+agesq,data = data_USoc)
+stargazer_HC(mod2)
+```
+
+
