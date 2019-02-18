@@ -47,14 +47,7 @@ data_USoc$degree <- as_factor(data_USoc$degree)
 data_USoc$race <- as_factor(data_USoc$race)
 ```
 
-The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for dy we shall also adjust for increasing price levels ( as measured`mutate` function. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
-
-```{r}
-data_USoc <- data_USoc %>% 
-              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>% 
-              mutate(lnhrpay = log(hrpay))
-```
-
+## Question 1
 
 We will also calculate a modified race variable
 
@@ -67,11 +60,34 @@ We shall create a variable called `white` which re-groups this into two categori
 ```{r}
 data_USoc <- data_USoc %>%
     mutate(white = fct_recode(race,
-    "white"    = "white",    # new level = old level
-    "non-white"  = "mixed",
+    "non-white"  = "mixed",   # new level = old level
     "non-white"  = "asian",
     "non-white"  = "black",
-    "non-white"  = "other"))
+    "non-white"  = "other",
+    "white"    = "white"))
+```
+
+When you define a factor variable, then there will be a base category. You find out what the base theory is by checking the `levels`of the factor variable.
+
+```{r}
+levels(data_USoc$white)
+```
+
+The first category is the base category, here white. As this is a binary factor variable you could think about this as a dummy variable which takes value 0 for the base category (here white) and 1 for the other category (non-white). As we labeled our new variable `white` it is convention to associate the value 1 with observations which are actually white. So we need to swap the levels:
+
+```{r}
+data_USoc$white <- factor(data_USoc$white,levels(data_USoc$white)[c(2,1)])
+levels(data_USoc$white)
+```
+
+It is the very last part pf this command (`c(2,1)`) which ensures that the new first level is the one that previously was second. There is no need to remember such a command, I had to google" "r change level order of factor" in order to remember how to do that.
+
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for varying number of days we will calculate a hourly payrate to facilitate a compparison. We shall also adjust for increasing price levels ( as measured by `cpi`). We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`). The `mutate` function creates a new variable.
+
+```{r}
+data_USoc <- data_USoc %>% 
+              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>% 
+              mutate(lnhrpay = log(hrpay))
 ```
 
 Let's estimate a regression, allowing average hourly pay to differ between whites and non-whites
@@ -81,6 +97,16 @@ mod1 <- lm(lnhrpay~white,data = data_USoc)
 stargazer_HC(mod1,type="text")
 ```
 
+
+Let say we want to calculate the actual percentage points raw differential between white and non-white respondents, which is a function of the slope coefficient:
+
+```{r}
+(exp(mod1$coefficients["whitewhite"])-1)*100
+```
+
+You can see that, as this value is fairly small, the value of the raw differential is very close to the value of the actual parameter. Only when this parameter becomes larger is it necessary to apply the above formula. So, white respondents, on average, earn about 5.5% higher hourly pay.
+
+## Question 2
 
 Now we calculate inflation adjusted figures for gross monthly pay (`paygu`) and scale it to annual pay (`annualpay`).
 
@@ -136,3 +162,6 @@ unname(D)    # name "intercept" from coefficients
 ```
 
 So this almost half a million pounds over a lifetime. Is that the value of a degree?
+
+Graphically this is the difference between the two fitted regression lines between the ages 20 and 65.
+
