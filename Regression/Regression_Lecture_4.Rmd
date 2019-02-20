@@ -76,7 +76,7 @@ Now we allow for age as an additional explanatory variable. But we will allow fo
 
 ```{r}
 mod2 <- lm(lnhrpay~educ+age+agesq,data = data_USoc)
-stargazer_HC(mod2)
+stargazer_HC(mod1,mod2)
 ```
 
 

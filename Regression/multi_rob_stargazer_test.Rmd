@@ -98,21 +98,45 @@ Alternatively one can hand in a list of models
 stargazer(list(mod1,mod2,mod3), type = "text")
 ```
 
+Let's create the robust standard errors for the two additional models
+
+```{r}
+cov2 <- vcovHC(mod2, type = "HC1")
+robust_se2 <- sqrt(diag(cov2))
+cov3 <- vcovHC(mod3, type = "HC1")
+robust_se3 <- sqrt(diag(cov3))
+```
+
+Now we can feed this int the stargazer function
+
+```{r}
+stargazer(list(mod1,mod2), se=list(robust_se,robust_se2), type ="text")
+```
+
+
 I am now trying to produce a version of `stargazer_HC(mod1)` which allows for multiple models and robust errors in these, but so far I am failing. Here is my best attempt:
 
 ```{r}
-stargazer_HCm <- function(mod, type_in = "text") {
+stargazer_HCm <- function(mod_all, type_in = "text") {
 # model collection should come in as a list of models
+  n_mod <- length(mod_all)
   rep_se <- list(NULL)  # use this to replace se
-
-  # if extra models process them here
-  for (mod_i in mod_all){
-    cov1 <- vcovHC(mod_i[[1]], type = "HC1") # calculate next rob se
+  i <- 1        # count the number of models 
+  
+  if (length(mod_all) == 1) {
+    cov1 <- vcovHC(mod_all[[1]], type = "HC1") # calculate next rob se
     robust_se <- sqrt(diag(cov1))
-    rep_se <- list(rep_se, list(robust_se))  # add next se
-  }
+    stargazer(mod,type="text",se=list(NULL,robust_se))
+  } else {
+    for (mod_i in mod_all){
+    covi <- vcovHC(mod_i, type = "HC1") # calculate next rob se
+    robust_se <- sqrt(diag(covi))
+    rep_se[[i]] <- robust_se  # add next robust standard error to rep_se list
+    i <- i + 1
+    }
 
-  stargazer(mod,type="text",se=rep_se)
+    stargazer(mod_all, type = "text", se=rep_se)
+  }
 }
 ```
 
@@ -120,7 +144,50 @@ stargazer_HCm <- function(mod, type_in = "text") {
 stargazer_HCm(list(mod1,mod2,mod3))
 ```
 
-This doesn't work. 
+This works. How do we now manage to make the call to the function `stargazer_HCm(mod1,mod2,mod3)` instead of `stargazer_HCm(list(mod1,mod2,mod3))`, i.e. I want to avoid the list. Let's see whether the `...`function input works
+
+```{r}
+test_list <- function(...){
+  list(...)
+}
+test_list(robust_se,robust_se2)
+```
+
+So, that has indeed a prduced a list. So let's apply this to our problem
+
+```{r}
+stargazer_HCm2 <- function(..., type_out = "text", type_HC = "HC1") {
+  # the first inputs are the models which are to be displayed
+  # type_out carries through to the stargazer function, default: "text", other; "latex", "html"
+  # type_HC carries through tothe vcovHC function, default: "HC1" (or Stata equivalent)
+  mod_all <- list(...)  # model collection should be a list of models
+  n_mod <- length(mod_all)
+  rep_se <- list(NULL)  # use this to replace se
+  i <- 1        # count the number of models 
+  
+  if (length(mod_all) == 1) {
+    cov1 <- vcovHC(mod_all[[1]], type = type_HC) # calculate next rob se
+    robust_se <- sqrt(diag(cov1))
+    stargazer(mod_all[[1]],type=type_out,se=list(NULL,robust_se))
+  } else {
+    for (mod_i in mod_all){
+    covi <- vcovHC(mod_i, type = type_HC) # calculate next rob se
+    robust_se <- sqrt(diag(covi))
+    rep_se[[i]] <- robust_se  # add next robust standard error to rep_se list
+    i <- i + 1
+    }
+
+    stargazer(mod_all, type =type_out, se=rep_se)
+  }
+}
+```
+
+```{r}
+stargazer_HCm2(mod1,mod2)
+```
+
+excellent this works, can 
+
 
 Interestingly I found a package (`estimatr`) which includes a function to easily run regerssions with robust errors
 
@@ -131,3 +198,4 @@ lm_robust(lnhrpay~educ,data = data_USoc, se_type = "HC1")
 However, the output is not compatible with stargazer.
 
 Any ideas?
+
