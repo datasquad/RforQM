@@ -92,9 +92,6 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
 }
@@ -167,31 +164,18 @@ data_USoc$race &lt;- XXXX(data_USoc$race)</code></pre>
 <pre class="r"><code>data_USoc &lt;- data_USoc XXXX
               XXXX(hrpay = paygu/(jbhrs*4)/(cpi/100)) XXXX 
               XXXX(lnhrpay = XXXX(hrpay))</code></pre>
-<p>As we wanted to save these additional variables we assign the result of the operation to <code>data_USoc</code>.</p>
+<p>As we wanted to save these additional variables we assign the result of the operation to <code>data_USoc</code>. You can check that your calcullations are correct if you obtain a mean value for <code>lnhrpay</code> of 2.28 and you have 74312 missing observations. Use <code>summary(data_USoc$lnhrpay)</code> to check for these stats.</p>
 </div>
 <div id="first-analysis---do-regions-matter" class="section level1">
 <h1>First Analysis - Do Regions matter?</h1>
-<p>Have a look at the <code>region</code> variable. Establish what the different regions in the dataset are and how many observations we have in each region in each year. Hint, we did sometrhing similar for Lecture 2.</p>
-<pre><code>## # A tibble: 12 x 6
-## # Groups:   region [12]
-##    region                   `2009` `2010` `2011` `2012` `2013`
-##    &lt;fct&gt;                     &lt;int&gt;  &lt;int&gt;  &lt;int&gt;  &lt;int&gt;  &lt;int&gt;
-##  1 north east                 1011   1764   1741    805     47
-##  2 north west                 2628   4762   4406   2186    113
-##  3 yorkshire and the humber   2009   3636   3585   1807    102
-##  4 east midlands              1867   3345   3288   1679     78
-##  5 west midlands              2168   3936   3678   1866     99
-##  6 east of england            2121   3976   3754   1872    137
-##  7 london                     3538   6793   6244   3169    250
-##  8 south east                 3021   5521   5269   2518    132
-##  9 south west                 1978   3469   3388   1633     86
-## 10 wales                      1166   2211   2187   1065     47
-## 11 scotland                   1827   3158   2908   1366     62
-## 12 northern ireland           2029   1924   1765     82     NA</code></pre>
+<p>Have a look at the <code>region</code> variable. Establish what the different regions in the dataset are and how many observations we have in each region in each year. (Hint: we did something similar for Lecture 2):</p>
 <p>You did it right if you find that for 2009 there were 1867 observations from the East Midlasnds region and for 2013 only 47 observations from Wales. In fact if look at the number of observations across the years you should realise that for the Year 2013 there are much fewer observations than for the other years. This could be an indication for some problem (or systematic selection) with the data from this year and hence we decide to remove all 2013 observations from the dataset.</p>
 <p>We did achieve things like this in previous empirical work and you could look in previous files how we achieved this. There are of course different ways to do this and you could google for solutions (“R select observations”, “R remove observations”)</p>
 <p>After doing this you should find that the <code>data_USoc</code> has 132,119 remaining observations.</p>
 <p>Let’s run a regression of <code>lnhrpay</code> as the dependent variable against <code>region</code>.</p>
+<pre class="r"><code>mod1 &lt;- lm(XXXX~XXXX, data = XXXX)
+stargazer_HC(mod1)</code></pre>
+<p>If you do it correctly you should obtain the following output:</p>
 <pre><code>## 
 ## ====================================================================
 ##                                         Dependent variable:         
@@ -243,37 +227,17 @@ data_USoc$race &lt;- XXXX(data_USoc$race)</code></pre>
 ## ====================================================================
 ## Note:                                    *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01
 ##                                Robust standard errors in parenthesis</code></pre>
-<pre class="r"><code>mod1 &lt;- lm(XXXX~XXXX, data = XXXX)
-stargazer_HC(mod1)</code></pre>
 <p>What is the base region? The first level is the <code>north east</code>, (Check <code>levels(data_USoc$region)</code>) and that is the base reagion. For all other regions the above regression included a dummy variable. For instance, the variable called <code>regionwales</code> takes the value 1 if an observation is from Wales and 0 otherwise.</p>
 <p>How would you interpret the estimated parameter value for <code>regionwales</code>? The coefficient value is -0.0743675 and indicates that on average hourly pay is 7.5 percent lower than those in the North East.</p>
 <p>Which region is the highest paying region?</p>
 <p>Now estimate two more models. One in which the only explanatory variables is <code>educ</code> which measures the completed years of formal education.</p>
-<pre><code>## 
-## =========================================================
-##                              Dependent variable:         
-##                     -------------------------------------
-##                                    lnhrpay               
-## ---------------------------------------------------------
-## educ                              0.094***               
-##                                    (0.001)               
-##                                                          
-## Constant                          1.032***               
-##                                    (0.014)               
-##                                                          
-## ---------------------------------------------------------
-## Observations                       58,381                
-## R2                                  0.128                
-## Adjusted R2                         0.128                
-## Residual Std. Error          0.589 (df = 58379)          
-## F Statistic             8,600.210*** (df = 1; 58379)     
-## =========================================================
-## Note:                         *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01
-##                     Robust standard errors in parenthesis</code></pre>
 <pre class="r"><code>mod2 &lt;- lm(XXXX~XXXX, data = XXXX)
 stargazer_HC(XXXX)</code></pre>
 <p>You got it right if you get a slope coefficient of 0.0935909. The result is ever so slightly different to that in the lecture as, here, we removed the 2013 observations.</p>
 <p>Then also estimate a model which contains both, the <code>educ</code> and the <code>region</code> variables. Then display all three models in one table.</p>
+<pre class="r"><code>mod2 &lt;- lm(XXXX~XXXX+XXXX, data = XXXX)
+stargazer_HC(mod2,mod1,mod3)</code></pre>
+<p>You should be able to replicate the following table (in R you shoudl be able to see the complete 3rd column):</p>
 <pre><code>## 
 ## ==================================================================================================================
 ##                                                                Dependent variable:                                
@@ -329,8 +293,6 @@ stargazer_HC(XXXX)</code></pre>
 ## ==================================================================================================================
 ## Note:                                                                                  *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01
 ##                                                                              Robust standard errors in parenthesis</code></pre>
-<pre class="r"><code>mod2 &lt;- lm(XXXX~XXXX+XXXX, data = XXXX)
-stargazer_HC(mod2,mod1,mod3)</code></pre>
 </div>
 
 

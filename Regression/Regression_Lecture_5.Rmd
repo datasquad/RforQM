@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
 
 # Preparing your workfile
 
-We add the basic libraries needed for this week's work: 
+We add the basic libraries needed for this week's work:
 
 ```{r}
 library(tidyverse)    # for almost all data handling tasks
@@ -45,17 +45,17 @@ data_USoc$degree <- as_factor(data_USoc$degree)
 data_USoc$race <- as_factor(data_USoc$race)
 ```
 
-The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for dy we shall also adjust for increasing price levels ( as measured`mutate` function. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for varying numbers of hours per week (`jbhrs`) we divide the monthly pay by the approximate monthly hours (`4*jbhrs`). We shall also adjust for increasing price levels (as measured by `cpi`). These two adjustments leave us with an inflation adjusted hourly wage. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
 
 ```{r}
-data_USoc <- data_USoc %>% 
-              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>% 
+data_USoc <- data_USoc %>%
+              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>%
               mutate(lnhrpay = log(hrpay))
 ```
 
 As we wanted to save these additional variables we assign the result of the operation to `data_USoc`.
 
-In this lecture we will use the firmsize variable `mfsize9`. When we import the data from the STATA dta file, the variables inherited certain attributes. YOu can see them if you look at the structure of the dataframe (`str(data_USoc)`). One of the attributes is the label and it contains a little bit of information on the variable.
+In this lecture we will use the firmsize variable `mfsize9`. When we import the data from the STATA dta file, the variables inherit certain attributes. You can see them if you look at the structure of the dataframe (`str(data_USoc)`). One of the attributes is the label and it contains a little bit of information on the variable.
 
 ```{r}
 attr(data_USoc$mfsize9,"label")
@@ -67,7 +67,7 @@ And we can also look at the unique values this variable takes
 unique(data_USoc$mfsize9)
 ```
 
-You can see that there are 9 possible values (which is where the 9 in the name comes from). Each respondent who is in work works in a firm and the size of the firm is recorded, but we do not observe the actual size. There are buckets for firm sizes, e.g. 51 to 100, 101 to 200, 201 to 500, etc. And the number we see is the mid-value of the respective bucket into which a firm falls.
+You can see that there are 9 possible values (which is where the 9 in the name comes from). Each respondent records the size of the firm they work for, but we do not observe the actual size. There are buckets or bins for firm sizes, e.g. 51 to 100, 101 to 200, 201 to 500, etc. And the number we see is the mid-value of the respective bucket into which a firm falls.
 
 ```{r}
 data_USoc %>% count(mfsize9)
@@ -79,13 +79,13 @@ You can see that each of the 9 categories has a significant number of observatio
 names(data_USoc)[names(data_USoc) == "mfsize9"] <- "fsize"
 ```
 
-Before we continue it is important to understand what type of variable this is. Let's use the `str` (structure) function.
+Before we continue, it is important to understand what type of variable this is. Let's use the `str` (structure) function.
 
 ```{r}
 str(data_USoc$fsize)
 ```
 
-You can see that this is a numeric variable. 
+You can see that this is a numeric variable.
 
 Initially we will use the variable, however, not as a numeric, but rather as a categorical variable. So we are not really interested the numerical differences between the bin means. This means that we should change the variable type to a factor variable. We define a new variable for this reason, `fsize_f`.
 
@@ -93,14 +93,14 @@ Initially we will use the variable, however, not as a numeric, but rather as a c
 data_USoc$fsize_f <- as.factor(data_USoc$fsize)
 str(data_USoc$fsize_f)
 ```
-Looking again at `str(data_USoc$fsize)` we confirm that this is now a factor variable.
+Looking again at `str(data_USoc$fsize_f)` we confirm that this is now a factor variable.
 
 # Cleaning the dataset
 
 Now we will remove data from the dataframe which have missing observations in either the `fsize` or the `lnhrpay` variable. As we will not require these observations in this lecture we will remove these observations from `data_USoc`.
 
 ```{r}
-data_USoc <- data_USoc %>% filter(!is.na(lnhrpay)) %>% 
+data_USoc <- data_USoc %>% filter(!is.na(lnhrpay)) %>%
                             filter(!is.na(fsize))
 ```
 
@@ -120,11 +120,11 @@ data_USoc %>% select(lnhrpay,fsize) %>% stargazer(type="text")
 Let's also calculate the average hourly log pay by firm size.
 
 ```{r}
-data_USoc %>% group_by(fsize) %>% 
+data_USoc %>% group_by(fsize) %>%
               summarise(mean_lnhrpay = mean(lnhrpay), sd_lnhrpay = sd(lnhrpay), n = n())
 ```
 
-You can see that the average pay increases with firm size and that the variation is clearly largest in the 1-person companies.
+You can see that the average pay increases with firm size.
 
 # Estimating the model
 
@@ -135,31 +135,31 @@ mod1 <- lm(lnhrpay~fsize_f, data = data_USoc)
 stargazer_HC(mod1)
 ```
 
-You can see that all firm size categories have been included as dummy variables but for the 1-person firm. This is the base category and the estimated constant term is the average value for `lnhrpay` in that base category (compare to the above table). The other coefficients are the difference in mean pay relative to the base category. As you can see the average pay in all but one of the other categories is larger than in the 1-person firms.
+You can see that all firm size categories have been included as dummy variables except for the smallest. This is the base category and the estimated constant term is the average value for `lnhrpay` in that base category (compare to the above table). The other coefficients are the difference in mean pay relative to the base category. As you can see the average pay in all but one of the other categories is larger than in the smallest firms.
 
-The 1-person firm category was the base category as R orders factors alphabetically/numerically and "1" comes before all of the other category labels. You may have reasons to want to re-estimate the model with a different base category. Say you want the largest category to be the base category. If we want to do that we need to change the ordering of our levels in the factor variable `fsize`. (I had to google "r factor change level order" to remind myself of how to do that.)
+The smallest firm category was the base category as R orders factors alphabetically/numerically and "1" comes before all of the other category labels. You may have reasons to want to re-estimate the model with a different base category. Say you want the largest category to be the base category, as in the lecture slides, then we need to change the ordering of our levels in the factor variable `fsize`. (I had to google "r factor change level order" to remind myself of how to do that.)
 
 ```{r}
 data_USoc$fsize_f <- relevel(data_USoc$fsize_f, "1500")  # sets 1500 as the first level
 str(data_USoc$fsize_f)
 ```
 
-If we now re-estimate the above model we obtain different parameters, but in essence we are still replicating the same model and indeed the group means from the earlier table.
+If we now re-estimate the above model we obtain different parameters, but in essence we are still estimating the same model and indeed the group means from the earlier table.  The lecture slides and background notes explain in more detail.
 
 ```{r}
 mod2 <- lm(lnhrpay~fsize_f, data = data_USoc)
 stargazer_HC(mod2)
 ```
 
-In fact, you could estimate the model without the constant but a full set of variables for all the 9 categories. You need to tell R to not include a constant. YOu do that by adding `-1` to the model specification. 
+In fact, you could estimate the model without the constant but a full set of variables for all the 9 categories. You need to tell R to not include a constant. You do that by adding `-1` to the model specification.
 
 ```{r}
 mod3 <- lm(lnhrpay~fsize_f-1, data = data_USoc)
 stargazer_HC(mod3)
 ```
-In the absence of a constant each coefficient represents the sample mean of the respective firm size categories.
+In the absence of a constant each coefficient replicates the sample mean of the respective firm size categories.
 
-All the above specifications essentially estimate the same model. In particular we allow each of the firm size categories to have impacts which are independent of the other categories, which means that we just recover the respective sample means.
+All the above specifications essentially estimate the same model.
 
 Recall that we changed the firm size variable into a factor variable which allowed the use of the firm size categories. What would happen if used the variable `fsize`, but as the log firmsize, `log(fsize)`. Recall that this is a numerical variable, so R uses the actual numbers reported.
 
@@ -182,9 +182,8 @@ Now we plot the predicted values for the two specifications. Recall that we only
 ```{r}
 # pdf("Lecture5plot_R.pdf",width = 5.5, height = 4) # uncomment to save as pdf
 ggplot(data_USoc, aes(x=fsize,y=pred_mod3)) +
-  geom_point(color = "red") + 
-  geom_line(color = "red") +
-  geom_point(aes(y=pred_mod4),color = "blue") + 
+  geom_point(color = "red") +
+  geom_point(aes(y=pred_mod4),color = "blue") +
   geom_line(aes(y=pred_mod4),color = "blue") +
   ggtitle("Predicted Regression Model") +
   ylab("Predicted values") +

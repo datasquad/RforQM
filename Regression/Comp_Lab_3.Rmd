@@ -1,6 +1,7 @@
 ---
 title: "Computer Lab 3"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
 ---
@@ -85,13 +86,13 @@ data_USoc <- data_USoc XXXX
               XXXX(lnhrpay = XXXX(hrpay))
 ```
 
-As we wanted to save these additional variables we assign the result of the operation to `data_USoc`.
+As we wanted to save these additional variables we assign the result of the operation to `data_USoc`. You can check that your calcullations are correct if you obtain a mean value for `lnhrpay` of 2.28 and you have 74312 missing observations. Use `summary(data_USoc$lnhrpay)` to check for these stats.
 
 # First Analysis - Do Regions matter?
 
-Have a look at the `region` variable. Establish what the different regions in the dataset are and how many observations we have in each region in each year. Hint, we did sometrhing similar for Lecture 2. 
+Have a look at the `region` variable. Establish what the different regions in the dataset are and how many observations we have in each region in each year. (Hint: we did something similar for Lecture 2): 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, results = 'hide'}
 table1 <- data_USoc %>% group_by(region,year) %>% # groups by region and year
 summarise(n = n()) %>% # summarises each group by calculating obs
 spread(year,n) %>% # put Waves across columns
@@ -110,13 +111,15 @@ After doing this you should find that the `data_USoc` has 132,119 remaining obse
 
 Let's run a regression of `lnhrpay` as the dependent variable against `region`.
 
-```{r, echo = FALSE}
-mod1 <- lm(lnhrpay~region, data = data_USoc)
+```{r, eval = FALSE}
+mod1 <- lm(XXXX~XXXX, data = XXXX)
 stargazer_HC(mod1)
 ```
 
-```{r, eval = FALSE}
-mod1 <- lm(XXXX~XXXX, data = XXXX)
+If you do it correctly you should obtain the following output:
+
+```{r, echo = FALSE}
+mod1 <- lm(lnhrpay~region, data = data_USoc)
 stargazer_HC(mod1)
 ```
 
@@ -128,26 +131,28 @@ Which region is the highest paying region?
 
 Now estimate two more models. One in which the only explanatory variables is `educ` which measures the completed years of formal education.
 
-```{r, echo = FALSE}
-mod2 <- lm(lnhrpay~educ, data = data_USoc)
-stargazer_HC(mod2)
-```
-
 ```{r, eval = FALSE}
 mod2 <- lm(XXXX~XXXX, data = XXXX)
 stargazer_HC(XXXX)
+```
+
+```{r, echo = FALSE, results='hide'}
+mod2 <- lm(lnhrpay~educ, data = data_USoc)
+stargazer_HC(mod2)
 ```
 
 You got it right if you get a slope coefficient of `r mod2$coefficients["educ"]`. The result is ever so slightly different to that in the lecture as, here, we removed the 2013 observations.
 
 Then also estimate a model which contains both, the `educ` and the `region` variables. Then display all three models in one table.
 
-```{r, echo = FALSE}
-mod3 <- lm(lnhrpay~educ+region, data = data_USoc)
+```{r, eval = FALSE}
+mod3 <- lm(XXXX~XXXX+XXXX, data = XXXX)
 stargazer_HC(mod2,mod1,mod3)
 ```
 
-```{r, eval = FALSE}
-mod2 <- lm(XXXX~XXXX+XXXX, data = XXXX)
+You should be able to replicate the following table (in R you shoudl be able to see the complete 3rd column):
+
+```{r, echo = FALSE}
+mod3 <- lm(lnhrpay~educ+region, data = data_USoc)
 stargazer_HC(mod2,mod1,mod3)
 ```
