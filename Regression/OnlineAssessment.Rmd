@@ -5,23 +5,35 @@ output: pdf_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
-student_view <- 'asis'   # set to 'hide' to not reveal output, 'asis' to show
-solution_echo <- TRUE   # set to FALSE to not show full code, TRUE to show full code 
+student_view <- 'hide'   # set to 'hide' to not reveal output, 'asis' to show
+solution_echo <- FALSE   # set to FALSE to not show full code, TRUE to show full code
 ```
 
 # Instructions
 
-You should go through the code below and complete it. Keep the completed code and all the resulting output. With that information you will be able to answer the questions you will see in the online quiz. Every student will see a slightly different collection of questions (as we will draw 10 questions from a pool of questions with about 20 questions).
+You should work through the code below and complete it.  Keep the completed code
+and all the resulting output.  Next you should answer the questions in the
+online quiz.  Every student will see a slightly different collection of
+questions (as we will randomly draw 10 questions from a pool of about 20
+questions).
 
-The type of questions you will see will be of four types. 
+The questions are of four types.
 
-1) Questions that merely ask you to report output from your analysis. 
+1) Questions that merely ask you to report output from your analysis.
 
-2) Some questions will ask you about R code. For instance you will see a lot of gaps (`XXXX`) in the code and questions may ask you how you had to complete the code to make the code work. Other questions may ask you what output a particular bit of code would produce. If you want to practice these sorts of questions you could practice on Datacamp.
+2) Some questions will ask you about R code.  For example, you will see a lot of
+gaps (`XXXX`) in the code and questions may ask you how to complete the code to
+make the code work.  Sometimes the `XXXX` will represent one word and on other occasions it will represent a full line (or two) of code. Other questions may ask you about the output to be produced
+by a particular bit of code.  If you want to practice these sorts of questions
+you could practice on Datacamp.
 
-3) The third type of questions will ask you understanding questions like "What is the meaning of an estimated coefficient?" "Is a particular coefficient statistically significant?"
+3) The third type of questions will test your understanding of econometric
+issues.  For example:  "What is the meaning of an estimated coefficient?" "Is a
+particular coefficient statistically significant?"
 
-4) We may be asked questions on general programming issues, like what is the meaning of an error message or how would you search for a particular piece of information.
+4) The fourth type of question, if asked, will be on general programming issues.
+For example:  what is the meaning of a particular error message, or, how would
+you search for a particular piece of information.
 
 # Preparing your workfile
 
@@ -42,7 +54,7 @@ The data are an extract from the [Understanding Society Survey](https://www.unde
 
 # Data Upload - and understanding data structure
 
-Upload the data, which are saved in a STATA datafile (extension `.dta`). There is a function which loads STATA file. It is called `read_dta` and is supplied by the `haven` package. 
+Upload the data, which are saved in a STATA datafile (extension `.dta`). There is a function which loads STATA file. It is called `read_dta` and is supplied by the `haven` package.
 
 ```{r, eval = FALSE}
 data_USoc <- XXXX("20222_USoc_extract.dta")
@@ -76,7 +88,13 @@ As we defined the `male` variable as a factor it has levels `male` and `female` 
 names(data_USoc)[names(data_USoc) == "male"] <- "gender"
 ```
 
-The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for varying numbers of hours per week (`jbhrs`) we divide the monthly pay by the approximate monthly hours (`4*jbhrs`). We shall also adjust for increasing price levels (as measured by `cpi`). These two adjustments leave us with an inflation adjusted hourly wage. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay
+per month.  As workers work for varying numbers of hours per week (`jbhrs`) we
+divide the monthly pay by the approximate monthly hours (`4*jbhrs`).  We shall
+also adjust for increasing price levels (as measured by `cpi`).  These two
+adjustments leave us with an inflation adjusted hourly wage.  We call this
+variable `hrpay` and also calculate the natural log of this variable
+(`lnhrpay`).
 
 ```{r, eval = FALSE}
 data_USoc <- data_USoc %>%
@@ -102,7 +120,9 @@ data_USoc <- data_USoc %>%
               mutate(annualpay = paygu*12/(cpi/100))
 ```
 
-Here we will evaluate the relation between `lnhrpay` and `age`. Let's first summarise all numerical variables in our dataset, using the `stargazer` function. 
+Let's first
+summarise all numerical variables in our dataset, using the `stargazer`
+function.
 
 ```{r, eval = FALSE}
 XXXX
@@ -111,34 +131,52 @@ XXXX
 stargazer(data_USoc,type="latex")
 ```
 
-You should find, for instance, that the mean value of the unemployment rate (`urate`) is 7.955 and the standard deviation for the `age` variable is 18.295.
+You should find, for instance, that the mean value of the unemployment rate
+(`urate`) is 7.955 and the standard deviation for the `age` variable is 18.295.
 
-For later purposes we will also need variables $age^2/100$ and $log(age)$. We now need to create these variables (`agesq` and `lnage`) and add them to the `data_USoc` dataframe.
+For later purposes we will also need variables $age^2/100$ and $log(age)$.  We
+now need to create these variables (`agesq` and `lnage`) and add them to the
+`data_USoc` dataframe.
 
 ```{r, eval = FALSE}
 XXXX
 mean(data_USoc$lnage)
 ```
 ```{r, echo = solution_echo, results=student_view}
-data_USoc <- data_USoc %>%  
-                mutate(agesq = age*age/100) %>% 
+data_USoc <- data_USoc %>%
+                mutate(agesq = age*age/100) %>%
                 mutate(lnage = log(age))
 mean(data_USoc$lnage)
 ```
 
 You should find the mean of `lnage` to be 3.744307.
 
+Another variable needed later is a variable which indicates whether a respondent has a degree. We call this variable `grad`. It should be a factor variable with two levels, `degree` and `no degree`.
+
+```{r}
+data_USoc <- data_USoc %>% 
+              mutate(grad = ifelse(degree %in% c("first degree","higher degree"),"degree",
+                                   ifelse(degree == "no degree","no degree",NA)))
+data_USoc$grad <- as_factor(data_USoc$grad)
+```
+
+Google to understand what the `ifelse()` function does.
+
 # Data cleaning
 
-We will now remove unusable observations from our `data_USoc` dataframe, in particular those observations which have missing (`NA`) data for `lnhrpay`. In addition to that we will also remove observations from males which are 66 years or older and females whose age is 61 years or older.
+We now remove (or "drop") unusable (or "missing") observations from our
+`data_USoc` dataframe.  They are those observations which have missing (`NA`)
+data for `lnhrpay` (because the individual is not working) and we will remove
+observations for males who are 66 years or older and females who are 61 years or
+older.
 
 ```{r, eval = FALSE}
-data_USoc <- data_USoc %>% 
+data_USoc <- data_USoc %>%
                 XXXX
 ```
 ```{r, echo = solution_echo}
-data_USoc <- data_USoc %>% 
-                filter(!is.na(lnhrpay)) %>% 
+data_USoc <- data_USoc %>%
+                filter(!is.na(lnhrpay)) %>%
                 filter((gender == "male" & age < 66) | (gender == "female" & age < 61) )
 ```
 
@@ -165,17 +203,28 @@ mod2 <- lm(lnhrpay ~ lnage, data = data_USoc)
 stargazer_HC(mod1,mod2,type_out="latex")
 ```
 
-You have done this correctly if you find that that your estimated constant for `mod1` is 0.560.
+If you have done this correctly, you will find that that your estimated constant
+for `mod1` is 0.560.
 
-These are two ways of allowing `age` to be correlated with `lnhrpay`. Both are what we call parametric, either a quadratic relation or a logarithmic relation.
+We suggest that there are two ways of modelling the relationship between `age`
+and `lnhrpay` in a so-called parametric way, either as a quadratic relationship
+or as a logarithmic one.
 
-As we have lots of data we can do this in a more flexible way as well. We could basically produce a dummy variable for every age (ages are reported in full years only) an then include a dummy variable for each age. TO do this we will first have to create an age variable which treats age as a categorical, or in R terms factor variable. We shall call this `age_f`.
+As we have lots of data, there is a third more flexible approach.  We do this be
+generating a dummy variable for every integer age (ages are reported in full
+years only).  To do this we will first have to create an age variable which
+treats age as a categorical, or in R terms, a factor variable.  We shall call
+this `age_f`.
 
 ```{r}
 data_USoc <- data_USoc %>% mutate(age_f = as.factor(age))
 ```
 
-With `age_f` being a factor variable, it is now straightforward to include thsi factor variable into a regresison. We can either include a constant (`lnhrpay ~ age_f`) which will then use age = 16 as a base category, or we can estimate the model without a constant (`lnhrpay ~ age_f - 1`) in which case all age categories enter separately.
+With `age_f` being a factor variable, it is now straightforward to include this
+factor variable into a regresison.  We can either include a constant (`lnhrpay ~
+age_f`) which will then use age = 16 as a base category, or we can estimate the
+model without a constant (`lnhrpay ~ age_f - 1`) in which case all age
+categories enter separately.
 
 ```{r, eval = FALSE}
 mod3 <- lm(lnhrpay ~ age_f, data = data_USoc)
@@ -188,7 +237,9 @@ mod4 <- lm(lnhrpay ~ age_f -1, data = data_USoc)
 stargazer_HC(mod3,mod4,type_out="latex")
 ```
 
-Let's compare the fitted values for `mod1`, `mod2` and `mod4`. First we add the predicted values to the dataframe. There are several ways to achieve this and I recommend you ask Dr. Google. Think carefully about the search terms.
+We now compare the fitted values for `mod1`, `mod2` and `mod4`.  First we add
+the predicted values to the dataframe.  There are several ways to achieve this
+and I recommend you ask Dr.  Google.  (Think carefully about the search terms.)
 
 ```{r, eval = FALSE}
 data_USoc$pred_mod1 <- XXXX
@@ -201,7 +252,11 @@ data_USoc$pred_mod2 <- mod2$fitted.values
 data_USoc$pred_mod4 <- mod4$fitted.values
 ```
 
-Now we plot the predicted values for the three specifications. You should also change the Axis labels to "Predicted values" for the vertical axis, "Age (in Years)" for the horizontal axis and add a title ("Predicted Regression Model") to your picture. If you google you should find the appropriate commands. Think carefully about the search terms.
+Now we plot the predicted values for the three specifications.  You should also
+change the Axis labels to "Predicted values" for the vertical axis, "Age (in
+Years)" for the horizontal axis and add a title ("Predicted Regression Model")
+to your picture.  If you google you should find the appropriate commands.
+(Again, think carefully about the search terms.)
 
 ```{r, eval = FALSE}
 ggplot(data_USoc, aes(x=age,y=pred_mod4)) +
@@ -219,33 +274,35 @@ ggplot(data_USoc, aes(x=age,y=pred_mod4)) +
   geom_line(aes(y=pred_mod2),color = "darkorange") +
   ggtitle("Predicted Regression Model") +
   ylab("Predicted values") +
-  xlab("Age (in Years)") 
+  xlab("Age (in Years)")
 
 ```
 
-The fit of `mod4` is the most flexible specification as it uses a coefficient for each year. Specifications `mod1` and `mod2` models model the relationship between `age` and `lnhrpay` with one and two parameters respectively.
+The fit of `mod4` is the most flexible specification as it uses a coefficient
+for each year.  Specifications `mod1` and `mod2` models model the relationship
+between `age` and `lnhrpay` with one and two parameters respectively.
 
 # Estimate regression models 2
 
 Now we will estimate a quadratic model for `annualpay` (`annualpay ~ age + agesq`) on a subsets of data in order to compare these. When you know that you will be working with different subsets of data, the best way of doing that in R is to create a new factor variale (here `subset_ind`) which allows you to separate the data accordingly.
 
-We will create two subgroups: 1) Males with a first degree and 2) Males with no degree. You may want to check the values of the `degree` variable in order to define these correctly.
+We will create two subgroups: 1) Males with a degree and 2) Males with no degree. You may want to check the values of the `grad` variable in order to define these correctly.
 
 ```{r, eval = FALSE}
 data_USoc$subset_ind <- "none"   # default group
-data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$degree == "first degree"] <- "Male with first degree"
-data_USoc$subset_ind[XXXX] <- "Male without first degree"  # select all males with no degree
+data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "degree"] <- "Male with degree"
+data_USoc$subset_ind[XXXX] <- "Male without degree"  # select all males with no degree
 data_USoc$subset_ind <- as.factor(data_USoc$subset_ind)
 data_USoc %>% count(subset_ind)
 ```
 ```{r,echo = solution_echo, results=student_view}
 data_USoc$subset_ind <- "none"   # default group
-data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$degree == "first degree"] <- "Male with first degree"
-data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$degree == "no degree"] <- "Male without first degree"
+data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "degree"] <- "Male with degree"
+data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "no degree"] <- "Male without degree"
 data_USoc$subset_ind <- as.factor(data_USoc$subset_ind)
 data_USoc %>% count(subset_ind)
 ```
-   
+
 We will want to save the model predictions and for this purpose we pre-define a variable in which we will save the predictions.
 
 ```{r}
@@ -260,9 +317,9 @@ stargazer_HC(XXXX)
 data_USoc$pred_mod5[data_USoc$subset_ind==XXXX] <- mod5_md$fitted.values
 ```
 ```{r, echo = solution_echo, results=student_view}
-mod5_md <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male with first degree"))
+mod5_md <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male with degree"))
 stargazer_HC(mod5_md,type_out="latex")
-data_USoc$pred_mod5[data_USoc$subset_ind=="Male with first degree"] <- mod5_md$fitted.values
+data_USoc$pred_mod5[data_USoc$subset_ind=="Male with degree"] <- mod5_md$fitted.values
 ```
 
 Now we repeat the same just for the group of males with no degree
@@ -273,30 +330,31 @@ stargazer_HC(XXXX)
 data_USoc$pred_mod5[XXXX] <- mod5_mnd$fitted.values
 ```
 ```{r, echo = solution_echo, results=student_view}
-mod5_mnd <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male without first degree"))
+mod5_mnd <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male without degree"))
 stargazer_HC(mod5_mnd,type_out="latex")
-data_USoc$pred_mod5[data_USoc$subset_ind=="Male without first degree"] <- mod5_mnd$fitted.values
+data_USoc$pred_mod5[data_USoc$subset_ind=="Male without degree"] <- mod5_mnd$fitted.values
 ```
 
 
-Now we plot the predicted values for the two specifications. 
+Now we plot the predicted values for the two specifications.
 
 ```{r, fig.show = student_view}
 ggplot(data_USoc, aes(x=age,y=pred_mod5,color = subset_ind)) +
   geom_line() +
   ggtitle("Predicted Regression Model - Model 5") +
   ylab("Predicted values") +
-  xlab("Age") 
+  xlab("Age")
 ```
-You will see that we have the "none" category plotted as well (of course we didn't estimate this). You could remove these data before plotting 
+You will see that we have the "none" category plotted as well (of course we didn't estimate this). You could remove these data before plotting
 
 ```{r, fig.show = student_view}
-data_temp <- data_USoc %>% filter(subset_ind != "none")  # remove observations with subset_ind == "none"
+# remove observations with subset_ind == "none"
+data_temp <- data_USoc %>% filter(subset_ind != "none")  
 ggplot(data_temp, aes(x=age,y=pred_mod5,color = subset_ind)) +
   geom_line() +
   ggtitle("Predicted Regression Model - Model 5") +
   ylab("Predicted values") +
-  xlab("Age") 
+  xlab("Age")
 ```
 
 END OF INSTRUCTIONS
