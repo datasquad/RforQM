@@ -5,8 +5,8 @@ output: pdf_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
-student_view <- 'hide'   # set to 'hide' to not reveal output, 'asis' to show
-solution_echo <- FALSE   # set to FALSE to not show full code, TRUE to show full code
+student_view <- 'asis'   # set to 'hide' to not reveal output, 'asis' to show
+solution_echo <- TRUE   # set to FALSE to not show full code, TRUE to show full code
 ```
 
 # Instructions

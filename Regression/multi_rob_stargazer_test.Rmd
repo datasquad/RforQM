@@ -159,7 +159,7 @@ So, that has indeed a produced a list. So let's apply this to our problem
 stargazer_HCm2 <- function(..., type_out = "text", type_HC = "HC1") {
   # the first inputs are the models which are to be displayed
   # type_out carries through to the stargazer function, default: "text", other; "latex", "html"
-  # type_HC carries through tothe vcovHC function, default: "HC1" (or Stata equivalent)
+  # type_HC carries through to the vcovHC function, default: "HC1" (or Stata equivalent)
   mod_all <- list(...)  # model collection should be a list of models
   n_mod <- length(mod_all)
   rep_se <- list(NULL)  # use this to replace se
@@ -198,4 +198,62 @@ lm_robust(lnhrpay~educ,data = data_USoc, se_type = "HC1")
 However, the output is not compatible with stargazer.
 
 
+# Now we try Panel methods using the plm package
 
+```{r}
+library(plm)
+```
+
+```{r}
+data_USoc <- data_USoc %>%
+              mutate(lnurate=log(urate)) 
+
+data_USoc <- data_USoc %>%  
+  filter(wave != 2) %>% 
+  filter(!is.na(lnhrpay))
+
+data_USoc <- data_USoc %>% 
+                group_by(pidp) %>% 
+                mutate(n_wave = n())
+
+pdata_USoc <- plm.data(data_USoc, index = c("pidp","wave")) # defines the panel dimensions
+pdata_USoc <- pdata_USoc %>% 
+              group_by(region,wave) %>% 
+              mutate(mean_lnhrpay = mean(lnhrpay),mean_urate = mean(urate)) 
+```
+
+Now we estimate a model
+
+```{r}
+POLS1a <- plm(lnhrpay~lnurate+wave, data = pdata_USoc, model = "pooling")
+stargazer(POLS1a)
+```
+
+this works, but the call to `stargazer_HC` does not. 
+
+```{r}
+stargazer_HCp <- function(..., type_out = "text", type_HC = "HC1") {
+  # the first inputs are the models which are to be displayed
+  # type_out carries through to the stargazer function, default: "text", other; "latex", "html"
+  # type_HC carries through to the vcovHC function, default: "HC1" (or Stata equivalent)
+  mod_all <- list(...)  # model collection should be a list of models
+  n_mod <- length(mod_all)
+  rep_se <- list(NULL)  # use this to replace se
+  i <- 1        # count the number of models 
+  
+  if (length(mod_all) == 1) {
+    cov1 <- vcovHC(mod_all[[1]], type = type_HC) # calculate next rob se
+    robust_se <- sqrt(diag(cov1))
+    stargazer(mod_all[[1]],type=type_out,se=list(NULL,robust_se))
+  } else {
+    for (mod_i in mod_all){
+    covi <- vcovHC(mod_i, type = type_HC) # calculate next rob se
+    robust_se <- sqrt(diag(covi))
+    rep_se[[i]] <- robust_se  # add next robust standard error to rep_se list
+    i <- i + 1
+    }
+
+    stargazer(mod_all, type =type_out, se=rep_se)
+  }
+}
+```

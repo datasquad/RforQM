@@ -1,0 +1,228 @@
+---
+title: "Introduction to Panel Data Models"
+output:
+ pdf_document: default
+ html_document:
+   df_print: paged
+   keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+```
+
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work:
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+library(haven)        # to import stata file
+library(AER)          # access to HS robust standard errors
+source("stargazer_HC.r")  # includes the robust regression display
+```
+
+As we are using panel methods we also require an additional package `plm`.
+
+```{r}
+# install.packages("plm") # only exwcute this if plm is not installed yet
+library(plm)
+```
+
+
+# Introduction
+
+The data are an extract from the [Understanding Society Survey](https://www.understandingsociety.ac.uk/) (formerly the British Household Survey Panel).
+
+# Data Upload - and understanding data structure
+
+Upload the data, which are saved in a STATA datafile (extension `.dta`). There is a function which loads STATA file. It is called `read_dta` and is supplied by the `haven` package.
+
+```{r}
+data_USoc <- read_dta("20222_USoc_extract.dta")
+data_USoc <- as.data.frame(data_USoc)    # ensure data frame structure
+names(data_USoc)
+```
+
+Let us ensure that categorical variables are stored as `factor` variables. It is easiest to work with these in R.
+
+```{r}
+data_USoc$region <- as_factor(data_USoc$region)
+data_USoc$male <- as_factor(data_USoc$male)
+data_USoc$degree <- as_factor(data_USoc$degree)
+data_USoc$race <- as_factor(data_USoc$race)
+```
+
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for varying numbers of hours per week (`jbhrs`) we divide the monthly pay by the approximate monthly hours (`4*jbhrs`). We shall also adjust for increasing price levels (as measured by `cpi`). These two adjustments leave us with an inflation adjusted hourly wage. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
+
+```{r}
+data_USoc <- data_USoc %>%
+              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>%
+              mutate(lnhrpay = log(hrpay))
+```
+
+As we wanted to save these additional variables we assign the result of the operation to `data_USoc`.
+
+We will also use the logarithm of the unemployment rate
+
+```{r}
+data_USoc <- data_USoc %>%
+              mutate(lnurate=log(urate)) 
+```
+
+# Understanding the Panel Structure
+
+To explain the meaning of these let us just pick out all the observations that pertain to one particular individual (`pidp == 272395767`). The following command does the following in words: "Take `data_USoc` filter/keep all observations which belong to individual pidp == 272395767, then select a list of variables (we don't need to see all 14 variables) and print the result":
+
+```{r}
+data_USoc %>% filter(pidp == 272395767) %>% 
+              select(c("pidp","male","wave","year","paygu","age","educ")) %>% 
+              print()
+```
+
+The same person (female) was observed three years in a row (from 2009 to 2011). Their gross monthly income changed, as did, of course, their age, but not their education. This particular person was observed in three consequitive waves. Let's se whether this is a commom pattern.
+
+In the context of this exercise we will ignore the second wave and only look at waves 1 and 3.
+
+```{r}
+data_USoc <- data_USoc %>%  
+  filter(wave != 2) %>% 
+  filter(!is.na(lnhrpay))
+```
+
+[MARTYN, I end up with slightly more obs. Fromn your code I cannot see how you cleaned the data before. For instance for the POLS I get 131 more obs than you.]
+
+The code below figures how many waves we have for each individual (1 or 2) and then saves this in a new variable (`n_wave). This information will be used later as we may want to know whether only using observations for which we have both waves makes a difference to the analysis.
+
+```{r}
+data_USoc <- data_USoc %>% 
+                group_by(pidp) %>% 
+                mutate(n_wave = n()) 
+```
+
+Now we need to let R know that we are dealing with panel data. This is why we loaded up the `plm` library which contains the `plm.data` function. Using the `index = c("pidp","wave")` we let the function know what identifies the individuals and what identifies the wave.
+
+```{r}
+#pdata_USoc <- plm.data(data_USoc, index = c("pidp","wave")) # defines the panel dimensions
+pdata_USoc <- pdata.frame(data_USoc, index = c("pidp","wave")) # defines the panel dimensions
+```
+
+We saved the output in `pdata_USoc` and we will use this for any panel data estimations.
+
+# Some data descriptions
+
+We will use the `lnhrpay` and the `urate` variables below. We therefore will have a look at these variables.
+
+```{r}
+stargazer(pdata_USoc[,c("lnhrpay","urate","year")],type = "text")
+```
+
+Let us look at some summary statistics grouped by region
+
+```{r}
+pdata_USoc %>% group_by(region) %>% 
+              summarise(n = n(), mean_lnhrpay = mean(lnhrpay),mean_urate = mean(urate))
+
+```
+
+Below we will want to use the mean `lnhrpay` and mean `lnurate` as calculated for every region-wave. The following will group the data by region-wave (as we have 12 regions and 2 waves we will 24 such groups). This is similar to the above command but note that we start with `pdata_USoc <-` to ensure that the calculated average wage and unemployment rate values are added as variables to the data frame. Also, instead of `summarise` (which displays the calculated statistics) we use the `mutate` function as we want the calculated series to be saved in the data frame.
+
+```{r}
+pdata_USoc <- pdata_USoc %>% 
+              group_by(region,wave) %>% 
+              mutate(mean_lnhrpay = mean(lnhrpay),mean_urate = mean(urate)) 
+```
+
+
+# Estimating Models
+
+We start by estimating a model which does not use the panel nature of the data.
+
+```{r}
+POLS0 <- lm(lnhrpay~lnurate, data = pdata_USoc)
+stargazer_HC(POLS0)
+```
+
+Let's add the predicted model values to the data frame. As our explanatory variable only has 24 different values we will only get 24 different predicted values.
+
+```{r}
+pdata_USoc$pred_POLS0 <- POLS0$fitted.values
+```
+
+Here we basically used all observations available, whether they were from wave 1 or 3. We **pooled** the observations and hence we could use our normal `lm` function to estimate this model. The `plm` package we imported earlier has a few panel specific tricks up its sleeve and we could estimate this model with the `plm` function.
+
+```{r}
+POLS0a <- plm(lnhrpay~lnurate, data = pdata_USoc, model = "pooling")
+stargazer_HC(POLS0a)
+```
+
+Now we plot the predicted values and compare them against the 
+
+```{r}
+# pdf("Lecture6plot_R.pdf",width = 5.5, height = 4) # uncomment to save as pdf
+ggplot(pdata_USoc, aes(x=lnurate,y=pred_POLS0)) +
+  geom_point(aes(colour = "red")) +
+  geom_line(aes(colour = "red")) +
+  geom_point(aes(y = mean_lnhrpay,colour = "blue")) +
+  ggtitle("Predicted values - Pooled OLS") +
+  ylab("Log Hourly Wage") +
+  xlab("Log Unemployment Rate") +
+  scale_colour_manual(name="Data/Model", values = c(red = "red", blue = "blue"),labels=c("Data", "POLS"))
+# dev.off() # uncomment to save as pdf
+```
+
+Now we will include a dummy variable for `wave == 3`. The `wave` variable is a factor variable with two levels (1 and 3) for waves 1 and 3.
+
+```{r}
+POLS1 <- lm(lnhrpay~lnurate+wave, data = pdata_USoc)
+stargazer_HC(POLS1)
+```
+
+The first wave is the base category of `wave` and hence is not included. So far we have used the standard `lm` function to estimate this model.
+
+Alternatively this could be estimated using the `plm` package
+
+```{r}
+POLS1a <- plm(lnhrpay~lnurate+wave, data = pdata_USoc, model = "pooling")
+stargazer_HC(POLS1a)
+```
+
+This regression will have observations for individuals for which we only observe one wave (`n_wave == 1`). Let's restrict the analysis to only individuals for which we have two waves (`n_wave == 2`).
+
+```{r}
+POLS2 <- lm(lnhrpay~lnurate+wave, data = pdata_USoc, subset = (n_wave ==2))
+stargazer_HC(POLS2)
+```
+
+or using the `plm` function
+
+```{r}
+POLS2a <- plm(lnhrpay~lnurate+wave, data = pdata_USoc, subset = (n_wave ==2), model = "pooling")
+stargazer_HC(POLS2a)
+```
+
+Now we estimate a first difference (FD) model. We will only do this using the `plm` function. If we were to use the `lm` function we had to forst calculate differenced series. This happens automatically inside the `plm` function.
+
+```{r}
+FD1a <- plm(lnhrpay~lnurate, data = pdata_USoc, subset = (n_wave ==2), model = "fd")
+stargazer_HC(FD1a)
+```
+
+Now we will show models, `POLS0a`, `POLS1a`, `POLS2a` and `FD1a` in one table. In previous tables you may have seen that the F-stat takes up a lot of space and hence we use the `omit_stat` function
+
+```{r}
+stargazer_HC(POLS0a,POLS1a,POLS2a,FD1a,omit_stat = "f")
+```
+
+A first difference model eliminates all factors which remain constant for an individual from wave 1 to 3. This is typically covariates like education or region. As they tend to remain the same they get differenced away and hence we did not include them in the above model. But is it actually true that these don't change. You could imagine someone completing their degree after first having worked for a while, or indeed someone moving from one region to another.
+
+The following bit of code attempts to establish whether there is anyone who moved from one region to another.
+
+```{r}
+
+temp <- 
+
+```
