@@ -5,8 +5,8 @@ output: pdf_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
-student_view <- 'asis'   # set to 'hide' to not reveal output, 'asis' to show
-solution_echo <- TRUE   # set to FALSE to not show full code, TRUE to show full code
+student_view <- 'hide'   # set to 'hide' to not reveal output, 'asis' to show
+solution_echo <- FALSE   # set to FALSE to not show full code, TRUE to show full code
 ```
 
 # Instructions
@@ -128,7 +128,7 @@ function.
 XXXX
 ```
 ```{r, echo = solution_echo, results=student_view}
-stargazer(data_USoc,type="latex")
+stargazer(data_USoc,type="text")
 ```
 
 You should find, for instance, that the mean value of the unemployment rate
@@ -200,11 +200,11 @@ stargazer_HC(mod1,mod2)
 ```{r, echo = solution_echo, results = student_view}
 mod1 <- lm(lnhrpay ~ age+agesq, data = data_USoc)
 mod2 <- lm(lnhrpay ~ lnage, data = data_USoc)
-stargazer_HC(mod1,mod2,type_out="latex")
+stargazer_HC(mod1,mod2,type_out="text")
 ```
 
 If you have done this correctly, you will find that that your estimated constant
-for `mod1` is 0.560.
+for `mod1` is 0.485.
 
 We suggest that there are two ways of modelling the relationship between `age`
 and `lnhrpay` in a so-called parametric way, either as a quadratic relationship
@@ -234,7 +234,7 @@ stargazer_HC(mod3,mod4)
 ```{r, echo = solution_echo, results = student_view}
 mod3 <- lm(lnhrpay ~ age_f, data = data_USoc)
 mod4 <- lm(lnhrpay ~ age_f -1, data = data_USoc)
-stargazer_HC(mod3,mod4,type_out="latex")
+stargazer_HC(mod3,mod4,type_out="text")
 ```
 
 We now compare the fitted values for `mod1`, `mod2` and `mod4`.  First we add

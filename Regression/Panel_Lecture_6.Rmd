@@ -93,8 +93,6 @@ data_USoc <- data_USoc %>%
   filter(!is.na(lnhrpay))
 ```
 
-[MARTYN, I end up with slightly more obs. Fromn your code I cannot see how you cleaned the data before. For instance for the POLS I get 131 more obs than you.]
-
 The code below figures how many waves we have for each individual (1 or 2) and then saves this in a new variable (`n_wave). This information will be used later as we may want to know whether only using observations for which we have both waves makes a difference to the analysis.
 
 ```{r}
@@ -106,18 +104,66 @@ data_USoc <- data_USoc %>%
 Now we need to let R know that we are dealing with panel data. This is why we loaded up the `plm` library which contains the `plm.data` function. Using the `index = c("pidp","wave")` we let the function know what identifies the individuals and what identifies the wave.
 
 ```{r}
-#pdata_USoc <- plm.data(data_USoc, index = c("pidp","wave")) # defines the panel dimensions
 pdata_USoc <- pdata.frame(data_USoc, index = c("pidp","wave")) # defines the panel dimensions
 ```
 
 We saved the output in `pdata_USoc` and we will use this for any panel data estimations.
+
+When dealing with panel data it is super useful to understand in how many and in which wave individuals are prepresented. We already calculated the `n_wave` variable which tells us in how many of our remaining two waves observations are represented. We also have information (`wave`) on which wave someone is represented in. To disentagle this we merely need a contingency `table` of the `n_wave` and `waves` variables.
+
+```{r}
+table(pdata_USoc$n_wave,pdata_USoc$wave, dnn = c("n_waves","waves"))
+```
+
+Naturally the 13078 respondents which have two observations (`n_wave == 2)` are represented in waves 1 and 3. Then we have (`n_wave == 1`) 9666 respondents which are represented in wave 1 and the 4112 which are represented in wave 3.
+
+For the respondents for which we have 2 waves of observations we can actually calculate a difference, or change in variables. This will become important in a later model estimation (althoough for that we could let R do the work in the background) and hence we will calculate these variables explicitely, here for `lnhrpay` and `lnurate`.
+
+```{r}
+# the lag function below will recognise the panel nature of the data and 
+# will only calculate lags for individuals
+# we also need to specify that we are calculating k=2 step lag as
+# we calculate the difference between wave 3 and 1
+
+Dlnhrpay <- pdata_USoc$lnhrpay-lag(pdata_USoc$lnhrpay,k=2)
+Dlnurate <- pdata_USoc$lnurate-lag(pdata_USoc$lnurate,k=2)
+#Dregion <- ifelse(pdata_USoc$region==lag(pdata_USoc$region,k=2),"no move","move")
+pdata_USoc$Dlnhrpay <- Dlnhrpay   # add the new series to the dataframe
+pdata_USoc$Dlnurate <- Dlnurate
+```
+
+For a later purpose we will also identify all individuals who moved from one region to another between waves 1 and 3. It is not so important to understand this code.
+
+```{r}
+temp <- pdata_USoc   # create a temporary dataframe
+
+temp <- temp %>%  filter(n_wave == 2) %>%   # only keep individuals with two waves
+                  group_by(pidp) %>%        # group data by individual
+                  mutate(move = ifelse(length(unique(region))==1,"no move","move"))   
+
+# the move variable will take the value 1 if both regions are identical (no move) 
+# and 2 if there are two different regions (move) 
+
+temp$move <- as_factor(temp$move)  # convert to factor variable
+
+# the following merges the new variable into the pdata_USoc dataframe
+pdata_USoc <- merge(pdata_USoc,temp,all.x = TRUE) 
+```
+
+Let's check how many movers ther are.
+
+```{r}
+pdata_USoc %>%  count(move)
+```
+
+So ther are 352 observations associated with movers. That means that there are 176 movers.
 
 # Some data descriptions
 
 We will use the `lnhrpay` and the `urate` variables below. We therefore will have a look at these variables.
 
 ```{r}
-stargazer(pdata_USoc[,c("lnhrpay","urate","year")],type = "text")
+stargazer(pdata_USoc[,c("lnhrpay","urate","year","Dlnhrpay","Dlnurate")],type = "text")
 ```
 
 Let us look at some summary statistics grouped by region
@@ -162,7 +208,7 @@ stargazer_HC(POLS0a)
 Now we plot the predicted values and compare them against the 
 
 ```{r}
-# pdf("Lecture6plot_R.pdf",width = 5.5, height = 4) # uncomment to save as pdf
+# pdf("Lecture6plot_Pooled.pdf",width = 5.5, height = 4) # uncomment to save as pdf
 ggplot(pdata_USoc, aes(x=lnurate,y=pred_POLS0)) +
   geom_point(aes(colour = "red")) +
   geom_line(aes(colour = "red")) +
@@ -204,25 +250,40 @@ POLS2a <- plm(lnhrpay~lnurate+wave, data = pdata_USoc, subset = (n_wave ==2), mo
 stargazer_HC(POLS2a)
 ```
 
-Now we estimate a first difference (FD) model. We will only do this using the `plm` function. If we were to use the `lm` function we had to forst calculate differenced series. This happens automatically inside the `plm` function.
+Now we estimate a first difference (FD) model. We will only do this using the `plm` function. If we were to use the `lm` function we had to first calculate differenced series (which we have done on this occasion, but only to illustrate the mechanics). Before we estimate the model let's look at the data for a few respondents.
+
+```{r}
+pdata_USoc %>% filter(pidp %in% c("3915445","68001367","68004087","68195851")) %>% 
+              select(c("pidp","male","wave","lnhrpay","Dlnhrpay","lnurate", "Dlnurate")) %>% 
+              print()
+```
+
+When estimating a FD model we are basically running a regression of `Dlnhrpay` on `Dlnurate`. Respondents for whom we do not have two waves will not be used in such a model. The calculation of the `Dlnhrpay` and `Dlnurate` series happens automatically inside the `plm` function when we specify `model = "fd"`.
 
 ```{r}
 FD1a <- plm(lnhrpay~lnurate, data = pdata_USoc, subset = (n_wave ==2), model = "fd")
 stargazer_HC(FD1a)
 ```
 
-Now we will show models, `POLS0a`, `POLS1a`, `POLS2a` and `FD1a` in one table. In previous tables you may have seen that the F-stat takes up a lot of space and hence we use the `omit_stat` function
+We can show a scatter plot of the available difference observations and the regression line estimated by `FD1a`.
 
 ```{r}
-stargazer_HC(POLS0a,POLS1a,POLS2a,FD1a,omit_stat = "f")
+# pdf("Lecture6plot_FD_R.pdf",width = 5.5, height = 4) # uncomment to save as pdf
+ggplot(pdata_USoc, aes(x=Dlnurate,y=Dlnhrpay,color=move)) +
+  geom_point() +
+  geom_abline(intercept = FD1a$coefficients[1], slope = FD1a$coefficients[2],colour = "blue") +
+  ggtitle("Scatter plot and FD regression line") +
+  ylab("D(Log Hourly Wage)") +
+  xlab("D(Log Unemployment Rate)")
+# dev.off() # uncomment to save as pdf
 ```
 
-A first difference model eliminates all factors which remain constant for an individual from wave 1 to 3. This is typically covariates like education or region. As they tend to remain the same they get differenced away and hence we did not include them in the above model. But is it actually true that these don't change. You could imagine someone completing their degree after first having worked for a while, or indeed someone moving from one region to another.
+As you can see, there is no obvious relationship between the changes in hourly pay and the respective local unemployment rate.
 
-The following bit of code attempts to establish whether there is anyone who moved from one region to another.
+Now we will show models, `POLS0a`, `POLS1a`, `POLS2a` and `FD1a` in one table. In previous tables you may have seen that the F-stat takes up a lot of space and hence we use the `omit_stat` option to indicate that we do not want to see the F-statistic.
 
 ```{r}
-
-temp <- 
-
+stargazer_HC(POLS0a,POLS1a,POLS2a,FD1a,omit.stat = "f")
 ```
+
+
