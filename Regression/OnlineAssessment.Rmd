@@ -309,7 +309,7 @@ We will want to save the model predictions and for this purpose we pre-define a 
 data_USoc$pred_mod5 <- 0    # set the prediction to 0 by default
 ```
 
-Now we estimate the model for the male with first degree subgroup. Note that the `lm` function accepts a `subset` argument which allows you to select a subset of observations, such as the group of all males with first degree.
+Now we estimate the model for the male with degree subgroup. Note that the `lm` function accepts a `subset` argument which allows you to select a subset of observations, such as the group of all males with first degree.
 
 ```{r, eval = FALSE}
 mod5_md <- lm(XXXX ~ XXXX + XXXX, data = XXXX, subset = (subset_ind == XXXX))
@@ -318,7 +318,7 @@ data_USoc$pred_mod5[data_USoc$subset_ind==XXXX] <- mod5_md$fitted.values
 ```
 ```{r, echo = solution_echo, results=student_view}
 mod5_md <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male with degree"))
-stargazer_HC(mod5_md,type_out="latex")
+stargazer_HC(mod5_md,type_out="text")
 data_USoc$pred_mod5[data_USoc$subset_ind=="Male with degree"] <- mod5_md$fitted.values
 ```
 
