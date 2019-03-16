@@ -257,3 +257,13 @@ stargazer_HCp <- function(..., type_out = "text", type_HC = "HC1") {
   }
 }
 ```
+
+
+# Newey-West standard errors
+
+```{r}
+source("stargazer_HAC.r")
+stargazer_HAC(mod1,mod2)
+source("stargazer_HC.r")
+stargazer_HC(mod1,mod2)
+```
