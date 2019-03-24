@@ -94,7 +94,7 @@ Let's estimate a regression, allowing average hourly pay to differ between white
 
 ```{r}
 mod1 <- lm(lnhrpay~white,data = data_USoc)
-stargazer_HC(mod1,type="text")
+stargazer_HC(mod1)
 ```
 
 
