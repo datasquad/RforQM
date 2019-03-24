@@ -234,7 +234,7 @@ stargazer_HC(mod3,mod4)
 ```{r, echo = solution_echo, results = student_view}
 mod3 <- lm(lnhrpay ~ age_f, data = data_USoc)
 mod4 <- lm(lnhrpay ~ age_f -1, data = data_USoc)
-stargazer_HC(mod3,mod4,type_out="latex")
+stargazer_HC(mod3,mod4,type_out="text")
 ```
 
 We now compare the fitted values for `mod1`, `mod2` and `mod4`.  First we add
