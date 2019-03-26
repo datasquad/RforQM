@@ -334,7 +334,7 @@ stargazer_HC(mod1)
 ## A simple regression - residual autocorrelation
 
 \scriptsize
-```{r, echo = FALSE, , fig.height = 3.5, fig.width = 4.5}
+```{r, echo = FALSE, fig.height = 3.5, fig.width = 4.5}
 par(mfrow=c(1,2))
 plot(mod1$residuals, type = "l", main = "mod1 - Residuals")
 acf(mod1$residuals)
@@ -363,3 +363,337 @@ When we estimate a regression which has autocorrelated error terms we need to ap
 * But crucial problems remain (see next slides)
 
 In this example the standard errors only change marginally and hence are not shown here.
+
+## Spurious Regression
+
+We will explore what can happen if we run a regression involving nonstationary variables.
+
+Let's get some datasets fron EUROSTAT (using `pdfetch_EUROSTAT`).
+
+* % of agricultural area Total fully converted and under conversion to organic farming in Germany [`Org`]  
+* Thousands of passengers travelling to and from Norway by boat [`Pass`]  
+* % of population with tertiary education in Italy [`Tert`]  
+* Hospital Discharges, Alcoholic liver disease (in Thousands) in France [`Alc`]  
+
+```{r, echo = FALSE}
+# % of agricultural area Total fully converted and under conversion 
+# to organic farming in Germany
+ser1 <- pdfetch_EUROSTAT("sdg_02_40", GEO=c("DE"))  
+names(ser1) <- "Organic.Farming.GE"
+ser1 <- ser1["/2017"]  # keep data up until 2017 ***
+
+# Thousands of passengers travelling to and from Norway by boat
+ser2 <- pdfetch_EUROSTAT("mar_pa_aa", FREQ = "A", DIRECT = "TOTAL", UNIT = "THS_PAS", REP_MAR = "NO")
+names(ser2) <- "Boat.Passengers.NO"
+ser2 <- ser2["/2017"]  # keep data up until 2017 ***
+
+# Population with tertiary education (%)
+ser3 <- pdfetch_EUROSTAT("edat_lfse_03", FREQ = "A", SEX = "M", AGE = "Y15-64", UNIT = "PC", 
+                         ISCED11 = "ED5-8", GEO = "IT")
+names(ser3) <- "Tert.Educ.IT"
+ser3 <- ser3["/2017"]  # keep data up until 2018 ***
+
+# Hospital Discharges, Alcoholic liver disease
+ser4 <- pdfetch_EUROSTAT("hlth_co_disch2", FREQ = "A", AGE = "TOTAL", UNIT = "P_HTHAB", SEX = "T",
+                         ICD10 = "K70", GEO = "FR")
+names(ser4) <- "Alc.Disease.FR"
+ser4 <- ser4["/2017"]  # keep data up until 2016 ***
+
+# *** these lines merely make sure to keep the data which were available
+#     at the time this file was produced. Remove if you want to work with
+#     the latest data
+```
+
+## A set of time-series 
+
+```{r, echo = FALSE, fig.height = 3.5, fig.width = 4.5}
+data_sr <- merge(ser1,ser2)
+data_sr <- merge(data_sr,ser3)
+data_sr <- merge(data_sr,ser4)
+
+par(mfrow=c(2,2))
+plot(data_sr$Organic.Farming.GE, main = "Organic Farming, GER")
+plot(data_sr$Boat.Passengers.NO, main = "Sea Passengers, NOR")
+plot(data_sr$Tert.Educ.IT, main = "Tertiary Education, ITA")
+plot(data_sr$Alc.Disease.FR, main = "Alcohol Hospitalisation, FRA")
+```
+
+## Spurious Regression - An example
+
+\begin{equation}
+Alc_t = \alpha + \beta ~ Org_t + u_t \label{Simple_TSR}
+\end{equation}
+
+\tiny
+```{r}
+mod_sr <- lm(Alc.Disease.FR~Organic.Farming.GE, data = data_sr)
+stargazer_HAC(mod_sr)
+```
+\normalsize
+
+## Spurious Regression
+
+All possible combinations of simple regressions between the four variables.
+
+\scriptsize
+
+\begin{table}
+   \centering
+\caption{Regression statistics} \label{Table_SpurReg}
+\begin{tabular}{cccccc}
+\hline \hline
+&  & Exp. Var &  &  & \\
+Dep.Var & & Org & Pass  & Tert & Alc \\ 
+\hline 
+Org & $\hat{\gamma}_1$ &  & 0.001 & 0.567*** & -0.125*** \\ 
+& $se_{\hat{\gamma}_1}$ &  & (0.0005) & (0.031) & (0.009) \\ 
+& $R^2$  &  & 0.127  & 0.954 & 0.928  \\ \hline
+Pass & $\hat{\gamma}_1$ & 196.720 &  & 196.720 & -17.717 \\ 
+& $se_{\hat{\gamma}_1}$ &  (137.969) &  & (137.969) & (18.298) \\ 
+& $R^2$ & 0.127  &  & 0.188 & 0.067 \\ \hline
+Tert & $\hat{\gamma}_1$ & 1.681*** & 0.001* &  & -0.215*** \\ 
+& $se_{\hat{\gamma}_1}$ & (0.093) & (0.001) &  & (0.013) \\ 
+& $R^2$ & 0.954 & 0.188 &  & 0.951 \\ \hline
+Alc & $\hat{\gamma}_1$ & -7.421*** & -0.004 & -4.420*** &  \\ 
+& $se_{\hat{\gamma}_1}$ & (0.532) & (0.004) & (0.259) &  \\ 
+& $R^2$ & 0.928 & 0.067 &0.951  &  \\ \hline
+\end{tabular} \\
+
+Note:  *$p<0.1$; **$p<0.05$; ***$p<0.01$, \\
+Newey-West standard errors in parenthesis
+\end{table}
+
+\normalsize
+
+## (Unmasking of a) Spurious Regression
+
+One way how you can unmask the spuriousness, if both series are trending is to include a time trend
+
+```{r}
+mod_sr2 <- lm(Alc.Disease.FR~Organic.Farming.GE+index(data_sr), data = data_sr)
+```
+
+or estimate a model in the differences of variables rather than the levels
+
+```{r}
+mod_sr3 <- lm(diff(Alc.Disease.FR)~diff(Organic.Farming.GE), data = data_sr)
+```
+
+## (Unmasking of a) Spurious Regression
+
+```{r}
+stargazer_HAC(mod_sr,mod_sr2,mod_sr3,type_out = "text", omit.stat = "f")
+```
+
+## Spurious Regression - A summary
+
+If you estimate a regression between two nonstationary series:
+
+* Do not mistake very significant coefficients or large $R^2$ values for evidence of a substantial link between two series  
+* when regressing non-stationary series (in particular but not only when the series have a time-trend) will deliver a spurious correlation  
+* When series have a time-trend you can include a time trend variable to test whether there is correlation beyond the common time trend  
+* When series are nonstationary but don't have a time-trend then you should consider estimating a regression in differences (recall differencing can turn nonstationary series into stationary ones)
+
+## A simple regression - but better
+
+From the discussion on spurious regressions we have learned that estimating a model in differences can protect you against spurious regressions.
+
+\[\Delta ur_t = \alpha + \beta ~ \Delta  rGDP_t + u_t\]
+
+```{r, echo = FALSE}
+ur_female_q <- to.period(ur_female,period="quarters")
+ur_female_q <- ur_female_q$ur_female.Close
+reg_data <- merge(rGDP, ur_female_q)
+```
+
+```{r}
+# Data (real.GDP, ur_female.Close) are in reg_data
+# we multiply by 100 to express in percentage points, i.e. 0.5 is 0.5% or 0.005
+reg_data$d_lgdp <- 100*diff(log(reg_data$real.GDP))
+reg_data$d_lur <- 100*diff(log(reg_data$ur_female.Close)) 
+mod4 <- lm(d_lur~d_lgdp,data = reg_data)
+stargazer_HAC(mod4)
+```
+
+## A simple regression - but better
+
+```{r, echo = FALSE}
+stargazer_HAC(mod4)
+```
+
+## A simple regression - but better
+
+Let's have a look at the residuals.
+
+```{r, fig.height = 3.5, fig.width = 4.5}
+par(mfrow=c(1,2))
+plot(mod4$residuals, type = "l", main = "mod4 - Residuals")
+acf(mod4$residuals)
+```
+
+* We can see that, at lag 2, there is a small amount of autocorrelation in the residuals.  
+* Breusch-Godfrey test: p-value of 0.0605  
+* What is the consequence? As residuals are stationary, HAC standard errors will deal with inference issues  
+
+## Adding dynamic effects
+
+In the model we estimated:
+
+\[\Delta ur_t = \alpha + \beta ~ \Delta  rGDP_t + u_t\]
+
+all the action happened in one time period ($t$). 
+
+We need to consider that effects in the economy may take some time. This fact will motivate two major generalisations.
+
+* Include lags of the explanatory variable  
+* Include lags of the dependent variable
+
+\begin{eqnarray*}
+\Delta ur_t &=& \alpha_0 + \alpha_1 \Delta ur_{t-1} + \alpha_2 \Delta ur_{t-2} + ... + \alpha_p \Delta ur_{t-p} + \\
+&& ~ \beta_0 ~ \Delta rGDP_t + \beta_1 ~ \Delta rGDP_{t-1} + ... +\beta_k ~ \Delta rGDP_{t-k} + u_t
+\end{eqnarray*}
+
+## Autoregressive Distributed Lag (ADL) models 
+
+```{r}
+mod5 <- lm(d_lur~lag(d_lur,1)+lag(d_lur,2)+
+             d_lgdp+lag(d_lgdp,1)+lag(d_lgdp,2),data = reg_data)
+```
+
+Here we use the `lag(series, k)` function which calculates the `k` period lag of `series`.
+
+## Autoregressive Distributed Lag (ADL) models 
+
+\tiny
+```{r}
+stargazer_HAC(mod4,mod5, omit.stat = "f")
+```
+\normalsize
+
+
+## Forecasting models
+
+Are the above models useful forecasting models?
+
+* Say you estimated the above models using data up to Q3 2018.  
+* Hence you have estimated coefficients  
+* Could you use it to forecast the value in Q4 2018?  
+
+No, if we want to forecast $\Delta ur_{2018Q4}$ we would need $\Delta rGDP_{2018Q4}$! But we don't have that. We would first need a forecast for $\Delta rGDP_{2018Q4}$ to then forecast $\Delta ur_{2018Q4}$. We call these conditional forecasts.
+
+## Forecasting models
+
+To build a useful forecasting model we remove all contemporaneous terms from the right hand side, such that we can produce forecasts for period $t$ only having information at time (say) $t-1$.
+
+We remove the $\beta_0~\Delta rGDP_t$ term from our model:
+
+```{r}
+mod6 <- lm(d_lur~lag(d_lur,1)+lag(d_lur,2)+
+             lag(d_lgdp,1)+lag(d_lgdp,2),data = reg_data)
+```
+
+
+## Forecasting models
+\tiny
+
+```{r, echo = FALSE}
+stargazer_HAC(mod4,mod5,mod6, omit.stat = "f")
+```
+\normalsize
+
+## Autoregressive models
+
+* We are interested in forecasting the unemployment rate changes, $\Delta ur_t$, but we still need observations for $rGDP_{t-1}$ and further lags.  
+* Realistically there may be other series we may want to consider: e.g. interest rate, inflation, wages, etc.
+* Can we forecast $\Delta ur_t$ with nothing else but the history of $\Delta ur_{t}$?
+
+**Yes**, we call these **autoregressive (AR) models**
+
+\begin{equation*}
+\Delta ur_t = \alpha_0 + \alpha_1 \Delta ur_{t-1} + \alpha_2 \Delta ur_{t-2} + ... + \alpha_p \Delta ur_{t-p} + u_t
+\end{equation*}
+
+We "merely" need to chose the lag length $p$!
+
+## Autoregressive models
+
+For starters we use $p=2$ as above.
+
+```{r}
+mod7 <- lm(d_lur~lag(d_lur,1)+lag(d_lur,2),data = reg_data)
+```
+
+## Autoregressive models
+\tiny
+```{r, echo = FALSE}
+stargazer_HAC(mod4,mod5,mod6,mod7, omit.stat = "f")
+```
+\normalsize
+
+## Lag Length - Information Criterion
+
+The last piece in the puzzle is how we determine the best lag length
+
+* Every additional lag will improve the in-sample fit of your model  
+$\Rightarrow$ Should we include as many lags as possible?  
+* Will "over-fit" the model (to features in the data which are not generic but specific to the in-sample period)  
+$\Rightarrow$ Tends to make the forecasts more erratic/volatile.
+
+This trade-off needs to be optimised. $\Rightarrow$ **Information Criteria**
+
+## Lag Length - Information Criterion
+
+Trade-off between too many variables in model (bad) v in-sample fit (good). Information criteria quantify this trade-off.
+
+One example **Akaike Information Criterion (AIC)**
+
+In R:
+```{r, echo = FALSE, eval = FALSE}
+AIC(mod6, mod7, mod6_4,mod7_4)
+```
+
+Where 
+* `mod6` and `mod6_4` are the ADL models with 2 and 4 lags respectively  
+* `mod7` and `mod7_4` are the AR models with 2 and 4 lags respectively  
+
+
+## Lag Length - Information Criterion
+
+  
+
+\begin{table}[h] \centering 
+	\caption{AIC for ADL and AR with 2 and 4 lags} 
+	\label{Table_AIC} 
+	\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+		\\[-1.8ex]\hline 
+		\hline \\[-1.8ex] 
+		Model & N. of para & AIC \\ \hline
+		ADL (2 lags) &	6	& 559.1177		\\
+		AR (2 lags) &	4	& 558.2149		\\
+		ADL (4 lags) &	10 &	557.2884		\\
+		AR (4 lags) &	6	& 552.9934\\
+				\hline 
+		\hline \\[-1.8ex] 
+		\textit{Note:}  & \multicolumn{2}{r}{Number of parameters includes} \\ 
+		& \multicolumn{2}{r}{linear parameters and residual variance} \\ 
+	\end{tabular} 
+
+\end{table} 
+
+
+The optimal model (as per the trade off in the AIC criterion) is the model with the **lowest AIC**.
+
+Here AR(4).
+
+## Summary
+
+We learned that
+
+* the ACF encapsulates how persistant a time-series is
+* Time-series which are very persistant are called nonstationary
+* Using nonstationary series in simple regressions can lead to very misleading (spurious) results
+* Estimating models with either a time-trend or in differences can protect you against misleading results
+* To build forecasting models we need to ensure that we use explanatory variables which are available at the time of forecasting
+* AR models can be a convenient tool for forecasting
+* Information criteria can help us to select the right model for forecasting
+
