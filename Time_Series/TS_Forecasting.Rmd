@@ -8,7 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
 ```{r}
@@ -146,7 +146,7 @@ We will be using AR models for forecasting. We will rely on the `forecast` packa
 
 First we create a differenced series for the unemployment rate as we wish to model a stationary season.
 
-```{r, eval = FALSE}
+```{r}
 dur_ts <- diff(ur_ts)
 ```
 

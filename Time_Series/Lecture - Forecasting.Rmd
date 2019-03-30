@@ -1,0 +1,141 @@
+---
+title: "Time-Series Forecasting"
+subtitle: "ECON20222 - Lecture 10"
+author: "Ralf Becker and Martyn Andrews"
+date: "April 2019"
+output: 
+  beamer_presentation:
+    includes:
+#      in_header: ../latex_template.tex
+      in_header: ../latex_student.tex  # use for student version
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+```
+
+
+```{r, echo = FALSE}
+library(tidyverse)
+library(ggplot2)
+library(pdfetch)
+library(xts)
+library(AER)          # access to HS robust standard errors
+library(stargazer)
+source("stargazer_HC.r")  # includes the robust regression display
+source("stargazer_HAC.r")  # includes the Newey-West standard errors
+library(gridExtra)  # required for the combination of ggplots
+library(forecast)   # to use for forecasting
+library(tsbox)
+```
+
+
+## Aim for today
+
+\begin{itemize}
+  \item Identify the presence of seasonal features in a time-series
+  \item Use AR models to produce single step ahead forecasts
+  \item Use AR models to produce multiple step ahead forecasts
+  \item Evaluate and compare different forecasts
+\end{itemize}
+
+## Forecasting basics
+
+Let's say we have a time series $y_t$, for $t=1,...,T$ where $T$ is the last available observation.
+
+The aim is to use the observations available to obtain 1 step - or more generally $h$ step ahead forecasts.
+
+\[E(y_{T+1}|y_T,y_{T-1},y_{T-2},...) = E(y_{T+1}|I_T) = \hat{y}_{T+1|T} \]
+
+\[E(y_{T+h}|y_T,y_{T-1},y_{T-2},...) = E(y_{T+h}|I_T) = \hat{y}_{T+h|T} \]
+
+We call $I_t$ the information set.
+
+1. We use the data in the information set to estimate a model representing the process  
+
+2. We then use this estimated model to obtain a forecast
+
+## Forecasting basics
+
+* We may want to use information from other time-series, $x_t$, $z_t$ etc.
+
+* This opens up more complex models and the additional information may add quality to the forecast. 
+
+* But if you forecast multiple steps ahead then we need forecasts for these to obtain forecasts for $y$.
+
+
+## Forecasting basics - Uncertainty
+
+When forecasting we know from the outset that our forecast is not going to hit the actual outcome and hence we should expect the forecast error 
+
+\[\epsilon_{T+1|T} = y_{T+1}- \hat{y}_{T+1|T}\]
+
+to be unequal to 0. Note that $y_{T+1}$ is the actual observation which we don't have at time $T$.
+
+## Forecasting basics - Uncertainty
+
+We should expect forecasts to be imperfect for the following reasons:
+
+* Even the best model will not capture all the random variation  
+* Which variables are relevant for forecasting $y$?  
+* What is the right model?  
+* When estimating a model we will have uncertainty about the parameters.  
+
+All of these are actually quite harmless when carefully modelled, **but** significant forecast errors will arise of there are changes in the process which effect the process such that: 
+
+* the overall (unconditional mean) of the process changes
+* the trend of a series changes
+
+## Our working example - female unemployment rate
+
+```{r}
+# Download: Female unemployment rate (YCPL in database LMS)
+ur_female <- pdfetch_ONS("YCPL","LMS")
+names(ur_female) <- "Unemp Rate (female)"
+```
+
+
+```{r, echo = FALSE}
+# keep all the data including 2018-Dec
+# this was the last observation available at the time this was written
+# remove this line if you want to use updated data
+ur_female <- ur_female["/2018-12"]  
+
+ur_female_l <- data.frame(index(ur_female),
+                stack(as.data.frame(coredata(ur_female))))
+names(ur_female_l)[1] <- "Date"
+names(ur_female_l)[2] <- "Value"
+names(ur_female_l)[3] <- "id"
+```
+
+## Our working example - female unemployment rate
+
+```{r, echo = FALSE, fig.height = 2.5, fig.width = 3.5}
+ggplot(ur_female_l,aes(x =Date, y=Value)) + 
+  geom_line(colour = "blue",size = 1.0) +
+  ggtitle("Female Unemployment rate") +
+  theme_bw()
+```
+
+## Univariate Forecasting Model - AR Model
+
+Here we focus on a forecasting model which only uses the unemployment rate itself. In particular we look at an autoregressive (AR) forecasting model. 
+
+In this case the ACF contains all the information which can be used for forecasting
+
+```{r}
+acf(ur_female,main = "Unemployment Rate")
+```
+
+
+## Data properties
+
+Recall that we want to work with series which are stationary. Clearly  the unemployment rate is not.
+
+
+## Summary
+
+We learned that
+
+* 
+

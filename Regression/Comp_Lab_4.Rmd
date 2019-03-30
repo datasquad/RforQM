@@ -146,21 +146,30 @@ paste("Number of Stores:", no_stores)
 paste("Number of Products:", no_products)
 ```
 
-Execute the following command and interpret its outcome.
+Execute the following command and interpret its outcome. You may want to use the help function or google to understand what the `tally()` function does in this pipe. 
 
 ```{r, eval = FALSE}
-tally(~store_type+taxed+time, data = dat, margins = TRUE, format = "count")
+table1 <- dat %>% group_by(store_type,taxed,time) %>% 
+                tally() %>% 
+                spread(time,n) %>% 
+                print(n=Inf)
 ```
 
 
 Now use the `tally` function to produce a frequency table showing the number of each product type (type), with product type (`type`) as the row variable and time period (`time`) as the column variable. 
 
 ```{r, eval = FALSE}
-tally(~XXXX+XXXX, data=XXXX, margins = TRUE, format = "count")
+table2 <- XXXX %>% group_by(XXXX,XXXX) %>% 
+                    tally() %>% 
+                    spread(XXXX,n) %>% 
+                    print(n=Inf)
 ```
 
-```{r, eval = FALSE}
-tally(~type+time, data=dat, margins = TRUE, format = "count")
+```{r, echo = FALSE}
+table2 <- dat %>% group_by(type,time) %>% 
+                    tally() %>% 
+                    spread(time,n) %>% 
+                    print(n=Inf)
 ```
 
 Can you confirm that we have, altogether 177 observations for milk?
