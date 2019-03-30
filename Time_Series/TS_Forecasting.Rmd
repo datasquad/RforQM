@@ -1,0 +1,266 @@
+---
+title: "Time-Series Forecasting"
+author: "Ralf Becker"
+date: "14 March 2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(pdfetch)
+library(xts)
+library(AER)          # access to HS robust standard errors
+library(stargazer)
+source("stargazer_HC.r")  # includes the robust regression display
+source("stargazer_HAC.r")  # includes the Newey-West standard errors
+library(gridExtra)  # required for the combination of ggplots
+library(forecast)   # to use for forecasting
+library(tsbox)
+
+```
+
+# Import data and look at ACF
+
+Let's download female unemployment rates and monthly inflation rates from the ONS database. On both occasions we put the 
+
+```{r}
+# Download: Female unemployment rate (YCPL in database LMS)
+ur_female <- pdfetch_ONS("YCPL","LMS")
+names(ur_female) <- "Unemp Rate (female)"
+periodicity(ur_female)
+
+# keep all the data including 2018-Dec
+# this was the last observation available at the time this was written
+# remove this line if you want to use updated data
+ur_female <- ur_female["/2018-12"]  
+
+ur_female_l <- data.frame(index(ur_female),stack(as.data.frame(coredata(ur_female))))
+names(ur_female_l)[1] <- "Date"
+names(ur_female_l)[2] <- "Value"
+names(ur_female_l)[3] <- "id"
+
+# Download: Inflation rate (D7OE in database MM23)
+infl <- pdfetch_ONS("D7OE","MM23")
+names(infl) <- "CPI Inflation"
+periodicity(infl)
+
+# keep all the data including 2019-Feb
+# this was the last observation available at the time this was written
+# remove this line if you want to use updated data
+infl <- infl["/2019-2"]  
+
+infl_l <- data.frame(index(infl),stack(as.data.frame(coredata(infl))))
+names(infl_l)[1] <- "Date"
+names(infl_l)[2] <- "Value"
+names(infl_l)[3] <- "id"
+```
+
+Now we put both series into one dataframe by attaching the individual dataframes. We can do this as we gave identical names to the three columns in both dataframes. We mainly do these to use the ggplot function.
+
+```{r}
+data_l <- rbind(ur_female_l,infl_l)
+
+```
+
+Now we produce some time series plots 
+
+```{r}
+
+p1 <- ggplot(data_l[data_l$id == "Unemp Rate (female)",],aes(x =Date, y=Value)) + 
+  geom_line(colour = "blue",size = 1.0) +
+  ggtitle("Female Unemployment rate") +
+  theme_bw()
+
+p2 <- ggplot(data_l[data_l$id == "CPI Inflation",],aes(x =Date, y=Value)) + 
+  geom_line(colour = "blue",size = 1.0) +
+  ggtitle("Inflation Rate") +
+  theme_bw()
+
+grid.arrange(p1, p2, nrow=1, ncol=2)
+
+```
+Let's look at the ACF.
+
+```{r}
+par(mfrow=c(1,2))
+
+acf(ur_female,main = "Unemployment Rate")
+acf(infl, main = "Inflation")
+```
+
+When building forecasting models we will make use fo these ACF!
+
+We know that the unemployment rate is nonstationary. Hence we shall (log) difference the series to produce a stationary series.
+
+
+```{r}
+g_ur_female <-diff(log(ur_female))
+names(g_ur_female) <- "Growth in Unemp Rate (female)"
+```
+
+
+## Data types
+
+R has different data types which deal with time series. The `pdfetch` class of functions we used to obtain time-series delivered `xts` data types. This is a very flexible class of time-series data. However, for forecasting it turns out that it is more convenient to use the `ts` class. Fortunately it is fairly straightforward to translate from `xts` to `ts`. 
+
+```{r}
+infl_ts <- ts(as.numeric(infl), start = c(1988,2),frequency = 12)
+ur_ts <- ts(as.numeric(ur_female), start = c(1992,4), frequency = 12) 
+```
+
+The `as.numeric()` function first strips the original series of its data info and then you re-introduce it via the `start` and `frequency` options of the `ts` function. 
+
+## Seasonal pattern
+
+
+The inflation rate has a seasonal component. We could see that from the time-series plot, but also from the ACF. It can be useful to make this more obvious with the `ggseasonalplot` function
+
+```{r}
+ggseasonplot(infl_ts)
+```
+
+From here we can see that in the early years there was an April spike in the monthly inflation series, but that spike has been disappearing such that the only seasonal pattern remaining is a dip in inflation in January and July.
+
+This information will lead us to excluding early years from our dataset when we estimate a model to forecast inflation.
+
+For the unemployment rate there was no obvious seasonal pattern. Let's just confirm that seasonal plot does not reveal such a pattern.
+
+```{r}
+ggseasonplot(ur_ts)
+```
+
+No, no seasonal pattern can be seen here.
+
+# Using AR models for forecasting
+
+We will be using AR models for forecasting. We will rely on the `forecast` package authored by Rob Hyndman to do the heavy lifting.
+
+## Unemployment Rate
+
+First we create a differenced series for the unemployment rate as we wish to model a stationary season.
+
+```{r, eval = FALSE}
+dur_ts <- diff(ur_ts)
+```
+
+We could fit an AR(2) model. In order to estimate an AR(2) model we use the `arima` function as follows
+
+```{r}
+fit_dur <- Arima(dur_ts,order = c(2,0,0))
+```
+
+It is via the `order` option that we determine the order of the forecast model. We feed in three values, the first one is the AR order (2), the second is the difference operator (here 0 as we don't need any further differencing as $\Delta ur_t$ is already stationary) and the third is the MA order (here 0). We didn't introduce any MA models and hence we set it to 0.
+
+The object `fit_dur` now contains the information for the estimated model.
+
+```{r}
+summary(fit_dur)
+```
+
+Note that this estimates that an AR model which looks like this
+
+\[(\Delta ur_t - m) = \alpha_1~(\Delta ur_t - m) + \alpha_2~(\Delta ur_t - m) + u_t\]
+
+For all intends and purposes this is similar to this more traditional looking AR(2) model
+
+\[\Delta ur_t = \beta_0 + \beta_1~\Delta ur_t + \beta_2~\Delta ur_t + u_t\]
+
+The `mean` parameter in the model output is the sample estimate for ($m$). You can also see that it is the 2nd lag (the `ar2` coefficient) which is statistically significant.
+
+If we want to forecast from this model we can do this as follows
+
+```{r}
+for_dur <- forecast(fit_dur,h=10)
+plot(for_dur)
+```
+
+We would like to see a little more detail at the end of the data. We achieve this by using the `include` option in the plot function,
+
+```{r}
+plot(for_dur, include = 40)
+```
+
+As we can see the forecast does not flatten out very quickly. Essentially it will move towards the estimated `mean` value, -0.011.
+
+If you want to get the actual values which were forecast. Recall that the last observation available for the model estimation process was December 2018.
+
+```{r}
+for_dur$mean
+```
+
+## From $\Delta ur_t$ to $ur_t$
+
+We estimated a model in differences (as we wanted to model a stationary series). But in the end we are interested in teh original series, the unemployment rate itself. We could now use the estimated changes to add them to the currrent level of the unemployment rate to get the forecast value for the next period. 
+
+Fortunately there is a slightly easier way to deal with this. Recall that when we called the estimation function we called `fit_dur <- Arima(dur_ts,order = c(2,d,0))`. The `d` value we set to 0 as we had handed in the differenced series. However we could have also handed in the `ur_ts` series and than told the `Arima` function to difference once. The advantage is that then R knows that we are actually interested in `ur_ts` the level of unemployment.
+
+
+```{r}
+fit_ur <- Arima(ur_ts,order = c(2,1,0))
+summary(fit_ur)
+for_ur <- forecast(fit_ur, h =10)
+plot(for_ur, include = 40)
+```
+
+In essence you will get the same as if you were to aggregate up the forecast changes.
+
+# Using the `auto.arima` function
+
+Above we decided from the outset that we wanted to estimate an AR(2) model for the changes. The `forecast` package allows you to let the software find the model which minimises an information criterion.
+
+```{r}
+fit_ur_a <- auto.arima(ur_ts)
+summary(fit_ur_a)
+for_ur_a <- forecast(fit_ur_a, h =10)
+plot(for_ur_a, include = 40)
+```
+
+It turns out that the `auto.arima` function picks a model which does have an AR(2) component, but also an MA(1) component. In addition to this it has also picked an extra seasonal component. 
+
+# Forecast evaluation
+
+If we waited for the unemployment rate in the next few periods to come in we could evaluate how well the forecasts fit the actual observations.
+
+Instead we will turn back time by one year and pretend that it is the end of 2017 and we wanted to forecast the unemployment rate in 2018. Then we wil be able to compare our forecasts to the actual realisations.
+
+So let's start by restricting the sample up to 
+
+```{r}
+ur_ts_17 <- window(ur_ts,end = c(2017,12))
+```
+
+Now we repeat the estimation process, both of the AR(2) model and then of the model automatically fitted by R.
+
+```{r}
+fit_ur_17 <- Arima(ur_ts_17,order = c(2,1,0))
+for_ur_17 <- forecast(fit_ur_17, h =10)
+plot(for_ur_17, include = 40)
+
+fit_ur_a_17 <- auto.arima(ur_ts_17)
+summary(fit_ur_a_17)
+for_ur_a_17 <- forecast(fit_ur_a_17, h =10)
+plot(for_ur_a_17, include = 40)
+```
+
+Now we use the `accuracy` function to evaluate how well these forecasts fit the actual observations in 2018.
+
+```{r}
+accuracy(for_ur_17,ur_ts)
+```
+
+The measures of fit are presented for the observations in the "in-sample" period (training set) and for the forecast period ("out-of-sample" or Test Set). You can see a very typical pattern, the model fits the in-sample data better than the out-of-sample data.
+
+But how does this model compare to the model which is automatically chosen by the `auto.arima` function?
+
+```{r}
+accuracy(for_ur_a_17,ur_ts)
+```
+
+The automatically chosen model does improve on the forecast performance.
