@@ -240,13 +240,20 @@ Now we repeat the estimation process, both of the AR(2) model and then of the mo
 
 ```{r}
 fit_ur_17 <- Arima(ur_ts_17,order = c(2,1,0))
-for_ur_17 <- forecast(fit_ur_17, h =10)
+for_ur_17 <- forecast(fit_ur_17, h =12)
 plot(for_ur_17, include = 40)
 
 fit_ur_a_17 <- auto.arima(ur_ts_17)
 summary(fit_ur_a_17)
-for_ur_a_17 <- forecast(fit_ur_a_17, h =10)
+for_ur_a_17 <- forecast(fit_ur_a_17, h =12)
 plot(for_ur_a_17, include = 40)
+```
+
+You can actually plot the observations next to the forecasts.
+
+```{r}
+plot(for_ur_a_17, include = 40)
+lines(ur_ts)
 ```
 
 Now we use the `accuracy` function to evaluate how well these forecasts fit the actual observations in 2018.
