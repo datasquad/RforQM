@@ -121,7 +121,7 @@ names(ur_female_l)[2] <- "Value"
 names(ur_female_l)[3] <- "id"
 ```
 
-## Our orking example - female unemployment rate
+## Our working example - female unemployment rate
 
 ```{r, echo = FALSE, fig.height = 3.0, fig.width = 4.5}
 ggplot(ur_female_l,aes(x =Date, y=Value)) + 
@@ -182,14 +182,14 @@ The model we want to forecast from
 \Delta ur_t = \alpha + \beta_1 ~ \Delta ur_{t-1} + \beta_2 ~ \Delta ur_{t-2} + u_t \label{AR2}
 \end{equation}
 
-1. We obtain parameter estimates by estimating this model on all available data ($I_T$) $\Rightarrow \hat{\alpha}, \hat{\beta}_1, \hat{\beta}_2$ \\
+1. We obtain parameter estimates by estimating this model on all available data ($I_T$) $\Rightarrow \hat{\alpha}, \hat{\beta}_1, \hat{\beta}_2$  
 We also obtain the sample variance of the residuals ($s^2_u$)
 
 2. Use this model for forecasting
 
 ## Forecasting from AR Model - Point forecasts
 
-Recall that the information set we used to estimate the model is the set of information available to us: $It = {ur_T,ur_{T-1},ur_{T-2},...}$ or in differences  $It = {\Delta ur_T,\Delta ur_{T-1},\Delta ur_{T-2},...}$.
+Recall that the information set we used to estimate the model is the set of information available to us: $I_T = {ur_T,ur_{T-1},ur_{T-2},...}$ or in differences  $I_T = {\Delta ur_T,\Delta ur_{T-1},\Delta ur_{T-2},...}$.
 
 Restate the AR model for the period for which you want to forecast
 \vskip -0.5cm
@@ -220,14 +220,14 @@ $E[\Delta ur_{T+1}|I_T]$ is a point forecast, the **one best** forecast value.
 The forecasting equation (\ref{AR2f}) requires two more steps before we can use it:
   
   * Replace the unknown fixed coefficients with sample estimates, eg replace $\alpha$ with $\hat{\alpha}$  
-  * Notice that \\$E[\Delta ur_{T}|I_T] = ur_{T}$ and $E[\Delta ur_{T-1}|I_T] = ur_{T-1}$
+  * Notice that: $E[\Delta ur_{T}|I_T] = \Delta ur_{T}$ and $E[\Delta ur_{T-1}|I_T] = \Delta ur_{T-1}$
     
     
 \begin{equation}
 E[\Delta ur_{T+1}|I_T] = \hat{\alpha} + \hat{\beta}_1 ~ \Delta ur_{T} + \hat{\beta}_2 ~ \Delta ur_{T-1} \label{AR2fe}
 \end{equation}
 
-After estimating the AR(2) model with information up to time $T$ we have all the information on the right-hand side.\\
+After estimating the AR(2) model with information up to time $T$ we have all the information on the right-hand side.
 
 $E[\Delta ur_{T+1}|I_T]$ is our best estimate for the unemployment rate next period ($T+1$) made at time $T$. Note that we lost the error term as we assumed $E[u_{T+1}|I_T] = 0$. But we still recognise that in any particular period we are likely to get a non-zero $u_{T+1}$ ($\rightarrow$ Interval forecasts)
 
@@ -381,6 +381,8 @@ summary(fit_ur_a)
 
 The chosen model is `ARIMA(2,1,1)(2,0,0)[12]`. Without any details, this output indicates that 
 
+* the procedure has found an AR(2) component 
+* the procedure wants to difference once to achieve stationarity
 * the procedure has found an MA(1) component (no further details here)  
 * the procedure has found that there is some seasonality (at the 12 month / 1 year period)  
 * to cater for this seasonality it also included $ur_{t-12}$ and some other lags to capture this seasonla dependence
