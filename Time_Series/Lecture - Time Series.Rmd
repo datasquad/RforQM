@@ -468,7 +468,7 @@ Newey-West standard errors in parenthesis
 ## (Unmasking of a) Spurious Regression
 
 One way how you can unmask the spuriousness, if both series are trending is to include a time trend
-
+\small
 ```{r}
 mod_sr2 <- lm(Alc.Disease.FR~Organic.Farming.GE+index(data_sr), data = data_sr)
 ```
@@ -478,12 +478,14 @@ or estimate a model in the differences of variables rather than the levels
 ```{r}
 mod_sr3 <- lm(diff(Alc.Disease.FR)~diff(Organic.Farming.GE), data = data_sr)
 ```
+\normalsize
 
 ## (Unmasking of a) Spurious Regression
-
+\scriptsize
 ```{r}
 stargazer_HAC(mod_sr,mod_sr2,mod_sr3,type_out = "text", omit.stat = "f")
 ```
+\normalsize
 
 ## Spurious Regression - A summary
 
@@ -512,20 +514,23 @@ reg_data <- merge(rGDP, ur_female_q)
 reg_data$d_lgdp <- 100*diff(log(reg_data$real.GDP))
 reg_data$d_lur <- 100*diff(log(reg_data$ur_female.Close)) 
 mod4 <- lm(d_lur~d_lgdp,data = reg_data)
-stargazer_HAC(mod4)
 ```
 
 ## A simple regression - but better
 
+\scriptsize
 ```{r, echo = FALSE}
 stargazer_HAC(mod4)
 ```
+
+\normalsize
 
 ## A simple regression - but better
 
 Let's have a look at the residuals.
 
-```{r, fig.height = 3.5, fig.width = 4.5}
+\tiny
+```{r, fig.height = 2.5, fig.width = 4.5}
 par(mfrow=c(1,2))
 plot(mod4$residuals, type = "l", main = "mod4 - Residuals")
 acf(mod4$residuals)
@@ -534,6 +539,8 @@ acf(mod4$residuals)
 * We can see that, at lag 2, there is a small amount of autocorrelation in the residuals.  
 * Breusch-Godfrey test: p-value of 0.0605  
 * What is the consequence? As residuals are stationary, HAC standard errors will deal with inference issues  
+
+\normalsize
 
 ## Adding dynamic effects
 
@@ -557,7 +564,8 @@ We need to consider that effects in the economy may take some time. This fact wi
 
 ```{r}
 mod5 <- lm(d_lur~lag(d_lur,1)+lag(d_lur,2)+
-             d_lgdp+lag(d_lgdp,1)+lag(d_lgdp,2),data = reg_data)
+             d_lgdp+lag(d_lgdp,1)+lag(d_lgdp,2),
+              data = reg_data)
 ```
 
 Here we use the `lag(series, k)` function which calculates the `k` period lag of `series`.
