@@ -16,7 +16,8 @@ In this computer lab we will have to achieve the following tasks/learning outcom
 * understand some important features of the dataset
 * estimate basic time-series models
 
-The data are similar to the ones used in the CORE Doing Economics Project 1 on Measuring Climate Change.
+The data are similar to the ones used in the CORE Doing Economics Project 1 on Measuring Climate Change. Some of the analysis is simlar to that described in
+\emph{Attanasio, A., Pasini, A. and Triacca, U. (2013) Granger Causality Analyses for Climatic Attribution, Atmospheric and Climate Sciences, 2013, 3, 515-522}. 
 
 # Preparing your workfile
 
@@ -29,6 +30,7 @@ library(stargazer)    # to produce nice results tables
 library(AER)          # access to HS robust standard errors
 library(readxl)       # enable the read_excel function
 library(forecast)     # for estimating time series models
+library(xts)          # to use xts
 ```
 
 You should also save the separately supplied `stargazer_HAC.r` file in your working directory. This will make it straightforward to estimate and compare regressions with HAC standard errors. Once you have done that you should include the following line into your code which basically makes this function available to you.
@@ -47,255 +49,271 @@ We will use three dataset
 
 ## Global temperature data
 
-
-
-* The first tab of the Excel file contains the data dictionary. Make sure you read the data description column carefully, and check that each variable is in the Data tab.
-
-
-> Data Import and tidying
-
-This is an xlsx file and we use the `readxl` package to import this file. We also install (if you haven't done so yet) and load the `tidyverse` library as this includes packages that we will use later (piping and graphing). There are two worksheets, one with some info on the variables ("Data Dictionary") and the other with the data ("Data"). It is useful to import both into R so that you have the additional data info available while you are working without having to go back into EXCEL.
-
-Either use the R help function or google to find out how to use the `sheet =` option inside the `read_exel` function. 
+Go to [https://data.giss.nasa.gov/gistemp/](NASA’s Goddard Institute for Space Studies website) and scroll down to the subheading , select the CSV version of ‘Global-mean monthly, seasonal, and annual means, 1880-present, updated through most recent month’.
 
 ```{r, echo = FALSE}
-var_info <- read_excel("sps_public.xlsx",sheet="Data Dictionary")
-dat <- read_excel("sps_public.xlsx",sheet="Data")
+tempdata <- read.csv("GLB.Ts+dSST.csv",skip=1,na.strings = "***") 
 ```
 
-```{r, eval = FALSE}
-var_info <- XXXX("sps_public.xlsx",XXXX="Data Dictionary")
-dat <- XXXX("sps_public.xlsx",XXXX="Data")
-```
+When using this function, we added two options. The `skip=1` option is there as the real data table only starts in Row 2, so we need to skip one row. The `na.strings = "***"` option informs R how missing observations in the spreadsheet are coded. When looking at the spreadsheet, you can see that missing data is coded as `"***"`. It is best to specify this here, as otherwise some of the data is not recognized as numeric data. 
 
-Let's look at the datatypes this import process as assigned to the respective variables.
-
-```{r, eval = FALSE}
-str(XXXX)
-```
-
-```{r, echo = FALSE, eval = FALSE}
-str(dat)
-```
-
-Confirm that all variables which should be numbers, in particular prices, are indeed `num` variables. But then there are variables that may be useful to have as categorical (factor in R speak) variables. Namely `type`, `taxed`, `supp`, `store_id`, `store_type`, `type2` and `product_id`. All these variables have been expressed as numbers but really are categorical variables. So let's convert them to factor variables. 
-
-The following code converts all but the `store_type` variable. Where the data are initially `num` we supply a `label` option which gives sensible names to the different levels.
-
-```{r, warning = FALSE}
-dat$type <- factor(dat$type)
-dat$taxed <- factor(dat$taxed, 
-                    labels=c("not taxed","taxed"))
-dat$supp <- factor(dat$supp,
-                   labels=c("Standard","Supplemental"))
-dat$store_id <- factor(dat$store_id)
-dat$type2 <- factor(dat$type2)
-dat$product_id <- factor(dat$product_id)
-```
-
-Before converting the `store_type` variable, let's see what information we have on this variable
+Understanding the data you are using is key to all empirical work. You can view the first six rows of the dataset, and confirm that they correspond to the columns in the csv file.
 
 ```{r}
-var_info[var_info$`Variable Name` == "store_type",]
+head(tempdata)
 ```
 
-Let's change the `store_type` variable to a factor.
+We have monthly data (with years in rows and months in columns). Later we will use annual data and they are saved in the column `J.D` (January to December).
 
-```{r,eval=FALSE}
-dat$store_type <- XXXX(dat$store_type,
-                         labels=c("Large Supermarket", 
-                                  XXXX, 
-                                  XXXX, 
-                                  XXXX))
+Before we go on, it is also important to understand the data formats.
+
+```{r}
+str(tempdata)
 ```
 
-```{r, echo=FALSE}
-dat$store_type <- factor(dat$store_type,
-                         labels=c("Large Supermarket", 
-                                  "Small Supermarket", 
-                                  "Pharmacy", 
-                                  "Gas Station"))
+You can see that all variables are formatted as numerical data, which is helpful. If you don't declare `na.strings = "***"` as you load the data, the variables with missing information would have been loaded as factor (categorical) variables.
+
+Let's extract the Annual Series only
+
+```{r}
+tempdata <- tempdata %>%  select(Year,J.D)
 ```
 
-There is another variable `time` which is characterised as a `chr` variable. This stands for characters as in letters and numbers. It may be useful to change this also into a factor variable. Before we do this we will check which values this variable takes by using the `unique` command.
+And now we will translate this into a `xts` format time-series
 
-```{r, warning = FALSE}
-unique(dat$time)
+```{r}
+gt <- xts(tempdata$J.D, order.by=as.Date(paste0("01/07/",tempdata$Year),"%d/%m/%Y"))
 ```
 
-If you read the Silver et al. (2016) paper,and in particular if you have looked at the timeline, then you will have realised that the third survey wasn't in March 2015 but in March 2016. So the data have been labelled incorrectly. We shall therefore change all the values "MAR2015" to "MAR1016".
+When you use `xts` as your data format you need to specify that the data belong to a oarticular day not ony a year. Even if you only have annual data. So here we associate the datapoints to the first of July of every year (`paste0("01/07/",tempdata$Year)`). When we translate our series `tempdata$J.D` into an `xts` formatted series we need to tell the `xts` function where the date information is (`order.by =`). In our case it is the 1st of July every year as defined above. 
 
-```{r, eval = FALSE}
-dat$time[XXXX == "MAR2015"] <- XXXX  
+## Greenhouse Gas (GHG)
+
+There are a number of ways to create a variable which would allow to model the impact of greenhouse gases on global temperatures. Let's first import some estimates for **CO2 concentration in the atmosphere**.
+
+```{r}
+co2cdata <- read_excel("1_CO2-data.xlsx") 
 ```
+
+The measurements are in parts per million of CO2 (abbreviated as ppm) in every million molecules of (dry) air and come from a single observatory in Hawaii ([https://www.esrl.noaa.gov/gmd/ccgg/about/co2_measurements.html](Mauna Loa Observatory).
+
+Let's look at the data. For a quick plot we use the `plot` function to first plot the `co2edata$Interpolated` series against the series index (`index(co2edata$Year)`, which basically just numbers the observations, R doesn't know yet that these are time-series data). The `lines(index(co2edata$Year),co2edata$Trend, col = "red")` command adds the trend series to this plot (which removes all the seasonality).
+
+```{r, fig.cap="Figure: CO2 concentration"}
+plot(index(co2cdata$Year), co2cdata$Interpolated, xlab="Observations", ylab="CO2 levels (ppm)",type = "l", col="blue")
+lines(index(co2cdata$Year),co2cdata$Trend, col = "red")
+title("Monthly CO2 concentration, and Trend")
+```
+
+We shall use the trend series as our series and define it as an annual series such that we can match it to the temperature data.
+
+An easy way to achieve this is to use the `group_by` feature of the tidyverse combined with `mutate`:
+
+```{r}
+co2cy <- co2cdata %>% group_by(Year) %>% 
+          mutate(co2cy = mean(Trend)) %>% #calculates annual average
+          select(Year,co2cy) %>%          # drops all but Year and co2ey
+          unique()                        # only keeps one per year
+```
+
+Now we shall turn this series into a `xts` series.
+
+```{r}
+co2c <- xts(co2cy$co2cy, order.by=as.Date(paste0("01/07/",co2cy$Year),"%d/%m/%Y"))
+```
+
+This measured the concentration of CO2 in the air at a particular observatory. But the series is not particularly long as it starts at 1958.
+
+An alternative is to use actual estimates of **CO2 emissions**. We obtain these from the [https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions](Our Worls in Data Website).
 
 ```{r, echo = FALSE}
-dat$time[dat$time == "MAR2015"] <- "MAR2016"  # [dat$time == "MAR2015"] picks out all observations for which the value is equal to "MAR2015"
+co2edata <- read.csv("annual-co2-emissions-per-country.csv") 
+names(co2edata)
 ```
 
-We can now change the time variable into a factor variable.
+The first thing you can notive that the name of the fourth variable is very long. Let's change that.
 
-```{r, warning = FALSE}
-dat$time <- factor(dat$time)
+```{r}
+names(co2edata)[4] <- "co2e"
+head(co2edata)
 ```
 
-# Understanding the data
+The data are organised such that every row represents the CO2 emissions for a country in a particular year. Afghanistan is the first country in the alphabet. For this purpose we really only want the data for the entire world. Let's see whether any of the Entitys looks like delivering these data. Run `unique(co2edata$Entity)` to see a list of all coutries and you will find an entry `World`. Let's filter out these data.
 
-How many different stores and how many different products have been included in the survey? There are different ways to achieve this. One way is to use the `unique` function in combination with the `length` function.
 
-Confirm the following:
+```{r}
+co2edata <- co2edata %>%  filter(Entity == "World")
+```
+
+
+The global series is not very long. We could think of aggregating over all the countries, but perhaps we can find another source. After googling something like "CO2 global emissions global data history" I eventually ended up at [https://cdiac.ess-dive.lbl.gov/trends/emis/tre_glob_2014.html](this place) and downloaded the comma deliminated (csv) file. I saved it as `global.1751_2014.csv`.
 
 ```{r, echo = FALSE}
-no_stores <- length(unique(dat$store_id))
-no_products <- length(unique(dat$product_id))
-paste("Number of Stores:", no_stores)
-paste("Number of Products:", no_products)
+co2edata2 <- read.csv("global.1751_2014.csv",skip = 1, na.strings = "***") 
+names(co2edata2)
+summary(co2edata2$Year)
 ```
 
-Execute the following command and interpret its outcome. You may want to use the help function or google to understand what the `tally()` function does in this pipe. 
+We can see that the data go from 1751 to 2014. These are estimates and updates can sometimes take a few years. The names are very messy so let's simplify the one we will be using, the total emissions in column 2.
 
-```{r, eval = FALSE}
-table1 <- dat %>% group_by(store_type,taxed,time) %>% 
-                tally() %>% 
-                spread(time,n) %>% 
-                print(n=Inf)
+```{r}
+names(co2edata2)[2] <- "co2e"
 ```
 
+The units of measurement here are millions of metric tons (mmt) of carbon. Let's give this a quick plot
 
-Now use the `tally` function to produce a frequency table showing the number of each product type (type), with product type (`type`) as the row variable and time period (`time`) as the column variable. 
-
-```{r, eval = FALSE}
-table2 <- XXXX %>% group_by(XXXX,XXXX) %>% 
-                    tally() %>% 
-                    spread(XXXX,n) %>% 
-                    print(n=Inf)
+```{r, fig.cap="Figure: CO2 emission"}
+plot(co2edata2$Year, co2edata2$co2e, xlab="Time", ylab="CO2 emission (mill metric tons)",type = "l", col="blue")
+title("Annual CO2 emission")
 ```
+
+Clearly an exponential increase. However, you can see the impact of recessions (e.g. in the 1970s and 2008/9) and perhaps also the beginning of a slowing down of emission growth at the very end of the sample period. Let's convert this to a `xts` series.
+
+```{r}
+co2e <- xts(co2edata2$co2e, order.by=as.Date(paste0("01/07/",co2edata2$Year),"%d/%m/%Y"))
+```
+
+A somewhat different way of going about quantifying the effect of GHG on global temperatures is to estimate what contribution a particular GHG has made on **radiative forcing** (Definition from [https://en.wikipedia.org/wiki/Radiative_forcing](Wikipedia)
+Radiative forcing or climate forcing is the difference between insolation (sunlight) absorbed by the Earth and energy radiated back to space. The influences that cause changes to the Earth's climate system altering Earth's radiative equilibrium, forcing temperatures to rise or fall, are called climate forcings.)
+
+These can be broken down by different contributing GHG and a [https://data.giss.nasa.gov/modelforce/Fe_H11_1880-2011.txt](file with these data) is available from the Goddard Institute for Space Science.
+
+```{r}
+co2fdata <- read.csv("Fe_H11_1880-2011.csv",na.strings = "***") 
+names(co2fdata)
+```
+
+The most interesting variables here are 
+
+* `WMGHGs` - Well mixed greenhouse gases
+* `Solar` - Solar Irradiance which is the contribution of the Sun 
+
+The former man-made (anthropogenic) and the later a natural cause.
+
+```{r, fig.cap="Figure: CO2 emissions."}
+plot(co2fdata$Year, co2fdata$WMGHGs, xlab="Time", ylab="CO2 levels (trend, mole fraction)",type = "l", col="blue")
+lines(co2fdata$Year,co2fdata$Solar, col = "red")
+legend(1880, 2.5, legend=c("Solar", "GHG"),
+       col=c("red", "blue"), lty=1, cex=0.8)
+title("Radiative Forcing")
+```
+
+Without any technical details, the data series are defined relative to the level of radiation in 1880, the first year. You can clearly see that the radiative forcing coming from the sun is basically constant with some regular, cyclical variation. GHGs, however, have significantly increased their contribution to warming. 
+
+You can see that the GHG radiative forcing is quite similar to the CO2 emissions.
+
+Let's translate these into `xts` series.
+
+```{r}
+Solarf <- xts(co2fdata$Solar, order.by=as.Date(paste0("01/07/",co2fdata$Year),"%d/%m/%Y"))
+
+GHGf <- xts(co2fdata$WMGHGs, order.by=as.Date(paste0("01/07/",co2fdata$Year),"%d/%m/%Y"))
+```
+
+## Merge all data into one dataframe
+
+```{r}
+climate_data <- merge(gt,co2c,co2e,Solarf,GHGf)
+```
+
+# Some graphical analysis
+
+```{r}
+plot(climate_data$GHGf)
+```
+
+Let's plot `co2e` and `co2c` in one graph, restricting the plot to the years 1948 to 2010 and plotting it using `ggplot` as this produces visually more pleasing results.
+
+```{r}
+ggplot(climate_data["1948/2010"],aes(x=index(climate_data["1948/2010"]))) + 
+  geom_line(aes(y=co2e, color="CO2 Emissions"), size=1 ) +
+  geom_line(aes(y=co2c, color="CO2 concentration"), size=1 ) + 
+  xlab("Year") +
+  ggtitle("CO2 emission and CO2 atmospheric concentration") +
+  labs(color="Legend text")
+```
+
+What we see is that the different series have very different scales and hence we only really see the variable with the largest scale, here `co2e`. We rescale (standardise) the variables before displaying them. We loose the information about the level of the data, but for comparing the data this is just fine.
+
+We use the `scale` function to scale the variables in our dataframe. We standardise over the sample period over which we want to print the data.
+
+```{r}
+climate_data_s <- scale(climate_data["1948/2010"])
+```
+
+And now we replicate the same code from above 
+
+```{r}
+p <- ggplot(climate_data_s["1948/2010"],aes(x=index(climate_data_s["1948/2010"]))) + 
+  geom_line(aes(y=co2e, color="CO2 Emissions"), size=1 ) +
+  geom_line(aes(y=co2c, color="CO2 concentration"), size=1 ) + 
+  xlab("Year") +
+  ylab("Standardised scale") +
+  ggtitle("CO2 emission and CO2 atmospheric concentration") +
+  labs(color="Series") +           # gives the legend
+  theme(legend.position = c(0.15,0.8))  # determines position of legend
+print(p)
+```
+
+Let's add the temperature in there (note that we take the graph we produced and saved before, `p`, and just add the next serious. How good is that!).
+
+```{r}
+p <- p + geom_line(aes(y=gt, color="Gloobal Temp"), size=1 )
+print(p)
+```
+
+All you can tell from here is that all three series are trending upwards. Be careful to not use plots like this to conclude that one of the series causes the movement in another.
+
+But sometimes graphs can help you in figuring out what is certainly not responsible for global warming. Let's add the series of solar forcing, the variable which measures solar activity.
+
+```{r}
+p <- p + geom_line(aes(y=Solarf, color="Solar Act"), size=1 )
+print(p)
+```
+
+We can see clear cycles of solar acticity, but they are not trending up.
+
 
 ```{r, echo = FALSE}
-table2 <- dat %>% group_by(type,time) %>% 
-                    tally() %>% 
-                    spread(time,n) %>% 
-                    print(n=Inf)
+# This is for Demo Class 5
+p <- ggplot(climate_data_s["1948/2010"],aes(x=index(climate_data_s["1948/2010"]))) + 
+  geom_line(aes(y=co2c, color="A"), size=1 ) + 
+  geom_text(aes(x = as.Date("1960-07-01"), y = -1.5, label = "A", color = "A")) +
+  geom_line(aes(y=gt, color="B"), size=1 ) +
+  geom_text(aes(x = as.Date("1949-01-01"), y = -1.3, label = "B", color = "B")) +
+  geom_line(aes(y=Solarf, color="C"), size=1 ) +
+  geom_text(aes(x = as.Date("1977-01-01"), y = 1.3, label = "C", color = "C")) +
+  xlab("Year") +
+  ylab("Standardised scale") +
+  ggtitle("Three time series") +
+  labs(color="Series") +           # gives the legend
+  theme(legend.position = c(0.07,0.84)) + # determines position of legend
+  theme_bw()
+print(p)
 ```
 
-Can you confirm that we have, altogether 177 observations for milk?
-
-To explore the data a bit further let's look at all observations for the "TEA-DIET" category. In particular we want to see the `product_id`, `store_id` and `time` for these observations and only those from either "DEC2014" or "MAR2016" (should be 14). It would also be best to sort the data according to `store_id`.
-
-```{r, eval = FALSE}
-dat %>%  XXXX(type == XXXX & time %in% c(XXXX, XXXX)) %>%  
-          select(store_id, product_id, time) %>% 
-          arrange(XXXX) %>% 
-          print()
-```
-
-```{r, echo = FALSE, results = 'hide'}
-dat %>%  filter(type == "TEA-DIET" & time %in% c("DEC2014", "MAR2016")) %>%  
-          select(store_id, product_id,time) %>% 
-          arrange(store_id) %>% 
-          print()
-```
-
-For how many stores do you have price observations in that product category for both these periods? Only one (`store_id`, 14 and 24). And only in store 24 did we record the price for the same `product_id`.
-
-In order to establish whether prices change following the tax introduction we want to restrict our data to only those products (identified by `product_id`) for which we have observations for all three periods (DEC2014, JUN2015 and MAR2016) it is best to create a new variable `period_test` which takes the value 1 (or TRUE) if we have observations for all periods and 0 (FALSE) otherwise for a product in a particular store. We call variables like this boolean variables. 
-
-It turns out that this is not a task that is straightforward and the easiest way to achieve this is with a loop. Execute the code below. It is not crucial to understand everything now, but do, later, take some time to understand what is going on.
+Lets look at the ACF of these series.
 
 ```{r}
 
-dat$period_test <- NA
-
-sid_list = unique(dat$store_id)   # list of all store ids
-pid_list = unique(dat$product_id) # list of all product ids
-
-
-for (s in sid_list) {
-  for (p in pid_list) {
-    temp <- subset(dat, product_id == p & store_id == s)
-    temp_time <- temp$time
-    # test will take value TRUE if we have obs from all three periods, FALSE otherwise
-    test <- (any(temp_time == "DEC2014") & any(temp_time == "JUN2015") & any(temp_time == "MAR2016"))
-    
-    dat$period_test[dat$product_id == p & dat$store_id == s] <- test
-  }
-}
+par(mfrow=c(1,3))
+acf(climate_data_s["1948/2010"]$gt,main = "ACF 1", na.action = na.pass)
+acf(climate_data_s["1948/2010"]$co2c,main = "ACF 2", na.action = na.pass)
+acf(climate_data_s["1948/2010"]$Solarf,main = "ACF 3", na.action = na.pass)
 ```
 
-Now we are in a position to remove all products that have not been observed in all three periods. We define a new data frame `dat_c` with only products that are observed in all three periods in a particular store. Also, we will only select observations for which the variable `supp` takes the value "Standard". This is what we then call a balanced panel.
 
-```{r, eval = FALSE}
-dat_c <- dat %>% XXXX(period_test == XXXX & supp == XXXX)
-```
 
-```{r, echo = FALSE}
-dat_c <- dat %>% subset(period_test == TRUE & supp == "Standard")
-```
+# Granger causality testing
 
-You should confirm that you are lef with 939 observations.
+Let's run the following regression:
 
-Now we can calculate the price averages (for `price_per_oz`) by grouping the data according to store_type, taxed and time. One way to achieve this is to use piping:
+\[gt_t = \alpha + \beta_1 gt_{t-1} + \beta_2 gt_{t-1} + \gamma_1 co2e_{t-1} + \gamma_2 co2e_{t-2} + u_t\]
 
-```{r, warning = FALSE,message=FALSE}
-table_res <- dat_c %>% 
-      group_by(taxed,store_type,time) %>% 
-      summarise(n = length(price_per_oz),avg.price = mean(price_per_oz)) %>%
-      spread(time,avg.price) %>% 
-      print()
-```
-
-# Calculating the DiD estimator
-
-We now want to treat these as a panel dataset. You may remember that we need to define a panel dataset and let R know what variables identifies an "individual" and what variable defines the time dimension. Here an "individual" is a "particular product in a particular store". There is no variable which can serve as such an index, but we can create it by concatenating the `store_id` and `product_id` variables.
+If `co2e` does not granger-cause `gt`, then we should not be able to reject the null hypoothesis $H_0: \gamma_1 = \gamma_2 = 0$.
 
 ```{r}
-dat_c$sp_id <- paste0(dat_c$store_id,"_",dat_c$product_id) 
+mod1 <- lm(gt~lag(co2e,1)+lag(co2e,2),data = climate_data_s)
+stargazer_HAC(mod1)
 ```
 
-Have a look at values of the new variable to understand what happened. We will also have to create the interaction variable between `time` and `taxed`.
-
-```{r}
-dat_c$did <- (dat_c$time == "MAR2016") * (dat_c$taxed == "taxed")
-```
-
-This variable will take the value of 1 for all observations which are from "MAR2016" and for taxed products. All other observations will have a value of 0.
-
-Let's restrict the analysis to large supermarket data and the two time periods "DEC2014" and "MAR2016".
-
-```{r, eval = FALSE}
-dat_c_ls <- XXXX %>% XXXX(XXXX == XXXX & XXXX %in% XXXX)
-```
-
-```{r, echo = FALSE}
-dat_c_ls <- dat_c %>% filter(store_type == "Large Supermarket" & time %in% c("DEC2014","MAR2016"))
-```
-
-You should be left with 144 observations. 
-
-Then we can use this new variable `sp_id` together with the `time` variable in the definition of the panel data frame:
-
-```{r}
-p_dat_c_ls <- pdata.frame(dat_c_ls, index = c("sp_id","time"))
-```
-
-Now we specify the regression model from which we estimate the DiD estimator.
-
-\begin{equation}
-y_{it} = \beta_0 + \delta d_t + \tau T_{it} + a_i + u_{it}
-\end{equation}
-
-where $y_{it}$ is `prize_per_oz`, $d_t$ is `time`, $T_{it}$ is `did` and $a_i$ is our indicator variable for the individual (store-product combination), `sp_id`. This is estimated in "first-differenced" form (`model = "fd"`) using the panel estimation function `plm`.
-
-```{r, eval = FALSE}
-mod1 <- plm(XXXX ~ XXXX + XXXX + XXXX, data = XXXX, model = "fd")
-stargazer_HC(mod1)
-```
-
-```{r, echo = FALSE}
-mod1 <- plm(price_per_oz ~ time + did + sp_id, data = p_dat_c_ls, model = "fd")
-stargazer_HC(mod1)
-```
-
-You can see that the estimated coefficient is 0.006, which implies that taxed products have, on average, seen price increases 0.6p/ounze higher than non-taxed products. But this difference is not statistically significantly different.
-
-Can you find the equivalent result in the Silver et al. paper?
