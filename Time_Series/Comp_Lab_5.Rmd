@@ -15,6 +15,7 @@ In this computer lab we will have to achieve the following tasks/learning outcom
 * import time-series data
 * understand some important features of the dataset
 * estimate basic time-series models
+* perform Granger causality tests
 
 The data are similar to the ones used in the CORE Doing Economics Project 1 on Measuring Climate Change. Some of the analysis is simlar to that described in
 \emph{Attanasio, A., Pasini, A. and Triacca, U. (2013) Granger Causality Analyses for Climatic Attribution, Atmospheric and Climate Sciences, 2013, 3, 515-522}. 
@@ -51,13 +52,13 @@ We will use three dataset
 
 Go to [https://data.giss.nasa.gov/gistemp/](NASA’s Goddard Institute for Space Studies website) and scroll down to the subheading , select the CSV version of ‘Global-mean monthly, seasonal, and annual means, 1880-present, updated through most recent month’.
 
-```{r, echo = FALSE}
+```{r}
 tempdata <- read.csv("GLB.Ts+dSST.csv",skip=1,na.strings = "***") 
 ```
 
-When using this function, we added two options. The `skip=1` option is there as the real data table only starts in Row 2, so we need to skip one row. The `na.strings = "***"` option informs R how missing observations in the spreadsheet are coded. When looking at the spreadsheet, you can see that missing data is coded as `"***"`. It is best to specify this here, as otherwise some of the data is not recognized as numeric data. 
+When using the `read.csv` function, we added two options. The `skip=1` option is there as the real data table only starts in Row 2, so we need to skip one row. The `na.strings = "***"` option informs R how missing observations in the spreadsheet are coded. When looking at the spreadsheet, you can see that missing data is coded as `"***"`. It is best to specify this here, as otherwise some of the data is not recognized as numeric data. 
 
-Understanding the data you are using is key to all empirical work. You can view the first six rows of the dataset, and confirm that they correspond to the columns in the csv file.
+Understanding the data you are using is key to all empirical work. You can view the first few rows of the dataset, and confirm that they correspond to the columns in the csv file.
 
 ```{r}
 head(tempdata)
@@ -73,9 +74,13 @@ str(tempdata)
 
 You can see that all variables are formatted as numerical data, which is helpful. If you don't declare `na.strings = "***"` as you load the data, the variables with missing information would have been loaded as factor (categorical) variables.
 
-Let's extract the Annual Series only
+Let's extract the Year (`Year`) and the Annual Series (`J.D`) only
 
-```{r}
+```{r, eval=FALSE}
+tempdata <- tempdata %>%  select(Year,XXXX)
+```
+
+```{r, echo =FALSE}
 tempdata <- tempdata %>%  select(Year,J.D)
 ```
 
@@ -85,70 +90,89 @@ And now we will translate this into a `xts` format time-series
 gt <- xts(tempdata$J.D, order.by=as.Date(paste0("01/07/",tempdata$Year),"%d/%m/%Y"))
 ```
 
-When you use `xts` as your data format you need to specify that the data belong to a oarticular day not ony a year. Even if you only have annual data. So here we associate the datapoints to the first of July of every year (`paste0("01/07/",tempdata$Year)`). When we translate our series `tempdata$J.D` into an `xts` formatted series we need to tell the `xts` function where the date information is (`order.by =`). In our case it is the 1st of July every year as defined above. 
+When you use `xts` as your data format you need to specify that the data belong to a particular day not ony a year. Even if you only have annual data. So here we associate the datapoints to the first of July of every year (`paste0("01/07/",tempdata$Year)`). When we translate our series `tempdata$J.D` into an `xts` formatted series we need to tell the `xts` function where the date information is (`order.by =`). In our case it is the 1st of July every year as defined above. 
+
+To understand what `paste0("01/07/",tempdata$Year)` you may want to past this bit of code into the command window and execute it. You should see that you have created strings such as "01/07/1880". We then apply the `as.Date` function to tell R that these are no ordinary strings but actuallt date information. We also hand-in the option `%d/%m/%Y"` which declares to the `as.Date` function the day/month/year ordering (important as you will often find a month/day/year ordering) and how the day, month and years are separated (here with a "/"). 
 
 ## Greenhouse Gas (GHG)
 
-There are a number of ways to create a variable which would allow to model the impact of greenhouse gases on global temperatures. Let's first import some estimates for **CO2 concentration in the atmosphere**.
+There are a number of ways to create a variable which would allow to model the impact of greenhouse gases on global temperatures. Let's first import some estimates for **CO2 concentration in the atmosphere** from the `1_CO2-data.xlsx` file.
 
 ```{r}
 co2cdata <- read_excel("1_CO2-data.xlsx") 
 ```
 
-The measurements are in parts per million of CO2 (abbreviated as ppm) in every million molecules of (dry) air and come from a single observatory in Hawaii ([https://www.esrl.noaa.gov/gmd/ccgg/about/co2_measurements.html](Mauna Loa Observatory).
+The data are sourced from the  [https://www.esrl.noaa.gov/gmd/ccgg/trends/data.html](Earth System Research Labaratory) but for your convenience presented in the above Excel file.
+
+The measurements are in parts per million of CO2 (abbreviated as ppm) in every million molecules of (dry) air and come from a single observatory in Hawaii [https://www.esrl.noaa.gov/gmd/ccgg/about/co2_measurements.html](Mauna Loa Observatory). 
+
+Once you imported the data have a look at this data frame (`str(co2cdata)`) to understand what variables the data farme contains.
 
 Let's look at the data. For a quick plot we use the `plot` function to first plot the `co2edata$Interpolated` series against the series index (`index(co2edata$Year)`, which basically just numbers the observations, R doesn't know yet that these are time-series data). The `lines(index(co2edata$Year),co2edata$Trend, col = "red")` command adds the trend series to this plot (which removes all the seasonality).
 
 ```{r, fig.cap="Figure: CO2 concentration"}
-plot(index(co2cdata$Year), co2cdata$Interpolated, xlab="Observations", ylab="CO2 levels (ppm)",type = "l", col="blue")
+plot(index(co2cdata$Year), co2cdata$Interpolated, xlab="Observations", 
+     ylab="CO2 levels (ppm)",type = "l", col="blue")
 lines(index(co2cdata$Year),co2cdata$Trend, col = "red")
 title("Monthly CO2 concentration, and Trend")
 ```
 
 We shall use the trend series as our series and define it as an annual series such that we can match it to the temperature data.
 
-An easy way to achieve this is to use the `group_by` feature of the tidyverse combined with `mutate`:
+An easy way to achieve this is to use the `group_by` feature of the tidyverse combined with `mutate` which creates a new variable. The new variable should be defined as the average of the `Trend` variable in every year:
 
-```{r}
+
+```{r, eval = FALSE}
+co2cy <- co2cdata %>% group_by(Year) %>% 
+          mutate(co2cy = XXXX(Trend)) %>% #calculates annual average
+          select(Year,co2cy) %>%          # drops all but Year and co2ey
+          unique()                        # only keeps one per year
+```
+
+```{r, echo = FALSE}
 co2cy <- co2cdata %>% group_by(Year) %>% 
           mutate(co2cy = mean(Trend)) %>% #calculates annual average
           select(Year,co2cy) %>%          # drops all but Year and co2ey
           unique()                        # only keeps one per year
 ```
 
-Now we shall turn this series into a `xts` series.
+Your new series `co2cy$co2cy` has been calculated correctly if its average value is `r mean(co2cy$co2cy)`.
 
-```{r}
+Now we shall turn this series into a `xts` series. Complete the following line of code:
+
+```{r, eval = FALSE}
+co2c <- xts(co2cy$co2cy, XXXX=XXXX(paste0("01/07/",XXXX),"XXXX"))
+```
+
+```{r, echo = FALSE}
 co2c <- xts(co2cy$co2cy, order.by=as.Date(paste0("01/07/",co2cy$Year),"%d/%m/%Y"))
 ```
 
-This measured the concentration of CO2 in the air at a particular observatory. But the series is not particularly long as it starts at 1958.
+This measured the concentration of CO2 in the air at a particular observatory. But the series is not particularly long as it starts in 1958.
 
-An alternative is to use actual estimates of **CO2 emissions**. We obtain these from the [https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions](Our Worls in Data Website).
+An alternative is to use actual estimates of **CO2 emissions**. We obtain these from the [https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions#annual-co2-emissions](Our World in Data Website). Click the data tab underneath the world map.
 
-```{r, echo = FALSE}
+```{r}
 co2edata <- read.csv("annual-co2-emissions-per-country.csv") 
 names(co2edata)
 ```
 
-The first thing you can notive that the name of the fourth variable is very long. Let's change that.
+The first thing you can notice that the name of the fourth variable is very long. Let's change that.
 
 ```{r}
 names(co2edata)[4] <- "co2e"
 head(co2edata)
 ```
 
-The data are organised such that every row represents the CO2 emissions for a country in a particular year. Afghanistan is the first country in the alphabet. For this purpose we really only want the data for the entire world. Let's see whether any of the Entitys looks like delivering these data. Run `unique(co2edata$Entity)` to see a list of all coutries and you will find an entry `World`. Let's filter out these data.
-
+The data are organised such that every row represents the CO2 emissions for a country (`Entity`) in a particular year. Afghanistan is the first country in the alphabet. For this purpose we really only want the data for the entire world. Let's see whether any of the entitys looks like delivering these data. Run `unique(co2edata$Entity)` to see a list of all coutries and you will find an entry `World`. Let's filter out these data.
 
 ```{r}
 co2edata <- co2edata %>%  filter(Entity == "World")
 ```
 
-
 The global series is not very long. We could think of aggregating over all the countries, but perhaps we can find another source. After googling something like "CO2 global emissions global data history" I eventually ended up at [https://cdiac.ess-dive.lbl.gov/trends/emis/tre_glob_2014.html](this place) and downloaded the comma deliminated (csv) file. I saved it as `global.1751_2014.csv`.
 
-```{r, echo = FALSE}
+```{r}
 co2edata2 <- read.csv("global.1751_2014.csv",skip = 1, na.strings = "***") 
 names(co2edata2)
 summary(co2edata2$Year)
@@ -163,17 +187,23 @@ names(co2edata2)[2] <- "co2e"
 The units of measurement here are millions of metric tons (mmt) of carbon. Let's give this a quick plot
 
 ```{r, fig.cap="Figure: CO2 emission"}
-plot(co2edata2$Year, co2edata2$co2e, xlab="Time", ylab="CO2 emission (mill metric tons)",type = "l", col="blue")
+plot(co2edata2$Year, co2edata2$co2e, xlab="Time", 
+     ylab="CO2 emission (mill metric tons)",type = "l", col="blue")
 title("Annual CO2 emission")
 ```
 
 Clearly an exponential increase. However, you can see the impact of recessions (e.g. in the 1970s and 2008/9) and perhaps also the beginning of a slowing down of emission growth at the very end of the sample period. Let's convert this to a `xts` series.
 
-```{r}
+
+```{r, eval=FALSE}
+co2e <- xts(co2edata2$co2e, XXXX=XXXX(XXXX("01/07/",XXXX),"XXXX"))
+```
+
+```{r, echo=FALSE}
 co2e <- xts(co2edata2$co2e, order.by=as.Date(paste0("01/07/",co2edata2$Year),"%d/%m/%Y"))
 ```
 
-A somewhat different way of going about quantifying the effect of GHG on global temperatures is to estimate what contribution a particular GHG has made on **radiative forcing** (Definition from [https://en.wikipedia.org/wiki/Radiative_forcing](Wikipedia)
+A somewhat different way of going about quantifying the effect of GHG on global temperatures is to estimate what contribution a particular GHG has made on **radiative forcing** (Definition from [https://en.wikipedia.org/wiki/Radiative_forcing](Wikipedia):
 Radiative forcing or climate forcing is the difference between insolation (sunlight) absorbed by the Earth and energy radiated back to space. The influences that cause changes to the Earth's climate system altering Earth's radiative equilibrium, forcing temperatures to rise or fall, are called climate forcings.)
 
 These can be broken down by different contributing GHG and a [https://data.giss.nasa.gov/modelforce/Fe_H11_1880-2011.txt](file with these data) is available from the Goddard Institute for Space Science.
@@ -191,7 +221,8 @@ The most interesting variables here are
 The former man-made (anthropogenic) and the later a natural cause.
 
 ```{r, fig.cap="Figure: CO2 emissions."}
-plot(co2fdata$Year, co2fdata$WMGHGs, xlab="Time", ylab="CO2 levels (trend, mole fraction)",type = "l", col="blue")
+plot(co2fdata$Year, co2fdata$WMGHGs, xlab="Time", 
+     ylab="CO2 levels (trend, mole fraction)",type = "l", col="blue")
 lines(co2fdata$Year,co2fdata$Solar, col = "red")
 legend(1880, 2.5, legend=c("Solar", "GHG"),
        col=c("red", "blue"), lty=1, cex=0.8)
@@ -216,11 +247,9 @@ GHGf <- xts(co2fdata$WMGHGs, order.by=as.Date(paste0("01/07/",co2fdata$Year),"%d
 climate_data <- merge(gt,co2c,co2e,Solarf,GHGf)
 ```
 
-# Some graphical analysis
+Have a look at the resulting new data frame `climate_data` so that you understand its structure.
 
-```{r}
-plot(climate_data$GHGf)
-```
+# Some graphical analysis
 
 Let's plot `co2e` and `co2c` in one graph, restricting the plot to the years 1948 to 2010 and plotting it using `ggplot` as this produces visually more pleasing results.
 
@@ -241,7 +270,16 @@ We use the `scale` function to scale the variables in our dataframe. We standard
 climate_data_s <- scale(climate_data["1948/2010"])
 ```
 
-And now we replicate the same code from above 
+Use the help function `?scale` to figure out what that function actually does/
+
+```{r, echo=FALSE}
+#scale(x, center = TRUE, scale = TRUE)
+# if center = TRUE, scale = TRUE then the function first 
+# subtracts the mean and then devides by the standard deviation.
+# the result is a variable with mean = 0 and sd = 1
+```
+
+And now we replicate the same code from above:
 
 ```{r}
 p <- ggplot(climate_data_s["1948/2010"],aes(x=index(climate_data_s["1948/2010"]))) + 
@@ -255,10 +293,10 @@ p <- ggplot(climate_data_s["1948/2010"],aes(x=index(climate_data_s["1948/2010"])
 print(p)
 ```
 
-Let's add the temperature in there (note that we take the graph we produced and saved before, `p`, and just add the next serious. How good is that!).
+Let's add the temperature to the graph (note that we take the graph we produced and saved before, `p`, and just add the next serious. How good is that!).
 
 ```{r}
-p <- p + geom_line(aes(y=gt, color="Gloobal Temp"), size=1 )
+p <- p + geom_line(aes(y=gt, color="Global Temp"), size=1 )
 print(p)
 ```
 
@@ -266,42 +304,37 @@ All you can tell from here is that all three series are trending upwards. Be car
 
 But sometimes graphs can help you in figuring out what is certainly not responsible for global warming. Let's add the series of solar forcing, the variable which measures solar activity.
 
-```{r}
+```{r, eval = FALSE}
+p <- p + geom_line(XXXX)
+print(p)
+```
+
+```{r, echo = FALSE}
 p <- p + geom_line(aes(y=Solarf, color="Solar Act"), size=1 )
 print(p)
 ```
 
 We can see clear cycles of solar acticity, but they are not trending up.
 
-
-```{r, echo = FALSE}
-# This is for Demo Class 5
-p <- ggplot(climate_data_s["1948/2010"],aes(x=index(climate_data_s["1948/2010"]))) + 
-  geom_line(aes(y=co2c, color="A"), size=1 ) + 
-  geom_text(aes(x = as.Date("1960-07-01"), y = -1.5, label = "A", color = "A")) +
-  geom_line(aes(y=gt, color="B"), size=1 ) +
-  geom_text(aes(x = as.Date("1949-01-01"), y = -1.3, label = "B", color = "B")) +
-  geom_line(aes(y=Solarf, color="C"), size=1 ) +
-  geom_text(aes(x = as.Date("1977-01-01"), y = 1.3, label = "C", color = "C")) +
-  xlab("Year") +
-  ylab("Standardised scale") +
-  ggtitle("Three time series") +
-  labs(color="Series") +           # gives the legend
-  theme(legend.position = c(0.07,0.84)) + # determines position of legend
-  theme_bw()
-print(p)
-```
-
 Lets look at the ACF of these series.
 
-```{r}
+```{r, eval = FALSE}
+par(mfrow=c(1,3)) # this plots the next three graphs into a 1x3 array
+acf(climate_data_s["1948/2010"]$gt,main = "ACF 1")
+acf(climate_data_s["1948/2010"]$co2c,main = "ACF 2")
+acf(climate_data_s["1948/2010"]$Solarf,main = "ACF 3")
+```
 
-par(mfrow=c(1,3))
+When you run this code you should obtain an error message. Try and identify what the issue is and what to do about it. Googling and looking at the help function `?acf` could be helpful.
+
+If you solve the problem the solution could look like this:
+
+```{r, echo = FALSE}
+par(mfrow=c(1,3)) # this plots the next three graphs into a 1x3 array
 acf(climate_data_s["1948/2010"]$gt,main = "ACF 1", na.action = na.pass)
 acf(climate_data_s["1948/2010"]$co2c,main = "ACF 2", na.action = na.pass)
 acf(climate_data_s["1948/2010"]$Solarf,main = "ACF 3", na.action = na.pass)
 ```
-
 
 
 # Granger causality testing
@@ -312,8 +345,57 @@ Let's run the following regression:
 
 If `co2e` does not granger-cause `gt`, then we should not be able to reject the null hypoothesis $H_0: \gamma_1 = \gamma_2 = 0$.
 
+As our data are in the `xts` format R will understand the lag function. Let us first estimate the model above `mod_A` and then the model which would be correct if the null hypothesis was true `mod_0`: 
+
 ```{r}
-mod1 <- lm(gt~lag(co2e,1)+lag(co2e,2),data = climate_data_s)
-stargazer_HAC(mod1)
+mod_A <- lm(gt~lag(gt,1)+lag(gt,2)+lag(co2e,1)+lag(co2e,2),data = climate_data_s)
+mod_0 <- lm(gt~lag(gt,1)+lag(gt,2),data = climate_data_s)
+
+stargazer_HAC(mod_0, mod_A)
 ```
+
+Note that we used the `stargazer_HAC` function in order to ensure that standard errors are calculated allowing for autocorrelated error terms
+
+We now use the `lht` function (short for lineat hypothesis testing) which comes from the `car` package which has been imported as part of the `AER` package.
+
+```{r}
+# lht tests linear hypotheses
+# vcov = vcovHAC, allows for autocorrelated residuals
+# ensure that variable names are EXACTLY as they appear in 
+# the regression output table!
+lht(mod_A, c("lag(co2e, 1)=0","lag(co2e, 2)=0"), vcov = vcovHAC)
+```
+
+Here, the $$H_0$$ that the two lags of `co2e` are irrelevant is rejected as the p-value is very small (0.0001806).
+
+As we discussed before these data are nonstationary and it would be important to understand that this result is not merely a result of the non-stationary nature of the data. On this occasion it seems not really appropriate to merely incluse a time trend. It is the (potential) time-trend which is actually the oject of interest here. If we introduced it as an exogenous series we would potentially, und unjustifiably, remove the potential for rising co2 emissions explaining this trend.
+
+We therefore estimate the model in differences instead.
+
+```{r, eval = FALSE}
+mod_Ad <- lm(diff(gt)~lag(diff(gt),1)+lag(diff(gt),2)+lag(diff(co2e),1)+
+               lag(diff(co2e),2),data = climate_data_s)
+mod_0d <- lm(XXXX~XXXX+XXXX,data = climate_data_s)
+
+stargazer_HAC(XXXX, XXXX)
+lht(mod_Ad, c("XXXX","XXXX"), vcov = XXXX)
+```
+
+```{r, echo = FALSE}
+mod_Ad <- lm(diff(gt)~lag(diff(gt),1)+lag(diff(gt),2)+
+               lag(diff(co2e),1)+lag(diff(co2e),2),data = climate_data_s)
+mod_0d <- lm(diff(gt)~lag(diff(gt),1)+lag(diff(gt),2),data = climate_data_s)
+
+stargazer_HAC(mod_0d, mod_Ad)
+lht(mod_Ad, c("lag(diff(co2e), 1)=0","lag(diff(co2e), 2)=0"), vcov = vcovHAC)
+```
+
+You can now see that the lagged changes in co2 emissions do not appear to granger cause changes in `gt`. When you look at the two estimated models you can also see that differencing the data resulted insignificantly lower $R^2$ for these regressions. This is a very typical result and is not a concern. In contrast, it is the high $R^2$ in the models estimated in levels which are a concern. When regresisong nonstationary data on each other high $R^2$ are quite common and often lead inexperienced users to attach too much importance to these results.
+
+Here we tested whether `co2e` granger caused `gt`. We could modify the analysis in a number of directions. 
+
+1) You could extend the number of lags to 4, to acknowledge that the greenhouse effect of co2 emissions may take some time  
+2) You could include the `Solarf` variable as a third variable and see whether its inclusion changes the results regarding `co2e` granger causing `gt`.
+
+
 
