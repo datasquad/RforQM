@@ -1,0 +1,185 @@
+---
+title: "Time-Series Modelling"
+subtitle: "ECON20222 - Lecture 9"
+author: "Ralf Becker and Martyn Andrews"
+date: "March 2019"
+output: 
+  beamer_presentation:
+    includes:
+#      in_header: ../latex_template.tex
+      in_header: ../latex_student.tex  # use for student version
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+```
+
+
+## Time-Series Properties
+
+We model economic time-series in order to:
+
+\begin{itemize}
+  \item understand the dynamics in \textbf{one} or between \textbf{several} time-series
+  \item Forecast the \textbf{one or several} time-series 
+  \item understand causal relationships between \textbf{several} time-series
+\end{itemize}
+
+```{r, echo = FALSE}
+library(tidyverse)
+library(ggplot2)
+library(pdfetch)
+library(xts)
+library(AER)          # access to HS robust standard errors
+library(stargazer)
+source("stargazer_HC.r")  # includes the robust regression display
+source("stargazer_HAC.r")  # includes the Newey-West standard errors
+library(gridExtra)  # required for the combination of ggplots
+```
+
+## Import some data into R
+
+Income tax and compulsory social contributions (NICs): £m CPNSA, monthly observations
+
+```{r, echo = FALSE, results = 'hide'}
+# Income tax and compulsory social contributions (NICs): £m CPNSA
+tax <- pdfetch_ONS("KSS8","PUSF")  
+periodicity(tax)   # check data availability
+names(tax) <- "Income.Tax" # give a sensible name
+```
+
+```{r, echo = FALSE}
+# we prepare the data for being kept in long format
+# that is useful for plotting in ggplot
+tax_l <- data.frame(index(tax),stack(as.data.frame(coredata(tax))))
+# Give sensible names to columns
+names(tax_l)[1] <- "Date"   # first col will have date
+names(tax_l)[2] <- "Value"  # second col will have value
+names(tax_l)[3] <- "id"     # third col will have series name
+```
+
+```{r, echo = FALSE}
+ggplot(tax_l,aes(x =Date, y=Value)) + 
+  geom_line(colour = "blue",size = 1.5) +
+  ggtitle("UK income tax receipts") +
+  theme_bw()
+```
+
+
+## The autocorrelation function (ACF)
+
+The ACF expresses how observations are correlated to observations 1, 2, 3 or $k$ observations prior, $\rho_k$.
+
+
+```{r, echo = FALSE, fig.height = 2.5, fig.width = 3.5}
+temp_acf <- acf(tax)
+```
+
+
+
+## Stationary and Nonstationary Series
+
+The ACF expresses how persistant a series is.
+
+* A series that is extremely persistant is called a **nonstationary** series.  
+* A series that is not very persistant is called a **stationary** series.
+
+Here: The tax receipt series is nonstationary. 
+
+* In general series with a time-trend are nonstationary
+* **BUT** there is a huge grey area inbetween.  
+
+Formal statistical tests exist (ot covered here). Here we eye-ball the series and look at how slowly the ACF converges to 0.
+
+## Transformations
+
+An important time-series transformation we consider is that of **differencing** a series (or log differencing)
+
+```{r, fig.height = 2.5, fig.width = 3.5}
+# we multiply by 100 to express in percentage points, i.e. 0.5 is 0.5% or 0.005
+dtax <- 100*diff(log(tax), lag = 1)
+temp_acf <- acf(dtax, na.action = na.pass)
+```
+
+## Transformations
+
+Let's difference with ```lag = 12```, e.g. the difference between January and January receipts.
+
+```{r, fig.height = 2.5, fig.width = 3.5}
+# we multiply by 100 to express in percentage points, i.e. 0.5 is 0.5% or 0.005
+dtax <- 100*diff(log(tax), lag = 12)
+temp_acf <- acf(dtax, na.action = na.pass)
+```
+
+Differencing can turn nonstationary series into a stationary series.
+
+## Spurious Regression
+
+If we run a regression involving nonstationary variables...
+
+Let's get some datasets fron EUROSTAT (using `pdfetch_EUROSTAT`).
+
+* % of agricultural area Total fully converted and under conversion to organic farming in Germany [`Org`]  
+* Thousands of passengers travelling to and from Norway by boat [`Pass`]  
+* % of population with tertiary education in Italy [`Tert`]  
+* Hospital Discharges, Alcoholic liver disease (in Thousands) in France [`Alc`] 
+
+
+## Spurious Regression
+
+All possible combinations of simple regressions between the four variables.
+
+\scriptsize
+
+\begin{table}
+   \centering
+\caption{Regression statistics} \label{Table_SpurReg}
+\begin{tabular}{cccccc}
+\hline \hline
+&  & Exp. Var &  &  & \\
+Dep.Var & & Org & Pass  & Tert & Alc \\ 
+\hline 
+Org & $\hat{\gamma}_1$ &  & 0.001 & 0.567*** & -0.125*** \\ 
+& $se_{\hat{\gamma}_1}$ &  & (0.0005) & (0.031) & (0.009) \\ 
+& $R^2$  &  & 0.127  & 0.954 & 0.928  \\ \hline
+Pass & $\hat{\gamma}_1$ & 196.720 &  & 196.720 & -17.717 \\ 
+& $se_{\hat{\gamma}_1}$ &  (137.969) &  & (137.969) & (18.298) \\ 
+& $R^2$ & 0.127  &  & 0.188 & 0.067 \\ \hline
+Tert & $\hat{\gamma}_1$ & 1.681*** & 0.001* &  & -0.215*** \\ 
+& $se_{\hat{\gamma}_1}$ & (0.093) & (0.001) &  & (0.013) \\ 
+& $R^2$ & 0.954 & 0.188 &  & 0.951 \\ \hline
+Alc & $\hat{\gamma}_1$ & -7.421*** & -0.004 & -4.420*** &  \\ 
+& $se_{\hat{\gamma}_1}$ & (0.532) & (0.004) & (0.259) &  \\ 
+& $R^2$ & 0.928 & 0.067 &0.951  &  \\ \hline
+\end{tabular} \\
+
+Note:  *$p<0.1$; **$p<0.05$; ***$p<0.01$, \\
+Newey-West standard errors in parenthesis
+\end{table}
+
+\normalsize
+
+
+## Adding dynamic effects and Forecasting models
+
+Note:   
+* $\Delta ur$: change in unemployment rate  
+* $\Delta rGDP$: change in real GDP
+
+\begin{eqnarray*}
+\Delta ur_t &=& \alpha_0 + \alpha_1 \Delta ur_{t-1} + \alpha_2 \Delta ur_{t-2} + ... + \alpha_p \Delta ur_{t-p} + \\
+&& ~ \beta_1 ~ \Delta rGDP_{t-1} + ... +\beta_k ~ \Delta rGDP_{t-k} + u_t
+\end{eqnarray*}
+
+**No** contemporaneous terms on the right hand side! We can produce forecasts for period $t$ only having information at time (say) $t-1$.
+
+These models can also be used to perform granger causality testing (Demo Class 5 and some Group Projects).
+
+By taking out all the $\Delta rGDP$ we reduce the model to an **autoregressive model (AR)** which often produces very useful short-term forecasts.
+
+## Forecasting Issues
+
+* You may model a differenced series (e.g. $\Delta ur$) but still be interested in forecasting the level ($ur$)
+* Often we forecast from AR models
+* Order selection by information criterion
+* If you have several forecasting models then they can be compared by comparing the RMSE (or other measures which we did not cover).

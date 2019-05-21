@@ -30,11 +30,10 @@ library(ggplot2)      # to produce nice graphiscs
 library(stargazer)    # to produce nice results tables
 library(AER)          # access to HS robust standard errors
 library(readxl)       # enable the read_excel function
-library(forecast)     # for estimating time series models
 library(xts)          # to use xts
 ```
 
-You should also save the separately supplied `stargazer_HAC.r` file in your working directory. This will make it straightforward to estimate and compare regressions with HAC standard errors. Once you have done that you should include the following line into your code which basically makes this function available to you.
+You should also save the separately supplied `stargazer_HAC.r` file in your working directory (see Lecture 9 in BB). This will make it straightforward to estimate and compare regressions with HAC standard errors. Once you have done that you should include the following line into your code which basically makes this function available to you.
 
 ```{r}
 source("stargazer_HAC.r")  # includes the robust regression 
