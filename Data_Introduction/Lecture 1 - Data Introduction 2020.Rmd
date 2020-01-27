@@ -2,7 +2,7 @@
 title: "Introduction to Handling Data"
 subtitle: "ECON20222 - Lecture 1"
 author: "Ralf Becker and Martyn Andrews"
-date: "January 2012"
+date: "January 2020"
 output: 
   beamer_presentation:
     includes:
@@ -124,10 +124,10 @@ To learn in this unit you need to:
 
 Card, David ; Krueger, Alan B. (1994) Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania, The American Economic Review, 84, 772-793.
 
-Do higher minimum wages decrease employment (as predicted by a simplistic labour market model)?
+Do higher minimum wages decrease employment (as predicted by common-sense and a competitive labour market model)?
 
 ## The Research Question
-"This paper presents new evidence on the effect of minimum wages on establishmentlevel employment outcomes. We analyze the experiences of 410 fast-food restaurants in New Jersey and Pennsylvania following the increase in New Jersey's minimum wage from \$ 4.25 to \$ 5.05 per hour. Comparisons of employment, wages, and prices at stores in New Jersey and Pennsylvania before and after the rise offer a simple method for evaluating the effects of the minimum wage."
+"This paper presents new evidence on the effect of minimum wages on establishment-level employment outcomes. We analyze the experiences of 410 fast-food restaurants in New Jersey and Pennsylvania following the increase in New Jersey's minimum wage from \$ 4.25 to \$ 5.05 per hour. Comparisons of employment, wages, and prices at stores in New Jersey and Pennsylvania before and after the rise offer a simple method for evaluating the effects of the minimum wage."
 
 Card, David ; Krueger, Alan B. (1994, p.772)
 
@@ -138,7 +138,7 @@ The debate is still alive:
 \begin{itemize}
   \item Overall negative effect on employment, \href{https://wol.iza.org/articles/employment-effects-of-minimum-wages}{IZA}.\\
   \emph{"Research findings are not unanimous, but especially for the US, evidence suggests that minimum wages reduce the jobs available to low-skill workers."}
-  \item An overview of the mpirical evidence is provided in this report by \href{https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/844350/impacts_of_minimum_wages_review_of_the_international_evidence_Arindrajit_Dube_web.pdf}{Arindrajit Dube for the UK Government}. \\
+  \item An overview of the empirical evidence is provided in this report by \href{https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/844350/impacts_of_minimum_wages_review_of_the_international_evidence_Arindrajit_Dube_web.pdf}{Arindrajit Dube for the UK Government}. \\
   \emph{"Especially for the set of studies that consider broad groups of workers, the overall evidence base suggests an employment impact of close to zero."}
 \end{itemize}
 
@@ -148,7 +148,7 @@ The debate is still alive:
 
 \begin{itemize}
   \item Replicate some of the basic results presented in Card and Krueger (1994)
-  \item Introduce the Diff-in-Diff Methodology (Project!!)
+  \item Introduce the Difference-in-Difference methodology (Project!!) [Sometimes known as “Diff-in-Diff” or DiD.]
   \item Use this example to 
     \begin{itemize}
       \item introduce you to R
@@ -262,65 +262,159 @@ library(stargazer)    # to produce nice results tables
 Then we load the data from excel
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
-ck_data<- read_xlsx("CK_public.xlsx")
-str(ck_data)  # prints some basic info on variables
+CKdata<- read_xlsx("CK_public.xlsx",na = ".")
 ```
 
-and check some characteristics of the data which are now stored in \texttt{RRData}:
+\texttt{na = "."} indicates how missing data are coded.
+
+Check some characteristics of the data which are now stored in \texttt{CKdata}:
+\textcolor{student}{Discuss data.frame, number of obs and number of variables, their names and variable types}
+
+\scriptsize
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-str(RRData)  # prints some basic info on variables
+str(CKdata)  # prints some basic info on variables
 ```
 
-\textcolor{student}{Discuss data.frame, number of obs and number of variables, their names and variable types}
+\normalsize
+
+
+## The data
+
+To see the entire dataset (like in a spreadsheet):
+
+Either click the little spreadsheet symbol next to the data.frame in the Environment tab, or
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, eval = FALSE}
+view(CKdata)  # prints some basic info on variables
+```
+
+## The data - Unit of observation
+
+A unit of observation is a fast food restaurant.
+
+Say observation 27 in our dataset is a Roy Rogers (\texttt{CHAIN = 3}) store in Pennsylvania (\texttt{STATE = 0}) with 7 full time employees (\texttt{EMPFT}), 19 part-time employees (\texttt{EMPPT}) and 4 managers (\texttt{NMGRS}) in Feb 1992 and 17.5 in Dec
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+CKdata[27,] 
+```
+
+See \texttt{CK\_codebook.txt} for details on data definitions.
+
+## Addressing particular variables
+
+If you want to call/use the entire spreadsheet/data frame/tibble then you call \texttt{CKdata}.
+
+But often you want to call one variable only:
+
+* \texttt{CKdata\$CHAIN}, calls \texttt{CHAIN} only
+* \texttt{CKdata["CHAIN"]}, calls \texttt{CHAIN} only
+* \texttt{CKdata[2]}, calls \texttt{CHAIN} only, as it is the 2nd variable
+
+And sometimes you want to call several, but not all, variables:
+
+* \texttt{CKdata[c("STATE","CHAIN")]}
+
+\texttt{c("STATE","CHAIN")} creates a list of names. \texttt{c} really represents a function, c for concatenation.
+
+\textbf{Also note: R is case sensitive, \texttt{CHAIN} $\neq$ \texttt{Chain}}
 
 ## Variable types
 
-These are four basic data types.
+These are five basic data types.
 
 \begin{itemize}
   \item \texttt{character: "a", "swc"}
   \item \texttt{numeric: 2, 15.5}
   \item \texttt{integer: 2L (the L tells R to store this as an integer)}
   \item \texttt{logical: TRUE, FALSE}
+  \item \texttt{factor: a set number of categories}
 \end{itemize}
 
 It is important that you know and understand differences between data types. Each variable has has a particular type and some operations only work for particular datatypes. For instance, we need \texttt{num} or \texttt{int} for any mathematical operations.
 
-In our data.frame three variables are \texttt{num} and one is of \texttt{chr} type. 
+In our data.frame we have only \texttt{num} variable types. 
 
 We will encounter \texttt{logical} variables frequently. \textcolor{student}{they are very powerful}
 
+
 ## \texttt{factor} variables
 
-It is necessary to change categorical variables (here \texttt{Country}) to \texttt{factor} variables.
+We store categorical variables as \texttt{factor} variables. 
+
+Sometimes you need to type convert to \texttt{factor} variables.
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-RRData$Country <- as.factor(RRData$Country)
-str(RRData)
+str(CKdata[c("STATE","CHAIN")])  # prints some basic info on variables
 ```
 
+* `STATE`, 1 if New Jersey (NJ); 0 if Pennsylvania (Pa) 
+* `CHAIN`, 1 = Burger King; 2 = KFC; 3 = Roy Rogers; 4 = Wendy's
+
+## \texttt{factor} variables
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+CKdata$STATEf <- as.factor(CKdata$STATE)  
+levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey") 
+
+CKdata$CHAINf <- as.factor(CKdata$CHAIN)  
+levels(CKdata$CHAINf) <- c("Burger King","KFC", "Roy Rogers", "Wendy's") 
+```
+\normalsize
+
 \begin{itemize}
-  \item \texttt{RRData\$Country} calls variable \texttt{Country} in dataframe \texttt{RRData}
-  \item \texttt{<-} assigns what is on the right \texttt{as.factor(RRData\$Country)} to the variable on the left \texttt{RRData\$Country}
-  \item \texttt{as.factor(RRData\$Country)} calls a function \texttt{as.factor} and applies it to \texttt{RRData\$Country}
+  \item \texttt{CKdata\$STATE} calls variable \texttt{STATE} in dataframe \texttt{ck\_data}
+  \item \texttt{<-} assigns what is on the right \texttt{as.factor(CKdata\$STATE)} to the variable on the left \texttt{CKdata\$STATEf}
+  \item \texttt{as.factor(CKdata\$STATE)} calls a function \texttt{as.factor} and applies it to \texttt{CKdata\$STATE}
 \end{itemize}
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+str(CKdata[c("STATEf","CHAINf")])  # prints some basic info on variables
+
+```
+\normalsize
 
 ## \texttt{factor} variables
 
 \texttt{factor} variables are variables with discrete categories. Which ones they are you can find out with the \texttt{levels()} function:
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-levels(RRData$Country)
+levels(CKdata$CHAINf)
 ```
 
 ## Learn more about your data
 
-Use the \texttt{stargazer} function for some initial summary stats for \texttt{num} or \texttt{int} variables
+Use the \texttt{summary} function for some initial summary stats for \texttt{num} or \texttt{int} variables
+
+* `WAGE_ST`, starting wage ($/hr), Wave 1, before min wage increase, Feb 1992
+* `EMPFT`, # full-time employees before policy implementation
+
 \footnotesize
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-stargazer(RRData, type = "text")
+summary(CKdata[c("WAGE_ST","EMPFT")])
+```
+
+\normalsize
+
+## Learn more about your data
+
+How many obs in each state and what chains
+
+\scriptsize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+Tab1 <- CKdata %>% group_by(STATEf) %>% 
+          summarise(n = n()) %>% 
+          print()
+```
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+prop.table(table(CKdata$CHAINf,CKdata$STATEf,dnn = c("Chain", "State")),margin = 2)
 ```
 
 \normalsize
@@ -328,14 +422,14 @@ stargazer(RRData, type = "text")
 ## Scatter plot of the data
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
-p1 <- ggplot(RRData,aes(debtgdp,dRGDP)) +
+p1 <- ggplot(CKdata,aes(WAGE_ST,EMPFT)) +
   geom_point(size=0.5) +    # this produces the scatter plot
   geom_smooth(method = "lm", se = FALSE)  # adds the line 
 p1
 ```
 
 \footnotesize
-\textcolor{student}{Point out that each dot represents one country/year's data, e.g. France in 1991. Point out line of best fit}
+\textcolor{student}{Point out that each dot represents one store data. Point out line of best fit}
 \normalsize
 
 ## Regression Line
@@ -343,7 +437,7 @@ p1
 The line in the previous plot is the line of best fit coming for a linear regression 
 
 \vskip -0.5cm
-\[rGDP = \alpha + \beta debtgdp + u ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
+\[EMPFT = \alpha + \beta WAGE\_ST + u ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
 \vskip -0.2cm
 
 \begin{itemize}
@@ -352,14 +446,14 @@ The line in the previous plot is the line of best fit coming for a linear regres
 \end{itemize}
 
 \vskip -0.5cm
-\[ rGDP_{it} = \widehat{\alpha} + \widehat{\beta} ~ debtgdp_{it} + \widehat{u}_{it} ~\text{(\textcolor{student}{Estimated Sample} ~~~~Model)}\]
+\[ EMPFT_{it} = \widehat{\alpha} + \widehat{\beta} ~ WAGE\_ST_{it} + \widehat{u}_{it} ~\text{(\textcolor{student}{Estimated Sample} ~~~~Model)}\]
 \vskip -0.2cm
 
 Here we have two subscripts as the data have a cross-section (\texttt{\textcolor{student}{i}}) and a time-series dimension (\texttt{\textcolor{student}{t}}).
 
 The regression line in the previous figure is represented by 
 \vskip -0.5cm
-\[ \widehat{rGDP}_{it} = \widehat{\alpha} + \widehat{\beta} debtgdp_{it} ~~~\text{(~~~\textcolor{student}{Regression Line}~~~~~~)}\]
+\[ \widehat{EMPFT}_{it} = \widehat{\alpha} + \widehat{\beta} WAGE\_ST_{it} ~~~\text{(~~~\textcolor{student}{Regression Line}~~~~~~)}\]
 
 ## Simple Regression Model and OLS
 
@@ -371,7 +465,7 @@ How to estimate parameters (get $\widehat{\alpha}$ and $\widehat{\beta}$) using 
 
 \footnotesize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-mod1 <- lm(dRGDP~debtgdp, data= RRData)
+mod1 <- lm(EMPFT~WAGE_ST, data= CKdata)
 summary(mod1)
 ```
 \normalsize
@@ -388,33 +482,34 @@ stargazer(mod1,type="text")
 How were $\widehat{\beta}$ and $\widehat{\alpha}$ calculated?
 
 \begin{eqnarray*}
-  \widehat{\beta}&=&\dfrac{\widehat{Cov}(dRGDP_{it},debtgdp_{it})}{\widehat{Var}(debtgdp_{it})}\\
-  \widehat{\alpha}&=&\overline{dRGDP}_{it}-\widehat{\beta}*\overline{debtgdp}_{it}
+  \widehat{\beta}&=&\dfrac{\widehat{Cov}(EMPFT_{it},WAGE\_ST_{it})}{\widehat{Var}(WAGE\_ST_{it})}\\
+  \widehat{\alpha}&=&\overline{EMPFT}_{it}-\widehat{\beta}*\overline{WAGE\_ST}_{it}
 \end{eqnarray*}
 
 
-How to interpret $\widehat{\beta}=-0.018$?
+How to interpret $\widehat{\beta}=3.193$?
 
-\textcolor{student}{An increase of one unit in \texttt{debtgdp} (=1\% point) is related to a decrease of GDP growth of 0.018 units (=0.018\% points - pp)}
+\textcolor{student}{An increase of one unit in \texttt{WAGE\_ST} (=USD1) is related to an increase in about 3 full time employees (\texttt{EMPFT}).}
 
-Have we established that higher debt levels \textbf{cause} lower GDP growth?
+Have we established that higher wages \textbf{cause} higher employment?
 
 \textcolor{student}{NO}
 
 
+
 ## Regression Analysis - Underneath the hood
 
-Need to recognise that in a sample $\hat{\beta}$ and $\hat{\alpha}$ are really \textcolor{student}{random variables}.
+Need to recognise that in a sample $\hat{\beta}$ and $\hat{\alpha}$ are really \textcolor{student}{random variables}. For short \texttt{EMPFT=E} and \texttt{WAGE\_ST=W}:
 
 \begin{eqnarray*}
-\hat{\beta} &=& \dfrac{\widehat{Cov}(dRGDP,debtgdp)}{\widehat{Var}(debtgdp)}\\
-          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ debtgdp + u,debtgdp)}{\widehat{Var}(debtgdp)}\\
-          &=&\dfrac{\widehat{Cov}(\alpha,debtgdp) + \beta \widehat{Cov}(debtgdp,debtgdp) + \widehat{Cov}(u,debtgdp)}{\widehat{Var}(debtgdp)}\\
-          &=& \beta ~\dfrac{\widehat{Var}(debtgdp)}{\widehat{Var}(debtgdp)}  + \dfrac{\widehat{Cov}(u,debtgdp)}{\widehat{Var}(debtgdp)}= \beta  + \dfrac{\widehat{Cov}(u,debtgdp)}{\widehat{Var}(debtgdp)}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(E,W)}{\widehat{Var}(W)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ W + u,W)}{\widehat{Var}(W)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha,W) + \beta \widehat{Cov}(W,W) + \widehat{Cov}(u,W)}{\widehat{Var}(W)}\\
+          &=& \beta ~\dfrac{\widehat{Var}(W)}{\widehat{Var}(W)}  + \dfrac{\widehat{Cov}(u,W)}{\widehat{Var}(W)}= \beta  + \dfrac{\widehat{Cov}(u,W)}{\widehat{Var}(W)}
 \end{eqnarray*}
 
 So $\hat{\beta}$ is a function of the random term $u$ and hence is itself a random variable.
-Once $\widehat{Cov}(dRGDP,debtgdp)$ and $\widehat{Var}(debtgdp)$ are replaced by sample estimates we get \textcolor{student}{~ONE~} value which is draw from a \textcolor{student}{random distribution.}
+Once $\widehat{Cov}(E,W)$ and $\widehat{Var}(W)$ are replaced by sample estimates we get \textcolor{student}{~ONE~} value which is draw from a \textcolor{student}{random distribution.}
 
 ## OLS - estimator properties
 
@@ -427,7 +522,7 @@ What can we learn from this?
   \textcolor{student}{at this stage the concept of unbiasedness may still be a little hazy and that is fine}
   \item For this to happen we need to \textcolor{red}{assume} that $Cov(u,x)=0$ as then \\
         $E(\widehat{\beta})=$ \textcolor{student}{$\beta$}\\
-        \textcolor{student}{Why do we need to assume this? Because while we do have values for $x_{it}$ we do not have values for the unobserved error terms $u_{it}$. Hence we cannot test this. As you will find out this is mainly a thinking exercise and one at the core of much of what we do.}
+        \textcolor{student}{Why do we need to assume this? Because while we do have values for $x_{it}$ we do not have values for the unobserved error terms $u_{it}$. Hence we cannot test this. As you will find out, this is a thinking exercise and whether it is true/false/sensible/appropriate is at the core of what we do.}
 \end{itemize}
 
 
@@ -442,158 +537,176 @@ This is sometimes called the \textcolor{red}{Exogeneity assumption}. The error t
 There are a lot of reasons why this assumption may be breached.
 
 \begin{itemize}
-  \item Simultaneity ($debtgdp \rightarrow dRGDP$ and $dRGDP \rightarrow debtgdp$)\\
+  \item Simultaneity ($WAGE\_ST \rightarrow EMPFT$ and $EMPFT \rightarrow WAGE\_ST$)\\
   \footnotesize
   \textcolor{student}{Discuss the fact that we have to assume that causailty here goes in both directions. Hence we cannot attach one one-directional causal interpretation to the estimated coefficient. If you can estimate the model the other way round} \normalsize
-  \item Measurement error in $x_{it}$ 
+
   \item Omitted relevant variables or unobserved heterogeneity 
+  \item Measurement error in $x_{it}$ 
+
 \end{itemize}
 
 
-## Reinhard/Rogoff Example - debtgdp
-\scriptsize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, fig.height = 2, fig.width = 5}
-tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
-ggplot(tempdata,aes(Year,debtgdp,color=Country)) +
-  geom_line(size=1)     # this produces the line plot
-```
+## So how to make causal statements
 
-\textcolor{student}{Point out the piping operator and the filter function and then ggplot and geom\_line}\normalsize
+Once we have found reasons to believe in the exogeneity assumption, the next few lectures is to introduce various standard techniques that use this assumption:
 
-## Reinhard/Rogoff Example - dRGDP
-\scriptsize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, fig.height = 2.8, fig.width = 5}
-tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
-ggplot(tempdata,aes(Year,dRGDP,color=Country)) +
-  geom_line(size=1)     # this produces the line plot
+* First Difference                                                                         
+* Diff-in-Diff, to be used in Project
+* Instrumental Variables
+* Regression Discontinuity
+
+All of them can be thought of as specific ways to apply a regression model.
+
+
+## Diff-in-Diff - The Problem
+
+
+Do higher minimum wages decrease employment (as predicted by a simplistic labour market model)?
+
+## The Research Question
+"This paper presents new evidence on the effect of minimum wages on establishment-level employment outcomes. We analyze the experiences of 410 fast-food restaurants in New Jersey and Pennsylvania following the increase in New Jersey's minimum wage from \$ 4.25 to \$ 5.05 per hour. Comparisons of employment, wages, and prices at stores in New Jersey and Pennsylvania before and after the rise offer a simple method for evaluating the effects of the minimum wage."
+
+Card, David ; Krueger, Alan B. (1994, p.772)
+
+## Wage distribution - Pre
+
+Look at the distribution of starting wages before the change in minimum wage in New Jersey (`WAGE_ST`).
+
+At this stage it is not so important to understand the commands for these plots.
+
+The easiest way to plot a histogram is 
+
+`hist(CKdata$WAGE_ST[CKdata$STATEf == "Pennsylvania"])` 
+
+where, in square brackets, we select that we only want data fram Pennsylvania.
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 4, fig.width = 4, eval = FALSE}
+hist(CKdata$WAGE_ST[CKdata$STATEf == "Pennsylvania"])
+hist(CKdata$WAGE_ST[CKdata$STATEf == "New Jersey"])
 ```
 
 \normalsize
 
-## Reinhard/Rogoff Example - dRGDP v debtgdp
-\scriptsize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, fig.height = 2.7, fig.width = 5}
-tempdata <- RRData %>% filter(Country %in% c("Germany","Greece","UK","US"))
-ggplot(tempdata,aes(debtgdp,dRGDP,color=Country)) +
-  geom_point()     # this produces the scatter plot
+
+## Wage distribution - Pre
+
+Or here an alternative visualisation.
+
+\footnotesize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(CKdata,aes(WAGE_ST, colour = STATEf), colour = STATEf) + 
+    geom_histogram(position="identity", 
+                   aes(y = ..density..),
+                   bins = 10,
+                   alpha = 0.2) +
+    ggtitle(paste("Starting wage distribution, Feb/Mar 1992"))
 ```
 \normalsize
 
-## Reinhard/Rogoff Example
+## Wage distribution - Pre
 
-What have we learned?
+Both plots sow that the starting wage distribution is fairly similar in both states, with peaks at the minimum wage of $4.25 and $5.00.
 
-\begin{itemize}
-  \item dept data are persistant
-  \item growth data as well but less so
-  \item data for different countries have different characteristics
-\end{itemize}
+## Policy Evaluation
 
-## Group the data into debt categories
+First we can evaluate whether the legislation has been implemented.
 
-Let's create the four debt categories: (0,30], (30,60], (60,90], (90,Inf].
+\footnotesize
 
-\scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-RRData <- RRData %>% mutate(dgcat = cut(RRData$debtgdp, breaks=c(0,30,60,90,Inf)))
-
-RRData %>% group_by(dgcat) %>% 
-            summarise_at("dRGDP", funs(mean, median)) %>% 
-            print()
+Tab1 <- CKdata %>% group_by(STATEf) %>% 
+          summarise(wage_FEB = mean(WAGE_ST,na.rm = TRUE), 
+                    wage_DEC = mean(WAGE_ST2,na.rm = TRUE)) %>% 
+          print()
 ```
 
-\textcolor{student}{Pint out the mutate function in combination with the cut function and the pipe, then the group\_by and summarise\_at function}
+Average wage in New Jersey has increased. 
+
 \normalsize
 
-These are the statistics we saw before (not the one reported by Reinhard and Rogoff)
+## Policy Evaluation - Wage distribution
 
-## Why did Reinhard and Rogoff report different results?
+\footnotesize
 
-
-\begin{tabular}{|c|c|c|c|c|}
-	\hline 
-	Debt Category & (0,30] & (30,60] & (60,90] & (90,Inf] \\ 
-	\hline 
-	Avg Growth Rate (RR) &  4.09\% & 2.87\%  &  3.40\% & \textcolor{red}{-0.02}\%  \\ 
-		\hline 
-	Avg Growth Rate (HAP) &  4.17\% & 3.12\%  &  3.22\% & 2.17\%  \\
-	\hline 
-\end{tabular} 
-
-Why did RR get so much lower growth for the highest debt category, (90,Inf]?
-
-\href{https://academic.oup.com/cje/article-abstract/38/2/257/1714018?redirectedFrom=fulltext}{Thomas Herndon, Michael Ash and Robert Pollin} (2014) replicated the work. They identified the following differences to the above analysis.
-
-\begin{enumerate}
-  \item They excluded early-postwar data for New Zealand, Australia and Canada, arguing that these data are atypical for later periods, essentially they are outliers
-  \item A spreadsheet error resulted in data for the five countries (Australia, Austria, Belgium, Canada and Denmark) to not be included.
-  \item Observations are not weighted equally.
-\end{enumerate}
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(CKdata,aes(WAGE_ST2, colour = STATEf), colour = STATEf) + 
+    geom_histogram(position="identity", 
+                   aes(y = ..density..),
+                   bins = 10,
+                   alpha = 0.2) +
+    ggtitle(paste("Starting wage distribution, Nov/Dec 1992"))
 
 
-## Replicate Reinhard and Rogoff's results
+```
+\normalsize
 
-\scriptsize
+## Policy Evaluation - Employment outcomes
+
+Let's measure employment before and after the policy change.
+
+Calculate two new variables `FTE` and `FTE2` (full time employment equivalent before and after policy change)
+
+\footnotesize
+
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-## Selective treatment of early years
-RRselective <- RRData %>% 
-  filter(!((Year<1950 & Country=="New Zealand") | 
-             (Year<1951 & Country=="Australia") | 
-             (Year<1951 & Country=="Canada") ))
-
-## Spreadsheet error omitting five countries
-RRselective <- RRselective %>% 
-  filter(!( Country %in%
-              c("Australia","Austria","Belgium","Canada","Denmark") ))
-
-RRselective %>% group_by(dgcat) %>% 
-            summarise_at("dRGDP", funs(mean, median)) %>% 
-            print()
+CKdata$FTE <- CKdata$EMPFT + CKdata$NMGRS + 0.5*CKdata$EMPPT
+CKdata <- CKdata %>%  mutate(FTE2 = EMPFT2 + NMGRS2 + 0.5*EMPPT2)
 ```
-\normalsize
 
-## Replicate Reinhard and Rogoff's results
-
-So the first two differences explain some but not all of the differences. Let's implement the different weighting.
-
-\scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-RRselective2 <- RRselective %>%
-    group_by(dgcat,Country) %>%       # create category and country groups
-    summarize( m1 = mean(dRGDP, na.rm = TRUE)) %>%  # calculate cat average
-    group_by(dgcat) %>%               # group again by category
-    summarize(  n = n(), mean = mean(m1, na.rm = TRUE), 
-                median = median(m1, na.rm = TRUE)) %>% 
-    print()
+TabDiD <- CKdata %>% group_by(STATEf) %>% 
+          summarise(meanFTE_FEB = mean(FTE,na.rm = TRUE), 
+                    meanFTE_DEC = mean(FTE2,na.rm = TRUE)) %>% 
+          print()
+```
+\normalsize
+
+## Policy Evaluation - Diff-in-Diff estimator
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(CKdata, aes(1992,FTE, colour = STATEf)) +
+  geom_point(alpha = 0.2) +
+  geom_point(aes(1993,FTE2),alpha = 0.2) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, FTE"))
 ```
 
-\textcolor{student}{Don't worry too much about the full details of this weighting scheme.}
+## Policy Evaluation - Diff-in-Diff estimator
 
-\normalsize
-The combination of the three changes make a massive difference
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(CKdata, aes(1992,FTE, colour = STATEf)) +
+  geom_jitter(alpha = 0.2) +
+  geom_jitter(aes(1993,FTE2),alpha = 0.2) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, FTE"))
+```
 
-## Why data (and their treatment) matter
+## Policy Evaluation - Diff-in-Diff estimator
 
-The combination of these changes made a significant difference to the summary statistics.
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(TabDiD, aes(1992,meanFTE_FEB, colour = STATEf)) +
+  geom_point(size = 3) +
+  geom_point(aes(1993,meanFTE_DEC),size=3) +
+  ylim(17, 24) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, mean FTE"))
+```
 
-Remember, the data were very persistent.\vskip 0.5cm
+## Policy Evaluation - Diff-in-Diff estimator
 
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+print(TabDiD)
+```
 
-\begin{columns}
-  \begin{column}{0.5\textwidth}
-    \textbf{Reinhard and Rogoff}\\
-      For each country all years which fall into one of the four categories are averaged and then treated as one observation
-  \end{column}
-  \begin{column}{0.5\textwidth}
-    \textbf{Herndon, Ash and Pollin}\\
-    Each country/year observationis treated as one independent observation.
-  \end{column}
-\end{columns}
-\vskip 0.5cm
+Numerically the DiD estimator is calculated as follows:
 
-Perhaps it is right to not treat each observation as a new piece of information. But the RR weighting scheme seems to discard a lot of information.
+(`r round(TabDiD[2,3],1)` - `r round(TabDiD[2,2],1)`) - (`r round(TabDiD[1,3],1)` - `r round(TabDiD[1,2],1)`) = `r (round(TabDiD[2,3],1)-round(TabDiD[2,2],1))-(round(TabDiD[1,3],1)-round(TabDiD[1,2],1))`
 
-These results made a significant difference in the political discourse.
+Later: This can be calculated using a regression approach (has some additional advantages)
+
 
 ## Outlook
 

@@ -58,16 +58,17 @@ The following R programming concepts were used in this document. The links lead 
 The data here are stored as an xlsx format in `public.xlsx`. In order to import these we require the `readxl` package which we loaded earlier. 
 
 ```{r}
-ck_data<- read_xlsx("data/CK_public.xlsx")
-str(ck_data)  # prints some basic info on variables
+# make sure you use the correct path
+CKdata<- read_xlsx("C:/Rcode/RforQM/Data_Introduction/CK_public.xlsx")
+str(CKdata)  # prints some basic info on variables
 ```
 
 Not all the variable names are intuitive. The codebook contains details regarding the variables. Importantly you can see which data format the variables have. In particular you can see numeric (`num`) and character/text (`chr`) variables. As you can see, even the variables which are labeld as `chr` are actually numbers. The reason for this is that there are some missing observations (`"."`).
  As we use the `read_xlsx` function to import the data we can specify that missing data are coded with an ".". By specifying this at the outset we ensure that the data are formatted as numerical data where appropriate.
 
 ```{r}
-ck_data<- read_xlsx("data/CK_public.xlsx",na = ".")
-str(ck_data)  # prints some basic info on variables
+CKdata<- read_xlsx("C:/Rcode/RforQM/Data_Introduction/CK_public.xlsx",na = ".")
+str(CKdata)  # prints some basic info on variables
 ```
 
 We can see that now all variables are numeric (`num`) variables which is as we expect.
@@ -91,11 +92,11 @@ The following variables will be important for the analysis here:
 For later it will be convenient to have `STATE` and `CHAIN` variables which aren't numeric, but categorical variables. In R these are called `factor` variables.
 
 ```{r}
-ck_data$STATEf <- as.factor(ck_data$STATE)  # translates a variable into a factor variable
-levels(ck_data$STATEf) <- c("Pennsylvania","New Jersey") # changes the names of the categories
+CKdata$STATEf <- as.factor(CKdata$STATE)  # translates a variable into a factor variable
+levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey") # changes the names of the categories
 
-ck_data$CHAINf <- as.factor(ck_data$CHAIN)  
-levels(ck_data$CHAINf) <- c("Burger King","KFC", "Roy Rogers", "Wendy's") 
+CKdata$CHAINf <- as.factor(CKdata$CHAIN)  
+levels(CKdata$CHAINf) <- c("Burger King","KFC", "Roy Rogers", "Wendy's") 
 ```
 
 
@@ -104,7 +105,7 @@ levels(ck_data$CHAINf) <- c("Burger King","KFC", "Roy Rogers", "Wendy's")
 Let's create some summary statistics, replicating elements of Card and Krueger's Table 1.
 
 ```{r}
-Tab1 <- ck_data %>% group_by(STATEf) %>% 
+Tab1 <- CKdata %>% group_by(STATEf) %>% 
           summarise(n = n()) %>% 
           print()
 ```
@@ -112,7 +113,7 @@ Tab1 <- ck_data %>% group_by(STATEf) %>%
 A frequency table for the `STATUS2` variable we can obtain as follows (note that `STATE = 1` for New Jersey):
 
 ```{r}
-table(ck_data$STATUS2,ck_data$STATEf)
+table(CKdata$STATUS2,CKdata$STATEf)
 ```
 
 All these data are identical to those in the Card and Krueger paper.
@@ -120,7 +121,7 @@ All these data are identical to those in the Card and Krueger paper.
 Now we replicate some of the summary statistics in Table 2. First we want proportions of different chain types. At core of this we will first calculate a frequency table again (`table()`) but then we feed the result of this straight into the `prop.table()` function which translates frequencies into proportions. The addition of the `margin = 2` option ensures that proportions are calculated by state (2=columns). Try for yourself what changes if you either set `margin = 1` (1 for rows) or leave this option out.
 
 ```{r}
-prop.table(table(ck_data$CHAINf,ck_data$STATEf,dnn = c("Chain", "State")),margin = 2)
+prop.table(table(CKdata$CHAINf,CKdata$STATEf,dnn = c("Chain", "State")),margin = 2)
 ```
 
 Let's also see whether there are other differences between the characteristics. For instance we can look at the distribution of starting wages before the change in minimum wage in New Jersey (`WAGE_ST`).
@@ -128,7 +129,7 @@ Let's also see whether there are other differences between the characteristics. 
 At this stage it is not so important to understand the commands for these plots.
 
 ```{r}
-ggplot(ck_data, aes(WAGE_ST, stat(density), colour = STATEf)) +
+ggplot(CKdata, aes(WAGE_ST, stat(density), colour = STATEf)) +
   geom_freqpoly(bins = 10) +
   ggtitle(paste("Starting wage distribution, Feb/Mar 1992"))
 ```
@@ -136,7 +137,7 @@ ggplot(ck_data, aes(WAGE_ST, stat(density), colour = STATEf)) +
 Or here an alternative visualisation.
 
 ```{r}
-ggplot(ck_data,aes(WAGE_ST, colour = STATEf), colour = STATEf) + 
+ggplot(CKdata,aes(WAGE_ST, colour = STATEf), colour = STATEf) + 
     geom_histogram(position="identity", 
                    aes(y = ..density..),
                    bins = 10,
@@ -153,7 +154,7 @@ Both plots sow that the starting wage distribution is fairly similar in both sta
 First we can evaluate whether the legislation has been implemented.
 
 ```{r}
-Tab1 <- ck_data %>% group_by(STATEf) %>% 
+Tab1 <- CKdata %>% group_by(STATEf) %>% 
           summarise(wage_FEB = mean(WAGE_ST,na.rm = TRUE), 
                     wage_DEC = mean(WAGE_ST2,na.rm = TRUE)) %>% 
           print()
@@ -162,7 +163,7 @@ Tab1 <- ck_data %>% group_by(STATEf) %>%
 We can clearly see that the average wage in New Jersey has increased. We could also compare the wage distributions as above.
 
 ```{r}
-ggplot(ck_data, aes(WAGE_ST2, stat(density), colour = STATEf)) +
+ggplot(CKdata, aes(WAGE_ST2, stat(density), colour = STATEf)) +
   geom_freqpoly(bins = 10) +
   ggtitle(paste("Starting wage distribution, Nov/Dec 1992"))
 
@@ -178,18 +179,44 @@ In the list of variables above you can see that we have before and after policy 
 Hence we will generate two new variables `FTE` and `FTE2`. As almost always the same result can be achieved in different ways in R. So we demonstrate two fifferent ways to create these two variables.
 
 ```{r}
-ck_data$FTE <- ck_data$EMPFT + ck_data$NMGRS + 0.5*ck_data$EMPPT
-ck_data <- ck_data %>%  mutate(FTE2 = EMPFT2 + NMGRS2 + 0.5*EMPPT2)
+CKdata$FTE <- CKdata$EMPFT + CKdata$NMGRS + 0.5*CKdata$EMPPT
+CKdata <- CKdata %>%  mutate(FTE2 = EMPFT2 + NMGRS2 + 0.5*EMPPT2)
 ```
 
 ```{r}
-Tab2 <- ck_data %>% group_by(STATEf) %>% 
+TabDiD <- CKdata %>% group_by(STATEf) %>% 
           summarise(meanFTE_FEB = mean(FTE,na.rm = TRUE), 
                     meanFTE_DEC = mean(FTE2,na.rm = TRUE)) %>% 
           print()
 ```
 
-From here you can clearly see that on average stores in New Jersey have increased employment, while teh average employment in stores in Pennsylvania has actually decreased. That employment would increase despite the minimum wage increasing was a truly earth-shattering result in 1992. 
+From here you can clearly see that on average stores in New Jersey have increased employment, while the average employment in stores in Pennsylvania has actually decreased. That employment would increase despite the minimum wage increasing was a truly earth-shattering result in 1992. 
+
+Let's illustrate the data graphically. We start by plotting all the `FTE` datapoints.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+ggplot(CKdata, aes(x=1992,y=FTE, colour = STATEf)) +
+  geom_point(alpha = 0.2) +
+  geom_point(aes(1993,FTE2),alpha = 0.2) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, FTE"))
+```
+
+Note a few points about how this graph is being called. `ggplot(CKdata, aes(x=1992,y=FTE, colour = STATEf))` Sets up the graph. The first input (`CKdata`) tells R which data to use. In the `aes()` section (`aes` for aesthetics) we determine which variable should appear on the x-axis (`x=1992`) and which is to go onto the y-axis (`y=FTE`). At this stage we havn't actually produced a graph yet, we just did the ground work. Then we add the graph we want, here a scatterplot, in R `geom_point()`. As you can see, the first line and the second line are linked with a `+`. This has to come at the end of the first line so that R knows that it should expect more information. The next line adds the points for after the increase in the NJ minimum wage (and we assign the time 1993 to these points (Also note that we left out the `x=` and `y=` prefixes. By default R knows that the first input is the x axis variable and the 2nd is the y-axis input). The last line (`ggtitle(paste("Employment, FTE"))`) adds a title.
+
+I havn't mentioned what the `alpha = 0.2` in the `geom_point` commands do. Try and figure this out for yourself either by googling ("R ggplot alpha") or by varying the value of `alpha` in the interval $[0,1]$ and observe what happens (yes, like in physics experiments ... with the added bonus that you cannot break anything!). 
+
+The points are very tight together which make it a little difficult to see how many there really are. Instead of the `geom_point` we use the `geom_jitter` command which jitters the points slightly in the time direction.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(CKdata, aes(1992,FTE, colour = STATEf)) +
+  geom_jitter(alpha = 0.2) +
+  geom_jitter(aes(1993,FTE2),alpha = 0.2) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, FTE"))
+```
+
+When we calculate a DiD estimator we are basically calculating the means of the two staes in the two periods, i.e. four points
 
 # Further thoughts
 
