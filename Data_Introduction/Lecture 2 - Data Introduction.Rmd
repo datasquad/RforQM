@@ -2,7 +2,7 @@
 title: "Introduction to Handling Data"
 subtitle: "ECON20222 - Lecture 2"
 author: "Ralf Becker and Martyn Andrews"
-date: "January 2019"
+date: "February 2020"
 output: 
   beamer_presentation:
     includes:
@@ -57,7 +57,7 @@ This will load two objects into your environment
 * `wb_data` - the actual data file
 * `wb_data_Des` - a table which contains some description to each variable
 
-To get to this dataset a significant amount of data handling and cleaning had to happen (see Project 8 in Doing Economics.)
+To get to this dataset a significant amount of data handling and cleaning had to happen (see [Project 8 in Doing Economics](https://www.core-econ.org/doing-economics/book/text/08-03.html).)
 
 ## Wellbeing Data
 \scriptsize
@@ -201,7 +201,7 @@ R can create great maps (but it requires a bit of setup - see the additional fil
 * The statistics for each country
 * a procedure to merge these bits of information in one data-frame (`merge`)
 
-Let's look at average life satisfaction average attitude to the "work first" statement as these statistics vary by country.
+Let's look at average life satisfaction and average attitude to the "work first" statement as these statistics vary by country.
 
 ## Data on Maps
 
@@ -314,7 +314,7 @@ Is this different \textcolor{student}{~~~statistically and/or economically~~~} s
 
 ## Hypothesis Testing - Example 1
 
-Formulate a null hypothesis. Here that the difference in population means (`mu`) is equal to 0 using the `t.test` function. We deliver the `A170` series for oth countries to `t.test`.
+Formulate a null hypothesis. Here that the difference in population means (`mu`) is equal to 0 using the `t.test` function. We deliver the `A170` series for both countries to `t.test`.
 
 \scriptsize
 
@@ -396,7 +396,7 @@ tre <- (save_pvalue<0.1)   # value of TRUE if pvalue < 0.1
 cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
 ```
 
-We have 1035 hypothesis tests, all testing a \textcolor{red}{correct}. If a p-value is smaller than 10\% we \textcolor{red}{decide} to reject $H_0$.
+We have 1035 hypothesis tests, all testing a \textcolor{red}{correct} null hypothesis. If a p-value is smaller than 10\% we \textcolor{red}{decide} to reject $H_0$.
 
 ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 table(tre)

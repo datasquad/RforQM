@@ -104,7 +104,7 @@ Let's see whether we can see a similarly clear relationship between life satisfa
 table2 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
             summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))    # summarises each group by calculating obs
 
-ggplot(table2,aes( Avg_WorkFirst, Avg_LifeSatis,colour=S002EVS)) +
+ggplot(table2,aes(Avg_WorkFirst, Avg_LifeSatis,colour=S002EVS)) +
   geom_point() +
   ggtitle("Work First v Life Satisfaction")
 ```

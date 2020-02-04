@@ -1,9 +1,11 @@
 ---
 title: "Replication of Minimum Wage and Employment by Card and Krueger"
 output:
+  pdf_document:
+    toc: yes
   html_document:
-    toc: true
-    toc_float: true
+    toc: yes
+    toc_float: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -109,6 +111,12 @@ Tab1 <- CKdata %>% group_by(STATEf) %>%
           summarise(n = n()) %>% 
           print()
 ```
+
+Let's exlpain what the command does. It uses the powerful syntax introduced by the `tidyverse` (which is why we needed loading this package). This is a super useful technique and you can find a more detailed introduction on [ECLR](http://eclr.humanities.manchester.ac.uk/index.php/R_AnalysisTidy). But let's translate the above command into English to illustrtae what it does.
+
+We create a new object named `Tab1`. To  that new object we assign the result of the operation on the right of `<-`. So what happens to the right of `<-`? Start with object `CKdata` (wich is our entire spreadsheet with all observations and all variables) and send it (the piping command `%>%`) to the `group_by` function. That function does what t says, it groups the data but it requires some additional information, i.e. by what variable it should group. We are asking it to group by the `STATEf` variable, i.e. group the data (or split the data) into a subset for each state (here PA and NJ). Then send (`%>%`) the result (the grouped dataset) to the `summarise` function. In here we create a new variable (`n =`) which takes the value `n()`. That last bit makes no obvious sense unless you know (and now you do) that `n()` is the function called `n` which counts the number of observations. So it will count the observations for the the grouped datasets. Then we send (`%>%`) the result to the `print()` function, which eventually produces some output.
+
+Try yourself to change some of that function. For instance replace `STATEf` with `CHAINf` and see what happens. Or, even more interesting, replace `STATEf` with `CHAINf,STATEf` and sit back in awe. How long would it have taken you in Excel to do that?
 
 A frequency table for the `STATUS2` variable we can obtain as follows (note that `STATE = 1` for New Jersey):
 
@@ -216,7 +224,48 @@ ggplot(CKdata, aes(1992,FTE, colour = STATEf)) +
   ggtitle(paste("Employment, FTE"))
 ```
 
-When we calculate a DiD estimator we are basically calculating the means of the two staes in the two periods, i.e. four points
+When we calculate a DiD estimator we are basically calculating the means of the two staes in the two periods, i.e. four points. We calculated these four values for `TabDiD` and we can plot them. They basically summarise the four clouds of points in the previous picture. 
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(TabDiD, aes(1992,meanFTE_FEB, colour = STATEf)) +
+  geom_point(size = 3) +
+  geom_point(aes(1993,meanFTE_DEC),size=3) +
+  ylim(17, 24) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, mean FTE"))
+```
+
+A DiD analysis now proceeds by assuming that in the treatment state, here New Jersey (NJ), in absence of the policy change the same trend would have prevailed as in the control state, here Pennsylvania (PA). This is a crucial assumption and needs to be made with care.
+
+We will graphically impose the PA trend onto NJ.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(TabDiD, aes(1992,meanFTE_FEB, colour = STATEf)) +
+  geom_point(size = 3) +
+  geom_point(aes(1993,meanFTE_DEC),size=3) +
+  ylim(17, 24) +
+  geom_segment(aes(x = 1992, y = TabDiD[[1,2]], 
+                   xend = 1993, yend = TabDiD[[1,3]]), color = "red") +
+  geom_segment(aes(x = 1992, y = TabDiD[[2,2]], 
+                   xend = 1993, yend = TabDiD[[2,2]]+(TabDiD[[1,3]]-TabDiD[[1,2]]))) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, mean FTE"))
+```
+
+The estimated effect of the policy is the distance between the blue dot (the 1993 NJ observation and the end of the blue line). In fact we can use the information in `TabDiD` to obtain the size of the effect.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+print(TabDiD)
+```
+
+Numerically the DiD estimator is calculated as follows:
+
+(`r round(TabDiD[2,3],1)` - `r round(TabDiD[2,2],1)`) - (`r round(TabDiD[1,3],1)` - `r round(TabDiD[1,2],1)`) = `r (round(TabDiD[2,3],1)-round(TabDiD[2,2],1))-(round(TabDiD[1,3],1)-round(TabDiD[1,2],1))`
+
+This can be calculated using a regression approach which has the advantage that we can also allow for some additional heterogeneity between observations (here fast food restaurants) and that we can evaluate the statistical significance of the effect size.
+
+But fundamentally, DiD compares just four values, as easy as that.
+
 
 # Further thoughts
 
