@@ -107,7 +107,7 @@ For each country ($j=1,...,48$) we have observations from potentially four years
 Summarise data by country and wave. 
 
 * A170: All things considered, how satisfied are you with your life as a whole these days? (1 Dissatisfied to 10 Satisfied)
-* A009: All in all, how would you describe your state of health these days? Would you say it is ... 1 Very good to 5 Very poor
+* A009: All in all, how would you describe your state of health these days? Would you say it is ... 1 Very poor to 5 Very good
 
 \scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}

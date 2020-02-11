@@ -16,8 +16,8 @@ unique(wb_data$S003)   # unque finds all the different values in a variable
 unique(wb_data$S002EVS)
 
 table1 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
-  summarise(n = n()) %>%               # summarises each group by calculating obs
-  spread(S002EVS,n) %>%                # put Waves across columns
+  summarise(nobs = n()) %>%               # summarises each group by calculating obs
+  spread(S002EVS,nobs) %>%                # put Waves across columns
   print(n=Inf)                         # n = Inf makes sure that all rows are printed
 
 table2 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
