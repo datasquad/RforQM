@@ -40,9 +40,9 @@ In terms of R skills you learn how to
 
 # Importing Data
 
-The data have been prepared as demonstrated in the Doing Economics Project 8, up to and including Walk-Through 8.3. Please have a look at this to understand the amount of data work required before an empirical analysis can begin. The datafile is saved as an R data structure (wb_data.Rdata). Load this datafile into your work folder. Then start a new script file which you should save into the same folder (use a filename that does not contain any spaces!) and then ensure that you set, in your script file, the working directory to that folder by using the `setwd("PATH/TO/YOUR/FOLDER")`.
+The data have been prepared as demonstrated in the Doing Economics Project 8, up to and including Walk-Through 8.3. Please have a look at this to understand the amount of data work required before an empirical analysis can begin. The datafile is saved as an R data structure (wb_data.Rdata) which is available from the Lecture 2 item on BB. Load this datafile into your work folder. Then start a new script file which you should save into the same folder (use a filename that does not contain any spaces!) and then ensure that you set, in your script file, the working directory to that folder by using the `setwd("PATH/TO/YOUR/FOLDER")`.
 
-Details on the variables are avialable from [here](https://dbk.gesis.org/EVS/Variables/compview.asp) (chose EVS Longitudinal Data Files 1981-2008).
+Details on the variables are avialable from [here](https://europeanvaluesstudy.eu/methodology-data-documentation/previous-surveys-1981-2008/survey-2008/data-and-documentation-survey-2008/) (Feb 2020: this page is temporarily unavailable, use the `wb_data_Des` object in the above datafile for basic variable info).
 
 ```{r}
 load("WBdata.Rdata")
@@ -63,16 +63,19 @@ wb_data_Des[wb_data_Des$Names == "C039",]
 
 # Some initial data analysis and summary statistics
 
-Let us investigate what the different categories of education status.
+Let us investigate what the different categories of education status. Use the `count()` function. Look at the output to understand what it does or use `?count()` to call up the help.
 
-```{r, echo = FALSE, results = 'hide'}
+```{r}
 wb_data %>% count(Education_1)
+```
+
+```{r}
 wb_data %>% count(Education_2)
 ```
 
-You can see that both variables `Education_1` and `Education_2` describe the same variable. The latter has short descriptions to the educational levels while the former represents these with numbers. You will notice that he ordering of `Education_2` is different to that in `Education_1`.
+You can see that both variables `Education_1` and `Education_2` describe the same variable. The latter has short descriptions to the educational levels while the former represents these with numbers. You will notice that the ordering of `Education_2` is different to that in `Education_1`.
 
-What is the variable type for `Education_2`? You may remember a command to do that or google. There are several ways to get that information. But you should not use the `typeof` function.
+What is the variable type for `Education_2`? You may remember a command to do that or google. There are several ways to get that information. 
 
 ```{r, echo = FALSE, results='hide'}
 str(wb_data$Education_2)
@@ -85,7 +88,7 @@ wb_data$Education_2 <- as.factor(wb_data$Education_2)
 wb_data %>% count(Education_2)
 ```
 
-As you can see in the above table, the different answer options for this variable are ordered according to the alphabet. That is the logical default in R. It would be nicer to see the order in terms of how much education they represent. We can re-order he outcomes. Google "r reorder factor levels" to find out how to achieve this. Note, "NA" is not a factor level and you can ignore it in the re-ordering.
+As you can see in the above table, the different answer options for this variable are ordered according to the alphabet. That is the logical default in R. It would be nicer to see the order in terms of how much education they represent. We can re-order the outcomes. Google "r reorder factor levels" to find out how to achieve this. Note, "NA" is not a factor level (they indicate missing observations) and you can ignore it in the re-ordering.
 
 ```{r, eval = FALSE}
 wb_data$Education_2 <- factor(wb_data$Education_2,XXXX)
@@ -107,7 +110,7 @@ Let's pick two countries (Germany and Turkey) for a particular year (`S002EVS ==
 table1a <- wb_data %>% 
             filter(S002EVS == "2008-2010") %>%      # select year
             filter(S003 %in% c("Germany","Turkey")) %>% # select countries
-            group_by(Education_2,S003) %>%          # groups by Wave and Country
+            group_by(Education_2,S003) %>%          # groups by Education and Country
             summarise(n = n()) %>%                  # summarises each group by calculating obs
             spread(S003,n) %>%                      # put Countries across columns
             print()
@@ -132,10 +135,13 @@ Sometime you actually want proportions rather than counts. The easiest way to ac
 prop.table(table1b)
 ```
 
-Perhaps you can see that all the proportions sum up to 1. But what we really want is proportions that sum up to 1 by country
+Perhaps you can see that all the proportions sum up to 1. But what we really want is proportions that sum up to 1 by country. (You can leave out the two `options` lines. Look at the difference!)
 
 ```{r}
+options(digits=2)  # digits=7 is the default
 prop.table(table1b,margin = 2)
+options(digits=7) # reset to the default
+
 ```
 
 See what happens if you set `margin = 1`.
@@ -151,9 +157,9 @@ table2 <- table(temp_data$C039,temp_data$S003)
 prop.table(table2, margin=2)
 ```
 
-You've got it right if you find that 36% of French respondents strongly disagree with the statement "Work is a duty to society". Recall that 1 represents strong agreement and 5 strong disagreement with that statement. 
+You've got it right if you find that 36% of French respondents strongly disagree with the statement "Work is a duty to society". Recall that 1 represents strong agreement and 5 strong disagreement with that statement. What do you learn about the French?!
 
-An additional exercise is to see whether the answers to the life satisfaction question (`A170`) have changed through time. Create a table with proportions of responses to `A170` for Great Britain across the four waves.
+An additional exercise is to see whether the answers to the life satisfaction question (`A170`) have changed through time. Create a table with proportions of responses to `A170` for Great Britain across all waves.
 
 ```{r, eval = FALSE}
 temp_data <- wb_data %>% 
@@ -173,14 +179,14 @@ prop.table(table3, margin=2)
 
 Have the responses to that question changed through time?
 
-There are two ways how to make the result easier to look at. First you could put the command `options(digits=2)` before you prnt the table. Try it and see what happens. Second, we could find a graphical representation.
+There are two ways how to make the result easier to look at. First you could put the command `options(digits=2)` before you print the table (see above). Try it and see what happens. Second, we could find a graphical representation.
 
 ```{r}
 ggplot(temp_data, aes(x=S002EVS, fill=factor(A170))) +
   geom_bar(position = 'fill')
 ```
 
-To find this solution I googled "R ggplot geom_bar proportions". From this plot it is not obvious that there weresignificant changes in the distribution across time.
+To find this solution I googled "R ggplot geom_bar proportions". From this plot it is not obvious that there were significant changes in the distribution across time.
 
 
 # Hypothesis testing
@@ -218,6 +224,8 @@ table(temp_data$grad,temp_data$S003)
 
 ```
 
+Note that I created another object here, `temp_data`, from which I then create the table. In fact we had earlier created an object with the same name. Here we are over-writing the earlier object with this new one. I often do this if I create an object which I need for one thing but not any longer afterwards.
+
 Now we can feed this information into the `prop.test` function. How this works is that we feed in the two counts of successes (degree observation) and then the number of observations. By default `prop.test` will test that the two proportions are equal.
 
 ```{r}
@@ -226,7 +234,7 @@ prop.test(c(420,154), c(1341, 908), alternative = "two.sided")
 
 In the test output you get the two sample propportions (0.31 for Italy and 0.17 for Spain) and we get a very small p-value (p-value = 3e-14). This means that it is extremely unlikely that we would have received such different sample proportions if the null hypothesis of equal proportions had been correct and hence we reject the null hypothesis.
 
-Repeat this analysis by testig whether the proportions of respondents with degrees is different in Denmark and Sweden.
+Repeat this analysis by testing whether the proportions of respondents with degrees is different in Denmark and Sweden.
 
 ```{r, eval = FALSE}
 temp_data <- wb_data %>% 
@@ -252,16 +260,16 @@ prop.test(c(XXXX,XXXX), XXXX, alternative = XXXX)
 prop.test(c(405,283), c(1060, 788), alternative = "two.sided")
 ```
 
-You should find a p-value for the test of 0.3. How do you interpret this?
+You should find a p-value for the test of 0.337. How do you interpret this?
 
-If the null hypothesis was true there was a 30% probability to get two sample proportions as different or more different as the ones we see. At 30% we judge that this is quite likely (larger than $\alpha$) and hence we do not reject the null hypothesis.
+If the null hypothesis was true there was a 34% probability to get two sample proportions as different or more different as the ones we see. At 30% we judge that this is quite likely (larger than $\alpha$) and hence we do not reject the null hypothesis.
 
 
 # Regression Analysis
 
 Let us estimate a simple regression model for all data from Great Britain.
 
-\[A170 = \alpha + \beta ~ X011_01\]
+\[A170 = \alpha + \beta ~ X011\_01\]
 
 where `A170` refers to the Life Satisfaction variable and `X011_01` to the number of children. We looked already at the Life Satisfaction variable. Let's first have a look at the number of children variable in Great Britain
 
