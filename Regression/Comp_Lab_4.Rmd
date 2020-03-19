@@ -226,14 +226,14 @@ dat_c <- dat %>% XXXX(period_test == XXXX & supp == XXXX)
 dat_c <- dat %>% subset(period_test == TRUE & supp == "Standard")
 ```
 
-You should confirm that you are lef with 939 observations.
+You should confirm that you are left with 939 observations.
 
-Now we can calculate the price averages (for `price_per_oz`) by grouping the data according to store_type, taxed and time. One way to achieve this is to use piping:
+Now we can calculate the price averages (for `price_per_oz_c`, which is the price per ounze in cents) by grouping the data according to store_type, taxed and time. One way to achieve this is to use piping:
 
 ```{r, warning = FALSE,message=FALSE}
 table_res <- dat_c %>% 
       group_by(taxed,store_type,time) %>% 
-      summarise(n = length(price_per_oz),avg.price = mean(price_per_oz)) %>%
+      summarise(n = length(price_per_oz_c),avg.price = mean(price_per_oz_c)) %>%
       spread(time,avg.price) %>% 
       print()
 ```
@@ -286,10 +286,10 @@ stargazer_HC(mod1)
 ```
 
 ```{r, echo = FALSE}
-mod1 <- plm(price_per_oz ~ time + did + sp_id, data = p_dat_c_ls, model = "fd")
+mod1 <- plm(price_per_oz_c ~ time + did + sp_id, data = p_dat_c_ls, model = "fd")
 stargazer_HC(mod1)
 ```
 
-You can see that the estimated coefficient is 0.006, which implies that taxed products have, on average, seen price increases 0.6p/ounze higher than non-taxed products. But this difference is not statistically significantly different.
+You can see that the estimated coefficient is 0.557, which implies that taxed products have, on average, seen price increases 0.6p/ounze higher than non-taxed products. But this difference is not statistically significantly different.
 
 Can you find the equivalent result in the Silver et al. paper?
