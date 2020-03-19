@@ -23,7 +23,7 @@ We add the basic libraries needed for this week's work:
 
 ```{r}
 library(tidyverse)    # for almost all data handling tasks
-library(ggplot2)      # to produce nice graphiscs
+library(ggplot2)      # to produce nice graphics
 library(stargazer)    # to produce nice results tables
 library(haven)        # to import stata file
 library(AER)          # access to HS robust standard errors
@@ -45,17 +45,15 @@ Upload the data from `20222_USoc_extract.dta`. This is STATA datafile (extension
 
 ```{r, echo = FALSE}
 data_USoc <- read_dta("20222_USoc_extract.dta")
-data_USoc <- as.data.frame(data_USoc)    # ensure data frame structure
 names(data_USoc)
 ```
 
 ```{r, eval= FALSE}
 data_USoc <- read_XXXX(XXXX)
-data_USoc <- as.data.frame(data_USoc)    # ensure data frame structure
 names(data_USoc)
 ```
 
-Let us ensure that categorical variables are stored as `factor` variables. It is easiest to work with these in R.
+Let us ensure that categorical variables are stored as `factor` variables as this will make working with them easiest.
 
 ```{r, echo = FALSE}
 data_USoc$region <- as_factor(data_USoc$region)
@@ -72,7 +70,7 @@ data_USoc$race <- XXXX(data_USoc$race)
 
 Click on the little table symbol in your environment tab to see the actual data table. 
 
-The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for dy we shall also adjust for increasing price levels ( as measured`mutate` function. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. Let's calculate a typical hourly wage. In the variable `jbhrs` we find the typical number of weekly hours worked. To get an hourly pay we divide `paygu` by `4*jbhrs`. As the pay is from years 2009 to 2013 we shall also adjust for increasing price levels (as measured by `cpi`). To create a new variable we use the `mutate` function. We call the new variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
 
 ```{r, echo = FALSE}
 data_USoc <- data_USoc %>% 
@@ -82,11 +80,11 @@ data_USoc <- data_USoc %>%
 
 ```{r, eval = FALSE}
 data_USoc <- data_USoc XXXX
-              XXXX(hrpay = paygu/(jbhrs*4)/(cpi/100)) XXXX 
+              XXXX(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>% 
               XXXX(lnhrpay = XXXX(hrpay))
 ```
 
-As we wanted to save these additional variables we assign the result of the operation to `data_USoc`. You can check that your calcullations are correct if you obtain a mean value for `lnhrpay` of 2.28 and you have 74312 missing observations. Use `summary(data_USoc$lnhrpay)` to check for these stats.
+As we wanted to save these additional variables we assign the result of the operation to `data_USoc` (which now has two additional variables, i.e. 16). You can check that your calcullations are correct if you obtain a mean value for `lnhrpay` of 2.28 and you have 74312 missing observations. Use `summary(data_USoc$lnhrpay)` to check for these stats.
 
 # First Analysis - Do Regions matter?
 
@@ -109,7 +107,7 @@ data_USoc <- data_USoc %>% filter(year != 2013)
 
 After doing this you should find that the `data_USoc` has 132,119 remaining observations.
 
-Let's run a regression of `lnhrpay` as the dependent variable against `region`.
+Let's run a regression of `lnhrpay` as the dependent variable against `region` as an explanatory variable.
 
 ```{r, eval = FALSE}
 mod1 <- lm(XXXX~XXXX, data = XXXX)
@@ -123,9 +121,9 @@ mod1 <- lm(lnhrpay~region, data = data_USoc)
 stargazer_HC(mod1)
 ```
 
-What is the base region? The first level is the `north east`, (Check `levels(data_USoc$region)`) and that is the base reagion. For all other regions the above regression included a dummy variable. For instance, the variable called `regionwales` takes the value 1 if an observation is from Wales and 0 otherwise.
+What is the base region? The first level is the `north east`, (Check `levels(data_USoc$region)`) and that is the base reagion. For all other regions the above regression included a dummy variable. For instance, the variable called `regionwales` takes the value 1 if an observation is from Wales and 0 otherwise. In other words, R has taken your categorical `region` variable (with 12 regions) and turned it into 11 dummy variables and included these into the regression. All of this without you actually having to compute these variables. 
 
-How would you interpret the estimated parameter value for `regionwales`? The coefficient value is `r mod1$coefficients["regionwales"]` and indicates that on average hourly pay is 7.5 percent lower than those in the North East.
+How would you interpret the estimated parameter value for `regionwales`? The coefficient value is `r mod1$coefficients["regionwales"]` and indicates that on average hourly pay is 7.4 percent lower than those in the North East.
 
 Which region is the highest paying region?
 
@@ -150,7 +148,7 @@ mod3 <- lm(XXXX~XXXX+XXXX, data = XXXX)
 stargazer_HC(mod2,mod1,mod3)
 ```
 
-You should be able to replicate the following table (in R you shoudl be able to see the complete 3rd column):
+You should be able to replicate the following table (in R you should be able to see the complete 3rd column):
 
 ```{r, echo = FALSE}
 mod3 <- lm(lnhrpay~educ+region, data = data_USoc)

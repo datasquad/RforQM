@@ -82,6 +82,20 @@ data_USoc$degree <- as_factor(data_USoc$degree)
 data_USoc$race <- as_factor(data_USoc$race)
 ```
 
+Check for which regions we have data. Either use the `levels` or the `unique` function.
+
+```{r, echo = solution_echo}
+levels(data_USoc$region)
+unique(data_USoc$region)
+```
+
+Now check which `race` and `degree` categories exist in the data.
+
+```{r, echo = solution_echo}
+levels(data_USoc$degree)
+levels(data_USoc$race)
+```
+
 As we defined the `male` variable as a factor it has levels `male` and `female` (check `levels(data_USoc$male)` to confirm). It would be better to relabel the variable to `gender`.
 
 ```{r}
@@ -98,7 +112,7 @@ variable `hrpay` and also calculate the natural log of this variable
 
 ```{r, eval = FALSE}
 data_USoc <- data_USoc %>%
-              XXXX(hrpay = XXXX) %>%
+              XXXX(hrpay = XXXX/(cpi/100)) %>%
               XXXX(lnhrpay = XXXX)
 ```
 ```{r, echo = solution_echo}
@@ -109,7 +123,7 @@ data_USoc <- data_USoc %>%
 
 As we wanted to save these additional variables we assign the result of the operation to `data_USoc`.
 
-We also want to use a measure of annual pay (`paygu*12/(cpi/100))`) and add this variable (`annualpay`) to the dataframe (`data_USoc`).
+We also want to use a measure of annual pay (`paygu*12/(cpi/100))`) and add this variable (`annualpay`) to the dataframe (`data_USoc`). Also add the log of this variable as a variable to the dataframe and call it `lnannualpay`.
 
 ```{r, eval = FALSE}
 data_USoc <- XXXX %>%
@@ -117,18 +131,18 @@ data_USoc <- XXXX %>%
 ```
 ```{r, echo = solution_echo}
 data_USoc <- data_USoc %>%
-              mutate(annualpay = paygu*12/(cpi/100))
+              mutate(annualpay = paygu*12/(cpi/100))%>%
+              mutate(lnannualpay = log(annualpay))
 ```
 
-Let's first
-summarise all numerical variables in our dataset, using the `stargazer`
+Let's first summarise all numerical variables in our dataset, using the `stargazer`
 function.
 
 ```{r, eval = FALSE}
 XXXX
 ```
 ```{r, echo = solution_echo, results=student_view}
-stargazer(data_USoc,type="latex")
+stargazer(data_USoc,type="text")
 ```
 
 You should find, for instance, that the mean value of the unemployment rate
@@ -162,6 +176,42 @@ data_USoc$grad <- as_factor(data_USoc$grad)
 
 Google to understand what the `ifelse()` function does.
 
+Let's find out how many observations we have for some of our categorical variables.
+
+```{r}
+table(data_USoc$degree)
+```
+
+We can also create a frequency table for two variables, here `degree` as the row variable and `gender` as the column variable.
+
+```{r}
+table(data_USoc$degree, data_USoc$gender)
+```
+
+Create a frequence table with `region` as the row variable and `race` as the column variable.
+
+```{r, eval = FALSE}
+XXXX(data_USoc$XXXX, XXXX)
+```
+```{r, echo = solution_echo, results=student_view}
+table(data_USoc$region, data_USoc$race)
+```
+
+You want to see this information in proportions (by region). Run the following code:
+
+```{r, eval = FALSE}
+options(digits = 2)
+prop.table(table(region, race),margin = 1)
+```
+
+You should receive an error message. " object 'region' not found". Fix the code!
+
+```{r, echo = solution_echo, results=student_view}
+options(digits = 2)
+prop.table(table(data_USoc$region, data_USoc$race),margin = 1)
+```
+
+
 # Data cleaning
 
 We now remove (or "drop") unusable (or "missing") observations from our
@@ -172,7 +222,8 @@ older.
 
 ```{r, eval = FALSE}
 data_USoc <- data_USoc %>%
-                XXXX
+                filter(!XXXX(lnhrpay)) %>%
+                filter((gender == XXXX & age < 66) | (gender == "female" & XXXX < XXXX))
 ```
 ```{r, echo = solution_echo}
 data_USoc <- data_USoc %>%
@@ -234,7 +285,7 @@ stargazer_HC(mod3,mod4)
 ```{r, echo = solution_echo, results = student_view}
 mod3 <- lm(lnhrpay ~ age_f, data = data_USoc)
 mod4 <- lm(lnhrpay ~ age_f -1, data = data_USoc)
-stargazer_HC(mod3,mod4,type_out="text")
+stargazer_HC(mod3,mod4,type_out="latex")
 ```
 
 We now compare the fitted values for `mod1`, `mod2` and `mod4`.  First we add
@@ -293,14 +344,14 @@ data_USoc$subset_ind <- "none"   # default group
 data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "degree"] <- "Male with degree"
 data_USoc$subset_ind[XXXX] <- "Male without degree"  # select all males with no degree
 data_USoc$subset_ind <- as.factor(data_USoc$subset_ind)
-data_USoc %>% count(subset_ind)
+table(data_USoc$subset_ind)
 ```
 ```{r,echo = solution_echo, results=student_view}
 data_USoc$subset_ind <- "none"   # default group
 data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "degree"] <- "Male with degree"
 data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "no degree"] <- "Male without degree"
 data_USoc$subset_ind <- as.factor(data_USoc$subset_ind)
-data_USoc %>% count(subset_ind)
+table(data_USoc$subset_ind)
 ```
 
 We will want to save the model predictions and for this purpose we pre-define a variable in which we will save the predictions.
@@ -309,7 +360,7 @@ We will want to save the model predictions and for this purpose we pre-define a 
 data_USoc$pred_mod5 <- 0    # set the prediction to 0 by default
 ```
 
-Now we estimate the model for the male with degree subgroup. Note that the `lm` function accepts a `subset` argument which allows you to select a subset of observations, such as the group of all males with first degree.
+Now we estimate the model for the "Male with degree" subgroup. Note that the `lm` function accepts a `subset` argument which allows you to select a subset of observations, such as the group of all males with first degree.
 
 ```{r, eval = FALSE}
 mod5_md <- lm(XXXX ~ XXXX + XXXX, data = XXXX, subset = (subset_ind == XXXX))
@@ -318,11 +369,11 @@ data_USoc$pred_mod5[data_USoc$subset_ind==XXXX] <- mod5_md$fitted.values
 ```
 ```{r, echo = solution_echo, results=student_view}
 mod5_md <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male with degree"))
-stargazer_HC(mod5_md,type_out="text")
+stargazer_HC(mod5_md,type_out="latex")
 data_USoc$pred_mod5[data_USoc$subset_ind=="Male with degree"] <- mod5_md$fitted.values
 ```
 
-Now we repeat the same just for the group of males with no degree
+Now we repeat the same just for the subgroup "Males without degree""
 
 ```{r, eval=FALSE}
 mod5_mnd <- XXXX
