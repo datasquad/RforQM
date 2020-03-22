@@ -17,7 +17,7 @@ In this computer lab we will have to achieve the following tasks/learning outcom
 * select a subset of data
 * estimate a Diff-in-Diff estimator to evaluate the effectiveness of a sugar tax
 
-The example is the example discussed in Demonstration CLass 3 and comes from the Doing Economics Project 3.
+The example is the example discussed in Demonstration CLass 2 and comes from the Doing Economics Project 3.
 
 # Preparing your workfile
 
@@ -278,7 +278,7 @@ Now we specify the regression model from which we estimate the DiD estimator.
 y_{it} = \beta_0 + \delta d_t + \tau T_{it} + a_i + u_{it}
 \end{equation}
 
-where $y_{it}$ is `prize_per_oz`, $d_t$ is `time`, $T_{it}$ is `did` and $a_i$ is our indicator variable for the individual (store-product combination), `sp_id`. This is estimated in "first-differenced" form (`model = "fd"`) using the panel estimation function `plm`.
+where $y_{it}$ is `prize_per_oz_c`, $d_t$ is `time`, $T_{it}$ is `did` and $a_i$ is our indicator variable for the individual (store-product combination), `sp_id`. This is estimated in "first-differenced" form (`model = "fd"`) using the panel estimation function `plm`.
 
 ```{r, eval = FALSE}
 mod1 <- plm(XXXX ~ XXXX + XXXX + XXXX, data = XXXX, model = "fd")
