@@ -2,7 +2,7 @@
 title: "Time-Series Modelling"
 subtitle: "ECON20222 - Lecture 9"
 author: "Ralf Becker and Martyn Andrews"
-date: "March 2019"
+date: "March 2020"
 output: 
   beamer_presentation:
     includes:
@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE,  comment=NA)
 There are typically three things econometricians want to achieve with time-series modelling
 
 1. **Establishing causal relationships** between time-series.    
-This is very difficult and in general causal relationships are more difficult to establis with TS modelling. It is not impossible but getting convincing exogenous variation is difficult.
+This is very difficult and in general causal relationships are more difficult to establish with TS modelling. It is not impossible but getting convincing exogenous variation is difficult.
 
 2. Understanding the **dynamics in relationships between variables**.  
 Questions like, "If the Central Bank changes the base rate, how long will it take for this to carry through to mortgage rates?" This is perfectly possible as long as we don't make strong causal statements (the CB may change base rates because mortgage rates are very low!!!)
@@ -53,13 +53,13 @@ library(gridExtra)  # required for the combination of ggplots
 
 ```{r, results = 'hide'}
 rGDP <- pdfetch_ONS("ABMI","UKEA")  
-periodicity(rGDP)   # check data availability
+periodicity(rGDP)   # check data frequency
 names(rGDP) <- "real GDP" # give a sensible name
 
 # keep all the data including 2018-Q3
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-rGDP <- rGDP["/2018-9"]  
+rGDP <- rGDP["/2019-9"]  
 ```
 
 `pdfetch` functions allow you to directly tap a umber of large data depositories:
@@ -106,7 +106,7 @@ Consider the $y_t = rGDP_t$ time series
 * we now use the subscript $t$  
 * the subscript goes from $t = 1, ..., T$ where $T$ indicates how many observations we have
 * here observations are quarterly (but other series can have other frequencies: e.g. annual, monthly, weekly, daily, hourly, etc. )
-* here observations are from Q1 1955 to Q3 2018 (255 observations)
+* here observations are from Q1 1955 to Q3 2019 (259 observations)
 
 The ACF expresses how observations are correlated to observations 1, 2, 3 or $k$ observations prior.
 
@@ -132,9 +132,9 @@ Let's consider the time series $y_t$ and the series one period prior, $y_{t-1}$.
 
 	\vdots & \vdots & \vdots \\
 	
-	253 & $y_{2018Q2}$ & $y_{2018Q1}$ \\
+	253 & $y_{2019Q2}$ & $y_{2019Q1}$ \\
 
-	254 & $y_{2018Q3}$ & $y_{2018Q2}$ \\	 
+	254 & $y_{2019Q3}$ & $y_{2019Q2}$ \\	 
 	\hline 
 \end{tabular} 
 
@@ -226,7 +226,7 @@ $\Rightarrow$ a series can be oersitant without time trend
 
 The ACF tells us something about how informative today's observation is for that in 1, 2, 3 or $k$ periods ahead. 
 
-* If the ACF decays quickly to 0 then we will not be able to forecast a long period ahead.  
+* If the ACF decays quickly to 0 then todays info is not very valuable for forecasting long into the future  
 * If the ACF decays slowly then todays info is valuable for future observations
 
 
@@ -240,6 +240,7 @@ The ACF expresses how persistant a series is.
 Here: rGDP and unemployment rate are nonstationary. Inflation rate is stationary.
 
 * In general series with a time-trend are nonstationary
+* Some series without time trend are also nonstationary (e.g. female unemployment rate)
 * **BUT** there is a huge grey area inbetween.  
 
 Formal statistical tests exist (e.g. Augmented Dickey-Fuller test) to decide (but they can be contradictory) and are not dealt with here. Here we eye-ball the series and look at how slowly the ACF converges to 0.
@@ -313,7 +314,7 @@ ur_female_q <- ur_female_q$ur_female.Close
 reg_data <- merge(rGDP, ur_female_q)
 ```
 ```{r}
-# we multiply by 100 to express in percentage points, i.e. 0.5 is 0.5% or 0.005
+# we multiply by 100 to express in percentage points, i.e. 0.5 is 0.5%
 reg_data$d_lgdp <- 100*diff(log(reg_data$real.GDP))
 reg_data$d_lur <- 100*diff(log(reg_data$ur_female.Close)) 
 tail(reg_data,10)
@@ -468,15 +469,17 @@ Newey-West standard errors in parenthesis
 ## (Unmasking of a) Spurious Regression
 
 One way how you can unmask the spuriousness, if both series are trending is to include a time trend
-\small
+\footnotesize
 ```{r}
-mod_sr2 <- lm(Alc.Disease.FR~Organic.Farming.GE+index(data_sr), data = data_sr)
+mod_sr2 <- lm(Alc.Disease.FR~Organic.Farming.GE+index(data_sr), 
+              data = data_sr)
 ```
 
 or estimate a model in the differences of variables rather than the levels
 
 ```{r}
-mod_sr3 <- lm(diff(Alc.Disease.FR)~diff(Organic.Farming.GE), data = data_sr)
+mod_sr3 <- lm(diff(Alc.Disease.FR)~diff(Organic.Farming.GE), 
+              data = data_sr)
 ```
 \normalsize
 

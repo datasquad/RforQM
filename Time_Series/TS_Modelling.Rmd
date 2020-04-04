@@ -38,7 +38,7 @@ names(rGDP) <- "real GDP" # give a sensible name
 # keep all the data including 2018-Q3
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-rGDP <- rGDP["/2018-9"]  
+rGDP <- rGDP["/2019-9"]  
 
 # we prepare the data for being kept in long format
 # that is useful for plotting in ggplot
@@ -213,7 +213,7 @@ bgtest(mod4,order=4)
 The p-value of 0.0605 suggests that there is a little evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? Fortunately, here, there is little evidence. We already calculated HAC standard errors.
 
 
-# Spurious correlation
+# Spurious correlations and regressions
 
 
 Let's get some datasets fron EUROSTAT.
