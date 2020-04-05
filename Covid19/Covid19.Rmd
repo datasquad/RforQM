@@ -334,7 +334,7 @@ m2 + tm_polygons(col = "deaths", n=10) +  # n = 10 controls the number of catego
 
 ## An animated map
 
-For this example creating an animated map may be very instructive. The above maps were created for one particular day ("04/04/2020"). Could we create multiple maps for each day in 2020 so taht we can visualise the spread of the pandemic. The answer is yes.
+For this example creating an animated map may be very instructive. The above maps were created for one particular day ("04/04/2020"). Could we create multiple maps for each day in 2020 so that we can visualise the spread of the pandemic. The answer is yes.
 
 First we need to ensure that we insert the daily information into `m2` just as we inserted the info for the one day.
 
@@ -343,27 +343,41 @@ m3 <- tm_shape(world) # create a new shape file from scratch
 temp3 <- m3$tm_shape$shp
 
 # prepare the data from data
-temp_mergein <- data %>% filter(dates > "2020-04-01") %>% 
-                  dplyr::select(geoId, dates, cases, c_cases, deaths, c_deaths)
+date_sel <- seq(as.Date("2020-01-01"), as.Date("2020-04-04"), 7)
+temp_mergein <- data %>% filter(dates %in% date_sel) %>% 
+                  dplyr::select(geoId, dates, cases, c_cases, deaths, c_deaths) %>% 
+                  arrange(geoId,dates)
 temp_mergein$geoId <- as.character(temp_mergein$geoId)
-temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB" 
+temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB"  
 ```
 
-This did the same as earlier, just for all dates. We also need to ensure to keep the dates variable.
+So far we extracted all our data, just for more dates. We are now also keeping the dates variable.
+
+Now we need to merge the new data into `temp3`.
 
 ```{r}
 temp3 <- merge(temp3, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
-temp3$dates <- as.character(temp3$dates)
+temp3$dates <- as.character(temp3$dates)  # tmaps doesn't like date formats I think
+temp3 <- temp3 %>%  filter(!is.na(dates)) # delete countries with no data
+```
+
+Here we turned the dates into the character format (as `tmap` seemed to dislike date formats) and we now delete countries with no available observations as these would otherwise introduce an extra `na` date.
+
+This updated data frame is no inserted back into the shape file.
+
+```{r}
 m3$tm_shape$shp <- temp3
 ```
 
+Now we need to instruct `tmap` to produce the maps, but now a separate map for every day. The `tmap` command which is useful here is `tm_facets(along = "dates", free.coords = FALSE)`. The `along = "dates"` option selects the `dates` variable to the facet variable, i.e. the variable for which we calculate separate maps for every possible outcome (i.e. day).
+
 ```{r}
-# covid_anim <-
-  
-  m3 + tm_polygons(col = "deaths", n=10) + 
+covid_anim <- m3 + tm_polygons(col = "deaths", n=10) + 
   tm_facets(along = "dates", free.coords = FALSE)
 ```
 
-```{r}
-tmap_animation(covid_anim, filename = "covid_anim.gif", delay = 25)
+The result of this calculation was saved in `covid_anim`. In here we find al the information for all our maps. We are now left with producing a gif which connects the individual images. THIS DOES ONLY WORK IN A SCRIPT NOT FROM RMD.
+
+```{r, eval = FALSE}
+tmap_animation(covid_anim, filename = "covid_anim.gif", delay = 200)
 ```
