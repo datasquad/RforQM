@@ -353,14 +353,17 @@ This did the same as earlier, just for all dates. We also need to ensure to keep
 
 ```{r}
 temp3 <- merge(temp3, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
+temp3$dates <- as.character(temp3$dates)
 m3$tm_shape$shp <- temp3
 ```
 
 ```{r}
-covid_anim = m3 + tm_polygons(col = "deaths", n=10) + 
+# covid_anim <-
+  
+  m3 + tm_polygons(col = "deaths", n=10) + 
   tm_facets(along = "dates", free.coords = FALSE)
 ```
 
 ```{r}
-tmap_animation(urb_anim, filename = "covid_anim.gif", delay = 25)
+tmap_animation(covid_anim, filename = "covid_anim.gif", delay = 25)
 ```
