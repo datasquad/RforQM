@@ -1,9 +1,13 @@
 ---
 title: "Covid 19 - some Challenges - some Data"
+author: "Ralf Becker, The University of Manchester"
 output:
   pdf_document: default
   html_document:
+    toc: true
+    toc_depth: 2
     df_print: paged
+    urlcolor: blue
 ---
 
 ```{r setup, include=FALSE}
@@ -16,16 +20,16 @@ This lab has been written in the first week of April 2020.
 
 In this lab we will investigate some of the data which can help inform issues around the Covid 19 Pandemic. 
 
-Worldwide there is a huge effort being undertaken by specialists of all colours to understand and reduce the threat of this pandemic and of course there aare huge efforts undertaken by many specialists to help us all live under these new conditions.
+Worldwide there is a huge effort being undertaken by specialists of all colours to understand and reduce the threat of this pandemic and of course there are huge efforts undertaken by many specialists to help us all live under these new conditions.
 
 Here we will illuminate some of the challenges and questions to which people with data skills can contribute.
 
 There are a number of great place to start any such journey:
 
-* [https://coronavirus.jhu.edu/](Coronavirus Resource Center) at the John Hopkins University. There you can find a collation of data but also articles on the topic.
+* [Coronavirus Resource Center](https://coronavirus.jhu.edu/) at the John Hopkins University. There you can find a collation of data but also articles on the topic.
 have to achieve the following tasks/learning outcomes:
-* [https://ourworldindata.org/coronavirus](Our World in Data) has a dedicated Covid-19 page where they review some of the latest numbers. A particularly interesting element of this page is that they provide a discussion of why they use the daily updates provided by the  [https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases](European Centre for Disease Control, ECDC), rather than other sources. This is a particularly good case of careful datawork.
-* The data competition site Kaggle has a dedicated [https://www.kaggle.com/covid19](Covid-19) section of challenges.
+* [Our World in Data](https://ourworldindata.org/coronavirus) has a dedicated Covid-19 page where they review some of the latest numbers. A particularly interesting element of this page is that they provide a discussion of why they use the daily updates provided by the  [European Centre for Disease Control, ECDC](https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases), rather than other sources. This is a particularly good case of careful datawork.
+* The data competition site Kaggle has a dedicated [Covid-19](https://www.kaggle.com/covid19) section of challenges.
 
 In fact we start with the latter site. At the time of writing the structure their data challenges into three categories. "Use Natural Language Processing to answer key questions from the scientific literature", "Forecast COVID-19 cases and fatalities to help understand what drives transmission rates", "Curate COVID-19 related datasets to further research" and "Use exploratory analysis to answer research questions that support frontline responders".
 
@@ -46,13 +50,25 @@ Exploring the latter of these you will find that 12 particular tasks were posed:
 
 Quoting from the Kaggle website: "The tasks associated with this dataset were developed and evaluated by global frontline healthcare providers, hospitals, suppliers, and policy makers. They represent key research questions where insights developed by the Kaggle community can be most impactful in the areas of at-risk population evaluation and capacity management."
 
+This should give you a good idea of what type of questions data analysis can contribute to. You should check on the Kaggle website and check out the respective [notebooks](https://www.kaggle.com/notebooks) people contributed. Most of them are written in Python, but some are in R. But even looking at the Python ones is instructive.
+
+This document is written for people who have had some first experiences with R (it is not suitable for total novices) and want to learn some new techniques. In particular you will be able to learn how to
+
+* import Covid-19 data directly from the European Centre for Disease Control
+* perform some basic data cleaning techniques
+* produce some line graphs in `ggplot`
+* create smoothed versions of volatile daily series.
+* produce maps illustrating the regional spread of the Covid-19 cases using the `tmap` package
+
+In addition to this we will end this computer lab by importing some travel data (flight connections) and provide a very basic illustration of how such data can be used in a model which attempts to anticipate the spread of a pandemic.
+
 # Some exploratory data analysis
 
 Let's do some exploratory analysis using a dataset published by the ECDC. This dataset is used by the Our World in Data page and is also part of the dataset in the Kaggle challenge. 
 
 ## Preparing your workfile
 
-We add the basic libraries needed for this week's work: 
+We add the basic libraries needed for this work. Later we will load some additional packes (to produce maps). 
 
 ```{r}
 library(sets)         # used for some set operations
@@ -64,7 +80,7 @@ library(ggplot2)      # plotting toolbox
 
 ## Data Upload
 
-Very helpfully the ECDC webpage through which you can [https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide](download the data) provides an R script which allows you to download the most current dataset. This is the script replicated in the next code block. You could of course download the datset to your computer and then upload the excel or csv file, but here the ECDC has build a direct pipeline into their data.
+Very helpfully the ECDC webpage through which you can [download the data](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) provides an R script which allows you to download the most current dataset. This is the script replicated in the next code block. You could of course download the datset to your computer and then upload the excel or csv file, but here the ECDC has build a direct pipeline into their data.
 
 ```{r}
 #these libraries need to be loaded
@@ -80,9 +96,11 @@ GET("https://opendata.ecdc.europa.eu/covid19/casedistribution/csv",
 data <- read.csv(tf)
 ```
 
+** By uploading data in this way you will always get up to date data. This means that, if you replicate this code, you are having more recet data than the ones used during the writing process of this document. The data interpretations should therefore be read as valid on 9 April 2020.** 
+
 ## Some data cleaning
 
-Let's look at the structure of this dataset. We wnat to make sure we understand all the variables and give them sensible names we want to work with.
+Let's look at the structure of this dataset. We want to make sure we understand all the variables and give them sensible names we want to work with.
 
 ```{r}
 str(data)
@@ -98,7 +116,7 @@ names(data)[names(data) == "countryterritoryCode"] <- "countryCode"
 names(data)[names(data) == "dateRep"] <- "dates"
 ```
 
-The first variable is a factor variable which includes the entire date string. At this stage R does not recognise this as a date. So let's change this as it will be useful for R to know that this variable represents a date. Dates are of the format 24/01/2020. In the `format` option we specify this date such that R knows how to translate to dates (see [https://www.stat.berkeley.edu/~s133/dates.html](this page) to understand how to specify the format string).
+The first variable is a factor variable which includes the entire date string. At this stage R does not recognise this as a date. So let's change this as it will be useful for R to know that this variable represents a date. Dates are of the format 24/01/2020. In the `format` option we specify this format (`format = "%d/%m/%Y"`) such that R knows how to translate to dates (see [this page](https://www.stat.berkeley.edu/~s133/dates.html) to understand how to specify the format string).
 
 ```{r}
 data$dates <- as.Date(as.character(data$dates),format = "%d/%m/%Y")
@@ -113,9 +131,9 @@ data_china <- data %>%  filter(country == "China")
 plot(data_china$dates,data_china$deaths)  # specifies variable for x and y axis
 ```
 
-We can clearly see that after an increase in the numbers of fatalities in China in January and February we see a decrease in numbers in March. If these were cumulaive numbers we would not see a decrease. So these are the deaths which occured on a particular day. You can find the same for cases.
+We can clearly see that after an increase in the numbers of fatalities in China in January and February we see a decrease in numbers in March. If these were cumulative numbers we would not see a decrease. So these are the deaths which occured on a particular day. You can find the same for cases.
 
-Before continuing we may also want to highlight a particularity in these data. You can see that in the middle of March there is one day (13 Feb 2020) on which almost 100 more deaths have been reported than at any other day. And in fact, the day before there were only 13 reported deaths. It turns out that these irregularities are the result of changes in data definitions as reported, for instance, in this [https://www.cnbc.com/2020/02/26/confusion-breeds-distrust-china-keeps-changing-how-it-counts-coronavirus-cases.html](CNBC article).
+Before continuing we may also want to highlight a particularity in these data. You can see that in the middle of March there is one day (13 Feb 2020) on which almost 100 more deaths have been reported than at any other day. And in fact, the day before there were only 13 reported deaths. We will later see similar variability in other countries. The reason for this being a combination of definitial changes, but also being due to the fact that there may be daily variation in the underlying testing activity. Therefore any short term variation in identified cases is most likely a function of variation in testing activity masking a more steady development o fthe underlying cases.
 
 Knowing that we are talking about daily statistics for new confirmed infections and daily deaths, we may also want to calculate the accumulated infections and deaths. This is achieved with the `cumsum` (cumulative sum) command. This takes a vector of data and keeps adding these up.
 
@@ -132,16 +150,16 @@ Before we apply this to our data in `data`, we need to make sure that we only ac
 data <- data %>% group_by(country) %>% 
           arrange(dates) %>% 
           mutate(c_cases = cumsum(cases), c_deaths = cumsum(deaths)) %>% 
-          ungroup()
+          ungroup() # this undoes the grouping as we need the ungrouped data going ahead
 ```
 
 In the variables `c_cases` and `c_deaths` we now have the accumulated cases and deaths by country. At the end we undid the `group_by` by calling `ungroup()`.
 
 ## Some country graphs
 
-Let's create some nicer graphs to describe the development of the pandemic in different countries. Let's first continue with the Chinese data.
+Let's create some nicer graphs to describe the development of the pandemic in different countries. We initially continue with the Chinese data.
 
-First we replicate the above Figure but using the `ggplot` function which produces much nicer graphs.
+First we replicate the above Figure but using the `ggplot` function which produces much nicer graphs. We first crreate the graph and save it in `g1` and eventually print it by just calling `g1`.
 
 ```{r}
 g1 <- ggplot(subset(data, country == "China"), aes(x=dates,y=cases)) +
@@ -151,6 +169,8 @@ g1
 ```
 
 As you can see we didn't create a special Chinese dataset first, but we used the subset function instead.
+
+You can see a huge spike in this dataseries. It turns out that this irregularity is the result of changes in data definitions as reported, for instance, in this [CNBC article](https://www.cnbc.com/2020/02/26/confusion-breeds-distrust-china-keeps-changing-how-it-counts-coronavirus-cases.html).
 
 Let's overlay the daily cases for two countries, say China and South Korea.
 
@@ -165,7 +185,8 @@ g2
 
 Here you can see the much praised ability by South Korea to suppress the numbers of infections effectively. However, you might argue that 
 
-> Explore: How do these look like if you were to look at per capita infection rates?
+> Explore: Look at graphs for different pairs or even trios of countries?
+> Challenge: How do these look like if you were to look at per capita infection rates?
 
 Now we look at some European countries.
 
@@ -174,13 +195,17 @@ sel_countries <- c("Spain", "France", "United_Kingdom")
 g3 <- ggplot(subset(data, country %in% sel_countries), 
              aes(x=dates,y=cases, color = country)) +
       geom_line(size = 1) +   # size controls the line thickness
-      ggtitle("Covid-19 daily cases")
+      ggtitle("Covid-19 daily cases") +
+      theme_bw()
+      
 g3
 ```
 
-You can see that especially the French data are very variable. It is important to understand that the number of newly identified cases is also a function of the testing effort on a particular day and if that is variable then we may well expect a huge variability. In addition to daily variability in one country in testing activity it is important to acknowledge that different countries may have quite different policies in place. For instance it has been well publicised that different countries have different strategies on testing (e.g. [https://www.ft.com/content/6a8d66a4-5862-4937-8d53-b2d10794e795](FT, 2 April 2010), or [https://fivethirtyeight.com/features/coronavirus-case-counts-are-meaningless/](538, 4 April 2020)).
+> Explore: Check out the `ggplot` [cheatsheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) to see some of the many ways in which you can customise graps. In particular see what happens if you replace the last line `g3` with `g3 + theme_bw()` or `g3 + theme_dark()`.
 
-In fact that much variation that it was difficult to separate the signal from the noise. As this is a typical issue with high frequency data we often see a smoothed version of these data. `ggplot` has a build-n function which allows you to see smoothed versions of the data, `geom_smooth(method = "loess")`. This averages data in some local (time) window. We will not discuss the details of the algorithm here.
+You can see that especially the French data are very variable. It is important to understand that the number of newly identified cases is also a function of the testing effort on a particular day and if that is variable then we may well expect a huge variability. In addition to daily variability in one country in testing activity it is important to acknowledge that different countries may have quite different policies in place. For instance it has been well publicised that different countries have different strategies on testing (e.g. [Financial Times, 2 April 2010](https://www.ft.com/content/6a8d66a4-5862-4937-8d53-b2d10794e795), or [FiveThirtyEight, 4 April 2020](https://fivethirtyeight.com/features/coronavirus-case-counts-are-meaningless/)).
+
+In fact there is so much variation that it was difficult to separate the signal from the noise. As this is a typical issue with high frequency data we often see a smoothed version of these data. `ggplot` has a build-in function which allows you to see smoothed versions of the data, `geom_smooth(method = "loess")`. This averages data in some local (time) window. We will not discuss the details of the algorithm here.
 
 We start by focusing on the French data and add the smoothed version.
 
@@ -194,7 +219,9 @@ g4 <- ggplot(subset(data, country %in% sel_countries),
 g4
 ```
 
-You can see that the smoothed version (in blue) clearly shows an early exponential trend and the most recent decline (as of 7/4/2020). Change the values of the `span` option to figure out how it changes the results.
+You can see that the smoothed version (in blue) clearly shows an early exponential trend and the most recent decline (as of 7/4/2020). 
+
+> Explore: Change the values of the `span` option to figure out how it changes the results.
 
 Let's look at the three countries again and only show the smoothed versions.
 
@@ -209,9 +236,9 @@ g5
 
 The grey areas around the smoothed data versions are confidence intervals. They recognise that the data are noisy and it is impossible to precisely get the underlying trend. As the French data are noisier than those of the UK and Spain the grey error bands are somewhat wider than the others, indicating larger uncertainty about the trend. 
 
-But smoothing can be useful. Here for instance we can perhaps see that France and Spain may have reached the peak of new registered cases, where, at the time of writing (7 April 2020), the UK numbers were still on a clearly positive trend.
+Smoothing can be useful. Here for instance we can perhaps see that France and Spain may have reached the peak of new registered cases, where, at the time of writing (7 April 2020), the UK numbers were still on a clearly positive trend.
 
-In the example above the smoothing was done by and inside the `ggplot` function. You can also produce the moving average "manually" and then use it in teh forecast. This is useful if you need the moving average for some further analysis (as we will later). Here we will use the `forecast` package which you can use to calculate a moving average. Here we create a new variable `cases_ma = ma(cases,order = 7)` which calculates a 7 day moving average. By way of example, take the 10th of March. Instead of reporting the cases figure for the 10th of March we are now using 7 observations from 7th of March to 13th of March (i.e. centered around the 10th of March) and `cases_ma` will then have, for the 19th of March the average of these 7 days.
+In the example above the smoothing was done by and inside the `ggplot` function. You can also produce the moving average "manually". This is useful if you need the moving average for some further analysis (as we will later). Here we will use the `forecast` package which you can use to calculate a moving average. Here we create a new variable `cases_ma = ma(cases,order = 7)` which calculates a 7 day moving average. By way of example, take the 10th of March. Instead of reporting the cases figure for the 10th of March we are now using 7 observations from 7th of March to 13th of March (i.e. centered around the 10th of March) and `cases_ma` will then have, for the 10th of March the average of these 7 days.
 
 ```{r}
 data <- data %>% group_by(country) %>% 
@@ -269,7 +296,6 @@ We need a few more packages at this stage.
 ```{r}
 library(sf)
 library(raster)
-library(dplyr)
 library(spData)
 library(tmap)
 ```
@@ -281,7 +307,7 @@ Let's create a map first and then we will find out how to manipulate the map to 
 tm_shape(world) + tm_polygons(col = "lifeExp") 
 ```
 
-Wow, one line of code and you get a world map which shows which countries have the highest and lowest life expectation. Amazing! What did the code do? We saved the map in a new object `m1`. We used the `tmap` package (Check out [https://geocompr.robinlovelace.net/](Geocomputation with R) by Robin Loveace for an introduction into this package and geocomputing in general). It has a range of map information at its fingertips and `tm_shape(world)` basically called up shape information on the world's countries with some basic information. Then we add the information which should determine the colors (`+ tm_fill(col = "lifeExp")`)and finally we add borders (`+  tm_polygons()`). Clearly we will want to replace the information on life expectatncy with information on Covid-19 cases. TO do this we first need to understand where tmaps stores the data on life expectatncy.
+Wow, one line of code and you get a world map which shows which countries have the highest and lowest life expectation. Amazing! What did the code do? We saved the map in a new object `m1`. We used the `tmap` package (Check out [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Loveace for an introduction into this package and geocomputing in general). It has a range of map information at its fingertips and `tm_shape(world)` basically called up shape information on the world's countries with some basic information. Then we add the information which should determine the colors and borders (`+ tm_polygons(col = "lifeExp")`). Clearly we will want to replace the information on life expectatncy with information on Covid-19 cases. To do this we first need to understand where tmaps stores the data on life expectatncy.
 
 Hence we need to slightly deconstruct the above code
 
@@ -290,7 +316,7 @@ m2 <- tm_shape(world)
 str(m2)
 ```
 
-So, this looks complicated. `m2` is a list with one element called `sm_shape`. That in turn is a list with 12 elements. Importantly one of these elements is called `shp` and this contains information on the respective countries.
+So, this looks complicated. `m2` is a list with one element called `sm_shape`. That in turn is a list with 12 elements. Think of drawers inside drawers. Importantly one of these elements (drawers inside the drawer called `tm_shape`) is called `shp` and this contains information on the respective countries.
 
 Let's just look at that to understand what it looks like. 
 
@@ -300,6 +326,8 @@ names(temp)
 ```
 
 This is really a traditional data frame with country specific information and you can see that one of the pieces of information here is life expectation (`lifeExp`). This is where `tmap` got the info from. We will insert into this spreadsheet the information on cases and then use that to display the data. Importantly, `iso_a2` is a variable with a country appreviation. As we have this information also in our `data` set we will use that to merge the data.
+
+We start by extracting the information we want to merge into `temp` from our original dataset `data`. Here the data for all countries on the 4 April 2020.
 
 ```{r, eval = FALSE}
 temp_mergein <- data %>% filter(dates == "2020-04-04") %>% 
@@ -313,16 +341,19 @@ Error in (function (classes, fdef, mtable)  :
   unable to find an inherited method for function ‘select’ for signature ‘"tbl_df"’
 ```
 
-I had to google the error message and found out that the select function stops working like this as the `raster` function also has a `select` function (type `?select` into the command window to see this). When we loaded the `raster` package the `select` function of the `dplyr` package (automatically loaded with the `tidyverse`) which is what we want.
+I had to google the error message and found out that the select function stops working like this as the `raster` function also has a `select` function (type `?select` into the command window to see this). When we loaded the `raster` package the `select` command started pointing to the `select` function in the `raster` package rather than the select function of the `dplyr` package (automatically loaded with the `tidyverse`) which is really the function we want.
+
+These are the issues which arise with an open source software where many people contribute different packages, like the `tidyverse` and the `raster` package and no one institution ensures that they are not using the same name for functions. In fact, look at the notices you ignored after loading the `raster` package. Most likely you will find something like "Attaching package: 'raster'. The following object is masked from 'package:dplyr': select". This could all have bee avoided by loading the `tidyverse` package after the `raster` package, but then I wouldn't have had the opportunities to expose you to one of the quirks you will encounter when you work with R.
 
 So when we want to run the above command we have to tell R that we want the select function of the dplyr package (`dlyr::select`).
 
 ```{r}
 temp_mergein <- data %>% filter(dates == "2020-04-04") %>% 
-                          dplyr::select(geoId, cases, c_cases, deaths, c_deaths)
+                          dplyr::select(geoId, cases, c_cases, cases_ma, 
+                                        deaths, c_deaths, deaths_ma)
 ```
 
-We only selected the actual variables we are interested in and the `geoId` variable as this will be the variable which will be matched with `iso_a2`. 
+We only selected the actual variables we are interested in and the `geoId` variable as this will be the variable which will be matched with `iso_a2` in the shape file.
 
 As it turns out the country code for the United Kingdom in `data` (and hence in `temp_mergein`) is `UK` and in the shape file it is `GB`. So we need to change on of them to enable a match. If you didn't do this you would find that the map shows missing data for the United Kingdom.
 
@@ -337,43 +368,44 @@ Now we will `merge` this info into `m2` such that we have our COVID-19 data avai
 temp <- merge(temp, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
 ```
 
-Now that we manipulated the datafile at the core of the mapping operation we need to insert it back into the `m2` file into exactly the same spot where we found that datafile in the first place (`m2$tm_shape$shp`).
+Now that we manipulated the datafile at the core of the mapping operation we need to insert it back into `m2`, into exactly the same spot where we found that datafile in the first place (`m2$tm_shape$shp`).
 
 ```{r}
 m2$tm_shape$shp <- temp
 ```
 
-Now we can return to the mapping code
+Now we can return to the mapping code displaying the smoothed number of casualties.
 
 ```{r}
 # Add polygons layer to world shape
-m2 + tm_polygons(col = "deaths", n=10)  # n = 10 controls the number of categories
+m2 + tm_polygons(col = "deaths_ma", n=10)  # n = 10 controls the number of categories
 
 ```
 
-There is all sorts of things you can change about these maps.
+There is all sorts of things you can change about these maps. For instance the colour scheme using the `tm_style` function.
 
 ```{r}
-m2 + tm_polygons(col = "deaths", n=10) +  # n = 10 controls the number of categories
+m2 + tm_polygons(col = "deaths_ma", n=10) +  # n = 10 controls the number of categories
       tm_style("col_blind")
 ```
 
 ## More useful maps
 
-The above maps were created for one particular day ("04/04/2020"). Could we create multiple maps for each day in 2020 so that we can visualise the spread of the pandemic. The answer is yes. Let's start by creating the base world map again.
+The above maps were created for one particular day ("04/04/2020"). Could we create multiple maps for each day in 2020 so that we can visualise the spread of the pandemic? The answer is yes. Let's start by creating the base world map again.
 
 ```{r}
 m3 <- tm_shape(world) # create a new shape file from scratch
 temp3 <- m3$tm_shape$shp # extract the data frame with the data
 ```
 
-First we need to ensure that we insert the daily information into `m2` just as we inserted the info for the one day. What we will do is to select one day a week, starting with the 15th of Jan 2020. This is done in `date_sel` using the sequence (`seq` function). Then we select all the information available for these dates from `data`.
+First we need to ensure that we insert the daily information into `m3` just as we inserted the info for the one day. What we will do is to select one day a week, starting with the 15th of Jan 2020. This is done in `date_sel` using the sequence (`seq` function). Then we select all the information available for these dates from `data`.
 
 ```{r}
 # prepare the data from data
 date_sel <- seq(as.Date("2020-01-15"), as.Date("2020-04-04"), 7)
 temp_mergein <- data %>% filter(dates %in% date_sel) %>% 
-                  dplyr::select(geoId, dates, cases, c_cases, cases_ma, deaths, c_deaths, deaths_ma) %>% 
+                  dplyr::select(geoId, dates, cases, c_cases, cases_ma, 
+                                deaths, c_deaths, deaths_ma) %>% 
                   arrange(geoId,dates)
 temp_mergein$geoId <- as.character(temp_mergein$geoId)
 temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB"  
@@ -404,29 +436,30 @@ Now we need to instruct `tmap` to produce the maps, but now a separate map for e
 covid_fac <- m3 + tm_polygons(col = "cases_ma", 
                               style = "fixed", # use fixed categories
                               breaks = c(0,50,250,1000,5000,50000)) + # set category boundaries
-  tm_facets(by = "dates", free.coords = FALSE)
+                  tm_facets(by = "dates", free.coords = FALSE)
 covid_fac
-
 ```
 
 The result of this calculation was saved in `covid_fac`. As you can see, we do not have an observation from every country on all days. If we are missing an observation then, for the particular, day the country will not appear on the map. 
 
+> Explore: Use `?tm_polygons` to learn about some of the adjustments you can undertake for thes graphs. In particular experiment with the way in which the colours are defined. Replace, in the above commands, `style = "fixed", breaks = c(0,50,250,1000,5000,50000)` with `style = "cont"` or `style = "log10_pretty"` and judge whether any way to set the colour scale is equally useful.
+
 # Correlate Covid-19 data with other indicators
 
-In this section we will use a range of other country-wide indicators andcheck whether they.
-
-The datasets we will look at  here are 
+In this section we will link some other data to these Covid-19 data. In the Kaggle data competition you will find a range of dataset which have been proposed to provide potentially useful insights into how to best handle the pandemic. Amongst these are:
 
 * number of international tourism arrivals
 * percentage of population with access to hand-washing facilities
 * number of hospital beds
 * number of nurses and midwives
 
-The first dataset mainly as it may allow us to find a proxy for how the pandemic spreads around the world. The others as they relate to how well a country may either pprevent the spread of the virus (handwashing facilities) and how well their health system may be able to cope with any significant outbreak.
+The first dataset mainly as it may allow us to find a proxy for how the pandemic spreads around the world. The others as they relate to how well a country may either prevent the spread of the virus (handwashing facilities) and how well their health system may be able to cope with any significant outbreak.
+
+You may want to look at the submissions to the Kaggle competition to see how some of these have been used.
 
 ## International travel
 
-Let's load some international travel data. We can get some data on flight connection information (from 2014, no later info is available) from the [https://openflights.org/data.html](Open Flights) website. Find the "routes.dat" datafile which is a csv file without column headings which is why we need to add the column names in the import process.
+Let's load some international travel data. We can get some data on flight connection information (from 2014, no later info is available) from the [Open Flights](https://openflights.org/data.html) website. Find the "routes.dat" datafile which is a csv file without column headings which is why we need to add the column names in the import process.
 
 * Airline	2-letter (IATA) or 3-letter (ICAO) code of the airline.
 * Airline ID	Unique OpenFlights identifier for airline (see Airline).
@@ -445,7 +478,7 @@ data_routes <- read_csv("routes.dat",
                                       "Stops","Equipment"))
 ```
 
-This could be potentially useful as it would allow us to get information on travel routes which capture the potential routes of transmission. To make this useful we will have to add the country information for the airports. The airport.dat file is also available from [https://openflights.org/data.html](Open Flights).
+This could be potentially useful as it would allow us to get information on travel routes which capture the potential routes of transmission. To make this useful we will have to add the country information for the airports. The airport.dat file is also available from [Open Flights](https://openflights.org/data.html).
 
 ```{r}
 data_airports <- read_csv("airports.dat", 
@@ -454,9 +487,9 @@ data_airports <- read_csv("airports.dat",
                                       "TZ2","Type","Source"))
 ```
 
-Let's explore the data by looking at all the routes connecting Manchester, UK, with Frankfurt, Germany.
+Let's explore the data by looking at all the routes connecting Manchester, UK, with Paris, France.
 
-We need to find the `IATA.ID` for Manchester and Frankfurt.
+We need to find the `IATA.ID` for Manchester and Paris airports.
 
 ```{r}
 data_airports %>% filter(Airport.City == "Manchester")
@@ -501,7 +534,8 @@ If we are now looking again at our Manchester to Paris connections we get
 
 ```{r}
 data_routes %>% filter(Source.Airport == "MAN" & Destination.Airport == "CDG") %>% 
-  dplyr::select(Airline, Source.Airport, Source.Country, Destination.Airport, Destination.Country)
+  dplyr::select(Airline, Source.Airport, Source.Country, 
+                Destination.Airport, Destination.Country)
 ```
 
 Now we can accumulate the number of connections between countries.
@@ -538,7 +572,7 @@ So the picture is pretty much the same as for China as a whole. **But remember t
 
 ## Predicting the spread
 
-Perhaps we can build a prediction tool of how the pandemic spreads. Basically we are building a transition matrix. We are using the moving average of daily cases (`cases_ma`) and combine them with the measure of strength of travel connection to think about where it is likely that the virus would spread. As we know, travel connection have very quickly been severed such that this way of anticipating the spread is likely to only work in the early stages of the pandemic.
+Perhaps we can build a prediction tool of how the pandemic spreads. Basically we are building a transition matrix. We are using the moving average of daily cases (`cases_ma`) and combine them with the measure of strength of travel connection to think about where it is likely that the virus would spread. There are of course many other factors which play into the spread of a virus. But here we will abstract from these. Even acknowledging this, it is apparent that travel connections are deemed to be important as many countries have now introduced severe travel restrictions. This also implies that using travel routes to anticipate the spread is likelly to onlly be useful in the early stages of a pandemic when such restrictions are not yet in place.
 
 Let's look at all the countries in our sample for which we have any virus data (in `data`) and any international flight connection data in `connections`.
 
@@ -551,7 +585,7 @@ cou_list <- intersect(countries_c,countries_d)
 length(cou_list)
 ```
 
-Countries now contains 117 countries. These are 34 fewer countries than we have virus data for. It may well be that some of these are because countries in the two datasets have different spelling. TO check whether this is likely we will look at the set of 34 countries which have been excluded from the `countries_d` set.
+`cou_list` now contains `r length(cou_list)` countries. These are `r length(countries_d)-length(cou_list)` fewer countries than we have virus data for. It may well be that some of these are because countries in the two datasets have different spelling. To check whether this is likely we will look at the set of `r length(countries_d)-length(cou_list)` countries which have been excluded from the `countries_d` set.
 
 ```{r}
 setdiff(countries_d,cou_list)
@@ -596,7 +630,7 @@ Let's consider the state of affairs on the same twelve days we used earlier to d
 date_sel <- seq(as.Date("2020-01-15"), as.Date("2020-04-04"), 7)
 ```
 
-First we will select all observations for the countries in `cou_list` and the dates in `date_sel`. Then we will organise the data such that the dates are variable nemes (using the `spread` function)
+First we will select all observations for the countries in `cou_list` and the dates in `date_sel`. Then we will organise the data such that the dates are variable names (using the `spread` function)
 
 ```{r}
 cou_list <- as.factor(cou_list)
@@ -610,36 +644,89 @@ spread$country <- as.character(spread$country)
 
 Have a look at the spread dataframe to understand what it looks like!
 
-We proceed as follows. We take the data about current infections and multiply the number with the number of connections. We do this in a double loop. For every (receiving) country we will calculate the potential contribution of receiving the virus (cases in the source country * number of connections). All of these contributons are then summed up. The resulting number has no direct interpretation, but the larger the number the more likely that the virus will travel into that country
+We proceed as follows. We take the data on current infections and multiply the number with the number of connections. We do this in a double loop. For every (receiving) country we will calculate the potential contribution of receiving the virus (cases in the source country x number of connections). All of these contributons are then summed up. **The resulting number has no direct interpretation, but the larger the number the more likely that the virus will travel into that country**.
 
 ```{r}
 spread$sp_wk1 <- 0
 
 for (i in cou_list) { # loop for destimation country
-  trans_fac <- 0
+  
+  trans_fac <- 0  # we will accumulate the transmission factors here
+  
   for (j in cou_list) { # loop for source country
-    conn <- connections$connect[connections$Source.Country == j & connections$Destination.Country == i] 
+    # pick the connection strength
+    conn <- connections$connect[connections$Source.Country == j &   
+                                  connections$Destination.Country == i] 
     if (length(conn) == 0) {conn <- 0}   # ensure 0 if no connection
-    supp <- spread[spread$country == j,as.character(date_sel[1])] * conn # pick current cases in source country (1st date in col 2)
-    trans_fac <- trans_fac + supp
+    
+    # pick current cases in source country (1st date in col 2)
+    # and calculate transmission factor from country j to country i
+    supp <- spread[spread$country == j,as.character(date_sel[1])] * conn 
+    
+    trans_fac <- trans_fac + supp   # summing up the transmission factors
   }
-  spread$sp_wk1[spread$country == i] <- unlist(trans_fac)  # need to unlist 
+  
+  # save the accumulated transmission to country i
+  # trans_fac is a list (with one element), unlist extracts the actual value only
+  spread$sp_wk1[spread$country == i] <- unlist(trans_fac)  
 }
 
 ```
 
-We will now plot the resulting information on a map
+The way in which this approach was implemented is a very inefficient way (using nested loops). Computationally loops tend to take up a lot of computing time and mathematically more pleasing and computationally more efficient ways are available using matrix algebra. However, implementing these here would merely distract from the purpose of illustrtaing a principle.
+
+We will now plot the resulting information on a map basically replicating the earlier mapping operations.
 
 ```{r}
-m2 <- tm_shape(world) 
-temp <- m2$tm_shape$shp
+m4 <- tm_shape(world) 
+temp <- m4$tm_shape$shp
 temp_mergein <- spread %>% dplyr::select(geoId,sp_wk1)
 temp_mergein$geoId <- as.character(temp_mergein$geoId)
 temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB" 
 temp <- merge(temp, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
-m2$tm_shape$shp <- temp
-m2 + tm_polygons(col = "sp_wk1", 
+m4$tm_shape$shp <- temp
+m4 + tm_polygons(col = "sp_wk1", 
                  style = "fixed",
-                 breaks = c(0,5,50,100,200,500,20000))  # n = 10 controls the number of categories
+                 breaks = c(0,5,50,100,200,500,20000))
 
 ```
+
+In that first week the only country with cases was China. The region which, using air transport as the only transmission mechanism, is most likely to be affected next, is South-East Asia, in particular Japan, South Korea and Taiwan which have the closest travel connections with China.
+
+Let's look at the ten top countries or terretories susceptible from this analysis.
+
+```{r}
+# name_long is country/terretory name
+temp %>% arrange(-sp_wk1) %>%  dplyr::select(name_long, sp_wk1) 
+```
+
+Now we will compare this to the actual spread of infections five weeks later (`dates == date_sel[6]`, 19 Feb 2020, the first week when notable numbers of cases outside China were identified). 
+
+```{r}
+m5 <- tm_shape(world) 
+temp <- m5$tm_shape$shp
+temp_mergein <- data %>% filter(dates == date_sel[6]) %>% 
+                          dplyr::select(geoId, cases, c_cases, cases_ma, 
+                                        deaths, c_deaths, deaths_ma)
+temp_mergein$geoId <- as.character(temp_mergein$geoId)
+temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB" 
+temp <- merge(temp, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
+m5$tm_shape$shp <- temp
+m5 + tm_polygons(col = "cases_ma",
+                 style = "fixed",
+                 breaks = c(0,5,10,15,20,50,200)) 
+
+```
+
+And let's look at the 10 countries with the 10 highest smoothed infections on the 19 Feb 2020.
+
+```{r}
+temp %>% arrange(-cases_ma) %>%  dplyr::select(name_long, cases_ma)
+```
+
+
+Indeed the three highest (after China) all apear in the above list. Remember, also, that these are identified infections not the actual numbers which are unknown. Altogether five of these countries appear in the above list of top 10 countries.
+
+This was, of course, a very simplified analysis. But perhaps it was powerful enough to realise that using such data as transport links can be a powerful input into any analysis of how a pandemic can spread. This is also apparent from a literature review of mathematical models of how a global pandemic spreads ([Walters et al., 2018, Modelling the global spread of diseases: A review of current practice and capability, Epidemics, 25](https://www.sciencedirect.com/science/article/pii/S1755436517301135)) which identifies that all such models make use of some information on transport links.
+
+You can also see that such models have potential to simulate the effect of travel restrictions. You could for instance set an element in the `connections` data to 0 to emulate the reduction of air links to 0. Clearly there are many more things to consider, in particular for the later spread of a pandemic when many countries implement multiple policies (school closures, stay at home orders etc.) which any model would need to take into account.
