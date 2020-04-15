@@ -6,8 +6,8 @@ date: "March 2020"
 output: 
   beamer_presentation:
     includes:
-#      in_header: ../latex_template.tex
-      in_header: ../latex_student.tex  # use for student version
+      in_header: ../latex_template.tex
+#     in_header: ../latex_student.tex  # use for student version
 ---
 
 ```{r setup, include=FALSE}
@@ -498,6 +498,9 @@ If you estimate a regression between two nonstationary series:
 * when regressing non-stationary series (in particular but not only when the series have a time-trend) will deliver a spurious correlation  
 * When series have a time-trend you can include a time trend variable to test whether there is correlation beyond the common time trend  
 * When series are nonstationary but don't have a time-trend then you should consider estimating a regression in differences (recall differencing can turn nonstationary series into stationary ones)
+
+For all these reasons, when considering time-series data, we need to **assume that the data used are stationary. If not estimated coefficients will be, in general, neither unbiased nor consistent**.
+
 
 ## A simple regression - but better
 

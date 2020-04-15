@@ -2,11 +2,14 @@
 title: "Covid 19 - some Challenges - some Data"
 author: "Ralf Becker, The University of Manchester"
 output:
+  word_document:
+    toc: yes
+    toc_depth: '2'
   pdf_document: default
   html_document:
-    toc: true
-    toc_depth: 2
     df_print: paged
+    toc: yes
+    toc_depth: 2
     urlcolor: blue
 ---
 
@@ -80,9 +83,9 @@ library(ggplot2)      # plotting toolbox
 
 ## Data Upload
 
-Very helpfully the ECDC webpage through which you can [download the data](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) provides an R script which allows you to download the most current dataset. This is the script replicated in the next code block. You could of course download the datset to your computer and then upload the excel or csv file, but here the ECDC has build a direct pipeline into their data.
+Very helpfully the ECDC webpage through which you can [download the data](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) provides an R script which allows you to download the most current dataset. This is the script replicated in the next code block. You could of course download the datset to your computer and then upload the excel or csv file, but here the ECDC has build a direct pipeline into their data. Here we will not explain the details of the following code. The result is that a datafile called `data` will appear in your environment. It will contain up to date case and fatality data.
 
-```{r}
+```{r, results = 'hide'}
 #these libraries need to be loaded
 library(utils)
 library(httr)
@@ -186,6 +189,7 @@ g2
 Here you can see the much praised ability by South Korea to suppress the numbers of infections effectively. However, you might argue that 
 
 > Explore: Look at graphs for different pairs or even trios of countries?
+
 > Challenge: How do these look like if you were to look at per capita infection rates?
 
 Now we look at some European countries.
@@ -307,7 +311,9 @@ Let's create a map first and then we will find out how to manipulate the map to 
 tm_shape(world) + tm_polygons(col = "lifeExp") 
 ```
 
-Wow, one line of code and you get a world map which shows which countries have the highest and lowest life expectation. Amazing! What did the code do? We saved the map in a new object `m1`. We used the `tmap` package (Check out [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Loveace for an introduction into this package and geocomputing in general). It has a range of map information at its fingertips and `tm_shape(world)` basically called up shape information on the world's countries with some basic information. Then we add the information which should determine the colors and borders (`+ tm_polygons(col = "lifeExp")`). Clearly we will want to replace the information on life expectatncy with information on Covid-19 cases. To do this we first need to understand where tmaps stores the data on life expectatncy.
+Wow, one line of code and you get a world map which shows which countries have the highest and lowest life expectation. Amazing! What did the code do? We saved the map in a new object `m1`. We used the `tmap` package (Check out [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Loveace for an introduction into this package and geocomputing in general). It has a range of map information at its fingertips and `tm_shape(world)` basically called up shape information on the world's countries. Shape information is basically information on the boundaries of (here) countries. Without such information no map could be drawn.  with some basic information (like life expectation). 
+
+Then we add the information which should determine the colors and borders (`+ tm_polygons(col = "lifeExp")`). Clearly we will want to replace the information on life expectatncy with information on Covid-19 cases. To do this we first need to understand where tmaps stores the data on life expectatncy.
 
 Hence we need to slightly deconstruct the above code
 

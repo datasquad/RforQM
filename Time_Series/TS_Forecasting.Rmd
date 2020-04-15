@@ -1,7 +1,7 @@
 ---
 title: "Time-Series Forecasting"
 author: "Ralf Becker"
-date: "14 March 2019"
+date: '`r format(Sys.Date(), "%d %B %Y")`'
 output:
   pdf_document: default
   html_document: default
@@ -28,10 +28,12 @@ library(tsbox)
 
 # Import data and look at ACF
 
-Let's download female unemployment rates and monthly inflation rates from the ONS database. On both occasions we put the 
+Let's download female unemployment rates and monthly inflation rates from the ONS database.  `pdfetch_ONS` requires an id for the series and the database where to find that series. You will have to identify these two pieces of information from the [ONS website](https://www.ons.gov.uk/). Type "Female Unemployment Rate" into the search window.
+
+On both occasions we put the data into a data frame with three columns ("Date", "Value" and "id") where the latter tells us what the variable in question is.
 
 ```{r}
-# Download: Female unemployment rate (YCPL in database LMS)
+# Download: Female unemployment rate (YCPL in database LMS - Labour Market Statistics)
 ur_female <- pdfetch_ONS("YCPL","LMS")
 names(ur_female) <- "Unemp Rate (female)"
 periodicity(ur_female)
@@ -66,8 +68,9 @@ Now we put both series into one dataframe by attaching the individual dataframes
 
 ```{r}
 data_l <- rbind(ur_female_l,infl_l)
-
 ```
+
+Have a look at `data_l` to understand the structure of this dataframe. All the actual data are in the "Value" column (`data_l$Value`) while the "id column" (`data_l$id`) identifies the variable. We call this a long data structure (as opposed to the wide version which would have one column for each variable). This is mainly useful for using the `ggplot` function to produce nice plots.
 
 Now we produce some time series plots 
 
@@ -128,7 +131,7 @@ ggseasonplot(infl_ts)
 
 From here we can see that in the early years there was an April spike in the monthly inflation series, but that spike has been disappearing such that the only seasonal pattern remaining is a dip in inflation in January and July.
 
-This information will lead us to excluding early years from our dataset when we estimate a model to forecast inflation.
+On the basis of this information we decide to exclude early years from our dataset when we use this to forecast inflation. If didn't do this the model would partially attempt to emulate this April spike, but we know that this is an old phenomenon.
 
 For the unemployment rate there was no obvious seasonal pattern. Let's just confirm that seasonal plot does not reveal such a pattern.
 
@@ -136,7 +139,7 @@ For the unemployment rate there was no obvious seasonal pattern. Let's just conf
 ggseasonplot(ur_ts)
 ```
 
-No, no seasonal pattern can be seen here.
+Indeed, no seasonal pattern can be seen here.
 
 # Using AR models for forecasting
 
@@ -172,7 +175,7 @@ For all intends and purposes this is similar to this more traditional looking AR
 
 \[\Delta ur_t = \beta_0 + \beta_1~\Delta ur_t + \beta_2~\Delta ur_t + u_t\]
 
-The `mean` parameter in the model output is the sample estimate for ($m$). You can also see that it is the 2nd lag (the `ar2` coefficient) which is statistically significant.
+The `mean` parameter in the model output is the sample estimate for $m$ and it represents the value to which the series is predicted to return in the long-run (recall we are assuming a stationary model where such a value makes sense). You can also see that it is the 2nd lag (the `ar2` coefficient) which is statistically significant.
 
 If we want to forecast from this model we can do this as follows
 
@@ -187,7 +190,7 @@ We would like to see a little more detail at the end of the data. We achieve thi
 plot(for_dur, include = 40)
 ```
 
-As we can see the forecast does not flatten out very quickly. Essentially it will move towards the estimated `mean` value, -0.011.
+As we can see the forecast does flatten out very quickly. Essentially it will move towards the estimated `mean` value, -0.011. The shaded areas around the forecast are forecast or prediction intervals. They recognise that the model contains an error term and hence we acknowledge that there is uncertainty about our prediction. The two different shades indicate 80 and 95% prediction intervals. They do, however, **assume that the estimated model is correct**.
 
 If you want to get the actual values which were forecast. Recall that the last observation available for the model estimation process was December 2018.
 
@@ -197,7 +200,7 @@ for_dur$mean
 
 ## From $\Delta ur_t$ to $ur_t$
 
-We estimated a model in differences (as we wanted to model a stationary series). But in the end we are interested in teh original series, the unemployment rate itself. We could now use the estimated changes to add them to the currrent level of the unemployment rate to get the forecast value for the next period. 
+We estimated a model in differences (as we wanted to model a stationary series). But in the end we may be interested in the original series, the unemployment rate itself. We could now use the estimated changes to add them to the currrent level of the unemployment rate to get the forecast value for the next period. 
 
 Fortunately there is a slightly easier way to deal with this. Recall that when we called the estimation function we called `fit_dur <- Arima(dur_ts,order = c(2,d,0))`. The `d` value we set to 0 as we had handed in the differenced series. However we could have also handed in the `ur_ts` series and than told the `Arima` function to difference once. The advantage is that then R knows that we are actually interested in `ur_ts` the level of unemployment.
 
@@ -230,7 +233,7 @@ If we waited for the unemployment rate in the next few periods to come in we cou
 
 Instead we will turn back time by one year and pretend that it is the end of 2017 and we wanted to forecast the unemployment rate in 2018. Then we wil be able to compare our forecasts to the actual realisations.
 
-So let's start by restricting the sample up to 
+So let's start by restricting the sample up to and including december 2017 using the `window` function.
 
 ```{r}
 ur_ts_17 <- window(ur_ts,end = c(2017,12))
@@ -253,8 +256,10 @@ You can actually plot the observations next to the forecasts.
 
 ```{r}
 plot(for_ur_a_17, include = 40)
-lines(ur_ts)
+lines(ur_ts) # this adds a line to the previous plot
 ```
+
+This is where we are reaping all the advantages of using data with time-series formats. Both `for_ur_a_17` and `ur_ts` contain date information and R will automatically align the data correctly.
 
 Now we use the `accuracy` function to evaluate how well these forecasts fit the actual observations in 2018.
 
@@ -271,3 +276,9 @@ accuracy(for_ur_a_17,ur_ts)
 ```
 
 The automatically chosen model does improve on the forecast performance.
+
+When performing forecasts with such models there is a significant note of caution in order. When we use an estimated model for forecasting we assume that the model will remian to be the correct model for the forecast period (in addition to assuming that it was correct for the in-sample period). This is a major assumption. Recall that, basically, a forecast model for stationary data contains information on a) a level to which the series is predited to converge in the long-run and b) a speed and pattern of convergance to that level in a). 
+
+Any misspecification, in particular with respect to a) will cause forecasts to be off. And impotantly any substantial change in the economy which changes the information in a) or b), but particularly in a), during the forecast period will also ensure that the forecasts from such a model are problematic and otentially significantly off.
+
+It is for this reason that any forecatss produced from such models (and much more complex models) should always be accompanied with this health warning. Just imagine you had produced forecasts for May 2020 unemployment in 2019 .... it should be clear that such forecasts would have been virtually useless due to the emergance of the global Covid-19 crisis.

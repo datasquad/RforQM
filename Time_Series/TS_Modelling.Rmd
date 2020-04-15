@@ -204,13 +204,13 @@ plot(mod1$residuals, type = "l", main = "mod1 - Residuals")
 acf(mod1$residuals)
 ```
 
-We can see that, at lag 2, there is a small amount of autocorrelation in the residuals. We can again apply the hypothesis test the Breusch-Godfrey test (`bgtest`). The null hypothesis is that there is no autocorrelation.
+We can see that there is a significant amount of autocorrelation in the residuals. We can apply the Breusch-Godfrey hypothesis test (`bgtest`). The null hypothesis is that there is no autocorrelation.
 
 ```{r}
-bgtest(mod4,order=4)
+bgtest(mod1,order=4)
 ```
 
-The p-value of 0.0605 suggests that there is a little evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? Fortunately, here, there is little evidence. We already calculated HAC standard errors.
+The p-value is virtually 0 suggesting that there is stistically significant evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? 
 
 
 # Spurious correlations and regressions
