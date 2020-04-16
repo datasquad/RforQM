@@ -229,7 +229,7 @@ E[\Delta ur_{T+1}|I_T] = \hat{\alpha} + \hat{\beta}_1 ~ \Delta ur_{T} + \hat{\be
 
 After estimating the AR(2) model with information up to time $T$ we have all the information on the right-hand side.
 
-$E[\Delta ur_{T+1}|I_T]$ is our best estimate for the unemployment rate next period ($T+1$) made at time $T$. Note that we lost the error term as we assumed $E[u_{T+1}|I_T] = 0$. But we still recognise that in any particular period we are likely to get a non-zero $u_{T+1}$ ($\rightarrow$ Interval forecasts)
+$E[\Delta ur_{T+1}|I_T]$ is our best estimate for the unemployment rate next period ($T+1$) made at time $T$. Note that we "lost" the error term as we assumed $E[u_{T+1}|I_T] = 0$. But we still recognise that in any particular period we are likely to get a non-zero $u_{T+1}$ ($\rightarrow$ Interval forecasts)
 
 ## Forecasting from AR Model - Point forecasts
 
@@ -241,7 +241,7 @@ Say we want to forecast a value two months ahead ($T+2$). Restate (\ref{AR2f}) f
 E[\Delta ur_{T+2}|I_T] = \alpha + \beta_1 ~ E[\Delta ur_{T+1}|I_T] + \beta_2 ~ E[\Delta ur_{T}|I_T] \label{AR2f2}
 \end{equation}
 
-Replace the parameters with sample estimates and check which valies are already in $I_T$:
+Replace the parameters with sample estimates and check which values are already in $I_T$:
 
 \begin{equation}
 E[\Delta ur_{T+2}|I_T] = \hat{\alpha} + \hat{\beta}_1 ~ E[\Delta ur_{T+1}|I_T] + \hat{\beta}_2 ~ \Delta ur_{T} \label{AR2f2}
@@ -321,7 +321,7 @@ Getting a forecast for the level is fairly straightforward
 \begin{tabular}{llllll}
 Time &  $t$ & $ur_t$ &  $\Delta ur_t$ &  $E[\Delta ur_t|I_T]$ &  $E[ur_t|I_T]$\\ \hline
 Nov 2018 & $T-1$ & 4.0  & -0.1 & ~ & ~  \\
-Dec 2019 & $T$ & 4.0  & 0.0  & ~ & ~  \\
+Dec 2018 & $T$ & 4.0  & 0.0  & ~ & ~  \\
 Jan 2019 & $T+1$ & ~ & ~  &  -0.027 & 3.973 \\
 Feb 2019 & $T+2$ & ~ & ~  & -0.009 & 3.964 \\
 ...& ~ & ~ & ~ & ~ & ~ 
@@ -385,7 +385,7 @@ The chosen model is `ARIMA(2,1,1)(2,0,0)[12]`. Without any details, this output 
 * the procedure wants to difference once to achieve stationarity
 * the procedure has found an MA(1) component (no further details here)  
 * the procedure has found that there is some seasonality (at the 12 month / 1 year period)  
-* to cater for this seasonality it also included $ur_{t-12}$ and some other lags to capture this seasonla dependence
+* to cater for this seasonality it also included $ur_{t-12}$ and some other lags to capture this seasonal dependence
 
 ## Automatic order selection
 
@@ -452,7 +452,7 @@ lines(ur_ts)
 
 We can see that the seasonal model from `auto.arima` fits the data better.
 
-Numerical measures of forecast accuracy compare the forecast to the observation. A range of measures exist, e.g. the Room Mean Square Error (RMSE)
+Numerical measures of forecast accuracy compare the forecast to the observation. A range of measures exist, e.g. the Root Mean Square Error (RMSE)
 
 \begin{equation}
 RMSE = \sqrt{\frac{1}{12}\sum_{h=1}^{12} (E[ur_{T+h}|I_T] - ur_{T+h})^2}
@@ -467,6 +467,39 @@ accuracy(for_ur_17,ur_ts)
 accuracy(for_ur_a_17,ur_ts)
 ```
 \normalsize
+
+## Forecasting failure - Covid-19
+\footnotesize
+Look again at the forecast we produced earlier for 2019 and now also look at the forecast extending into 2020, using data up to December 2018.
+
+Unemployment data for 2020 are not yet available, but clearly the above forecasts will substantially undershoot!
+\tiny
+```{r, echo = FALSE,  fig.height = 3.0, fig.width = 4.5}
+for_ur_a <- forecast(fit_ur_a, h =24)
+plot(for_ur_a, include = 20)
+```
+\normalsize
+
+## Forecasting failure - Covid-19
+
+On a previous slide we argued that minor forecats "failures"" will be due to random variation, failure to nclude all relevant variables, using the wrong model and parameter uncertainty.
+
+Importantly, all forecasts are **contingent** on certain assumptions. Basicaly we need to assume that the model used is and **will stay** to be the correct model.
+
+Therefore you often get **scenarios** rather than **forecasts**. For instance the [Office for Budget Responsibility's Covid-19 Scenario](https://obr.uk/coronavirus-reference-scenario/).
+
+## Forecasting failure - Covid-19
+
+The key scenario assumption here is 
+
+> This was a scenario rather than a forecast, based on the illustrative assumption that people’s movements (and thus economic activity) would be heavily restricted for three months and would get back to normal over the subsequent three months. 
+
+We mentioned earlier that the key model features which will result in bad forecasts are:
+
+* the overall (unconditional mean) of the process changes
+* the trend of a series changes
+
+If the above assumption is inappropriate, we will see changes in these modl features and significant deviations from any scenario predictions.
 
 ## Summary
 

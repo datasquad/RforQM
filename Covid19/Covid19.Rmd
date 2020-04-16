@@ -578,7 +578,8 @@ So the picture is pretty much the same as for China as a whole. **But remember t
 
 ## Predicting the spread
 
-Perhaps we can build a prediction tool of how the pandemic spreads. Basically we are building a transition matrix. We are using the moving average of daily cases (`cases_ma`) and combine them with the measure of strength of travel connection to think about where it is likely that the virus would spread. There are of course many other factors which play into the spread of a virus. But here we will abstract from these. Even acknowledging this, it is apparent that travel connections are deemed to be important as many countries have now introduced severe travel restrictions. This also implies that using travel routes to anticipate the spread is likelly to onlly be useful in the early stages of a pandemic when such restrictions are not yet in place.
+Perhaps we can build a prediction tool of how the pandemic spreads. Basically we are building a transition matrix. Really, this is only one element of what real prediction tools do (see the link to a Lit review of fully thought out models), but it is an instructive exercise.
+We are using the moving average of daily cases (`cases_ma`) and combine them with the measure of strength of travel connection to think about where it is likely that the virus would spread. There are of course many other factors which play into the spread of a virus. But here we will abstract from these. Even acknowledging this, it is apparent that travel connections are deemed to be important as many countries have now introduced severe travel restrictions. This also implies that using travel routes to anticipate the spread is likelly to onlly be useful in the early stages of a pandemic when such restrictions are not yet in place.
 
 Let's look at all the countries in our sample for which we have any virus data (in `data`) and any international flight connection data in `connections`.
 
