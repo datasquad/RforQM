@@ -195,7 +195,7 @@ Here you can see the much praised ability by South Korea to suppress the numbers
 Now we look at some European countries.
 
 ```{r}
-sel_countries <- c("Spain", "France", "United_Kingdom")
+sel_countries <- c("Sweden", "Germany", "Brazil")
 g3 <- ggplot(subset(data, country %in% sel_countries), 
              aes(x=dates,y=cases, color = country)) +
       geom_line(size = 1) +   # size controls the line thickness
