@@ -277,7 +277,7 @@ g6 <- ggplot(subset(data, country %in% sel_countries),
 g6
 ```
 
-You can clearly see the exponential growth in the number of cases. Sometimes you will see these graphs on a logarithmic scale.
+You can clearly see the exponential growth in the number of cases at the beginning of the pandemic. Later you see, depending on teh country, that the implementation of various preventative strategies like travel bans and social distancing, flattened the curve. Sometimes you will see these graphs on a logarithmic scale.
 
 ```{r}
 sel_countries <- c("Germany", "France", "United_Kingdom")

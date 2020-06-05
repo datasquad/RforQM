@@ -1,0 +1,147 @@
+---
+title: "Time-Series Modelling"
+subtitle: "ECON20222 - Lecture 9"
+author: "Ralf Becker and Martyn Andrews"
+date: "March 2020"
+output: 
+  beamer_presentation:
+    includes:
+      in_header: ../latex_template.tex
+#     in_header: ../latex_student.tex  # use for student version
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning = FALSE,  comment=NA)
+```
+
+```{r}
+library(sets)         # used for some set operations
+library(forecast)     # used for some data smoothing
+library(readxl)       # enable the read_excel function
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # plotting toolbox
+library(xts)
+```
+
+## Aim for today
+
+\begin{itemize}
+  \item Show you some of the up to date Covid-19 data
+  \item Show you some of the data analysis skills you will learn
+  \item Show you some of the data coding skills you will learn
+\end{itemize}
+
+What you see today is an excerpt of a project I wrote for \href{https://www.core-econ.org/}{CORE-ECON Covid-19 Collection}.
+
+## Why, as economists, should we look at Covid-19
+
+* Rebalancing between Markets, Government, Civil Society
+* Understanding the current and future needs are important for business and government for planning (toilet paper producers, fresh food importers, pasta retailers, NHS hospitals, etc) 
+
+
+## Is there a society?
+
+\begin{columns}
+  
+  \begin{column}{0.5\textwidth}
+  "[...] there's no such thing as society. There are individual men and women and there are families. And no government can do anything except through people, and people must look after themselves first. It is our duty to look after ourselves and then, also, to look after our neighbours." (Margaret Thatcher, 1987)
+
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=5cm]{Thatcher.jpg}\\
+    \end{figure}
+
+  \end{column}
+    
+\end{columns}
+
+ 
+
+Often the world is portrayed as \textcolor{blue}{markets} on one hand and \textcolor{red}{government} on the other. 
+
+## \textcolor{blue}{Markets},\textcolor{red}{Government} and \textcolor{green}{Society}
+
+For long have economists realised that there is more than the simple juxtaposition of optimising self-interested individuals against interventionist governments.
+
+
+
+\begin{columns}
+  
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=3cm]{Ostrom.jpg}\\
+    \end{figure}
+    Elinor Ostrom, Economics of the Commons
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=3cm]{Kahneman.jpg}\\
+    \end{figure}
+    Daniel Kahnemann, Behavioural Economics
+  \end{column}
+    
+\end{columns}
+
+
+```{r, Import Mobility Data}
+# Data from https://www.google.com/covid19/mobility/
+mob_data <- read.csv("Global_Mobility_Report.csv")
+mob_data <- mob_data %>% filter(sub_region_1 %in% c("Greater Manchester", "Stockholm County", "Berlin"))
+mob_data$date <- as.Date(as.character(mob_data$date),"%d/%m/%Y")
+```
+
+## Covid-19 and Society
+
+The current crisis delivers some excellent examples of how markets, governments and society work together. 
+
+\footnotesize
+
+```{r, Plot Mobility, fig.height = 3, fig.width = 5}
+ggplot(mob_data,aes(x =date, y=transit_stations_percent_change_from_baseline, color=sub_region_1)) + geom_line(size = 1.2) +
+  labs(title = "Comparative use Public Transport", caption = "Source: https://www.google.com/covid19/mobility/") +
+  ylab("Change compared to same week previous year") +     
+  scale_color_discrete(name="Region")
+```
+
+\normalsize
+
+
+
+```{r, Import Stringency Data}
+# Data from https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker
+policy_data <- read.csv("https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv")
+policy_data <- policy_data %>% filter(CountryName %in% c("United Kingdom", "Sweden", "Germany"))
+policy_data$Date <- as.Date(as.character(policy_data$Date),"%Y%m%d")
+```
+
+## Covid-19 and Society
+
+So Germany and Sweden have fairly similar responses (wrt to the use of public transport). Is that because they had similar policies?
+
+\footnotesize
+
+```{r, Plot Policy, fig.height = 3, fig.width = 5}
+ggplot(policy_data,aes(x =Date, y=StringencyIndex, color=CountryName)) + 
+  geom_line(size = 1.2) +
+  labs(title = "Stringency of preventive policy measures", caption = "Source: Univ of Oxford, Blavatnik Schoool of Government") +
+  ylab("Stringency Index") + 
+  scale_color_discrete(name="Country")
+```
+
+\normalsize
+
+## Policy and Behaviour 
+
+This is an example where the policy alone does not explain the differences in behaviour.
+
+Despite much softer restrictions (compared to Germany) Swedes have restricted their use of public transport in a similar manner to their German counterparts.
+
+How messages are communicated matters. The UK and other governments now employs Behavioural Economists and Psychologists to advise them. See the Behavioural Insights Team (https://www.bi.team/our-work/covid-19/)
+
+## What about the results?
+
+
