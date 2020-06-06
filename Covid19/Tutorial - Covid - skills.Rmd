@@ -1,0 +1,292 @@
+---
+title: "R Coding Practice"
+subtitle: "Coding Skill Focus"
+author: "Ralf Becker"
+date: "June 2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE,  comment=NA)
+```
+
+## Aim for today
+
+* Become familiar with some Covid related data
+* Upload data from csv
+* Undertake some basic data exploration
+* Use time formats
+* Create time-series graphs
+
+In addition to this you will practice the three crucial coding skills of:
+
+* Using the help function
+* Searching the internet for solutions
+* Trial and error
+* Finding mistakes (debugging)
+
+I assume that you have a good working knowledge of R, including some experience with tidyverse and ggplot.
+
+
+## Why, as economists, should we look at Covid-19
+
+* Understanding the current and future needs are important for business and government for planning (toilet paper producers, fresh food importers, pasta retailers, NHS hospitals, etc)
+* An event which allows us to reconsider the interplay between markets, government, and civil society
+
+## Data used
+
+Today we will use two data sources.
+
+1. Google mobility data, from [https://www.google.com/covid19/mobility/](https://www.google.com/covid19/mobility/).
+2. Data from [https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker](Univ of Oxford, Blavatnik Schoool of Government). This dataset combines a range of Covid statistics, like the number of affected and the number of deseased.
+
+## Setup
+
+Load the libraries needed.
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # plotting toolbox
+```
+
+Setup your working directory.
+
+```{r, eval = FALSE}
+setwd("YOUR_WORKING_DIRECTORY")
+```
+
+or by using the menu - Session - Set Working Directory - To Source File Location
+
+## Import and examine Google mobility data
+
+Go to [https://www.google.com/covid19/mobility/](https://www.google.com/covid19/mobility/) and download the "Global_Mobility_Report.csv" and save it in your working directory folder. We use the `read.csv` function to load the data andsave them into the `mob_data` dataframe. Also run the `str` function to see what variable are included.
+
+```{r, eval= FALSE}
+mob_data <- Read.Csv("Global_Mobility_Report.csv")
+str(mob_data)
+```
+
+When you run this code you will encounter an error message 
+
+`could not find function "Read.Csv"`
+
+The error message tells you that R could not find the funcrion `Read.Csv`. 
+
+> Try to fix the code keeping in mind that R is case-sensitive. As you work with R you willoften get error messages and it is an important skill to use the information in these to help you find the problem. You could type `?Read.Csv` into the console. Typically as you type R will actually suggest available functions.
+
+Once you fixed the code you should see this output.
+
+```{r, echo = FALSE}
+mob_data <- read.csv("Global_Mobility_Report.csv")
+str(mob_data)
+```
+
+There are 477322 rows of data and 11 variables. We have geographical information and information on activity indices. More detail on the latter soon. 
+
+You can see that there is a `date` variable which contains date information. 
+
+```{r}
+head(mob_data$date)
+```
+
+This is currently formatted as a `factor` variable, i.e. a categorical variable. Let's use the `as.Date` function to convert this variable into a date format such that R recognises that these are dates.
+
+Dates can be formatted in number of ways, eg. 23 March 2020, 23/2/2020, 2020-03-23, can all stand for the same date. For teh `as.Date` function to work you will have to let it know how the data you are feeding in are formatted. 
+
+> Can you figure out which of the following three date formatting instructions fit to the above versions
+* %d %B %Y
+* %Y-%m-%d
+* %d/%m/%Y
+
+In order to understand what these do you should use your favourite serach engine and find some help, e.g. "R as.Date date formats". Look at the highest rated link and you should get some help on the meaning of these strings.
+
+> Try which of these works for our dataset. Either by substituting one of the above for `XXXX` or by looking at the dataset to see how the dates are formatted (you need to keep the quotation marks!). Also have a look at the examples in the help entry for `as.Date` (by calling `?as.Date` from the command window).
+
+
+```{r, eval = FALSE}
+mob_data$date <- as.Date(as.character(mob_data$date),"XXXX")
+head(mob_data$date) # this just displays the first
+```
+
+
+Once you have done this you need to look at the dates. If you translated them correcty they will look like below. If you havn't then you are likely to see `NA`s. If that is the case, then you will have to execute the aove line in which you imported the data again, as you have now removed the actual date information!
+
+```{r, echo = FALSE}
+mob_data$date <- as.Date(as.character(mob_data$date),"%d/%m/%Y")
+head(mob_data$date) # this just displays the first
+```
+
+Let's look at a small subset of the data, in particular we pick out three comparable city regions. The regional information is saved in `sub_region_1` and we create a list with the three regions, `region_sel`. We then filter all observations from `mob_data` which belong to one of these three regions. Do do so we use the `%in%` operator. In words this operator does something like "chose all values which match one of the values in the following list".
+
+> Search the internet to figure out how to use this operator given the remaining information, to filter out all the rows which belong to one of the regions in `region_sel`. Replace all `XXXX` in the following code chunk. If you do it correctly you should find approximately 315 observations in `mob_data_sel` (a few more if you downloaded the file later than 6 June 2020).
+
+```{r, eval=FALSE}
+region_sel <- c("Greater Manchester", "Stockholm County", "Berlin")
+
+mob_data_sel <- mob_data %>% 
+  filter(sub_region_1 XXXX XXXX)
+
+nrow(mob_data)
+nrow(mob_data_sel)
+```
+
+```{r, echo = FALSE}
+region_sel <- c("Greater Manchester", "Stockholm County", "Berlin")
+
+mob_data_sel <- mob_data %>% 
+  filter(sub_region_1 %in% region_sel)
+
+nrow(mob_data)
+nrow(mob_data_sel)
+```
+
+Let's look at some summary statistics.
+
+```{r}
+summary(mob_data_sel)
+```
+
+You can see that there are 6 activity indices. Google extract these from the detailed user data they. For instance the `workplaces_percent_change_from_baseline` provides information on the extend to which they detected activities in workplaces. The numbers are percentage changes relative to a baseline. It is important to understand what the baseline is. This is a general point, you need to understand data definitions. On the [https://www.google.com/covid19/mobility/data_documentation.html?hl=en](data documentation page) you can find the following:
+
+"Changes for each day are compared to a baseline value for that day of the week:
+The baseline is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.""
+
+
+### Some data plots
+
+Let's plot a few of the activity inices using the `ggplot` function.
+
+First we wpick out one of the locations, `Greater Manchester` and plot `workplaces_percent_change_from_baseline`. We achieve this by first creating a new (temporary) dataset, `temp` which only contains data from Manchester. We call it temp as we don't expect to need that data file afterwards.
+
+```{r}
+temp <- mob_data_sel %>% filter(sub_region_1 == "Greater Manchester")
+ggplot(temp,aes(x =date, y=workplaces_percent_change_from_baseline)) + 
+  geom_line(size = 1.2) +
+  labs(title = "Comparative workplace activity",
+       caption = "Source: https://www.google.com/covid19/mobility/") +
+  ylab("Change compared to baseline") 
+```
+
+> Use `?labs` to figure out what the last few lines in the code did.
+
+Let's add the same information for Berlin and Stockholm. Hence we are using `mob_data_sel`.
+
+```{r, Plot Mobility}
+ggplot(mob_data_sel,aes(x =date, y=workplaces_percent_change_from_baseline, color=sub_region_1)) + 
+  geom_line(size = 1.2) +
+  labs(title = "Comparative workplace activity", 
+       caption = "Source: https://www.google.com/covid19/mobility/") +
+  ylab("Change compared to baseline") +     
+  scale_color_discrete(name="Region")
+```
+
+> Which part of the above code chunk created three lines with differnt colors?
+
+You can clearly see the dip due to lockdowns, the gradual increase of the activity since and the weekly seasonality pattern.
+
+## Import policy and outcome data
+
+Let's use another dataset which contains measures of how stringet a countrie's policies were to restrict the spread of the pandemic, but also contains some basic health indicators. Go to the [https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker](Coronavirus) page of Blavatnik Schoool of Government (Uni of Oxford) and download the latest available data into your working directory.
+
+```{r, eval = FALSE}
+policy_data <- XXXX("OxCGRT_latest.csv")
+```
+
+
+```{r, echo = FALSE}
+policy_data <- read.csv("OxCGRT_latest.csv")
+```
+
+When done correctly you should have a new datafile with 42 variables.
+
+Let's restrict ourselves to the three countries which correspond to the above cities (`country_sel`).
+
+```{r, eval = FALSE}
+country_sel <- c("United Kingdom", "Sweden", "Germany")
+
+policy_data_sel <- XXXX %>% 
+  XXXX(CountryName XXXX country_sel)
+names(policy_data_sel)
+```
+
+
+```{r, echo = FALSE}
+country_sel <- c("United Kingdom", "Sweden", "Germany")
+
+policy_data_sel <- policy_data %>% 
+  filter(CountryName %in% country_sel)
+names(policy_data_sel)
+```
+
+Dates are in the `Date` variable. They are formatted as `20200521` for 21 May 2020. Let's translate these into date format. 
+
+> You will need to let the `as.Date` function now how the date information is formatted.
+
+```{r, eval = FALSE}
+policy_data_sel$Date <- as.Date(as.character(policy_data_sel$Date),"XXXX")
+```
+
+```{r, echo = FALSE}
+policy_data_sel$Date <- as.Date(as.character(policy_data_sel$Date),"%Y%m%d")
+```
+
+> Check that the date conversion worked and you can still see the date information in `Date`. If it didn't work you will see `NA`s.
+
+The variable `StringencyIndex` contains an index describing the severity of the policy measures imposed.
+
+```{r}
+ggplot(policy_data_sel,aes(x =Date, y=StringencyIndex, color=CountryName)) + 
+  geom_line(size = 1.2) +
+  labs(title = "Stringency of preventive policy measures", 
+       caption = "Source: Univ of Oxford, Blavatnik Schoool of Government") +
+  ylab("Stringency Index") + 
+  scale_color_discrete(name="Country")
+```
+
+The `+ scale_color_discrete(name="Country")` part of the above code changes the title to the legend which is automatically added to the plot as soon as you use the `color` aesthetic. Admittedly, the naming of this is not obvious but if you googled "r how to change legend title" you would quickly find examples which will tell you how to do this.
+
+Let's also look at some infection numbers.
+
+```{r, eval = FALSE}
+ggplot(policy_data_sel,aes(x =XXXX, y=XXXX, color=XXXX)) + 
+  geom_line(size = 1.2) +
+  labs(XXXX = "Confirmed Covid-19 cases", 
+       caption = "Source: Univ of Oxford, Blavatnik Schoool of Government") +
+  XXXX("Number of Covid infections") + 
+  scale_color_discrete(name="Country")
+```
+
+```{r, echo = FALSE}
+ggplot(policy_data_sel,aes(x =Date, y=ConfirmedCases, color=CountryName)) + 
+  geom_line(size = 1.2) +
+  labs(title = "Confirmed Covid-19 cases", 
+       caption = "Source: Univ of Oxford, Blavatnik Schoool of Government") +
+  ylab("Number of Covid infections") + 
+  scale_color_discrete(name="Country")
+```
+
+Or now the number of confirmed deaths.
+
+```{r, eval = FALSE}
+ggplot(XXXX) + 
+  geom_XXXX(size = 1.2) +
+  labs(title = "Confirmed Covid-19 deaths", 
+       caption = "Source: Univ of Oxford, Blavatnik Schoool of Government") +
+  XXXX("Number of Covid related deaths") + 
+  XXXX(name="Country")
+```
+
+```{r, echo = FALSE}
+ggplot(policy_data_sel,aes(x =Date, y=ConfirmedDeaths, color=CountryName)) + 
+  geom_line(size = 1.2) +
+  labs(title = "Confirmed Covid-19 deaths", 
+       caption = "Source: Univ of Oxford, Blavatnik Schoool of Government") +
+  ylab("Number of Covid related deaths") + 
+  scale_color_discrete(name="Country")
+```
+
+When looking at the number of deaths one would have to concluded that the UK has fared worse so far. This, however, does not take the size of the population into account. While the UK population is about 66 million, that of Sweden is about 10 million. If you adjust for this, then, in terms of deaths Sweden and the UK have about similar numbers.
+
