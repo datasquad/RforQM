@@ -136,7 +136,7 @@ names(policy_data_sel)
 Dates are in the `Date` variable. They are formatted as `20200521` for 21 May 2020. Let's translate these into date format.
 
 ```{r}
-policy_data$Date <- as.Date(as.character(policy_data$Date),"%Y%m%d")
+policy_data_sel$Date <- as.Date(as.character(policy_data_sel$Date),"%Y%m%d")
 ```
 
 The variable `StringencyIndex` contains an index describing teh severity of the policy measures imposed.
