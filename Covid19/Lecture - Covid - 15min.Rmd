@@ -1,8 +1,8 @@
 ---
-title: "Time-Series Modelling"
-subtitle: "ECON20222 - Lecture 9"
-author: "Ralf Becker and Martyn Andrews"
-date: "March 2020"
+title: "Covid-19 and Economics"
+subtitle: "... where are the links?"
+author: "Ralf Becker"
+date: "June 2020"
 output: 
   beamer_presentation:
     includes:
@@ -26,17 +26,27 @@ library(xts)
 ## Aim for today
 
 \begin{itemize}
+  \item Point out why this is relevant for Economists
   \item Show you some of the up to date Covid-19 data
   \item Show you some of the data analysis skills you will learn
   \item Show you some of the data coding skills you will learn
 \end{itemize}
 
-What you see today is an excerpt of a project I wrote for \href{https://www.core-econ.org/}{CORE-ECON Covid-19 Collection}.
+What you see today is related to a larger data project in the \href{https://www.core-econ.org/}{CORE-ECON Covid-19 Collection}.
 
 ## Why, as economists, should we look at Covid-19
 
-* Rebalancing between Markets, Government, Civil Society
+The **small** questions
+
 * Understanding the current and future needs are important for business and government for planning (toilet paper producers, fresh food importers, pasta retailers, NHS hospitals, etc) 
+
+The **big** questions
+
+Covid-19 highlights other important issues we ought to think about as economists: inequality, climate change, ...
+
+* What is the value of a life?
+* Why are some groups in society affected more than others?
+* Rebalancing between Markets, Government, Civil Society
 
 
 ## Is there a society?
@@ -63,7 +73,7 @@ Often the world is portrayed as \textcolor{blue}{markets} on one hand and \textc
 
 ## \textcolor{blue}{Markets},\textcolor{red}{Government} and \textcolor{green}{Society}
 
-For long have economists realised that there is more than the simple juxtaposition of optimising self-interested individuals against interventionist governments.
+For long economists have realised that there is more than the simple juxtaposition of optimising self-interested individuals against interventionist governments.
 
 
 
@@ -74,24 +84,27 @@ For long have economists realised that there is more than the simple juxtapositi
     	\centering
     	\includegraphics[width=3cm]{Ostrom.jpg}\\
     \end{figure}
-    Elinor Ostrom, Economics of the Commons
+    Elinor Ostrom\\ 
+    Economics of the Commons
   \end{column}
   \begin{column}{0.5\textwidth}
     \begin{figure}
     	\centering
     	\includegraphics[width=3cm]{Kahneman.jpg}\\
     \end{figure}
-    Daniel Kahnemann, Behavioural Economics
+    Daniel Kahnemann\\
+    Behavioural Economics
   \end{column}
     
 \end{columns}
 
 
 ```{r, Import Mobility Data}
-# Data from https://www.google.com/covid19/mobility/
+# Data from 
+# https://www.google.com/covid19/mobility/
 mob_data <- read.csv("Global_Mobility_Report.csv")
-mob_data <- mob_data %>% filter(sub_region_1 %in% c("Greater Manchester", "Stockholm County", "Berlin"))
-mob_data$date <- as.Date(as.character(mob_data$date),"%d/%m/%Y")
+mob_data <- mob_data %>% filter(sub_region_1 %in%       c("Greater Manchester",                             "Stockholm County", "Berlin"))
+mob_data$date <-        as.Date(as.character(mob_data$date),"%Y-%m-%d")
 ```
 
 ## Covid-19 and Society
@@ -116,6 +129,8 @@ ggplot(mob_data,aes(x =date, y=transit_stations_percent_change_from_baseline, co
 policy_data <- read.csv("https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv")
 policy_data <- policy_data %>% filter(CountryName %in% c("United Kingdom", "Sweden", "Germany"))
 policy_data$Date <- as.Date(as.character(policy_data$Date),"%Y%m%d")
+policy_data <- droplevels(policy_data)  # remove unused levels
+policy_data$CountryName <- factor(policy_data$CountryName, levels = c("Germany","United Kingdom","Sweden"))
 ```
 
 ## Covid-19 and Society
@@ -138,10 +153,87 @@ ggplot(policy_data,aes(x =Date, y=StringencyIndex, color=CountryName)) +
 
 This is an example where the policy alone does not explain the differences in behaviour.
 
-Despite much softer restrictions (compared to Germany) Swedes have restricted their use of public transport in a similar manner to their German counterparts.
+Despite much softer restrictions (compared to Germany) Swedes have restricted their use of public transport in a similar manner to their German counterparts. 
 
-How messages are communicated matters. The UK and other governments now employs Behavioural Economists and Psychologists to advise them. See the Behavioural Insights Team (https://www.bi.team/our-work/covid-19/)
+Human behaviour is not easliy modeled!
 
-## What about the results?
+How messages are communicated matters. The UK and other governments now employ Behavioural Economists and Psychologists to advise them. 
+
+See the Behavioural Insights Team (https://www.bi.team/our-work/covid-19/).
 
 
+## Again, why is this economics?
+
+Typically, after huge crisis, we learn, and we change.
+
+* The great depresison: Governments had a role in aggregate demand management
+* WWII: The Bretton Woods Institutions were created in order to co-operate, and the Marshall Plan helped Germany
+* Financial Crisis, 2008: Reconsideration of the role of financial markets and regulation
+
+What economic changes will come after Covid-19?
+
+Is it another international institution to deal with global risks (pandemics, climate change, etc.)?
+
+How should we decide which of these potentially catastrophic events we should tackle, if any, or both?
+
+## Can we apply simple economic principles to catastrophes?
+
+There are certainly elements of traditional cost-benefit analysis that could be applied, but ...  
+
+&nbsp;
+
+\begin{columns}
+  
+  \begin{column}{0.33\textwidth}
+    mostly measureable in monetary terms
+    \begin{enumerate}
+      \item ventilators
+      \item PPE
+      \item labs
+      \item scientists to develop vaccine
+      \item bureaucracies to coordinate. etc
+    \end{enumerate}
+  \end{column}
+  \begin{column}{0.33\textwidth}
+     \begin{figure}
+        	\centering
+        	\includegraphics[width=4cm]{scale_CB.jpg}\\
+      \end{figure}
+
+  \end{column}
+  \begin{column}{0.33\textwidth}
+    many which are not easily measured in monetary terms
+        \begin{enumerate}
+      \item saved lifes, now and in the future
+    \end{enumerate}
+
+  \end{column}
+    
+\end{columns}
+
+\tiny
+
+Literature:
+
+* Martin and Pindyck. "Averting catastrophes: The strange economics of Scylla and Charybdis." American Economic Review 105, no. 10 (2015): 2947-85.
+* Viscusi and Aldy, “The value of a statistical life: a critical review of market estimates throughout the world,” Journal of risk and uncertainty, 2003, 27 (1), 5–76.
+
+\normalsize
+
+## How will your degree help you think?
+
+* We will not give you complete answers ... where there are none
+* We will give you some tools to structure your thinking process
+
+\begin{figure}
+\begin{tabular}{cc}
+  \includegraphics[width=30mm]{maths} &   \includegraphics[width=30mm]{models} \\
+ \includegraphics[width=30mm]{coding} &   \includegraphics[width=30mm]{communicating} 
+\end{tabular}
+\end{figure}
+
+##
+
+Thanks for joining us!
+
+any questions? don't hold back!
