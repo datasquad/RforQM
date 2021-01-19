@@ -34,6 +34,8 @@ library(xts)
 
 What you see today is related to a larger data project in the \href{https://www.core-econ.org/}{CORE-ECON Covid-19 Collection}.
 
+A collection of pieces by economists on issues stemming from Covid-19 can be found on \href{https://coronavirusandtheeconomy.com/}{https://coronavirusandtheeconomy.com/}
+
 ## Why, as economists, should we look at Covid-19
 
 The **small** questions
@@ -42,11 +44,13 @@ The **small** questions
 
 The **big** questions
 
-Covid-19 highlights other important issues we ought to think about as economists: inequality, climate change, ...
+Covid-19 highlights other important issues we ought to think about as economists: 
 
+* Can we learn how to preserve some of the emission savings? **Climate Change**
 * What is the value of a life?
-* Why are some groups in society affected more than others?
+* Why are some groups in society affected more than others? **Inequalities!**
 * Rebalancing between Markets, Government, Civil Society
+
 
 
 ## Is there a society?
@@ -54,7 +58,7 @@ Covid-19 highlights other important issues we ought to think about as economists
 \begin{columns}
   
   \begin{column}{0.5\textwidth}
-  "[...] there's no such thing as society. There are individual men and women and there are families. And no government can do anything except through people, and people must look after themselves first. It is our duty to look after ourselves and then, also, to look after our neighbours." (Margaret Thatcher, 1987)
+  "[...] there's **no such thing as society**. There are individual men and women and there are families. And no government can do anything except through people, and people must look after themselves first. It is our duty to look after ourselves and then, also, to look after our neighbours." (Margaret Thatcher, 1987)
 
   \end{column}
   \begin{column}{0.5\textwidth}
@@ -99,29 +103,6 @@ For long economists have realised that there is more than the simple juxtapositi
 \end{columns}
 
 
-```{r, Import Mobility Data}
-# Data from 
-# https://www.google.com/covid19/mobility/
-mob_data <- read.csv("Global_Mobility_Report.csv")
-mob_data <- mob_data %>% filter(sub_region_1 %in%       c("Greater Manchester",                             "Stockholm County", "Berlin"))
-mob_data$date <-        as.Date(as.character(mob_data$date),"%Y-%m-%d")
-```
-
-## Covid-19 and Society
-
-The current crisis delivers some excellent examples of how markets, governments and society work together. 
-
-\footnotesize
-
-```{r, Plot Mobility, fig.height = 3, fig.width = 5}
-ggplot(mob_data,aes(x =date, y=transit_stations_percent_change_from_baseline, color=sub_region_1)) + geom_line(size = 1.2) +
-  labs(title = "Comparative use Public Transport", caption = "Source: https://www.google.com/covid19/mobility/") +
-  ylab("Change compared to same week previous year") +     
-  scale_color_discrete(name="Region")
-```
-
-\normalsize
-
 
 
 ```{r, Import Stringency Data}
@@ -135,7 +116,7 @@ policy_data$CountryName <- factor(policy_data$CountryName, levels = c("Germany",
 
 ## Covid-19 and Society
 
-So Germany and Sweden have fairly similar responses (wrt to the use of public transport). Is that because they had similar policies?
+The current crisis delivers some excellent examples of how markets, governments and society work together. 
 
 \footnotesize
 
@@ -145,6 +126,31 @@ ggplot(policy_data,aes(x =Date, y=StringencyIndex, color=CountryName)) +
   labs(title = "Stringency of preventive policy measures", caption = "Source: Univ of Oxford, Blavatnik Schoool of Government") +
   ylab("Stringency Index") + 
   scale_color_discrete(name="Country")
+```
+
+\normalsize
+
+
+
+```{r, Import Mobility Data}
+# Data from 
+# https://www.google.com/covid19/mobility/
+mob_data <- read.csv("Global_Mobility_Report.csv")
+mob_data <- mob_data %>% filter(sub_region_1 %in%       c("Greater Manchester",                             "Stockholm County", "Berlin"))
+mob_data$date <-        as.Date(as.character(mob_data$date),"%Y-%m-%d")
+```
+
+## Covid-19 and Society
+
+Germany and Sweden had different policy responses. Did that result in fundamentally different bahaviour/usage of public transport?
+
+\footnotesize
+
+```{r, Plot Mobility, fig.height = 3, fig.width = 5}
+ggplot(mob_data,aes(x =date, y=transit_stations_percent_change_from_baseline, color=sub_region_1)) + geom_line(size = 1.2) +
+  labs(title = "Comparative use Public Transport", caption = "Source: https://www.google.com/covid19/mobility/") +
+  ylab("Change compared to same week previous year") +     
+  scale_color_discrete(name="Region")
 ```
 
 \normalsize

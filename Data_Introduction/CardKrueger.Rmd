@@ -18,8 +18,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 R is a powerful software for statistical analysis. It is open source and hence FREE software. It is constantly developped and functionality is being improved. The "price" we pay for this is that we have to do a little more set-up work to make it work.
 
 In particular we need packages which are provided for free by researchers/programmers that provide useful functionality.
-
-But we add libraries which enhance its capabilities. 
+In order to make these packages we use the `library` command.
 
 ```{r}
 library(tidyverse)    # for almost all data handling tasks
@@ -57,10 +56,10 @@ The following R programming concepts were used in this document. The links lead 
 
 # Importing Data
 
-The data here are stored as an xlsx format in `public.xlsx`. In order to import these we require the `readxl` package which we loaded earlier. 
+The data here are stored as an xlsx format in `CK_public.xlsx`. In order to import these we require the `readxl` package which we loaded earlier. 
 
 ```{r}
-# make sure you use the correct path
+# make sure you use the correct path (and only / not \ in the path!)
 CKdata<- read_xlsx("C:/Rcode/RforQM/Data_Introduction/CK_public.xlsx")
 str(CKdata)  # prints some basic info on variables
 ```
@@ -75,7 +74,7 @@ str(CKdata)  # prints some basic info on variables
 
 We can see that now all variables are numeric (`num`) variables which is as we expect.
 
-There are 410 observations, each representing one fast-food restaurant. Each restaurant has some variables which characterise the store and then two sets of variables which are observed before the new minimum wage was introduced to New Jersey (Wave 1: Feb 15 to Mar 14, 1992) and after the policy change (Wave 1: Nov 5 to Dec 31, 1992). Variables which relate to the second wave will have a `2` at the end of the variable name.
+There are 410 observations, each representing one fast-food restaurant. Each restaurant has some variables which characterise the store and then two sets of variables, one set which is observed before the new minimum wage was introduced to New Jersey (Wave 1: Feb 15 to Mar 14, 1992) and another set which is observed after the policy change (Wave 2: Nov 5 to Dec 31, 1992). Variables which relate to the second wave will have a `2` at the end of the variable name.
 
 The following variables will be important for the analysis here:
 
@@ -112,19 +111,21 @@ Tab1 <- CKdata %>% group_by(STATEf) %>%
           print()
 ```
 
-Let's exlpain what the command does. It uses the powerful syntax introduced by the `tidyverse` (which is why we needed loading this package). This is a super useful technique and you can find a more detailed introduction on [ECLR](http://eclr.humanities.manchester.ac.uk/index.php/R_AnalysisTidy). But let's translate the above command into English to illustrtae what it does.
+Let's exlpain what the command does. In this example this produced a frequency table or sometimes called contingency table. It uses the powerful syntax introduced by the `tidyverse` (which is why we needed loading this package). This is a super useful technique and you can find a more detailed introduction on [ECLR](http://eclr.humanities.manchester.ac.uk/index.php/R_AnalysisTidy). But let's translate the above command into English to illustrate what it does.
 
-We create a new object named `Tab1`. To  that new object we assign the result of the operation on the right of `<-`. So what happens to the right of `<-`? Start with object `CKdata` (wich is our entire spreadsheet with all observations and all variables) and send it (the piping command `%>%`) to the `group_by` function. That function does what t says, it groups the data but it requires some additional information, i.e. by what variable it should group. We are asking it to group by the `STATEf` variable, i.e. group the data (or split the data) into a subset for each state (here PA and NJ). Then send (`%>%`) the result (the grouped dataset) to the `summarise` function. In here we create a new variable (`n =`) which takes the value `n()`. That last bit makes no obvious sense unless you know (and now you do) that `n()` is the function called `n` which counts the number of observations. So it will count the observations for the the grouped datasets. Then we send (`%>%`) the result to the `print()` function, which eventually produces some output.
+We create a new object named `Tab1`. To  that new object we assign the result of the operation on the right of `<-`. So what happens to the right of `<-`? Start with object `CKdata` (wich is our entire spreadsheet with all observations and all variables) and send it (the piping command `%>%`) to the `group_by` function. That function does what it says, it groups the data but it requires some additional information, i.e. by what variable it should group. We are asking it to group by the `STATEf` variable, i.e. group the data (or split the data) into a subset for each state (here PA and NJ). Then send (`%>%`) the result (the grouped dataset) to the `summarise` function. In here we create a new variable (`n =`) which takes the value `n()`. That last bit makes no obvious sense unless you know (and now you do) that `n()` is the function called `n` which counts the number of observations. So it will count the observations for the the grouped datasets. Then we send (`%>%`) the result to the `print()` function, which eventually produces some output.
 
 Try yourself to change some of that function. For instance replace `STATEf` with `CHAINf` and see what happens. Or, even more interesting, replace `STATEf` with `CHAINf,STATEf` and sit back in awe. How long would it have taken you in Excel to do that?
 
-A frequency table for the `STATUS2` variable we can obtain as follows (note that `STATE = 1` for New Jersey):
+In programming there are always several ways to achieve the same things. We typically revert to the method which is simpler to implement at any time. Let us show you a different way to obtain frequency tables, here for the variable, `STATUS2`. You can check the codebook for details, but it represents the interview status.
 
 ```{r}
 table(CKdata$STATUS2,CKdata$STATEf)
 ```
 
-All these data are identical to those in the Card and Krueger paper.
+Check out the help function (by typing `?table` into the Console and pressing ENTER) to figure out what the `table` function does.
+
+All these summary statistics are identical to those in the Card and Krueger paper.
 
 Now we replicate some of the summary statistics in Table 2. First we want proportions of different chain types. At core of this we will first calculate a frequency table again (`table()`) but then we feed the result of this straight into the `prop.table()` function which translates frequencies into proportions. The addition of the `margin = 2` option ensures that proportions are calculated by state (2=columns). Try for yourself what changes if you either set `margin = 1` (1 for rows) or leave this option out.
 
@@ -155,7 +156,7 @@ ggplot(CKdata,aes(WAGE_ST, colour = STATEf), colour = STATEf) +
 
 ```
 
-Both plots sow that the starting wage distribution is fairly similar in both states, with peaks at the minimum wage of $4.25 and $5.00.
+Both plots sow that the starting wage distribution is fairly similar in both states, with peaks at the minimum wage of \$4.25 and at \$5.00.
 
 # Policy Evaluation
 
@@ -184,7 +185,7 @@ In order to evaluate whether the increased minimum wage has an impact on employm
 
 In the list of variables above you can see that we have before and after policy employee numbers for full-time staff and part-time staff. Card and Krueger calculated a full-time equivalent (FTE) employee number. In order to calculate this they made the assumption that, on average, part-time employees worked 50% of a full-time employee and that manager (`NMGRS` and `NMGRS2`) worked full time.
 
-Hence we will generate two new variables `FTE` and `FTE2`. As almost always the same result can be achieved in different ways in R. So we demonstrate two fifferent ways to create these two variables.
+Hence we will generate two new variables `FTE` and `FTE2`. As almost always the same result can be achieved in different ways in R. So we demonstrate two different ways to create these two variables.
 
 ```{r}
 CKdata$FTE <- CKdata$EMPFT + CKdata$NMGRS + 0.5*CKdata$EMPPT
@@ -274,3 +275,5 @@ These findings clearly contradicted a simplistic analysis of labour markets (ass
 * These findings were challenged in Neumark, David, and William Wascher. 2000. "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania: Comment." American Economic Review, 90 (5): 1362-1396.
 * A reply (by and large defending the original findings) to this criticism was published in the same journal edition by Card, David, and Alan B. Krueger. 2000. "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania: Reply." American Economic Review, 90 (5): 1397-1420. 
 * An overview of the mpirical evidence is provided in this [Report](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/844350/impacts_of_minimum_wages_review_of_the_international_evidence_Arindrajit_Dube_web.pdf) by Arindrajit Dube for the UK Government. "Especially for the set of studies that consider broad groups of workers, the overall evidence base suggests an employment impact of close to zero."
+
+This debate has become very topical again in the wake of a proposed hike of the minium wage in the United States. For instance you can refer to this (favourable) [discussion](https://www.epi.org/publication/raising-the-federal-minimum-wage-to-15-by-2024-would-lift-pay-for-nearly-40-million-workers/) of this policy.
