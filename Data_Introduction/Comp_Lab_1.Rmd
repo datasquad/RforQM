@@ -1,7 +1,7 @@
 ---
 title: "Quantitative Methods - Computer Lab 1"
 author: "Ralf Becker"
-date: "1 February 2019"
+date: "1 February 2021"
 output:
   pdf_document: default
   html_document:
@@ -12,25 +12,29 @@ output:
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, error = FALSE)
 ```
 
-For this computer lab we are using exactly the same data as for the first lecture. So please make sure that you have the datafile `RRdata.xlsx` in the folder you want to work from.
+Before you start you should create a space (i.e. a folder) on your computer from where you are planning to do all your R work. Make sure you understand where that folder is and that you know the path to that folder (Apple users, if you do not know how to find the path to a particular folder, then look at this [https://piazza.com/class/k5wtxg2vebk5or?cid=7](Piazza post)). If you are using a computer lap computer you should create a folder for your R work on the P drive. This will be accessible to you whenever you log on to a University computer, or from anywhere via [https://pdrives.manchester.ac.uk/horde/login.php](this link).
+
+Let's say you named your folder `Rwork` directly on the P drive and in that folder created a subfolder for this unit `QM` , then the path to your folder will be `P:\Rwork\QM`.
+
+For this computer lab we are using exactly the same data as for the first lecture. So please make sure that you have the datafile `CK_public.xlsx` in the folder you just created and want to work from. It will also be useful to have `CK_codebook.txt` readily available (also from BB, Lecture 1).
 
 # Preparing your script file 
 
-Via the RStudio menu (FILE - NEW FILE - R SCRIPT) open a new script file and safe it in the folder from which you want to work (best to create a dedicated folder for your R work). 
+Via the RStudio menu (FILE - NEW FILE - R SCRIPT) open a new script file and safe it in the folder from which you want to work (see above). 
 
 Start by creating a comment line at the top of that file which may say something like
 
 ```{r, eval = FALSE}
 # File for first QM Computer Lab
-# February 2019
+# February 2020
 ```
 
 If not mentioned otherwise all the following code should be added to that script file and executed from there.
 
-Next you should ensure that you set the working directory to the directory where your scriptfile is in.
+Next you should ensure that you set the working directory to the directory where your scriptfile and datafile is in. If your folder was `P:\Rwork\QM` then the command below should read `setwd("P:/Rwork/QM")`. Note that all backward slashes (`\`) have to be replcaed by forward slashes (`/`). Don't ask why, just accept ;-).
 
 ```{r, eval = FALSE}
-setwd("P:/Rcode/QM")   # replace the specific path with your path
+setwd("XXXX:/XXXX")   # replace the XXXX with your drive and path
 ```
 
 Note that R only understands forward slashes `/`.
@@ -50,176 +54,242 @@ If RStudio tells you that one or more of these libraries are not installed then 
 install.packages("stargazer")
 ```
 
-Once you have done that you can call `library(stargazer)` again without running into problems.
+You can run this straight from the command/console or you could instead install the package via the packages tab on the right hand side. **Do not do this on computer lab computers as these packages should be preinstalled**.
+
+YOu will need to do this only once on your computer and once you have done that you can call `library(stargazer)` again without running into problems.
 
 # Data Upload
 
-Make sure you have set the working directory to the directory in which you saved your script file (see above). Make sure that your data upload is successful. 
+Make sure you have set the working directory to the directory in which you saved your script file (see above). As we are dealing with data in an excel file we will use the `read_excel` function to load the data. Before you run this command open the actual spreadsheet and try to see how missing data are coded. In this case they are coded as dots ("."). But in other datafiles you may find "NA", "n.a.", "-9999" or other ways to code missing data. It is best to let R know how missing data look. This will simplfy your life tremendously.
 
 ```{r}
-RRData <- read_excel("RRdata.xlsx")
-RRData <- as.data.frame(RRData)
-str(RRData)  # prints some basic info on variables
+CKdata <- read_excel("CK_public.xlsx",na = ".")
 ```
 
-You should now see the `RRData` object in your Environment (right hand pane).
+Make sure that your data upload is successful. Easiest to run the `str` (structure) function.
 
-Change the `Country` variable into a factor variable and confirm that the change of data type worked.
+```{r}
+str(CKdata)  # prints some basic info on variables
+```
+
+You should now see the `CKdata` object in your Environment (right hand pane).
+
+There are 410 observations, each representing one fast-food restaurant. Each restaurant has some variables which characterise the store and then two sets of variables which are observed before the new minimum wage was introduced to New Jersey (Wave 1: Feb 15 to Mar 14, 1992) and after the policy change (Wave 1: Nov 5 to Dec 31, 1992). Variables which relate to the second wave will have a `2` at the end of the variable name.
+
+The following variables will be important for the analysis here:
+
+* `SHEET`, this is a unique identifier for each restaurant 
+* `STATE`, 1 if New Jersey (NJ); 0 if Pennsylvania (Pa) 
+* `WAGE_ST`, starting wage ($/hr), Wave 1
+* `WAGE_ST2`, starting wage ($/hr), after policy, Wave 2
+* `STATUS2`, the status of the Wave 2 interview, 0 = refused, 1 = completed, 3, permanently closed, 2, 4 and 5 = temporarily closed
+* `CHAIN`, 1 = Burger King; 2 = KFC; 3 = Roy Rogers; 4 = Wendy's
+* `EMPFT`, # full-time employees before policy implementation
+* `EMPFT2`, # full-time employees after policy implementation
+* `EMPPT`, # part-time employees before policy implementation
+* `EMPPT2`, # part-time employees after policy implementation
+* `NMGRS`, # managers/ass't managers before policy implementation
+* `NMGRS2`, # managers/ass't managers before policy implementation
+
+
+# Accessing data
+
+The `CKdata` item in your environment basically contains the entire spreadsheet of data. You can look at the entire spreadsheet by clicking on the tiny spreadsheet in the `CKdata` line. This will open a new tab with the spreadsheet. Have a look and then close the tab again.
+
+It is important to know how you can access subsets of data. Run through the following commands to see what happens. Perhaps also experiment a bit by changing the commands and predicting what the outcome should be.
+
+```{r, results='hide'}
+CKdata[1,]
+CKdata[,2]
+CKdata[3,4]
+CKdata[,4:6]
+CKdata[4:6]
+CKdata[2:4,5:10]
+CKdata$SOUTHJ
+CKdata$SOUTHJ[1:5]
+CKdata[c("CHAIN","STATE")]
+```
+
+These are all different ways to select particular observations (rows in a spreadsheet) and variables (columns in a spreadsheet). There were two particular techniques which are important
+
+* `CKdata$CHAIN` did address the `CHAIN` variable in the `CKdata` dataset (`DATASET$VARIABLE`).
+* `c("CHAIN","STATE")` allowed us to access two very particular variables, ignoring all other 44 variables. It is useful to know what `c("CHAIN","STATE")` actually does.
+
+```{r}
+c("CHAIN","STATE")
+```
+ 
+It creates a list with two elements, here two text strings. But you can also create lists with numbers.
+ 
+```{r}
+c(3.5,2/3)
+```
+
+In fact you could even create lists which mixed datatypes.
+
+```{r}
+c("Countries in the EU", 28-1, ":-(")
+```
+
+Lists are quite fundamental to the way how R stores data.
+
+# Data Formats
+
+We can see (from the output to `str(CKdata)`) that all variables are numeric (`num`) variables, i.e. the software will treat them as numbers. If you check the `CK_codebook.txt` on BB you will find what all the numbers mean. For instance an entry of `2` in the `CHAIN` variable means that this is a "KFC" restaurant.
+
+For later it will be convenient to have `STATE` and `CHAIN` variables which aren't numeric, but categorical variables. In R these are called `factor` variables. Hence we will create two new variables, `STATEf` and `CHAINf` which contain the same info, but just in a way easier to understand.
+
+```{r}
+CKdata$STATEf <- as.factor(CKdata$STATE)  # translates a variable into a factor variable
+levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey") # changes the names of the categories
+```
+
+There are a number of important elements in these two lines
+
+* `CKdata$STATEf <-` creates a new variable in the `CKdata` object, called `STATEf`. `<-` is called the assignment operator and it assigns some value to that new variable. It will assign whatever comes to the right hand side of `<-`
+* `as.factor()` is a function called `as.factor`. If you want to find out what a function does you can call the help function `?as.factor`. This one ensures that creates a variable as a factor (categorical) variable. But it requires an input (Whatever comes inside tha parenthesis). Here we ask R to change the `num` variable `CKdata$STATE` into a factor variable.
+* `levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey")` then changes the names of the levels (categories) into sensible names. Here we use again the assignment operator `<-`. 
+
+Now create a new variable `CHAINf` which achieves the same for the `CHAIN` variable. Replace the `XXXX` to make this code work.
+
+```{r, eval=FALSE}
+CKdata$XXXX <- as.factor(XXXX$XXXX)  
+XXXX(CKdata$CHAINf) XXXX c("XXXX","KFC", "XXXX", "Wendy's") 
+```
+
+
+```{r, echo=FALSE}
+CKdata$CHAINf <- as.factor(CKdata$CHAIN)  
+levels(CKdata$CHAINf) <- c("Burger King","KFC", "Roy Rogers", "Wendy's") 
+```
+
+Confirm that you have added the new variables and that they are indeed of the factor type.
 
 ```{r, echo=FALSE,results='hide'}
-RRData$Country <- as.factor(RRData$Country)
-str(RRData)
+str(CKdata)
 ```
 
-Check whether Poland is one of the countries in the dataset.
+Or to avoid such a long output
 
 ```{r, echo=FALSE,results='hide'}
-# unique(RRData$Country)
-levels(RRData$Country)
+str(CKdata[c("STATEf","CHAINf")])
 ```
 
-# Analyse early post-war years
+# Some summary statistics
 
-The analysis undertaken by Reinhard and Rogoff was for the years 1946 to 2009. Here in this lab we shall repeat some of the analysis but for a subsample of data. The argument is that some of the early postwar data were so atypical that they shouldn't be included in the analysis.
-
-To determine which of the early years we should exclude we will first investigate how the variables behaved in these years. We will do this mainly graphically.
-
-Complete the code below to replicate the following image, by finding the right variables to replace the `XXXX` terms.
-
-```{r, eval = FALSE}
-ggplot(RRData,aes(x = XXXX,y=XXXX,color = Country)) +
-  geom_line()
-```
-
-```{r, echo = FALSE}
-ggplot(RRData,aes(x=Year,y=dRGDP,color = Country)) +
-  geom_line()
-```
-
-As you can see there are some very erratic growth rates up until approximately 1952. Try what happens if you run the above figure without the `color = Country` option. Also google to figure out how you can add a Title to the figure.
-
-Let's repeat the same for the Debt to GDP ratios.
-
-```{r, eval = FALSE}
-ggplot(RRData,aes(x = XXXX,y=XXXX,color = Country)) +
-  geom_line() +  # adds the line graph
-  XXXX           # adds the title
-```
-
-```{r, echo = FALSE}
-ggplot(RRData,aes(x=Year,y=debtgdp,color = Country)) +
-  geom_line() +   # adds the line graph
-  ggtitle("Post-War Debt/GDP ratios")         # adds the title
-```
-
-We can again see that until the early 1950s there were dramatic debt reductions almost across the bord. Most countries had very significant post-war debt which they were able to rapidly reduce.
-
-On the basis of this analysis we decide to start our analysis from 1955
-
-# Restrict the data
-
-We want to restrict the dataset to start at 1955 and save this restricted dataset in `RR1955p`. What does `XXXX` below need to be replaced with?
-
-```{r, eval = FALSE}
-## Remove early post-war years
-RR1955p <- RRData %>% filter(XXXX)
-```
-
-```{r, echo = FALSE}
-## Remove early post-war years
-RR1955p <- RRData %>% filter(Year > 1954)
-```
-
-Use the`stargazer` function to confirm that the average `debtgdp` value is 43.803 and the upper quartile of `dRGDP` is 4.974.
-
-```{r, echo=FALSE, results='hide'}
-stargazer(RR1955p,type="text") # other types available: "latex", "html"
-```
-
-# Analysis - New dataset
-
-Create a scatterplot (x-axis: `debtgdp`, y-axis: `dRGDP`) and a line of best fit for `RR1955p`. Replace all `XXXX` terms below.
-
-```{r, eval = FALSE}
-p1 <- ggplot(XXXX,aes(x = XXXX,y = XXXX)) +
-  geom_XXXX(size=0.5) +    # this produces the scatter plot
-  XXXX(method = "lm", se = FALSE)  # adds the line 
-p1
-```
-
-```{r, echo = FALSE}
-p1 <- ggplot(RR1955p,aes(x = debtgdp,y = dRGDP)) +
-  geom_point(size=0.5) +    # this produces the scatter plot
-  geom_smooth(method = "lm", se = FALSE)  # adds the line 
-p1
-```
-
-Use a simple regression model 
-
-\[dRGDP = \beta_0 + \beta_1~debtgdp + u\]
-
-to investigate whether the negative relationship displayed in your graph is stronger for the full dataset (`RRData`) or the restricted dataset (`RR1955p`). Complete the following code and also find the typos in the code (easiest to be guided by any error messages)
-
-```{r, eval = FALSE}
-model_full <- lm(dGDP ~ XXXX, data = RRData)
-model_1955p <- XXXX
-stargazer(model_full,model_1955, type = "text")
-```
-
-```{r, echo = FALSE, results = 'hide'}
-model_full <- lm(dRGDP ~ debtgdp, data = RRData)
-model_1955p <- lm(dRGDP ~ debtgdp, data = RR1955p)
-stargazer(model_full,model_1955p, type = "text")
-```
-
-YOu got it right if the Adjusted R2 for the models are 0.039 and 0.050. If at all it is slightly stronger in the `RR1955p` data.
-
-# Create categorical debt to GDP ratios - Reinhard-Rogoff analysis I
-
-In order to replicate some of the analysis in Reinhard and Rogoff we create categorical variables (`dgcat`) for the Debt to GDP ratio. For this we use piping and the mutate command. First we do that for the full dataset, `RRData`:
+Whenever you deal with real life data you should ensure that you understand the data characteristics. The easiest way to get a first impression of your data is to create some summary statistics
 
 ```{r}
-RRData <- RRData %>% mutate(dgcat = cut(RRData$debtgdp, breaks=c(0,30,60,90,Inf)))
-
-RRData %>% group_by(dgcat) %>% 
-            summarise_at("dRGDP", funs(mean, median)) %>% 
-            print()
+summary(CKdata$EMPFT)
 ```
 
-Repeat this analysis for `RR1955p`.
+We can see that, on average, the restaurants employed 8.2 full-time staff. The largest restaurant had 60 full-time staff members.
 
-```{r, echo = FALSE, results='hide'}
-RR1955p <- RR1955p %>% mutate(dgcat = cut(RR1955p$debtgdp, breaks=c(0,30,60,90,Inf)))
+We can also look at several variables together. Try and run the command below. It has two mistakes. But before you try and fix it, run it as it is so that you can see the error messages and try and use them to figre out what is wrong.
 
-RR1955p %>% group_by(dgcat) %>% 
-            summarise_at("dRGDP", funs(mean, median)) %>% 
-            print()
+You will constantly have to deal with error messages and that is totally normal. Once you see one, your inner Sherlok Holmes needs to come out!
+
+```{r, eval=FALSE}
+sumary(CKdata[c("EMPPT","EMPPT2"))
 ```
 
-You have worked correctly if your median growth rate in the highest debt category is 2.152.
+Here we used a selection technique we've seen earlier, calling variables from a list (`c("EMPPT","EMPPT2")`). We learn that the average number of part-time employees hardly changed during 1992 (check the codebook to understand what these two variables are).
 
-# Create categorical debt to GDP ratios - Reinhard-Rogoff analysis II
-
-Now we implement the Reinhard-Rogoff weighting scheme to the complete and the restricted dataset. First for the complete dataset.
+We could also look at the summary statistics for the `CHAIN` variable.
 
 ```{r}
-RRData_w <- RRData %>%
-        group_by(dgcat,Country) %>%          # create category and country groups
-        summarize( m1 = mean(dRGDP, na.rm = TRUE)) %>%  # calculate average growth in each cat
-        group_by(dgcat) %>%                                   # group again by category
-        summarize(  n = n(), mean = mean(m1, na.rm = TRUE), median = median(m1, na.rm = TRUE)) %>%  # calculate mean in each category 
-        print()
-```     
+summary(CKdata$CHAIN)
+```
 
-Repeat this analysis for the restricted dataset (`RR1955p`).
+We know that the `CHAIN` variable tells us something about which restaurant we are looking at. This is a categorical variable and means and standard deviatiosn don't really make too much sense here, which is why we created the `CHAINf` variable.
 
-```{r, echo = FALSE, results='hide'}
-RR1955p_w <- RR1955p %>%
-        group_by(dgcat,Country) %>%          # create category and country groups
-        summarize( m1 = mean(dRGDP, na.rm = TRUE)) %>%  # calculate average growth in each cat
-        group_by(dgcat) %>%                                   # group again by category
-        summarize(  n = n(), mean = mean(m1, na.rm = TRUE), median = median(m1, na.rm = TRUE)) %>%  # calculate mean in each category 
-        print()
-```    
+When looking at categorical variables we are interested in the frequency or proportion of observations in each category.
 
-Is there any evidence for a large drop in growth rate for Debt/GDP ratios larger than 90%?
+```{r}
+table(CKdata$CHAINf)
+```
+
+Or the table with proportions.
+
+```{r}
+prop.table(table(CKdata$CHAINf))
+```
+
+We fed the result of the `table` function straight into the `prop.table()` function which translates frequencies into proportions.
+
+All these data are identical to those in the Card and Krueger paper.
+
+Now we replicate some of the summary statistics in Table 2. We use the same functions as above, but now we feed two categorical variables into the `table` function. The addition of the `margin = 2` option ensures that proportions are calculated by state (2=columns). Try for yourself what changes if you either set `margin = 1` (1 for rows) or leave this option out.
+
+```{r}
+prop.table(table(CKdata$CHAINf,CKdata$STATEf,dnn = c("Chain", "State")),margin = 2)
+```
+
+Also google ("R table dnn") or use the help function (`?table`) to figure out what the `dnn` optional input into the table function achieves.
+
+# Graphical Data Representation
+
+Histograms are an extremely useful representation of categorical data and numerical data. Here we will look at the distribution of PT employee numbers. The simplest way to create a simple histogram is by using the `hist` function.
+
+```{r}
+hist(CKdata$EMPPT)
+```
+
+You can clearly see the regularity in this plot.
+
+Let's introduce a different way to produce these plots. The function we use here is the `ggplot` function. That function is incredibly flexible as we will see in a moment. And that added flexibility is potentially worth the extra complication. So let's check it out.
+
+```{r}
+ggplot(CKdata,aes(x=EMPPT)) + 
+    geom_histogram(bins = 12) +
+    ggtitle("Number of part-time employees, Feb/Mar 1992")
+```
+
+How this function works is as follows.
+
+* Call the `ggplot` function
+* Tell `ggplot` where it should get the data from, `ggplot(CKdata)`
+* Then we set the aesthetics (`aes`), here we specify that we want `EMPPT` on the x-axis, `ggplot(CKdata,aes(x=EMPPT))`
+
+At this stage no graph is plotted. All we have done is to tell R where to get the data from and what variable it should use on the x-axis. We are yet to tell R what type of graph we should produce for the `CKdata$EMPPT` data. We do this by
+
+* adding the instruction to produce a histogram with 12 bins `+ geom_histogram(bins = 12)`
+
+As we want a nice title we the also
+
+* add the instruction to give our graph a useful title, `+ ggtitle("Number of part-time employees, Feb/Mar 1992")`.
+
+One of the very useful features of the `ggplot` function is that you can keep adding extra flourishes in a similar manner.
+
+Now practice by creating a similar histogram for `EMPPT2`.
+
+```{r, eval = FALSE}
+XXXX(XXXX,aes(x=XXXX)) + 
+    geom_XXXX(bins = XXXX) +
+    ggtitle("Number of part-time employees, XXXX 1992")
+```
+
+```{r, echo = FALSE}
+ggplot(CKdata,aes(x=EMPPT2)) + 
+    geom_histogram(bins = 12) +
+    ggtitle("Number of part-time employees, Nov/Dec 1992")
+```
+
+To illustrate how powerful this function can be run the following command.
+
+```{r}
+ggplot(CKdata,aes(EMPPT, colour = STATEf)) + 
+    geom_histogram(position="identity", 
+                   aes(y = ..density..),
+                   bins = 10,
+                   alpha = 0.2) +
+    ggtitle(paste("Number of part-time employees, Feb/Mar 1992"))
+```
+
+So, what happened here. We took the part-time employee data but split them into the two states (using the `colour = STATEf` option in the aesthetics).
+
+Not everything in this command is super intuitive. In fact you should expect that you need to google (something like "R ggplot histogram two variables") to find someone who achieved what you wanted and then you nick and adsjust their code! **This is super important. You will hardly ever need to know commands by heart. You can usually find help fairly easily.**
+
+Try to change a few things in the above code to see what different elements in the code do. When you do this remember, you cannot break the computer!!!!!
+
+
