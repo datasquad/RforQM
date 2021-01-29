@@ -2,7 +2,7 @@
 title: "Introduction to Handling Data"
 subtitle: "ECON20222 - Lecture 1"
 author: "Ralf Becker and Martyn Andrews"
-date: "January 2021"
+date: ""
 output: 
   beamer_presentation:
     includes:
@@ -26,81 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
       \end{itemize}
 \end{itemize}
 
-## At the end of this unit ...
-
-You will be able to:
-
-\begin{itemize}
-  \item Do intermediate data work in R
-  \item Confidently apply regression analysis in R
-  \item Apply more advanced causal inference techniques in R
-  \item Find coding help for any new challenges in R
-  \item Discuss strengths and weaknesses of particular empirical applications
-  \item Perform inference appropriate for the model being estimated
-  \item Interpret empirical results (with due caution!)
-\end{itemize}
-
-## What you need to do
-
-To learn in this unit you need to:
-
-\begin{figure}
-	\centering
-	\includegraphics[width=8cm]{Embrace.jpg}\\
-\end{figure}
-
-\begin{columns}
-  \begin{column}{0.5\textwidth}
-    \textcolor{student}{coding, cleaning data, struggling, self-learning, amazement at what you can do}
-  \end{column}
-  \begin{column}{0.5\textwidth}
-    \textcolor{student}{answering real questions, that there is not always a clear answer}
-  \end{column}
-    
-\end{columns}
-
-## Assessment Structure and feedback
-
-\begin{itemize}
-  \item Online test (on the use of R) - 10\%
-  \item End-of-Term exam (MC and short answer questions) - 50\%
-  \item	Group coursework - 40\% (see extra info)
-
-\end{itemize}
-
-
-## Aim for today
-
-
-\begin{columns}
-  
-  \begin{column}{0.5\textwidth}
-    \underline{Statistics/Econometrics}
-    \begin{itemize}
-      \item Summary Statistics
-      \item Difference between population and sample
-      \item Hypothesis testing
-      \item Graphical Data Representations
-      \item Diff-in-Diff Analysis
-      \item Simple regression analysis
-    \end{itemize}
-  \end{column}
-  \begin{column}{0.5\textwidth}
-    \underline{R Coding}
-    \begin{itemize}
-      \item Introduce you to R and RStudio
-      \item How do I learn R
-      \item Import data into R
-      \item Perform some basic data manipulation
-      \item Perform hypothesis tests
-      \item Estimate a regression
-    \end{itemize}
-  \end{column}
-    
-\end{columns}
-
-
-## Today's Empirical Question
+## This Week's Empirical Question
 
 
 \begin{columns}
@@ -144,7 +70,83 @@ The debate is still alive:
 
 
 
-## The Plan for today
+## At the end of this unit ...
+
+You will be able to:
+
+\begin{itemize}
+  \item Do intermediate data work in R
+  \item Confidently apply regression analysis in R
+  \item Apply more advanced causal inference techniques in R
+  \item Find coding help for any new challenges in R
+  \item Discuss strengths and weaknesses of particular empirical applications
+  \item Perform inference appropriate for the model being estimated
+  \item Interpret empirical results (with due caution!)
+\end{itemize}
+
+## What you need to do
+
+To learn in this unit you need to:
+
+\begin{figure}
+	\centering
+	\includegraphics[width=8cm]{Embrace.jpg}\\
+\end{figure}
+
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \textcolor{student}{coding, cleaning data, struggling, self-learning, amazement at what you can do}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \textcolor{student}{answering real questions, that there is not always a clear answer}
+  \end{column}
+    
+\end{columns}
+
+## Assessment Structure and feedback
+
+\begin{itemize}
+  \item Online test (on the use of R) - 10\%
+  \item End-of-Term exam (short answer questions) - 50\%
+  \item	Group coursework - 40\% (see extra info)
+
+\end{itemize}
+
+
+## Aim for today
+
+
+\begin{columns}
+  
+  \begin{column}{0.5\textwidth}
+    \underline{Statistics/Econometrics}
+    \begin{itemize}
+      \item Summary Statistics
+      \item Difference between population and sample
+      \item Hypothesis testing
+      \item Graphical Data Representations
+      \item Diff-in-Diff Analysis
+      \item Simple regression analysis
+    \end{itemize}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \underline{R Coding}
+    \begin{itemize}
+      \item Introduce you to R and RStudio
+      \item How do I learn R
+      \item Import data into R
+      \item Perform some basic data manipulation
+      \item Perform hypothesis tests
+      \item Estimate a regression
+    \end{itemize}
+  \end{column}
+    
+\end{columns}
+
+
+
+
+## This Week's Plan
 
 \begin{itemize}
   \item Replicate some of the basic results presented in Card and Krueger (1994)

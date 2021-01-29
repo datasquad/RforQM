@@ -12,172 +12,35 @@ output:
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, error = FALSE)
 ```
 
-Before you start you should create a space (i.e. a folder) on your computer from where you are planning to do all your R work. Make sure you understand where that folder is and that you know the path to that folder (Apple users, if you do not know how to find the path to a particular folder, then look at this [https://piazza.com/class/k5wtxg2vebk5or?cid=7](Piazza post)). If you are using a computer lap computer you should create a folder for your R work on the P drive. This will be accessible to you whenever you log on to a University computer, or from anywhere via [https://pdrives.manchester.ac.uk/horde/login.php](this link).
+# Introduction
 
-Let's say you named your folder `Rwork` directly on the P drive and in that folder created a subfolder for this unit `QM` , then the path to your folder will be `P:\Rwork\QM`.
+We continue to use the same data as in Comp_Lab0. So you may want to continue working in the same script file you created last week and add commands to that file. The last thing we did in the previous lab is that we turned the `CHAIN` and `STORE` variables into factor variables, `CHAINf` and `STOREf`. We will use these variables in some of the work following. So the minimum code you need from last week is the loading of the libraries, the import of the data and the creation of the two factor variables `CHAINf` and `STOREf`. But of course it is best to just continue in the script file you created for the previous computer lab.
 
-For this computer lab we are using exactly the same data as for the first lecture. So please make sure that you have the datafile `CK_public.xlsx` in the folder you just created and want to work from. It will also be useful to have `CK_codebook.txt` readily available (also from BB, Lecture 1).
-
-# Preparing your script file 
-
-Via the RStudio menu (FILE - NEW FILE - R SCRIPT) open a new script file and safe it in the folder from which you want to work (see above). 
-
-Start by creating a comment line at the top of that file which may say something like
-
-```{r, eval = FALSE}
-# File for first QM Computer Lab
-# February 2020
-```
-
-If not mentioned otherwise all the following code should be added to that script file and executed from there.
-
-Next you should ensure that you set the working directory to the directory where your scriptfile and datafile is in. If your folder was `P:\Rwork\QM` then the command below should read `setwd("P:/Rwork/QM")`. Note that all backward slashes (`\`) have to be replcaed by forward slashes (`/`). Don't ask why, just accept ;-).
-
-```{r, eval = FALSE}
-setwd("XXXX:/XXXX")   # replace the XXXX with your drive and path
-```
-
-Note that R only understands forward slashes `/`.
-
-Load the libraries which we want to use. 
-
-```{r}
+```{r, echo = FALSE}
 library(tidyverse)    # for almost all data handling tasks
 library(readxl)       # to import Excel data
 library(ggplot2)      # to produce nice graphiscs
 library(stargazer)    # to produce nice results tables
-```
 
-If RStudio tells you that one or more of these libraries are not installed then install these (not any others) on the machine you are working from. For instance, if `stargazer` was not installed you would receive an error message like "Error in library(stargazer) : there is no package called ‘stargazer’", and in that case you should run:
-
-```{r, eval = FALSE}
-install.packages("stargazer")
-```
-
-You can run this straight from the command/console or you could instead install the package via the packages tab on the right hand side. **Do not do this on computer lab computers as these packages should be preinstalled**.
-
-YOu will need to do this only once on your computer and once you have done that you can call `library(stargazer)` again without running into problems.
-
-# Data Upload
-
-Make sure you have set the working directory to the directory in which you saved your script file (see above). As we are dealing with data in an excel file we will use the `read_excel` function to load the data. Before you run this command open the actual spreadsheet and try to see how missing data are coded. In this case they are coded as dots ("."). But in other datafiles you may find "NA", "n.a.", "-9999" or other ways to code missing data. It is best to let R know how missing data look. This will simplfy your life tremendously.
-
-```{r}
 CKdata <- read_excel("CK_public.xlsx",na = ".")
-```
-
-Make sure that your data upload is successful. Easiest to run the `str` (structure) function.
-
-```{r}
-str(CKdata)  # prints some basic info on variables
-```
-
-You should now see the `CKdata` object in your Environment (right hand pane).
-
-There are 410 observations, each representing one fast-food restaurant. Each restaurant has some variables which characterise the store and then two sets of variables which are observed before the new minimum wage was introduced to New Jersey (Wave 1: Feb 15 to Mar 14, 1992) and after the policy change (Wave 1: Nov 5 to Dec 31, 1992). Variables which relate to the second wave will have a `2` at the end of the variable name.
-
-The following variables will be important for the analysis here:
-
-* `SHEET`, this is a unique identifier for each restaurant 
-* `STATE`, 1 if New Jersey (NJ); 0 if Pennsylvania (Pa) 
-* `WAGE_ST`, starting wage ($/hr), Wave 1
-* `WAGE_ST2`, starting wage ($/hr), after policy, Wave 2
-* `STATUS2`, the status of the Wave 2 interview, 0 = refused, 1 = completed, 3, permanently closed, 2, 4 and 5 = temporarily closed
-* `CHAIN`, 1 = Burger King; 2 = KFC; 3 = Roy Rogers; 4 = Wendy's
-* `EMPFT`, # full-time employees before policy implementation
-* `EMPFT2`, # full-time employees after policy implementation
-* `EMPPT`, # part-time employees before policy implementation
-* `EMPPT2`, # part-time employees after policy implementation
-* `NMGRS`, # managers/ass't managers before policy implementation
-* `NMGRS2`, # managers/ass't managers before policy implementation
-
-
-# Accessing data
-
-The `CKdata` item in your environment basically contains the entire spreadsheet of data. You can look at the entire spreadsheet by clicking on the tiny spreadsheet in the `CKdata` line. This will open a new tab with the spreadsheet. Have a look and then close the tab again.
-
-It is important to know how you can access subsets of data. Run through the following commands to see what happens. Perhaps also experiment a bit by changing the commands and predicting what the outcome should be.
-
-```{r, results='hide'}
-CKdata[1,]
-CKdata[,2]
-CKdata[3,4]
-CKdata[,4:6]
-CKdata[4:6]
-CKdata[2:4,5:10]
-CKdata$SOUTHJ
-CKdata$SOUTHJ[1:5]
-CKdata[c("CHAIN","STATE")]
-```
-
-These are all different ways to select particular observations (rows in a spreadsheet) and variables (columns in a spreadsheet). There were two particular techniques which are important
-
-* `CKdata$CHAIN` did address the `CHAIN` variable in the `CKdata` dataset (`DATASET$VARIABLE`).
-* `c("CHAIN","STATE")` allowed us to access two very particular variables, ignoring all other 44 variables. It is useful to know what `c("CHAIN","STATE")` actually does.
-
-```{r}
-c("CHAIN","STATE")
-```
- 
-It creates a list with two elements, here two text strings. But you can also create lists with numbers.
- 
-```{r}
-c(3.5,2/3)
-```
-
-In fact you could even create lists which mixed datatypes.
-
-```{r}
-c("Countries in the EU", 28-1, ":-(")
-```
-
-Lists are quite fundamental to the way how R stores data.
-
-# Data Formats
-
-We can see (from the output to `str(CKdata)`) that all variables are numeric (`num`) variables, i.e. the software will treat them as numbers. If you check the `CK_codebook.txt` on BB you will find what all the numbers mean. For instance an entry of `2` in the `CHAIN` variable means that this is a "KFC" restaurant.
-
-For later it will be convenient to have `STATE` and `CHAIN` variables which aren't numeric, but categorical variables. In R these are called `factor` variables. Hence we will create two new variables, `STATEf` and `CHAINf` which contain the same info, but just in a way easier to understand.
-
-```{r}
 CKdata$STATEf <- as.factor(CKdata$STATE)  # translates a variable into a factor variable
 levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey") # changes the names of the categories
-```
-
-There are a number of important elements in these two lines
-
-* `CKdata$STATEf <-` creates a new variable in the `CKdata` object, called `STATEf`. `<-` is called the assignment operator and it assigns some value to that new variable. It will assign whatever comes to the right hand side of `<-`
-* `as.factor()` is a function called `as.factor`. If you want to find out what a function does you can call the help function `?as.factor`. This one ensures that creates a variable as a factor (categorical) variable. But it requires an input (Whatever comes inside tha parenthesis). Here we ask R to change the `num` variable `CKdata$STATE` into a factor variable.
-* `levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey")` then changes the names of the levels (categories) into sensible names. Here we use again the assignment operator `<-`. 
-
-Now create a new variable `CHAINf` which achieves the same for the `CHAIN` variable. Replace the `XXXX` to make this code work.
-
-```{r, eval=FALSE}
-CKdata$XXXX <- as.factor(XXXX$XXXX)  
-XXXX(CKdata$CHAINf) XXXX c("XXXX","KFC", "XXXX", "Wendy's") 
-```
-
-
-```{r, echo=FALSE}
 CKdata$CHAINf <- as.factor(CKdata$CHAIN)  
 levels(CKdata$CHAINf) <- c("Burger King","KFC", "Roy Rogers", "Wendy's") 
 ```
 
-Confirm that you have added the new variables and that they are indeed of the factor type.
+# Learning Outcomes
 
-```{r, echo=FALSE,results='hide'}
-str(CKdata)
-```
+This computer lab is for you 
 
-Or to avoid such a long output
+* to explore calculate some basic summary statistics
+* to create some graphical data representations
 
-```{r, echo=FALSE,results='hide'}
-str(CKdata[c("STATEf","CHAINf")])
-```
+Also check out the [http://eclr.humanities.manchester.ac.uk/index.php/R#Installing_the_Software](ECLR) website which has sections which cover this material as well.
 
 # Some summary statistics
 
-Whenever you deal with real life data you should ensure that you understand the data characteristics. The easiest way to get a first impression of your data is to create some summary statistics
+Whenever you deal with real life data you should ensure that you understand the data characteristics. The easiest way to get a first impression of your data is to create some summary statistics, here for instance for the `EMPFT` variable (number of full-time employees before the change in the minimum wage)
 
 ```{r}
 summary(CKdata$EMPFT)
@@ -187,13 +50,21 @@ We can see that, on average, the restaurants employed 8.2 full-time staff. The l
 
 We can also look at several variables together. Try and run the command below. It has two mistakes. But before you try and fix it, run it as it is so that you can see the error messages and try and use them to figre out what is wrong.
 
-You will constantly have to deal with error messages and that is totally normal. Once you see one, your inner Sherlok Holmes needs to come out!
+You will constantly have to deal with error messages and that is totally normal. Please attempt to run this code before actually attempting to fix it. It is good to get used to seeing error messages.
 
 ```{r, eval=FALSE}
 sumary(CKdata[c("EMPPT","EMPPT2"))
 ```
 
-Here we used a selection technique we've seen earlier, calling variables from a list (`c("EMPPT","EMPPT2")`). We learn that the average number of part-time employees hardly changed during 1992 (check the codebook to understand what these two variables are).
+Once you see one, your inner Sherlok Holmes needs to come out! Here there is sufficient information in the error message to perhaps see that the problem lies with the parenthesis! (Hint: you need as many opening as closing, and of the same type). And once you fixed that you will find a second mistake.
+
+Here we used a selection technique we've seen earlier, calling variables from a list (`c("EMPPT","EMPPT2")`). Once you fixed the mistakes you should get the following output:
+
+```{r, echo = FALSE}
+summary(CKdata[c("EMPPT","EMPPT2")])
+```
+
+We learn that the average number of part-time employees hardly changed during 1992 (check the codebook to understand what these two variables are).
 
 We could also look at the summary statistics for the `CHAIN` variable.
 
@@ -201,11 +72,12 @@ We could also look at the summary statistics for the `CHAIN` variable.
 summary(CKdata$CHAIN)
 ```
 
-We know that the `CHAIN` variable tells us something about which restaurant we are looking at. This is a categorical variable and means and standard deviatiosn don't really make too much sense here, which is why we created the `CHAINf` variable.
+We know that the `CHAIN` variable tells us something about which restaurant we are looking at. This is a categorical variable and means and standard deviation don't really make too much sense here, which is why we created the `CHAINf` variable.
 
-When looking at categorical variables we are interested in the frequency or proportion of observations in each category.
+When looking at categorical variables we are interested in the frequency or proportion of observations in each category. You could either use again the `summary` function (R automatically detects that the variable is a factor variable and adjusts the output to a frequency table) or the `table` function. It important to understand that the same thing can often be achieved in different ways.
 
 ```{r}
+summary(CKdata$CHAINf)
 table(CKdata$CHAINf)
 ```
 
@@ -215,11 +87,11 @@ Or the table with proportions.
 prop.table(table(CKdata$CHAINf))
 ```
 
-We fed the result of the `table` function straight into the `prop.table()` function which translates frequencies into proportions.
+We fed the result of the `table` function straight into the `prop.table` function which translates frequencies into proportions.
 
 All these data are identical to those in the Card and Krueger paper.
 
-Now we replicate some of the summary statistics in Table 2. We use the same functions as above, but now we feed two categorical variables into the `table` function. The addition of the `margin = 2` option ensures that proportions are calculated by state (2=columns). Try for yourself what changes if you either set `margin = 1` (1 for rows) or leave this option out.
+Now we replicate some of the summary statistics in Table 2 of the paper. We use the same functions as above, but now we feed two categorical variables into the `table` function. The addition of the `margin = 2` option ensures that proportions are calculated by state (2=columns). Try for yourself what changes if you either set `margin = 1` (1 for rows) or leave this option out.
 
 ```{r}
 prop.table(table(CKdata$CHAINf,CKdata$STATEf,dnn = c("Chain", "State")),margin = 2)

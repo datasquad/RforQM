@@ -155,7 +155,7 @@ Start by creating a comment line at the top of that file which may say something
 
 > Note: Adding comments to your code is absolutely vital if you want to understand tomorrow what you did today. I am not joking, adding comments to explain to your future self what you are doing is absolutly critical. Everything which follows the `#` sign is a comment and is effectively ignored by R. It is written not for R but for your future self!
 
-If not mentioned otherwise all the following code should be added to that script file and executed from there.
+If not mentioned otherwise all the following code should be added to that script file and executed from there. Save that file and make sure you know where you save it as, next week, you should be continuing to work on this.
 
 Next you should ensure that you set the working directory to the directory where your scriptfile and datafile is in. If your folder was `P:\Rwork\QM` then the command below should read `setwd("P:/Rwork/QM")`. Note that all backward slashes (`\`) have to be replaced by forward slashes (`/`). Don't ask why, just accept ;-).
 
