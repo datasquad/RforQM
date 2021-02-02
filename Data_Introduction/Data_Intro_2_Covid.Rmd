@@ -1,0 +1,784 @@
+---
+title: "Covid 19 - some Challenges - some Data"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+```
+
+# Introduction
+
+Worldwide, there is a huge effort being undertaken by specialists of all fields to understand and reduce the impact of this pandemic, as well as devising measures to help us all live under these new conditions.
+In this project we will investigate some of the data related to the COVID-19 pandemic, focusing on the challenges and questions that this data can help to answer. 
+
+Learning objectives
+In this project, you will:
+
+*	import data directly from websites (Section 1.2)
+*	perform some basic data cleaning and scaling techniques (Sections 1.3 and 1.5)
+*	produce line charts using ggplot (Section 1.4)
+*	learn how to use maps to illustrate geographic differences in the pandemic (Sections 1.7 and 1.8)
+* use data designed to capture the severity of policy responses (Section 2)
+* and think about the principles of evaluating the effectiveness of government policy (Sections 2.1 to 2.3)
+
+The [CORE-ECON Covid-19 Collection](https://www.core-econ.org/project/core-covid-19-collection/) contains a more detailed version of this example.
+
+# 1. Some exploratory data analysis
+
+Let’s do some exploratory analysis using a dataset published by the [https://tinyco.re/4826169](European Centre for Disease Control) (ECDC)
+
+## 1.1 Getting started
+
+For Sections 1.2 to 1.4, you will need the following packages, which we will install and import now: 
+
+```{r}
+#install.packages(c("sets", "forecast", "readxl", "tidyverse", "ggplot2", "utils", "httr"))
+
+library(sets)         # used for some set operations
+library(forecast)     # used for some data smoothing
+library(readxl)       # enable the read_excel function
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # plotting toolbox
+library(utils)        # for reading data into R # for reading data into R 
+library(httr)         # for downloading data from a URL 
+```
+
+## 1.2 Import the data into R
+
+Very helpfully, the ECDC webpage that contains the data (https://tinyco.re/7709786) provides an R script (shown in the next code block) that allows you to download the most current dataset. You could download the dataset to your computer and then import it into R instead, but here the ECDC has built a direct pipeline into their data. 
+After running the code below, a datafile called data will appear in your environment. It will contain up-to-date case and fatality data.
+
+```{r}
+#download the dataset from the ECDC website to a local temporary file (“tf”)
+GET("https://opendata.ecdc.europa.eu/covid19/casedistribution/csv", 
+    authenticate(":", ":", type="ntlm"), 
+    write_disk(tf <- tempfile(fileext = ".csv")))
+#read the Dataset sheet into “R”. The dataset will be called "data".
+data <- read.csv(tf) 
+```
+
+Note: By uploading data in this way you will always get the latest data. This means that, if you replicate this code, you will have more recent data than the data used when this project was written (6 January 2021). 
+
+## 1.3 Data cleaning
+
+Let’s look at the structure of this dataset. We want to make sure we understand all the variables and give them sensible names we can work with.
+
+```{r}
+str(data)
+```
+
+Some of the variables have obvious meaning, such as `day`, `month`, `year`, `countriesAndTerritories` and `popData2019`, the latter giving the population of the respective country in 2019. `geoId` and `countryterritoryCode` are common appreviations for the respective country.
+
+For starters we want to shorten the name of `countriesAndTerritories` to `country` and `countryterritoryCode` to `countryCode` and `dateRep` to `dates`.
+
+```{r}
+names(data)[names(data) == "countriesAndTerritories"] <- "country"
+names(data)[names(data) == "countryterritoryCode"] <- "countryCode"
+names(data)[names(data) == "dateRep"] <- "dates"
+```
+
+The variable dates is currently a factor variable, but we want R to know that each string represents a date. Dates are of the format day/month/year e.g. 24/01/2020. In the `format` option we specify this format (format = "%d/%m/%Y") so R can correctly translate the strings to dates (see [https://tinyco.re/8606284](this page) to understand how to correctly specify the format option for other date formats).
+
+```{r}
+data$dates <- as.Date(as.character(data$dates),format = "%d/%m/%Y")
+```
+
+Last, but most importantly, there are two variables called `cases_weekly` and `deaths_weekly`. This inicates that the dataset is organised as a weekly dataset. Each data-entry (each row) represents the data for a particular week in a particular country.
+
+## 1.4 Plotting line charts for some countries
+
+Let’s create some charts to describe the development of the pandemic in different countries. These are weekly case and death data. Let’s pick one country and plot information on this country through time. We chose China, where this particular virus was first identified
+
+We use the `ggplot` function, which produces very nice charts. We will create the chart and save it as the object `g1`, then display it by just calling `g1`. We will use the subset function to select data from China only (`subset(data, country == "China")`).
+
+```{r}
+g1 <- ggplot(subset(data, country == "China"), aes(x=dates,y=deaths_weekly)) +
+      geom_line() + 
+      ggtitle("Covid-19 weekly cases")
+g1
+```
+
+Before continuing we may also want to highlight a particularity in these data. You can see that in the middle of April there is one week (20 April 2020) on which almost 1,300 deaths have been reported, vastly larger than the numbers in the weeks before and after. And in fact, the day before there were only 13 reported deaths. It turns out that this apparent outlier is the result of some revision of previously published statistic. In that week China declared that around 1,300 deats, which were previously not attributed to Covid, should be attributed [https://www.livescience.com/wuhan-coronavirus-death-toll-revised.html](Live Science article).
+
+Let's overlay the daily cases for two countries, say China and South Korea, but you can change the code accordingly for countries you are interested in.
+
+```{r}
+sel_countries <- c("China", "South_Korea")
+g2 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=cases_weekly, color = country)) +
+      geom_line() + 
+      ggtitle("Covid-19 daily cases")
+g2
+```
+
+Here you can see the much-praised ability by South Korea ([https://tinyco.re/4913845](Guardian, 11 April 2020)) to suppress the numbers of infections effectively. However, you might argue that it is difficult to directly compare the outcomes of countries with different population sizes and different knowledge about the virus (China undertook virus containment measures at a time when very little was known about the virus). 
+
+> Explore the data: Redo Figure 1.3, but for two or three different countries of your choice.
+
+Now we look at some European countries (Spain, France, and the UK).
+
+```{r}
+sel_countries <- c("Spain", "France", "United_Kingdom")
+g3 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=cases_weekly, color = country)) +
+      geom_line(size = 1) +   # size controls the line thickness
+      ggtitle("Covid-19 weekly cases")
+g3
+```
+
+> Explore the data: Check out the ggplot cheatsheet (https://tinyco.re/8940854) to see some of the many ways in which you can customise graphs. In particular, see what happens if you replace the last line in the code block above (g3) with g3 + theme_bw() or g3 + theme_dark().
+
+It is important to understand that the number of newly identified cases is also a function of the testing effort in a particular week. This is particularly important when looking at the above figure. During the first wave, testing for Covid-19 was mainly done for symptomatic patients and their contacts. In other words it was very targeted. In the second half of 2020, testing became much more widespread and the higher numbers of confirmed cases in the second wave are mainly explained by this difference in testing regime.
+
+> Read more: 
+•	This [https://tinyco.re/4319550](iNews article), written on 1 April 2020, compares testing strategies adopted by various countries.
+•	[https://tinyco.re/6395215](Nate Silver’s article), written on 4 April 2020, explains how differences in testing strategies makes comparisons across countries difficult.
+
+In order to evaluate whether the second wave was more widespread than the first it is instructive to look at the graph of weekly deaths. Recorded deaths are not dependent on differences in testing strategies. While there may be changes throughout 2020 in how deaths are attributed to Covid-19, the changes are not as dramatic as the changes in the testing regime.
+
+```{r}
+sel_countries <- c("Spain", "France", "United_Kingdom")
+g4 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=deaths_weekly, color = country)) +
+      geom_line(size = 1) +   # size controls the line thickness
+      ggtitle("Covid-19 weekly deaths")
+g4
+```
+
+From this image it is apparent that at the peak of the first wave more peopple died than in November/December when the second wave seemed to peak.
+
+> Note: You may wonder why, in late May, Spain reported a negative number of deaths due o Covid-19. This is an adjustment to correct what are bleieved previously double counted deaths and deaths which were wrongly attributed to Covid-19 (see for example [https://medicalxpress.com/news/2020-05-spain-virus-death-toll.html](this article by Medical Express)).
+
+## 1.5 Per-capita statistics
+
+It was mentioned earlier that comparing raw numbers of reported Covid cases between countries is not so instructive when comparing countries or regions with different population sizes. A coomonly used population adjusted measure is the number of weekly cases per 100,000 population, sometimes called the incidence rate (e.g. [https://coronavirus.jhu.edu/map.html](John Hopkins University Coronavirus Resource Center)).
+
+In order to adjust the weekly case numbers we use the 2019 population data (`popData2019`) which are included in the dataset. While each week has its own population entry, you should recognise that this population information does not actually change. 
+
+We will now create new variables `pc_cases` and `pc_deats` which report the number of confirmed new cases or deaths per 100,000 people for a 7 day period.
+
+```{r}
+data <- data %>%  
+          mutate(pc_cases = (cases_weekly/popData2019)*100000, 
+                 pc_deaths = (deaths_weekly/popData2019)*100000)
+```
+
+With 
+
+```{r}
+sel_countries <- c("Spain", "France", "United_Kingdom")
+g5 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=pc_deaths, color = country)) +
+      geom_line(size = 1) +   # size controls the line thickness
+      ggtitle("Covid-19 weekly deaths per 100,000")
+g5
+```
+
+Comparing this to the previous figure this makes it obvious that Spain was hit harder by the first wave in Spring 2020. 
+
+More importantly, these population-adjusted data allows us to compare countries of very different size. For instance we can look at the India, US, Sweden and Germany.
+
+```{r}
+sel_countries <- c("United_States_of_America", "Germany", "Sweden", "India")
+g5 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=pc_deaths, color = country)) +
+      geom_line(size = 1) +   # size controls the line thickness
+      ggtitle("Covid-19 weekly deaths per 100,000")
+g5
+```
+
+## 1.6 Cumulative cases and deaths
+
+Let's also look at the cumulative case numbers for Canada, Poland and Afghanistan (all with a population around 38 million) 
+
+```{r}
+sel_countries <- c("Canada", "Poland", "Afghanistan")
+g6 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=c_cases, color = country)) +
+      geom_line(size = 1) + 
+      ggtitle("Covid-19 cumulative cases")
+g6
+```
+
+You can clearly see the varied rates of growth at different times through 2020. As this Figure depicts the number of cases we should acknowledge that the fast rise in the autumn of 2020 is not only a result of the emergence of a second wave of Covid-19 but also a result of vastly increased testing (compared to the first wave in the first half of 2020).
+
+Looking at this figure it would appear as if Afghanistan was hit much less by the pandemic, when in reality it may be that limited testing activity in countries with limited health infrastructure may disguise the true impact of the pandemic. Indeed the respective cumulative number of deaths reveeals that almost as many people died of Covid in Afghanistan as in Poland and Canada. It may of course be that the fatality rate in Afghanistan is also higher due to a less developed healthcare system. 
+
+```{r}
+sel_countries <- c("Canada", "Poland", "Afghanistan")
+g7 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=c_deaths, color = country)) +
+      geom_line(size = 1) + 
+      scale_y_continuous(trans='log2') +
+      ggtitle("Covid-19 cumulative cases")
+g7
+```
+
+
+## 1.7 Plotting maps of COVID-19 data
+
+Maps are a great tool to illustrate the geographic distribution of any variable.
+
+For Sections 1.6 and 1.7, you will need the following packages for drawing maps, which we will install and import now: 
+
+
+```{r}
+#install.packages(c(“sf”, “raster”, “spData”, “tmap”))
+library(sf)
+library(raster)
+library(spData)
+library(tmap)
+```
+
+Let's create a map first and then we will find out how to manipulate the map to display what we want.
+
+```{r,fig.cap="Figure 1.X: World Map indicating Life expectancy"}
+# Add fill and border layers to world shape
+tm_shape(world) + tm_polygons(col = "lifeExp") 
+```
+
+Wow, one line of code and you get a world map which shows which countries have the highest and lowest life expectation. Amazing! 
+
+What did the code do? We used the `tmap` package, which has a range of built-in map information, and `tm_shape(world)`, which contains shape information (details of the boundaries) of the world’s countries. Shape information is essential for drawing maps. Then we specify the variable that determines the colors and borders (`+ tm_polygons(col = "lifeExp")`). 
+
+> Read more: To learn more about geocomputing and the tmap package, check out [https://tinyco.re/1848888](Geocomputation with R), written by Robin Lovelace, Jakub Nowosad, and Jannes Muenchow.
+
+We want to make a similar map as in Figure 1.X, but showing information on COVID-19 cases instead. We will first deconstruct the code above to understand where tmap stores the data on life expectancy.
+
+```{r}
+m2 <- tm_shape(world) 
+str(m2)
+```
+
+The output above looks complicated. `m2` is a list with one element called `sm_shape`, which in turn is a list with 12 elements. Importantly one of these elements, called `shp`, contains information on the respective countries.
+
+Let’s look at the element `shp` to understand what it looks like. We will save it as the object `temp`.
+
+```{r}
+temp <- m2$tm_shape$shp
+names(temp)
+```
+
+`shp` is a “standard” dataframe with country-specific information, and you can see that one of the variables is life expectancy (`lifeExp`). This is where `tmap` got the info from. We will insert the information on cases into this dataframe and then use that to display the data. `iso_a2` is a variable with country abbreviations. As we have this information also in our dataset (`data`) we will use country abbreviations to merge the data.
+
+We start by extracting the information we want to merge into `temp` from our original dataset (`data`). As an example, we will use data for all countries on 14 December 2020 ("2020-12-14").
+
+
+```{r, eval = FALSE}
+temp_mergein <- data %>% filter(dates == "2020-12-14") %>% 
+                          select(geoId, cases_weekly, c_cases, 
+                                 pc_cases, deaths_weekly, c_deaths, pc_deaths)
+```
+
+When you run this you are likely to get the following error message
+
+```{r, eval = FALSE}
+Error in (function (classes, fdef, mtable)  : 
+  unable to find an inherited method for function ‘select’ for signature ‘"tbl_df"’
+```
+
+A Google search reveals that this issue arose because the `select` function appears in two different packages we loaded (`raster` and `tidyverse`) - type ?select into the command window to see this problem. In these cases, R chooses the function from the package loaded last (`raster` in this case), whereas we wanted the function from the `dplyr` package (automatically loaded with the `tidyverse`).
+
+These are the issues which arise with an open-source software where many people contribute different packages, like the `tidyverse` and the `raster` package, and there isn’t an external institution that ensures people do not use the same name for different functions. In fact, look at the notices in your R console that you ignored after loading the `raster` package. Most likely you will find a message similar to: `“Attaching package: ‘raster’. The following object is masked from ‘package:dplyr’: select”`. This problem could have been avoided by loading the `tidyverse` package after the `raster` package (this is one of the quirks you will encounter when you work with R).
+
+So when we want to run the above command we have to tell R that we want the select function from the `dplyr` package (`dplyr::select`).
+
+
+```{r}
+temp_mergein <- data %>% filter(dates == "2020-12-14") %>% 
+                          dplyr::select(geoId, cases_weekly, c_cases, 
+                                        pc_cases, deaths_weekly, c_deaths, pc_deaths)
+```
+
+We only selected the variables we are interested in, and the `geoId` variable which we will match with `iso_a2` in the shape file.
+
+As it turns out, the country code for the UK in `data` (and hence in `temp_mergein`) is `UK` and in the shape file it is `GB`. We need to change one of them to enable data for the UK to be matched correctly, otherwise the map would show missing data for the UK.
+
+
+```{r}
+temp_mergein$geoId <- as.character(temp_mergein$geoId)
+temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB" 
+```
+
+Now we will use the `merge` function to add this info into `m2` so our COVID-19 data is available to map. We specify the respective variables used to match the data (`by.x = "iso_a2", by.y = "geoId"`) and also ensure that we keep all of our original country information, even if it is unrelated to COVID-19 (`all.x = TRUE`).
+
+```{r}
+temp <- merge(temp, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
+```
+
+Now that we manipulated the datafile at the core of the mapping operation we need to insert it back into the `m2` file into exactly the same spot where we found that datafile in the first place (`m2$tm_shape$shp`).
+
+```{r}
+m2$tm_shape$shp <- temp
+```
+
+Now we can return to the mapping code and plot the weekly, per 100,000 population, number of casualties.
+
+```{r, fig.cap="Figure 1.X: Weekly number of deaths per 100,000"}
+# Add polygons layer to world shape
+m2 + tm_polygons(col = "pc_deaths", n=10)  # n = 10 controls the number of categories
+
+```
+
+There are many ways you can customize your maps. For instance, the `tm_style` function allows you to change the colour scheme.
+
+```{r, fig.cap="Figure 1.X: Weekly number of deaths per 100,000"}
+m2 + tm_polygons(col = "pc_deaths", n=10) +  # n = 10 controls the number of categories
+      tm_style("col_blind")
+```
+
+## 1.8 Plotting maps showing the temporal spread of the pandemic
+
+The maps in Section 1.6 were created for one particular day (4 April 2020), but we can create multiple maps for each day in 2020 so that we can visualise the spread of the pandemic. Let’s start by creating the base world map again.
+
+```{r}
+m3 <- tm_shape(world) # create a new shape file from scratch
+temp3 <- m3$tm_shape$shp
+
+```
+
+First, we need to ensure that we insert the weekly information into `m3` just as we inserted the info for the one day. What we will do is to select every fourth week, starting with the week of the 10th of Feb 2020. This is done in date_sel using the sequence (seq) function. Then we select all dates in `date_sel` from our original dataset (`data`).
+
+```{r}
+# prepare the data from data
+date_sel <- seq(as.Date("2020-02-10"), as.Date("2020-12-14"), 28)
+temp_mergein <- data %>% filter(dates %in% date_sel) %>% 
+                  dplyr::select(geoId, dates, cases_weekly, c_cases, 
+                                pc_cases, deaths_weekly, c_deaths, pc_deaths) %>% 
+                  arrange(geoId,dates)
+
+temp_mergein$geoId <- as.character(temp_mergein$geoId)
+temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB" 
+```
+
+So far, we extracted the data as in Section 1.6, but for more dates. We are now also keeping the `dates` variable.
+
+Now we need to merge the new data into `temp3`. To do so, we will turn the dates into the character format (`tmap` does not work well with date formats) and remove the countries with no available observations, as these would introduce an extra date (recorded as `na`).
+
+
+```{r}
+temp3 <- merge(temp3, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
+# convert dates to character variables (date formats do not work well with tmaps)
+temp3$dates <- as.character(temp3$dates)  
+# delete countries with no data
+temp3 <- temp3 %>%  filter(!is.na(dates)) 
+```
+
+This updated data frame is now inserted back into the shape file.
+
+```{r}
+m3$tm_shape$shp <- temp3
+```
+
+Now we need to instruct `tmap` to produce the maps, here for `col="pc_cases"`, but make a separate map for every day. The `tmap` command which is useful here is `tm_facets(by = "dates", free.coords = FALSE)`. The `by = "dates"` option selects the `dates` variable to be the “facet” variable, i.e. the variable that determines when a separate map should be plotted (one map per week).
+
+
+```{r}
+covid_fac <- m3 + tm_polygons(col = "pc_cases", 
+                              style = "fixed", # use fixed categories
+                              breaks = c(0,50,250,1000,5000,50000)) + # set breaks
+                  tm_facets(by = "dates", free.coords = FALSE)
+covid_fac
+
+```
+
+The output was saved in `covid_fac`. As you can see, we do not have an observation from every country on all days. If we are missing an observation then, for that particular day, the country will not appear on the map.
+
+> Explore the data: Use `?tm_polygons` to learn about some of the adjustments you can make to these graphs. For example, experiment with the colour scale - in the code block above, replace `style = "fixed", breaks = c(0,50,250,1000,5000,50000)` with `style = "cont"` or `style = "log10_pretty"`, and see which colour scale works best in this context.
+
+# 2 Government policies
+
+The story of the pandemic due to Covid-19 is also a story of different government policies, not only to attempt to suppress the virus but also to cope with the economic impact the pandemic, and the policies to prevent its spread had.
+
+
+In this section we will rely heavily on the work published in the [https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker](Oxford University Coronavirus Government Response Tracker, OxCGRT). 
+
+The OxCGRT distinguishes between three categories of government policies related to the Covid-19 pandemic, containment policies (like contact and travel restrictions), economic support ppolicies (like furlough schemes or stimulus packages) and health system policies (Testing programs, Information campaigns). Detailed explnations on policies considered and how they are coded are available from [https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md](here).
+
+Here we will look at the containment and health system policies as these should have the most direct impact on the actual case and death numbers. This is despite the commonly made argument that the degree to which a population will adhere to many containment policies may well depend on the support given by economic policies.
+
+Let is import the following dataset which, in the xlsx form used here, is available from [https://github.com/OxCGRT/covid-policy-tracker/raw/master/data/timeseries/OxCGRT_timeseries_all.xlsx](here).
+
+```{r}
+data_pol <- read_excel("OxCGRT_timeseries_all.xlsx", sheet = "containment_health_index")
+```
+
+The numbers you can see are an index number where 0 represents the state in which no measures are in place and 100 where all respective policies are implemented to the maximum. We will soon look at a time-series of this index for a particular country, but before we can do so we need to restructure the dataset.
+
+To understand how it is structured you could either view the dataframe or display the first view rows:
+
+```{r}
+head(data_pol)
+```
+
+Looking at this dataset you can see that every country (`country_code`, `country_name`) is represented by a row and that each day from 1 Jan 2020 onwards is represented by a column. That is not the format in which we find the case and death data (one row for each country-week). Also we have daily observationss when the case data are weekly. We therefore have two tasks before we can merge the data.
+
+1. Turn the date columns into date rows.
+2. Remove the days which do not correspond to the days in 'data'.
+
+The data format at hand is called a wide format whereas we want a long format (the dates for a contry in separate rows). This is an operation which you may have to google (e.g. "R tidyverse from wide to long"). Using the tidyverse to achieve this is done by using the `pivot_longer` command.
+
+```{r}
+# specifies the column names which are to be kept
+keep_names <- c("country_code", "country_name") 
+data_pol <- data_pol %>%
+  pivot_longer(!keep_names, names_to = "dates", values_to = "CHI")
+```
+
+Let's look at the first few lines to confirm that the opeartion worked:
+
+```{r}
+head(data_pol)
+```
+
+When you have a look atthe country names in this datafile you can perhaps recognise that countries with two word names, like "United Kingdom" are here shown as the 
+
+The `dates` are still character variables and we shall transform them to recognised dates. We used the `as.Date` function at the beginning of this file but we need to recognise that the date is now specified in this "%d%b%Y" format (see [https://tinyco.re/8606284](for details)).
+
+```{r}
+data_pol$dates <- as.Date(data_pol$dates,format = "%d%b%Y")
+```
+
+Now we are in a position to show the Containment-Health Index (CHI) as a time series. Initially we will show the CHI for all 182 countries in the dataset.
+
+```{r}
+g8 <- ggplot(data_pol, 
+             aes(x=dates,y=CHI, color = country_name)) +
+      geom_line(size = 0.1) +   # size controls the line thickness
+      theme(legend.position = "none") +  # remove legend
+      ggtitle("Containmet-Health Index")
+g8
+```
+
+This illustrates that there was a first wave of restrictions imposed in some countries in late January/early Febtuary, followed by the large wave of restricions across almost all 182 countries in March. Let's look at three european countries, "Spain", "France" and "United_Kingdom", as we did before.
+
+```{r}
+sel_countries <- c("Spain", "France", "United_Kingdom")
+g8 <- ggplot(subset(data_pol, country_name %in% sel_countries), 
+             aes(x=dates,y=CHI, color = country_name)) +
+      geom_line(size = 1) +   # size controls the line thickness
+      ggtitle("Containmet-Health Index")
+g8
+```
+
+Clearly the Uk data are missing. The reason being that in the `data_pol` dataset the country name is "United Kingdom". Fortunately, both datasets contain unique 3-letter country codes (United Kingdom = GBR). You can look up a list of unique country codes on this [https://www.iban.com/country-codes](list.)
+
+```{r}
+sel_countries <- c("ESP", "FRA", "GBR")
+g8 <- ggplot(subset(data_pol, country_code %in% sel_countries), 
+             aes(x=dates,y=CHI, color = country_name)) +
+      geom_line(size = 1) +   # size controls the line thickness
+      ggtitle("Containmet-Health Index")
+g8
+```
+
+From this graph you can see that these three countries have seen qualitatively similar severity in restrictions, perhaps with the noted difference of a relaxation in the United Kingdom towards the end of November 2020 which, in that form was not seen in Spain and France.
+
+Looking at three other countries (Germany, Sweden and Hungary) also illustrates that some countries have taken distinctly different aproaches.
+
+```{r}
+sel_countries <- c("DEU", "SWE", "HUN")
+g9 <- ggplot(subset(data_pol, country_code %in% sel_countries), 
+             aes(x=dates,y=CHI, color = country_name)) +
+      geom_line(size = 1) +   # size controls the line thickness
+      ggtitle("Containmet-Health Index")
+g9
+```
+
+## 2.1 Government policies and Covid incidence
+
+The press is awash with discussion of whether restrictions imposed by governments were effective. The question of policy effectiveness is one which economists are genereally very interested in. A whole set of methodologies has been developed to answer such questions.
+
+This is not the place to either review such literature nor indeed to apply all the lessons learned. In this instance we are mainly interested to highlight why it is very difficult to come to definitive findings when asking whether a policy was effective. The problem is typically that the policy is correlated with some other (often unobserved) factors which also determine the outcome of the variable of interest.
+
+
+## 2.2 Correlating policy with outcomes
+
+As our outcome variables is weekly we will now reduce the daily policy variable to the same weekly frequency.
+
+```{r}
+sel_dates <- unique(data$dates)  # these are the dates from data
+data_pol2 <- data_pol %>% filter(dates %in% sel_dates)
+```
+
+Now we can add the CHI index data to the original dataset.
+
+```{r}
+data_merge = merge(data, data_pol, by.x=c("countryCode", "dates"), 
+                   by.y=c("country_code", "dates"), all.x = TRUE)
+```
+
+We will now display the policy variable (`CHI`) and the weekly number of deaths, as we surmise that keeping the number of deaths low was indeed one of the policy aims. We therefore show a policy and a policy target variable in one graph.
+
+```{r}
+sel_countries <- c("DEU")
+data_temp <- subset(data_merge, countryCode %in% sel_countries)
+scale_factor <- max(data_temp$deaths_weekly/100)
+p10 <- ggplot(data_temp, aes(x = dates))
+  p10 <- p10 + geom_line(aes(y = CHI, colour = "CHI"))
+  
+  # adding the weekly deaths, /60 to bring deats to roughly the same scale as CHI
+  p10 <- p10 + geom_line(aes(y = deaths_weekly/scale_factor, colour = "Deaths"))
+  
+  # now adding the secondary axis, 
+  # following the example in the help file ?scale_y_continuous
+  # and, very important, reverting the above transformation
+  p10 <- p10 + scale_y_continuous(sec.axis = sec_axis(~.*scale_factor, name = "Deaths"))
+  
+  # modifying colours and theme options
+  p10 <- p10 + scale_colour_manual(values = c("blue", "red"))
+  p10 <- p10 + labs(y = "CHI [Index]",
+                x = "Date",
+                colour = "Series")
+  p10 <- p10 + theme(legend.position = c(0.1, 0.8)) 
+  p10 <- p10 + ggtitle(paste("Containmet-Health Index and Weekly Deaths -",
+                             as.character(sel_countries)))
+p10
+```
+
+
+### 2.2.1 Let's calculate growth rates
+
+In short one could formulate the expectation of policy-makers that a tightening of restrictions (an increase in CHI) sould bring about a drop in the number of weekly deaths. To analyse any such relation we calculate the change in the CHI, `dCHI` and the growth rate of `deaths_weekly`.
+
+The following code assumes that the data are ordered by dates.
+
+```{r}
+data_merge <- data_merge %>% group_by(countryCode) %>% 
+    mutate(gDeaths = (deaths_weekly - lag(deaths_weekly))/lag(deaths_weekly))  %>% 
+    mutate(gDeaths = na_if(gDeaths, Inf)) %>% 
+    mutate(dCHI = (CHI - lag(CHI))) 
+```
+
+Note that, for all countries we have a first week in which increase from 0. In that week the growth rate will be infinite. These observations are being replaced as missing values using `mutate(gDeaths = na_if(gDeaths, Inf))`.
+
+Let's pick one country, say Germany (`countryCode == "DEU"`), to plot a scatter plot of these two variables.
+
+```{r}
+sel_countries <- c("DEU")
+g11 <- ggplot(subset(data_merge, countryCode %in% sel_countries), 
+             aes(x=dCHI,y=gDeaths,colour=dates)) +
+      coord_cartesian(ylim = c(-1, 6)) +
+      geom_point(size = 2) +   # size controls the line thickness
+      ggtitle("Growth of deaths and change in CHI, same week")
+g11
+```
+
+As you can see from this plot the largest rate of growth of weekly deaths actually occurs in the same week as the largest increas in the CHI (Week 12, week beginning 23 March 2020). This is of course a reflection of the fact that the largest restrictions are likely to be introduced in periods in which the outcome variable is moving into the wrong direction.
+
+The actual impact of the policy (in particular when measured in the numbers of deaths, which typically come 3 to 4 weeks after the infection) is actually expected delayed. We therefore replicate the previous plot
+
+
+```{r}
+sel_countries <- c("DEU")
+g12 <- ggplot(subset(data_merge, countryCode %in% sel_countries), 
+             aes(x=lag(dCHI,4),y=gDeaths,colour=dates)) +
+      coord_cartesian(ylim = c(-1, 6)) +
+      geom_point(size = 2) +   # size controls the line thickness
+      ggtitle("Growth of deaths (t+4) and change in CHI (t)")
+g12
+```
+
+On this occasion you can see that the largest increase in CHI, in Germany, is followed four weeks later by a growth reate of deaths which is close to 0.
+
+This is of course just one country. We now isolate the week of the largest increase in CHI in each country and then look at how the growth rate of deaths develops develops through the following weeks. 
+
+```{r}
+# find the week in which each country has the largest increase in CHI, max_date
+data_max_dCHI <- data_merge %>% group_by(countryCode) %>% 
+         filter(dCHI == max(dCHI,na.rm = TRUE)) %>% 
+         dplyr::select(dates) %>% 
+         mutate(max_date = dates) %>% 
+        dplyr::select(max_date)
+
+# add max_date for each country
+data_merge <- merge(data_merge,data_max_dCHI,all.x = TRUE)   
+# order data by country and date
+data_merge <- data_merge %>% arrange(countryCode,dates)      
+# now add time variable relatve to largest increase in CHI
+data_merge <- data_merge %>% group_by(countryCode) %>% 
+              mutate(rel_date = dates-max_date) 
+```
+
+Without showing the detail here, most of the selected dates occur in arch and April 2020.
+
+Now we can plot the growth rate of deaths relative to the time at which the maximum increase in CHI occurred.
+
+
+```{r}
+data_temp <- data_merge %>% filter(rel_date > -30 & rel_date <80)
+g13 <- ggplot(data_temp, 
+             aes(x=rel_date,y=pc_deaths, color = country_name)) +
+      geom_line(size = 0.1) +   # size controls the line thickness
+      labs(y = "Deaths (per 100,000)",
+                x = "Days since largest CHI change")+
+      theme(legend.position = "none") +  # remove legend
+      ggtitle("Per capita deaths relative to CHI change")
+g13
+```
+
+There are lots of lines which are difficult to decipher. Even restricting the scale of the y axis (by adding for instance `ylim(0, 10)` to the above graph) does not give sufficient clarity.
+
+What we really want is some sort of summary statistics across all countries. That is what we do in the next commands.
+
+```{r}
+temp <- data_merge %>% group_by(rel_date) %>% # group by rel date 
+            filter(rel_date > -30 & rel_date <80) %>% 
+            summarise(mean_pcd = mean(pc_deaths,na.rm=TRUE)) # mean pc_death by rel_date
+
+g14 <- ggplot(temp, aes(x=rel_date,y=mean_pcd)) +
+      geom_bar(stat = "identity") +   
+      labs(y = "Average deaths (per 100,000)",
+                x = "Days since largest CHI change") +
+      ggtitle("Per capita deaths relative to CHI change")   
+g14
+```
+
+What we can see clearly from this is that the sharpest increase in restrictions in each country (here indexed by `reltime =0`) is followed, on average across the 182 countries, by an initial increase in deaths and after 5 weeks by a steady decline.
+
+Does the fact that the decline in numbers only starts five weeks after the policy change mean that on average the policies introduced in the respective countries die not work. The short answer is no. It is important to recognise that patients who die due to Covid-19 do so, typically 2 to 8 weeks after being infected. Most policies which are captured by the CHI are policies which attempt to prevent infection and hence it is to be expected that effective policies do only reduce the number of deaths after a significant delay; in fact a delay consistent with that shown in the above image.
+
+Does that imply that the policies desribed by the CHI have been effective. It is very likely that they have, but the image above is not, by itself, evidence of this effectiveness.
+
+> Read more: [https://www.nature.com/articles/s41586-020-2404-8](Article in Nature). This paper employs an approach which is conceptually quite similar to the above simple analysis but with the ambition to highlight particular policies which made a difference.
+
+## 2.3 Evaluate policy effectiveness
+
+In this section we will describe what would be considered clear-cut evidence of a policy's effectiveness.
+
+To illustrate what is requited we return to a previous graph in which we display the CHI index and the series of weekly deaths in the same image. 
+
+```{r}
+sel_countries <- c("GBR")
+data_temp <- subset(data_merge, countryCode %in% sel_countries)
+scale_factor <- max(data_temp$deaths_weekly/100)
+p15 <- ggplot(data_temp, aes(x = dates))
+  p15 <- p15 + geom_line(aes(y = CHI, colour = "CHI"))
+  
+  # adding the weekly deaths, to bring deats to roughly the same scale as CHI
+  p15 <- p15 + geom_line(aes(y = deaths_weekly/scale_factor, colour = "Deaths"))
+  
+  # now adding the secondary axis, 
+  # following the example in the help file ?scale_y_continuous
+  # and, very important, reverting the above transformation
+  p15 <- p15 + scale_y_continuous(sec.axis = sec_axis(~.*scale_factor, name = "Deaths"))
+  
+  # modifying colours and theme options
+  p15 <- p15 + scale_colour_manual(values = c("blue", "red"))
+  p15 <- p15 + labs(y = "CHI [Index]",
+                x = "Date",
+                colour = "Series")
+  p15 <- p15 + theme(legend.position = c(0.1, 0.8)) 
+  p15 <- p15 + ggtitle(paste("Containmet-Health Index and Weekly Deaths -",
+                             as.character(sel_countries)))
+p15
+```
+
+As you can see from the CHI series, in mid-October (between 19 and 26th of October) Great Britain went into the highest observed level of the CHI (as large parts of the country went into the highest tier of restrictions), while mid November and early December we saw some important relaxations of containment policies (mainly the end of the lockdown in Wales in mid November and in England and Scotland in early December). The relaxation over the Christmas period is not reflected in these data yet.
+
+In addition to these changes in the containment policies we can also see that a dip in deaths in Mid-december is most recently followed by an increase in deaths again.
+
+We could, for example, ask whether the imposition of the lockdown, in early November 2020, or the conclusion of the lockdown, in early December, had any causal effect on the number of deaths. Let us first zoom in on the period in question.
+
+```{r}
+sel_countries <- c("GBR")
+data_temp <- subset(data_merge, (countryCode %in% sel_countries) & dates > "2020-10-01") 
+scale_factor <- max(data_temp$deaths_weekly/100)
+p15 <- ggplot(data_temp, aes(x = dates))
+  p15 <- p15 + geom_line(aes(y = CHI, colour = "CHI"), size=1.5)
+  
+  # adding the weekly deaths, to bring deats to roughly the same scale as CHI
+  p15 <- p15 + geom_line(aes(y = deaths_weekly/scale_factor, colour = , colour = "Deaths"), 
+                         size=1.5)
+  
+  # now adding the secondary axis, 
+  # following the example in the help file ?scale_y_continuous
+  # and, very important, reverting the above transformation
+  p15 <- p15 + scale_y_continuous(sec.axis = sec_axis(~.*scale_factor, name = "Deaths"))
+  
+  # modifying colours and theme options
+  p15 <- p15 + scale_colour_manual(values = c("blue", "red"))
+  p15 <- p15 + labs(y = "CHI [Index]",
+                x = "Date",
+                colour = "Series")
+  p15 <- p15 + theme(legend.position = c(0.1, 0.8)) 
+  p15 <- p15 + ggtitle(paste("Containmet-Health Index and Weekly Deaths -",
+                             as.character(sel_countries)))
+p15
+```
+
+The challenge, as a researcher, is to think about the "counter-factual" outcome. You got to answer the question of what would have happened if a policy had not been implmented. In general, there, there are two approaches 
+
+1) Use the experience of the country before the policy implementation to extrapolate from that pre-policy experience 
+
+2) Use another country, which ideally, differs from the country in question only through the policy in question.
+
+In some sense the graphical analysis above employed the first approach. We concluded that the plots indicated that thee was a (delayed) reduction effect of the policies on the death rates, and we jusdged these by comparing the death rates to those which were observed before the policy took hold.
+
+Here we will employ the second approach, by comparing what happened in Great Britain with what happened in Spain.
+
+```{r}
+sel_countries <- c("GBR","ESP")
+data_temp <- subset(data_merge, (countryCode %in% sel_countries) & dates > "2020-09-01") 
+
+p16 <- ggplot(data_temp, aes(x = dates))
+  p16 <- p16 + geom_line(aes(y = CHI, colour = countryCode), size=1.5)
+  p16 <- p16 + labs(y = "CHI [Index]",
+                x = "Date",
+                colour = "Country")
+  p16 <- p16 + theme(legend.position = c(0.1, 0.8)) 
+  p16 <- p16 + ggtitle(paste("Containmet-Health Index for GBR and ESP"))
+p16
+```
+
+You can see that in September, October and early November the restriction policies were similar, but they diverged in mid-November and early December when, in Great Britain, lockdown restrictions were eased while in Spain the restrictions did stay on the same level reached in early November. Therefore, the policy we can potentially evaluate here is the relaxation of restrictions in Great Britain.
+
+This setup allows us to compare the outcomes (as measured by Deaths due to Covid) under a setup called "Difference-in-Difference" (sometimes shortened to Diff-in-Diff or even DiD). The hypothesis here is that the countries were on similar policy paths in a "pre-policy-change" period (here up to early November) and then diverged in a "post-policy-change" period (from mid-November) in terms of a relevant policy. We then compare the change in outcomes (how did the death statistics change from the pre- to post- period) and in particular we will look at whether that change differes between the two coutries (therefore "difference" - between countries - in "difference" - between pre and post).
+
+So let's look at the outcomes.
+
+```{r}
+sel_countries <- c("GBR","ESP")
+data_temp <- subset(data_merge, (countryCode %in% sel_countries) & dates > "2020-09-01") 
+
+p17 <- ggplot(data_temp, aes(x = dates))
+  p17 <- p17 + geom_line(aes(y = deaths_weekly, colour = countryCode), size=1.5)
+  p17 <- p17 + labs(y = "Weekly Deaths",
+                x = "Date",
+                colour = "Country")
+  p17 <- p17 + theme(legend.position = c(0.1, 0.8)) 
+  p17 <- p17 + ggtitle(paste("Weekly deaths for GBR and ESP"))
+p17
+```
+
+There seems to be a clear correspondence between the policy relaxation in Great Britain and the sustained rise in deaths. It may be argued that one should look at the per capita numbers, but they deliver qualitatively the same picture.
+
+```{r}
+sel_countries <- c("GBR","ESP")
+data_temp <- subset(data_merge, (countryCode %in% sel_countries) & dates > "2020-09-01") 
+
+p18 <- ggplot(data_temp, aes(x = dates))
+  p18 <- p18 + geom_line(aes(y = pc_deaths, colour = countryCode), size=1.5)
+  p18 <- p18 + labs(y = "Weekly Deaths (per 100,000)",
+                x = "Date",
+                colour = "Country")
+  p18 <- p18 + theme(legend.position = c(0.1, 0.8)) 
+  p18 <- p18 + ggtitle(paste("Per capita deaths for GBR and ESP"))
+p18
+```
+
+The key assumption an analyst has to make when evaluating a policy (here, the mid-November/early-December relaxation of restrictions in Great Britain) like this, is that, in the absence of the policy (or better policy difference) the development in the two countries would have been identical. We call this the parallel trends assumption. In our case we can see that the development (in terms of levels but most importantly in terms of trend) of deaths were actually quite similar in the pre period. This is one piece of evidence commonly used to support the commpon trend assumption.
+
+In your mind you always have to challenge such assumptions. A short paper which discusses such issues with specific reference to applying Diff-in-Diff to Covid-19 policies has been written by [https://ideas.repec.org/p/diw/diwwpp/dp1870.html](Goodman-Bacon and Marcus, DIW Working Paper No. 1870). 
+
+Amongst others they point out that it will be difficult to identify individual policies (say school closures) when they typically come as part of wider-ranging packages. In our case we acknowledge this explicitely as we are using a policy index which is, by construction, a measure of a package of policies. Goodman-Bacon and Marcus also point out that it may be difficult to  actually find areas which are comparable. Reasons may be that countries may be different in dimensions which are important to the effectiveness of policies (such as population density and distribution, accopanying economic support policies, etc.).
+
+This is an important consideration in this case as there is one aspect in which Spain and Greta Britain certainly differed. It is now well documented ([https://www.imperial.ac.uk/news/211793/new-covid-19-variant-growing-rapidly-england/](see for example this report published through Imperial College published on 31 December 2020)) that a new, more contagious, variant of the Covid-19 virus has been spreading widely in areas of Great Britain since most likely November.
+
+As this coincides with the policy difference between Great Britain and Spain, it is impossible to conclusively conclude that the policy difference, rather than a more contagious virus, is responsible for the difference in development of death statistics. As there is no other country in which, at this point, the new virus variant is equally widespread as in Great Britain, it may be difficult, if not impossible, to find a conclusive research design which identifies the impact of the policy difference.
+
+
