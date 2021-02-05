@@ -18,8 +18,12 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Aim for today
 
 \begin{itemize}
+  \item Become familiar with handling some Covid-19 data
+  \item Produce some graphical representation of data
+  \item Become familiar with merging datasets
   \item Review hypothesis testing
-  \item Review simple regresison anlysis
+  \item Review simple regression anlysis
+  \item Understand the limitation of regression as a causal analysis tool
   \item Become more familiar with R
 \end{itemize}
 
@@ -37,6 +41,7 @@ library(tidyverse)    # for almost all data handling tasks
 library(ggplot2)      # plotting toolbox
 library(utils)        # for reading data into R 
 library(httr)         # for downloading data from a URL 
+library(stargazer)    # enables well formatted regression output
 ```
 
 
@@ -49,15 +54,18 @@ The dataset is published by the [https://tinyco.re/4826169](European Centre for 
 * Weekly data for Covid cases and deaths
 * more than 200 countries
 
+\scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=TRUE}
 
-#download the dataset from the ECDC website to a local temporary file (“tf”)
+#download the dataset from the ECDC website to a 
+# local temporary file (“tf”)
 GET("https://opendata.ecdc.europa.eu/covid19/casedistribution/csv", 
     authenticate(":", ":", type="ntlm"), 
     write_disk(tf <- tempfile(fileext = ".csv")))
-#read the Dataset sheet into “R”. The dataset will be called "data".
+# load into “R”. The dataset will be called "data".
 data <- read.csv(tf) 
 ```
+\normalsize
 
 * This will load `data` into your environment. 
 * We are taping directly into the ECDC's datafile. Everytime you do this you will get the most recent data (on 2 Feb 2021 this delivered 10219 observations)
@@ -68,6 +76,7 @@ data <- read.csv(tf)
 names(data)[names(data) == "countriesAndTerritories"] <- "country"
 names(data)[names(data) == "countryterritoryCode"] <- "countryCode"
 names(data)[names(data) == "dateRep"] <- "dates"
+names(data)[names(data) == "notification_rate_per_100000_population_14.days"] <- "nr"
 data$dates <- as.Date(as.character(data$dates),format = "%d/%m/%Y")
 ```
 After some name changes and turning dates into date format:
@@ -94,7 +103,7 @@ data[678,]   # 678 is just an arbitrary row in the dataset
 Let's find out how many observations we have for a set of countries. Say for China, the UK ("United_Kingdom") and the Bahamas.
 
 Use piping technique of the `tidyverse`
-\tiny
+\scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 sel_countries <- c("China", "United_Kingdom","Bahamas")
 
@@ -112,7 +121,7 @@ Smaller countries tend to start reporting later than bigger ones.
 
 Essentially we have a dataset which combines cross-section (different countries) with time-series (consequitive weeks for each country). We call such a dataset a panel.
 
-```{r}
+```{r,fig.height = 3, fig.width = 4.5}
 g1 <- ggplot(subset(data, country == "China"), aes(x=dates,y=deaths_weekly)) +
       geom_line() + 
       ggtitle("Covid-19 weekly deaths")
@@ -126,7 +135,7 @@ What happened in April?
 
 Weekly cases for two countries
 
-```{r}
+```{r,fig.height = 3, fig.width = 4.5}
 sel_countries <- c("China", "South_Korea")
 g2 <- ggplot(subset(data, country %in% sel_countries), 
              aes(x=dates,y=cases_weekly, color = country)) +
@@ -135,163 +144,213 @@ g2 <- ggplot(subset(data, country %in% sel_countries),
 g2
 ```
 
-## Data - Some graphical representation
+## Data - Some summary stats
 
+Summarise data by country. 
 
-
-Summarise data by country and wave. 
-
-* A170: All things considered, how satisfied are you with your life as a whole these days? (1 Dissatisfied to 10 Satisfied)
-* A009: All in all, how would you describe your state of health these days? Would you say it is ... 1 Very poor to 5 Very good
+* `cases_weekly`: Let's find the average number of weekly cases across all weeks
+* `deaths_weekly`: Let's find the average number of weekly deaths across all weeks
 
 \scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table2 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
-            summarise(Avg_LifeSatis = mean(A170),Avg_Health = mean(A009))     
-head(table2,4)
+table2 <- data %>% group_by(country) %>% # groups by Country
+            summarise(Avg_wc = mean(cases_weekly,na.rm = TRUE),
+                      Avg_wd = mean(deaths_weekly,na.rm = TRUE))     
+head(table2,6)
 ```
 \normalsize
 
-\textcolor{student}{table2 now contains an observation for each country-year with Avg\_LifeSatis and Avg\_Health}
+Table2 now contains an observation for each country with the average of weekly cases and deaths. Why is there such a stark difference between [https://en.wikipedia.org/wiki/Algeria](Algeria) and [https://en.wikipedia.org/wiki/Anguilla](Anguilla)?
 
-
-## Data - Some graphical representation
-
-\tiny
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-ggplot(table2,aes(Avg_Health,Avg_LifeSatis, colour=S002EVS)) +
-  geom_point() +
-  ggtitle("Health v Life Satisfaction")
-```
-\normalsize
-
-## Data - Some graphical representation
-
-Summarise data by country and wave. 
-
-* A170: All things considered, how satisfied are you with your life as a whole these days? (1 Dissatisfied to 10 Satisfied)
-* C041: Work should come first even if it means less spare time, 1 = Strongly Agree, 5 = Strongly Disagree
+## Data - When can you compare data
 
 \scriptsize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table2 <- wb_data %>% group_by(S002EVS,S003) %>% 
-            summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))   
+```{r, echo = FALSE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+head(table2,6)
 ```
 \normalsize
 
-## Data - Some graphical representation
+Comparing absolute numbers of any variable can be extremely misleading.
 
-\tiny
+* Adjusting by population is often appropriate (other standardisation variables may be appropriate in other situations)
+* Some variables may be the result of different testing strategies in countries (affects `weekly_cases` more than `weekly_deaths`)
+
+## Data - Standardise the case data
+
+Let's standardise by population (`popData2019`) which is included as a variable into the dataset. Note that this is constant through the weeks. These are often reported as cases per 100,000 (although for Deaths sometimes per 1,000,000 - see [https://ourworldindata.org/covid-deaths?country=IND~USA~GBR~CAN~DEU~FRA](Our World in Data)).
+\scriptsize
+
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-ggplot(table2,aes( x=Avg_WorkFirst, y=Avg_LifeSatis,colour=S002EVS)) +
-  geom_point() +
-  ggtitle("Work First v Life Satisfaction")
+data <- data %>%  
+          mutate(pc_cases = (cases_weekly/popData2019)*100000, 
+                 pc_deaths = (deaths_weekly/popData2019)*100000)
+```
+
+```{r, echo = FALSE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+sel_countries <- c("Spain", "France", "United_Kingdom")
+g5 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=pc_deaths, color = country)) +
+      geom_line(size = 0.5) +   # size controls the line thickness
+      ggtitle("Covid-19 weekly deaths per 100,000")
 ```
 \normalsize
 
-## Data - Some graphical representation
-
-There seems to be a negative relationship between Attitude to Work ($WC$) and Life Satisfaction ($LS$) (in countries with a "work-centric" ethic people were on average happier.)
-
-Is there such a relationship inside countries as well?
-
-We will calculate correlations for each country-wave, e.g. Austria in 2008:
+## Data - Standardise the case data
 
 \scriptsize
-$Corr_{Aut,2008}(LS_{i,Aut,2008},WC_{i,Aut,2008})$ \textcolor{student}{ $=\dfrac{Cov_{Aut,2008}(LS_{i,Aut,2008},WC_{i,Aut,2008})}{s_{LS,Aut,2008}~s_{WC,Aut,2008}}$}
+```{r, echo = FALSE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+g5
+```
+
+## Data - Standardise the case data
+\scriptsize
+
+```{r, echo = FALSE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+sel_countries <- c("United_States_of_America", "Germany", "Sweden", "India")
+g6 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=pc_deaths, color = country)) +
+      geom_line(size = 1) +   # size controls the line thickness
+      ggtitle("Covid-19 weekly deaths per 100,000")
+g6
+```
+
+## Data - Importing and Merging Data
+\scriptsize
+Is it the case that countries with larger population density find it more difficult to control the spread of Covid?
+
+Need to import Land Area data and merge them into our dataset (`CountryIndicators.csv`). This also imports two further country indicators (Health Expenditure and GDP per capita).
+
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table3 <- wb_data %>% filter(S002EVS == "2008-2010") %>% 
-            group_by(S003) %>% # groups by Country
-            summarise(cor_LS_WF = cor(A170,C041,use = "pairwise.complete.obs"),
-                      med_income = median(X047D)) %>%    
-            arrange(cor_LS_WF) 
+countryInd <- read_csv("CountryIndicators.csv",na = "#N/A") 
+data<- merge(data,countryInd,,all.x=TRUE)
+data <- data %>% mutate(popdens = popData2019/Land_Area_sqkm)  # pop. density
+
+table3 <- data %>% group_by(country) %>% # groups by Country
+            summarise(Avg_cases = mean(pc_cases,na.rm = TRUE),
+                      Avg_deaths = mean(pc_deaths,na.rm = TRUE),
+                      PopDen = mean(popdens))     
+head(table3,2)
 ```
+
+
+`table3` now includes a column for the population density along the average weekly case and deaths (per capita). 
 \normalsize
 
-\textcolor{student}{Point out that correlations are in $[-1,1]$. They are standardised covariances. Ensure you revise how to calculate sample s.d. and covariances!}
-
-## Data - Some graphical representation
-
-\tiny
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2, fig.width = 3}
-ggplot(table3,aes( cor_LS_WF, med_income)) +
+## Data - Scatter Plot
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2.8, fig.width = 4.5}
+ggplot(table3,aes(PopDen,Avg_deaths)) +
   geom_point() +
-  ggtitle("Corr(Life Satisfaction, Work First) v Median Income")
+  ggtitle("Population Density v Per Capita Deaths")
 ```
 \normalsize
 
-\textcolor{student}{Note that the correlation between $LS$ and $WC$ is close to 0 in most countries}
+## Data - Scatter Plot
+\scriptsize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2.5, fig.width = 4.5}
+ggplot(table3,aes(PopDen,Avg_deaths)) +
+  geom_point() +
+  scale_x_log10() +
+  ggtitle("Population Density v Per Capita Deaths")
+```
+
+## Data - Correlation
+
+An important statistic which is used to measure the strength of a relationship is the correlation coefficient.
+
+Is there a relationship between `PopDen` and `Avg_deaths`?
+
+
+\scriptsize
+$Corr_{PopDen,Avg\_deaths}=\dfrac{Cov(PopDen,Avg\_deaths)}{s_{PopDen}~s_{Avg\_deaths}}$
+
+\normalsize
+
+Correlations are in the $[-1,1]$ interval. They are standardised covariances. Ensure you revise how to calculate sample s.d. and covariances! R does it using the `cor` function.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+cor(table3$PopDen, table3$Avg_deaths,use = "complete.obs")
+```
+
+\normalsize
+
+So if at all, there is a negative relationship but close to 0.
 
 
 ## Data on Maps
 
-Geographical relationships are sometimes best illustrtaed with maps.
+Geographical relationships are sometimes best illustrated with maps.
 
-Sometimes these will reveal a pattern.
+Sometimes these will reveal patterns which are not very obvious in other ways..
 
 R can create great maps (but it requires a bit of setup - see the additional file on BB). You need the following
 
 * A shape file for each country
-* The statistics for each country
+* The statistics for each country, like `Avg_deaths`
 * a procedure to merge these bits of information in one data-frame (`merge`)
 
-Let's look at average life satisfaction and average attitude to the "work first" statement as these statistics vary by country.
+Let's look at the distribution of weekly deaths across the globe as of Jan 2021.
 
 ## Data on Maps
 
 ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 3, fig.width = 4.5}
-library(tmap)   # mapping package
-library(sf)     # required to deal with shape files
-library(spData) # delivers shape files
-wb_data_map <- wb_data   # duplicate the dataset so we keep the original unchanged
-wb_data_map$S003[wb_data_map$S003 == "Bosnia Herzegovina"] <- "Bosnia and Herzegovina"
-wb_data_map$S003[wb_data_map$S003 == "Great Britain"] <- "United Kingdom"
-count_list <- unique(wb_data_map$S003)
-count_list <- count_list[!(count_list %in% c("United States","Canada","Russian Federation"))]
-d_world <- world
-d_sel <- d_world %>% 
-            filter(name_long %in% count_list)
-table2_map <- wb_data_map %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
-            summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))    # summarises each group by calculating obs
-d_sel_merged <- merge(x = d_sel,y = table2_map,by.x = "name_long",by.y="S003") # merge the data in x and y
-d_sel_2018 <- d_sel_merged %>% filter(S002EVS == "2008-2010")
+library(sf)
+library(raster)
+library(spData)
+library(tmap)
+m2 <- tm_shape(world) 
+temp <- m2$tm_shape$shp
 
-map1 <- tm_shape(d_sel_2018) +
-  tm_borders() +
-  tm_fill(col = "Avg_LifeSatis", title = "Satisfaction with your life") +
-  tm_style("cobalt") +
-  tm_layout(title = "Average Life Satisfaction") 
-
-map2 <- tm_shape(d_sel_2018) +
-  tm_borders() +
-  tm_fill(col = "Avg_WorkFirst", title = "1 = Strongly Agree, 5 = Strongly Disagree") +
-  tm_style("cobalt") +
-  tm_layout(title = "Average Attitude to Work First") 
-
-tmap_arrange(map1, map2)   # this arranges the maps next to each other
+temp_mergein <- data %>% filter(dates == "2021-02-01") %>% 
+                          dplyr::select(geoId, cases_weekly, pc_cases, deaths_weekly, pc_deaths)
+# Change UK level name to GB
+levels(temp_mergein$geoId)[levels(temp_mergein$geoId)=="UK"] <- "GB" 
+temp <- merge(temp, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
+m2$tm_shape$shp <- temp
+breaksm <- c(1,2,3,4,5,10,50)  # controls the breakpoints for categories
+m2 + 
+  tm_polygons(col = "pc_deaths", breaks=breaksm, title = "Weekly deaths\n Jan 2021") +  
+  tm_layout(bg.color = "lightblue") 
 ```
 
 
 
 ## Hypothesis Testing - Introduction
-
+\footnotesize
 Hypothesis testing is a core technique used in empirical analysis. Use sample data to infer something about the population mean (or correlation, or variance, etc). Hence \emph{inference}.
 
 It is crucial to understand that the particular sample we have is one of many different possible samples. Whatever conclusion we arrive at is not characterised by certainty.
 
 **Example**
 
-Are average life satisfaction in Germany and Britain the same? (for 2008-2010 wave)
-\vskip -1cm
+Is the average number of (per capita) weekly cases in Europe the same as that in America (as per 1 Feb 2021).  
+
 \begin{eqnarray*}
-  H_0&:& \mu_{LS,Ger,2008} = \mu_{LS,GB,2008}\\
-  H_A&:& \mu_{LS,Ger,2008} \neq \mu_{LS,GB,2008}
+  H_0&:& \mu_{c,EU,1Feb21} = \mu_{c,AM,1Feb21}\\
+  H_A&:& \mu_{c,EU,1Feb21} \neq \mu_{c,AM,1Feb21}
 \end{eqnarray*}
 
-\textcolor{student}{The truth is either represented by $H_0$ or $H_A$}
+The truth is either represented by $H_0$ or $H_A$.
+
+Here $c$ represents the variable `pc_cases`,
 
 When performing a test we need to calibrate some level of uncertainty. We typically fix the Probability with which we reject a correct null hypothesis (Type I error). This is also called the significance level.
+\normalsize
+
+## The data
+
+Let's first look at  the averages across the continents (`continentExp`)
+
+\scriptsize
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+table4 <- data %>%   filter(dates == "2021-02-01") %>% 
+              group_by(continentExp) %>% 
+              summarise(Avg_cases = mean(pc_cases, na.rm = TRUE),
+                        Avg_deaths = mean(pc_deaths, na.rm = TRUE),
+                        n = n()) %>% print()
+```
+\normalsize
 
 
 ## Hypothesis Testing - Introduction
@@ -310,16 +369,16 @@ Depending on the type of hypothesis there will be a \textcolor{blue}{test statis
 **Example**
 The test statistic
 
-\[t = \dfrac{\bar{LS}_{Ger,2008} - \bar{LS}_{GB,2008}}{\sqrt{\frac{s_{LS,Ger,2008}}{n_{Ger,2008}}+\frac{s_{LS,GB,2008}}{n_{GB,2008}}}}\]
+\[t = \dfrac{\bar{c}_{EU,1Feb21} - \bar{c}_{AM,1Feb21}}{\sqrt{\frac{s_{c,EU,1Feb21}}{n_{EU,1Feb21}}+\frac{s_{c,AM,1Feb21}}{n_{AM,1Feb21}}}}\]
 
 How is this test statistic, \textcolor{blue}{t}, distributed (assuming $H_0$ is true)? \textcolor{red}{**If**}
 
 1. The two samples are independent
-2. The random variables $LS_{i,Ger,2008}$ and $LS_{i,GB,2008}$ are either normally distributed or we have sufficiently large samples
+2. The random variables $c_{EU,1Feb21}$ and $c_{AM,1Feb21}$ are either normally distributed or we have sufficiently large samples
 3. The variances in the two samples are identical
 
 then $t \sim$ \textcolor{student}{$t$ distributed 
-with $(n_{Ger,2008}+n_{GB,2008}-2)$ degrees of freedom.}
+with $(n_{EU,1Feb21}+n_{AM,1Feb21}-2)$ degrees of freedom.}
 
 The above assumptions are crucial (and they differ from test to test). If they are not met then the resulting p-value (or critical values) are not correct. \textcolor{student}{Other tests will have different distributions and require different assumptions!}
 
@@ -330,31 +389,32 @@ Let's create a sample statistic:
 \scriptsize
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data_G <- wb_data %>% 
-  filter(S003 == "Germany") %>%     # pick German data
-  filter(S002EVS == "2008-2010")    # pick latest wave
-mean_G <- mean(test_data_G$A170)
+test_data_EU <- data %>% 
+  filter(continentExp == "Europe") %>%     # pick European data
+  filter(dates == "2021-02-01")    # pick the date
+mean_EU <- mean(test_data_EU$pc_cases,rm.na = TRUE)
 
-test_data_GB <- wb_data %>% 
-  filter(S003 == "Great Britain") %>%  # pick British data
-  filter(S002EVS == "2008-2010")       # pick latest wave
-mean_GB <- mean(test_data_GB$A170)
+test_data_AM <- data %>% 
+  filter(continentExp == "America") %>%     # pick European data
+  filter(dates == "2021-02-01")    # pick the date
+mean_AM <- mean(test_data_AM$pc_cases,rm.na = TRUE)
 
-sample_diff <- mean_G - mean_GB
-sample_diff
+sample_diff <- mean_EU - mean_AM
+paste("mean_EU =", round(mean_EU,1),", mean_A =", round(mean_AM,1))
+paste("sample_diff =", round(sample_diff,1))
 ```
 \normalsize
 
-Is this different \textcolor{student}{~~~statistically and/or economically~~~} significant?
+Is this difference \textcolor{student}{~~~statistically and/or economically~~~} significant?
 
 ## Hypothesis Testing - Example 1
 
-Formulate a null hypothesis. Here that the difference in population means (`mu`) is equal to 0 using the `t.test` function. We deliver the `A170` series for both countries to `t.test`.
+Formulate a null hypothesis. Here that the difference in population means (`mu`) is equal to 0 using the `t.test` function. We deliver the `pc_cases` series for both countries to the `t.test` function.
 
 \scriptsize
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-t.test(test_data_G$A170,test_data_GB$A170, mu=0)  # testing that mu = 0
+t.test(test_data_EU$pc_cases,test_data_AM$pc_cases, mu=0)  # testing that mu = 0
 ```
 
 \normalsize
@@ -363,152 +423,42 @@ The p-value is very small and hence \textcolor{student}{it is very unlikely that
 
 ## Hypothesis Testing - Example 2
 
-What about the difference between Great Britain and Sweden though?
+What about the difference between Asia and Africa though?
 \scriptsize
-```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data_SW <- wb_data %>% 
-  filter(S003 == "Sweden") %>%  # pick British data
-  filter(S002EVS == "2008-2010")       # pick latest wave
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+test_data_AF <- data %>% 
+  filter(continentExp == "Africa") %>%     # pick European data
+  filter(dates == "2021-02-01")    # pick the date
 
-t.test(test_data_SW$A170,test_data_GB$A170, mu=0)  # testing that mu = 0
+test_data_AS <- data %>% 
+  filter(continentExp == "Asia") %>%     # pick European data
+  filter(dates == "2021-02-01")    # pick the date
+```
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+t.test(test_data_AF$pc_cases,test_data_AS$pc_cases, mu=0)   # testing that mu = 0
 ```
 \normalsize
-The p-value is 0.1251 and hence \textcolor{student}{there is a 12.5\% probability of this or a more extreme difference arising if the null hypothesis was true.}
+The p-value is 0.09249 and hence \textcolor{student}{there is an app. 9.2\% probability of this or a more extreme difference arising if the null hypothesis was true.}
 
 
 ## Hypothesis Testing - To reject or to not reject
 
-\scriptsize
 
-When comparing between Germany and Britain the p-value was app. 0: \textcolor{student}{Reject $H_0$}
 
-When comparing between Sweden and Britain the p-value was 0.1251: \textcolor{student}{hmmmm....}
+When comparing between Europe and America the p-value was smaller than 0.01: \textcolor{student}{Reject $H_0$}
+
+When comparing between Africa and Asia the p-value was 0.092: \textcolor{student}{hmmmm....}
 
 * Conventional significance levels are 10\%, 5\%, 1\% or 0.1\%
 * But what do they mean?
 
-To illustrtate we add a random variable (`rvar`) to all observations. The value comes from the identical distribution for all observations, the standard normal ($N(0,1)$ or `rnorm` in R):
-
-```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-wb_data$rvar <- rnorm(nrow(wb_data))   # add random variable
-
-test_data <- wb_data %>% 
-  filter(S002EVS == "2008-2010")       # pick latest wave
-
-countries <- unique(test_data$S003)  # List of all countries
-n_countries <- length(countries)   # Number of countries, 46
-```
-
-By construction we know that the true underlying mean is identical in all countries. 
-
-But what happens if we calculate sample means of `rvar` in all countries and then compare between countries? \textcolor{student}{$(46*46-46)/2=1035$ comparisons}
-
-\normalsize
-
-## Hypothesis Testing - To reject or to not reject
-
-\scriptsize
-
-```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-save_pvalue <- matrix(NA,n_countries,n_countries)
-
-for (i in seq(2,n_countries)){
-  for (j in seq(1,(i-1))){
-    test_data_1 <- test_data %>% 
-    filter(S003 == countries[i]) 
-    mean_1 <- mean(test_data_1$A170)
-
-    test_data_2 <- test_data %>% 
-    filter(S003 == countries[j]) 
-    mean_2 <- mean(test_data_2$A170)
-    
-    tt <- t.test(test_data_1$rvar,test_data_2$rvar, mu=0)  # testing that mu = 0
-    save_pvalue[i,j] <- unlist(tt["p.value"])    # this will just pick the p-value
-  }
-}
-
-tre <- (save_pvalue<0.1)   # value of TRUE if pvalue < 0.1
-cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
-```
-
-We have 1035 hypothesis tests, all testing a \textcolor{red}{correct} null hypothesis. If a p-value is smaller than 10\% we \textcolor{red}{decide} to reject $H_0$.
-
-```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table(tre)
-```
-
-\vskip -2cm
-
-\begincols
-  \begincol{0.3\textwidth}
-    Let's present a graphical representation of these results. Every green square representing a rejection of the null hypothesis.
-  \endcol
-  \begincol{0.7\textwidth}
-    ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 4, fig.width = 4.5}
-    image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
-    ```
-  \endcol
-    
-\endcols
-
-Is this what we would expect?
-\normalsize
-
-## Hypothesis Testing - To reject or to not reject
-
-\scriptsize
-
-Let's return to the Life Satisfaction data and repeat the above comparison between the average Life Satisfaction.
-
-```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-save_pvalue <- matrix(NA,n_countries,n_countries)
-
-for (i in seq(2,n_countries)){
-  for (j in seq(1,(i-1))){
-    test_data_1 <- test_data %>% 
-    filter(S003 == countries[i]) 
-    mean_1 <- mean(test_data_1$A170)
-
-    test_data_2 <- test_data %>% 
-    filter(S003 == countries[j]) 
-    mean_2 <- mean(test_data_2$A170)
-    
-    tt <- t.test(test_data_1$A170,test_data_2$A170, mu=0)  # testing that mu = 0
-    save_pvalue[i,j] <- unlist(tt["p.value"])    # this will just pick the p-value
-  }
-}
-
-tre <- (save_pvalue<0.1)   # value of TRUE if pvalue < 0.1
-cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
-```
-
-
-```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table(tre)
-```
-
-\vskip -2cm
-
-\begincols
-  \begincol{0.3\textwidth}
-    Every green square representing a rejection of the null hypothesis. \textcolor{student}{But are all these differences substantially/economically significant? Most likely not.}
-  \endcol
-  \begincol{0.7\textwidth}
-    ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 4, fig.width = 4.5}
-    image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
-    ```
-  \endcol
-    
-\endcols
-
-\normalsize
 
 
 ## Regression Analysis - Introduction
 
 Tool on which most of the work in this unit is based
 
-* Allows to quantify relationshis between \textcolor{blue}{2 or more} variables
+* Allows to quantify relationships between \textcolor{blue}{2 or more} variables
 * It can be used to implement hypothesis tests
 * However it does \textcolor{red}{not necessarily deliver causal relationships}!
 
@@ -516,22 +466,36 @@ It is very easy to compute for everyone! Results will often have to be interpret
 
 Your skill will be to interpret correctly!!!!
 
-## Regression Analysis - Example 1
+## Regression Analysis - Data Preparation
 
-Let's start by creating a new dataset which only contains the British data. 
+Create new dataset which contains for every country:
 
+* the average per capita deaths throughout the sample, `Avg_deaths`, 
+* the continent (`continentExp`), 
+* the population density data (`PopDen`).
+* the GDP per capita (`GDPpc`,2018, in US$1,000), from the [World Health Organisation, Global Health Expenditure Database](https://apps.who.int/nha/database)
+* Current Health Expenditure (`HealthExp`) as % GDP, 2018, from the [World Health Organisation, Global Health Expenditure Database](https://apps.who.int/nha/database)
+
+`table3` already contains `pc_deaths` and `PopDen`. We need to merge in the other info from `data`. 
+\scriptsize
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data <- wb_data %>% 
-  filter(S003 =="Great Britain") %>%  # pick British data
-  filter(S002EVS == "2008-2010")         # pick latest wave
+mergecont <- data %>% dplyr::select(country,continentExp, GDPpc, HealthExp) %>%  
+                    unique() %>% # this reduces each country to one line
+                    drop_na  # this drops all countries which have incomplete information
+table3 <- merge(table3,mergecont) # merges in continent information
+table3 <- table3 %>% mutate(GDPpc = GDPpc/1000) # convert pc GDP into units of $1,000
 ```
 
-Now we run a regresison of the Life Satisfaction variable (`A170`) against a constant only.
+\normalsize
 
-$LifeSatis_{i} = \alpha + u_{i}$
+## Regression Analysis - Example 1
+
+Now we run a regresison of the average `pc_deaths` (`Avg_deaths` in `table3`) against a constant only. Recall, one observation here is one country.
+
+$Avg\_deaths_{i} = \alpha + u_{i}$
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-mod1 <- lm(A170~1,data=test_data)
+mod1 <- lm(Avg_deaths~1,data=table3)
 ```
 
 ## Regression Analysis - Example 1
@@ -545,46 +509,49 @@ stargazer(mod1, type="text")
 ```
 \normalsize
 
-The estimate for the constant, $\widehat{\alpha}$, is the sample mean.
+The estimate for the constant, $\widehat{\alpha}$, is the sample mean. So on average, countries had an average rate of deaths of just under 1 per 100,000 per week due to Covid-19. (Note that in this average all countries have the same weight).
+
 
 ## Regression Analysis - Example 1
 
-Testing $H_0: \mu_{A170}=0$ can be achieved by
+Testing $H_0: \mu_{Avg_deaths}=0$ can be achieved by
 \scriptsize
 ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-t.test(test_data$A170, mu=0)  # testing that mu = 0
+t.test(table3$Avg_deaths, mu=0)  # testing that mu = 0
 ```
 \normalsize
 
 We can use the above regression to achieve the same:
 
-$t-test =\widehat{\alpha}/se_{\widehat{\alpha}}$ \textcolor{student}{$=7.530/0.063=119.524$} 
-
-\textcolor{student}{That $H_0$ makes no sense as smallest answer to A170 is 1.}
+$t-test =\widehat{\alpha}/se_{\widehat{\alpha}}$ \textcolor{student}{$=0.727/0.068=10.691$} 
 
 
 ## Regression Analysis - Example 2
 
-We now estimate a regression model which includes a constant and the household's monthly income (in 1,000 Euros) as an explanatory variable ($Inc_i$ or variable `X047D` in our dataset).
+We now estimate a regression model which also includes the GDP per capita ($GDPpc$) as an explanatory variable.
 
-$LifeSatis_{i} = \alpha + \beta~ Inc_{i} + u_{i}$
+$Avg\_deaths_{i} = \alpha + \beta~ GDPpc_{i} + u_{i}$
 \footnotesize
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-mod1 <- lm(A170~X047D,data=test_data)
+mod2 <- lm(Avg_deaths~GDPpc,data=table3)
 ```
 \normalsize
 
 How do we interprete the estimate of $\widehat{\beta}$?
+
+What sign do you expect it to have? 
 
 ## Regression Analysis - Example 2
 
 
 \tiny
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-stargazer(mod1, type="text")
+stargazer(mod2, type="text")
 ```
-\normalsize
-As the income increases by one unit (increase of Euro 1,000) we should expect that Life Satisfaction increases by 0.184 units.
+\scriptsize
+As the income increases by one unit (e.g. from $1,000 to $2,000 per capita) we should expect that the average number of deaths (per 100,000) increases by 0.011.
+
+The effect is statistically significant (***) next to the estimated coefficient indicates a p-value <0.01.
 
 
 
@@ -594,85 +561,108 @@ As the income increases by one unit (increase of Euro 1,000) we should expect th
 Let's present a graphical representation.
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2.0, fig.width = 4.5}
-ggplot(test_data, aes(x=X047D, y=A170)) +
-    labs(x = "Income", y = "Life Satisfaction") +
-    geom_jitter(width=0.2, size = 0.5) +    # Use jitter - try geom_point() instead
-    geom_abline(intercept = mod1$coefficients[1], 
-                slope = mod1$coefficients[2], col = "blue")+
-    ggtitle("Income v Life Satisfaction, Britain")
+ggplot(table3, aes(x=GDPpc, y=Avg_deaths)) +
+    labs(x = "GDPpc", y = "Avg_deaths") +
+    geom_point(size = 1.0) +    
+    geom_abline(intercept = mod2$coefficients[1], 
+                slope = mod2$coefficients[2], col = "blue")+
+    ggtitle("GDPpc v Avg_deaths from Covid-19")
 ```
 \normalsize
 
+
+## Regression Analysis - Example 3
+
+We now estimate a regression model which includes the GDP per capita ($GDPpc$) and the measure of Healt expenditure as a percentage of GDP (`HealthExp`) as an explanatory variable.
+
+$Avg\_deaths_{i} = \alpha + \beta~ GDPpc_{i} + \gamma~HealthExp_{i} + u_{i}$
+\footnotesize
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mod3 <- lm(Avg_deaths~GDPpc+HealthExp,data=table3)
+```
+\normalsize
+
+
+
+
+## Regression Analysis - Example 3
+
+
+\tiny
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+stargazer(mod3, type="text")
+```
+\normalsize
 
 ## Regression Analysis - What does it actually do?
 
 Two interpretations
 
-1) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that \textcolor{student}{~~minimises~~} the residual sum of squares $\Sigma (LifeSatis_{i} - \widehat{\alpha} - \widehat{\beta}~ Inc_{i})^2$.
+1) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that \textcolor{red}{minimises} the residual sum of squares $\Sigma (Avg\_deaths_{i} - \widehat{\alpha} - \widehat{\beta}~ GDPpc_{i})^2$.
 $\rightarrow$ \textcolor{red}{Ordinary Least Squares (OLS)}
-2) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that ensures that the residuals ($\widehat{u}_{i} = LifeSatis_{i} - \widehat{\alpha} - \widehat{\beta}~ Inc_{i}$) are \textcolor{student}{~~uncorrelated~~} with the explanatory variable(s) (here $Inc_{i}$).
+2) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that ensures that the residuals ($\widehat{u}_{i} = Avg\_deaths_{i} - \widehat{\alpha} - \widehat{\beta}~GDPpc_{i}$) are \textcolor{red}{uncorrelated} with the explanatory variable(s) (here $Inc_{i}$).
 
 In many ways 2) is the more insightful one. 
 
 ## Regression Analysis - What does it actually do?
 
-$LifeSatis = \alpha + \beta~ Inc + u$
+$Avg\_deaths = \alpha + \beta~ GDPpc + u$
 
 **Assumptions**
 
-One of the regression assumptions is that the (unobserved) error terms $u$ are uncorrelated with the explanatory variable(s), here $Inc$. Then we call \textcolor{orange}{$Inc$ exogenous}.
+One of the regression assumptions is that the (unobserved) error terms $u$ are uncorrelated with the explanatory variable(s), here $GDPpc$. Then we call \textcolor{orange}{$GDPpc$ exogenous}.
 
-This implies that $Cov(Inc,u)=Corr(Inc,u)=0$
+This implies that $Cov(GDPpc,u)=Corr(GDPpc,u)=0$
 
 **In sample**
 
-$LifeSatis_{i} =$ \textcolor{blue}{$~~~\widehat{\alpha} + \widehat{\beta}~ Inc_{i}~~~$} $+ \widehat{u}$
+$Avg\_deaths_{i} =$ \textcolor{blue}{$~~~\widehat{\alpha} + \widehat{\beta}~ GDPpc_{i}~~~$} $+ \widehat{u}$
 
-Where \textcolor{blue}{$\widehat{\alpha} + \widehat{\beta}~ Inc_{i}$} is the regression-line. 
+Where \textcolor{blue}{$\widehat{\alpha} + \widehat{\beta}~ GDPpc_{i}$} is the regression-line. 
 
-In sample $Corr(Inc_{i},\widehat{u}_{i})=0$ (is \textcolor{red}{ALWAYS TRUE BY CONSTRUCTION}).
+In sample $Corr(GDPpc_{i},\widehat{u}_{i})=0$ (is \textcolor{red}{ALWAYS TRUE BY CONSTRUCTION}).
 
 
 
 ## Regression Analysis - Underneath the hood?
 
-$LifeSatis = \alpha + \beta~ Inc + u$ 
+$Avg\_deaths = \alpha + \beta~ GDPpc + u$ 
 
 **What happens if you call** 
 
-`mod1 <- lm(A170~X047D,data=test_data)`?
+`mod2 <- lm(Avg_deaths~GDPpc,data=table3)`?
 
 You will recall the following from Year 1 stats:
 \begin{eqnarray*}
-\hat{\beta} &=& \dfrac{\widehat{Cov}(LifeSatis,Inc)}{\widehat{Var}(Inc)}\\
-\hat{\alpha} &=& \overline{LifeSatis} - \hat{\beta} ~ \overline{Inc}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(Avg\_deaths,GDPpc)}{\widehat{Var}(GDPpc)}\\
+\hat{\alpha} &=& \overline{Avg\_deaths} - \hat{\beta} ~ \overline{GDPpc}
 \end{eqnarray*}
 
-The software will then replace $\widehat{Cov}(LifeSatis,Inc)$ and $\widehat{Var}(Inc)$ with their sample estimates to obtain $\hat{\beta}$ and then use that and the two sample means to get $\hat{\alpha}$.
+The software will then replace $\widehat{Cov}(Avg\_deaths,GDPpc)$ and $\widehat{Var}(GDPpc)$ with their sample estimates to obtain $\hat{\beta}$ and then use that and the two sample means to get $\hat{\alpha}$.
 
 ## Regression Analysis - Underneath the hood?
 
 Need to recognise that in a sample $\hat{\beta}$ and $\hat{\alpha}$ are really \textcolor{student}{random variables}.
 
 \begin{eqnarray*}
-\hat{\beta} &=& \dfrac{\widehat{Cov}(LifeSatis,Inc)}{\widehat{Var}(Inc)}\\
-          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ Inc + u,Inc)}{\widehat{Var}(Inc)}\\
-          &=&\dfrac{\widehat{Cov}(\alpha,Inc) + \beta \widehat{Cov}(Inc,Inc) + \widehat{Cov}(u,Inc)}{\widehat{Var}(Inc)}\\
-          &=& \beta ~\dfrac{\widehat{Var}(Inc)}{\widehat{Var}(Inc)}  + \dfrac{\widehat{Cov}(u,Inc)}{\widehat{Var}(Inc)}= \beta  + \dfrac{\widehat{Cov}(u,Inc)}{\widehat{Var}(Inc)}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(Avg\_deaths,GDPpc)}{\widehat{Var}(GDPpc)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ GDPpc + u,GDPpc)}{\widehat{Var}(GDPpc)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha,GDPpc) + \beta \widehat{Cov}(GDPpc,GDPpc) + \widehat{Cov}(u,GDPpc)}{\widehat{Var}(GDPpc)}\\
+          &=& \beta ~\dfrac{\widehat{Var}(GDPpc)}{\widehat{Var}(GDPpc)}  + \dfrac{\widehat{Cov}(u,GDPpc)}{\widehat{Var}(GDPpc)}= \beta  + \dfrac{\widehat{Cov}(u,GDPpc)}{\widehat{Var}(GDPpc)}
 \end{eqnarray*}
 
 So $\hat{\beta}$ is a function of the random term $u$ and hence is itself a random variable.
-Once $\widehat{Cov}(LifeSatis,Inc)$ and $\widehat{Var}(Inc)$ are replaced by sample estimates we get \textcolor{student}{~ONE~} value which is draw from a \textcolor{student}{random distribution.}
+Once $\widehat{Cov}(Avg\_deaths,GDPpc)$ and $\widehat{Var}(GDPpc)$ are replaced by sample estimates we get \textcolor{red}{~ONE~} value which is draw from a \textcolor{red}{random distribution.}
 
 ## Regression Analysis - The Exogeneity Assumption
 
-Why is **assuming** $Cov(Inc,u)=0$ important when, in sample, we are guaranteed $Cov(Inc_{i},\widehat{u}_{i})=0$?
+Why is **assuming** $Cov(GDPpc,u)=0$ important when, in sample, we are guaranteed $Cov(GDPpc_{i},\widehat{u}_{i})=0$?
 
-If $Cov(Inc_{i},u_{i})=0$ is **not true**, then
+If $Cov(GDPpc_{i},u_{i})=0$ is **not true**, then
 
-1) Estimating the model by OLS \textcolor{student}{imposes an incorrect relationship}
-2) The estimated coefficients  \textcolor{blue}{$\widehat{\alpha}$ and $\widehat{\beta}$} are \textcolor{student}{biased (on average incorrect if we had many samples)}
-3) The regression model has no \textcolor{student}{causal interpretation}
+1) Estimating the model by OLS \textcolor{green}{imposes an incorrect relationship}
+2) The estimated coefficients  \textcolor{blue}{$\widehat{\alpha}$ and $\widehat{\beta}$} are \textcolor{blue}{biased (on average incorrect if we had many samples)}
+3) The regression model has no \textcolor{red}{causal interpretation}
 
 As we cannot observe $u_i$, the assumption of exogeneity cannot be tested and we need to make an argument using economic understanding.
 
@@ -683,7 +673,9 @@ $y = \alpha + \beta ~ x + u$
 Much of empirical econometric analysis is about making the exogeneity assumption ($Corr(x,u)=0$) more plausible/as plausible as possible. But this begins with thinking why an explanatory variable $x$ is endogenous.
 
 1) Most models have more than one explanatory variable.
-2) Including more relevant explanatory variables can make the exogeneity assumption more plausible.
+2) Including more relevant explanatory variables can make the exogeneity assumption more plausible.(*)
 3) But fundamentally, if $Cov(u,x)=0$ is implausible we need to find another variable $z$ for which $Cov(u,z)=0$ is plausible. \textcolor{student}{A lot of the remainder of this unit is about elaborating on this issue.}
+
+(*) Including variables which are not explanatory variables can be very harmful. In particular variables which are determined by our explained and the explanatory variable (e.g. Health Expenditure in 2020!) can mask any relationship between the variables we are interested in.
 
 

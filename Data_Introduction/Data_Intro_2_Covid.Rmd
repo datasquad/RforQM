@@ -138,22 +138,8 @@ It is important to understand that the number of newly identified cases is also 
 •	This [https://tinyco.re/4319550](iNews article), written on 1 April 2020, compares testing strategies adopted by various countries.
 •	[https://tinyco.re/6395215](Nate Silver’s article), written on 4 April 2020, explains how differences in testing strategies makes comparisons across countries difficult.
 
-In order to evaluate whether the second wave was more widespread than the first it is instructive to look at the graph of weekly deaths. Recorded deaths are not dependent on differences in testing strategies. While there may be changes throughout 2020 in how deaths are attributed to Covid-19, the changes are not as dramatic as the changes in the testing regime.
 
-```{r}
-sel_countries <- c("Spain", "France", "United_Kingdom")
-g4 <- ggplot(subset(data, country %in% sel_countries), 
-             aes(x=dates,y=deaths_weekly, color = country)) +
-      geom_line(size = 1) +   # size controls the line thickness
-      ggtitle("Covid-19 weekly deaths")
-g4
-```
-
-From this image it is apparent that at the peak of the first wave more peopple died than in November/December when the second wave seemed to peak.
-
-> Note: You may wonder why, in late May, Spain reported a negative number of deaths due o Covid-19. This is an adjustment to correct what are bleieved previously double counted deaths and deaths which were wrongly attributed to Covid-19 (see for example [https://medicalxpress.com/news/2020-05-spain-virus-death-toll.html](this article by Medical Express)).
-
-## 1.5 Per-capita statistics
+## 1.5 Per-capita statistics, other standardisations and some graphical representations
 
 It was mentioned earlier that comparing raw numbers of reported Covid cases between countries is not so instructive when comparing countries or regions with different population sizes. A coomonly used population adjusted measure is the number of weekly cases per 100,000 population, sometimes called the incidence rate (e.g. [https://coronavirus.jhu.edu/map.html](John Hopkins University Coronavirus Resource Center)).
 
@@ -178,9 +164,7 @@ g5 <- ggplot(subset(data, country %in% sel_countries),
 g5
 ```
 
-Comparing this to the previous figure this makes it obvious that Spain was hit harder by the first wave in Spring 2020. 
-
-More importantly, these population-adjusted data allows us to compare countries of very different size. For instance we can look at the India, US, Sweden and Germany.
+This makes it obvious that Spain was hit harder by the first wave in Spring 2020 and that the UK had a more difficult Winter 20/21. More importantly, these population-adjusted data allows us to compare countries of very different size. For instance we can look at the India, US, Sweden and Germany.
 
 ```{r}
 sel_countries <- c("United_States_of_America", "Germany", "Sweden", "India")
@@ -191,32 +175,68 @@ g5 <- ggplot(subset(data, country %in% sel_countries),
 g5
 ```
 
-## 1.6 Cumulative cases and deaths
+Is it the case that countries with larger population density find it more difficult to control the spread of Covid? This is a very fair question to ask. In order to answer this question we need to import data on the land area size of countries. We already have population data and then we can easily calculate a measure for the population density.
 
-Let's also look at the cumulative case numbers for Canada, Poland and Afghanistan (all with a population around 38 million) 
+The data for the country size are available from the following csv file: `CountryIndicators.csv`. The data in this file have been downloaded from the [https://www.gapminder.org/data/](Gapminder website) (this also imports two further country indicators, Health Expenditure and GDP per capita which we will use Later, from the World Health Organisation). I made your life easy by ensuring that the country names match as much as possible. For instance in Gapminder the UK is "United Kingdom" and in the Covid data it is called "United_Kingdom". We need the names to be identical in order for the following code to correctly merge the country size into our datafile. This may require some manual checking (which I have done for you now). 
 
-```{r}
-sel_countries <- c("Canada", "Poland", "Afghanistan")
-g6 <- ggplot(subset(data, country %in% sel_countries), 
-             aes(x=dates,y=c_cases, color = country)) +
-      geom_line(size = 1) + 
-      ggtitle("Covid-19 cumulative cases")
-g6
-```
+Another reason why you need to check the country names is that there are countries or territories which may or may not be universally recognised as countries. Perhaps you realised that at the beginning of the code I changed the variable name from `countriesAndTerritories` to `country` just for simplicity. But as the name indicates, `data` contains territories which are not universally recognised as independent countries (e.g. Anguilla, which is a British Overseas Territory or Taiwan, which is only recognised by currently 15 countries as an independent state and otherwise is treated as a part of the People's Republic of China - see [https://en.wikipedia.org/wiki/Political_status_of_Taiwan](Wikipedia for a summary on the issue)). So data can be quite political and it is for this reason that you will often see economic statistics recorded for countries and terretories. Renaming this variable here to `countries` is really only meant to make our coding life easier and not as a political statement.
 
-You can clearly see the varied rates of growth at different times through 2020. As this Figure depicts the number of cases we should acknowledge that the fast rise in the autumn of 2020 is not only a result of the emergence of a second wave of Covid-19 but also a result of vastly increased testing (compared to the first wave in the first half of 2020).
+The file "LandArea.csv" also imports the variable `ContinentCode" which indicates which continent a country belongs to .
 
-Looking at this figure it would appear as if Afghanistan was hit much less by the pandemic, when in reality it may be that limited testing activity in countries with limited health infrastructure may disguise the true impact of the pandemic. Indeed the respective cumulative number of deaths reveeals that almost as many people died of Covid in Afghanistan as in Poland and Canada. It may of course be that the fatality rate in Afghanistan is also higher due to a less developed healthcare system. 
+After downlaoding the list of countries and their respective sizes (in column `Land_Area_sqkm`) we can merge this information into `data`. Both `data` and `landarea` contain a column `country` and that is what R will use to match information. If you want to merge on columns which do not have the same name you can do this by using the `by.x` and `by.y` options in the `merge` function. Use `?merge` to look at the help pages.
 
 ```{r}
-sel_countries <- c("Canada", "Poland", "Afghanistan")
-g7 <- ggplot(subset(data, country %in% sel_countries), 
-             aes(x=dates,y=c_deaths, color = country)) +
-      geom_line(size = 1) + 
-      scale_y_continuous(trans='log2') +
-      ggtitle("Covid-19 cumulative cases")
-g7
+countryInd <- read_csv("CountryIndicators.csv") 
+data<- merge(data,countryInd,,all.x=TRUE)
 ```
+
+We can now calculate the poppulation density
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+
+data <- data %>% mutate(popdens = popData2019/Land_Area_sqkm)  # calculate population density
+```
+
+We can now calculate a new summary table for per-capita cases and include the population density.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+table3 <- data %>% group_by(country) %>% # groups by Country
+            summarise(Avg_cases = mean(pc_cases,na.rm = TRUE),
+                      Avg_deaths = mean(pc_deaths,na.rm = TRUE),
+                      PopDen = mean(popdens))    
+```
+
+This table has one row per country and three additional variables, `Avg_cases`, `Avg_deaths` and `PopDen`. We can now use these data to create a scatterplot using density average 
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+ggplot(table3,aes(PopDen,Avg_deaths)) +
+  geom_point() +
+  scale_x_log10() +
+  ggtitle("Population Density v Per Capita Deaths")
+```
+
+This uses the typical `ggplot` architecture. If you want to figure out what `scale_x_log10()` does, look at the Figure if you take this out.
+
+Looking at the plot it is not immediatly obvious whether there is a clear relationship between these variables. Just looking at the overall population density may be sliightly too simplistic as it matters how bunched up in a country a population lives.
+
+
+## 1.6 Correlations
+
+An important statistic which is used to measure the strength of a relationship is the correlation coefficient.
+
+Is there a relationship between `PopDen` and `Avg_deaths`?
+
+$Corr_{PopDen,Avg\_deaths}=\dfrac{Cov(PopDen,Avg\_deaths)}{s_{PopDen}~s_{Avg\_deaths}}$
+
+Correlations are in the $[-1,1]$ interval. They are standardised covariances. Ensure you revise how to calculate sample s.d. and covariances by hand! R does it using the `cor` function.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+cor(table3$PopDen, table3$Avg_deaths,use = "complete.obs")
+```
+
+So if at all, there is a negative relationship but close to 0. 
+
+
 
 
 ## 1.7 Plotting maps of COVID-19 data
@@ -270,8 +290,8 @@ We start by extracting the information we want to merge into `temp` from our ori
 
 ```{r, eval = FALSE}
 temp_mergein <- data %>% filter(dates == "2020-12-14") %>% 
-                          select(geoId, cases_weekly, c_cases, 
-                                 pc_cases, deaths_weekly, c_deaths, pc_deaths)
+                          select(geoId, cases_weekly,  
+                                 pc_cases, deaths_weekly, pc_deaths)
 ```
 
 When you run this you are likely to get the following error message
@@ -290,8 +310,8 @@ So when we want to run the above command we have to tell R that we want the sele
 
 ```{r}
 temp_mergein <- data %>% filter(dates == "2020-12-14") %>% 
-                          dplyr::select(geoId, cases_weekly, c_cases, 
-                                        pc_cases, deaths_weekly, c_deaths, pc_deaths)
+                          dplyr::select(geoId, cases_weekly,  
+                                        pc_cases, deaths_weekly, pc_deaths)
 ```
 
 We only selected the variables we are interested in, and the `geoId` variable which we will match with `iso_a2` in the shape file.
@@ -300,8 +320,11 @@ As it turns out, the country code for the UK in `data` (and hence in `temp_merge
 
 
 ```{r}
-temp_mergein$geoId <- as.character(temp_mergein$geoId)
+temp_mergein$geoId <- as.character(temp_mergein$geoId)   # turn geoId into character
 temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB" 
+
+# Alternativly you could leave geoId a factor var and change UK level name to GB
+#levels(temp_mergein$geoId)[levels(temp_mergein$geoId)=="UK"] <- "GB" 
 ```
 
 Now we will use the `merge` function to add this info into `m2` so our COVID-19 data is available to map. We specify the respective variables used to match the data (`by.x = "iso_a2", by.y = "geoId"`) and also ensure that we keep all of our original country information, even if it is unrelated to COVID-19 (`all.x = TRUE`).
@@ -321,7 +344,6 @@ Now we can return to the mapping code and plot the weekly, per 100,000 populatio
 ```{r, fig.cap="Figure 1.X: Weekly number of deaths per 100,000"}
 # Add polygons layer to world shape
 m2 + tm_polygons(col = "pc_deaths", n=10)  # n = 10 controls the number of categories
-
 ```
 
 There are many ways you can customize your maps. For instance, the `tm_style` function allows you to change the colour scheme.
@@ -331,64 +353,165 @@ m2 + tm_polygons(col = "pc_deaths", n=10) +  # n = 10 controls the number of cat
       tm_style("col_blind")
 ```
 
-## 1.8 Plotting maps showing the temporal spread of the pandemic
+Or you can change the categories, add a background and change the legend title.
 
-The maps in Section 1.6 were created for one particular day (4 April 2020), but we can create multiple maps for each day in 2020 so that we can visualise the spread of the pandemic. Let’s start by creating the base world map again.
-
-```{r}
-m3 <- tm_shape(world) # create a new shape file from scratch
-temp3 <- m3$tm_shape$shp
-
+```{r, fig.cap="Figure 1.X: Weekly number of deaths per 100,000"}
+breaksm <- c(1,2,3,4,5,10,50)  # controls the breakpoints for categories
+m2 + 
+  tm_polygons(col = "pc_deaths", breaks=breaksm, title = "Weekly deaths\n Jan 2021") +  
+  tm_layout(bg.color = "lightblue")  
 ```
 
-First, we need to ensure that we insert the weekly information into `m3` just as we inserted the info for the one day. What we will do is to select every fourth week, starting with the week of the 10th of Feb 2020. This is done in date_sel using the sequence (seq) function. Then we select all dates in `date_sel` from our original dataset (`data`).
 
-```{r}
-# prepare the data from data
-date_sel <- seq(as.Date("2020-02-10"), as.Date("2020-12-14"), 28)
-temp_mergein <- data %>% filter(dates %in% date_sel) %>% 
-                  dplyr::select(geoId, dates, cases_weekly, c_cases, 
-                                pc_cases, deaths_weekly, c_deaths, pc_deaths) %>% 
-                  arrange(geoId,dates)
+# 2 Hypothesis Testing
 
-temp_mergein$geoId <- as.character(temp_mergein$geoId)
-temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB" 
+In order to practice some hypothesis testing we will look at the data as aggregated across continents (`continentExp`). Here we select all observations from the first week of February 2021 and then average data across all countries in a particular continent.
+
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+seldate <- "2021-02-01"   # Set the date you wnat to look at
+table4 <- data %>%   filter(dates == seldate) %>% 
+              group_by(continentExp) %>% 
+              summarise(Avg_cases = mean(pc_cases, na.rm = TRUE),
+                        Avg_deaths = mean(pc_deaths, na.rm = TRUE),
+                        n = n()) %>% print()
 ```
 
-So far, we extracted the data as in Section 1.6, but for more dates. We are now also keeping the `dates` variable.
+The question we will be asking is whether the differences between continents are statistically significant.
 
-Now we need to merge the new data into `temp3`. To do so, we will turn the dates into the character format (`tmap` does not work well with date formats) and remove the countries with no available observations, as these would introduce an extra date (recorded as `na`).
+We start by just picking out the 
 
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+test_data_EU <- data %>% 
+  filter(continentExp == "Europe") %>%     # pick European data
+  filter(dates == seldate)    # pick the date
+mean_EU <- mean(test_data_EU$pc_cases,rm.na = TRUE)
 
-```{r}
-temp3 <- merge(temp3, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
-# convert dates to character variables (date formats do not work well with tmaps)
-temp3$dates <- as.character(temp3$dates)  
-# delete countries with no data
-temp3 <- temp3 %>%  filter(!is.na(dates)) 
+test_data_AM <- data %>% 
+  filter(continentExp == "America") %>%     # pick European data
+  filter(dates == seldate)    # pick the date
+mean_AM <- mean(test_data_AM$pc_cases,rm.na = TRUE)
+
+sample_diff <- mean_EU - mean_AM
+paste("mean_EU =", round(mean_EU,1),", mean_A =", round(mean_AM,1))
+paste("sample_diff =", round(sample_diff,1))
 ```
 
-This updated data frame is now inserted back into the shape file.
+We want to know whether this difference is statistically and/or economically significant?
 
-```{r}
-m3$tm_shape$shp <- temp3
+We apply a two-sample t-test (comparing the means in two samples) using the `t.test` function.
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+t.test(test_data_EU$pc_cases,test_data_AM$pc_cases, mu=0)  # testing that mu = 0
 ```
 
-Now we need to instruct `tmap` to produce the maps, here for `col="pc_cases"`, but make a separate map for every day. The `tmap` command which is useful here is `tm_facets(by = "dates", free.coords = FALSE)`. The `by = "dates"` option selects the `dates` variable to be the “facet” variable, i.e. the variable that determines when a separate map should be plotted (one map per week).
+The p-value is very small and hence it is very unlikely that this difference would have arisen by chance if the null hypothesis WAS correct.
 
+We can try the same for comparing Africa and Asia.
 
-```{r}
-covid_fac <- m3 + tm_polygons(col = "pc_cases", 
-                              style = "fixed", # use fixed categories
-                              breaks = c(0,50,250,1000,5000,50000)) + # set breaks
-                  tm_facets(by = "dates", free.coords = FALSE)
-covid_fac
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+test_data_AF <- data %>% 
+  filter(continentExp == "Africa") %>%     # pick European data
+  filter(dates == "2021-02-01")    # pick the date
 
+test_data_AS <- data %>% 
+  filter(continentExp == "Asia") %>%     # pick European data
+  filter(dates == "2021-02-01")    # pick the date
+
+t.test(test_data_AF$pc_cases,test_data_AS$pc_cases, mu=0)   # testing that mu = 0
 ```
 
-The output was saved in `covid_fac`. As you can see, we do not have an observation from every country on all days. If we are missing an observation then, for that particular day, the country will not appear on the map.
+Here the difference is less obvious. The p-value is just below 10%. So there is actually a substantial (i.e. around 10%) probability that the difference we see (the difference in means is around 30), could be the result of random variation.
 
-> Explore the data: Use `?tm_polygons` to learn about some of the adjustments you can make to these graphs. For example, experiment with the colour scale - in the code block above, replace `style = "fixed", breaks = c(0,50,250,1000,5000,50000)` with `style = "cont"` or `style = "log10_pretty"`, and see which colour scale works best in this context.
+# 3 Inference in Regression Analysis
+
+Previously we learned how to run a regression in R. Running a regression is really the easiest part of the whole business. Much more difficult is to perform inference and to interpret the results correctly. Much of the unit is about the latter and that is teh most difficult aspect. Here we will touch on the task of performing statistical inference in a regression model.
+
+Let's create new dataset which contains for every country:
+
+* the average `pc_deaths`, 
+* the continent (`continentExp`), 
+* the population density data (`PopDen`).
+* the GDP per capita (`GDPpc`,2018, in US$), from the [https://apps.who.int/nha/database](World Health Organisation, Global Health Expenditure Database)
+* Current Health Expenditure (`HealthExp`) as % GDP, 2018, from the [https://apps.who.int/nha/database](World Health Organisation, Global Health Expenditure Database)
+
+`table3` already contains `pc_deaths` and `PopDen` and has one line for each country.
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+names(table3)
+```
+
+We need to merge in the other info from `data`. We first select the variables from the `data` datframe. After just selecting these variables and the country name (`dplyr::select(country ...)`) we still have weekly observations for each country. However, none of the selected info actually changes through the weeks. The call of `unique()` ensures that per country we just keep one row/observation.
+
+For some countries/territories we do not have any health data and by applying `drop_na` we remove all such incomplete observations.
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mergecont <- data %>% dplyr::select(country,continentExp, GDPpc, HealthExp) %>%  
+                    unique() %>% # this reduces each country to one line
+                    drop_na  # this drops all countries which have incomplete information
+table3 <- merge(table3,mergecont) # merges in continent information
+```
+
+We are now left with 183 countries/territories. Recall, one observation here is one country.
+
+Now we run a regresison of the average `pc_deaths` (`Avg_deaths` in `table3`) against a constant only. 
+
+$Avg\_deaths_{i} = \alpha + u_{i}$
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mod1 <- lm(Avg_deaths~1,data=table3)
+```
+
+The new object `mod1` ontains a whole host of regression output. You can see what elements it has by checking `names(mod1)`. The nicest way to display regression results is by using the `stargazer` function.
+
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+stargazer(mod1, type="text")
+```
+
+Check out this page on the [ECLR webpage](http://eclr.humanities.manchester.ac.uk/index.php/R_Regression) to learn more details about how to access particular elements of a regression (like residuals, fitted values or coefficients).
+
+When you run a regression with only a constant then the sample estimate of the coefficient $\alpha$ is the sample mean of the dependent variable, here `Avg_deaths`. So on average, countries had an average rate of deaths of just under 1 per 100,000 per week due to Covid-19. (Note that in this average all countries have the same weight).
+
+The information provided by the regression output allows you to perform a hypothesis test on the population mean.
+
+$t-test =\widehat{\alpha}/se_{\widehat{\alpha}}$ 
+
+which can be used to test the null hypothesis $H_0: \alpha=0$ against $H_A: \alpha \neq 0$. If you want to test a hypothesis against another null hypothesis, for example $H_0: \alpha=1$ against $H_A: \alpha \neq 1$ then you would use the following t-test statistic
+
+$t-test =(\widehat{\alpha}-1)/se_{\widehat{\alpha}}$ 
+
+On most occasions you would want too estimate a regression which actually includes explanatory variables (one or more). Let's illustrate this for the following regression relationship, which includes the GDP per capita ($GDPpc$) as an explanatory variable.
+
+$Avg\_deaths_{i} = \alpha + \beta~ GDPpc_{i} + u_{i}$
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mod2 <- lm(Avg_deaths~GDPpc,data=table3)
+stargazer(mod2, type="text")
+```
+
+For a simple regression (only one explanatory variable) it actually possible to represent the result of this regression graphically.
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2.0, fig.width = 4.5}
+ggplot(table3, aes(x=GDPpc, y=Avg_deaths)) +
+    labs(x = "GDPpc", y = "Avg_deaths") +
+    geom_point(size = 1.0) +    
+    geom_abline(intercept = mod2$coefficients[1], 
+                slope = mod2$coefficients[2], col = "blue")+
+    ggtitle("GDPpc v Avg_deaths from Covid-19")
+```
+
+Here you can see a scatter plot of the data in a `GDPpc`-`Avg_deaths` diagram. Superimposed on that scatter plot is the line of best fit or the estimated regression line. You can see in the code above that we use the estimated coefficients `intercept = mod2$coefficients[1], slope = mod2$coefficients[2],` to create this line.
+
+Additional explanatory variables can easily be includes as demonstrated in the next line of code.
+
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mod3 <- lm(Avg_deaths~GDPpc+HealthExp,data=table3)
+```
+
+It is important to understand a couple of properties of estimated regresison models. When we think about regression models we have to make assumptions about the error terms $u_{i}$. In particular we need to assume thay are uncorrelated to the explanatory variables. Note that these error terms are unobserved! What a regresison produces are estimated residuals $\hat{u}_{i}$, but do note that these are not the same as the unobserved error terms $u_{i}$. 
+
+In fact it is a property of an OLS regresison that the estimated error terms, the residuals $\hat{u}_{i}$, are in fact uncorrelated  with the explanatory variables. Let is demonstrate this.
+
+
 
 # 2 Government policies
 
