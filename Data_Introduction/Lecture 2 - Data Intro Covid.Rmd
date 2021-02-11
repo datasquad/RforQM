@@ -2,7 +2,7 @@
 title: "Introduction to Handling Data"
 subtitle: "ECON20222 - Lecture 2"
 author: "Ralf Becker and Martyn Andrews"
-date: "February 2020"
+date: "February 2021"
 output: 
   beamer_presentation:
     includes:
@@ -49,7 +49,7 @@ library(stargazer)    # enables well formatted regression output
 
 The [CORE-ECON Covid-19 Collection](https://www.core-econ.org/project/core-covid-19-collection/) contains a more detailed version of this example.
 
-The dataset is published by the [https://tinyco.re/4826169](European Centre for Disease Control) (ECDC)
+The dataset is published by the [European Centre for Disease Control](https://tinyco.re/4826169) (ECDC)
 
 * Weekly data for Covid cases and deaths
 * more than 200 countries
@@ -68,7 +68,7 @@ data <- read.csv(tf)
 \normalsize
 
 * This will load `data` into your environment. 
-* We are taping directly into the ECDC's datafile. Everytime you do this you will get the most recent data (on 2 Feb 2021 this delivered 10219 observations)
+* We are tapping directly into the ECDC's datafile. Everytime you do this you will get the most recent data (on 5 Feb 2021 this delivered 10433 observations)
 
 ## Covid Data - Explore
 
@@ -89,7 +89,7 @@ str(data)  # prints some basic info on variables
 
 ## Covid Data - Explore
 
-Let's find out what one observatin represents. 
+Let's find out what one observation represents. 
 
 \scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
@@ -121,7 +121,7 @@ Smaller countries tend to start reporting later than bigger ones.
 
 Essentially we have a dataset which combines cross-section (different countries) with time-series (consequitive weeks for each country). We call such a dataset a panel.
 
-```{r,fig.height = 3, fig.width = 4.5}
+```{r,fig.height = 2.8, fig.width = 4.5}
 g1 <- ggplot(subset(data, country == "China"), aes(x=dates,y=deaths_weekly)) +
       geom_line() + 
       ggtitle("Covid-19 weekly deaths")
@@ -148,8 +148,8 @@ g2
 
 Summarise data by country. 
 
-* `cases_weekly`: Let's find the average number of weekly cases across all weeks
-* `deaths_weekly`: Let's find the average number of weekly deaths across all weeks
+* `cases_weekly`: average number of weekly cases across all weeks
+* `deaths_weekly`: average number of weekly deaths across all weeks
 
 \scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
@@ -160,7 +160,7 @@ head(table2,6)
 ```
 \normalsize
 
-Table2 now contains an observation for each country with the average of weekly cases and deaths. Why is there such a stark difference between [https://en.wikipedia.org/wiki/Algeria](Algeria) and [https://en.wikipedia.org/wiki/Anguilla](Anguilla)?
+Table2 now contains an observation for each country with the average of weekly cases and deaths. Why is there such a stark difference between [Algeria](https://en.wikipedia.org/wiki/Algeria) and [Anguilla](https://en.wikipedia.org/wiki/Anguilla)?
 
 ## Data - When can you compare data
 
@@ -177,7 +177,7 @@ Comparing absolute numbers of any variable can be extremely misleading.
 
 ## Data - Standardise the case data
 
-Let's standardise by population (`popData2019`) which is included as a variable into the dataset. Note that this is constant through the weeks. These are often reported as cases per 100,000 (although for Deaths sometimes per 1,000,000 - see [https://ourworldindata.org/covid-deaths?country=IND~USA~GBR~CAN~DEU~FRA](Our World in Data)).
+Let's standardise by population (`popData2019`) which is included as a variable into the dataset. Note that this is constant through the weeks. These are often reported as cases per 100,000 (although for Deaths sometimes per 1,000,000 - see [Our World in Data](https://ourworldindata.org/covid-deaths?country=IND~USA~GBR~CAN~DEU~FRA)).
 \scriptsize
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
@@ -218,7 +218,7 @@ g6
 \scriptsize
 Is it the case that countries with larger population density find it more difficult to control the spread of Covid?
 
-Need to import Land Area data and merge them into our dataset (`CountryIndicators.csv`). This also imports two further country indicators (Health Expenditure and GDP per capita).
+Need to import land area data and merge them into our dataset (`CountryIndicators.csv`). This also imports two further country indicators (Health Expenditure and GDP per capita).
 
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
@@ -573,7 +573,7 @@ ggplot(table3, aes(x=GDPpc, y=Avg_deaths)) +
 
 ## Regression Analysis - Example 3
 
-We now estimate a regression model which includes the GDP per capita ($GDPpc$) and the measure of Healt expenditure as a percentage of GDP (`HealthExp`) as an explanatory variable.
+We now estimate a regression model which includes the GDP per capita ($GDPpc$) and the measure of Health expenditure as a percentage of GDP (`HealthExp`) as an explanatory variable.
 
 $Avg\_deaths_{i} = \alpha + \beta~ GDPpc_{i} + \gamma~HealthExp_{i} + u_{i}$
 \footnotesize

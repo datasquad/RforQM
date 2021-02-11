@@ -1,5 +1,5 @@
 ---
-title: "Covid 19 - some Challenges - some Data"
+title: "Data Introduction 2 - Covid Data"
 output:
   pdf_document: default
   html_document:
@@ -45,6 +45,7 @@ library(tidyverse)    # for almost all data handling tasks
 library(ggplot2)      # plotting toolbox
 library(utils)        # for reading data into R # for reading data into R 
 library(httr)         # for downloading data from a URL 
+library(stargazer)    # for nice regression output
 ```
 
 ## 1.2 Import the data into R
@@ -186,7 +187,7 @@ The file "LandArea.csv" also imports the variable `ContinentCode" which indicate
 After downlaoding the list of countries and their respective sizes (in column `Land_Area_sqkm`) we can merge this information into `data`. Both `data` and `landarea` contain a column `country` and that is what R will use to match information. If you want to merge on columns which do not have the same name you can do this by using the `by.x` and `by.y` options in the `merge` function. Use `?merge` to look at the help pages.
 
 ```{r}
-countryInd <- read_csv("CountryIndicators.csv") 
+countryInd <- read_csv("CountryIndicators.csv",na = "#N/A") 
 data<- merge(data,countryInd,,all.x=TRUE)
 ```
 
@@ -449,6 +450,7 @@ mergecont <- data %>% dplyr::select(country,continentExp, GDPpc, HealthExp) %>%
                     unique() %>% # this reduces each country to one line
                     drop_na  # this drops all countries which have incomplete information
 table3 <- merge(table3,mergecont) # merges in continent information
+table3 <- table3 %>% mutate(GDPpc = GDPpc/1000) # convert pc GDP into units of $1,000
 ```
 
 We are now left with 183 countries/territories. Recall, one observation here is one country.
@@ -505,403 +507,20 @@ Additional explanatory variables can easily be includes as demonstrated in the n
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 mod3 <- lm(Avg_deaths~GDPpc+HealthExp,data=table3)
+stargazer(mod3,type = "text")
 ```
+
+Would you have expected the coefficient to `HealthExp` to be statistically significant (possible yes!) and would you have expected it to be negative (possibly not!). May it be that countries that spend more on Health deal less well with the Covid-19 pandemic? Or could it be that these explanatory variables are not exogenous and that the estimated coefficients are biased?
 
 It is important to understand a couple of properties of estimated regresison models. When we think about regression models we have to make assumptions about the error terms $u_{i}$. In particular we need to assume thay are uncorrelated to the explanatory variables. Note that these error terms are unobserved! What a regresison produces are estimated residuals $\hat{u}_{i}$, but do note that these are not the same as the unobserved error terms $u_{i}$. 
 
 In fact it is a property of an OLS regresison that the estimated error terms, the residuals $\hat{u}_{i}$, are in fact uncorrelated  with the explanatory variables. Let is demonstrate this.
 
-
-
-# 2 Government policies
-
-The story of the pandemic due to Covid-19 is also a story of different government policies, not only to attempt to suppress the virus but also to cope with the economic impact the pandemic, and the policies to prevent its spread had.
-
-
-In this section we will rely heavily on the work published in the [https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker](Oxford University Coronavirus Government Response Tracker, OxCGRT). 
-
-The OxCGRT distinguishes between three categories of government policies related to the Covid-19 pandemic, containment policies (like contact and travel restrictions), economic support ppolicies (like furlough schemes or stimulus packages) and health system policies (Testing programs, Information campaigns). Detailed explnations on policies considered and how they are coded are available from [https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md](here).
-
-Here we will look at the containment and health system policies as these should have the most direct impact on the actual case and death numbers. This is despite the commonly made argument that the degree to which a population will adhere to many containment policies may well depend on the support given by economic policies.
-
-Let is import the following dataset which, in the xlsx form used here, is available from [https://github.com/OxCGRT/covid-policy-tracker/raw/master/data/timeseries/OxCGRT_timeseries_all.xlsx](here).
-
-```{r}
-data_pol <- read_excel("OxCGRT_timeseries_all.xlsx", sheet = "containment_health_index")
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+cor(mod3$residuals,table3$GDPpc)
+cor(mod3$residuals,table3$HealthExp)
 ```
+Note the meaning of of `e-17`. 3.4e-17 basically means $3.4\cdot10^{-17}$. So this is a very small number; basically equal to 0.
 
-The numbers you can see are an index number where 0 represents the state in which no measures are in place and 100 where all respective policies are implemented to the maximum. We will soon look at a time-series of this index for a particular country, but before we can do so we need to restructure the dataset.
-
-To understand how it is structured you could either view the dataframe or display the first view rows:
-
-```{r}
-head(data_pol)
-```
-
-Looking at this dataset you can see that every country (`country_code`, `country_name`) is represented by a row and that each day from 1 Jan 2020 onwards is represented by a column. That is not the format in which we find the case and death data (one row for each country-week). Also we have daily observationss when the case data are weekly. We therefore have two tasks before we can merge the data.
-
-1. Turn the date columns into date rows.
-2. Remove the days which do not correspond to the days in 'data'.
-
-The data format at hand is called a wide format whereas we want a long format (the dates for a contry in separate rows). This is an operation which you may have to google (e.g. "R tidyverse from wide to long"). Using the tidyverse to achieve this is done by using the `pivot_longer` command.
-
-```{r}
-# specifies the column names which are to be kept
-keep_names <- c("country_code", "country_name") 
-data_pol <- data_pol %>%
-  pivot_longer(!keep_names, names_to = "dates", values_to = "CHI")
-```
-
-Let's look at the first few lines to confirm that the opeartion worked:
-
-```{r}
-head(data_pol)
-```
-
-When you have a look atthe country names in this datafile you can perhaps recognise that countries with two word names, like "United Kingdom" are here shown as the 
-
-The `dates` are still character variables and we shall transform them to recognised dates. We used the `as.Date` function at the beginning of this file but we need to recognise that the date is now specified in this "%d%b%Y" format (see [https://tinyco.re/8606284](for details)).
-
-```{r}
-data_pol$dates <- as.Date(data_pol$dates,format = "%d%b%Y")
-```
-
-Now we are in a position to show the Containment-Health Index (CHI) as a time series. Initially we will show the CHI for all 182 countries in the dataset.
-
-```{r}
-g8 <- ggplot(data_pol, 
-             aes(x=dates,y=CHI, color = country_name)) +
-      geom_line(size = 0.1) +   # size controls the line thickness
-      theme(legend.position = "none") +  # remove legend
-      ggtitle("Containmet-Health Index")
-g8
-```
-
-This illustrates that there was a first wave of restrictions imposed in some countries in late January/early Febtuary, followed by the large wave of restricions across almost all 182 countries in March. Let's look at three european countries, "Spain", "France" and "United_Kingdom", as we did before.
-
-```{r}
-sel_countries <- c("Spain", "France", "United_Kingdom")
-g8 <- ggplot(subset(data_pol, country_name %in% sel_countries), 
-             aes(x=dates,y=CHI, color = country_name)) +
-      geom_line(size = 1) +   # size controls the line thickness
-      ggtitle("Containmet-Health Index")
-g8
-```
-
-Clearly the Uk data are missing. The reason being that in the `data_pol` dataset the country name is "United Kingdom". Fortunately, both datasets contain unique 3-letter country codes (United Kingdom = GBR). You can look up a list of unique country codes on this [https://www.iban.com/country-codes](list.)
-
-```{r}
-sel_countries <- c("ESP", "FRA", "GBR")
-g8 <- ggplot(subset(data_pol, country_code %in% sel_countries), 
-             aes(x=dates,y=CHI, color = country_name)) +
-      geom_line(size = 1) +   # size controls the line thickness
-      ggtitle("Containmet-Health Index")
-g8
-```
-
-From this graph you can see that these three countries have seen qualitatively similar severity in restrictions, perhaps with the noted difference of a relaxation in the United Kingdom towards the end of November 2020 which, in that form was not seen in Spain and France.
-
-Looking at three other countries (Germany, Sweden and Hungary) also illustrates that some countries have taken distinctly different aproaches.
-
-```{r}
-sel_countries <- c("DEU", "SWE", "HUN")
-g9 <- ggplot(subset(data_pol, country_code %in% sel_countries), 
-             aes(x=dates,y=CHI, color = country_name)) +
-      geom_line(size = 1) +   # size controls the line thickness
-      ggtitle("Containmet-Health Index")
-g9
-```
-
-## 2.1 Government policies and Covid incidence
-
-The press is awash with discussion of whether restrictions imposed by governments were effective. The question of policy effectiveness is one which economists are genereally very interested in. A whole set of methodologies has been developed to answer such questions.
-
-This is not the place to either review such literature nor indeed to apply all the lessons learned. In this instance we are mainly interested to highlight why it is very difficult to come to definitive findings when asking whether a policy was effective. The problem is typically that the policy is correlated with some other (often unobserved) factors which also determine the outcome of the variable of interest.
-
-
-## 2.2 Correlating policy with outcomes
-
-As our outcome variables is weekly we will now reduce the daily policy variable to the same weekly frequency.
-
-```{r}
-sel_dates <- unique(data$dates)  # these are the dates from data
-data_pol2 <- data_pol %>% filter(dates %in% sel_dates)
-```
-
-Now we can add the CHI index data to the original dataset.
-
-```{r}
-data_merge = merge(data, data_pol, by.x=c("countryCode", "dates"), 
-                   by.y=c("country_code", "dates"), all.x = TRUE)
-```
-
-We will now display the policy variable (`CHI`) and the weekly number of deaths, as we surmise that keeping the number of deaths low was indeed one of the policy aims. We therefore show a policy and a policy target variable in one graph.
-
-```{r}
-sel_countries <- c("DEU")
-data_temp <- subset(data_merge, countryCode %in% sel_countries)
-scale_factor <- max(data_temp$deaths_weekly/100)
-p10 <- ggplot(data_temp, aes(x = dates))
-  p10 <- p10 + geom_line(aes(y = CHI, colour = "CHI"))
-  
-  # adding the weekly deaths, /60 to bring deats to roughly the same scale as CHI
-  p10 <- p10 + geom_line(aes(y = deaths_weekly/scale_factor, colour = "Deaths"))
-  
-  # now adding the secondary axis, 
-  # following the example in the help file ?scale_y_continuous
-  # and, very important, reverting the above transformation
-  p10 <- p10 + scale_y_continuous(sec.axis = sec_axis(~.*scale_factor, name = "Deaths"))
-  
-  # modifying colours and theme options
-  p10 <- p10 + scale_colour_manual(values = c("blue", "red"))
-  p10 <- p10 + labs(y = "CHI [Index]",
-                x = "Date",
-                colour = "Series")
-  p10 <- p10 + theme(legend.position = c(0.1, 0.8)) 
-  p10 <- p10 + ggtitle(paste("Containmet-Health Index and Weekly Deaths -",
-                             as.character(sel_countries)))
-p10
-```
-
-
-### 2.2.1 Let's calculate growth rates
-
-In short one could formulate the expectation of policy-makers that a tightening of restrictions (an increase in CHI) sould bring about a drop in the number of weekly deaths. To analyse any such relation we calculate the change in the CHI, `dCHI` and the growth rate of `deaths_weekly`.
-
-The following code assumes that the data are ordered by dates.
-
-```{r}
-data_merge <- data_merge %>% group_by(countryCode) %>% 
-    mutate(gDeaths = (deaths_weekly - lag(deaths_weekly))/lag(deaths_weekly))  %>% 
-    mutate(gDeaths = na_if(gDeaths, Inf)) %>% 
-    mutate(dCHI = (CHI - lag(CHI))) 
-```
-
-Note that, for all countries we have a first week in which increase from 0. In that week the growth rate will be infinite. These observations are being replaced as missing values using `mutate(gDeaths = na_if(gDeaths, Inf))`.
-
-Let's pick one country, say Germany (`countryCode == "DEU"`), to plot a scatter plot of these two variables.
-
-```{r}
-sel_countries <- c("DEU")
-g11 <- ggplot(subset(data_merge, countryCode %in% sel_countries), 
-             aes(x=dCHI,y=gDeaths,colour=dates)) +
-      coord_cartesian(ylim = c(-1, 6)) +
-      geom_point(size = 2) +   # size controls the line thickness
-      ggtitle("Growth of deaths and change in CHI, same week")
-g11
-```
-
-As you can see from this plot the largest rate of growth of weekly deaths actually occurs in the same week as the largest increas in the CHI (Week 12, week beginning 23 March 2020). This is of course a reflection of the fact that the largest restrictions are likely to be introduced in periods in which the outcome variable is moving into the wrong direction.
-
-The actual impact of the policy (in particular when measured in the numbers of deaths, which typically come 3 to 4 weeks after the infection) is actually expected delayed. We therefore replicate the previous plot
-
-
-```{r}
-sel_countries <- c("DEU")
-g12 <- ggplot(subset(data_merge, countryCode %in% sel_countries), 
-             aes(x=lag(dCHI,4),y=gDeaths,colour=dates)) +
-      coord_cartesian(ylim = c(-1, 6)) +
-      geom_point(size = 2) +   # size controls the line thickness
-      ggtitle("Growth of deaths (t+4) and change in CHI (t)")
-g12
-```
-
-On this occasion you can see that the largest increase in CHI, in Germany, is followed four weeks later by a growth reate of deaths which is close to 0.
-
-This is of course just one country. We now isolate the week of the largest increase in CHI in each country and then look at how the growth rate of deaths develops develops through the following weeks. 
-
-```{r}
-# find the week in which each country has the largest increase in CHI, max_date
-data_max_dCHI <- data_merge %>% group_by(countryCode) %>% 
-         filter(dCHI == max(dCHI,na.rm = TRUE)) %>% 
-         dplyr::select(dates) %>% 
-         mutate(max_date = dates) %>% 
-        dplyr::select(max_date)
-
-# add max_date for each country
-data_merge <- merge(data_merge,data_max_dCHI,all.x = TRUE)   
-# order data by country and date
-data_merge <- data_merge %>% arrange(countryCode,dates)      
-# now add time variable relatve to largest increase in CHI
-data_merge <- data_merge %>% group_by(countryCode) %>% 
-              mutate(rel_date = dates-max_date) 
-```
-
-Without showing the detail here, most of the selected dates occur in arch and April 2020.
-
-Now we can plot the growth rate of deaths relative to the time at which the maximum increase in CHI occurred.
-
-
-```{r}
-data_temp <- data_merge %>% filter(rel_date > -30 & rel_date <80)
-g13 <- ggplot(data_temp, 
-             aes(x=rel_date,y=pc_deaths, color = country_name)) +
-      geom_line(size = 0.1) +   # size controls the line thickness
-      labs(y = "Deaths (per 100,000)",
-                x = "Days since largest CHI change")+
-      theme(legend.position = "none") +  # remove legend
-      ggtitle("Per capita deaths relative to CHI change")
-g13
-```
-
-There are lots of lines which are difficult to decipher. Even restricting the scale of the y axis (by adding for instance `ylim(0, 10)` to the above graph) does not give sufficient clarity.
-
-What we really want is some sort of summary statistics across all countries. That is what we do in the next commands.
-
-```{r}
-temp <- data_merge %>% group_by(rel_date) %>% # group by rel date 
-            filter(rel_date > -30 & rel_date <80) %>% 
-            summarise(mean_pcd = mean(pc_deaths,na.rm=TRUE)) # mean pc_death by rel_date
-
-g14 <- ggplot(temp, aes(x=rel_date,y=mean_pcd)) +
-      geom_bar(stat = "identity") +   
-      labs(y = "Average deaths (per 100,000)",
-                x = "Days since largest CHI change") +
-      ggtitle("Per capita deaths relative to CHI change")   
-g14
-```
-
-What we can see clearly from this is that the sharpest increase in restrictions in each country (here indexed by `reltime =0`) is followed, on average across the 182 countries, by an initial increase in deaths and after 5 weeks by a steady decline.
-
-Does the fact that the decline in numbers only starts five weeks after the policy change mean that on average the policies introduced in the respective countries die not work. The short answer is no. It is important to recognise that patients who die due to Covid-19 do so, typically 2 to 8 weeks after being infected. Most policies which are captured by the CHI are policies which attempt to prevent infection and hence it is to be expected that effective policies do only reduce the number of deaths after a significant delay; in fact a delay consistent with that shown in the above image.
-
-Does that imply that the policies desribed by the CHI have been effective. It is very likely that they have, but the image above is not, by itself, evidence of this effectiveness.
-
-> Read more: [https://www.nature.com/articles/s41586-020-2404-8](Article in Nature). This paper employs an approach which is conceptually quite similar to the above simple analysis but with the ambition to highlight particular policies which made a difference.
-
-## 2.3 Evaluate policy effectiveness
-
-In this section we will describe what would be considered clear-cut evidence of a policy's effectiveness.
-
-To illustrate what is requited we return to a previous graph in which we display the CHI index and the series of weekly deaths in the same image. 
-
-```{r}
-sel_countries <- c("GBR")
-data_temp <- subset(data_merge, countryCode %in% sel_countries)
-scale_factor <- max(data_temp$deaths_weekly/100)
-p15 <- ggplot(data_temp, aes(x = dates))
-  p15 <- p15 + geom_line(aes(y = CHI, colour = "CHI"))
-  
-  # adding the weekly deaths, to bring deats to roughly the same scale as CHI
-  p15 <- p15 + geom_line(aes(y = deaths_weekly/scale_factor, colour = "Deaths"))
-  
-  # now adding the secondary axis, 
-  # following the example in the help file ?scale_y_continuous
-  # and, very important, reverting the above transformation
-  p15 <- p15 + scale_y_continuous(sec.axis = sec_axis(~.*scale_factor, name = "Deaths"))
-  
-  # modifying colours and theme options
-  p15 <- p15 + scale_colour_manual(values = c("blue", "red"))
-  p15 <- p15 + labs(y = "CHI [Index]",
-                x = "Date",
-                colour = "Series")
-  p15 <- p15 + theme(legend.position = c(0.1, 0.8)) 
-  p15 <- p15 + ggtitle(paste("Containmet-Health Index and Weekly Deaths -",
-                             as.character(sel_countries)))
-p15
-```
-
-As you can see from the CHI series, in mid-October (between 19 and 26th of October) Great Britain went into the highest observed level of the CHI (as large parts of the country went into the highest tier of restrictions), while mid November and early December we saw some important relaxations of containment policies (mainly the end of the lockdown in Wales in mid November and in England and Scotland in early December). The relaxation over the Christmas period is not reflected in these data yet.
-
-In addition to these changes in the containment policies we can also see that a dip in deaths in Mid-december is most recently followed by an increase in deaths again.
-
-We could, for example, ask whether the imposition of the lockdown, in early November 2020, or the conclusion of the lockdown, in early December, had any causal effect on the number of deaths. Let us first zoom in on the period in question.
-
-```{r}
-sel_countries <- c("GBR")
-data_temp <- subset(data_merge, (countryCode %in% sel_countries) & dates > "2020-10-01") 
-scale_factor <- max(data_temp$deaths_weekly/100)
-p15 <- ggplot(data_temp, aes(x = dates))
-  p15 <- p15 + geom_line(aes(y = CHI, colour = "CHI"), size=1.5)
-  
-  # adding the weekly deaths, to bring deats to roughly the same scale as CHI
-  p15 <- p15 + geom_line(aes(y = deaths_weekly/scale_factor, colour = , colour = "Deaths"), 
-                         size=1.5)
-  
-  # now adding the secondary axis, 
-  # following the example in the help file ?scale_y_continuous
-  # and, very important, reverting the above transformation
-  p15 <- p15 + scale_y_continuous(sec.axis = sec_axis(~.*scale_factor, name = "Deaths"))
-  
-  # modifying colours and theme options
-  p15 <- p15 + scale_colour_manual(values = c("blue", "red"))
-  p15 <- p15 + labs(y = "CHI [Index]",
-                x = "Date",
-                colour = "Series")
-  p15 <- p15 + theme(legend.position = c(0.1, 0.8)) 
-  p15 <- p15 + ggtitle(paste("Containmet-Health Index and Weekly Deaths -",
-                             as.character(sel_countries)))
-p15
-```
-
-The challenge, as a researcher, is to think about the "counter-factual" outcome. You got to answer the question of what would have happened if a policy had not been implmented. In general, there, there are two approaches 
-
-1) Use the experience of the country before the policy implementation to extrapolate from that pre-policy experience 
-
-2) Use another country, which ideally, differs from the country in question only through the policy in question.
-
-In some sense the graphical analysis above employed the first approach. We concluded that the plots indicated that thee was a (delayed) reduction effect of the policies on the death rates, and we jusdged these by comparing the death rates to those which were observed before the policy took hold.
-
-Here we will employ the second approach, by comparing what happened in Great Britain with what happened in Spain.
-
-```{r}
-sel_countries <- c("GBR","ESP")
-data_temp <- subset(data_merge, (countryCode %in% sel_countries) & dates > "2020-09-01") 
-
-p16 <- ggplot(data_temp, aes(x = dates))
-  p16 <- p16 + geom_line(aes(y = CHI, colour = countryCode), size=1.5)
-  p16 <- p16 + labs(y = "CHI [Index]",
-                x = "Date",
-                colour = "Country")
-  p16 <- p16 + theme(legend.position = c(0.1, 0.8)) 
-  p16 <- p16 + ggtitle(paste("Containmet-Health Index for GBR and ESP"))
-p16
-```
-
-You can see that in September, October and early November the restriction policies were similar, but they diverged in mid-November and early December when, in Great Britain, lockdown restrictions were eased while in Spain the restrictions did stay on the same level reached in early November. Therefore, the policy we can potentially evaluate here is the relaxation of restrictions in Great Britain.
-
-This setup allows us to compare the outcomes (as measured by Deaths due to Covid) under a setup called "Difference-in-Difference" (sometimes shortened to Diff-in-Diff or even DiD). The hypothesis here is that the countries were on similar policy paths in a "pre-policy-change" period (here up to early November) and then diverged in a "post-policy-change" period (from mid-November) in terms of a relevant policy. We then compare the change in outcomes (how did the death statistics change from the pre- to post- period) and in particular we will look at whether that change differes between the two coutries (therefore "difference" - between countries - in "difference" - between pre and post).
-
-So let's look at the outcomes.
-
-```{r}
-sel_countries <- c("GBR","ESP")
-data_temp <- subset(data_merge, (countryCode %in% sel_countries) & dates > "2020-09-01") 
-
-p17 <- ggplot(data_temp, aes(x = dates))
-  p17 <- p17 + geom_line(aes(y = deaths_weekly, colour = countryCode), size=1.5)
-  p17 <- p17 + labs(y = "Weekly Deaths",
-                x = "Date",
-                colour = "Country")
-  p17 <- p17 + theme(legend.position = c(0.1, 0.8)) 
-  p17 <- p17 + ggtitle(paste("Weekly deaths for GBR and ESP"))
-p17
-```
-
-There seems to be a clear correspondence between the policy relaxation in Great Britain and the sustained rise in deaths. It may be argued that one should look at the per capita numbers, but they deliver qualitatively the same picture.
-
-```{r}
-sel_countries <- c("GBR","ESP")
-data_temp <- subset(data_merge, (countryCode %in% sel_countries) & dates > "2020-09-01") 
-
-p18 <- ggplot(data_temp, aes(x = dates))
-  p18 <- p18 + geom_line(aes(y = pc_deaths, colour = countryCode), size=1.5)
-  p18 <- p18 + labs(y = "Weekly Deaths (per 100,000)",
-                x = "Date",
-                colour = "Country")
-  p18 <- p18 + theme(legend.position = c(0.1, 0.8)) 
-  p18 <- p18 + ggtitle(paste("Per capita deaths for GBR and ESP"))
-p18
-```
-
-The key assumption an analyst has to make when evaluating a policy (here, the mid-November/early-December relaxation of restrictions in Great Britain) like this, is that, in the absence of the policy (or better policy difference) the development in the two countries would have been identical. We call this the parallel trends assumption. In our case we can see that the development (in terms of levels but most importantly in terms of trend) of deaths were actually quite similar in the pre period. This is one piece of evidence commonly used to support the commpon trend assumption.
-
-In your mind you always have to challenge such assumptions. A short paper which discusses such issues with specific reference to applying Diff-in-Diff to Covid-19 policies has been written by [https://ideas.repec.org/p/diw/diwwpp/dp1870.html](Goodman-Bacon and Marcus, DIW Working Paper No. 1870). 
-
-Amongst others they point out that it will be difficult to identify individual policies (say school closures) when they typically come as part of wider-ranging packages. In our case we acknowledge this explicitely as we are using a policy index which is, by construction, a measure of a package of policies. Goodman-Bacon and Marcus also point out that it may be difficult to  actually find areas which are comparable. Reasons may be that countries may be different in dimensions which are important to the effectiveness of policies (such as population density and distribution, accopanying economic support policies, etc.).
-
-This is an important consideration in this case as there is one aspect in which Spain and Greta Britain certainly differed. It is now well documented ([https://www.imperial.ac.uk/news/211793/new-covid-19-variant-growing-rapidly-england/](see for example this report published through Imperial College published on 31 December 2020)) that a new, more contagious, variant of the Covid-19 virus has been spreading widely in areas of Great Britain since most likely November.
-
-As this coincides with the policy difference between Great Britain and Spain, it is impossible to conclusively conclude that the policy difference, rather than a more contagious virus, is responsible for the difference in development of death statistics. As there is no other country in which, at this point, the new virus variant is equally widespread as in Great Britain, it may be difficult, if not impossible, to find a conclusive research design which identifies the impact of the policy difference.
-
+The important point here is that we may well suspect that `GDPpc` and `HealthExp` are not exogenous, i.e correlated with $u$. However, as we have just established is that both explanatory variables are actually uncorrelated with $\hat{u}$. This implies that we cannot use $\hat{u}$ to test properties of $u$.
 
