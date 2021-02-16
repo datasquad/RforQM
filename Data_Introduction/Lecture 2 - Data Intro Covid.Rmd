@@ -369,7 +369,7 @@ Depending on the type of hypothesis there will be a \textcolor{blue}{test statis
 **Example**
 The test statistic
 
-\[t = \dfrac{\bar{c}_{EU,1Feb21} - \bar{c}_{AM,1Feb21}}{\sqrt{\frac{s_{c,EU,1Feb21}}{n_{EU,1Feb21}}+\frac{s_{c,AM,1Feb21}}{n_{AM,1Feb21}}}}\]
+\[t = \dfrac{\bar{c}_{EU,1Feb21} - \bar{c}_{AM,1Feb21}}{\sqrt{\frac{s_{c,EU,1Feb21}^2}{n_{EU,1Feb21}}+\frac{s_{c,AM,1Feb21}^2}{n_{AM,1Feb21}}}}\]
 
 How is this test statistic, \textcolor{blue}{t}, distributed (assuming $H_0$ is true)? \textcolor{red}{**If**}
 

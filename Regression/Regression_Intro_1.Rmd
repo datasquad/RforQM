@@ -102,7 +102,7 @@ data_USoc %>% count(degree)
 data_USoc %>% count(mfsize9) 
 ```
 
-The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. As workers work for dy we shall also adjust for increasing price levels ( as measured`mutate` function. We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`).
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay per month. We shall adjust for increasing price levels (as measured by `cpi`). We call this variable `hrpay` and also calculate the natural log of this variable (`lnhrpay`). Recall that, in order to change or create a new variable we use the `mutate` function.
 
 ```{r}
 data_USoc <- data_USoc %>% 
@@ -110,9 +110,9 @@ data_USoc <- data_USoc %>%
               mutate(lnhrpay = log(hrpay))
 ```
 
-As we wanted to save these additional variables we assign the result of the operation to `data_USoc`.
+As we want to save these additional variables for further use we assign the result of the operation to `data_USoc`.
 
-Let's check whether the log of the hourly pay dfferes if we analyse the data by certain criteria.
+Let's check whether the log of the hourly pay differes if we analyse the data by certain criteria.
 
 ```{r}
 data_USoc %>% group_by(degree) %>% 
@@ -137,7 +137,7 @@ You can see that difference in the averages for `lnhrpay` is about 0.183.
 
 The first hypothesis test we may want to implement is to test whether the difference in the raw data is statistically significant (recall this is not the same economically significant difference).
 
-We use the `t.test` function. We could create two subsets of data for `lnhrpay`, one for males and one for females and could then feed these two series into the `t.test` function (`t.test(data_male,data_female, mu = 0)`) but there is a more straightforward way to achieve this. We shall call `t.test(lnhrpay~male, mu=0, data = data_USoc)`. The `lnhrpay~male` is almost like a regression call, the variable we are interested in is `lnhrpay` but we want to know whether it differs according to `male`. The other inputs set the data farme (`data = data_USoc`) and the null hypothesis (`mu=0`).
+We use the `t.test` function. We could create two subsets of data for `lnhrpay`, one for males and one for females and could then feed these two series into the `t.test` function (`t.test(data_male,data_female, mu = 0)`) but there is a more straightforward way to achieve this. We shall call `t.test(lnhrpay~male, mu=0, data = data_USoc)`. The `lnhrpay~male` is almost like a regression call, the variable we are interested in is `lnhrpay` but we want to know whether it differs according to `male`. The other inputs set the data frame (`data = data_USoc`) and the null hypothesis (`mu=0`).
 
 ```{r}
 t.test(lnhrpay~male, mu=0, data = data_USoc)  # testing that mu = 0
@@ -187,7 +187,7 @@ mod1 <- lm(lnhrpay~male,data = data_USoc)
 stargazer_HC(mod1)
 ```
 
-Sometimes it is useful to extract the actual estimated coefficient and use it for some subsequent calculation. On this occasion let us extract the estimated cooefficient for `male`. When we estimated the regresison model we saved the output in `mod1`. In fact `mod1` contains a lot of information we may want to use, most notably the coefficient estimates, estimated residuals, fitted values etc. We access these as follows
+Sometimes it is useful to extract the actual estimated coefficient and use it for some subsequent calculation. On this occasion let us extract the estimated cooefficient for `male`. When we estimated the regression model we saved the output in `mod1`. In fact `mod1` contains a lot of information we may want to use, most notably the coefficient estimates, estimated residuals, fitted values etc. We access these as follows
 
 ```{r}
 mod1$coefficients
@@ -226,20 +226,23 @@ ggplot(subset(data_USoc, (lnhrpay>0) & (lnhrpay<5)), aes(x = lnhrpay))  +
 
 ```
 
+Recall that teh first input into the `ggplot` function is the dataframe we are using. HOwever, in the above command, instead of just using `data_USoc` we use `subset(data_USoc, (lnhrpay>0) & (lnhrpay<5))`. All that does is that we exclude some data, or better we select a subset of data, namely the data which have log hourly wage larger than 0 and smaller than 5. Try yourself how these histograms look if you do include all data (just ude `data_USoc`).
+
 You could, if you wanted to, fit a normal distribution to these (remember the variables are the log hourly pay rates). This is not super straightforward and it turns out that in this case you would want to generate the graphs seperately. I had to google "R ggplot add normal distribution fit to geom_histogram" and came across [https://stackoverflow.com/questions/1376967/using-stat-function-and-facet-wrap-together-in-ggplot2-in-r/1379074#1379074](this) which helped me to adopt a solution. The normal density is added with a `stat_function`:
 
 ```{r, message=FALSE, warning=FALSE}
 # first create a relevant subset of the data
 data_temp <- data_USoc %>% 
-            filter((lnhrpay>0) & (lnhrpay<5)) %>% # remove negative (wage < $1/hour) and wage > 148/hour = log wage > 5)
+            filter((lnhrpay>0) & (lnhrpay<5)) %>% # remove very small and large wages
             filter(male == "male") 
 
 # now create the plot  
 ggplot(data_temp,aes(x = lnhrpay))  +
-      geom_histogram(binwidth = 0.25,aes(y = ..density..)) +   # aes(y = ..density..) buts the histogram on a density scale
+      geom_histogram(binwidth = 0.25,aes(y = ..density..)) +   
       stat_function(fun = dnorm, args=list(mean=mean(data_temp$lnhrpay), 
                             sd=sd(data_temp$lnhrpay)), color = "darkred", size = 1) 
 
+# Note: aes(y = ..density..) puts the histogram on a density scale
 ```
 
 And now we can do the same for females.
@@ -247,12 +250,12 @@ And now we can do the same for females.
 ```{r, message=FALSE, warning=FALSE}
 # first create a relevant subset of the data
 data_temp <- data_USoc %>% 
-            filter((lnhrpay>0) & (lnhrpay<5)) %>% # remove negative (wage < $1/hour) and wage > 148/hour = log wage > 5)
+            filter((lnhrpay>0) & (lnhrpay<5)) %>% 
             filter(male == "female") 
 
 # now create the plot  
 ggplot(data_temp,aes(x = lnhrpay))  +
-      geom_histogram(binwidth = 0.25,aes(y = ..density..)) +   # aes(y = ..density..) buts the histogram on a density scale
+      geom_histogram(binwidth = 0.25,aes(y = ..density..)) +   
       stat_function(fun = dnorm, args=list(mean=mean(data_temp$lnhrpay), 
                             sd=sd(data_temp$lnhrpay)), color = "darkred", size = 1) 
 
@@ -262,7 +265,7 @@ ggplot(data_temp,aes(x = lnhrpay))  +
 
 After looking at gender differences we will now look at differences in earnings according to education differences.
 
-Let's first look at the `degree` vari8able in our dataset.
+Let's first look at the `degree` variable in our dataset.
 
 ```{r}
 data_USoc %>% count(degree) 
@@ -308,9 +311,22 @@ mod1 <- lm(lnhrpay~grad+male,data = data_USoc)
 stargazer_HC(mod1)
 ```
 
-Now with interaction terms. MARTYN this uses an interaction variable not like the "#" in stata!
+Recall that both variables, `grad` and `male` have a base category (female and no degree respectively). It is best to think about this in form of a Table
+
+| Name  | Gender | Degree | `male` | `grad` |
+|------:|:-------|:-------|:-------|:-------|
+| John | male | no | 1 | 0 |
+| Maria | female | no | 0 | 0 |
+| Jess | female | yes | 0 | 1 |
+| Pete | male | yes | 1 | 1 |
+
+The variable `male` will contribute to the conditional expectation for John and Pete and the `grad` variable will kick in for Jess and Pete. This sort of setup impies that the "effect"" of being male is the same regardless of whether you have a degree or not and also the "effect"" of having a degree is the same regardless of whether you are male or female. 
+
+If you want a model setup that does not make that assumption you need to include an interaction term: 
 
 ```{r}
 mod2 <- lm(lnhrpay~grad*male,data = data_USoc)
 stargazer_HC(mod2)
 ```
+
+The interaction term will take the value 1 only for those who are male and have a degree (in the above table only Pete). This setup allow for the "effect" of a degree to differ between males and females.

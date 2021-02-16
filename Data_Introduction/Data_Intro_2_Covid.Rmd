@@ -39,7 +39,6 @@ For Sections 1.2 to 1.4, you will need the following packages, which we will ins
 #install.packages(c("sets", "forecast", "readxl", "tidyverse", "ggplot2", "utils", "httr"))
 
 library(sets)         # used for some set operations
-library(forecast)     # used for some data smoothing
 library(readxl)       # enable the read_excel function
 library(tidyverse)    # for almost all data handling tasks
 library(ggplot2)      # plotting toolbox
@@ -89,6 +88,13 @@ data$dates <- as.Date(as.character(data$dates),format = "%d/%m/%Y")
 ```
 
 Last, but most importantly, there are two variables called `cases_weekly` and `deaths_weekly`. This inicates that the dataset is organised as a weekly dataset. Each data-entry (each row) represents the data for a particular week in a particular country.
+
+Extra note: The `geoID` variable for Namibia is missing. Let's add it here (it should be the two letter code "NA").
+
+```{r}
+levels(data$geoId) <- c(levels(data$geoId),"NA")
+data$geoId[data$country == "Namibia"] <- "NA"
+```
 
 ## 1.4 Plotting line charts for some countries
 
@@ -310,8 +316,8 @@ So when we want to run the above command we have to tell R that we want the sele
 
 
 ```{r}
-temp_mergein <- data %>% filter(dates == "2020-12-14") %>% 
-                          dplyr::select(geoId, cases_weekly,  
+temp_mergein <- data %>% filter(dates == "2021-02-01") %>% 
+                          dplyr::select(country,geoId, cases_weekly,  
                                         pc_cases, deaths_weekly, pc_deaths)
 ```
 
@@ -368,7 +374,7 @@ m2 +
 
 In order to practice some hypothesis testing we will look at the data as aggregated across continents (`continentExp`). Here we select all observations from the first week of February 2021 and then average data across all countries in a particular continent.
 
-```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 seldate <- "2021-02-01"   # Set the date you wnat to look at
 table4 <- data %>%   filter(dates == seldate) %>% 
               group_by(continentExp) %>% 
