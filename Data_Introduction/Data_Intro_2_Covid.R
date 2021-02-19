@@ -54,39 +54,6 @@ g2
 
 
 ## -------------------------------------------------------------------------------------------------
-sel_countries <- c("Spain", "France", "United_Kingdom")
-g3 <- ggplot(subset(data, country %in% sel_countries), 
-             aes(x=dates,y=cases_weekly, color = country)) +
-      geom_line(size = 1) +   # size controls the line thickness
-      ggtitle("Covid-19 weekly cases")
-g3
-
-
-## -------------------------------------------------------------------------------------------------
-data <- data %>%  
-          mutate(pc_cases = (cases_weekly/popData2019)*100000, 
-                 pc_deaths = (deaths_weekly/popData2019)*100000)
-
-
-## -------------------------------------------------------------------------------------------------
-sel_countries <- c("Spain", "France", "United_Kingdom")
-g5 <- ggplot(subset(data, country %in% sel_countries), 
-             aes(x=dates,y=pc_deaths, color = country)) +
-      geom_line(size = 1) +   # size controls the line thickness
-      ggtitle("Covid-19 weekly deaths per 100,000")
-g5
-
-
-## -------------------------------------------------------------------------------------------------
-sel_countries <- c("United_States_of_America", "Germany", "Sweden", "India")
-g5 <- ggplot(subset(data, country %in% sel_countries), 
-             aes(x=dates,y=pc_deaths, color = country)) +
-      geom_line(size = 1) +   # size controls the line thickness
-      ggtitle("Covid-19 weekly deaths per 100,000")
-g5
-
-
-## -------------------------------------------------------------------------------------------------
 countryInd <- read_csv("Data_Introduction/CountryIndicators.csv",na = "#N/A") 
 data<- merge(data,countryInd,,all.x=TRUE)
 
@@ -167,19 +134,6 @@ table3 <- merge(table3,mergecont) # merges in continent information
 table3 <- table3 %>% mutate(GDPpc = GDPpc/1000) # convert pc GDP into units of $1,000
 
 
-## ---- echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE-----
-mod1 <- lm(Avg_deaths~1,data=table3)
-
-
-## ---- echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE----
-stargazer(mod1, type="text")
-
-
-## ---- echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE-----
-mod2 <- lm(Avg_deaths~GDPpc,data=table3)
-stargazer(mod2, type="text")
-
-
 ## ---- echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2.0, fig.width = 4.5----
 ggplot(table3, aes(x=GDPpc, y=Avg_deaths)) +
     labs(x = "GDPpc", y = "Avg_deaths") +
@@ -192,11 +146,6 @@ ggplot(table3, aes(x=GDPpc, y=Avg_deaths)) +
 ## ---- echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE-----
 mod3 <- lm(Avg_deaths~GDPpc+HealthExp,data=table3)
 stargazer(mod3,type = "text")
-
-
-## ---- echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE-----
-cor(mod3$residuals,table3$GDPpc)
-cor(mod3$residuals,table3$HealthExp)
 
 ## Add Obesity and Age distribution measure
 # Sources:

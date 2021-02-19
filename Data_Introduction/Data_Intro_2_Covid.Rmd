@@ -52,16 +52,24 @@ library(stargazer)    # for nice regression output
 Very helpfully, the ECDC webpage that contains the data (https://tinyco.re/7709786) provides an R script (shown in the next code block) that allows you to download the most current dataset. You could download the dataset to your computer and then import it into R instead, but here the ECDC has built a direct pipeline into their data. 
 After running the code below, a datafile called data will appear in your environment. It will contain up-to-date case and fatality data.
 
-```{r}
+
+```{r, eval = FALSE}
 #download the dataset from the ECDC website to a local temporary file (“tf”)
 GET("https://opendata.ecdc.europa.eu/covid19/casedistribution/csv", 
     authenticate(":", ":", type="ntlm"), 
     write_disk(tf <- tempfile(fileext = ".csv")))
 #read the Dataset sheet into “R”. The dataset will be called "data".
-data <- read.csv(tf) 
+data_old <- read.csv(tf) 
 ```
 
-Note: By uploading data in this way you will always get the latest data. This means that, if you replicate this code, you will have more recent data than the data used when this project was written (6 January 2021). 
+NOTE: By uploading data in this way you will always get the latest data. This means that, if you replicate this code, you will have more recent data than the data used when this project was written (19 February 2021). 
+
+NOTE 2: As of 19 February, the structure of that file which is downloaded has changed and hence will not work. You know that the dataset is not correct if you have more than 60,000 observations. If the file is incorrect, then you can use the data in StaticECDCdata_8Feb21.csv, which is a file with data up to 8 Feb 2021.
+
+```{r}
+data <- read.csv("StaticECDCdata_8Feb21.csv",na="#N/A")
+```
+
 
 ## 1.3 Data cleaning
 

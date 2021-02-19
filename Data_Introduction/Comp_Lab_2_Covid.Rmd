@@ -1,0 +1,400 @@
+---
+title: "Computer Lab 2 Covid"
+author: "Ralf Becker"
+date: "19 February 2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = FALSE, message = FALSE, warning=FALSE)
+```
+
+# Introduction
+
+In this computer lab you will be practicing the following
+
+* Creating time series plots with ggplot
+* Performing hypothesis tests to test the equality of means
+* Estimate regressions
+* Perform inference on regression coefficients
+
+
+```{r}
+library(sets)         # used for some set operations
+library(readxl)       # enable the read_excel function
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # plotting toolbox
+library(utils)        # for reading data into R # for reading data into R 
+library(httr)         # for downloading data from a URL 
+library(stargazer)    # for nice regression output
+```
+
+# Data Import
+
+Import the data from the "StaticECDCdata_8Feb21.csv" file. Recall, make sure the file (from the [https://online.manchester.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_12285037_1&course_id=_65407_1&content_id=_12357547_1](Week 2 BB page)) is saved in your working directory, that you set the working directory correctly and that you set the the `na=` option in the `read.csv` function to the value in which missing values are coded in the csv file. To do this correctly you will have to open the csv file (with your spreadsheet software, e.g. Excel) and check for instance cell F61.
+
+```{r, eval= FALSE}
+setwd("YOUR WORKING DORECTORY")
+data <- read.csv(XXXX,na="XXXX")
+str(data)
+
+```
+
+```{r, echo = FALSE}
+
+data <- read.csv("StaticECDCdata_8Feb21.csv",na="#N/A")
+str(data)
+
+```
+
+
+You got it right if the output from `str(data)` looks like the above. 
+
+Now we need to change some variable names and set the dates up as dates
+
+```{r}
+names(data)[names(data) == "countriesAndTerritories"] <- "country"
+names(data)[names(data) == "countryterritoryCode"] <- "countryCode"
+names(data)[names(data) == "dateRep"] <- "dates"
+
+data$dates <- as.Date(as.character(data$dates),format = "%d/%m/%Y")
+```
+
+Let's also calculate the per-capita data to ensure that we can compare countries of different sizes.
+
+```{r}
+data <- data %>%  
+          mutate(pc_cases = (cases_weekly/popData2019)*100000, 
+                 pc_deaths = (deaths_weekly/popData2019)*100000)
+```
+
+
+# Plotting data as time-series
+
+Here we will practice some time-series plotting. Let's start with a simple plot for Brazil.
+
+
+```{r, eval = FALSE}
+g1 <- XXXX(subset(XXXX, XXXX == "Brazil"), aes(x=dates,y=deaths_weekly)) +
+      geom_XXXX() + 
+      ggtitle("Covid-19 weekly cases, Brazil")
+g1
+```
+
+```{r, echo = FALSE}
+g1 <- ggplot(subset(data, country == "Brazil"), aes(x=dates,y=deaths_weekly)) +
+      geom_line(size=1) + 
+      ggtitle("Covid-19 weekly deaths, Brazil")
+g1
+```
+
+Next we want to compare this development to the similar time line for the two countries which have population size close to Brazil. For that purpose we want to see a Table of Data with merely country names and populations ordered by population size. Then we pick the country with the next smaller and next larger population compared to Brazil. 
+
+```{r}
+temp <- data %>% select(country,popData2019) %>%  
+          unique() %>% 
+          arrange(desc(popData2019)) 
+head(temp,14)
+```
+
+Try and figure out what the above does. What do `select`, `unique` and `arrange` do? Could you change the order in which you call these actions?
+
+For instance, what does the following do?
+
+```{r}
+temp2 <- data %>% arrange(desc(popData2019)) %>% 
+          unique() %>% 
+          select(country,popData2019)
+```
+
+You should find that table to be a lot less useful than `temp`.
+
+From Table `temp` you should be able to identify that Pakistan and Nigeria are the next larger and next smaller country.
+
+
+```{r, eval = FALSE}
+sel_countries <- c("Brazil", "XXXX", "XXXX")
+g2 <- ggplot(subset(XXXX, country %in% XXXX), 
+             XXXX(x=dates,XXXX=XXXX, color = XXXX)) +
+      geom_line(XXXX=1) + 
+      XXXX("Covid-19 daily cases")
+g2
+```
+
+```{r, echo = FALSE}
+sel_countries <- c("Brazil", "Pakistan", "Nigeria")
+g2 <- ggplot(subset(data, country %in% sel_countries), 
+             aes(x=dates,y=deaths_weekly, color = country)) +
+      geom_line(size=1) + 
+      ggtitle("Covid-19 daily cases")
+g2
+```
+
+# Import additional country indicators
+
+The following three files will add the following variables to your dataframe
+
+* Land_Area_sqkm
+* HealthExp
+* GDPpc
+* Obese_Pcent
+* Over_65s
+* Diabetis
+
+Make sure that these files are saved in your working directory.
+
+```{r, echo = FALSE}
+countryInd <- read_csv("CountryIndicators.csv",na = "#N/A") 
+data<- merge(data,countryInd,all.x=TRUE)
+
+obesity <- read_csv("Obesity.csv")   # Adds obesity and diabetis country
+data <- merge(data,obesity)
+
+over65p <- read_excel("Over 65s 2.xlsx")
+data <- merge(data,over65p)
+```
+
+Check whether `data` indeed contains these variables. Which of the following commands is useful for this?
+
+```{r}
+view(data)
+str(data)
+summary(data)
+names(data)
+```
+
+Now we need to calculate the Population density. 
+
+```{r, eval=FALSE}
+data <- data %>% XXXX(popdens = XXXX/XXXX)  # calculate population density
+```
+
+```{r, echo=FALSE}
+data <- data %>% mutate(popdens = popData2019/Land_Area_sqkm)  # calculate population density
+```
+
+Confirm that the average population density in your dataset is 235.073.
+
+```{r, echo=FALSE}
+summary(data$popdens)
+```
+
+# Average data over the sample period
+
+What we now do is to aggregate the weekly cases and deaths data. In the Lecture and the Review and Q&A session we did this over the entire available sample period. Could there be reasons why we may not want to do this over the entire period?
+
+It is in the nature of such a pandemic that it starts in one location and then, initially slowly, spreads through different geographies. The initial spread may well be determined by travel patterns eminating from the country initial effected (here China). In order to reduce the influence of this initial geographic pattern we now decide to aggregate only for data from June 2021 onwards ("2020-06-01" and later).  
+
+This was the code we used in the Week2 material to calculate these averages (including all available data). 
+```{r, eval = FALSE}
+table3 <- data %>% group_by(country) %>% # groups by Country
+            summarise(Avg_cases = mean(pc_cases,na.rm = TRUE),
+                      Avg_deaths = mean(pc_deaths,na.rm = TRUE),
+                      PopDen = mean(popdens))    
+```
+
+Find a way to adjust this bit of code such that the average calculations are only based on data from "2020-06-01" onwards. What operation should you use in place of `XXXX`? Here is a link to[https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Tidyverse+Cheat+Sheet.pdf](a one page tidyverse cheat sheet). There are 4 major type of operations you can perform in a pipe (`%>%`), `filter`, `arrange`, `mutate`, `summarise\summarize` and (although not on the cheat sheet) `select`. Which one is the one to use?
+
+Also note the following. The summarise function is designed to summarise information, e.g. for a particular country, which varies in the country specific sample. However, we not only want to summarise the number of weekly cases and deaths, we also want to have the country information for population density, obesity, diabetis, Over 65s, GDPpc, HealthExp and the countries continent. Below you see, inside the summarise function  terms like `PopDen = first(popdens)`. This selects the first `popdens` observation for a particular country. As all these variables do not vary through our sample this little trick delivers exactly what we want.
+
+```{r, eval = FALSE}
+table3 <- data %>% XXXX %>% 
+            group_by(country) %>% # groups by Country
+            summarise(Avg_cases = mean(pc_cases,na.rm = TRUE),
+                      Avg_deaths = mean(pc_deaths,na.rm = TRUE),
+                      PopDen = first(popdens),
+                      Obese = first(Obese_Pcent),
+                      Diabetis = first(Diabetis),
+                      Over_65s = first(Over_65s),
+                      GDPpc = first(GDPpc)/1000,  # calculate GDPpc in $1000s
+                      HealthExp = first(HealthExp),
+                      Continent = first(continentExp))    
+```
+
+After you selected, check `head(table3)` to confirm that you got the same result.
+
+```{r, echo = FALSE}
+table3 <- data %>% filter(dates >= "2020-06-01") %>% 
+            group_by(country) %>% # groups by Country
+            summarise(Avg_cases = mean(pc_cases,na.rm = TRUE),
+                      Avg_deaths = mean(pc_deaths,na.rm = TRUE),
+                      PopDen = first(popdens),
+                      Obese = first(Obese_Pcent),
+                      Diabetis = first(Diabetis),
+                      Over_65s = first(Over_65s),
+                      GDPpc = first(GDPpc)/1000,  # calculate GDPpc in $1000s
+                      HealthExp = first(HealthExp),
+                      Continent = first(continentExp))    
+
+head(table3)
+```
+
+Let's create a few plots which show the average death numbers against some of our country specific information.
+
+```{r}
+ggplot(table3,aes(PopDen,Avg_deaths)) +
+  geom_point() +
+  scale_x_log10() +
+  ggtitle("Population Density v Per Capita Deaths")
+```
+
+Now replicate the following graphs.
+
+```{r, echo=FALSE}
+ggplot(table3,aes(Obese,Avg_deaths)) +
+  geom_point() +
+  ggtitle("Percentage of Obese v Per Capita Deaths")
+```
+
+```{r, echo=FALSE}
+ggplot(table3,aes(Diabetis,Avg_deaths)) +
+  geom_point() +
+  ggtitle("Prevalence of Diabetis v Per Capita Deaths")
+```
+
+Let's also create plots of deaths against the proportion of over 65s, but this time we want to split the graph according to continents.
+
+```{r, echo=FALSE}
+ggplot(table3,aes(Over_65s,Avg_deaths)) +
+  geom_point() +
+  facet_wrap(~ Continent) +
+  theme_bw() +
+  ggtitle("Percentage of over 65 v Per Capita Deaths")
+```
+
+Nice, right?! Check out the [https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf](GGplot cheat sheet) for more tricks and illustrtaions of this packages' capabilities.
+
+
+# Testing for equality of means
+
+Let's perform some hypothesis tests to check whether there are significant differences between the average rates of cases and deaths since June 2020 between continents.
+
+We therefore continue to work with the data in `table3`. In `table4` we calculate continental averages.
+
+```{r}
+table4 <- table3 %>%   
+              group_by(Continent) %>% 
+              summarise(CAvg_cases = mean(Avg_cases, na.rm = TRUE),
+                        CAvg_deaths = mean(Avg_deaths, na.rm = TRUE),
+                        n = n()) %>% print()
+```
+
+Let's see whether we find the continental averages to be statistically significantly different. Say we compare the `avg_deaths` in America and Asia. So test the null hypothesis that $H_0: \mu_{AS}=\mu_{AM}$ (or $H_0: \mu_{AS}-\mu_{AM}=0$) against the alternative hypothesis that $H_A: \mu_{AS}\neq\mu_{AM}$, where $\mu$ represents the average death rate of countries in the respective continent over the sample period (here June onwards).
+
+```{r}
+test_data_AS <- table3 %>% 
+  filter(Continent == "Asia")      # pick Asian data
+
+
+test_data_AM <- table3 %>% 
+  filter(Continent == "America")      # pick European data
+
+t.test(test_data_AS$Avg_deaths,test_data_AM$Avg_deaths, mu=0)  # testing that mu = 0
+```
+
+
+The difference in the averages is 0.3492 - 1.3661 = -1.0169 (about 1 in 100,000 population). We get a t-test ststiatic of almost -4. If in truth the two means were the same then we should expect the test statistic to be around 0. Is -4 far enough away from 0 for us to conclude that we should stop supporting the null hypothesis? The value of the t-test is almost -4. Is that big. If $H_0$ was correct (same average death rates in Ameraica and Asia) then we should on average expect the t-test to come out around a value of 0. So -4 is clearly not 0, but is it so far away from 0 that we should reject $H_0$?
+
+The answer is yes and the p-value does tell us that it is. The p-value is 0.00037 or 0.037%. This means that if the $H_0$ was correct, the probability of getting a difference of -1 (per 100,000 population) or a more extreme difference is 0.037%. We judge this probability to be too small for us to coninue to support the $H_0$ and we reject the $H_0$. We do so as the p-value is smaller than any of the usual significance levels (10%, 5% or 1%).
+
+We are not restricted to testing whether two population means are the same. You could also test whether the difference in the population is anything different but 0. Say a politician claims that evidently the case rate in Europe is larger by more than 50 per 100,000 population than the case rate in America.
+
+Here our $H_0$ is $H_0: \mu_{EU}=\mu_{AM}+50$ (or $\mu_{EU}-\mu_{AM}=50$) and we would test this against an alternative hypothesis of $H_0: \mu_{EU}>\mu_{AM}+50$ (or $H_0: \mu_{EU}-\mu_{AM}>50$). Here the statement of the politician is represented in the $H_A$. 
+
+```{r}
+test_data_EU <- table3 %>% 
+  filter(Continent == "Europe")      # pick Asian data
+
+test_data_AM <- table3 %>% 
+  filter(Continent == "America")      # pick European data
+
+t.test(test_data_EU$Avg_cases,test_data_AM$Avg_cases, mu=50, alternative = "greater") 
+```
+
+Note the following. The parameter `mu` now takes the value 50 as we are hypothesising that the difference inthe means in 50 (or larger than that in the $H_A$). Also, in contrast to the pevious test we now care whether the deviation is less or greater than 50. In this case we wonder whether it is really greater. Hence we use the additional input into the test function, `alternative = "greater"`. (The default for this input is `alternative = "two.sided"` and that is what is used, as in the previous case, if you don't add it to the `t.test` function). Also check `?t.test` for an explanation of these optional input parameters.
+
+Again we find ourselves asking whether the sample difference we obtained (73.4847) is consistent with the null hypothesis (of the population difference being 50). Here the answer is subtle. The p-value is 0.04942, so the probability of optaining a sample difference as big as 73.4847 (or bgger) is just a little below 5%. Say we set out to perform a test at a 10% significance level, then we would judge a probability of just below 5% to be too small nd hence we would reject the null hypothesis. If however we set out to perform a test at a 1% significance level then we would not reject the null hypothesis.
+
+So let's perform another test. An European opposition politicial is lamenting that the European case rate is more than 100 (per 100,000 population) larger than that in Asia. Perform the appropriate hypothesis test.
+
+```{r, eval = FALSE}
+t.test(test_data_XXXX$Avg_cases,test_data_XXXX$Avg_cases, mu=XXXX, alternative = XXXX) 
+```
+
+```{r, echo = FALSE}
+t.test(test_data_EU$Avg_cases,test_data_AS$Avg_cases, mu=100, alternative = "greater") 
+```
+
+The p-value is certainly larger than any of the usual significance levels and we fail to reject $H_0$. This means that the opposition politician's statement is not supported by the data.
+
+# Regression and inference
+
+To perform inference in the context of regressions it pays to use an additional package, the `car` package. So please load this package.
+
+
+```{r}
+library(car)
+```
+
+If you get an error message it is likely that you first have to install that package.
+
+In the lecture we talked about a base case regression
+
+$Avg\_deaths_i = \alpha + \beta_1 ~GDPpc_i + \beta_2~ HealthExp_i + u_i$
+
+Let us estimate this again using the average rates calculated on data from June onwards only (hence the results here will be somewhat different to those in the lecture).
+
+```{r}
+mod3 <- lm(Avg_deaths~GDPpc+HealthExp,data=table3)
+stargazer(mod3,type = "text")
+```
+
+We see that, for these data, the `HealthExp` variable remains statistically significant although the `GDPpc` variable is now not statistically significant. 
+
+Now add the `Obese`, `Diabetis` and `Over_65s` variables to the regression in order to evaluate whether their inclusion change the implausible negative sign on `HealthExp`.
+
+```{r, eval = FALSE}
+mod4 <- lm(Avg_deaths~GDPpc+XXXX,data=table3)
+stargazer(mod3,mod4,type = "text")
+```
+
+
+```{r, echo = FALSE}
+mod4 <- lm(Avg_deaths~GDPpc+HealthExp+Obese+Over_65s+Diabetis,data=table3)
+stargazer(mod3,mod4,type = "text")
+```
+
+If you want to perform a hypothesis test say on $\beta_3$ (the coefficient on the `Obese` variable), then the usual hypothesis to pose is $H_0: \beta_3 = 0$ versus $H_A: \beta_3 \neq 0$.
+It is the p-value to that hypothesis test which is represented by the asteriks next to the estimated coefficient. Let's confirm that. The estimated coefficient to the `Obese` variable is 0.047 and the (***) indicate that the p-value to that test should be less than 0.01.
+
+Here is how you can perform this test manually using the `lht` (stands for Linear Hypothesis Test) function which is written to use regression output for hypothesis testing.
+
+```{r}
+lht(mod4,"Obese=0")
+```
+
+There is a lot of information, but the important one is the value displayed under ("Pr(>F)"), that is the p-value. Here it is very small, 0.0000219, and as predicted < 0.01.
+
+Confirm that p-value for $H_0: \beta_2 = 0$ versus $H_A: \beta_2 \neq 0$ (coefficient on `HealthExp`) is larger than 0.1.
+
+```{r, echo = FALSE}
+lht(mod4,"HealthExp=0")
+```
+
+The use of the `lht` function is that you can test different hypothesis. Say $H_0: \beta_4 = 0.1$ versus $H_A: \beta_4 \neq 0.1$ (coefficient on `Over_65s`).
+
+```{r}
+lht(mod4,"Over_65s=0.1")
+```
+
+So that null hypothesis cannot be rejected.
+
+Even more so, you can use this function to test multiple hypotheses. Say you want to test whether the inclusion of the additional three variables (in `mod4` as opposed to `mod3`) is relevant. If it wasn't then the following null hypothesis should be correct: $H_0: \beta_3=\beta_4=\beta_5=0$. We call this a multiple hypothesis.
+
+Use the help function (`?lht`) or search for advice () on how to use the `lht` function to test this hypothesis.
+
+```{r, echo = FALSE}
+lht(mod4,c("Obese=0","Diabetis=0","Over_65s=0"))
+```
+
+The techniques you covered in this computer lab are absolutly fundamental to the remainder of this unit, so please ensure that you have not rushed over the material.
