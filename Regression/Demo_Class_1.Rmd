@@ -145,9 +145,11 @@ Let's create a plot with the two fitted regression lines. But before we do that 
 temp <- data_USoc %>% filter(degree %in% c("no degree", "first degree"))
 ggplot(temp, aes(x=age,y=annualpay,color = degree))+
   geom_point(size=0.01) +
-  geom_smooth(method = "lm", se = FALSE)
+  geom_smooth(method = "lm", se = FALSE) # linear fit
 
 ```
+
+
 
 To calculate the lifetime earnings premium for a graduate (earnings between 20 and 65) we calculate the lifetime earnings of a graduate and substract the lifetime earnings of a non-graduate.
 
@@ -165,3 +167,13 @@ So this almost half a million pounds over a lifetime. Is that the value of a deg
 
 Graphically this is the difference between the two fitted regression lines between the ages 20 and 65.
 
+This calculation was premised on a linear relationship between `annualpay` and `age`. Instead of proposing a linear relationship between `annualpay` and `age` one could also propose a quadratic relationship. Without showing how one would estimate such a relationship we can display this relationship using the `geom_smooth` function (no need to remember this!):
+
+```{r}
+temp <- data_USoc %>% filter(degree %in% c("no degree", "first degree"))
+ggplot(temp, aes(x=age,y=annualpay,color = degree))+
+  geom_point(size=0.01) +
+  geom_smooth(method = "gam", formula = y~poly(x,2), se = FALSE) # quadratic fit
+```
+
+It is notable that now we allow for the fact that employees with no-degree tend to have somewhat higher early career earnings. Perhaps the linear approximation over-estimates the value of a degree.
