@@ -1,6 +1,6 @@
 ---
 title: Diff-on-Diff implementation in R
-output: html_document
+output: pdf_document
 editor_options:
   chunk_output_type: console
 ---
@@ -64,42 +64,34 @@ A few important variables are
 
 ## Identifying States
 
-In the dataset states are represented by numbers. This is a little annoying. So let's match the data. Let's use the information on the population in 1980 for this.
+In the dataset states are represented by numbers. This is a little annoying. So let's add the state names. But which number belongs to which state. It is very typical that countries and states have particular numbers associated to them to assist in identifying states. For instance Utah should be represented by the number 49. But how do you know that it is these number are called FIPS (Federal Information Processing Standard) codes?
 
-The variable which should be easiest to match with external data are the population data. After a little google search for "US States population by age group 1980" I found this page [https://www2.census.gov/programs-surveys/popest/tables/1980-1990/state/asrh/estage80.txt](by the US Census) which gives us population by age groups, eg. by 18-24 year olds. Hence to compare we need to aggregate two of our age groups (18-20 and 21-24). 
+If you look at a [https://www.census.gov/geographies/reference-files/2017/demo/popest/2017-fips.html] listing of these codes (and how the match to state names) you will find a couple of peclarities. In general the numbers go from 1 (Alabama) to 56 (Wyoming), but a few numbers are missing, in particular 3, 7, 12, 43 and 52 are not allocated to states. So if we were to look at our state numbers and these numbers are also missing then we can be pretty certain that we are looking at FIPS codes and then we can use the information in the above link to match our numbers to state names.
 
-```{r state_matching1}
-state_test <- deaths %>%  
-  filter(agegr %in% c("18-20 yrs","21-24 yrs"), dtype == "all",year == "1980") %>% 
-  group_by(state, year) %>% 
-  mutate(pop_18_24 = sum(pop)) %>% 
-  select(state, year, pop_18_24) %>% 
-  arrange(pop_18_24) %>% 
-  unique() %>% 
-  ungroup()
+```{r}
+unique(deaths$state)
 ```
 
-This leaves us with a Table which only contains state number, Year and the 18-24 population.
+Success!!! We have numbers from 1 to 56 and none of the above listed numbers appears. We have FIPS codes. In some sense this is not 100% proof and you could check whether population numbers which we have match to reported population numbers in 1980, but we can trust that the authors have done the sensible thing and used FIPS codes.
 
-Let's import a table with the 18-24 pop data from the Census which also contains the state names. This is also ordered from smallest to largest population. We therefore add the population column (`18to24`) and the state appreviation column (`State`) to the `state_test` dataframe so that we can compare the population numbers in our datafile and those coming from the Census.
+Now we need to import the spreadsheet which lists these codes and the associated state abbreviations (2 letter codes) and state names. As it is a little tedious to find an easily accessible file which includes all these information I have prepared `states.xlsx` for your convenience.
 
-```{r state_matching2}
-C80pop <- read_excel("USstate_pop_1980.xlsx")
-state_test$C18to24 <- C80pop$`18to24`*1000
-state_test$Cstate <- C80pop$State
-state_test$StateName <- C80pop$State_name
+```{r}
+state<-read_excel("states.xlsx")
+state$FIPS <- as.factor(state$FIPS)
+names(state)
 
-state_test[15:20,] # Show some states
 ```
 
-When you look at the table you can see that the resulting 18 to 24 population numbers are extremely close and hence it is very likely that we can now match the state number with appreviations. State 5, for instance, is "AR" which represents Arkansas.
+This leaves us with a Table which contains state number (`FIPS`), state name (`NAME`) and a two letter code (`Cstate`).
 
-Now I use `state_test` to merge the State appreviation into our dataset.
+Now we use `state` in `deaths` and `FIPS` in `state` to merge the State appreviation (`Cstate`) and their names (`NAME`) into our dataset.
 
 ```{r state_,matching3}
-state_test <- state_test %>% select(state,Cstate,StateName)
-deaths <- merge(deaths,state_test,x.all = TRUE)
+deaths <- merge(deaths,state,by.x = "state", by.y = "FIPS",x.all = TRUE)
 ```
+
+This has added the variables `Cstate` and `NAME` to our dataframe.
 
 ## Data Summaries
 
@@ -258,15 +250,18 @@ $Y = \alpha + \Sigma_{k=AL}^{WY} \beta_k STATE^k + \Sigma_{\tau=1971}^{1983} \ga
 The index for the $STATE^K$ variable runs alphabetically from "AL" (Alabama) to "WY" (Wyoming). The state first in the alphabet , "AK" (Alaska), is the base case 
 Observations are state-years normally indexed by $st$ but to avoid a too laden notation they are not showing. To illustrate what the dummy variables do let's look at the following table which shows a few observations and their respective values for selected variables.
 
-|CState|Year|mrate| ... |$Year^{1975}$|$Year^{1976}$| ... |$STATE^{AL}$|$STATE^{AR}$|...|
-|:-----|:---|:------|:---|:--------|:--------|:----|:--------|:--------|:----|
-|AL|1975|147.9| ... |1|0| ... |1|0|...|
-|AL|1976|132.6| ... |0|1| ... |1|0|...|
-|...|...|...| ... |...|...| ... |...|...|...|
-|AR|1976|137.5| ... |0|1| ... |0|1|...|
-|AR|1977|111.5| ... |0|0| ... |0|1|...|
+|CState|Year|mrate|`LEGAL`| ... |$Year^{1975}$|$Year^{1976}$| ... |$STATE^{AL}$|$STATE^{AR}$|...|
+|:-----|:---|:------|:------|:---|:--------|:--------|:----|:--------|:--------|:----|
+|AL|1974|147.9|0.0| ... |0|0| ... |1|0|...|
+|AL|1975|147.9|0.294| ... |1|0| ... |1|0|...|
+|AL|1976|132.6|0.665| ... |0|1| ... |1|0|...|
+|...|...|...|...| ... |...|...| ... |...|...|...|
+|AR|1976|137.5|0.0| ... |0|1| ... |0|1|...|
+|AR|1977|111.5|0.0| ... |0|0| ... |0|1|...|
 
 Fortunately we do not have to create all the year and state dummy variables. R will do this internally.
+
+The crucial variabke which indicates the "strength" of the policy (reduction of minimum legal drinking age) is the variable `LEGAL`. It expresses the proportion of 18-20 year olfd which are allowed to legally dring alcohol. YOu can see in the table that this propotion was 0 in Arkansas in 1976 and 1977 (as the MLDA was 21). In Alabama the story is different. In 1974 it was also 0 as the MLDA was still 21. In 1976 the proportion was 0.665 or about 67% as the MLDA had been reduced to 19 (2/3s of 18-20 year olds were allowed to legally drink). The value for 1975 (LEGAL = 0.294) is a combination of the fact that 2/3s of 18-20 year olds were allowed to legally drink, but that legislation was in effect for only about 5 months (0.294 is approximately 0.665 * (5/12)).
 
 The above model is then implemented in R as follows:
 
@@ -301,37 +296,70 @@ The standard errors which are calculated in this routine are the usual standard 
 ```{r CRinference}
 library(sandwich)
 library(lmtest)
-mod1_ct <- coeftest(mod1,vcovCL(mod1, cluster = ~ state))
+mod1_cr <- coeftest(mod1,vcovCL(mod1, cluster = ~ state))
 
+# Create vectors with cluster robust standard errors
+# for use in stargazer below
+mod1_cr_se <- sqrt(diag(vcovCL(mod1, cluster = ~ state)))
+mod2_cr_se <- sqrt(diag(vcovCL(mod2, cluster = ~ state)))
 ```
 
-In `mod1_ct` you now find all the (unchanged) coefficient estimates, the new standard errors and as a result new t-statistics and p-values for the null hypothesis that the respective population coefficients are 0, for `mod1`. Let's just see the first few rows which also contain the `legel` variable. 
+In `mod1_ct` you now find all the (unchanged) coefficient estimates, the new standard errors and as a result new t-statistics and p-values for the null hypothesis that the respective population coefficients are 0, for `mod1`. Let's just see the first few rows which also contain the `legal` variable. 
 
 ```{r CRinference2}
-mod1_ct[1:4,]
+mod1_cr[1:4,]
 ```
 
-You can see that the new standard error is very close to that reported in Angrist and Pischke. 
 
-In what follows we will not report these standard errors and hence concentrate solely on the estimated coefficients for the `legal` variable.
+You can see that the new standard error to `legal` is 4.59 as in Table 5.2 in Angrist and Pischke. And in fact you can work this new standard error into the `stargazer display
 
-Now we repeat this analysis for the different reasons of Death:
+```{r CRinference3}
+# keep = "legal" only reports legal
+stargazer(mod1, keep = "legal", type="text", se=list(mod1_cr_se)) 
+```
+
+or for models `mod1` and `mod2`
+
+```{r CRinference4}
+stargazer(mod1,mod2, keep = "legal", type="text",
+          se=list(mod1_cr_se,mod2_cr_se)) # keep = "legal" only reports legal
+```
+
+Now we repeat this analysis for the different reasons of Death, always reporting the cluster robust standard errors:
 
 ```{r mod3}
+# MVAs
 AP_data <- filter(deaths, year <= 1983, agegr == "18-20 yrs", dtype == "MVA")
 mod1 <- lm(mrate ~ legal + state + year_fct, data = AP_data)
-mod2 <- lm(mrate ~ legal + year_fct + state + state:year, data = AP_data)
-stargazer(mod1, mod2, dep.var.caption = "MVA", keep = "legal", type="text") 
+mod1_cr_se <- sqrt(diag(vcovCL(mod1, cluster = ~ state)))
 
+mod2 <- lm(mrate ~ legal + year_fct + state + state:year, data = AP_data)
+mod2_cr_se <- sqrt(diag(vcovCL(mod2, cluster = ~ state)))
+
+stargazer(mod1, mod2, dep.var.caption = "MVA", keep = "legal", 
+          type="text",se=list(mod1_cr_se,mod2_cr_se)) 
+
+# Suicides
 AP_data <- filter(deaths, year <= 1983, agegr == "18-20 yrs", dtype == "suicide")
 mod1 <- lm(mrate ~ legal + state + year_fct, data = AP_data)
-mod2 <- lm(mrate ~ legal + year_fct + state + state:year, data = AP_data)
-stargazer(mod1, mod2, dep.var.caption = "Suicide", keep = "legal", type="text") 
+mod1_cr_se <- sqrt(diag(vcovCL(mod1, cluster = ~ state)))
 
+mod2 <- lm(mrate ~ legal + year_fct + state + state:year, data = AP_data)
+mod2_cr_se <- sqrt(diag(vcovCL(mod2, cluster = ~ state)))
+
+stargazer(mod1, mod2, dep.var.caption = "Suicide", keep = "legal", 
+          type="text",se=list(mod1_cr_se,mod2_cr_se)) 
+
+# Internal
 AP_data <- filter(deaths, year <= 1983, agegr == "18-20 yrs", dtype == "internal")
 mod1 <- lm(mrate ~ legal + state + year_fct, data = AP_data)
+mod1_cr_se <- sqrt(diag(vcovCL(mod1, cluster = ~ state)))
+
 mod2 <- lm(mrate ~ legal + year_fct + state + state:year, data = AP_data)
-stargazer(mod1, mod2, dep.var.caption = "Internal", keep = "legal", type="text") 
+mod2_cr_se <- sqrt(diag(vcovCL(mod2, cluster = ~ state)))
+
+stargazer(mod1, mod2, dep.var.caption = "Internal", keep = "legal", 
+          type="text",se=list(mod1_cr_se,mod2_cr_se)) 
 ```
 
 ### Table 5.3
@@ -339,25 +367,53 @@ stargazer(mod1, mod2, dep.var.caption = "Internal", keep = "legal", type="text")
 For the results in this table we add an additional control variable, namely the amount of beer taxes.
 
 ```{r mod4}
+# All deaths
 AP_data <- filter(deaths, year <= 1983, agegr == "18-20 yrs", dtype == "all")
 mod1 <- lm(mrate ~ legal + beertaxa + state + year_fct, data = AP_data)
-mod2 <- lm(mrate ~ legal + beertaxa + year_fct + state + state:year, data = AP_data)
-stargazer(mod1, mod2, dep.var.caption = "MVA - incl. beertax", keep = c("legal","beertaxa"), type="text") 
+mod1_cr_se <- sqrt(diag(vcovCL(mod1, cluster = ~ state)))
 
+mod2 <- lm(mrate ~ legal + beertaxa + year_fct + state + state:year, data = AP_data)
+mod2_cr_se <- sqrt(diag(vcovCL(mod2, cluster = ~ state)))
+
+stargazer(mod1, mod2, dep.var.caption = "MVA - incl. beertax", 
+          keep = c("legal","beertaxa"), type="text",
+          se=list(mod1_cr_se,mod2_cr_se)) 
+
+# MVA
 AP_data <- filter(deaths, year <= 1983, agegr == "18-20 yrs", dtype == "MVA")
 mod1 <- lm(mrate ~ legal + beertaxa + state + year_fct, data = AP_data)
-mod2 <- lm(mrate ~ legal + beertaxa + year_fct + state + state:year, data = AP_data)
-stargazer(mod1, mod2, dep.var.caption = "MVA - incl. beertax", keep = c("legal","beertaxa"), type="text") 
+mod1_cr_se <- sqrt(diag(vcovCL(mod1, cluster = ~ state)))
 
+mod2 <- lm(mrate ~ legal + beertaxa + year_fct + state + state:year, data = AP_data)
+mod2_cr_se <- sqrt(diag(vcovCL(mod2, cluster = ~ state)))
+
+stargazer(mod1, mod2, dep.var.caption = "MVA - incl. beertax", 
+          keep = c("legal","beertaxa"), type="text",
+          se=list(mod1_cr_se,mod2_cr_se)) 
+
+# Suicide
 AP_data <- filter(deaths, year <= 1983, agegr == "18-20 yrs", dtype == "suicide")
 mod1 <- lm(mrate ~ legal + beertaxa + state + year_fct, data = AP_data)
-mod2 <- lm(mrate ~ legal + beertaxa + year_fct + state + state:year, data = AP_data)
-stargazer(mod1, mod2, dep.var.caption = "Suicide", keep = c("legal","beertaxa"), type="text") 
+mod1_cr_se <- sqrt(diag(vcovCL(mod1, cluster = ~ state)))
 
+mod2 <- lm(mrate ~ legal + beertaxa + year_fct + state + state:year, data = AP_data)
+mod2_cr_se <- sqrt(diag(vcovCL(mod2, cluster = ~ state)))
+
+stargazer(mod1, mod2, dep.var.caption = "Suicide", 
+          keep = c("legal","beertaxa"), type="text",
+          se=list(mod1_cr_se,mod2_cr_se)) 
+
+# Internal
 AP_data <- filter(deaths, year <= 1983, agegr == "18-20 yrs", dtype == "internal")
 mod1 <- lm(mrate ~ legal + beertaxa + state + year_fct, data = AP_data)
+mod1_cr_se <- sqrt(diag(vcovCL(mod1, cluster = ~ state)))
+
 mod2 <- lm(mrate ~ legal + beertaxa + year_fct + state + state:year, data = AP_data)
-stargazer(mod1, mod2, dep.var.caption = "Internal", keep = c("legal","beertaxa"), type="text") 
+mod2_cr_se <- sqrt(diag(vcovCL(mod2, cluster = ~ state)))
+
+stargazer(mod1, mod2, dep.var.caption = "Internal", 
+          keep = c("legal","beertaxa"), type="text",
+          se=list(mod1_cr_se,mod2_cr_se)) 
 ```
 
 
@@ -365,4 +421,4 @@ stargazer(mod1, mod2, dep.var.caption = "Internal", keep = c("legal","beertaxa")
 
 This document illustrated how to implement a Diff-in-Diff estimation when you are dealing with multiple groups which implement policies at different times. In this particular case we also allowed for implementations which differ, not only in timing, but also in terms of intensity.
 
-As usual, the actual estimation was rather straightforward. The real work lies in the collection and handling of the data.
+As usual, the actual estimation was rather straightforward. The real work lies in the collection and handling of the data as well as in figuring out how to apply the straightword techniques.
