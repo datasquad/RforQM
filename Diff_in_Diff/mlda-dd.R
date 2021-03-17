@@ -10,7 +10,6 @@ library(tidyverse)
 library(stargazer)
 library(readxl)
 library(ggplot2)
-library(clubSandwich)
 
 
 setwd("C:/Rcode/RforQM/Diff_in_Diff")
@@ -19,7 +18,6 @@ load("deaths.Rdata")
 # Look at some data
 deaths %>% filter(state == "5", year == "1980", agegr == "18-20 yrs") %>% 
   select(state,year,agegr, count,dtype, pop) %>%  print()
-
 
 ## Matching States
 unique(deaths$state)
@@ -75,7 +73,7 @@ g2 <- ggplot(deaths_sel, aes(y=mrate, x=year, color = dtype)) +
 g2
 
 
-AP_data_1 <- deaths %>% filter(Cstate %in% c("AL","AR")) %>% 
+AP_data_1 <- deaths %>% filter(Cstate %in% c("CT","AR")) %>% 
   filter(year <= 1983, agegr == "18-20 yrs", dtype == "MVA") %>% 
   arrange(Cstate,year)
 
@@ -85,11 +83,11 @@ gdd <- ggplot(AP_data_1, aes(y=mrate, x=year, color = Cstate)) +
 gdd
 
 
-## 2x2 Diff-in-Diff
+## 2xn Diff-in-Diff
 
 AP_data_1 <- AP_data_1 %>% 
-              mutate(treat = (Cstate == "AL"), # creates treat var
-                     post = (year >= 1975),    # creates post variable
+              mutate(treat = (Cstate == "CT"), # creates treat var
+                     post = (year >= 1973),    # creates post variable
                      treatpost = treat*post)
 
 
@@ -163,7 +161,7 @@ stargazer(mod1, mod2, dep.var.caption = "Internal", keep = "legal",
           type="text",se=list(mod1_cr_se,mod2_cr_se)) 
 
 
-## Include beertax as controls
+## Include beertax as controls, Table 5.3
 # All deaths
 
 AP_data <- filter(deaths, year <= 1983, agegr == "18-20 yrs", dtype == "all")

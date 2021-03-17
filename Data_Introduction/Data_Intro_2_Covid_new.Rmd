@@ -38,11 +38,9 @@ For Sections 1.2 to 1.4, you will need the following packages, which we will ins
 ```{r}
 #install.packages(c("sets", "forecast", "readxl", "tidyverse", "ggplot2", "utils", "httr"))
 
-library(sets)         # used for some set operations
 library(readxl)       # enable the read_excel function
 library(tidyverse)    # for almost all data handling tasks
 library(ggplot2)      # plotting toolbox
-library(utils)        # for reading data into R # for reading data into R 
 library(httr)         # for downloading data from a URL 
 library(stargazer)    # for nice regression output
 ```
@@ -52,13 +50,13 @@ library(stargazer)    # for nice regression output
 Very helpfully, the ECDC webpage that contains the data (https://tinyco.re/7709786) provides an R script (shown in the next code block) that allows you to download the most current dataset. You could download the dataset to your computer and then import it into R instead, but here the ECDC has built a direct pipeline into their data. 
 After running the code below, a datafile called data will appear in your environment. It will contain up-to-date case and fatality data.
 
-```{r, eval = FALSE}
+```{r}
 #download the dataset from the ECDC website to a local temporary file (“tf”)
 GET("https://opendata.ecdc.europa.eu/covid19/nationalcasedeath/csv", 
     authenticate(":", ":", type="ntlm"), 
     write_disk(tf <- tempfile(fileext = ".csv")))
 #read the Dataset sheet into “R”. The dataset will be called "data".
-data <- read_csv(tf,col_types = "fffnfncnnc") # coltypes presets the types
+data_cov <- read_csv(tf,col_types = "fffnfncnnc") # coltypes presets the types
 ```
 
 NOTE: By uploading data in this way you will always get the latest data. This means that, if you replicate this code, you will have more recent data than the data used when this project was written (19 February 2021). 
@@ -69,15 +67,15 @@ NOTE: By uploading data in this way you will always get the latest data. This me
 Let’s look at the structure of this dataset. We want to make sure we understand all the variables and give them sensible names we can work with.
 
 ```{r}
-str(data)
+str(data_cov)
 ```
 
 Some of the variables have obvious meaning, such as `country`, `continent` and `population`. Note that population is an estimate which does not change through our sample period. The date is coded in `year_week`. For instance the fifth week of 2021 shows as `2021-05`.
 
 To understand the structure of this datafile you should refer to the [https://www.ecdc.europa.eu/en/publications-data/data-national-14-day-notification-rate-covid-19](Data Dictionary) provided by the ECDC, but for now we can learn a lot from looking at the data for a particular country in a particular week.
 
-```{r}
-data %>%  filter(country == "Germany" & year_week == "2020-20")
+```{r, eval=FALSE}
+data_cov %>% filter(country == "Germany" & year_week == "2020-20")
 ```
 
 You see that you get two entries, one for the case number data, for which you get the weekly count (`weekly_count`), the cumulatice count (`cumulative_count`) and the 14-day notification rate (per 100,000 for cases and per 1,000,000 for deaths). All the other pieces of information are identical for both rows (e.g. the `population`). The value of the `indicator` variable tells us whether the statistics refer to cases or deaths.
@@ -85,26 +83,26 @@ You see that you get two entries, one for the case number data, for which you ge
 We want to change the structure of the data such that we have only one entry per country and week. For that week we then want to have variables `cases_weekly`, `deaths_weekly`, `cases_weekly_cumulative`, `deaths_weekly_cumulative`, `cases_14_day` and `deaths_14_day`. Before you execute this command take note of the number of observations in `data`. 
 
 ```{r}
-data <- data %>%  pivot_wider(names_from = indicator, values_from = c(weekly_count, cumulative_count,rate_14_day))
+data_cov <- data_cov %>%  pivot_wider(names_from = indicator, values_from = c(weekly_count, cumulative_count,rate_14_day))
 ```
 
-Check the number of observations in `data`. They will have halfed. Let's confirm the variable names we now have
+Check the number of observations in `data_cov`. They will have halfed. Let's confirm the variable names we now have
 
 ```{r}
-names(data)
+names(data_cov)
 ```
 
 This is exactly what we wanted. Let's just simplify a few names
 
 ```{r}
-names(data)[names(data)=="weekly_count_cases"] <- "cases_weekly"
-names(data)[names(data)=="weekly_count_deaths"] <- "deaths_weekly"
-names(data)[names(data)=="cumulative_count_cases"] <- "cases_weekly_cumulative"
-names(data)[names(data)=="cumulative_count_deaths"] <- "deaths_weekly_cumulative"
-names(data)[names(data)=="rate_14_day_cases"] <- "cases_14_day"
-names(data)[names(data)=="rate_14_day_deaths"] <- "deaths_14_day"
-names(data)[names(data)=="year_week"] <- "dates"
-names(data)[names(data)=="population"] <- "popData2019"
+names(data_cov)[names(data_cov)=="weekly_count_cases"] <- "cases_weekly"
+names(data_cov)[names(data_cov)=="weekly_count_deaths"] <- "deaths_weekly"
+names(data_cov)[names(data_cov)=="cumulative_count_cases"] <- "cases_weekly_cumulative"
+names(data_cov)[names(data_cov)=="cumulative_count_deaths"] <- "deaths_weekly_cumulative"
+names(data_cov)[names(data_cov)=="rate_14_day_cases"] <- "cases_14_day"
+names(data_cov)[names(data_cov)=="rate_14_day_deaths"] <- "deaths_14_day"
+names(data_cov)[names(data_cov)=="year_week"] <- "dates"
+names(data_cov)[names(data_cov)=="population"] <- "popData2019"
 ```
 
 The date information is currently captured in the `dates` variable (or `year_week` when you originally imported the data). Variable `dates` is currently a text (`chr`) variable, but we want R to know that each string represents a date. Dates are of the format "year-week" e.g. 2020-32. In terms of handling this is a rather awkward date format. We want to translate this into dates (for instance the Thursday of the respective week). The process of doing so is not so obvious. Help can be found in the following [https://stackoverflow.com/questions/45549449/transform-year-week-to-date-object/45587644](Stackoverflow post) which advices the use of the the ISOweek package. There is no need to really delve into the detail of the below code.
@@ -113,7 +111,7 @@ The date information is currently captured in the `dates` variable (or `year_wee
 # install the ISOweek package the first time you do this
 library(ISOweek) # Weeks are provided in the ISO weeks format 
 
-data <- data %>%
+data_cov <- data_cov %>%
   separate(dates, c("year", "week"), "-") %>% 
   mutate(dates = ISOweek2date(paste0(year,"-W",week,"-4"))) 
 ```
@@ -127,7 +125,7 @@ Fortunately, there already exists a package in R which facilitates the translati
 ```{r}
 library(countrycode)
 
-data$geoID <- countrycode(data$country_code, origin = "iso3c", destination = "iso2c")
+data_cov$geoID <- countrycode(data_cov$country_code, origin = "iso3c", destination = "iso2c")
 ```
 
 You can confirm, by looking at the dataframe that Afgghanistan's two letter country code is "AF".
@@ -139,7 +137,7 @@ Let’s create some charts to describe the development of the pandemic in differ
 We use the `ggplot` function, which produces very nice charts. We will create the chart and save it as the object `g1`, then display it by just calling `g1`. We will use the subset function to select data from China only (`subset(data, country == "China")`).
 
 ```{r}
-g1 <- ggplot(subset(data, country == "China"), aes(x=dates,y=deaths_weekly)) +
+g1 <- ggplot(subset(data_cov, country == "China"), aes(x=dates,y=deaths_weekly)) +
       geom_line() + 
       ggtitle("Covid-19 weekly cases")
 g1
@@ -151,7 +149,7 @@ Let's overlay the daily cases for two countries, say China and South Korea, but 
 
 ```{r}
 sel_countries <- c("China", "South Korea")
-g2 <- ggplot(subset(data, country %in% sel_countries), 
+g2 <- ggplot(subset(data_cov, country %in% sel_countries), 
              aes(x=dates,y=cases_weekly, color = country)) +
       geom_line() + 
       ggtitle("Covid-19 daily cases")
@@ -166,7 +164,7 @@ Now we look at some European countries (Spain, France, and the UK).
 
 ```{r}
 sel_countries <- c("Spain", "France", "United Kingdom")
-g3 <- ggplot(subset(data, country %in% sel_countries), 
+g3 <- ggplot(subset(data_cov, country %in% sel_countries), 
              aes(x=dates,y=cases_weekly, color = country)) +
       geom_line(size = 1) +   # size controls the line thickness
       ggtitle("Covid-19 weekly cases")
@@ -191,7 +189,7 @@ In order to adjust the weekly case numbers we use the 2019 population data (`pop
 We will now create new variables `pc_cases` and `pc_deats` which report the number of confirmed new cases or deaths per 100,000 people for a 7 day period.
 
 ```{r}
-data <- data %>%  
+data_cov <- data_cov %>%  
           mutate(pc_cases = (cases_weekly/popData2019)*100000, 
                  pc_deaths = (deaths_weekly/popData2019)*100000)
 ```
@@ -200,7 +198,7 @@ With
 
 ```{r}
 sel_countries <- c("Spain", "France", "United Kingdom")
-g5 <- ggplot(subset(data, country %in% sel_countries), 
+g5 <- ggplot(subset(data_cov, country %in% sel_countries), 
              aes(x=dates,y=pc_deaths, color = country)) +
       geom_line(size = 1) +   # size controls the line thickness
       ggtitle("Covid-19 weekly deaths per 100,000")
@@ -211,7 +209,7 @@ This makes it obvious that Spain was hit harder by the first wave in Spring 2020
 
 ```{r}
 sel_countries <- c("United States", "Germany", "Sweden", "India")
-g5 <- ggplot(subset(data, country %in% sel_countries), 
+g5 <- ggplot(subset(data_cov, country %in% sel_countries), 
              aes(x=dates,y=pc_deaths, color = country)) +
       geom_line(size = 1) +   # size controls the line thickness
       ggtitle("Covid-19 weekly deaths per 100,000")
@@ -231,20 +229,20 @@ After downlaoding the list of countries and their respective sizes (in column `L
 ```{r}
 countryInd <- read_csv("CountryIndicators.csv",na = "#N/A") # CHECK THAT NAMES MATCH
 countryInd <- countryInd %>% select(-country)
-data<- merge(data,by = "geoID", countryInd,all.x=TRUE)
+data_cov<- merge(data_cov,by = "geoID", countryInd,all.x=TRUE)
 ```
 
 We can now calculate the population density
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 
-data <- data %>% mutate(popdens = popData2019/Land_Area_sqkm)  # calculate population density
+data_cov <- data_cov %>% mutate(popdens = popData2019/Land_Area_sqkm)  # calculate population density
 ```
 
 We can now calculate a new summary table for per-capita cases and include the population density.
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table3 <- data %>% group_by(country) %>% # groups by Country
+table3 <- data_cov %>% group_by(country) %>% # groups by Country
             summarise(Avg_cases = mean(pc_cases,na.rm = TRUE),
                       Avg_deaths = mean(pc_deaths,na.rm = TRUE),
                       PopDen = mean(popdens))    
@@ -333,8 +331,8 @@ We start by extracting the information we want to merge into `temp` from our ori
 
 
 ```{r, eval = FALSE}
-temp_mergein <- data %>% filter(dates == "2020-12-14") %>% 
-                          select(geoId, cases_weekly,  
+temp_mergein <- data_cov %>% filter(dates == "2021-02-04") %>% 
+                          select(geoID, cases_weekly,  
                                  pc_cases, deaths_weekly, pc_deaths)
 ```
 
@@ -353,28 +351,28 @@ So when we want to run the above command we have to tell R that we want the sele
 
 
 ```{r}
-temp_mergein <- data %>% filter(dates == "2021-02-01") %>% 
-                          dplyr::select(country,geoId, cases_weekly,  
+temp_mergein <- data_cov %>% filter(dates == "2021-02-04") %>% 
+                          dplyr::select(country,geoID, cases_weekly,  
                                         pc_cases, deaths_weekly, pc_deaths)
 ```
 
-We only selected the variables we are interested in, and the `geoId` variable which we will match with `iso_a2` in the shape file.
+We only selected the variables we are interested in, and the `geoID` variable which we will match with `iso_a2` in the shape file.
 
 As it turns out, the country code for the UK in `data` (and hence in `temp_mergein`) is `UK` and in the shape file it is `GB`. We need to change one of them to enable data for the UK to be matched correctly, otherwise the map would show missing data for the UK.
 
 
 ```{r}
-temp_mergein$geoId <- as.character(temp_mergein$geoId)   # turn geoId into character
-temp_mergein$geoId[temp_mergein$geoId == "UK"] <- "GB" 
+temp_mergein$geoID <- as.character(temp_mergein$geoID)   # turn geoId into character
+temp_mergein$geoID[temp_mergein$geoID == "UK"] <- "GB" 
 
-# Alternativly you could leave geoId a factor var and change UK level name to GB
-#levels(temp_mergein$geoId)[levels(temp_mergein$geoId)=="UK"] <- "GB" 
+# Alternativly you could leave geoID a factor var and change UK level name to GB
+#levels(temp_mergein$geoID)[levels(temp_mergein$geoID)=="UK"] <- "GB" 
 ```
 
 Now we will use the `merge` function to add this info into `m2` so our COVID-19 data is available to map. We specify the respective variables used to match the data (`by.x = "iso_a2", by.y = "geoId"`) and also ensure that we keep all of our original country information, even if it is unrelated to COVID-19 (`all.x = TRUE`).
 
 ```{r}
-temp <- merge(temp, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
+temp <- merge(temp, temp_mergein, by.x = "iso_a2", by.y = "geoID", all.x = TRUE)
 ```
 
 Now that we manipulated the datafile at the core of the mapping operation we need to insert it back into the `m2` file into exactly the same spot where we found that datafile in the first place (`m2$tm_shape$shp`).
@@ -412,9 +410,9 @@ m2 +
 In order to practice some hypothesis testing we will look at the data as aggregated across continents (`continentExp`). Here we select all observations from the first week of February 2021 and then average data across all countries in a particular continent.
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-seldate <- "2021-02-01"   # Set the date you wnat to look at
-table4 <- data %>%   filter(dates == seldate) %>% 
-              group_by(continentExp) %>% 
+seldate <- "2021-02-04"   # Set the date you wnat to look at
+table4 <- data_cov %>%   filter(dates == seldate) %>% 
+              group_by(continent) %>% 
               summarise(Avg_cases = mean(pc_cases, na.rm = TRUE),
                         Avg_deaths = mean(pc_deaths, na.rm = TRUE),
                         n = n()) %>% print()
@@ -425,13 +423,13 @@ The question we will be asking is whether the differences between continents are
 We start by just picking out the 
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data_EU <- data %>% 
-  filter(continentExp == "Europe") %>%     # pick European data
+test_data_EU <- data_cov %>% 
+  filter(continent == "Europe") %>%     # pick European data
   filter(dates == seldate)    # pick the date
 mean_EU <- mean(test_data_EU$pc_cases,rm.na = TRUE)
 
-test_data_AM <- data %>% 
-  filter(continentExp == "America") %>%     # pick European data
+test_data_AM <- data_cov %>% 
+  filter(continent == "America") %>%     # pick European data
   filter(dates == seldate)    # pick the date
 mean_AM <- mean(test_data_AM$pc_cases,rm.na = TRUE)
 
@@ -453,13 +451,13 @@ The p-value is very small and hence it is very unlikely that this difference wou
 We can try the same for comparing Africa and Asia.
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data_AF <- data %>% 
-  filter(continentExp == "Africa") %>%     # pick European data
-  filter(dates == "2021-02-01")    # pick the date
+test_data_AF <- data_cov %>% 
+  filter(continent == "Africa") %>%     # pick European data
+  filter(dates == "2021-02-04")    # pick the date
 
-test_data_AS <- data %>% 
-  filter(continentExp == "Asia") %>%     # pick European data
-  filter(dates == "2021-02-01")    # pick the date
+test_data_AS <- data_cov %>% 
+  filter(continent == "Asia") %>%     # pick European data
+  filter(dates == "2021-02-04")    # pick the date
 
 t.test(test_data_AF$pc_cases,test_data_AS$pc_cases, mu=0)   # testing that mu = 0
 ```
@@ -489,7 +487,7 @@ We need to merge in the other info from `data`. We first select the variables fr
 For some countries/territories we do not have any health data and by applying `drop_na` we remove all such incomplete observations.
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-mergecont <- data %>% dplyr::select(country,continentExp, GDPpc, HealthExp) %>%  
+mergecont <- data_cov %>% dplyr::select(country,continent, GDPpc, HealthExp) %>%  
                     unique() %>% # this reduces each country to one line
                     drop_na  # this drops all countries which have incomplete information
 table3 <- merge(table3,mergecont) # merges in continent information

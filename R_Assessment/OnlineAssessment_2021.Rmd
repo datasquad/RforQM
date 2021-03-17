@@ -1,0 +1,358 @@
+---
+title: "R-work for Online Assessment"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+student_view <- 'hide'   # set to 'hide' to not reveal output, 'asis' to show
+solution_echo <- FALSE   # set to FALSE to not show full code, TRUE to show full code
+```
+
+# Instructions
+
+You should work through the code below and complete it.  Keep the completed code
+and all the resulting output.  Next you should answer the questions in the
+online quiz.  Every student will see a slightly different collection of
+questions (as we will randomly draw 10 questions from a pool of about 20
+questions).
+
+The questions are of four types.
+
+1) Questions that merely ask you to report output from your analysis.
+
+2) Some questions will ask you about R code.  For example, you will see a lot of
+gaps (`XXXX`) in the code and questions may ask you how to complete the code to
+make the code work.  Sometimes the `XXXX` will represent one word and on other occasions it will represent a full line (or two) of code. Other questions may ask you about the output to be produced
+by a particular bit of code.  
+
+3) The third type of questions will test your understanding of econometric
+issues.  For example:  "What is the meaning of an estimated coefficient?" "Is a
+particular coefficient statistically significant?"
+
+4) The fourth type of question, if asked, will be on general programming issues.
+For example:  what is the meaning of a particular error message, or, how would
+you search for a particular piece of information.
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work:
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+library(AER)          # access to HS robust standard errors
+source("stargazer_HC.r")  # includes the robust regression display
+```
+
+# Introduction
+
+The data are a database listing of global power generation plants with a range of information (like location, fuel type). Do read through Sections 1 to 4 of the A_Global_Database_of_Power_Plants.pdf file which contains the database's documentation.
+
+This is the data source: L. Byers, J. Friedrich, R. Hennig, A.,Kressig, Li X., C. McCormick, and L. Malaguzzi Valeri. 2019. “A Global Database of Power Plants.” Washington, DC: World Resources Institute. Available online at <www.wri.org/publication/globalpowerplantdatabase>. 
+
+There is no real need for you to access this original source. The datafile and the documentation is provided.
+
+# Data Upload - and understanding data structure
+
+Upload the data, which are saved in a csv. 
+
+```{r, eval = FALSE}
+data_plants <- XXXX("global_power_plant_database.csv")
+data_plants <- as.data.frame(XXXX)    # ensure data frame structure
+names(XXXX)
+```
+```{r, echo = solution_echo}
+data_plants <- read_csv("global_power_plant_database.csv")
+data_plants <- as.data.frame(data_plants)    # ensure data frame structure
+names(data_plants)
+```
+
+As you upload the data you may get some warning messages, in particular regarding "parsing failures". Please ignore these messages. Ensure that you have 29910 observations and 24 variables.
+
+Let us look at a particular observation so we can understand the data
+
+```{r}
+data_plants[7299,]
+```
+
+This is the famous Three Gorges Hydro Power plant in China. You can see that for each power plant we have the country information (in fact we also have the exact latitude and longitude) and we know its capacity (`capacity_mw`) measured in mega watts (MW). It is 22,500 MW and it is the largest Hydro plant in the world. The `primary_fuel` variable indicates how electricity is being generated. This particular power plant generates electricity using hydro (water) power.
+
+Let us ensure that categorical variables are stored as `factor` variables. It is easiest to work with these in R. In particular the `primary_fuel` variable should be defined as a factor variable.
+
+```{r, eval  = FALSE}
+data_plants$primary_fuel <- XXXX
+
+```
+```{r, echo = solution_echo}
+data_plants$primary_fuel <- as_factor(data_plants$primary_fuel)
+```
+
+
+
+## Task 1
+
+Find out what the 10 largest hydro plants are named, in which countries they are and what their generation capacity are (i.e. create a Top 10 League Table).
+
+```{r, eval = FALSE,results = student_view}
+task1 <- data_XXXX %>%  filter(primary_fuel == XXXX) %>% 
+            select(country, XXXX, XXXX) %>%  arrange(desc(XXXX)) %>%  print()
+```
+You should find the Three Gorges Dam at the top of your table.
+
+```{r, echo = solution_echo, results=student_view}
+task1 <- data_plants %>%  filter(primary_fuel == "Hydro") %>% 
+            select(country, name, capacity_mw) %>%  arrange(desc(capacity_mw)) %>%  print()
+```
+
+Create a similar table for the top 10 largest nuclear power plants.
+
+```{r, echo = solution_echo, results=student_view}
+task1 <- data_plants %>%  filter(primary_fuel == "Nuclear") %>% 
+            select(country, name, capacity_mw) %>%  arrange(desc(capacity_mw)) %>%  print()
+```
+
+## Task 2 
+
+Create a new variable called `renewable`. This should take the value "renew" for any power plant which produces electricity using hydro, wind, solar, biomass, wave and tidal or geothermal. All other generation types should get a "non_renew" in the `renewables` variable. 
+
+We did something similar in Demo Class 1 (using the `fct_recode` function)
+
+```{r, echo = solution_echo}
+data_plants <- data_plants %>%
+    mutate(renewable = fct_recode(primary_fuel,
+    "renew" = "Hydro",   # new level = old level
+    "non_renew"  = "Gas",
+    "non_renew"  = "Other",
+    "non_renew"  = "Oil",
+    "renew" = "Wind",
+    "non_renew"  = "Nuclear", 
+    "non_renew"  = "Coal",
+    "renew" = "Solar",
+    "non_renew"  = "Waste",
+    "renew" = "Biomass",
+    "renew" = "Wave and Tidal",   
+    "non_renew"  = "Petcoke",
+    "renew" = "Geothermal",
+    "non_renew"  = "Cogeneration",
+    "non_renew"  = "Storage"))
+```
+
+You have done it right if you can replicate this output, meaning that there are 19867 generation unit entries which use renewable sources.
+
+```{r}
+summary(data_plants$renewable)
+```
+
+The generation capacity of a power plant is measured in megawatt (MW) (and included as the variable `capacity_mw` in the dataset). Sometimes capacity is also reported in gigawatt (GW). Add a new variable, `capacity_gw`, to `data_plants` which measures a generation unit's capacity in GW. You will have to find out how to translate MW to GW.
+
+```{r, echo=solution_echo}
+# either of the following
+data_plants <- data_plants %>%  mutate(capacity_gw = capacity_mw/1000)
+data_plants$capacity_gw <- data_plants$capacity_mw/1000
+```
+
+After creating `cpacity_gw` use the `summary` function to create some summary statistics for this new variable. You should find the maximum capacity (in GW) to be 22.5 and the mean capacity to be 0.1863 GW.
+
+```{r}
+summary(data_plants$capacity_gw)
+```
+
+
+## Task 3
+
+Let's calculate the capacity of nuclear power stations in the USA (in GW)? 
+
+```{r}
+data_plants %>%  filter(primary_fuel == "Nuclear", country == "USA") %>%
+  summarise(sum(capacity_gw))
+```
+
+Now produce a table which calculates the capacity of nuclear, coal, hydro, wind, solar and gas powered electricity generation for the following countries (Brazil, USA, UK, China). Meaning for each of these countries you want a capacity for nuclear power generation capacity, another for hydro, another for wind, etc. As usual there are several ways to achieve the same but if you use piping in combination with `filter`, `group_by` and `summarise` you can use techniques which
+
+```{r, eval = FALSE}
+sel_countries <- c("BRA",XXXX)
+sel_fuel <- c("Nuclear",XXXX)
+Table2 <- data_plants %>% 
+  XXXX(XXXX %in% XXXX, XXXX %in% XXXX) %>%
+  group_by(country,primary_fuel) %>% 
+  XXXX(cap = XXXX(XXXX)) %>% 
+  spread(country,cap) %>%  print()   # the spread(country,cap) part is optional but nice
+```
+
+```{r, echo=solution_echo,results =student_view}
+sel_countries <- c("BRA", "USA", "GBR", "CHN")
+sel_fuel <- c("Nuclear","Coal", "Hydro", "Wind", "Solar", "Gas")
+Table2 <- data_plants %>% 
+  filter(country %in% sel_countries, primary_fuel %in% sel_fuel) %>%
+  group_by(country,primary_fuel) %>% 
+  summarise(cap = sum(capacity_gw)) %>% 
+  spread(country,cap) %>%  print()
+```
+
+You have it correct if you find that the capacity of gas fired electricity generation in Brazil is approximately 11.286 GW.
+
+# Merge with other data
+
+Let's load a few country indicators:
+
+```{r}
+country_ind <- read_csv("CountryIndicators.csv", na = "#N/A")
+```
+
+Check out the names of the variables.
+
+```{r}
+names(country_ind)
+```
+
+The country indicator in this file, `geoID` is a two letter code, but the country indicator in `data_plants`, the variable `country` is a three letter code. We need a common country code so that we can match up the two data files. You should always try to use some such code rather than the actual country names as there are too many variations in country names which may prevent the merging functioon from merging data. We have learned in a previous project, when dealing with Covid-19 data, that we can use a little function to translate between the two different country codes.
+
+```{r, echo = solution_echo}
+library(countrycode)
+country_ind$country <- countrycode(country_ind$geoID, origin = "iso2c", destination = "iso3c")
+```
+
+Now we are in a position to merge to data as `data_plants$country` and `country_ind$country` both contain the three letter country codes.
+
+## Task 4
+
+Merge the two data files `data_plants` and `country_ind` using the three letter country codes. Bring the data together in a new data file called `data_combined`.
+
+```{r, eval = FALSE}
+data_combined <- XXXX(data_plants,XXXX,all.x = TRUE)
+```
+
+```{r, echo = solution_echo}
+data_combined <- merge(data_plants,country_ind,all.x = TRUE)
+```
+
+Use the `stargazer` function to calculate summary statistics for the following variables: `capacity_gw`, `commissioning_year`. Here is an example of how to use the `stargazer` function to calculate summary statistics.
+
+```{r}
+stargazer(data_combined[,c("capacity_mw","estimated_generation_gwh")],type = "text")
+```
+
+```{r, echo = solution_echo, results=student_view}
+stargazer(data_combined[,c("capacity_gw","commissioning_year")],type = "text")
+```
+
+You should find, for instance, that the mean value of the `capacity_gw` is 0.186 and that there are 16,303 observations (N) for the variable `commissioning_year`.
+
+Clearly information about the commissioning year is missing for many generation units. Furthermore, when you investigate the values that most values are given as full year values, e.g. 2012, but for some observations you get values like 1966.808. What this means is that this particular power plant was commissioned some time in autumn of 1966. For now we are only interested in the full year information. For that purpose we will only use the full number information.
+
+```{r}
+data_combined$commissioning_year <- floor(data_combined$commissioning_year) 
+```
+
+Use the help or a search engine to figure out what the `floor` function and its sister function `ceil` do.
+
+## Task 5 
+
+We want to investigate whether, in more recent years, more renewable capacity is being installed. The `commissioning_year` variable indicates in what year a particular generator has been installed. Let's create annual data representing the freshly commissioned capacity in a particular year.
+
+```{r, eval = FALSE}
+new_gen <- data_combined %>% filter(!is.na(commissioning_year)) %>%  
+            group_by(XXXX,renewable) %>% 
+            summarise(ann_cap = XXXX(capacity_gw))
+```
+
+```{r, echo = solution_echo, results=student_view}
+new_gen <- data_combined %>% filter(!is.na(commissioning_year)) %>%  
+            group_by(commissioning_year,renewable) %>% 
+            summarise(ann_cap = sum(capacity_gw)) 
+```
+
+Let's plot the result
+
+```{r}
+plot2 <- ggplot(new_gen,aes(x=commissioning_year,y=ann_cap, color=renewable)) + 
+          geom_line() +
+          ggtitle("Commissioned power plant capacity by renewable status")
+plot2
+```
+
+The last year in the dataset is 2018. But it is likely that the information for that year is incomplete. Recall also that a large proportion of power plants do not have a commissioning year information. It may well be that certain patterns (like the huge rise of commissioning capacity around the year 2000) is not really a reflection of the actual commissioning pattern but rather a result of changing reporting patterns. Also, in the document the authors argue that some capacity may not be well captured by their database. Which type of generation is likely to be less accurately recorded?
+
+Repeat the above exercise only for renewable fuel power plants and create a plot which shows the development of the commissioned capacity by `primary_fuel` type. You should be able to replicate the plot below (but you should include a legend as in the previous plot).
+
+```{r, echo = solution_echo}
+new_gen <- data_combined %>% filter(!is.na(commissioning_year),renewable == "renew") %>%  
+            group_by(commissioning_year,primary_fuel) %>% 
+            summarise(ann_cap = sum(capacity_gw))
+plot3 <- ggplot(new_gen,aes(x=commissioning_year,y=ann_cap, color=primary_fuel)) + 
+          geom_line() +
+          ggtitle("Commissioned power plant capacity by primary fuel (renewables only)")+ 
+          theme(legend.position = "none") 
+plot3
+```
+
+
+# Preparing some data
+
+In this section we shall run some regressions. Let us first prepare some data.
+
+```{r}
+reg_data <- data_combined %>%  filter(commissioning_year > 2000) %>%
+              group_by(country,renewable) %>% 
+              summarise(cap = sum(capacity_gw),
+                        gdp_pc = first(GDPpc),
+                        pop = first(population)) %>% 
+              pivot_wider(names_from = renewable,values_from = cap) %>% 
+              filter(!is.na(renew),!is.na(non_renew)) %>% 
+              mutate(gen_pc = 1000000*(renew+non_renew)/pop,
+                     prop_ren = 100*renew/(renew+non_renew))
+```
+
+Let's look at the data for a few large countries:
+
+```{r}
+reg_data %>%  filter(country %in% c("CHN","IND","PAK","RUS","USA"))
+```
+
+## Task 6
+
+Figure out what the entries in the above table mean, i.e. what the newly calculated variables represent.
+
+# Estimating a regression model
+
+We shall estimate the following regression models (`mod1`)
+
+\[prop\_ren = \beta_0 + \beta_1 ~ gdp\_pc + \beta_2 ~ ln(pop) + u\]
+
+and (`mod2`)
+
+\[gdp\_pc = \alpha_0 + \alpha_1 ~ gen\_pc + \alpha_2 ~ prop\_ren + u\]
+
+
+## Task 7
+
+Estimate the models above using the following skeleton code:
+
+```{r, eval = FALSE}
+mod1 <- lm(XXXX ~ XXXX+log(pop), data = reg_data)
+mod2 <- lm(XXXX)
+stargazer_HC(mod1,mod2)
+```
+```{r, echo = solution_echo, results = student_view}
+mod1 <- lm(prop_ren ~ gdp_pc+log(pop), data = reg_data)
+mod2 <- lm(gdp_pc ~ gen_pc+prop_ren, data = reg_data)
+stargazer_HC(mod1,mod2,type_out="text")
+```
+
+```{r, echo = solution_echo, results = student_view}
+
+stargazer_HC(mod1,type_out="text")
+stargazer_HC(mod2,type_out="text")
+```
+
+If you have done this correctly, you will find that that your estimated constant
+for `mod1` is 89.447.
+
+Think about the interpretation of the results. In particular, does any of the above allow a causal interpretation? Also think about how you would perform inference (t-tests) on any of the estimated coefficients. For instance, how would you test $H_0: \alpha_1 = 0$ against $H_A: \alpha_1 \ne 0$. Or how would you test $H_0: \alpha_1 = 10,000$ against $H_A: \alpha_1 \ne 10,000$. Be prepared to be asked to do this during the test.
+
+
+END OF INSTRUCTIONS
+
+Do you want to read more? Energy economics is an important applied field of economics. Here is a link to the World Energy Outlook 2020 Report by the International Energy Agency <https://www.iea.org/reports/world-energy-outlook-2020>.

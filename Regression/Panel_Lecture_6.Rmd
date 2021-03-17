@@ -174,11 +174,11 @@ pdata_USoc %>% group_by(region) %>%
 
 ```
 
-Below we will want to use the mean `lnhrpay` and mean `lnurate` as calculated for every region-wave. The following will group the data by region-wave (as we have 12 regions and 2 waves we will 24 such groups). This is similar to the above command but note that we start with `pdata_USoc <-` to ensure that the calculated average wage and unemployment rate values are added as variables to the data frame. Also, instead of `summarise` (which displays the calculated statistics) we use the `mutate` function as we want the calculated series to be saved in the data frame.
+Below we will want to use the mean `lnhrpay` and mean `lnurate` as calculated for every region-year. The following will group the data by region-wave (as we have 12 regions and 2 waves we will 24 such groups). This is similar to the above command but note that we start with `pdata_USoc <-` to ensure that the calculated average wage and unemployment rate values are added as variables to the data frame. Also, instead of `summarise` (which displays the calculated statistics) we use the `mutate` function as we want the calculated series to be saved in the data frame.
 
 ```{r}
 pdata_USoc <- pdata_USoc %>% 
-              group_by(region,wave) %>% 
+              group_by(region,year) %>% 
               mutate(mean_lnhrpay = mean(lnhrpay),mean_urate = mean(urate)) 
 ```
 
@@ -216,7 +216,8 @@ ggplot(pdata_USoc, aes(x=lnurate,y=pred_POLS0)) +
   ggtitle("Predicted values - Pooled OLS") +
   ylab("Log Hourly Wage") +
   xlab("Log Unemployment Rate") +
-  scale_colour_manual(name="Data/Model", values = c(red = "red", blue = "blue"),labels=c("Data", "POLS"))
+  scale_colour_manual(name="Data/Model", values = c(red = "red", blue = "blue"),
+                      labels=c("Data", "POLS"))
 # dev.off() # uncomment to save as pdf
 ```
 
