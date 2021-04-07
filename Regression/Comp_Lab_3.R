@@ -44,8 +44,6 @@ mod1 <- lm(lnhrpay~region, data = data_USoc)
 stargazer_HC(mod1)
 
 
-
-
 ## lnhrpay regressed on educ only 
 mod2 <- lm(lnhrpay~educ, data = data_USoc)
 stargazer_HC(mod2)
