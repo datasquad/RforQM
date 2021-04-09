@@ -18,7 +18,7 @@ We add the basic libraries needed for this week's work:
 
 ```{r}
 library(tidyverse)    # for almost all data handling tasks
-library(ggplot2)      # to produce nice graphiscs
+library(ggplot2)      # to produce nice graphics
 library(stargazer)    # to produce nice results tables
 library(haven)        # to import stata file
 library(AER)          # access to HS robust standard errors
@@ -28,7 +28,7 @@ source("stargazer_HC.r")  # includes the robust regression display
 As we are using panel methods we also require an additional package `plm`.
 
 ```{r}
-# install.packages("plm") # only exwcute this if plm is not installed yet
+#install.packages("plm") # only exwcute this if plm is not installed yet
 library(plm)
 ```
 
@@ -139,7 +139,8 @@ temp <- pdata_USoc   # create a temporary dataframe
 
 temp <- temp %>%  filter(n_wave == 2) %>%   # only keep individuals with two waves
                   group_by(pidp) %>%        # group data by individual
-                  mutate(move = ifelse(length(unique(region))==1,"no move","move"))   
+                  mutate(move = ifelse(length(unique(region))==1,"no move","move")) %>% 
+                  select(pidp,wave,move)
 
 # the move variable will take the value 1 if both regions are identical (no move) 
 # and 2 if there are two different regions (move) 
