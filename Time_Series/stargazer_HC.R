@@ -8,13 +8,14 @@ stargazer_HC <- function(..., type_out = "text", type_HC = "HC1",omit.stat = NUL
   n_mod <- length(mod_all)
   rep_se <- list(NULL)  # use this to replace se
   i <- 1        # count the number of models 
-  
+
   if (length(mod_all) == 1) {
     cov1 <- vcovHC(mod_all[[1]], type = type_HC) # calculate next rob se
     robust_se <- sqrt(diag(cov1))
+    print(robust_se)
     stargazer(mod_all[[1]],
               type=type_out,
-              se=list(NULL,robust_se),
+              se=list(robust_se),
               omit.stat = omit.stat,
               notes="Robust standard errors in parenthesis")
   } else {
@@ -24,6 +25,7 @@ stargazer_HC <- function(..., type_out = "text", type_HC = "HC1",omit.stat = NUL
       rep_se[[i]] <- robust_se  # add next robust standard error to rep_se list
       i <- i + 1
     }
+
     
     stargazer(mod_all, 
               type =type_out, 

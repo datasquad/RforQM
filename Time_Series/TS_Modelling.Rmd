@@ -1,7 +1,7 @@
 ---
 title: "Time-Series Modelling"
 author: "Ralf Becker"
-date: "14 March 2019"
+date: "April 2021"
 output:
   pdf_document: default
   html_document: default
@@ -35,10 +35,10 @@ rGDP <- pdfetch_ONS("ABMI","UKEA")
 periodicity(rGDP)   # check data availability
 names(rGDP) <- "real GDP" # give a sensible name
 
-# keep all the data including 2018-Q3
+# keep all the data including 2020-Q3
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-rGDP <- rGDP["/2019-9"]  
+rGDP <- rGDP["/2020-9"]  
 
 # we prepare the data for being kept in long format
 # that is useful for plotting in ggplot
@@ -57,7 +57,15 @@ ggplot(rGDP_l,aes(x =Date, y=Value)) +
   ggtitle("UK real GDP") +
   theme_bw()
 ```
+If you want to plot a subsample of the data only, the easiest way to do that is to use the `subset` function as you call the data into the `ggplot` function. Compare what has changed in the code and figure out what the `subset` function did.
 
+```{r}
+ggplot(subset(rGDP_l, Date >"2000-01-01"),aes(x =Date, y=Value)) + 
+  geom_line(colour = "blue",size = 1.5) +
+  ggtitle("UK real GDP") +
+  theme_bw()
+```
+Can you change the above code such that only the GDP from 2005 onwards is shown? 
 
 Let's calculate the autocorrelation function:
 
@@ -73,10 +81,10 @@ ur_female <- pdfetch_ONS("YCPL","LMS")
 names(ur_female) <- "Unemp Rate (female)"
 periodicity(ur_female)
 
-# keep all the data including 2018-Dec
+# keep all the data including 2020-Dec
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-ur_female <- ur_female["/2018-12"]  
+ur_female <- ur_female["/2020-12"]  
 
 ur_female_l <- data.frame(index(ur_female),stack(as.data.frame(coredata(ur_female))))
 names(ur_female_l)[1] <- "Date"
@@ -125,6 +133,7 @@ p2 <- ggplot(data_l[data_l$id == "CPI Inflation",],aes(x =Date, y=Value)) +
 grid.arrange(p1, p2, nrow=1, ncol=2)
 
 ```
+The `grid.arrange(p1, p2, nrow=1, ncol=2)` line in the code helped us to set the two images next to each other. That is very nice and often useful when you present data. This sort of effect can be achieved in different ways. It is important to realise that usually you can do the same think in R in different ways. So let us present such a different way. Below it is the `par(mfrow=c(1,2))` line which tells R that the next plots should be presented in a 1 by 2 frame.
 
 ```{r}
 par(mfrow=c(1,2))
@@ -223,42 +232,45 @@ Let's get some datasets fron EUROSTAT.
 # to organic farming in Germany
 ser1 <- pdfetch_EUROSTAT("sdg_02_40", GEO=c("DE"))  
 names(ser1) <- "Organic.Farming.GE"
-ser1 <- ser1["/2017"]  # keep data up until 2017 ***
+ser1 <- ser1["/2019"]  # keep data up until 2019 ***
 
 # Thousands of passengers travelling to and from Norway by boat
 ser2 <- pdfetch_EUROSTAT("mar_pa_aa", FREQ = "A", DIRECT = "TOTAL", UNIT = "THS_PAS", REP_MAR = "NO")
 names(ser2) <- "Boat.Passengers.NO"
-ser2 <- ser2["/2017"]  # keep data up until 2017 ***
+ser2 <- ser2["/2019"]  # keep data up until 2019 ***
 
 # Population with tertiary education (%)
 ser3 <- pdfetch_EUROSTAT("edat_lfse_03", FREQ = "A", SEX = "M", AGE = "Y15-64", UNIT = "PC", 
                          ISCED11 = "ED5-8", GEO = "IT")
 names(ser3) <- "Tert.Educ.IT"
-ser3 <- ser3["/2017"]  # keep data up until 2018 ***
+ser3 <- ser3["/2019"]  # keep data up until 2019 ***
 
 # Hospital Discharges, Alcoholic liver disease
 ser4 <- pdfetch_EUROSTAT("hlth_co_disch2", FREQ = "A", AGE = "TOTAL", UNIT = "P_HTHAB", SEX = "T",
                          ICD10 = "K70", GEO = "FR")
 names(ser4) <- "Alc.Disease.FR"
-ser4 <- ser4["/2017"]  # keep data up until 2016 ***
+ser4 <- ser4["/2019"]  # keep data up until 2019 ***
 
 # *** these lines merely make sure to keep the data which were available
 #     at the time this file was produced. Remove if you want to work with
 #     the latest data
 ```
+
+I told you earlier that there are different ways to arrange several plots in a grid. Below I present yet another (`layout` - this is possibly the most powerful of the three as you can determine how big each graph should be)! Don't say that this is annoying! I am merely ramming home the message that the same thing can be done in different ways and anyways, you will not be remembering how to do all these things. When you want to do it you will be searching for "R arrange plots in grid" or something similar. Then you will hit on any of these methods and that is what you will adjust.
+
 ```{r}
 data_sr <- merge(ser1,ser2)
 data_sr <- merge(data_sr,ser3)
 data_sr <- merge(data_sr,ser4)
 
-par(mfrow=c(2,2))
-plot(data_sr$Organic.Farming.GE, main = "Organic Farming, GER")
-plot(data_sr$Boat.Passengers.NO, main = "Sea Passengers, NOR")
-plot(data_sr$Tert.Educ.IT, main = "Tertiary Education, ITA")
-plot(data_sr$Alc.Disease.FR, main = "Alcohol Hospitalisation, FRA")
-
+layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE),
+   widths=c(1,1), heights=c(1,1))
+plot.zoo(data_sr$Organic.Farming.GE, ylab="", xlab = "", main = "Organic Farming\n GER") 
+plot.zoo(data_sr$Boat.Passengers.NO, ylab="", xlab = "", main = "Sea Passengers\n NOR")
+plot.zoo(data_sr$Tert.Educ.IT, ylab="", xlab = "", main = "Tertiary Education\n ITA")
+plot.zoo(data_sr$Alc.Disease.FR, ylab="", xlab = "", main = "Alcohol Hospitalisation\n FRA")
 ```
-
+In the above graphing commands I used `plot.zoo` and not `ggplot` or the standard `plot`. You could have used `ggplot` after bringing the data into long format. You could have used the standard `plot` function. It actually does recognise that the data are time-series data and then automatically adds all sorts of formatting to the graphs (try by replacing `plot.zoo` with `plot` in the above) which is rather annoying. `plot.zoo` is a specialised plotting function for time-series data which allows some manual finessing.
 
 ```{r}
 mod_sr <- lm(Alc.Disease.FR~Organic.Farming.GE, data = data_sr)
@@ -407,9 +419,8 @@ mod6_4 <- lm(d_lur~lag(d_lur,1)+lag(d_lur,2)+lag(d_lur,3)+lag(d_lur,4)+
                lag(d_lgdp,1)+lag(d_lgdp,2)+lag(d_lgdp,3)+lag(d_lgdp,4),data = reg_data)
 mod7_4 <- lm(d_lur~lag(d_lur,1)+lag(d_lur,2)+lag(d_lur,3)+lag(d_lur,4),data = reg_data)
 
-stargazer_HAC(mod6,mod7,mod6_4,mod7_4,type_out = "latex", omit.stat = "f")
+stargazer_HAC(mod6,mod7,mod6_4,mod7_4,type_out = "text", omit.stat = "f")
 
-paste("AIC")
 AIC(mod6, mod7, mod6_4,mod7_4)
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Regression Analysis 1"
+title: "IV Estimators"
 output: pdf_document
 
 ---
@@ -27,7 +27,8 @@ source("stargazer_HC.r")
 
 # Introduction
 
-The data are a classic dataset used in econometrics.
+In this script we will introduce the use of instrumental variables estimation. This is an important and popular technique to potentially reveal causal relationships between variables where simple regression analysis fails as one has to assume that the explanatory variable of interest (here education) is endogenous in a model attempting to explain variation in wages.
+The data used are a classic dataset used in econometrics which you will find used in multiple econometrics textbooks. 
 
 # Data Upload - and understanding data structure
 
@@ -127,3 +128,4 @@ axis(side = 1, at = c(-0.01,0.06,0.08,0.11,0.13,0.14))
 #dev.off() # uncomment to save as pdf
 ```
 
+You can tell from these that the OLS estimate and its implied distribution suggests that a value of 0 is very unlikely whereas the sampling distribution of the IV estimator does associate significant probability to values of 0 or smaller.
