@@ -1,4 +1,4 @@
-stargazer_HAC <- function(..., type_out = "text", omit.stat = NULL) {
+stargazer_HAC <- function(..., type_out = "text", omit.stat = NULL, out = NULL) {
   # the first inputs are n_mod models which are to be displayed
   # type_out carries through to the stargazer function, default: "text", other; "latex", "html"
   # omit_stat (default = NULL) will be handed through to stargazer, specify which stats you 
@@ -15,7 +15,8 @@ stargazer_HAC <- function(..., type_out = "text", omit.stat = NULL) {
               type=type_out,
               se=list(NULL,robust_se),
               omit.stat = omit.stat,
-              notes="Robust standard errors in parenthesis")
+              notes="Robust standard errors in parenthesis",
+              out = out)
   } else {
     for (mod_i in mod_all){
       covi <- vcovHAC(mod_i) # calculate next rob se
@@ -28,6 +29,7 @@ stargazer_HAC <- function(..., type_out = "text", omit.stat = NULL) {
               type =type_out, 
               se=rep_se, 
               omit.stat = omit.stat,
-              notes="Newey-West standard errors in parenthesis")
+              notes="Newey-West standard errors in parenthesis",
+              out = out)
   }
 }

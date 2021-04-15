@@ -103,8 +103,7 @@ We can show all three estimates in the same table (omitting the F statistic as t
 stargazer_HC(ols,iv,iv_s1, omit.stat = "f")
 ```
 
-
-Clearly the estimates for the `educ` variable are substantially different when comparing `ols` and `iv`. We really only want to revert to the `iv` model if there is evidence that the `educ` variable is indeed endogenous. The standard test applied in thsi context is the Wu-Hausmann test of endogeneity (H0: `educ` is exogenous). The easiest way to obtain this is to call `summary(iv, , diagnostics = TRUE)` where `iv` is the name we have given our IV regresison output:
+Clearly the estimates for the `educ` variable are substantially different when comparing `ols` and `iv`. We really only want to revert to the `iv` model if there is evidence that the `educ` variable is indeed endogenous. The standard test applied in this context is the Wu-Hausmann test of endogeneity (H0: `educ` is exogenous). The easiest way to obtain this is to call `summary(iv,diagnostics = TRUE)` where `iv` is the name we have given our IV regresison output:
 
 ```{r}
 summary(iv, diagnostics = TRUE)

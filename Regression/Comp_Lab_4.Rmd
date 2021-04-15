@@ -1,5 +1,5 @@
 ---
-title: "Computer Lab 4"
+title: "QM - Computer Lab 4"
 output:
   pdf_document: default
   html_document:
@@ -293,3 +293,19 @@ stargazer_HC(mod1)
 You can see that the estimated coefficient is 0.557, which implies that taxed products have, on average, seen price increases 0.6p/ounze higher than non-taxed products. But this difference is not statistically significantly different.
 
 Can you find the equivalent result in the Silver et al. paper?
+
+# Exporting Regression Output to Word
+
+For your project you are likely to want to use some tables like the above. Here is the way to do that properly. You will have to add one option to the stargazer function.
+
+```{r, echo = FALSE, results='hide'}
+stargazer_HC(mod1, out = "Table1.doc")
+```
+
+You will find a new file called "Table1.doc" in your working directory. You can then copy that Table into your project file. There you can still manipulate it. For instance change the variable names or add Table notes.
+
+In fact, in Word the Table will look even better if you change the type to to be a html table (using `type_out = "html"`).
+
+```{r, echo = FALSE, results='hide'}
+stargazer_HC(mod1, type_out = "html",out = "Table1.doc")
+```

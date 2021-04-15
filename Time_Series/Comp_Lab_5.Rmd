@@ -17,7 +17,7 @@ In this computer lab we will have to achieve the following tasks/learning outcom
 * estimate basic time-series models
 * perform Granger causality tests
 
-The data are similar to the ones used in the CORE Doing Economics Project 1 on Measuring Climate Change. Some of the analysis is simlar to that described in
+The data are similar to the ones used in the CORE Doing Economics Project 1 on Measuring Climate Change. Some of the analysis is similar to that described in
 \emph{Attanasio, A., Pasini, A. and Triacca, U. (2013) Granger Causality Analyses for Climatic Attribution, Atmospheric and Climate Sciences, 2013, 3, 515-522}. 
 
 # Preparing your workfile
@@ -26,7 +26,7 @@ We add the basic libraries needed for this week's work:
 
 ```{r}
 library(tidyverse)    # for almost all data handling tasks
-library(ggplot2)      # to produce nice graphiscs
+library(ggplot2)      # to produce nice graphics
 library(stargazer)    # to produce nice results tables
 library(AER)          # access to HS robust standard errors
 library(readxl)       # enable the read_excel function
@@ -385,7 +385,7 @@ mod_Ad <- lm(diff(gt)~lag(diff(gt),1)+lag(diff(gt),2)+
                lag(diff(co2e),1)+lag(diff(co2e),2),data = climate_data_s)
 mod_0d <- lm(diff(gt)~lag(diff(gt),1)+lag(diff(gt),2),data = climate_data_s)
 
-stargazer_HAC(mod_0d, mod_Ad)
+stargazer_HAC(mod_0d, mod_Ad,out="C:/Rcode/RforQM/star_linear.doc")
 lht(mod_Ad, c("lag(diff(co2e), 1)=0","lag(diff(co2e), 2)=0"), vcov = vcovHAC)
 ```
 
