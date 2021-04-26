@@ -38,10 +38,10 @@ ur_female <- pdfetch_ONS("YCPL","LMS")
 names(ur_female) <- "Unemp Rate (female)"
 periodicity(ur_female)
 
-# keep all the data including 2018-Dec
+# keep all the data including 2021-Jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-ur_female <- ur_female["/2018-12"]  
+ur_female <- ur_female["/2021-1"]  
 
 ur_female_l <- data.frame(index(ur_female),stack(as.data.frame(coredata(ur_female))))
 names(ur_female_l)[1] <- "Date"
@@ -180,14 +180,14 @@ The `mean` parameter in the model output is the sample estimate for $m$ and it r
 If we want to forecast from this model we can do this as follows
 
 ```{r}
-for_dur <- forecast(fit_dur,h=10)
-plot(for_dur)
+for_dur <- forecast(fit_dur,h=12)
+plot(for_dur, main = "dur forecasts, ARIMA(2,0,0)")
 ```
 
 We would like to see a little more detail at the end of the data. We achieve this by using the `include` option in the plot function,
 
 ```{r}
-plot(for_dur, include = 40)
+plot(for_dur, include = 40, main = "dur forecasts, ARIMA(2,0,0)")
 ```
 
 As we can see the forecast does flatten out very quickly. Essentially it will move towards the estimated `mean` value, -0.011. The shaded areas around the forecast are forecast or prediction intervals. They recognise that the model contains an error term and hence we acknowledge that there is uncertainty about our prediction. The two different shades indicate 80 and 95% prediction intervals. They do, however, **assume that the estimated model is correct**.
@@ -209,7 +209,7 @@ Fortunately there is a slightly easier way to deal with this. Recall that when w
 fit_ur <- Arima(ur_ts,order = c(2,1,0))
 summary(fit_ur)
 for_ur <- forecast(fit_ur, h =10)
-plot(for_ur, include = 40)
+plot(for_ur, include = 40, main = "ur forecasts, ARIMA(2,1,0)")
 ```
 
 In essence you will get the same as if you were to aggregate up the forecast changes.
@@ -222,7 +222,7 @@ Above we decided from the outset that we wanted to estimate an AR(2) model for t
 fit_ur_a <- auto.arima(ur_ts)
 summary(fit_ur_a)
 for_ur_a <- forecast(fit_ur_a, h =10)
-plot(for_ur_a, include = 40)
+plot(for_ur_a, include = 40, main = "ur forecasts, ARIMA(2,1,1)(2,0,0)[12]")
 ```
 
 It turns out that the `auto.arima` function picks a model which does have an AR(2) component, but also an MA(1) component. In addition to this it has also picked an extra seasonal component. 
@@ -279,6 +279,30 @@ The automatically chosen model does improve on the forecast performance.
 
 When performing forecasts with such models there is a significant note of caution in order. When we use an estimated model for forecasting we assume that the model will remian to be the correct model for the forecast period (in addition to assuming that it was correct for the in-sample period). This is a major assumption. Recall that, basically, a forecast model for stationary data contains information on a) a level to which the series is predited to converge in the long-run and b) a speed and pattern of convergance to that level in a). 
 
-Any misspecification, in particular with respect to a) will cause forecasts to be off. And impotantly any substantial change in the economy which changes the information in a) or b), but particularly in a), during the forecast period will also ensure that the forecasts from such a model are problematic and otentially significantly off.
+Any misspecification, in particular with respect to a) will cause forecasts to be off. And impotantly any substantial change in the economy which changes the information in a) or b), but particularly in a), during the forecast period will also ensure that the forecasts from such a model are problematic and potentially significantly off.
 
-It is for this reason that any forecatss produced from such models (and much more complex models) should always be accompanied with this health warning. Just imagine you had produced forecasts for May 2020 unemployment in 2019 .... it should be clear that such forecasts would have been virtually useless due to the emergance of the global Covid-19 crisis.
+It is for this reason that any forecasts produced from such models (and much more complex models) should always be accompanied with this health warning. 
+
+Let's illustrate this: Imagine you had data up to January 2020 and you wanted to produce forecasts for the 12 months after.
+
+```{r,  fig.height = 3.0, fig.width = 4.5}
+ur_ts_20 <- window(ur_ts,end = c(2020,1))
+fit_ur_20 <- Arima(ur_ts_20,order = c(2,1,0))
+for_ur_20 <- forecast(fit_ur_20, h =12)
+
+fit_ur_a_20 <- auto.arima(ur_ts_20)
+for_ur_a_20 <- forecast(fit_ur_a_20, h =12)
+```
+
+We can now look at these graphically and compare to what actually happened in 2020.
+
+```{r, echo = FALSE, fig.height = 3.5, fig.width = 4.5}
+par(mfrow=c(1,2))
+plot(for_ur_20, include = 24, main = "Arima(2,1,0)")
+lines(ur_ts)
+
+plot(for_ur_a_20, include = 24, main = "auto.arima")
+lines(ur_ts)
+```
+
+Clearly the forecasts did not capture what actually happened. The realisations are also outside the confidence intervals. But, I guess we got to be realistic here. A simple model like ours, in fact even a more complicated model, cannot be expected to anticipate an extraordinary event like Covid-19.

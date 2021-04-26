@@ -1,4 +1,4 @@
-stargazer_HC <- function(..., type_out = "text", type_HC = "HC1",omit.stat = NULL,out = NULL) {
+stargazer_HC <- function(..., type_out = "text", type_HC = "HC1",omit.stat = NULL,out = NULL,keep= NULL) {
   # the first inputs are n_mod models which are to be displayed
   # type_out carries through to the stargazer function, default: "text", other; "latex", "html"
   # type_HC carries through tothe vcovHC function, default: "HC1" (or Stata equivalent)
@@ -12,13 +12,13 @@ stargazer_HC <- function(..., type_out = "text", type_HC = "HC1",omit.stat = NUL
   if (length(mod_all) == 1) {
     cov1 <- vcovHC(mod_all[[1]], type = type_HC) # calculate next rob se
     robust_se <- sqrt(diag(cov1))
-    print(robust_se)
     stargazer(mod_all[[1]],
               type=type_out,
               se=list(robust_se),
               omit.stat = omit.stat,
               notes="Robust standard errors in parenthesis",
-              out = out)
+              out = out,
+              keep = keep)
   } else {
     for (mod_i in mod_all){
       covi <- vcovHC(mod_i, type = type_HC) # calculate next rob se
@@ -33,6 +33,7 @@ stargazer_HC <- function(..., type_out = "text", type_HC = "HC1",omit.stat = NUL
               se=rep_se, 
               omit.stat = omit.stat,
               notes="Robust standard errors in parenthesis",
-              out = out)
+              out = out,
+              keep = keep)
   }
 }

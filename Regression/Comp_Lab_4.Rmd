@@ -298,14 +298,14 @@ Can you find the equivalent result in the Silver et al. paper?
 
 For your project you are likely to want to use some tables like the above. Here is the way to do that properly. You will have to add one option to the stargazer function.
 
-```{r, echo = FALSE, results='hide'}
+```{r, results='hide', eval = FALSE}
 stargazer_HC(mod1, out = "Table1.doc")
 ```
 
-You will find a new file called "Table1.doc" in your working directory. You can then copy that Table into your project file. There you can still manipulate it. For instance change the variable names or add Table notes.
+You will find a new file called "Table1.doc" in your working directory. However, copying this into another document may result in lost formatting.
 
-In fact, in Word the Table will look even better if you change the type to to be a html table (using `type_out = "html"`).
+In fact, in Word the Table will look even better if you change the type to be a html table (using `type_out = "html"`). In fact that creates a table in word which copies easily across other word documents.
 
-```{r, echo = FALSE, results='hide'}
+```{r, eval= FALSE, results='hide'}
 stargazer_HC(mod1, type_out = "html",out = "Table1.doc")
 ```
