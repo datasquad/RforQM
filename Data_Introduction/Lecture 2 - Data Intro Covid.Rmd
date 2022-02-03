@@ -2,7 +2,7 @@
 title: "Introduction to Handling Data"
 subtitle: "ECON20222 - Lecture 2"
 author: "Ralf Becker and Martyn Andrews"
-date: "February 2021"
+date: "February 2022"
 output: 
   beamer_presentation:
     includes:
@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
   \item Produce some graphical representation of data
   \item Become familiar with merging datasets
   \item Review hypothesis testing
-  \item Review simple regression anlysis
+  \item Review simple regression analysis
   \item Understand the limitation of regression as a causal analysis tool
   \item Become more familiar with R
 \end{itemize}
@@ -34,7 +34,7 @@ knitr::opts_chunk$set(echo = FALSE)
 We add the basic libraries needed for this week's work: 
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=TRUE}
-library(sets)         # used for some set operations
+#library(sets)         # used for some set operations
 library(forecast)     # used for some data smoothing
 library(readxl)       # enable the read_excel function
 library(tidyverse)    # for almost all data handling tasks
@@ -56,33 +56,51 @@ The dataset is published by the [European Centre for Disease Control](https://ti
 
 \scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=TRUE}
-
-#download the dataset from the ECDC website to a 
-# local temporary file (“tf”)
-GET("https://opendata.ecdc.europa.eu/covid19/casedistribution/csv", 
+#download the dataset from the ECDC website to a local temporary file (“tf”)
+GET("https://opendata.ecdc.europa.eu/covid19/nationalcasedeath/csv", 
     authenticate(":", ":", type="ntlm"), 
     write_disk(tf <- tempfile(fileext = ".csv")))
-# load into “R”. The dataset will be called "data".
-data <- read.csv(tf) 
+#read the Dataset sheet into “R”. The dataset will be called "data".
+data_cov <- read_csv(tf,col_types = "fffnfncnnc") # coltypes presets the types
 ```
 \normalsize
 
 * This will load `data` into your environment. 
-* We are tapping directly into the ECDC's datafile. Everytime you do this you will get the most recent data (on 5 Feb 2021 this delivered 10433 observations)
+* We are tapping directly into the ECDC's datafile. Everytime you do this you will get the most recent data (on 3 Feb 2022 this delivered 44002 observations)
 
 ## Covid Data - Explore
 
 ```{r, echo = FALSE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
-names(data)[names(data) == "countriesAndTerritories"] <- "country"
-names(data)[names(data) == "countryterritoryCode"] <- "countryCode"
-names(data)[names(data) == "dateRep"] <- "dates"
-names(data)[names(data) == "notification_rate_per_100000_population_14.days"] <- "nr"
-data$dates <- as.Date(as.character(data$dates),format = "%d/%m/%Y")
+# install the ISOweek package the first time you do this
+
+data_cov <- data_cov %>%  pivot_wider(names_from = indicator, values_from = c(weekly_count, cumulative_count,rate_14_day,source))
+
+
+names(data_cov)[names(data_cov)=="weekly_count_cases"] <- "cases_weekly"
+names(data_cov)[names(data_cov)=="weekly_count_deaths"] <- "deaths_weekly"
+names(data_cov)[names(data_cov)=="cumulative_count_cases"] <- "cases_weekly_cumulative"
+names(data_cov)[names(data_cov)=="cumulative_count_deaths"] <- "deaths_weekly_cumulative"
+names(data_cov)[names(data_cov)=="rate_14_day_cases"] <- "cases_14_day"
+names(data_cov)[names(data_cov)=="rate_14_day_deaths"] <- "deaths_14_day"
+names(data_cov)[names(data_cov)=="year_week"] <- "dates"
+names(data_cov)[names(data_cov)=="population"] <- "popData2019"
+
+library(ISOweek) # Weeks are provided in the ISO weeks format 
+
+data_cov <- data_cov %>%
+  separate(dates, c("year", "week"), "-") %>% 
+  mutate(dates = ISOweek2date(paste0(year,"-W",week,"-4"))) 
+
+library(countrycode)
+data_cov$geoID <- countrycode(data_cov$country_code, origin = "iso3c", destination = "iso2c")
+
+# remove continent data
+data_cov <- data_cov %>% filter(!is.na(country_code))
 ```
 After some name changes and turning dates into date format:
 \scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-str(data)  # prints some basic info on variables
+str(data_cov)  # prints some basic info on variables
 ```
 \normalsize
 
@@ -93,7 +111,7 @@ Let's find out what one observation represents.
 
 \scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-data[678,]   # 678 is just an arbitrary row in the dataset
+data_cov[678,]   # 678 is just an arbitrary row in the dataset
 ```
 \normalsize
 
@@ -105,10 +123,10 @@ Let's find out how many observations we have for a set of countries. Say for Chi
 Use piping technique of the `tidyverse`
 \scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-sel_countries <- c("China", "United_Kingdom","Bahamas")
+sel_countries <- c("China", "United Kingdom","Bahamas")
 
 # select only countries in sel_countries
-table1 <- data %>% filter(country %in% sel_countries) %>% 
+table1 <- data_cov %>% filter(country %in% sel_countries) %>% 
       group_by(country) %>%       # groups by Wave and Country
       summarise(n = n()) %>%      # calculating number of obs
       print()                         
@@ -122,9 +140,9 @@ Smaller countries tend to start reporting later than bigger ones.
 Essentially we have a dataset which combines cross-section (different countries) with time-series (consequitive weeks for each country). We call such a dataset a panel.
 
 ```{r,fig.height = 2.8, fig.width = 4.5}
-g1 <- ggplot(subset(data, country == "China"), aes(x=dates,y=deaths_weekly)) +
+g1 <- ggplot(subset(data_cov, country == "China"), aes(x=dates,y=deaths_weekly)) +
       geom_line() + 
-      ggtitle("Covid-19 weekly deaths")
+      ggtitle("Covid-19 weekly cases")
 g1
 ```
 
@@ -136,10 +154,10 @@ What happened in April?
 Weekly cases for two countries
 
 ```{r,fig.height = 3, fig.width = 4.5}
-sel_countries <- c("China", "South_Korea")
-g2 <- ggplot(subset(data, country %in% sel_countries), 
+sel_countries <- c("China", "South Korea")
+g2 <- ggplot(subset(data_cov, country %in% sel_countries), 
              aes(x=dates,y=cases_weekly, color = country)) +
-      geom_line(size=1) + 
+      geom_line() + 
       ggtitle("Covid-19 weekly cases")
 g2
 ```
@@ -153,14 +171,14 @@ Summarise data by country.
 
 \scriptsize
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table2 <- data %>% group_by(country) %>% # groups by Country
+table2 <- data_cov %>% group_by(country) %>% # groups by Country
             summarise(Avg_wc = mean(cases_weekly,na.rm = TRUE),
                       Avg_wd = mean(deaths_weekly,na.rm = TRUE))     
 head(table2,6)
 ```
 \normalsize
 
-Table2 now contains an observation for each country with the average of weekly cases and deaths. Why is there such a stark difference between [Algeria](https://en.wikipedia.org/wiki/Algeria) and [Anguilla](https://en.wikipedia.org/wiki/Anguilla)?
+Table2 now contains an observation for each country with the average of weekly cases and deaths. Why is there such a stark difference between [Algeria](https://en.wikipedia.org/wiki/Algeria) and [Andorra](https://en.wikipedia.org/wiki/Anguilla)?
 
 ## Data - When can you compare data
 
@@ -181,14 +199,14 @@ Let's standardise by population (`popData2019`) which is included as a variable 
 \scriptsize
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-data <- data %>%  
+data_cov <- data_cov %>%  
           mutate(pc_cases = (cases_weekly/popData2019)*100000, 
                  pc_deaths = (deaths_weekly/popData2019)*100000)
 ```
 
 ```{r, echo = FALSE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-sel_countries <- c("Spain", "France", "United_Kingdom")
-g5 <- ggplot(subset(data, country %in% sel_countries), 
+sel_countries <- c("Spain", "France", "United Kingdom")
+g5 <- ggplot(subset(data_cov, country %in% sel_countries), 
              aes(x=dates,y=pc_deaths, color = country)) +
       geom_line(size = 0.5) +   # size controls the line thickness
       ggtitle("Covid-19 weekly deaths per 100,000")
@@ -206,8 +224,8 @@ g5
 \scriptsize
 
 ```{r, echo = FALSE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-sel_countries <- c("United_States_of_America", "Germany", "Sweden", "India")
-g6 <- ggplot(subset(data, country %in% sel_countries), 
+sel_countries <- c("United States Of America", "Germany", "Sweden", "India")
+g6 <- ggplot(subset(data_cov, country %in% sel_countries), 
              aes(x=dates,y=pc_deaths, color = country)) +
       geom_line(size = 1) +   # size controls the line thickness
       ggtitle("Covid-19 weekly deaths per 100,000")
@@ -223,10 +241,10 @@ Need to import land area data and merge them into our dataset (`CountryIndicator
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 countryInd <- read_csv("CountryIndicators.csv",na = "#N/A") 
-data<- merge(data,countryInd,,all.x=TRUE)
-data <- data %>% mutate(popdens = popData2019/Land_Area_sqkm)  # pop. density
+data_cov <- merge(data_cov,countryInd,,all.x=TRUE)
+data_cov <- data_cov %>% mutate(popdens = popData2019/Land_Area_sqkm)  # pop. density
 
-table3 <- data %>% group_by(country) %>% # groups by Country
+table3 <- data_cov %>% group_by(country) %>% # groups by Country
             summarise(Avg_cases = mean(pc_cases,na.rm = TRUE),
                       Avg_deaths = mean(pc_deaths,na.rm = TRUE),
                       PopDen = mean(popdens))     
@@ -299,14 +317,14 @@ library(sf)
 library(raster)
 library(spData)
 library(tmap)
-m2 <- tm_shape(world) 
+data(World)
+m2 <- tm_shape(World) 
 temp <- m2$tm_shape$shp
 
-temp_mergein <- data %>% filter(dates == "2021-02-01") %>% 
-                          dplyr::select(geoId, cases_weekly, pc_cases, deaths_weekly, pc_deaths)
-# Change UK level name to GB
-levels(temp_mergein$geoId)[levels(temp_mergein$geoId)=="UK"] <- "GB" 
-temp <- merge(temp, temp_mergein, by.x = "iso_a2", by.y = "geoId", all.x = TRUE)
+temp_mergein <- data_cov %>% filter(dates == "2021-12-16") %>% 
+                          dplyr::select(country_code, cases_weekly, pc_cases, deaths_weekly, pc_deaths)
+
+temp <- merge(temp, temp_mergein, by.x = "iso_a3", by.y = "country_code", all.x = TRUE)
 m2$tm_shape$shp <- temp
 breaksm <- c(1,2,3,4,5,10,50)  # controls the breakpoints for categories
 m2 + 
@@ -344,8 +362,8 @@ Let's first look at  the averages across the continents (`continentExp`)
 
 \scriptsize
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table4 <- data %>%   filter(dates == "2021-02-01") %>% 
-              group_by(continentExp) %>% 
+table4 <- data_cov %>%   filter(dates == "2021-02-04") %>% 
+              group_by(continent) %>% 
               summarise(Avg_cases = mean(pc_cases, na.rm = TRUE),
                         Avg_deaths = mean(pc_deaths, na.rm = TRUE),
                         n = n()) %>% print()
@@ -389,14 +407,14 @@ Let's create a sample statistic:
 \scriptsize
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data_EU <- data %>% 
-  filter(continentExp == "Europe") %>%     # pick European data
-  filter(dates == "2021-02-01")    # pick the date
+test_data_EU <- data_cov %>% 
+  filter(continent == "Europe") %>%     # pick European data
+  filter(dates == "2021-02-04")    # pick the date
 mean_EU <- mean(test_data_EU$pc_cases,rm.na = TRUE)
 
-test_data_AM <- data %>% 
-  filter(continentExp == "America") %>%     # pick European data
-  filter(dates == "2021-02-01")    # pick the date
+test_data_AM <- data_cov %>% 
+  filter(continent == "America") %>%     # pick European data
+  filter(dates == "2021-02-04")    # pick the date
 mean_AM <- mean(test_data_AM$pc_cases,rm.na = TRUE)
 
 sample_diff <- mean_EU - mean_AM
@@ -419,26 +437,26 @@ t.test(test_data_EU$pc_cases,test_data_AM$pc_cases, mu=0)  # testing that mu = 0
 
 \normalsize
 
-The p-value is very small and hence \textcolor{student}{it is very unlikely that this difference would have arisen by chance if the null hypothesis WAS correct.}
+The p-value is very small and hence \textcolor{student}{it is very unlikely that this difference would have arisen by chance if the null hypothesis **WAS** correct.}
 
 ## Hypothesis Testing - Example 2
 
 What about the difference between Asia and Africa though?
 \scriptsize
 ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data_AF <- data %>% 
-  filter(continentExp == "Africa") %>%     # pick European data
-  filter(dates == "2021-02-01")    # pick the date
+test_data_AF <- data_cov %>% 
+  filter(continent == "Africa") %>%     # pick European data
+  filter(dates == "2021-02-04")    # pick the date
 
-test_data_AS <- data %>% 
-  filter(continentExp == "Asia") %>%     # pick European data
-  filter(dates == "2021-02-01")    # pick the date
+test_data_AS <- data_cov %>% 
+  filter(continent == "Asia") %>%     # pick European data
+  filter(dates == "2021-02-04")    # pick the date
 ```
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 t.test(test_data_AF$pc_cases,test_data_AS$pc_cases, mu=0)   # testing that mu = 0
 ```
 \normalsize
-The p-value is 0.09249 and hence \textcolor{student}{there is an app. 9.2\% probability of this or a more extreme difference arising if the null hypothesis was true.}
+The p-value is 0.06237 and hence \textcolor{student}{there is an app. 6.2\% probability of this or a more extreme difference arising if the null hypothesis **was** true.}
 
 
 ## Hypothesis Testing - To reject or to not reject
@@ -447,7 +465,7 @@ The p-value is 0.09249 and hence \textcolor{student}{there is an app. 9.2\% prob
 
 When comparing between Europe and America the p-value was smaller than 0.01: \textcolor{student}{Reject $H_0$}
 
-When comparing between Africa and Asia the p-value was 0.092: \textcolor{student}{hmmmm....}
+When comparing between Africa and Asia the p-value was 0.062: \textcolor{student}{hmmmm....}
 
 * Conventional significance levels are 10\%, 5\%, 1\% or 0.1\%
 * But what do they mean?
@@ -479,7 +497,7 @@ Create new dataset which contains for every country:
 `table3` already contains `pc_deaths` and `PopDen`. We need to merge in the other info from `data`. 
 \scriptsize
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-mergecont <- data %>% dplyr::select(country,continentExp, GDPpc, HealthExp) %>%  
+mergecont <- data_cov %>% dplyr::select(country,continent, GDPpc, HealthExp) %>%  
                     unique() %>% # this reduces each country to one line
                     drop_na  # this drops all countries which have incomplete information
 table3 <- merge(table3,mergecont) # merges in continent information
@@ -523,7 +541,7 @@ t.test(table3$Avg_deaths, mu=0)  # testing that mu = 0
 
 We can use the above regression to achieve the same:
 
-$t-test =\widehat{\alpha}/se_{\widehat{\alpha}}$ \textcolor{student}{$=0.727/0.068=10.691$} 
+$t-test =\widehat{\alpha}/se_{\widehat{\alpha}}$ \textcolor{student}{$=1.078/0.093=11.609$} 
 
 
 ## Regression Analysis - Example 2
@@ -549,7 +567,7 @@ What sign do you expect it to have?
 stargazer(mod2, type="text")
 ```
 \scriptsize
-As the income increases by one unit (e.g. from $1,000 to $2,000 per capita) we should expect that the average number of deaths (per 100,000) increases by 0.011.
+As the income increases by one unit (e.g. from $1,000 to $2,000 per capita) we should expect that the average number of deaths (per 100,000) increases by 0.004.
 
 The effect is statistically significant (***) next to the estimated coefficient indicates a p-value <0.01.
 

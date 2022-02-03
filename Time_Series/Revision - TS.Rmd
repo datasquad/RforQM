@@ -1,8 +1,8 @@
 ---
-title: "Time-Series Modelling"
-subtitle: "ECON20222 - Lecture 9"
+title: "Time-Series Modelling/Forecasting"
+subtitle: "ECON20222 - TS Revision"
 author: "Ralf Becker and Martyn Andrews"
-date: "March 2019"
+date: "May 2021"
 output: 
   beamer_presentation:
     includes:

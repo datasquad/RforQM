@@ -1,12 +1,12 @@
 ---
 title: "R-work for Online Assessment"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
-student_view <- 'hide'   # set to 'hide' to not reveal output, 'asis' to show
-solution_echo <- FALSE   # set to FALSE to not show full code, TRUE to show full code
+student_view <- 'markup'   # set to 'hide' to not reveal output, 'markup' to show
+solution_echo <- TRUE   # set to FALSE to not show full code, TRUE to show full code
 ```
 
 # Instructions
@@ -43,6 +43,7 @@ library(tidyverse)    # for almost all data handling tasks
 library(ggplot2)      # to produce nice graphiscs
 library(stargazer)    # to produce nice results tables
 library(AER)          # access to HS robust standard errors
+library(knitr)
 source("stargazer_HC.r")  # includes the robust regression display
 ```
 
@@ -97,20 +98,23 @@ Find out what the 10 largest hydro plants are named, in which countries they are
 
 ```{r, eval = FALSE,results = student_view}
 task1 <- data_XXXX %>%  filter(primary_fuel == XXXX) %>% 
-            select(country, XXXX, XXXX) %>%  arrange(desc(XXXX)) %>%  print()
+            select(country, XXXX, XXXX) %>%  arrange(desc(XXXX)) 
+kable(task1[1:10,]) # in R %>% print() will show ok
 ```
 You should find the Three Gorges Dam at the top of your table.
 
 ```{r, echo = solution_echo, results=student_view}
 task1 <- data_plants %>%  filter(primary_fuel == "Hydro") %>% 
-            select(country, name, capacity_mw) %>%  arrange(desc(capacity_mw)) %>%  print()
+            select(country, name, capacity_mw) %>%  arrange(desc(capacity_mw)) 
+kable(task1[1:10,]) # in R %>% print() will show ok
 ```
 
 Create a similar table for the top 10 largest nuclear power plants.
 
 ```{r, echo = solution_echo, results=student_view}
 task1 <- data_plants %>%  filter(primary_fuel == "Nuclear") %>% 
-            select(country, name, capacity_mw) %>%  arrange(desc(capacity_mw)) %>%  print()
+            select(country, name, capacity_mw) %>%  arrange(desc(capacity_mw)) 
+kable(task1[1:10,]) # in R %>% print() will show ok
 ```
 
 ## Task 2 
@@ -188,7 +192,7 @@ Table2 <- data_plants %>%
   filter(country %in% sel_countries, primary_fuel %in% sel_fuel) %>%
   group_by(country,primary_fuel) %>% 
   summarise(cap = sum(capacity_gw)) %>% 
-  spread(country,cap) %>%  print()
+  spread(country,cap) %>% print()
 ```
 
 You have it correct if you find that the capacity of gas fired electricity generation in Brazil is approximately 11.286 GW.

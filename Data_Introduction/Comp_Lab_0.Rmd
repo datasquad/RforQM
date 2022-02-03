@@ -1,7 +1,7 @@
 ---
 title: "Quantitative Methods - Computer Lab 0"
 author: "Ralf Becker"
-date: "1 February 2021"
+date: "1 February 2022"
 output:
   pdf_document: default
   html_document:
@@ -64,7 +64,7 @@ What about the others. Well, at this stage we will introduce you to the most inp
 
 # Functions
 
-Functions are important building blocks of any programming language. You just used your first function. Hopefully youfound out that the way to calculate $\sqrt{7569}$ was to type
+Functions are important building blocks of any programming language. You just used your first function. Hopefully you found out that the way to calculate $\sqrt{7569}$ was to type
 
 ```{r}
 sqrt(7569)
@@ -111,7 +111,7 @@ Note that we used the `sqrt` function again, but this time the output was not se
 
 ![RStudio Environment saves variables](RStudio_Env2.png)
 
-Note that `a` aand `A` are different variables, so R is case-sensitive! All the variables listed in the Environment can be re-used for further calculations. For example:
+Note that `a` and `A` are different variables, so R is case-sensitive! All the variables listed in the Environment can be re-used for further calculations. For example:
 
 ```{r}
 d <- A - a + 2*b
@@ -144,7 +144,7 @@ As you open you should get exactly the same initial layout as before ... What va
 
 For all significant work you want to make sure that you save the work you have done, such that you do not have to re-type things which you did yesterday ... or just before I asked you to get a glass of water. The way to ensure that is to save all your work in a script file. A script file is basically a text file which saves all your commands (and comments - see below) and from where RStudio can easily execute these commands.
 
-Let's create a script file. Via the RStudio menu (FILE - NEW FILE - R SCRIPT) open a new script file and safe it in the folder from which you want to work (see above). 
+Let's create a script file. Via the RStudio menu (FILE - NEW FILE - R SCRIPT) open a new script file and save it in the folder from which you want to work (see above). 
 
 Start by creating a comment line at the top of that file which may say something like
 
@@ -195,13 +195,15 @@ You will need to do this only once on your computer and once you have done that 
 
 # Data Upload
 
-Make sure you have set the working directory to the directory in which you saved your script file (see above). As we are dealing with data in an excel file we will use the `read_excel` function to load the data. Before you run this command open the actual spreadsheet and try to see how missing data are coded. In this case they are coded as dots ("."). But in other datafiles you may find "NA", "n.a.", "-9999" or other ways to code missing data. It is best to let R know how missing data look. This will simplify your life tremendously.
+Make sure you have set the working directory to the directory in which you saved your script file (see above). As we are dealing with data in an excel file we will use the `read_excel` function to load the data. 
+
+Before you run the next command open the actual spreadsheet and try to see how missing data are coded. In this case they are coded as dots ("."). But in other datafiles you may find "NA", "n.a.", "-9999" or other ways to code missing data. It is best to let R know how missing data look. This will simplify your life tremendously.
 
 ```{r}
 CKdata <- read_excel("CK_public.xlsx",na = ".")
 ```
 
-It is well possible that you receive the following error message as you execurte this command "Error: `path` does not exist: ‘CK_public.xlsx’". The most likely reason for this is that the "CK_public.xlsx" is not saved in your working directory. Make sure you download that file from Blackboard and save it in the workig directory you created earlier and you used in the `setwd()` command.
+It is well possible that you receive the following error message as you execute this command "Error: `path` does not exist: ‘CK_public.xlsx’". The most likely reason for this is that the "CK_public.xlsx" is not saved in your working directory. Make sure you download that file from Blackboard and save it in the working directory you created earlier and you used in the `setwd()` command.
 
 Make sure that your data upload is successful. If you did you should see an object `CKdata` in your environment. You can also run the `str` (structure) function.
 
@@ -231,7 +233,6 @@ The following variables will be important for the analysis here:
 You wrote your first script. It is time to have another break. Make sure you save your script and the close RStudio (you don't need to do that in general, but please do it at this point to help me demonstrate the value of scripts). After relaxing for a few minutes and telling your flatmate that you are on your way to become an expert programmer, come back and re-open RStudio. Load the script file (if it wasn't loaded automatically). The environment should, at this stage be empty, but if you click on the "Source" button then R will automatically execute all the commands you had in your script and `CKdata` should be available in the Environment panel.
 
 So that is the value of scripts! You can easily pick up where you left your work, no need to redo anything.
-
 
 # Accessing data
 
@@ -282,9 +283,11 @@ you would have saved it in the Environment and could re-use it.
 
 All the commands in this section were really only to explore the functionality of R. There is no need to save these in your script file. But no harm either as none of these ctually changed the values of the data in `CKdata`.
 
-# Data Formats
+# Data Types
 
-We can see (from the output to `str(CKdata)`) that all variables are numeric (`num`) variables, i.e. the software will treat them as numbers. If you check the `CK_codebook.txt` on BB you will find what all the numbers mean. For instance an entry of `2` in the `CHAIN` variable means that this is a "KFC" restaurant.
+We can see (from the output to `str(CKdata)`) that all variables are numeric (`num`) variables, i.e. the software will treat them as numbers. R did so, as we told it to treat "." as missing values. If you hadn't done so, it would have recognised a number of variables as text variables (`chr`) which would not have been very helpful.
+
+If you check the `CK_codebook.txt` on BB you will find what all the numbers mean. For instance an entry of `2` in the `CHAIN` variable means that this is a "KFC" restaurant.
 
 For later it will be convenient to have `STATE` and `CHAIN` variables which aren't numeric, but categorical variables. In R these are called `factor` variables. Hence we will create two new variables, `STATEf` and `CHAINf` which contain the same info, but just in a way easier to understand.
 
@@ -299,7 +302,7 @@ There are a number of important elements in these two lines
 * `as.factor()` is a function called `as.factor`. If you want to find out what a function does you can call the help function `?as.factor`. This one ensures that creates a variable as a factor (categorical) variable. But it requires an input (Whatever comes inside tha parenthesis). Here we ask R to change the `num` variable `CKdata$STATE` into a factor variable.
 * `levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey")` then changes the names of the levels (categories) into sensible names. Here we use again the assignment operator `<-`. The order matters, but we learn from the codebook that: "1 if NJ; 0 if Pa". As `STATE` is a numerical varibale it will order the categories in numerical order, 0 (PA) first and 1 (NJ) next. In doubt you will have to check that you have used the right ordering by comparing the `STATE` and `STATEf` variable.  
 
-Now create a new variable `CHAINf` which achieves the same for the `CHAIN` variable. Replace the `XXXX` to make this code work. YOu will have to check the codebook for the right ordering.
+Now create a new variable `CHAINf` which achieves the same for the `CHAIN` variable. Replace the `XXXX` to make this code work. You will have to check the codebook for the right ordering.
 
 ```{r, eval=FALSE}
 CKdata$XXXX <- as.factor(XXXX$XXXX)  

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.11)  12 APR 2021 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.11)  1 DEC 2021 14:06
 entering extended mode
 **./Lecture---Time-Series-2021.tex
 (Lecture---Time-Series-2021.tex
@@ -1767,13 +1767,8 @@ File: Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-7-1.pdf Grap
 hic file (type pdf)
 <use Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: Lecture---Time-Series-2021_files/figure-beamer/unnamed
--chunk-7-1.pdf used on input line 373.
+-chunk-7-1.pdf used on input line 374.
 (pdftex.def)             Requested size: 325.2142pt x 180.67455pt.
-
-Overfull \hbox (10.26202pt too wide) in paragraph at lines 373--373
-[][]\T1/lmr/m/n/10.95 (-20) These 
- []
-
 [12
 
  <./Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-7-1.pdf>]
@@ -1783,10 +1778,10 @@ File: Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-8-1.pdf Grap
 hic file (type pdf)
 <use Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-8-1.pdf>
 Package pdftex.def Info: Lecture---Time-Series-2021_files/figure-beamer/unnamed
--chunk-8-1.pdf used on input line 378.
+-chunk-8-1.pdf used on input line 379.
 (pdftex.def)             Requested size: 325.21916pt x 252.94823pt.
 
-Overfull \vbox (16.47083pt too high) detected at line 378
+Overfull \vbox (16.47083pt too high) detected at line 379
  []
 
 [13
@@ -1796,12 +1791,12 @@ Overfull \vbox (16.47083pt too high) detected at line 378
 ] [15
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 471
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 472
 .
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \vbox (7.563pt too high) detected at line 471
+Overfull \vbox (7.563pt too high) detected at line 472
  []
 
 [16
@@ -1809,7 +1804,7 @@ Overfull \vbox (7.563pt too high) detected at line 471
 ] <r_GDP_UR.jpeg, id=176, 605.26125pt x 398.99063pt>
 File: r_GDP_UR.jpeg Graphic file (type jpg)
 <use r_GDP_UR.jpeg>
-Package pdftex.def Info: r_GDP_UR.jpeg used on input line 483.
+Package pdftex.def Info: r_GDP_UR.jpeg used on input line 484.
 (pdftex.def)             Requested size: 273.95354pt x 180.59128pt.
 [17
 
@@ -1832,10 +1827,10 @@ File: Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-12-1.pdf Gra
 phic file (type pdf)
 <use Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-12-1.pdf>
 Package pdftex.def Info: Lecture---Time-Series-2021_files/figure-beamer/unnamed
--chunk-12-1.pdf used on input line 582.
+-chunk-12-1.pdf used on input line 584.
 (pdftex.def)             Requested size: 325.21916pt x 252.94823pt.
 
-Overfull \vbox (36.87083pt too high) detected at line 582
+Overfull \vbox (36.87083pt too high) detected at line 584
  []
 
 [21
@@ -1868,10 +1863,10 @@ File: Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-15-1.pdf Gra
 phic file (type pdf)
 <use Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-15-1.pdf>
 Package pdftex.def Info: Lecture---Time-Series-2021_files/figure-beamer/unnamed
--chunk-15-1.pdf used on input line 661.
+-chunk-15-1.pdf used on input line 663.
 (pdftex.def)             Requested size: 325.21916pt x 252.94823pt.
 
-Overfull \vbox (16.47083pt too high) detected at line 661
+Overfull \vbox (16.47083pt too high) detected at line 663
  []
 
 [25
@@ -1883,10 +1878,10 @@ File: Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-16-1.pdf Gra
 phic file (type pdf)
 <use Lecture---Time-Series-2021_files/figure-beamer/unnamed-chunk-16-1.pdf>
 Package pdftex.def Info: Lecture---Time-Series-2021_files/figure-beamer/unnamed
--chunk-16-1.pdf used on input line 666.
+-chunk-16-1.pdf used on input line 668.
 (pdftex.def)             Requested size: 325.21916pt x 252.94823pt.
 
-Overfull \vbox (16.47083pt too high) detected at line 666
+Overfull \vbox (16.47083pt too high) detected at line 668
  []
 
 [26
@@ -1903,7 +1898,7 @@ l.4 ...ha + \beta ~ Org_t + u_t \label{Simple_TSR}
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 743.
+(Font)              <5> on input line 745.
 [28
 
 ]
@@ -1941,7 +1936,7 @@ Package pdftex.def Info: Lecture---Time-Series-2021_files/figure-beamer/unnamed
 -chunk-24-1.pdf used on input line 15.
 (pdftex.def)             Requested size: 325.2142pt x 180.67455pt.
 )
-Overfull \vbox (25.00545pt too high) detected at line 917
+Overfull \vbox (25.00545pt too high) detected at line 919
  []
 
 [34
@@ -1957,7 +1952,7 @@ Overfull \vbox (25.00545pt too high) detected at line 917
 \openout4 = `Lecture---Time-Series-2021.vrb'.
 
 (Lecture---Time-Series-2021.vrb)
-Overfull \vbox (0.29755pt too high) detected at line 1004
+Overfull \vbox (0.29755pt too high) detected at line 1006
  []
 
 [37
@@ -2007,11 +2002,11 @@ Overfull \vbox (0.29755pt too high) detected at line 1004
 \tf@snm=\write8
 \openout8 = `Lecture---Time-Series-2021.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1255.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1255.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1264.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1264.
 (Lecture---Time-Series-2021.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1255.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1255.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1264.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1264.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2041,7 +2036,7 @@ e1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/lm/lmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtti10.pfb>
-Output written on Lecture---Time-Series-2021.pdf (47 pages, 681734 bytes).
+Output written on Lecture---Time-Series-2021.pdf (47 pages, 681469 bytes).
 PDF statistics:
  534 PDF objects out of 1000 (max. 8388607)
  145 named destinations out of 1000 (max. 500000)

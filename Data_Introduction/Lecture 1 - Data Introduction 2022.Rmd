@@ -1,0 +1,726 @@
+---
+title: "Introduction to Handling Data"
+subtitle: "ECON20222 - Lecture 1"
+author: "Ralf Becker and Martyn Andrews"
+date: ""
+output: 
+  beamer_presentation:
+    includes:
+     in_header: ../latex_template.tex
+#     in_header: ../latex_student.tex  # use for student version
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## What is this course unit about?
+
+\begin{itemize}
+  \item Help you implement and interpret the main estimation and inference techniques used in Economics
+  \item Focus on:
+      \begin{itemize}
+        \item causal inference
+        \item the main pitfalls of time-series analysis
+      \end{itemize}
+\end{itemize}
+
+## This Week's Empirical Question
+
+
+\begin{columns}
+  
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=3cm]{david-card.jpg}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=3cm]{Krueger.jpeg}\\
+    \end{figure}
+
+  \end{column}
+    
+\end{columns}
+
+Card, David ; Krueger, Alan B. (1994) Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania, The American Economic Review, 84, 772-793.
+
+Do higher minimum wages decrease employment (as predicted by common-sense and a competitive labour market model)?
+
+## The Research Question
+"This paper presents new evidence on the effect of minimum wages on establishment-level employment outcomes. We analyze the experiences of 410 fast-food restaurants in New Jersey and Pennsylvania following the increase in New Jersey's minimum wage from \$ 4.25 to \$ 5.05 per hour. Comparisons of employment, wages, and prices at stores in New Jersey and Pennsylvania before and after the rise offer a simple method for evaluating the effects of the minimum wage."
+
+Card, David ; Krueger, Alan B. (1994, p.772)
+
+## Why Data Matter
+
+The debate is still alive:
+
+\begin{itemize}
+  \item Overall negative effect on employment, \href{https://wol.iza.org/articles/employment-effects-of-minimum-wages}{IZA}.\\
+  \emph{"Research findings are not unanimous, but especially for the US, evidence suggests that minimum wages reduce the jobs available to low-skill workers."}
+  \item An overview of the empirical evidence is provided in this report by \href{https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/844350/impacts_of_minimum_wages_review_of_the_international_evidence_Arindrajit_Dube_web.pdf}{Arindrajit Dube for the UK Government}. \\
+  \emph{"Especially for the set of studies that consider broad groups of workers, the overall evidence base suggests an employment impact of close to zero."}
+\end{itemize}
+
+
+
+## At the end of this unit ...
+
+You will be able to:
+
+\begin{itemize}
+  \item Do intermediate data work in R
+  \item Confidently apply regression analysis in R
+  \item Apply more advanced causal inference techniques in R
+  \item Find coding help for any new challenges in R
+  \item Discuss strengths and weaknesses of particular empirical applications
+  \item Perform inference appropriate for the model being estimated
+  \item Interpret empirical results (with due caution!)
+\end{itemize}
+
+## What you need to do
+
+To learn in this unit you need to:
+
+\begin{figure}
+	\centering
+	\includegraphics[width=8cm]{Embrace.jpg}\\
+\end{figure}
+
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \textcolor{student}{coding, cleaning data, struggling, self-learning, amazement at what you can do}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \textcolor{student}{answering real questions, that there is not always a clear answer}
+  \end{column}
+    
+\end{columns}
+
+## Assessment Structure and feedback
+
+\begin{itemize}
+  \item Online test (on the use of R) - 10\%
+  \item End-of-Term exam (short answer questions) - 50\%
+  \item	Group coursework - 40\% (see extra info)
+
+\end{itemize}
+
+
+## Aim for today
+
+
+\begin{columns}
+  
+  \begin{column}{0.5\textwidth}
+    \underline{Statistics/Econometrics}
+    \begin{itemize}
+      \item Summary Statistics
+      \item Difference between population and sample
+      \item Hypothesis testing
+      \item Graphical Data Representations
+      \item Diff-in-Diff Analysis
+      \item Simple regression analysis
+    \end{itemize}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \underline{R Coding}
+    \begin{itemize}
+      \item Introduce you to R and RStudio
+      \item How do I learn R
+      \item Import data into R
+      \item Perform some basic data manipulation
+      \item Perform hypothesis tests
+      \item Estimate a regression
+    \end{itemize}
+  \end{column}
+    
+\end{columns}
+
+
+
+
+## This Week's Plan
+
+\begin{itemize}
+  \item Replicate some of the basic results presented in Card and Krueger (1994)
+  \item Introduce the Difference-in-Difference methodology (Project!!) [Sometimes known as “Diff-in-Diff” or DiD.]
+  \item Use this example to 
+    \begin{itemize}
+      \item introduce you to R
+      \item review some summary statistics
+      \item review simple regression and its implementation
+      \item introduce some basic visualisations
+    \end{itemize}
+\end{itemize}
+
+## Introduce R/R-Studio
+
+\begin{columns}
+  
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=2cm]{Rimage.jpeg}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.8\textwidth}
+    \begin{itemize}
+      \item R is a statistical software package, it is open source and free 
+      \item a lot of useful functionality is added by independent researchers via packages (also for free)
+    \end{itemize}
+  \end{column}
+    
+\end{columns}
+
+
+\begin{columns}
+  
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=2cm]{RStudio_image.png}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.8\textwidth}
+    \begin{itemize}
+      \item RStudio is a user interface which makes working with R easier. You need to install R before you \href{https://youtu.be/EHjakj38Nnw}{install RStudio}. 
+    \end{itemize}
+    
+  \end{column}
+    
+\end{columns}
+
+\begin{columns}
+  
+  \begin{column}{0.2\textwidth}
+    \begin{figure}
+    	\centering
+    	\includegraphics[width=2cm]{ECLR.jpg}\\
+    \end{figure}
+
+  \end{column}
+  \begin{column}{0.8\textwidth}
+    \begin{itemize}
+      \item \href{http://eclr.humanities.manchester.ac.uk/index.php/R}{ECLR} is a web-resource we have set up to support you in your R work. 
+    \end{itemize}
+    
+  \end{column}
+    
+\end{columns}
+
+
+## Welcome to RStudio
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=12cm]{RStudio_screen.jpg}\\
+\end{figure}
+
+## Write Code Files or the Basic Workflow
+
+\begin{itemize}
+  \item keep an original data file (usually `.xlsx` or `.csv`) and do not overwrite this file
+  \item any manipulation we make to the data (data cleaning, statistical analysis etc.) is command based and we collect all these commands in a script file. R will then interpret and execute these commands. It is hence like a recepie which you present to a chef. These script files have extension `.r`
+  \item you can also learn to write Rmarkdown files (`.rmd`). They combine code with normal text and output. 
+  \item When you write code you should ensure that you add comments to your code. Comments are bit of text which is ignored by R (everything after an `\#`) but helps you or someone else to decipher what the code does.
+
+\end{itemize}
+
+
+By following the above advice you make it easy for yourself and others to replicate your work.
+
+
+## Prepare your code
+
+We start by uploading the extra packages we need in our code.
+
+The first time you need these packages at a computer you may need to install these. Use the following code to do this
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=FALSE}
+install.packages(c("readxl","tidyverse","ggplot2","stargazer"))
+```
+
+This only needs to be done once on a particular computer. However, every time you want to use any of these packages in a code you need to make them available to your code (load them):
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
+library(tidyverse)    # for almost all data handling tasks
+library(readxl)       # to import Excel data
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+```
+
+## The data
+
+Then we load the data from excel
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE}
+CKdata<- read_xlsx("CK_public.xlsx",na = ".")
+```
+
+\texttt{na = "."} indicates how missing data are coded.
+
+Check some characteristics of the data which are now stored in \texttt{CKdata}:
+\textcolor{student}{Discuss data.frame, number of obs and number of variables, their names and variable types}
+
+\scriptsize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+str(CKdata)  # prints some basic info on variables
+```
+
+\normalsize
+
+
+## The data
+
+To see the entire dataset (like in a spreadsheet):
+
+Either click the little spreadsheet symbol next to the data.frame in the Environment tab, or
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE, eval = FALSE}
+view(CKdata)  # prints some basic info on variables
+```
+
+## The data - Unit of observation
+
+A unit of observation is a fast food restaurant.
+
+Say observation 27 in our dataset is a Roy Rogers (\texttt{CHAIN = 3}) store in Pennsylvania (\texttt{STATE = 0}) with 7 full time employees (\texttt{EMPFT}), 19 part-time employees (\texttt{EMPPT}) and 4 managers (\texttt{NMGRS}) in Feb 1992 and 17.5 in Dec
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+CKdata[27,] 
+```
+
+See \texttt{CK\_codebook.txt} for details on data definitions.
+
+## Addressing particular variables
+
+If you want to call/use the entire spreadsheet/data frame/tibble then you call \texttt{CKdata}.
+
+But often you want to call one variable only:
+
+* \texttt{CKdata\$CHAIN}, calls \texttt{CHAIN} only
+* \texttt{CKdata["CHAIN"]}, calls \texttt{CHAIN} only
+* \texttt{CKdata[2]}, calls \texttt{CHAIN} only, as it is the 2nd variable
+
+And sometimes you want to call several, but not all, variables:
+
+* \texttt{CKdata[c("STATE","CHAIN")]}
+
+\texttt{c("STATE","CHAIN")} creates a list of names. \texttt{c} really represents a function, c for concatenation.
+
+\textbf{Also note: R is case sensitive, \texttt{CHAIN} $\neq$ \texttt{Chain}}
+
+## Variable types
+
+These are five basic data types.
+
+\begin{itemize}
+  \item \texttt{character: "a", "swc"}
+  \item \texttt{numeric: 2, 15.5}
+  \item \texttt{integer: 2L (the L tells R to store this as an integer)}
+  \item \texttt{logical: TRUE, FALSE}
+  \item \texttt{factor: a set number of categories}
+\end{itemize}
+
+It is important that you know and understand differences between data types. Each variable has has a particular type and some operations only work for particular datatypes. For instance, we need \texttt{num} or \texttt{int} for any mathematical operations.
+
+In our data.frame we have only \texttt{num} variable types. 
+
+We will encounter \texttt{logical} variables frequently. \textcolor{student}{they are very powerful}
+
+
+## \texttt{factor} variables
+
+We store categorical variables as \texttt{factor} variables. 
+
+Sometimes you need to type convert to \texttt{factor} variables.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+str(CKdata[c("STATE","CHAIN")])  # prints some basic info on variables
+```
+
+* `STATE`, 1 if New Jersey (NJ); 0 if Pennsylvania (Pa) 
+* `CHAIN`, 1 = Burger King; 2 = KFC; 3 = Roy Rogers; 4 = Wendy's
+
+## \texttt{factor} variables
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+CKdata$STATEf <- as.factor(CKdata$STATE)  
+levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey") 
+
+CKdata$CHAINf <- as.factor(CKdata$CHAIN)  
+levels(CKdata$CHAINf) <- c("Burger King","KFC", "Roy Rogers", "Wendy's") 
+```
+\normalsize
+
+\begin{itemize}
+  \item \texttt{CKdata\$STATE} calls variable \texttt{STATE} in dataframe \texttt{ck\_data}
+  \item \texttt{<-} assigns what is on the right \texttt{as.factor(CKdata\$STATE)} to the variable on the left \texttt{CKdata\$STATEf}
+  \item \texttt{as.factor(CKdata\$STATE)} calls a function \texttt{as.factor} and applies it to \texttt{CKdata\$STATE}
+\end{itemize}
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+str(CKdata[c("STATEf","CHAINf")])  # prints some basic info on variables
+
+```
+\normalsize
+
+## \texttt{factor} variables
+
+\texttt{factor} variables are variables with discrete categories. Which ones they are you can find out with the \texttt{levels()} function:
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+levels(CKdata$CHAINf)
+```
+
+## Learn more about your data
+
+Use the \texttt{summary} function for some initial summary stats for \texttt{num} or \texttt{int} variables
+
+* `WAGE_ST`, starting wage ($/hr), Wave 1, before min wage increase, Feb 1992
+* `EMPFT`, # full-time employees before policy implementation
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+summary(CKdata[c("WAGE_ST","EMPFT")])
+```
+
+\normalsize
+
+## Learn more about your data
+
+How many obs in each state and what chains
+
+\scriptsize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+Tab1 <- CKdata %>% group_by(STATEf) %>% 
+          summarise(n = n()) %>% 
+          print()
+```
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+prop.table(table(CKdata$CHAINf,CKdata$STATEf,dnn = c("Chain", "State")),margin = 2)
+```
+
+\normalsize
+
+## Scatter plot of the data
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+p1 <- ggplot(CKdata,aes(WAGE_ST,EMPFT)) +
+  geom_point(size=0.5) +    # this produces the scatter plot
+  geom_smooth(method = "lm", se = FALSE)  # adds the line 
+p1
+```
+
+\footnotesize
+\textcolor{student}{Point out that each dot represents one store data. Point out line of best fit}
+\normalsize
+
+## Regression Line
+
+The line in the previous plot is the line of best fit coming for a linear regression 
+
+\vskip -0.5cm
+\[EMPFT = \alpha + \beta WAGE\_ST + u ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
+\vskip -0.2cm
+
+\begin{itemize}
+  \item The population model is defined by unknown parameters $\alpha$ and $\beta$ and the unknown error terms $u$. We will use sample data to obtain sample estimates of these parameters.
+  \item The error terms $u$ contain the effects of any omitted variables and reflect that any modelled relationship will only be an approximation. The $u$ are \textcolor{student}{random variables}
+\end{itemize}
+
+\vskip -0.5cm
+\[ EMPFT_{it} = \widehat{\alpha} + \widehat{\beta} ~ WAGE\_ST_{it} + \widehat{u}_{it} ~\text{(\textcolor{student}{Estimated Sample} ~~~~Model)}\]
+\vskip -0.2cm
+
+Here we have two subscripts as the data have a cross-section (\texttt{\textcolor{student}{i}}) and a time-series dimension (\texttt{\textcolor{student}{t}}).
+
+The regression line in the previous figure is represented by 
+\vskip -0.5cm
+\[ \widehat{EMPFT}_{it} = \widehat{\alpha} + \widehat{\beta} WAGE\_ST_{it} ~~~\text{(~~~\textcolor{student}{Regression Line}~~~~~~)}\]
+
+## Simple Regression Model and OLS
+
+Regression analysis is the core technique used in Econometrics. It is based on certain assumptions about the \emph{Population Model} and the error terms $u$ (more on this in the next few weeks).
+
+How to estimate parameters (get $\widehat{\alpha}$ and $\widehat{\beta}$) using the available sample of data? This is typically done by Ordinary Least Squares (OLS).
+
+## Simple Regression Model and OLS
+
+\footnotesize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+mod1 <- lm(EMPFT~WAGE_ST, data= CKdata)
+summary(mod1)
+```
+\normalsize
+
+## OLS - nice output
+\footnotesize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+stargazer(mod1,type="text")
+```
+\normalsize
+
+## OLS - calculation and interpretation
+
+How were $\widehat{\beta}$ and $\widehat{\alpha}$ calculated?
+
+\begin{eqnarray*}
+  \widehat{\beta}&=&\dfrac{\widehat{Cov}(EMPFT_{it},WAGE\_ST_{it})}{\widehat{Var}(WAGE\_ST_{it})}\\
+  \widehat{\alpha}&=&\overline{EMPFT}_{it}-\widehat{\beta}*\overline{WAGE\_ST}_{it}
+\end{eqnarray*}
+
+
+How to interpret $\widehat{\beta}=3.193$?
+
+\textcolor{student}{An increase of one unit in \texttt{WAGE\_ST} (=USD1) is related to an increase in about 3 full time employees (\texttt{EMPFT}).}
+
+Have we established that higher wages \textbf{cause} higher employment?
+
+\textcolor{student}{NO}
+
+
+
+## Regression Analysis - Underneath the hood
+
+Need to recognise that in a sample $\hat{\beta}$ and $\hat{\alpha}$ are really \textcolor{student}{random variables}. For short \texttt{EMPFT=E} and \texttt{WAGE\_ST=W}:
+
+\begin{eqnarray*}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(E,W)}{\widehat{Var}(W)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ W + u,W)}{\widehat{Var}(W)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha,W) + \beta \widehat{Cov}(W,W) + \widehat{Cov}(u,W)}{\widehat{Var}(W)}\\
+          &=& \beta ~\dfrac{\widehat{Var}(W)}{\widehat{Var}(W)}  + \dfrac{\widehat{Cov}(u,W)}{\widehat{Var}(W)}= \beta  + \dfrac{\widehat{Cov}(u,W)}{\widehat{Var}(W)}
+\end{eqnarray*}
+
+So $\hat{\beta}$ is a function of the random term $u$ and hence is itself a random variable.
+Once $\widehat{Cov}(E,W)$ and $\widehat{Var}(W)$ are replaced by sample estimates we get \textcolor{student}{~ONE~} value which is draw from a \textcolor{student}{random distribution.}
+
+## OLS - estimator properties
+
+What can we learn from this?
+
+\begin{itemize}
+  \item If $u_{it}$ is a random variable, so is \textcolor{student}{ $\widehat{\beta}$}
+  \item Any particular value we get is a \textcolor{student}{draw from a random distribution}
+  \item An estimator is \textcolor{red}{unbiased} if, on average, the estimates would be equal to the unknown $\beta$\\
+  \textcolor{student}{at this stage the concept of unbiasedness may still be a little hazy and that is fine}
+  \item For this to happen we need to \textcolor{red}{assume} that $Cov(u,x)=0$ as then \\
+        $E(\widehat{\beta})=$ \textcolor{student}{$\beta$}\\
+        \textcolor{student}{Why do we need to assume this? Because while we do have values for $x_{it}$ we do not have values for the unobserved error terms $u_{it}$. Hence we cannot test this. As you will find out, this is a thinking exercise and whether it is true/false/sensible/appropriate is at the core of what we do.}
+\end{itemize}
+
+
+## OLS - the exogeneity assumption
+
+For $\widehat{\beta}$ in $y_{it}=\alpha + \beta x_{it} + u_{it}$ to be unbiased (i.e. on average correct) we needed
+
+\[Cov({u}_{it},x_{it})=0\]
+
+This is sometimes called the \textcolor{red}{Exogeneity assumption}. The error term has to be uncorrelated to the explanatory variable $x_{it}$
+
+There are a lot of reasons why this assumption may be breached.
+
+\begin{itemize}
+  \item Simultaneity ($WAGE\_ST \rightarrow EMPFT$ and $EMPFT \rightarrow WAGE\_ST$)\\
+  \footnotesize
+  \textcolor{student}{Discuss the fact that we have to assume that causailty here goes in both directions. Hence we cannot attach one one-directional causal interpretation to the estimated coefficient. If you can estimate the model the other way round} \normalsize
+
+  \item Omitted relevant variables or unobserved heterogeneity 
+  \item Measurement error in $x_{it}$ 
+
+\end{itemize}
+
+
+## So how to make causal statements
+
+Once we have found reasons to believe in the exogeneity assumption, the next few lectures is to introduce various standard techniques that use this assumption:
+
+* First Difference                                                                         
+* Diff-in-Diff, to be used in Project
+* Instrumental Variables
+* Regression Discontinuity
+
+All of them can be thought of as specific ways to apply a regression model.
+
+
+## Diff-in-Diff - The Problem
+
+
+Do higher minimum wages decrease employment (as predicted by a simplistic labour market model)?
+
+## The Research Question
+"This paper presents new evidence on the effect of minimum wages on establishment-level employment outcomes. We analyze the experiences of 410 fast-food restaurants in New Jersey and Pennsylvania following the increase in New Jersey's minimum wage from \$ 4.25 to \$ 5.05 per hour. Comparisons of employment, wages, and prices at stores in New Jersey and Pennsylvania before and after the rise offer a simple method for evaluating the effects of the minimum wage."
+
+Card, David ; Krueger, Alan B. (1994, p.772)
+
+## Wage distribution - Pre
+
+Look at the distribution of starting wages before the change in minimum wage in New Jersey (`WAGE_ST`).
+
+At this stage it is not so important to understand the commands for these plots.
+
+The easiest way to plot a histogram is 
+
+`hist(CKdata$WAGE_ST[CKdata$STATEf == "Pennsylvania"])` 
+
+where, in square brackets, we select that we only want data fram Pennsylvania.
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 4, fig.width = 4, eval = FALSE}
+hist(CKdata$WAGE_ST[CKdata$STATEf == "Pennsylvania"])
+hist(CKdata$WAGE_ST[CKdata$STATEf == "New Jersey"])
+```
+
+\normalsize
+
+
+## Wage distribution - Pre
+
+Or here an alternative visualisation.
+
+\footnotesize
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(CKdata,aes(WAGE_ST, colour = STATEf), colour = STATEf) + 
+    geom_histogram(position="identity", 
+                   aes(y = ..density..),
+                   bins = 10,
+                   alpha = 0.2) +
+    ggtitle(paste("Starting wage distribution, Feb/Mar 1992"))
+```
+\normalsize
+
+## Wage distribution - Pre
+
+Both plots sow that the starting wage distribution is fairly similar in both states, with peaks at the minimum wage of $4.25 and $5.00.
+
+## Policy Evaluation
+
+First we can evaluate whether the legislation has been implemented.
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+Tab1 <- CKdata %>% group_by(STATEf) %>% 
+          summarise(wage_FEB = mean(WAGE_ST,na.rm = TRUE), 
+                    wage_DEC = mean(WAGE_ST2,na.rm = TRUE)) %>% 
+          print()
+```
+
+Average wage in New Jersey has increased. 
+
+\normalsize
+
+## Policy Evaluation - Wage distribution
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(CKdata,aes(WAGE_ST2, colour = STATEf), colour = STATEf) + 
+    geom_histogram(position="identity", 
+                   aes(y = ..density..),
+                   bins = 10,
+                   alpha = 0.2) +
+    ggtitle(paste("Starting wage distribution, Nov/Dec 1992"))
+
+
+```
+\normalsize
+
+## Policy Evaluation - Employment outcomes
+
+Let's measure employment before and after the policy change.
+
+Calculate two new variables `FTE` and `FTE2` (full time employment equivalent before and after policy change)
+
+\footnotesize
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+CKdata$FTE <- CKdata$EMPFT + CKdata$NMGRS + 0.5*CKdata$EMPPT
+CKdata <- CKdata %>%  mutate(FTE2 = EMPFT2 + NMGRS2 + 0.5*EMPPT2)
+```
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+TabDiD <- CKdata %>% group_by(STATEf) %>% 
+          summarise(meanFTE_FEB = mean(FTE,na.rm = TRUE), 
+                    meanFTE_DEC = mean(FTE2,na.rm = TRUE)) %>% 
+          print()
+```
+\normalsize
+
+## Policy Evaluation - Diff-in-Diff estimator
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(CKdata, aes(1992,FTE, colour = STATEf)) +
+  geom_point(alpha = 0.2) +
+  geom_point(aes(1993,FTE2),alpha = 0.2) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, FTE"))
+```
+
+## Policy Evaluation - Diff-in-Diff estimator
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(CKdata, aes(1992,FTE, colour = STATEf)) +
+  geom_jitter(alpha = 0.2) +
+  geom_jitter(aes(1993,FTE2),alpha = 0.2) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, FTE"))
+```
+
+## Policy Evaluation - Diff-in-Diff estimator
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+ggplot(TabDiD, aes(1992,meanFTE_FEB, colour = STATEf)) +
+  geom_point(size = 3) +
+  geom_point(aes(1993,meanFTE_DEC),size=3) +
+  ylim(17, 24) +
+  labs(x = "Time") +
+  ggtitle(paste("Employment, mean FTE"))
+```
+
+## Policy Evaluation - Diff-in-Diff estimator
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+print(TabDiD)
+```
+
+Numerically the DiD estimator is calculated as follows:
+
+(`r round(TabDiD[2,3],1)` - `r round(TabDiD[2,2],1)`) - (`r round(TabDiD[1,3],1)` - `r round(TabDiD[1,2],1)`) = `r (round(TabDiD[2,3],1)-round(TabDiD[2,2],1))-(round(TabDiD[1,3],1)-round(TabDiD[1,2],1))`
+
+Later: This can be calculated using a regression approach (has some additional advantages)
+
+
+## Outlook
+
+Over the next weeks you will learn
+
+\begin{itemize}
+  \item to perform more advanced statistical analysis in R, such as:
+      \begin{itemize}
+        \item Hypothesis testing
+        \item Multivariate regression analysis
+        \item specification testing
+      \end{itemize}
+  \item to devise methods to draw causal inference
+  \item to understand the main pitfalls of time-series modelling and forecasting
+\end{itemize}
