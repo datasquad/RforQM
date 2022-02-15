@@ -86,7 +86,10 @@ You see that you get two entries, one for the case number data, for which you ge
 We want to change the structure of the data such that we have only one entry per country and week. For that week we then want to have variables `cases_weekly`, `deaths_weekly`, `cases_weekly_cumulative`, `deaths_weekly_cumulative`, `cases_14_day` and `deaths_14_day`. Before you execute this command take note of the number of observations in `data`. 
 
 ```{r}
-data_cov <- data_cov %>%  pivot_wider(names_from = indicator, values_from = c(weekly_count, cumulative_count,rate_14_day,source))
+data_cov <- data_cov %>%  pivot_wider(names_from = indicator, 
+                                      values_from = c(weekly_count,
+                                                  cumulative_count,
+                                                  rate_14_day,source))
 
 # in values_from we have all variables that are different depending on the indicator value
 ```
@@ -140,7 +143,7 @@ data_cov <- data_cov %>% filter(!is.na(country_code))
 
 ```
 
-You can confirm, by looking at the dataframe that Afgghanistan's two letter country code is "AF".
+You can confirm, by looking at the dataframe that Afghanistan's two letter country code is "AF".
 
 By the way, this is nothing we would ever know by heart how to do. We had to search for a solution. A useful search term to use would be something like "R translating 3 letter country code to 2 letter country code".
 

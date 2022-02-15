@@ -6,8 +6,8 @@ date: "February 2022"
 output: 
   beamer_presentation:
     includes:
-#      in_header: ../latex_template.tex
-      in_header: ../latex_student.tex  # use for student version
+      in_header: ../latex_template.tex
+#      in_header: ../latex_student.tex  # use for student version
 ---
 
 ```{r setup, include=FALSE}
@@ -241,7 +241,7 @@ Need to import land area data and merge them into our dataset (`CountryIndicator
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 countryInd <- read_csv("CountryIndicators.csv",na = "#N/A") 
-data_cov <- merge(data_cov,countryInd,,all.x=TRUE)
+data_cov <- merge(data_cov,countryInd,all.x=TRUE)
 data_cov <- data_cov %>% mutate(popdens = popData2019/Land_Area_sqkm)  # pop. density
 
 table3 <- data_cov %>% group_by(country) %>% # groups by Country

@@ -6,8 +6,8 @@ date: ""
 output: 
   beamer_presentation:
     includes:
-     in_header: ../latex_template.tex
-#     in_header: ../latex_student.tex  # use for student version
+#     in_header: ../latex_template.tex
+     in_header: ../latex_student.tex  # use for student version
 ---
 
 ```{r setup, include=FALSE}
@@ -75,13 +75,15 @@ The debate is still alive:
 You will be able to:
 
 \begin{itemize}
+  \item Understand and discuss the challenges of making causal inferences
+  \item Perform inference appropriate for the model being estimated
+  \item Interpret empirical results (with due caution!)
+  \item Discuss strengths and weaknesses of particular empirical applications
   \item Do intermediate data work in R
   \item Confidently apply regression analysis in R
   \item Apply more advanced causal inference techniques in R
   \item Find coding help for any new challenges in R
-  \item Discuss strengths and weaknesses of particular empirical applications
-  \item Perform inference appropriate for the model being estimated
-  \item Interpret empirical results (with due caution!)
+
 \end{itemize}
 
 ## What you need to do
@@ -92,7 +94,7 @@ To learn in this unit you need to:
 	\centering
 	\includegraphics[width=8cm]{Embrace.jpg}\\
 \end{figure}
-
+\
 \begin{columns}
   \begin{column}{0.5\textwidth}
     \textcolor{student}{coding, cleaning data, struggling, self-learning, amazement at what you can do}
@@ -298,7 +300,7 @@ A unit of observation is a fast food restaurant.
 Say observation 27 in our dataset is a Roy Rogers (\texttt{CHAIN = 3}) store in Pennsylvania (\texttt{STATE = 0}) with 7 full time employees (\texttt{EMPFT}), 19 part-time employees (\texttt{EMPPT}) and 4 managers (\texttt{NMGRS}) in Feb 1992 and 17.5 in Dec
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-CKdata[27,] 
+CKdata[27,]  # CKdata[which rows, which columns]
 ```
 
 See \texttt{CK\_codebook.txt} for details on data definitions.
@@ -551,7 +553,7 @@ There are a lot of reasons why this assumption may be breached.
 
 ## So how to make causal statements
 
-Once we have found reasons to believe in the exogeneity assumption, the next few lectures is to introduce various standard techniques that use this assumption:
+Once we have found reasons to believe in the exogeneity assumption. The next few lectures is to introduce various standard techniques that use this assumption:
 
 * First Difference                                                                         
 * Diff-in-Diff, to be used in Project
