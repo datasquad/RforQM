@@ -16,3 +16,4 @@ levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey") # changes the names of t
 
 CKdata$CHAINf <- as.factor(CKdata$CHAIN)
 levels(CKdata$CHAINf) <- c("BK","KFC", "Roys", "Wendy's")
+
