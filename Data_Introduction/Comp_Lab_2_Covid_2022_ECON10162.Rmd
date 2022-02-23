@@ -21,7 +21,6 @@ In this computer lab you will be practicing the following
 
 
 ```{r}
-library(sets)         # used for some set operations
 library(readxl)       # enable the read_excel function
 library(tidyverse)    # for almost all data handling tasks
 library(ggplot2)      # plotting toolbox
