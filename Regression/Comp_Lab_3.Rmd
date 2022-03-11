@@ -155,7 +155,7 @@ mod3 <- lm(lnhrpay~educ+region, data = data_USoc)
 stargazer_HC(mod2,mod1,mod3)
 ```
 
-You can not see the entire table as the columns are very wide. The reason being the reported F-statistic at the bottom of each column. YOu can omit that statistic using the `omit.stat` option.
+You can not see the entire table as the columns are very wide. The reason being the reported F-statistic at the bottom of each column. You can omit that statistic using the `omit.stat` option.
 
 ```{r}
 stargazer_HC(mod2,mod1,mod3, omit.stat="f")

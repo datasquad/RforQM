@@ -21,7 +21,6 @@ In this computer lab you will be practicing the following
 
 
 ```{r}
-library(sets)         # used for some set operations
 library(readxl)       # enable the read_excel function
 library(tidyverse)    # for almost all data handling tasks
 library(ggplot2)      # plotting toolbox
@@ -237,7 +236,7 @@ table3 <- data %>% filter(dates >= "2020-06-01") %>%
                       Over_65s = first(Over_65s),
                       GDPpc = first(GDPpc)/1000,  # calculate GDPpc in $1000s
                       HealthExp = first(HealthExp),
-                      Continent = first(continentExp))    
+                      Continent = first(continent))    
 
 head(table3)
 ```

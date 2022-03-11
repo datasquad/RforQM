@@ -12,22 +12,19 @@ library(AER)          # access to HS robust standard errors
 ## --------------------------------------------------------------------------------------------
 source("stargazer_HC.r")  # includes the robust regression 
 
-
-
 data_USoc <- read_dta("20222_USoc_extract.dta")
 names(data_USoc)
-
-
-
 
 data_USoc$region <- as_factor(data_USoc$region)
 data_USoc$male <- as_factor(data_USoc$male)
 data_USoc$degree <- as_factor(data_USoc$degree)
 data_USoc$race <- as_factor(data_USoc$race)
 
+
+
 data_USoc <- data_USoc  %>% 
-              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>%
-              mutate(lnhrpay = log(hrpay))
+  mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>% 
+  mutate(lnhrpay = log(hrpay))
 
 
 table1 <- data_USoc %>% group_by(region,year) %>% # groups by region and year
@@ -37,7 +34,7 @@ print(n=Inf)
 
 
 data_USoc <- data_USoc %>% filter(year != 2013)
-
+data_USoc <- data_USoc %>% filter(year %in% c("2009","2010","2011","2012"))
 
 ## lnhrpay regressed on region only 
 mod1 <- lm(lnhrpay~region, data = data_USoc)

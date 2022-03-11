@@ -1,0 +1,531 @@
+---
+title: "R-work for Online Assessment, 2021/22"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+student_view <- 'hide'   # set to 'hide' to not reveal output, 'asis' to show
+solution_echo <- FALSE   # set to FALSE to not show full code, TRUE to show full code
+```
+
+# Instructions
+
+You should work through the code below and complete it.  Keep the completed code
+and all the resulting output.  Next you should answer the questions in the
+online quiz.  Every student will see a slightly different collection of
+questions (as we will randomly draw 10 questions from a pool of about 20
+questions).
+
+The questions are of four types.
+
+1) Questions that merely ask you to report output from your analysis.
+
+2) Some questions will ask you about R code.  For example, you will see a lot of
+gaps (`XXXX`) in the code and questions may ask you how to complete the code to
+make the code work.  Sometimes the `XXXX` will represent one word and on other occasions it will represent a full line (or two) of code. Other questions may ask you about the output to be produced
+by a particular bit of code.  
+
+3) The third type of questions will test your understanding of econometric
+issues.  For example:  "What is the meaning of an estimated coefficient?" "Is a
+particular coefficient statistically significant?"
+
+4) The fourth type of question, if asked, will be on general programming issues.
+For example:  what is the meaning of a particular error message, or, how would
+you search for a particular piece of information.
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work:
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+library(haven)        # to import stata file
+library(AER)          # access to HS robust standard errors
+library(countrycode)
+
+source("stargazer_HC.r")  # includes the robust regression display
+```
+
+# Introduction
+
+The data are an extract from the [OECD](https://data.oecd.org/).
+
+# Data Upload - and understanding data structure
+
+Upload the data, which are saved in the two csv files `OECD_RoadAccidents.csv` (from [here](https://data.oecd.org/transport/road-accidents.htm#indicator-chart)) and `OECD_Passenger_Transport.csv` (from [here](https://data.oecd.org/transport/passenger-transport.htm#indicator-chart)).
+
+```{r, eval = FALSE}
+data_acc <- XXXX("OECD_RoadAccidents.csv")
+data_pt <- XXXX("OECD_Passenger_Transport.csv")
+
+names(data_acc)
+names(data_pt)
+```
+```{r, echo = solution_echo}
+data_acc <- read_csv("OECD_RoadAccidents.csv")
+data_pt <- read_csv("OECD_Passenger_Transport.csv")
+names(data_acc)
+names(data_pt)
+```
+
+Look at the spreadsheets and understand the data structure.
+
+## Accident data
+
+Run the following lines and use the information to understand the data structure.
+
+```{r}
+data_acc[1,]
+unique(data_acc$MEASURE)
+unique(data_acc$SUBJECT)
+```
+In order to understand what these different measures and subjects represent you should consult the website linked above from which the data were downloaded.
+
+Now find all the data which relate to Germany (country code: DEU) and Poland (country code: POL) in 2017.
+
+```{r, echo = solution_echo, results='hide'}
+data_acc %>% filter(LOCATION %in% c("DEU","POL"), TIME == "2017")
+```
+
+
+You should see 10 rows of data.
+
+We will only keep death data and only those data which measure the number of deaths by 1000000 inhabitants.
+
+```{r}
+data_acc <- data_acc %>%  filter(SUBJECT == "DEATH") %>% 
+                          filter(MEASURE == "1000000HAB")
+```
+
+The only data left in the `Values` column is the deaths per 1000000 inhabitants variable. We therefore can now change the name of that variable to `Deaths_p1M`.
+
+```{r, eval = FALSE}
+names(XXXX)[names(data_acc)=="XXXX"] <- "Deaths_p1M"
+```
+```{r, echo = solution_echo}
+names(data_acc)[names(data_acc)=="Value"] <- "Deaths_p1M"
+```
+
+The datafile contains a few variables which are now redundant or we don't need any longer. We will only keep the variables we need, `LOCATION`, `TIME` and `Deaths_p1M`. The code below is faulty and you need to fix it
+
+```{r, eval = FALSE}
+data_acc <- data_acc %>% Select(LOCATION, time, Deaths_p1M)
+```
+```{r, echo = solution_echo}
+data_acc <- data_acc %>% select(LOCATION, TIME, Deaths_p1M)
+```
+
+The `LOCATION` variable represents the three digit country code of the respective observation. Let's add proper country names to our variables. For this we use the function `countrycode` from the `countrycode` package. The available information in the datafiles is in the `LOCATION` variable. It has a numeric ISO-3 format (`origin = "iso3c"`). We want to create a new variable in both of our datasets which is called `country` and contains the respective full English country name. You will have to consult the help for function `countrycode` to figure out what the destination format should be.
+
+
+```{r, eval = FALSE}
+data_acc$country <- XXXX(data_acc$LOCATION, origin = "iso3c", 
+                         destination = "XXXX")
+```
+```{r, echo = solution_echo}
+data_acc$country <- countrycode(data_acc$LOCATION, origin = "iso3c", 
+                                destination = "country.name")
+```
+
+## Personal Transport data
+
+Run the following lines and use the information to understand the data structure.
+
+```{r}
+data_pt[1,]
+unique(data_pt$MEASURE)
+unique(data_pt$SUBJECT)
+```
+
+What does `MLN_PKM` stand for? What do the different values in `SUBJECT` represent. You may need to refer to the website (see link above) to check. Note that the miles travelled are given as total distance. The information is not standardised by population size. We will do this later.
+
+You may want to check your understanding by looking at the data for Germany and Poland in 2017.
+
+```{r, echo = solution_echo, results='hide'}
+data_pt %>% filter(LOCATION %in% c("DEU","POL"), TIME == "2017")
+# You should see that, in a particular year in a particular country,
+# RAIL + ROAD = INLAND
+```
+
+We basically have three variables here, `RAIL` travel kilometers (or better miles), `ROAD` travel and total travel (`INLAND`). We want to keep these three variables. To do so we use the `pivot_wider` command which is part of the tidyverse package.
+
+```{r}
+data_pt <- data_pt %>% pivot_wider(names_from = SUBJECT,
+                                   values_from = Value)
+```
+
+This is a useful function and you may want to remember that this functionality exists for your later work.
+
+Display again the data for Germany and Poland in 2017 to see the difference of the datafile's setup after this operation. You should see the following:
+
+```{r, echo = solution_echo}
+data_pt %>% filter(LOCATION %in% c("DEU","POL"), TIME == "2017")
+# You should see that, in a particular year in a particular country,
+# RAIL + ROAD = INLAND
+```
+
+The datafile contains a few variables which are now redundant or we don't need any longer. We will only keep the variables we need, `LOCATION`, `TIME`, `RAIL`, `ROAD` and `INLAND`. 
+
+```{r, eval = FALSE}
+data_pt <- XXXX %>% XXXX(LOCATION, TIME, RAIL, ROAD, INLAND)
+```
+```{r, echo = solution_echo}
+data_pt <- data_pt %>% select(LOCATION, TIME, RAIL, ROAD, INLAND)
+```
+
+Now add the country name as above for `data_acc`.
+
+```{r, eval = FALSE}
+data_pt$XXXX <- XXXX(data_pt$XXXX, origin = "iso3c", 
+                        destination = "XXXX")
+```
+```{r, echo = solution_echo}
+data_pt$country <- countrycode(data_pt$LOCATION, origin = "iso3c", 
+                               destination = "country.name")
+```
+
+# Merging dataset
+
+We will want to merge the two datasets `data_acc` and `data_pt` together. Before merging it is useful to review the variable names of both files and the number of observations in each.
+
+```{r}
+nrow(data_acc)
+names(data_acc)
+nrow(data_pt)
+names(data_pt)
+```
+The files have three variables in common, `LOCATION`, `TIME` and `country`. This is the information on the basis of whch we want to match the data. So for instance we will want one row of data for Germany in 2017 and that row of data should contain `Deats_p1M` from the `data_acc` dataset and `RAIL`, `ROAD` and `INLAND` from the `data_pt` dataset.
+
+We use the merge function to achieve this. As you can see from the above information, the two datasets contain different numbers of rows. This is because not all the sources have complete information. To demonstrate that, let's look at Ukraine (UKR) and find the information for Ukraine from both datasets.
+
+```{r}
+data_acc %>% filter(LOCATION == "UKR")
+data_pt %>% filter(LOCATION == "UKR")
+```
+You should see that the information for Ukraine starts in 1990 in the `data_pt` datafile but only in 1994 in the `data_acc` datafile. You can also see that the Ukraine only has information on rail travel, but not road travel.
+
+You could decide, as we are merging data, to only keep information which is available from both datafiles, or to keep all information (Year-country combinations) which are available in at least one of the datasets. Here we decide that we want to do the former, i.e. keep all information for now, even if it cannot be matched from the other file. So in the above case that means that we do want information from 1990 to 1993 from Ukraine. In effect that means that our new dataset, `data_merge` should have at least `r nrow(data_pt)` rows.
+
+Which of the following commands does that? (Note that, as the information on the basis of which we match, country and year, is saved in identically named columns in both datafiles, we do not have to use the `by.x` and `by.y` options in the merge function).
+
+```{r, eval = FALSE}
+data_merge <- merge(data_pt,data_acc, all.x = TRUE, all.y = TRUE)
+data_merge <- merge(data_pt,data_acc, all.x = TRUE, all.y = FALSE)
+data_merge <- merge(data_pt,data_acc, all.x = FALSE, all.y = FALSE)
+data_merge <- merge(data_pt,data_acc, all.x = FALSE, all.y = TRUE)
+```
+```{r, echo = solution_echo}
+data_merge <- merge(data_pt,data_acc, all.x = TRUE, all.y = TRUE)
+```
+
+# Calculate country averages
+
+We now have multiple years of data for the countries in our dataset. The next step is to calculate the averages for our four substantial variables (`Deaths_p1M`, `RAIL`, `ROAD` and `INLAND`). This is very similar to something we did in Computer Lab 2.
+
+```{r, eval = FALSE}
+data_avg <- XXXX %>% XXXX(country,LOCATION) %>% 
+  XXXX(avg_rail = mean(XXXX,na.rm = XXXX),
+            avg_road = XXXX,
+            avg_inland = XXXX,
+            avg_deaths_p1M = XXXX)
+```
+```{r, echo = solution_echo, message=FALSE}
+data_avg <- data_merge %>% group_by(country,LOCATION) %>% 
+  summarise(avg_rail = mean(RAIL,na.rm = TRUE),
+            avg_road = mean(ROAD,na.rm = TRUE),
+            avg_inland = mean(INLAND,na.rm = TRUE),
+            avg_deaths_p1M = mean(Deaths_p1M,na.rm = TRUE))
+```
+
+You got it right, if your result, `data_avg` has 59 eows and you can replicate the following information:
+
+```{r}
+head(data_avg,10)
+```
+
+As you can see, not all countries will have information on all variables.
+
+As mentioned above, the information coming from the passenger transport file are not standardised by population size (`avg_rail`, `avg_road` and `avg_inland`), while `avg_deaths_p1M` already is. We now want to standardise the three variables coming from the passenger transport file by population size. For that we need to import a file 
+
+
+
+
+As we defined the `male` variable as a factor it has levels `male` and `female` (check `levels(data_USoc$male)` to confirm). It would be better to relabel the variable to `gender`.
+
+```{r}
+names(data_USoc)[names(data_USoc) == "male"] <- "gender"
+```
+
+The pay information (`paygu`) is provided as a measure of the (usual) gross pay
+per month.  As workers work for varying numbers of hours per week (`jbhrs`) we
+divide the monthly pay by the approximate monthly hours (`4*jbhrs`).  We shall
+also adjust for increasing price levels (as measured by `cpi`).  These two
+adjustments leave us with an inflation adjusted hourly wage.  We call this
+variable `hrpay` and also calculate the natural log of this variable
+(`lnhrpay`).
+
+```{r, eval = FALSE}
+data_USoc <- data_USoc %>%
+              XXXX(hrpay = XXXX) %>%
+              XXXX(lnhrpay = XXXX)
+```
+```{r, echo = solution_echo}
+data_USoc <- data_USoc %>%
+              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>%
+              mutate(lnhrpay = log(hrpay))
+```
+
+As we wanted to save these additional variables we assign the result of the operation to `data_USoc`.
+
+We also want to use a measure of annual pay (`paygu*12/(cpi/100))`) and add this variable (`annualpay`) to the dataframe (`data_USoc`).
+
+```{r, eval = FALSE}
+data_USoc <- XXXX %>%
+              XXXX
+```
+```{r, echo = solution_echo}
+data_USoc <- data_USoc %>%
+              mutate(annualpay = paygu*12/(cpi/100))
+```
+
+Let's first
+summarise all numerical variables in our dataset, using the `stargazer`
+function.
+
+```{r, eval = FALSE}
+XXXX
+```
+```{r, echo = solution_echo, results=student_view}
+stargazer(data_USoc,type="latex")
+```
+
+You should find, for instance, that the mean value of the unemployment rate
+(`urate`) is 7.955 and the standard deviation for the `age` variable is 18.295.
+
+For later purposes we will also need variables $age^2/100$ and $log(age)$.  We
+now need to create these variables (`agesq` and `lnage`) and add them to the
+`data_USoc` dataframe.
+
+```{r, eval = FALSE}
+XXXX
+mean(data_USoc$lnage)
+```
+```{r, echo = solution_echo, results=student_view}
+data_USoc <- data_USoc %>%
+                mutate(agesq = age*age/100) %>%
+                mutate(lnage = log(age))
+mean(data_USoc$lnage)
+```
+
+You should find the mean of `lnage` to be 3.744307.
+
+Another variable needed later is a variable which indicates whether a respondent has a degree. We call this variable `grad`. It should be a factor variable with two levels, `degree` and `no degree`.
+
+```{r}
+data_USoc <- data_USoc %>% 
+              mutate(grad = ifelse(degree %in% c("first degree","higher degree"),"degree",
+                                   ifelse(degree == "no degree","no degree",NA)))
+data_USoc$grad <- as_factor(data_USoc$grad)
+```
+
+Google to understand what the `ifelse()` function does.
+
+# Data cleaning
+
+We now remove (or "drop") unusable (or "missing") observations from our
+`data_USoc` dataframe.  They are those observations which have missing (`NA`)
+data for `lnhrpay` (because the individual is not working) and we will remove
+observations for males who are 66 years or older and females who are 61 years or
+older.
+
+```{r, eval = FALSE}
+data_USoc <- data_USoc %>%
+                XXXX
+```
+```{r, echo = solution_echo}
+data_USoc <- data_USoc %>%
+                filter(!is.na(lnhrpay)) %>%
+                filter((gender == "male" & age < 66) | (gender == "female" & age < 61) )
+```
+
+You should end up with 56778 observations.
+
+# Estimate regression models - Version 1
+
+We shall estimate the following regression models (`mod1`)
+
+\[lnhrpay = \beta_0 + \beta_1 ~ age + \beta_2 ~ agesq + u\]
+
+and (`mod2`)
+
+\[lnhrpay = \alpha_0 + \alpha_1 ~ lnage + u\]
+
+```{r, eval = FALSE}
+mod1 <- lm(XXXX ~ XXXX+XXXX, data = data_USoc)
+mod2 <- lm(XXXX)
+stargazer_HC(mod1,mod2)
+```
+```{r, echo = solution_echo, results = student_view}
+mod1 <- lm(lnhrpay ~ age+agesq, data = data_USoc)
+mod2 <- lm(lnhrpay ~ lnage, data = data_USoc)
+stargazer_HC(mod1,mod2,type_out="latex")
+```
+
+If you have done this correctly, you will find that that your estimated constant
+for `mod1` is 0.485.
+
+We suggest that there are two ways of modelling the relationship between `age`
+and `lnhrpay` in a so-called parametric way, either as a quadratic relationship
+or as a logarithmic one.
+
+As we have lots of data, there is a third more flexible approach.  We do this be
+generating a dummy variable for every integer age (ages are reported in full
+years only).  To do this we will first have to create an age variable which
+treats age as a categorical, or in R terms, a factor variable.  We shall call
+this `age_f`.
+
+```{r}
+data_USoc <- data_USoc %>% mutate(age_f = as.factor(age))
+```
+
+With `age_f` being a factor variable, it is now straightforward to include this
+factor variable into a regresison.  We can either include a constant (`lnhrpay ~
+age_f`) which will then use age = 16 as a base category, or we can estimate the
+model without a constant (`lnhrpay ~ age_f - 1`) in which case all age
+categories enter separately.
+
+```{r, eval = FALSE}
+mod3 <- lm(lnhrpay ~ age_f, data = data_USoc)
+mod4 <- lm(lnhrpay ~ age_f -1, data = data_USoc)
+stargazer_HC(mod3,mod4)
+```
+```{r, echo = solution_echo, results = student_view}
+mod3 <- lm(lnhrpay ~ age_f, data = data_USoc)
+mod4 <- lm(lnhrpay ~ age_f -1, data = data_USoc)
+stargazer_HC(mod3,mod4,type_out="text")
+```
+
+We now compare the fitted values for `mod1`, `mod2` and `mod4`.  First we add
+the predicted values to the dataframe.  There are several ways to achieve this
+and I recommend you ask Dr.  Google.  (Think carefully about the search terms.)
+
+```{r, eval = FALSE}
+data_USoc$pred_mod1 <- XXXX
+data_USoc$pred_mod2 <- XXXX
+data_USoc$pred_mod4 <- XXXX
+```
+```{r,echo = solution_echo, results=student_view}
+data_USoc$pred_mod1 <- mod1$fitted.values
+data_USoc$pred_mod2 <- mod2$fitted.values
+data_USoc$pred_mod4 <- mod4$fitted.values
+```
+
+Now we plot the predicted values for the three specifications.  You should also
+change the Axis labels to "Predicted values" for the vertical axis, "Age (in
+Years)" for the horizontal axis and add a title ("Predicted Regression Model")
+to your picture.  If you google you should find the appropriate commands.
+(Again, think carefully about the search terms.)
+
+```{r, eval = FALSE}
+ggplot(data_USoc, aes(x=age,y=pred_mod4)) +
+  geom_point(color = "red") +
+  geom_line(aes(y=pred_mod1),color = "blue") +
+  geom_line(aes(y=pred_mod2),color = "darkorange") +
+  XXXX +   # add code to give your plot a title
+  XXXX     # add code to change the axis labels
+
+```
+```{r,echo = solution_echo, results=student_view, fig.show = student_view}
+ggplot(data_USoc, aes(x=age,y=pred_mod4)) +
+  geom_point(color = "red") +
+  geom_line(aes(y=pred_mod1),color = "blue") +
+  geom_line(aes(y=pred_mod2),color = "darkorange") +
+  ggtitle("Predicted Regression Model") +
+  ylab("Predicted values") +
+  xlab("Age (in Years)")
+
+```
+
+The fit of `mod4` is the most flexible specification as it uses a coefficient
+for each year.  Specifications `mod1` and `mod2` models model the relationship
+between `age` and `lnhrpay` with one and two parameters respectively.
+
+# Estimate regression models 2
+
+Now we will estimate a quadratic model for `annualpay` (`annualpay ~ age + agesq`) on a subsets of data in order to compare these. When you know that you will be working with different subsets of data, the best way of doing that in R is to create a new factor variale (here `subset_ind`) which allows you to separate the data accordingly.
+
+We will create two subgroups: 1) Males with a degree and 2) Males with no degree. You may want to check the values of the `grad` variable in order to define these correctly.
+
+```{r, eval = FALSE}
+data_USoc$subset_ind <- "none"   # default group
+data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "degree"] <- "Male with degree"
+data_USoc$subset_ind[XXXX] <- "Male without degree"  # select all males with no degree
+data_USoc$subset_ind <- as.factor(data_USoc$subset_ind)
+data_USoc %>% count(subset_ind)
+```
+```{r,echo = solution_echo, results=student_view}
+data_USoc$subset_ind <- "none"   # default group
+data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "degree"] <- "Male with degree"
+data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "no degree"] <- "Male without degree"
+data_USoc$subset_ind <- as.factor(data_USoc$subset_ind)
+data_USoc %>% count(subset_ind)
+```
+
+We will want to save the model predictions and for this purpose we pre-define a variable in which we will save the predictions.
+
+```{r}
+data_USoc$pred_mod5 <- 0    # set the prediction to 0 by default
+```
+
+Now we estimate the model for the male with degree subgroup. Note that the `lm` function accepts a `subset` argument which allows you to select a subset of observations, such as the group of all males with first degree.
+
+```{r, eval = FALSE}
+mod5_md <- lm(XXXX ~ XXXX + XXXX, data = XXXX, subset = (subset_ind == XXXX))
+stargazer_HC(XXXX)
+data_USoc$pred_mod5[data_USoc$subset_ind==XXXX] <- mod5_md$fitted.values
+```
+```{r, echo = solution_echo, results=student_view}
+mod5_md <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male with degree"))
+stargazer_HC(mod5_md,type_out="text")
+data_USoc$pred_mod5[data_USoc$subset_ind=="Male with degree"] <- mod5_md$fitted.values
+```
+
+Now we repeat the same just for the group of males with no degree
+
+```{r, eval=FALSE}
+mod5_mnd <- XXXX
+stargazer_HC(XXXX)
+data_USoc$pred_mod5[XXXX] <- mod5_mnd$fitted.values
+```
+```{r, echo = solution_echo, results=student_view}
+mod5_mnd <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male without degree"))
+stargazer_HC(mod5_mnd,type_out="latex")
+data_USoc$pred_mod5[data_USoc$subset_ind=="Male without degree"] <- mod5_mnd$fitted.values
+```
+
+
+Now we plot the predicted values for the two specifications.
+
+```{r, fig.show = student_view}
+ggplot(data_USoc, aes(x=age,y=pred_mod5,color = subset_ind)) +
+  geom_line() +
+  ggtitle("Predicted Regression Model - Model 5") +
+  ylab("Predicted values") +
+  xlab("Age")
+```
+You will see that we have the "none" category plotted as well (of course we didn't estimate this). You could remove these data before plotting
+
+```{r, fig.show = student_view}
+# remove observations with subset_ind == "none"
+data_temp <- data_USoc %>% filter(subset_ind != "none")  
+ggplot(data_temp, aes(x=age,y=pred_mod5,color = subset_ind)) +
+  geom_line() +
+  ggtitle("Predicted Regression Model - Model 5") +
+  ylab("Predicted values") +
+  xlab("Age")
+```
+
+END OF INSTRUCTIONS
