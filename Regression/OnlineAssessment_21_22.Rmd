@@ -5,8 +5,8 @@ output: pdf_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
-student_view <- 'hide'   # set to 'hide' to not reveal output, 'asis' to show
-solution_echo <- FALSE   # set to FALSE to not show full code, TRUE to show full code
+student_view <- 'asis'   # set to 'hide' to not reveal output, 'asis' to show
+solution_echo <- TRUE   # set to FALSE to not show full code, TRUE to show full code
 ```
 
 # Instructions
@@ -36,6 +36,16 @@ you search for a particular piece of information.
 
 # Preparing your workfile
 
+Set the working directory
+
+```{r, eval = FALSE}
+setwd("YOUR/WORKING/DIRECTORY")
+```
+```{r, echo = solution_echo}
+setwd("C:/Rcode/RforQM/Regression")
+```
+
+
 We add the basic libraries needed for this week's work:
 
 ```{r}
@@ -53,9 +63,9 @@ source("stargazer_HC.r")  # includes the robust regression display
 
 The data are an extract from the [OECD](https://data.oecd.org/).
 
-# Data Upload - and understanding data structure
+# Task 1: Data Upload - and understanding data structure
 
-Upload the data, which are saved in the two csv files `OECD_RoadAccidents.csv` (from [here](https://data.oecd.org/transport/road-accidents.htm#indicator-chart)) and `OECD_Passenger_Transport.csv` (from [here](https://data.oecd.org/transport/passenger-transport.htm#indicator-chart)).
+Upload the data, which are saved in the two csv files `OECD_RoadAccidents.csv` (linked from [here](https://data.oecd.org/transport/road-accidents.htm#indicator-chart)) and `OECD_Passenger_Transport.csv` (linked from [here](https://data.oecd.org/transport/passenger-transport.htm#indicator-chart)).
 
 ```{r, eval = FALSE}
 data_acc <- XXXX("OECD_RoadAccidents.csv")
@@ -73,7 +83,7 @@ names(data_pt)
 
 Look at the spreadsheets and understand the data structure.
 
-## Accident data
+## Task 2: Cleaning Accident data
 
 Run the following lines and use the information to understand the data structure.
 
@@ -86,7 +96,7 @@ In order to understand what these different measures and subjects represent you 
 
 Now find all the data which relate to Germany (country code: DEU) and Poland (country code: POL) in 2017.
 
-```{r, echo = solution_echo, results='hide'}
+```{r, echo = solution_echo}
 data_acc %>% filter(LOCATION %in% c("DEU","POL"), TIME == "2017")
 ```
 
@@ -100,7 +110,7 @@ data_acc <- data_acc %>%  filter(SUBJECT == "DEATH") %>%
                           filter(MEASURE == "1000000HAB")
 ```
 
-The only data left in the `Values` column is the deaths per 1000000 inhabitants variable. We therefore can now change the name of that variable to `Deaths_p1M`.
+The only data left in the `Value` column is the deaths per 1,000,000 inhabitants variable. We therefore can now change the name of that variable to `Deaths_p1M`.
 
 ```{r, eval = FALSE}
 names(XXXX)[names(data_acc)=="XXXX"] <- "Deaths_p1M"
@@ -130,7 +140,7 @@ data_acc$country <- countrycode(data_acc$LOCATION, origin = "iso3c",
                                 destination = "country.name")
 ```
 
-## Personal Transport data
+## Task 3: Cleaning Personal Transport data
 
 Run the following lines and use the information to understand the data structure.
 
@@ -140,11 +150,11 @@ unique(data_pt$MEASURE)
 unique(data_pt$SUBJECT)
 ```
 
-What does `MLN_PKM` stand for? What do the different values in `SUBJECT` represent. You may need to refer to the website (see link above) to check. Note that the miles travelled are given as total distance. The information is not standardised by population size. We will do this later.
+What does `MLN_PKM` stand for? What do the different values in `SUBJECT` represent? You may need to refer to the website (see link above) to check. Note that the miles traveled are given as total distance. The information is not standardised by population size. We will do this later.
 
 You may want to check your understanding by looking at the data for Germany and Poland in 2017.
 
-```{r, echo = solution_echo, results='hide'}
+```{r, echo = solution_echo}
 data_pt %>% filter(LOCATION %in% c("DEU","POL"), TIME == "2017")
 # You should see that, in a particular year in a particular country,
 # RAIL + ROAD = INLAND
@@ -187,7 +197,7 @@ data_pt$country <- countrycode(data_pt$LOCATION, origin = "iso3c",
                                destination = "country.name")
 ```
 
-# Merging dataset
+# Task 4: Merging dataset
 
 We will want to merge the two datasets `data_acc` and `data_pt` together. Before merging it is useful to review the variable names of both files and the number of observations in each.
 
@@ -197,7 +207,7 @@ names(data_acc)
 nrow(data_pt)
 names(data_pt)
 ```
-The files have three variables in common, `LOCATION`, `TIME` and `country`. This is the information on the basis of whch we want to match the data. So for instance we will want one row of data for Germany in 2017 and that row of data should contain `Deats_p1M` from the `data_acc` dataset and `RAIL`, `ROAD` and `INLAND` from the `data_pt` dataset.
+The files have three variables in common, `LOCATION`, `TIME` and `country`. This is the information on the basis of which we want to match the data. So for instance we will want one row of data for Germany in 2017 and that row of data should contain `Deats_p1M` from the `data_acc` dataset and `RAIL`, `ROAD` and `INLAND` from the `data_pt` dataset.
 
 We use the merge function to achieve this. As you can see from the above information, the two datasets contain different numbers of rows. This is because not all the sources have complete information. To demonstrate that, let's look at Ukraine (UKR) and find the information for Ukraine from both datasets.
 
@@ -207,7 +217,7 @@ data_pt %>% filter(LOCATION == "UKR")
 ```
 You should see that the information for Ukraine starts in 1990 in the `data_pt` datafile but only in 1994 in the `data_acc` datafile. You can also see that the Ukraine only has information on rail travel, but not road travel.
 
-You could decide, as we are merging data, to only keep information which is available from both datafiles, or to keep all information (Year-country combinations) which are available in at least one of the datasets. Here we decide that we want to do the former, i.e. keep all information for now, even if it cannot be matched from the other file. So in the above case that means that we do want information from 1990 to 1993 from Ukraine. In effect that means that our new dataset, `data_merge` should have at least `r nrow(data_pt)` rows.
+You could decide, as we are merging data, to only keep information which is available from both datafiles, or to keep all information (Year-country combinations) which are available in at least one of the datasets. Here we decide that we want to do the latter, i.e. keep all information for now, even if it cannot be matched from the other file. So in the above case that means that we do want the information from 1990 to 1993 from Ukraine included. In effect that means that our new dataset, `data_merge` should have at least `r nrow(data_pt)` rows.
 
 Which of the following commands does that? (Note that, as the information on the basis of which we match, country and year, is saved in identically named columns in both datafiles, we do not have to use the `by.x` and `by.y` options in the merge function).
 
@@ -221,9 +231,9 @@ data_merge <- merge(data_pt,data_acc, all.x = FALSE, all.y = TRUE)
 data_merge <- merge(data_pt,data_acc, all.x = TRUE, all.y = TRUE)
 ```
 
-# Calculate country averages
+# Task 5: Calculate country averages
 
-We now have multiple years of data for the countries in our dataset. The next step is to calculate the averages for our four substantial variables (`Deaths_p1M`, `RAIL`, `ROAD` and `INLAND`). This is very similar to something we did in Computer Lab 2.
+We now have multiple years of data for the countries in our dataset, `data_avg`. The next step is to calculate the averages for our four substantial variables (`Deaths_p1M`, `RAIL`, `ROAD` and `INLAND`). 
 
 ```{r, eval = FALSE}
 data_avg <- XXXX %>% XXXX(country,LOCATION) %>% 
@@ -248,284 +258,166 @@ head(data_avg,10)
 
 As you can see, not all countries will have information on all variables.
 
-As mentioned above, the information coming from the passenger transport file are not standardised by population size (`avg_rail`, `avg_road` and `avg_inland`), while `avg_deaths_p1M` already is. We now want to standardise the three variables coming from the passenger transport file by population size. For that we need to import a file 
+As mentioned above, the information coming from the passenger transport file are not standardised by population size (`avg_rail`, `avg_road` and `avg_inland`), while `avg_deaths_p1M` already is. We now want to standardise the three variables coming from the passenger transport file by population size. For that we need to import a file with population information. That information (for more than 200 countries) is in `CountryInfo.csv`. Import that file and merge all the available country info into `data_avg` only keeping the 59 rows which we have in `data_avg`.
 
+Note that you should match by the three letter country code which in `CountryInfo.csv` is labelled as `countryCode`. You will therefore, now have to use the `by.x` and `by.y` options in the `merge` function.
 
+```{r, eval = FALSE}
+data_countries = read_csv("XXXX", na = "XXXX" )
+data_avg <- merge(data_avg, XXXX, 
+                  by.x = "XXXX", by.y = "XXXX",
+                  all.x = XXXX, all.y = XXXX)
+```
+```{r, echo = solution_echo, message=FALSE}
+data_countries = read_csv("CountryInfo.csv", na = "NA" )
+data_avg <- merge(data_avg, data_countries, 
+                  by.x = "LOCATION", by.y = "countryCode",
+                  all.x = TRUE, all.y = FALSE)
+```
 
-
-As we defined the `male` variable as a factor it has levels `male` and `female` (check `levels(data_USoc$male)` to confirm). It would be better to relabel the variable to `gender`.
+Now check the names of the variables in your datafile.
 
 ```{r}
-names(data_USoc)[names(data_USoc) == "male"] <- "gender"
+names(data_avg)
 ```
+You should have 14 variables. Also confirm that you do have 59 rows of data. All the new country data are from the year 2019.
 
-The pay information (`paygu`) is provided as a measure of the (usual) gross pay
-per month.  As workers work for varying numbers of hours per week (`jbhrs`) we
-divide the monthly pay by the approximate monthly hours (`4*jbhrs`).  We shall
-also adjust for increasing price levels (as measured by `cpi`).  These two
-adjustments leave us with an inflation adjusted hourly wage.  We call this
-variable `hrpay` and also calculate the natural log of this variable
-(`lnhrpay`).
+# Task 6: Standardisation
+
+We now need to calculate the standardised personal transport variables.
 
 ```{r, eval = FALSE}
-data_USoc <- data_USoc %>%
-              XXXX(hrpay = XXXX) %>%
-              XXXX(lnhrpay = XXXX)
+data_avg <- data_avg %>% XXXX(
+                            avg_rail_pp = avg_rail/popData2019 * 1000000,
+                            avg_road_pp = XXXX,
+                            avg_inland_pp = XXXX)
+)
 ```
-```{r, echo = solution_echo}
-data_USoc <- data_USoc %>%
-              mutate(hrpay = paygu/(jbhrs*4)/(cpi/100)) %>%
-              mutate(lnhrpay = log(hrpay))
-```
+```{r, echo = solution_echo, message=FALSE}
 
-As we wanted to save these additional variables we assign the result of the operation to `data_USoc`.
+data_avg <- data_avg %>% mutate(
+                            avg_rail_pp = avg_rail/popData2019 * 1000000,
+                            avg_road_pp = avg_road/popData2019 * 1000000,
+                            avg_inland_pp = avg_inland/popData2019 * 1000000)
 
-We also want to use a measure of annual pay (`paygu*12/(cpi/100))`) and add this variable (`annualpay`) to the dataframe (`data_USoc`).
-
-```{r, eval = FALSE}
-data_USoc <- XXXX %>%
-              XXXX
-```
-```{r, echo = solution_echo}
-data_USoc <- data_USoc %>%
-              mutate(annualpay = paygu*12/(cpi/100))
 ```
 
-Let's first
-summarise all numerical variables in our dataset, using the `stargazer`
-function.
-
-```{r, eval = FALSE}
-XXXX
-```
-```{r, echo = solution_echo, results=student_view}
-stargazer(data_USoc,type="latex")
-```
-
-You should find, for instance, that the mean value of the unemployment rate
-(`urate`) is 7.955 and the standard deviation for the `age` variable is 18.295.
-
-For later purposes we will also need variables $age^2/100$ and $log(age)$.  We
-now need to create these variables (`agesq` and `lnage`) and add them to the
-`data_USoc` dataframe.
-
-```{r, eval = FALSE}
-XXXX
-mean(data_USoc$lnage)
-```
-```{r, echo = solution_echo, results=student_view}
-data_USoc <- data_USoc %>%
-                mutate(agesq = age*age/100) %>%
-                mutate(lnage = log(age))
-mean(data_USoc$lnage)
-```
-
-You should find the mean of `lnage` to be 3.744307.
-
-Another variable needed later is a variable which indicates whether a respondent has a degree. We call this variable `grad`. It should be a factor variable with two levels, `degree` and `no degree`.
+You get it right if you can replicate the following.
 
 ```{r}
-data_USoc <- data_USoc %>% 
-              mutate(grad = ifelse(degree %in% c("first degree","higher degree"),"degree",
-                                   ifelse(degree == "no degree","no degree",NA)))
-data_USoc$grad <- as_factor(data_USoc$grad)
+data_avg %>%  filter(LOCATION %in% c("DEU","POL")) %>% 
+                select(LOCATION, avg_rail_pp, avg_road_pp, avg_inland_pp)
 ```
 
-Google to understand what the `ifelse()` function does.
+So the average number of miles traveled by rail per person in Germany is 752 miles per year. The average number of miles traveled on road per person in Poland is 4886. Convince yourself that the above calculation (`avg_rail_pp = avg_rail/popData2019 * 1000000`) did deliver miles per person. recall that the travel distance coming from the passenger transport datafile was measured in Millions of miles. The population is the actual population. If we didn't multiply by 1,000,000 we would get a measure of average millions of miles traveled per person. 
 
-# Data cleaning
+Lastly, we will rescale the `GDPpc` variable. It is currently defined in USD, but to simplify later analysis we want to express it in 1000 USD. So for instance Albania's GDPpc is USD 5224, but we want to express it as 5.224 [1000 USD].
 
-We now remove (or "drop") unusable (or "missing") observations from our
-`data_USoc` dataframe.  They are those observations which have missing (`NA`)
-data for `lnhrpay` (because the individual is not working) and we will remove
-observations for males who are 66 years or older and females who are 61 years or
-older.
-
-```{r, eval = FALSE}
-data_USoc <- data_USoc %>%
-                XXXX
-```
-```{r, echo = solution_echo}
-data_USoc <- data_USoc %>%
-                filter(!is.na(lnhrpay)) %>%
-                filter((gender == "male" & age < 66) | (gender == "female" & age < 61) )
+```{r}
+data_avg <- data_avg %>% mutate(GDPpc = GDPpc/1000)
 ```
 
-You should end up with 56778 observations.
+Look at the dataset to confirm that your operation was successful.
 
-# Estimate regression models - Version 1
+# Task 7: Creating League Tables
 
-We shall estimate the following regression models (`mod1`)
+Create a league table of the countries in your dataset where people travel most and least by rail and road. You want to display the 10 countries with the most and the 10 countries with the least average travel per person in both categories.
 
-\[lnhrpay = \beta_0 + \beta_1 ~ age + \beta_2 ~ agesq + u\]
+Here is the code for the table for the top 10 rail travel nations.
+
+```{r}
+task_7a <- data_avg %>% 
+select(country, avg_rail_pp) %>% arrange(desc(avg_rail_pp)) 
+head(task_7a,10)
+```
+Repeat this for the Top 10 road travel nations and equally find similar tables for the nations travelling least (but non-zero amounts) by rail and road.
+
+
+```{r, echo = solution_echo, message=FALSE, results='hide'}
+
+task_7b <- data_avg %>% 
+select(country, avg_road_pp) %>% arrange(desc(avg_road_pp)) %>% print()
+task_7c <- data_avg %>% 
+select(country, avg_rail_pp) %>% arrange(avg_rail_pp) %>% print()
+task_7d <- data_avg %>% 
+select(country, avg_road_pp) %>% arrange(avg_road_pp) %>% print()
+```
+
+
+
+# Task 8: Estimate regression models - Version 1
+
+We shall estimate the following three regression models (`mod1`)
+
+\[avg\_deaths\_p1M = \gamma_0 + \gamma_1 ~ GDPpc + w\]
 
 and (`mod2`)
 
-\[lnhrpay = \alpha_0 + \alpha_1 ~ lnage + u\]
+\[avg\_deaths\_p1M = \alpha_0 + \alpha_1 ~ avg\_rail\_pp + v\]
+
+and (`mod3`)
+
+\[avg\_deaths\_p1M = \beta_0 + \beta_1 ~ avg\_road\_pp + \beta_2 ~ GDPpc + u\]
 
 ```{r, eval = FALSE}
-mod1 <- lm(XXXX ~ XXXX+XXXX, data = data_USoc)
+mod1 <- lm(XXXX ~ XXXX, data = data_avg)
 mod2 <- lm(XXXX)
-stargazer_HC(mod1,mod2)
+mod3 <- lm(XXXX)
+stargazer_HC(mod1,mod2,mod3,omit.stat = "f")
 ```
 ```{r, echo = solution_echo, results = student_view}
-mod1 <- lm(lnhrpay ~ age+agesq, data = data_USoc)
-mod2 <- lm(lnhrpay ~ lnage, data = data_USoc)
-stargazer_HC(mod1,mod2,type_out="latex")
+mod1 <- lm(avg_deaths_p1M ~ GDPpc, data = data_avg)
+mod2 <- lm(avg_deaths_p1M ~ avg_rail_pp, data = data_avg)
+mod3 <- lm(avg_deaths_p1M ~ avg_road_pp+GDPpc, data = data_avg)
+stargazer_HC(mod1,mod2,mod3,type_out="latex",omit.stat = "f")
 ```
 
 If you have done this correctly, you will find that that your estimated constant
-for `mod1` is 0.485.
+for `mod1` is 122.82, the estimated constant for `mod2` is 103.763 and that `mod3` is estimated with 42 observations.
 
-We suggest that there are two ways of modelling the relationship between `age`
-and `lnhrpay` in a so-called parametric way, either as a quadratic relationship
-or as a logarithmic one.
 
-As we have lots of data, there is a third more flexible approach.  We do this be
-generating a dummy variable for every integer age (ages are reported in full
-years only).  To do this we will first have to create an age variable which
-treats age as a categorical, or in R terms, a factor variable.  We shall call
-this `age_f`.
+# Task 9: Plot the data
 
-```{r}
-data_USoc <- data_USoc %>% mutate(age_f = as.factor(age))
-```
+Now we want to plot the `GDPpc` versus the `avg_deaths_p1M` data in a scatter plot. Replicate the graph below.
 
-With `age_f` being a factor variable, it is now straightforward to include this
-factor variable into a regresison.  We can either include a constant (`lnhrpay ~
-age_f`) which will then use age = 16 as a base category, or we can estimate the
-model without a constant (`lnhrpay ~ age_f - 1`) in which case all age
-categories enter separately.
+You should change the Axis labels and add a title as shown below. If you google you should find the appropriate commands to do so. (Think carefully about the search terms.) Also, what does the `geom_smooth(method='lm')` line achieve? Figure that out by running the code without that line.
 
 ```{r, eval = FALSE}
-mod3 <- lm(lnhrpay ~ age_f, data = data_USoc)
-mod4 <- lm(lnhrpay ~ age_f -1, data = data_USoc)
-stargazer_HC(mod3,mod4)
-```
-```{r, echo = solution_echo, results = student_view}
-mod3 <- lm(lnhrpay ~ age_f, data = data_USoc)
-mod4 <- lm(lnhrpay ~ age_f -1, data = data_USoc)
-stargazer_HC(mod3,mod4,type_out="text")
-```
-
-We now compare the fitted values for `mod1`, `mod2` and `mod4`.  First we add
-the predicted values to the dataframe.  There are several ways to achieve this
-and I recommend you ask Dr.  Google.  (Think carefully about the search terms.)
-
-```{r, eval = FALSE}
-data_USoc$pred_mod1 <- XXXX
-data_USoc$pred_mod2 <- XXXX
-data_USoc$pred_mod4 <- XXXX
-```
-```{r,echo = solution_echo, results=student_view}
-data_USoc$pred_mod1 <- mod1$fitted.values
-data_USoc$pred_mod2 <- mod2$fitted.values
-data_USoc$pred_mod4 <- mod4$fitted.values
-```
-
-Now we plot the predicted values for the three specifications.  You should also
-change the Axis labels to "Predicted values" for the vertical axis, "Age (in
-Years)" for the horizontal axis and add a title ("Predicted Regression Model")
-to your picture.  If you google you should find the appropriate commands.
-(Again, think carefully about the search terms.)
-
-```{r, eval = FALSE}
-ggplot(data_USoc, aes(x=age,y=pred_mod4)) +
-  geom_point(color = "red") +
-  geom_line(aes(y=pred_mod1),color = "blue") +
-  geom_line(aes(y=pred_mod2),color = "darkorange") +
-  XXXX +   # add code to give your plot a title
-  XXXX     # add code to change the axis labels
+ggplot(data_avg, aes(x=XXXX,y=XXXX)) +
+  geom_point(color = "blue") +
+  geom_smooth(method='lm') +
+  XXXX +
+  XXXX +
+  XXXX
 
 ```
-```{r,echo = solution_echo, results=student_view, fig.show = student_view}
-ggplot(data_USoc, aes(x=age,y=pred_mod4)) +
-  geom_point(color = "red") +
-  geom_line(aes(y=pred_mod1),color = "blue") +
-  geom_line(aes(y=pred_mod2),color = "darkorange") +
-  ggtitle("Predicted Regression Model") +
-  ylab("Predicted values") +
-  xlab("Age (in Years)")
+```{r,echo = solution_echo}
+ggplot(data_avg, aes(x=GDPpc,y=avg_deaths_p1M)) +
+  geom_point(color = "blue") +
+  geom_smooth(method='lm') +
+  ggtitle("Accidents v GDPpc") +
+  ylab("Accidents per Million population") +
+  xlab("GDP per capita")
 
 ```
 
-The fit of `mod4` is the most flexible specification as it uses a coefficient
-for each year.  Specifications `mod1` and `mod2` models model the relationship
-between `age` and `lnhrpay` with one and two parameters respectively.
+Finally another searching challenge for you. The picture below has added data labels to the above plot. Find a way to achieve this. It is not important that the graph looks exactly like the one below, but you do want to find out how to add data labels. Dr. Google is your friend!
 
-# Estimate regression models 2
+```{r, echo = FALSE}
+library(ggrepel)
 
-Now we will estimate a quadratic model for `annualpay` (`annualpay ~ age + agesq`) on a subsets of data in order to compare these. When you know that you will be working with different subsets of data, the best way of doing that in R is to create a new factor variale (here `subset_ind`) which allows you to separate the data accordingly.
-
-We will create two subgroups: 1) Males with a degree and 2) Males with no degree. You may want to check the values of the `grad` variable in order to define these correctly.
-
-```{r, eval = FALSE}
-data_USoc$subset_ind <- "none"   # default group
-data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "degree"] <- "Male with degree"
-data_USoc$subset_ind[XXXX] <- "Male without degree"  # select all males with no degree
-data_USoc$subset_ind <- as.factor(data_USoc$subset_ind)
-data_USoc %>% count(subset_ind)
-```
-```{r,echo = solution_echo, results=student_view}
-data_USoc$subset_ind <- "none"   # default group
-data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "degree"] <- "Male with degree"
-data_USoc$subset_ind[data_USoc$gender == "male" & data_USoc$grad == "no degree"] <- "Male without degree"
-data_USoc$subset_ind <- as.factor(data_USoc$subset_ind)
-data_USoc %>% count(subset_ind)
+ggplot(data_avg, aes(x=GDPpc,y=avg_deaths_p1M)) +
+  geom_point(color = "blue") +
+  ggtitle("Accidents v GDPpc") +
+  ylab("Accidents per Million population") +
+  xlab("GDP per capita") +
+  geom_label_repel(aes(label = country),
+                  box.padding   = 0.35, 
+                  point.padding = 0.5,
+                  segment.color = 'grey50') +
+  theme_classic()
 ```
 
-We will want to save the model predictions and for this purpose we pre-define a variable in which we will save the predictions.
-
-```{r}
-data_USoc$pred_mod5 <- 0    # set the prediction to 0 by default
-```
-
-Now we estimate the model for the male with degree subgroup. Note that the `lm` function accepts a `subset` argument which allows you to select a subset of observations, such as the group of all males with first degree.
-
-```{r, eval = FALSE}
-mod5_md <- lm(XXXX ~ XXXX + XXXX, data = XXXX, subset = (subset_ind == XXXX))
-stargazer_HC(XXXX)
-data_USoc$pred_mod5[data_USoc$subset_ind==XXXX] <- mod5_md$fitted.values
-```
-```{r, echo = solution_echo, results=student_view}
-mod5_md <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male with degree"))
-stargazer_HC(mod5_md,type_out="text")
-data_USoc$pred_mod5[data_USoc$subset_ind=="Male with degree"] <- mod5_md$fitted.values
-```
-
-Now we repeat the same just for the group of males with no degree
-
-```{r, eval=FALSE}
-mod5_mnd <- XXXX
-stargazer_HC(XXXX)
-data_USoc$pred_mod5[XXXX] <- mod5_mnd$fitted.values
-```
-```{r, echo = solution_echo, results=student_view}
-mod5_mnd <- lm(annualpay ~ age + agesq, data = data_USoc, subset = (subset_ind == "Male without degree"))
-stargazer_HC(mod5_mnd,type_out="latex")
-data_USoc$pred_mod5[data_USoc$subset_ind=="Male without degree"] <- mod5_mnd$fitted.values
-```
-
-
-Now we plot the predicted values for the two specifications.
-
-```{r, fig.show = student_view}
-ggplot(data_USoc, aes(x=age,y=pred_mod5,color = subset_ind)) +
-  geom_line() +
-  ggtitle("Predicted Regression Model - Model 5") +
-  ylab("Predicted values") +
-  xlab("Age")
-```
-You will see that we have the "none" category plotted as well (of course we didn't estimate this). You could remove these data before plotting
-
-```{r, fig.show = student_view}
-# remove observations with subset_ind == "none"
-data_temp <- data_USoc %>% filter(subset_ind != "none")  
-ggplot(data_temp, aes(x=age,y=pred_mod5,color = subset_ind)) +
-  geom_line() +
-  ggtitle("Predicted Regression Model - Model 5") +
-  ylab("Predicted values") +
-  xlab("Age")
-```
+And does anyone know what is going on in Luxembourg?
 
 END OF INSTRUCTIONS
