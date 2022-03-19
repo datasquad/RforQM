@@ -28,7 +28,7 @@ source("stargazer_HC.r")  # includes the robust regression display
 As we are using panel methods we also require an additional package `plm`.
 
 ```{r}
-#install.packages("plm") # only exwcute this if plm is not installed yet
+#install.packages("plm") # only execute this if plm is not installed yet
 library(plm)
 ```
 
@@ -117,7 +117,7 @@ table(pdata_USoc$n_wave,pdata_USoc$wave, dnn = c("n_waves","waves"))
 
 Naturally the 13078 respondents which have two observations (`n_wave == 2)` are represented in waves 1 and 3. Then we have (`n_wave == 1`) 9666 respondents which are represented in wave 1 and the 4112 which are represented in wave 3.
 
-For the respondents for which we have 2 waves of observations we can actually calculate a difference, or change in variables. This will become important in a later model estimation (althoough for that we could let R do the work in the background) and hence we will calculate these variables explicitely, here for `lnhrpay` and `lnurate`.
+For the respondents for which we have 2 waves of observations we can actually calculate a difference, or change in variables. This will become important in a later model estimation (although for that we could let R do the work in the background) and hence we will calculate these variables explicitly, here for `lnhrpay` and `lnurate`.
 
 ```{r}
 # the lag function below will recognise the panel nature of the data and 
@@ -140,7 +140,7 @@ temp <- pdata_USoc   # create a temporary dataframe
 temp <- temp %>%  filter(n_wave == 2) %>%   # only keep individuals with two waves
                   group_by(pidp) %>%        # group data by individual
                   mutate(move = ifelse(length(unique(region))==1,"no move","move")) %>% 
-                  select(pidp,wave,move)
+                  select(pidp,wave,move)    # only keep these 3 variables
 
 # the move variable will take the value 1 if both regions are identical (no move) 
 # and 2 if there are two different regions (move) 
@@ -151,7 +151,7 @@ temp$move <- as_factor(temp$move)  # convert to factor variable
 pdata_USoc <- merge(pdata_USoc,temp,all.x = TRUE) 
 ```
 
-Let's check how many movers ther are.
+Let's check how many movers there are.
 
 ```{r}
 pdata_USoc %>%  count(move)

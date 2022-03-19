@@ -336,11 +336,16 @@ Repeat this for the Top 10 road travel nations and equally find similar tables f
 ```{r, echo = solution_echo, message=FALSE, results='hide'}
 
 task_7b <- data_avg %>% 
-select(country, avg_road_pp) %>% arrange(desc(avg_road_pp)) %>% print()
+            select(country, avg_road_pp) %>% arrange(desc(avg_road_pp))
+head(task_7b,10)
+
 task_7c <- data_avg %>% 
-select(country, avg_rail_pp) %>% arrange(avg_rail_pp) %>% print()
+            select(country, avg_rail_pp) %>% arrange(avg_rail_pp) 
+head(task_7c,10)
+
 task_7d <- data_avg %>% 
-select(country, avg_road_pp) %>% arrange(avg_road_pp) %>% print()
+            select(country, avg_road_pp) %>% arrange(avg_road_pp) 
+head(task_7d,10)
 ```
 
 
