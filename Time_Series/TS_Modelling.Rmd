@@ -38,7 +38,7 @@ names(rGDP) <- "real GDP" # give a sensible name
 # keep all the data including 2020-Q3
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-rGDP <- rGDP["/2020-9"]  
+rGDP <- rGDP["/2021-12"]  
 
 # we prepare the data for being kept in long format
 # that is useful for plotting in ggplot
@@ -57,6 +57,7 @@ ggplot(rGDP_l,aes(x =Date, y=Value)) +
   ggtitle("UK real GDP") +
   theme_bw()
 ```
+
 If you want to plot a subsample of the data only, the easiest way to do that is to use the `subset` function as you call the data into the `ggplot` function. Compare what has changed in the code and figure out what the `subset` function did.
 
 ```{r}
@@ -65,6 +66,7 @@ ggplot(subset(rGDP_l, Date >"2000-01-01"),aes(x =Date, y=Value)) +
   ggtitle("UK real GDP") +
   theme_bw()
 ```
+
 Can you change the above code such that only the GDP from 2005 onwards is shown? 
 
 Let's calculate the autocorrelation function:
@@ -81,10 +83,10 @@ ur_female <- pdfetch_ONS("YCPL","LMS")
 names(ur_female) <- "Unemp Rate (female)"
 periodicity(ur_female)
 
-# keep all the data including 2020-Dec
+# keep all the data including 2022-Jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-ur_female <- ur_female["/2020-12"]  
+ur_female <- ur_female["/2022-01"]  
 
 ur_female_l <- data.frame(index(ur_female),stack(as.data.frame(coredata(ur_female))))
 names(ur_female_l)[1] <- "Date"
@@ -96,10 +98,10 @@ infl <- pdfetch_ONS("D7OE","MM23")
 names(infl) <- "CPI Inflation"
 periodicity(infl)
 
-# keep all the data including 2019-Feb
+# keep all the data including 2022-jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-infl <- infl["/2019-2"]  
+infl <- infl["/2022-01"]  
 
 infl_l <- data.frame(index(infl),stack(as.data.frame(coredata(infl))))
 names(infl_l)[1] <- "Date"
@@ -142,7 +144,7 @@ acf(ur_female,main = "Unemployment Rate")
 acf(infl, main = "Inflation")
 ```
 
-It will be interestimg to see what happens when we difference data series (or often their logs).
+It will be interesting to see what happens when we difference data series (or often their logs).
 
 ```{r}
 g_rGDP <-diff(log(rGDP))
@@ -352,7 +354,7 @@ We can see that, at lag 2, there is a small amount of autocorrelation in the res
 bgtest(mod4,order=4)
 ```
 
-The p-value of 0.0605 suggests that there is a little evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? Fortunately, here, there is little evidence. We already calculated HAC standard errors.
+The p-value of 0.00085 suggests that there is still evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? Fortunately, here, despite the existence of autocorrelation in residuals they still look stationary. We already calculated HAC standard errors.
 
 
 # ADL Models
@@ -424,4 +426,4 @@ stargazer_HAC(mod6,mod7,mod6_4,mod7_4,type_out = "text", omit.stat = "f")
 AIC(mod6, mod7, mod6_4,mod7_4)
 ```
 
-We chose the model with the smallest value for the information criterion and on this occasion this is the AR model with 4 lags (despite lags 3 and 4 not bein statistically significant).
+We chose the model with the smallest value for the information criterion and on this occasion this is the ADL model with 4 lags (despite lags 3 and 4 not being statistically significant).

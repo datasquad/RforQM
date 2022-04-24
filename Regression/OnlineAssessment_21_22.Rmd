@@ -333,7 +333,7 @@ head(task_7a,10)
 Repeat this for the Top 10 road travel nations and equally find similar tables for the nations travelling least (but non-zero amounts) by rail and road.
 
 
-```{r, echo = solution_echo, message=FALSE, results='hide'}
+```{r, echo = solution_echo, message=FALSE, results=student_view}
 
 task_7b <- data_avg %>% 
             select(country, avg_road_pp) %>% arrange(desc(avg_road_pp))
