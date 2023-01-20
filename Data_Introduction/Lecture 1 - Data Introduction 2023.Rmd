@@ -438,7 +438,7 @@ p1
 
 ## Regression Line
 
-The line in the previous plot is the line of best fit coming for a linear regression 
+The line in the previous plot is the line of best fit coming from a linear regression 
 
 \vskip -0.5cm
 \[EMPFT = \alpha + \beta WAGE\_ST + u ~\text{(\textcolor{student}{Population}~~~~ Model)}\]
@@ -474,12 +474,6 @@ summary(mod1)
 ```
 \normalsize
 
-## OLS - nice output
-\footnotesize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-stargazer(mod1,type="text")
-```
-\normalsize
 
 ## OLS - calculation and interpretation
 
@@ -668,29 +662,10 @@ TabDiD <- CKdata %>% group_by(STATEf) %>%
 ```
 \normalsize
 
-## Policy Evaluation - Diff-in-Diff estimator
-
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
-ggplot(CKdata, aes(1992,FTE, colour = STATEf)) +
-  geom_point(alpha = 0.2) +
-  geom_point(aes(1993,FTE2),alpha = 0.2) +
-  labs(x = "Time") +
-  ggtitle(paste("Employment, FTE"))
-```
 
 ## Policy Evaluation - Diff-in-Diff estimator
 
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
-ggplot(CKdata, aes(1992,FTE, colour = STATEf)) +
-  geom_jitter(alpha = 0.2) +
-  geom_jitter(aes(1993,FTE2),alpha = 0.2) +
-  labs(x = "Time") +
-  ggtitle(paste("Employment, FTE"))
-```
-
-## Policy Evaluation - Diff-in-Diff estimator
-
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
+```{r, echo = FALSE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,  fig.height = 2, fig.width = 5}
 ggplot(TabDiD, aes(1992,meanFTE_FEB, colour = STATEf)) +
   geom_point(size = 3) +
   geom_point(aes(1993,meanFTE_DEC),size=3) +
@@ -710,6 +685,43 @@ Numerically the DiD estimator is calculated as follows:
 (`r round(TabDiD[2,3],1)` - `r round(TabDiD[2,2],1)`) - (`r round(TabDiD[1,3],1)` - `r round(TabDiD[1,2],1)`) = `r (round(TabDiD[2,3],1)-round(TabDiD[2,2],1))-(round(TabDiD[1,3],1)-round(TabDiD[1,2],1))`
 
 Later: This can be calculated using a regression approach (has some additional advantages)
+
+## DiD
+
+![](2x2slide1.PNG)
+
+## DiD
+
+![](2x2slide2.PNG)
+
+## DiD
+
+![](2xTslide1.PNG)
+
+## DiD
+
+![](2xTslide2.PNG)
+
+## DiD
+
+![](2xTslide3.PNG)
+
+## DiD
+
+![](2xTslide4.PNG)
+
+
+## DiD and Regression
+
+To take care of the subtleties these different schemes come with you will have to estimate the policy effect using a regression model instead of merely calculating averages. 
+
+Different schemes will require different setups.
+
+This will be covered in detail in Week 7. 
+
+But here is a glimpse at one of the regression models you will come across then
+
+$$y_{st}=\eta + \alpha d_s + \lambda p_t + \tau d_s p_t + u_{st}$$
 
 
 ## Outlook
