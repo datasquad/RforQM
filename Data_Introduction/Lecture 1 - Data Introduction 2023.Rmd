@@ -6,8 +6,8 @@ date: ""
 output: 
   beamer_presentation:
     includes:
-     in_header: ../latex_template.tex
-#     in_header: ../latex_student.tex  # use for student version
+#     in_header: ../latex_template.tex
+     in_header: ../latex_student.tex  # use for student version
 ---
 
 ```{r setup, include=FALSE}
@@ -547,14 +547,14 @@ There are a lot of reasons why this assumption may be breached.
 
 ## So how to make causal statements
 
-Once we have found reasons to believe in the exogeneity assumption. The next few lectures is to introduce various standard techniques that use this assumption:
+We can do this if we can argue/believe in the exogeneity assumption. The methodological part of this unit introduces various standard techniques that assume exogeneity:
 
 * First Difference                                                                         
 * Diff-in-Diff, to be used in Project
 * Instrumental Variables
-* Regression Discontinuity
+* Regression Discontinuity (only if time permits)
 
-All of them can be thought of as specific ways to apply a regression model.
+All use a generalisation of the simple regression model (above) called the Multiple Regression Model (Week 3 following).
 
 
 ## Diff-in-Diff - The Problem
