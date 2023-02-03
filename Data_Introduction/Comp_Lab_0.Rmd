@@ -32,7 +32,7 @@ This Computer Lab assumes that you have R and RStudio installed on your computer
 
 # Prepare your Workspace
 
-Before you start you should create a space (i.e. a folder) on your computer from where you are planning to do all your R work. Make sure you understand where that folder is and that you know the path to that folder (Apple users, if you do not know how to find the path to a particular folder, then look at this [https://piazza.com/class/kkdsg2fz8vf3y1?cid=6](Piazza post)). If you are using a computer lab computer you should create a folder for your R work on the P drive. This will be accessible to you whenever you log on to a University computer, or from anywhere via [https://pdrives.manchester.ac.uk/horde/login.php](this link).
+Before you start you should create a space (i.e. a folder) on your computer from where you are planning to do all your R work. Make sure you understand where that folder is and that you know the path to that folder (Apple users, if you do not know how to find the path to a particular folder, then look at this [https://piazza.com/class/ld7kfxzd3t5579/post/7](Piazza post)). If you are using a computer lab computer you should create a folder for your R work on the P drive. This will be accessible to you whenever you log on to a University computer, or from anywhere via [https://pdrives.manchester.ac.uk/horde/login.php](this link).
 
 Let's say you named your folder `Rwork` directly on the P drive and in that folder created a subfolder for this unit `QM` , then the path to your folder will be `P:\Rwork\QM`.
 

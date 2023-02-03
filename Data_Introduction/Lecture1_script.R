@@ -13,7 +13,7 @@ CKdata<- read_xlsx("C:/Rcode/RforQM/Data_Introduction/CK_public.xlsx",na = ".")
 
 str(CKdata)  # prints some basic info on variables
 
-CKdata[27,] 
+CKdata[32:35,1:4] 
 
 str(CKdata[c("STATE","CHAIN")])  # prints some basic info on variables
 
@@ -96,3 +96,4 @@ ggplot(TabDiD, aes(1992,meanFTE_FEB, colour = STATEf)) +
   ylim(17, 24) +
   labs(x = "Time") +
   ggtitle(paste("Employment, mean FTE"))
+

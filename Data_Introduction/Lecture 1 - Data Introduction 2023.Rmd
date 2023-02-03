@@ -6,8 +6,8 @@ date: ""
 output: 
   beamer_presentation:
     includes:
-#     in_header: ../latex_template.tex
-     in_header: ../latex_student.tex  # use for student version
+     in_header: ../latex_template.tex
+#     in_header: ../latex_student.tex  # use for student version
 ---
 
 ```{r setup, include=FALSE}
