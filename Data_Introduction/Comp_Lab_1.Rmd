@@ -1,7 +1,7 @@
 ---
 title: "Quantitative Methods - Computer Lab 1"
 author: "Ralf Becker"
-date: "1 February 2021"
+date: ""
 output:
   pdf_document: default
   html_document:
@@ -19,7 +19,7 @@ We continue to use the same data as in Comp_Lab0. So you may want to continue wo
 ```{r, echo = FALSE}
 library(tidyverse)    # for almost all data handling tasks
 library(readxl)       # to import Excel data
-library(ggplot2)      # to produce nice graphiscs
+library(ggplot2)      # to produce nice graphics
 library(stargazer)    # to produce nice results tables
 
 CKdata <- read_excel("CK_public.xlsx",na = ".")
@@ -236,9 +236,9 @@ table2 <- CKdata %>%  group_by(CHAINf) %>%
 
 # Simple Diff-in-Diff estimator
 
-You may wonder whether the introduction of the increased minimum wage in New Jersey increased the price of goods sold. Let's calculate the average price of a small portion of fries in PA and Nj before and after the increase of the minimum wage in NJ.
+You may wonder whether the introduction of the increased minimum wage in New Jersey increased the price of goods sold. Let's calculate the average price of a small portion of fries in PA and NJ before and after the increase of the minimum wage in NJ.
 
-Look at the code used for the recordings in week 1. You should be able to copy and paste a relevant piece of code from there and adjust it to give you the result here. Alternatively you adjust the code you wrote to produce the previous table. You should find that the average price in PA in December (after the introduction of the increased minimum wage in NJ) was $0.86.
+Look at the code used for the Lecture in week 1. You should be able to copy and paste a relevant piece of code from there and adjust it to give you the result here. Alternatively you adjust the code you wrote to produce the previous table. You should find that the average price in PA in December (after the introduction of the increased minimum wage in NJ) was $0.86.
 
 ```{r, echo = FALSE, results = 'hide'}
 table3 <- CKdata %>% group_by(STATEf) %>% 

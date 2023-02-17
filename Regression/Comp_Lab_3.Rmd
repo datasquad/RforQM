@@ -35,6 +35,8 @@ You should also save the separately supplied `stargazer_HC.r` file in your worki
 source("stargazer_HC.r")  # includes the robust regression 
 ```
 
+This has worked if you can see it loaded into your environment as a function.
+
 # Introduction
 
 The data are an extract from the [Understanding Society Survey](https://www.understandingsociety.ac.uk/) (formerly the British Household Survey Panel).
@@ -84,7 +86,7 @@ data_USoc <- data_USoc XXXX
               XXXX(lnhrpay = XXXX(hrpay))
 ```
 
-As we wanted to save these additional variables we assign the result of the operation to `data_USoc` (which now has two additional variables, i.e. 16). You can check that your calcullations are correct if you obtain a mean value for `lnhrpay` of 2.28 and you have 74312 missing observations. Use `summary(data_USoc$lnhrpay)` to check for these stats.
+As we wanted to save these additional variables we assign the result of the operation to `data_USoc` (which now has two additional variables, i.e. 16). You can check that your calculations are correct if you obtain a mean value for `lnhrpay` of 2.28 and you have 74312 missing observations. Use `summary(data_USoc$lnhrpay)` to check for these stats.
 
 # First Analysis - Do Regions matter?
 
@@ -99,7 +101,7 @@ print(n=Inf)
 
 You did it right if you find that for 2009 there were 1867 observations from the East Midlasnds region and for 2013 only 47 observations from Wales. In fact if look at the number of observations across the years you should realise that for the Year 2013 there are much fewer observations than for the other years. This could be an indication for some problem (or systematic selection) with the data from this year and hence we decide to remove all 2013 observations from the dataset.
 
-We did achieve things like this in previous empirical work and you could look in previous files how we achieved this. There are of course different ways to do this and you could google for solutions ("R select observations", "R remove observations")
+We did achieve things like this in previous empirical work and you could look in previous files how we achieved this. There are of course different ways to do this and you could google for solutions ("R select observations tidyverse", "R remove observations tidyverse"). By including "tidyverse" into your search you are bound to find solutions that use the piping technique we have been using.
 
 ```{r, echo = FALSE}
 data_USoc <- data_USoc %>% filter(year != 2013)
@@ -121,7 +123,7 @@ mod1 <- lm(lnhrpay~region, data = data_USoc)
 stargazer_HC(mod1)
 ```
 
-What is the base region? The first level is the `north east`, (Check `levels(data_USoc$region)`) and that is the base reagion. For all other regions the above regression included a dummy variable. For instance, the variable called `regionwales` takes the value 1 if an observation is from Wales and 0 otherwise. In other words, R has taken your categorical `region` variable (with 12 regions) and turned it into 11 dummy variables and included these into the regression. All of this without you actually having to compute these variables. 
+What is the base region? The first level is the `north east`, (Check `levels(data_USoc$region)`) and that is the base region. For all other regions the above regression included a dummy variable. For instance, the variable called `regionwales` takes the value 1 if an observation is from Wales and 0 otherwise. In other words, R has taken your categorical `region` variable (with 12 regions) and turned it into 11 dummy variables and included these into the regression. All of this without you actually having to compute these variables (nice!)
 
 How would you interpret the estimated parameter value for `regionwales`? The coefficient value is `r mod1$coefficients["regionwales"]` and indicates that on average hourly pay is 7.4 percent lower than those in the North East.
 

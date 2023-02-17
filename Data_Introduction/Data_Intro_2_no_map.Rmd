@@ -128,143 +128,6 @@ There isn't any really obvious relation between these correlations and the media
 
 Let's create acouple of couloured maps which illustrate how median income and the above correlations are distributed across Europe.
 
-## Mapping Data
-
-A great tool to visualise the differences between regional entities (e.g. countries) is to produce a map where a color scale represents the values of some statistic. The first time you create maps, we are afraid, you will have to struggle a little. But the rewards are great!
-
-We start by uploading a few libraries we will need to work with maps. We follow the advice of the [Lovelace et al.](https://geocompr.robinlovelace.net/) and use the `tmap` package. Recall that you will have to install these packages first in case you havn't done so yet.
-
-```{r}
-library(tmap)   # mapping package
-library(sf)     # required to deal with shape files
-library(spData) # delivers shape files
-```
-
-We want visualise data, for instance those on Life Satisfaction or Work Ethic and how they differe between countries. Perhaps we will be able to see regional differences. Let's start by creating a list of countries for which we have data. Recall `S003` is the variable in our dataset which provides the country name.
-
-```{r}
-count_list <- unique(wb_data$S003) # List of countries in well-being dataset
-count_list
-```
-
-Let's start by restricting this list. In particular we will remove non-European countries (Canada and the United States) and we will actually also remove the Russian Federation. This is purely for to restrict the size of the map. If we left the Russian Federation in the data its size would dwarf many smaller countries. 
-
-```{r}
-count_list <- count_list[!(count_list %in% c("United States","Canada","Russian Federation"))]
-```
-
-If you ran the above command without the `!` it would have slected only the three countries. The `!` negates that and hence selects only the countries which are not in the list.
-
-Now we need to get the map data in. What we need is a list of countries and their respective shapes, sometimes this info is called a shape-file. There are a lot of ways to get these and shape files exist for countries, parliamentary constituencies, postcodes and many more things. For some objects (like the countries of the world) there is a package which makes these data available, it is called [SpData](https://www.rdocumentation.org/packages/spData/versions/0.2.9.6). Once this package is loaded (as we have done above) you can get the shape files for all the countries in the world using the `world` command.
-
-```{r}
-d_world <- world  # save country shape files
-head(d_world)
-```
-
-You can see from the data extract what type of data are contained. The actual geographical shapes of the countries are contained in the `geom` information. Basically they are coordinate points (latitude and longitude) which, when connected, describe the shape of a country. Importantly, `name_long` is the countryname. We will use that infor to extract the shape information for the countries we have in our datafile. In particular we will 
-
-```{r}
-d_sel <- d_world %>% 
-            filter(name_long %in% count_list)
-```
-
-Let's see whether this did indeed select all the countries we wanted
-
-```{r}
-count_map <- d_sel$name_long   # countries included in d_sel
-setdiff(count_list,count_map)  # finds the difference between the two arguments
-```
-
-Why are these countries not included in `count_map` (ther are in `count_list`, also confirm in your environment that `count_map` has only 41, and not 45 countries). The reason for Great Britain and Northern Ireland to not be included is most likely that the map data includes the United Kingdom (which is GB plu Northern Ireland). But it is not immediately obvious why Malta and Bosnia Herzegovina are not included. We need to investigate.
-
-The following commands find those countries in the `d_world` dataset which match the specified pattern. You don't need to understand how this exactly works at this stage. But if you try (and you should start by finding out what `grepl` does) you will learn a lot.
-
-```{r}
-d_world$name_long[grepl("Bosnia",d_world$name_long)]
-d_world$name_long[grepl("Malta",d_world$name_long)]
-d_world$name_long[grepl("United",d_world$name_long)]
-```
-
-We see that in the `d_world` the country is called "Bonia and Herzegovina" whereas in the well-being data it is merely called "Bosnia Herzegovina". It is a small difference but any difference means that R doesn't match! There was no country Malta in the `d_world` file and indeed there is the "United Kingdom". As we certainly want the UK data we need to change the name in one of the two datasources. We will create a dublicate of our well-being dataset (`wb_data_map`) in which we will change the names of Bosnia Herzegovina and Great Britain.
-
-Look at the lines of code below, `wb_data_map$S003[wb_data_map$S003 == "Bosnia Herzegovina"]` identifies that element of `wb_data_map$S003` which is equal to "Bosnia Herzegovina" and then replaces it with "Bosnia and Herzegovina".
-
-```{r}
-wb_data_map <- wb_data   # duplicate the dataset so we keep the original unchanged
-wb_data_map$S003[wb_data_map$S003 == "Bosnia Herzegovina"] <- "Bosnia and Herzegovina"
-wb_data_map$S003[wb_data_map$S003 == "Great Britain"] <- "United Kingdom"
-```
-
-Before the Northern Irish amongst you complain, I know that the code above assigns the Great Britain data to the entire UK (ignoring Northern Ireland). We do this to simplify the work here and hope that doing so does not erase the slight lead Northern Irish (7.82) have in terms of Life Satisfaction to the British (7.53).
-
-With these changes done we will repeat the above process of wittling down the country shape file information
-
-```{r}
-count_list <- unique(wb_data_map$S003)
-count_list <- count_list[!(count_list %in% c("United States","Canada","Russian Federation"))]
-d_sel <- d_world %>% 
-            filter(name_long %in% count_list)
-```
-
-By checking `d_sel` you can confirm that we now have extracted information on 43 countries rather than the previous 41 countries.
-
-Let's create a first map. As it so happens, `d_sel` contains a number of numerical variables.
-
-```{r}
-names(d_sel)
-```
-
-Let's create a very basic map of Europe (`map`) and then one which looks a little nicer and has the country color-filled depending on the `gdpPercap` variable (`map2`). For more guidance look at the exc exellent (Chapter 8 of Geocomputing with R by Lovelace et al.)[https://geocompr.robinlovelace.net/adv-map.html]
-
-```{r map1}
-map1 <- tm_shape(d_sel) +  # basic map
-  tm_borders()             # adds borders 
-
-map2 <- tm_shape(d_sel) +
-  tm_borders() +
-  tm_fill(col = "gdpPercap") +
-  tm_style("cobalt") +
-  tm_layout(title = "GDP per capita across Europe") 
-
-tmap_arrange(map1, map2)   # this arranges the maps next to each other
-```
-
-Now, all we need to do, is add the variable which we want to visualise with a map to the `d_sel` dataframe. For `table2` above we calculated the average life satisfaction and the the average attitude to the "Work First" question. Let's repeat these calculations (copy and past the code here and replace `wb_data` with `wb_data_map`). The only reason we got to do this again is because of the country name inconsistency which we fixed in `wb_data_map`.
-
-```{r}
-table2_map <- wb_data_map %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
-            summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))    # summarises each group by calculating obs
-```
-
-Now we merge the geography data set (`d_sel`) with the data in `table2_map`. We can do that as both data sets contain country names. So R can match the data using this country information. As the country variable has different names in the two datafiles we have to tell the merge function by what colums it should merge (`by.x = "name_long",by.y="S003"`).
-
-```{r}
-d_sel_merged <- merge(x = d_sel,y = table2_map,by.x = "name_long",by.y="S003") # merge the data in x and y
-```
-
-Now we merely have to go back and recreate maps. As we still have data of all waves in this data structure we will first filter out the last wave.
-
-```{r map2}
-d_sel_2018 <- d_sel_merged %>% filter(S002EVS == "2008-2010")
-
-map1 <- tm_shape(d_sel_2018) +
-  tm_borders() +
-  tm_fill(col = "Avg_LifeSatis", title = "Satisfaction with your life") +
-  tm_style("cobalt") +
-  tm_layout(title = "Average Life Satisfaction") 
-
-map2 <- tm_shape(d_sel_2018) +
-  tm_borders() +
-  tm_fill(col = "Avg_WorkFirst", title = "1 = Strongly Agree, 5 = Strongly Disagree") +
-  tm_style("cobalt") +
-  tm_layout(title = "Average Attitude to Work First") 
-
-tmap_arrange(map1, map2)   # this arranges the maps next to each other
-```
-
-Note that smaller values for the "Work First" question indicate stronger agreement with the statement "Work should come first even if it means less spare time". So it does appear as if, broadly, people are heappier where they also think that work is more important. But, be careful, no causal interpretation can be attributed to this.
-
 # Hypothesis testing
 
 Let's investigate whether there are differences in some of the responses between countries. But before we do so we need to revisit some basic hypothesis testing. At the core is the understanding that there is some underlying population statistic (for instance the difference between the average life satisfaction in the Great Britain and Germany), but all we observe is a sample statistics (the difference between the sample average of life satisfaction in the Great Britain and Germany). What hypothesis testing does is that it uses the sample information to help us judge on some hypothesis regarding the true underlying (unknown!) population statistic (for instance that the average life satisfaction in Germany and the U.K. are equal).
@@ -331,7 +194,9 @@ countries <- unique(test_data$S003)  # List of all countries
 n_countries <- length(countries)   # Number of countries, 46
 ```
 
-Now we will perform the above test for all possible combinations of countries and will record the respective p-value. Don't worry too much about this double `for` loop. 
+Now we will perform the above test for all possible combinations of countries and will record the respective p-value. Don't worry too much about this double `for` loop. There is no need to understand the details of the code.
+
+[Caution: The next bit of code can take quite a while on slower computers. If so, you can jump to the Regression Analysis part. Still try and understand what conceptually is being done here.]
 
 ```{r}
 save_pvalue <- matrix(NA,n_countries,n_countries)
@@ -445,7 +310,7 @@ mod1 <- lm(A170~S003,data=test_data)
 stargazer(mod1, type="text")
 ```
 
-This regresison is a very special one as it uses the country variable as the explanatiry variable. Recall that `test_data` only contain British and Swedish data. The regresion picked one country as the base country (here Britain as it is first in the alphabet) and for the other it created a dummy variable. Basically a variable ($Sweden_i$) which takes the value 1 if the observation comes from Sweden and 0 otherwise. 
+This regression is a very special one as it uses the country variable as the explanatory variable. Recall that `test_data` only contain British and Swedish data. The regression picked one country as the base country (here Britain as it is first in the alphabet) and for the other it created a dummy variable. Basically a variable ($Sweden_i$) which takes the value 1 if the observation comes from Sweden and 0 otherwise. 
 
 
 $LifeSatis_{i} = \alpha + \beta~ Sweden_{i} + u_{i}$
@@ -460,7 +325,8 @@ The interpretation of coefficient estimates changes as explanatory variables tak
 
 ```{r}
 test_data <- wb_data %>% 
-  filter(S002EVS == "2008-2010")       # pick latest wave
+  filter(S003 =="Great Britain") %>%  # pick British data
+  filter(S002EVS == "2008-2010")         # pick latest wave
 ```
 
 We now estimate a regression model which includes a constant and the household's monthly income (in 1,000 Euros) as an explanatory variable ($INC_i$ OR VARIABLE `x047D` in our dataset).
@@ -472,20 +338,20 @@ mod1 <- lm(A170~X047D,data=test_data)
 stargazer(mod1, type="text")
 ```
 
-Here you see that $\widehat{\beta}=0.235$. What does this mean? As the income increases by one unit (here that represents an increase of Euro 1,000) we should expect that Life Satisfaction increases by 0.235 units. What is the interpretation for $\widehat{\alpha}=6.452$? For someone with 0 income we should expect the Life Satifaction to be 7.119. Let's present a graphical representation.
+Here you see that $\widehat{\beta}=0.184$. What does this mean? As the income increases by one unit (here that represents an increase of Euro 1,000) we should expect that Life Satisfaction increases by 0.184 units. What is the interpretation for $\widehat{\alpha}=7.190$? For someone with 0 income we should expect the Life Satifaction to be 7.119. Let's present a graphical representation.
 
 ```{r RegPlot1}
 ggplot(test_data, aes(x=X047D, y=A170, colour = S003)) +
     geom_jitter(width=0.2, size = 0.5) +    # Use jitter rather than point so we can see indiv obs
     geom_abline(intercept = mod1$coefficients[1], slope = mod1$coefficients[2])+
-    ggtitle("Income v Life Satisfaction, Britain and Sweden")
+    ggtitle("Income v Life Satisfaction, Britain")
 ```
 
 Note a few tweaks in the graphical representation. We use `geom_jitter` rather than `geom_point`. This adds some random noise to the data so that we can see the individual observation (replace `geom_jitter(width=0.2)` with `geom_point()` to see the difference it makes). `geom_abline` adds a line. We specify the intercept and slope from our regression model (`mod1$coefficients[1]` and `mod1$coefficients[2]`). `ggtitle` adds the title to the graph.
 
 The regression parameters, which deliver the line of best fit, are estimated by Ordinary Least Squares (OLS). The name comes from the fact that these parameters are the ones which minimise the sum of squared residuals, $\Sigma \widehat{u}^2_i = \Sigma (LifeSatis_{i} - \widehat{\alpha} - \widehat{\beta}~ Inc_{i})^2$. These parameters achieve another thing, they ensure that $Corr(Inc_{i},\widehat{u}_{i})=0$ is true.
 
-This last point is increadibly important, as one of the assumptions underpinning the estimation of regression models by OLS is that $Corr(Inc_{i},u_{i})=0$. Why is that assumption important? If the assumtion was not true, then we need to accept that the OLS estimation imposes a feature into the model that is not appropriate for the data. As a result the resulting regression coefficients are biased. As a consequence the resulting regression model cannot be said to have any causal interpretation. 
+This last point is incredibly important, as one of the assumptions underpinning the estimation of regression models by OLS is that $Corr(Inc_{i},u_{i})=0$. Why is that assumption important? If the assumtion was not true, then we need to accept that the OLS estimation imposes a feature into the model that is not appropriate for the data. As a result the resulting regression coefficients are biased. As a consequence the resulting regression model cannot be said to have any causal interpretation. 
 
 As we cannot observe $u_i$, the assumption of exogeneity cannot be tested directly and we need to make an argument using economic understanding.
 
