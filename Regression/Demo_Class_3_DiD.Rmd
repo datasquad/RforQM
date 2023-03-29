@@ -12,12 +12,22 @@ knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
 
 This is the code to implement the work for Demo Class 3
 
-* estimate a DiD model
+* estimate several TWFE models
 * apply cluster robust standard errors
+* collapse data to a before/after panel
 
 # Introduction
 
 We are going to estimate the following two models
+
+$y_{st} = \alpha_s  + \lambda_2 f^2_t + \lambda_3 f^3_t + \lambda_4 f^4_t + \tau d_s p_t + u_{st}$ (R) for $t=1,...,4$
+
+and 
+
+
+$y_{st} = \alpha_s  + \lambda_2 f^2_t + \lambda_3 f^3_t + \lambda_4 f^4_t + \omega_2 d_s f_t^2 + \tau_3 d_s f_t^3 + \tau_4 d_s f_t^4  + u_{st}$ (U) for $t=1,...,4$
+
+Estimating model (R) by OLS generates the TWFE estimator of the treatment effect $\tau$. However one should also model (U) to test for common trends and investigate heterogenous treatment effects. Model (U) is labeled an events-study model.
 
 # Preparing your workfile
 
@@ -57,7 +67,7 @@ data <- as.data.frame(data)
 
 Let's look at the data file.
 
-```{r}
+```{r, results= FALSE}
 str(data) 
 names(data)
 summary(data)
@@ -76,7 +86,7 @@ data$id <- as_factor(data$id)
 
 # Investigate the Panel Structure
 
-Let's define the dataset as a panel dataset with `id` as the cross-sectional identifier and 1year1 as the time identifier.
+Let's define the dataset as a panel dataset with `id` as the cross-sectional identifier and `year` as the time identifier.
 
 ```{r}
 pdata <- pdata.frame(data, index = c("id","year")) # defines the panel dimensions
@@ -95,32 +105,35 @@ Let's look again at the summary statistics for the variables `w` "treated in a p
 summary(data[,c("w","d")])
 ```
 
-You can see that 536 observations belong to individuals ever treated. As we have four years of observations for each individual this implies that $S_1 = 134$ individuals were ever treated. The remainder, $S_0=379$ is the size of the control group. The number of observations in treatment are only 268. Exactly half. this is best understood if we look at the data for one of the observations in the treatment group (`id=3591`):
+You can see that 536 observations belong to individuals ever treated. As we have four years of observations for each individual this implies that $S_1 = 134$ individuals were ever treated. The remainder, $S_0=379$ is the size of the control group. The number of observations in treatment are only 268. Exactly half. This is best understood if we look at the data for one of the observations in the treatment group (`id=3591`):
 
 ```{r}
-
 pdata[data$id==3591,c("id","year","w","d","post")]
 ```
 
 You can see that this individual was treated in two of the years (2014 and 2015). This is the same for all treated individuals. The variable `w` is therefore the equivalent to the "TREATxPOST" or here `d*post` variable. 
 
-# Estimate the TWFE model
+# Estimate the TWFE model (R)
 
-Let us estimate the TWFE model but when we output the result we shall only show the coefficient to `w`, our policy estimate.
+Let us estimate the TWFE model but when we output the result we shall only show the coefficient on `w`, our treated variable.
 
 ```{r}
+
 mod1 <- lm(logy~id+year+w, data = pdata)
-stargazer(mod1, keep = "w", type="text", digits = 6) 
+mod1_ro_se <- sqrt(diag(vcovHC(mod1, type = "HC1")))  # robust standard errors
+stargazer(mod1, keep = "w", type="text", se=list(mod1_ro_se), 
+          digits = 6, notes="HS Robust standard errors in parenthesis") 
 ```
 
 If you want to estimate cluster (here by `id`) robust standard errors we use the following function
 
 ```{r}
 mod1_cr_se <- sqrt(diag(vcovCL(mod1, cluster = ~ id)))
-stargazer(mod1, keep = "w", type="text", se=list(mod1_cr_se), digits = 6)
+stargazer(mod1, keep = "w", type="text", se=list(mod1_cr_se), 
+          digits = 6, notes="Cluster Robust standard errors in parenthesis")
 ```
 
-You can see that there is a difference in the standard error.
+You can see that there is a small difference in the standard error.
 
 Let us now replace the `id`-level fixed effect by merely adding the ever treated dummy `d`
 
@@ -132,22 +145,10 @@ stargazer(mod2, type="text", se=list(mod2_cr_se), digits = 6)
 
 As this model only estimates 6 parameters we can actually look at all estimated coefficients. The standard errors are incorrect as we are actually estimating $S+T-1+1=517$ coefficients. The correct standard errors are the ones from `mod1`.
 
-From the last model we can get the fitted values.
 
-```{r}
-pdata$logyhat <- mod2$fitted.values
-```
+# Estimate the events study model (U)
 
-Let us plot the predicted `logyhat`, separate for the treatment and control group. We use the second version, as it basically averages across individuals in year/treatment groups.
-
-```{r}
-p1 <- ggplot(pdata,aes(x=year,y=logyhat,color=d)) + geom_point()  
-p1
-```
-
-# TWFE -> Event Study
-
-Now we create interactions between the ever treated variable `d` and the years. In order to nderstand what the following regression does we will actually calculate new variables into the dataset.
+Now we create interactions between the ever treated variable `d` and the years. In order to understand what the following regression does we will actually calculate new variables into the dataset.
 
 ```{r}
 pdata <- pdata %>%  mutate(d2013 = (year=="2013")*(d=="treated"),
@@ -160,9 +161,10 @@ Now we estimate the extended TWFE model. First with the individual fixed effects
 ```{r}
 mod3 <- lm(logy~id+year+d2013+d2014+d2015, data = pdata)
 mod3_cr_se <- sqrt(diag(vcovCL(mod3, cluster = ~ id)))
-coef_keep = c("d2013","d2014","d2015")
+coef_keep = c("year","d2013","d2014","d2015")
 stargazer(mod3, type="text", keep = coef_keep, se=list(mod3_cr_se), digits = 6)
 ```
+The first coefficient `id2014` is a randomly selected fixed effect coefficient. There are 513 of these but we only show one of them.
 
 Now using the algebraic trick (but incorrect standard errors)
 
@@ -172,23 +174,72 @@ mod4_cr_se <- sqrt(diag(vcovCL(mod4, cluster = ~ id)))
 stargazer(mod4, type="text", se=list(mod4_cr_se), digits = 6)
 ```
 
+
+From the last model we can get the fitted values.
+
 ```{r}
 pdata$logyhat_mod4 <- mod4$fitted.values
 ```
 
-Let us plot the predicted `logyhat`, separate for the treatment and control group.
+Let us plot the predicted `logyhat`, separate for the treatment and control group. We use the second version, as it basically averages across individuals in year/treatment groups.
 
 ```{r}
-p2 <- ggplot(pdata,aes(x=year,y=logyhat_mod4,color=d)) + geom_point()  
-p2
+p1 <- ggplot(pdata,aes(x=year,y=logyhat_mod4,color=d)) + geom_point()  
+p1
 ```
 
 The most common way to display these results is by showing the coefficients of the `d` variable interacted with the years.
 
 ```{r}
 coefplot(mod3, coefficients = coef_keep, innerCI = 0, horizontal = TRUE)
+
 ```
 
 # Collapse the data to group means
 
-data_collapse <- data %>% group_by(d,post)
+```{r}
+data_collapse <- pdata %>% group_by(id,post) %>% 
+                        summarise(logym = mean(logy), 
+                                  dm = mean(d=="treated"), 
+                                  wm = mean(w=="1")) %>% 
+                        print()
+```
+
+We now only have two observations for every id, pre and post. 
+
+Let's calculate the outcome average by pre- and post and treatment and control group.
+
+```{r}
+Tab1 <- data_collapse %>% group_by(post,dm) %>% 
+            summarise(m = mean(logym)) %>% spread(dm,m) %>% print()
+```
+
+The Diff-in-Diff estimator can be calculated from here 
+
+$\hat{\tau}=(\bar{y}_T^{post}-\bar{y}_T^{pre})-(\bar{y}_C^{post}-\bar{y}_C^{pre})$
+
+Plugging in the above values you get (2.352229-2.167045)-(2.511031-2.511775) = 0.185928.
+
+You can see that this is the same as the estimate from `mod1`. However, here we got it from averaged data. When you calculate the estimate as done here from the collapsed data averages you do not get a standard error. However, we can use the collapsed data in a regression
+
+
+Before proceeding we define this collapsed data set as a panel data-set.
+
+```{r}
+# defines the panel dimensions
+pdata_collapse<- pdata.frame(data_collapse, index = c("id","post")) 
+# We now add the differenced y series
+pdata_collapse$dy <- diff(pdata_collapse$logym)
+```
+
+Now estimate simple first difference regressions
+
+```{r}
+mod_fd1 <- plm(dy ~ dm, model = "pooling", data = pdata_collapse)
+mod_fd2 <- plm(dy ~ wm, model = "pooling", data = pdata_collapse)
+stargazer(mod_fd1,mod_fd2, type="text", digits = 6)
+```
+
+As you can see these are identical regressions. As we are using only the post period data (the pre data gets lost from the differencing) both `wm` and `dm` give the same value (1 for treated and 0 for non-treated).
+
+The advantage of estimating DiD estimate by a regression is that you get standard errors which allow you to do inference. Here the standard error is 0.0194.
