@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.8.19)  18 APR 2023 07:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.8.19)  18 APR 2023 07:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./Lecture---Time-Series-2022.tex
-(Lecture---Time-Series-2022.tex
+**./Lecture---Time-Series-2023.tex
+(Lecture---Time-Series-2023.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (C:\Users\msassrb2\AppData\Local\Programs\MiK
 TeX\tex/latex/beamer\beamer.cls
@@ -1146,12 +1146,12 @@ pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count366
 \l__pdf_internal_box=\box84
-) (Lecture---Time-Series-2022.aux
+) (Lecture---Time-Series-2023.aux
 
 LaTeX Warning: Label `Simple_TSR' multiply defined.
 
 )
-\openout1 = `Lecture---Time-Series-2022.aux'.
+\openout1 = `Lecture---Time-Series-2023.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 186.
 LaTeX Font Info:    ... okay on input line 186.
@@ -1299,7 +1299,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.9).
 
-(Lecture---Time-Series-2022.nav) [1
+(Lecture---Time-Series-2023.nav) [1
 
 {C:/Users/msassrb2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
 
@@ -1310,9 +1310,9 @@ Overfull \vbox (0.5227pt too high) detected at line 222
 [3
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb
+(Lecture---Time-Series-2023.vrb
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
 .
 (C:\Users\msassrb2\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
@@ -1320,12 +1320,12 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) [4
 
 ]
-<Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-4-1.pdf, id=51, 7
+<Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-4-1.pdf, id=51, 7
 22.7pt x 505.89pt>
-File: Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-4-1.pdf Grap
+File: Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-4-1.pdf Grap
 hic file (type pdf)
-<use Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: Lecture---Time-Series-2022_files/figure-beamer/unnamed
+<use Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: Lecture---Time-Series-2023_files/figure-beamer/unnamed
 -chunk-4-1.pdf  used on input line 258.
 (pdftex.def)             Requested size: 342.29358pt x 239.6055pt.
 
@@ -1334,13 +1334,13 @@ Overfull \vbox (3.1281pt too high) detected at line 258
 
 [5
 
- <./Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-4-1.pdf>]
-<Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-5-1.pdf, id=64, 7
+ <./Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-4-1.pdf>]
+<Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-5-1.pdf, id=64, 7
 22.7pt x 505.89pt>
-File: Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-5-1.pdf Grap
+File: Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-5-1.pdf Grap
 hic file (type pdf)
-<use Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: Lecture---Time-Series-2022_files/figure-beamer/unnamed
+<use Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-5-1.pdf>
+Package pdftex.def Info: Lecture---Time-Series-2023_files/figure-beamer/unnamed
 -chunk-5-1.pdf  used on input line 263.
 (pdftex.def)             Requested size: 342.29358pt x 239.6055pt.
 
@@ -1349,7 +1349,7 @@ Overfull \vbox (3.1281pt too high) detected at line 263
 
 [6
 
- <./Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-5-1.pdf>]
+ <./Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-5-1.pdf>]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 80.
 (C:\Users\msassrb2\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
@@ -1398,39 +1398,39 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ] [9
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb
-<Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-6-1.pdf, id=105, 
+(Lecture---Time-Series-2023.vrb
+<Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-6-1.pdf, id=105, 
 252.945pt x 180.675pt>
-File: Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-6-1.pdf Grap
+File: Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-6-1.pdf Grap
 hic file (type pdf)
-<use Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-6-1.pdf>
-Package pdftex.def Info: Lecture---Time-Series-2022_files/figure-beamer/unnamed
+<use Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-6-1.pdf>
+Package pdftex.def Info: Lecture---Time-Series-2023_files/figure-beamer/unnamed
 -chunk-6-1.pdf  used on input line 11.
 (pdftex.def)             Requested size: 252.94438pt x 180.67455pt.
 ) [10
 
- <./Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-6-1.pdf>] [11
+ <./Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-6-1.pdf>] [11
 
 ]
-<Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-7-1.pdf, id=126, 
+<Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-7-1.pdf, id=126, 
 325.215pt x 180.675pt>
-File: Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-7-1.pdf Grap
+File: Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-7-1.pdf Grap
 hic file (type pdf)
-<use Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: Lecture---Time-Series-2022_files/figure-beamer/unnamed
+<use Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-7-1.pdf>
+Package pdftex.def Info: Lecture---Time-Series-2023_files/figure-beamer/unnamed
 -chunk-7-1.pdf  used on input line 374.
 (pdftex.def)             Requested size: 325.2142pt x 180.67455pt.
 [12
 
- <./Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-7-1.pdf>]
-<Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-8-1.pdf, id=139, 
+ <./Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-7-1.pdf>]
+<Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-8-1.pdf, id=139, 
 325.215pt x 252.945pt>
-File: Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-8-1.pdf Grap
+File: Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-8-1.pdf Grap
 hic file (type pdf)
-<use Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-8-1.pdf>
-Package pdftex.def Info: Lecture---Time-Series-2022_files/figure-beamer/unnamed
+<use Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-8-1.pdf>
+Package pdftex.def Info: Lecture---Time-Series-2023_files/figure-beamer/unnamed
 -chunk-8-1.pdf  used on input line 379.
 (pdftex.def)             Requested size: 325.21916pt x 252.94823pt.
 
@@ -1439,7 +1439,7 @@ Overfull \vbox (16.47083pt too high) detected at line 379
 
 [13
 
- <./Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-8-1.pdf>] [14
+ <./Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-8-1.pdf>] [14
 
 ] [15
 
@@ -1465,22 +1465,22 @@ Package pdftex.def Info: r_GDP_UR.jpeg  used on input line 484.
  <./r_GDP_UR.jpeg>] [18
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [19
-
-]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
-
-(Lecture---Time-Series-2022.vrb) [20
+(Lecture---Time-Series-2023.vrb) [19
 
 ]
-<Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-12-1.pdf, id=210,
+\openout4 = `Lecture---Time-Series-2023.vrb'.
+
+(Lecture---Time-Series-2023.vrb) [20
+
+]
+<Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-12-1.pdf, id=210,
  325.215pt x 252.945pt>
-File: Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-12-1.pdf Gra
+File: Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-12-1.pdf Gra
 phic file (type pdf)
-<use Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-12-1.pdf>
-Package pdftex.def Info: Lecture---Time-Series-2022_files/figure-beamer/unnamed
+<use Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-12-1.pdf>
+Package pdftex.def Info: Lecture---Time-Series-2023_files/figure-beamer/unnamed
 -chunk-12-1.pdf  used on input line 585.
 (pdftex.def)             Requested size: 325.21916pt x 252.94823pt.
 
@@ -1489,10 +1489,10 @@ Overfull \vbox (36.87083pt too high) detected at line 585
 
 [21
 
- <./Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-12-1.pdf>]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+ <./Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-12-1.pdf>]
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb
+(Lecture---Time-Series-2023.vrb
 Overfull \hbox (25.62358pt too wide) in paragraph at lines 19--19
 []    \T1/lmtt/m/n/10.95 Breusch-Godfrey test for serial correlation of order u
 p to 4[] 
@@ -1501,22 +1501,22 @@ p to 4[]
 ) [22
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [23
-
-]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
-
-(Lecture---Time-Series-2022.vrb) [24
+(Lecture---Time-Series-2023.vrb) [23
 
 ]
-<Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-15-1.pdf, id=245,
+\openout4 = `Lecture---Time-Series-2023.vrb'.
+
+(Lecture---Time-Series-2023.vrb) [24
+
+]
+<Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-15-1.pdf, id=245,
  325.215pt x 252.945pt>
-File: Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-15-1.pdf Gra
+File: Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-15-1.pdf Gra
 phic file (type pdf)
-<use Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-15-1.pdf>
-Package pdftex.def Info: Lecture---Time-Series-2022_files/figure-beamer/unnamed
+<use Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-15-1.pdf>
+Package pdftex.def Info: Lecture---Time-Series-2023_files/figure-beamer/unnamed
 -chunk-15-1.pdf  used on input line 664.
 (pdftex.def)             Requested size: 325.21916pt x 252.94823pt.
 
@@ -1525,13 +1525,13 @@ Overfull \vbox (16.47083pt too high) detected at line 664
 
 [25
 
- <./Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-15-1.pdf>]
-<Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-16-1.pdf, id=260,
+ <./Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-15-1.pdf>]
+<Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-16-1.pdf, id=260,
  325.215pt x 252.945pt>
-File: Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-16-1.pdf Gra
+File: Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-16-1.pdf Gra
 phic file (type pdf)
-<use Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-16-1.pdf>
-Package pdftex.def Info: Lecture---Time-Series-2022_files/figure-beamer/unnamed
+<use Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-16-1.pdf>
+Package pdftex.def Info: Lecture---Time-Series-2023_files/figure-beamer/unnamed
 -chunk-16-1.pdf  used on input line 669.
 (pdftex.def)             Requested size: 325.21916pt x 252.94823pt.
 
@@ -1540,10 +1540,10 @@ Overfull \vbox (16.47083pt too high) detected at line 669
 
 [26
 
- <./Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-16-1.pdf>]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+ <./Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-16-1.pdf>]
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb
+(Lecture---Time-Series-2023.vrb
 pdfTeX warning (ext4): destination with the same identifier (name{Simple_TSR}) 
 has been already used, duplicate ignored
 <to be read again> 
@@ -1557,37 +1557,37 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [28
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [29
+(Lecture---Time-Series-2023.vrb) [29
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [30
+(Lecture---Time-Series-2023.vrb) [30
 
 ] [31
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [32
-
-]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
-
-(Lecture---Time-Series-2022.vrb) [33
+(Lecture---Time-Series-2023.vrb) [32
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb
-<Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-24-1.pdf, id=331,
+(Lecture---Time-Series-2023.vrb) [33
+
+]
+\openout4 = `Lecture---Time-Series-2023.vrb'.
+
+(Lecture---Time-Series-2023.vrb
+<Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-24-1.pdf, id=331,
  325.215pt x 180.675pt>
-File: Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-24-1.pdf Gra
+File: Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-24-1.pdf Gra
 phic file (type pdf)
-<use Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-24-1.pdf>
-Package pdftex.def Info: Lecture---Time-Series-2022_files/figure-beamer/unnamed
+<use Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-24-1.pdf>
+Package pdftex.def Info: Lecture---Time-Series-2023_files/figure-beamer/unnamed
 -chunk-24-1.pdf  used on input line 13.
 (pdftex.def)             Requested size: 325.2142pt x 180.67455pt.
 )
@@ -1596,19 +1596,19 @@ Overfull \vbox (13.91388pt too high) detected at line 910
 
 [34
 
- <./Lecture---Time-Series-2022_files/figure-beamer/unnamed-chunk-24-1.pdf>] [35
+ <./Lecture---Time-Series-2023_files/figure-beamer/unnamed-chunk-24-1.pdf>] [35
 
 ] [36
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [37
+(Lecture---Time-Series-2023.vrb) [37
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb)
+(Lecture---Time-Series-2023.vrb)
 Overfull \vbox (7.29755pt too high) detected at line 1013
  []
 
@@ -1617,33 +1617,33 @@ Overfull \vbox (7.29755pt too high) detected at line 1013
 ] [39
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [40
+(Lecture---Time-Series-2023.vrb) [40
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [41
+(Lecture---Time-Series-2023.vrb) [41
 
 ] [42
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [43
+(Lecture---Time-Series-2023.vrb) [43
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [44
+(Lecture---Time-Series-2023.vrb) [44
 
 ] [45
 
 ]
-\openout4 = `Lecture---Time-Series-2022.vrb'.
+\openout4 = `Lecture---Time-Series-2023.vrb'.
 
-(Lecture---Time-Series-2022.vrb) [46
+(Lecture---Time-Series-2023.vrb) [46
 
 ] [47
 
@@ -1651,15 +1651,15 @@ Overfull \vbox (7.29755pt too high) detected at line 1013
 
 ]
 \tf@nav=\write6
-\openout6 = `Lecture---Time-Series-2022.nav'.
+\openout6 = `Lecture---Time-Series-2023.nav'.
 
 \tf@toc=\write7
-\openout7 = `Lecture---Time-Series-2022.toc'.
+\openout7 = `Lecture---Time-Series-2023.toc'.
 
 \tf@snm=\write8
-\openout8 = `Lecture---Time-Series-2022.snm'.
+\openout8 = `Lecture---Time-Series-2023.snm'.
 
-(Lecture---Time-Series-2022.aux)
+(Lecture---Time-Series-2023.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1695,7 +1695,7 @@ eX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/msassrb2/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Users/msassrb2/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/msassrb2/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on Lecture---Time-Series-2022.pdf (48 pages, 516348 bytes).
+Output written on Lecture---Time-Series-2023.pdf (48 pages, 516366 bytes).
 PDF statistics:
  563 PDF objects out of 1000 (max. 8388607)
  148 named destinations out of 1000 (max. 500000)

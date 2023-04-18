@@ -399,6 +399,8 @@ Let's get some datasets fronm EUROSTAT.
 # Population with tertiary education (%), "edat_lfse_03"
 # Hospital Discharges, Alcoholic liver disease, "NRG_IND_EFF"
 data_sr <- read_csv("C:/Rcode/RforQM/Time_Series/EUROSTATtimeseries.csv")
+dates <- seq(as.Date("2000-12-31"),length=22,by="years")
+data_sr <- xts(x=data_sr, order.by = dates)
 ```
 
 

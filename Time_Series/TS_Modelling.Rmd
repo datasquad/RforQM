@@ -1,14 +1,14 @@
 ---
 title: "Time-Series Modelling"
 author: "Ralf Becker"
-date: "April 2021"
+date: "April 2023"
 output:
-  pdf_document: default
-  html_document: default
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
 ```{r}
@@ -38,7 +38,7 @@ names(rGDP) <- "real GDP" # give a sensible name
 # keep all the data including 2020-Q3
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-rGDP <- rGDP["/2021-12"]  
+rGDP <- rGDP["/2022-12"]  
 
 # we prepare the data for being kept in long format
 # that is useful for plotting in ggplot
@@ -86,7 +86,7 @@ periodicity(ur_female)
 # keep all the data including 2022-Jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-ur_female <- ur_female["/2022-01"]  
+ur_female <- ur_female["/2022-12"]  
 
 ur_female_l <- data.frame(index(ur_female),stack(as.data.frame(coredata(ur_female))))
 names(ur_female_l)[1] <- "Date"
@@ -101,7 +101,7 @@ periodicity(infl)
 # keep all the data including 2022-jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-infl <- infl["/2022-01"]  
+infl <- infl["/2022-12"]  
 
 infl_l <- data.frame(index(infl),stack(as.data.frame(coredata(infl))))
 names(infl_l)[1] <- "Date"
@@ -230,59 +230,40 @@ The p-value is virtually 0 suggesting that there is stistically significant evid
 Let's get some datasets fron EUROSTAT.
 
 ```{r}
+# Data from EUROSTAT
 # % of agricultural area Total fully converted and under conversion 
-# to organic farming in Germany
-ser1 <- pdfetch_EUROSTAT("sdg_02_40", GEO=c("DE"))  
-names(ser1) <- "Organic.Farming.GE"
-ser1 <- ser1["/2019"]  # keep data up until 2019 ***
+# to organic farming in Germany, "sdg_02_40"
+# Thousands of passengers travelling to and from Norway by boat, "mar_pa_aa"
+# Population with tertiary education (%), "edat_lfse_03"
+# Hospital Discharges, Alcoholic liver disease, "NRG_IND_EFF"
+# The data are annual data from 2000 to 2021, 22 obs
+data_sr <- read_csv("C:/Rcode/RforQM/Time_Series/EUROSTATtimeseries.csv")
+dates <- seq(as.Date("2000-12-31"),length=22,by="years")
+data_sr <- xts(x=data_sr, order.by = dates)
 
-# Thousands of passengers travelling to and from Norway by boat
-ser2 <- pdfetch_EUROSTAT("mar_pa_aa", FREQ = "A", DIRECT = "TOTAL", UNIT = "THS_PAS", REP_MAR = "NO")
-names(ser2) <- "Boat.Passengers.NO"
-ser2 <- ser2["/2019"]  # keep data up until 2019 ***
-
-# Population with tertiary education (%)
-ser3 <- pdfetch_EUROSTAT("edat_lfse_03", FREQ = "A", SEX = "M", AGE = "Y15-64", UNIT = "PC", 
-                         ISCED11 = "ED5-8", GEO = "IT")
-names(ser3) <- "Tert.Educ.IT"
-ser3 <- ser3["/2019"]  # keep data up until 2019 ***
-
-# Hospital Discharges, Alcoholic liver disease
-ser4 <- pdfetch_EUROSTAT("hlth_co_disch2", FREQ = "A", AGE = "TOTAL", UNIT = "P_HTHAB", SEX = "T",
-                         ICD10 = "K70", GEO = "FR")
-names(ser4) <- "Alc.Disease.FR"
-ser4 <- ser4["/2019"]  # keep data up until 2019 ***
-
-# *** these lines merely make sure to keep the data which were available
-#     at the time this file was produced. Remove if you want to work with
-#     the latest data
 ```
 
 I told you earlier that there are different ways to arrange several plots in a grid. Below I present yet another (`layout` - this is possibly the most powerful of the three as you can determine how big each graph should be)! Don't say that this is annoying! I am merely ramming home the message that the same thing can be done in different ways and anyways, you will not be remembering how to do all these things. When you want to do it you will be searching for "R arrange plots in grid" or something similar. Then you will hit on any of these methods and that is what you will adjust.
 
 ```{r}
-data_sr <- merge(ser1,ser2)
-data_sr <- merge(data_sr,ser3)
-data_sr <- merge(data_sr,ser4)
-
 layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE),
    widths=c(1,1), heights=c(1,1))
 plot.zoo(data_sr$Organic.Farming.GE, ylab="", xlab = "", main = "Organic Farming\n GER") 
 plot.zoo(data_sr$Boat.Passengers.NO, ylab="", xlab = "", main = "Sea Passengers\n NOR")
 plot.zoo(data_sr$Tert.Educ.IT, ylab="", xlab = "", main = "Tertiary Education\n ITA")
-plot.zoo(data_sr$Alc.Disease.FR, ylab="", xlab = "", main = "Alcohol Hospitalisation\n FRA")
+plot.zoo(data_sr$Ene.Cons.PO, ylab="", xlab = "", main = "Energy Consumption\n POL")
 ```
 In the above graphing commands I used `plot.zoo` and not `ggplot` or the standard `plot`. You could have used `ggplot` after bringing the data into long format. You could have used the standard `plot` function. It actually does recognise that the data are time-series data and then automatically adds all sorts of formatting to the graphs (try by replacing `plot.zoo` with `plot` in the above) which is rather annoying. `plot.zoo` is a specialised plotting function for time-series data which allows some manual finessing.
 
 ```{r}
-mod_sr <- lm(Alc.Disease.FR~Organic.Farming.GE, data = data_sr)
+mod_sr <- lm(Ene.Cons.PO~Organic.Farming.GE, data = data_sr)
 stargazer_HAC(mod_sr)
 ```
 
 One way how you can unmask the spuriousness, if both series are trending is to include a time trend
 
 ```{r}
-mod_sr2 <- lm(Alc.Disease.FR~Organic.Farming.GE+index(data_sr), data = data_sr)
+mod_sr2 <- lm(Ene.Cons.PO~Organic.Farming.GE+index(data_sr), data = data_sr)
 ```
 
 Now we can see that the time trend is the variable which becomes significant and the coefficient to the organic farming variable becomes insignificant (as it should be).
@@ -290,7 +271,7 @@ Now we can see that the time trend is the variable which becomes significant and
 We may also want to look at running a model in the differences of variables rather than the levels.
 
 ```{r}
-mod_sr3 <- lm(diff(Alc.Disease.FR)~diff(Organic.Farming.GE), data = data_sr)
+mod_sr3 <- lm(diff(Ene.Cons.PO)~diff(Organic.Farming.GE), data = data_sr)
 stargazer_HAC(mod_sr,mod_sr2,mod_sr3,type_out = "text", omit.stat = "f")
 ```
 
