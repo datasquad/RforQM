@@ -41,7 +41,7 @@ periodicity(ur_female)
 # keep all the data including 2022-Jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-ur_female <- ur_female["/2022-1"]  
+ur_female <- ur_female["/2023-1"]  
 
 ur_female_l <- data.frame(index(ur_female),stack(as.data.frame(coredata(ur_female))))
 names(ur_female_l)[1] <- "Date"
@@ -56,7 +56,7 @@ periodicity(infl)
 # keep all the data including 2022-Mar
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-infl <- infl["/2022-3"]  
+infl <- infl["/2023-3"]  
 
 infl_l <- data.frame(index(infl),stack(as.data.frame(coredata(infl))))
 names(infl_l)[1] <- "Date"
