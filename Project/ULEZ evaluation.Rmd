@@ -1,0 +1,37 @@
+---
+title: "ULEZ evaluation"
+author: "Ralf Becker"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+
+Data for pollution monitoring stations are available from the [Data Selector tool](https://uk-air.defra.gov.uk/data/data_selector) hosted by DEFRA.
+
+make the following selections
+
+* Hourly measured data
+* Data Range: From 1/1/2015 to 31/12/2023
+* Data Type: Daily mean data
+* Monitoring Sites: Monitoring Network - then choose AURN - select all 
+* Pollutants: by network - select PM10 (separate downloads may be required if you wish to look at other pollutants)
+* Output type: Data to email (csv)
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
