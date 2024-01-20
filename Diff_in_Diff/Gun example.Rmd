@@ -232,7 +232,7 @@ Let's calculate some firearm death statistics. The data from the CDC deliver an 
 ```{r}
 table2 <- merge_data %>% filter(Mechanism == "Firearm") %>% 
                           group_by(State) %>% 
-                          summarise(avg_aarate = mean(Age.Adjusted.Rate,na.rm = TRUE)) %>% 
+                          summarise(avg_aarate = mean(Age.Adjusted.Rate,na.rm = TRUE), n=n()) %>% 
                           arrange(-avg_aarate) %>%  print()
 ```
 
@@ -512,12 +512,12 @@ p2
 This plot looks reasonable showing unemployment rate peaks in the aftermath of the financial crisis and Covid. `ur_data_long` is now ready to be merged with `merge_data`.
 
 ```{r}
-merge_data <- merge(merge_data,ur_data_long)
+merge_data <- merge(merge_data,ur_data_long, all.x = TRUE)
 ```
 
 ### Law enforcement officer numbers
 
-The F.B.I. has a Crime Data Explorer and in there you can find a number of crime related data, amongst others the [Law Enforcement Employeies Data](https://cde.ucr.cjis.gov/LATEST/webapp/#) which provides a detailed breakdown of law enforcement employees for very small geographies like cities. As the datafile contains state information we can aggregate these to state level data.
+The F.B.I. has a Crime Data Explorer and in there you can find a number of crime related data, amongst others the [Law Enforcement Employees Data](https://cde.ucr.cjis.gov/LATEST/webapp/#) which provides a detailed breakdown of law enforcement employees for very small geographies like cities. As the datafile contains state information we can aggregate these to state level data.
 
 
 The data are saved in "law enforcement employees FBIdata_1960_2022.csv".
@@ -539,7 +539,7 @@ names(officers_data)[names(officers_data)=="data_year"] <- "Year"
 names(officers_data)[names(officers_data)=="state_abbr"] <- "State_code"
 ```
 
-As we need the number of officers in a state in one year we need to aggregate over all agencies in a particular year in a state. We also restrict our attention t oyears 2001 onwards.
+As we need the number of officers in a state in one year we need to aggregate over all agencies in a particular year in a state. We also restrict our attention to years 2001 onwards.
 
 ```{r}
 officers_data_agg <- officers_data %>% filter(Year >= 2001) %>% 
@@ -551,7 +551,7 @@ Let's look at the data to get a feel for the information in these data.
 
 ```{r}
 plot1off <- officers_data_agg %>% 
-                            filter(State_code %in% c("AL","TN","ME", "NY"))
+                            filter(State_code %in% c("AL","TN","ME", "WV"))
 p2 <- ggplot(plot1off, aes( x = Year, y = law.officers, color = State_code)) +
             geom_line() +
             labs(title="Number of Law Enforcement Officers")
@@ -562,8 +562,10 @@ p2
 You can see that the data in `officer_data_agg` are absolute numbers and we will have to scale them to number of officers per 100,000 population. We will do this after merging the data into `merge_data`.
 
 ```{r}
-merge_data <- merge(merge_data,officers_data_agg)
+merge_data <- merge(merge_data,officers_data_agg, all.x = TRUE)
 ```
+
+As it turns out that there are no officers data for West Virginia for the years 2008 and 2014, it was important to add the option ` all.x = TRUE` to ensure that these two years remain preserved for 2008 and 2014 in the merged dataset. Without this option, these two observations would be removed from the `merge_data` dataframe.
 
 Before continuing we shall scale this variable by the population to calculate how many law enforcement officers a state has per 100,000 population.
 
@@ -596,7 +598,7 @@ head(vcrime_data_long)
 These are now in the right format for merging. Again we have number of crimes and we will want to transform it to a per 100,000 population measure once we merged this number into `merge_data`.
 
 ```{r}
-merge_data <- merge(merge_data,vcrime_data_long)
+merge_data <- merge(merge_data,vcrime_data_long, all.x = TRUE)
 ```
 
 Before continuing we shall scale this variable by the population to calculate how many law enforcement officers a state has per 100,000 population.
@@ -653,7 +655,7 @@ alcc_data <- alcc_data %>% filter(Type.of.beverage == "4") %>%
 Note that we divided the alcc.pc variable by 10,00. As described in the text file, this scales the variable to gallons per person. This file is ready for merging to `merge_data`.
 
 ```{r}
-merge_data <- merge(merge_data,alcc_data)
+merge_data <- merge(merge_data,alcc_data, all.x = TRUE)
 ```
 
 ### Incarceration rate
@@ -725,7 +727,7 @@ names(incarceration_data)[names(incarceration_data)=="CUSTOTT"] <- "incarc"
 As you can see these are the total number of person incarcerated. We will want to scale this to a number like person per 100,000 population. We can do that after merging as `merge_data` contains a variable which contains the size of the population in a state in a particular year.
 
 ```{r}
-merge_data <- merge(merge_data,incarceration_data)
+merge_data <- merge(merge_data,incarceration_data, all.x = TRUE)
 ```
 
 We now scale the variable to represent the number of people incarcerated for every 100,000.
