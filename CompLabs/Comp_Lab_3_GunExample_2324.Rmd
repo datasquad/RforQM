@@ -1,0 +1,35 @@
+---
+title: "Comp Lab 3"
+author: "Ralf Becker"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This can be taken into account by adding "state fixed effcets".
+
+```{r, eval = TRUE}
+mod4 <- lm(Age.Adjusted.Rate~law.officers.pc+ur+alcc.pc+State,data=data2)
+stargazer(mod2,mod3,mod4,type = "text", keep = c("law.officers.pc","ur","alcc.pc"))
+```
+
+Before we discuss what this regression actually did, we can observe something really interesting. 
+
+* The $R^2$ of the regression has dramatically increased to 84%
+* All three coefficients we previously estimated have now been estimated to be very statistically significant.
+* The sign of the coefficient to `law.officers.pc` has changed, it is now negative.
+* A lot of coefficients have been added to the model, one for each state, but for Alabama.
+
+What the addition of the factor variable `State` does is that it includes a dummy variable for each state. For instance `StateArizona` is a variable that take sthe value 
+
+
+As an aside, if you estimate a model that has heaps of coefficients, like `mod4` but you are mainly interested in a subset of these coefficients then you can ask `stargazer` to only show that particular subset. You can try the following command. 
+
+```{r, eval = FALSE}
+stargazer(mod2,mod3,mod4,type = "text", keep = c("law.officers.pc","ur","alcc.pc"))
+```

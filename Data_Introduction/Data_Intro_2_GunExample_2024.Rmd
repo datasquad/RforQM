@@ -1,0 +1,498 @@
+---
+title: "Introduction to Data Handling and Statistics 2"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, error=FALSE, message=FALSE, warning=FALSE, results=TRUE)
+```
+
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work: 
+
+```{r, message=FALSE, warning = FALSE}
+library(tidyverse)    # for almost all data handling tasks
+library(readxl)       # to import Excel data
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+```
+
+
+# Introduction
+
+This is the example from the [Siegel et al. (2019)](https://link.springer.com/article/10.1007/s11606-019-04922-x) paper which attempts to establish whether gun control laws have a causal impact on firearm deaths. The data will later form the basis of a Diff-in-Diff analysis. The data are from a variety of sources and some of the data have been collated for you in "US_Gun_example.csv". 
+
+the main variables to consider are:
+
+* Data for each of the 51 US States and for years 2001 to 2021. This delivers 21*51=1071 observations
+* Data on age-adjusted death rates by firearm
+* Data on when particular gun laws were in place in different states 
+* Data for a number of covariates (unemployment rate, number of officers, etc.)
+
+
+# Aim of this lesson
+
+In this lesson we will revise some hypothesis testing and basic (simple) regression analysis. 
+
+In terms of R skills you learn how to
+
+* create summary tables using the `group_by`, `summarise` and `spread` commands
+* create scatter plots using `ggplot` and `geom_point` and line charts `geom_line`
+* produce maps which colour coded to display summary statistics on a per country basis (using the `tmap` library)
+* conduct simple hypothesis tests on one or two sample means using `t.test`
+* use `for` loops in a little statistical experiment 
+* run simple regression models using `lm`
+
+This is a lot and you should expect to take quite a bit of time to replicate this work.
+
+# Importing Data
+
+Let's import the csv file, but you should always, if you are dealing with spreadsheet dta, foirst open the spreadsheet to see whether the data already contain variable names or perhaps contain some extra information which you may not want to import into R.
+
+```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=TRUE}
+merge_data <- read.csv("US_Gun_example.csv")          # import data
+head(merge_data)
+```
+
+Checking your environment you will see one object. You should open that object (click on the little spreadsheet symbol to the right of the object name) or look at the above output. Each line represents one State-Year. Understanding what one line in your dataset represents is absolutly crucial and unless you understand that it is unlikely that you can perform any sensible data analysis.
+
+To get to this dataset a significant amount of data handling and cleaning had to happen. We will share that with you shortly and tou will then also see that the documentation in the above paper was not of super high quality such that it is not 100% certain that the data here are identical to those in the Siegel et al. (2019) paper. In that documentation we will also share with you the exact sources of the data here. you should make sure that you always exactly record where your data are from.
+
+Let's look at the structure of the data frame.
+
+```{r}
+str(merge_data)  # prints some basic info on variables
+```
+
+Some of the names in `merge_data` are obvious, but let us introduce a few in more detail.
+
+* `Age.Adjusted.rate` - Deaths by firearm for every 100,000 population in a State-Year
+* `ur` - Average annual unemployment rate in a State-Year
+* `law.officers.pc` - number of law officers per 100,000 population in a State-Year
+* `vcrime.pc` - number of violent crimise (excl. homicides) per 100,000 population in a State-Year
+
+These will be the substantial variables on which we will concentrate in this data introduction.
+
+# Some initial data analysis and summary statistics
+
+Let us investigate some of the features of this dataset. It has `r nrow(merge_data)` observations and `r length(merge_data)` variables. Let's see which states and which years are represented in our dataset.
+
+```{r}
+unique(merge_data$State)   # unique finds all the different values in a variable
+unique(merge_data$Year)
+```
+
+As you can see these are 51 US states and 21 years of data which explains why we have, in total 1,071 observations (State-Years!). Let us create some summary statistics for the above variables.
+
+```{r}
+sel_vars <- c("Age.Adjusted.Rate","ur","law.officers.pc","vcrime.pc")
+summary(merge_data[sel_vars])  # prints some basic info on variables
+```
+
+You get some summary statistics, e.g. the mean Age adjusted number of firearm deaths (per 100,000 population) across all states and all years is 12.05. Interestingly we can also see that in the `law.officers.pc` variable there are 23 missing observations (`NA`).
+
+When you work with data it is important to understand its shortcomings and missing data are certainly one of them. Let us identify for which State-Years we do not have data.
+
+```{r}
+test <- merge_data %>% 
+          filter(is.na(law.officers.pc)) %>% 
+          select(Year,State,law.officers.pc)
+test
+```
+
+You will realise that there are no law officers data for Nebraska at all and two years of missing data for West Virginia (2008 and 2014). This is important information to keep in mind. 
+
+Let us now calculate some summary statistics by State. We shall use the awesome power of the tidyverse methodology. This was used previously but here we shall turn it up a bit (not quite to [this level](https://youtu.be/v2AC41dglnM?si=HA1R8VChm8GFh0BS) yet, that will come).
+
+We want to create a table that shows, for four states (just a selection to make the result easier to see), the average values of the four variables in `sel_vars`. We start by selecting the rows of data from `merge_data` for which the variable `State` equals one of the state names in `sel_states` (`merge_data %>% filter(State %in% sel_states)`). Recall that the `%>%` command is called "a pipe" and indicates that the result to the left of the pipe is sent to the function to the right of the pipe. This selection is then sent to the `summarise` function which we instruct to calculate five variables, the number of observations (`n = n()`, the function `n()` just counts the number of observations in each group) and then four averages. For instance `avg.ur = mean( ur)` calculates the average unemployment rate in each state.
+
+```{r}
+sel_states <- c("New York", "California","West Virginia","Nebraska") # define a list with countries
+table1 <- merge_data %>% filter(State %in% sel_states) %>% # only looks at selected states
+      group_by(State) %>% # groups by State
+      summarise(n = n(), 
+                avg.fds = mean( Age.Adjusted.Rate),
+                avg.ur = mean( ur),
+                avg.off = mean( law.officers.pc),
+                avg.vcr = mean(vcrime.pc)) %>%               # calculating no of obs
+      print()                         
+```
+
+What you can see here is that there is significant variation in deaths due to firearms, with there being three times as many in West Virginia compared to New York. We can also see that the code did not calculate the average number of officers for West Virginia and Nebraska. This is not a surprise for Nebraska as we had previously seen that there were no officer data for this state. For West Virginia., however, we did have data, just observations for 2008 and 2014 were missing. So there could be an average calculated on the basis of the remaining years. By default, the `mean` fuunction will not calculate a mean if there are any missing data. You can change that by adding the option `na.rm = TRUE` to the mean function
+
+```{r}
+table1 <- merge_data %>% filter(State %in% sel_states) %>% # only looks at selected states
+      group_by(State) %>% # groups by State
+      summarise(n = n(), 
+                avg.fds = mean( Age.Adjusted.Rate, na.rm = TRUE),
+                avg.ur = mean( ur, na.rm = TRUE),
+                avg.off = mean( law.officers.pc, na.rm = TRUE),
+                avg.vcr = mean(vcrime.pc, na.rm = TRUE)) %>%               # calculating no of obs
+      print()                         
+```
+
+# Graphical representations of data
+
+
+Let's look at a couple of graphical representations of our data. For instance we may be interested in figuring out whether the rate of firearm deaths (`Age.Adjusted.Rate`) is related to the number of law enforcement officers (`law.officers.pc`). A good first look at this may be a scatterplot across the entire dataset.
+
+```{r}
+plot1 <- ggplot(merge_data, aes(x=law.officers.pc, y=Age.Adjusted.Rate)) +
+              geom_point()
+plot1
+```
+
+A relationship is not super clear. Let's concentrate on the three states we looked at before (recall Nebraska has no data on officers).
+
+```{r}
+temp_data <-merge_data %>%  filter(State %in% sel_states) # selection of data
+plot2 <- ggplot(temp_data, aes(x=law.officers.pc, y=Age.Adjusted.Rate)) +
+              geom_point()
+plot2
+```
+
+Now this looks as if there was a clear negative relation between the number of officers and the number of firearm deaths. Can we conclude that having more officers will lead to a reduction of firearm deaths? The answer is an emphatic no!
+
+This looks as if there are three clusters of data. Perhaps not surprising given that we are looking at three states. Let's make sure that we can see in the graph which state the data come from. We do this by adding ` color = State` to the aesthetics.
+
+```{r}
+plot3 <- ggplot(temp_data, aes(x=law.officers.pc, y=Age.Adjusted.Rate, color = State)) +
+              geom_point() 
+plot3
+```
+
+Looking at this graph it becomes a little more obvious that it may just be that these states are different and that for some reason (perhaps unrelated to the number of officers) there are more firearm deaths in West Virginia than New York.
+
+If there was a genuine negative relationship between these two variables we would expect to see it as well inside a state. Let's calculate these and then show a histogram illustrating the values of the intra-state correlations.
+
+```{r}
+table2 <- merge_data %>% group_by(State) %>% # groups by State
+            summarise(cor_fds_off = cor(Age.Adjusted.Rate,law.officers.pc,use = "pairwise.complete.obs"))
+ggplot(table2,aes(x=cor_fds_off)) + geom_histogram(bins=16)
+
+```
+
+The majority of states show a negative correlation but there are also some states which show a positive correlation.
+
+As our data also have a time dimension, it is often of interest to see how variables evolve through time. This can be done with just a little change in the code. Say we want to show the development of the death rates for the four states then we can do so with the following code.
+
+```{r}
+plot4 <- ggplot(temp_data, aes(x=Year, y=Age.Adjusted.Rate, color = State)) +
+              geom_line() +
+              labs(title = "Firearm death rates (per 100,000)")
+plot4
+```
+
+From this we can see that death rates increased in West Virginia, from an already high level, after 2015.
+
+
+# Mapping Data
+
+A great tool to visualise the differences between regional entities (e.g. countries or here states) is to produce a map where a color scale represents the values of some statistic. The first time you create maps, we are afraid, you will have to struggle a little. But the rewards are great! You can easily skip this section. Just remember that you come back here should you ever think that such a map would add to your work.
+
+We start by uploading a few libraries we will need to work with maps. We follow the advice of the [Lovelace et al.](https://geocompr.robinlovelace.net/) and use the `tmap` package. Recall that you will have to install these packages first in case you havn't done so yet.
+
+```{r}
+library(tmap)   # mapping package
+library(sf)     # required to deal with shape files
+library(spData) # delivers shape files
+```
+
+We want to visualise data, for instance those on Firearm death rates or unemployment rates and how they differ between countries. Perhaps we will be able to see regional differences. Let's start by creating a list of states for which we have data.
+
+```{r}
+state_list <- unique(merge_data$State) # List of states in our dataset
+state_list
+```
+
+Now we need to get the map data in. What we need is a list of US states and their respective shapes, sometimes this info is called a shape-file. There are a lot of ways to get these and shape files exist for countries, parliamentary constituencies, postcodes and many more things. For some objects (like the countries of the world) there is a package which makes these data available, it is called [SpData](https://www.rdocumentation.org/packages/spData/versions/0.2.9.6). Once this package is loaded (as we have done above) you can get the shape files for all the countries in the world using the `world` command.
+
+```{r}
+us_st <- us_states  # save US State file shape files
+head(us_st)
+```
+
+You can see from the data extract what type of data are contained. The actual geographical shapes of the countries are contained in the `geometry` information. Basically they are coordinate points (latitude and longitude) which, when connected, describe the shape of a country. Importantly, `NAME` is the state name. We will use that information to extract the shape information for the states we have in our datafile. In particular we will 
+
+```{r}
+d_sel <- us_st %>% 
+            filter(NAME %in% state_list)
+```
+
+Let's see whether this did indeed select all the countries we wanted
+
+```{r}
+state_map <- d_sel$NAME   # states included in d_sel
+setdiff(state_list,state_map)  # finds the difference between the two arguments
+```
+
+Why are these states not included in `state_map`? The two missing states are not connected to the main body of the US and the coders of the `spData` package decided to exclude them. We will roll with this, but with a bit of research you can find shape files that include these two states as well. As the names of US states are very standardised we, here, have no issues with different spellings of names. When you are dealing with countries you will often have to check that countries are spelled identically in both the shape file and your dataframe with the data.  
+
+
+Let's create a first map. As it so happens, `d_sel` contains a number of numerical variables, such as `total_pop_15` which represents the population of each state in 2015.
+
+```{r}
+names(d_sel)
+```
+
+Let's create a very basic map of the U.S. (`map1`) and then one which looks a little nicer and has the country color-filled depending on the `total_pop_15` variable (`map2`). For more guidance look at the excexellent (Chapter 8 of Geocomputing with R by Lovelace et al.)[https://geocompr.robinlovelace.net/adv-map.html]
+
+```{r map1}
+d_sel$pop <- d_sel$total_pop_15/1000000 # scale a new pop var to measure pop in millions
+
+map1 <- tm_shape(d_sel) +  # basic map
+  tm_borders()             # adds borders 
+
+map2 <- tm_shape(d_sel) +
+  tm_borders() +
+  tm_fill(col = "pop") +
+  tm_style("natural") 
+
+tmap_arrange(map1, map2)   # this arranges the maps next to each other
+```
+
+Now, all we need to do, is add the variable which we want to visualise with a map to the `d_sel` dataframe. Let's calculate two maps, one with the age adjusted firearm death rates in 2001 and another for the year 2021. That measn we wish to add two variables to `d_sel`
+
+```{r}
+fds2001 <- merge_data %>% filter(Year == 2001) %>% 
+                          mutate(fds2001 = Age.Adjusted.Rate,
+                                 NAME = State) %>% #just create a var with a new name
+                          select(NAME, fds2001) 
+
+fds2021 <- merge_data %>% filter(Year == 2021) %>% 
+                          mutate(fds2021 = Age.Adjusted.Rate,
+                                 NAME = State) %>% #just create a var with a new name
+                          select(NAME, fds2021) 
+
+d_sel <- merge(d_sel, fds2001)
+d_sel <- merge(d_sel, fds2021)
+```
+
+Now we can create the maps
+
+```{r map2}
+map3 <-  tm_shape(d_sel) +
+  tm_borders() +
+  tm_fill(col = "fds2001") +
+  tm_style("natural")  
+
+map4 <- tm_shape(d_sel) +
+  tm_borders() +
+  tm_fill(col = "fds2021") +
+  tm_style("natural") 
+
+tmap_arrange(map3, map4)   # this arranges the maps next to each other
+```
+
+There is an issues with these graphs. The scales are different. If we want to compare the two maps, then the colour coding should be identical. After a bit of a web-search we the solution is implemented below.
+
+```{r map3}
+map5 <-  tm_shape(d_sel) +
+  tm_borders() +
+  tm_fill(col = "fds2001", breaks = c(0,5,10,20,30,40)) +
+  tm_style("natural") 
+
+map6 <- tm_shape(d_sel) +
+  tm_borders() +
+  tm_fill(col = "fds2021", breaks = c(0,5,10,20,30,40)) +
+  tm_style("natural") 
+
+tmap_arrange(map5, map6)   # this arranges the maps next to each other
+```
+
+Now we can clearly see that there have been some states where the number of firearm deaths have increase.
+
+# Hypothesis testing
+
+Let's investigate whether there are differences in some of the responses between countries. But before we do so we need to revisit some basic hypothesis testing. At the core is the understanding that there is some underlying population statistic (for instance the difference between the average firearm death rates in 2001 and 2021), but all we observe is a sample statistics. What hypothesis testing does is that it uses the sample information to help us judge on some hypothesis regarding the true underlying (unknown!) population statistic.
+
+Let's create a sample statistic. We shall compare the violent crime rates (`vcrime.pc`) in 2001 to that in 2021
+
+```{r}
+test_data_2001 <- merge_data %>% 
+  filter(Year == 2001)    # pick 2001
+
+mean_2001 <- mean(test_data_2001$vcrime.pc)
+
+test_data_2021 <- merge_data %>% 
+  filter(Year == 2021)       # pick 2021
+
+mean_2021 <- mean(test_data_2021$vcrime.pc)
+
+sample_diff <- mean_2021 - mean_2001
+  
+```
+
+So we can see that the sample difference is `r sample_diff`, hence the average violent crime rate across the states has gone down. There is the proof, 2021 is safer than 2001. Or is it? The outcomes we observe are the result of many random processes. Random processes that determine whether a crime happens or not and randomness in the reporting of crime.
+
+Just because in 2021 the average is below 2001 does not necessarily mean that the U.S is safer in 2021. In a different state of the world we would have received a different statistic. Is this difference perhaps just the chance of some chance variation? It is to answer this question that we perform hypothesis tests.
+
+In order to perform a hypothesis test we first formulate a null hypothesis. Here that the difference in population means (`mu`) is equal to 0 using the `t.test` function.
+
+```{r}
+t.test(test_data_2021$vcrime.pc,test_data_2001$vcrime.pc, mu=0)  # testing that mu = 0
+```
+
+How can we use this information to evaluate our initial null hypothesis. To judge this we need to know what random distribution the sample test statistic follows (**if the null hypothesis was true**). In this case this is an approximate normal distribution. The p-value then then tells us how likely it is to get a result like the one we got (a difference of -54 or larger) if the null hypothesis was true (i.e. the true population means were the same). Here the p-value is 0.1275. This implies that we judge there to be a probability of more than 10% that we could have received that difference or larger if the two means were actually the same.
+
+What about the difference between 2021 and 2001?
+
+```{r}
+test_data_2011 <- merge_data %>% 
+  filter(Year == 2011) 
+
+t.test(test_data_2021$vcrime.pc,test_data_2011$vcrime.pc, mu=0)  # testing that mu = 0
+
+```
+
+Here you can see that the p-value is 0.7117, hence the probability of getting a result like the one we got, a difference in means of about 11, if the true population means were equal, is about 71%. So this says that it is quite likely to get the data we see if there were no differences between 2011 and 2021. When is a p-value small enough for us to reject a null hypothesis?. There are actually some "conventions" in the sense that we often say that we reject the null hypothesis if the p-value is smaller than either 0.1, 0.05 or 0.01. 
+
+But we shouldn't just adopt such a convention without understanding what these values mean. In order to do so we will add another variable to our dataset, a truly random variable, but drawn from the same distribution for all individuals
+
+```{r}
+merge_data$rvar <- rnorm(nrow(merge_data))   # add random variable
+```
+
+We will now check whether the average value for that variable differs between Years Of course we know that it shouldn't as all observations are draws from the same random variable, a standard normal random variable and hence the true population mean for all years **is 0**.
+
+But let's pretend we didn't know that.
+
+```{r}
+test_data <- merge_data 
+years <- unique(merge_data$Year)  # List of all years
+n_years <- length(years)
+```
+
+Now we will perform the above test for all possible combinations of years and will record the respective p-value. Don't worry too much about this double `for` loop. 
+
+```{r}
+save_pvalue <- matrix(NA,n_years,n_years)
+
+for (i in seq(2,n_years)){
+  for (j in seq(1,(i-1))){
+    test_data_1 <- test_data %>% filter(Year == years[i]) 
+    test_data_2 <- test_data %>% filter(Year == years[j]) 
+    tt <- t.test(test_data_1$rvar,test_data_2$rvar, mu=0)  # testing that mu = 0
+    save_pvalue[i,j] <- unlist(tt["p.value"])    # this will just pick the p-value
+  }
+}
+```
+
+This leaves us with (21*21-21)/2=210 hypothesis tests. All of which with a null hypothesis which we know to be true (population means are identical). Let's see how many of these hypothesis tests delivered p-values which are smaller than 10%.
+
+```{r HypTest1}
+tre <- (save_pvalue<0.1)   # value of TRUE if pvalue < 0.1
+
+cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
+
+image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
+
+table(tre)
+```
+
+The green blots on the graph indicate rejections of the null hypothesis. As you can see, `r table(tre)[2]` of the 210 tests produced a test statistic with a p-value smaller than 10%. So for these we may be tempted to say that we reject the null hypothesis. So here we have arrived at the point where we can perhaps understand what it means to perform a hypothesis test. Even if the null hypothesis is correct (which in reality we will of course not know) we may actually reject the null hypothesis. We call this making a Type 1 error. Vice versa, if in truth the null hypothesis is incorrect we may come to the conclusion not to reject the null hypothesis (this is what is called a Type 2 error).
+
+As you can see here we have made a Type 1 error in about 15% of cases (this may differ slightly to wjhat was presented in the lecture or what you get when you replicate this as the numbers are random draws. But the number should be fairly close to 10%). This is no accident. If we had checked what percentage of these tests (remember for all the null hypothesis is true) had p-values < 5% we would have found approximately 5% of tests that had p-values smaller than 5%. In fact this is what a hypothesis test is designed to do. So this gives us now a clue of the role of this threshold against which we compare the p-value. 
+
+You may wonder then why we do not use a threshold as small as possible, after all that would minimise the probability of making a Type 1 error. However, the flip side of reducing a Type 1 error is that we would at the same time increase the probability of making a Type 2 error, i.e. a failure to reject an incorrect null hypothesis.
+
+# Regression Analysis
+
+Hypothesis testing is a crucial tool of empirical analysis. Another tool we will use repeatedly is that of regression analysis. In fact, sometimes, running a regression is a convenient way to deliver a hypothesis test. Let us demonstrate this with one of the above examples, the difference in violent crime rates between 2001 and 2021 across all states in the US.
+
+Let's start by creating a new dataset which only contains the 2001 data. 
+
+```{r}
+test_data <- merge_data %>% 
+  filter(Year == 2001)
+```
+
+Now we run a regression of the violent crime  variable (`vcrime.pc`) against a constant only.
+
+$vcrime.pc_{i} = \alpha + u_{i}$
+
+```{r}
+mod1 <- lm(vcrime.pc~1,data=test_data)
+stargazer(mod1, type="text")
+```
+
+What we will find is that the estimated value for $\alpha$, $\widehat{\alpha}=424.337$ is nothing else but the sample mean of `vcrime.pc` in 2001. We could now calculate a t-test $=\widehat{\alpha}/se{\widehat{\alpha}}$ $=(424.337-0)/27.624=15.36$ which tests the hypothesis that the average value for `vcrime.pc` is equal to 0 (Yes, this is basically impossible, but R doesn't know that!). This could also be calculated
+
+```{r}
+t.test(test_data$vcrime.pc, mu=0)  # testing that mu = 0
+```
+
+The differences are rounding differences.
+
+Let's see how we could use a regression to test for the difference in means. First we adjust our dataset `test_data` to include the 2001 and 2021 data. Note here we use the incredibly useful `Year %in% c(2001,2021)` condition which selects all observations for which the value for the year variable (`Year`) is included in the list `c(2001,2021)`. Type `?c` in the console to see what the `c()` function does.
+
+```{r}
+test_data <- merge_data %>% 
+  filter(Year %in% c(2001,2021)) %>% 
+  mutate(Year2021 = (Year == 2021))
+```
+
+In the above code we created a new variable (`Year2021`). This is a Boolean variable, which takes a value of TRUE (or 1) if the condition we specified is correct (`Year == 2021`) and FALSE (or 0) otherwise. This type of variable is also called a dummy variable.
+
+Then we run a regression with the `vcrime.pc` as the dependent variable and a constant and `Year2021`a dummy variable which takes the value 1 if the Year is 2021 and 0 if the Year is not 2021. This is achieved by specifying the model as `~S003`. The variable name before the `~` is the dependent variable, here `A170`. The variable after the `~` is the explanatory variable, here `S003`. (Note that R automatically includes a constant into the regression model, even if you do not specify it explicitly.)
+
+```{r}
+mod1 <- lm(vcrime.pc~Year2021,data=test_data)
+stargazer(mod1, type="text")
+```
+
+This regression is a very special one as it uses the `Year2021` variable as the explanatory variable. Recall that `test_data` only contains data from 2001 and 2021. The regression picked one year (2001) as the base year and for the other we created a dummy the variable `Year2021`, a variable  which takes the value 1 if the observation relates to the year 2021 and 0 otherwise. 
+
+
+$vcrime.pc_{i} = \alpha + \beta~ Year2021_{i} + u_{i}$
+
+You can see that the constant ($\widehat{\alpha}$) still reports the sample average for the 2001 observations. It is identical to the value we saw in the previous regression. But what is the meaning of $\widehat{\beta}=-54.111$? This is not the average response value for year 2021 observations, but the difference between the average of the 2021 and 2001 observations. As it is negative it means that the 2021 average is smaller than the 2001. In fact it is 424.337 - 54.111=370.226. 
+
+If all you were after is the calculation of the average values in 2001 and 2021, then there was no need to estimate a regression, you could just calculate the following:
+
+```{r}
+test_data %>% group_by(Year) %>% summarise(avg_vcrime.pc = mean(vcrime.pc))
+```
+
+But in the regression framework you can now test whether that difference is significantly different from 0 ($H_0:\beta = 0$) which is equivalent to testing that the two averages are identical. The t-test for this hypothesis test would be $(-54.111-0)/35.194=1.538$ which, but for rounding differences, is identical to the test on equality of two means we performed previously.
+
+The regressions we ran so far were special in the sense that they involved explanatory variables which were either a constant (i.e. ones) or dummy variables (0s or 1s). The result of this was that the resulting estimates represented sample means or differences in sample means.
+
+The interpretation of coefficient estimates changes as explanatory variables take a more general form. 
+
+```{r}
+test_data <- merge_data %>% 
+  filter(Year == 2021)       # pick latest wave
+```
+
+We now estimate a regression model for `vcrime.pc` which includes a constant and the number of law enforcement officers (per capita) as an explanatory variable (`law.officers.pc`).
+
+$vcrime.pc_{i} = \alpha + \beta~ law.officers.pc_{i} + u_{i}$
+
+```{r}
+mod1 <- lm(vcrime.pc~law.officers.pc,data=test_data)
+stargazer(mod1, type="text")
+```
+
+Here you see that $\widehat{\beta}=0.204$. What does this mean? As the number of law officers increases by one unit (here that represents an increase of one officer per 100,000 population) we should expect that the number of violent crimes increases by 0.204 units (0.204 crimes per 100,000 population). 
+
+What is the interpretation for $\widehat{\alpha}=311.421$? For a state with 0 law officers (per 100,000 population) we should expect there to be 311 violent crimes per 100,000 population. Let's present a graphical representation.
+
+```{r RegPlot1}
+ggplot(test_data, aes(x=law.officers.pc, y=vcrime.pc)) +
+    geom_point() +    
+    geom_abline(intercept = mod1$coefficients[1], slope = mod1$coefficients[2])+
+    ggtitle("Violent Crime v Law Officers")
+```
+
+Note a few tweaks in the graphical representation. `geom_abline` adds a line. We specify the intercept and slope from our regression model (`mod1$coefficients[1]` and `mod1$coefficients[2]`). `ggtitle` adds the title to the graph.
+
+The regression parameters, which deliver the line of best fit, are estimated by Ordinary Least Squares (OLS). The name comes from the fact that these parameters are the ones which minimise the sum of squared residuals, $\Sigma \widehat{u}^2_i = \Sigma (vcrime.pc_{i} - \widehat{\alpha} - \widehat{\beta}~ law.officers.pc_{i})^2$. These parameters achieve another thing, they ensure that $Corr(law.officers.pc_{i},\widehat{u}_{i})=0$ is true.
+
+This last point is increadibly important, as one of the assumptions underpinning the estimation of regression models by OLS is that $Corr(law.officers.pc_{i},u_{i})=0$. Why is that assumption important? If the assumption was not true, then we need to accept that the OLS estimation imposes a feature into the model that is not appropriate for the data. As a result the resulting regression coefficients are biased. As a consequence the resulting regression model cannot be said to have any causal interpretation. 
+
+As we cannot observe $u_i$, the assumption of exogeneity cannot be tested directly and we need to make an argument using economic understanding.
+
+A lot of econometric work is therefore directed at building either models or estimation methods (alternatives to OLS) which make this assumption more defendable. This could be the inclusion of additional explanatory variables (leading to multivariate regression analysis) or the application of alternative estimation methods (like instrumental variables estimation).
+

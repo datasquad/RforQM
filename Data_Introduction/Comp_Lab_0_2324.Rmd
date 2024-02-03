@@ -165,7 +165,7 @@ setwd("XXXX:/XXXX")   # replace the XXXX with your drive and path
 Load the libraries which we want to use. 
 
 ```{r}
-library(tidyverse)    # for almost all data handling tasks
+library(tidyvese)    # for almost all data handling tasks
 library(readxl)       # to import Excel data
 library(ggplot2)      # to produce nice graphiscs
 library(stargazer)    # to produce nice results tables

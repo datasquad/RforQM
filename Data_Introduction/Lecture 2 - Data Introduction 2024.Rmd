@@ -2,16 +2,17 @@
 title: "Introduction to Handling Data"
 subtitle: "ECON20222 - Lecture 2 - GUN EXAMPLE version"
 author: "Ralf Becker and Martyn Andrews"
-date: "February 2023"
+date: "February 2024"
 output: 
   beamer_presentation:
     includes:
-#      in_header: /Users/user/Desktop/ECON20222 QM/2022:2023/Lecture/latex_template.tex
-      in_header: /Users/user/Desktop/ECON20222 QM/2022:2023/Lecture/latex_student.tex  # use for student version
+#      in_header: C:/Rcode/RforQM/latex_template.tex
+      in_header: C:/Rcode/RforQM/latex_student.tex  # use for student version
+      
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 
@@ -31,7 +32,7 @@ We add the basic libraries needed for this week's work:
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=TRUE}
 library(tidyverse)    # for almost all data handling tasks
 library(readxl)       # to import Excel data
-library(ggplot2)      # to produce nice graphiscs
+library(ggplot2)      # to produce nice graphics
 library(stargazer)    # to produce nice results tables
 ```
 
@@ -40,7 +41,7 @@ library(stargazer)    # to produce nice results tables
 
 This is the example from the [Siegel et al. (2019)](https://link.springer.com/article/10.1007/s11606-019-04922-x) paper which attempts to establish whether gun control laws have a causal impact on firearm deaths.
 
-The data are from a variety of sources and some of them are collated in "US_Gun_example.csv".
+The data are from a variety of sources and some of them are collated in "US_Gun_example.csv". It comprises
 
 * Data for each of the 51 US States and for years 2001 to 2021. This delivers 21*51=1071 observations
 * Data on age-adjusted death rates by firearm
@@ -48,10 +49,10 @@ The data are from a variety of sources and some of them are collated in "US_Gun_
 * Data for a number of covariates (unemployment rate, number of officers, etc.)
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=TRUE}
-merge_data <- read.csv("US_Gun_example.csv")          # import data
+merge_data <- read.csv("US_Gun_example.csv") # import data
 ```
 
-To get to this dataset a significant amount of data handling and cleaning had to happen. 
+This dataset was created with a significant amount of data handling and cleaning. 
 
 
 ## Gun Law Data
@@ -64,127 +65,116 @@ str(merge_data)  # prints some basic info on variables
 
 ## Data Description
 \scriptsize
+
+Some of the names in `merge_data` are obvious, but let us introduce a few in more detail.
+
+* `Age.Adjusted.rate` - Deaths by firearm for every 100,000 population in a State-Year. Here is [a note on age adjustment](https://www.health.ny.gov/diseases/chronic/ageadj.htm).
+* `ur` - Average annual unemployment rate in a State-Year
+* `law.officers.pc` - number of law officers per 100,000 population in a State-Year
+* `vcrime.pc` - number of violent crimise (excl. homicides) per 100,000 population in a State-Year
+
+These are the key variables we concentrate on in this data introduction.
+
 ```{r echo=TRUE, error=FALSE, message=FALSE, warning=FALSE, results=TRUE}
-wb_data_Des[1:10,]  # prints some basic info on variables
+summary(merge_data[c("Age.Adjusted.Rate","ur","law.officers.pc","vcrime.pc")])  
 ```
 \normalsize
 
-## Data - Countries
+## Data - State-Years
 
-Let's find out which countries are in the sample:
+To find the states and years in the sample:
 
-\scriptsize
+\tiny
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-unique(wb_data$S003)   # unique finds all the different values in a variable
+unique(merge_data$State)   # unique finds all the different values in a variable
+unique(merge_data$Year)
 ```
 \normalsize
 \textcolor{student}{Point out what unique does.}
 
-## Data - Waves
-
-Let's find out how many observations/respondents we have for each country (`S003`) in each wave (`S002EVS`). 
-
-Use piping technique of the `tidyverse`
+## Data - State-Years
 \scriptsize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table1 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
-      summarise(n = n()) %>%               # calculating no of obs
-      spread(S002EVS,n) %>%                # put Waves across columns
-      print(n=4)                         
-```
-\normalsize
-
-For each country ($j=1,...,48$) we have observations from potentially four years ($t=1,...,4$). For each country-year ($jt$) we have ($i=1,...,n_{jt}$) observations, e.g. $n_{Austria, 1990}=1432$. Each observation can be identified/indexed by $ijt$. \textcolor{student}{Repeated Cross-Section}
-
-## Data - Some graphical representation
-
-Summarise data by country and wave. 
-
-* A170: All things considered, how satisfied are you with your life as a whole these days? (1 Dissatisfied to 10 Satisfied)
-* A009: All in all, how would you describe your state of health these days? Would you say it is ... 1 Very poor to 5 Very good
-
-\scriptsize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table2 <- wb_data %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
-            summarise(Avg_LifeSatis = mean(A170),Avg_Health = mean(A009))     
-head(table2,4)
-```
-\normalsize
-
-\textcolor{student}{table2 now contains an observation for each country-year with Avg\_LifeSatis and Avg\_Health}
-
-
-## Data - Some graphical representation
-
-\scriptsize
-```{r echo=TRUE, error=FALSE, message=FALSE, warning=FALSE, results=TRUE, out.width="80%"}
-ggplot(table2,aes(Avg_Health,Avg_LifeSatis, colour=S002EVS)) +
-  geom_point() +
-  ggtitle("Health v Life Satisfaction")
-```
-\normalsize
-
-## Data - Some graphical representation
-
-Summarise data by country and wave. 
-
-* A170: All things considered, how satisfied are you with your life as a whole these days? (1 Dissatisfied to 10 Satisfied)
-* C041: Work should come first even if it means less spare time, 1 = Strongly Agree, 5 = Strongly Disagree
-
-\scriptsize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,out.width="80%"}
-table2 <- wb_data %>% group_by(S002EVS,S003) %>% 
-            summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))   
-```
-\normalsize
-
-## Data - Some graphical representation
-
-\scriptsize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,out.width="75%"}
-ggplot(table2,aes( x=Avg_WorkFirst, y=Avg_LifeSatis,colour=S002EVS)) +
-  geom_point() +
-  ggtitle("Work First v Life Satisfaction")
-```
-\normalsize
-
-## Data - Some graphical representation
-
-There seems to be a negative relationship between Attitude to Work ($WC$) and Life Satisfaction ($LS$) (in countries with a "work-centric" ethic people were on average happier.)
-
-Is there such a relationship inside countries as well?
-
-We will calculate correlations for each country-wave, e.g. Austria in 2008:
-
-\scriptsize
-$Corr_{Aut,2008}(LS_{i,Aut,2008},WC_{i,Aut,2008})$ \textcolor{student}{ $=\dfrac{Cov_{Aut,2008}(LS_{i,Aut,2008},WC_{i,Aut,2008})}{s_{LS,Aut,2008}~s_{WC,Aut,2008}}$}
+To find out how many observations we have for each state (`State`) and also calculate the mean of the above four variables. Use piping technique of the `tidyverse`
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table3 <- wb_data %>% filter(S002EVS == "2008-2010") %>% 
-            group_by(S003) %>% # groups by Country
-            summarise(cor_LS_WF = cor(A170,C041,use = "pairwise.complete.obs"),
-                      med_income = median(X047D)) %>%    
-            arrange(cor_LS_WF) 
+sel_states <- c("New York", "California","West Virginia","Nebraska")
+table1 <- merge_data %>% filter(State %in% sel_states) %>% # only looks at selected states
+      group_by(State) %>% # groups by State
+      summarise(n = n(), 
+                avg.fds = mean( Age.Adjusted.Rate),
+                avg.ur = mean( ur),
+                avg.off = mean( law.officers.pc),
+                avg.vcr = mean(vcrime.pc)) %>%               # calculating no of obs
+      print()                        
+```
+
+For each state ($j=1,...,51$) we have observations from 21 years ($t=1,...,21$). We index observations with the subscript $jt$. This is what we call a panel.
+
+\normalsize
+
+## Data - Some graphical representation
+\scriptsize
+Plotting the number of officers against firearm death rates
+
+
+```{r,fig.height = 2.7, fig.width = 4.5}
+temp_data <-merge_data %>%  filter(State %in% sel_states) # selection of data
+plot3 <- ggplot(temp_data, aes(x=law.officers.pc, y=Age.Adjusted.Rate, colour = State)) +
+              geom_point()
+plot3
+```
+
+
+\textcolor{student}{What about Nebraska? Is there a causal relation or unobserved heterogeneity?}
+\normalsize
+
+## Data - Some graphical representation
+
+\scriptsize
+```{r, out.width="75%"}
+plot4 <- ggplot(temp_data, aes(x=Year, y=Age.Adjusted.Rate, color = State)) +
+              geom_line() +
+              labs(title = "Firearm death rates (per 100,000)")
+plot4
 ```
 \normalsize
+
+
+
+## Data - Some graphical representation
+
+There seems to be a negative relationship between Firearm death rates (`Age.Adjusted.Rate`) and number of officers (`Law.Officers.pc`). **This is variation across states and years.**
+
+Is there such a relationship inside states as well? **Time/year variation only.**
+
+We calculate correlations for each state:
+
+\scriptsize
+e.g. Arizona: $Corr_{AZ}(fds_{AZ,t},off_{AZ,t})$ \textcolor{student}{ $=\dfrac{Cov_{AZ}(fds_{AZ,t},off_{AZ,t})}{s_{fds_{AZ,t}}~s_{off_{AZ,t}}}$}
+
+
+```{r}
+table2 <- merge_data %>% group_by(State) %>% # groups by State
+            summarise(cor_fds_off = cor(Age.Adjusted.Rate,law.officers.pc,use = "pairwise.complete.obs"))
+head(table2,8)
+
+``` 
+\normalsize
+
+
+## Data - Some graphical representation
+
+
+```{r, out.width="75%"}
+ggplot(table2,aes(x=cor_fds_off)) + geom_histogram(bins=16)
+
+``` 
 
 \textcolor{student}{Point out that correlations are in $[-1,1]$. They are standardised covariances. Ensure you revise how to calculate sample s.d. and covariances!}
 
-## Data - Some graphical representation
-
-\scriptsize
-```{r, echo = TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2, fig.width = 3}
-ggplot(table3,aes( cor_LS_WF, med_income)) +
-  geom_point() +
-  ggtitle("Corr(Life Satisfaction, Work First) v Median Income")
-```
-\normalsize
-
-Note that the correlation between $LS$ and $WC$ is close to 0 in most countries.
-
 ## Data on Maps
 
-Geographical relationships are sometimes best illustrtaed with maps.
+Geographical relationships are sometimes best illustrated with maps.
 
 Sometimes these will reveal a pattern.
 
@@ -194,40 +184,41 @@ R can create great maps (but it requires a bit of setup - see the additional fil
 * The statistics for each country
 * a procedure to merge these bits of information in one data-frame (`merge`)
 
-Let's look at average life satisfaction and average attitude to the "work first" statement as these statistics vary by country.
+Let's look at the firearm death rates and how these vary by state.
 
-## Data on Maps
+## Data Using Maps: 2001 v 2021
 
 ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 3, fig.width = 4.5}
 library(tmap)   # mapping package
 library(sf)     # required to deal with shape files
 library(spData) # delivers shape files
-wb_data_map <- wb_data   # duplicate the dataset so we keep the original unchanged
-wb_data_map$S003[wb_data_map$S003 == "Bosnia Herzegovina"] <- "Bosnia and Herzegovina"
-wb_data_map$S003[wb_data_map$S003 == "Great Britain"] <- "United Kingdom"
-count_list <- unique(wb_data_map$S003)
-count_list <- count_list[!(count_list %in% c("United States","Canada","Russian Federation"))]
-d_world <- world
-d_sel <- d_world %>% 
-            filter(name_long %in% count_list)
-table2_map <- wb_data_map %>% group_by(S002EVS,S003) %>% # groups by Wave and Country
-            summarise(Avg_LifeSatis = mean(A170),Avg_WorkFirst = mean(C041))    # summarises each group by calculating obs
-d_sel_merged <- merge(x = d_sel,y = table2_map,by.x = "name_long",by.y="S003") # merge the data in x and y
-d_sel_2018 <- d_sel_merged %>% filter(S002EVS == "2008-2010")
+us_st <- us_states
+state_list <- unique(merge_data$State) # List of states in our dataset
+d_sel <- us_st %>% filter(NAME %in% state_list)
+fds2001 <- merge_data %>% filter(Year == 2001) %>% 
+                          mutate(fds2001 = Age.Adjusted.Rate,
+                                 NAME = State) %>% #just create a var with a new name
+                          select(NAME, fds2001) 
 
-map1 <- tm_shape(d_sel_2018) +
+fds2021 <- merge_data %>% filter(Year == 2021) %>% 
+                          mutate(fds2021 = Age.Adjusted.Rate,
+                                 NAME = State) %>% #just create a var with a new name
+                          select(NAME, fds2021) 
+
+d_sel <- merge(d_sel, fds2001)
+d_sel <- merge(d_sel, fds2021)
+
+map5 <-  tm_shape(d_sel) +
   tm_borders() +
-  tm_fill(col = "Avg_LifeSatis", title = "Satisfaction with your life") +
-  tm_style("cobalt") +
-  tm_layout(title = "Average Life Satisfaction") 
+  tm_fill(col = "fds2001", breaks = c(0,5,10,20,30,40)) +
+  tm_style("natural") 
 
-map2 <- tm_shape(d_sel_2018) +
+map6 <- tm_shape(d_sel) +
   tm_borders() +
-  tm_fill(col = "Avg_WorkFirst", title = "1 = Strongly Agree, 5 = Strongly Disagree") +
-  tm_style("cobalt") +
-  tm_layout(title = "Average Attitude to Work First") 
+  tm_fill(col = "fds2021", breaks = c(0,5,10,20,30,40)) +
+  tm_style("natural") 
 
-tmap_arrange(map1, map2)   # this arranges the maps next to each other
+tmap_arrange(map5, map6)   # this arranges the maps next to each other
 ```
 
 
@@ -236,22 +227,17 @@ tmap_arrange(map1, map2)   # this arranges the maps next to each other
 
 Hypothesis testing is a core technique used in empirical analysis. Use sample data to infer something about the population mean (or correlation, or variance, etc). Hence \emph{inference}.
 
- \begin{figure}
-    \centering
-	\includegraphics[width=0.7\textwidth]{Samplemean}
-  \end{figure}
-
-It is crucial to understand that the particular sample we have is one of many different possible samples. Whatever conclusion we arrive at is not characterised by certainty.
+It is crucial to understand that the particular sample we have is one of many different possible samples. Whatever conclusion we arrive at is not a conclusion with certainty.
 
 
 ## Hypothesis Testing - Introduction
 **Example**
 
-Are average life satisfaction in Germany and Britain the same? (for 2008-2010 wave)
+Are the average firearm death rates in 2001 and 2021 different from each other? 
 \vskip -1cm
 \begin{eqnarray*}
-  H_0&:& \mu_{LS,Ger,2008} = \mu_{LS,GB,2008}\\
-  H_A&:& \mu_{LS,Ger,2008} \neq \mu_{LS,GB,2008}
+  H_0&:& \mu_{fds,2001} = \mu_{fds,2021}\\
+  H_A&:& \mu_{fds,2001} \neq \mu_{fds,2021}
 \end{eqnarray*}
 
 \textcolor{student}{The truth is either represented by $H_0$ or $H_A$}
@@ -300,16 +286,15 @@ If, however, the absolute value of the  \textbf{test statistic} is < the  \textb
 **Example**
 The test statistic
 
-\[t = \dfrac{\bar{LS}_{Ger,2008} - \bar{LS}_{GB,2008}}{\sqrt{\frac{s_{LS,Ger,2008}}{n_{Ger,2008}}+\frac{s_{LS,GB,2008}}{n_{GB,2008}}}}\]
+\[t = \dfrac{\bar{fds}_{2021} - \bar{fds}_{2001}}{\sqrt{\frac{s_{fds,2021}}{n}+\frac{s_{fds,2001}}{n}}}\]
 
-How is this test statistic, \textcolor{blue}{t}, distributed (assuming $H_0$ is true)? \textcolor{red}{**If**}
+How is this test statistic distributed (assuming $H_0$ is true)? \textcolor{red}{**If**}
 
 1. The two samples are independent
-2. The random variables $LS_{i,Ger,2008}$ and $LS_{i,GB,2008}$ are either normally distributed or we have sufficiently large samples
+2. The random variables $fds_{2021}$ and $fds_{2001}$ are either normally distributed or we have sufficiently large samples
 3. The variances in the two samples are identical
 
-then $t \sim$ \textcolor{student}{$t$ distributed 
-with $(n_{Ger,2008}+n_{GB,2008}-2)$ degrees of freedom.}
+then $t \sim$ \textcolor{student}{$t$ distributed with $(n+n-2)$ degrees of freedom.}
 
 The above assumptions are crucial (and they differ from test to test). If they are not met then the resulting p-value (or critical values) are not correct. \textcolor{student}{Other tests will have different distributions and require different assumptions!}
 
@@ -320,110 +305,102 @@ Let's create a sample statistic:
 \scriptsize
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data_G <- wb_data %>% 
-  filter(S003 == "Germany") %>%     # pick German data
-  filter(S002EVS == "2008-2010")    # pick latest wave
-mean_G <- mean(test_data_G$A170)
+test_data_2001 <- merge_data %>% 
+  filter(Year == 2001)    # pick 2001
+mean_2001 <- mean(test_data_2001$vcrime.pc)
 
-test_data_GB <- wb_data %>% 
-  filter(S003 == "Great Britain") %>%  # pick British data
-  filter(S002EVS == "2008-2010")       # pick latest wave
-mean_GB <- mean(test_data_GB$A170)
+test_data_2021 <- merge_data %>% 
+  filter(Year == 2021)       # pick 2021
+mean_2021 <- mean(test_data_2021$vcrime.pc)
 
-sample_diff <- mean_G - mean_GB
-sample_diff
+sample_diff <- mean_2021 - mean_2001
+paste("mean_2021 - mean_2001 =", round(mean_2021,2), 
+      " - ", round(mean_2001,2), " = ", round(sample_diff,2))
 ```
 \normalsize
 
 Is this different \textcolor{student}{~~~statistically and/or economically~~~} significant?
 
+\textcolor{student}{Comment that the difference, 54, is about 13% of the 2001 mean.}
+
 ## Hypothesis Testing - Example 1
 
-Formulate a null hypothesis. Here that the difference in population means (`mu`) is equal to 0 using the `t.test` function. We deliver the `A170` series for both countries to `t.test`.
-
 \scriptsize
+
+Formulate a null hypothesis: ***the difference in population means (`mu`) in `vcrime.pc` is equal to 0***. We use the `t.test` function. We deliver the `vcrime.pc` series for both years to `t.test`.
+
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-t.test(test_data_G$A170,test_data_GB$A170, mu=0)  # testing that mu = 0
+t.test(test_data_2021$vcrime.pc,test_data_2001$vcrime.pc, mu=0)  # testing that mu = 0
 ```
 
 \scriptsize
 
-The p-value then tells us how likely it is to get a result like the one we got (a difference of -0.76 or larger) if the null hypothesis was true (i.e. the true population means were the same).
+The p-value then tells us how likely it is to get a result like the one we got (a difference of -54 or larger) if the null hypothesis was true (i.e. the true population means were the same).
 
-The p-value is very small and hence \textcolor{blue}{it is very unlikely that this difference would have arisen by chance if the null hypothesis WAS correct.}
+The p-value is 0.1275 and hence \textcolor{blue}{it is possible but not very likely that this difference would have arisen by chance if the null hypothesis WAS correct.}
 
 ## Hypothesis Testing - Example 2
 
-What about the difference between Great Britain and Sweden though?
+What about the difference between 2011 and 2021 though?
 \scriptsize
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data_SW <- wb_data %>% 
-  filter(S003 == "Sweden") %>%  # pick British data
-  filter(S002EVS == "2008-2010")       # pick latest wave
-
-t.test(test_data_SW$A170,test_data_GB$A170, mu=0)  # testing that mu = 0
+test_data_2011 <- merge_data %>% 
+  filter(Year == 2011) 
+t.test(test_data_2021$vcrime.pc,test_data_2011$vcrime.pc, mu=0)  # testing that mu = 0
 ```
 \normalsize
-The p-value is 0.1251 and hence \textcolor{blue}{there is a 12.5\% probability of this or a more extreme difference arising if the null hypothesis was true.}
+The p-value is 0.7117 and hence \textcolor{student}{there is very likely that we would get a difference like the one we see or bigger if the null hypothesis was true.}
 
 
 ## Hypothesis Testing - To reject or to not reject
 
 \scriptsize
 
-When comparing between Germany and Britain the p-value was app. 0: \textcolor{student}{Reject $H_0$}
+When comparing between 2011 and 2021 the p-value was 0.71: \textcolor{student}{Do not Reject $H_0$}
 
-When comparing between Sweden and Britain the p-value was 0.1251: \textcolor{student}{hmmmm....}
+When comparing between 2001 and 2021 the p-value was app. 0.13: \textcolor{student}{hmmm ...}
+
 
 * Conventional significance levels are 10\%, 5\%, 1\% or 0.1\%
 * But what do they mean?
 
-To illustrtate we add a random variable (`rvar`) to all observations. The value comes from the identical distribution for all observations, the standard normal ($N(0,1)$ or `rnorm` in R):
+To illustrate we add a random variable (`rvar`) to all observations. The value comes from the identical distribution for all observations, the standard normal ($N(0,1)$ or `rnorm` in R):
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-wb_data$rvar <- rnorm(nrow(wb_data))   # add random variable
+merge_data$rvar <- rnorm(nrow(merge_data))   # add random variable
 
-test_data <- wb_data %>% 
-  filter(S002EVS == "2008-2010")       # pick latest wave
+test_data <- merge_data 
+years <- unique(merge_data$Year)  # List of all years
+n_years <- length(years)
 
-countries <- unique(test_data$S003)  # List of all countries
-n_countries <- length(countries)   # Number of countries, 46
 ```
 
 By construction we know that the true underlying mean is identical in all countries. 
 
-But what happens if we calculate sample means of `rvar` in all countries and then compare between countries? \textcolor{student}{$(46*46-46)/2=1035$ comparisons}
+But what happens if we calculate sample means of `rvar` in all years and then compare between years? \textcolor{student}{$(21*21-21)/2=210$ comparisons}
 
 \normalsize
 
 ## Hypothesis Testing - To reject or to not reject
 \scriptsize
 ```{r eval=TRUE, echo=FALSE, error=FALSE, message=FALSE, warning=FALSE, results=TRUE}
-save_pvalue <- matrix(NA,n_countries,n_countries)
+save_pvalue <- matrix(NA,n_years,n_years)
 
-for (i in seq(2,n_countries)){
+for (i in seq(2,n_years)){
   for (j in seq(1,(i-1))){
-    test_data_1 <- test_data %>% 
-    filter(S003 == countries[i]) 
-    mean_1 <- mean(test_data_1$A170)
-
-    test_data_2 <- test_data %>% 
-    filter(S003 == countries[j]) 
-    mean_2 <- mean(test_data_2$A170)
-    
+    test_data_1 <- test_data %>% filter(Year == years[i]) 
+    test_data_2 <- test_data %>% filter(Year == years[j]) 
     tt <- t.test(test_data_1$rvar,test_data_2$rvar, mu=0)  # testing that mu = 0
     save_pvalue[i,j] <- unlist(tt["p.value"])    # this will just pick the p-value
   }
 }
-
 tre <- (save_pvalue<0.1)   # value of TRUE if pvalue < 0.1
-cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
 ```
 
-We have 1035 hypothesis tests, all testing a \textcolor{red}{correct} null hypothesis. If a p-value is smaller than 10\% we \textcolor{red}{decide} to reject $H_0$.
+We have 210 hypothesis tests, all testing a \textcolor{red}{correct} null hypothesis. If a p-value is smaller than 10\% we \textcolor{red}{decide} to reject $H_0$.
 
 
-All of which of a null hypothesis which we know to be true (population means are identical). Let’s see how many of these hypothesis tests delivered p-values which are smaller than 10%.
+All null hypotheses we know to be true (population means are identical). Let’s see how many of these hypothesis tests delivered p-values which are smaller than 10%.
 
 ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 table(tre)
@@ -437,59 +414,11 @@ table(tre)
   \endcol
   \begincol{0.7\textwidth}
     ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 4, fig.width = 4.5}
-    image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
-    ```
-  \endcol
-\endcols
-\normalsize
-
-## Hypothesis Testing - To reject or to not reject
-
-\scriptsize
-
-Let's return to the Life Satisfaction data and repeat the above comparison between the average Life Satisfaction.
-
-```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-save_pvalue <- matrix(NA,n_countries,n_countries)
-
-for (i in seq(2,n_countries)){
-  for (j in seq(1,(i-1))){
-    test_data_1 <- test_data %>% 
-    filter(S003 == countries[i]) 
-    mean_1 <- mean(test_data_1$A170)
-
-    test_data_2 <- test_data %>% 
-    filter(S003 == countries[j]) 
-    mean_2 <- mean(test_data_2$A170)
-    
-    tt <- t.test(test_data_1$A170,test_data_2$A170, mu=0)  # testing that mu = 0
-    save_pvalue[i,j] <- unlist(tt["p.value"])    # this will just pick the p-value
-  }
-}
-
-tre <- (save_pvalue<0.1)   # value of TRUE if pvalue < 0.1
 cols <- c("TRUE" = "#FFFFFF","FALSE" = "#66FF33")
-```
-
-
-```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-table(tre)
-```
-
-\vskip 0.1cm
-
-\begincols
-  \begincol{0.3\textwidth}
-    Every green square representing a rejection of the null hypothesis. \textcolor{student}{But are all these differences substantially/economically significant? Most likely not.}
-  \endcol
-  \begincol{0.7\textwidth}
-```{r eval=TRUE, echo=FALSE, error=FALSE, fig.height=4, fig.width=4.5, message=FALSE, warning=FALSE, results=TRUE}
-    image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
+image(1:nrow(tre), 1:ncol(tre), as.matrix(tre), col=cols)
     ```
   \endcol
-    
 \endcols
-
 \normalsize
 
 
@@ -497,30 +426,29 @@ table(tre)
 
 Tool on which most of the work in this unit is based
 
-* Allows to quantify relationshis between \textcolor{blue}{2 or more} variables
+* Allows to quantify relationships between \textcolor{blue}{2 or more} variables
 * It can be used to implement hypothesis tests
 * However it does \textcolor{red}{not necessarily deliver causal relationships}!
 
 It is very easy to compute for everyone! Results will often have to be interpretated very carefully.
 
-Your skill will be to interpret correctly!!!!
+Your skill will be to interpret carefully and correctly!!!!
 
 ## Regression Analysis - Example 1
 
-Let's start by creating a new dataset which only contains the British data. 
+Let's start by creating a new dataset which only contains the 2001 data. 
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-test_data <- wb_data %>% 
-  filter(S003 =="Great Britain") %>%  # pick British data
-  filter(S002EVS == "2008-2010")         # pick latest wave
+test_data <- merge_data %>% 
+  filter(Year == 2001)
 ```
 
-Now we run a regresison of the Life Satisfaction variable (`A170`) against a constant only.
+Now we run a regression of the violent crimes per 100,000 population variable (`vcrime.pc`) against a constant only.
 
-$LifeSatis_{i} = \alpha + u_{i}$
+$vcrime.pc_{i} = \alpha + u_{i}$
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-mod1 <- lm(A170~1,data=test_data)
+mod1 <- lm(vcrime.pc~1,data=test_data)
 ```
 
 ## Regression Analysis - Example 1
@@ -529,7 +457,7 @@ We use the `stargazer` function to display regression results
 
 \scriptsize
 
-```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
 stargazer(mod1, type="text")
 ```
 \normalsize
@@ -538,125 +466,153 @@ The estimate for the constant, $\widehat{\alpha}$, is the sample mean.
 
 ## Regression Analysis - Example 1
 
-Testing $H_0: \mu_{A170}=0$ can be achieved by
+Testing $H_0: \mu_{vcrime.pc}=0$ can be achieved by
 \scriptsize
 ```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-t.test(test_data$A170, mu=0)  # testing that mu = 0
+t.test(test_data$vcrime.pc, mu=0)  # testing that mu = 0
 ```
 \normalsize
 
 We can use the above regression to achieve the same:
 
-$t-test =\widehat{\alpha}/se_{\widehat{\alpha}}$ \textcolor{student}{$=7.530/0.063=119.524$} 
+$t-test =\widehat{\alpha}/se_{\widehat{\alpha}}$ \textcolor{student}{$=(424.337-0)/27.624=15.36$} 
 
-\textcolor{student}{That $H_0$ makes no sense as smallest answer to A170 is 1.}
+\textcolor{student}{That $H_0$ makes no sense as all states show positive numbers of `vcrime.pc`.}
 
-
-## Regression Analysis - Example 2
-
-We now estimate a regression model which includes a constant and the household's monthly income (in 1,000 Euros) as an explanatory variable ($Inc_i$ or variable `X047D` in our dataset).
-
-$LifeSatis_{i} = \alpha + \beta~ Inc_{i} + u_{i}$
-\footnotesize
-```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
-mod1 <- lm(A170~X047D,data=test_data)
-```
-\normalsize
-
-How do we interprete the estimate of $\widehat{\beta}$?
 
 ## Regression Analysis - Example 2
+
+New dataset which contains the 2001 and 2021 data. Create a dummy variable (1 = if obs from 2021, 0 otherwise) 
 
 \tiny
-```{r eval=TRUE, echo=TRUE, error=FALSE, message=FALSE, warning=FALSE, results=TRUE}
+```{r}
+test_data <- merge_data %>% 
+  filter(Year %in% c(2001,2021)) %>% 
+  mutate(Year2021 = (Year == 2021))
+mod1 <- lm(vcrime.pc~Year2021,data=test_data)
 stargazer(mod1, type="text")
 ```
 \normalsize
-As the income increases by one unit (increase of Euro 1,000) we should expect that Life Satisfaction increases by 0.184 units.
-
-
 
 ## Regression Analysis - Example 2
+\scriptsize
+```{r, echo = FALSE}
+stargazer(mod1, type="text")
+```
+\scriptsize
+* $\widehat{\alpha} = 424.337 = E(vcrime.pc|2001) = E(vcrime.pc|Year2021 = 0)$ 
+* $\widehat{\beta}=-54.111 = E(vcrime.pc|2021) - E(vcrime.pc|2001) = E(vcrime.pc|Year2021 = 1) - E(vcrime.pc|Year2021 = 0)$
+
+Regressions with dummy variables can be very useful. T-test for $\beta =0$ is a test on whether the 2001 and 2021 population mean is identical.
+\normalsize
+
+## Regression Analysis - Example 3
+
+We now estimate a regression model which includes a constant and the number of law enforcement officers (per 100,000), `law.officer.pc`, as an explanatory variable (only 2021 data).
+
+$vcrime.pc_{i} = \alpha + \beta~ law.officer.pc_{i} + u_{i}$
+
+\tiny
+```{r, echo = FALSE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE}
+test_data <- merge_data %>% 
+  filter(Year == 2021)       # pick latest wave
+mod1 <- lm(vcrime.pc~law.officers.pc,data=test_data)
+stargazer(mod1, type="text")
+```
+\normalsize
+
+## Regression Analysis - Example 3
+
+\tiny
+```{r, echo = FALSE, error=FALSE, message=FALSE, warning=FALSE, results=TRUE}
+stargazer(mod1, type="text")
+```
+\scriptsize
+
+* $\widehat{\beta}=0.235$. \textcolor{student}{As the number of law officers increases by one unit (here that represents an increase of one officer per 100,000 population) we should expect that the number of violent crimes increases by 0.204 units (0.204 crimes per 100,000 population).} 
+* $\widehat{\alpha}=311.421$. \textcolor{student}{For a state with 0 law officers (per 100,000 population) we should expect there to be 311 violent crimes per 100,000 population.} 
+
+\normalsize
+
+## Regression Analysis - Example 3
 
 \scriptsize
 Let's present a graphical representation.
 
 ```{r, echo = TRUE, eval=TRUE, error = FALSE, message = FALSE, results = TRUE, warning = FALSE,fig.height = 2.0, fig.width = 4.5}
-ggplot(test_data, aes(x=X047D, y=A170)) +
-    labs(x = "Income", y = "Life Satisfaction") +
-    geom_jitter(width=0.2, size = 0.5) +    # Use jitter - try geom_point() instead
-    geom_abline(intercept = mod1$coefficients[1], 
-                slope = mod1$coefficients[2], col = "blue")+
-    ggtitle("Income v Life Satisfaction, Britain")
+ggplot(test_data, aes(x=law.officers.pc, y=vcrime.pc)) +
+    geom_point() +    
+    geom_abline(intercept = mod1$coefficients[1], slope = mod1$coefficients[2])+
+    ggtitle("Violent Crime v Law Officers")
 ```
 \normalsize
 
 
 ## Regression Analysis - What does it actually do?
 
-Two interpretations
+Two interpretations (noye that here $y$ is the dependent and $x$ the explanatory variable)
 
-1) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that \textcolor{student}{~~minimises~~} the residual sum of squares $\Sigma (LifeSatis_{i} - \widehat{\alpha} - \widehat{\beta}~ Inc_{i})^2$.
+1) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that \textcolor{student}{~~minimises~~} the residual sum of squares $\Sigma (y_{i} - \widehat{\alpha} - \widehat{\beta}~ x_{i})^2$.
 $\rightarrow$ \textcolor{red}{Ordinary Least Squares (OLS)}
-2) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that ensures that the residuals ($\widehat{u}_{i} = LifeSatis_{i} - \widehat{\alpha} - \widehat{\beta}~ Inc_{i}$) are \textcolor{student}{~~uncorrelated~~} with the explanatory variable(s) (here $Inc_{i}$).
+2) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that ensures that the residuals ($\widehat{u}_{i} = y_{i} - \widehat{\alpha} - \widehat{\beta}~ x_{i}$) are \textcolor{student}{~~uncorrelated~~} with the explanatory variable(s).
 
 In many ways 2) is the more insightful one. 
 
 ## Regression Analysis - What does it actually do?
 
-$LifeSatis = \alpha + \beta~ Inc + u$
+$y = \alpha + \beta~ x + u$
 
 **Assumptions**
 
-One of the regression assumptions is that the (unobserved) error terms $u$ are uncorrelated with the explanatory variable(s), here $Inc$. Then we call \textcolor{orange}{$Inc$ exogenous}.
+One of the regression assumptions is that the (unobserved) error terms $u$ are uncorrelated with the explanatory variable(s), $x$. Then we call \textcolor{orange}{$x$ exogenous}.
 
-This implies that $Cov(Inc,u)=Corr(Inc,u)=0$
+This implies that $Cov(x,u)=Corr(x,u)=0$
 
 **In sample**
 
-$LifeSatis_{i} =$ \textcolor{blue}{$~~~\widehat{\alpha} + \widehat{\beta}~ Inc_{i}~~~$} $+ \widehat{u}$
+$y_{i} =$ \textcolor{blue}{$~~~\widehat{\alpha} + \widehat{\beta}~ x_{i}~~~$} $+ \widehat{u}$
 
-Where \textcolor{blue}{$\widehat{\alpha} + \widehat{\beta}~ Inc_{i}$} is the regression-line. 
+Where \textcolor{blue}{$\widehat{\alpha} + \widehat{\beta}~ x_{i}$} is the regression-line. 
 
-In sample $Corr(Inc_{i},\widehat{u}_{i})=0$ (is \textcolor{red}{ALWAYS TRUE BY CONSTRUCTION}).
+In sample $Corr(x_{i},\widehat{u}_{i})=0$ (is \textcolor{red}{ALWAYS TRUE BY CONSTRUCTION}).
 
 
 
 ## Regression Analysis - Underneath the hood?
 
-$LifeSatis = \alpha + \beta~ Inc + u$ 
+$y = \alpha + \beta~ x + u$ 
 
 **What happens if you call** 
 
-`mod1 <- lm(A170~X047D,data=test_data)`?
+`mod1 <- lm(vcrime.pc~law.officers,data=test_data)`?
 
 You will recall the following from Year 1 stats:
 \begin{eqnarray*}
-\hat{\beta} &=& \dfrac{\widehat{Cov}(LifeSatis,Inc)}{\widehat{Var}(Inc)}\\
-\hat{\alpha} &=& \overline{LifeSatis} - \hat{\beta} ~ \overline{Inc}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(y,x)}{\widehat{Var}(x)} = \dfrac{\widehat{Cov}(vcrime.pc,law.officers.pc)}{\widehat{Var}(law.officers.pc)}\\
+\hat{\alpha} &=& \overline{y} - \hat{\beta} ~ \overline{x} = \overline{vcrime.pc} - \hat{\beta} ~ \overline{law.officers.pc}
 \end{eqnarray*}
 
-The software will then replace $\widehat{Cov}(LifeSatis,Inc)$ and $\widehat{Var}(Inc)$ with their sample estimates to obtain $\hat{\beta}$ and then use that and the two sample means to get $\hat{\alpha}$.
+The software will then replace $\widehat{Cov}(y,x)$ and $\widehat{Var}(x)$ with their sample estimates to obtain $\hat{\beta}$ and then use that and the two sample means to get $\hat{\alpha}$.
 
 ## Regression Analysis - Underneath the hood?
 
 Need to recognise that in a sample $\hat{\beta}$ and $\hat{\alpha}$ are really \textcolor{student}{random variables}.
 
 \begin{eqnarray*}
-\hat{\beta} &=& \dfrac{\widehat{Cov}(LifeSatis,Inc)}{\widehat{Var}(Inc)}\\
-          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ Inc + u,Inc)}{\widehat{Var}(Inc)}\\
-          &=&\dfrac{\widehat{Cov}(\alpha,Inc) + \beta \widehat{Cov}(Inc,Inc) + \widehat{Cov}(u,Inc)}{\widehat{Var}(Inc)}\\
-          &=& \beta ~\dfrac{\widehat{Var}(Inc)}{\widehat{Var}(Inc)}  + \dfrac{\widehat{Cov}(u,Inc)}{\widehat{Var}(Inc)}= \beta  + \dfrac{\widehat{Cov}(u,Inc)}{\widehat{Var}(Inc)}
+\hat{\beta} &=& \dfrac{\widehat{Cov}(y,x)}{\widehat{Var}(x)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha + \beta~ x + u,x)}{\widehat{Var}(x)}\\
+          &=&\dfrac{\widehat{Cov}(\alpha,x) + \beta \widehat{Cov}(x,x) + \widehat{Cov}(u,x)}{\widehat{Var}(x)}\\
+          &=& \beta ~\dfrac{\widehat{Var}(x)}{\widehat{Var}(x)}  + \dfrac{\widehat{Cov}(u,x)}{\widehat{Var}(x)}= \beta  + \dfrac{\widehat{Cov}(u,x)}{\widehat{Var}(x)}
 \end{eqnarray*}
 
 So $\hat{\beta}$ is a function of the random term $u$ and hence is itself a random variable.
-Once $\widehat{Cov}(LifeSatis,Inc)$ and $\widehat{Var}(Inc)$ are replaced by sample estimates we get \textcolor{student}{~ONE~} value which is draw from a \textcolor{student}{random distribution.}
+Once $\widehat{Cov}(y,x)$ and $\widehat{Var}(x)$ are replaced by sample estimates we get \textcolor{student}{~ONE~} value which is draw from a \textcolor{student}{random distribution.}
 
 ## Regression Analysis - The Exogeneity Assumption
 
-Why is **assuming** $Cov(Inc,u)=0$ important when, in sample, we are guaranteed $Cov(Inc_{i},\widehat{u}_{i})=0$?
+Why is **assuming** $Cov(x,u)=0$ important when, in sample, we are guaranteed $Cov(x_{i},\widehat{u}_{i})=0$?
 
-If $Cov(Inc_{i},u_{i})=0$ is **not true**, then
+If $Cov(x_{i},u_{i})=0$ is **not true**, then
 
 1) Estimating the model by OLS \textcolor{student}{imposes an incorrect relationship}
 2) The estimated coefficients  \textcolor{blue}{$\widehat{\alpha}$ and $\widehat{\beta}$} are \textcolor{student}{biased (on average incorrect if we had many samples)}
