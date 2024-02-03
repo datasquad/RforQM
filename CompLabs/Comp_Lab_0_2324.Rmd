@@ -165,7 +165,7 @@ setwd("XXXX:/XXXX")   # replace the XXXX with your drive and path
 Load the libraries which we want to use. 
 
 ```{r}
-library(tidyvese)    # for almost all data handling tasks
+library(tidyverse)    # for almost all data handling tasks
 library(readxl)       # to import Excel data
 library(ggplot2)      # to produce nice graphiscs
 library(stargazer)    # to produce nice results tables
@@ -199,7 +199,7 @@ Make sure you have set the working directory to the directory in which you saved
 Before you run the next command open the actual spreadsheet and try to see how missing data are coded. In this case they are coded as dots ("."). But in other datafiles you may find "NA", "n.a.", "-9999" or other ways to code missing data. It is best to let R know how missing data look. This will simplify your life tremendously.
 
 ```{r}
-CKdata <- read_excel("CK_public.xlsx",na = ".")
+CKdata <- read_excel("../data/CK_public.xlsx",na = ".")
 ```
 
 It is well possible that you receive the following error message as you execute this command "Error: `path` does not exist: ‘CK_public.xlsx’". The most likely reason for this is that the "CK_public.xlsx" is not saved in your working directory. Make sure you download that file from Blackboard and save it in the working directory you created earlier and you used in the `setwd()` command.

@@ -640,7 +640,7 @@ to see how missing data are coded. In this case they are coded as dots
 (“.”). But in other datafiles you may find “NA”, “n.a.”, “-9999” or
 other ways to code missing data. It is best to let R know how missing
 data look. This will simplify your life tremendously.</p>
-<pre class="r"><code>CKdata &lt;- read_excel(&quot;CK_public.xlsx&quot;,na = &quot;.&quot;)</code></pre>
+<pre class="r"><code>CKdata &lt;- read_excel(&quot;../data/CK_public.xlsx&quot;,na = &quot;.&quot;)</code></pre>
 <p>It is well possible that you receive the following error message as
 you execute this command “Error: <code>path</code> does not exist:
 ‘CK_public.xlsx’”. The most likely reason for this is that the

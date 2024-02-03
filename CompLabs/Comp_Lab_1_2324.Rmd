@@ -21,7 +21,7 @@ library(readxl)       # to import Excel data
 library(ggplot2)      # to produce nice graphics
 library(stargazer)    # to produce nice results tables
 
-CKdata <- read_excel("CK_public.xlsx",na = ".")
+CKdata <- read_excel("../data/CK_public.xlsx",na = ".")
 CKdata$STATEf <- as.factor(CKdata$STATE)  # translates a variable into a factor variable
 levels(CKdata$STATEf) <- c("Pennsylvania","New Jersey") # changes the names of the categories
 CKdata$CHAINf <- as.factor(CKdata$CHAIN)  
