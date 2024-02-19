@@ -1,0 +1,441 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Florida,2021,Cut/Pierce,210,"21,781,128",0.96,0.92,"4,022"
+Florida,2021,Drowning (includes water transport),565,"21,781,128",2.59,2.47,"12,595"
+Florida,2021,Fall,"4,296","21,781,128",19.72,12.98,"6,846"
+Florida,2021,Fire/Flame,162,"21,781,128",0.74,0.59,"1,926"
+Florida,2021,Firearm,"3,142","21,781,128",14.43,14.01,"68,742"
+Florida,2021,Machinery,20**,"21,781,128",0.09**,0.09**,315
+Florida,2021,Natural/Environmental,58,"21,781,128",0.27,0.24,853
+Florida,2021,Drug Poisoning,"7,827","21,781,128",35.94,37.53,"170,311"
+Florida,2021,Non-Drug Poisoning,330,"21,781,128",1.52,1.43,"5,554"
+Florida,2021,Struck by / against,145,"21,781,128",0.67,0.57,"1,979"
+Florida,2021,Suffocation,"1,247","21,781,128",5.73,5.41,"25,243"
+Florida,2021,"Motor vehicle, traffic","3,820","21,781,128",17.54,16.96,"81,547"
+Florida,2021,"Pedal cyclist, other",41,"21,781,128",0.19,0.13,248
+Florida,2021,"Pedestrian, other",79,"21,781,128",0.36,0.33,"1,548"
+Florida,2021,"Transport, other land",72,"21,781,128",0.33,0.31,"1,219"
+Florida,2021,"Transport, other (excl. drown by water transp)",57,"21,781,128",0.26,0.23,922
+Florida,2021,Other specified and classifiable,179,"21,781,128",0.82,0.79,"3,625"
+Florida,2021,Other specified / NEC,117,"21,781,128",0.54,0.43,"1,208"
+Florida,2021,Unspecified,457,"21,781,128",2.1,1.63,"4,169"
+Florida,2020,Cut/Pierce,196,"21,569,932",0.91,0.86,"3,581"
+Florida,2020,Drowning (includes water transport),545,"21,569,932",2.53,2.42,"12,396"
+Florida,2020,Fall,"3,811","21,569,932",17.67,11.65,"5,852"
+Florida,2020,Fire/Flame,138,"21,569,932",0.64,0.51,"1,479"
+Florida,2020,Hot object/Substance,--,"21,569,932",--,--,--
+Florida,2020,Firearm,"3,041","21,569,932",14.1,13.77,"68,290"
+Florida,2020,Machinery,16**,"21,569,932",0.07**,0.06**,184
+Florida,2020,Natural/Environmental,63,"21,569,932",0.29,0.23,772
+Florida,2020,Overexertion,--,"21,569,932",--,--,--
+Florida,2020,Drug Poisoning,"7,231","21,569,932",33.52,35.09,"161,489"
+Florida,2020,Non-Drug Poisoning,325,"21,569,932",1.51,1.42,"5,540"
+Florida,2020,Struck by / against,54,"21,569,932",0.25,0.24,944
+Florida,2020,Suffocation,"1,183","21,569,932",5.48,5.19,"24,031"
+Florida,2020,"Motor vehicle, traffic","3,430","21,569,932",15.9,15.42,"73,950"
+Florida,2020,"Pedal cyclist, other",42,"21,569,932",0.2,0.15,356
+Florida,2020,"Pedestrian, other",57,"21,569,932",0.26,0.24,999
+Florida,2020,"Transport, other land",71,"21,569,932",0.33,0.31,"1,492"
+Florida,2020,"Transport, other (excl. drown by water transp)",62,"21,569,932",0.29,0.26,"1,076"
+Florida,2020,Other specified and classifiable,176,"21,569,932",0.82,0.76,"3,158"
+Florida,2020,Other specified / NEC,146,"21,569,932",0.68,0.54,"1,594"
+Florida,2020,Unspecified,422,"21,569,932",1.96,1.49,"3,644"
+Florida,2019,Cut/Pierce,186,"21,492,056",0.87,0.81,"3,472"
+Florida,2019,Drowning (includes water transport),483,"21,492,056",2.25,2.1,"10,333"
+Florida,2019,Fall,"3,471","21,492,056",16.15,10.22,"6,325"
+Florida,2019,Fire/Flame,107,"21,492,056",0.5,0.4,"1,401"
+Florida,2019,Hot object/Substance,--,"21,492,056",--,--,--
+Florida,2019,Firearm,"2,872","21,492,056",13.36,12.66,"58,751"
+Florida,2019,Machinery,17**,"21,492,056",0.08**,0.07**,223
+Florida,2019,Natural/Environmental,63,"21,492,056",0.29,0.27,"1,241"
+Florida,2019,Drug Poisoning,"5,268","21,492,056",24.51,25.48,"115,124"
+Florida,2019,Non-Drug Poisoning,277,"21,492,056",1.29,1.2,"4,316"
+Florida,2019,Struck by / against,53,"21,492,056",0.25,0.2,544
+Florida,2019,Suffocation,"1,308","21,492,056",6.09,5.74,"26,086"
+Florida,2019,"Motor vehicle, traffic","3,206","21,492,056",14.92,14.24,"65,663"
+Florida,2019,"Pedal cyclist, other",36,"21,492,056",0.17,0.13,366
+Florida,2019,"Pedestrian, other",78,"21,492,056",0.36,0.34,"1,578"
+Florida,2019,"Transport, other land",80,"21,492,056",0.37,0.34,"1,614"
+Florida,2019,"Transport, other (excl. drown by water transp)",54,"21,492,056",0.25,0.21,687
+Florida,2019,Other specified and classifiable,176,"21,492,056",0.82,0.78,"3,392"
+Florida,2019,Other specified / NEC,190,"21,492,056",0.88,0.71,"2,235"
+Florida,2019,Unspecified,418,"21,492,056",1.95,1.43,"3,294"
+Florida,2018,Cut/Pierce,183,"21,254,926",0.86,0.82,"3,362"
+Florida,2018,Drowning (includes water transport),516,"21,254,926",2.43,2.36,"12,414"
+Florida,2018,Fall,"3,336","21,254,926",15.7,10.12,"6,001"
+Florida,2018,Fire/Flame,136,"21,254,926",0.64,0.52,"1,685"
+Florida,2018,Hot object/Substance,--,"21,254,926",--,--,--
+Florida,2018,Firearm,"2,902","21,254,926",13.65,12.83,"57,368"
+Florida,2018,Machinery,24,"21,254,926",0.11,0.1,335
+Florida,2018,Natural/Environmental,69,"21,254,926",0.33,0.27,"1,013"
+Florida,2018,Drug Poisoning,"4,698","21,254,926",22.1,22.84,"103,060"
+Florida,2018,Non-Drug Poisoning,299,"21,254,926",1.41,1.32,"4,752"
+Florida,2018,Struck by / against,57,"21,254,926",0.27,0.24,895
+Florida,2018,Suffocation,"1,355","21,254,926",6.38,6.02,"27,375"
+Florida,2018,"Motor vehicle, traffic","3,161","21,254,926",14.87,14.24,"68,257"
+Florida,2018,"Pedal cyclist, other",36,"21,254,926",0.17,0.14,550
+Florida,2018,"Pedestrian, other",61,"21,254,926",0.29,0.26,"1,076"
+Florida,2018,"Transport, other land",69,"21,254,926",0.33,0.3,"1,341"
+Florida,2018,"Transport, other (excl. drown by water transp)",48,"21,254,926",0.23,0.21,797
+Florida,2018,Other specified and classifiable,184,"21,254,926",0.87,0.85,"3,480"
+Florida,2018,Other specified / NEC,152,"21,254,926",0.72,0.6,"1,899"
+Florida,2018,Unspecified,444,"21,254,926",2.09,1.59,"4,109"
+Florida,2017,Cut/Pierce,183,"20,977,089",0.87,0.83,"3,699"
+Florida,2017,Drowning (includes water transport),500,"20,977,089",2.38,2.26,"11,731"
+Florida,2017,Fall,"3,270","20,977,089",15.59,10.16,"5,453"
+Florida,2017,Fire/Flame,152,"20,977,089",0.73,0.59,"2,054"
+Florida,2017,Hot object/Substance,10**,"20,977,089",0.05**,0.04**,109
+Florida,2017,Firearm,"2,724","20,977,089",12.99,12.31,"56,685"
+Florida,2017,Machinery,25,"20,977,089",0.12,0.1,265
+Florida,2017,Natural/Environmental,75,"20,977,089",0.36,0.3,972
+Florida,2017,Drug Poisoning,"5,088","20,977,089",24.26,25.04,"114,526"
+Florida,2017,Non-Drug Poisoning,306,"20,977,089",1.46,1.39,"5,158"
+Florida,2017,Struck by / against,37,"20,977,089",0.18,0.17,768
+Florida,2017,Suffocation,"1,250","20,977,089",5.96,5.68,"27,773"
+Florida,2017,"Motor vehicle, traffic","3,144","20,977,089",14.99,14.34,"67,696"
+Florida,2017,"Pedal cyclist, other",32,"20,977,089",0.15,0.12,287
+Florida,2017,"Pedestrian, other",57,"20,977,089",0.27,0.24,876
+Florida,2017,"Transport, other land",69,"20,977,089",0.33,0.31,"1,172"
+Florida,2017,"Transport, other (excl. drown by water transp)",43,"20,977,089",0.21,0.2,870
+Florida,2017,Other specified and classifiable,196,"20,977,089",0.93,0.88,"3,729"
+Florida,2017,Other specified / NEC,156,"20,977,089",0.74,0.62,"1,893"
+Florida,2017,Unspecified,424,"20,977,089",2.02,1.52,"3,770"
+Florida,2016,Cut/Pierce,160,"20,627,237",0.78,0.76,"3,421"
+Florida,2016,Drowning (includes water transport),518,"20,627,237",2.51,2.39,"11,654"
+Florida,2016,Fall,"3,186","20,627,237",15.45,10.23,"6,151"
+Florida,2016,Fire/Flame,129,"20,627,237",0.63,0.53,"1,639"
+Florida,2016,Hot object/Substance,--,"20,627,237",--,--,--
+Florida,2016,Firearm,"2,704","20,627,237",13.11,12.57,"57,227"
+Florida,2016,Machinery,22,"20,627,237",0.11,0.09,289
+Florida,2016,Natural/Environmental,69,"20,627,237",0.34,0.31,"1,231"
+Florida,2016,Drug Poisoning,"4,728","20,627,237",22.92,23.67,"107,665"
+Florida,2016,Non-Drug Poisoning,293,"20,627,237",1.42,1.38,"5,587"
+Florida,2016,Struck by / against,49,"20,627,237",0.24,0.21,729
+Florida,2016,Suffocation,"1,167","20,627,237",5.66,5.34,"24,717"
+Florida,2016,"Motor vehicle, traffic","3,160","20,627,237",15.32,14.72,"69,971"
+Florida,2016,"Pedal cyclist, other",19**,"20,627,237",0.09**,0.08**,224
+Florida,2016,"Pedestrian, other",67,"20,627,237",0.33,0.31,"1,493"
+Florida,2016,"Transport, other land",73,"20,627,237",0.35,0.34,"1,593"
+Florida,2016,"Transport, other (excl. drown by water transp)",48,"20,627,237",0.23,0.22,947
+Florida,2016,Other specified and classifiable,181,"20,627,237",0.88,0.81,"3,265"
+Florida,2016,Other specified / NEC,155,"20,627,237",0.75,0.62,"1,682"
+Florida,2016,Unspecified,445,"20,627,237",2.16,1.68,"4,425"
+Florida,2015,Cut/Pierce,153,"20,219,111",0.76,0.73,"3,273"
+Florida,2015,Drowning (includes water transport),521,"20,219,111",2.58,2.45,"12,142"
+Florida,2015,Fall,"2,954","20,219,111",14.61,9.76,"4,756"
+Florida,2015,Fire/Flame,147,"20,219,111",0.73,0.62,"2,063"
+Florida,2015,Hot object/Substance,--,"20,219,111",--,--,--
+Florida,2015,Firearm,"2,559","20,219,111",12.66,11.96,"53,235"
+Florida,2015,Machinery,23,"20,219,111",0.11,0.1,446
+Florida,2015,Natural/Environmental,41,"20,219,111",0.2,0.18,765
+Florida,2015,Drug Poisoning,"3,228","20,219,111",15.97,16.25,"70,934"
+Florida,2015,Non-Drug Poisoning,289,"20,219,111",1.43,1.34,"4,978"
+Florida,2015,Struck by / against,43,"20,219,111",0.21,0.18,652
+Florida,2015,Suffocation,"1,229","20,219,111",6.08,5.72,"24,680"
+Florida,2015,"Motor vehicle, traffic","2,896","20,219,111",14.32,13.77,"64,550"
+Florida,2015,"Pedal cyclist, other",32,"20,219,111",0.16,0.14,503
+Florida,2015,"Pedestrian, other",76,"20,219,111",0.38,0.36,"1,546"
+Florida,2015,"Transport, other land",81,"20,219,111",0.4,0.39,"1,925"
+Florida,2015,"Transport, other (excl. drown by water transp)",53,"20,219,111",0.26,0.24,904
+Florida,2015,Other specified and classifiable,152,"20,219,111",0.75,0.75,"3,448"
+Florida,2015,Other specified / NEC,148,"20,219,111",0.73,0.61,"1,818"
+Florida,2015,Unspecified,399,"20,219,111",1.97,1.55,"4,097"
+Florida,2014,Cut/Pierce,177,"19,853,880",0.89,0.87,"3,609"
+Florida,2014,Drowning (includes water transport),452,"19,853,880",2.28,2.2,"11,378"
+Florida,2014,Fall,"2,896","19,853,880",14.59,9.91,"5,746"
+Florida,2014,Fire/Flame,125,"19,853,880",0.63,0.52,"1,606"
+Florida,2014,Hot object/Substance,--,"19,853,880",--,--,--
+Florida,2014,Firearm,"2,410","19,853,880",12.14,11.5,"50,106"
+Florida,2014,Machinery,21,"19,853,880",0.11,0.1,310
+Florida,2014,Natural/Environmental,48,"19,853,880",0.24,0.22,862
+Florida,2014,Drug Poisoning,"2,634","19,853,880",13.27,13.2,"54,213"
+Florida,2014,Non-Drug Poisoning,287,"19,853,880",1.45,1.38,"5,145"
+Florida,2014,Struck by / against,40,"19,853,880",0.2,0.19,795
+Florida,2014,Suffocation,"1,144","19,853,880",5.76,5.45,"24,586"
+Florida,2014,"Motor vehicle, traffic","2,479","19,853,880",12.49,11.94,"55,064"
+Florida,2014,"Pedal cyclist, other",28,"19,853,880",0.14,0.12,329
+Florida,2014,"Pedestrian, other",81,"19,853,880",0.41,0.36,"1,569"
+Florida,2014,"Transport, other land",73,"19,853,880",0.37,0.35,"1,705"
+Florida,2014,"Transport, other (excl. drown by water transp)",45,"19,853,880",0.23,0.2,675
+Florida,2014,Other specified and classifiable,186,"19,853,880",0.94,0.91,"3,935"
+Florida,2014,Other specified / NEC,142,"19,853,880",0.72,0.6,"1,734"
+Florida,2014,Unspecified,401,"19,853,880",2.02,1.66,"4,493"
+Florida,2013,Cut/Pierce,172,"19,551,678",0.88,0.85,"3,537"
+Florida,2013,Drowning (includes water transport),447,"19,551,678",2.29,2.22,"10,979"
+Florida,2013,Fall,"2,741","19,551,678",14.02,9.69,"5,638"
+Florida,2013,Fire/Flame,99,"19,551,678",0.51,0.42,"1,309"
+Florida,2013,Firearm,"2,442","19,551,678",12.49,11.82,"50,118"
+Florida,2013,Machinery,19**,"19,551,678",0.10**,0.09**,351
+Florida,2013,Natural/Environmental,41,"19,551,678",0.21,0.21,"1,110"
+Florida,2013,Drug Poisoning,"2,474","19,551,678",12.65,12.54,"49,126"
+Florida,2013,Non-Drug Poisoning,235,"19,551,678",1.2,1.13,"3,931"
+Florida,2013,Struck by / against,32,"19,551,678",0.16,0.14,440
+Florida,2013,Suffocation,"1,070","19,551,678",5.47,5.26,"23,951"
+Florida,2013,"Motor vehicle, traffic","2,370","19,551,678",12.12,11.56,"51,684"
+Florida,2013,"Pedal cyclist, other",36,"19,551,678",0.18,0.15,392
+Florida,2013,"Pedestrian, other",52,"19,551,678",0.27,0.26,"1,308"
+Florida,2013,"Transport, other land",61,"19,551,678",0.31,0.3,"1,389"
+Florida,2013,"Transport, other (excl. drown by water transp)",40,"19,551,678",0.21,0.17,576
+Florida,2013,Other specified and classifiable,166,"19,551,678",0.85,0.8,"3,307"
+Florida,2013,Other specified / NEC,149,"19,551,678",0.76,0.66,"2,083"
+Florida,2013,Unspecified,329,"19,551,678",1.68,1.39,"3,889"
+Florida,2012,Cut/Pierce,171,"19,302,016",0.89,0.87,"3,759"
+Florida,2012,Drowning (includes water transport),443,"19,302,016",2.3,2.24,"11,192"
+Florida,2012,Fall,"2,549","19,302,016",13.21,9.23,"5,144"
+Florida,2012,Fire/Flame,126,"19,302,016",0.65,0.55,"1,484"
+Florida,2012,Hot object/Substance,--,"19,302,016",--,--,--
+Florida,2012,Firearm,"2,473","19,302,016",12.81,12.15,"50,518"
+Florida,2012,Machinery,15**,"19,302,016",0.08**,0.07**,236
+Florida,2012,Natural/Environmental,36,"19,302,016",0.19,0.17,699
+Florida,2012,Drug Poisoning,"2,597","19,302,016",13.46,13.27,"51,360"
+Florida,2012,Non-Drug Poisoning,271,"19,302,016",1.4,1.34,"4,812"
+Florida,2012,Struck by / against,43,"19,302,016",0.22,0.2,659
+Florida,2012,Suffocation,"1,090","19,302,016",5.65,5.38,"23,667"
+Florida,2012,"Motor vehicle, traffic","2,423","19,302,016",12.55,11.99,"53,981"
+Florida,2012,"Pedal cyclist, other",31,"19,302,016",0.16,0.13,284
+Florida,2012,"Pedestrian, other",55,"19,302,016",0.29,0.26,963
+Florida,2012,"Transport, other land",70,"19,302,016",0.36,0.33,"1,227"
+Florida,2012,"Transport, other (excl. drown by water transp)",49,"19,302,016",0.25,0.24,828
+Florida,2012,Other specified and classifiable,165,"19,302,016",0.86,0.83,"3,534"
+Florida,2012,Other specified / NEC,155,"19,302,016",0.8,0.67,"2,093"
+Florida,2012,Unspecified,392,"19,302,016",2.03,1.69,"4,838"
+Florida,2011,Cut/Pierce,165,"19,055,607",0.87,0.84,"3,688"
+Florida,2011,Drowning (includes water transport),445,"19,055,607",2.34,2.24,"10,540"
+Florida,2011,Fall,"2,390","19,055,607",12.54,8.96,"4,741"
+Florida,2011,Fire/Flame,122,"19,055,607",0.64,0.55,"1,544"
+Florida,2011,Hot object/Substance,--,"19,055,607",--,--,--
+Florida,2011,Firearm,"2,378","19,055,607",12.48,11.91,"50,342"
+Florida,2011,Machinery,20**,"19,055,607",0.11**,0.10**,313
+Florida,2011,Natural/Environmental,44,"19,055,607",0.23,0.2,569
+Florida,2011,Overexertion,--,"19,055,607",--,--,--
+Florida,2011,Drug Poisoning,"2,918","19,055,607",15.31,15.43,"63,191"
+Florida,2011,Non-Drug Poisoning,265,"19,055,607",1.39,1.32,"4,720"
+Florida,2011,Struck by / against,45,"19,055,607",0.24,0.22,922
+Florida,2011,Suffocation,"1,048","19,055,607",5.5,5.23,"22,869"
+Florida,2011,"Motor vehicle, traffic","2,434","19,055,607",12.77,12.25,"53,576"
+Florida,2011,"Pedal cyclist, other",33,"19,055,607",0.17,0.16,502
+Florida,2011,"Pedestrian, other",48,"19,055,607",0.25,0.24,928
+Florida,2011,"Transport, other land",72,"19,055,607",0.38,0.37,"1,763"
+Florida,2011,"Transport, other (excl. drown by water transp)",47,"19,055,607",0.25,0.24,"1,005"
+Florida,2011,Other specified and classifiable,134,"19,055,607",0.7,0.68,"2,889"
+Florida,2011,Other specified / NEC,143,"19,055,607",0.75,0.63,"1,740"
+Florida,2011,Unspecified,365,"19,055,607",1.92,1.63,"4,997"
+Florida,2010,Cut/Pierce,163,"18,804,589",0.87,0.87,"3,745"
+Florida,2010,Drowning (includes water transport),461,"18,804,589",2.45,2.39,"11,973"
+Florida,2010,Fall,"2,222","18,804,589",11.82,8.61,"4,386"
+Florida,2010,Fire/Flame,132,"18,804,589",0.7,0.61,"1,787"
+Florida,2010,Hot object/Substance,--,"18,804,589",--,--,--
+Florida,2010,Firearm,"2,268","18,804,589",12.06,11.44,"46,814"
+Florida,2010,Machinery,18**,"18,804,589",0.10**,0.08**,166
+Florida,2010,Natural/Environmental,60,"18,804,589",0.32,0.3,"1,146"
+Florida,2010,Overexertion,--,"18,804,589",--,--,--
+Florida,2010,Drug Poisoning,"3,061","18,804,589",16.28,16.39,"68,881"
+Florida,2010,Non-Drug Poisoning,280,"18,804,589",1.49,1.39,"4,678"
+Florida,2010,Struck by / against,30,"18,804,589",0.16,0.15,496
+Florida,2010,Suffocation,977,"18,804,589",5.2,4.97,"21,541"
+Florida,2010,"Motor vehicle, traffic","2,462","18,804,589",13.09,12.55,"54,796"
+Florida,2010,"Pedal cyclist, other",25,"18,804,589",0.13,0.12,300
+Florida,2010,"Pedestrian, other",62,"18,804,589",0.33,0.31,"1,305"
+Florida,2010,"Transport, other land",60,"18,804,589",0.32,0.31,"1,286"
+Florida,2010,"Transport, other (excl. drown by water transp)",67,"18,804,589",0.36,0.33,"1,422"
+Florida,2010,Other specified and classifiable,133,"18,804,589",0.71,0.68,"3,028"
+Florida,2010,Other specified / NEC,140,"18,804,589",0.74,0.67,"2,158"
+Florida,2010,Unspecified,343,"18,804,589",1.82,1.6,"5,197"
+Florida,2009,Cut/Pierce,198,"18,652,644",1.06,1.04,"4,317"
+Florida,2009,Drowning (includes water transport),483,"18,652,644",2.59,2.53,"12,573"
+Florida,2009,Fall,"2,032","18,652,644",10.89,8.06,"4,925"
+Florida,2009,Fire/Flame,152,"18,652,644",0.82,0.73,"2,678"
+Florida,2009,Hot object/Substance,--,"18,652,644",--,--,--
+Florida,2009,Firearm,"2,324","18,652,644",12.46,11.98,"49,524"
+Florida,2009,Machinery,15**,"18,652,644",0.08**,0.07**,131
+Florida,2009,Natural/Environmental,52,"18,652,644",0.28,0.28,"1,336"
+Florida,2009,Drug Poisoning,"3,092","18,652,644",16.58,16.71,"69,560"
+Florida,2009,Non-Drug Poisoning,246,"18,652,644",1.32,1.29,"4,656"
+Florida,2009,Struck by / against,44,"18,652,644",0.24,0.23,901
+Florida,2009,Suffocation,999,"18,652,644",5.36,5.19,"22,609"
+Florida,2009,"Motor vehicle, traffic","2,490","18,652,644",13.35,12.96,"57,976"
+Florida,2009,"Pedal cyclist, other",25,"18,652,644",0.13,0.12,374
+Florida,2009,"Pedestrian, other",63,"18,652,644",0.34,0.32,"1,342"
+Florida,2009,"Transport, other land",91,"18,652,644",0.49,0.46,"1,817"
+Florida,2009,"Transport, other (excl. drown by water transp)",67,"18,652,644",0.36,0.34,"1,308"
+Florida,2009,Other specified and classifiable,173,"18,652,644",0.93,0.9,"4,035"
+Florida,2009,Other specified / NEC,144,"18,652,644",0.77,0.69,"2,239"
+Florida,2009,Unspecified,273,"18,652,644",1.46,1.29,"4,310"
+Florida,2008,Cut/Pierce,209,"18,527,305",1.13,1.12,"4,835"
+Florida,2008,Drowning (includes water transport),474,"18,527,305",2.56,2.46,"11,834"
+Florida,2008,Fall,"1,823","18,527,305",9.84,7.46,"5,195"
+Florida,2008,Fire/Flame,145,"18,527,305",0.78,0.7,"2,243"
+Florida,2008,Hot object/Substance,--,"18,527,305",--,--,--
+Florida,2008,Firearm,"2,334","18,527,305",12.6,12.18,"52,654"
+Florida,2008,Machinery,22,"18,527,305",0.12,0.11,393
+Florida,2008,Natural/Environmental,41,"18,527,305",0.22,0.21,821
+Florida,2008,Overexertion,--,"18,527,305",--,--,--
+Florida,2008,Drug Poisoning,"2,963","18,527,305",15.99,16.18,"69,332"
+Florida,2008,Non-Drug Poisoning,303,"18,527,305",1.64,1.55,"5,425"
+Florida,2008,Struck by / against,36,"18,527,305",0.19,0.18,592
+Florida,2008,Suffocation,952,"18,527,305",5.14,5.02,"23,052"
+Florida,2008,"Motor vehicle, traffic","2,950","18,527,305",15.92,15.6,"71,475"
+Florida,2008,"Pedal cyclist, other",32,"18,527,305",0.17,0.16,579
+Florida,2008,"Pedestrian, other",65,"18,527,305",0.35,0.34,"1,398"
+Florida,2008,"Transport, other land",82,"18,527,305",0.44,0.43,"1,741"
+Florida,2008,"Transport, other (excl. drown by water transp)",64,"18,527,305",0.35,0.33,"1,231"
+Florida,2008,Other specified and classifiable,168,"18,527,305",0.91,0.91,"3,929"
+Florida,2008,Other specified / NEC,140,"18,527,305",0.76,0.67,"2,120"
+Florida,2008,Unspecified,376,"18,527,305",2.03,1.85,"6,665"
+Florida,2007,Cut/Pierce,194,"18,367,842",1.06,1.04,"4,567"
+Florida,2007,Drowning (includes water transport),481,"18,367,842",2.62,2.57,"13,383"
+Florida,2007,Fall,"1,768","18,367,842",9.63,7.42,"5,158"
+Florida,2007,Fire/Flame,164,"18,367,842",0.89,0.8,"2,420"
+Florida,2007,Hot object/Substance,--,"18,367,842",--,--,--
+Florida,2007,Firearm,"2,272","18,367,842",12.37,12.02,"51,839"
+Florida,2007,Machinery,29,"18,367,842",0.16,0.16,636
+Florida,2007,Natural/Environmental,64,"18,367,842",0.35,0.32,"1,232"
+Florida,2007,Overexertion,--,"18,367,842",--,--,--
+Florida,2007,Drug Poisoning,"2,794","18,367,842",15.21,15.4,"66,284"
+Florida,2007,Non-Drug Poisoning,251,"18,367,842",1.37,1.28,"4,321"
+Florida,2007,Struck by / against,78,"18,367,842",0.43,0.4,"1,526"
+Florida,2007,Suffocation,"1,005","18,367,842",5.47,5.24,"23,101"
+Florida,2007,"Motor vehicle, traffic","3,153","18,367,842",17.17,16.91,"79,930"
+Florida,2007,"Pedal cyclist, other",22,"18,367,842",0.12,0.11,256
+Florida,2007,"Pedestrian, other",100,"18,367,842",0.54,0.54,"2,673"
+Florida,2007,"Transport, other land",130,"18,367,842",0.71,0.7,"3,184"
+Florida,2007,"Transport, other (excl. drown by water transp)",73,"18,367,842",0.4,0.38,"1,591"
+Florida,2007,Other specified and classifiable,134,"18,367,842",0.73,0.73,"3,267"
+Florida,2007,Other specified / NEC,146,"18,367,842",0.8,0.75,"2,812"
+Florida,2007,Unspecified,315,"18,367,842",1.72,1.53,"4,921"
+Florida,2006,Cut/Pierce,217,"18,166,990",1.19,1.17,"5,048"
+Florida,2006,Drowning (includes water transport),495,"18,166,990",2.73,2.73,"14,015"
+Florida,2006,Fall,"1,758","18,166,990",9.68,7.55,"5,965"
+Florida,2006,Fire/Flame,148,"18,166,990",0.82,0.78,"3,059"
+Florida,2006,Hot object/Substance,11**,"18,166,990",0.06**,0.06**,266
+Florida,2006,Firearm,"2,083","18,166,990",11.47,11.05,"46,594"
+Florida,2006,Machinery,26,"18,166,990",0.14,0.14,425
+Florida,2006,Natural/Environmental,44,"18,166,990",0.24,0.23,959
+Florida,2006,Drug Poisoning,"2,591","18,166,990",14.26,14.38,"61,171"
+Florida,2006,Non-Drug Poisoning,184,"18,166,990",1.01,0.96,"3,220"
+Florida,2006,Struck by / against,82,"18,166,990",0.45,0.44,"1,802"
+Florida,2006,Suffocation,857,"18,166,990",4.72,4.53,"19,469"
+Florida,2006,"Motor vehicle, traffic","3,378","18,166,990",18.59,18.26,"85,118"
+Florida,2006,"Pedal cyclist, other",13**,"18,166,990",0.07**,0.06**,198
+Florida,2006,"Pedestrian, other",66,"18,166,990",0.36,0.34,"1,207"
+Florida,2006,"Transport, other land",73,"18,166,990",0.4,0.39,"1,827"
+Florida,2006,"Transport, other (excl. drown by water transp)",74,"18,166,990",0.41,0.38,"1,412"
+Florida,2006,Other specified and classifiable,161,"18,166,990",0.89,0.86,"3,438"
+Florida,2006,Other specified / NEC,141,"18,166,990",0.78,0.72,"2,596"
+Florida,2006,Unspecified,337,"18,166,990",1.86,1.63,"4,552"
+Florida,2005,Cut/Pierce,193,"17,842,038",1.08,1.07,"4,646"
+Florida,2005,Drowning (includes water transport),447,"17,842,038",2.51,2.48,"12,545"
+Florida,2005,Fall,"1,743","17,842,038",9.77,7.64,"5,665"
+Florida,2005,Fire/Flame,154,"17,842,038",0.86,0.81,"2,782"
+Florida,2005,Hot object/Substance,--,"17,842,038",--,--,--
+Florida,2005,Firearm,"1,838","17,842,038",10.3,9.95,"40,135"
+Florida,2005,Machinery,43,"17,842,038",0.24,0.23,910
+Florida,2005,Natural/Environmental,62,"17,842,038",0.35,0.32,"1,185"
+Florida,2005,Drug Poisoning,"2,371","17,842,038",13.29,13.52,"56,354"
+Florida,2005,Non-Drug Poisoning,201,"17,842,038",1.13,1.08,"3,639"
+Florida,2005,Struck by / against,107,"17,842,038",0.6,0.58,"2,458"
+Florida,2005,Suffocation,939,"17,842,038",5.26,5.03,"20,806"
+Florida,2005,"Motor vehicle, traffic","3,434","17,842,038",19.25,19,"87,200"
+Florida,2005,"Pedal cyclist, other",22,"17,842,038",0.12,0.12,320
+Florida,2005,"Pedestrian, other",95,"17,842,038",0.53,0.51,"2,149"
+Florida,2005,"Transport, other land",77,"17,842,038",0.43,0.45,"2,457"
+Florida,2005,"Transport, other (excl. drown by water transp)",66,"17,842,038",0.37,0.36,"1,370"
+Florida,2005,Other specified and classifiable,158,"17,842,038",0.89,0.88,"3,716"
+Florida,2005,Other specified / NEC,143,"17,842,038",0.8,0.78,"3,056"
+Florida,2005,Unspecified,282,"17,842,038",1.58,1.4,"3,744"
+Florida,2004,Cut/Pierce,177,"17,415,318",1.02,1.01,"3,934"
+Florida,2004,Drowning (includes water transport),444,"17,415,318",2.55,2.52,"11,902"
+Florida,2004,Fall,"1,564","17,415,318",8.98,7,"5,374"
+Florida,2004,Fire/Flame,175,"17,415,318",1.01,0.93,"3,119"
+Florida,2004,Hot object/Substance,--,"17,415,318",--,--,--
+Florida,2004,Firearm,"1,890","17,415,318",10.85,10.46,"40,506"
+Florida,2004,Machinery,26,"17,415,318",0.15,0.15,480
+Florida,2004,Natural/Environmental,86,"17,415,318",0.49,0.45,"1,673"
+Florida,2004,Drug Poisoning,"2,264","17,415,318",13,13.21,"52,797"
+Florida,2004,Non-Drug Poisoning,192,"17,415,318",1.1,1.06,"3,436"
+Florida,2004,Struck by / against,60,"17,415,318",0.35,0.32,"1,124"
+Florida,2004,Suffocation,892,"17,415,318",5.12,4.89,"19,919"
+Florida,2004,"Motor vehicle, traffic","3,215","17,415,318",18.46,18.09,"79,008"
+Florida,2004,"Pedal cyclist, other",21,"17,415,318",0.12,0.11,344
+Florida,2004,"Pedestrian, other",61,"17,415,318",0.35,0.35,"1,476"
+Florida,2004,"Transport, other land",64,"17,415,318",0.37,0.38,"1,692"
+Florida,2004,"Transport, other (excl. drown by water transp)",85,"17,415,318",0.49,0.46,"1,594"
+Florida,2004,Other specified and classifiable,161,"17,415,318",0.92,0.92,"3,906"
+Florida,2004,Other specified / NEC,136,"17,415,318",0.78,0.72,"2,148"
+Florida,2004,Unspecified,295,"17,415,318",1.69,1.53,"4,683"
+Florida,2003,Cut/Pierce,170,"17,004,085",1,1.01,"4,214"
+Florida,2003,Drowning (includes water transport),469,"17,004,085",2.76,2.74,"14,082"
+Florida,2003,Fall,"1,441","17,004,085",8.47,6.62,"5,046"
+Florida,2003,Fire/Flame,153,"17,004,085",0.9,0.84,"3,120"
+Florida,2003,Hot object/Substance,--,"17,004,085",--,--,--
+Florida,2003,Firearm,"1,940","17,004,085",11.41,11.05,"41,436"
+Florida,2003,Machinery,25,"17,004,085",0.15,0.14,561
+Florida,2003,Natural/Environmental,50,"17,004,085",0.29,0.28,"1,062"
+Florida,2003,Overexertion,--,"17,004,085",--,--,--
+Florida,2003,Drug Poisoning,"2,054","17,004,085",12.08,12.34,"49,019"
+Florida,2003,Non-Drug Poisoning,181,"17,004,085",1.06,1.03,"3,384"
+Florida,2003,Struck by / against,74,"17,004,085",0.44,0.42,"1,424"
+Florida,2003,Suffocation,808,"17,004,085",4.75,4.49,"17,060"
+Florida,2003,"Motor vehicle, traffic","3,196","17,004,085",18.8,18.45,"77,409"
+Florida,2003,"Pedal cyclist, other",25,"17,004,085",0.15,0.12,262
+Florida,2003,"Pedestrian, other",64,"17,004,085",0.38,0.36,"1,471"
+Florida,2003,"Transport, other land",52,"17,004,085",0.31,0.3,"1,393"
+Florida,2003,"Transport, other (excl. drown by water transp)",79,"17,004,085",0.47,0.46,"1,591"
+Florida,2003,Other specified and classifiable,156,"17,004,085",0.92,0.92,"3,728"
+Florida,2003,Other specified / NEC,132,"17,004,085",0.78,0.7,"1,949"
+Florida,2003,Unspecified,262,"17,004,085",1.54,1.4,"4,238"
+Florida,2002,Cut/Pierce,165,"16,689,370",0.99,0.98,"3,833"
+Florida,2002,Drowning (includes water transport),462,"16,689,370",2.77,2.72,"12,463"
+Florida,2002,Fall,"1,268","16,689,370",7.6,5.94,"4,459"
+Florida,2002,Fire/Flame,140,"16,689,370",0.84,0.76,"2,195"
+Florida,2002,Hot object/Substance,--,"16,689,370",--,--,--
+Florida,2002,Firearm,"1,886","16,689,370",11.3,10.97,"40,530"
+Florida,2002,Machinery,25,"16,689,370",0.15,0.14,335
+Florida,2002,Natural/Environmental,49,"16,689,370",0.29,0.27,819
+Florida,2002,Drug Poisoning,"1,927","16,689,370",11.55,11.81,"46,443"
+Florida,2002,Non-Drug Poisoning,186,"16,689,370",1.11,1.08,"3,325"
+Florida,2002,Struck by / against,47,"16,689,370",0.28,0.28,"1,172"
+Florida,2002,Suffocation,807,"16,689,370",4.84,4.59,"17,044"
+Florida,2002,"Motor vehicle, traffic","3,148","16,689,370",18.86,18.52,"76,537"
+Florida,2002,"Pedal cyclist, other",20**,"16,689,370",0.12**,0.11**,313
+Florida,2002,"Pedestrian, other",64,"16,689,370",0.38,0.38,"1,625"
+Florida,2002,"Transport, other land",55,"16,689,370",0.33,0.32,"1,248"
+Florida,2002,"Transport, other (excl. drown by water transp)",85,"16,689,370",0.51,0.5,"1,877"
+Florida,2002,Other specified and classifiable,137,"16,689,370",0.82,0.79,"2,654"
+Florida,2002,Other specified / NEC,114,"16,689,370",0.68,0.62,"1,751"
+Florida,2002,Unspecified,321,"16,689,370",1.92,1.76,"5,737"
+Florida,2001,Cut/Pierce,160,"16,356,966",0.98,0.97,"3,609"
+Florida,2001,Drowning (includes water transport),443,"16,356,966",2.71,2.63,"11,810"
+Florida,2001,Fall,"1,125","16,356,966",6.88,5.44,"4,930"
+Florida,2001,Fire/Flame,172,"16,356,966",1.05,0.99,"3,240"
+Florida,2001,Hot object/Substance,--,"16,356,966",--,--,--
+Florida,2001,Firearm,"1,816","16,356,966",11.1,10.68,"37,595"
+Florida,2001,Machinery,25,"16,356,966",0.15,0.15,538
+Florida,2001,Natural/Environmental,57,"16,356,966",0.35,0.33,"1,059"
+Florida,2001,Drug Poisoning,"1,746","16,356,966",10.67,10.96,"42,971"
+Florida,2001,Non-Drug Poisoning,175,"16,356,966",1.07,1.04,"3,333"
+Florida,2001,Struck by / against,72,"16,356,966",0.44,0.44,"1,668"
+Florida,2001,Suffocation,813,"16,356,966",4.97,4.7,"16,958"
+Florida,2001,"Motor vehicle, traffic","3,031","16,356,966",18.53,18.2,"74,105"
+Florida,2001,"Pedal cyclist, other",13**,"16,356,966",0.08**,0.08**,256
+Florida,2001,"Pedestrian, other",58,"16,356,966",0.36,0.33,"1,379"
+Florida,2001,"Transport, other land",53,"16,356,966",0.32,0.33,"1,383"
+Florida,2001,"Transport, other (excl. drown by water transp)",81,"16,356,966",0.5,0.5,"1,776"
+Florida,2001,Other specified and classifiable,144,"16,356,966",0.88,0.89,"3,552"
+Florida,2001,Other specified / NEC,121,"16,356,966",0.74,0.71,"2,375"
+Florida,2001,Unspecified,289,"16,356,966",1.77,1.56,"4,052"
+Total,,,"304,664","403,511,807",75.5,70.16,"5,586,544"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Florida,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

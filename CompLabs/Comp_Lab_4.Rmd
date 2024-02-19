@@ -1,0 +1,311 @@
+---
+title: "QM - Computer Lab 4"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+```
+
+In this computer lab we will have to achieve the following tasks/learning outcomes:
+
+* import data
+* understand some important features of the dataset
+* select a subset of data
+* estimate a Diff-in-Diff estimator to evaluate the effectiveness of a sugar tax
+
+The example is the example discussed in Demonstration CLass 2 and comes from the Doing Economics Project 3.
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work: 
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+library(haven)        # to import stata file
+library(AER)          # access to HS robust standard errors
+library(readxl)       # enable the read_excel function
+library(plm)          # enable panel data methods
+```
+
+You should also save the separately supplied `stargazer_HC.r` file in your working directory. This will make it straightforward to estimate and compare regressions with robust standard errors. Once you have done that you should include the following line into your code which basically makes this function available to you.
+
+```{r}
+source("stargazer_HC.r")  # includes the robust regression 
+```
+
+We will first look at price data from the treatment group (stores in Berkeley) to see what happened to the price of sugary and non-sugary beverages after the tax.
+
+* Download the data from the [Global Food Research Program's website](http://globalfoodresearchprogram.web.unc.edu/research-in-the-united-states/u-s-policy-evaluations/berkeley-ssb-tax/), and select the 'Berkeley Store Price Survey' Excel dataset. Then upload the dataset into R.
+
+* The first tab of the Excel file contains the data dictionary. Make sure you read the data description column carefully, and check that each variable is in the Data tab.
+
+
+> Data Import and tidying
+
+This is an xlsx file and we use the `readxl` package to import this file. We also install (if you haven't done so yet) and load the `tidyverse` library as this includes packages that we will use later (piping and graphing). There are two worksheets, one with some info on the variables ("Data Dictionary") and the other with the data ("Data"). It is useful to import both into R so that you have the additional data info available while you are working without having to go back into EXCEL.
+
+Either use the R help function or google to find out how to use the `sheet =` option inside the `read_exel` function. 
+
+```{r, echo = FALSE}
+var_info <- read_excel("sps_public.xlsx",sheet="Data Dictionary")
+dat <- read_excel("sps_public.xlsx",sheet="Data")
+```
+
+```{r, eval = FALSE}
+var_info <- XXXX("sps_public.xlsx",XXXX="Data Dictionary")
+dat <- XXXX("sps_public.xlsx",XXXX="Data")
+```
+
+Let's look at the datatypes this import process as assigned to the respective variables.
+
+```{r, eval = FALSE}
+str(XXXX)
+```
+
+```{r, echo = FALSE, eval = FALSE}
+str(dat)
+```
+
+Confirm that all variables which should be numbers, in particular prices, are indeed `num` variables. But then there are variables that may be useful to have as categorical (factor in R speak) variables. Namely `type`, `taxed`, `supp`, `store_id`, `store_type`, `type2` and `product_id`. All these variables have been expressed as numbers but really are categorical variables. So let's convert them to factor variables. 
+
+The following code converts all but the `store_type` variable. Where the data are initially `num` we supply a `label` option which gives sensible names to the different levels.
+
+```{r, warning = FALSE}
+dat$type <- factor(dat$type)
+dat$taxed <- factor(dat$taxed, 
+                    labels=c("not taxed","taxed"))
+dat$supp <- factor(dat$supp,
+                   labels=c("Standard","Supplemental"))
+dat$store_id <- factor(dat$store_id)
+dat$type2 <- factor(dat$type2)
+dat$product_id <- factor(dat$product_id)
+```
+
+Before converting the `store_type` variable, let's see what information we have on this variable
+
+```{r}
+var_info[var_info$`Variable Name` == "store_type",]
+```
+
+Let's change the `store_type` variable to a factor.
+
+```{r,eval=FALSE}
+dat$store_type <- XXXX(dat$store_type,
+                         labels=c("Large Supermarket", 
+                                  XXXX, 
+                                  XXXX, 
+                                  XXXX))
+```
+
+```{r, echo=FALSE}
+dat$store_type <- factor(dat$store_type,
+                         labels=c("Large Supermarket", 
+                                  "Small Supermarket", 
+                                  "Pharmacy", 
+                                  "Gas Station"))
+```
+
+There is another variable `time` which is characterised as a `chr` variable. This stands for characters as in letters and numbers. It may be useful to change this also into a factor variable. Before we do this we will check which values this variable takes by using the `unique` command.
+
+```{r, warning = FALSE}
+unique(dat$time)
+```
+
+If you read the Silver et al. (2016) paper,and in particular if you have looked at the timeline, then you will have realised that the third survey wasn't in March 2015 but in March 2016. So the data have been labelled incorrectly. We shall therefore change all the values "MAR2015" to "MAR1016".
+
+```{r, eval = FALSE}
+dat$time[XXXX == "MAR2015"] <- XXXX  
+```
+
+```{r, echo = FALSE}
+dat$time[dat$time == "MAR2015"] <- "MAR2016"  # [dat$time == "MAR2015"] picks out all observations for which the value is equal to "MAR2015"
+```
+
+We can now change the time variable into a factor variable.
+
+```{r, warning = FALSE}
+dat$time <- factor(dat$time)
+```
+
+# Understanding the data
+
+How many different stores and how many different products have been included in the survey? There are different ways to achieve this. One way is to use the `unique` function in combination with the `length` function.
+
+Confirm the following:
+
+```{r, echo = FALSE}
+no_stores <- length(unique(dat$store_id))
+no_products <- length(unique(dat$product_id))
+paste("Number of Stores:", no_stores)
+paste("Number of Products:", no_products)
+```
+
+Execute the following command and interpret its outcome. You may want to use the help function or google to understand what the `tally()` function does in this pipe. 
+
+```{r, eval = FALSE}
+table1 <- dat %>% group_by(store_type,taxed,time) %>% 
+                tally() %>% 
+                spread(time,n) %>% 
+                print(n=Inf)
+```
+
+
+Now use the `tally` function to produce a frequency table showing the number of each product type (type), with product type (`type`) as the row variable and time period (`time`) as the column variable. 
+
+```{r, eval = FALSE}
+table2 <- XXXX %>% group_by(XXXX,XXXX) %>% 
+                    tally() %>% 
+                    spread(XXXX,n) %>% 
+                    print(n=Inf)
+```
+
+```{r, echo = FALSE}
+table2 <- dat %>% group_by(type,time) %>% 
+                    tally() %>% 
+                    spread(time,n) %>% 
+                    print(n=Inf)
+```
+
+Can you confirm that we have, altogether 177 observations for milk?
+
+To explore the data a bit further let's look at all observations for the "TEA-DIET" category. In particular we want to see the `product_id`, `store_id` and `time` for these observations and only those from either "DEC2014" or "MAR2016" (should be 14). It would also be best to sort the data according to `store_id`.
+
+```{r, eval = FALSE}
+dat %>%  XXXX(type == XXXX & time %in% c(XXXX, XXXX)) %>%  
+          select(store_id, product_id, time) %>% 
+          arrange(XXXX) %>% 
+          print()
+```
+
+```{r, echo = FALSE, results = 'hide'}
+dat %>%  filter(type == "TEA-DIET" & time %in% c("DEC2014", "MAR2016")) %>%  
+          select(store_id, product_id,time) %>% 
+          arrange(store_id) %>% 
+          print()
+```
+
+For how many stores do you have price observations in that product category for both these periods? Only one (`store_id`, 14 and 24). And only in store 24 did we record the price for the same `product_id`.
+
+In order to establish whether prices change following the tax introduction we want to restrict our data to only those products (identified by `product_id`) for which we have observations for all three periods (DEC2014, JUN2015 and MAR2016) it is best to create a new variable `period_test` which takes the value 1 (or TRUE) if we have observations for all periods and 0 (FALSE) otherwise for a product in a particular store. We call variables like this boolean variables. 
+
+It turns out that this is not a task that is straightforward and the easiest way to achieve this is with a loop. Execute the code below. It is not crucial to understand everything now, but do, later, take some time to understand what is going on.
+
+```{r}
+
+dat$period_test <- NA
+
+sid_list = unique(dat$store_id)   # list of all store ids
+pid_list = unique(dat$product_id) # list of all product ids
+
+
+for (s in sid_list) {
+  for (p in pid_list) {
+    temp <- subset(dat, product_id == p & store_id == s)
+    temp_time <- temp$time
+    # test will take value TRUE if we have obs from all three periods, FALSE otherwise
+    test <- (any(temp_time == "DEC2014") & any(temp_time == "JUN2015") & any(temp_time == "MAR2016"))
+    
+    dat$period_test[dat$product_id == p & dat$store_id == s] <- test
+  }
+}
+```
+
+Now we are in a position to remove all products that have not been observed in all three periods. We define a new data frame `dat_c` with only products that are observed in all three periods in a particular store. Also, we will only select observations for which the variable `supp` takes the value "Standard". This is what we then call a balanced panel.
+
+```{r, eval = FALSE}
+dat_c <- dat %>% XXXX(period_test == XXXX & supp == XXXX)
+```
+
+```{r, echo = FALSE}
+dat_c <- dat %>% subset(period_test == TRUE & supp == "Standard")
+```
+
+You should confirm that you are left with 939 observations.
+
+Now we can calculate the price averages (for `price_per_oz_c`, which is the price per ounze in cents) by grouping the data according to store_type, taxed and time. One way to achieve this is to use piping:
+
+```{r, warning = FALSE,message=FALSE}
+table_res <- dat_c %>% 
+      group_by(taxed,store_type,time) %>% 
+      summarise(n = length(price_per_oz_c),avg.price = mean(price_per_oz_c)) %>%
+      spread(time,avg.price) %>% 
+      print()
+```
+
+# Calculating the DiD estimator
+
+We now want to treat these as a panel dataset. You may remember that we need to define a panel dataset and let R know what variables identifies an "individual" and what variable defines the time dimension. Here an "individual" is a "particular product in a particular store". There is no variable which can serve as such an index, but we can create it by concatenating the `store_id` and `product_id` variables.
+
+```{r}
+dat_c$sp_id <- paste0(dat_c$store_id,"_",dat_c$product_id) 
+```
+
+Have a look at values of the new variable to understand what happened. We will also have to create the interaction variable between `time` and `taxed`.
+
+```{r}
+dat_c$did <- (dat_c$time == "MAR2016") * (dat_c$taxed == "taxed")
+```
+
+This variable will take the value of 1 for all observations which are from "MAR2016" and for taxed products. All other observations will have a value of 0.
+
+Let's restrict the analysis to large supermarket data and the two time periods "DEC2014" and "MAR2016".
+
+```{r, eval = FALSE}
+dat_c_ls <- XXXX %>% XXXX(XXXX == XXXX & XXXX %in% XXXX)
+```
+
+```{r, echo = FALSE}
+dat_c_ls <- dat_c %>% filter(store_type == "Large Supermarket" & time %in% c("DEC2014","MAR2016"))
+```
+
+You should be left with 144 observations. 
+
+Then we can use this new variable `sp_id` together with the `time` variable in the definition of the panel data frame:
+
+```{r}
+p_dat_c_ls <- pdata.frame(dat_c_ls, index = c("sp_id","time"))
+```
+
+Now we specify the regression model from which we estimate the DiD estimator.
+
+\begin{equation}
+y_{it} = \beta_0 + \delta d_t + \tau T_{it} + a_i + u_{it}
+\end{equation}
+
+where $y_{it}$ is `prize_per_oz_c`, $d_t$ is `time`, $T_{it}$ is `did` and $a_i$ is our indicator variable for the individual (store-product combination), `sp_id`. This is estimated in "first-differenced" form (`model = "fd"`) using the panel estimation function `plm`.
+
+```{r, eval = FALSE}
+mod1 <- plm(XXXX ~ XXXX + XXXX + XXXX, data = XXXX, model = "fd")
+stargazer_HC(mod1)
+```
+
+```{r, echo = FALSE}
+mod1 <- plm(price_per_oz_c ~ time + did + sp_id, data = p_dat_c_ls, model = "fd")
+stargazer_HC(mod1)
+```
+
+You can see that the estimated coefficient is 0.557, which implies that taxed products have, on average, seen price increases 0.6p/ounze higher than non-taxed products. But this difference is not statistically significantly different.
+
+Can you find the equivalent result in the Silver et al. paper?
+
+# Exporting Regression Output to Word
+
+For your project you are likely to want to use some tables like the above. Here is the way to do that properly. You will have to add one option to the stargazer function.
+
+```{r, results='hide', eval = FALSE}
+stargazer_HC(mod1, out = "Table1.doc")
+```
+
+You will find a new file called "Table1.doc" in your working directory. However, copying this into another document may result in lost formatting.
+
+In fact, in Word the Table will look even better if you change the type to be a html table (using `type_out = "html"`). In fact that creates a table in word which copies easily across other word documents.
+
+```{r, eval= FALSE, results='hide'}
+stargazer_HC(mod1, type_out = "html",out = "Table1.doc")
+```

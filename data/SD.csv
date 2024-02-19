@@ -1,0 +1,409 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+South Dakota,2021,Cut/Pierce,19**,"895,376",2.12**,1.97**,343
+South Dakota,2021,Drowning (includes water transport),14**,"895,376",1.56**,1.49**,447
+South Dakota,2021,Fall,229,"895,376",25.58,21.08,521
+South Dakota,2021,Fire/Flame,18**,"895,376",2.01**,1.94**,218
+South Dakota,2021,Hot object/Substance,--,"895,376",--,--,--
+South Dakota,2021,Firearm,128,"895,376",14.3,14.35,"2,887"
+South Dakota,2021,Machinery,--,"895,376",--,--,--
+South Dakota,2021,Natural/Environmental,10**,"895,376",1.12**,1.11**,171
+South Dakota,2021,Overexertion,--,"895,376",--,--,--
+South Dakota,2021,Drug Poisoning,105,"895,376",11.73,12.52,"2,253"
+South Dakota,2021,Non-Drug Poisoning,23,"895,376",2.57,2.65,446
+South Dakota,2021,Struck by / against,--,"895,376",--,--,--
+South Dakota,2021,Suffocation,93,"895,376",10.39,10.92,"3,093"
+South Dakota,2021,"Motor vehicle, traffic",165,"895,376",18.43,18.7,"3,848"
+South Dakota,2021,"Pedal cyclist, other",--,"895,376",--,--,--
+South Dakota,2021,"Pedestrian, other",--,"895,376",--,--,--
+South Dakota,2021,"Transport, other land",13**,"895,376",1.45**,1.32**,219
+South Dakota,2021,"Transport, other (excl. drown by water transp)",--,"895,376",--,--,--
+South Dakota,2021,Other specified and classifiable,--,"895,376",--,--,--
+South Dakota,2021,Other specified / NEC,--,"895,376",--,--,--
+South Dakota,2021,Unspecified,--,"895,376",--,--,--
+South Dakota,2020,Cut/Pierce,13**,"887,099",1.47**,1.59**,280
+South Dakota,2020,Drowning (includes water transport),16**,"887,099",1.80**,1.98**,528
+South Dakota,2020,Fall,220,"887,099",24.8,20.22,471
+South Dakota,2020,Fire/Flame,11**,"887,099",1.24**,1.12**,169
+South Dakota,2020,Firearm,120,"887,099",13.53,13.65,"2,907"
+South Dakota,2020,Machinery,--,"887,099",--,--,--
+South Dakota,2020,Natural/Environmental,16**,"887,099",1.80**,1.73**,298
+South Dakota,2020,Overexertion,--,"887,099",--,--,--
+South Dakota,2020,Drug Poisoning,83,"887,099",9.36,10.39,"2,015"
+South Dakota,2020,Non-Drug Poisoning,37,"887,099",4.17,4.84,938
+South Dakota,2020,Struck by / against,--,"887,099",--,--,--
+South Dakota,2020,Suffocation,105,"887,099",11.84,12.21,"3,310"
+South Dakota,2020,"Motor vehicle, traffic",143,"887,099",16.12,15.92,"3,038"
+South Dakota,2020,"Transport, other land",10**,"887,099",1.13**,1.00**,161
+South Dakota,2020,"Transport, other (excl. drown by water transp)",--,"887,099",--,--,--
+South Dakota,2020,Other specified and classifiable,--,"887,099",--,--,--
+South Dakota,2020,Other specified / NEC,--,"887,099",--,--,--
+South Dakota,2020,Unspecified,12**,"887,099",1.35**,1.36**,273
+South Dakota,2019,Cut/Pierce,--,"887,127",--,--,--
+South Dakota,2019,Drowning (includes water transport),14**,"887,127",1.58**,1.67**,476
+South Dakota,2019,Fall,209,"887,127",23.56,18.14,735
+South Dakota,2019,Fire/Flame,13**,"887,127",1.47**,1.39**,143
+South Dakota,2019,Firearm,113,"887,127",12.74,12.99,"2,698"
+South Dakota,2019,Machinery,--,"887,127",--,--,--
+South Dakota,2019,Natural/Environmental,13**,"887,127",1.47**,1.44**,168
+South Dakota,2019,Overexertion,--,"887,127",--,--,--
+South Dakota,2019,Drug Poisoning,86,"887,127",9.69,10.48,"2,195"
+South Dakota,2019,Non-Drug Poisoning,21,"887,127",2.37,2.48,524
+South Dakota,2019,Struck by / against,--,"887,127",--,--,--
+South Dakota,2019,Suffocation,83,"887,127",9.36,9.37,"2,655"
+South Dakota,2019,"Motor vehicle, traffic",129,"887,127",14.54,14.63,"3,231"
+South Dakota,2019,"Pedal cyclist, other",--,"887,127",--,--,--
+South Dakota,2019,"Pedestrian, other",--,"887,127",--,--,--
+South Dakota,2019,"Transport, other land",--,"887,127",--,--,--
+South Dakota,2019,"Transport, other (excl. drown by water transp)",--,"887,127",--,--,--
+South Dakota,2019,Other specified and classifiable,18**,"887,127",2.03**,2.03**,419
+South Dakota,2019,Other specified / NEC,--,"887,127",--,--,--
+South Dakota,2019,Unspecified,--,"887,127",--,--,--
+South Dakota,2018,Cut/Pierce,--,"879,386",--,--,--
+South Dakota,2018,Drowning (includes water transport),14**,"879,386",1.59**,1.58**,278
+South Dakota,2018,Fall,149,"879,386",16.94,13.12,273
+South Dakota,2018,Fire/Flame,10**,"879,386",1.14**,0.97**,103
+South Dakota,2018,Firearm,117,"879,386",13.31,13.55,"3,071"
+South Dakota,2018,Machinery,--,"879,386",--,--,--
+South Dakota,2018,Natural/Environmental,13**,"879,386",1.48**,1.37**,155
+South Dakota,2018,Overexertion,--,"879,386",--,--,--
+South Dakota,2018,Drug Poisoning,57,"879,386",6.48,6.93,"1,384"
+South Dakota,2018,Non-Drug Poisoning,17**,"879,386",1.93**,1.91**,286
+South Dakota,2018,Struck by / against,--,"879,386",--,--,--
+South Dakota,2018,Suffocation,77,"879,386",8.76,8.86,"2,418"
+South Dakota,2018,"Motor vehicle, traffic",148,"879,386",16.83,16.65,"3,620"
+South Dakota,2018,"Pedal cyclist, other",--,"879,386",--,--,--
+South Dakota,2018,"Pedestrian, other",--,"879,386",--,--,--
+South Dakota,2018,"Transport, other land",--,"879,386",--,--,--
+South Dakota,2018,"Transport, other (excl. drown by water transp)",--,"879,386",--,--,--
+South Dakota,2018,Other specified and classifiable,--,"879,386",--,--,--
+South Dakota,2018,Other specified / NEC,--,"879,386",--,--,--
+South Dakota,2018,Unspecified,--,"879,386",--,--,--
+South Dakota,2017,Cut/Pierce,15**,"873,732",1.72**,1.73**,362
+South Dakota,2017,Drowning (includes water transport),--,"873,732",--,--,--
+South Dakota,2017,Fall,197,"873,732",22.55,17.7,467
+South Dakota,2017,Fire/Flame,20**,"873,732",2.29**,2.21**,657
+South Dakota,2017,Firearm,101,"873,732",11.56,11.78,"2,167"
+South Dakota,2017,Machinery,--,"873,732",--,--,--
+South Dakota,2017,Natural/Environmental,16**,"873,732",1.83**,1.75**,260
+South Dakota,2017,Drug Poisoning,73,"873,732",8.36,8.45,"1,580"
+South Dakota,2017,Non-Drug Poisoning,24,"873,732",2.75,2.8,393
+South Dakota,2017,Struck by / against,--,"873,732",--,--,--
+South Dakota,2017,Suffocation,109,"873,732",12.48,12.87,"3,724"
+South Dakota,2017,"Motor vehicle, traffic",159,"873,732",18.2,18.25,"3,716"
+South Dakota,2017,"Pedestrian, other",--,"873,732",--,--,--
+South Dakota,2017,"Transport, other land",--,"873,732",--,--,--
+South Dakota,2017,"Transport, other (excl. drown by water transp)",--,"873,732",--,--,--
+South Dakota,2017,Other specified and classifiable,--,"873,732",--,--,--
+South Dakota,2017,Other specified / NEC,--,"873,732",--,--,--
+South Dakota,2017,Unspecified,16**,"873,732",1.83**,1.58**,252
+South Dakota,2016,Cut/Pierce,10**,"863,693",1.16**,1.31**,345
+South Dakota,2016,Drowning (includes water transport),11**,"863,693",1.27**,1.08**,364
+South Dakota,2016,Fall,189,"863,693",21.88,17.15,613
+South Dakota,2016,Fire/Flame,10**,"863,693",1.16**,1.03**,163
+South Dakota,2016,Firearm,108,"863,693",12.5,13.52,"2,607"
+South Dakota,2016,Machinery,--,"863,693",--,--,--
+South Dakota,2016,Natural/Environmental,17**,"863,693",1.97**,1.87**,294
+South Dakota,2016,Drug Poisoning,69,"863,693",7.99,8.45,"1,613"
+South Dakota,2016,Non-Drug Poisoning,18**,"863,693",2.08**,2.17**,419
+South Dakota,2016,Struck by / against,10**,"863,693",1.16**,1.19**,235
+South Dakota,2016,Suffocation,83,"863,693",9.61,10.22,"2,859"
+South Dakota,2016,"Motor vehicle, traffic",130,"863,693",15.05,15.25,"3,925"
+South Dakota,2016,"Pedal cyclist, other",--,"863,693",--,--,--
+South Dakota,2016,"Pedestrian, other",--,"863,693",--,--,--
+South Dakota,2016,"Transport, other land",--,"863,693",--,--,--
+South Dakota,2016,"Transport, other (excl. drown by water transp)",--,"863,693",--,--,--
+South Dakota,2016,Other specified and classifiable,15**,"863,693",1.74**,1.79**,247
+South Dakota,2016,Other specified / NEC,--,"863,693",--,--,--
+South Dakota,2016,Unspecified,15**,"863,693",1.74**,1.72**,356
+South Dakota,2015,Cut/Pierce,10**,"854,663",1.17**,1.29**,335
+South Dakota,2015,Drowning (includes water transport),17**,"854,663",1.99**,1.94**,542
+South Dakota,2015,Fall,182,"854,663",21.3,16.6,491
+South Dakota,2015,Fire/Flame,11**,"854,663",1.29**,1.33**,196
+South Dakota,2015,Firearm,96,"854,663",11.23,11.22,"2,374"
+South Dakota,2015,Machinery,--,"854,663",--,--,--
+South Dakota,2015,Natural/Environmental,--,"854,663",--,--,--
+South Dakota,2015,Drug Poisoning,65,"854,663",7.61,8.44,"1,582"
+South Dakota,2015,Non-Drug Poisoning,16**,"854,663",1.87**,1.93**,354
+South Dakota,2015,Struck by / against,--,"854,663",--,--,--
+South Dakota,2015,Suffocation,93,"854,663",10.88,11.26,"3,333"
+South Dakota,2015,"Motor vehicle, traffic",132,"854,663",15.45,15.11,"3,250"
+South Dakota,2015,"Pedal cyclist, other",--,"854,663",--,--,--
+South Dakota,2015,"Pedestrian, other",--,"854,663",--,--,--
+South Dakota,2015,"Transport, other land",12**,"854,663",1.40**,1.24**,161
+South Dakota,2015,"Transport, other (excl. drown by water transp)",--,"854,663",--,--,--
+South Dakota,2015,Other specified and classifiable,--,"854,663",--,--,--
+South Dakota,2015,Other specified / NEC,10**,"854,663",1.17**,1.13**,125
+South Dakota,2015,Unspecified,20**,"854,663",2.34**,2.13**,501
+South Dakota,2014,Cut/Pierce,--,"849,670",--,--,--
+South Dakota,2014,Drowning (includes water transport),--,"849,670",--,--,--
+South Dakota,2014,Fall,170,"849,670",20.01,15.62,421
+South Dakota,2014,Fire/Flame,--,"849,670",--,--,--
+South Dakota,2014,Firearm,89,"849,670",10.48,10.36,"2,106"
+South Dakota,2014,Machinery,--,"849,670",--,--,--
+South Dakota,2014,Natural/Environmental,11**,"849,670",1.30**,1.17**,212
+South Dakota,2014,Drug Poisoning,63,"849,670",7.42,8.01,"1,439"
+South Dakota,2014,Non-Drug Poisoning,18**,"849,670",2.12**,2.06**,345
+South Dakota,2014,Struck by / against,--,"849,670",--,--,--
+South Dakota,2014,Suffocation,71,"849,670",8.36,8.93,"2,204"
+South Dakota,2014,"Motor vehicle, traffic",153,"849,670",18.01,17.94,"3,429"
+South Dakota,2014,"Pedestrian, other",--,"849,670",--,--,--
+South Dakota,2014,"Transport, other land",--,"849,670",--,--,--
+South Dakota,2014,"Transport, other (excl. drown by water transp)",--,"849,670",--,--,--
+South Dakota,2014,Other specified and classifiable,12**,"849,670",1.41**,1.12**,205
+South Dakota,2014,Other specified / NEC,--,"849,670",--,--,--
+South Dakota,2014,Unspecified,12**,"849,670",1.41**,1.17**,210
+South Dakota,2013,Cut/Pierce,--,"842,751",--,--,--
+South Dakota,2013,Drowning (includes water transport),10**,"842,751",1.19**,1.14**,293
+South Dakota,2013,Fall,144,"842,751",17.09,13.67,308
+South Dakota,2013,Fire/Flame,12**,"842,751",1.42**,1.49**,205
+South Dakota,2013,Firearm,80,"842,751",9.49,9.98,"1,931"
+South Dakota,2013,Machinery,--,"842,751",--,--,--
+South Dakota,2013,Natural/Environmental,15**,"842,751",1.78**,1.57**,96
+South Dakota,2013,Drug Poisoning,55,"842,751",6.53,6.92,"1,166"
+South Dakota,2013,Non-Drug Poisoning,20**,"842,751",2.37**,2.49**,376
+South Dakota,2013,Struck by / against,--,"842,751",--,--,--
+South Dakota,2013,Suffocation,80,"842,751",9.49,9.74,"2,521"
+South Dakota,2013,"Motor vehicle, traffic",133,"842,751",15.78,15.37,"3,188"
+South Dakota,2013,"Pedal cyclist, other",--,"842,751",--,--,--
+South Dakota,2013,"Pedestrian, other",--,"842,751",--,--,--
+South Dakota,2013,"Transport, other land",--,"842,751",--,--,--
+South Dakota,2013,"Transport, other (excl. drown by water transp)",--,"842,751",--,--,--
+South Dakota,2013,Other specified and classifiable,--,"842,751",--,--,--
+South Dakota,2013,Other specified / NEC,--,"842,751",--,--,--
+South Dakota,2013,Unspecified,14**,"842,751",1.66**,1.67**,617
+South Dakota,2012,Cut/Pierce,--,"833,859",--,--,--
+South Dakota,2012,Drowning (includes water transport),15**,"833,859",1.80**,1.86**,601
+South Dakota,2012,Fall,141,"833,859",16.91,13.05,273
+South Dakota,2012,Fire/Flame,22,"833,859",2.64,2.62,731
+South Dakota,2012,Firearm,84,"833,859",10.07,9.59,"1,525"
+South Dakota,2012,Machinery,--,"833,859",--,--,--
+South Dakota,2012,Natural/Environmental,--,"833,859",--,--,--
+South Dakota,2012,Drug Poisoning,42,"833,859",5.04,5.42,"1,091"
+South Dakota,2012,Non-Drug Poisoning,26,"833,859",3.12,3.23,542
+South Dakota,2012,Struck by / against,--,"833,859",--,--,--
+South Dakota,2012,Suffocation,59,"833,859",7.08,7.43,"2,023"
+South Dakota,2012,"Motor vehicle, traffic",136,"833,859",16.31,16.38,"3,568"
+South Dakota,2012,"Pedestrian, other",--,"833,859",--,--,--
+South Dakota,2012,"Transport, other land",11**,"833,859",1.32**,1.07**,118
+South Dakota,2012,"Transport, other (excl. drown by water transp)",--,"833,859",--,--,--
+South Dakota,2012,Other specified and classifiable,10**,"833,859",1.20**,1.02**,120
+South Dakota,2012,Other specified / NEC,--,"833,859",--,--,--
+South Dakota,2012,Unspecified,15**,"833,859",1.80**,1.79**,298
+South Dakota,2011,Cut/Pierce,12**,"823,740",1.46**,1.49**,252
+South Dakota,2011,Drowning (includes water transport),13**,"823,740",1.58**,1.63**,463
+South Dakota,2011,Fall,150,"823,740",18.21,14.24,504
+South Dakota,2011,Fire/Flame,12**,"823,740",1.46**,1.35**,278
+South Dakota,2011,Firearm,71,"823,740",8.62,8.4,"1,455"
+South Dakota,2011,Machinery,--,"823,740",--,--,--
+South Dakota,2011,Natural/Environmental,15**,"823,740",1.82**,1.58**,215
+South Dakota,2011,Drug Poisoning,57,"823,740",6.92,7.07,"1,236"
+South Dakota,2011,Non-Drug Poisoning,15**,"823,740",1.82**,1.79**,271
+South Dakota,2011,Struck by / against,--,"823,740",--,--,--
+South Dakota,2011,Suffocation,66,"823,740",8.01,8.23,"2,203"
+South Dakota,2011,"Motor vehicle, traffic",98,"823,740",11.9,11.63,"2,372"
+South Dakota,2011,"Pedal cyclist, other",--,"823,740",--,--,--
+South Dakota,2011,"Pedestrian, other",--,"823,740",--,--,--
+South Dakota,2011,"Transport, other land",--,"823,740",--,--,--
+South Dakota,2011,"Transport, other (excl. drown by water transp)",11**,"823,740",1.34**,1.34**,264
+South Dakota,2011,Other specified and classifiable,10**,"823,740",1.21**,1.09**,265
+South Dakota,2011,Other specified / NEC,12**,"823,740",1.46**,1.42**,107
+South Dakota,2011,Unspecified,12**,"823,740",1.46**,1.25**,186
+South Dakota,2010,Cut/Pierce,--,"814,198",--,--,--
+South Dakota,2010,Drowning (includes water transport),12**,"814,198",1.47**,1.52**,283
+South Dakota,2010,Fall,127,"814,198",15.6,12.3,247
+South Dakota,2010,Fire/Flame,13**,"814,198",1.60**,1.52**,248
+South Dakota,2010,Firearm,75,"814,198",9.21,9.23,"1,776"
+South Dakota,2010,Machinery,--,"814,198",--,--,--
+South Dakota,2010,Natural/Environmental,15**,"814,198",1.84**,1.64**,288
+South Dakota,2010,Drug Poisoning,45,"814,198",5.53,6.33,"1,153"
+South Dakota,2010,Non-Drug Poisoning,19**,"814,198",2.33**,2.37**,501
+South Dakota,2010,Struck by / against,--,"814,198",--,--,--
+South Dakota,2010,Suffocation,64,"814,198",7.86,7.67,"2,006"
+South Dakota,2010,"Motor vehicle, traffic",135,"814,198",16.58,16.3,"3,180"
+South Dakota,2010,"Pedal cyclist, other",--,"814,198",--,--,--
+South Dakota,2010,"Pedestrian, other",--,"814,198",--,--,--
+South Dakota,2010,"Transport, other land",10**,"814,198",1.23**,1.16**,129
+South Dakota,2010,"Transport, other (excl. drown by water transp)",--,"814,198",--,--,--
+South Dakota,2010,Other specified and classifiable,--,"814,198",--,--,--
+South Dakota,2010,Other specified / NEC,10**,"814,198",1.23**,1.22**,180
+South Dakota,2010,Unspecified,11**,"814,198",1.35**,1.22**,305
+South Dakota,2009,Cut/Pierce,--,"807,067",--,--,--
+South Dakota,2009,Drowning (includes water transport),10**,"807,067",1.24**,1.35**,337
+South Dakota,2009,Fall,103,"807,067",12.76,9.96,364
+South Dakota,2009,Fire/Flame,11**,"807,067",1.36**,1.17**,164
+South Dakota,2009,Firearm,75,"807,067",9.29,9.31,"1,847"
+South Dakota,2009,Machinery,--,"807,067",--,--,--
+South Dakota,2009,Natural/Environmental,--,"807,067",--,--,--
+South Dakota,2009,Drug Poisoning,49,"807,067",6.07,6.69,"1,059"
+South Dakota,2009,Non-Drug Poisoning,14**,"807,067",1.74**,1.82**,405
+South Dakota,2009,Struck by / against,--,"807,067",--,--,--
+South Dakota,2009,Suffocation,68,"807,067",8.43,8.51,"2,572"
+South Dakota,2009,"Motor vehicle, traffic",130,"807,067",16.11,16.48,"3,796"
+South Dakota,2009,"Transport, other land",--,"807,067",--,--,--
+South Dakota,2009,"Transport, other (excl. drown by water transp)",--,"807,067",--,--,--
+South Dakota,2009,Other specified and classifiable,10**,"807,067",1.24**,1.36**,282
+South Dakota,2009,Other specified / NEC,11**,"807,067",1.36**,1.26**,102
+South Dakota,2009,Unspecified,17**,"807,067",2.11**,2.04**,390
+South Dakota,2008,Cut/Pierce,--,"799,124",--,--,--
+South Dakota,2008,Drowning (includes water transport),--,"799,124",--,--,--
+South Dakota,2008,Fall,122,"799,124",15.27,11.64,198
+South Dakota,2008,Fire/Flame,14**,"799,124",1.75**,1.72**,497
+South Dakota,2008,Hot object/Substance,--,"799,124",--,--,--
+South Dakota,2008,Firearm,83,"799,124",10.39,10.5,"1,967"
+South Dakota,2008,Machinery,--,"799,124",--,--,--
+South Dakota,2008,Natural/Environmental,14**,"799,124",1.75**,1.72**,233
+South Dakota,2008,Drug Poisoning,54,"799,124",6.76,7.31,"1,298"
+South Dakota,2008,Non-Drug Poisoning,18**,"799,124",2.25**,2.40**,491
+South Dakota,2008,Struck by / against,--,"799,124",--,--,--
+South Dakota,2008,Suffocation,47,"799,124",5.88,5.62,"1,555"
+South Dakota,2008,"Motor vehicle, traffic",121,"799,124",15.14,14.75,"3,001"
+South Dakota,2008,"Pedestrian, other",--,"799,124",--,--,--
+South Dakota,2008,"Transport, other land",10**,"799,124",1.25**,1.22**,188
+South Dakota,2008,"Transport, other (excl. drown by water transp)",--,"799,124",--,--,--
+South Dakota,2008,Other specified and classifiable,--,"799,124",--,--,--
+South Dakota,2008,Other specified / NEC,--,"799,124",--,--,--
+South Dakota,2008,Unspecified,18**,"799,124",2.25**,2.01**,341
+South Dakota,2007,Cut/Pierce,--,"791,623",--,--,--
+South Dakota,2007,Drowning (includes water transport),--,"791,623",--,--,--
+South Dakota,2007,Fall,133,"791,623",16.8,13.18,563
+South Dakota,2007,Fire/Flame,--,"791,623",--,--,--
+South Dakota,2007,Firearm,52,"791,623",6.57,6.14,"1,092"
+South Dakota,2007,Machinery,--,"791,623",--,--,--
+South Dakota,2007,Natural/Environmental,--,"791,623",--,--,--
+South Dakota,2007,Drug Poisoning,32,"791,623",4.04,4.1,785
+South Dakota,2007,Non-Drug Poisoning,11**,"791,623",1.39**,1.42**,198
+South Dakota,2007,Suffocation,50,"791,623",6.32,6.33,"1,535"
+South Dakota,2007,"Motor vehicle, traffic",140,"791,623",17.69,17.48,"3,514"
+South Dakota,2007,"Pedestrian, other",--,"791,623",--,--,--
+South Dakota,2007,"Transport, other land",--,"791,623",--,--,--
+South Dakota,2007,"Transport, other (excl. drown by water transp)",--,"791,623",--,--,--
+South Dakota,2007,Other specified and classifiable,--,"791,623",--,--,--
+South Dakota,2007,Other specified / NEC,10**,"791,623",1.26**,1.18**,217
+South Dakota,2007,Unspecified,--,"791,623",--,--,--
+South Dakota,2006,Cut/Pierce,--,"783,033",--,--,--
+South Dakota,2006,Drowning (includes water transport),13**,"783,033",1.66**,1.70**,382
+South Dakota,2006,Fall,141,"783,033",18.01,14.15,436
+South Dakota,2006,Fire/Flame,12**,"783,033",1.53**,1.48**,382
+South Dakota,2006,Firearm,77,"783,033",9.83,9.74,"1,713"
+South Dakota,2006,Machinery,--,"783,033",--,--,--
+South Dakota,2006,Natural/Environmental,10**,"783,033",1.28**,1.06**,170
+South Dakota,2006,Drug Poisoning,37,"783,033",4.73,5.21,900
+South Dakota,2006,Non-Drug Poisoning,17**,"783,033",2.17**,2.37**,405
+South Dakota,2006,Struck by / against,--,"783,033",--,--,--
+South Dakota,2006,Suffocation,52,"783,033",6.64,6.57,"1,575"
+South Dakota,2006,"Motor vehicle, traffic",185,"783,033",23.63,23.14,"4,727"
+South Dakota,2006,"Pedestrian, other",--,"783,033",--,--,--
+South Dakota,2006,"Transport, other land",--,"783,033",--,--,--
+South Dakota,2006,"Transport, other (excl. drown by water transp)",--,"783,033",--,--,--
+South Dakota,2006,Other specified and classifiable,--,"783,033",--,--,--
+South Dakota,2006,Other specified / NEC,--,"783,033",--,--,--
+South Dakota,2006,Unspecified,16**,"783,033",2.04**,2.06**,431
+South Dakota,2005,Cut/Pierce,--,"775,493",--,--,--
+South Dakota,2005,Drowning (includes water transport),12**,"775,493",1.55**,1.59**,377
+South Dakota,2005,Fall,115,"775,493",14.83,11.8,329
+South Dakota,2005,Fire/Flame,15**,"775,493",1.93**,1.91**,633
+South Dakota,2005,Hot object/Substance,--,"775,493",--,--,--
+South Dakota,2005,Firearm,82,"775,493",10.57,10.2,"1,955"
+South Dakota,2005,Machinery,--,"775,493",--,--,--
+South Dakota,2005,Natural/Environmental,12**,"775,493",1.55**,1.51**,218
+South Dakota,2005,Drug Poisoning,40,"775,493",5.16,5.58,"1,004"
+South Dakota,2005,Non-Drug Poisoning,13**,"775,493",1.68**,1.73**,246
+South Dakota,2005,Struck by / against,--,"775,493",--,--,--
+South Dakota,2005,Suffocation,41,"775,493",5.29,5.21,"1,142"
+South Dakota,2005,"Motor vehicle, traffic",167,"775,493",21.54,21.44,"4,446"
+South Dakota,2005,"Pedal cyclist, other",--,"775,493",--,--,--
+South Dakota,2005,"Pedestrian, other",--,"775,493",--,--,--
+South Dakota,2005,"Transport, other land",12**,"775,493",1.55**,1.58**,331
+South Dakota,2005,"Transport, other (excl. drown by water transp)",--,"775,493",--,--,--
+South Dakota,2005,Other specified and classifiable,--,"775,493",--,--,--
+South Dakota,2005,Other specified / NEC,--,"775,493",--,--,--
+South Dakota,2005,Unspecified,19**,"775,493",2.45**,2.16**,283
+South Dakota,2004,Cut/Pierce,11**,"770,396",1.43**,1.43**,303
+South Dakota,2004,Drowning (includes water transport),--,"770,396",--,--,--
+South Dakota,2004,Fall,111,"770,396",14.41,11.53,461
+South Dakota,2004,Fire/Flame,15**,"770,396",1.95**,2.02**,771
+South Dakota,2004,Firearm,77,"770,396",10,9.97,"2,060"
+South Dakota,2004,Machinery,--,"770,396",--,--,--
+South Dakota,2004,Natural/Environmental,--,"770,396",--,--,--
+South Dakota,2004,Drug Poisoning,43,"770,396",5.58,5.8,"1,041"
+South Dakota,2004,Non-Drug Poisoning,--,"770,396",--,--,--
+South Dakota,2004,Struck by / against,--,"770,396",--,--,--
+South Dakota,2004,Suffocation,48,"770,396",6.23,6.35,"1,396"
+South Dakota,2004,"Motor vehicle, traffic",179,"770,396",23.24,23.23,"4,876"
+South Dakota,2004,"Pedestrian, other",--,"770,396",--,--,--
+South Dakota,2004,"Transport, other land",--,"770,396",--,--,--
+South Dakota,2004,"Transport, other (excl. drown by water transp)",--,"770,396",--,--,--
+South Dakota,2004,Other specified and classifiable,--,"770,396",--,--,--
+South Dakota,2004,Other specified / NEC,--,"770,396",--,--,--
+South Dakota,2004,Unspecified,12**,"770,396",1.56**,1.47**,280
+South Dakota,2003,Cut/Pierce,--,"763,729",--,--,--
+South Dakota,2003,Drowning (includes water transport),10**,"763,729",1.31**,1.34**,430
+South Dakota,2003,Fall,86,"763,729",11.26,9.18,295
+South Dakota,2003,Fire/Flame,10**,"763,729",1.31**,1.32**,354
+South Dakota,2003,Hot object/Substance,--,"763,729",--,--,--
+South Dakota,2003,Firearm,76,"763,729",9.95,9.86,"1,985"
+South Dakota,2003,Machinery,--,"763,729",--,--,--
+South Dakota,2003,Natural/Environmental,--,"763,729",--,--,--
+South Dakota,2003,Drug Poisoning,24,"763,729",3.14,3.36,605
+South Dakota,2003,Non-Drug Poisoning,15**,"763,729",1.96**,2.11**,316
+South Dakota,2003,Struck by / against,--,"763,729",--,--,--
+South Dakota,2003,Suffocation,45,"763,729",5.89,5.81,898
+South Dakota,2003,"Motor vehicle, traffic",196,"763,729",25.66,25.47,"5,202"
+South Dakota,2003,"Pedestrian, other",--,"763,729",--,--,--
+South Dakota,2003,"Transport, other land",11**,"763,729",1.44**,1.44**,239
+South Dakota,2003,"Transport, other (excl. drown by water transp)",--,"763,729",--,--,--
+South Dakota,2003,Other specified and classifiable,--,"763,729",--,--,--
+South Dakota,2003,Other specified / NEC,--,"763,729",--,--,--
+South Dakota,2003,Unspecified,22,"763,729",2.88,2.65,505
+South Dakota,2002,Cut/Pierce,--,"760,020",--,--,--
+South Dakota,2002,Drowning (includes water transport),--,"760,020",--,--,--
+South Dakota,2002,Fall,73,"760,020",9.61,7.84,265
+South Dakota,2002,Fire/Flame,12**,"760,020",1.58**,1.65**,331
+South Dakota,2002,Firearm,61,"760,020",8.03,7.91,"1,264"
+South Dakota,2002,Machinery,--,"760,020",--,--,--
+South Dakota,2002,Natural/Environmental,--,"760,020",--,--,--
+South Dakota,2002,Drug Poisoning,22,"760,020",2.9,3.04,630
+South Dakota,2002,Non-Drug Poisoning,14**,"760,020",1.84**,1.86**,290
+South Dakota,2002,Struck by / against,--,"760,020",--,--,--
+South Dakota,2002,Suffocation,46,"760,020",6.05,5.81,"1,424"
+South Dakota,2002,"Motor vehicle, traffic",171,"760,020",22.5,22,"4,602"
+South Dakota,2002,"Pedestrian, other",--,"760,020",--,--,--
+South Dakota,2002,"Transport, other land",14**,"760,020",1.84**,1.74**,451
+South Dakota,2002,"Transport, other (excl. drown by water transp)",--,"760,020",--,--,--
+South Dakota,2002,Other specified and classifiable,--,"760,020",--,--,--
+South Dakota,2002,Other specified / NEC,--,"760,020",--,--,--
+South Dakota,2002,Unspecified,--,"760,020",--,--,--
+South Dakota,2001,Cut/Pierce,--,"757,972",--,--,--
+South Dakota,2001,Drowning (includes water transport),11**,"757,972",1.45**,1.44**,300
+South Dakota,2001,Fall,99,"757,972",13.06,10.63,263
+South Dakota,2001,Fire/Flame,12**,"757,972",1.58**,1.53**,237
+South Dakota,2001,Firearm,54,"757,972",7.12,7.1,"1,377"
+South Dakota,2001,Machinery,--,"757,972",--,--,--
+South Dakota,2001,Natural/Environmental,--,"757,972",--,--,--
+South Dakota,2001,Drug Poisoning,24,"757,972",3.17,3.23,503
+South Dakota,2001,Non-Drug Poisoning,15**,"757,972",1.98**,1.92**,274
+South Dakota,2001,Struck by / against,--,"757,972",--,--,--
+South Dakota,2001,Suffocation,55,"757,972",7.26,7.18,"1,584"
+South Dakota,2001,"Motor vehicle, traffic",172,"757,972",22.69,22.51,"4,857"
+South Dakota,2001,"Pedestrian, other",--,"757,972",--,--,--
+South Dakota,2001,"Transport, other land",14**,"757,972",1.85**,1.84**,367
+South Dakota,2001,"Transport, other (excl. drown by water transp)",--,"757,972",--,--,--
+South Dakota,2001,Other specified and classifiable,--,"757,972",--,--,--
+South Dakota,2001,Other specified / NEC,--,"757,972",--,--,--
+South Dakota,2001,Unspecified,13**,"757,972",1.72**,1.45**,104
+Total,,,"13,058","17,313,751",75.42,71.8,"257,035"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: South Dakota,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

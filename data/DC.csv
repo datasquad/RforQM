@@ -1,0 +1,364 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+District of Columbia,2021,Cut/Pierce,31,"670,050",4.63,4.42,881
+District of Columbia,2021,Drowning (includes water transport),--,"670,050",--,--,--
+District of Columbia,2021,Fall,93,"670,050",13.88,14.29,601
+District of Columbia,2021,Fire/Flame,10**,"670,050",1.49**,1.44**,65
+District of Columbia,2021,Hot object/Substance,--,"670,050",--,--,--
+District of Columbia,2021,Firearm,185,"670,050",27.61,23.94,"6,092"
+District of Columbia,2021,Natural/Environmental,--,"670,050",--,--,--
+District of Columbia,2021,Drug Poisoning,450,"670,050",67.16,63.25,"5,528"
+District of Columbia,2021,Non-Drug Poisoning,14**,"670,050",2.09**,2.03**,259
+District of Columbia,2021,Struck by / against,--,"670,050",--,--,--
+District of Columbia,2021,Suffocation,42,"670,050",6.27,6.28,882
+District of Columbia,2021,"Motor vehicle, traffic",57,"670,050",8.51,7.87,"1,369"
+District of Columbia,2021,"Pedal cyclist, other",--,"670,050",--,--,--
+District of Columbia,2021,"Pedestrian, other",--,"670,050",--,--,--
+District of Columbia,2021,"Transport, other land",--,"670,050",--,--,--
+District of Columbia,2021,Other specified and classifiable,--,"670,050",--,--,--
+District of Columbia,2021,Other specified / NEC,12**,"670,050",1.79**,1.83**,170
+District of Columbia,2021,Unspecified,26,"670,050",3.88,3.82,289
+District of Columbia,2020,Cut/Pierce,14**,"690,093",2.03**,1.80**,447
+District of Columbia,2020,Drowning (includes water transport),--,"690,093",--,--,--
+District of Columbia,2020,Fall,62,"690,093",8.98,8.83,328
+District of Columbia,2020,Fire/Flame,--,"690,093",--,--,--
+District of Columbia,2020,Hot object/Substance,--,"690,093",--,--,--
+District of Columbia,2020,Firearm,167,"690,093",24.2,22.46,"5,721"
+District of Columbia,2020,Machinery,--,"690,093",--,--,--
+District of Columbia,2020,Natural/Environmental,--,"690,093",--,--,--
+District of Columbia,2020,Drug Poisoning,424,"690,093",61.44,59.29,"5,909"
+District of Columbia,2020,Non-Drug Poisoning,16**,"690,093",2.32**,2.41**,256
+District of Columbia,2020,Struck by / against,--,"690,093",--,--,--
+District of Columbia,2020,Suffocation,31,"690,093",4.49,4.54,745
+District of Columbia,2020,"Motor vehicle, traffic",44,"690,093",6.38,6.18,"1,025"
+District of Columbia,2020,"Pedal cyclist, other",--,"690,093",--,--,--
+District of Columbia,2020,"Pedestrian, other",--,"690,093",--,--,--
+District of Columbia,2020,"Transport, other land",--,"690,093",--,--,--
+District of Columbia,2020,Other specified and classifiable,--,"690,093",--,--,--
+District of Columbia,2020,Other specified / NEC,--,"690,093",--,--,--
+District of Columbia,2020,Unspecified,21,"690,093",3.04,3.16,232
+District of Columbia,2019,Cut/Pierce,14**,"708,253",1.98**,2.05**,254
+District of Columbia,2019,Drowning (includes water transport),--,"708,253",--,--,--
+District of Columbia,2019,Fall,55,"708,253",7.77,7.77,307
+District of Columbia,2019,Fire/Flame,--,"708,253",--,--,--
+District of Columbia,2019,Firearm,141,"708,253",19.91,17.77,"5,070"
+District of Columbia,2019,Natural/Environmental,--,"708,253",--,--,--
+District of Columbia,2019,Drug Poisoning,311,"708,253",43.91,42.64,"4,417"
+District of Columbia,2019,Non-Drug Poisoning,15**,"708,253",2.12**,2.31**,282
+District of Columbia,2019,Struck by / against,--,"708,253",--,--,--
+District of Columbia,2019,Suffocation,34,"708,253",4.8,4.97,"1,054"
+District of Columbia,2019,"Motor vehicle, traffic",44,"708,253",6.21,5.93,"1,157"
+District of Columbia,2019,"Pedal cyclist, other",--,"708,253",--,--,--
+District of Columbia,2019,"Pedestrian, other",--,"708,253",--,--,--
+District of Columbia,2019,"Transport, other land",--,"708,253",--,--,--
+District of Columbia,2019,Other specified and classifiable,--,"708,253",--,--,--
+District of Columbia,2019,Other specified / NEC,--,"708,253",--,--,--
+District of Columbia,2019,Unspecified,19**,"708,253",2.68**,2.69**,365
+District of Columbia,2018,Cut/Pierce,16**,"704,147",2.27**,2.29**,368
+District of Columbia,2018,Drowning (includes water transport),10**,"704,147",1.42**,1.30**,291
+District of Columbia,2018,Fall,68,"704,147",9.66,9.78,432
+District of Columbia,2018,Fire/Flame,--,"704,147",--,--,--
+District of Columbia,2018,Hot object/Substance,--,"704,147",--,--,--
+District of Columbia,2018,Firearm,125,"704,147",17.75,16.23,"4,401"
+District of Columbia,2018,Natural/Environmental,--,"704,147",--,--,--
+District of Columbia,2018,Drug Poisoning,254,"704,147",36.07,35.2,"3,419"
+District of Columbia,2018,Non-Drug Poisoning,11**,"704,147",1.56**,1.79**,153
+District of Columbia,2018,Suffocation,52,"704,147",7.39,7.33,"1,207"
+District of Columbia,2018,"Motor vehicle, traffic",41,"704,147",5.82,5.58,863
+District of Columbia,2018,"Pedal cyclist, other",--,"704,147",--,--,--
+District of Columbia,2018,"Pedestrian, other",--,"704,147",--,--,--
+District of Columbia,2018,Other specified and classifiable,--,"704,147",--,--,--
+District of Columbia,2018,Other specified / NEC,--,"704,147",--,--,--
+District of Columbia,2018,Unspecified,18**,"704,147",2.56**,2.63**,219
+District of Columbia,2017,Cut/Pierce,17**,"697,079",2.44**,2.66**,323
+District of Columbia,2017,Drowning (includes water transport),--,"697,079",--,--,--
+District of Columbia,2017,Fall,65,"697,079",9.33,9.42,350
+District of Columbia,2017,Fire/Flame,--,"697,079",--,--,--
+District of Columbia,2017,Hot object/Substance,--,"697,079",--,--,--
+District of Columbia,2017,Firearm,100,"697,079",14.35,12.91,"3,356"
+District of Columbia,2017,Natural/Environmental,--,"697,079",--,--,--
+District of Columbia,2017,Drug Poisoning,310,"697,079",44.47,43.25,"4,171"
+District of Columbia,2017,Non-Drug Poisoning,--,"697,079",--,--,--
+District of Columbia,2017,Struck by / against,--,"697,079",--,--,--
+District of Columbia,2017,Suffocation,41,"697,079",5.88,5.79,"1,170"
+District of Columbia,2017,"Motor vehicle, traffic",32,"697,079",4.59,4.3,810
+District of Columbia,2017,"Pedestrian, other",--,"697,079",--,--,--
+District of Columbia,2017,Other specified and classifiable,--,"697,079",--,--,--
+District of Columbia,2017,Other specified / NEC,--,"697,079",--,--,--
+District of Columbia,2017,Unspecified,17**,"697,079",2.44**,2.38**,134
+District of Columbia,2016,Cut/Pierce,20**,"687,576",2.91**,2.74**,565
+District of Columbia,2016,Drowning (includes water transport),11**,"687,576",1.60**,1.47**,212
+District of Columbia,2016,Fall,70,"687,576",10.18,10.56,215
+District of Columbia,2016,Fire/Flame,--,"687,576",--,--,--
+District of Columbia,2016,Firearm,107,"687,576",15.56,13.24,"3,716"
+District of Columbia,2016,Natural/Environmental,--,"687,576",--,--,--
+District of Columbia,2016,Drug Poisoning,269,"687,576",39.12,37.71,"3,650"
+District of Columbia,2016,Non-Drug Poisoning,18**,"687,576",2.62**,2.52**,294
+District of Columbia,2016,Struck by / against,--,"687,576",--,--,--
+District of Columbia,2016,Suffocation,30,"687,576",4.36,4.2,641
+District of Columbia,2016,"Motor vehicle, traffic",32,"687,576",4.65,4.27,813
+District of Columbia,2016,"Pedal cyclist, other",--,"687,576",--,--,--
+District of Columbia,2016,"Pedestrian, other",--,"687,576",--,--,--
+District of Columbia,2016,"Transport, other land",--,"687,576",--,--,--
+District of Columbia,2016,Other specified and classifiable,--,"687,576",--,--,--
+District of Columbia,2016,Other specified / NEC,--,"687,576",--,--,--
+District of Columbia,2016,Unspecified,17**,"687,576",2.47**,2.34**,291
+District of Columbia,2015,Cut/Pierce,23,"677,014",3.4,3.09,528
+District of Columbia,2015,Drowning (includes water transport),--,"677,014",--,--,--
+District of Columbia,2015,Fall,63,"677,014",9.31,9.57,219
+District of Columbia,2015,Fire/Flame,--,"677,014",--,--,--
+District of Columbia,2015,Firearm,120,"677,014",17.73,14.67,"4,168"
+District of Columbia,2015,Natural/Environmental,--,"677,014",--,--,--
+District of Columbia,2015,Drug Poisoning,125,"677,014",18.46,18.38,"1,666"
+District of Columbia,2015,Non-Drug Poisoning,15**,"677,014",2.22**,1.93**,272
+District of Columbia,2015,Struck by / against,--,"677,014",--,--,--
+District of Columbia,2015,Suffocation,23,"677,014",3.4,3.29,535
+District of Columbia,2015,"Motor vehicle, traffic",42,"677,014",6.2,6.12,903
+District of Columbia,2015,"Pedestrian, other",--,"677,014",--,--,--
+District of Columbia,2015,"Transport, other land",--,"677,014",--,--,--
+District of Columbia,2015,"Transport, other (excl. drown by water transp)",--,"677,014",--,--,--
+District of Columbia,2015,Other specified / NEC,--,"677,014",--,--,--
+District of Columbia,2015,Unspecified,15**,"677,014",2.22**,2.19**,325
+District of Columbia,2014,Cut/Pierce,12**,"663,603",1.81**,1.68**,306
+District of Columbia,2014,Drowning (includes water transport),--,"663,603",--,--,--
+District of Columbia,2014,Fall,62,"663,603",9.34,9.75,131
+District of Columbia,2014,Fire/Flame,--,"663,603",--,--,--
+District of Columbia,2014,Firearm,86,"663,603",12.96,11.24,"2,881"
+District of Columbia,2014,Natural/Environmental,--,"663,603",--,--,--
+District of Columbia,2014,Drug Poisoning,96,"663,603",14.47,13.83,"1,404"
+District of Columbia,2014,Non-Drug Poisoning,12**,"663,603",1.81**,1.81**,200
+District of Columbia,2014,Suffocation,30,"663,603",4.52,4.59,752
+District of Columbia,2014,"Motor vehicle, traffic",37,"663,603",5.58,5.13,968
+District of Columbia,2014,"Pedestrian, other",--,"663,603",--,--,--
+District of Columbia,2014,Other specified and classifiable,--,"663,603",--,--,--
+District of Columbia,2014,Other specified / NEC,--,"663,603",--,--,--
+District of Columbia,2014,Unspecified,21,"663,603",3.17,3.37,395
+District of Columbia,2013,Cut/Pierce,11**,"651,559",1.69**,1.73**,275
+District of Columbia,2013,Drowning (includes water transport),--,"651,559",--,--,--
+District of Columbia,2013,Fall,63,"651,559",9.67,9.8,197
+District of Columbia,2013,Fire/Flame,--,"651,559",--,--,--
+District of Columbia,2013,Firearm,71,"651,559",10.9,8.48,"2,556"
+District of Columbia,2013,Natural/Environmental,--,"651,559",--,--,--
+District of Columbia,2013,Drug Poisoning,102,"651,559",15.66,14.88,"1,505"
+District of Columbia,2013,Non-Drug Poisoning,--,"651,559",--,--,--
+District of Columbia,2013,Struck by / against,--,"651,559",--,--,--
+District of Columbia,2013,Suffocation,29,"651,559",4.45,4.51,404
+District of Columbia,2013,"Motor vehicle, traffic",30,"651,559",4.6,4.7,527
+District of Columbia,2013,"Pedal cyclist, other",--,"651,559",--,--,--
+District of Columbia,2013,"Pedestrian, other",--,"651,559",--,--,--
+District of Columbia,2013,"Transport, other land",--,"651,559",--,--,--
+District of Columbia,2013,"Transport, other (excl. drown by water transp)",--,"651,559",--,--,--
+District of Columbia,2013,Other specified and classifiable,--,"651,559",--,--,--
+District of Columbia,2013,Other specified / NEC,--,"651,559",--,--,--
+District of Columbia,2013,Unspecified,24,"651,559",3.68,3.88,502
+District of Columbia,2012,Cut/Pierce,13**,"635,737",2.05**,1.94**,426
+District of Columbia,2012,Drowning (includes water transport),--,"635,737",--,--,--
+District of Columbia,2012,Fall,54,"635,737",8.49,8.89,279
+District of Columbia,2012,Fire/Flame,--,"635,737",--,--,--
+District of Columbia,2012,Firearm,68,"635,737",10.7,9.16,"2,245"
+District of Columbia,2012,Natural/Environmental,--,"635,737",--,--,--
+District of Columbia,2012,Drug Poisoning,77,"635,737",12.11,12.63,"1,273"
+District of Columbia,2012,Non-Drug Poisoning,10**,"635,737",1.57**,1.49**,152
+District of Columbia,2012,Suffocation,27,"635,737",4.25,4.09,613
+District of Columbia,2012,"Motor vehicle, traffic",43,"635,737",6.76,6.82,"1,082"
+District of Columbia,2012,"Transport, other land",--,"635,737",--,--,--
+District of Columbia,2012,Other specified and classifiable,--,"635,737",--,--,--
+District of Columbia,2012,Other specified / NEC,--,"635,737",--,--,--
+District of Columbia,2012,Unspecified,17**,"635,737",2.67**,2.48**,309
+District of Columbia,2011,Cut/Pierce,19**,"620,290",3.06**,2.96**,573
+District of Columbia,2011,Drowning (includes water transport),--,"620,290",--,--,--
+District of Columbia,2011,Fall,47,"620,290",7.58,7.83,155
+District of Columbia,2011,Fire/Flame,--,"620,290",--,--,--
+District of Columbia,2011,Hot object/Substance,--,"620,290",--,--,--
+District of Columbia,2011,Firearm,86,"620,290",13.86,11.68,"3,149"
+District of Columbia,2011,Natural/Environmental,--,"620,290",--,--,--
+District of Columbia,2011,Drug Poisoning,86,"620,290",13.86,13.64,"1,392"
+District of Columbia,2011,Non-Drug Poisoning,--,"620,290",--,--,--
+District of Columbia,2011,Struck by / against,--,"620,290",--,--,--
+District of Columbia,2011,Suffocation,20**,"620,290",3.22**,2.89**,332
+District of Columbia,2011,"Motor vehicle, traffic",37,"620,290",5.97,5.51,980
+District of Columbia,2011,"Pedal cyclist, other",--,"620,290",--,--,--
+District of Columbia,2011,"Pedestrian, other",--,"620,290",--,--,--
+District of Columbia,2011,"Transport, other land",--,"620,290",--,--,--
+District of Columbia,2011,Other specified and classifiable,--,"620,290",--,--,--
+District of Columbia,2011,Other specified / NEC,11**,"620,290",1.77**,1.84**,233
+District of Columbia,2011,Unspecified,19**,"620,290",3.06**,3.08**,372
+District of Columbia,2010,Cut/Pierce,15**,"601,767",2.49**,2.42**,390
+District of Columbia,2010,Drowning (includes water transport),--,"601,767",--,--,--
+District of Columbia,2010,Fall,62,"601,767",10.3,10.61,240
+District of Columbia,2010,Fire/Flame,11**,"601,767",1.83**,1.65**,86
+District of Columbia,2010,Hot object/Substance,--,"601,767",--,--,--
+District of Columbia,2010,Firearm,99,"601,767",16.45,14.61,"3,452"
+District of Columbia,2010,Natural/Environmental,--,"601,767",--,--,--
+District of Columbia,2010,Drug Poisoning,78,"601,767",12.96,13.13,"1,305"
+District of Columbia,2010,Non-Drug Poisoning,13**,"601,767",2.16**,2.11**,168
+District of Columbia,2010,Struck by / against,--,"601,767",--,--,--
+District of Columbia,2010,Suffocation,22,"601,767",3.66,3.42,494
+District of Columbia,2010,"Motor vehicle, traffic",38,"601,767",6.32,6,"1,054"
+District of Columbia,2010,"Pedal cyclist, other",--,"601,767",--,--,--
+District of Columbia,2010,"Pedestrian, other",--,"601,767",--,--,--
+District of Columbia,2010,"Transport, other land",--,"601,767",--,--,--
+District of Columbia,2010,Other specified and classifiable,--,"601,767",--,--,--
+District of Columbia,2010,Other specified / NEC,10**,"601,767",1.66**,1.52**,192
+District of Columbia,2010,Unspecified,23,"601,767",3.82,3.9,367
+District of Columbia,2009,Cut/Pierce,22,"592,228",3.72,3.29,714
+District of Columbia,2009,Drowning (includes water transport),--,"592,228",--,--,--
+District of Columbia,2009,Fall,36,"592,228",6.08,5.94,118
+District of Columbia,2009,Fire/Flame,16**,"592,228",2.70**,3.18**,465
+District of Columbia,2009,Hot object/Substance,--,"592,228",--,--,--
+District of Columbia,2009,Firearm,111,"592,228",18.74,15.96,"4,103"
+District of Columbia,2009,Machinery,--,"592,228",--,--,--
+District of Columbia,2009,Natural/Environmental,--,"592,228",--,--,--
+District of Columbia,2009,Drug Poisoning,26,"592,228",4.39,4.12,389
+District of Columbia,2009,Non-Drug Poisoning,--,"592,228",--,--,--
+District of Columbia,2009,Struck by / against,--,"592,228",--,--,--
+District of Columbia,2009,Suffocation,28,"592,228",4.73,4.74,485
+District of Columbia,2009,"Motor vehicle, traffic",37,"592,228",6.25,6.03,774
+District of Columbia,2009,"Pedestrian, other",--,"592,228",--,--,--
+District of Columbia,2009,"Transport, other land",--,"592,228",--,--,--
+District of Columbia,2009,Other specified and classifiable,--,"592,228",--,--,--
+District of Columbia,2009,Other specified / NEC,--,"592,228",--,--,--
+District of Columbia,2009,Unspecified,14**,"592,228",2.36**,2.32**,164
+District of Columbia,2008,Cut/Pierce,20**,"580,236",3.45**,3.51**,602
+District of Columbia,2008,Drowning (includes water transport),--,"580,236",--,--,--
+District of Columbia,2008,Fall,45,"580,236",7.76,7.88,109
+District of Columbia,2008,Fire/Flame,--,"580,236",--,--,--
+District of Columbia,2008,Firearm,137,"580,236",23.61,20.01,"4,772"
+District of Columbia,2008,Natural/Environmental,--,"580,236",--,--,--
+District of Columbia,2008,Drug Poisoning,56,"580,236",9.65,9.79,834
+District of Columbia,2008,Non-Drug Poisoning,10**,"580,236",1.72**,1.55**,137
+District of Columbia,2008,Suffocation,22,"580,236",3.79,4.05,621
+District of Columbia,2008,"Motor vehicle, traffic",47,"580,236",8.1,7.74,990
+District of Columbia,2008,"Pedestrian, other",--,"580,236",--,--,--
+District of Columbia,2008,Other specified and classifiable,--,"580,236",--,--,--
+District of Columbia,2008,Other specified / NEC,--,"580,236",--,--,--
+District of Columbia,2008,Unspecified,30,"580,236",5.17,5.66,580
+District of Columbia,2007,Cut/Pierce,20**,"574,404",3.48**,2.87**,579
+District of Columbia,2007,Drowning (includes water transport),--,"574,404",--,--,--
+District of Columbia,2007,Fall,39,"574,404",6.79,6.75,100
+District of Columbia,2007,Fire/Flame,12**,"574,404",2.09**,2.25**,141
+District of Columbia,2007,Firearm,144,"574,404",25.07,21.66,"5,209"
+District of Columbia,2007,Natural/Environmental,--,"574,404",--,--,--
+District of Columbia,2007,Drug Poisoning,61,"574,404",10.62,10.72,965
+District of Columbia,2007,Non-Drug Poisoning,--,"574,404",--,--,--
+District of Columbia,2007,Struck by / against,--,"574,404",--,--,--
+District of Columbia,2007,Suffocation,22,"574,404",3.83,3.75,458
+District of Columbia,2007,"Motor vehicle, traffic",52,"574,404",9.05,8.9,"1,318"
+District of Columbia,2007,"Pedal cyclist, other",--,"574,404",--,--,--
+District of Columbia,2007,"Pedestrian, other",--,"574,404",--,--,--
+District of Columbia,2007,"Transport, other land",--,"574,404",--,--,--
+District of Columbia,2007,"Transport, other (excl. drown by water transp)",--,"574,404",--,--,--
+District of Columbia,2007,Other specified and classifiable,--,"574,404",--,--,--
+District of Columbia,2007,Other specified / NEC,--,"574,404",--,--,--
+District of Columbia,2007,Unspecified,28,"574,404",4.88,4.84,372
+District of Columbia,2006,Cut/Pierce,16**,"570,681",2.80**,2.57**,408
+District of Columbia,2006,Drowning (includes water transport),--,"570,681",--,--,--
+District of Columbia,2006,Fall,56,"570,681",9.81,9.9,427
+District of Columbia,2006,Fire/Flame,12**,"570,681",2.10**,2.25**,172
+District of Columbia,2006,Hot object/Substance,--,"570,681",--,--,--
+District of Columbia,2006,Firearm,134,"570,681",23.48,19.99,"4,889"
+District of Columbia,2006,Natural/Environmental,--,"570,681",--,--,--
+District of Columbia,2006,Drug Poisoning,101,"570,681",17.7,17.83,"1,691"
+District of Columbia,2006,Non-Drug Poisoning,--,"570,681",--,--,--
+District of Columbia,2006,Struck by / against,--,"570,681",--,--,--
+District of Columbia,2006,Suffocation,13**,"570,681",2.28**,2.42**,253
+District of Columbia,2006,"Motor vehicle, traffic",40,"570,681",7.01,7.17,935
+District of Columbia,2006,"Pedestrian, other",--,"570,681",--,--,--
+District of Columbia,2006,"Transport, other land",--,"570,681",--,--,--
+District of Columbia,2006,"Transport, other (excl. drown by water transp)",--,"570,681",--,--,--
+District of Columbia,2006,Other specified and classifiable,--,"570,681",--,--,--
+District of Columbia,2006,Other specified / NEC,--,"570,681",--,--,--
+District of Columbia,2006,Unspecified,23,"570,681",4.03,4.04,305
+District of Columbia,2005,Cut/Pierce,12**,"567,136",2.12**,1.85**,330
+District of Columbia,2005,Drowning (includes water transport),--,"567,136",--,--,--
+District of Columbia,2005,Fall,43,"567,136",7.58,7.77,245
+District of Columbia,2005,Fire/Flame,--,"567,136",--,--,--
+District of Columbia,2005,Firearm,154,"567,136",27.15,23.47,"5,642"
+District of Columbia,2005,Drug Poisoning,77,"567,136",13.58,13.61,"1,389"
+District of Columbia,2005,Non-Drug Poisoning,--,"567,136",--,--,--
+District of Columbia,2005,Suffocation,20**,"567,136",3.53**,3.40**,398
+District of Columbia,2005,"Motor vehicle, traffic",38,"567,136",6.7,6.39,905
+District of Columbia,2005,"Transport, other land",--,"567,136",--,--,--
+District of Columbia,2005,Other specified and classifiable,--,"567,136",--,--,--
+District of Columbia,2005,Other specified / NEC,--,"567,136",--,--,--
+District of Columbia,2005,Unspecified,65,"567,136",11.46,11.04,"1,238"
+District of Columbia,2004,Cut/Pierce,21,"567,754",3.7,3.59,481
+District of Columbia,2004,Drowning (includes water transport),--,"567,754",--,--,--
+District of Columbia,2004,Fall,51,"567,754",8.98,9.1,387
+District of Columbia,2004,Fire/Flame,12**,"567,754",2.11**,2.15**,286
+District of Columbia,2004,Firearm,143,"567,754",25.19,22.64,"5,390"
+District of Columbia,2004,Natural/Environmental,--,"567,754",--,--,--
+District of Columbia,2004,Drug Poisoning,87,"567,754",15.32,15.63,"1,545"
+District of Columbia,2004,Non-Drug Poisoning,--,"567,754",--,--,--
+District of Columbia,2004,Struck by / against,--,"567,754",--,--,--
+District of Columbia,2004,Suffocation,27,"567,754",4.76,4.56,440
+District of Columbia,2004,"Motor vehicle, traffic",44,"567,754",7.75,7.28,"1,195"
+District of Columbia,2004,"Pedal cyclist, other",--,"567,754",--,--,--
+District of Columbia,2004,"Pedestrian, other",--,"567,754",--,--,--
+District of Columbia,2004,"Transport, other land",--,"567,754",--,--,--
+District of Columbia,2004,Other specified and classifiable,--,"567,754",--,--,--
+District of Columbia,2004,Other specified / NEC,--,"567,754",--,--,--
+District of Columbia,2004,Unspecified,24,"567,754",4.23,4.29,460
+District of Columbia,2003,Cut/Pierce,22,"568,502",3.87,3.6,614
+District of Columbia,2003,Drowning (includes water transport),--,"568,502",--,--,--
+District of Columbia,2003,Fall,41,"568,502",7.21,7.32,220
+District of Columbia,2003,Fire/Flame,--,"568,502",--,--,--
+District of Columbia,2003,Firearm,167,"568,502",29.38,25.72,"6,065"
+District of Columbia,2003,Natural/Environmental,--,"568,502",--,--,--
+District of Columbia,2003,Drug Poisoning,103,"568,502",18.12,17.93,"1,898"
+District of Columbia,2003,Non-Drug Poisoning,--,"568,502",--,--,--
+District of Columbia,2003,Struck by / against,--,"568,502",--,--,--
+District of Columbia,2003,Suffocation,23,"568,502",4.05,4.06,584
+District of Columbia,2003,"Motor vehicle, traffic",64,"568,502",11.26,10.61,"1,784"
+District of Columbia,2003,Other specified and classifiable,--,"568,502",--,--,--
+District of Columbia,2003,Other specified / NEC,11**,"568,502",1.94**,1.93**,186
+District of Columbia,2003,Unspecified,24,"568,502",4.22,4.21,438
+District of Columbia,2002,Cut/Pierce,21,"573,158",3.66,3.61,528
+District of Columbia,2002,Drowning (includes water transport),--,"573,158",--,--,--
+District of Columbia,2002,Fall,41,"573,158",7.15,7.29,158
+District of Columbia,2002,Fire/Flame,--,"573,158",--,--,--
+District of Columbia,2002,Hot object/Substance,--,"573,158",--,--,--
+District of Columbia,2002,Firearm,195,"573,158",34.02,29.79,"7,368"
+District of Columbia,2002,Natural/Environmental,--,"573,158",--,--,--
+District of Columbia,2002,Drug Poisoning,61,"573,158",10.64,10.99,"1,074"
+District of Columbia,2002,Non-Drug Poisoning,--,"573,158",--,--,--
+District of Columbia,2002,Struck by / against,--,"573,158",--,--,--
+District of Columbia,2002,Suffocation,21,"573,158",3.66,3.63,219
+District of Columbia,2002,"Motor vehicle, traffic",58,"573,158",10.12,9.29,"1,225"
+District of Columbia,2002,"Pedestrian, other",--,"573,158",--,--,--
+District of Columbia,2002,Other specified and classifiable,--,"573,158",--,--,--
+District of Columbia,2002,Other specified / NEC,--,"573,158",--,--,--
+District of Columbia,2002,Unspecified,32,"573,158",5.58,5.1,772
+District of Columbia,2001,Cut/Pierce,27,"574,504",4.7,4.3,813
+District of Columbia,2001,Drowning (includes water transport),--,"574,504",--,--,--
+District of Columbia,2001,Fall,49,"574,504",8.53,8.54,398
+District of Columbia,2001,Fire/Flame,--,"574,504",--,--,--
+District of Columbia,2001,Hot object/Substance,--,"574,504",--,--,--
+District of Columbia,2001,Firearm,169,"574,504",29.42,25.46,"6,270"
+District of Columbia,2001,Natural/Environmental,--,"574,504",--,--,--
+District of Columbia,2001,Drug Poisoning,93,"574,504",16.19,16.3,"1,862"
+District of Columbia,2001,Non-Drug Poisoning,--,"574,504",--,--,--
+District of Columbia,2001,Struck by / against,--,"574,504",--,--,--
+District of Columbia,2001,Suffocation,15**,"574,504",2.61**,2.57**,247
+District of Columbia,2001,"Motor vehicle, traffic",54,"574,504",9.4,8.98,"1,590"
+District of Columbia,2001,"Pedal cyclist, other",--,"574,504",--,--,--
+District of Columbia,2001,"Pedestrian, other",--,"574,504",--,--,--
+District of Columbia,2001,"Transport, other (excl. drown by water transp)",15**,"574,504",2.61**,2.66**,496
+District of Columbia,2001,Other specified and classifiable,--,"574,504",--,--,--
+District of Columbia,2001,Other specified / NEC,--,"574,504",--,--,--
+District of Columbia,2001,Unspecified,19**,"574,504",3.31**,2.94**,348
+Total,,,"10,423","13,175,771",79.11,75.5,"221,153"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: District of Columbia,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

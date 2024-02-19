@@ -1,0 +1,428 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Kansas,2021,Cut/Pierce,21,"2,934,582",0.72,0.71,407
+Kansas,2021,Drowning (includes water transport),37,"2,934,582",1.26,1.21,"1,061"
+Kansas,2021,Fall,526,"2,934,582",17.92,14.83,908
+Kansas,2021,Fire/Flame,31,"2,934,582",1.06,0.91,321
+Kansas,2021,Firearm,503,"2,934,582",17.14,17.38,"12,806"
+Kansas,2021,Machinery,11**,"2,934,582",0.38**,0.33**,183
+Kansas,2021,Natural/Environmental,21,"2,934,582",0.72,0.66,164
+Kansas,2021,Drug Poisoning,680,"2,934,582",23.17,24.29,"15,828"
+Kansas,2021,Non-Drug Poisoning,63,"2,934,582",2.15,2.22,"1,138"
+Kansas,2021,Struck by / against,10**,"2,934,582",0.34**,0.32**,135
+Kansas,2021,Suffocation,218,"2,934,582",7.43,7.55,"5,402"
+Kansas,2021,"Motor vehicle, traffic",447,"2,934,582",15.23,14.86,"9,611"
+Kansas,2021,"Pedal cyclist, other",--,"2,934,582",--,--,--
+Kansas,2021,"Pedestrian, other",--,"2,934,582",--,--,--
+Kansas,2021,"Transport, other land",24,"2,934,582",0.82,0.77,391
+Kansas,2021,"Transport, other (excl. drown by water transp)",--,"2,934,582",--,--,--
+Kansas,2021,Other specified and classifiable,29,"2,934,582",0.99,0.9,578
+Kansas,2021,Other specified / NEC,11**,"2,934,582",0.38**,0.32**,129
+Kansas,2021,Unspecified,98,"2,934,582",3.34,2.9,663
+Kansas,2020,Cut/Pierce,22,"2,935,880",0.75,0.76,544
+Kansas,2020,Drowning (includes water transport),40,"2,935,880",1.36,1.32,"1,047"
+Kansas,2020,Fall,480,"2,935,880",16.35,13.66,840
+Kansas,2020,Fire/Flame,28,"2,935,880",0.95,0.8,184
+Kansas,2020,Firearm,494,"2,935,880",16.83,16.72,"12,854"
+Kansas,2020,Machinery,11**,"2,935,880",0.38**,0.33**,189
+Kansas,2020,Natural/Environmental,16**,"2,935,880",0.55**,0.50**,79
+Kansas,2020,Overexertion,--,"2,935,880",--,--,--
+Kansas,2020,Drug Poisoning,490,"2,935,880",16.69,17.26,"11,554"
+Kansas,2020,Non-Drug Poisoning,63,"2,935,880",2.15,2.22,"1,311"
+Kansas,2020,Struck by / against,--,"2,935,880",--,--,--
+Kansas,2020,Suffocation,227,"2,935,880",7.73,7.82,"5,589"
+Kansas,2020,"Motor vehicle, traffic",402,"2,935,880",13.69,13.17,"7,920"
+Kansas,2020,"Pedal cyclist, other",--,"2,935,880",--,--,--
+Kansas,2020,"Pedestrian, other",--,"2,935,880",--,--,--
+Kansas,2020,"Transport, other land",25,"2,935,880",0.85,0.82,502
+Kansas,2020,"Transport, other (excl. drown by water transp)",--,"2,935,880",--,--,--
+Kansas,2020,Other specified and classifiable,32,"2,935,880",1.09,1.1,532
+Kansas,2020,Other specified / NEC,30,"2,935,880",1.02,0.97,402
+Kansas,2020,Unspecified,87,"2,935,880",2.96,2.63,656
+Kansas,2019,Cut/Pierce,23,"2,912,635",0.79,0.8,462
+Kansas,2019,Drowning (includes water transport),33,"2,912,635",1.13,1.07,751
+Kansas,2019,Fall,433,"2,912,635",14.87,11.71,788
+Kansas,2019,Fire/Flame,38,"2,912,635",1.31,1.13,405
+Kansas,2019,Hot object/Substance,--,"2,912,635",--,--,--
+Kansas,2019,Firearm,403,"2,912,635",13.84,13.7,"9,787"
+Kansas,2019,Machinery,11**,"2,912,635",0.38**,0.40**,224
+Kansas,2019,Natural/Environmental,16**,"2,912,635",0.55**,0.49**,269
+Kansas,2019,Drug Poisoning,403,"2,912,635",13.84,14.26,"8,646"
+Kansas,2019,Non-Drug Poisoning,52,"2,912,635",1.79,1.77,960
+Kansas,2019,Struck by / against,14**,"2,912,635",0.48**,0.50**,241
+Kansas,2019,Suffocation,228,"2,912,635",7.83,7.86,"5,548"
+Kansas,2019,"Motor vehicle, traffic",383,"2,912,635",13.15,12.78,"8,154"
+Kansas,2019,"Pedal cyclist, other",--,"2,912,635",--,--,--
+Kansas,2019,"Pedestrian, other",14**,"2,912,635",0.48**,0.47**,380
+Kansas,2019,"Transport, other land",21,"2,912,635",0.72,0.72,453
+Kansas,2019,"Transport, other (excl. drown by water transp)",--,"2,912,635",--,--,--
+Kansas,2019,Other specified and classifiable,27,"2,912,635",0.93,0.93,688
+Kansas,2019,Other specified / NEC,18**,"2,912,635",0.62**,0.62**,427
+Kansas,2019,Unspecified,91,"2,912,635",3.12,2.65,392
+Kansas,2018,Cut/Pierce,19**,"2,912,748",0.65**,0.65**,404
+Kansas,2018,Drowning (includes water transport),38,"2,912,748",1.31,1.23,"1,032"
+Kansas,2018,Fall,424,"2,912,748",14.56,11.51,641
+Kansas,2018,Fire/Flame,54,"2,912,748",1.85,1.72,784
+Kansas,2018,Firearm,424,"2,912,748",14.56,14.63,"10,372"
+Kansas,2018,Machinery,--,"2,912,748",--,--,--
+Kansas,2018,Natural/Environmental,20**,"2,912,748",0.69**,0.59**,236
+Kansas,2018,Drug Poisoning,345,"2,912,748",11.84,12.47,"7,703"
+Kansas,2018,Non-Drug Poisoning,58,"2,912,748",1.99,2.04,"1,077"
+Kansas,2018,Struck by / against,--,"2,912,748",--,--,--
+Kansas,2018,Suffocation,251,"2,912,748",8.62,8.55,"6,214"
+Kansas,2018,"Motor vehicle, traffic",397,"2,912,748",13.63,13.53,"8,844"
+Kansas,2018,"Pedal cyclist, other",--,"2,912,748",--,--,--
+Kansas,2018,"Pedestrian, other",11**,"2,912,748",0.38**,0.39**,258
+Kansas,2018,"Transport, other land",17**,"2,912,748",0.58**,0.56**,421
+Kansas,2018,"Transport, other (excl. drown by water transp)",--,"2,912,748",--,--,--
+Kansas,2018,Other specified and classifiable,10**,"2,912,748",0.34**,0.32**,176
+Kansas,2018,Other specified / NEC,25,"2,912,748",0.86,0.77,286
+Kansas,2018,Unspecified,123,"2,912,748",4.22,3.8,"1,554"
+Kansas,2017,Cut/Pierce,26,"2,910,892",0.89,0.85,574
+Kansas,2017,Drowning (includes water transport),35,"2,910,892",1.2,1.22,"1,145"
+Kansas,2017,Fall,481,"2,910,892",16.52,13.01,719
+Kansas,2017,Fire/Flame,31,"2,910,892",1.07,0.93,413
+Kansas,2017,Hot object/Substance,--,"2,910,892",--,--,--
+Kansas,2017,Firearm,466,"2,910,892",16.01,15.88,"11,210"
+Kansas,2017,Machinery,13**,"2,910,892",0.45**,0.47**,199
+Kansas,2017,Natural/Environmental,10**,"2,910,892",0.34**,0.31**,43
+Kansas,2017,Drug Poisoning,333,"2,910,892",11.44,11.79,"6,712"
+Kansas,2017,Non-Drug Poisoning,48,"2,910,892",1.65,1.67,987
+Kansas,2017,Struck by / against,--,"2,910,892",--,--,--
+Kansas,2017,Suffocation,259,"2,910,892",8.9,8.72,"5,998"
+Kansas,2017,"Motor vehicle, traffic",439,"2,910,892",15.08,14.92,"9,587"
+Kansas,2017,"Pedestrian, other",--,"2,910,892",--,--,--
+Kansas,2017,"Transport, other land",25,"2,910,892",0.86,0.79,551
+Kansas,2017,"Transport, other (excl. drown by water transp)",--,"2,910,892",--,--,--
+Kansas,2017,Other specified and classifiable,16**,"2,910,892",0.55**,0.54**,369
+Kansas,2017,Other specified / NEC,17**,"2,910,892",0.58**,0.51**,125
+Kansas,2017,Unspecified,118,"2,910,892",4.05,3.52,"1,398"
+Kansas,2016,Cut/Pierce,27,"2,912,977",0.93,0.96,511
+Kansas,2016,Drowning (includes water transport),40,"2,912,977",1.37,1.3,892
+Kansas,2016,Fall,424,"2,912,977",14.56,11.84,770
+Kansas,2016,Fire/Flame,42,"2,912,977",1.44,1.42,595
+Kansas,2016,Firearm,383,"2,912,977",13.15,13.3,"9,252"
+Kansas,2016,Machinery,--,"2,912,977",--,--,--
+Kansas,2016,Natural/Environmental,18**,"2,912,977",0.62**,0.59**,326
+Kansas,2016,Drug Poisoning,313,"2,912,977",10.75,11.06,"6,608"
+Kansas,2016,Non-Drug Poisoning,56,"2,912,977",1.92,1.92,"1,008"
+Kansas,2016,Struck by / against,11**,"2,912,977",0.38**,0.38**,206
+Kansas,2016,Suffocation,220,"2,912,977",7.55,7.49,"5,434"
+Kansas,2016,"Motor vehicle, traffic",417,"2,912,977",14.32,13.85,"8,881"
+Kansas,2016,"Pedal cyclist, other",--,"2,912,977",--,--,--
+Kansas,2016,"Pedestrian, other",--,"2,912,977",--,--,--
+Kansas,2016,"Transport, other land",19**,"2,912,977",0.65**,0.64**,402
+Kansas,2016,"Transport, other (excl. drown by water transp)",--,"2,912,977",--,--,--
+Kansas,2016,Other specified and classifiable,28,"2,912,977",0.96,0.99,753
+Kansas,2016,Other specified / NEC,18**,"2,912,977",0.62**,0.54**,189
+Kansas,2016,Unspecified,102,"2,912,977",3.5,3.06,835
+Kansas,2015,Cut/Pierce,26,"2,910,717",0.89,0.86,388
+Kansas,2015,Drowning (includes water transport),36,"2,910,717",1.24,1.29,"1,116"
+Kansas,2015,Fall,450,"2,910,717",15.46,12.88,952
+Kansas,2015,Fire/Flame,41,"2,910,717",1.41,1.22,428
+Kansas,2015,Hot object/Substance,--,"2,910,717",--,--,--
+Kansas,2015,Firearm,330,"2,910,717",11.34,11.33,"7,570"
+Kansas,2015,Machinery,--,"2,910,717",--,--,--
+Kansas,2015,Natural/Environmental,16**,"2,910,717",0.55**,0.46**,103
+Kansas,2015,Drug Poisoning,329,"2,910,717",11.3,11.84,"6,995"
+Kansas,2015,Non-Drug Poisoning,56,"2,910,717",1.92,1.9,"1,131"
+Kansas,2015,Struck by / against,--,"2,910,717",--,--,--
+Kansas,2015,Suffocation,242,"2,910,717",8.31,8.09,"5,674"
+Kansas,2015,"Motor vehicle, traffic",380,"2,910,717",13.06,12.74,"8,623"
+Kansas,2015,"Pedal cyclist, other",--,"2,910,717",--,--,--
+Kansas,2015,"Pedestrian, other",--,"2,910,717",--,--,--
+Kansas,2015,"Transport, other land",24,"2,910,717",0.83,0.79,468
+Kansas,2015,"Transport, other (excl. drown by water transp)",--,"2,910,717",--,--,--
+Kansas,2015,Other specified and classifiable,27,"2,910,717",0.93,0.91,548
+Kansas,2015,Other specified / NEC,16**,"2,910,717",0.55**,0.52**,189
+Kansas,2015,Unspecified,115,"2,910,717",3.95,3.38,"1,386"
+Kansas,2014,Cut/Pierce,19**,"2,901,861",0.66**,0.68**,426
+Kansas,2014,Drowning (includes water transport),33,"2,901,861",1.14,1.1,785
+Kansas,2014,Fall,392,"2,901,861",13.51,11.18,798
+Kansas,2014,Fire/Flame,36,"2,901,861",1.24,1.27,497
+Kansas,2014,Hot object/Substance,--,"2,901,861",--,--,--
+Kansas,2014,Firearm,329,"2,901,861",11.34,11.28,"7,330"
+Kansas,2014,Machinery,11**,"2,901,861",0.38**,0.36**,52
+Kansas,2014,Natural/Environmental,17**,"2,901,861",0.59**,0.57**,241
+Kansas,2014,Overexertion,--,"2,901,861",--,--,--
+Kansas,2014,Drug Poisoning,332,"2,901,861",11.44,11.71,"6,932"
+Kansas,2014,Non-Drug Poisoning,66,"2,901,861",2.27,2.29,"1,061"
+Kansas,2014,Struck by / against,15**,"2,901,861",0.52**,0.48**,309
+Kansas,2014,Suffocation,182,"2,901,861",6.27,6.22,"4,033"
+Kansas,2014,"Motor vehicle, traffic",363,"2,901,861",12.51,12.17,"8,191"
+Kansas,2014,"Pedal cyclist, other",--,"2,901,861",--,--,--
+Kansas,2014,"Pedestrian, other",11**,"2,901,861",0.38**,0.41**,364
+Kansas,2014,"Transport, other land",17**,"2,901,861",0.59**,0.51**,256
+Kansas,2014,"Transport, other (excl. drown by water transp)",15**,"2,901,861",0.52**,0.51**,224
+Kansas,2014,Other specified and classifiable,30,"2,901,861",1.03,1.01,820
+Kansas,2014,Other specified / NEC,15**,"2,901,861",0.52**,0.51**,200
+Kansas,2014,Unspecified,96,"2,901,861",3.31,2.84,842
+Kansas,2013,Cut/Pierce,19**,"2,894,306",0.66**,0.66**,421
+Kansas,2013,Drowning (includes water transport),58,"2,894,306",2,2.11,"1,720"
+Kansas,2013,Fall,394,"2,894,306",13.61,11.45,575
+Kansas,2013,Fire/Flame,35,"2,894,306",1.21,1.13,675
+Kansas,2013,Hot object/Substance,--,"2,894,306",--,--,--
+Kansas,2013,Firearm,331,"2,894,306",11.44,11.18,"7,240"
+Kansas,2013,Machinery,--,"2,894,306",--,--,--
+Kansas,2013,Natural/Environmental,12**,"2,894,306",0.42**,0.39**,102
+Kansas,2013,Drug Poisoning,331,"2,894,306",11.44,11.85,"7,071"
+Kansas,2013,Non-Drug Poisoning,60,"2,894,306",2.07,2.06,"1,035"
+Kansas,2013,Struck by / against,12**,"2,894,306",0.42**,0.39**,252
+Kansas,2013,Suffocation,176,"2,894,306",6.08,6.04,"4,105"
+Kansas,2013,"Motor vehicle, traffic",355,"2,894,306",12.27,12.04,"8,063"
+Kansas,2013,"Pedal cyclist, other",--,"2,894,306",--,--,--
+Kansas,2013,"Pedestrian, other",12**,"2,894,306",0.42**,0.41**,215
+Kansas,2013,"Transport, other land",22,"2,894,306",0.76,0.7,601
+Kansas,2013,"Transport, other (excl. drown by water transp)",--,"2,894,306",--,--,--
+Kansas,2013,Other specified and classifiable,22,"2,894,306",0.76,0.74,532
+Kansas,2013,Other specified / NEC,12**,"2,894,306",0.42**,0.39**,211
+Kansas,2013,Unspecified,84,"2,894,306",2.9,2.58,856
+Kansas,2012,Cut/Pierce,15**,"2,886,024",0.52**,0.57**,376
+Kansas,2012,Drowning (includes water transport),27,"2,886,024",0.94,0.97,873
+Kansas,2012,Fall,351,"2,886,024",12.16,10.24,574
+Kansas,2012,Fire/Flame,32,"2,886,024",1.11,1.08,790
+Kansas,2012,Firearm,377,"2,886,024",13.06,13.06,"8,530"
+Kansas,2012,Machinery,15**,"2,886,024",0.52**,0.51**,80
+Kansas,2012,Natural/Environmental,18**,"2,886,024",0.62**,0.59**,216
+Kansas,2012,Drug Poisoning,318,"2,886,024",11.02,11.5,"7,482"
+Kansas,2012,Non-Drug Poisoning,46,"2,886,024",1.59,1.59,846
+Kansas,2012,Struck by / against,10**,"2,886,024",0.35**,0.34**,267
+Kansas,2012,Suffocation,196,"2,886,024",6.79,6.66,"4,413"
+Kansas,2012,"Motor vehicle, traffic",395,"2,886,024",13.69,13.57,"9,216"
+Kansas,2012,"Pedal cyclist, other",--,"2,886,024",--,--,--
+Kansas,2012,"Pedestrian, other",11**,"2,886,024",0.38**,0.35**,218
+Kansas,2012,"Transport, other land",17**,"2,886,024",0.59**,0.58**,398
+Kansas,2012,"Transport, other (excl. drown by water transp)",--,"2,886,024",--,--,--
+Kansas,2012,Other specified and classifiable,22,"2,886,024",0.76,0.76,459
+Kansas,2012,Other specified / NEC,16**,"2,886,024",0.55**,0.54**,206
+Kansas,2012,Unspecified,93,"2,886,024",3.22,2.9,908
+Kansas,2011,Cut/Pierce,22,"2,869,677",0.77,0.76,474
+Kansas,2011,Drowning (includes water transport),36,"2,869,677",1.25,1.3,"1,269"
+Kansas,2011,Fall,316,"2,869,677",11.01,9.4,699
+Kansas,2011,Fire/Flame,40,"2,869,677",1.39,1.35,878
+Kansas,2011,Hot object/Substance,--,"2,869,677",--,--,--
+Kansas,2011,Firearm,329,"2,869,677",11.47,11.36,"7,643"
+Kansas,2011,Machinery,13**,"2,869,677",0.45**,0.44**,192
+Kansas,2011,Natural/Environmental,44,"2,869,677",1.53,1.47,587
+Kansas,2011,Overexertion,--,"2,869,677",--,--,--
+Kansas,2011,Drug Poisoning,280,"2,869,677",9.76,10.14,"6,135"
+Kansas,2011,Non-Drug Poisoning,54,"2,869,677",1.88,1.87,"1,170"
+Kansas,2011,Struck by / against,12**,"2,869,677",0.42**,0.42**,183
+Kansas,2011,Suffocation,184,"2,869,677",6.41,6.17,"4,081"
+Kansas,2011,"Motor vehicle, traffic",392,"2,869,677",13.66,13.39,"9,307"
+Kansas,2011,"Pedal cyclist, other",--,"2,869,677",--,--,--
+Kansas,2011,"Pedestrian, other",--,"2,869,677",--,--,--
+Kansas,2011,"Transport, other land",31,"2,869,677",1.08,1.12,731
+Kansas,2011,"Transport, other (excl. drown by water transp)",10**,"2,869,677",0.35**,0.35**,212
+Kansas,2011,Other specified and classifiable,28,"2,869,677",0.98,1.01,814
+Kansas,2011,Other specified / NEC,14**,"2,869,677",0.49**,0.43**,96
+Kansas,2011,Unspecified,100,"2,869,677",3.49,2.99,945
+Kansas,2010,Cut/Pierce,17**,"2,853,120",0.60**,0.63**,361
+Kansas,2010,Drowning (includes water transport),40,"2,853,120",1.4,1.42,"1,448"
+Kansas,2010,Fall,321,"2,853,120",11.25,9.73,"1,027"
+Kansas,2010,Fire/Flame,32,"2,853,120",1.12,1.02,789
+Kansas,2010,Hot object/Substance,--,"2,853,120",--,--,--
+Kansas,2010,Firearm,300,"2,853,120",10.52,10.44,"7,098"
+Kansas,2010,Machinery,17**,"2,853,120",0.60**,0.57**,244
+Kansas,2010,Natural/Environmental,16**,"2,853,120",0.56**,0.54**,156
+Kansas,2010,Drug Poisoning,269,"2,853,120",9.43,9.57,"6,470"
+Kansas,2010,Non-Drug Poisoning,44,"2,853,120",1.54,1.5,819
+Kansas,2010,Struck by / against,17**,"2,853,120",0.60**,0.61**,542
+Kansas,2010,Suffocation,192,"2,853,120",6.73,6.61,"4,473"
+Kansas,2010,"Motor vehicle, traffic",460,"2,853,120",16.12,15.82,"11,341"
+Kansas,2010,"Pedal cyclist, other",--,"2,853,120",--,--,--
+Kansas,2010,"Pedestrian, other",11**,"2,853,120",0.39**,0.37**,214
+Kansas,2010,"Transport, other land",22,"2,853,120",0.77,0.73,428
+Kansas,2010,"Transport, other (excl. drown by water transp)",--,"2,853,120",--,--,--
+Kansas,2010,Other specified and classifiable,27,"2,853,120",0.95,0.93,513
+Kansas,2010,Other specified / NEC,16**,"2,853,120",0.56**,0.46**,67
+Kansas,2010,Unspecified,82,"2,853,120",2.87,2.67,"1,193"
+Kansas,2009,Cut/Pierce,14**,"2,832,704",0.49**,0.52**,301
+Kansas,2009,Drowning (includes water transport),40,"2,832,704",1.41,1.37,"1,079"
+Kansas,2009,Fall,332,"2,832,704",11.72,10.14,778
+Kansas,2009,Fire/Flame,36,"2,832,704",1.27,1.19,646
+Kansas,2009,Hot object/Substance,--,"2,832,704",--,--,--
+Kansas,2009,Firearm,303,"2,832,704",10.7,10.76,"7,368"
+Kansas,2009,Machinery,19**,"2,832,704",0.67**,0.62**,171
+Kansas,2009,Natural/Environmental,18**,"2,832,704",0.64**,0.63**,345
+Kansas,2009,Drug Poisoning,304,"2,832,704",10.73,11.08,"6,857"
+Kansas,2009,Non-Drug Poisoning,52,"2,832,704",1.84,1.81,914
+Kansas,2009,Struck by / against,15**,"2,832,704",0.53**,0.50**,245
+Kansas,2009,Suffocation,162,"2,832,704",5.72,5.58,"3,622"
+Kansas,2009,"Motor vehicle, traffic",393,"2,832,704",13.87,13.76,"9,744"
+Kansas,2009,"Pedal cyclist, other",--,"2,832,704",--,--,--
+Kansas,2009,"Pedestrian, other",13**,"2,832,704",0.46**,0.43**,503
+Kansas,2009,"Transport, other land",23,"2,832,704",0.81,0.83,480
+Kansas,2009,"Transport, other (excl. drown by water transp)",--,"2,832,704",--,--,--
+Kansas,2009,Other specified and classifiable,31,"2,832,704",1.09,1.03,792
+Kansas,2009,Other specified / NEC,13**,"2,832,704",0.46**,0.42**,224
+Kansas,2009,Unspecified,56,"2,832,704",1.98,1.78,740
+Kansas,2008,Cut/Pierce,17**,"2,808,076",0.61**,0.63**,460
+Kansas,2008,Drowning (includes water transport),35,"2,808,076",1.25,1.21,"1,085"
+Kansas,2008,Fall,282,"2,808,076",10.04,8.75,836
+Kansas,2008,Fire/Flame,33,"2,808,076",1.18,1.12,464
+Kansas,2008,Firearm,277,"2,808,076",9.86,9.7,"6,535"
+Kansas,2008,Machinery,--,"2,808,076",--,--,--
+Kansas,2008,Natural/Environmental,13**,"2,808,076",0.46**,0.45**,262
+Kansas,2008,Drug Poisoning,219,"2,808,076",7.8,7.99,"4,931"
+Kansas,2008,Non-Drug Poisoning,40,"2,808,076",1.42,1.46,883
+Kansas,2008,Struck by / against,13**,"2,808,076",0.46**,0.44**,229
+Kansas,2008,Suffocation,169,"2,808,076",6.02,5.93,"4,056"
+Kansas,2008,"Motor vehicle, traffic",402,"2,808,076",14.32,14.3,"10,351"
+Kansas,2008,"Pedestrian, other",--,"2,808,076",--,--,--
+Kansas,2008,"Transport, other land",22,"2,808,076",0.78,0.75,601
+Kansas,2008,"Transport, other (excl. drown by water transp)",--,"2,808,076",--,--,--
+Kansas,2008,Other specified and classifiable,26,"2,808,076",0.93,0.92,678
+Kansas,2008,Other specified / NEC,19**,"2,808,076",0.68**,0.64**,397
+Kansas,2008,Unspecified,69,"2,808,076",2.46,2.17,839
+Kansas,2007,Cut/Pierce,20**,"2,783,785",0.72**,0.72**,482
+Kansas,2007,Drowning (includes water transport),44,"2,783,785",1.58,1.59,"1,340"
+Kansas,2007,Fall,271,"2,783,785",9.74,8.39,914
+Kansas,2007,Fire/Flame,45,"2,783,785",1.62,1.53,706
+Kansas,2007,Hot object/Substance,--,"2,783,785",--,--,--
+Kansas,2007,Firearm,292,"2,783,785",10.49,10.35,"7,215"
+Kansas,2007,Machinery,22,"2,783,785",0.79,0.78,339
+Kansas,2007,Natural/Environmental,25,"2,783,785",0.9,0.86,307
+Kansas,2007,Drug Poisoning,270,"2,783,785",9.7,10.01,"6,246"
+Kansas,2007,Non-Drug Poisoning,52,"2,783,785",1.87,1.85,"1,111"
+Kansas,2007,Struck by / against,--,"2,783,785",--,--,--
+Kansas,2007,Suffocation,138,"2,783,785",4.96,4.81,"3,325"
+Kansas,2007,"Motor vehicle, traffic",437,"2,783,785",15.7,15.52,"10,781"
+Kansas,2007,"Pedal cyclist, other",--,"2,783,785",--,--,--
+Kansas,2007,"Pedestrian, other",--,"2,783,785",--,--,--
+Kansas,2007,"Transport, other land",15**,"2,783,785",0.54**,0.55**,276
+Kansas,2007,"Transport, other (excl. drown by water transp)",--,"2,783,785",--,--,--
+Kansas,2007,Other specified and classifiable,29,"2,783,785",1.04,1.03,692
+Kansas,2007,Other specified / NEC,20**,"2,783,785",0.72**,0.71**,273
+Kansas,2007,Unspecified,66,"2,783,785",2.37,2.09,533
+Kansas,2006,Cut/Pierce,16**,"2,762,931",0.58**,0.57**,319
+Kansas,2006,Drowning (includes water transport),26,"2,762,931",0.94,0.93,781
+Kansas,2006,Fall,222,"2,762,931",8.04,7.16,933
+Kansas,2006,Fire/Flame,49,"2,762,931",1.77,1.78,"1,167"
+Kansas,2006,Hot object/Substance,--,"2,762,931",--,--,--
+Kansas,2006,Firearm,299,"2,762,931",10.82,10.84,"7,371"
+Kansas,2006,Machinery,--,"2,762,931",--,--,--
+Kansas,2006,Natural/Environmental,21,"2,762,931",0.76,0.71,173
+Kansas,2006,Drug Poisoning,257,"2,762,931",9.3,9.53,"6,028"
+Kansas,2006,Non-Drug Poisoning,28,"2,762,931",1.01,1.02,526
+Kansas,2006,Struck by / against,12**,"2,762,931",0.43**,0.46**,344
+Kansas,2006,Suffocation,157,"2,762,931",5.68,5.54,"3,276"
+Kansas,2006,"Motor vehicle, traffic",477,"2,762,931",17.26,16.9,"11,845"
+Kansas,2006,"Pedestrian, other",--,"2,762,931",--,--,--
+Kansas,2006,"Transport, other land",21,"2,762,931",0.76,0.75,620
+Kansas,2006,"Transport, other (excl. drown by water transp)",14**,"2,762,931",0.51**,0.47**,299
+Kansas,2006,Other specified and classifiable,33,"2,762,931",1.19,1.17,811
+Kansas,2006,Other specified / NEC,21,"2,762,931",0.76,0.71,179
+Kansas,2006,Unspecified,70,"2,762,931",2.53,2.22,516
+Kansas,2005,Cut/Pierce,19**,"2,745,299",0.69**,0.67**,445
+Kansas,2005,Drowning (includes water transport),42,"2,745,299",1.53,1.55,"1,305"
+Kansas,2005,Fall,215,"2,745,299",7.83,6.97,577
+Kansas,2005,Fire/Flame,30,"2,745,299",1.09,1.09,511
+Kansas,2005,Hot object/Substance,--,"2,745,299",--,--,--
+Kansas,2005,Firearm,257,"2,745,299",9.36,9.25,"5,728"
+Kansas,2005,Machinery,15**,"2,745,299",0.55**,0.53**,258
+Kansas,2005,Natural/Environmental,15**,"2,745,299",0.55**,0.57**,221
+Kansas,2005,Drug Poisoning,241,"2,745,299",8.78,9.02,"5,671"
+Kansas,2005,Non-Drug Poisoning,41,"2,745,299",1.49,1.54,911
+Kansas,2005,Struck by / against,--,"2,745,299",--,--,--
+Kansas,2005,Suffocation,141,"2,745,299",5.14,5.02,"2,777"
+Kansas,2005,"Motor vehicle, traffic",474,"2,745,299",17.27,17.04,"12,730"
+Kansas,2005,"Pedestrian, other",--,"2,745,299",--,--,--
+Kansas,2005,"Transport, other land",25,"2,745,299",0.91,0.94,696
+Kansas,2005,"Transport, other (excl. drown by water transp)",--,"2,745,299",--,--,--
+Kansas,2005,Other specified and classifiable,28,"2,745,299",1.02,1.05,877
+Kansas,2005,Other specified / NEC,20**,"2,745,299",0.73**,0.66**,173
+Kansas,2005,Unspecified,64,"2,745,299",2.33,2.13,607
+Kansas,2004,Cut/Pierce,17**,"2,734,373",0.62**,0.62**,407
+Kansas,2004,Drowning (includes water transport),37,"2,734,373",1.35,1.33,"1,153"
+Kansas,2004,Fall,214,"2,734,373",7.83,7,562
+Kansas,2004,Fire/Flame,37,"2,734,373",1.35,1.28,660
+Kansas,2004,Hot object/Substance,--,"2,734,373",--,--,--
+Kansas,2004,Firearm,294,"2,734,373",10.75,10.73,"7,260"
+Kansas,2004,Machinery,17**,"2,734,373",0.62**,0.62**,263
+Kansas,2004,Natural/Environmental,11**,"2,734,373",0.40**,0.39**,136
+Kansas,2004,Drug Poisoning,224,"2,734,373",8.19,8.45,"5,261"
+Kansas,2004,Non-Drug Poisoning,36,"2,734,373",1.32,1.36,722
+Kansas,2004,Struck by / against,11**,"2,734,373",0.40**,0.39**,204
+Kansas,2004,Suffocation,155,"2,734,373",5.67,5.53,"3,384"
+Kansas,2004,"Motor vehicle, traffic",489,"2,734,373",17.88,17.59,"12,588"
+Kansas,2004,"Pedestrian, other",--,"2,734,373",--,--,--
+Kansas,2004,"Transport, other land",17**,"2,734,373",0.62**,0.61**,389
+Kansas,2004,"Transport, other (excl. drown by water transp)",10**,"2,734,373",0.37**,0.38**,261
+Kansas,2004,Other specified and classifiable,21,"2,734,373",0.77,0.75,586
+Kansas,2004,Other specified / NEC,16**,"2,734,373",0.59**,0.55**,173
+Kansas,2004,Unspecified,61,"2,734,373",2.23,2.01,534
+Kansas,2003,Cut/Pierce,19**,"2,723,004",0.70**,0.70**,452
+Kansas,2003,Drowning (includes water transport),29,"2,723,004",1.07,1.04,"1,001"
+Kansas,2003,Fall,193,"2,723,004",7.09,6.34,772
+Kansas,2003,Fire/Flame,38,"2,723,004",1.4,1.35,806
+Kansas,2003,Firearm,304,"2,723,004",11.16,11.13,"7,137"
+Kansas,2003,Machinery,10**,"2,723,004",0.37**,0.36**,115
+Kansas,2003,Natural/Environmental,23,"2,723,004",0.85,0.79,248
+Kansas,2003,Overexertion,--,"2,723,004",--,--,--
+Kansas,2003,Drug Poisoning,188,"2,723,004",6.9,7.01,"4,433"
+Kansas,2003,Non-Drug Poisoning,29,"2,723,004",1.07,1.06,470
+Kansas,2003,Struck by / against,10**,"2,723,004",0.37**,0.35**,148
+Kansas,2003,Suffocation,126,"2,723,004",4.63,4.52,"2,460"
+Kansas,2003,"Motor vehicle, traffic",482,"2,723,004",17.7,17.32,"13,259"
+Kansas,2003,"Pedal cyclist, other",--,"2,723,004",--,--,--
+Kansas,2003,"Pedestrian, other",--,"2,723,004",--,--,--
+Kansas,2003,"Transport, other land",15**,"2,723,004",0.55**,0.55**,425
+Kansas,2003,"Transport, other (excl. drown by water transp)",12**,"2,723,004",0.44**,0.45**,114
+Kansas,2003,Other specified and classifiable,27,"2,723,004",0.99,0.98,824
+Kansas,2003,Other specified / NEC,15**,"2,723,004",0.55**,0.51**,189
+Kansas,2003,Unspecified,55,"2,723,004",2.02,1.78,237
+Kansas,2002,Cut/Pierce,28,"2,713,535",1.03,1.04,694
+Kansas,2002,Drowning (includes water transport),29,"2,713,535",1.07,1.05,"1,150"
+Kansas,2002,Fall,183,"2,713,535",6.74,6.12,539
+Kansas,2002,Fire/Flame,33,"2,713,535",1.22,1.2,650
+Kansas,2002,Hot object/Substance,--,"2,713,535",--,--,--
+Kansas,2002,Firearm,268,"2,713,535",9.88,9.71,"6,408"
+Kansas,2002,Machinery,13**,"2,713,535",0.48**,0.48**,249
+Kansas,2002,Natural/Environmental,11**,"2,713,535",0.41**,0.39**,74
+Kansas,2002,Drug Poisoning,170,"2,713,535",6.27,6.42,"3,844"
+Kansas,2002,Non-Drug Poisoning,33,"2,713,535",1.22,1.25,589
+Kansas,2002,Struck by / against,14**,"2,713,535",0.52**,0.51**,380
+Kansas,2002,Suffocation,166,"2,713,535",6.12,5.91,"3,958"
+Kansas,2002,"Motor vehicle, traffic",553,"2,713,535",20.38,20.07,"15,073"
+Kansas,2002,"Pedal cyclist, other",--,"2,713,535",--,--,--
+Kansas,2002,"Pedestrian, other",--,"2,713,535",--,--,--
+Kansas,2002,"Transport, other land",12**,"2,713,535",0.44**,0.44**,373
+Kansas,2002,"Transport, other (excl. drown by water transp)",--,"2,713,535",--,--,--
+Kansas,2002,Other specified and classifiable,32,"2,713,535",1.18,1.2,917
+Kansas,2002,Other specified / NEC,20**,"2,713,535",0.74**,0.72**,285
+Kansas,2002,Unspecified,60,"2,713,535",2.21,2.06,570
+Kansas,2001,Cut/Pierce,19**,"2,702,162",0.70**,0.71**,448
+Kansas,2001,Drowning (includes water transport),35,"2,702,162",1.3,1.27,"1,251"
+Kansas,2001,Fall,197,"2,702,162",7.29,6.51,914
+Kansas,2001,Fire/Flame,52,"2,702,162",1.92,1.91,"1,331"
+Kansas,2001,Hot object/Substance,--,"2,702,162",--,--,--
+Kansas,2001,Firearm,267,"2,702,162",9.88,9.93,"7,478"
+Kansas,2001,Machinery,14**,"2,702,162",0.52**,0.50**,166
+Kansas,2001,Natural/Environmental,16**,"2,702,162",0.59**,0.59**,349
+Kansas,2001,Drug Poisoning,138,"2,702,162",5.11,5.27,"3,100"
+Kansas,2001,Non-Drug Poisoning,34,"2,702,162",1.26,1.28,830
+Kansas,2001,Struck by / against,16**,"2,702,162",0.59**,0.59**,266
+Kansas,2001,Suffocation,149,"2,702,162",5.51,5.31,"3,611"
+Kansas,2001,"Motor vehicle, traffic",527,"2,702,162",19.5,19.15,"14,348"
+Kansas,2001,"Pedestrian, other",--,"2,702,162",--,--,--
+Kansas,2001,"Transport, other land",13**,"2,702,162",0.48**,0.48**,273
+Kansas,2001,"Transport, other (excl. drown by water transp)",15**,"2,702,162",0.56**,0.57**,273
+Kansas,2001,Other specified and classifiable,36,"2,702,162",1.33,1.35,985
+Kansas,2001,Other specified / NEC,23,"2,702,162",0.85,0.83,278
+Kansas,2001,Unspecified,56,"2,702,162",2.07,1.9,425
+Total,,,"41,138","59,641,288",68.98,66.6,"776,962"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Kansas,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

@@ -1,0 +1,409 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+New Hampshire,2021,Cut/Pierce,--,"1,388,992",--,--,--
+New Hampshire,2021,Drowning (includes water transport),28,"1,388,992",2.02,1.86,468
+New Hampshire,2021,Fall,269,"1,388,992",19.37,14.82,350
+New Hampshire,2021,Fire/Flame,14**,"1,388,992",1.01**,0.66**,54
+New Hampshire,2021,Firearm,123,"1,388,992",8.86,8.27,"2,316"
+New Hampshire,2021,Machinery,--,"1,388,992",--,--,--
+New Hampshire,2021,Natural/Environmental,--,"1,388,992",--,--,--
+New Hampshire,2021,Drug Poisoning,441,"1,388,992",31.75,32.53,"9,987"
+New Hampshire,2021,Non-Drug Poisoning,23,"1,388,992",1.66,1.6,462
+New Hampshire,2021,Struck by / against,--,"1,388,992",--,--,--
+New Hampshire,2021,Suffocation,83,"1,388,992",5.98,6.05,"1,645"
+New Hampshire,2021,"Motor vehicle, traffic",131,"1,388,992",9.43,9.31,"2,756"
+New Hampshire,2021,"Pedal cyclist, other",--,"1,388,992",--,--,--
+New Hampshire,2021,"Pedestrian, other",--,"1,388,992",--,--,--
+New Hampshire,2021,"Transport, other land",13**,"1,388,992",0.94**,0.81**,228
+New Hampshire,2021,"Transport, other (excl. drown by water transp)",--,"1,388,992",--,--,--
+New Hampshire,2021,Other specified and classifiable,11**,"1,388,992",0.79**,0.83**,274
+New Hampshire,2021,Other specified / NEC,--,"1,388,992",--,--,--
+New Hampshire,2021,Unspecified,22,"1,388,992",1.58,1.36,195
+New Hampshire,2020,Cut/Pierce,--,"1,377,848",--,--,--
+New Hampshire,2020,Drowning (includes water transport),20**,"1,377,848",1.45**,1.32**,430
+New Hampshire,2020,Fall,276,"1,377,848",20.03,16.03,464
+New Hampshire,2020,Fire/Flame,11**,"1,377,848",0.80**,0.72**,156
+New Hampshire,2020,Firearm,128,"1,377,848",9.29,8.84,"2,450"
+New Hampshire,2020,Machinery,--,"1,377,848",--,--,--
+New Hampshire,2020,Natural/Environmental,11**,"1,377,848",0.80**,0.68**,117
+New Hampshire,2020,Drug Poisoning,393,"1,377,848",28.52,30,"9,093"
+New Hampshire,2020,Non-Drug Poisoning,25,"1,377,848",1.81,1.72,396
+New Hampshire,2020,Struck by / against,--,"1,377,848",--,--,--
+New Hampshire,2020,Suffocation,96,"1,377,848",6.97,6.52,"1,762"
+New Hampshire,2020,"Motor vehicle, traffic",112,"1,377,848",8.13,7.57,"2,156"
+New Hampshire,2020,"Pedal cyclist, other",--,"1,377,848",--,--,--
+New Hampshire,2020,"Pedestrian, other",--,"1,377,848",--,--,--
+New Hampshire,2020,"Transport, other land",--,"1,377,848",--,--,--
+New Hampshire,2020,Other specified and classifiable,--,"1,377,848",--,--,--
+New Hampshire,2020,Other specified / NEC,--,"1,377,848",--,--,--
+New Hampshire,2020,Unspecified,23,"1,377,848",1.67,1.33,115
+New Hampshire,2019,Cut/Pierce,10**,"1,360,783",0.74**,0.64**,121
+New Hampshire,2019,Drowning (includes water transport),24,"1,360,783",1.76,1.64,472
+New Hampshire,2019,Fall,259,"1,360,783",19.03,14.08,450
+New Hampshire,2019,Fire/Flame,--,"1,360,783",--,--,--
+New Hampshire,2019,Hot object/Substance,--,"1,360,783",--,--,--
+New Hampshire,2019,Firearm,156,"1,360,783",11.46,10.53,"2,928"
+New Hampshire,2019,Machinery,--,"1,360,783",--,--,--
+New Hampshire,2019,Natural/Environmental,13**,"1,360,783",0.96**,0.85**,190
+New Hampshire,2019,Drug Poisoning,407,"1,360,783",29.91,31.94,"10,113"
+New Hampshire,2019,Non-Drug Poisoning,22,"1,360,783",1.62,1.62,371
+New Hampshire,2019,Struck by / against,--,"1,360,783",--,--,--
+New Hampshire,2019,Suffocation,100,"1,360,783",7.35,6.97,"2,187"
+New Hampshire,2019,"Motor vehicle, traffic",103,"1,360,783",7.57,6.98,"1,879"
+New Hampshire,2019,"Pedal cyclist, other",--,"1,360,783",--,--,--
+New Hampshire,2019,"Pedestrian, other",--,"1,360,783",--,--,--
+New Hampshire,2019,"Transport, other land",--,"1,360,783",--,--,--
+New Hampshire,2019,"Transport, other (excl. drown by water transp)",--,"1,360,783",--,--,--
+New Hampshire,2019,Other specified and classifiable,--,"1,360,783",--,--,--
+New Hampshire,2019,Other specified / NEC,12**,"1,360,783",0.88**,0.77**,187
+New Hampshire,2019,Unspecified,33,"1,360,783",2.43,1.93,258
+New Hampshire,2018,Cut/Pierce,10**,"1,355,064",0.74**,0.64**,173
+New Hampshire,2018,Drowning (includes water transport),19**,"1,355,064",1.40**,1.37**,380
+New Hampshire,2018,Fall,293,"1,355,064",21.62,16.45,669
+New Hampshire,2018,Fire/Flame,--,"1,355,064",--,--,--
+New Hampshire,2018,Firearm,155,"1,355,064",11.44,10.67,"2,669"
+New Hampshire,2018,Machinery,--,"1,355,064",--,--,--
+New Hampshire,2018,Natural/Environmental,--,"1,355,064",--,--,--
+New Hampshire,2018,Drug Poisoning,452,"1,355,064",33.36,35.95,"11,136"
+New Hampshire,2018,Non-Drug Poisoning,24,"1,355,064",1.77,1.75,518
+New Hampshire,2018,Struck by / against,--,"1,355,064",--,--,--
+New Hampshire,2018,Suffocation,114,"1,355,064",8.41,8.12,"2,216"
+New Hampshire,2018,"Motor vehicle, traffic",142,"1,355,064",10.48,9.69,"2,733"
+New Hampshire,2018,"Pedal cyclist, other",--,"1,355,064",--,--,--
+New Hampshire,2018,"Pedestrian, other",--,"1,355,064",--,--,--
+New Hampshire,2018,"Transport, other land",--,"1,355,064",--,--,--
+New Hampshire,2018,Other specified and classifiable,--,"1,355,064",--,--,--
+New Hampshire,2018,Other specified / NEC,--,"1,355,064",--,--,--
+New Hampshire,2018,Unspecified,19**,"1,355,064",1.40**,1.13**,92
+New Hampshire,2017,Cut/Pierce,--,"1,350,395",--,--,--
+New Hampshire,2017,Drowning (includes water transport),15**,"1,350,395",1.11**,0.96**,233
+New Hampshire,2017,Fall,270,"1,350,395",19.99,15.26,387
+New Hampshire,2017,Fire/Flame,12**,"1,350,395",0.89**,0.63**,107
+New Hampshire,2017,Hot object/Substance,--,"1,350,395",--,--,--
+New Hampshire,2017,Firearm,146,"1,350,395",10.81,10.27,"2,907"
+New Hampshire,2017,Machinery,--,"1,350,395",--,--,--
+New Hampshire,2017,Natural/Environmental,13**,"1,350,395",0.96**,0.80**,68
+New Hampshire,2017,Drug Poisoning,467,"1,350,395",34.58,36.54,"11,782"
+New Hampshire,2017,Non-Drug Poisoning,29,"1,350,395",2.15,1.88,479
+New Hampshire,2017,Struck by / against,--,"1,350,395",--,--,--
+New Hampshire,2017,Suffocation,94,"1,350,395",6.96,6.54,"1,968"
+New Hampshire,2017,"Motor vehicle, traffic",100,"1,350,395",7.41,6.76,"1,977"
+New Hampshire,2017,"Pedal cyclist, other",--,"1,350,395",--,--,--
+New Hampshire,2017,"Pedestrian, other",--,"1,350,395",--,--,--
+New Hampshire,2017,"Transport, other land",--,"1,350,395",--,--,--
+New Hampshire,2017,"Transport, other (excl. drown by water transp)",--,"1,350,395",--,--,--
+New Hampshire,2017,Other specified and classifiable,--,"1,350,395",--,--,--
+New Hampshire,2017,Other specified / NEC,--,"1,350,395",--,--,--
+New Hampshire,2017,Unspecified,13**,"1,350,395",0.96**,0.77**,42
+New Hampshire,2016,Cut/Pierce,--,"1,343,694",--,--,--
+New Hampshire,2016,Drowning (includes water transport),19**,"1,343,694",1.41**,1.30**,319
+New Hampshire,2016,Fall,237,"1,343,694",17.64,13.53,411
+New Hampshire,2016,Fire/Flame,12**,"1,343,694",0.89**,0.87**,207
+New Hampshire,2016,Firearm,132,"1,343,694",9.82,9.21,"2,449"
+New Hampshire,2016,Machinery,--,"1,343,694",--,--,--
+New Hampshire,2016,Natural/Environmental,--,"1,343,694",--,--,--
+New Hampshire,2016,Drug Poisoning,481,"1,343,694",35.8,38.52,"12,790"
+New Hampshire,2016,Non-Drug Poisoning,24,"1,343,694",1.79,1.84,414
+New Hampshire,2016,Struck by / against,--,"1,343,694",--,--,--
+New Hampshire,2016,Suffocation,102,"1,343,694",7.59,7.1,"1,906"
+New Hampshire,2016,"Motor vehicle, traffic",127,"1,343,694",9.45,8.72,"2,656"
+New Hampshire,2016,"Pedal cyclist, other",--,"1,343,694",--,--,--
+New Hampshire,2016,"Pedestrian, other",--,"1,343,694",--,--,--
+New Hampshire,2016,"Transport, other land",--,"1,343,694",--,--,--
+New Hampshire,2016,"Transport, other (excl. drown by water transp)",--,"1,343,694",--,--,--
+New Hampshire,2016,Other specified and classifiable,18**,"1,343,694",1.34**,1.29**,329
+New Hampshire,2016,Other specified / NEC,--,"1,343,694",--,--,--
+New Hampshire,2016,Unspecified,25,"1,343,694",1.86,1.62,172
+New Hampshire,2015,Cut/Pierce,--,"1,337,480",--,--,--
+New Hampshire,2015,Drowning (includes water transport),21,"1,337,480",1.57,1.62,507
+New Hampshire,2015,Fall,243,"1,337,480",18.17,14.52,493
+New Hampshire,2015,Fire/Flame,15**,"1,337,480",1.12**,0.84**,131
+New Hampshire,2015,Firearm,121,"1,337,480",9.05,8.86,"2,248"
+New Hampshire,2015,Machinery,--,"1,337,480",--,--,--
+New Hampshire,2015,Natural/Environmental,--,"1,337,480",--,--,--
+New Hampshire,2015,Drug Poisoning,422,"1,337,480",31.55,33.87,"11,035"
+New Hampshire,2015,Non-Drug Poisoning,28,"1,337,480",2.09,2.11,540
+New Hampshire,2015,Struck by / against,--,"1,337,480",--,--,--
+New Hampshire,2015,Suffocation,82,"1,337,480",6.13,5.62,"1,342"
+New Hampshire,2015,"Motor vehicle, traffic",104,"1,337,480",7.78,7.32,"2,063"
+New Hampshire,2015,"Pedal cyclist, other",--,"1,337,480",--,--,--
+New Hampshire,2015,"Transport, other land",--,"1,337,480",--,--,--
+New Hampshire,2015,"Transport, other (excl. drown by water transp)",--,"1,337,480",--,--,--
+New Hampshire,2015,Other specified and classifiable,--,"1,337,480",--,--,--
+New Hampshire,2015,Other specified / NEC,--,"1,337,480",--,--,--
+New Hampshire,2015,Unspecified,16**,"1,337,480",1.20**,1.15**,277
+New Hampshire,2014,Cut/Pierce,--,"1,334,257",--,--,--
+New Hampshire,2014,Drowning (includes water transport),16**,"1,334,257",1.20**,1.09**,228
+New Hampshire,2014,Fall,225,"1,334,257",16.86,13.4,366
+New Hampshire,2014,Fire/Flame,10**,"1,334,257",0.75**,0.62**,107
+New Hampshire,2014,Hot object/Substance,--,"1,334,257",--,--,--
+New Hampshire,2014,Firearm,122,"1,334,257",9.14,8.58,"2,550"
+New Hampshire,2014,Machinery,--,"1,334,257",--,--,--
+New Hampshire,2014,Natural/Environmental,--,"1,334,257",--,--,--
+New Hampshire,2014,Drug Poisoning,334,"1,334,257",25.03,25.89,"8,261"
+New Hampshire,2014,Non-Drug Poisoning,28,"1,334,257",2.1,2.14,584
+New Hampshire,2014,Struck by / against,--,"1,334,257",--,--,--
+New Hampshire,2014,Suffocation,101,"1,334,257",7.57,7.33,"1,864"
+New Hampshire,2014,"Motor vehicle, traffic",95,"1,334,257",7.12,6.68,"2,064"
+New Hampshire,2014,"Pedestrian, other",--,"1,334,257",--,--,--
+New Hampshire,2014,"Transport, other land",11**,"1,334,257",0.82**,0.73**,142
+New Hampshire,2014,"Transport, other (excl. drown by water transp)",--,"1,334,257",--,--,--
+New Hampshire,2014,Other specified and classifiable,--,"1,334,257",--,--,--
+New Hampshire,2014,Other specified / NEC,--,"1,334,257",--,--,--
+New Hampshire,2014,Unspecified,23,"1,334,257",1.72,1.49,163
+New Hampshire,2013,Cut/Pierce,--,"1,327,272",--,--,--
+New Hampshire,2013,Drowning (includes water transport),24,"1,327,272",1.81,1.53,411
+New Hampshire,2013,Fall,219,"1,327,272",16.5,13.46,168
+New Hampshire,2013,Fire/Flame,--,"1,327,272",--,--,--
+New Hampshire,2013,Firearm,93,"1,327,272",7.01,6.47,"1,763"
+New Hampshire,2013,Machinery,--,"1,327,272",--,--,--
+New Hampshire,2013,Natural/Environmental,--,"1,327,272",--,--,--
+New Hampshire,2013,Drug Poisoning,203,"1,327,272",15.3,14.92,"4,503"
+New Hampshire,2013,Non-Drug Poisoning,18**,"1,327,272",1.36**,1.21**,347
+New Hampshire,2013,Struck by / against,--,"1,327,272",--,--,--
+New Hampshire,2013,Suffocation,71,"1,327,272",5.35,5.08,"1,444"
+New Hampshire,2013,"Motor vehicle, traffic",132,"1,327,272",9.95,9.56,"2,799"
+New Hampshire,2013,"Pedal cyclist, other",--,"1,327,272",--,--,--
+New Hampshire,2013,"Pedestrian, other",--,"1,327,272",--,--,--
+New Hampshire,2013,"Transport, other land",--,"1,327,272",--,--,--
+New Hampshire,2013,Other specified and classifiable,10**,"1,327,272",0.75**,0.64**,142
+New Hampshire,2013,Other specified / NEC,13**,"1,327,272",0.98**,0.82**,100
+New Hampshire,2013,Unspecified,20**,"1,327,272",1.51**,1.22**,196
+New Hampshire,2012,Cut/Pierce,12**,"1,324,677",0.91**,0.80**,191
+New Hampshire,2012,Drowning (includes water transport),28,"1,324,677",2.11,2.01,612
+New Hampshire,2012,Fall,201,"1,324,677",15.17,12.55,342
+New Hampshire,2012,Fire/Flame,15**,"1,324,677",1.13**,1.08**,251
+New Hampshire,2012,Firearm,117,"1,324,677",8.83,8.06,"2,193"
+New Hampshire,2012,Machinery,--,"1,324,677",--,--,--
+New Hampshire,2012,Natural/Environmental,--,"1,324,677",--,--,--
+New Hampshire,2012,Drug Poisoning,173,"1,324,677",13.06,13.48,"4,070"
+New Hampshire,2012,Non-Drug Poisoning,19**,"1,324,677",1.43**,1.32**,315
+New Hampshire,2012,Struck by / against,--,"1,324,677",--,--,--
+New Hampshire,2012,Suffocation,70,"1,324,677",5.28,5.07,"1,395"
+New Hampshire,2012,"Motor vehicle, traffic",112,"1,324,677",8.46,7.75,"2,173"
+New Hampshire,2012,"Pedal cyclist, other",--,"1,324,677",--,--,--
+New Hampshire,2012,"Pedestrian, other",--,"1,324,677",--,--,--
+New Hampshire,2012,"Transport, other land",--,"1,324,677",--,--,--
+New Hampshire,2012,"Transport, other (excl. drown by water transp)",--,"1,324,677",--,--,--
+New Hampshire,2012,Other specified and classifiable,11**,"1,324,677",0.83**,0.69**,145
+New Hampshire,2012,Other specified / NEC,--,"1,324,677",--,--,--
+New Hampshire,2012,Unspecified,12**,"1,324,677",0.91**,0.77**,70
+New Hampshire,2011,Cut/Pierce,--,"1,320,444",--,--,--
+New Hampshire,2011,Drowning (includes water transport),14**,"1,320,444",1.06**,0.97**,290
+New Hampshire,2011,Fall,195,"1,320,444",14.77,12.34,433
+New Hampshire,2011,Fire/Flame,13**,"1,320,444",0.99**,0.75**,113
+New Hampshire,2011,Firearm,92,"1,320,444",6.97,6.36,"1,920"
+New Hampshire,2011,Machinery,--,"1,320,444",--,--,--
+New Hampshire,2011,Natural/Environmental,--,"1,320,444",--,--,--
+New Hampshire,2011,Drug Poisoning,210,"1,320,444",15.9,15.28,"4,485"
+New Hampshire,2011,Non-Drug Poisoning,17**,"1,320,444",1.29**,1.19**,281
+New Hampshire,2011,Struck by / against,--,"1,320,444",--,--,--
+New Hampshire,2011,Suffocation,95,"1,320,444",7.2,6.76,"1,571"
+New Hampshire,2011,"Motor vehicle, traffic",109,"1,320,444",8.26,7.97,"2,171"
+New Hampshire,2011,"Pedestrian, other",--,"1,320,444",--,--,--
+New Hampshire,2011,"Transport, other land",--,"1,320,444",--,--,--
+New Hampshire,2011,"Transport, other (excl. drown by water transp)",--,"1,320,444",--,--,--
+New Hampshire,2011,Other specified and classifiable,--,"1,320,444",--,--,--
+New Hampshire,2011,Other specified / NEC,--,"1,320,444",--,--,--
+New Hampshire,2011,Unspecified,14**,"1,320,444",1.06**,0.87**,114
+New Hampshire,2010,Cut/Pierce,12**,"1,316,457",0.91**,0.84**,197
+New Hampshire,2010,Drowning (includes water transport),15**,"1,316,457",1.14**,1.19**,390
+New Hampshire,2010,Fall,156,"1,316,457",11.85,10.7,287
+New Hampshire,2010,Fire/Flame,12**,"1,316,457",0.91**,0.80**,118
+New Hampshire,2010,Firearm,118,"1,316,457",8.96,8.22,"2,029"
+New Hampshire,2010,Machinery,--,"1,316,457",--,--,--
+New Hampshire,2010,Natural/Environmental,12**,"1,316,457",0.91**,0.86**,124
+New Hampshire,2010,Drug Poisoning,160,"1,316,457",12.15,11.72,"3,446"
+New Hampshire,2010,Non-Drug Poisoning,17**,"1,316,457",1.29**,1.19**,335
+New Hampshire,2010,Struck by / against,--,"1,316,457",--,--,--
+New Hampshire,2010,Suffocation,70,"1,316,457",5.32,5.51,"1,739"
+New Hampshire,2010,"Motor vehicle, traffic",125,"1,316,457",9.5,9.33,"2,878"
+New Hampshire,2010,"Pedal cyclist, other",--,"1,316,457",--,--,--
+New Hampshire,2010,"Pedestrian, other",--,"1,316,457",--,--,--
+New Hampshire,2010,"Transport, other land",--,"1,316,457",--,--,--
+New Hampshire,2010,"Transport, other (excl. drown by water transp)",--,"1,316,457",--,--,--
+New Hampshire,2010,Other specified and classifiable,10**,"1,316,457",0.76**,0.64**,178
+New Hampshire,2010,Other specified / NEC,--,"1,316,457",--,--,--
+New Hampshire,2010,Unspecified,18**,"1,316,457",1.37**,1.22**,122
+New Hampshire,2009,Cut/Pierce,--,"1,316,102",--,--,--
+New Hampshire,2009,Drowning (includes water transport),20**,"1,316,102",1.52**,1.46**,501
+New Hampshire,2009,Fall,139,"1,316,102",10.56,9.62,190
+New Hampshire,2009,Fire/Flame,13**,"1,316,102",0.99**,0.94**,217
+New Hampshire,2009,Firearm,89,"1,316,102",6.76,6.34,"1,818"
+New Hampshire,2009,Machinery,--,"1,316,102",--,--,--
+New Hampshire,2009,Natural/Environmental,--,"1,316,102",--,--,--
+New Hampshire,2009,Drug Poisoning,168,"1,316,102",12.77,12.43,"3,702"
+New Hampshire,2009,Non-Drug Poisoning,20**,"1,316,102",1.52**,1.47**,428
+New Hampshire,2009,Struck by / against,--,"1,316,102",--,--,--
+New Hampshire,2009,Suffocation,64,"1,316,102",4.86,4.77,"1,399"
+New Hampshire,2009,"Motor vehicle, traffic",105,"1,316,102",7.98,7.43,"2,019"
+New Hampshire,2009,"Pedal cyclist, other",--,"1,316,102",--,--,--
+New Hampshire,2009,"Pedestrian, other",--,"1,316,102",--,--,--
+New Hampshire,2009,"Transport, other land",--,"1,316,102",--,--,--
+New Hampshire,2009,"Transport, other (excl. drown by water transp)",--,"1,316,102",--,--,--
+New Hampshire,2009,Other specified and classifiable,10**,"1,316,102",0.76**,0.66**,146
+New Hampshire,2009,Other specified / NEC,--,"1,316,102",--,--,--
+New Hampshire,2009,Unspecified,17**,"1,316,102",1.29**,1.24**,156
+New Hampshire,2008,Cut/Pierce,10**,"1,315,906",0.76**,0.71**,180
+New Hampshire,2008,Drowning (includes water transport),18**,"1,315,906",1.37**,1.39**,485
+New Hampshire,2008,Fall,145,"1,315,906",11.02,10.17,312
+New Hampshire,2008,Fire/Flame,17**,"1,315,906",1.29**,1.18**,330
+New Hampshire,2008,Firearm,93,"1,315,906",7.07,6.86,"1,580"
+New Hampshire,2008,Machinery,--,"1,315,906",--,--,--
+New Hampshire,2008,Natural/Environmental,--,"1,315,906",--,--,--
+New Hampshire,2008,Drug Poisoning,126,"1,315,906",9.58,9.35,"2,767"
+New Hampshire,2008,Non-Drug Poisoning,27,"1,315,906",2.05,1.98,538
+New Hampshire,2008,Struck by / against,--,"1,315,906",--,--,--
+New Hampshire,2008,Suffocation,55,"1,315,906",4.18,4.01,"1,228"
+New Hampshire,2008,"Motor vehicle, traffic",143,"1,315,906",10.87,10.61,"3,155"
+New Hampshire,2008,"Pedal cyclist, other",--,"1,315,906",--,--,--
+New Hampshire,2008,"Pedestrian, other",--,"1,315,906",--,--,--
+New Hampshire,2008,"Transport, other land",--,"1,315,906",--,--,--
+New Hampshire,2008,"Transport, other (excl. drown by water transp)",--,"1,315,906",--,--,--
+New Hampshire,2008,Other specified and classifiable,--,"1,315,906",--,--,--
+New Hampshire,2008,Other specified / NEC,--,"1,315,906",--,--,--
+New Hampshire,2008,Unspecified,26,"1,315,906",1.98,1.82,203
+New Hampshire,2007,Cut/Pierce,10**,"1,312,540",0.76**,0.64**,156
+New Hampshire,2007,Drowning (includes water transport),14**,"1,312,540",1.07**,1.05**,468
+New Hampshire,2007,Fall,149,"1,312,540",11.35,10.5,361
+New Hampshire,2007,Fire/Flame,10**,"1,312,540",0.76**,0.69**,156
+New Hampshire,2007,Firearm,78,"1,312,540",5.94,5.56,"1,176"
+New Hampshire,2007,Machinery,--,"1,312,540",--,--,--
+New Hampshire,2007,Natural/Environmental,--,"1,312,540",--,--,--
+New Hampshire,2007,Drug Poisoning,186,"1,312,540",14.17,13.85,"4,502"
+New Hampshire,2007,Non-Drug Poisoning,20**,"1,312,540",1.52**,1.37**,361
+New Hampshire,2007,Struck by / against,--,"1,312,540",--,--,--
+New Hampshire,2007,Suffocation,50,"1,312,540",3.81,3.74,935
+New Hampshire,2007,"Motor vehicle, traffic",133,"1,312,540",10.13,10.04,"3,023"
+New Hampshire,2007,"Pedestrian, other",--,"1,312,540",--,--,--
+New Hampshire,2007,"Transport, other land",--,"1,312,540",--,--,--
+New Hampshire,2007,"Transport, other (excl. drown by water transp)",--,"1,312,540",--,--,--
+New Hampshire,2007,Other specified and classifiable,--,"1,312,540",--,--,--
+New Hampshire,2007,Other specified / NEC,--,"1,312,540",--,--,--
+New Hampshire,2007,Unspecified,17**,"1,312,540",1.30**,1.21**,88
+New Hampshire,2006,Cut/Pierce,--,"1,308,389",--,--,--
+New Hampshire,2006,Drowning (includes water transport),18**,"1,308,389",1.38**,1.32**,437
+New Hampshire,2006,Fall,116,"1,308,389",8.87,8.51,241
+New Hampshire,2006,Fire/Flame,--,"1,308,389",--,--,--
+New Hampshire,2006,Firearm,82,"1,308,389",6.27,6.22,"1,678"
+New Hampshire,2006,Natural/Environmental,--,"1,308,389",--,--,--
+New Hampshire,2006,Drug Poisoning,149,"1,308,389",11.39,11.19,"3,563"
+New Hampshire,2006,Non-Drug Poisoning,21,"1,308,389",1.61,1.6,431
+New Hampshire,2006,Struck by / against,--,"1,308,389",--,--,--
+New Hampshire,2006,Suffocation,60,"1,308,389",4.59,4.5,"1,257"
+New Hampshire,2006,"Motor vehicle, traffic",125,"1,308,389",9.55,9.36,"2,842"
+New Hampshire,2006,"Pedal cyclist, other",--,"1,308,389",--,--,--
+New Hampshire,2006,"Pedestrian, other",--,"1,308,389",--,--,--
+New Hampshire,2006,"Transport, other land",--,"1,308,389",--,--,--
+New Hampshire,2006,"Transport, other (excl. drown by water transp)",--,"1,308,389",--,--,--
+New Hampshire,2006,Other specified and classifiable,--,"1,308,389",--,--,--
+New Hampshire,2006,Other specified / NEC,--,"1,308,389",--,--,--
+New Hampshire,2006,Unspecified,29,"1,308,389",2.22,2.11,147
+New Hampshire,2005,Cut/Pierce,10**,"1,298,492",0.77**,0.78**,257
+New Hampshire,2005,Drowning (includes water transport),16**,"1,298,492",1.23**,1.22**,516
+New Hampshire,2005,Fall,110,"1,298,492",8.47,8.18,373
+New Hampshire,2005,Fire/Flame,15**,"1,298,492",1.16**,1.14**,272
+New Hampshire,2005,Hot object/Substance,--,"1,298,492",--,--,--
+New Hampshire,2005,Firearm,88,"1,298,492",6.78,6.62,"1,470"
+New Hampshire,2005,Machinery,--,"1,298,492",--,--,--
+New Hampshire,2005,Natural/Environmental,18**,"1,298,492",1.39**,1.27**,238
+New Hampshire,2005,Drug Poisoning,142,"1,298,492",10.94,10.7,"3,616"
+New Hampshire,2005,Non-Drug Poisoning,14**,"1,298,492",1.08**,0.99**,262
+New Hampshire,2005,Struck by / against,--,"1,298,492",--,--,--
+New Hampshire,2005,Suffocation,53,"1,298,492",4.08,3.99,"1,195"
+New Hampshire,2005,"Motor vehicle, traffic",155,"1,298,492",11.94,11.9,"3,956"
+New Hampshire,2005,"Pedal cyclist, other",--,"1,298,492",--,--,--
+New Hampshire,2005,"Pedestrian, other",--,"1,298,492",--,--,--
+New Hampshire,2005,"Transport, other land",--,"1,298,492",--,--,--
+New Hampshire,2005,"Transport, other (excl. drown by water transp)",--,"1,298,492",--,--,--
+New Hampshire,2005,Other specified and classifiable,--,"1,298,492",--,--,--
+New Hampshire,2005,Other specified / NEC,--,"1,298,492",--,--,--
+New Hampshire,2005,Unspecified,24,"1,298,492",1.85,1.75,175
+New Hampshire,2004,Cut/Pierce,--,"1,290,121",--,--,--
+New Hampshire,2004,Drowning (includes water transport),--,"1,290,121",--,--,--
+New Hampshire,2004,Fall,88,"1,290,121",6.82,6.73,126
+New Hampshire,2004,Fire/Flame,13**,"1,290,121",1.01**,0.99**,307
+New Hampshire,2004,Firearm,69,"1,290,121",5.35,5.02,"1,193"
+New Hampshire,2004,Machinery,--,"1,290,121",--,--,--
+New Hampshire,2004,Natural/Environmental,--,"1,290,121",--,--,--
+New Hampshire,2004,Drug Poisoning,124,"1,290,121",9.61,9.51,"3,073"
+New Hampshire,2004,Non-Drug Poisoning,13**,"1,290,121",1.01**,0.96**,229
+New Hampshire,2004,Struck by / against,--,"1,290,121",--,--,--
+New Hampshire,2004,Suffocation,62,"1,290,121",4.81,4.8,"1,516"
+New Hampshire,2004,"Motor vehicle, traffic",154,"1,290,121",11.94,11.93,"3,931"
+New Hampshire,2004,"Pedestrian, other",--,"1,290,121",--,--,--
+New Hampshire,2004,"Transport, other land",10**,"1,290,121",0.78**,0.80**,321
+New Hampshire,2004,"Transport, other (excl. drown by water transp)",--,"1,290,121",--,--,--
+New Hampshire,2004,Other specified and classifiable,--,"1,290,121",--,--,--
+New Hampshire,2004,Other specified / NEC,--,"1,290,121",--,--,--
+New Hampshire,2004,Unspecified,37,"1,290,121",2.87,2.77,206
+New Hampshire,2003,Cut/Pierce,--,"1,279,840",--,--,--
+New Hampshire,2003,Drowning (includes water transport),17**,"1,279,840",1.33**,1.43**,641
+New Hampshire,2003,Fall,68,"1,279,840",5.31,5.39,111
+New Hampshire,2003,Fire/Flame,10**,"1,279,840",0.78**,0.77**,168
+New Hampshire,2003,Hot object/Substance,--,"1,279,840",--,--,--
+New Hampshire,2003,Firearm,89,"1,279,840",6.95,6.8,"1,763"
+New Hampshire,2003,Machinery,--,"1,279,840",--,--,--
+New Hampshire,2003,Natural/Environmental,--,"1,279,840",--,--,--
+New Hampshire,2003,Drug Poisoning,127,"1,279,840",9.92,9.6,"3,051"
+New Hampshire,2003,Non-Drug Poisoning,14**,"1,279,840",1.09**,1.09**,284
+New Hampshire,2003,Struck by / against,--,"1,279,840",--,--,--
+New Hampshire,2003,Suffocation,65,"1,279,840",5.08,5.06,"1,340"
+New Hampshire,2003,"Motor vehicle, traffic",123,"1,279,840",9.61,9.63,"3,020"
+New Hampshire,2003,"Pedestrian, other",--,"1,279,840",--,--,--
+New Hampshire,2003,"Transport, other land",10**,"1,279,840",0.78**,0.81**,301
+New Hampshire,2003,"Transport, other (excl. drown by water transp)",--,"1,279,840",--,--,--
+New Hampshire,2003,Other specified and classifiable,--,"1,279,840",--,--,--
+New Hampshire,2003,Other specified / NEC,--,"1,279,840",--,--,--
+New Hampshire,2003,Unspecified,41,"1,279,840",3.2,3.25,202
+New Hampshire,2002,Cut/Pierce,--,"1,269,089",--,--,--
+New Hampshire,2002,Drowning (includes water transport),14**,"1,269,089",1.10**,1.14**,304
+New Hampshire,2002,Fall,66,"1,269,089",5.2,5.24,238
+New Hampshire,2002,Fire/Flame,11**,"1,269,089",0.87**,0.93**,244
+New Hampshire,2002,Firearm,76,"1,269,089",5.99,5.91,"1,516"
+New Hampshire,2002,Natural/Environmental,10**,"1,269,089",0.79**,0.81**,157
+New Hampshire,2002,Drug Poisoning,111,"1,269,089",8.75,8.75,"3,047"
+New Hampshire,2002,Non-Drug Poisoning,10**,"1,269,089",0.79**,0.77**,237
+New Hampshire,2002,Struck by / against,--,"1,269,089",--,--,--
+New Hampshire,2002,Suffocation,49,"1,269,089",3.86,3.88,"1,245"
+New Hampshire,2002,"Motor vehicle, traffic",118,"1,269,089",9.3,9.54,"2,928"
+New Hampshire,2002,"Pedestrian, other",--,"1,269,089",--,--,--
+New Hampshire,2002,"Transport, other land",--,"1,269,089",--,--,--
+New Hampshire,2002,"Transport, other (excl. drown by water transp)",--,"1,269,089",--,--,--
+New Hampshire,2002,Other specified and classifiable,--,"1,269,089",--,--,--
+New Hampshire,2002,Other specified / NEC,--,"1,269,089",--,--,--
+New Hampshire,2002,Unspecified,29,"1,269,089",2.29,2.37,152
+New Hampshire,2001,Cut/Pierce,--,"1,255,517",--,--,--
+New Hampshire,2001,Drowning (includes water transport),16**,"1,255,517",1.27**,1.30**,580
+New Hampshire,2001,Fall,76,"1,255,517",6.05,6.25,336
+New Hampshire,2001,Fire/Flame,17**,"1,255,517",1.35**,1.41**,465
+New Hampshire,2001,Firearm,91,"1,255,517",7.25,7.23,"2,164"
+New Hampshire,2001,Machinery,--,"1,255,517",--,--,--
+New Hampshire,2001,Natural/Environmental,--,"1,255,517",--,--,--
+New Hampshire,2001,Drug Poisoning,79,"1,255,517",6.29,6.06,"1,944"
+New Hampshire,2001,Non-Drug Poisoning,15**,"1,255,517",1.20**,1.14**,349
+New Hampshire,2001,Struck by / against,--,"1,255,517",--,--,--
+New Hampshire,2001,Suffocation,67,"1,255,517",5.34,5.41,"1,530"
+New Hampshire,2001,"Motor vehicle, traffic",133,"1,255,517",10.59,10.68,"2,824"
+New Hampshire,2001,"Pedal cyclist, other",--,"1,255,517",--,--,--
+New Hampshire,2001,"Pedestrian, other",--,"1,255,517",--,--,--
+New Hampshire,2001,"Transport, other land",--,"1,255,517",--,--,--
+New Hampshire,2001,"Transport, other (excl. drown by water transp)",12**,"1,255,517",0.96**,0.92**,144
+New Hampshire,2001,Other specified and classifiable,--,"1,255,517",--,--,--
+New Hampshire,2001,Other specified / NEC,--,"1,255,517",--,--,--
+New Hampshire,2001,Unspecified,36,"1,255,517",2.87,2.97,319
+Total,,,"18,213","27,783,359",65.55,62.19,"310,511"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: New Hampshire,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

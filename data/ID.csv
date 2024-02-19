@@ -1,0 +1,417 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Idaho,2021,Cut/Pierce,--,"1,900,923",--,--,--
+Idaho,2021,Drowning (includes water transport),38,"1,900,923",2,1.93,992
+Idaho,2021,Fall,330,"1,900,923",17.36,16.89,586
+Idaho,2021,Fire/Flame,28,"1,900,923",1.47,1.32,332
+Idaho,2021,Firearm,309,"1,900,923",16.26,16.38,"6,668"
+Idaho,2021,Machinery,--,"1,900,923",--,--,--
+Idaho,2021,Natural/Environmental,20**,"1,900,923",1.05**,1.02**,317
+Idaho,2021,Drug Poisoning,354,"1,900,923",18.62,18.92,"7,721"
+Idaho,2021,Non-Drug Poisoning,33,"1,900,923",1.74,1.65,572
+Idaho,2021,Struck by / against,15**,"1,900,923",0.79**,0.70**,276
+Idaho,2021,Suffocation,136,"1,900,923",7.15,7.18,"3,132"
+Idaho,2021,"Motor vehicle, traffic",288,"1,900,923",15.15,15.02,"6,838"
+Idaho,2021,"Pedal cyclist, other",--,"1,900,923",--,--,--
+Idaho,2021,"Pedestrian, other",--,"1,900,923",--,--,--
+Idaho,2021,"Transport, other land",26,"1,900,923",1.37,1.31,718
+Idaho,2021,"Transport, other (excl. drown by water transp)",--,"1,900,923",--,--,--
+Idaho,2021,Other specified and classifiable,14**,"1,900,923",0.74**,0.73**,211
+Idaho,2021,Other specified / NEC,12**,"1,900,923",0.63**,0.60**,152
+Idaho,2021,Unspecified,18**,"1,900,923",0.95**,0.96**,277
+Idaho,2020,Cut/Pierce,--,"1,847,772",--,--,--
+Idaho,2020,Drowning (includes water transport),28,"1,847,772",1.52,1.58,561
+Idaho,2020,Fall,299,"1,847,772",16.18,15.38,625
+Idaho,2020,Fire/Flame,17**,"1,847,772",0.92**,0.84**,272
+Idaho,2020,Firearm,321,"1,847,772",17.37,17.45,"6,749"
+Idaho,2020,Machinery,--,"1,847,772",--,--,--
+Idaho,2020,Natural/Environmental,18**,"1,847,772",0.97**,0.92**,106
+Idaho,2020,Overexertion,--,"1,847,772",--,--,--
+Idaho,2020,Drug Poisoning,287,"1,847,772",15.53,15.76,"5,605"
+Idaho,2020,Non-Drug Poisoning,30,"1,847,772",1.62,1.83,816
+Idaho,2020,Struck by / against,15**,"1,847,772",0.81**,0.71**,151
+Idaho,2020,Suffocation,126,"1,847,772",6.82,7.12,"2,958"
+Idaho,2020,"Motor vehicle, traffic",223,"1,847,772",12.07,12.01,"5,053"
+Idaho,2020,"Pedal cyclist, other",--,"1,847,772",--,--,--
+Idaho,2020,"Pedestrian, other",--,"1,847,772",--,--,--
+Idaho,2020,"Transport, other land",22,"1,847,772",1.19,1.2,329
+Idaho,2020,"Transport, other (excl. drown by water transp)",--,"1,847,772",--,--,--
+Idaho,2020,Other specified and classifiable,16**,"1,847,772",0.87**,0.80**,301
+Idaho,2020,Other specified / NEC,--,"1,847,772",--,--,--
+Idaho,2020,Unspecified,24,"1,847,772",1.3,1.35,260
+Idaho,2019,Cut/Pierce,12**,"1,789,060",0.67**,0.64**,162
+Idaho,2019,Drowning (includes water transport),32,"1,789,060",1.79,1.9,931
+Idaho,2019,Fall,271,"1,789,060",15.15,13.78,412
+Idaho,2019,Fire/Flame,14**,"1,789,060",0.78**,0.70**,219
+Idaho,2019,Hot object/Substance,--,"1,789,060",--,--,--
+Idaho,2019,Firearm,255,"1,789,060",14.25,14.14,"4,914"
+Idaho,2019,Machinery,--,"1,789,060",--,--,--
+Idaho,2019,Natural/Environmental,15**,"1,789,060",0.84**,0.77**,104
+Idaho,2019,Overexertion,--,"1,789,060",--,--,--
+Idaho,2019,Drug Poisoning,265,"1,789,060",14.81,15.08,"5,587"
+Idaho,2019,Non-Drug Poisoning,34,"1,789,060",1.9,1.87,503
+Idaho,2019,Struck by / against,--,"1,789,060",--,--,--
+Idaho,2019,Suffocation,132,"1,789,060",7.38,7.31,"3,083"
+Idaho,2019,"Motor vehicle, traffic",241,"1,789,060",13.47,13.51,"5,238"
+Idaho,2019,"Pedal cyclist, other",--,"1,789,060",--,--,--
+Idaho,2019,"Pedestrian, other",--,"1,789,060",--,--,--
+Idaho,2019,"Transport, other land",18**,"1,789,060",1.01**,1.05**,396
+Idaho,2019,"Transport, other (excl. drown by water transp)",18**,"1,789,060",1.01**,0.95**,287
+Idaho,2019,Other specified and classifiable,16**,"1,789,060",0.89**,0.86**,169
+Idaho,2019,Other specified / NEC,11**,"1,789,060",0.62**,0.60**,103
+Idaho,2019,Unspecified,19**,"1,789,060",1.06**,0.99**,127
+Idaho,2018,Cut/Pierce,11**,"1,752,074",0.63**,0.53**,222
+Idaho,2018,Drowning (includes water transport),41,"1,752,074",2.34,2.43,"1,112"
+Idaho,2018,Fall,236,"1,752,074",13.47,12.61,616
+Idaho,2018,Fire/Flame,15**,"1,752,074",0.86**,0.79**,102
+Idaho,2018,Firearm,294,"1,752,074",16.78,16.62,"6,211"
+Idaho,2018,Machinery,--,"1,752,074",--,--,--
+Idaho,2018,Natural/Environmental,12**,"1,752,074",0.69**,0.68**,156
+Idaho,2018,Drug Poisoning,250,"1,752,074",14.27,14.57,"5,421"
+Idaho,2018,Non-Drug Poisoning,29,"1,752,074",1.66,1.61,553
+Idaho,2018,Struck by / against,10**,"1,752,074",0.57**,0.53**,176
+Idaho,2018,Suffocation,151,"1,752,074",8.62,8.75,"3,684"
+Idaho,2018,"Motor vehicle, traffic",230,"1,752,074",13.13,13.11,"5,112"
+Idaho,2018,"Pedal cyclist, other",--,"1,752,074",--,--,--
+Idaho,2018,"Pedestrian, other",--,"1,752,074",--,--,--
+Idaho,2018,"Transport, other land",24,"1,752,074",1.37,1.38,486
+Idaho,2018,"Transport, other (excl. drown by water transp)",13**,"1,752,074",0.74**,0.72**,135
+Idaho,2018,Other specified and classifiable,12**,"1,752,074",0.69**,0.61**,108
+Idaho,2018,Other specified / NEC,--,"1,752,074",--,--,--
+Idaho,2018,Unspecified,21,"1,752,074",1.2,1.06,106
+Idaho,2017,Cut/Pierce,10**,"1,719,745",0.58**,0.62**,171
+Idaho,2017,Drowning (includes water transport),40,"1,719,745",2.33,2.39,"1,017"
+Idaho,2017,Fall,237,"1,719,745",13.78,12.57,341
+Idaho,2017,Fire/Flame,12**,"1,719,745",0.70**,0.70**,143
+Idaho,2017,Firearm,280,"1,719,745",16.28,16.4,"5,858"
+Idaho,2017,Machinery,10**,"1,719,745",0.58**,0.62**,161
+Idaho,2017,Natural/Environmental,22,"1,719,745",1.28,1.31,330
+Idaho,2017,Drug Poisoning,236,"1,719,745",13.72,14.44,"4,976"
+Idaho,2017,Non-Drug Poisoning,34,"1,719,745",1.98,1.94,698
+Idaho,2017,Struck by / against,14**,"1,719,745",0.81**,0.71**,123
+Idaho,2017,Suffocation,129,"1,719,745",7.5,7.64,"2,836"
+Idaho,2017,"Motor vehicle, traffic",260,"1,719,745",15.12,14.81,"5,918"
+Idaho,2017,"Pedestrian, other",--,"1,719,745",--,--,--
+Idaho,2017,"Transport, other land",13**,"1,719,745",0.76**,0.80**,289
+Idaho,2017,"Transport, other (excl. drown by water transp)",--,"1,719,745",--,--,--
+Idaho,2017,Other specified and classifiable,12**,"1,719,745",0.70**,0.74**,263
+Idaho,2017,Other specified / NEC,15**,"1,719,745",0.87**,0.80**,399
+Idaho,2017,Unspecified,20**,"1,719,745",1.16**,1.14**,289
+Idaho,2016,Cut/Pierce,12**,"1,684,036",0.71**,0.77**,276
+Idaho,2016,Drowning (includes water transport),31,"1,684,036",1.84,1.8,946
+Idaho,2016,Fall,240,"1,684,036",14.25,13.42,479
+Idaho,2016,Fire/Flame,17**,"1,684,036",1.01**,0.93**,228
+Idaho,2016,Firearm,242,"1,684,036",14.37,14.56,"4,835"
+Idaho,2016,Machinery,--,"1,684,036",--,--,--
+Idaho,2016,Natural/Environmental,15**,"1,684,036",0.89**,0.84**,119
+Idaho,2016,Overexertion,--,"1,684,036",--,--,--
+Idaho,2016,Drug Poisoning,243,"1,684,036",14.43,15.2,"5,234"
+Idaho,2016,Non-Drug Poisoning,26,"1,684,036",1.54,1.63,516
+Idaho,2016,Struck by / against,--,"1,684,036",--,--,--
+Idaho,2016,Suffocation,107,"1,684,036",6.35,6.45,"2,115"
+Idaho,2016,"Motor vehicle, traffic",251,"1,684,036",14.91,14.98,"5,996"
+Idaho,2016,"Pedal cyclist, other",--,"1,684,036",--,--,--
+Idaho,2016,"Pedestrian, other",--,"1,684,036",--,--,--
+Idaho,2016,"Transport, other land",21,"1,684,036",1.25,1.14,394
+Idaho,2016,"Transport, other (excl. drown by water transp)",10**,"1,684,036",0.59**,0.63**,295
+Idaho,2016,Other specified and classifiable,14**,"1,684,036",0.83**,0.76**,261
+Idaho,2016,Other specified / NEC,--,"1,684,036",--,--,--
+Idaho,2016,Unspecified,15**,"1,684,036",0.89**,0.87**,252
+Idaho,2015,Cut/Pierce,--,"1,652,495",--,--,--
+Idaho,2015,Drowning (includes water transport),32,"1,652,495",1.94,1.93,"1,040"
+Idaho,2015,Fall,177,"1,652,495",10.71,9.99,350
+Idaho,2015,Fire/Flame,14**,"1,652,495",0.85**,0.86**,146
+Idaho,2015,Firearm,247,"1,652,495",14.95,14.85,"5,014"
+Idaho,2015,Machinery,--,"1,652,495",--,--,--
+Idaho,2015,Natural/Environmental,20**,"1,652,495",1.21**,1.17**,176
+Idaho,2015,Drug Poisoning,218,"1,652,495",13.19,14.18,"4,723"
+Idaho,2015,Non-Drug Poisoning,32,"1,652,495",1.94,2.08,549
+Idaho,2015,Struck by / against,--,"1,652,495",--,--,--
+Idaho,2015,Suffocation,120,"1,652,495",7.26,7.44,"2,573"
+Idaho,2015,"Motor vehicle, traffic",219,"1,652,495",13.25,13.51,"5,117"
+Idaho,2015,"Pedal cyclist, other",--,"1,652,495",--,--,--
+Idaho,2015,"Pedestrian, other",--,"1,652,495",--,--,--
+Idaho,2015,"Transport, other land",24,"1,652,495",1.45,1.44,434
+Idaho,2015,"Transport, other (excl. drown by water transp)",--,"1,652,495",--,--,--
+Idaho,2015,Other specified and classifiable,10**,"1,652,495",0.61**,0.54**,188
+Idaho,2015,Other specified / NEC,--,"1,652,495",--,--,--
+Idaho,2015,Unspecified,20**,"1,652,495",1.21**,1.16**,159
+Idaho,2014,Cut/Pierce,10**,"1,632,248",0.61**,0.54**,194
+Idaho,2014,Drowning (includes water transport),31,"1,632,248",1.9,1.92,706
+Idaho,2014,Fall,236,"1,632,248",14.46,14.07,554
+Idaho,2014,Fire/Flame,12**,"1,632,248",0.74**,0.73**,292
+Idaho,2014,Firearm,213,"1,632,248",13.05,13.2,"4,420"
+Idaho,2014,Machinery,--,"1,632,248",--,--,--
+Idaho,2014,Natural/Environmental,17**,"1,632,248",1.04**,0.97**,199
+Idaho,2014,Overexertion,--,"1,632,248",--,--,--
+Idaho,2014,Drug Poisoning,212,"1,632,248",12.99,13.73,"4,724"
+Idaho,2014,Non-Drug Poisoning,30,"1,632,248",1.84,1.99,670
+Idaho,2014,Struck by / against,--,"1,632,248",--,--,--
+Idaho,2014,Suffocation,113,"1,632,248",6.92,7.18,"2,946"
+Idaho,2014,"Motor vehicle, traffic",183,"1,632,248",11.21,11.15,"4,218"
+Idaho,2014,"Pedestrian, other",--,"1,632,248",--,--,--
+Idaho,2014,"Transport, other land",23,"1,632,248",1.41,1.45,518
+Idaho,2014,"Transport, other (excl. drown by water transp)",--,"1,632,248",--,--,--
+Idaho,2014,Other specified and classifiable,13**,"1,632,248",0.80**,0.84**,198
+Idaho,2014,Other specified / NEC,--,"1,632,248",--,--,--
+Idaho,2014,Unspecified,28,"1,632,248",1.72,1.68,363
+Idaho,2013,Cut/Pierce,--,"1,612,053",--,--,--
+Idaho,2013,Drowning (includes water transport),27,"1,612,053",1.68,1.63,847
+Idaho,2013,Fall,196,"1,612,053",12.16,11.75,483
+Idaho,2013,Fire/Flame,18**,"1,612,053",1.12**,1.12**,316
+Idaho,2013,Hot object/Substance,--,"1,612,053",--,--,--
+Idaho,2013,Firearm,227,"1,612,053",14.08,14.12,"4,701"
+Idaho,2013,Machinery,--,"1,612,053",--,--,--
+Idaho,2013,Natural/Environmental,14**,"1,612,053",0.87**,0.79**,140
+Idaho,2013,Drug Poisoning,207,"1,612,053",12.84,13.43,"4,301"
+Idaho,2013,Non-Drug Poisoning,29,"1,612,053",1.8,1.88,623
+Idaho,2013,Struck by / against,10**,"1,612,053",0.62**,0.59**,183
+Idaho,2013,Suffocation,95,"1,612,053",5.89,5.96,"2,010"
+Idaho,2013,"Motor vehicle, traffic",237,"1,612,053",14.7,14.47,"5,679"
+Idaho,2013,"Pedal cyclist, other",--,"1,612,053",--,--,--
+Idaho,2013,"Pedestrian, other",--,"1,612,053",--,--,--
+Idaho,2013,"Transport, other land",23,"1,612,053",1.43,1.46,336
+Idaho,2013,"Transport, other (excl. drown by water transp)",--,"1,612,053",--,--,--
+Idaho,2013,Other specified and classifiable,19**,"1,612,053",1.18**,1.16**,571
+Idaho,2013,Other specified / NEC,--,"1,612,053",--,--,--
+Idaho,2013,Unspecified,17**,"1,612,053",1.06**,1.14**,225
+Idaho,2012,Cut/Pierce,--,"1,595,910",--,--,--
+Idaho,2012,Drowning (includes water transport),40,"1,595,910",2.51,2.63,"1,053"
+Idaho,2012,Fall,204,"1,595,910",12.78,12.56,361
+Idaho,2012,Fire/Flame,--,"1,595,910",--,--,--
+Idaho,2012,Firearm,207,"1,595,910",12.97,13.1,"4,451"
+Idaho,2012,Machinery,--,"1,595,910",--,--,--
+Idaho,2012,Natural/Environmental,--,"1,595,910",--,--,--
+Idaho,2012,Drug Poisoning,181,"1,595,910",11.34,11.89,"3,726"
+Idaho,2012,Non-Drug Poisoning,31,"1,595,910",1.94,2.02,520
+Idaho,2012,Struck by / against,--,"1,595,910",--,--,--
+Idaho,2012,Suffocation,100,"1,595,910",6.27,6.36,"2,609"
+Idaho,2012,"Motor vehicle, traffic",210,"1,595,910",13.16,13.17,"4,596"
+Idaho,2012,"Pedal cyclist, other",--,"1,595,910",--,--,--
+Idaho,2012,"Pedestrian, other",--,"1,595,910",--,--,--
+Idaho,2012,"Transport, other land",10**,"1,595,910",0.63**,0.62**,197
+Idaho,2012,"Transport, other (excl. drown by water transp)",12**,"1,595,910",0.75**,0.76**,123
+Idaho,2012,Other specified and classifiable,12**,"1,595,910",0.75**,0.77**,163
+Idaho,2012,Other specified / NEC,12**,"1,595,910",0.75**,0.77**,44
+Idaho,2012,Unspecified,16**,"1,595,910",1.00**,0.97**,319
+Idaho,2011,Cut/Pierce,--,"1,584,272",--,--,--
+Idaho,2011,Drowning (includes water transport),31,"1,584,272",1.96,1.94,856
+Idaho,2011,Fall,203,"1,584,272",12.81,12.61,675
+Idaho,2011,Fire/Flame,--,"1,584,272",--,--,--
+Idaho,2011,Hot object/Substance,--,"1,584,272",--,--,--
+Idaho,2011,Firearm,192,"1,584,272",12.12,12.33,"4,164"
+Idaho,2011,Machinery,--,"1,584,272",--,--,--
+Idaho,2011,Natural/Environmental,--,"1,584,272",--,--,--
+Idaho,2011,Drug Poisoning,193,"1,584,272",12.18,12.88,"4,367"
+Idaho,2011,Non-Drug Poisoning,17**,"1,584,272",1.07**,1.12**,324
+Idaho,2011,Struck by / against,11**,"1,584,272",0.69**,0.73**,130
+Idaho,2011,Suffocation,95,"1,584,272",6,6.03,"2,258"
+Idaho,2011,"Motor vehicle, traffic",195,"1,584,272",12.31,12.11,"4,827"
+Idaho,2011,"Pedal cyclist, other",--,"1,584,272",--,--,--
+Idaho,2011,"Pedestrian, other",--,"1,584,272",--,--,--
+Idaho,2011,"Transport, other land",21,"1,584,272",1.33,1.25,283
+Idaho,2011,"Transport, other (excl. drown by water transp)",14**,"1,584,272",0.88**,0.91**,312
+Idaho,2011,Other specified and classifiable,15**,"1,584,272",0.95**,0.99**,226
+Idaho,2011,Other specified / NEC,15**,"1,584,272",0.95**,0.90**,231
+Idaho,2011,Unspecified,24,"1,584,272",1.52,1.5,385
+Idaho,2010,Cut/Pierce,--,"1,567,658",--,--,--
+Idaho,2010,Drowning (includes water transport),31,"1,567,658",1.98,2.01,847
+Idaho,2010,Fall,151,"1,567,658",9.63,9.46,408
+Idaho,2010,Fire/Flame,20**,"1,567,658",1.28**,1.41**,549
+Idaho,2010,Firearm,198,"1,567,658",12.63,12.73,"3,789"
+Idaho,2010,Machinery,--,"1,567,658",--,--,--
+Idaho,2010,Natural/Environmental,13**,"1,567,658",0.83**,0.91**,257
+Idaho,2010,Drug Poisoning,178,"1,567,658",11.36,11.72,"3,943"
+Idaho,2010,Non-Drug Poisoning,23,"1,567,658",1.47,1.48,426
+Idaho,2010,Struck by / against,11**,"1,567,658",0.70**,0.68**,207
+Idaho,2010,Suffocation,89,"1,567,658",5.68,5.74,"2,046"
+Idaho,2010,"Motor vehicle, traffic",199,"1,567,658",12.69,12.83,"5,452"
+Idaho,2010,"Pedal cyclist, other",--,"1,567,658",--,--,--
+Idaho,2010,"Pedestrian, other",--,"1,567,658",--,--,--
+Idaho,2010,"Transport, other land",17**,"1,567,658",1.08**,1.12**,298
+Idaho,2010,"Transport, other (excl. drown by water transp)",11**,"1,567,658",0.70**,0.69**,234
+Idaho,2010,Other specified and classifiable,12**,"1,567,658",0.77**,0.79**,297
+Idaho,2010,Other specified / NEC,10**,"1,567,658",0.64**,0.69**,159
+Idaho,2010,Unspecified,20**,"1,567,658",1.28**,1.31**,298
+Idaho,2009,Cut/Pierce,--,"1,554,439",--,--,--
+Idaho,2009,Drowning (includes water transport),36,"1,554,439",2.32,2.38,"1,040"
+Idaho,2009,Fall,152,"1,554,439",9.78,9.92,399
+Idaho,2009,Fire/Flame,10**,"1,554,439",0.64**,0.64**,114
+Idaho,2009,Firearm,196,"1,554,439",12.61,12.85,"3,762"
+Idaho,2009,Machinery,12**,"1,554,439",0.77**,0.79**,166
+Idaho,2009,Natural/Environmental,20**,"1,554,439",1.29**,1.33**,315
+Idaho,2009,Drug Poisoning,171,"1,554,439",11,11.63,"3,842"
+Idaho,2009,Non-Drug Poisoning,39,"1,554,439",2.51,2.5,688
+Idaho,2009,Struck by / against,--,"1,554,439",--,--,--
+Idaho,2009,Suffocation,87,"1,554,439",5.6,5.81,"1,967"
+Idaho,2009,"Motor vehicle, traffic",222,"1,554,439",14.28,14.44,"5,551"
+Idaho,2009,"Pedal cyclist, other",--,"1,554,439",--,--,--
+Idaho,2009,"Pedestrian, other",--,"1,554,439",--,--,--
+Idaho,2009,"Transport, other land",19**,"1,554,439",1.22**,1.23**,355
+Idaho,2009,"Transport, other (excl. drown by water transp)",10**,"1,554,439",0.64**,0.64**,272
+Idaho,2009,Other specified and classifiable,--,"1,554,439",--,--,--
+Idaho,2009,Other specified / NEC,--,"1,554,439",--,--,--
+Idaho,2009,Unspecified,20**,"1,554,439",1.29**,1.30**,408
+Idaho,2008,Cut/Pierce,--,"1,534,320",--,--,--
+Idaho,2008,Drowning (includes water transport),29,"1,534,320",1.89,1.85,685
+Idaho,2008,Fall,147,"1,534,320",9.58,9.83,709
+Idaho,2008,Fire/Flame,11**,"1,534,320",0.72**,0.74**,106
+Idaho,2008,Firearm,175,"1,534,320",11.41,11.4,"3,386"
+Idaho,2008,Machinery,12**,"1,534,320",0.78**,0.79**,159
+Idaho,2008,Natural/Environmental,15**,"1,534,320",0.98**,0.91**,272
+Idaho,2008,Drug Poisoning,146,"1,534,320",9.52,9.85,"2,979"
+Idaho,2008,Non-Drug Poisoning,38,"1,534,320",2.48,2.53,551
+Idaho,2008,Struck by / against,10**,"1,534,320",0.65**,0.68**,188
+Idaho,2008,Suffocation,71,"1,534,320",4.63,4.7,"1,764"
+Idaho,2008,"Motor vehicle, traffic",228,"1,534,320",14.86,15.33,"5,640"
+Idaho,2008,"Pedestrian, other",--,"1,534,320",--,--,--
+Idaho,2008,"Transport, other land",18**,"1,534,320",1.17**,1.19**,427
+Idaho,2008,"Transport, other (excl. drown by water transp)",10**,"1,534,320",0.65**,0.68**,329
+Idaho,2008,Other specified and classifiable,--,"1,534,320",--,--,--
+Idaho,2008,Other specified / NEC,12**,"1,534,320",0.78**,0.84**,224
+Idaho,2008,Unspecified,23,"1,534,320",1.5,1.52,370
+Idaho,2007,Cut/Pierce,--,"1,505,105",--,--,--
+Idaho,2007,Drowning (includes water transport),36,"1,505,105",2.39,2.39,883
+Idaho,2007,Fall,136,"1,505,105",9.04,9.32,383
+Idaho,2007,Fire/Flame,14**,"1,505,105",0.93**,0.98**,223
+Idaho,2007,Firearm,187,"1,505,105",12.42,12.75,"4,349"
+Idaho,2007,Machinery,--,"1,505,105",--,--,--
+Idaho,2007,Natural/Environmental,13**,"1,505,105",0.86**,0.92**,251
+Idaho,2007,Drug Poisoning,126,"1,505,105",8.37,8.66,"2,783"
+Idaho,2007,Non-Drug Poisoning,24,"1,505,105",1.6,1.6,564
+Idaho,2007,Struck by / against,--,"1,505,105",--,--,--
+Idaho,2007,Suffocation,69,"1,505,105",4.58,4.48,"2,112"
+Idaho,2007,"Motor vehicle, traffic",259,"1,505,105",17.21,17.46,"7,058"
+Idaho,2007,"Pedestrian, other",--,"1,505,105",--,--,--
+Idaho,2007,"Transport, other land",15**,"1,505,105",1.00**,1.02**,270
+Idaho,2007,"Transport, other (excl. drown by water transp)",--,"1,505,105",--,--,--
+Idaho,2007,Other specified and classifiable,--,"1,505,105",--,--,--
+Idaho,2007,Other specified / NEC,--,"1,505,105",--,--,--
+Idaho,2007,Unspecified,14**,"1,505,105",0.93**,0.92**,334
+Idaho,2006,Cut/Pierce,15**,"1,468,669",1.02**,1.06**,251
+Idaho,2006,Drowning (includes water transport),30,"1,468,669",2.04,2,"1,065"
+Idaho,2006,Fall,141,"1,468,669",9.6,10.06,425
+Idaho,2006,Fire/Flame,23,"1,468,669",1.57,1.56,743
+Idaho,2006,Firearm,180,"1,468,669",12.26,12.69,"4,174"
+Idaho,2006,Machinery,--,"1,468,669",--,--,--
+Idaho,2006,Natural/Environmental,14**,"1,468,669",0.95**,1.00**,228
+Idaho,2006,Drug Poisoning,130,"1,468,669",8.85,9.34,"2,983"
+Idaho,2006,Non-Drug Poisoning,22,"1,468,669",1.5,1.58,513
+Idaho,2006,Struck by / against,--,"1,468,669",--,--,--
+Idaho,2006,Suffocation,57,"1,468,669",3.88,3.96,"1,322"
+Idaho,2006,"Motor vehicle, traffic",275,"1,468,669",18.72,18.86,"6,859"
+Idaho,2006,"Pedal cyclist, other",--,"1,468,669",--,--,--
+Idaho,2006,"Pedestrian, other",--,"1,468,669",--,--,--
+Idaho,2006,"Transport, other land",21,"1,468,669",1.43,1.44,648
+Idaho,2006,"Transport, other (excl. drown by water transp)",14**,"1,468,669",0.95**,0.99**,320
+Idaho,2006,Other specified and classifiable,10**,"1,468,669",0.68**,0.60**,245
+Idaho,2006,Other specified / NEC,--,"1,468,669",--,--,--
+Idaho,2006,Unspecified,12**,"1,468,669",0.82**,0.78**,329
+Idaho,2005,Cut/Pierce,--,"1,428,241",--,--,--
+Idaho,2005,Drowning (includes water transport),30,"1,428,241",2.1,2.11,702
+Idaho,2005,Fall,104,"1,428,241",7.28,7.78,332
+Idaho,2005,Fire/Flame,21,"1,428,241",1.47,1.57,256
+Idaho,2005,Firearm,195,"1,428,241",13.65,13.94,"4,241"
+Idaho,2005,Machinery,--,"1,428,241",--,--,--
+Idaho,2005,Natural/Environmental,10**,"1,428,241",0.70**,0.75**,143
+Idaho,2005,Drug Poisoning,109,"1,428,241",7.63,8.08,"2,388"
+Idaho,2005,Non-Drug Poisoning,17**,"1,428,241",1.19**,1.19**,328
+Idaho,2005,Struck by / against,10**,"1,428,241",0.70**,0.73**,126
+Idaho,2005,Suffocation,51,"1,428,241",3.57,3.59,"1,362"
+Idaho,2005,"Motor vehicle, traffic",264,"1,428,241",18.48,18.63,"7,298"
+Idaho,2005,"Pedestrian, other",--,"1,428,241",--,--,--
+Idaho,2005,"Transport, other land",16**,"1,428,241",1.12**,1.15**,295
+Idaho,2005,"Transport, other (excl. drown by water transp)",--,"1,428,241",--,--,--
+Idaho,2005,Other specified and classifiable,16**,"1,428,241",1.12**,1.16**,262
+Idaho,2005,Other specified / NEC,11**,"1,428,241",0.77**,0.79**,235
+Idaho,2005,Unspecified,23,"1,428,241",1.61,1.66,490
+Idaho,2004,Cut/Pierce,--,"1,391,802",--,--,--
+Idaho,2004,Drowning (includes water transport),31,"1,391,802",2.23,2.11,"1,260"
+Idaho,2004,Fall,124,"1,391,802",8.91,9.46,671
+Idaho,2004,Fire/Flame,13**,"1,391,802",0.93**,0.97**,122
+Idaho,2004,Firearm,177,"1,391,802",12.72,13.04,"3,557"
+Idaho,2004,Machinery,--,"1,391,802",--,--,--
+Idaho,2004,Natural/Environmental,11**,"1,391,802",0.79**,0.79**,225
+Idaho,2004,Drug Poisoning,98,"1,391,802",7.04,7.44,"2,320"
+Idaho,2004,Non-Drug Poisoning,19**,"1,391,802",1.37**,1.45**,427
+Idaho,2004,Struck by / against,11**,"1,391,802",0.79**,0.79**,236
+Idaho,2004,Suffocation,89,"1,391,802",6.4,6.69,"2,126"
+Idaho,2004,"Motor vehicle, traffic",235,"1,391,802",16.89,17.15,"5,853"
+Idaho,2004,"Pedal cyclist, other",--,"1,391,802",--,--,--
+Idaho,2004,"Pedestrian, other",10**,"1,391,802",0.72**,0.73**,405
+Idaho,2004,"Transport, other land",11**,"1,391,802",0.79**,0.75**,375
+Idaho,2004,"Transport, other (excl. drown by water transp)",14**,"1,391,802",1.01**,1.02**,264
+Idaho,2004,Other specified and classifiable,--,"1,391,802",--,--,--
+Idaho,2004,Other specified / NEC,--,"1,391,802",--,--,--
+Idaho,2004,Unspecified,11**,"1,391,802",0.79**,0.78**,206
+Idaho,2003,Cut/Pierce,--,"1,363,380",--,--,--
+Idaho,2003,Drowning (includes water transport),18**,"1,363,380",1.32**,1.30**,424
+Idaho,2003,Fall,129,"1,363,380",9.46,10.03,685
+Idaho,2003,Fire/Flame,13**,"1,363,380",0.95**,0.96**,378
+Idaho,2003,Firearm,164,"1,363,380",12.03,12.33,"3,441"
+Idaho,2003,Machinery,--,"1,363,380",--,--,--
+Idaho,2003,Natural/Environmental,18**,"1,363,380",1.32**,1.38**,357
+Idaho,2003,Drug Poisoning,102,"1,363,380",7.48,7.9,"2,266"
+Idaho,2003,Non-Drug Poisoning,19**,"1,363,380",1.39**,1.50**,383
+Idaho,2003,Struck by / against,12**,"1,363,380",0.88**,0.90**,282
+Idaho,2003,Suffocation,67,"1,363,380",4.91,5,"1,752"
+Idaho,2003,"Motor vehicle, traffic",273,"1,363,380",20.02,20.07,"7,283"
+Idaho,2003,"Pedal cyclist, other",--,"1,363,380",--,--,--
+Idaho,2003,"Pedestrian, other",--,"1,363,380",--,--,--
+Idaho,2003,"Transport, other land",10**,"1,363,380",0.73**,0.74**,265
+Idaho,2003,"Transport, other (excl. drown by water transp)",--,"1,363,380",--,--,--
+Idaho,2003,Other specified and classifiable,17**,"1,363,380",1.25**,1.21**,412
+Idaho,2003,Other specified / NEC,--,"1,363,380",--,--,--
+Idaho,2003,Unspecified,16**,"1,363,380",1.17**,1.20**,150
+Idaho,2002,Cut/Pierce,--,"1,340,372",--,--,--
+Idaho,2002,Drowning (includes water transport),15**,"1,340,372",1.12**,1.10**,650
+Idaho,2002,Fall,118,"1,340,372",8.8,9.54,582
+Idaho,2002,Fire/Flame,--,"1,340,372",--,--,--
+Idaho,2002,Firearm,163,"1,340,372",12.16,12.42,"3,623"
+Idaho,2002,Machinery,--,"1,340,372",--,--,--
+Idaho,2002,Natural/Environmental,12**,"1,340,372",0.90**,0.92**,238
+Idaho,2002,Drug Poisoning,117,"1,340,372",8.73,9.11,"2,341"
+Idaho,2002,Non-Drug Poisoning,18**,"1,340,372",1.34**,1.35**,471
+Idaho,2002,Struck by / against,10**,"1,340,372",0.75**,0.78**,329
+Idaho,2002,Suffocation,60,"1,340,372",4.48,4.53,"1,479"
+Idaho,2002,"Motor vehicle, traffic",281,"1,340,372",20.96,21.21,"7,582"
+Idaho,2002,"Pedestrian, other",--,"1,340,372",--,--,--
+Idaho,2002,"Transport, other land",17**,"1,340,372",1.27**,1.33**,466
+Idaho,2002,"Transport, other (excl. drown by water transp)",13**,"1,340,372",0.97**,0.96**,213
+Idaho,2002,Other specified and classifiable,--,"1,340,372",--,--,--
+Idaho,2002,Other specified / NEC,--,"1,340,372",--,--,--
+Idaho,2002,Unspecified,13**,"1,340,372",0.97**,0.99**,277
+Idaho,2001,Cut/Pierce,--,"1,319,962",--,--,--
+Idaho,2001,Drowning (includes water transport),31,"1,319,962",2.35,2.3,"1,069"
+Idaho,2001,Fall,113,"1,319,962",8.56,9.21,603
+Idaho,2001,Fire/Flame,13**,"1,319,962",0.99**,1.01**,232
+Idaho,2001,Firearm,175,"1,319,962",13.26,13.5,"4,130"
+Idaho,2001,Machinery,--,"1,319,962",--,--,--
+Idaho,2001,Natural/Environmental,11**,"1,319,962",0.83**,0.90**,90
+Idaho,2001,Drug Poisoning,98,"1,319,962",7.42,7.83,"2,283"
+Idaho,2001,Non-Drug Poisoning,20**,"1,319,962",1.52**,1.53**,499
+Idaho,2001,Struck by / against,16**,"1,319,962",1.21**,1.25**,451
+Idaho,2001,Suffocation,50,"1,319,962",3.79,3.78,"1,657"
+Idaho,2001,"Motor vehicle, traffic",246,"1,319,962",18.64,18.56,"6,681"
+Idaho,2001,"Pedal cyclist, other",--,"1,319,962",--,--,--
+Idaho,2001,"Pedestrian, other",--,"1,319,962",--,--,--
+Idaho,2001,"Transport, other land",10**,"1,319,962",0.76**,0.75**,399
+Idaho,2001,"Transport, other (excl. drown by water transp)",--,"1,319,962",--,--,--
+Idaho,2001,Other specified and classifiable,--,"1,319,962",--,--,--
+Idaho,2001,Other specified / NEC,15**,"1,319,962",1.14**,1.22**,208
+Idaho,2001,Unspecified,12**,"1,319,962",0.91**,0.94**,221
+Total,,,"23,412","33,244,536",70.42,71.13,"442,672"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Idaho,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

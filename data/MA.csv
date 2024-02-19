@@ -1,0 +1,432 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Massachusetts,2021,Cut/Pierce,55,"6,984,723",0.79,0.75,"1,004"
+Massachusetts,2021,Drowning (includes water transport),73,"6,984,723",1.05,1.02,"1,847"
+Massachusetts,2021,Fall,"1,172","6,984,723",16.78,13.33,"1,981"
+Massachusetts,2021,Fire/Flame,36,"6,984,723",0.52,0.41,157
+Massachusetts,2021,Hot object/Substance,--,"6,984,723",--,--,--
+Massachusetts,2021,Firearm,247,"6,984,723",3.54,3.35,"5,842"
+Massachusetts,2021,Machinery,--,"6,984,723",--,--,--
+Massachusetts,2021,Natural/Environmental,18**,"6,984,723",0.26**,0.20**,124
+Massachusetts,2021,Drug Poisoning,"2,585","6,984,723",37.01,36.84,"54,020"
+Massachusetts,2021,Non-Drug Poisoning,111,"6,984,723",1.59,1.46,"1,905"
+Massachusetts,2021,Struck by / against,16**,"6,984,723",0.23**,0.22**,305
+Massachusetts,2021,Suffocation,432,"6,984,723",6.19,5.43,"6,096"
+Massachusetts,2021,"Motor vehicle, traffic",447,"6,984,723",6.4,5.88,"8,988"
+Massachusetts,2021,"Pedestrian, other",14**,"6,984,723",0.20**,0.19**,321
+Massachusetts,2021,"Transport, other land",15**,"6,984,723",0.22**,0.19**,256
+Massachusetts,2021,"Transport, other (excl. drown by water transp)",--,"6,984,723",--,--,--
+Massachusetts,2021,Other specified and classifiable,46,"6,984,723",0.66,0.57,753
+Massachusetts,2021,Other specified / NEC,44,"6,984,723",0.63,0.52,381
+Massachusetts,2021,Unspecified,159,"6,984,723",2.28,1.88,"1,112"
+Massachusetts,2020,Cut/Pierce,62,"7,022,220",0.88,0.83,"1,370"
+Massachusetts,2020,Drowning (includes water transport),69,"7,022,220",0.98,0.96,"1,500"
+Massachusetts,2020,Fall,"1,040","7,022,220",14.81,11.83,"1,708"
+Massachusetts,2020,Fire/Flame,41,"7,022,220",0.58,0.45,354
+Massachusetts,2020,Hot object/Substance,--,"7,022,220",--,--,--
+Massachusetts,2020,Firearm,268,"7,022,220",3.82,3.66,"6,858"
+Massachusetts,2020,Machinery,--,"7,022,220",--,--,--
+Massachusetts,2020,Natural/Environmental,20**,"7,022,220",0.29**,0.25**,150
+Massachusetts,2020,Drug Poisoning,"2,302","7,022,220",32.78,32.98,"51,013"
+Massachusetts,2020,Non-Drug Poisoning,88,"7,022,220",1.25,1.16,"1,693"
+Massachusetts,2020,Struck by / against,10**,"7,022,220",0.14**,0.14**,244
+Massachusetts,2020,Suffocation,440,"7,022,220",6.27,5.7,"6,764"
+Massachusetts,2020,"Motor vehicle, traffic",377,"7,022,220",5.37,4.99,"8,224"
+Massachusetts,2020,"Pedal cyclist, other",--,"7,022,220",--,--,--
+Massachusetts,2020,"Pedestrian, other",--,"7,022,220",--,--,--
+Massachusetts,2020,"Transport, other land",--,"7,022,220",--,--,--
+Massachusetts,2020,"Transport, other (excl. drown by water transp)",--,"7,022,220",--,--,--
+Massachusetts,2020,Other specified and classifiable,35,"7,022,220",0.5,0.42,568
+Massachusetts,2020,Other specified / NEC,50,"7,022,220",0.71,0.61,482
+Massachusetts,2020,Unspecified,141,"7,022,220",2.01,1.66,"1,015"
+Massachusetts,2019,Cut/Pierce,63,"6,894,883",0.91,0.87,"1,418"
+Massachusetts,2019,Drowning (includes water transport),76,"6,894,883",1.1,1,"1,501"
+Massachusetts,2019,Fall,"1,029","6,894,883",14.92,11.31,"1,699"
+Massachusetts,2019,Fire/Flame,51,"6,894,883",0.74,0.61,505
+Massachusetts,2019,Hot object/Substance,--,"6,894,883",--,--,--
+Massachusetts,2019,Firearm,247,"6,894,883",3.58,3.39,"5,929"
+Massachusetts,2019,Machinery,--,"6,894,883",--,--,--
+Massachusetts,2019,Natural/Environmental,25,"6,894,883",0.36,0.31,224
+Massachusetts,2019,Drug Poisoning,"2,210","6,894,883",32.05,32.06,"50,145"
+Massachusetts,2019,Non-Drug Poisoning,95,"6,894,883",1.38,1.29,"1,743"
+Massachusetts,2019,Struck by / against,10**,"6,894,883",0.15**,0.14**,195
+Massachusetts,2019,Suffocation,490,"6,894,883",7.11,6.17,"6,811"
+Massachusetts,2019,"Motor vehicle, traffic",378,"6,894,883",5.48,4.86,"6,946"
+Massachusetts,2019,"Pedal cyclist, other",--,"6,894,883",--,--,--
+Massachusetts,2019,"Pedestrian, other",11**,"6,894,883",0.16**,0.14**,147
+Massachusetts,2019,"Transport, other land",16**,"6,894,883",0.23**,0.23**,417
+Massachusetts,2019,"Transport, other (excl. drown by water transp)",--,"6,894,883",--,--,--
+Massachusetts,2019,Other specified and classifiable,47,"6,894,883",0.68,0.63,869
+Massachusetts,2019,Other specified / NEC,47,"6,894,883",0.68,0.56,356
+Massachusetts,2019,Unspecified,133,"6,894,883",1.93,1.59,966
+Massachusetts,2018,Cut/Pierce,50,"6,885,720",0.73,0.67,901
+Massachusetts,2018,Drowning (includes water transport),88,"6,885,720",1.28,1.24,"2,020"
+Massachusetts,2018,Fall,944,"6,885,720",13.71,10.5,"2,209"
+Massachusetts,2018,Fire/Flame,47,"6,885,720",0.68,0.6,708
+Massachusetts,2018,Hot object/Substance,--,"6,885,720",--,--,--
+Massachusetts,2018,Firearm,258,"6,885,720",3.75,3.47,"5,501"
+Massachusetts,2018,Machinery,--,"6,885,720",--,--,--
+Massachusetts,2018,Natural/Environmental,24,"6,885,720",0.35,0.3,180
+Massachusetts,2018,Overexertion,--,"6,885,720",--,--,--
+Massachusetts,2018,Drug Poisoning,"2,241","6,885,720",32.55,32.81,"52,932"
+Massachusetts,2018,Non-Drug Poisoning,102,"6,885,720",1.48,1.35,"1,521"
+Massachusetts,2018,Struck by / against,--,"6,885,720",--,--,--
+Massachusetts,2018,Suffocation,505,"6,885,720",7.33,6.57,"8,040"
+Massachusetts,2018,"Motor vehicle, traffic",386,"6,885,720",5.61,5.17,"7,981"
+Massachusetts,2018,"Pedal cyclist, other",--,"6,885,720",--,--,--
+Massachusetts,2018,"Pedestrian, other",13**,"6,885,720",0.19**,0.19**,214
+Massachusetts,2018,"Transport, other land",--,"6,885,720",--,--,--
+Massachusetts,2018,"Transport, other (excl. drown by water transp)",--,"6,885,720",--,--,--
+Massachusetts,2018,Other specified and classifiable,49,"6,885,720",0.71,0.66,935
+Massachusetts,2018,Other specified / NEC,42,"6,885,720",0.61,0.53,527
+Massachusetts,2018,Unspecified,143,"6,885,720",2.08,1.63,829
+Massachusetts,2017,Cut/Pierce,55,"6,863,560",0.8,0.81,"1,226"
+Massachusetts,2017,Drowning (includes water transport),63,"6,863,560",0.92,0.85,"1,386"
+Massachusetts,2017,Fall,851,"6,863,560",12.4,9.5,"2,000"
+Massachusetts,2017,Fire/Flame,45,"6,863,560",0.66,0.59,649
+Massachusetts,2017,Firearm,262,"6,863,560",3.82,3.68,"6,696"
+Massachusetts,2017,Machinery,--,"6,863,560",--,--,--
+Massachusetts,2017,Natural/Environmental,18**,"6,863,560",0.26**,0.23**,265
+Massachusetts,2017,Drug Poisoning,"2,168","6,863,560",31.59,31.64,"51,183"
+Massachusetts,2017,Non-Drug Poisoning,82,"6,863,560",1.2,1.08,"1,284"
+Massachusetts,2017,Struck by / against,10**,"6,863,560",0.15**,0.12**,137
+Massachusetts,2017,Suffocation,502,"6,863,560",7.31,6.76,"8,806"
+Massachusetts,2017,"Motor vehicle, traffic",402,"6,863,560",5.86,5.47,"8,796"
+Massachusetts,2017,"Pedal cyclist, other",13**,"6,863,560",0.19**,0.19**,344
+Massachusetts,2017,"Pedestrian, other",12**,"6,863,560",0.18**,0.18**,336
+Massachusetts,2017,"Transport, other land",19**,"6,863,560",0.28**,0.27**,332
+Massachusetts,2017,"Transport, other (excl. drown by water transp)",--,"6,863,560",--,--,--
+Massachusetts,2017,Other specified and classifiable,40,"6,863,560",0.58,0.55,707
+Massachusetts,2017,Other specified / NEC,39,"6,863,560",0.57,0.51,404
+Massachusetts,2017,Unspecified,141,"6,863,560",2.05,1.61,662
+Massachusetts,2016,Cut/Pierce,50,"6,827,280",0.73,0.67,997
+Massachusetts,2016,Drowning (includes water transport),88,"6,827,280",1.29,1.2,"1,928"
+Massachusetts,2016,Fall,733,"6,827,280",10.74,8.41,"1,714"
+Massachusetts,2016,Fire/Flame,44,"6,827,280",0.64,0.56,621
+Massachusetts,2016,Hot object/Substance,--,"6,827,280",--,--,--
+Massachusetts,2016,Firearm,242,"6,827,280",3.55,3.41,"5,790"
+Massachusetts,2016,Machinery,--,"6,827,280",--,--,--
+Massachusetts,2016,Natural/Environmental,13**,"6,827,280",0.19**,0.16**,199
+Massachusetts,2016,Drug Poisoning,"2,227","6,827,280",32.62,32.77,"54,426"
+Massachusetts,2016,Non-Drug Poisoning,122,"6,827,280",1.79,1.71,"2,337"
+Massachusetts,2016,Struck by / against,--,"6,827,280",--,--,--
+Massachusetts,2016,Suffocation,438,"6,827,280",6.42,5.85,"7,476"
+Massachusetts,2016,"Motor vehicle, traffic",444,"6,827,280",6.5,5.93,"9,195"
+Massachusetts,2016,"Pedal cyclist, other",--,"6,827,280",--,--,--
+Massachusetts,2016,"Pedestrian, other",12**,"6,827,280",0.18**,0.15**,83
+Massachusetts,2016,"Transport, other land",14**,"6,827,280",0.21**,0.19**,398
+Massachusetts,2016,"Transport, other (excl. drown by water transp)",--,"6,827,280",--,--,--
+Massachusetts,2016,Other specified and classifiable,27,"6,827,280",0.4,0.39,610
+Massachusetts,2016,Other specified / NEC,67,"6,827,280",0.98,0.93,"1,213"
+Massachusetts,2016,Unspecified,135,"6,827,280",1.98,1.56,603
+Massachusetts,2015,Cut/Pierce,52,"6,797,484",0.77,0.74,"1,391"
+Massachusetts,2015,Drowning (includes water transport),70,"6,797,484",1.03,0.95,"1,431"
+Massachusetts,2015,Fall,754,"6,797,484",11.09,8.71,"1,635"
+Massachusetts,2015,Fire/Flame,49,"6,797,484",0.72,0.59,430
+Massachusetts,2015,Hot object/Substance,--,"6,797,484",--,--,--
+Massachusetts,2015,Firearm,213,"6,797,484",3.13,2.99,"5,124"
+Massachusetts,2015,Machinery,--,"6,797,484",--,--,--
+Massachusetts,2015,Natural/Environmental,--,"6,797,484",--,--,--
+Massachusetts,2015,Drug Poisoning,"1,724","6,797,484",25.36,25.64,"43,576"
+Massachusetts,2015,Non-Drug Poisoning,96,"6,797,484",1.41,1.35,"1,891"
+Massachusetts,2015,Struck by / against,--,"6,797,484",--,--,--
+Massachusetts,2015,Suffocation,463,"6,797,484",6.81,6.23,"8,121"
+Massachusetts,2015,"Motor vehicle, traffic",375,"6,797,484",5.52,5.07,"8,095"
+Massachusetts,2015,"Pedal cyclist, other",--,"6,797,484",--,--,--
+Massachusetts,2015,"Pedestrian, other",15**,"6,797,484",0.22**,0.21**,256
+Massachusetts,2015,"Transport, other land",14**,"6,797,484",0.21**,0.18**,275
+Massachusetts,2015,"Transport, other (excl. drown by water transp)",--,"6,797,484",--,--,--
+Massachusetts,2015,Other specified and classifiable,29,"6,797,484",0.43,0.4,565
+Massachusetts,2015,Other specified / NEC,33,"6,797,484",0.49,0.39,190
+Massachusetts,2015,Unspecified,153,"6,797,484",2.25,1.81,930
+Massachusetts,2014,Cut/Pierce,46,"6,764,864",0.68,0.62,947
+Massachusetts,2014,Drowning (includes water transport),48,"6,764,864",0.71,0.64,893
+Massachusetts,2014,Fall,644,"6,764,864",9.52,7.69,"1,732"
+Massachusetts,2014,Fire/Flame,40,"6,764,864",0.59,0.58,553
+Massachusetts,2014,Firearm,226,"6,764,864",3.34,3.11,"5,456"
+Massachusetts,2014,Machinery,--,"6,764,864",--,--,--
+Massachusetts,2014,Natural/Environmental,11**,"6,764,864",0.16**,0.13**,3
+Massachusetts,2014,Drug Poisoning,"1,289","6,764,864",19.05,18.99,"31,411"
+Massachusetts,2014,Non-Drug Poisoning,98,"6,764,864",1.45,1.36,"1,550"
+Massachusetts,2014,Struck by / against,13**,"6,764,864",0.19**,0.18**,240
+Massachusetts,2014,Suffocation,405,"6,764,864",5.99,5.58,"7,666"
+Massachusetts,2014,"Motor vehicle, traffic",392,"6,764,864",5.8,5.4,"8,484"
+Massachusetts,2014,"Pedal cyclist, other",--,"6,764,864",--,--,--
+Massachusetts,2014,"Pedestrian, other",12**,"6,764,864",0.18**,0.18**,230
+Massachusetts,2014,"Transport, other land",10**,"6,764,864",0.15**,0.14**,319
+Massachusetts,2014,"Transport, other (excl. drown by water transp)",--,"6,764,864",--,--,--
+Massachusetts,2014,Other specified and classifiable,32,"6,764,864",0.47,0.46,710
+Massachusetts,2014,Other specified / NEC,29,"6,764,864",0.43,0.36,273
+Massachusetts,2014,Unspecified,144,"6,764,864",2.13,1.66,657
+Massachusetts,2013,Cut/Pierce,48,"6,715,158",0.72,0.65,981
+Massachusetts,2013,Drowning (includes water transport),85,"6,715,158",1.27,1.21,"2,031"
+Massachusetts,2013,Fall,646,"6,715,158",9.62,7.65,"1,481"
+Massachusetts,2013,Fire/Flame,30,"6,715,158",0.45,0.39,365
+Massachusetts,2013,Hot object/Substance,--,"6,715,158",--,--,--
+Massachusetts,2013,Firearm,213,"6,715,158",3.17,3.05,"5,590"
+Massachusetts,2013,Machinery,--,"6,715,158",--,--,--
+Massachusetts,2013,Natural/Environmental,18**,"6,715,158",0.27**,0.23**,192
+Massachusetts,2013,Drug Poisoning,"1,081","6,715,158",16.1,15.94,"25,275"
+Massachusetts,2013,Non-Drug Poisoning,79,"6,715,158",1.18,1.04,"1,185"
+Massachusetts,2013,Struck by / against,11**,"6,715,158",0.16**,0.14**,199
+Massachusetts,2013,Suffocation,372,"6,715,158",5.54,5.28,"7,206"
+Massachusetts,2013,"Motor vehicle, traffic",361,"6,715,158",5.38,4.97,"7,637"
+Massachusetts,2013,"Pedal cyclist, other",--,"6,715,158",--,--,--
+Massachusetts,2013,"Pedestrian, other",14**,"6,715,158",0.21**,0.19**,247
+Massachusetts,2013,"Transport, other land",13**,"6,715,158",0.19**,0.17**,182
+Massachusetts,2013,"Transport, other (excl. drown by water transp)",--,"6,715,158",--,--,--
+Massachusetts,2013,Other specified and classifiable,32,"6,715,158",0.48,0.45,801
+Massachusetts,2013,Other specified / NEC,37,"6,715,158",0.55,0.47,420
+Massachusetts,2013,Unspecified,152,"6,715,158",2.26,1.83,907
+Massachusetts,2012,Cut/Pierce,51,"6,664,269",0.77,0.73,"1,081"
+Massachusetts,2012,Drowning (includes water transport),65,"6,664,269",0.98,0.95,"1,641"
+Massachusetts,2012,Fall,648,"6,664,269",9.72,7.73,"1,617"
+Massachusetts,2012,Fire/Flame,26,"6,664,269",0.39,0.35,212
+Massachusetts,2012,Firearm,233,"6,664,269",3.5,3.37,"5,396"
+Massachusetts,2012,Machinery,--,"6,664,269",--,--,--
+Massachusetts,2012,Natural/Environmental,--,"6,664,269",--,--,--
+Massachusetts,2012,Drug Poisoning,859,"6,664,269",12.89,12.7,"20,040"
+Massachusetts,2012,Non-Drug Poisoning,87,"6,664,269",1.31,1.18,"1,280"
+Massachusetts,2012,Struck by / against,--,"6,664,269",--,--,--
+Massachusetts,2012,Suffocation,406,"6,664,269",6.09,5.66,"7,392"
+Massachusetts,2012,"Motor vehicle, traffic",376,"6,664,269",5.64,5.3,"7,934"
+Massachusetts,2012,"Pedal cyclist, other",--,"6,664,269",--,--,--
+Massachusetts,2012,"Pedestrian, other",--,"6,664,269",--,--,--
+Massachusetts,2012,"Transport, other land",17**,"6,664,269",0.26**,0.23**,334
+Massachusetts,2012,"Transport, other (excl. drown by water transp)",--,"6,664,269",--,--,--
+Massachusetts,2012,Other specified and classifiable,31,"6,664,269",0.47,0.43,588
+Massachusetts,2012,Other specified / NEC,35,"6,664,269",0.53,0.49,466
+Massachusetts,2012,Unspecified,127,"6,664,269",1.91,1.6,902
+Massachusetts,2011,Cut/Pierce,61,"6,614,218",0.92,0.86,"1,375"
+Massachusetts,2011,Drowning (includes water transport),74,"6,614,218",1.12,1.1,"1,834"
+Massachusetts,2011,Fall,603,"6,614,218",9.12,7.42,"1,303"
+Massachusetts,2011,Fire/Flame,34,"6,614,218",0.51,0.47,334
+Massachusetts,2011,Firearm,254,"6,614,218",3.84,3.69,"6,591"
+Massachusetts,2011,Machinery,--,"6,614,218",--,--,--
+Massachusetts,2011,Natural/Environmental,28,"6,614,218",0.42,0.35,276
+Massachusetts,2011,Drug Poisoning,857,"6,614,218",12.96,12.67,"20,011"
+Massachusetts,2011,Non-Drug Poisoning,126,"6,614,218",1.91,1.77,"1,912"
+Massachusetts,2011,Struck by / against,13**,"6,614,218",0.20**,0.20**,213
+Massachusetts,2011,Suffocation,424,"6,614,218",6.41,5.94,"7,490"
+Massachusetts,2011,"Motor vehicle, traffic",386,"6,614,218",5.84,5.48,"8,748"
+Massachusetts,2011,"Pedal cyclist, other",--,"6,614,218",--,--,--
+Massachusetts,2011,"Pedestrian, other",10**,"6,614,218",0.15**,0.16**,166
+Massachusetts,2011,"Transport, other land",10**,"6,614,218",0.15**,0.15**,268
+Massachusetts,2011,"Transport, other (excl. drown by water transp)",--,"6,614,218",--,--,--
+Massachusetts,2011,Other specified and classifiable,29,"6,614,218",0.44,0.41,606
+Massachusetts,2011,Other specified / NEC,32,"6,614,218",0.48,0.42,375
+Massachusetts,2011,Unspecified,160,"6,614,218",2.42,1.99,"1,086"
+Massachusetts,2010,Cut/Pierce,63,"6,547,788",0.96,0.92,"1,725"
+Massachusetts,2010,Drowning (includes water transport),79,"6,547,788",1.21,1.18,"2,046"
+Massachusetts,2010,Fall,539,"6,547,788",8.23,6.87,"1,646"
+Massachusetts,2010,Fire/Flame,30,"6,547,788",0.46,0.42,433
+Massachusetts,2010,Hot object/Substance,--,"6,547,788",--,--,--
+Massachusetts,2010,Firearm,270,"6,547,788",4.12,4.03,"7,405"
+Massachusetts,2010,Machinery,--,"6,547,788",--,--,--
+Massachusetts,2010,Natural/Environmental,21,"6,547,788",0.32,0.29,195
+Massachusetts,2010,Drug Poisoning,738,"6,547,788",11.27,11.03,"16,688"
+Massachusetts,2010,Non-Drug Poisoning,115,"6,547,788",1.76,1.67,"1,906"
+Massachusetts,2010,Struck by / against,--,"6,547,788",--,--,--
+Massachusetts,2010,Suffocation,413,"6,547,788",6.31,5.8,"7,655"
+Massachusetts,2010,"Motor vehicle, traffic",366,"6,547,788",5.59,5.2,"7,757"
+Massachusetts,2010,"Pedal cyclist, other",--,"6,547,788",--,--,--
+Massachusetts,2010,"Pedestrian, other",14**,"6,547,788",0.21**,0.19**,258
+Massachusetts,2010,"Transport, other land",20**,"6,547,788",0.31**,0.30**,511
+Massachusetts,2010,"Transport, other (excl. drown by water transp)",--,"6,547,788",--,--,--
+Massachusetts,2010,Other specified and classifiable,29,"6,547,788",0.44,0.43,680
+Massachusetts,2010,Other specified / NEC,36,"6,547,788",0.55,0.51,637
+Massachusetts,2010,Unspecified,204,"6,547,788",3.12,2.59,"1,834"
+Massachusetts,2009,Cut/Pierce,51,"6,517,613",0.78,0.77,"1,280"
+Massachusetts,2009,Drowning (includes water transport),75,"6,517,613",1.15,1.11,"1,736"
+Massachusetts,2009,Fall,522,"6,517,613",8.01,6.63,"1,654"
+Massachusetts,2009,Fire/Flame,30,"6,517,613",0.46,0.45,556
+Massachusetts,2009,Hot object/Substance,--,"6,517,613",--,--,--
+Massachusetts,2009,Firearm,207,"6,517,613",3.18,3.1,"5,667"
+Massachusetts,2009,Machinery,--,"6,517,613",--,--,--
+Massachusetts,2009,Natural/Environmental,13**,"6,517,613",0.20**,0.19**,241
+Massachusetts,2009,Drug Poisoning,816,"6,517,613",12.52,12.2,"18,840"
+Massachusetts,2009,Non-Drug Poisoning,118,"6,517,613",1.81,1.68,"1,912"
+Massachusetts,2009,Struck by / against,16**,"6,517,613",0.25**,0.24**,341
+Massachusetts,2009,Suffocation,379,"6,517,613",5.82,5.45,"6,495"
+Massachusetts,2009,"Motor vehicle, traffic",370,"6,517,613",5.68,5.37,"8,704"
+Massachusetts,2009,"Pedal cyclist, other",--,"6,517,613",--,--,--
+Massachusetts,2009,"Pedestrian, other",10**,"6,517,613",0.15**,0.15**,280
+Massachusetts,2009,"Transport, other land",27,"6,517,613",0.41,0.4,668
+Massachusetts,2009,"Transport, other (excl. drown by water transp)",--,"6,517,613",--,--,--
+Massachusetts,2009,Other specified and classifiable,34,"6,517,613",0.52,0.49,713
+Massachusetts,2009,Other specified / NEC,27,"6,517,613",0.41,0.4,408
+Massachusetts,2009,Unspecified,165,"6,517,613",2.53,2.08,"1,056"
+Massachusetts,2008,Cut/Pierce,64,"6,468,967",0.99,0.98,"1,655"
+Massachusetts,2008,Drowning (includes water transport),69,"6,468,967",1.07,1.03,"1,469"
+Massachusetts,2008,Fall,500,"6,468,967",7.73,6.51,"1,637"
+Massachusetts,2008,Fire/Flame,43,"6,468,967",0.67,0.61,728
+Massachusetts,2008,Hot object/Substance,--,"6,468,967",--,--,--
+Massachusetts,2008,Firearm,224,"6,468,967",3.46,3.34,"5,997"
+Massachusetts,2008,Machinery,--,"6,468,967",--,--,--
+Massachusetts,2008,Natural/Environmental,17**,"6,468,967",0.26**,0.22**,77
+Massachusetts,2008,Drug Poisoning,786,"6,468,967",12.15,11.91,"18,122"
+Massachusetts,2008,Non-Drug Poisoning,81,"6,468,967",1.25,1.19,"1,333"
+Massachusetts,2008,Struck by / against,--,"6,468,967",--,--,--
+Massachusetts,2008,Suffocation,350,"6,468,967",5.41,5.08,"6,605"
+Massachusetts,2008,"Motor vehicle, traffic",342,"6,468,967",5.29,4.96,"7,812"
+Massachusetts,2008,"Pedal cyclist, other",--,"6,468,967",--,--,--
+Massachusetts,2008,"Pedestrian, other",11**,"6,468,967",0.17**,0.16**,269
+Massachusetts,2008,"Transport, other land",43,"6,468,967",0.67,0.64,"1,090"
+Massachusetts,2008,"Transport, other (excl. drown by water transp)",--,"6,468,967",--,--,--
+Massachusetts,2008,Other specified and classifiable,16**,"6,468,967",0.25**,0.23**,328
+Massachusetts,2008,Other specified / NEC,41,"6,468,967",0.63,0.56,570
+Massachusetts,2008,Unspecified,186,"6,468,967",2.88,2.37,757
+Massachusetts,2007,Cut/Pierce,54,"6,431,559",0.84,0.81,"1,422"
+Massachusetts,2007,Drowning (includes water transport),79,"6,431,559",1.23,1.18,"1,879"
+Massachusetts,2007,Fall,480,"6,431,559",7.46,6.38,"1,957"
+Massachusetts,2007,Fire/Flame,36,"6,431,559",0.56,0.52,593
+Massachusetts,2007,Hot object/Substance,--,"6,431,559",--,--,--
+Massachusetts,2007,Firearm,235,"6,431,559",3.65,3.55,"6,539"
+Massachusetts,2007,Machinery,--,"6,431,559",--,--,--
+Massachusetts,2007,Natural/Environmental,22,"6,431,559",0.34,0.28,158
+Massachusetts,2007,Drug Poisoning,922,"6,431,559",14.34,13.97,"20,872"
+Massachusetts,2007,Non-Drug Poisoning,59,"6,431,559",0.92,0.9,"1,338"
+Massachusetts,2007,Struck by / against,13**,"6,431,559",0.20**,0.20**,364
+Massachusetts,2007,Suffocation,342,"6,431,559",5.32,5.01,"6,539"
+Massachusetts,2007,"Motor vehicle, traffic",422,"6,431,559",6.56,6.32,"10,854"
+Massachusetts,2007,"Pedal cyclist, other",--,"6,431,559",--,--,--
+Massachusetts,2007,"Pedestrian, other",--,"6,431,559",--,--,--
+Massachusetts,2007,"Transport, other land",36,"6,431,559",0.56,0.54,866
+Massachusetts,2007,"Transport, other (excl. drown by water transp)",--,"6,431,559",--,--,--
+Massachusetts,2007,Other specified and classifiable,36,"6,431,559",0.56,0.54,944
+Massachusetts,2007,Other specified / NEC,34,"6,431,559",0.53,0.49,640
+Massachusetts,2007,Unspecified,167,"6,431,559",2.6,2.17,969
+Massachusetts,2006,Cut/Pierce,56,"6,410,084",0.87,0.85,"1,306"
+Massachusetts,2006,Drowning (includes water transport),73,"6,410,084",1.14,1.16,"1,970"
+Massachusetts,2006,Fall,428,"6,410,084",6.68,5.75,"1,418"
+Massachusetts,2006,Fire/Flame,32,"6,410,084",0.5,0.47,473
+Massachusetts,2006,Hot object/Substance,--,"6,410,084",--,--,--
+Massachusetts,2006,Firearm,211,"6,410,084",3.29,3.22,"6,148"
+Massachusetts,2006,Machinery,--,"6,410,084",--,--,--
+Massachusetts,2006,Natural/Environmental,18**,"6,410,084",0.28**,0.26**,227
+Massachusetts,2006,Drug Poisoning,970,"6,410,084",15.13,14.65,"22,316"
+Massachusetts,2006,Non-Drug Poisoning,50,"6,410,084",0.78,0.76,"1,060"
+Massachusetts,2006,Struck by / against,28,"6,410,084",0.44,0.45,722
+Massachusetts,2006,Suffocation,290,"6,410,084",4.52,4.26,"5,202"
+Massachusetts,2006,"Motor vehicle, traffic",459,"6,410,084",7.16,6.81,"10,780"
+Massachusetts,2006,"Pedal cyclist, other",--,"6,410,084",--,--,--
+Massachusetts,2006,"Pedestrian, other",--,"6,410,084",--,--,--
+Massachusetts,2006,"Transport, other land",32,"6,410,084",0.5,0.49,761
+Massachusetts,2006,"Transport, other (excl. drown by water transp)",--,"6,410,084",--,--,--
+Massachusetts,2006,Other specified and classifiable,32,"6,410,084",0.5,0.49,679
+Massachusetts,2006,Other specified / NEC,29,"6,410,084",0.45,0.42,550
+Massachusetts,2006,Unspecified,200,"6,410,084",3.12,2.55,489
+Massachusetts,2005,Cut/Pierce,55,"6,403,290",0.86,0.84,"1,586"
+Massachusetts,2005,Drowning (includes water transport),82,"6,403,290",1.28,1.26,"2,261"
+Massachusetts,2005,Fall,284,"6,403,290",4.44,3.86,"1,473"
+Massachusetts,2005,Fire/Flame,44,"6,403,290",0.69,0.67,712
+Massachusetts,2005,Hot object/Substance,--,"6,403,290",--,--,--
+Massachusetts,2005,Firearm,224,"6,403,290",3.5,3.42,"5,713"
+Massachusetts,2005,Machinery,--,"6,403,290",--,--,--
+Massachusetts,2005,Natural/Environmental,18**,"6,403,290",0.28**,0.24**,110
+Massachusetts,2005,Drug Poisoning,780,"6,403,290",12.18,11.96,"18,993"
+Massachusetts,2005,Non-Drug Poisoning,41,"6,403,290",0.64,0.62,911
+Massachusetts,2005,Struck by / against,23,"6,403,290",0.36,0.34,417
+Massachusetts,2005,Suffocation,332,"6,403,290",5.19,4.96,"6,828"
+Massachusetts,2005,"Motor vehicle, traffic",459,"6,403,290",7.17,6.89,"10,799"
+Massachusetts,2005,"Pedal cyclist, other",--,"6,403,290",--,--,--
+Massachusetts,2005,"Pedestrian, other",--,"6,403,290",--,--,--
+Massachusetts,2005,"Transport, other land",29,"6,403,290",0.45,0.44,757
+Massachusetts,2005,"Transport, other (excl. drown by water transp)",--,"6,403,290",--,--,--
+Massachusetts,2005,Other specified and classifiable,15**,"6,403,290",0.23**,0.24**,482
+Massachusetts,2005,Other specified / NEC,28,"6,403,290",0.44,0.4,402
+Massachusetts,2005,Unspecified,232,"6,403,290",3.62,3.02,716
+Massachusetts,2004,Cut/Pierce,63,"6,412,281",0.98,0.96,"1,632"
+Massachusetts,2004,Drowning (includes water transport),83,"6,412,281",1.29,1.25,"1,915"
+Massachusetts,2004,Fall,299,"6,412,281",4.66,4.16,"1,821"
+Massachusetts,2004,Fire/Flame,40,"6,412,281",0.62,0.6,724
+Massachusetts,2004,Hot object/Substance,--,"6,412,281",--,--,--
+Massachusetts,2004,Firearm,206,"6,412,281",3.21,3.17,"5,861"
+Massachusetts,2004,Machinery,--,"6,412,281",--,--,--
+Massachusetts,2004,Natural/Environmental,20**,"6,412,281",0.31**,0.29**,197
+Massachusetts,2004,Drug Poisoning,669,"6,412,281",10.43,10.23,"16,771"
+Massachusetts,2004,Non-Drug Poisoning,36,"6,412,281",0.56,0.54,746
+Massachusetts,2004,Struck by / against,19**,"6,412,281",0.30**,0.29**,485
+Massachusetts,2004,Suffocation,302,"6,412,281",4.71,4.45,"5,467"
+Massachusetts,2004,"Motor vehicle, traffic",511,"6,412,281",7.97,7.74,"12,579"
+Massachusetts,2004,"Pedal cyclist, other",--,"6,412,281",--,--,--
+Massachusetts,2004,"Pedestrian, other",--,"6,412,281",--,--,--
+Massachusetts,2004,"Transport, other land",21,"6,412,281",0.33,0.32,584
+Massachusetts,2004,"Transport, other (excl. drown by water transp)",--,"6,412,281",--,--,--
+Massachusetts,2004,Other specified and classifiable,20**,"6,412,281",0.31**,0.31**,564
+Massachusetts,2004,Other specified / NEC,23,"6,412,281",0.36,0.33,467
+Massachusetts,2004,Unspecified,211,"6,412,281",3.29,2.82,912
+Massachusetts,2003,Cut/Pierce,51,"6,422,565",0.79,0.79,"1,468"
+Massachusetts,2003,Drowning (includes water transport),71,"6,422,565",1.11,1.09,"1,662"
+Massachusetts,2003,Fall,277,"6,422,565",4.31,3.85,"1,742"
+Massachusetts,2003,Fire/Flame,91,"6,422,565",1.42,1.38,"2,017"
+Massachusetts,2003,Hot object/Substance,--,"6,422,565",--,--,--
+Massachusetts,2003,Firearm,204,"6,422,565",3.18,3.09,"5,299"
+Massachusetts,2003,Machinery,--,"6,422,565",--,--,--
+Massachusetts,2003,Natural/Environmental,21,"6,422,565",0.33,0.3,306
+Massachusetts,2003,Drug Poisoning,823,"6,422,565",12.81,12.59,"21,352"
+Massachusetts,2003,Non-Drug Poisoning,39,"6,422,565",0.61,0.58,770
+Massachusetts,2003,Struck by / against,16**,"6,422,565",0.25**,0.24**,291
+Massachusetts,2003,Suffocation,308,"6,422,565",4.8,4.55,"5,535"
+Massachusetts,2003,"Motor vehicle, traffic",513,"6,422,565",7.99,7.81,"12,380"
+Massachusetts,2003,"Pedal cyclist, other",--,"6,422,565",--,--,--
+Massachusetts,2003,"Pedestrian, other",11**,"6,422,565",0.17**,0.17**,315
+Massachusetts,2003,"Transport, other land",16**,"6,422,565",0.25**,0.25**,501
+Massachusetts,2003,"Transport, other (excl. drown by water transp)",10**,"6,422,565",0.16**,0.15**,193
+Massachusetts,2003,Other specified and classifiable,21,"6,422,565",0.33,0.33,647
+Massachusetts,2003,Other specified / NEC,19**,"6,422,565",0.30**,0.27**,179
+Massachusetts,2003,Unspecified,225,"6,422,565",3.5,3.01,780
+Massachusetts,2002,Cut/Pierce,69,"6,417,206",1.08,1.06,"1,899"
+Massachusetts,2002,Drowning (includes water transport),65,"6,417,206",1.01,1.01,"1,910"
+Massachusetts,2002,Fall,250,"6,417,206",3.9,3.58,"1,957"
+Massachusetts,2002,Fire/Flame,58,"6,417,206",0.9,0.88,"1,063"
+Massachusetts,2002,Firearm,204,"6,417,206",3.18,3.13,"5,459"
+Massachusetts,2002,Machinery,--,"6,417,206",--,--,--
+Massachusetts,2002,Natural/Environmental,20**,"6,417,206",0.31**,0.29**,197
+Massachusetts,2002,Drug Poisoning,705,"6,417,206",10.99,10.71,"17,582"
+Massachusetts,2002,Non-Drug Poisoning,38,"6,417,206",0.59,0.58,895
+Massachusetts,2002,Struck by / against,27,"6,417,206",0.42,0.42,667
+Massachusetts,2002,Suffocation,318,"6,417,206",4.96,4.68,"5,335"
+Massachusetts,2002,"Motor vehicle, traffic",537,"6,417,206",8.37,8.18,"12,793"
+Massachusetts,2002,"Pedal cyclist, other",--,"6,417,206",--,--,--
+Massachusetts,2002,"Pedestrian, other",--,"6,417,206",--,--,--
+Massachusetts,2002,"Transport, other land",31,"6,417,206",0.48,0.47,782
+Massachusetts,2002,"Transport, other (excl. drown by water transp)",--,"6,417,206",--,--,--
+Massachusetts,2002,Other specified and classifiable,27,"6,417,206",0.42,0.42,593
+Massachusetts,2002,Other specified / NEC,22,"6,417,206",0.34,0.33,232
+Massachusetts,2002,Unspecified,257,"6,417,206",4.01,3.49,758
+Massachusetts,2001,Cut/Pierce,53,"6,397,634",0.83,0.82,"1,542"
+Massachusetts,2001,Drowning (includes water transport),72,"6,397,634",1.13,1.09,"1,807"
+Massachusetts,2001,Fall,264,"6,397,634",4.13,3.78,"1,669"
+Massachusetts,2001,Fire/Flame,59,"6,397,634",0.92,0.87,866
+Massachusetts,2001,Hot object/Substance,--,"6,397,634",--,--,--
+Massachusetts,2001,Firearm,194,"6,397,634",3.03,3,"5,152"
+Massachusetts,2001,Machinery,--,"6,397,634",--,--,--
+Massachusetts,2001,Natural/Environmental,28,"6,397,634",0.44,0.41,211
+Massachusetts,2001,Drug Poisoning,689,"6,397,634",10.77,10.46,"17,878"
+Massachusetts,2001,Non-Drug Poisoning,45,"6,397,634",0.7,0.68,"1,016"
+Massachusetts,2001,Struck by / against,24,"6,397,634",0.38,0.37,594
+Massachusetts,2001,Suffocation,285,"6,397,634",4.46,4.24,"5,169"
+Massachusetts,2001,"Motor vehicle, traffic",540,"6,397,634",8.44,8.28,"13,235"
+Massachusetts,2001,"Pedal cyclist, other",--,"6,397,634",--,--,--
+Massachusetts,2001,"Pedestrian, other",13**,"6,397,634",0.20**,0.20**,234
+Massachusetts,2001,"Transport, other land",25,"6,397,634",0.39,0.39,624
+Massachusetts,2001,"Transport, other (excl. drown by water transp)",107,"6,397,634",1.67,1.62,"2,559"
+Massachusetts,2001,Other specified and classifiable,28,"6,397,634",0.44,0.43,802
+Massachusetts,2001,Other specified / NEC,24,"6,397,634",0.38,0.36,393
+Massachusetts,2001,Unspecified,326,"6,397,634",5.1,4.49,827
+Total,,,"74,479","139,463,366",53.4,49.81,"1,328,527"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Massachusetts,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

@@ -1,0 +1,385 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Rhode Island,2021,Cut/Pierce,--,"1,095,610",--,--,--
+Rhode Island,2021,Drowning (includes water transport),23,"1,095,610",2.1,1.96,469
+Rhode Island,2021,Fall,252,"1,095,610",23,17.08,188
+Rhode Island,2021,Fire/Flame,14**,"1,095,610",1.28**,1.13**,138
+Rhode Island,2021,Hot object/Substance,--,"1,095,610",--,--,--
+Rhode Island,2021,Firearm,64,"1,095,610",5.84,5.64,"1,488"
+Rhode Island,2021,Machinery,--,"1,095,610",--,--,--
+Rhode Island,2021,Natural/Environmental,--,"1,095,610",--,--,--
+Rhode Island,2021,Drug Poisoning,455,"1,095,610",41.53,41.72,"9,734"
+Rhode Island,2021,Non-Drug Poisoning,26,"1,095,610",2.37,2.25,440
+Rhode Island,2021,Struck by / against,--,"1,095,610",--,--,--
+Rhode Island,2021,Suffocation,63,"1,095,610",5.75,5.27,"1,049"
+Rhode Island,2021,"Motor vehicle, traffic",78,"1,095,610",7.12,6.51,"1,511"
+Rhode Island,2021,"Pedal cyclist, other",--,"1,095,610",--,--,--
+Rhode Island,2021,"Pedestrian, other",--,"1,095,610",--,--,--
+Rhode Island,2021,"Transport, other land",--,"1,095,610",--,--,--
+Rhode Island,2021,Other specified and classifiable,--,"1,095,610",--,--,--
+Rhode Island,2021,Other specified / NEC,--,"1,095,610",--,--,--
+Rhode Island,2021,Unspecified,35,"1,095,610",3.2,2.35,134
+Rhode Island,2020,Cut/Pierce,--,"1,096,229",--,--,--
+Rhode Island,2020,Drowning (includes water transport),14**,"1,096,229",1.28**,1.37**,395
+Rhode Island,2020,Fall,234,"1,096,229",21.35,15.89,197
+Rhode Island,2020,Fire/Flame,--,"1,096,229",--,--,--
+Rhode Island,2020,Firearm,54,"1,096,229",4.93,4.78,"1,296"
+Rhode Island,2020,Natural/Environmental,--,"1,096,229",--,--,--
+Rhode Island,2020,Drug Poisoning,397,"1,096,229",36.22,36.73,"8,752"
+Rhode Island,2020,Non-Drug Poisoning,23,"1,096,229",2.1,1.81,320
+Rhode Island,2020,Suffocation,54,"1,096,229",4.93,4.38,819
+Rhode Island,2020,"Motor vehicle, traffic",69,"1,096,229",6.29,5.66,"1,183"
+Rhode Island,2020,"Pedal cyclist, other",--,"1,096,229",--,--,--
+Rhode Island,2020,"Pedestrian, other",--,"1,096,229",--,--,--
+Rhode Island,2020,"Transport, other land",--,"1,096,229",--,--,--
+Rhode Island,2020,"Transport, other (excl. drown by water transp)",--,"1,096,229",--,--,--
+Rhode Island,2020,Other specified and classifiable,--,"1,096,229",--,--,--
+Rhode Island,2020,Other specified / NEC,--,"1,096,229",--,--,--
+Rhode Island,2020,Unspecified,33,"1,096,229",3.01,2.4,100
+Rhode Island,2019,Cut/Pierce,10**,"1,058,158",0.95**,0.86**,188
+Rhode Island,2019,Drowning (includes water transport),15**,"1,058,158",1.42**,1.50**,421
+Rhode Island,2019,Fall,198,"1,058,158",18.71,13.52,246
+Rhode Island,2019,Fire/Flame,--,"1,058,158",--,--,--
+Rhode Island,2019,Firearm,48,"1,058,158",4.54,4.59,891
+Rhode Island,2019,Machinery,--,"1,058,158",--,--,--
+Rhode Island,2019,Natural/Environmental,--,"1,058,158",--,--,--
+Rhode Island,2019,Drug Poisoning,307,"1,058,158",29.01,29.6,"6,709"
+Rhode Island,2019,Non-Drug Poisoning,33,"1,058,158",3.12,2.76,509
+Rhode Island,2019,Struck by / against,--,"1,058,158",--,--,--
+Rhode Island,2019,Suffocation,76,"1,058,158",7.18,6.52,"1,062"
+Rhode Island,2019,"Motor vehicle, traffic",71,"1,058,158",6.71,6.17,"1,281"
+Rhode Island,2019,"Pedal cyclist, other",--,"1,058,158",--,--,--
+Rhode Island,2019,"Pedestrian, other",--,"1,058,158",--,--,--
+Rhode Island,2019,"Transport, other land",--,"1,058,158",--,--,--
+Rhode Island,2019,"Transport, other (excl. drown by water transp)",--,"1,058,158",--,--,--
+Rhode Island,2019,Other specified and classifiable,--,"1,058,158",--,--,--
+Rhode Island,2019,Other specified / NEC,--,"1,058,158",--,--,--
+Rhode Island,2019,Unspecified,32,"1,058,158",3.02,2.33,198
+Rhode Island,2018,Cut/Pierce,--,"1,059,338",--,--,--
+Rhode Island,2018,Drowning (includes water transport),16**,"1,059,338",1.51**,1.49**,309
+Rhode Island,2018,Fall,245,"1,059,338",23.13,15.92,369
+Rhode Island,2018,Fire/Flame,--,"1,059,338",--,--,--
+Rhode Island,2018,Firearm,37,"1,059,338",3.49,3.28,847
+Rhode Island,2018,Machinery,--,"1,059,338",--,--,--
+Rhode Island,2018,Natural/Environmental,--,"1,059,338",--,--,--
+Rhode Island,2018,Drug Poisoning,317,"1,059,338",29.92,30.05,"6,597"
+Rhode Island,2018,Non-Drug Poisoning,30,"1,059,338",2.83,2.5,394
+Rhode Island,2018,Struck by / against,--,"1,059,338",--,--,--
+Rhode Island,2018,Suffocation,84,"1,059,338",7.93,7.36,"1,359"
+Rhode Island,2018,"Motor vehicle, traffic",66,"1,059,338",6.23,6.02,"1,507"
+Rhode Island,2018,"Pedal cyclist, other",--,"1,059,338",--,--,--
+Rhode Island,2018,"Pedestrian, other",--,"1,059,338",--,--,--
+Rhode Island,2018,"Transport, other land",--,"1,059,338",--,--,--
+Rhode Island,2018,Other specified and classifiable,--,"1,059,338",--,--,--
+Rhode Island,2018,Other specified / NEC,--,"1,059,338",--,--,--
+Rhode Island,2018,Unspecified,27,"1,059,338",2.55,1.74,32
+Rhode Island,2017,Cut/Pierce,--,"1,056,554",--,--,--
+Rhode Island,2017,Drowning (includes water transport),13**,"1,056,554",1.23**,1.18**,176
+Rhode Island,2017,Fall,216,"1,056,554",20.44,14.81,267
+Rhode Island,2017,Fire/Flame,--,"1,056,554",--,--,--
+Rhode Island,2017,Firearm,43,"1,056,554",4.07,3.86,895
+Rhode Island,2017,Natural/Environmental,--,"1,056,554",--,--,--
+Rhode Island,2017,Drug Poisoning,320,"1,056,554",30.29,31.31,"7,129"
+Rhode Island,2017,Non-Drug Poisoning,35,"1,056,554",3.31,2.7,413
+Rhode Island,2017,Struck by / against,--,"1,056,554",--,--,--
+Rhode Island,2017,Suffocation,85,"1,056,554",8.05,7.25,"1,504"
+Rhode Island,2017,"Motor vehicle, traffic",102,"1,056,554",9.65,9.19,"2,132"
+Rhode Island,2017,"Pedestrian, other",--,"1,056,554",--,--,--
+Rhode Island,2017,"Transport, other land",--,"1,056,554",--,--,--
+Rhode Island,2017,"Transport, other (excl. drown by water transp)",--,"1,056,554",--,--,--
+Rhode Island,2017,Other specified and classifiable,--,"1,056,554",--,--,--
+Rhode Island,2017,Other specified / NEC,--,"1,056,554",--,--,--
+Rhode Island,2017,Unspecified,32,"1,056,554",3.03,2.21,93
+Rhode Island,2016,Cut/Pierce,11**,"1,057,816",1.04**,0.97**,161
+Rhode Island,2016,Drowning (includes water transport),22,"1,057,816",2.08,1.99,455
+Rhode Island,2016,Fall,211,"1,057,816",19.95,14.34,446
+Rhode Island,2016,Fire/Flame,--,"1,057,816",--,--,--
+Rhode Island,2016,Firearm,49,"1,057,816",4.63,4.02,902
+Rhode Island,2016,Machinery,--,"1,057,816",--,--,--
+Rhode Island,2016,Natural/Environmental,--,"1,057,816",--,--,--
+Rhode Island,2016,Drug Poisoning,326,"1,057,816",30.82,30.91,"7,278"
+Rhode Island,2016,Non-Drug Poisoning,33,"1,057,816",3.12,2.89,472
+Rhode Island,2016,Struck by / against,--,"1,057,816",--,--,--
+Rhode Island,2016,Suffocation,65,"1,057,816",6.15,5.71,"1,194"
+Rhode Island,2016,"Motor vehicle, traffic",56,"1,057,816",5.29,4.99,"1,400"
+Rhode Island,2016,"Pedestrian, other",--,"1,057,816",--,--,--
+Rhode Island,2016,"Transport, other land",--,"1,057,816",--,--,--
+Rhode Island,2016,Other specified and classifiable,--,"1,057,816",--,--,--
+Rhode Island,2016,Other specified / NEC,11**,"1,057,816",1.04**,0.87**,132
+Rhode Island,2016,Unspecified,31,"1,057,816",2.93,2.27,309
+Rhode Island,2015,Cut/Pierce,--,"1,056,886",--,--,--
+Rhode Island,2015,Drowning (includes water transport),13**,"1,056,886",1.23**,1.19**,368
+Rhode Island,2015,Fall,191,"1,056,886",18.07,12.76,432
+Rhode Island,2015,Fire/Flame,--,"1,056,886",--,--,--
+Rhode Island,2015,Firearm,51,"1,056,886",4.83,4.67,"1,049"
+Rhode Island,2015,Machinery,--,"1,056,886",--,--,--
+Rhode Island,2015,Natural/Environmental,--,"1,056,886",--,--,--
+Rhode Island,2015,Drug Poisoning,310,"1,056,886",29.33,28.16,"6,702"
+Rhode Island,2015,Non-Drug Poisoning,33,"1,056,886",3.12,2.83,438
+Rhode Island,2015,Struck by / against,--,"1,056,886",--,--,--
+Rhode Island,2015,Suffocation,81,"1,056,886",7.66,7.14,"1,599"
+Rhode Island,2015,"Motor vehicle, traffic",52,"1,056,886",4.92,4.63,"1,328"
+Rhode Island,2015,"Pedal cyclist, other",--,"1,056,886",--,--,--
+Rhode Island,2015,"Pedestrian, other",--,"1,056,886",--,--,--
+Rhode Island,2015,"Transport, other land",--,"1,056,886",--,--,--
+Rhode Island,2015,Other specified and classifiable,--,"1,056,886",--,--,--
+Rhode Island,2015,Other specified / NEC,--,"1,056,886",--,--,--
+Rhode Island,2015,Unspecified,49,"1,056,886",4.64,3.75,214
+Rhode Island,2014,Cut/Pierce,--,"1,056,511",--,--,--
+Rhode Island,2014,Drowning (includes water transport),13**,"1,056,511",1.23**,1.20**,328
+Rhode Island,2014,Fall,201,"1,056,511",19.03,13.76,753
+Rhode Island,2014,Fire/Flame,--,"1,056,511",--,--,--
+Rhode Island,2014,Firearm,34,"1,056,511",3.22,2.96,820
+Rhode Island,2014,Machinery,--,"1,056,511",--,--,--
+Rhode Island,2014,Natural/Environmental,--,"1,056,511",--,--,--
+Rhode Island,2014,Drug Poisoning,247,"1,056,511",23.38,23.47,"5,259"
+Rhode Island,2014,Non-Drug Poisoning,35,"1,056,511",3.31,2.76,486
+Rhode Island,2014,Struck by / against,--,"1,056,511",--,--,--
+Rhode Island,2014,Suffocation,84,"1,056,511",7.95,7.14,"1,351"
+Rhode Island,2014,"Motor vehicle, traffic",59,"1,056,511",5.58,5.22,"1,056"
+Rhode Island,2014,"Pedal cyclist, other",--,"1,056,511",--,--,--
+Rhode Island,2014,"Pedestrian, other",--,"1,056,511",--,--,--
+Rhode Island,2014,"Transport, other land",--,"1,056,511",--,--,--
+Rhode Island,2014,"Transport, other (excl. drown by water transp)",--,"1,056,511",--,--,--
+Rhode Island,2014,Other specified and classifiable,--,"1,056,511",--,--,--
+Rhode Island,2014,Other specified / NEC,14**,"1,056,511",1.33**,1.13**,109
+Rhode Island,2014,Unspecified,34,"1,056,511",3.22,2.67,295
+Rhode Island,2013,Cut/Pierce,--,"1,055,560",--,--,--
+Rhode Island,2013,Drowning (includes water transport),18**,"1,055,560",1.71**,1.69**,284
+Rhode Island,2013,Fall,154,"1,055,560",14.59,10.81,328
+Rhode Island,2013,Fire/Flame,13**,"1,055,560",1.23**,0.98**,125
+Rhode Island,2013,Hot object/Substance,--,"1,055,560",--,--,--
+Rhode Island,2013,Firearm,56,"1,055,560",5.31,5.24,"1,315"
+Rhode Island,2013,Natural/Environmental,--,"1,055,560",--,--,--
+Rhode Island,2013,Drug Poisoning,241,"1,055,560",22.83,22.35,"4,934"
+Rhode Island,2013,Non-Drug Poisoning,20**,"1,055,560",1.90**,1.79**,364
+Rhode Island,2013,Struck by / against,--,"1,055,560",--,--,--
+Rhode Island,2013,Suffocation,80,"1,055,560",7.58,7.1,"1,372"
+Rhode Island,2013,"Motor vehicle, traffic",73,"1,055,560",6.92,6.21,"1,474"
+Rhode Island,2013,"Pedal cyclist, other",--,"1,055,560",--,--,--
+Rhode Island,2013,"Pedestrian, other",--,"1,055,560",--,--,--
+Rhode Island,2013,"Transport, other land",--,"1,055,560",--,--,--
+Rhode Island,2013,Other specified and classifiable,--,"1,055,560",--,--,--
+Rhode Island,2013,Other specified / NEC,13**,"1,055,560",1.23**,0.95**,91
+Rhode Island,2013,Unspecified,26,"1,055,560",2.46,2.04,219
+Rhode Island,2012,Cut/Pierce,--,"1,054,893",--,--,--
+Rhode Island,2012,Drowning (includes water transport),13**,"1,054,893",1.23**,1.12**,237
+Rhode Island,2012,Fall,159,"1,054,893",15.07,11.04,395
+Rhode Island,2012,Fire/Flame,--,"1,054,893",--,--,--
+Rhode Island,2012,Hot object/Substance,--,"1,054,893",--,--,--
+Rhode Island,2012,Firearm,42,"1,054,893",3.98,4.1,"1,111"
+Rhode Island,2012,Natural/Environmental,--,"1,054,893",--,--,--
+Rhode Island,2012,Drug Poisoning,196,"1,054,893",18.58,18.07,"3,941"
+Rhode Island,2012,Non-Drug Poisoning,25,"1,054,893",2.37,2.18,387
+Rhode Island,2012,Struck by / against,--,"1,054,893",--,--,--
+Rhode Island,2012,Suffocation,70,"1,054,893",6.64,5.93,"1,264"
+Rhode Island,2012,"Motor vehicle, traffic",73,"1,054,893",6.92,6.9,"1,563"
+Rhode Island,2012,"Pedal cyclist, other",--,"1,054,893",--,--,--
+Rhode Island,2012,"Pedestrian, other",--,"1,054,893",--,--,--
+Rhode Island,2012,"Transport, other land",--,"1,054,893",--,--,--
+Rhode Island,2012,"Transport, other (excl. drown by water transp)",--,"1,054,893",--,--,--
+Rhode Island,2012,Other specified and classifiable,--,"1,054,893",--,--,--
+Rhode Island,2012,Other specified / NEC,--,"1,054,893",--,--,--
+Rhode Island,2012,Unspecified,37,"1,054,893",3.51,2.69,250
+Rhode Island,2011,Cut/Pierce,--,"1,053,829",--,--,--
+Rhode Island,2011,Drowning (includes water transport),15**,"1,053,829",1.42**,1.35**,457
+Rhode Island,2011,Fall,178,"1,053,829",16.89,12.36,441
+Rhode Island,2011,Fire/Flame,13**,"1,053,829",1.23**,1.08**,99
+Rhode Island,2011,Firearm,33,"1,053,829",3.13,3.01,889
+Rhode Island,2011,Natural/Environmental,--,"1,053,829",--,--,--
+Rhode Island,2011,Drug Poisoning,190,"1,053,829",18.03,17.54,"3,687"
+Rhode Island,2011,Non-Drug Poisoning,32,"1,053,829",3.04,2.67,414
+Rhode Island,2011,Struck by / against,--,"1,053,829",--,--,--
+Rhode Island,2011,Suffocation,76,"1,053,829",7.21,6.42,"1,161"
+Rhode Island,2011,"Motor vehicle, traffic",73,"1,053,829",6.93,6.75,"1,610"
+Rhode Island,2011,"Pedal cyclist, other",--,"1,053,829",--,--,--
+Rhode Island,2011,"Pedestrian, other",--,"1,053,829",--,--,--
+Rhode Island,2011,"Transport, other land",--,"1,053,829",--,--,--
+Rhode Island,2011,Other specified and classifiable,--,"1,053,829",--,--,--
+Rhode Island,2011,Other specified / NEC,--,"1,053,829",--,--,--
+Rhode Island,2011,Unspecified,35,"1,053,829",3.32,2.62,182
+Rhode Island,2010,Cut/Pierce,--,"1,052,970",--,--,--
+Rhode Island,2010,Drowning (includes water transport),11**,"1,052,970",1.05**,1.07**,281
+Rhode Island,2010,Fall,145,"1,052,970",13.77,10.45,407
+Rhode Island,2010,Fire/Flame,13**,"1,052,970",1.24**,1.23**,439
+Rhode Island,2010,Firearm,49,"1,052,970",4.65,4.6,"1,151"
+Rhode Island,2010,Machinery,--,"1,052,970",--,--,--
+Rhode Island,2010,Natural/Environmental,--,"1,052,970",--,--,--
+Rhode Island,2010,Drug Poisoning,167,"1,052,970",15.86,15.68,"3,458"
+Rhode Island,2010,Non-Drug Poisoning,24,"1,052,970",2.28,2.18,402
+Rhode Island,2010,Struck by / against,--,"1,052,970",--,--,--
+Rhode Island,2010,Suffocation,81,"1,052,970",7.69,7.46,"1,581"
+Rhode Island,2010,"Motor vehicle, traffic",86,"1,052,970",8.17,7.83,"1,842"
+Rhode Island,2010,"Pedal cyclist, other",--,"1,052,970",--,--,--
+Rhode Island,2010,"Pedestrian, other",--,"1,052,970",--,--,--
+Rhode Island,2010,"Transport, other land",--,"1,052,970",--,--,--
+Rhode Island,2010,Other specified and classifiable,--,"1,052,970",--,--,--
+Rhode Island,2010,Other specified / NEC,--,"1,052,970",--,--,--
+Rhode Island,2010,Unspecified,31,"1,052,970",2.94,2.48,201
+Rhode Island,2009,Cut/Pierce,--,"1,053,646",--,--,--
+Rhode Island,2009,Drowning (includes water transport),15**,"1,053,646",1.42**,1.38**,432
+Rhode Island,2009,Fall,125,"1,053,646",11.86,8.87,303
+Rhode Island,2009,Fire/Flame,--,"1,053,646",--,--,--
+Rhode Island,2009,Firearm,56,"1,053,646",5.32,5.02,"1,333"
+Rhode Island,2009,Machinery,--,"1,053,646",--,--,--
+Rhode Island,2009,Natural/Environmental,--,"1,053,646",--,--,--
+Rhode Island,2009,Drug Poisoning,161,"1,053,646",15.28,14.71,"3,424"
+Rhode Island,2009,Non-Drug Poisoning,18**,"1,053,646",1.71**,1.63**,364
+Rhode Island,2009,Struck by / against,--,"1,053,646",--,--,--
+Rhode Island,2009,Suffocation,55,"1,053,646",5.22,5.08,"1,136"
+Rhode Island,2009,"Motor vehicle, traffic",84,"1,053,646",7.97,7.66,"2,062"
+Rhode Island,2009,"Pedestrian, other",--,"1,053,646",--,--,--
+Rhode Island,2009,"Transport, other (excl. drown by water transp)",--,"1,053,646",--,--,--
+Rhode Island,2009,Other specified and classifiable,--,"1,053,646",--,--,--
+Rhode Island,2009,Other specified / NEC,--,"1,053,646",--,--,--
+Rhode Island,2009,Unspecified,32,"1,053,646",3.04,2.46,293
+Rhode Island,2008,Cut/Pierce,10**,"1,055,003",0.95**,0.96**,304
+Rhode Island,2008,Drowning (includes water transport),14**,"1,055,003",1.33**,1.32**,333
+Rhode Island,2008,Fall,151,"1,055,003",14.31,10.9,300
+Rhode Island,2008,Fire/Flame,11**,"1,055,003",1.04**,0.95**,210
+Rhode Island,2008,Firearm,44,"1,055,003",4.17,3.94,"1,007"
+Rhode Island,2008,Natural/Environmental,--,"1,055,003",--,--,--
+Rhode Island,2008,Drug Poisoning,185,"1,055,003",17.54,17.32,"4,092"
+Rhode Island,2008,Non-Drug Poisoning,27,"1,055,003",2.56,2.6,570
+Rhode Island,2008,Suffocation,60,"1,055,003",5.69,5.3,"1,114"
+Rhode Island,2008,"Motor vehicle, traffic",72,"1,055,003",6.83,6.46,"1,769"
+Rhode Island,2008,"Pedal cyclist, other",--,"1,055,003",--,--,--
+Rhode Island,2008,"Transport, other (excl. drown by water transp)",--,"1,055,003",--,--,--
+Rhode Island,2008,Other specified and classifiable,--,"1,055,003",--,--,--
+Rhode Island,2008,Other specified / NEC,12**,"1,055,003",1.14**,0.95**,105
+Rhode Island,2008,Unspecified,29,"1,055,003",2.75,2.11,102
+Rhode Island,2007,Cut/Pierce,--,"1,057,315",--,--,--
+Rhode Island,2007,Drowning (includes water transport),--,"1,057,315",--,--,--
+Rhode Island,2007,Fall,151,"1,057,315",14.28,11.05,350
+Rhode Island,2007,Fire/Flame,--,"1,057,315",--,--,--
+Rhode Island,2007,Firearm,37,"1,057,315",3.5,3.4,873
+Rhode Island,2007,Natural/Environmental,--,"1,057,315",--,--,--
+Rhode Island,2007,Drug Poisoning,135,"1,057,315",12.77,12.39,"2,796"
+Rhode Island,2007,Non-Drug Poisoning,20**,"1,057,315",1.89**,1.78**,386
+Rhode Island,2007,Struck by / against,--,"1,057,315",--,--,--
+Rhode Island,2007,Suffocation,64,"1,057,315",6.05,5.7,"1,072"
+Rhode Island,2007,"Motor vehicle, traffic",79,"1,057,315",7.47,7.08,"2,192"
+Rhode Island,2007,"Pedestrian, other",--,"1,057,315",--,--,--
+Rhode Island,2007,"Transport, other land",--,"1,057,315",--,--,--
+Rhode Island,2007,"Transport, other (excl. drown by water transp)",--,"1,057,315",--,--,--
+Rhode Island,2007,Other specified and classifiable,--,"1,057,315",--,--,--
+Rhode Island,2007,Other specified / NEC,--,"1,057,315",--,--,--
+Rhode Island,2007,Unspecified,24,"1,057,315",2.27,1.86,286
+Rhode Island,2006,Cut/Pierce,10**,"1,063,096",0.94**,0.95**,211
+Rhode Island,2006,Drowning (includes water transport),18**,"1,063,096",1.69**,1.63**,479
+Rhode Island,2006,Fall,149,"1,063,096",14.02,10.94,378
+Rhode Island,2006,Fire/Flame,--,"1,063,096",--,--,--
+Rhode Island,2006,Firearm,47,"1,063,096",4.42,4.22,"1,361"
+Rhode Island,2006,Machinery,--,"1,063,096",--,--,--
+Rhode Island,2006,Natural/Environmental,--,"1,063,096",--,--,--
+Rhode Island,2006,Drug Poisoning,175,"1,063,096",16.46,16.38,"4,082"
+Rhode Island,2006,Non-Drug Poisoning,--,"1,063,096",--,--,--
+Rhode Island,2006,Struck by / against,--,"1,063,096",--,--,--
+Rhode Island,2006,Suffocation,64,"1,063,096",6.02,5.52,"1,060"
+Rhode Island,2006,"Motor vehicle, traffic",86,"1,063,096",8.09,7.49,"2,198"
+Rhode Island,2006,"Pedestrian, other",--,"1,063,096",--,--,--
+Rhode Island,2006,"Transport, other land",--,"1,063,096",--,--,--
+Rhode Island,2006,Other specified and classifiable,--,"1,063,096",--,--,--
+Rhode Island,2006,Other specified / NEC,--,"1,063,096",--,--,--
+Rhode Island,2006,Unspecified,20**,"1,063,096",1.88**,1.77**,343
+Rhode Island,2005,Cut/Pierce,--,"1,067,916",--,--,--
+Rhode Island,2005,Drowning (includes water transport),17**,"1,067,916",1.59**,1.54**,408
+Rhode Island,2005,Fall,141,"1,067,916",13.2,10.43,282
+Rhode Island,2005,Fire/Flame,--,"1,067,916",--,--,--
+Rhode Island,2005,Firearm,39,"1,067,916",3.65,3.6,"1,115"
+Rhode Island,2005,Machinery,--,"1,067,916",--,--,--
+Rhode Island,2005,Natural/Environmental,--,"1,067,916",--,--,--
+Rhode Island,2005,Drug Poisoning,156,"1,067,916",14.61,14.28,"3,302"
+Rhode Island,2005,Non-Drug Poisoning,12**,"1,067,916",1.12**,1.09**,156
+Rhode Island,2005,Suffocation,41,"1,067,916",3.84,3.55,711
+Rhode Island,2005,"Motor vehicle, traffic",85,"1,067,916",7.96,7.66,"2,185"
+Rhode Island,2005,"Pedal cyclist, other",--,"1,067,916",--,--,--
+Rhode Island,2005,"Pedestrian, other",--,"1,067,916",--,--,--
+Rhode Island,2005,"Transport, other land",--,"1,067,916",--,--,--
+Rhode Island,2005,"Transport, other (excl. drown by water transp)",--,"1,067,916",--,--,--
+Rhode Island,2005,Other specified and classifiable,--,"1,067,916",--,--,--
+Rhode Island,2005,Other specified / NEC,--,"1,067,916",--,--,--
+Rhode Island,2005,Unspecified,19**,"1,067,916",1.78**,1.59**,345
+Rhode Island,2004,Cut/Pierce,--,"1,074,579",--,--,--
+Rhode Island,2004,Drowning (includes water transport),15**,"1,074,579",1.40**,1.37**,342
+Rhode Island,2004,Fall,126,"1,074,579",11.73,9.4,483
+Rhode Island,2004,Fire/Flame,--,"1,074,579",--,--,--
+Rhode Island,2004,Firearm,41,"1,074,579",3.82,3.61,"1,135"
+Rhode Island,2004,Machinery,--,"1,074,579",--,--,--
+Rhode Island,2004,Natural/Environmental,--,"1,074,579",--,--,--
+Rhode Island,2004,Drug Poisoning,106,"1,074,579",9.86,9.71,"2,512"
+Rhode Island,2004,Non-Drug Poisoning,--,"1,074,579",--,--,--
+Rhode Island,2004,Struck by / against,--,"1,074,579",--,--,--
+Rhode Island,2004,Suffocation,62,"1,074,579",5.77,5.51,"1,195"
+Rhode Island,2004,"Motor vehicle, traffic",99,"1,074,579",9.21,8.87,"2,504"
+Rhode Island,2004,"Transport, other land",--,"1,074,579",--,--,--
+Rhode Island,2004,"Transport, other (excl. drown by water transp)",--,"1,074,579",--,--,--
+Rhode Island,2004,Other specified and classifiable,--,"1,074,579",--,--,--
+Rhode Island,2004,Other specified / NEC,10**,"1,074,579",0.93**,0.89**,178
+Rhode Island,2004,Unspecified,20**,"1,074,579",1.86**,1.71**,280
+Rhode Island,2003,Cut/Pierce,--,"1,071,342",--,--,--
+Rhode Island,2003,Drowning (includes water transport),18**,"1,071,342",1.68**,1.68**,451
+Rhode Island,2003,Fall,130,"1,071,342",12.13,9.81,194
+Rhode Island,2003,Fire/Flame,64,"1,071,342",5.97,6.21,"1,897"
+Rhode Island,2003,Firearm,35,"1,071,342",3.27,3.12,"1,047"
+Rhode Island,2003,Machinery,--,"1,071,342",--,--,--
+Rhode Island,2003,Natural/Environmental,--,"1,071,342",--,--,--
+Rhode Island,2003,Drug Poisoning,146,"1,071,342",13.63,13.69,"3,496"
+Rhode Island,2003,Non-Drug Poisoning,11**,"1,071,342",1.03**,1.03**,252
+Rhode Island,2003,Struck by / against,--,"1,071,342",--,--,--
+Rhode Island,2003,Suffocation,66,"1,071,342",6.16,5.93,"1,285"
+Rhode Island,2003,"Motor vehicle, traffic",102,"1,071,342",9.52,9.26,"2,978"
+Rhode Island,2003,"Transport, other land",--,"1,071,342",--,--,--
+Rhode Island,2003,"Transport, other (excl. drown by water transp)",--,"1,071,342",--,--,--
+Rhode Island,2003,Other specified and classifiable,--,"1,071,342",--,--,--
+Rhode Island,2003,Other specified / NEC,--,"1,071,342",--,--,--
+Rhode Island,2003,Unspecified,23,"1,071,342",2.15,1.83,173
+Rhode Island,2002,Cut/Pierce,--,"1,065,995",--,--,--
+Rhode Island,2002,Drowning (includes water transport),13**,"1,065,995",1.22**,1.20**,327
+Rhode Island,2002,Fall,91,"1,065,995",8.54,6.99,258
+Rhode Island,2002,Fire/Flame,17**,"1,065,995",1.60**,1.48**,311
+Rhode Island,2002,Firearm,55,"1,065,995",5.16,5.14,"1,515"
+Rhode Island,2002,Machinery,--,"1,065,995",--,--,--
+Rhode Island,2002,Natural/Environmental,--,"1,065,995",--,--,--
+Rhode Island,2002,Drug Poisoning,99,"1,065,995",9.29,9.32,"2,522"
+Rhode Island,2002,Non-Drug Poisoning,--,"1,065,995",--,--,--
+Rhode Island,2002,Struck by / against,--,"1,065,995",--,--,--
+Rhode Island,2002,Suffocation,73,"1,065,995",6.85,6.45,"1,379"
+Rhode Island,2002,"Motor vehicle, traffic",93,"1,065,995",8.72,8.32,"2,207"
+Rhode Island,2002,"Pedestrian, other",--,"1,065,995",--,--,--
+Rhode Island,2002,"Transport, other land",--,"1,065,995",--,--,--
+Rhode Island,2002,Other specified and classifiable,--,"1,065,995",--,--,--
+Rhode Island,2002,Other specified / NEC,--,"1,065,995",--,--,--
+Rhode Island,2002,Unspecified,25,"1,065,995",2.35,2.17,410
+Rhode Island,2001,Cut/Pierce,--,"1,057,142",--,--,--
+Rhode Island,2001,Drowning (includes water transport),12**,"1,057,142",1.14**,1.10**,226
+Rhode Island,2001,Fall,81,"1,057,142",7.66,6.66,416
+Rhode Island,2001,Fire/Flame,--,"1,057,142",--,--,--
+Rhode Island,2001,Firearm,46,"1,057,142",4.35,4.3,"1,332"
+Rhode Island,2001,Natural/Environmental,--,"1,057,142",--,--,--
+Rhode Island,2001,Drug Poisoning,110,"1,057,142",10.41,10.17,"2,791"
+Rhode Island,2001,Non-Drug Poisoning,11**,"1,057,142",1.04**,0.96**,216
+Rhode Island,2001,Struck by / against,--,"1,057,142",--,--,--
+Rhode Island,2001,Suffocation,57,"1,057,142",5.39,5.19,"1,290"
+Rhode Island,2001,"Motor vehicle, traffic",96,"1,057,142",9.08,8.79,"2,600"
+Rhode Island,2001,"Pedestrian, other",--,"1,057,142",--,--,--
+Rhode Island,2001,"Transport, other land",--,"1,057,142",--,--,--
+Rhode Island,2001,"Transport, other (excl. drown by water transp)",17**,"1,057,142",1.61**,1.59**,352
+Rhode Island,2001,Other specified and classifiable,--,"1,057,142",--,--,--
+Rhode Island,2001,Other specified / NEC,13**,"1,057,142",1.23**,1.13**,182
+Rhode Island,2001,Unspecified,30,"1,057,142",2.84,2.43,113
+Total,,,"14,713","22,320,388",65.92,59.92,"234,604"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Rhode Island,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

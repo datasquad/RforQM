@@ -1,0 +1,393 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Vermont,2021,Cut/Pierce,--,"645,570",--,--,--
+Vermont,2021,Drowning (includes water transport),11**,"645,570",1.70**,1.08**,93
+Vermont,2021,Fall,161,"645,570",24.94,18.41,177
+Vermont,2021,Fire/Flame,--,"645,570",--,--,--
+Vermont,2021,Hot object/Substance,--,"645,570",--,--,--
+Vermont,2021,Firearm,83,"645,570",12.86,12.01,"1,580"
+Vermont,2021,Machinery,--,"645,570",--,--,--
+Vermont,2021,Natural/Environmental,--,"645,570",--,--,--
+Vermont,2021,Drug Poisoning,252,"645,570",39.04,42.69,"5,733"
+Vermont,2021,Non-Drug Poisoning,16**,"645,570",2.48**,2.66**,315
+Vermont,2021,Struck by / against,--,"645,570",--,--,--
+Vermont,2021,Suffocation,46,"645,570",7.13,6.64,868
+Vermont,2021,"Motor vehicle, traffic",67,"645,570",10.38,10.63,"1,569"
+Vermont,2021,"Pedal cyclist, other",--,"645,570",--,--,--
+Vermont,2021,"Transport, other land",--,"645,570",--,--,--
+Vermont,2021,"Transport, other (excl. drown by water transp)",--,"645,570",--,--,--
+Vermont,2021,Other specified and classifiable,10**,"645,570",1.55**,1.13**,53
+Vermont,2021,Other specified / NEC,--,"645,570",--,--,--
+Vermont,2021,Unspecified,14**,"645,570",2.17**,1.73**,71
+Vermont,2020,Cut/Pierce,--,"642,495",--,--,--
+Vermont,2020,Drowning (includes water transport),15**,"642,495",2.34**,2.43**,328
+Vermont,2020,Fall,185,"642,495",28.79,21.76,219
+Vermont,2020,Fire/Flame,--,"642,495",--,--,--
+Vermont,2020,Firearm,76,"642,495",11.83,11.05,"1,481"
+Vermont,2020,Machinery,--,"642,495",--,--,--
+Vermont,2020,Natural/Environmental,--,"642,495",--,--,--
+Vermont,2020,Drug Poisoning,190,"642,495",29.57,31.93,"4,293"
+Vermont,2020,Non-Drug Poisoning,--,"642,495",--,--,--
+Vermont,2020,Struck by / against,--,"642,495",--,--,--
+Vermont,2020,Suffocation,35,"642,495",5.45,5.29,681
+Vermont,2020,"Motor vehicle, traffic",57,"642,495",8.87,8.11,"1,087"
+Vermont,2020,"Pedestrian, other",--,"642,495",--,--,--
+Vermont,2020,"Transport, other land",12**,"642,495",1.87**,1.57**,206
+Vermont,2020,Other specified and classifiable,--,"642,495",--,--,--
+Vermont,2020,Other specified / NEC,--,"642,495",--,--,--
+Vermont,2020,Unspecified,10**,"642,495",1.56**,1.53**,129
+Vermont,2019,Cut/Pierce,--,"624,046",--,--,--
+Vermont,2019,Drowning (includes water transport),12**,"624,046",1.92**,1.65**,255
+Vermont,2019,Fall,166,"624,046",26.6,18.88,240
+Vermont,2019,Fire/Flame,--,"624,046",--,--,--
+Vermont,2019,Firearm,67,"624,046",10.74,9.37,"1,207"
+Vermont,2019,Machinery,--,"624,046",--,--,--
+Vermont,2019,Natural/Environmental,--,"624,046",--,--,--
+Vermont,2019,Drug Poisoning,133,"624,046",21.31,23.77,"3,218"
+Vermont,2019,Non-Drug Poisoning,14**,"624,046",2.24**,2.28**,226
+Vermont,2019,Struck by / against,--,"624,046",--,--,--
+Vermont,2019,Suffocation,44,"624,046",7.05,6.66,733
+Vermont,2019,"Motor vehicle, traffic",51,"624,046",8.17,7.79,"1,036"
+Vermont,2019,"Pedestrian, other",--,"624,046",--,--,--
+Vermont,2019,"Transport, other land",--,"624,046",--,--,--
+Vermont,2019,Other specified and classifiable,--,"624,046",--,--,--
+Vermont,2019,Other specified / NEC,--,"624,046",--,--,--
+Vermont,2019,Unspecified,13**,"624,046",2.08**,1.82**,118
+Vermont,2018,Cut/Pierce,--,"624,802",--,--,--
+Vermont,2018,Drowning (includes water transport),14**,"624,802",2.24**,2.27**,302
+Vermont,2018,Fall,178,"624,802",28.49,20.53,317
+Vermont,2018,Fire/Flame,--,"624,802",--,--,--
+Vermont,2018,Firearm,82,"624,802",13.12,12.65,"1,580"
+Vermont,2018,Machinery,--,"624,802",--,--,--
+Vermont,2018,Natural/Environmental,13**,"624,802",2.08**,1.43**,65
+Vermont,2018,Drug Poisoning,153,"624,802",24.49,26.49,"3,651"
+Vermont,2018,Non-Drug Poisoning,14**,"624,802",2.24**,1.90**,183
+Vermont,2018,Struck by / against,--,"624,802",--,--,--
+Vermont,2018,Suffocation,41,"624,802",6.56,6.4,794
+Vermont,2018,"Motor vehicle, traffic",73,"624,802",11.68,11.27,"1,582"
+Vermont,2018,"Pedal cyclist, other",--,"624,802",--,--,--
+Vermont,2018,"Transport, other land",--,"624,802",--,--,--
+Vermont,2018,"Transport, other (excl. drown by water transp)",--,"624,802",--,--,--
+Vermont,2018,Other specified and classifiable,--,"624,802",--,--,--
+Vermont,2018,Other specified / NEC,--,"624,802",--,--,--
+Vermont,2018,Unspecified,--,"624,802",--,--,--
+Vermont,2017,Cut/Pierce,--,"625,132",--,--,--
+Vermont,2017,Drowning (includes water transport),--,"625,132",--,--,--
+Vermont,2017,Fall,141,"625,132",22.56,16.47,230
+Vermont,2017,Fire/Flame,--,"625,132",--,--,--
+Vermont,2017,Firearm,70,"625,132",11.2,11.77,"1,509"
+Vermont,2017,Machinery,--,"625,132",--,--,--
+Vermont,2017,Natural/Environmental,--,"625,132",--,--,--
+Vermont,2017,Drug Poisoning,134,"625,132",21.44,22.9,"3,300"
+Vermont,2017,Non-Drug Poisoning,--,"625,132",--,--,--
+Vermont,2017,Suffocation,38,"625,132",6.08,6.12,864
+Vermont,2017,"Motor vehicle, traffic",72,"625,132",11.52,10.69,"1,332"
+Vermont,2017,"Pedal cyclist, other",--,"625,132",--,--,--
+Vermont,2017,"Pedestrian, other",--,"625,132",--,--,--
+Vermont,2017,"Transport, other land",11**,"625,132",1.76**,2.04**,371
+Vermont,2017,Other specified and classifiable,--,"625,132",--,--,--
+Vermont,2017,Other specified / NEC,--,"625,132",--,--,--
+Vermont,2017,Unspecified,10**,"625,132",1.60**,1.05**,9
+Vermont,2016,Cut/Pierce,--,"624,366",--,--,--
+Vermont,2016,Drowning (includes water transport),12**,"624,366",1.92**,2.08**,378
+Vermont,2016,Fall,150,"624,366",24.02,17.8,265
+Vermont,2016,Fire/Flame,11**,"624,366",1.76**,1.57**,125
+Vermont,2016,Firearm,78,"624,366",12.49,11.03,"1,325"
+Vermont,2016,Machinery,--,"624,366",--,--,--
+Vermont,2016,Natural/Environmental,--,"624,366",--,--,--
+Vermont,2016,Drug Poisoning,125,"624,366",20.02,22.29,"2,968"
+Vermont,2016,Non-Drug Poisoning,--,"624,366",--,--,--
+Vermont,2016,Struck by / against,--,"624,366",--,--,--
+Vermont,2016,Suffocation,29,"624,366",4.65,4.83,754
+Vermont,2016,"Motor vehicle, traffic",61,"624,366",9.77,9.37,"1,584"
+Vermont,2016,"Transport, other land",--,"624,366",--,--,--
+Vermont,2016,"Transport, other (excl. drown by water transp)",--,"624,366",--,--,--
+Vermont,2016,Other specified and classifiable,--,"624,366",--,--,--
+Vermont,2016,Other specified / NEC,--,"624,366",--,--,--
+Vermont,2016,Unspecified,--,"624,366",--,--,--
+Vermont,2015,Cut/Pierce,--,"625,810",--,--,--
+Vermont,2015,Drowning (includes water transport),10**,"625,810",1.60**,1.71**,255
+Vermont,2015,Fall,149,"625,810",23.81,18.09,284
+Vermont,2015,Fire/Flame,--,"625,810",--,--,--
+Vermont,2015,Firearm,70,"625,810",11.19,9.68,"1,138"
+Vermont,2015,Machinery,--,"625,810",--,--,--
+Vermont,2015,Natural/Environmental,--,"625,810",--,--,--
+Vermont,2015,Drug Poisoning,99,"625,810",15.82,16.62,"2,348"
+Vermont,2015,Non-Drug Poisoning,--,"625,810",--,--,--
+Vermont,2015,Struck by / against,--,"625,810",--,--,--
+Vermont,2015,Suffocation,28,"625,810",4.47,4.45,653
+Vermont,2015,"Motor vehicle, traffic",46,"625,810",7.35,6.7,987
+Vermont,2015,"Pedal cyclist, other",--,"625,810",--,--,--
+Vermont,2015,"Pedestrian, other",--,"625,810",--,--,--
+Vermont,2015,"Transport, other land",--,"625,810",--,--,--
+Vermont,2015,"Transport, other (excl. drown by water transp)",--,"625,810",--,--,--
+Vermont,2015,Other specified and classifiable,--,"625,810",--,--,--
+Vermont,2015,Other specified / NEC,--,"625,810",--,--,--
+Vermont,2015,Unspecified,14**,"625,810",2.24**,1.74**,179
+Vermont,2014,Cut/Pierce,--,"625,693",--,--,--
+Vermont,2014,Drowning (includes water transport),10**,"625,693",1.60**,1.52**,198
+Vermont,2014,Fall,158,"625,693",25.25,19.61,380
+Vermont,2014,Fire/Flame,--,"625,693",--,--,--
+Vermont,2014,Firearm,69,"625,693",11.03,10.21,"1,311"
+Vermont,2014,Machinery,--,"625,693",--,--,--
+Vermont,2014,Natural/Environmental,--,"625,693",--,--,--
+Vermont,2014,Drug Poisoning,83,"625,693",13.27,14.04,"1,915"
+Vermont,2014,Non-Drug Poisoning,17**,"625,693",2.72**,2.41**,204
+Vermont,2014,Struck by / against,--,"625,693",--,--,--
+Vermont,2014,Suffocation,44,"625,693",7.03,6.73,"1,009"
+Vermont,2014,"Motor vehicle, traffic",45,"625,693",7.19,6.72,967
+Vermont,2014,"Transport, other land",--,"625,693",--,--,--
+Vermont,2014,Other specified and classifiable,--,"625,693",--,--,--
+Vermont,2014,Other specified / NEC,--,"625,693",--,--,--
+Vermont,2014,Unspecified,--,"625,693",--,--,--
+Vermont,2013,Cut/Pierce,--,"626,603",--,--,--
+Vermont,2013,Drowning (includes water transport),19**,"626,603",3.03**,3.10**,512
+Vermont,2013,Fall,145,"626,603",23.14,17.49,162
+Vermont,2013,Fire/Flame,--,"626,603",--,--,--
+Vermont,2013,Firearm,65,"626,603",10.37,9.47,955
+Vermont,2013,Machinery,--,"626,603",--,--,--
+Vermont,2013,Natural/Environmental,--,"626,603",--,--,--
+Vermont,2013,Drug Poisoning,93,"626,603",14.84,15.08,"1,975"
+Vermont,2013,Non-Drug Poisoning,14**,"626,603",2.23**,2.14**,230
+Vermont,2013,Struck by / against,--,"626,603",--,--,--
+Vermont,2013,Suffocation,36,"626,603",5.75,5.98,879
+Vermont,2013,"Motor vehicle, traffic",71,"626,603",11.33,10.66,"1,539"
+Vermont,2013,"Pedestrian, other",--,"626,603",--,--,--
+Vermont,2013,"Transport, other land",--,"626,603",--,--,--
+Vermont,2013,Other specified and classifiable,11**,"626,603",1.76**,1.31**,85
+Vermont,2013,Other specified / NEC,10**,"626,603",1.60**,1.56**,141
+Vermont,2013,Unspecified,10**,"626,603",1.60**,1.37**,106
+Vermont,2012,Cut/Pierce,--,"626,361",--,--,--
+Vermont,2012,Drowning (includes water transport),--,"626,361",--,--,--
+Vermont,2012,Fall,141,"626,361",22.51,17.94,214
+Vermont,2012,Fire/Flame,--,"626,361",--,--,--
+Vermont,2012,Firearm,56,"626,361",8.94,8.83,"1,230"
+Vermont,2012,Machinery,10**,"626,361",1.60**,1.49**,186
+Vermont,2012,Natural/Environmental,--,"626,361",--,--,--
+Vermont,2012,Overexertion,--,"626,361",--,--,--
+Vermont,2012,Drug Poisoning,70,"626,361",11.18,11.02,"1,459"
+Vermont,2012,Non-Drug Poisoning,--,"626,361",--,--,--
+Vermont,2012,Struck by / against,--,"626,361",--,--,--
+Vermont,2012,Suffocation,33,"626,361",5.27,5.17,721
+Vermont,2012,"Motor vehicle, traffic",74,"626,361",11.81,11.18,"1,621"
+Vermont,2012,"Pedestrian, other",--,"626,361",--,--,--
+Vermont,2012,"Transport, other land",--,"626,361",--,--,--
+Vermont,2012,Other specified and classifiable,--,"626,361",--,--,--
+Vermont,2012,Other specified / NEC,10**,"626,361",1.60**,1.41**,103
+Vermont,2012,Unspecified,--,"626,361",--,--,--
+Vermont,2011,Cut/Pierce,--,"627,197",--,--,--
+Vermont,2011,Drowning (includes water transport),14**,"627,197",2.23**,2.22**,367
+Vermont,2011,Fall,116,"627,197",18.5,14.45,221
+Vermont,2011,Fire/Flame,--,"627,197",--,--,--
+Vermont,2011,Firearm,78,"627,197",12.44,11.66,"1,396"
+Vermont,2011,Machinery,--,"627,197",--,--,--
+Vermont,2011,Natural/Environmental,--,"627,197",--,--,--
+Vermont,2011,Overexertion,--,"627,197",--,--,--
+Vermont,2011,Drug Poisoning,83,"627,197",13.23,12.81,"1,818"
+Vermont,2011,Non-Drug Poisoning,--,"627,197",--,--,--
+Vermont,2011,Struck by / against,--,"627,197",--,--,--
+Vermont,2011,Suffocation,43,"627,197",6.86,6.71,905
+Vermont,2011,"Motor vehicle, traffic",59,"627,197",9.41,8.89,"1,421"
+Vermont,2011,"Pedal cyclist, other",--,"627,197",--,--,--
+Vermont,2011,"Pedestrian, other",--,"627,197",--,--,--
+Vermont,2011,"Transport, other land",--,"627,197",--,--,--
+Vermont,2011,"Transport, other (excl. drown by water transp)",--,"627,197",--,--,--
+Vermont,2011,Other specified and classifiable,--,"627,197",--,--,--
+Vermont,2011,Other specified / NEC,--,"627,197",--,--,--
+Vermont,2011,Unspecified,--,"627,197",--,--,--
+Vermont,2010,Cut/Pierce,--,"625,727",--,--,--
+Vermont,2010,Drowning (includes water transport),--,"625,727",--,--,--
+Vermont,2010,Fall,135,"625,727",21.58,17.37,164
+Vermont,2010,Fire/Flame,--,"625,727",--,--,--
+Vermont,2010,Firearm,70,"625,727",11.19,10.21,"1,228"
+Vermont,2010,Machinery,--,"625,727",--,--,--
+Vermont,2010,Natural/Environmental,--,"625,727",--,--,--
+Vermont,2010,Drug Poisoning,63,"625,727",10.07,9.71,"1,180"
+Vermont,2010,Non-Drug Poisoning,--,"625,727",--,--,--
+Vermont,2010,Struck by / against,--,"625,727",--,--,--
+Vermont,2010,Suffocation,29,"625,727",4.64,4.72,759
+Vermont,2010,"Motor vehicle, traffic",70,"625,727",11.19,10.78,"1,662"
+Vermont,2010,"Pedal cyclist, other",--,"625,727",--,--,--
+Vermont,2010,"Transport, other land",--,"625,727",--,--,--
+Vermont,2010,"Transport, other (excl. drown by water transp)",--,"625,727",--,--,--
+Vermont,2010,Other specified and classifiable,--,"625,727",--,--,--
+Vermont,2010,Other specified / NEC,--,"625,727",--,--,--
+Vermont,2010,Unspecified,--,"625,727",--,--,--
+Vermont,2009,Cut/Pierce,--,"624,817",--,--,--
+Vermont,2009,Drowning (includes water transport),--,"624,817",--,--,--
+Vermont,2009,Fall,126,"624,817",20.17,16.7,217
+Vermont,2009,Fire/Flame,10**,"624,817",1.60**,1.50**,179
+Vermont,2009,Firearm,60,"624,817",9.6,8.72,922
+Vermont,2009,Machinery,--,"624,817",--,--,--
+Vermont,2009,Natural/Environmental,--,"624,817",--,--,--
+Vermont,2009,Drug Poisoning,55,"624,817",8.8,8.37,"1,220"
+Vermont,2009,Non-Drug Poisoning,--,"624,817",--,--,--
+Vermont,2009,Struck by / against,--,"624,817",--,--,--
+Vermont,2009,Suffocation,33,"624,817",5.28,5.23,607
+Vermont,2009,"Motor vehicle, traffic",74,"624,817",11.84,10.86,"1,506"
+Vermont,2009,"Transport, other land",--,"624,817",--,--,--
+Vermont,2009,"Transport, other (excl. drown by water transp)",--,"624,817",--,--,--
+Vermont,2009,Other specified and classifiable,--,"624,817",--,--,--
+Vermont,2009,Other specified / NEC,--,"624,817",--,--,--
+Vermont,2009,Unspecified,--,"624,817",--,--,--
+Vermont,2008,Cut/Pierce,--,"624,151",--,--,--
+Vermont,2008,Drowning (includes water transport),10**,"624,151",1.60**,1.73**,322
+Vermont,2008,Fall,121,"624,151",19.39,16.41,115
+Vermont,2008,Fire/Flame,--,"624,151",--,--,--
+Vermont,2008,Hot object/Substance,--,"624,151",--,--,--
+Vermont,2008,Firearm,54,"624,151",8.65,8.19,"1,069"
+Vermont,2008,Machinery,--,"624,151",--,--,--
+Vermont,2008,Natural/Environmental,--,"624,151",--,--,--
+Vermont,2008,Drug Poisoning,73,"624,151",11.7,10.99,"1,621"
+Vermont,2008,Non-Drug Poisoning,10**,"624,151",1.60**,1.48**,141
+Vermont,2008,Struck by / against,--,"624,151",--,--,--
+Vermont,2008,Suffocation,40,"624,151",6.41,6.2,996
+Vermont,2008,"Motor vehicle, traffic",71,"624,151",11.38,10.86,"1,673"
+Vermont,2008,"Pedal cyclist, other",--,"624,151",--,--,--
+Vermont,2008,"Pedestrian, other",--,"624,151",--,--,--
+Vermont,2008,"Transport, other land",--,"624,151",--,--,--
+Vermont,2008,Other specified and classifiable,--,"624,151",--,--,--
+Vermont,2008,Other specified / NEC,--,"624,151",--,--,--
+Vermont,2008,Unspecified,15**,"624,151",2.40**,2.27**,192
+Vermont,2007,Cut/Pierce,--,"623,481",--,--,--
+Vermont,2007,Drowning (includes water transport),10**,"623,481",1.60**,1.52**,314
+Vermont,2007,Fall,134,"623,481",21.49,18.5,284
+Vermont,2007,Fire/Flame,--,"623,481",--,--,--
+Vermont,2007,Firearm,52,"623,481",8.34,8.08,"1,030"
+Vermont,2007,Machinery,--,"623,481",--,--,--
+Vermont,2007,Natural/Environmental,--,"623,481",--,--,--
+Vermont,2007,Drug Poisoning,66,"623,481",10.59,10.74,"1,529"
+Vermont,2007,Non-Drug Poisoning,--,"623,481",--,--,--
+Vermont,2007,Struck by / against,--,"623,481",--,--,--
+Vermont,2007,Suffocation,34,"623,481",5.45,5.4,839
+Vermont,2007,"Motor vehicle, traffic",67,"623,481",10.75,10.39,"1,566"
+Vermont,2007,"Pedestrian, other",--,"623,481",--,--,--
+Vermont,2007,"Transport, other land",--,"623,481",--,--,--
+Vermont,2007,"Transport, other (excl. drown by water transp)",--,"623,481",--,--,--
+Vermont,2007,Other specified and classifiable,--,"623,481",--,--,--
+Vermont,2007,Other specified / NEC,--,"623,481",--,--,--
+Vermont,2007,Unspecified,--,"623,481",--,--,--
+Vermont,2006,Cut/Pierce,--,"622,892",--,--,--
+Vermont,2006,Drowning (includes water transport),--,"622,892",--,--,--
+Vermont,2006,Fall,96,"622,892",15.41,13.66,266
+Vermont,2006,Fire/Flame,--,"622,892",--,--,--
+Vermont,2006,Firearm,54,"622,892",8.67,8.14,909
+Vermont,2006,Machinery,--,"622,892",--,--,--
+Vermont,2006,Natural/Environmental,--,"622,892",--,--,--
+Vermont,2006,Drug Poisoning,75,"622,892",12.04,12.15,"1,834"
+Vermont,2006,Non-Drug Poisoning,--,"622,892",--,--,--
+Vermont,2006,Struck by / against,--,"622,892",--,--,--
+Vermont,2006,Suffocation,25,"622,892",4.01,4.06,564
+Vermont,2006,"Motor vehicle, traffic",87,"622,892",13.97,13.55,"2,052"
+Vermont,2006,"Pedal cyclist, other",--,"622,892",--,--,--
+Vermont,2006,"Transport, other land",--,"622,892",--,--,--
+Vermont,2006,"Transport, other (excl. drown by water transp)",--,"622,892",--,--,--
+Vermont,2006,Other specified and classifiable,--,"622,892",--,--,--
+Vermont,2006,Other specified / NEC,--,"622,892",--,--,--
+Vermont,2006,Unspecified,18**,"622,892",2.89**,2.66**,105
+Vermont,2005,Cut/Pierce,--,"621,215",--,--,--
+Vermont,2005,Drowning (includes water transport),12**,"621,215",1.93**,2.06**,461
+Vermont,2005,Fall,87,"621,215",14.01,12.7,294
+Vermont,2005,Fire/Flame,--,"621,215",--,--,--
+Vermont,2005,Hot object/Substance,--,"621,215",--,--,--
+Vermont,2005,Firearm,44,"621,215",7.08,6.79,838
+Vermont,2005,Machinery,--,"621,215",--,--,--
+Vermont,2005,Natural/Environmental,--,"621,215",--,--,--
+Vermont,2005,Drug Poisoning,53,"621,215",8.53,8.36,"1,159"
+Vermont,2005,Non-Drug Poisoning,--,"621,215",--,--,--
+Vermont,2005,Struck by / against,--,"621,215",--,--,--
+Vermont,2005,Suffocation,30,"621,215",4.83,4.85,673
+Vermont,2005,"Motor vehicle, traffic",74,"621,215",11.91,11.64,"2,185"
+Vermont,2005,"Pedal cyclist, other",--,"621,215",--,--,--
+Vermont,2005,"Transport, other land",--,"621,215",--,--,--
+Vermont,2005,"Transport, other (excl. drown by water transp)",--,"621,215",--,--,--
+Vermont,2005,Other specified and classifiable,--,"621,215",--,--,--
+Vermont,2005,Other specified / NEC,--,"621,215",--,--,--
+Vermont,2005,Unspecified,23,"621,215",3.7,3.89,312
+Vermont,2004,Cut/Pierce,--,"619,920",--,--,--
+Vermont,2004,Drowning (includes water transport),--,"619,920",--,--,--
+Vermont,2004,Fall,91,"619,920",14.68,13.72,92
+Vermont,2004,Firearm,61,"619,920",9.84,9.41,"1,068"
+Vermont,2004,Machinery,--,"619,920",--,--,--
+Vermont,2004,Natural/Environmental,--,"619,920",--,--,--
+Vermont,2004,Drug Poisoning,50,"619,920",8.07,8.17,"1,261"
+Vermont,2004,Non-Drug Poisoning,--,"619,920",--,--,--
+Vermont,2004,Struck by / against,--,"619,920",--,--,--
+Vermont,2004,Suffocation,30,"619,920",4.84,4.89,640
+Vermont,2004,"Motor vehicle, traffic",81,"619,920",13.07,12.8,"2,018"
+Vermont,2004,"Pedestrian, other",--,"619,920",--,--,--
+Vermont,2004,"Transport, other land",--,"619,920",--,--,--
+Vermont,2004,"Transport, other (excl. drown by water transp)",--,"619,920",--,--,--
+Vermont,2004,Other specified and classifiable,--,"619,920",--,--,--
+Vermont,2004,Other specified / NEC,--,"619,920",--,--,--
+Vermont,2004,Unspecified,--,"619,920",--,--,--
+Vermont,2003,Cut/Pierce,--,"617,858",--,--,--
+Vermont,2003,Drowning (includes water transport),--,"617,858",--,--,--
+Vermont,2003,Fall,67,"617,858",10.84,10.18,135
+Vermont,2003,Fire/Flame,12**,"617,858",1.94**,1.79**,153
+Vermont,2003,Firearm,48,"617,858",7.77,7.58,924
+Vermont,2003,Machinery,--,"617,858",--,--,--
+Vermont,2003,Natural/Environmental,--,"617,858",--,--,--
+Vermont,2003,Drug Poisoning,65,"617,858",10.52,10.19,"1,401"
+Vermont,2003,Non-Drug Poisoning,--,"617,858",--,--,--
+Vermont,2003,Struck by / against,--,"617,858",--,--,--
+Vermont,2003,Suffocation,29,"617,858",4.69,4.55,596
+Vermont,2003,"Motor vehicle, traffic",70,"617,858",11.33,11.01,"1,800"
+Vermont,2003,"Pedal cyclist, other",--,"617,858",--,--,--
+Vermont,2003,"Pedestrian, other",--,"617,858",--,--,--
+Vermont,2003,"Transport, other land",--,"617,858",--,--,--
+Vermont,2003,Other specified and classifiable,--,"617,858",--,--,--
+Vermont,2003,Other specified / NEC,--,"617,858",--,--,--
+Vermont,2003,Unspecified,13**,"617,858",2.10**,2.00**,89
+Vermont,2002,Cut/Pierce,--,"615,442",--,--,--
+Vermont,2002,Drowning (includes water transport),--,"615,442",--,--,--
+Vermont,2002,Fall,74,"615,442",12.02,11.24,167
+Vermont,2002,Fire/Flame,--,"615,442",--,--,--
+Vermont,2002,Firearm,62,"615,442",10.07,9.75,"1,022"
+Vermont,2002,Machinery,--,"615,442",--,--,--
+Vermont,2002,Natural/Environmental,--,"615,442",--,--,--
+Vermont,2002,Drug Poisoning,47,"615,442",7.64,7.51,"1,333"
+Vermont,2002,Non-Drug Poisoning,--,"615,442",--,--,--
+Vermont,2002,Struck by / against,--,"615,442",--,--,--
+Vermont,2002,Suffocation,31,"615,442",5.04,4.88,553
+Vermont,2002,"Motor vehicle, traffic",77,"615,442",12.51,12.42,"2,093"
+Vermont,2002,"Pedal cyclist, other",--,"615,442",--,--,--
+Vermont,2002,"Pedestrian, other",--,"615,442",--,--,--
+Vermont,2002,"Transport, other land",--,"615,442",--,--,--
+Vermont,2002,"Transport, other (excl. drown by water transp)",--,"615,442",--,--,--
+Vermont,2002,Other specified and classifiable,--,"615,442",--,--,--
+Vermont,2002,Other specified / NEC,--,"615,442",--,--,--
+Vermont,2002,Unspecified,--,"615,442",--,--,--
+Vermont,2001,Cut/Pierce,--,"612,223",--,--,--
+Vermont,2001,Drowning (includes water transport),--,"612,223",--,--,--
+Vermont,2001,Fall,27,"612,223",4.41,4.21,125
+Vermont,2001,Fire/Flame,--,"612,223",--,--,--
+Vermont,2001,Firearm,51,"612,223",8.33,8.2,"1,015"
+Vermont,2001,Machinery,--,"612,223",--,--,--
+Vermont,2001,Natural/Environmental,--,"612,223",--,--,--
+Vermont,2001,Drug Poisoning,44,"612,223",7.19,7.1,"1,190"
+Vermont,2001,Non-Drug Poisoning,--,"612,223",--,--,--
+Vermont,2001,Struck by / against,--,"612,223",--,--,--
+Vermont,2001,Suffocation,28,"612,223",4.57,4.57,612
+Vermont,2001,"Motor vehicle, traffic",85,"612,223",13.88,13.91,"2,025"
+Vermont,2001,"Pedestrian, other",--,"612,223",--,--,--
+Vermont,2001,"Transport, other land",--,"612,223",--,--,--
+Vermont,2001,"Transport, other (excl. drown by water transp)",--,"612,223",--,--,--
+Vermont,2001,Other specified and classifiable,--,"612,223",--,--,--
+Vermont,2001,Other specified / NEC,--,"612,223",--,--,--
+Vermont,2001,Unspecified,40,"612,223",6.53,6.2,83
+Total,,,"9,693","13,125,801",73.85,68,"147,687"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Vermont,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

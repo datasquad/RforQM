@@ -1,0 +1,434 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Iowa,2021,Cut/Pierce,21,"3,193,079",0.66,0.67,287
+Iowa,2021,Drowning (includes water transport),51,"3,193,079",1.6,1.64,"1,252"
+Iowa,2021,Fall,626,"3,193,079",19.61,15.2,"1,084"
+Iowa,2021,Fire/Flame,29,"3,193,079",0.91,0.7,129
+Iowa,2021,Firearm,364,"3,193,079",11.4,11.18,"7,570"
+Iowa,2021,Machinery,14**,"3,193,079",0.44**,0.41**,315
+Iowa,2021,Natural/Environmental,32,"3,193,079",1,0.79,223
+Iowa,2021,Drug Poisoning,475,"3,193,079",14.88,15.37,"10,438"
+Iowa,2021,Non-Drug Poisoning,54,"3,193,079",1.69,1.63,962
+Iowa,2021,Struck by / against,14**,"3,193,079",0.44**,0.41**,204
+Iowa,2021,Suffocation,248,"3,193,079",7.77,7.92,"5,240"
+Iowa,2021,"Motor vehicle, traffic",353,"3,193,079",11.06,10.56,"7,137"
+Iowa,2021,"Pedal cyclist, other",--,"3,193,079",--,--,--
+Iowa,2021,"Pedestrian, other",--,"3,193,079",--,--,--
+Iowa,2021,"Transport, other land",27,"3,193,079",0.85,0.84,598
+Iowa,2021,"Transport, other (excl. drown by water transp)",--,"3,193,079",--,--,--
+Iowa,2021,Other specified and classifiable,19**,"3,193,079",0.60**,0.61**,352
+Iowa,2021,Other specified / NEC,12**,"3,193,079",0.38**,0.29**,96
+Iowa,2021,Unspecified,82,"3,193,079",2.57,2.17,725
+Iowa,2020,Cut/Pierce,13**,"3,188,669",0.41**,0.36**,159
+Iowa,2020,Drowning (includes water transport),47,"3,188,669",1.47,1.49,"1,287"
+Iowa,2020,Fall,620,"3,188,669",19.44,15.03,"1,143"
+Iowa,2020,Fire/Flame,38,"3,188,669",1.19,0.99,461
+Iowa,2020,Hot object/Substance,--,"3,188,669",--,--,--
+Iowa,2020,Firearm,351,"3,188,669",11.01,11.11,"7,813"
+Iowa,2020,Machinery,12**,"3,188,669",0.38**,0.35**,152
+Iowa,2020,Natural/Environmental,20**,"3,188,669",0.63**,0.49**,98
+Iowa,2020,Drug Poisoning,432,"3,188,669",13.55,14.2,"9,429"
+Iowa,2020,Non-Drug Poisoning,78,"3,188,669",2.45,2.35,"1,265"
+Iowa,2020,Struck by / against,11**,"3,188,669",0.35**,0.31**,122
+Iowa,2020,Suffocation,250,"3,188,669",7.84,8.17,"5,899"
+Iowa,2020,"Motor vehicle, traffic",340,"3,188,669",10.66,10.51,"7,769"
+Iowa,2020,"Pedal cyclist, other",--,"3,188,669",--,--,--
+Iowa,2020,"Pedestrian, other",--,"3,188,669",--,--,--
+Iowa,2020,"Transport, other land",24,"3,188,669",0.75,0.7,430
+Iowa,2020,"Transport, other (excl. drown by water transp)",--,"3,188,669",--,--,--
+Iowa,2020,Other specified and classifiable,14**,"3,188,669",0.44**,0.42**,238
+Iowa,2020,Other specified / NEC,18**,"3,188,669",0.56**,0.53**,218
+Iowa,2020,Unspecified,68,"3,188,669",2.13,1.79,398
+Iowa,2019,Cut/Pierce,12**,"3,159,596",0.38**,0.38**,304
+Iowa,2019,Drowning (includes water transport),42,"3,159,596",1.33,1.3,"1,033"
+Iowa,2019,Fall,524,"3,159,596",16.58,11.9,744
+Iowa,2019,Fire/Flame,52,"3,159,596",1.65,1.44,727
+Iowa,2019,Firearm,294,"3,159,596",9.31,9.07,"6,513"
+Iowa,2019,Machinery,13**,"3,159,596",0.41**,0.39**,188
+Iowa,2019,Natural/Environmental,27,"3,159,596",0.86,0.73,321
+Iowa,2019,Drug Poisoning,352,"3,159,596",11.14,11.44,"7,276"
+Iowa,2019,Non-Drug Poisoning,57,"3,159,596",1.8,1.83,870
+Iowa,2019,Struck by / against,13**,"3,159,596",0.41**,0.39**,226
+Iowa,2019,Suffocation,279,"3,159,596",8.83,8.82,"6,572"
+Iowa,2019,"Motor vehicle, traffic",351,"3,159,596",11.11,10.56,"6,931"
+Iowa,2019,"Pedal cyclist, other",--,"3,159,596",--,--,--
+Iowa,2019,"Pedestrian, other",--,"3,159,596",--,--,--
+Iowa,2019,"Transport, other land",19**,"3,159,596",0.60**,0.53**,283
+Iowa,2019,"Transport, other (excl. drown by water transp)",--,"3,159,596",--,--,--
+Iowa,2019,Other specified and classifiable,25,"3,159,596",0.79,0.79,446
+Iowa,2019,Other specified / NEC,16**,"3,159,596",0.51**,0.45**,204
+Iowa,2019,Unspecified,92,"3,159,596",2.91,2.27,630
+Iowa,2018,Cut/Pierce,20**,"3,149,900",0.64**,0.59**,221
+Iowa,2018,Drowning (includes water transport),42,"3,149,900",1.33,1.37,"1,160"
+Iowa,2018,Fall,579,"3,149,900",18.38,13.61,"1,291"
+Iowa,2018,Fire/Flame,37,"3,149,900",1.18,1.08,696
+Iowa,2018,Hot object/Substance,--,"3,149,900",--,--,--
+Iowa,2018,Firearm,282,"3,149,900",8.95,8.64,"5,767"
+Iowa,2018,Machinery,15**,"3,149,900",0.48**,0.41**,151
+Iowa,2018,Natural/Environmental,26,"3,149,900",0.83,0.65,244
+Iowa,2018,Drug Poisoning,287,"3,149,900",9.11,9.61,"6,578"
+Iowa,2018,Non-Drug Poisoning,63,"3,149,900",2,1.96,"1,107"
+Iowa,2018,Struck by / against,12**,"3,149,900",0.38**,0.41**,236
+Iowa,2018,Suffocation,244,"3,149,900",7.75,7.63,"5,314"
+Iowa,2018,"Motor vehicle, traffic",341,"3,149,900",10.83,10.3,"7,082"
+Iowa,2018,"Pedal cyclist, other",--,"3,149,900",--,--,--
+Iowa,2018,"Pedestrian, other",--,"3,149,900",--,--,--
+Iowa,2018,"Transport, other land",26,"3,149,900",0.83,0.85,587
+Iowa,2018,"Transport, other (excl. drown by water transp)",--,"3,149,900",--,--,--
+Iowa,2018,Other specified and classifiable,23,"3,149,900",0.73,0.76,660
+Iowa,2018,Other specified / NEC,13**,"3,149,900",0.41**,0.38**,94
+Iowa,2018,Unspecified,70,"3,149,900",2.22,1.93,"1,138"
+Iowa,2017,Cut/Pierce,25,"3,143,734",0.8,0.71,413
+Iowa,2017,Drowning (includes water transport),39,"3,143,734",1.24,1.15,767
+Iowa,2017,Fall,528,"3,143,734",16.8,12.27,931
+Iowa,2017,Fire/Flame,56,"3,143,734",1.78,1.65,860
+Iowa,2017,Hot object/Substance,--,"3,143,734",--,--,--
+Iowa,2017,Firearm,293,"3,143,734",9.32,9.03,"6,340"
+Iowa,2017,Machinery,23,"3,143,734",0.73,0.61,227
+Iowa,2017,Natural/Environmental,13**,"3,143,734",0.41**,0.34**,74
+Iowa,2017,Drug Poisoning,341,"3,143,734",10.85,11.49,"7,431"
+Iowa,2017,Non-Drug Poisoning,69,"3,143,734",2.2,2.24,"1,199"
+Iowa,2017,Struck by / against,11**,"3,143,734",0.35**,0.28**,88
+Iowa,2017,Suffocation,229,"3,143,734",7.28,7.16,"5,307"
+Iowa,2017,"Motor vehicle, traffic",371,"3,143,734",11.8,11.38,"7,997"
+Iowa,2017,"Pedal cyclist, other",--,"3,143,734",--,--,--
+Iowa,2017,"Pedestrian, other",--,"3,143,734",--,--,--
+Iowa,2017,"Transport, other land",31,"3,143,734",0.99,0.94,653
+Iowa,2017,"Transport, other (excl. drown by water transp)",--,"3,143,734",--,--,--
+Iowa,2017,Other specified and classifiable,27,"3,143,734",0.86,0.88,526
+Iowa,2017,Other specified / NEC,22,"3,143,734",0.7,0.6,370
+Iowa,2017,Unspecified,62,"3,143,734",1.97,1.46,297
+Iowa,2016,Cut/Pierce,22,"3,133,210",0.7,0.7,342
+Iowa,2016,Drowning (includes water transport),47,"3,133,210",1.5,1.53,"1,273"
+Iowa,2016,Fall,570,"3,133,210",18.19,13.42,868
+Iowa,2016,Fire/Flame,52,"3,133,210",1.66,1.51,975
+Iowa,2016,Firearm,288,"3,133,210",9.19,9.24,"6,569"
+Iowa,2016,Machinery,--,"3,133,210",--,--,--
+Iowa,2016,Natural/Environmental,14**,"3,133,210",0.45**,0.37**,183
+Iowa,2016,Drug Poisoning,314,"3,133,210",10.02,10.5,"6,920"
+Iowa,2016,Non-Drug Poisoning,70,"3,133,210",2.23,2.28,"1,430"
+Iowa,2016,Struck by / against,13**,"3,133,210",0.42**,0.42**,279
+Iowa,2016,Suffocation,224,"3,133,210",7.15,7.02,"4,838"
+Iowa,2016,"Motor vehicle, traffic",403,"3,133,210",12.86,12.58,"9,430"
+Iowa,2016,"Pedal cyclist, other",--,"3,133,210",--,--,--
+Iowa,2016,"Pedestrian, other",--,"3,133,210",--,--,--
+Iowa,2016,"Transport, other land",35,"3,133,210",1.12,1.06,644
+Iowa,2016,"Transport, other (excl. drown by water transp)",10**,"3,133,210",0.32**,0.35**,273
+Iowa,2016,Other specified and classifiable,18**,"3,133,210",0.57**,0.57**,405
+Iowa,2016,Other specified / NEC,22,"3,133,210",0.7,0.61,310
+Iowa,2016,Unspecified,69,"3,133,210",2.2,1.66,255
+Iowa,2015,Cut/Pierce,22,"3,122,541",0.71,0.74,442
+Iowa,2015,Drowning (includes water transport),34,"3,122,541",1.09,1.04,797
+Iowa,2015,Fall,560,"3,122,541",17.93,13.1,742
+Iowa,2015,Fire/Flame,30,"3,122,541",0.96,0.89,519
+Iowa,2015,Firearm,247,"3,122,541",7.91,7.71,"5,565"
+Iowa,2015,Machinery,--,"3,122,541",--,--,--
+Iowa,2015,Natural/Environmental,15**,"3,122,541",0.48**,0.42**,138
+Iowa,2015,Drug Poisoning,309,"3,122,541",9.9,10.32,"6,377"
+Iowa,2015,Non-Drug Poisoning,70,"3,122,541",2.24,2.27,"1,333"
+Iowa,2015,Struck by / against,12**,"3,122,541",0.38**,0.36**,207
+Iowa,2015,Suffocation,215,"3,122,541",6.89,6.77,"5,078"
+Iowa,2015,"Motor vehicle, traffic",333,"3,122,541",10.66,10.02,"6,983"
+Iowa,2015,"Pedal cyclist, other",--,"3,122,541",--,--,--
+Iowa,2015,"Pedestrian, other",--,"3,122,541",--,--,--
+Iowa,2015,"Transport, other land",17**,"3,122,541",0.54**,0.52**,541
+Iowa,2015,"Transport, other (excl. drown by water transp)",--,"3,122,541",--,--,--
+Iowa,2015,Other specified and classifiable,13**,"3,122,541",0.42**,0.40**,260
+Iowa,2015,Other specified / NEC,20**,"3,122,541",0.64**,0.53**,157
+Iowa,2015,Unspecified,152,"3,122,541",4.87,3.58,661
+Iowa,2014,Cut/Pierce,26,"3,110,643",0.84,0.78,478
+Iowa,2014,Drowning (includes water transport),38,"3,110,643",1.22,1.26,"1,149"
+Iowa,2014,Fall,555,"3,110,643",17.84,13.04,"1,061"
+Iowa,2014,Fire/Flame,40,"3,110,643",1.29,1.15,699
+Iowa,2014,Hot object/Substance,--,"3,110,643",--,--,--
+Iowa,2014,Firearm,241,"3,110,643",7.75,7.36,"4,783"
+Iowa,2014,Machinery,17**,"3,110,643",0.55**,0.52**,312
+Iowa,2014,Natural/Environmental,23,"3,110,643",0.74,0.63,229
+Iowa,2014,Overexertion,--,"3,110,643",--,--,--
+Iowa,2014,Drug Poisoning,264,"3,110,643",8.49,8.78,"5,562"
+Iowa,2014,Non-Drug Poisoning,75,"3,110,643",2.41,2.21,938
+Iowa,2014,Struck by / against,15**,"3,110,643",0.48**,0.48**,265
+Iowa,2014,Suffocation,210,"3,110,643",6.75,6.43,"4,572"
+Iowa,2014,"Motor vehicle, traffic",315,"3,110,643",10.13,9.78,"6,712"
+Iowa,2014,"Pedal cyclist, other",--,"3,110,643",--,--,--
+Iowa,2014,"Pedestrian, other",--,"3,110,643",--,--,--
+Iowa,2014,"Transport, other land",37,"3,110,643",1.19,1.15,859
+Iowa,2014,"Transport, other (excl. drown by water transp)",--,"3,110,643",--,--,--
+Iowa,2014,Other specified and classifiable,23,"3,110,643",0.74,0.81,489
+Iowa,2014,Other specified / NEC,25,"3,110,643",0.8,0.68,164
+Iowa,2014,Unspecified,128,"3,110,643",4.12,3.07,855
+Iowa,2013,Cut/Pierce,29,"3,093,935",0.94,0.9,585
+Iowa,2013,Drowning (includes water transport),42,"3,093,935",1.36,1.34,"1,192"
+Iowa,2013,Fall,502,"3,093,935",16.23,12.06,818
+Iowa,2013,Fire/Flame,28,"3,093,935",0.91,0.81,362
+Iowa,2013,Firearm,253,"3,093,935",8.18,8.03,"5,136"
+Iowa,2013,Machinery,14**,"3,093,935",0.45**,0.42**,193
+Iowa,2013,Natural/Environmental,14**,"3,093,935",0.45**,0.37**,133
+Iowa,2013,Overexertion,--,"3,093,935",--,--,--
+Iowa,2013,Drug Poisoning,275,"3,093,935",8.89,9.22,"5,966"
+Iowa,2013,Non-Drug Poisoning,71,"3,093,935",2.3,2.29,"1,152"
+Iowa,2013,Struck by / against,11**,"3,093,935",0.36**,0.32**,113
+Iowa,2013,Suffocation,199,"3,093,935",6.43,6.25,"4,376"
+Iowa,2013,"Motor vehicle, traffic",323,"3,093,935",10.44,10.07,"6,742"
+Iowa,2013,"Pedal cyclist, other",--,"3,093,935",--,--,--
+Iowa,2013,"Pedestrian, other",11**,"3,093,935",0.36**,0.30**,172
+Iowa,2013,"Transport, other land",26,"3,093,935",0.84,0.77,381
+Iowa,2013,"Transport, other (excl. drown by water transp)",--,"3,093,935",--,--,--
+Iowa,2013,Other specified and classifiable,17**,"3,093,935",0.55**,0.55**,488
+Iowa,2013,Other specified / NEC,20**,"3,093,935",0.65**,0.52**,194
+Iowa,2013,Unspecified,107,"3,093,935",3.46,2.62,469
+Iowa,2012,Cut/Pierce,15**,"3,076,844",0.49**,0.49**,341
+Iowa,2012,Drowning (includes water transport),44,"3,076,844",1.43,1.43,"1,252"
+Iowa,2012,Fall,472,"3,076,844",15.34,11.35,"1,053"
+Iowa,2012,Fire/Flame,40,"3,076,844",1.3,1.18,571
+Iowa,2012,Firearm,217,"3,076,844",7.05,6.98,"4,641"
+Iowa,2012,Machinery,29,"3,076,844",0.94,0.86,380
+Iowa,2012,Natural/Environmental,16**,"3,076,844",0.52**,0.50**,242
+Iowa,2012,Overexertion,--,"3,076,844",--,--,--
+Iowa,2012,Drug Poisoning,259,"3,076,844",8.42,8.65,"5,368"
+Iowa,2012,Non-Drug Poisoning,50,"3,076,844",1.63,1.74,"1,198"
+Iowa,2012,Struck by / against,14**,"3,076,844",0.46**,0.46**,349
+Iowa,2012,Suffocation,192,"3,076,844",6.24,6.2,"4,629"
+Iowa,2012,"Motor vehicle, traffic",342,"3,076,844",11.12,10.99,"7,657"
+Iowa,2012,"Pedal cyclist, other",--,"3,076,844",--,--,--
+Iowa,2012,"Pedestrian, other",--,"3,076,844",--,--,--
+Iowa,2012,"Transport, other land",25,"3,076,844",0.81,0.76,454
+Iowa,2012,"Transport, other (excl. drown by water transp)",--,"3,076,844",--,--,--
+Iowa,2012,Other specified and classifiable,24,"3,076,844",0.78,0.8,579
+Iowa,2012,Other specified / NEC,16**,"3,076,844",0.52**,0.48**,199
+Iowa,2012,Unspecified,79,"3,076,844",2.57,1.88,450
+Iowa,2011,Cut/Pierce,16**,"3,066,772",0.52**,0.61**,402
+Iowa,2011,Drowning (includes water transport),36,"3,066,772",1.17,1.13,"1,038"
+Iowa,2011,Fall,473,"3,066,772",15.42,11.63,960
+Iowa,2011,Fire/Flame,41,"3,066,772",1.34,1.31,692
+Iowa,2011,Firearm,220,"3,066,772",7.17,7.14,"4,703"
+Iowa,2011,Machinery,26,"3,066,772",0.85,0.79,355
+Iowa,2011,Natural/Environmental,16**,"3,066,772",0.52**,0.45**,211
+Iowa,2011,Drug Poisoning,250,"3,066,772",8.15,8.46,"5,458"
+Iowa,2011,Non-Drug Poisoning,62,"3,066,772",2.02,2.02,"1,153"
+Iowa,2011,Struck by / against,11**,"3,066,772",0.36**,0.33**,182
+Iowa,2011,Suffocation,189,"3,066,772",6.16,6.09,"3,936"
+Iowa,2011,"Motor vehicle, traffic",379,"3,066,772",12.36,12.1,"8,626"
+Iowa,2011,"Pedal cyclist, other",--,"3,066,772",--,--,--
+Iowa,2011,"Pedestrian, other",--,"3,066,772",--,--,--
+Iowa,2011,"Transport, other land",26,"3,066,772",0.85,0.78,490
+Iowa,2011,"Transport, other (excl. drown by water transp)",--,"3,066,772",--,--,--
+Iowa,2011,Other specified and classifiable,19**,"3,066,772",0.62**,0.62**,373
+Iowa,2011,Other specified / NEC,25,"3,066,772",0.82,0.72,265
+Iowa,2011,Unspecified,83,"3,066,772",2.71,2.18,526
+Iowa,2010,Cut/Pierce,11**,"3,046,877",0.36**,0.35**,177
+Iowa,2010,Drowning (includes water transport),48,"3,046,877",1.58,1.59,"1,418"
+Iowa,2010,Fall,398,"3,046,877",13.06,9.85,795
+Iowa,2010,Fire/Flame,28,"3,046,877",0.92,0.82,430
+Iowa,2010,Firearm,213,"3,046,877",6.99,6.79,"4,223"
+Iowa,2010,Machinery,12**,"3,046,877",0.39**,0.36**,125
+Iowa,2010,Natural/Environmental,19**,"3,046,877",0.62**,0.54**,223
+Iowa,2010,Drug Poisoning,253,"3,046,877",8.3,8.61,"5,815"
+Iowa,2010,Non-Drug Poisoning,63,"3,046,877",2.07,1.99,"1,029"
+Iowa,2010,Struck by / against,--,"3,046,877",--,--,--
+Iowa,2010,Suffocation,157,"3,046,877",5.15,4.98,"3,615"
+Iowa,2010,"Motor vehicle, traffic",376,"3,046,877",12.34,11.88,"8,375"
+Iowa,2010,"Pedal cyclist, other",--,"3,046,877",--,--,--
+Iowa,2010,"Pedestrian, other",--,"3,046,877",--,--,--
+Iowa,2010,"Transport, other land",23,"3,046,877",0.76,0.73,511
+Iowa,2010,"Transport, other (excl. drown by water transp)",--,"3,046,877",--,--,--
+Iowa,2010,Other specified and classifiable,17**,"3,046,877",0.56**,0.54**,415
+Iowa,2010,Other specified / NEC,21,"3,046,877",0.69,0.58,155
+Iowa,2010,Unspecified,70,"3,046,877",2.3,1.78,451
+Iowa,2009,Cut/Pierce,18**,"3,032,870",0.59**,0.56**,430
+Iowa,2009,Drowning (includes water transport),28,"3,032,870",0.92,0.95,839
+Iowa,2009,Fall,449,"3,032,870",14.8,11.16,731
+Iowa,2009,Fire/Flame,39,"3,032,870",1.29,1.18,879
+Iowa,2009,Hot object/Substance,--,"3,032,870",--,--,--
+Iowa,2009,Firearm,193,"3,032,870",6.36,6.24,"3,693"
+Iowa,2009,Machinery,20**,"3,032,870",0.66**,0.59**,174
+Iowa,2009,Natural/Environmental,--,"3,032,870",--,--,--
+Iowa,2009,Drug Poisoning,207,"3,032,870",6.83,7.15,"4,767"
+Iowa,2009,Non-Drug Poisoning,58,"3,032,870",1.91,1.9,"1,393"
+Iowa,2009,Struck by / against,11**,"3,032,870",0.36**,0.33**,137
+Iowa,2009,Suffocation,169,"3,032,870",5.57,5.35,"3,987"
+Iowa,2009,"Motor vehicle, traffic",361,"3,032,870",11.9,11.79,"8,652"
+Iowa,2009,"Pedal cyclist, other",--,"3,032,870",--,--,--
+Iowa,2009,"Pedestrian, other",--,"3,032,870",--,--,--
+Iowa,2009,"Transport, other land",23,"3,032,870",0.76,0.73,366
+Iowa,2009,"Transport, other (excl. drown by water transp)",--,"3,032,870",--,--,--
+Iowa,2009,Other specified and classifiable,20**,"3,032,870",0.66**,0.70**,451
+Iowa,2009,Other specified / NEC,20**,"3,032,870",0.66**,0.57**,179
+Iowa,2009,Unspecified,66,"3,032,870",2.18,1.65,350
+Iowa,2008,Cut/Pierce,29,"3,016,734",0.96,0.96,547
+Iowa,2008,Drowning (includes water transport),29,"3,016,734",0.96,0.94,907
+Iowa,2008,Fall,352,"3,016,734",11.67,8.8,778
+Iowa,2008,Fire/Flame,40,"3,016,734",1.33,1.25,848
+Iowa,2008,Hot object/Substance,--,"3,016,734",--,--,--
+Iowa,2008,Firearm,224,"3,016,734",7.43,7.25,"4,911"
+Iowa,2008,Machinery,29,"3,016,734",0.96,0.92,642
+Iowa,2008,Natural/Environmental,18**,"3,016,734",0.60**,0.56**,260
+Iowa,2008,Drug Poisoning,209,"3,016,734",6.93,7.12,"4,724"
+Iowa,2008,Non-Drug Poisoning,70,"3,016,734",2.32,2.35,"1,237"
+Iowa,2008,Struck by / against,20**,"3,016,734",0.66**,0.65**,380
+Iowa,2008,Suffocation,158,"3,016,734",5.24,5.12,"3,977"
+Iowa,2008,"Motor vehicle, traffic",416,"3,016,734",13.79,13.44,"9,331"
+Iowa,2008,"Pedal cyclist, other",--,"3,016,734",--,--,--
+Iowa,2008,"Pedestrian, other",10**,"3,016,734",0.33**,0.30**,250
+Iowa,2008,"Transport, other land",27,"3,016,734",0.9,0.88,424
+Iowa,2008,"Transport, other (excl. drown by water transp)",--,"3,016,734",--,--,--
+Iowa,2008,Other specified and classifiable,42,"3,016,734",1.39,1.38,"1,290"
+Iowa,2008,Other specified / NEC,29,"3,016,734",0.96,0.87,535
+Iowa,2008,Unspecified,62,"3,016,734",2.06,1.63,552
+Iowa,2007,Cut/Pierce,24,"2,999,212",0.8,0.83,553
+Iowa,2007,Drowning (includes water transport),39,"2,999,212",1.3,1.29,"1,037"
+Iowa,2007,Fall,368,"2,999,212",12.27,9.22,649
+Iowa,2007,Fire/Flame,25,"2,999,212",0.83,0.75,434
+Iowa,2007,Hot object/Substance,--,"2,999,212",--,--,--
+Iowa,2007,Firearm,157,"2,999,212",5.24,4.99,"2,967"
+Iowa,2007,Machinery,22,"2,999,212",0.73,0.67,186
+Iowa,2007,Natural/Environmental,18**,"2,999,212",0.60**,0.52**,323
+Iowa,2007,Overexertion,--,"2,999,212",--,--,--
+Iowa,2007,Drug Poisoning,203,"2,999,212",6.77,6.87,"4,638"
+Iowa,2007,Non-Drug Poisoning,53,"2,999,212",1.77,1.8,948
+Iowa,2007,Struck by / against,23,"2,999,212",0.77,0.71,435
+Iowa,2007,Suffocation,141,"2,999,212",4.7,4.59,"2,978"
+Iowa,2007,"Motor vehicle, traffic",435,"2,999,212",14.5,14.13,"10,917"
+Iowa,2007,"Pedal cyclist, other",--,"2,999,212",--,--,--
+Iowa,2007,"Pedestrian, other",--,"2,999,212",--,--,--
+Iowa,2007,"Transport, other land",25,"2,999,212",0.83,0.82,658
+Iowa,2007,"Transport, other (excl. drown by water transp)",10**,"2,999,212",0.33**,0.37**,267
+Iowa,2007,Other specified and classifiable,21,"2,999,212",0.7,0.66,465
+Iowa,2007,Other specified / NEC,21,"2,999,212",0.7,0.66,311
+Iowa,2007,Unspecified,62,"2,999,212",2.07,1.6,412
+Iowa,2006,Cut/Pierce,20**,"2,982,644",0.67**,0.66**,624
+Iowa,2006,Drowning (includes water transport),43,"2,982,644",1.44,1.43,"1,190"
+Iowa,2006,Fall,329,"2,982,644",11.03,8.45,906
+Iowa,2006,Fire/Flame,27,"2,982,644",0.91,0.86,510
+Iowa,2006,Hot object/Substance,--,"2,982,644",--,--,--
+Iowa,2006,Firearm,193,"2,982,644",6.47,6.34,"4,509"
+Iowa,2006,Machinery,17**,"2,982,644",0.57**,0.55**,228
+Iowa,2006,Natural/Environmental,12**,"2,982,644",0.40**,0.38**,114
+Iowa,2006,Drug Poisoning,187,"2,982,644",6.27,6.53,"4,362"
+Iowa,2006,Non-Drug Poisoning,39,"2,982,644",1.31,1.28,656
+Iowa,2006,Struck by / against,--,"2,982,644",--,--,--
+Iowa,2006,Suffocation,170,"2,982,644",5.7,5.49,"3,902"
+Iowa,2006,"Motor vehicle, traffic",431,"2,982,644",14.45,13.83,"9,099"
+Iowa,2006,"Pedal cyclist, other",--,"2,982,644",--,--,--
+Iowa,2006,"Pedestrian, other",13**,"2,982,644",0.44**,0.42**,199
+Iowa,2006,"Transport, other land",21,"2,982,644",0.7,0.64,443
+Iowa,2006,"Transport, other (excl. drown by water transp)",--,"2,982,644",--,--,--
+Iowa,2006,Other specified and classifiable,21,"2,982,644",0.7,0.67,454
+Iowa,2006,Other specified / NEC,19**,"2,982,644",0.64**,0.55**,204
+Iowa,2006,Unspecified,70,"2,982,644",2.35,1.8,360
+Iowa,2005,Cut/Pierce,13**,"2,964,454",0.44**,0.43**,338
+Iowa,2005,Drowning (includes water transport),50,"2,964,454",1.69,1.69,"1,485"
+Iowa,2005,Fall,342,"2,964,454",11.54,8.88,677
+Iowa,2005,Fire/Flame,40,"2,964,454",1.35,1.3,912
+Iowa,2005,Hot object/Substance,--,"2,964,454",--,--,--
+Iowa,2005,Firearm,201,"2,964,454",6.78,6.71,"4,513"
+Iowa,2005,Machinery,30,"2,964,454",1.01,0.98,414
+Iowa,2005,Natural/Environmental,17**,"2,964,454",0.57**,0.52**,175
+Iowa,2005,Overexertion,--,"2,964,454",--,--,--
+Iowa,2005,Drug Poisoning,141,"2,964,454",4.76,4.82,"3,231"
+Iowa,2005,Non-Drug Poisoning,34,"2,964,454",1.15,1.15,651
+Iowa,2005,Struck by / against,--,"2,964,454",--,--,--
+Iowa,2005,Suffocation,136,"2,964,454",4.59,4.36,"3,007"
+Iowa,2005,"Motor vehicle, traffic",442,"2,964,454",14.91,14.48,"11,077"
+Iowa,2005,"Pedal cyclist, other",--,"2,964,454",--,--,--
+Iowa,2005,"Pedestrian, other",14**,"2,964,454",0.47**,0.45**,328
+Iowa,2005,"Transport, other land",26,"2,964,454",0.88,0.88,545
+Iowa,2005,"Transport, other (excl. drown by water transp)",13**,"2,964,454",0.44**,0.44**,296
+Iowa,2005,Other specified and classifiable,23,"2,964,454",0.78,0.75,491
+Iowa,2005,Other specified / NEC,12**,"2,964,454",0.41**,0.34**,69
+Iowa,2005,Unspecified,66,"2,964,454",2.23,1.73,321
+Iowa,2004,Cut/Pierce,16**,"2,953,635",0.54**,0.54**,338
+Iowa,2004,Drowning (includes water transport),30,"2,953,635",1.02,1.03,806
+Iowa,2004,Fall,331,"2,953,635",11.21,8.8,987
+Iowa,2004,Fire/Flame,37,"2,953,635",1.25,1.11,547
+Iowa,2004,Hot object/Substance,--,"2,953,635",--,--,--
+Iowa,2004,Firearm,195,"2,953,635",6.6,6.45,"4,523"
+Iowa,2004,Machinery,25,"2,953,635",0.85,0.81,380
+Iowa,2004,Natural/Environmental,12**,"2,953,635",0.41**,0.37**,139
+Iowa,2004,Overexertion,--,"2,953,635",--,--,--
+Iowa,2004,Drug Poisoning,122,"2,953,635",4.13,4.24,"2,779"
+Iowa,2004,Non-Drug Poisoning,36,"2,953,635",1.22,1.22,744
+Iowa,2004,Struck by / against,12**,"2,953,635",0.41**,0.37**,160
+Iowa,2004,Suffocation,163,"2,953,635",5.52,5.26,"3,283"
+Iowa,2004,"Motor vehicle, traffic",393,"2,953,635",13.31,12.77,"9,875"
+Iowa,2004,"Pedal cyclist, other",--,"2,953,635",--,--,--
+Iowa,2004,"Pedestrian, other",--,"2,953,635",--,--,--
+Iowa,2004,"Transport, other land",23,"2,953,635",0.78,0.75,569
+Iowa,2004,"Transport, other (excl. drown by water transp)",--,"2,953,635",--,--,--
+Iowa,2004,Other specified and classifiable,21,"2,953,635",0.71,0.69,493
+Iowa,2004,Other specified / NEC,13**,"2,953,635",0.44**,0.44**,213
+Iowa,2004,Unspecified,95,"2,953,635",3.22,2.47,467
+Iowa,2003,Cut/Pierce,16**,"2,941,999",0.54**,0.53**,338
+Iowa,2003,Drowning (includes water transport),34,"2,941,999",1.16,1.17,"1,172"
+Iowa,2003,Fall,325,"2,941,999",11.05,8.56,985
+Iowa,2003,Fire/Flame,38,"2,941,999",1.29,1.27,853
+Iowa,2003,Firearm,208,"2,941,999",7.07,6.94,"4,342"
+Iowa,2003,Machinery,25,"2,941,999",0.85,0.82,441
+Iowa,2003,Natural/Environmental,12**,"2,941,999",0.41**,0.37**,159
+Iowa,2003,Drug Poisoning,96,"2,941,999",3.26,3.37,"2,327"
+Iowa,2003,Non-Drug Poisoning,58,"2,941,999",1.97,1.89,"1,000"
+Iowa,2003,Struck by / against,16**,"2,941,999",0.54**,0.52**,289
+Iowa,2003,Suffocation,162,"2,941,999",5.51,5.25,"3,577"
+Iowa,2003,"Motor vehicle, traffic",445,"2,941,999",15.13,14.54,"11,084"
+Iowa,2003,"Pedal cyclist, other",--,"2,941,999",--,--,--
+Iowa,2003,"Pedestrian, other",--,"2,941,999",--,--,--
+Iowa,2003,"Transport, other land",13**,"2,941,999",0.44**,0.42**,426
+Iowa,2003,"Transport, other (excl. drown by water transp)",--,"2,941,999",--,--,--
+Iowa,2003,Other specified and classifiable,26,"2,941,999",0.88,0.87,594
+Iowa,2003,Other specified / NEC,18**,"2,941,999",0.61**,0.51**,116
+Iowa,2003,Unspecified,79,"2,941,999",2.69,2.1,399
+Iowa,2002,Cut/Pierce,17**,"2,934,234",0.58**,0.61**,409
+Iowa,2002,Drowning (includes water transport),49,"2,934,234",1.67,1.65,"1,447"
+Iowa,2002,Fall,276,"2,934,234",9.41,7.43,808
+Iowa,2002,Fire/Flame,25,"2,934,234",0.85,0.77,333
+Iowa,2002,Hot object/Substance,--,"2,934,234",--,--,--
+Iowa,2002,Firearm,201,"2,934,234",6.85,6.73,"4,665"
+Iowa,2002,Machinery,21,"2,934,234",0.72,0.69,316
+Iowa,2002,Natural/Environmental,17**,"2,934,234",0.58**,0.52**,176
+Iowa,2002,Overexertion,--,"2,934,234",--,--,--
+Iowa,2002,Drug Poisoning,91,"2,934,234",3.1,3.14,"2,053"
+Iowa,2002,Non-Drug Poisoning,40,"2,934,234",1.36,1.35,824
+Iowa,2002,Struck by / against,10**,"2,934,234",0.34**,0.32**,115
+Iowa,2002,Suffocation,151,"2,934,234",5.15,4.92,"3,156"
+Iowa,2002,"Motor vehicle, traffic",408,"2,934,234",13.91,13.4,"9,904"
+Iowa,2002,"Pedal cyclist, other",--,"2,934,234",--,--,--
+Iowa,2002,"Pedestrian, other",12**,"2,934,234",0.41**,0.41**,435
+Iowa,2002,"Transport, other land",13**,"2,934,234",0.44**,0.42**,216
+Iowa,2002,"Transport, other (excl. drown by water transp)",--,"2,934,234",--,--,--
+Iowa,2002,Other specified and classifiable,27,"2,934,234",0.92,0.89,862
+Iowa,2002,Other specified / NEC,23,"2,934,234",0.78,0.75,353
+Iowa,2002,Unspecified,94,"2,934,234",3.2,2.49,333
+Iowa,2001,Cut/Pierce,23,"2,931,997",0.78,0.77,296
+Iowa,2001,Drowning (includes water transport),28,"2,931,997",0.96,0.98,958
+Iowa,2001,Fall,243,"2,931,997",8.29,6.48,586
+Iowa,2001,Fire/Flame,28,"2,931,997",0.96,0.92,581
+Iowa,2001,Firearm,191,"2,931,997",6.51,6.37,"4,519"
+Iowa,2001,Machinery,15**,"2,931,997",0.51**,0.51**,204
+Iowa,2001,Natural/Environmental,18**,"2,931,997",0.61**,0.54**,263
+Iowa,2001,Drug Poisoning,87,"2,931,997",2.97,2.99,"2,115"
+Iowa,2001,Non-Drug Poisoning,50,"2,931,997",1.71,1.7,791
+Iowa,2001,Struck by / against,17**,"2,931,997",0.58**,0.58**,342
+Iowa,2001,Suffocation,124,"2,931,997",4.23,3.92,"2,484"
+Iowa,2001,"Motor vehicle, traffic",432,"2,931,997",14.73,14.42,"11,268"
+Iowa,2001,"Pedal cyclist, other",--,"2,931,997",--,--,--
+Iowa,2001,"Pedestrian, other",--,"2,931,997",--,--,--
+Iowa,2001,"Transport, other land",13**,"2,931,997",0.44**,0.45**,278
+Iowa,2001,"Transport, other (excl. drown by water transp)",--,"2,931,997",--,--,--
+Iowa,2001,Other specified and classifiable,18**,"2,931,997",0.61**,0.61**,490
+Iowa,2001,Other specified / NEC,18**,"2,931,997",0.61**,0.55**,196
+Iowa,2001,Unspecified,128,"2,931,997",4.37,3.49,921
+Total,,,"39,387","64,243,579",61.31,56.27,"637,908"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Iowa,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

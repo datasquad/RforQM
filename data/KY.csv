@@ -1,0 +1,431 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Kentucky,2021,Cut/Pierce,33,"4,509,394",0.73,0.75,560
+Kentucky,2021,Drowning (includes water transport),79,"4,509,394",1.75,1.74,"2,281"
+Kentucky,2021,Fall,495,"4,509,394",10.98,9.49,"1,385"
+Kentucky,2021,Fire/Flame,85,"4,509,394",1.89,1.59,922
+Kentucky,2021,Hot object/Substance,--,"4,509,394",--,--,--
+Kentucky,2021,Firearm,947,"4,509,394",21,20.95,"23,118"
+Kentucky,2021,Machinery,17**,"4,509,394",0.38**,0.31**,116
+Kentucky,2021,Natural/Environmental,106,"4,509,394",2.35,2.16,"1,675"
+Kentucky,2021,Drug Poisoning,"2,381","4,509,394",52.8,55.8,"53,329"
+Kentucky,2021,Non-Drug Poisoning,61,"4,509,394",1.35,1.27,"1,016"
+Kentucky,2021,Struck by / against,19**,"4,509,394",0.42**,0.45**,323
+Kentucky,2021,Suffocation,330,"4,509,394",7.32,7.19,"6,811"
+Kentucky,2021,"Motor vehicle, traffic",786,"4,509,394",17.43,17.06,"16,792"
+Kentucky,2021,"Pedal cyclist, other",--,"4,509,394",--,--,--
+Kentucky,2021,"Pedestrian, other",10**,"4,509,394",0.22**,0.24**,214
+Kentucky,2021,"Transport, other land",41,"4,509,394",0.91,0.86,643
+Kentucky,2021,"Transport, other (excl. drown by water transp)",--,"4,509,394",--,--,--
+Kentucky,2021,Other specified and classifiable,32,"4,509,394",0.71,0.66,635
+Kentucky,2021,Other specified / NEC,21,"4,509,394",0.47,0.46,457
+Kentucky,2021,Unspecified,229,"4,509,394",5.08,4.62,960
+Kentucky,2020,Cut/Pierce,36,"4,503,958",0.8,0.79,702
+Kentucky,2020,Drowning (includes water transport),83,"4,503,958",1.84,1.9,"2,403"
+Kentucky,2020,Fall,375,"4,503,958",8.33,7.19,915
+Kentucky,2020,Fire/Flame,97,"4,503,958",2.15,2.01,"1,495"
+Kentucky,2020,Hot object/Substance,--,"4,503,958",--,--,--
+Kentucky,2020,Firearm,902,"4,503,958",20.03,20.05,"21,617"
+Kentucky,2020,Machinery,18**,"4,503,958",0.40**,0.30**,90
+Kentucky,2020,Natural/Environmental,32,"4,503,958",0.71,0.6,323
+Kentucky,2020,Drug Poisoning,"2,083","4,503,958",46.25,48.81,"47,853"
+Kentucky,2020,Non-Drug Poisoning,79,"4,503,958",1.75,1.64,"1,254"
+Kentucky,2020,Struck by / against,28,"4,503,958",0.62,0.62,561
+Kentucky,2020,Suffocation,319,"4,503,958",7.08,7.39,"7,976"
+Kentucky,2020,"Motor vehicle, traffic",817,"4,503,958",18.14,17.94,"18,655"
+Kentucky,2020,"Pedal cyclist, other",--,"4,503,958",--,--,--
+Kentucky,2020,"Pedestrian, other",13**,"4,503,958",0.29**,0.32**,353
+Kentucky,2020,"Transport, other land",47,"4,503,958",1.04,1.04,"1,147"
+Kentucky,2020,"Transport, other (excl. drown by water transp)",--,"4,503,958",--,--,--
+Kentucky,2020,Other specified and classifiable,24,"4,503,958",0.53,0.51,302
+Kentucky,2020,Other specified / NEC,25,"4,503,958",0.56,0.45,213
+Kentucky,2020,Unspecified,254,"4,503,958",5.64,5.07,867
+Kentucky,2019,Cut/Pierce,40,"4,472,345",0.89,0.9,708
+Kentucky,2019,Drowning (includes water transport),72,"4,472,345",1.61,1.59,"1,968"
+Kentucky,2019,Fall,431,"4,472,345",9.64,8.09,"1,044"
+Kentucky,2019,Fire/Flame,74,"4,472,345",1.66,1.49,"1,103"
+Kentucky,2019,Hot object/Substance,--,"4,472,345",--,--,--
+Kentucky,2019,Firearm,682,"4,472,345",15.25,14.89,"14,991"
+Kentucky,2019,Machinery,12**,"4,472,345",0.27**,0.25**,174
+Kentucky,2019,Natural/Environmental,30,"4,472,345",0.67,0.63,532
+Kentucky,2019,Drug Poisoning,"1,380","4,472,345",30.86,32.6,"30,598"
+Kentucky,2019,Non-Drug Poisoning,66,"4,472,345",1.48,1.41,"1,081"
+Kentucky,2019,Struck by / against,24,"4,472,345",0.54,0.53,442
+Kentucky,2019,Suffocation,323,"4,472,345",7.22,7.25,"7,310"
+Kentucky,2019,"Motor vehicle, traffic",735,"4,472,345",16.43,16.03,"14,471"
+Kentucky,2019,"Pedal cyclist, other",--,"4,472,345",--,--,--
+Kentucky,2019,"Pedestrian, other",11**,"4,472,345",0.25**,0.25**,290
+Kentucky,2019,"Transport, other land",29,"4,472,345",0.65,0.6,498
+Kentucky,2019,"Transport, other (excl. drown by water transp)",--,"4,472,345",--,--,--
+Kentucky,2019,Other specified and classifiable,23,"4,472,345",0.51,0.53,528
+Kentucky,2019,Other specified / NEC,26,"4,472,345",0.58,0.54,399
+Kentucky,2019,Unspecified,238,"4,472,345",5.32,4.5,597
+Kentucky,2018,Cut/Pierce,47,"4,464,273",1.05,0.97,732
+Kentucky,2018,Drowning (includes water transport),73,"4,464,273",1.64,1.64,"1,807"
+Kentucky,2018,Fall,380,"4,464,273",8.51,7.25,948
+Kentucky,2018,Fire/Flame,85,"4,464,273",1.9,1.8,"1,779"
+Kentucky,2018,Hot object/Substance,--,"4,464,273",--,--,--
+Kentucky,2018,Firearm,762,"4,464,273",17.07,16.83,"16,326"
+Kentucky,2018,Machinery,17**,"4,464,273",0.38**,0.30**,173
+Kentucky,2018,Natural/Environmental,33,"4,464,273",0.74,0.66,371
+Kentucky,2018,Overexertion,--,"4,464,273",--,--,--
+Kentucky,2018,Drug Poisoning,"1,315","4,464,273",29.46,31.03,"30,449"
+Kentucky,2018,Non-Drug Poisoning,74,"4,464,273",1.66,1.68,"1,554"
+Kentucky,2018,Struck by / against,23,"4,464,273",0.52,0.48,393
+Kentucky,2018,Suffocation,303,"4,464,273",6.79,6.71,"6,933"
+Kentucky,2018,"Motor vehicle, traffic",734,"4,464,273",16.44,16.2,"15,425"
+Kentucky,2018,"Pedal cyclist, other",--,"4,464,273",--,--,--
+Kentucky,2018,"Pedestrian, other",11**,"4,464,273",0.25**,0.25**,265
+Kentucky,2018,"Transport, other land",45,"4,464,273",1.01,0.95,778
+Kentucky,2018,"Transport, other (excl. drown by water transp)",--,"4,464,273",--,--,--
+Kentucky,2018,Other specified and classifiable,28,"4,464,273",0.63,0.62,762
+Kentucky,2018,Other specified / NEC,23,"4,464,273",0.52,0.48,322
+Kentucky,2018,Unspecified,222,"4,464,273",4.97,4.29,807
+Kentucky,2017,Cut/Pierce,48,"4,455,590",1.08,1.06,"1,038"
+Kentucky,2017,Drowning (includes water transport),62,"4,455,590",1.39,1.39,"1,792"
+Kentucky,2017,Fall,376,"4,455,590",8.44,7.44,"1,216"
+Kentucky,2017,Fire/Flame,65,"4,455,590",1.46,1.28,805
+Kentucky,2017,Hot object/Substance,--,"4,455,590",--,--,--
+Kentucky,2017,Firearm,730,"4,455,590",16.38,16.19,"16,616"
+Kentucky,2017,Machinery,15**,"4,455,590",0.34**,0.33**,123
+Kentucky,2017,Natural/Environmental,19**,"4,455,590",0.43**,0.39**,134
+Kentucky,2017,Drug Poisoning,"1,566","4,455,590",35.15,37.31,"36,847"
+Kentucky,2017,Non-Drug Poisoning,77,"4,455,590",1.73,1.74,"1,414"
+Kentucky,2017,Struck by / against,26,"4,455,590",0.58,0.54,414
+Kentucky,2017,Suffocation,300,"4,455,590",6.73,6.84,"7,198"
+Kentucky,2017,"Motor vehicle, traffic",799,"4,455,590",17.93,17.62,"18,185"
+Kentucky,2017,"Pedal cyclist, other",--,"4,455,590",--,--,--
+Kentucky,2017,"Pedestrian, other",14**,"4,455,590",0.31**,0.30**,282
+Kentucky,2017,"Transport, other land",31,"4,455,590",0.7,0.69,567
+Kentucky,2017,"Transport, other (excl. drown by water transp)",--,"4,455,590",--,--,--
+Kentucky,2017,Other specified and classifiable,27,"4,455,590",0.61,0.62,683
+Kentucky,2017,Other specified / NEC,26,"4,455,590",0.58,0.54,305
+Kentucky,2017,Unspecified,253,"4,455,590",5.68,5.05,"1,679"
+Kentucky,2016,Cut/Pierce,40,"4,440,306",0.9,0.88,783
+Kentucky,2016,Drowning (includes water transport),64,"4,440,306",1.44,1.56,"1,879"
+Kentucky,2016,Fall,369,"4,440,306",8.31,7.37,"1,275"
+Kentucky,2016,Fire/Flame,89,"4,440,306",2,1.77,"1,186"
+Kentucky,2016,Hot object/Substance,--,"4,440,306",--,--,--
+Kentucky,2016,Firearm,772,"4,440,306",17.39,17.45,"17,390"
+Kentucky,2016,Machinery,14**,"4,440,306",0.32**,0.29**,189
+Kentucky,2016,Natural/Environmental,26,"4,440,306",0.59,0.52,304
+Kentucky,2016,Overexertion,--,"4,440,306",--,--,--
+Kentucky,2016,Drug Poisoning,"1,419","4,440,306",31.96,33.59,"32,719"
+Kentucky,2016,Non-Drug Poisoning,67,"4,440,306",1.51,1.56,"1,344"
+Kentucky,2016,Struck by / against,25,"4,440,306",0.56,0.56,409
+Kentucky,2016,Suffocation,270,"4,440,306",6.08,6.03,"6,557"
+Kentucky,2016,"Motor vehicle, traffic",841,"4,440,306",18.94,18.45,"18,760"
+Kentucky,2016,"Pedal cyclist, other",--,"4,440,306",--,--,--
+Kentucky,2016,"Pedestrian, other",16**,"4,440,306",0.36**,0.36**,415
+Kentucky,2016,"Transport, other land",27,"4,440,306",0.61,0.58,654
+Kentucky,2016,"Transport, other (excl. drown by water transp)",--,"4,440,306",--,--,--
+Kentucky,2016,Other specified and classifiable,27,"4,440,306",0.61,0.59,730
+Kentucky,2016,Other specified / NEC,25,"4,440,306",0.56,0.51,435
+Kentucky,2016,Unspecified,250,"4,440,306",5.63,4.98,963
+Kentucky,2015,Cut/Pierce,35,"4,429,126",0.79,0.75,555
+Kentucky,2015,Drowning (includes water transport),82,"4,429,126",1.85,1.94,"2,424"
+Kentucky,2015,Fall,350,"4,429,126",7.9,7.1,"1,062"
+Kentucky,2015,Fire/Flame,70,"4,429,126",1.58,1.49,"1,341"
+Kentucky,2015,Firearm,694,"4,429,126",15.67,15.1,"14,606"
+Kentucky,2015,Machinery,23,"4,429,126",0.52,0.46,285
+Kentucky,2015,Natural/Environmental,38,"4,429,126",0.86,0.78,568
+Kentucky,2015,Drug Poisoning,"1,273","4,429,126",28.74,29.97,"29,195"
+Kentucky,2015,Non-Drug Poisoning,78,"4,429,126",1.76,1.64,"1,407"
+Kentucky,2015,Struck by / against,32,"4,429,126",0.72,0.68,519
+Kentucky,2015,Suffocation,288,"4,429,126",6.5,6.5,"6,479"
+Kentucky,2015,"Motor vehicle, traffic",793,"4,429,126",17.9,17.66,"18,911"
+Kentucky,2015,"Pedal cyclist, other",--,"4,429,126",--,--,--
+Kentucky,2015,"Pedestrian, other",13**,"4,429,126",0.29**,0.31**,397
+Kentucky,2015,"Transport, other land",38,"4,429,126",0.86,0.82,887
+Kentucky,2015,"Transport, other (excl. drown by water transp)",--,"4,429,126",--,--,--
+Kentucky,2015,Other specified and classifiable,23,"4,429,126",0.52,0.58,548
+Kentucky,2015,Other specified / NEC,16**,"4,429,126",0.36**,0.35**,191
+Kentucky,2015,Unspecified,235,"4,429,126",5.31,4.76,"1,085"
+Kentucky,2014,Cut/Pierce,39,"4,416,992",0.88,0.89,911
+Kentucky,2014,Drowning (includes water transport),50,"4,416,992",1.13,1.15,"1,407"
+Kentucky,2014,Fall,312,"4,416,992",7.06,6.39,"1,099"
+Kentucky,2014,Fire/Flame,75,"4,416,992",1.7,1.56,"1,173"
+Kentucky,2014,Hot object/Substance,--,"4,416,992",--,--,--
+Kentucky,2014,Firearm,634,"4,416,992",14.35,13.94,"12,281"
+Kentucky,2014,Machinery,17**,"4,416,992",0.39**,0.36**,173
+Kentucky,2014,Natural/Environmental,22,"4,416,992",0.5,0.43,130
+Kentucky,2014,Drug Poisoning,"1,077","4,416,992",24.38,24.76,"23,667"
+Kentucky,2014,Non-Drug Poisoning,83,"4,416,992",1.88,1.92,"1,694"
+Kentucky,2014,Struck by / against,18**,"4,416,992",0.41**,0.40**,368
+Kentucky,2014,Suffocation,270,"4,416,992",6.11,6.02,"5,983"
+Kentucky,2014,"Motor vehicle, traffic",664,"4,416,992",15.03,14.87,"15,804"
+Kentucky,2014,"Pedal cyclist, other",--,"4,416,992",--,--,--
+Kentucky,2014,"Pedestrian, other",18**,"4,416,992",0.41**,0.41**,357
+Kentucky,2014,"Transport, other land",53,"4,416,992",1.2,1.17,"1,148"
+Kentucky,2014,"Transport, other (excl. drown by water transp)",--,"4,416,992",--,--,--
+Kentucky,2014,Other specified and classifiable,25,"4,416,992",0.57,0.57,604
+Kentucky,2014,Other specified / NEC,20**,"4,416,992",0.45**,0.43**,299
+Kentucky,2014,Unspecified,249,"4,416,992",5.64,5.22,"1,489"
+Kentucky,2013,Cut/Pierce,38,"4,406,906",0.86,0.84,681
+Kentucky,2013,Drowning (includes water transport),58,"4,406,906",1.32,1.28,"1,483"
+Kentucky,2013,Fall,311,"4,406,906",7.06,6.35,804
+Kentucky,2013,Fire/Flame,85,"4,406,906",1.93,1.88,"1,803"
+Kentucky,2013,Hot object/Substance,--,"4,406,906",--,--,--
+Kentucky,2013,Firearm,622,"4,406,906",14.11,13.53,"12,843"
+Kentucky,2013,Machinery,12**,"4,406,906",0.27**,0.24**,118
+Kentucky,2013,Natural/Environmental,26,"4,406,906",0.59,0.54,233
+Kentucky,2013,Drug Poisoning,"1,019","4,406,906",23.12,23.55,"22,915"
+Kentucky,2013,Non-Drug Poisoning,60,"4,406,906",1.36,1.4,"1,300"
+Kentucky,2013,Struck by / against,22,"4,406,906",0.5,0.42,302
+Kentucky,2013,Suffocation,257,"4,406,906",5.83,5.82,"5,656"
+Kentucky,2013,"Motor vehicle, traffic",657,"4,406,906",14.91,14.35,"13,615"
+Kentucky,2013,"Pedal cyclist, other",--,"4,406,906",--,--,--
+Kentucky,2013,"Pedestrian, other",15**,"4,406,906",0.34**,0.33**,357
+Kentucky,2013,"Transport, other land",51,"4,406,906",1.16,1.12,"1,063"
+Kentucky,2013,"Transport, other (excl. drown by water transp)",--,"4,406,906",--,--,--
+Kentucky,2013,Other specified and classifiable,37,"4,406,906",0.84,0.87,976
+Kentucky,2013,Other specified / NEC,24,"4,406,906",0.55,0.55,397
+Kentucky,2013,Unspecified,204,"4,406,906",4.63,4.33,"1,263"
+Kentucky,2012,Cut/Pierce,39,"4,387,865",0.89,0.84,660
+Kentucky,2012,Drowning (includes water transport),65,"4,387,865",1.48,1.45,"2,071"
+Kentucky,2012,Fall,327,"4,387,865",7.45,6.97,"1,343"
+Kentucky,2012,Fire/Flame,86,"4,387,865",1.96,1.84,"1,444"
+Kentucky,2012,Hot object/Substance,--,"4,387,865",--,--,--
+Kentucky,2012,Firearm,655,"4,387,865",14.93,14.67,"14,281"
+Kentucky,2012,Machinery,23,"4,387,865",0.52,0.48,270
+Kentucky,2012,Natural/Environmental,42,"4,387,865",0.96,0.94,573
+Kentucky,2012,Drug Poisoning,"1,078","4,387,865",24.57,24.97,"24,397"
+Kentucky,2012,Non-Drug Poisoning,95,"4,387,865",2.17,2.18,"2,110"
+Kentucky,2012,Struck by / against,28,"4,387,865",0.64,0.64,573
+Kentucky,2012,Suffocation,259,"4,387,865",5.9,6.03,"5,989"
+Kentucky,2012,"Motor vehicle, traffic",779,"4,387,865",17.75,17.69,"18,559"
+Kentucky,2012,"Pedal cyclist, other",--,"4,387,865",--,--,--
+Kentucky,2012,"Pedestrian, other",18**,"4,387,865",0.41**,0.38**,453
+Kentucky,2012,"Transport, other land",32,"4,387,865",0.73,0.74,666
+Kentucky,2012,"Transport, other (excl. drown by water transp)",--,"4,387,865",--,--,--
+Kentucky,2012,Other specified and classifiable,30,"4,387,865",0.68,0.7,636
+Kentucky,2012,Other specified / NEC,22,"4,387,865",0.5,0.49,387
+Kentucky,2012,Unspecified,223,"4,387,865",5.08,4.79,"1,417"
+Kentucky,2011,Cut/Pierce,21,"4,370,817",0.48,0.42,290
+Kentucky,2011,Drowning (includes water transport),78,"4,370,817",1.79,1.82,"2,551"
+Kentucky,2011,Fall,271,"4,370,817",6.2,5.85,"1,080"
+Kentucky,2011,Fire/Flame,58,"4,370,817",1.33,1.23,760
+Kentucky,2011,Firearm,617,"4,370,817",14.12,13.83,"12,783"
+Kentucky,2011,Machinery,18**,"4,370,817",0.41**,0.39**,267
+Kentucky,2011,Natural/Environmental,26,"4,370,817",0.6,0.53,540
+Kentucky,2011,Overexertion,--,"4,370,817",--,--,--
+Kentucky,2011,Drug Poisoning,"1,058","4,370,817",24.21,25.05,"24,941"
+Kentucky,2011,Non-Drug Poisoning,101,"4,370,817",2.31,2.31,"2,336"
+Kentucky,2011,Struck by / against,26,"4,370,817",0.6,0.58,470
+Kentucky,2011,Suffocation,240,"4,370,817",5.49,5.47,"5,559"
+Kentucky,2011,"Motor vehicle, traffic",726,"4,370,817",16.61,16.42,"16,720"
+Kentucky,2011,"Pedal cyclist, other",--,"4,370,817",--,--,--
+Kentucky,2011,"Pedestrian, other",17**,"4,370,817",0.39**,0.41**,474
+Kentucky,2011,"Transport, other land",34,"4,370,817",0.78,0.77,677
+Kentucky,2011,"Transport, other (excl. drown by water transp)",--,"4,370,817",--,--,--
+Kentucky,2011,Other specified and classifiable,25,"4,370,817",0.57,0.54,462
+Kentucky,2011,Other specified / NEC,13**,"4,370,817",0.30**,0.26**,166
+Kentucky,2011,Unspecified,229,"4,370,817",5.24,5.05,"1,518"
+Kentucky,2010,Cut/Pierce,20**,"4,339,330",0.46**,0.49**,552
+Kentucky,2010,Drowning (includes water transport),67,"4,339,330",1.54,1.53,"1,935"
+Kentucky,2010,Fall,294,"4,339,330",6.78,6.5,"1,301"
+Kentucky,2010,Fire/Flame,74,"4,339,330",1.71,1.68,"1,547"
+Kentucky,2010,Firearm,555,"4,339,330",12.79,12.48,"11,258"
+Kentucky,2010,Machinery,21,"4,339,330",0.48,0.45,279
+Kentucky,2010,Natural/Environmental,27,"4,339,330",0.62,0.58,350
+Kentucky,2010,Drug Poisoning,"1,007","4,339,330",23.21,23.69,"23,596"
+Kentucky,2010,Non-Drug Poisoning,93,"4,339,330",2.14,2.07,"1,901"
+Kentucky,2010,Struck by / against,19**,"4,339,330",0.44**,0.44**,371
+Kentucky,2010,Suffocation,271,"4,339,330",6.25,6.32,"6,441"
+Kentucky,2010,"Motor vehicle, traffic",787,"4,339,330",18.14,18.03,"18,912"
+Kentucky,2010,"Pedal cyclist, other",--,"4,339,330",--,--,--
+Kentucky,2010,"Pedestrian, other",13**,"4,339,330",0.30**,0.28**,170
+Kentucky,2010,"Transport, other land",33,"4,339,330",0.76,0.75,720
+Kentucky,2010,"Transport, other (excl. drown by water transp)",--,"4,339,330",--,--,--
+Kentucky,2010,Other specified and classifiable,28,"4,339,330",0.65,0.66,820
+Kentucky,2010,Other specified / NEC,20**,"4,339,330",0.46**,0.45**,228
+Kentucky,2010,Unspecified,231,"4,339,330",5.32,5.16,"1,680"
+Kentucky,2009,Cut/Pierce,30,"4,317,074",0.7,0.68,703
+Kentucky,2009,Drowning (includes water transport),65,"4,317,074",1.51,1.53,"1,774"
+Kentucky,2009,Fall,278,"4,317,074",6.44,6.21,"1,646"
+Kentucky,2009,Fire/Flame,86,"4,317,074",1.99,1.93,"1,704"
+Kentucky,2009,Firearm,560,"4,317,074",12.97,12.78,"11,994"
+Kentucky,2009,Machinery,12**,"4,317,074",0.28**,0.27**,160
+Kentucky,2009,Natural/Environmental,26,"4,317,074",0.6,0.58,301
+Kentucky,2009,Drug Poisoning,769,"4,317,074",17.81,18.03,"17,740"
+Kentucky,2009,Non-Drug Poisoning,133,"4,317,074",3.08,3.01,"3,092"
+Kentucky,2009,Struck by / against,16**,"4,317,074",0.37**,0.37**,261
+Kentucky,2009,Suffocation,230,"4,317,074",5.33,5.29,"5,017"
+Kentucky,2009,"Motor vehicle, traffic",771,"4,317,074",17.86,17.76,"18,679"
+Kentucky,2009,"Pedal cyclist, other",--,"4,317,074",--,--,--
+Kentucky,2009,"Pedestrian, other",11**,"4,317,074",0.26**,0.24**,240
+Kentucky,2009,"Transport, other land",49,"4,317,074",1.14,1.11,"1,117"
+Kentucky,2009,"Transport, other (excl. drown by water transp)",--,"4,317,074",--,--,--
+Kentucky,2009,Other specified and classifiable,23,"4,317,074",0.53,0.54,657
+Kentucky,2009,Other specified / NEC,33,"4,317,074",0.76,0.79,436
+Kentucky,2009,Unspecified,211,"4,317,074",4.89,4.84,"1,548"
+Kentucky,2008,Cut/Pierce,36,"4,289,878",0.84,0.86,953
+Kentucky,2008,Drowning (includes water transport),56,"4,289,878",1.31,1.29,"1,789"
+Kentucky,2008,Fall,242,"4,289,878",5.64,5.47,982
+Kentucky,2008,Fire/Flame,76,"4,289,878",1.77,1.72,"1,350"
+Kentucky,2008,Hot object/Substance,--,"4,289,878",--,--,--
+Kentucky,2008,Firearm,576,"4,289,878",13.43,13.28,"12,014"
+Kentucky,2008,Machinery,14**,"4,289,878",0.33**,0.31**,154
+Kentucky,2008,Natural/Environmental,29,"4,289,878",0.68,0.64,506
+Kentucky,2008,Drug Poisoning,764,"4,289,878",17.81,18,"18,266"
+Kentucky,2008,Non-Drug Poisoning,96,"4,289,878",2.24,2.28,"2,131"
+Kentucky,2008,Struck by / against,21,"4,289,878",0.49,0.49,418
+Kentucky,2008,Suffocation,230,"4,289,878",5.36,5.35,"4,960"
+Kentucky,2008,"Motor vehicle, traffic",801,"4,289,878",18.67,18.58,"19,798"
+Kentucky,2008,"Pedal cyclist, other",--,"4,289,878",--,--,--
+Kentucky,2008,"Pedestrian, other",15**,"4,289,878",0.35**,0.36**,290
+Kentucky,2008,"Transport, other land",70,"4,289,878",1.63,1.64,"1,953"
+Kentucky,2008,"Transport, other (excl. drown by water transp)",--,"4,289,878",--,--,--
+Kentucky,2008,Other specified and classifiable,17**,"4,289,878",0.40**,0.38**,446
+Kentucky,2008,Other specified / NEC,22,"4,289,878",0.51,0.49,227
+Kentucky,2008,Unspecified,246,"4,289,878",5.73,5.7,"1,590"
+Kentucky,2007,Cut/Pierce,19**,"4,256,672",0.45**,0.44**,327
+Kentucky,2007,Drowning (includes water transport),71,"4,256,672",1.67,1.7,"2,173"
+Kentucky,2007,Fall,288,"4,256,672",6.77,6.71,"1,383"
+Kentucky,2007,Fire/Flame,83,"4,256,672",1.95,1.91,"1,932"
+Kentucky,2007,Hot object/Substance,--,"4,256,672",--,--,--
+Kentucky,2007,Firearm,612,"4,256,672",14.38,14.12,"13,607"
+Kentucky,2007,Machinery,12**,"4,256,672",0.28**,0.26**,165
+Kentucky,2007,Natural/Environmental,26,"4,256,672",0.61,0.59,408
+Kentucky,2007,Drug Poisoning,708,"4,256,672",16.63,16.62,"17,892"
+Kentucky,2007,Non-Drug Poisoning,86,"4,256,672",2.02,1.99,"1,907"
+Kentucky,2007,Struck by / against,21,"4,256,672",0.49,0.47,351
+Kentucky,2007,Suffocation,263,"4,256,672",6.18,6.21,"5,922"
+Kentucky,2007,"Motor vehicle, traffic",804,"4,256,672",18.89,18.77,"20,120"
+Kentucky,2007,"Pedal cyclist, other",--,"4,256,672",--,--,--
+Kentucky,2007,"Pedestrian, other",15**,"4,256,672",0.35**,0.33**,255
+Kentucky,2007,"Transport, other land",45,"4,256,672",1.06,1.07,"1,125"
+Kentucky,2007,"Transport, other (excl. drown by water transp)",--,"4,256,672",--,--,--
+Kentucky,2007,Other specified and classifiable,24,"4,256,672",0.56,0.56,666
+Kentucky,2007,Other specified / NEC,26,"4,256,672",0.61,0.59,335
+Kentucky,2007,Unspecified,215,"4,256,672",5.05,5.08,"1,910"
+Kentucky,2006,Cut/Pierce,36,"4,219,239",0.85,0.85,859
+Kentucky,2006,Drowning (includes water transport),73,"4,219,239",1.73,1.71,"2,235"
+Kentucky,2006,Fall,225,"4,219,239",5.33,5.26,"1,130"
+Kentucky,2006,Fire/Flame,75,"4,219,239",1.78,1.77,"1,831"
+Kentucky,2006,Firearm,531,"4,219,239",12.59,12.47,"11,456"
+Kentucky,2006,Machinery,19**,"4,219,239",0.45**,0.44**,298
+Kentucky,2006,Natural/Environmental,20**,"4,219,239",0.47**,0.45**,183
+Kentucky,2006,Drug Poisoning,728,"4,219,239",17.25,17.31,"18,517"
+Kentucky,2006,Non-Drug Poisoning,40,"4,219,239",0.95,0.92,754
+Kentucky,2006,Struck by / against,15**,"4,219,239",0.36**,0.35**,322
+Kentucky,2006,Suffocation,287,"4,219,239",6.8,6.95,"6,728"
+Kentucky,2006,"Motor vehicle, traffic",888,"4,219,239",21.05,20.94,"23,042"
+Kentucky,2006,"Pedal cyclist, other",--,"4,219,239",--,--,--
+Kentucky,2006,"Pedestrian, other",21,"4,219,239",0.5,0.51,344
+Kentucky,2006,"Transport, other land",50,"4,219,239",1.19,1.15,"1,237"
+Kentucky,2006,"Transport, other (excl. drown by water transp)",40,"4,219,239",0.95,0.92,855
+Kentucky,2006,Other specified and classifiable,33,"4,219,239",0.78,0.79,768
+Kentucky,2006,Other specified / NEC,27,"4,219,239",0.64,0.6,475
+Kentucky,2006,Unspecified,239,"4,219,239",5.67,5.72,"1,883"
+Kentucky,2005,Cut/Pierce,29,"4,182,742",0.69,0.69,661
+Kentucky,2005,Drowning (includes water transport),86,"4,182,742",2.06,2.07,"2,552"
+Kentucky,2005,Fall,213,"4,182,742",5.09,5.04,"1,102"
+Kentucky,2005,Fire/Flame,100,"4,182,742",2.39,2.38,"2,107"
+Kentucky,2005,Hot object/Substance,--,"4,182,742",--,--,--
+Kentucky,2005,Firearm,548,"4,182,742",13.1,12.94,"12,496"
+Kentucky,2005,Machinery,23,"4,182,742",0.55,0.54,385
+Kentucky,2005,Natural/Environmental,33,"4,182,742",0.79,0.78,413
+Kentucky,2005,Drug Poisoning,638,"4,182,742",15.25,15.32,"16,384"
+Kentucky,2005,Non-Drug Poisoning,35,"4,182,742",0.84,0.84,768
+Kentucky,2005,Struck by / against,23,"4,182,742",0.55,0.55,556
+Kentucky,2005,Suffocation,212,"4,182,742",5.07,5.12,"4,950"
+Kentucky,2005,"Motor vehicle, traffic",949,"4,182,742",22.69,22.41,"24,564"
+Kentucky,2005,"Pedal cyclist, other",--,"4,182,742",--,--,--
+Kentucky,2005,"Pedestrian, other",18**,"4,182,742",0.43**,0.42**,458
+Kentucky,2005,"Transport, other land",52,"4,182,742",1.24,1.24,"1,287"
+Kentucky,2005,"Transport, other (excl. drown by water transp)",--,"4,182,742",--,--,--
+Kentucky,2005,Other specified and classifiable,19**,"4,182,742",0.45**,0.46**,573
+Kentucky,2005,Other specified / NEC,20**,"4,182,742",0.48**,0.47**,267
+Kentucky,2005,Unspecified,247,"4,182,742",5.91,6.04,"2,282"
+Kentucky,2004,Cut/Pierce,31,"4,146,101",0.75,0.72,688
+Kentucky,2004,Drowning (includes water transport),74,"4,146,101",1.79,1.79,"2,348"
+Kentucky,2004,Fall,188,"4,146,101",4.53,4.59,"1,182"
+Kentucky,2004,Fire/Flame,74,"4,146,101",1.79,1.78,"1,713"
+Kentucky,2004,Firearm,551,"4,146,101",13.29,13.05,"12,494"
+Kentucky,2004,Machinery,24,"4,146,101",0.58,0.56,268
+Kentucky,2004,Natural/Environmental,22,"4,146,101",0.53,0.51,423
+Kentucky,2004,Drug Poisoning,526,"4,146,101",12.69,12.72,"13,620"
+Kentucky,2004,Non-Drug Poisoning,45,"4,146,101",1.09,1.08,"1,042"
+Kentucky,2004,Struck by / against,25,"4,146,101",0.6,0.57,431
+Kentucky,2004,Suffocation,233,"4,146,101",5.62,5.66,"5,445"
+Kentucky,2004,"Motor vehicle, traffic",942,"4,146,101",22.72,22.64,"26,704"
+Kentucky,2004,"Pedal cyclist, other",--,"4,146,101",--,--,--
+Kentucky,2004,"Pedestrian, other",19**,"4,146,101",0.46**,0.46**,542
+Kentucky,2004,"Transport, other land",43,"4,146,101",1.04,1.02,"1,224"
+Kentucky,2004,"Transport, other (excl. drown by water transp)",--,"4,146,101",--,--,--
+Kentucky,2004,Other specified and classifiable,32,"4,146,101",0.77,0.77,"1,010"
+Kentucky,2004,Other specified / NEC,20**,"4,146,101",0.48**,0.49**,246
+Kentucky,2004,Unspecified,234,"4,146,101",5.64,5.81,"1,816"
+Kentucky,2003,Cut/Pierce,30,"4,117,170",0.73,0.73,684
+Kentucky,2003,Drowning (includes water transport),54,"4,117,170",1.31,1.3,"1,589"
+Kentucky,2003,Fall,195,"4,117,170",4.74,4.82,"1,109"
+Kentucky,2003,Fire/Flame,84,"4,117,170",2.04,2,"1,773"
+Kentucky,2003,Firearm,560,"4,117,170",13.6,13.38,"12,644"
+Kentucky,2003,Machinery,14**,"4,117,170",0.34**,0.33**,212
+Kentucky,2003,Natural/Environmental,29,"4,117,170",0.7,0.7,500
+Kentucky,2003,Overexertion,--,"4,117,170",--,--,--
+Kentucky,2003,Drug Poisoning,560,"4,117,170",13.6,13.53,"14,204"
+Kentucky,2003,Non-Drug Poisoning,53,"4,117,170",1.29,1.26,"1,166"
+Kentucky,2003,Struck by / against,20**,"4,117,170",0.49**,0.50**,380
+Kentucky,2003,Suffocation,212,"4,117,170",5.15,5.19,"5,238"
+Kentucky,2003,"Motor vehicle, traffic",886,"4,117,170",21.52,21.32,"22,288"
+Kentucky,2003,"Pedal cyclist, other",--,"4,117,170",--,--,--
+Kentucky,2003,"Pedestrian, other",21,"4,117,170",0.51,0.5,351
+Kentucky,2003,"Transport, other land",67,"4,117,170",1.63,1.6,"1,667"
+Kentucky,2003,"Transport, other (excl. drown by water transp)",13**,"4,117,170",0.32**,0.30**,222
+Kentucky,2003,Other specified and classifiable,37,"4,117,170",0.9,0.91,"1,025"
+Kentucky,2003,Other specified / NEC,22,"4,117,170",0.53,0.52,319
+Kentucky,2003,Unspecified,235,"4,117,170",5.71,5.92,"1,773"
+Kentucky,2002,Cut/Pierce,28,"4,089,875",0.69,0.68,845
+Kentucky,2002,Drowning (includes water transport),65,"4,089,875",1.59,1.58,"2,303"
+Kentucky,2002,Fall,211,"4,089,875",5.16,5.27,"1,332"
+Kentucky,2002,Fire/Flame,73,"4,089,875",1.79,1.79,"1,609"
+Kentucky,2002,Firearm,544,"4,089,875",13.3,13.05,"12,242"
+Kentucky,2002,Machinery,23,"4,089,875",0.56,0.55,366
+Kentucky,2002,Natural/Environmental,24,"4,089,875",0.59,0.57,234
+Kentucky,2002,Drug Poisoning,426,"4,089,875",10.42,10.41,"11,017"
+Kentucky,2002,Non-Drug Poisoning,40,"4,089,875",0.98,0.96,893
+Kentucky,2002,Struck by / against,24,"4,089,875",0.59,0.59,652
+Kentucky,2002,Suffocation,202,"4,089,875",4.94,4.96,"4,531"
+Kentucky,2002,"Motor vehicle, traffic",884,"4,089,875",21.61,21.5,"23,170"
+Kentucky,2002,"Pedestrian, other",11**,"4,089,875",0.27**,0.26**,261
+Kentucky,2002,"Transport, other land",41,"4,089,875",1,1,"1,036"
+Kentucky,2002,"Transport, other (excl. drown by water transp)",--,"4,089,875",--,--,--
+Kentucky,2002,Other specified and classifiable,33,"4,089,875",0.81,0.81,"1,104"
+Kentucky,2002,Other specified / NEC,36,"4,089,875",0.88,0.89,403
+Kentucky,2002,Unspecified,200,"4,089,875",4.89,5.08,"1,575"
+Kentucky,2001,Cut/Pierce,35,"4,068,132",0.86,0.85,880
+Kentucky,2001,Drowning (includes water transport),76,"4,068,132",1.87,1.86,"2,311"
+Kentucky,2001,Fall,183,"4,068,132",4.5,4.58,"1,078"
+Kentucky,2001,Fire/Flame,83,"4,068,132",2.04,2.04,"1,885"
+Kentucky,2001,Hot object/Substance,--,"4,068,132",--,--,--
+Kentucky,2001,Firearm,524,"4,068,132",12.88,12.69,"12,448"
+Kentucky,2001,Machinery,19**,"4,068,132",0.47**,0.46**,255
+Kentucky,2001,Natural/Environmental,32,"4,068,132",0.79,0.8,409
+Kentucky,2001,Drug Poisoning,345,"4,068,132",8.48,8.42,"8,911"
+Kentucky,2001,Non-Drug Poisoning,48,"4,068,132",1.18,1.16,"1,142"
+Kentucky,2001,Struck by / against,26,"4,068,132",0.64,0.63,637
+Kentucky,2001,Suffocation,195,"4,068,132",4.79,4.85,"4,254"
+Kentucky,2001,"Motor vehicle, traffic",820,"4,068,132",20.16,19.99,"21,946"
+Kentucky,2001,"Pedestrian, other",--,"4,068,132",--,--,--
+Kentucky,2001,"Transport, other land",42,"4,068,132",1.03,1.04,"1,116"
+Kentucky,2001,"Transport, other (excl. drown by water transp)",--,"4,068,132",--,--,--
+Kentucky,2001,Other specified and classifiable,37,"4,068,132",0.91,0.9,856
+Kentucky,2001,Other specified / NEC,47,"4,068,132",1.16,1.18,733
+Kentucky,2001,Unspecified,217,"4,068,132",5.33,5.53,"1,500"
+Total,,,"78,674","90,883,785",86.57,85.68,"1,600,401"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Kentucky,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.8.19)  3 FEB 2024 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.8.19)  7 FEB 2024 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1485,7 +1485,11 @@ df>] [15
 
 ] [17
 
-] [18
+]
+Overfull \vbox (6.93019pt too high) detected at line 603
+ []
+
+[18
 
 ]
 \openout4 = `Lecture-2---Data-Introduction-2024.vrb'.
@@ -1653,7 +1657,7 @@ lmtko10.pfb><C:/Users/msassrb2/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /lm/lmtt10.pfb><C:/Users/msassrb2/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/lm/lmtt8.pfb><C:/Users/msassrb2/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/lm/lmtti10.pfb>
-Output written on Lecture-2---Data-Introduction-2024.pdf (39 pages, 577627 byte
+Output written on Lecture-2---Data-Introduction-2024.pdf (39 pages, 578455 byte
 s).
 PDF statistics:
  509 PDF objects out of 1000 (max. 8388607)

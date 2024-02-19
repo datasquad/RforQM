@@ -1,0 +1,439 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+New Jersey,2021,Cut/Pierce,65,"9,267,130",0.7,0.72,"1,421"
+New Jersey,2021,Drowning (includes water transport),100,"9,267,130",1.08,1.04,"2,454"
+New Jersey,2021,Fall,641,"9,267,130",6.92,5.68,"2,906"
+New Jersey,2021,Fire/Flame,72,"9,267,130",0.78,0.7,"1,127"
+New Jersey,2021,Hot object/Substance,--,"9,267,130",--,--,--
+New Jersey,2021,Firearm,475,"9,267,130",5.13,5.24,"12,434"
+New Jersey,2021,Machinery,--,"9,267,130",--,--,--
+New Jersey,2021,Natural/Environmental,54,"9,267,130",0.58,0.55,"1,034"
+New Jersey,2021,Drug Poisoning,"3,056","9,267,130",32.98,32.42,"62,052"
+New Jersey,2021,Non-Drug Poisoning,139,"9,267,130",1.5,1.44,"2,394"
+New Jersey,2021,Struck by / against,22,"9,267,130",0.24,0.22,298
+New Jersey,2021,Suffocation,452,"9,267,130",4.88,4.48,"7,046"
+New Jersey,2021,"Motor vehicle, traffic",702,"9,267,130",7.58,7.35,"15,245"
+New Jersey,2021,"Pedal cyclist, other",12**,"9,267,130",0.13**,0.10**,121
+New Jersey,2021,"Pedestrian, other",18**,"9,267,130",0.19**,0.20**,393
+New Jersey,2021,"Transport, other land",11**,"9,267,130",0.12**,0.13**,324
+New Jersey,2021,"Transport, other (excl. drown by water transp)",--,"9,267,130",--,--,--
+New Jersey,2021,Other specified and classifiable,45,"9,267,130",0.49,0.49,"1,254"
+New Jersey,2021,Other specified / NEC,33,"9,267,130",0.36,0.32,326
+New Jersey,2021,Unspecified,361,"9,267,130",3.9,3.25,"2,227"
+New Jersey,2020,Cut/Pierce,86,"9,279,743",0.93,0.88,"1,717"
+New Jersey,2020,Drowning (includes water transport),125,"9,279,743",1.35,1.33,"3,240"
+New Jersey,2020,Fall,646,"9,279,743",6.96,5.72,"2,507"
+New Jersey,2020,Fire/Flame,58,"9,279,743",0.63,0.56,853
+New Jersey,2020,Hot object/Substance,--,"9,279,743",--,--,--
+New Jersey,2020,Firearm,443,"9,279,743",4.77,4.81,"11,476"
+New Jersey,2020,Machinery,--,"9,279,743",--,--,--
+New Jersey,2020,Natural/Environmental,26,"9,279,743",0.28,0.21,99
+New Jersey,2020,Drug Poisoning,"2,840","9,279,743",30.6,30.55,"61,731"
+New Jersey,2020,Non-Drug Poisoning,117,"9,279,743",1.26,1.22,"2,096"
+New Jersey,2020,Struck by / against,18**,"9,279,743",0.19**,0.19**,378
+New Jersey,2020,Suffocation,451,"9,279,743",4.86,4.38,"7,035"
+New Jersey,2020,"Motor vehicle, traffic",604,"9,279,743",6.51,6.17,"12,099"
+New Jersey,2020,"Pedal cyclist, other",--,"9,279,743",--,--,--
+New Jersey,2020,"Pedestrian, other",20**,"9,279,743",0.22**,0.20**,345
+New Jersey,2020,"Transport, other land",23,"9,279,743",0.25,0.23,526
+New Jersey,2020,"Transport, other (excl. drown by water transp)",--,"9,279,743",--,--,--
+New Jersey,2020,Other specified and classifiable,39,"9,279,743",0.42,0.43,"1,036"
+New Jersey,2020,Other specified / NEC,26,"9,279,743",0.28,0.25,344
+New Jersey,2020,Unspecified,331,"9,279,743",3.57,2.96,"1,530"
+New Jersey,2019,Cut/Pierce,70,"8,891,258",0.79,0.74,"1,356"
+New Jersey,2019,Drowning (includes water transport),74,"8,891,258",0.83,0.84,"1,876"
+New Jersey,2019,Fall,649,"8,891,258",7.3,5.64,"2,420"
+New Jersey,2019,Fire/Flame,52,"8,891,258",0.59,0.48,336
+New Jersey,2019,Firearm,368,"8,891,258",4.14,4.12,"9,041"
+New Jersey,2019,Machinery,--,"8,891,258",--,--,--
+New Jersey,2019,Natural/Environmental,29,"8,891,258",0.33,0.26,199
+New Jersey,2019,Drug Poisoning,"2,805","8,891,258",31.55,31.64,"62,117"
+New Jersey,2019,Non-Drug Poisoning,120,"8,891,258",1.35,1.31,"2,150"
+New Jersey,2019,Struck by / against,19**,"8,891,258",0.21**,0.16**,167
+New Jersey,2019,Suffocation,525,"8,891,258",5.91,5.41,"8,766"
+New Jersey,2019,"Motor vehicle, traffic",584,"8,891,258",6.57,6.25,"12,209"
+New Jersey,2019,"Pedal cyclist, other",--,"8,891,258",--,--,--
+New Jersey,2019,"Pedestrian, other",19**,"8,891,258",0.21**,0.20**,385
+New Jersey,2019,"Transport, other land",16**,"8,891,258",0.18**,0.18**,287
+New Jersey,2019,"Transport, other (excl. drown by water transp)",--,"8,891,258",--,--,--
+New Jersey,2019,Other specified and classifiable,50,"8,891,258",0.56,0.54,"1,105"
+New Jersey,2019,Other specified / NEC,40,"8,891,258",0.45,0.4,569
+New Jersey,2019,Unspecified,318,"8,891,258",3.58,2.82,"1,476"
+New Jersey,2018,Cut/Pierce,68,"8,891,730",0.77,0.73,"1,349"
+New Jersey,2018,Drowning (includes water transport),94,"8,891,730",1.06,1.06,"2,347"
+New Jersey,2018,Fall,573,"8,891,730",6.44,5.1,"2,467"
+New Jersey,2018,Fire/Flame,57,"8,891,730",0.64,0.58,986
+New Jersey,2018,Hot object/Substance,--,"8,891,730",--,--,--
+New Jersey,2018,Firearm,420,"8,891,730",4.72,4.77,"10,472"
+New Jersey,2018,Machinery,--,"8,891,730",--,--,--
+New Jersey,2018,Natural/Environmental,33,"8,891,730",0.37,0.29,285
+New Jersey,2018,Overexertion,--,"8,891,730",--,--,--
+New Jersey,2018,Drug Poisoning,"2,900","8,891,730",32.62,33.18,"67,994"
+New Jersey,2018,Non-Drug Poisoning,138,"8,891,730",1.55,1.42,"2,384"
+New Jersey,2018,Struck by / against,11**,"8,891,730",0.12**,0.13**,309
+New Jersey,2018,Suffocation,543,"8,891,730",6.11,5.53,"8,564"
+New Jersey,2018,"Motor vehicle, traffic",585,"8,891,730",6.58,6.24,"11,264"
+New Jersey,2018,"Pedal cyclist, other",--,"8,891,730",--,--,--
+New Jersey,2018,"Pedestrian, other",26,"8,891,730",0.29,0.28,568
+New Jersey,2018,"Transport, other land",10**,"8,891,730",0.11**,0.11**,203
+New Jersey,2018,"Transport, other (excl. drown by water transp)",10**,"8,891,730",0.11**,0.08**,75
+New Jersey,2018,Other specified and classifiable,36,"8,891,730",0.41,0.4,"1,005"
+New Jersey,2018,Other specified / NEC,33,"8,891,730",0.37,0.3,348
+New Jersey,2018,Unspecified,307,"8,891,730",3.45,2.77,"1,801"
+New Jersey,2017,Cut/Pierce,77,"8,888,147",0.87,0.84,"1,717"
+New Jersey,2017,Drowning (includes water transport),87,"8,888,147",0.98,0.96,"2,228"
+New Jersey,2017,Fall,559,"8,888,147",6.29,5.07,"2,106"
+New Jersey,2017,Fire/Flame,42,"8,888,147",0.47,0.39,460
+New Jersey,2017,Hot object/Substance,--,"8,888,147",--,--,--
+New Jersey,2017,Firearm,478,"8,888,147",5.38,5.43,"12,146"
+New Jersey,2017,Machinery,--,"8,888,147",--,--,--
+New Jersey,2017,Natural/Environmental,26,"8,888,147",0.29,0.23,144
+New Jersey,2017,Drug Poisoning,"2,685","8,888,147",30.21,30.39,"64,126"
+New Jersey,2017,Non-Drug Poisoning,113,"8,888,147",1.27,1.29,"2,274"
+New Jersey,2017,Struck by / against,13**,"8,888,147",0.15**,0.13**,184
+New Jersey,2017,Suffocation,512,"8,888,147",5.76,5.32,"9,120"
+New Jersey,2017,"Motor vehicle, traffic",629,"8,888,147",7.08,6.68,"11,977"
+New Jersey,2017,"Pedal cyclist, other",14**,"8,888,147",0.16**,0.15**,270
+New Jersey,2017,"Pedestrian, other",19**,"8,888,147",0.21**,0.19**,262
+New Jersey,2017,"Transport, other land",18**,"8,888,147",0.20**,0.18**,236
+New Jersey,2017,"Transport, other (excl. drown by water transp)",--,"8,888,147",--,--,--
+New Jersey,2017,Other specified and classifiable,43,"8,888,147",0.48,0.49,"1,089"
+New Jersey,2017,Other specified / NEC,40,"8,888,147",0.45,0.4,576
+New Jersey,2017,Unspecified,336,"8,888,147",3.78,2.97,"1,282"
+New Jersey,2016,Cut/Pierce,51,"8,873,584",0.58,0.56,"1,182"
+New Jersey,2016,Drowning (includes water transport),77,"8,873,584",0.87,0.88,"2,135"
+New Jersey,2016,Fall,580,"8,873,584",6.54,5.35,"2,602"
+New Jersey,2016,Fire/Flame,56,"8,873,584",0.63,0.57,725
+New Jersey,2016,Hot object/Substance,--,"8,873,584",--,--,--
+New Jersey,2016,Firearm,485,"8,873,584",5.47,5.56,"13,150"
+New Jersey,2016,Machinery,15**,"8,873,584",0.17**,0.16**,359
+New Jersey,2016,Natural/Environmental,23,"8,873,584",0.26,0.19,83
+New Jersey,2016,Drug Poisoning,"2,056","8,873,584",23.17,23.45,"51,068"
+New Jersey,2016,Non-Drug Poisoning,116,"8,873,584",1.31,1.28,"2,480"
+New Jersey,2016,Struck by / against,16**,"8,873,584",0.18**,0.15**,209
+New Jersey,2016,Suffocation,481,"8,873,584",5.42,4.98,"8,824"
+New Jersey,2016,"Motor vehicle, traffic",610,"8,873,584",6.87,6.61,"13,178"
+New Jersey,2016,"Pedal cyclist, other",10**,"8,873,584",0.11**,0.09**,95
+New Jersey,2016,"Pedestrian, other",26,"8,873,584",0.29,0.28,562
+New Jersey,2016,"Transport, other land",10**,"8,873,584",0.11**,0.11**,216
+New Jersey,2016,"Transport, other (excl. drown by water transp)",--,"8,873,584",--,--,--
+New Jersey,2016,Other specified and classifiable,37,"8,873,584",0.42,0.41,906
+New Jersey,2016,Other specified / NEC,29,"8,873,584",0.33,0.28,328
+New Jersey,2016,Unspecified,312,"8,873,584",3.52,2.75,"1,446"
+New Jersey,2015,Cut/Pierce,64,"8,870,312",0.72,0.69,"1,232"
+New Jersey,2015,Drowning (includes water transport),95,"8,870,312",1.07,1.02,"1,938"
+New Jersey,2015,Fall,551,"8,870,312",6.21,5.22,"2,682"
+New Jersey,2015,Fire/Flame,56,"8,870,312",0.63,0.59,811
+New Jersey,2015,Hot object/Substance,--,"8,870,312",--,--,--
+New Jersey,2015,Firearm,475,"8,870,312",5.36,5.4,"12,461"
+New Jersey,2015,Machinery,--,"8,870,312",--,--,--
+New Jersey,2015,Natural/Environmental,30,"8,870,312",0.34,0.27,189
+New Jersey,2015,Drug Poisoning,"1,454","8,870,312",16.39,16.55,"35,384"
+New Jersey,2015,Non-Drug Poisoning,134,"8,870,312",1.51,1.41,"2,185"
+New Jersey,2015,Struck by / against,18**,"8,870,312",0.20**,0.20**,397
+New Jersey,2015,Suffocation,526,"8,870,312",5.93,5.45,"9,042"
+New Jersey,2015,"Motor vehicle, traffic",578,"8,870,312",6.52,6.24,"12,147"
+New Jersey,2015,"Pedal cyclist, other",--,"8,870,312",--,--,--
+New Jersey,2015,"Pedestrian, other",18**,"8,870,312",0.20**,0.17**,187
+New Jersey,2015,"Transport, other land",10**,"8,870,312",0.11**,0.11**,185
+New Jersey,2015,"Transport, other (excl. drown by water transp)",--,"8,870,312",--,--,--
+New Jersey,2015,Other specified and classifiable,49,"8,870,312",0.55,0.52,"1,111"
+New Jersey,2015,Other specified / NEC,42,"8,870,312",0.47,0.42,440
+New Jersey,2015,Unspecified,352,"8,870,312",3.97,3.22,"2,149"
+New Jersey,2014,Cut/Pierce,55,"8,867,277",0.62,0.61,"1,124"
+New Jersey,2014,Drowning (includes water transport),73,"8,867,277",0.82,0.81,"1,781"
+New Jersey,2014,Fall,556,"8,867,277",6.27,5.22,"2,422"
+New Jersey,2014,Fire/Flame,68,"8,867,277",0.77,0.7,839
+New Jersey,2014,Hot object/Substance,--,"8,867,277",--,--,--
+New Jersey,2014,Firearm,468,"8,867,277",5.28,5.34,"12,448"
+New Jersey,2014,Machinery,--,"8,867,277",--,--,--
+New Jersey,2014,Natural/Environmental,24,"8,867,277",0.27,0.24,266
+New Jersey,2014,Overexertion,--,"8,867,277",--,--,--
+New Jersey,2014,Drug Poisoning,"1,253","8,867,277",14.13,14.13,"30,253"
+New Jersey,2014,Non-Drug Poisoning,127,"8,867,277",1.43,1.36,"2,446"
+New Jersey,2014,Struck by / against,19**,"8,867,277",0.21**,0.19**,318
+New Jersey,2014,Suffocation,542,"8,867,277",6.11,5.65,"9,454"
+New Jersey,2014,"Motor vehicle, traffic",557,"8,867,277",6.28,6.02,"11,939"
+New Jersey,2014,"Pedal cyclist, other",--,"8,867,277",--,--,--
+New Jersey,2014,"Pedestrian, other",17**,"8,867,277",0.19**,0.17**,293
+New Jersey,2014,"Transport, other land",14**,"8,867,277",0.16**,0.15**,312
+New Jersey,2014,"Transport, other (excl. drown by water transp)",--,"8,867,277",--,--,--
+New Jersey,2014,Other specified and classifiable,37,"8,867,277",0.42,0.39,758
+New Jersey,2014,Other specified / NEC,37,"8,867,277",0.42,0.39,589
+New Jersey,2014,Unspecified,340,"8,867,277",3.83,3.12,"1,845"
+New Jersey,2013,Cut/Pierce,84,"8,857,821",0.95,0.92,"1,735"
+New Jersey,2013,Drowning (includes water transport),84,"8,857,821",0.95,0.89,"1,816"
+New Jersey,2013,Fall,526,"8,857,821",5.94,5.01,"2,983"
+New Jersey,2013,Fire/Flame,68,"8,857,821",0.77,0.67,764
+New Jersey,2013,Hot object/Substance,--,"8,857,821",--,--,--
+New Jersey,2013,Firearm,506,"8,857,821",5.71,5.75,"13,839"
+New Jersey,2013,Machinery,--,"8,857,821",--,--,--
+New Jersey,2013,Natural/Environmental,30,"8,857,821",0.34,0.29,297
+New Jersey,2013,Drug Poisoning,"1,294","8,857,821",14.61,14.53,"31,241"
+New Jersey,2013,Non-Drug Poisoning,120,"8,857,821",1.36,1.28,"2,146"
+New Jersey,2013,Struck by / against,15**,"8,857,821",0.17**,0.18**,420
+New Jersey,2013,Suffocation,527,"8,857,821",5.95,5.47,"8,585"
+New Jersey,2013,"Motor vehicle, traffic",546,"8,857,821",6.16,5.96,"11,375"
+New Jersey,2013,"Pedal cyclist, other",--,"8,857,821",--,--,--
+New Jersey,2013,"Pedestrian, other",20**,"8,857,821",0.23**,0.24**,553
+New Jersey,2013,"Transport, other land",14**,"8,857,821",0.16**,0.15**,275
+New Jersey,2013,"Transport, other (excl. drown by water transp)",--,"8,857,821",--,--,--
+New Jersey,2013,Other specified and classifiable,46,"8,857,821",0.52,0.51,"1,184"
+New Jersey,2013,Other specified / NEC,38,"8,857,821",0.43,0.4,540
+New Jersey,2013,Unspecified,338,"8,857,821",3.82,3.11,"1,600"
+New Jersey,2012,Cut/Pierce,86,"8,845,671",0.97,0.95,"2,083"
+New Jersey,2012,Drowning (includes water transport),79,"8,845,671",0.89,0.87,"2,161"
+New Jersey,2012,Fall,536,"8,845,671",6.06,5.12,"2,526"
+New Jersey,2012,Fire/Flame,61,"8,845,671",0.69,0.62,752
+New Jersey,2012,Hot object/Substance,--,"8,845,671",--,--,--
+New Jersey,2012,Firearm,444,"8,845,671",5.02,5.1,"12,257"
+New Jersey,2012,Machinery,--,"8,845,671",--,--,--
+New Jersey,2012,Natural/Environmental,28,"8,845,671",0.32,0.26,258
+New Jersey,2012,Drug Poisoning,"1,222","8,845,671",13.82,13.82,"29,473"
+New Jersey,2012,Non-Drug Poisoning,117,"8,845,671",1.32,1.25,"2,610"
+New Jersey,2012,Struck by / against,29,"8,845,671",0.33,0.34,818
+New Jersey,2012,Suffocation,488,"8,845,671",5.52,5.15,"8,648"
+New Jersey,2012,"Motor vehicle, traffic",616,"8,845,671",6.96,6.73,"13,283"
+New Jersey,2012,"Pedal cyclist, other",--,"8,845,671",--,--,--
+New Jersey,2012,"Pedestrian, other",16**,"8,845,671",0.18**,0.17**,271
+New Jersey,2012,"Transport, other land",19**,"8,845,671",0.22**,0.23**,445
+New Jersey,2012,"Transport, other (excl. drown by water transp)",--,"8,845,671",--,--,--
+New Jersey,2012,Other specified and classifiable,40,"8,845,671",0.45,0.45,"1,144"
+New Jersey,2012,Other specified / NEC,52,"8,845,671",0.59,0.55,704
+New Jersey,2012,Unspecified,316,"8,845,671",3.57,3.03,"2,074"
+New Jersey,2011,Cut/Pierce,88,"8,828,552",1,0.98,"1,949"
+New Jersey,2011,Drowning (includes water transport),94,"8,828,552",1.07,1.05,"2,573"
+New Jersey,2011,Fall,410,"8,828,552",4.64,4.02,"1,905"
+New Jersey,2011,Fire/Flame,52,"8,828,552",0.59,0.52,596
+New Jersey,2011,Hot object/Substance,--,"8,828,552",--,--,--
+New Jersey,2011,Firearm,482,"8,828,552",5.46,5.52,"13,624"
+New Jersey,2011,Machinery,11**,"8,828,552",0.13**,0.12**,232
+New Jersey,2011,Natural/Environmental,42,"8,828,552",0.48,0.42,522
+New Jersey,2011,Drug Poisoning,"1,012","8,828,552",11.46,11.32,"24,545"
+New Jersey,2011,Non-Drug Poisoning,138,"8,828,552",1.56,1.42,"2,248"
+New Jersey,2011,Struck by / against,18**,"8,828,552",0.20**,0.19**,345
+New Jersey,2011,Suffocation,445,"8,828,552",5.04,4.74,"7,607"
+New Jersey,2011,"Motor vehicle, traffic",644,"8,828,552",7.3,7.16,"14,667"
+New Jersey,2011,"Pedal cyclist, other",--,"8,828,552",--,--,--
+New Jersey,2011,"Pedestrian, other",26,"8,828,552",0.29,0.3,645
+New Jersey,2011,"Transport, other land",20**,"8,828,552",0.23**,0.22**,630
+New Jersey,2011,"Transport, other (excl. drown by water transp)",--,"8,828,552",--,--,--
+New Jersey,2011,Other specified and classifiable,38,"8,828,552",0.43,0.41,814
+New Jersey,2011,Other specified / NEC,38,"8,828,552",0.43,0.42,708
+New Jersey,2011,Unspecified,303,"8,828,552",3.43,2.93,"2,097"
+New Jersey,2010,Cut/Pierce,72,"8,791,959",0.82,0.81,"1,722"
+New Jersey,2010,Drowning (includes water transport),94,"8,791,959",1.07,1.06,"2,526"
+New Jersey,2010,Fall,440,"8,791,959",5.01,4.35,"2,206"
+New Jersey,2010,Fire/Flame,64,"8,791,959",0.73,0.68,845
+New Jersey,2010,Hot object/Substance,--,"8,791,959",--,--,--
+New Jersey,2010,Firearm,456,"8,791,959",5.19,5.2,"12,539"
+New Jersey,2010,Machinery,--,"8,791,959",--,--,--
+New Jersey,2010,Natural/Environmental,24,"8,791,959",0.27,0.24,238
+New Jersey,2010,Drug Poisoning,868,"8,791,959",9.87,9.77,"20,824"
+New Jersey,2010,Non-Drug Poisoning,116,"8,791,959",1.32,1.25,"2,150"
+New Jersey,2010,Struck by / against,15**,"8,791,959",0.17**,0.16**,379
+New Jersey,2010,Suffocation,481,"8,791,959",5.47,5.12,"8,190"
+New Jersey,2010,"Motor vehicle, traffic",551,"8,791,959",6.27,6.19,"11,887"
+New Jersey,2010,"Pedal cyclist, other",--,"8,791,959",--,--,--
+New Jersey,2010,"Pedestrian, other",31,"8,791,959",0.35,0.36,745
+New Jersey,2010,"Transport, other land",27,"8,791,959",0.31,0.3,711
+New Jersey,2010,"Transport, other (excl. drown by water transp)",--,"8,791,959",--,--,--
+New Jersey,2010,Other specified and classifiable,33,"8,791,959",0.38,0.37,751
+New Jersey,2010,Other specified / NEC,35,"8,791,959",0.4,0.37,429
+New Jersey,2010,Unspecified,325,"8,791,959",3.7,3.21,"2,522"
+New Jersey,2009,Cut/Pierce,65,"8,755,602",0.74,0.73,"1,414"
+New Jersey,2009,Drowning (includes water transport),71,"8,755,602",0.81,0.8,"1,853"
+New Jersey,2009,Fall,404,"8,755,602",4.61,4.11,"2,243"
+New Jersey,2009,Fire/Flame,54,"8,755,602",0.62,0.58,822
+New Jersey,2009,Hot object/Substance,--,"8,755,602",--,--,--
+New Jersey,2009,Firearm,411,"8,755,602",4.69,4.7,"11,192"
+New Jersey,2009,Machinery,--,"8,755,602",--,--,--
+New Jersey,2009,Natural/Environmental,16**,"8,755,602",0.18**,0.17**,159
+New Jersey,2009,Drug Poisoning,263,"8,755,602",3,3.01,"6,735"
+New Jersey,2009,Non-Drug Poisoning,49,"8,755,602",0.56,0.5,647
+New Jersey,2009,Struck by / against,16**,"8,755,602",0.18**,0.17**,288
+New Jersey,2009,Suffocation,419,"8,755,602",4.79,4.51,"7,063"
+New Jersey,2009,"Motor vehicle, traffic",548,"8,755,602",6.26,6.17,"11,802"
+New Jersey,2009,"Pedal cyclist, other",--,"8,755,602",--,--,--
+New Jersey,2009,"Pedestrian, other",27,"8,755,602",0.31,0.3,539
+New Jersey,2009,"Transport, other land",14**,"8,755,602",0.16**,0.16**,360
+New Jersey,2009,"Transport, other (excl. drown by water transp)",20**,"8,755,602",0.23**,0.23**,551
+New Jersey,2009,Other specified and classifiable,22,"8,755,602",0.25,0.25,678
+New Jersey,2009,Other specified / NEC,29,"8,755,602",0.33,0.3,443
+New Jersey,2009,Unspecified,341,"8,755,602",3.9,3.42,"2,632"
+New Jersey,2008,Cut/Pierce,84,"8,711,090",0.96,0.96,"2,096"
+New Jersey,2008,Drowning (includes water transport),101,"8,711,090",1.16,1.13,"2,686"
+New Jersey,2008,Fall,432,"8,711,090",4.96,4.48,"2,234"
+New Jersey,2008,Fire/Flame,67,"8,711,090",0.77,0.71,"1,011"
+New Jersey,2008,Hot object/Substance,--,"8,711,090",--,--,--
+New Jersey,2008,Firearm,429,"8,711,090",4.93,4.94,"11,721"
+New Jersey,2008,Machinery,11**,"8,711,090",0.13**,0.13**,225
+New Jersey,2008,Natural/Environmental,24,"8,711,090",0.28,0.26,398
+New Jersey,2008,Drug Poisoning,702,"8,711,090",8.06,7.98,"16,826"
+New Jersey,2008,Non-Drug Poisoning,127,"8,711,090",1.46,1.37,"2,472"
+New Jersey,2008,Struck by / against,21,"8,711,090",0.24,0.24,482
+New Jersey,2008,Suffocation,433,"8,711,090",4.97,4.74,"8,118"
+New Jersey,2008,"Motor vehicle, traffic",571,"8,711,090",6.56,6.48,"13,524"
+New Jersey,2008,"Pedal cyclist, other",--,"8,711,090",--,--,--
+New Jersey,2008,"Pedestrian, other",25,"8,711,090",0.29,0.28,546
+New Jersey,2008,"Transport, other land",11**,"8,711,090",0.13**,0.12**,257
+New Jersey,2008,"Transport, other (excl. drown by water transp)",19**,"8,711,090",0.22**,0.22**,322
+New Jersey,2008,Other specified and classifiable,37,"8,711,090",0.43,0.42,"1,032"
+New Jersey,2008,Other specified / NEC,43,"8,711,090",0.49,0.46,684
+New Jersey,2008,Unspecified,334,"8,711,090",3.83,3.46,"3,236"
+New Jersey,2007,Cut/Pierce,63,"8,677,885",0.73,0.71,"1,680"
+New Jersey,2007,Drowning (includes water transport),98,"8,677,885",1.13,1.12,"2,395"
+New Jersey,2007,Fall,394,"8,677,885",4.54,4.11,"2,235"
+New Jersey,2007,Fire/Flame,77,"8,677,885",0.89,0.85,"1,406"
+New Jersey,2007,Hot object/Substance,--,"8,677,885",--,--,--
+New Jersey,2007,Firearm,446,"8,677,885",5.14,5.25,"13,002"
+New Jersey,2007,Machinery,--,"8,677,885",--,--,--
+New Jersey,2007,Natural/Environmental,26,"8,677,885",0.3,0.27,183
+New Jersey,2007,Overexertion,--,"8,677,885",--,--,--
+New Jersey,2007,Drug Poisoning,727,"8,677,885",8.38,8.38,"18,167"
+New Jersey,2007,Non-Drug Poisoning,67,"8,677,885",0.77,0.75,"1,429"
+New Jersey,2007,Struck by / against,12**,"8,677,885",0.14**,0.13**,271
+New Jersey,2007,Suffocation,409,"8,677,885",4.71,4.55,"7,893"
+New Jersey,2007,"Motor vehicle, traffic",692,"8,677,885",7.97,7.9,"16,519"
+New Jersey,2007,"Pedal cyclist, other",--,"8,677,885",--,--,--
+New Jersey,2007,"Pedestrian, other",29,"8,677,885",0.33,0.32,572
+New Jersey,2007,"Transport, other land",22,"8,677,885",0.25,0.25,545
+New Jersey,2007,"Transport, other (excl. drown by water transp)",--,"8,677,885",--,--,--
+New Jersey,2007,Other specified and classifiable,30,"8,677,885",0.35,0.35,730
+New Jersey,2007,Other specified / NEC,45,"8,677,885",0.52,0.48,666
+New Jersey,2007,Unspecified,319,"8,677,885",3.68,3.34,"2,957"
+New Jersey,2006,Cut/Pierce,79,"8,661,679",0.91,0.92,"2,187"
+New Jersey,2006,Drowning (includes water transport),72,"8,661,679",0.83,0.83,"1,855"
+New Jersey,2006,Fall,407,"8,661,679",4.7,4.33,"2,393"
+New Jersey,2006,Fire/Flame,77,"8,661,679",0.89,0.86,"1,562"
+New Jersey,2006,Hot object/Substance,--,"8,661,679",--,--,--
+New Jersey,2006,Firearm,492,"8,661,679",5.68,5.82,"14,359"
+New Jersey,2006,Machinery,--,"8,661,679",--,--,--
+New Jersey,2006,Natural/Environmental,21,"8,661,679",0.24,0.23,327
+New Jersey,2006,Drug Poisoning,847,"8,661,679",9.78,9.67,"20,583"
+New Jersey,2006,Non-Drug Poisoning,61,"8,661,679",0.7,0.67,"1,069"
+New Jersey,2006,Struck by / against,--,"8,661,679",--,--,--
+New Jersey,2006,Suffocation,396,"8,661,679",4.57,4.38,"6,861"
+New Jersey,2006,"Motor vehicle, traffic",751,"8,661,679",8.67,8.66,"18,912"
+New Jersey,2006,"Pedal cyclist, other",--,"8,661,679",--,--,--
+New Jersey,2006,"Pedestrian, other",50,"8,661,679",0.58,0.56,963
+New Jersey,2006,"Transport, other land",26,"8,661,679",0.3,0.29,524
+New Jersey,2006,"Transport, other (excl. drown by water transp)",19**,"8,661,679",0.22**,0.22**,503
+New Jersey,2006,Other specified and classifiable,28,"8,661,679",0.32,0.32,680
+New Jersey,2006,Other specified / NEC,42,"8,661,679",0.49,0.47,721
+New Jersey,2006,Unspecified,313,"8,661,679",3.61,3.31,"3,186"
+New Jersey,2005,Cut/Pierce,79,"8,651,974",0.91,0.91,"1,981"
+New Jersey,2005,Drowning (includes water transport),82,"8,651,974",0.95,0.94,"2,381"
+New Jersey,2005,Fall,405,"8,651,974",4.68,4.36,"2,253"
+New Jersey,2005,Fire/Flame,76,"8,651,974",0.88,0.85,"1,543"
+New Jersey,2005,Hot object/Substance,--,"8,651,974",--,--,--
+New Jersey,2005,Firearm,434,"8,651,974",5.02,5.15,"12,774"
+New Jersey,2005,Machinery,--,"8,651,974",--,--,--
+New Jersey,2005,Natural/Environmental,29,"8,651,974",0.34,0.3,394
+New Jersey,2005,Drug Poisoning,823,"8,651,974",9.51,9.41,"20,320"
+New Jersey,2005,Non-Drug Poisoning,67,"8,651,974",0.77,0.76,"1,147"
+New Jersey,2005,Struck by / against,18**,"8,651,974",0.21**,0.21**,469
+New Jersey,2005,Suffocation,408,"8,651,974",4.72,4.56,"7,246"
+New Jersey,2005,"Motor vehicle, traffic",744,"8,651,974",8.6,8.53,"17,199"
+New Jersey,2005,"Pedal cyclist, other",--,"8,651,974",--,--,--
+New Jersey,2005,"Pedestrian, other",35,"8,651,974",0.41,0.41,827
+New Jersey,2005,"Transport, other land",12**,"8,651,974",0.14**,0.15**,377
+New Jersey,2005,"Transport, other (excl. drown by water transp)",10**,"8,651,974",0.12**,0.11**,177
+New Jersey,2005,Other specified and classifiable,27,"8,651,974",0.31,0.31,656
+New Jersey,2005,Other specified / NEC,34,"8,651,974",0.39,0.37,549
+New Jersey,2005,Unspecified,308,"8,651,974",3.56,3.37,"3,463"
+New Jersey,2004,Cut/Pierce,91,"8,634,561",1.05,1.07,"2,388"
+New Jersey,2004,Drowning (includes water transport),88,"8,634,561",1.02,1.03,"2,321"
+New Jersey,2004,Fall,382,"8,634,561",4.42,4.16,"2,255"
+New Jersey,2004,Fire/Flame,83,"8,634,561",0.96,0.93,"1,405"
+New Jersey,2004,Hot object/Substance,--,"8,634,561",--,--,--
+New Jersey,2004,Firearm,454,"8,634,561",5.26,5.38,"12,778"
+New Jersey,2004,Machinery,--,"8,634,561",--,--,--
+New Jersey,2004,Natural/Environmental,17**,"8,634,561",0.20**,0.19**,337
+New Jersey,2004,Drug Poisoning,590,"8,634,561",6.83,6.76,"14,674"
+New Jersey,2004,Non-Drug Poisoning,68,"8,634,561",0.79,0.76,"1,325"
+New Jersey,2004,Struck by / against,15**,"8,634,561",0.17**,0.17**,297
+New Jersey,2004,Suffocation,380,"8,634,561",4.4,4.29,"7,136"
+New Jersey,2004,"Motor vehicle, traffic",760,"8,634,561",8.8,8.8,"18,269"
+New Jersey,2004,"Pedal cyclist, other",--,"8,634,561",--,--,--
+New Jersey,2004,"Pedestrian, other",48,"8,634,561",0.56,0.54,853
+New Jersey,2004,"Transport, other land",--,"8,634,561",--,--,--
+New Jersey,2004,"Transport, other (excl. drown by water transp)",--,"8,634,561",--,--,--
+New Jersey,2004,Other specified and classifiable,34,"8,634,561",0.39,0.39,997
+New Jersey,2004,Other specified / NEC,38,"8,634,561",0.44,0.43,731
+New Jersey,2004,Unspecified,308,"8,634,561",3.57,3.35,"2,843"
+New Jersey,2003,Cut/Pierce,94,"8,601,402",1.09,1.11,"2,586"
+New Jersey,2003,Drowning (includes water transport),87,"8,601,402",1.01,1.01,"2,669"
+New Jersey,2003,Fall,293,"8,601,402",3.41,3.22,"2,098"
+New Jersey,2003,Fire/Flame,71,"8,601,402",0.83,0.81,"1,262"
+New Jersey,2003,Hot object/Substance,--,"8,601,402",--,--,--
+New Jersey,2003,Firearm,458,"8,601,402",5.33,5.42,"12,541"
+New Jersey,2003,Machinery,--,"8,601,402",--,--,--
+New Jersey,2003,Natural/Environmental,32,"8,601,402",0.37,0.34,441
+New Jersey,2003,Drug Poisoning,721,"8,601,402",8.38,8.29,"18,043"
+New Jersey,2003,Non-Drug Poisoning,60,"8,601,402",0.7,0.68,"1,219"
+New Jersey,2003,Struck by / against,21,"8,601,402",0.24,0.25,645
+New Jersey,2003,Suffocation,353,"8,601,402",4.1,4,"6,264"
+New Jersey,2003,"Motor vehicle, traffic",774,"8,601,402",9,9.02,"18,461"
+New Jersey,2003,"Pedal cyclist, other",--,"8,601,402",--,--,--
+New Jersey,2003,"Pedestrian, other",23,"8,601,402",0.27,0.25,491
+New Jersey,2003,"Transport, other land",14**,"8,601,402",0.16**,0.16**,316
+New Jersey,2003,"Transport, other (excl. drown by water transp)",11**,"8,601,402",0.13**,0.13**,211
+New Jersey,2003,Other specified and classifiable,37,"8,601,402",0.43,0.43,"1,042"
+New Jersey,2003,Other specified / NEC,35,"8,601,402",0.41,0.4,590
+New Jersey,2003,Unspecified,360,"8,601,402",4.19,3.94,"2,673"
+New Jersey,2002,Cut/Pierce,91,"8,552,643",1.06,1.04,"2,337"
+New Jersey,2002,Drowning (includes water transport),103,"8,552,643",1.2,1.19,"3,212"
+New Jersey,2002,Fall,316,"8,552,643",3.7,3.51,"2,127"
+New Jersey,2002,Fire/Flame,84,"8,552,643",0.98,0.96,"1,630"
+New Jersey,2002,Hot object/Substance,--,"8,552,643",--,--,--
+New Jersey,2002,Firearm,415,"8,552,643",4.85,4.88,"10,395"
+New Jersey,2002,Machinery,--,"8,552,643",--,--,--
+New Jersey,2002,Natural/Environmental,42,"8,552,643",0.49,0.47,510
+New Jersey,2002,Drug Poisoning,813,"8,552,643",9.51,9.33,"20,194"
+New Jersey,2002,Non-Drug Poisoning,69,"8,552,643",0.81,0.76,"1,089"
+New Jersey,2002,Struck by / against,24,"8,552,643",0.28,0.27,516
+New Jersey,2002,Suffocation,324,"8,552,643",3.79,3.71,"5,995"
+New Jersey,2002,"Motor vehicle, traffic",750,"8,552,643",8.77,8.75,"17,196"
+New Jersey,2002,"Pedal cyclist, other",--,"8,552,643",--,--,--
+New Jersey,2002,"Pedestrian, other",51,"8,552,643",0.6,0.6,"1,210"
+New Jersey,2002,"Transport, other land",23,"8,552,643",0.27,0.27,593
+New Jersey,2002,"Transport, other (excl. drown by water transp)",12**,"8,552,643",0.14**,0.13**,192
+New Jersey,2002,Other specified and classifiable,27,"8,552,643",0.32,0.32,864
+New Jersey,2002,Other specified / NEC,26,"8,552,643",0.3,0.29,348
+New Jersey,2002,Unspecified,383,"8,552,643",4.48,4.29,"3,301"
+New Jersey,2001,Cut/Pierce,93,"8,492,671",1.1,1.1,"2,404"
+New Jersey,2001,Drowning (includes water transport),90,"8,492,671",1.06,1.06,"2,232"
+New Jersey,2001,Fall,290,"8,492,671",3.42,3.27,"2,966"
+New Jersey,2001,Fire/Flame,83,"8,492,671",0.98,0.94,"1,589"
+New Jersey,2001,Hot object/Substance,--,"8,492,671",--,--,--
+New Jersey,2001,Firearm,370,"8,492,671",4.36,4.44,"10,034"
+New Jersey,2001,Machinery,--,"8,492,671",--,--,--
+New Jersey,2001,Natural/Environmental,29,"8,492,671",0.34,0.32,184
+New Jersey,2001,Drug Poisoning,705,"8,492,671",8.3,8.14,"17,776"
+New Jersey,2001,Non-Drug Poisoning,75,"8,492,671",0.88,0.86,"1,355"
+New Jersey,2001,Struck by / against,20**,"8,492,671",0.24**,0.24**,447
+New Jersey,2001,Suffocation,356,"8,492,671",4.19,4.08,"6,635"
+New Jersey,2001,"Motor vehicle, traffic",738,"8,492,671",8.69,8.77,"18,104"
+New Jersey,2001,"Pedal cyclist, other",--,"8,492,671",--,--,--
+New Jersey,2001,"Pedestrian, other",37,"8,492,671",0.44,0.41,821
+New Jersey,2001,"Transport, other land",23,"8,492,671",0.27,0.28,666
+New Jersey,2001,"Transport, other (excl. drown by water transp)",708,"8,492,671",8.34,8.09,"17,495"
+New Jersey,2001,Other specified and classifiable,40,"8,492,671",0.47,0.47,"1,064"
+New Jersey,2001,Other specified / NEC,32,"8,492,671",0.38,0.37,603
+New Jersey,2001,Unspecified,417,"8,492,671",4.91,4.73,"3,930"
+Total,,,"90,691","184,892,691",49.05,47.06,"1,753,988"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: New Jersey,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

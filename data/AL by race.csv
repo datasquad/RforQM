@@ -1,0 +1,992 @@
+State,Year,Mechanism,Race,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Alabama,2020,Cut/Pierce,White,24,"3,445,489",0.7,0.69,574
+Alabama,2020,Cut/Pierce,Black,24,"1,350,111",1.78,1.77,521
+Alabama,2020,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2020,Drowning (includes water transport),White,59,"3,445,489",1.71,1.7,"1,283"
+Alabama,2020,Drowning (includes water transport),Black,16**,"1,350,111",1.19**,1.26**,496
+Alabama,2020,Drowning (includes water transport),American Indian / Alaska Native,--,"38,347",--,--,--
+Alabama,2020,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2020,Fall,White,272,"3,445,489",7.89,5.61,588
+Alabama,2020,Fall,Black,33,"1,350,111",2.44,2.59,295
+Alabama,2020,Fall,Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2020,Fire/Flame,White,75,"3,445,489",2.18,1.92,"1,078"
+Alabama,2020,Fire/Flame,Black,39,"1,350,111",2.89,2.9,436
+Alabama,2020,Fire/Flame,Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2020,Hot object/Substance,Black,--,"1,350,111",--,--,--
+Alabama,2020,Firearm,White,638,"3,445,489",18.52,18.02,"12,377"
+Alabama,2020,Firearm,Black,494,"1,350,111",36.59,36.2,"16,124"
+Alabama,2020,Firearm,American Indian / Alaska Native,--,"38,347",--,--,--
+Alabama,2020,Firearm,Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2020,Machinery,White,11**,"3,445,489",0.32**,0.25**,92
+Alabama,2020,Machinery,Black,--,"1,350,111",--,--,--
+Alabama,2020,Natural/Environmental,White,28,"3,445,489",0.81,0.77,542
+Alabama,2020,Natural/Environmental,Black,15**,"1,350,111",1.11**,1.20**,131
+Alabama,2020,Drug Poisoning,White,774,"3,445,489",22.46,24.49,"17,782"
+Alabama,2020,Drug Poisoning,Black,248,"1,350,111",18.37,19.05,"5,885"
+Alabama,2020,Drug Poisoning,American Indian / Alaska Native,--,"38,347",--,--,--
+Alabama,2020,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2020,Non-Drug Poisoning,White,61,"3,445,489",1.77,1.63,928
+Alabama,2020,Non-Drug Poisoning,Black,13**,"1,350,111",0.96**,0.96**,198
+Alabama,2020,Struck by / against,White,20**,"3,445,489",0.58**,0.55**,412
+Alabama,2020,Struck by / against,Black,--,"1,350,111",--,--,--
+Alabama,2020,Suffocation,White,219,"3,445,489",6.36,6.58,"5,222"
+Alabama,2020,Suffocation,Black,64,"1,350,111",4.74,4.7,"1,713"
+Alabama,2020,Suffocation,American Indian / Alaska Native,--,"38,347",--,--,--
+Alabama,2020,Suffocation,Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2020,"Motor vehicle, traffic",White,653,"3,445,489",18.95,18.8,"14,377"
+Alabama,2020,"Motor vehicle, traffic",Black,288,"1,350,111",21.33,20.93,"7,550"
+Alabama,2020,"Motor vehicle, traffic",American Indian / Alaska Native,--,"38,347",--,--,--
+Alabama,2020,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2020,"Pedal cyclist, other",White,--,"3,445,489",--,--,--
+Alabama,2020,"Pedestrian, other",White,14**,"3,445,489",0.41**,0.40**,372
+Alabama,2020,"Pedestrian, other",Black,--,"1,350,111",--,--,--
+Alabama,2020,"Pedestrian, other",Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2020,"Transport, other land",White,18**,"3,445,489",0.52**,0.50**,367
+Alabama,2020,"Transport, other land",Black,--,"1,350,111",--,--,--
+Alabama,2020,"Transport, other (excl. drown by water transp)",White,10**,"3,445,489",0.29**,0.30**,206
+Alabama,2020,Other specified and classifiable,White,15**,"3,445,489",0.44**,0.45**,352
+Alabama,2020,Other specified and classifiable,Black,--,"1,350,111",--,--,--
+Alabama,2020,Other specified / NEC,White,14**,"3,445,489",0.41**,0.36**,151
+Alabama,2020,Other specified / NEC,Black,--,"1,350,111",--,--,--
+Alabama,2020,Unspecified,White,215,"3,445,489",6.24,4.71,"1,015"
+Alabama,2020,Unspecified,Black,72,"1,350,111",5.33,5.37,"1,270"
+Alabama,2020,Unspecified,American Indian / Alaska Native,--,"38,347",--,--,--
+Alabama,2020,Unspecified,Asian / HI Native / Pac. Islander,--,"87,585",--,--,--
+Alabama,2019,Cut/Pierce,White,19**,"3,438,711",0.55**,0.57**,413
+Alabama,2019,Cut/Pierce,Black,22,"1,345,267",1.64,1.64,510
+Alabama,2019,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"86,288",--,--,--
+Alabama,2019,Drowning (includes water transport),White,75,"3,438,711",2.18,2.18,"2,044"
+Alabama,2019,Drowning (includes water transport),Black,22,"1,345,267",1.64,1.67,775
+Alabama,2019,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"86,288",--,--,--
+Alabama,2019,Fall,White,260,"3,438,711",7.56,5.48,719
+Alabama,2019,Fall,Black,39,"1,345,267",2.9,3.13,116
+Alabama,2019,Fire/Flame,White,63,"3,438,711",1.83,1.68,"1,007"
+Alabama,2019,Fire/Flame,Black,30,"1,345,267",2.23,2.24,487
+Alabama,2019,Firearm,White,641,"3,438,711",18.64,17.88,"11,742"
+Alabama,2019,Firearm,Black,424,"1,345,267",31.52,31.61,"13,671"
+Alabama,2019,Firearm,American Indian / Alaska Native,--,"37,699",--,--,--
+Alabama,2019,Firearm,Asian / HI Native / Pac. Islander,--,"86,288",--,--,--
+Alabama,2019,Machinery,White,--,"3,438,711",--,--,--
+Alabama,2019,Machinery,Black,--,"1,345,267",--,--,--
+Alabama,2019,Natural/Environmental,White,41,"3,438,711",1.19,1.09,736
+Alabama,2019,Natural/Environmental,Black,20**,"1,345,267",1.49**,1.52**,249
+Alabama,2019,Overexertion,White,--,"3,438,711",--,--,--
+Alabama,2019,Drug Poisoning,White,637,"3,438,711",18.52,19.7,"14,160"
+Alabama,2019,Drug Poisoning,Black,123,"1,345,267",9.14,9.35,"2,904"
+Alabama,2019,Drug Poisoning,American Indian / Alaska Native,--,"37,699",--,--,--
+Alabama,2019,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"86,288",--,--,--
+Alabama,2019,Non-Drug Poisoning,White,49,"3,438,711",1.43,1.52,856
+Alabama,2019,Non-Drug Poisoning,Black,10**,"1,345,267",0.74**,0.74**,291
+Alabama,2019,Struck by / against,White,22,"3,438,711",0.64,0.59,417
+Alabama,2019,Struck by / against,Black,--,"1,345,267",--,--,--
+Alabama,2019,Suffocation,White,257,"3,438,711",7.47,7.62,"5,975"
+Alabama,2019,Suffocation,Black,40,"1,345,267",2.97,3.12,"1,162"
+Alabama,2019,Suffocation,American Indian / Alaska Native,--,"37,699",--,--,--
+Alabama,2019,Suffocation,Asian / HI Native / Pac. Islander,--,"86,288",--,--,--
+Alabama,2019,"Motor vehicle, traffic",White,692,"3,438,711",20.12,20.03,"15,583"
+Alabama,2019,"Motor vehicle, traffic",Black,277,"1,345,267",20.59,20.19,"6,543"
+Alabama,2019,"Motor vehicle, traffic",American Indian / Alaska Native,--,"37,699",--,--,--
+Alabama,2019,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"86,288",--,--,--
+Alabama,2019,"Pedal cyclist, other",White,--,"3,438,711",--,--,--
+Alabama,2019,"Pedestrian, other",White,10**,"3,438,711",0.29**,0.26**,180
+Alabama,2019,"Pedestrian, other",Black,--,"1,345,267",--,--,--
+Alabama,2019,"Transport, other land",White,27,"3,438,711",0.79,0.75,728
+Alabama,2019,"Transport, other land",Black,--,"1,345,267",--,--,--
+Alabama,2019,"Transport, other land",American Indian / Alaska Native,--,"37,699",--,--,--
+Alabama,2019,"Transport, other land",Asian / HI Native / Pac. Islander,--,"86,288",--,--,--
+Alabama,2019,"Transport, other (excl. drown by water transp)",White,--,"3,438,711",--,--,--
+Alabama,2019,"Transport, other (excl. drown by water transp)",Black,--,"1,345,267",--,--,--
+Alabama,2019,Other specified and classifiable,White,17**,"3,438,711",0.49**,0.55**,434
+Alabama,2019,Other specified and classifiable,Black,16**,"1,345,267",1.19**,1.28**,318
+Alabama,2019,Other specified / NEC,White,16**,"3,438,711",0.47**,0.38**,187
+Alabama,2019,Other specified / NEC,Black,14**,"1,345,267",1.04**,1.05**,332
+Alabama,2019,Other specified / NEC,American Indian / Alaska Native,--,"37,699",--,--,--
+Alabama,2019,Unspecified,White,204,"3,438,711",5.93,4.56,"1,192"
+Alabama,2019,Unspecified,Black,58,"1,345,267",4.31,4.34,672
+Alabama,2019,Unspecified,American Indian / Alaska Native,--,"37,699",--,--,--
+Alabama,2019,Unspecified,Asian / HI Native / Pac. Islander,--,"86,288",--,--,--
+Alabama,2018,Cut/Pierce,White,29,"3,429,267",0.85,0.74,401
+Alabama,2018,Cut/Pierce,Black,25,"1,340,474",1.87,1.75,637
+Alabama,2018,Drowning (includes water transport),White,42,"3,429,267",1.23,1.18,"1,125"
+Alabama,2018,Drowning (includes water transport),Black,28,"1,340,474",2.09,2.08,924
+Alabama,2018,Drowning (includes water transport),American Indian / Alaska Native,--,"37,220",--,--,--
+Alabama,2018,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"84,667",--,--,--
+Alabama,2018,Fall,White,243,"3,429,267",7.09,5.26,744
+Alabama,2018,Fall,Black,28,"1,340,474",2.09,2.18,203
+Alabama,2018,Fall,American Indian / Alaska Native,--,"37,220",--,--,--
+Alabama,2018,Fall,Asian / HI Native / Pac. Islander,--,"84,667",--,--,--
+Alabama,2018,Fire/Flame,White,64,"3,429,267",1.87,1.69,839
+Alabama,2018,Fire/Flame,Black,25,"1,340,474",1.87,1.81,593
+Alabama,2018,Hot object/Substance,White,--,"3,429,267",--,--,--
+Alabama,2018,Hot object/Substance,Black,--,"1,340,474",--,--,--
+Alabama,2018,Firearm,White,646,"3,429,267",18.84,17.98,"12,383"
+Alabama,2018,Firearm,Black,409,"1,340,474",30.51,29.93,"13,588"
+Alabama,2018,Firearm,American Indian / Alaska Native,--,"37,220",--,--,--
+Alabama,2018,Firearm,Asian / HI Native / Pac. Islander,--,"84,667",--,--,--
+Alabama,2018,Machinery,White,10**,"3,429,267",0.29**,0.23**,130
+Alabama,2018,Machinery,Black,--,"1,340,474",--,--,--
+Alabama,2018,Machinery,American Indian / Alaska Native,--,"37,220",--,--,--
+Alabama,2018,Natural/Environmental,White,24,"3,429,267",0.7,0.53,243
+Alabama,2018,Natural/Environmental,Black,13**,"1,340,474",0.97**,0.96**,208
+Alabama,2018,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"84,667",--,--,--
+Alabama,2018,Drug Poisoning,White,638,"3,429,267",18.61,19.76,"14,396"
+Alabama,2018,Drug Poisoning,Black,128,"1,340,474",9.55,9.84,"2,874"
+Alabama,2018,Drug Poisoning,American Indian / Alaska Native,--,"37,220",--,--,--
+Alabama,2018,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"84,667",--,--,--
+Alabama,2018,Non-Drug Poisoning,White,55,"3,429,267",1.6,1.57,"1,030"
+Alabama,2018,Non-Drug Poisoning,Black,12**,"1,340,474",0.90**,0.92**,156
+Alabama,2018,Struck by / against,White,13**,"3,429,267",0.38**,0.31**,124
+Alabama,2018,Struck by / against,Black,--,"1,340,474",--,--,--
+Alabama,2018,Suffocation,White,237,"3,429,267",6.91,7.18,"5,453"
+Alabama,2018,Suffocation,Black,58,"1,340,474",4.33,4.4,"1,557"
+Alabama,2018,Suffocation,American Indian / Alaska Native,--,"37,220",--,--,--
+Alabama,2018,Suffocation,Asian / HI Native / Pac. Islander,--,"84,667",--,--,--
+Alabama,2018,"Motor vehicle, traffic",White,708,"3,429,267",20.65,20.1,"15,137"
+Alabama,2018,"Motor vehicle, traffic",Black,314,"1,340,474",23.43,23.41,"8,086"
+Alabama,2018,"Motor vehicle, traffic",American Indian / Alaska Native,--,"37,220",--,--,--
+Alabama,2018,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"84,667",--,--,--
+Alabama,2018,"Pedal cyclist, other",White,--,"3,429,267",--,--,--
+Alabama,2018,"Pedal cyclist, other",Black,--,"1,340,474",--,--,--
+Alabama,2018,"Pedestrian, other",White,11**,"3,429,267",0.32**,0.34**,280
+Alabama,2018,"Pedestrian, other",Black,--,"1,340,474",--,--,--
+Alabama,2018,"Pedestrian, other",American Indian / Alaska Native,--,"37,220",--,--,--
+Alabama,2018,"Transport, other land",White,28,"3,429,267",0.82,0.71,378
+Alabama,2018,"Transport, other land",Black,--,"1,340,474",--,--,--
+Alabama,2018,"Transport, other (excl. drown by water transp)",White,--,"3,429,267",--,--,--
+Alabama,2018,Other specified and classifiable,White,15**,"3,429,267",0.44**,0.44**,426
+Alabama,2018,Other specified and classifiable,Black,--,"1,340,474",--,--,--
+Alabama,2018,Other specified / NEC,White,14**,"3,429,267",0.41**,0.35**,170
+Alabama,2018,Other specified / NEC,Black,--,"1,340,474",--,--,--
+Alabama,2018,Other specified / NEC,American Indian / Alaska Native,--,"37,220",--,--,--
+Alabama,2018,Unspecified,White,200,"3,429,267",5.83,4.49,962
+Alabama,2018,Unspecified,Black,50,"1,340,474",3.73,3.9,720
+Alabama,2018,Unspecified,Asian / HI Native / Pac. Islander,--,"84,667",--,--,--
+Alabama,2017,Cut/Pierce,White,22,"3,422,931",0.64,0.63,426
+Alabama,2017,Cut/Pierce,Black,16**,"1,335,123",1.20**,1.28**,350
+Alabama,2017,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2017,Drowning (includes water transport),White,64,"3,422,931",1.87,1.81,"1,416"
+Alabama,2017,Drowning (includes water transport),Black,22,"1,335,123",1.65,1.59,540
+Alabama,2017,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2017,Fall,White,225,"3,422,931",6.57,5.02,938
+Alabama,2017,Fall,Black,27,"1,335,123",2.02,2.14,187
+Alabama,2017,Fall,Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2017,Fire/Flame,White,46,"3,422,931",1.34,1.07,443
+Alabama,2017,Fire/Flame,Black,27,"1,335,123",2.02,1.97,377
+Alabama,2017,Fire/Flame,American Indian / Alaska Native,--,"36,834",--,--,--
+Alabama,2017,Hot object/Substance,White,--,"3,422,931",--,--,--
+Alabama,2017,Firearm,White,682,"3,422,931",19.92,18.79,"11,903"
+Alabama,2017,Firearm,Black,433,"1,335,123",32.43,31.57,"14,410"
+Alabama,2017,Firearm,Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2017,Machinery,White,11**,"3,422,931",0.32**,0.26**,125
+Alabama,2017,Machinery,Black,--,"1,335,123",--,--,--
+Alabama,2017,Natural/Environmental,White,25,"3,422,931",0.73,0.6,330
+Alabama,2017,Natural/Environmental,Black,--,"1,335,123",--,--,--
+Alabama,2017,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2017,Drug Poisoning,White,705,"3,422,931",20.6,21.91,"16,603"
+Alabama,2017,Drug Poisoning,Black,127,"1,335,123",9.51,10.06,"3,130"
+Alabama,2017,Drug Poisoning,American Indian / Alaska Native,--,"36,834",--,--,--
+Alabama,2017,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2017,Non-Drug Poisoning,White,43,"3,422,931",1.26,1.37,995
+Alabama,2017,Non-Drug Poisoning,Black,--,"1,335,123",--,--,--
+Alabama,2017,Struck by / against,White,15**,"3,422,931",0.44**,0.39**,225
+Alabama,2017,Struck by / against,Black,--,"1,335,123",--,--,--
+Alabama,2017,Suffocation,White,257,"3,422,931",7.51,7.23,"4,989"
+Alabama,2017,Suffocation,Black,57,"1,335,123",4.27,4.38,"1,491"
+Alabama,2017,Suffocation,Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2017,"Motor vehicle, traffic",White,733,"3,422,931",21.41,21.05,"16,099"
+Alabama,2017,"Motor vehicle, traffic",Black,267,"1,335,123",20,19.58,"6,774"
+Alabama,2017,"Motor vehicle, traffic",American Indian / Alaska Native,--,"36,834",--,--,--
+Alabama,2017,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2017,"Pedal cyclist, other",White,--,"3,422,931",--,--,--
+Alabama,2017,"Pedestrian, other",White,--,"3,422,931",--,--,--
+Alabama,2017,"Pedestrian, other",Black,--,"1,335,123",--,--,--
+Alabama,2017,"Transport, other land",White,14**,"3,422,931",0.41**,0.43**,446
+Alabama,2017,"Transport, other land",Black,--,"1,335,123",--,--,--
+Alabama,2017,"Transport, other (excl. drown by water transp)",White,--,"3,422,931",--,--,--
+Alabama,2017,Other specified and classifiable,White,23,"3,422,931",0.67,0.7,608
+Alabama,2017,Other specified and classifiable,Black,--,"1,335,123",--,--,--
+Alabama,2017,Other specified / NEC,White,17**,"3,422,931",0.50**,0.40**,178
+Alabama,2017,Other specified / NEC,Black,--,"1,335,123",--,--,--
+Alabama,2017,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2017,Unspecified,White,201,"3,422,931",5.87,4.76,"1,143"
+Alabama,2017,Unspecified,Black,59,"1,335,123",4.42,4.38,"1,108"
+Alabama,2017,Unspecified,American Indian / Alaska Native,--,"36,834",--,--,--
+Alabama,2017,Unspecified,Asian / HI Native / Pac. Islander,--,"83,101",--,--,--
+Alabama,2016,Cut/Pierce,White,25,"3,419,646",0.73,0.7,503
+Alabama,2016,Cut/Pierce,Black,24,"1,329,793",1.81,1.93,561
+Alabama,2016,Drowning (includes water transport),White,67,"3,419,646",1.96,1.88,"1,540"
+Alabama,2016,Drowning (includes water transport),Black,19**,"1,329,793",1.43**,1.53**,681
+Alabama,2016,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"80,802",--,--,--
+Alabama,2016,Fall,White,223,"3,419,646",6.52,4.96,748
+Alabama,2016,Fall,Black,27,"1,329,793",2.03,2.2,190
+Alabama,2016,Fall,Asian / HI Native / Pac. Islander,--,"80,802",--,--,--
+Alabama,2016,Fire/Flame,White,59,"3,419,646",1.73,1.52,808
+Alabama,2016,Fire/Flame,Black,43,"1,329,793",3.23,3.29,791
+Alabama,2016,Fire/Flame,Asian / HI Native / Pac. Islander,--,"80,802",--,--,--
+Alabama,2016,Firearm,White,663,"3,419,646",19.39,18.55,"12,290"
+Alabama,2016,Firearm,Black,377,"1,329,793",28.35,27.49,"12,695"
+Alabama,2016,Firearm,American Indian / Alaska Native,--,"36,583",--,--,--
+Alabama,2016,Firearm,Asian / HI Native / Pac. Islander,--,"80,802",--,--,--
+Alabama,2016,Machinery,White,15**,"3,419,646",0.44**,0.37**,137
+Alabama,2016,Machinery,Black,--,"1,329,793",--,--,--
+Alabama,2016,Natural/Environmental,White,25,"3,419,646",0.73,0.64,393
+Alabama,2016,Natural/Environmental,Black,--,"1,329,793",--,--,--
+Alabama,2016,Drug Poisoning,White,649,"3,419,646",18.98,20.03,"15,278"
+Alabama,2016,Drug Poisoning,Black,102,"1,329,793",7.67,7.98,"2,349"
+Alabama,2016,Drug Poisoning,American Indian / Alaska Native,--,"36,583",--,--,--
+Alabama,2016,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"80,802",--,--,--
+Alabama,2016,Non-Drug Poisoning,White,55,"3,419,646",1.61,1.58,"1,122"
+Alabama,2016,Non-Drug Poisoning,Black,20**,"1,329,793",1.50**,1.50**,235
+Alabama,2016,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"80,802",--,--,--
+Alabama,2016,Struck by / against,White,14**,"3,419,646",0.41**,0.40**,246
+Alabama,2016,Struck by / against,Black,--,"1,329,793",--,--,--
+Alabama,2016,Suffocation,White,223,"3,419,646",6.52,6.37,"4,820"
+Alabama,2016,Suffocation,Black,48,"1,329,793",3.61,3.86,"1,188"
+Alabama,2016,Suffocation,Asian / HI Native / Pac. Islander,--,"80,802",--,--,--
+Alabama,2016,"Motor vehicle, traffic",White,808,"3,419,646",23.63,23.85,"19,069"
+Alabama,2016,"Motor vehicle, traffic",Black,307,"1,329,793",23.09,23.28,"8,078"
+Alabama,2016,"Motor vehicle, traffic",American Indian / Alaska Native,--,"36,583",--,--,--
+Alabama,2016,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,10**,"80,802",12.38**,10.95**,316
+Alabama,2016,"Pedestrian, other",White,--,"3,419,646",--,--,--
+Alabama,2016,"Pedestrian, other",Black,--,"1,329,793",--,--,--
+Alabama,2016,"Transport, other land",White,23,"3,419,646",0.67,0.65,567
+Alabama,2016,"Transport, other land",Black,--,"1,329,793",--,--,--
+Alabama,2016,"Transport, other (excl. drown by water transp)",White,--,"3,419,646",--,--,--
+Alabama,2016,Other specified and classifiable,White,15**,"3,419,646",0.44**,0.45**,333
+Alabama,2016,Other specified and classifiable,Black,--,"1,329,793",--,--,--
+Alabama,2016,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"80,802",--,--,--
+Alabama,2016,Other specified / NEC,White,--,"3,419,646",--,--,--
+Alabama,2016,Other specified / NEC,Black,--,"1,329,793",--,--,--
+Alabama,2016,Unspecified,White,189,"3,419,646",5.53,4.54,"1,200"
+Alabama,2016,Unspecified,Black,44,"1,329,793",3.31,3.55,671
+Alabama,2015,Cut/Pierce,White,19**,"3,416,267",0.56**,0.51**,305
+Alabama,2015,Cut/Pierce,Black,22,"1,324,193",1.66,1.85,518
+Alabama,2015,Drowning (includes water transport),White,67,"3,416,267",1.96,1.97,"1,787"
+Alabama,2015,Drowning (includes water transport),Black,21,"1,324,193",1.59,1.55,546
+Alabama,2015,Drowning (includes water transport),American Indian / Alaska Native,--,"36,311",--,--,--
+Alabama,2015,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"78,032",--,--,--
+Alabama,2015,Fall,White,248,"3,416,267",7.26,5.75,932
+Alabama,2015,Fall,Black,17**,"1,324,193",1.28**,1.46**,87
+Alabama,2015,Fire/Flame,White,54,"3,416,267",1.58,1.41,714
+Alabama,2015,Fire/Flame,Black,37,"1,324,193",2.79,2.84,616
+Alabama,2015,Fire/Flame,Asian / HI Native / Pac. Islander,--,"78,032",--,--,--
+Alabama,2015,Hot object/Substance,White,--,"3,416,267",--,--,--
+Alabama,2015,Firearm,White,633,"3,416,267",18.53,17.79,"11,902"
+Alabama,2015,Firearm,Black,322,"1,324,193",24.32,23.75,"10,319"
+Alabama,2015,Firearm,American Indian / Alaska Native,--,"36,311",--,--,--
+Alabama,2015,Firearm,Asian / HI Native / Pac. Islander,--,"78,032",--,--,--
+Alabama,2015,Machinery,White,17**,"3,416,267",0.50**,0.39**,142
+Alabama,2015,Machinery,Black,--,"1,324,193",--,--,--
+Alabama,2015,Natural/Environmental,White,20**,"3,416,267",0.59**,0.51**,190
+Alabama,2015,Natural/Environmental,Black,--,"1,324,193",--,--,--
+Alabama,2015,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"78,032",--,--,--
+Alabama,2015,Drug Poisoning,White,651,"3,416,267",19.06,20,"14,849"
+Alabama,2015,Drug Poisoning,Black,78,"1,324,193",5.89,5.98,"1,715"
+Alabama,2015,Drug Poisoning,American Indian / Alaska Native,--,"36,311",--,--,--
+Alabama,2015,Non-Drug Poisoning,White,50,"3,416,267",1.46,1.46,"1,000"
+Alabama,2015,Non-Drug Poisoning,Black,21,"1,324,193",1.59,1.59,360
+Alabama,2015,Struck by / against,White,12**,"3,416,267",0.35**,0.29**,153
+Alabama,2015,Struck by / against,Black,--,"1,324,193",--,--,--
+Alabama,2015,Suffocation,White,198,"3,416,267",5.8,5.51,"3,556"
+Alabama,2015,Suffocation,Black,48,"1,324,193",3.63,3.65,"1,164"
+Alabama,2015,"Motor vehicle, traffic",White,670,"3,416,267",19.61,18.87,"14,807"
+Alabama,2015,"Motor vehicle, traffic",Black,252,"1,324,193",19.03,18.81,"6,527"
+Alabama,2015,"Motor vehicle, traffic",American Indian / Alaska Native,--,"36,311",--,--,--
+Alabama,2015,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"78,032",--,--,--
+Alabama,2015,"Pedal cyclist, other",White,--,"3,416,267",--,--,--
+Alabama,2015,"Pedestrian, other",White,11**,"3,416,267",0.32**,0.33**,353
+Alabama,2015,"Pedestrian, other",Black,10**,"1,324,193",0.76**,0.80**,309
+Alabama,2015,"Transport, other land",White,20**,"3,416,267",0.59**,0.56**,342
+Alabama,2015,"Transport, other land",Black,--,"1,324,193",--,--,--
+Alabama,2015,"Transport, other (excl. drown by water transp)",White,--,"3,416,267",--,--,--
+Alabama,2015,"Transport, other (excl. drown by water transp)",Black,--,"1,324,193",--,--,--
+Alabama,2015,Other specified and classifiable,White,19**,"3,416,267",0.56**,0.55**,496
+Alabama,2015,Other specified and classifiable,Black,--,"1,324,193",--,--,--
+Alabama,2015,Other specified / NEC,White,14**,"3,416,267",0.41**,0.35**,104
+Alabama,2015,Other specified / NEC,Black,--,"1,324,193",--,--,--
+Alabama,2015,Unspecified,White,207,"3,416,267",6.06,5.03,"1,532"
+Alabama,2015,Unspecified,Black,64,"1,324,193",4.83,5.4,934
+Alabama,2014,Cut/Pierce,White,12**,"3,416,046",0.35**,0.35**,277
+Alabama,2014,Cut/Pierce,Black,18**,"1,316,194",1.37**,1.23**,401
+Alabama,2014,Drowning (includes water transport),White,68,"3,416,046",1.99,1.97,"1,754"
+Alabama,2014,Drowning (includes water transport),Black,17**,"1,316,194",1.29**,1.24**,793
+Alabama,2014,Drowning (includes water transport),American Indian / Alaska Native,--,"36,048",--,--,--
+Alabama,2014,Fall,White,202,"3,416,046",5.91,4.76,707
+Alabama,2014,Fall,Black,27,"1,316,194",2.05,2.3,210
+Alabama,2014,Fire/Flame,White,57,"3,416,046",1.67,1.43,567
+Alabama,2014,Fire/Flame,Black,38,"1,316,194",2.89,3.22,526
+Alabama,2014,Hot object/Substance,White,--,"3,416,046",--,--,--
+Alabama,2014,Firearm,White,545,"3,416,046",15.95,15.34,"9,674"
+Alabama,2014,Firearm,Black,270,"1,316,194",20.51,20.34,"8,932"
+Alabama,2014,Machinery,White,12**,"3,416,046",0.35**,0.28**,135
+Alabama,2014,Machinery,Black,--,"1,316,194",--,--,--
+Alabama,2014,Natural/Environmental,White,20**,"3,416,046",0.59**,0.52**,401
+Alabama,2014,Natural/Environmental,Black,--,"1,316,194",--,--,--
+Alabama,2014,Drug Poisoning,White,659,"3,416,046",19.29,19.69,"14,599"
+Alabama,2014,Drug Poisoning,Black,61,"1,316,194",4.64,4.88,"1,324"
+Alabama,2014,Drug Poisoning,American Indian / Alaska Native,--,"36,048",--,--,--
+Alabama,2014,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"75,449",--,--,--
+Alabama,2014,Non-Drug Poisoning,White,46,"3,416,046",1.35,1.33,927
+Alabama,2014,Non-Drug Poisoning,Black,--,"1,316,194",--,--,--
+Alabama,2014,Struck by / against,White,20**,"3,416,046",0.59**,0.50**,260
+Alabama,2014,Struck by / against,Black,--,"1,316,194",--,--,--
+Alabama,2014,Suffocation,White,231,"3,416,046",6.76,6.6,"4,320"
+Alabama,2014,Suffocation,Black,47,"1,316,194",3.57,3.9,"1,123"
+Alabama,2014,Suffocation,American Indian / Alaska Native,--,"36,048",--,--,--
+Alabama,2014,Suffocation,Asian / HI Native / Pac. Islander,--,"75,449",--,--,--
+Alabama,2014,"Motor vehicle, traffic",White,632,"3,416,046",18.5,18.02,"14,191"
+Alabama,2014,"Motor vehicle, traffic",Black,226,"1,316,194",17.17,17.32,"5,692"
+Alabama,2014,"Motor vehicle, traffic",American Indian / Alaska Native,--,"36,048",--,--,--
+Alabama,2014,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"75,449",--,--,--
+Alabama,2014,"Pedal cyclist, other",White,--,"3,416,046",--,--,--
+Alabama,2014,"Pedestrian, other",White,13**,"3,416,046",0.38**,0.40**,340
+Alabama,2014,"Pedestrian, other",Black,--,"1,316,194",--,--,--
+Alabama,2014,"Transport, other land",White,23,"3,416,046",0.67,0.65,618
+Alabama,2014,"Transport, other land",Black,--,"1,316,194",--,--,--
+Alabama,2014,"Transport, other (excl. drown by water transp)",White,14**,"3,416,046",0.41**,0.43**,315
+Alabama,2014,"Transport, other (excl. drown by water transp)",Black,--,"1,316,194",--,--,--
+Alabama,2014,Other specified and classifiable,White,11**,"3,416,046",0.32**,0.31**,176
+Alabama,2014,Other specified and classifiable,Black,--,"1,316,194",--,--,--
+Alabama,2014,Other specified / NEC,White,12**,"3,416,046",0.35**,0.31**,96
+Alabama,2014,Other specified / NEC,Black,--,"1,316,194",--,--,--
+Alabama,2014,Unspecified,White,225,"3,416,046",6.59,5.4,"1,269"
+Alabama,2014,Unspecified,Black,52,"1,316,194",3.95,4.32,769
+Alabama,2014,Unspecified,American Indian / Alaska Native,--,"36,048",--,--,--
+Alabama,2014,Unspecified,Asian / HI Native / Pac. Islander,--,"75,449",--,--,--
+Alabama,2013,Cut/Pierce,White,43,"3,413,722",1.26,1.1,742
+Alabama,2013,Cut/Pierce,Black,21,"1,308,730",1.61,1.48,530
+Alabama,2013,Drowning (includes water transport),White,61,"3,413,722",1.79,1.75,"1,666"
+Alabama,2013,Drowning (includes water transport),Black,24,"1,308,730",1.83,1.77,676
+Alabama,2013,Fall,White,216,"3,413,722",6.33,5.14,826
+Alabama,2013,Fall,Black,31,"1,308,730",2.37,2.65,201
+Alabama,2013,Fall,American Indian / Alaska Native,--,"35,862",--,--,--
+Alabama,2013,Fall,Asian / HI Native / Pac. Islander,--,"73,272",--,--,--
+Alabama,2013,Fire/Flame,White,57,"3,413,722",1.67,1.56,856
+Alabama,2013,Fire/Flame,Black,33,"1,308,730",2.52,2.75,649
+Alabama,2013,Fire/Flame,American Indian / Alaska Native,--,"35,862",--,--,--
+Alabama,2013,Firearm,White,579,"3,413,722",16.96,15.89,"10,238"
+Alabama,2013,Firearm,Black,278,"1,308,730",21.24,20.77,"9,292"
+Alabama,2013,Firearm,American Indian / Alaska Native,--,"35,862",--,--,--
+Alabama,2013,Firearm,Asian / HI Native / Pac. Islander,--,"73,272",--,--,--
+Alabama,2013,Machinery,White,12**,"3,413,722",0.35**,0.31**,115
+Alabama,2013,Machinery,Black,--,"1,308,730",--,--,--
+Alabama,2013,Natural/Environmental,White,17**,"3,413,722",0.50**,0.45**,303
+Alabama,2013,Natural/Environmental,Black,--,"1,308,730",--,--,--
+Alabama,2013,Drug Poisoning,White,541,"3,413,722",15.85,16.47,"12,548"
+Alabama,2013,Drug Poisoning,Black,54,"1,308,730",4.13,4.39,"1,145"
+Alabama,2013,Drug Poisoning,American Indian / Alaska Native,--,"35,862",--,--,--
+Alabama,2013,Non-Drug Poisoning,White,38,"3,413,722",1.11,1.12,742
+Alabama,2013,Non-Drug Poisoning,Black,12**,"1,308,730",0.92**,0.94**,124
+Alabama,2013,Struck by / against,White,--,"3,413,722",--,--,--
+Alabama,2013,Struck by / against,Black,--,"1,308,730",--,--,--
+Alabama,2013,Suffocation,White,204,"3,413,722",5.98,5.76,"4,249"
+Alabama,2013,Suffocation,Black,55,"1,308,730",4.2,4.67,"1,276"
+Alabama,2013,Suffocation,American Indian / Alaska Native,--,"35,862",--,--,--
+Alabama,2013,Suffocation,Asian / HI Native / Pac. Islander,--,"73,272",--,--,--
+Alabama,2013,"Motor vehicle, traffic",White,651,"3,413,722",19.07,18.98,"15,911"
+Alabama,2013,"Motor vehicle, traffic",Black,224,"1,308,730",17.12,17.53,"6,060"
+Alabama,2013,"Motor vehicle, traffic",American Indian / Alaska Native,--,"35,862",--,--,--
+Alabama,2013,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"73,272",--,--,--
+Alabama,2013,"Pedestrian, other",White,11**,"3,413,722",0.32**,0.31**,187
+Alabama,2013,"Pedestrian, other",Black,--,"1,308,730",--,--,--
+Alabama,2013,"Pedestrian, other",American Indian / Alaska Native,--,"35,862",--,--,--
+Alabama,2013,"Transport, other land",White,25,"3,413,722",0.73,0.79,833
+Alabama,2013,"Transport, other land",Black,--,"1,308,730",--,--,--
+Alabama,2013,"Transport, other (excl. drown by water transp)",White,--,"3,413,722",--,--,--
+Alabama,2013,Other specified and classifiable,White,10**,"3,413,722",0.29**,0.28**,258
+Alabama,2013,Other specified and classifiable,Black,--,"1,308,730",--,--,--
+Alabama,2013,Other specified and classifiable,American Indian / Alaska Native,--,"35,862",--,--,--
+Alabama,2013,Other specified / NEC,White,14**,"3,413,722",0.41**,0.37**,172
+Alabama,2013,Other specified / NEC,Black,--,"1,308,730",--,--,--
+Alabama,2013,Unspecified,White,208,"3,413,722",6.09,5.02,997
+Alabama,2013,Unspecified,Black,56,"1,308,730",4.28,4.99,865
+Alabama,2013,Unspecified,Asian / HI Native / Pac. Islander,--,"73,272",--,--,--
+Alabama,2012,Cut/Pierce,White,25,"3,411,297",0.73,0.73,550
+Alabama,2012,Cut/Pierce,Black,26,"1,298,786",2,2.14,672
+Alabama,2012,Cut/Pierce,American Indian / Alaska Native,--,"35,831",--,--,--
+Alabama,2012,Drowning (includes water transport),White,69,"3,411,297",2.02,2.14,"2,299"
+Alabama,2012,Drowning (includes water transport),Black,38,"1,298,786",2.93,2.96,"1,299"
+Alabama,2012,Drowning (includes water transport),American Indian / Alaska Native,--,"35,831",--,--,--
+Alabama,2012,Fall,White,185,"3,411,297",5.42,4.51,582
+Alabama,2012,Fall,Black,18**,"1,298,786",1.39**,1.63**,65
+Alabama,2012,Fall,Asian / HI Native / Pac. Islander,--,"70,718",--,--,--
+Alabama,2012,Fire/Flame,White,58,"3,411,297",1.7,1.53,781
+Alabama,2012,Fire/Flame,Black,27,"1,298,786",2.08,2.02,523
+Alabama,2012,Hot object/Substance,Black,--,"1,298,786",--,--,--
+Alabama,2012,Firearm,White,548,"3,411,297",16.06,15.16,"9,949"
+Alabama,2012,Firearm,Black,278,"1,298,786",21.41,21.19,"8,766"
+Alabama,2012,Firearm,American Indian / Alaska Native,--,"35,831",--,--,--
+Alabama,2012,Firearm,Asian / HI Native / Pac. Islander,--,"70,718",--,--,--
+Alabama,2012,Machinery,White,10**,"3,411,297",0.29**,0.25**,154
+Alabama,2012,Machinery,Black,--,"1,298,786",--,--,--
+Alabama,2012,Natural/Environmental,White,24,"3,411,297",0.7,0.66,388
+Alabama,2012,Natural/Environmental,Black,--,"1,298,786",--,--,--
+Alabama,2012,Overexertion,White,--,"3,411,297",--,--,--
+Alabama,2012,Drug Poisoning,White,521,"3,411,297",15.27,15.86,"12,421"
+Alabama,2012,Drug Poisoning,Black,38,"1,298,786",2.93,3.23,803
+Alabama,2012,Drug Poisoning,American Indian / Alaska Native,--,"35,831",--,--,--
+Alabama,2012,Non-Drug Poisoning,White,36,"3,411,297",1.06,1.06,795
+Alabama,2012,Non-Drug Poisoning,Black,13**,"1,298,786",1.00**,1.08**,278
+Alabama,2012,Struck by / against,White,18**,"3,411,297",0.53**,0.52**,417
+Alabama,2012,Struck by / against,Black,--,"1,298,786",--,--,--
+Alabama,2012,Suffocation,White,210,"3,411,297",6.16,5.89,"4,385"
+Alabama,2012,Suffocation,Black,52,"1,298,786",4,4.43,"1,446"
+Alabama,2012,Suffocation,Asian / HI Native / Pac. Islander,--,"70,718",--,--,--
+Alabama,2012,"Motor vehicle, traffic",White,610,"3,411,297",17.88,17.7,"14,479"
+Alabama,2012,"Motor vehicle, traffic",Black,216,"1,298,786",16.63,16.56,"5,801"
+Alabama,2012,"Motor vehicle, traffic",American Indian / Alaska Native,--,"35,831",--,--,--
+Alabama,2012,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"70,718",--,--,--
+Alabama,2012,"Pedal cyclist, other",White,--,"3,411,297",--,--,--
+Alabama,2012,"Pedal cyclist, other",Black,--,"1,298,786",--,--,--
+Alabama,2012,"Pedestrian, other",White,14**,"3,411,297",0.41**,0.43**,507
+Alabama,2012,"Pedestrian, other",Black,--,"1,298,786",--,--,--
+Alabama,2012,"Transport, other land",White,22,"3,411,297",0.65,0.63,400
+Alabama,2012,"Transport, other land",Black,--,"1,298,786",--,--,--
+Alabama,2012,"Transport, other (excl. drown by water transp)",White,12**,"3,411,297",0.35**,0.34**,222
+Alabama,2012,Other specified and classifiable,White,19**,"3,411,297",0.56**,0.56**,355
+Alabama,2012,Other specified and classifiable,Black,--,"1,298,786",--,--,--
+Alabama,2012,Other specified / NEC,White,10**,"3,411,297",0.29**,0.26**,99
+Alabama,2012,Other specified / NEC,Black,--,"1,298,786",--,--,--
+Alabama,2012,Unspecified,White,250,"3,411,297",7.33,6.25,"1,973"
+Alabama,2012,Unspecified,Black,67,"1,298,786",5.16,6,"1,167"
+Alabama,2012,Unspecified,American Indian / Alaska Native,--,"35,831",--,--,--
+Alabama,2012,Unspecified,Asian / HI Native / Pac. Islander,--,"70,718",--,--,--
+Alabama,2011,Cut/Pierce,White,23,"3,408,042",0.68,0.69,637
+Alabama,2011,Cut/Pierce,Black,26,"1,288,707",2.02,1.78,987
+Alabama,2011,Drowning (includes water transport),White,62,"3,408,042",1.82,1.85,"1,810"
+Alabama,2011,Drowning (includes water transport),Black,26,"1,288,707",2.02,1.89,945
+Alabama,2011,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"67,196",--,--,--
+Alabama,2011,Fall,White,182,"3,408,042",5.34,4.5,752
+Alabama,2011,Fall,Black,21,"1,288,707",1.63,1.93,121
+Alabama,2011,Fall,Asian / HI Native / Pac. Islander,--,"67,196",--,--,--
+Alabama,2011,Fire/Flame,White,56,"3,408,042",1.64,1.52,965
+Alabama,2011,Fire/Flame,Black,48,"1,288,707",3.73,3.86,"1,058"
+Alabama,2011,Hot object/Substance,White,--,"3,408,042",--,--,--
+Alabama,2011,Hot object/Substance,Black,--,"1,288,707",--,--,--
+Alabama,2011,Firearm,White,524,"3,408,042",15.38,14.36,"9,345"
+Alabama,2011,Firearm,Black,257,"1,288,707",19.94,19.5,"8,418"
+Alabama,2011,Firearm,American Indian / Alaska Native,--,"35,697",--,--,--
+Alabama,2011,Firearm,Asian / HI Native / Pac. Islander,--,"67,196",--,--,--
+Alabama,2011,Machinery,White,11**,"3,408,042",0.32**,0.32**,213
+Alabama,2011,Machinery,Black,--,"1,288,707",--,--,--
+Alabama,2011,Natural/Environmental,White,215,"3,408,042",6.31,5.7,"3,368"
+Alabama,2011,Natural/Environmental,Black,47,"1,288,707",3.65,3.84,"1,117"
+Alabama,2011,Drug Poisoning,White,513,"3,408,042",15.05,15.59,"12,144"
+Alabama,2011,Drug Poisoning,Black,37,"1,288,707",2.87,2.71,687
+Alabama,2011,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"67,196",--,--,--
+Alabama,2011,Non-Drug Poisoning,White,58,"3,408,042",1.7,1.64,"1,066"
+Alabama,2011,Non-Drug Poisoning,Black,--,"1,288,707",--,--,--
+Alabama,2011,Struck by / against,White,17**,"3,408,042",0.50**,0.41**,192
+Alabama,2011,Struck by / against,Black,--,"1,288,707",--,--,--
+Alabama,2011,Suffocation,White,192,"3,408,042",5.63,5.43,"4,110"
+Alabama,2011,Suffocation,Black,55,"1,288,707",4.27,4.68,"1,404"
+Alabama,2011,Suffocation,Asian / HI Native / Pac. Islander,--,"67,196",--,--,--
+Alabama,2011,"Motor vehicle, traffic",White,677,"3,408,042",19.87,19.74,"16,073"
+Alabama,2011,"Motor vehicle, traffic",Black,246,"1,288,707",19.09,19.24,"6,605"
+Alabama,2011,"Motor vehicle, traffic",American Indian / Alaska Native,--,"35,697",--,--,--
+Alabama,2011,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"67,196",--,--,--
+Alabama,2011,"Pedal cyclist, other",White,--,"3,408,042",--,--,--
+Alabama,2011,"Pedestrian, other",White,--,"3,408,042",--,--,--
+Alabama,2011,"Pedestrian, other",Black,--,"1,288,707",--,--,--
+Alabama,2011,"Transport, other land",White,29,"3,408,042",0.85,0.83,752
+Alabama,2011,"Transport, other land",Black,--,"1,288,707",--,--,--
+Alabama,2011,"Transport, other (excl. drown by water transp)",White,--,"3,408,042",--,--,--
+Alabama,2011,Other specified and classifiable,White,14**,"3,408,042",0.41**,0.40**,233
+Alabama,2011,Other specified and classifiable,Black,--,"1,288,707",--,--,--
+Alabama,2011,Other specified / NEC,White,14**,"3,408,042",0.41**,0.37**,206
+Alabama,2011,Other specified / NEC,Black,--,"1,288,707",--,--,--
+Alabama,2011,Unspecified,White,292,"3,408,042",8.57,7.38,"2,063"
+Alabama,2011,Unspecified,Black,55,"1,288,707",4.27,4.98,696
+Alabama,2011,Unspecified,Asian / HI Native / Pac. Islander,--,"67,196",--,--,--
+Alabama,2010,Cut/Pierce,White,21,"3,400,180",0.62,0.61,410
+Alabama,2010,Cut/Pierce,Black,34,"1,279,248",2.66,2.72,880
+Alabama,2010,Drowning (includes water transport),White,81,"3,400,180",2.38,2.29,"2,056"
+Alabama,2010,Drowning (includes water transport),Black,29,"1,279,248",2.27,2.14,"1,039"
+Alabama,2010,Fall,White,195,"3,400,180",5.74,4.95,910
+Alabama,2010,Fall,Black,23,"1,279,248",1.8,2,248
+Alabama,2010,Fall,Asian / HI Native / Pac. Islander,--,"64,726",--,--,--
+Alabama,2010,Fire/Flame,White,75,"3,400,180",2.21,2.14,"1,364"
+Alabama,2010,Fire/Flame,Black,42,"1,279,248",3.28,3.54,905
+Alabama,2010,Fire/Flame,American Indian / Alaska Native,--,"35,964",--,--,--
+Alabama,2010,Hot object/Substance,Black,--,"1,279,248",--,--,--
+Alabama,2010,Hot object/Substance,American Indian / Alaska Native,--,"35,964",--,--,--
+Alabama,2010,Firearm,White,539,"3,400,180",15.85,15.24,"10,481"
+Alabama,2010,Firearm,Black,235,"1,279,248",18.37,17.68,"7,825"
+Alabama,2010,Firearm,American Indian / Alaska Native,--,"35,964",--,--,--
+Alabama,2010,Firearm,Asian / HI Native / Pac. Islander,--,"64,726",--,--,--
+Alabama,2010,Machinery,White,--,"3,400,180",--,--,--
+Alabama,2010,Machinery,Black,--,"1,279,248",--,--,--
+Alabama,2010,Natural/Environmental,White,16**,"3,400,180",0.47**,0.44**,388
+Alabama,2010,Natural/Environmental,Black,10**,"1,279,248",0.78**,0.98**,43
+Alabama,2010,Drug Poisoning,White,507,"3,400,180",14.91,15.51,"12,228"
+Alabama,2010,Drug Poisoning,Black,39,"1,279,248",3.05,3.02,911
+Alabama,2010,Drug Poisoning,American Indian / Alaska Native,--,"35,964",--,--,--
+Alabama,2010,Non-Drug Poisoning,White,65,"3,400,180",1.91,1.87,"1,177"
+Alabama,2010,Non-Drug Poisoning,Black,10**,"1,279,248",0.78**,0.83**,183
+Alabama,2010,Struck by / against,White,--,"3,400,180",--,--,--
+Alabama,2010,Struck by / against,Black,--,"1,279,248",--,--,--
+Alabama,2010,Suffocation,White,208,"3,400,180",6.12,5.89,"4,306"
+Alabama,2010,Suffocation,Black,49,"1,279,248",3.83,4.36,"1,077"
+Alabama,2010,Suffocation,American Indian / Alaska Native,--,"35,964",--,--,--
+Alabama,2010,Suffocation,Asian / HI Native / Pac. Islander,--,"64,726",--,--,--
+Alabama,2010,"Motor vehicle, traffic",White,679,"3,400,180",19.97,19.97,"16,534"
+Alabama,2010,"Motor vehicle, traffic",Black,215,"1,279,248",16.81,16.49,"5,648"
+Alabama,2010,"Motor vehicle, traffic",American Indian / Alaska Native,--,"35,964",--,--,--
+Alabama,2010,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"64,726",--,--,--
+Alabama,2010,"Pedal cyclist, other",White,--,"3,400,180",--,--,--
+Alabama,2010,"Pedal cyclist, other",Black,--,"1,279,248",--,--,--
+Alabama,2010,"Pedestrian, other",White,--,"3,400,180",--,--,--
+Alabama,2010,"Pedestrian, other",Black,--,"1,279,248",--,--,--
+Alabama,2010,"Transport, other land",White,31,"3,400,180",0.91,0.93,903
+Alabama,2010,"Transport, other land",Black,--,"1,279,248",--,--,--
+Alabama,2010,"Transport, other (excl. drown by water transp)",White,11**,"3,400,180",0.32**,0.31**,242
+Alabama,2010,Other specified and classifiable,White,18**,"3,400,180",0.53**,0.48**,307
+Alabama,2010,Other specified and classifiable,Black,--,"1,279,248",--,--,--
+Alabama,2010,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"64,726",--,--,--
+Alabama,2010,Other specified / NEC,White,14**,"3,400,180",0.41**,0.37**,190
+Alabama,2010,Other specified / NEC,Black,--,"1,279,248",--,--,--
+Alabama,2010,Unspecified,White,245,"3,400,180",7.21,6.28,"1,550"
+Alabama,2010,Unspecified,Black,50,"1,279,248",3.91,4.36,962
+Alabama,2010,Unspecified,American Indian / Alaska Native,--,"35,964",--,--,--
+Alabama,2010,Unspecified,Asian / HI Native / Pac. Islander,--,"64,726",--,--,--
+Alabama,2009,Cut/Pierce,White,24,"3,389,202",0.71,0.73,619
+Alabama,2009,Cut/Pierce,Black,15**,"1,271,247",1.18**,1.15**,479
+Alabama,2009,Cut/Pierce,American Indian / Alaska Native,--,"34,844",--,--,--
+Alabama,2009,Drowning (includes water transport),White,71,"3,389,202",2.1,2.1,"2,222"
+Alabama,2009,Drowning (includes water transport),Black,24,"1,271,247",1.89,1.91,781
+Alabama,2009,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"62,645",--,--,--
+Alabama,2009,Fall,White,183,"3,389,202",5.4,4.7,507
+Alabama,2009,Fall,Black,16**,"1,271,247",1.26**,1.38**,153
+Alabama,2009,Fall,American Indian / Alaska Native,--,"34,844",--,--,--
+Alabama,2009,Fall,Asian / HI Native / Pac. Islander,--,"62,645",--,--,--
+Alabama,2009,Fire/Flame,White,58,"3,389,202",1.71,1.65,"1,185"
+Alabama,2009,Fire/Flame,Black,28,"1,271,247",2.2,2.31,358
+Alabama,2009,Fire/Flame,Asian / HI Native / Pac. Islander,--,"62,645",--,--,--
+Alabama,2009,Firearm,White,574,"3,389,202",16.94,16.04,"10,281"
+Alabama,2009,Firearm,Black,252,"1,271,247",19.82,19.39,"8,220"
+Alabama,2009,Firearm,American Indian / Alaska Native,--,"34,844",--,--,--
+Alabama,2009,Firearm,Asian / HI Native / Pac. Islander,--,"62,645",--,--,--
+Alabama,2009,Machinery,White,--,"3,389,202",--,--,--
+Alabama,2009,Natural/Environmental,White,17**,"3,389,202",0.50**,0.42**,155
+Alabama,2009,Natural/Environmental,Black,--,"1,271,247",--,--,--
+Alabama,2009,Drug Poisoning,White,583,"3,389,202",17.2,17.75,"14,045"
+Alabama,2009,Drug Poisoning,Black,47,"1,271,247",3.7,4.06,"1,045"
+Alabama,2009,Non-Drug Poisoning,White,35,"3,389,202",1.03,0.94,557
+Alabama,2009,Non-Drug Poisoning,Black,13**,"1,271,247",1.02**,1.16**,235
+Alabama,2009,Struck by / against,White,11**,"3,389,202",0.33**,0.30**,198
+Alabama,2009,Struck by / against,Black,--,"1,271,247",--,--,--
+Alabama,2009,Suffocation,White,211,"3,389,202",6.23,6.03,"3,789"
+Alabama,2009,Suffocation,Black,54,"1,271,247",4.25,4.86,"1,019"
+Alabama,2009,Suffocation,Asian / HI Native / Pac. Islander,--,"62,645",--,--,--
+Alabama,2009,"Motor vehicle, traffic",White,668,"3,389,202",19.71,19.25,"15,706"
+Alabama,2009,"Motor vehicle, traffic",Black,197,"1,271,247",15.5,15.77,"5,204"
+Alabama,2009,"Motor vehicle, traffic",American Indian / Alaska Native,--,"34,844",--,--,--
+Alabama,2009,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"62,645",--,--,--
+Alabama,2009,"Pedal cyclist, other",White,--,"3,389,202",--,--,--
+Alabama,2009,"Pedestrian, other",White,19**,"3,389,202",0.56**,0.59**,357
+Alabama,2009,"Pedestrian, other",Black,--,"1,271,247",--,--,--
+Alabama,2009,"Transport, other land",White,49,"3,389,202",1.45,1.49,"1,414"
+Alabama,2009,"Transport, other land",Black,--,"1,271,247",--,--,--
+Alabama,2009,"Transport, other (excl. drown by water transp)",White,--,"3,389,202",--,--,--
+Alabama,2009,Other specified and classifiable,White,18**,"3,389,202",0.53**,0.53**,418
+Alabama,2009,Other specified and classifiable,Black,11**,"1,271,247",0.87**,0.85**,375
+Alabama,2009,Other specified / NEC,White,16**,"3,389,202",0.47**,0.42**,120
+Alabama,2009,Other specified / NEC,Black,--,"1,271,247",--,--,--
+Alabama,2009,Unspecified,White,204,"3,389,202",6.02,5.41,"1,785"
+Alabama,2009,Unspecified,Black,37,"1,271,247",2.91,3.42,617
+Alabama,2009,Unspecified,Asian / HI Native / Pac. Islander,--,"62,645",--,--,--
+Alabama,2008,Cut/Pierce,White,21,"3,366,536",0.62,0.61,469
+Alabama,2008,Cut/Pierce,Black,21,"1,259,177",1.67,1.66,569
+Alabama,2008,Drowning (includes water transport),White,65,"3,366,536",1.93,1.92,"1,905"
+Alabama,2008,Drowning (includes water transport),Black,25,"1,259,177",1.99,2.08,662
+Alabama,2008,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"58,975",--,--,--
+Alabama,2008,Fall,White,183,"3,366,536",5.44,4.75,713
+Alabama,2008,Fall,Black,19**,"1,259,177",1.51**,1.66**,238
+Alabama,2008,Fall,Asian / HI Native / Pac. Islander,--,"58,975",--,--,--
+Alabama,2008,Fire/Flame,White,66,"3,366,536",1.96,1.83,"1,140"
+Alabama,2008,Fire/Flame,Black,29,"1,259,177",2.3,2.5,516
+Alabama,2008,Hot object/Substance,Black,--,"1,259,177",--,--,--
+Alabama,2008,Firearm,White,514,"3,366,536",15.27,14.71,"10,373"
+Alabama,2008,Firearm,Black,304,"1,259,177",24.14,23.45,"10,408"
+Alabama,2008,Firearm,American Indian / Alaska Native,--,"33,518",--,--,--
+Alabama,2008,Machinery,White,11**,"3,366,536",0.33**,0.28**,112
+Alabama,2008,Machinery,Black,--,"1,259,177",--,--,--
+Alabama,2008,Natural/Environmental,White,16**,"3,366,536",0.48**,0.44**,190
+Alabama,2008,Natural/Environmental,Black,--,"1,259,177",--,--,--
+Alabama,2008,Overexertion,White,--,"3,366,536",--,--,--
+Alabama,2008,Drug Poisoning,White,567,"3,366,536",16.84,17.06,"13,511"
+Alabama,2008,Drug Poisoning,Black,38,"1,259,177",3.02,3.12,799
+Alabama,2008,Drug Poisoning,American Indian / Alaska Native,--,"33,518",--,--,--
+Alabama,2008,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"58,975",--,--,--
+Alabama,2008,Non-Drug Poisoning,White,49,"3,366,536",1.46,1.38,902
+Alabama,2008,Non-Drug Poisoning,Black,18**,"1,259,177",1.43**,1.42**,422
+Alabama,2008,Struck by / against,White,11**,"3,366,536",0.33**,0.33**,272
+Alabama,2008,Struck by / against,Black,--,"1,259,177",--,--,--
+Alabama,2008,Suffocation,White,189,"3,366,536",5.61,5.45,"3,752"
+Alabama,2008,Suffocation,Black,39,"1,259,177",3.1,3.34,"1,002"
+Alabama,2008,Suffocation,Asian / HI Native / Pac. Islander,--,"58,975",--,--,--
+Alabama,2008,"Motor vehicle, traffic",White,783,"3,366,536",23.26,22.97,"19,835"
+Alabama,2008,"Motor vehicle, traffic",Black,232,"1,259,177",18.43,18.17,"6,659"
+Alabama,2008,"Motor vehicle, traffic",American Indian / Alaska Native,--,"33,518",--,--,--
+Alabama,2008,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"58,975",--,--,--
+Alabama,2008,"Pedal cyclist, other",White,--,"3,366,536",--,--,--
+Alabama,2008,"Pedestrian, other",White,13**,"3,366,536",0.39**,0.36**,227
+Alabama,2008,"Pedestrian, other",Black,13**,"1,259,177",1.03**,0.95**,349
+Alabama,2008,"Transport, other land",White,38,"3,366,536",1.13,1.17,"1,196"
+Alabama,2008,"Transport, other land",Black,--,"1,259,177",--,--,--
+Alabama,2008,"Transport, other land",American Indian / Alaska Native,--,"33,518",--,--,--
+Alabama,2008,"Transport, other (excl. drown by water transp)",White,15**,"3,366,536",0.45**,0.41**,284
+Alabama,2008,Other specified and classifiable,White,22,"3,366,536",0.65,0.65,579
+Alabama,2008,Other specified and classifiable,Black,--,"1,259,177",--,--,--
+Alabama,2008,Other specified / NEC,White,--,"3,366,536",--,--,--
+Alabama,2008,Other specified / NEC,Black,--,"1,259,177",--,--,--
+Alabama,2008,Unspecified,White,248,"3,366,536",7.37,6.59,"1,669"
+Alabama,2008,Unspecified,Black,53,"1,259,177",4.21,4.73,934
+Alabama,2008,Unspecified,American Indian / Alaska Native,--,"33,518",--,--,--
+Alabama,2008,Unspecified,Asian / HI Native / Pac. Islander,--,"58,975",--,--,--
+Alabama,2007,Cut/Pierce,White,26,"3,340,633",0.78,0.72,448
+Alabama,2007,Cut/Pierce,Black,23,"1,243,867",1.85,1.86,663
+Alabama,2007,Drowning (includes water transport),White,61,"3,340,633",1.83,1.86,"2,012"
+Alabama,2007,Drowning (includes water transport),Black,21,"1,243,867",1.69,1.73,730
+Alabama,2007,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"56,067",--,--,--
+Alabama,2007,Fall,White,158,"3,340,633",4.73,4.17,785
+Alabama,2007,Fall,Black,15**,"1,243,867",1.21**,1.35**,205
+Alabama,2007,Fall,Asian / HI Native / Pac. Islander,--,"56,067",--,--,--
+Alabama,2007,Fire/Flame,White,63,"3,340,633",1.89,1.69,799
+Alabama,2007,Fire/Flame,Black,30,"1,243,867",2.41,2.75,660
+Alabama,2007,Hot object/Substance,White,--,"3,340,633",--,--,--
+Alabama,2007,Firearm,White,512,"3,340,633",15.33,14.76,"10,518"
+Alabama,2007,Firearm,Black,295,"1,243,867",23.72,22.7,"10,081"
+Alabama,2007,Firearm,American Indian / Alaska Native,--,"32,273",--,--,--
+Alabama,2007,Firearm,Asian / HI Native / Pac. Islander,--,"56,067",--,--,--
+Alabama,2007,Machinery,White,10**,"3,340,633",0.30**,0.30**,216
+Alabama,2007,Machinery,Black,--,"1,243,867",--,--,--
+Alabama,2007,Natural/Environmental,White,22,"3,340,633",0.66,0.61,524
+Alabama,2007,Natural/Environmental,Black,11**,"1,243,867",0.88**,1.01**,124
+Alabama,2007,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"56,067",--,--,--
+Alabama,2007,Drug Poisoning,White,456,"3,340,633",13.65,13.95,"11,296"
+Alabama,2007,Drug Poisoning,Black,51,"1,243,867",4.1,4.35,"1,015"
+Alabama,2007,Drug Poisoning,American Indian / Alaska Native,--,"32,273",--,--,--
+Alabama,2007,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"56,067",--,--,--
+Alabama,2007,Non-Drug Poisoning,White,56,"3,340,633",1.68,1.63,"1,105"
+Alabama,2007,Non-Drug Poisoning,Black,10**,"1,243,867",0.80**,0.90**,73
+Alabama,2007,Struck by / against,White,14**,"3,340,633",0.42**,0.39**,207
+Alabama,2007,Struck by / against,Black,--,"1,243,867",--,--,--
+Alabama,2007,Suffocation,White,200,"3,340,633",5.99,5.95,"4,647"
+Alabama,2007,Suffocation,Black,50,"1,243,867",4.02,4.38,"1,205"
+Alabama,2007,Suffocation,Asian / HI Native / Pac. Islander,--,"56,067",--,--,--
+Alabama,2007,"Motor vehicle, traffic",White,899,"3,340,633",26.91,26.66,"22,633"
+Alabama,2007,"Motor vehicle, traffic",Black,264,"1,243,867",21.22,22.06,"6,711"
+Alabama,2007,"Motor vehicle, traffic",American Indian / Alaska Native,--,"32,273",--,--,--
+Alabama,2007,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"56,067",--,--,--
+Alabama,2007,"Pedal cyclist, other",White,--,"3,340,633",--,--,--
+Alabama,2007,"Pedal cyclist, other",Black,--,"1,243,867",--,--,--
+Alabama,2007,"Pedestrian, other",White,14**,"3,340,633",0.42**,0.38**,280
+Alabama,2007,"Pedestrian, other",Black,--,"1,243,867",--,--,--
+Alabama,2007,"Transport, other land",White,25,"3,340,633",0.75,0.73,560
+Alabama,2007,"Transport, other land",Black,--,"1,243,867",--,--,--
+Alabama,2007,"Transport, other (excl. drown by water transp)",White,10**,"3,340,633",0.30**,0.27**,194
+Alabama,2007,Other specified and classifiable,White,23,"3,340,633",0.69,0.7,636
+Alabama,2007,Other specified and classifiable,Black,--,"1,243,867",--,--,--
+Alabama,2007,Other specified / NEC,White,21,"3,340,633",0.63,0.59,292
+Alabama,2007,Other specified / NEC,Black,--,"1,243,867",--,--,--
+Alabama,2007,Unspecified,White,223,"3,340,633",6.68,6.01,"1,747"
+Alabama,2007,Unspecified,Black,64,"1,243,867",5.15,5.92,900
+Alabama,2007,Unspecified,Asian / HI Native / Pac. Islander,--,"56,067",--,--,--
+Alabama,2006,Cut/Pierce,White,16**,"3,314,160",0.48**,0.48**,322
+Alabama,2006,Cut/Pierce,Black,29,"1,230,534",2.36,2.47,672
+Alabama,2006,Drowning (includes water transport),White,68,"3,314,160",2.05,2.04,"1,961"
+Alabama,2006,Drowning (includes water transport),Black,30,"1,230,534",2.44,2.28,"1,101"
+Alabama,2006,Drowning (includes water transport),American Indian / Alaska Native,--,"31,165",--,--,--
+Alabama,2006,Fall,White,161,"3,314,160",4.86,4.24,616
+Alabama,2006,Fall,Black,22,"1,230,534",1.79,2.26,131
+Alabama,2006,Fall,American Indian / Alaska Native,--,"31,165",--,--,--
+Alabama,2006,Fall,Asian / HI Native / Pac. Islander,--,"53,122",--,--,--
+Alabama,2006,Fire/Flame,White,55,"3,314,160",1.66,1.48,757
+Alabama,2006,Fire/Flame,Black,39,"1,230,534",3.17,3.58,726
+Alabama,2006,Hot object/Substance,White,--,"3,314,160",--,--,--
+Alabama,2006,Hot object/Substance,Black,--,"1,230,534",--,--,--
+Alabama,2006,Firearm,White,481,"3,314,160",14.51,13.97,"9,491"
+Alabama,2006,Firearm,Black,297,"1,230,534",24.14,23.12,"9,924"
+Alabama,2006,Firearm,American Indian / Alaska Native,--,"31,165",--,--,--
+Alabama,2006,Machinery,White,--,"3,314,160",--,--,--
+Alabama,2006,Machinery,Black,--,"1,230,534",--,--,--
+Alabama,2006,Natural/Environmental,White,--,"3,314,160",--,--,--
+Alabama,2006,Natural/Environmental,Black,--,"1,230,534",--,--,--
+Alabama,2006,Drug Poisoning,White,364,"3,314,160",10.98,11.15,"9,287"
+Alabama,2006,Drug Poisoning,Black,32,"1,230,534",2.6,2.78,859
+Alabama,2006,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"53,122",--,--,--
+Alabama,2006,Non-Drug Poisoning,White,27,"3,314,160",0.82,0.8,596
+Alabama,2006,Non-Drug Poisoning,Black,10**,"1,230,534",0.81**,0.87**,171
+Alabama,2006,Struck by / against,White,16**,"3,314,160",0.48**,0.47**,392
+Alabama,2006,Struck by / against,Black,--,"1,230,534",--,--,--
+Alabama,2006,Suffocation,White,210,"3,314,160",6.34,6.32,"4,841"
+Alabama,2006,Suffocation,Black,62,"1,230,534",5.04,5.6,"1,597"
+Alabama,2006,Suffocation,Asian / HI Native / Pac. Islander,--,"53,122",--,--,--
+Alabama,2006,"Motor vehicle, traffic",White,900,"3,314,160",27.16,27.37,"24,436"
+Alabama,2006,"Motor vehicle, traffic",Black,279,"1,230,534",22.67,22.68,"8,389"
+Alabama,2006,"Motor vehicle, traffic",American Indian / Alaska Native,--,"31,165",--,--,--
+Alabama,2006,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,11**,"53,122",20.71**,23.32**,323
+Alabama,2006,"Pedestrian, other",White,14**,"3,314,160",0.42**,0.43**,416
+Alabama,2006,"Pedestrian, other",Black,13**,"1,230,534",1.06**,1.04**,435
+Alabama,2006,"Transport, other land",White,20**,"3,314,160",0.60**,0.60**,534
+Alabama,2006,"Transport, other land",Black,--,"1,230,534",--,--,--
+Alabama,2006,"Transport, other (excl. drown by water transp)",White,10**,"3,314,160",0.30**,0.27**,149
+Alabama,2006,Other specified and classifiable,White,20**,"3,314,160",0.60**,0.60**,474
+Alabama,2006,Other specified and classifiable,Black,--,"1,230,534",--,--,--
+Alabama,2006,Other specified / NEC,White,19**,"3,314,160",0.57**,0.54**,330
+Alabama,2006,Other specified / NEC,Black,--,"1,230,534",--,--,--
+Alabama,2006,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"53,122",--,--,--
+Alabama,2006,Unspecified,White,293,"3,314,160",8.84,8.19,"3,225"
+Alabama,2006,Unspecified,Black,61,"1,230,534",4.96,5.56,"1,423"
+Alabama,2006,Unspecified,American Indian / Alaska Native,--,"31,165",--,--,--
+Alabama,2006,Unspecified,Asian / HI Native / Pac. Islander,--,"53,122",--,--,--
+Alabama,2005,Cut/Pierce,White,15**,"3,279,048",0.46**,0.46**,434
+Alabama,2005,Cut/Pierce,Black,30,"1,210,903",2.48,2.54,783
+Alabama,2005,Drowning (includes water transport),White,66,"3,279,048",2.01,1.99,"1,854"
+Alabama,2005,Drowning (includes water transport),Black,25,"1,210,903",2.07,2.22,762
+Alabama,2005,Fall,White,137,"3,279,048",4.18,3.78,765
+Alabama,2005,Fall,Black,20**,"1,210,903",1.65**,2.05**,196
+Alabama,2005,Fall,American Indian / Alaska Native,--,"29,957",--,--,--
+Alabama,2005,Fire/Flame,White,54,"3,279,048",1.65,1.58,973
+Alabama,2005,Fire/Flame,Black,56,"1,210,903",4.63,5.13,"1,051"
+Alabama,2005,Fire/Flame,Asian / HI Native / Pac. Islander,--,"49,897",--,--,--
+Alabama,2005,Hot object/Substance,Black,--,"1,210,903",--,--,--
+Alabama,2005,Firearm,White,452,"3,279,048",13.78,13.15,"8,553"
+Alabama,2005,Firearm,Black,283,"1,210,903",23.37,22.84,"9,406"
+Alabama,2005,Firearm,Asian / HI Native / Pac. Islander,--,"49,897",--,--,--
+Alabama,2005,Machinery,White,13**,"3,279,048",0.40**,0.35**,84
+Alabama,2005,Natural/Environmental,White,13**,"3,279,048",0.40**,0.38**,202
+Alabama,2005,Natural/Environmental,Black,--,"1,210,903",--,--,--
+Alabama,2005,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"49,897",--,--,--
+Alabama,2005,Drug Poisoning,White,257,"3,279,048",7.84,8.05,"6,767"
+Alabama,2005,Drug Poisoning,Black,25,"1,210,903",2.07,2.28,567
+Alabama,2005,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"49,897",--,--,--
+Alabama,2005,Non-Drug Poisoning,White,34,"3,279,048",1.04,1.03,737
+Alabama,2005,Non-Drug Poisoning,Black,--,"1,210,903",--,--,--
+Alabama,2005,Struck by / against,White,21,"3,279,048",0.64,0.59,300
+Alabama,2005,Struck by / against,Black,--,"1,210,903",--,--,--
+Alabama,2005,Struck by / against,American Indian / Alaska Native,--,"29,957",--,--,--
+Alabama,2005,Suffocation,White,196,"3,279,048",5.98,5.82,"3,976"
+Alabama,2005,Suffocation,Black,66,"1,210,903",5.45,6.5,"1,279"
+Alabama,2005,Suffocation,American Indian / Alaska Native,--,"29,957",--,--,--
+Alabama,2005,Suffocation,Asian / HI Native / Pac. Islander,--,"49,897",--,--,--
+Alabama,2005,"Motor vehicle, traffic",White,855,"3,279,048",26.08,25.67,"21,677"
+Alabama,2005,"Motor vehicle, traffic",Black,300,"1,210,903",24.78,24.96,"8,662"
+Alabama,2005,"Motor vehicle, traffic",American Indian / Alaska Native,--,"29,957",--,--,--
+Alabama,2005,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"49,897",--,--,--
+Alabama,2005,"Pedal cyclist, other",White,--,"3,279,048",--,--,--
+Alabama,2005,"Pedestrian, other",White,15**,"3,279,048",0.46**,0.42**,322
+Alabama,2005,"Pedestrian, other",Black,--,"1,210,903",--,--,--
+Alabama,2005,"Transport, other land",White,22,"3,279,048",0.67,0.67,577
+Alabama,2005,"Transport, other land",Black,--,"1,210,903",--,--,--
+Alabama,2005,"Transport, other (excl. drown by water transp)",White,--,"3,279,048",--,--,--
+Alabama,2005,Other specified and classifiable,White,17**,"3,279,048",0.52**,0.51**,345
+Alabama,2005,Other specified and classifiable,Black,--,"1,210,903",--,--,--
+Alabama,2005,Other specified / NEC,White,18**,"3,279,048",0.55**,0.50**,135
+Alabama,2005,Other specified / NEC,Black,--,"1,210,903",--,--,--
+Alabama,2005,Unspecified,White,301,"3,279,048",9.18,8.39,"2,505"
+Alabama,2005,Unspecified,Black,76,"1,210,903",6.28,7.51,"1,086"
+Alabama,2005,Unspecified,American Indian / Alaska Native,--,"29,957",--,--,--
+Alabama,2004,Cut/Pierce,White,22,"3,255,811",0.68,0.67,461
+Alabama,2004,Cut/Pierce,Black,27,"1,199,192",2.25,2.3,783
+Alabama,2004,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"46,752",--,--,--
+Alabama,2004,Drowning (includes water transport),White,62,"3,255,811",1.9,1.89,"1,803"
+Alabama,2004,Drowning (includes water transport),Black,19**,"1,199,192",1.58**,1.72**,598
+Alabama,2004,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"46,752",--,--,--
+Alabama,2004,Fall,White,161,"3,255,811",4.95,4.49,916
+Alabama,2004,Fall,Black,12**,"1,199,192",1.00**,1.27**,59
+Alabama,2004,Fall,Asian / HI Native / Pac. Islander,--,"46,752",--,--,--
+Alabama,2004,Fire/Flame,White,68,"3,255,811",2.09,2.04,"1,475"
+Alabama,2004,Fire/Flame,Black,45,"1,199,192",3.75,4.26,837
+Alabama,2004,Fire/Flame,American Indian / Alaska Native,--,"28,974",--,--,--
+Alabama,2004,Hot object/Substance,White,--,"3,255,811",--,--,--
+Alabama,2004,Hot object/Substance,Black,--,"1,199,192",--,--,--
+Alabama,2004,Firearm,White,447,"3,255,811",13.73,13.12,"8,807"
+Alabama,2004,Firearm,Black,226,"1,199,192",18.85,18.87,"7,081"
+Alabama,2004,Firearm,American Indian / Alaska Native,--,"28,974",--,--,--
+Alabama,2004,Firearm,Asian / HI Native / Pac. Islander,--,"46,752",--,--,--
+Alabama,2004,Machinery,White,18**,"3,255,811",0.55**,0.51**,241
+Alabama,2004,Natural/Environmental,White,13**,"3,255,811",0.40**,0.35**,83
+Alabama,2004,Natural/Environmental,Black,12**,"1,199,192",1.00**,1.34**,95
+Alabama,2004,Drug Poisoning,White,252,"3,255,811",7.74,7.81,"6,327"
+Alabama,2004,Drug Poisoning,Black,31,"1,199,192",2.59,2.77,723
+Alabama,2004,Non-Drug Poisoning,White,32,"3,255,811",0.98,1.01,697
+Alabama,2004,Non-Drug Poisoning,Black,--,"1,199,192",--,--,--
+Alabama,2004,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"46,752",--,--,--
+Alabama,2004,Struck by / against,White,21,"3,255,811",0.65,0.59,357
+Alabama,2004,Struck by / against,Black,--,"1,199,192",--,--,--
+Alabama,2004,Suffocation,White,150,"3,255,811",4.61,4.49,"2,874"
+Alabama,2004,Suffocation,Black,65,"1,199,192",5.42,6.19,"1,422"
+Alabama,2004,Suffocation,American Indian / Alaska Native,--,"28,974",--,--,--
+Alabama,2004,Suffocation,Asian / HI Native / Pac. Islander,--,"46,752",--,--,--
+Alabama,2004,"Motor vehicle, traffic",White,911,"3,255,811",27.98,27.82,"23,388"
+Alabama,2004,"Motor vehicle, traffic",Black,309,"1,199,192",25.77,26.07,"9,027"
+Alabama,2004,"Motor vehicle, traffic",American Indian / Alaska Native,--,"28,974",--,--,--
+Alabama,2004,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"46,752",--,--,--
+Alabama,2004,"Pedal cyclist, other",White,--,"3,255,811",--,--,--
+Alabama,2004,"Pedal cyclist, other",Black,--,"1,199,192",--,--,--
+Alabama,2004,"Pedestrian, other",White,13**,"3,255,811",0.40**,0.40**,319
+Alabama,2004,"Pedestrian, other",Black,--,"1,199,192",--,--,--
+Alabama,2004,"Transport, other land",White,27,"3,255,811",0.83,0.86,735
+Alabama,2004,"Transport, other land",Black,--,"1,199,192",--,--,--
+Alabama,2004,"Transport, other (excl. drown by water transp)",White,--,"3,255,811",--,--,--
+Alabama,2004,Other specified and classifiable,White,25,"3,255,811",0.77,0.77,687
+Alabama,2004,Other specified and classifiable,Black,10**,"1,199,192",0.83**,0.87**,356
+Alabama,2004,Other specified / NEC,White,14**,"3,255,811",0.43**,0.42**,309
+Alabama,2004,Other specified / NEC,Black,--,"1,199,192",--,--,--
+Alabama,2004,Unspecified,White,249,"3,255,811",7.65,7.11,"2,099"
+Alabama,2004,Unspecified,Black,62,"1,199,192",5.17,6.23,786
+Alabama,2004,Unspecified,Asian / HI Native / Pac. Islander,--,"46,752",--,--,--
+Alabama,2003,Cut/Pierce,White,24,"3,241,836",0.74,0.74,694
+Alabama,2003,Cut/Pierce,Black,28,"1,190,183",2.35,2.39,836
+Alabama,2003,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"43,407",--,--,--
+Alabama,2003,Drowning (includes water transport),White,51,"3,241,836",1.57,1.62,"1,644"
+Alabama,2003,Drowning (includes water transport),Black,26,"1,190,183",2.19,2.14,995
+Alabama,2003,Fall,White,155,"3,241,836",4.78,4.29,542
+Alabama,2003,Fall,Black,22,"1,190,183",1.85,2.38,130
+Alabama,2003,Fire/Flame,White,66,"3,241,836",2.04,1.95,"1,236"
+Alabama,2003,Fire/Flame,Black,47,"1,190,183",3.95,4.47,"1,045"
+Alabama,2003,Hot object/Substance,Black,--,"1,190,183",--,--,--
+Alabama,2003,Firearm,White,500,"3,241,836",15.42,14.82,"10,246"
+Alabama,2003,Firearm,Black,264,"1,190,183",22.18,21.8,"8,435"
+Alabama,2003,Firearm,Asian / HI Native / Pac. Islander,--,"43,407",--,--,--
+Alabama,2003,Machinery,White,10**,"3,241,836",0.31**,0.30**,195
+Alabama,2003,Machinery,Black,--,"1,190,183",--,--,--
+Alabama,2003,Natural/Environmental,White,14**,"3,241,836",0.43**,0.40**,146
+Alabama,2003,Natural/Environmental,Black,--,"1,190,183",--,--,--
+Alabama,2003,Drug Poisoning,White,171,"3,241,836",5.28,5.33,"4,197"
+Alabama,2003,Drug Poisoning,Black,26,"1,190,183",2.19,2.38,595
+Alabama,2003,Non-Drug Poisoning,White,33,"3,241,836",1.02,0.98,557
+Alabama,2003,Non-Drug Poisoning,Black,--,"1,190,183",--,--,--
+Alabama,2003,Struck by / against,White,--,"3,241,836",--,--,--
+Alabama,2003,Struck by / against,Black,--,"1,190,183",--,--,--
+Alabama,2003,Struck by / against,American Indian / Alaska Native,--,"28,065",--,--,--
+Alabama,2003,Suffocation,White,143,"3,241,836",4.41,4.31,"2,508"
+Alabama,2003,Suffocation,Black,56,"1,190,183",4.71,5.54,"1,048"
+Alabama,2003,Suffocation,Asian / HI Native / Pac. Islander,--,"43,407",--,--,--
+Alabama,2003,"Motor vehicle, traffic",White,762,"3,241,836",23.51,23.39,"19,480"
+Alabama,2003,"Motor vehicle, traffic",Black,268,"1,190,183",22.52,22.94,"7,703"
+Alabama,2003,"Motor vehicle, traffic",American Indian / Alaska Native,--,"28,065",--,--,--
+Alabama,2003,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"43,407",--,--,--
+Alabama,2003,"Pedestrian, other",White,--,"3,241,836",--,--,--
+Alabama,2003,"Pedestrian, other",Black,--,"1,190,183",--,--,--
+Alabama,2003,"Transport, other land",White,32,"3,241,836",0.99,0.97,866
+Alabama,2003,"Transport, other land",Black,--,"1,190,183",--,--,--
+Alabama,2003,"Transport, other land",Asian / HI Native / Pac. Islander,--,"43,407",--,--,--
+Alabama,2003,"Transport, other (excl. drown by water transp)",White,--,"3,241,836",--,--,--
+Alabama,2003,Other specified and classifiable,White,21,"3,241,836",0.65,0.64,440
+Alabama,2003,Other specified and classifiable,Black,--,"1,190,183",--,--,--
+Alabama,2003,Other specified / NEC,White,17**,"3,241,836",0.52**,0.47**,268
+Alabama,2003,Other specified / NEC,Black,--,"1,190,183",--,--,--
+Alabama,2003,Unspecified,White,291,"3,241,836",8.98,8.26,"2,294"
+Alabama,2003,Unspecified,Black,62,"1,190,183",5.21,5.97,"1,241"
+Alabama,2003,Unspecified,American Indian / Alaska Native,--,"28,065",--,--,--
+Alabama,2003,Unspecified,Asian / HI Native / Pac. Islander,--,"43,407",--,--,--
+Alabama,2002,Cut/Pierce,White,35,"3,229,712",1.08,1.05,710
+Alabama,2002,Cut/Pierce,Black,34,"1,182,591",2.88,3.15,736
+Alabama,2002,Drowning (includes water transport),White,59,"3,229,712",1.83,1.86,"1,899"
+Alabama,2002,Drowning (includes water transport),Black,27,"1,182,591",2.28,2.23,950
+Alabama,2002,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"40,783",--,--,--
+Alabama,2002,Fall,White,148,"3,229,712",4.58,4.22,"1,004"
+Alabama,2002,Fall,Black,17**,"1,182,591",1.44**,1.73**,268
+Alabama,2002,Fire/Flame,White,41,"3,229,712",1.27,1.23,880
+Alabama,2002,Fire/Flame,Black,43,"1,182,591",3.64,4.06,902
+Alabama,2002,Hot object/Substance,Black,--,"1,182,591",--,--,--
+Alabama,2002,Firearm,White,461,"3,229,712",14.27,13.79,"9,238"
+Alabama,2002,Firearm,Black,259,"1,182,591",21.9,21.37,"8,541"
+Alabama,2002,Firearm,American Indian / Alaska Native,--,"27,003",--,--,--
+Alabama,2002,Machinery,White,11**,"3,229,712",0.34**,0.32**,180
+Alabama,2002,Machinery,Black,--,"1,182,591",--,--,--
+Alabama,2002,Natural/Environmental,White,28,"3,229,712",0.87,0.8,379
+Alabama,2002,Natural/Environmental,Black,--,"1,182,591",--,--,--
+Alabama,2002,Drug Poisoning,White,187,"3,229,712",5.79,5.81,"4,726"
+Alabama,2002,Drug Poisoning,Black,23,"1,182,591",1.95,2.17,420
+Alabama,2002,Drug Poisoning,American Indian / Alaska Native,--,"27,003",--,--,--
+Alabama,2002,Non-Drug Poisoning,White,38,"3,229,712",1.18,1.14,803
+Alabama,2002,Non-Drug Poisoning,Black,11**,"1,182,591",0.93**,1.10**,162
+Alabama,2002,Struck by / against,White,14**,"3,229,712",0.43**,0.42**,306
+Alabama,2002,Struck by / against,Black,--,"1,182,591",--,--,--
+Alabama,2002,Suffocation,White,176,"3,229,712",5.45,5.27,"3,340"
+Alabama,2002,Suffocation,Black,51,"1,182,591",4.31,4.93,"1,071"
+Alabama,2002,Suffocation,Asian / HI Native / Pac. Islander,--,"40,783",--,--,--
+Alabama,2002,"Motor vehicle, traffic",White,835,"3,229,712",25.85,25.74,"22,100"
+Alabama,2002,"Motor vehicle, traffic",Black,245,"1,182,591",20.72,21.05,"7,290"
+Alabama,2002,"Motor vehicle, traffic",American Indian / Alaska Native,--,"27,003",--,--,--
+Alabama,2002,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"40,783",--,--,--
+Alabama,2002,"Pedestrian, other",White,14**,"3,229,712",0.43**,0.41**,320
+Alabama,2002,"Pedestrian, other",Black,--,"1,182,591",--,--,--
+Alabama,2002,"Transport, other land",White,24,"3,229,712",0.74,0.75,610
+Alabama,2002,"Transport, other land",Black,--,"1,182,591",--,--,--
+Alabama,2002,"Transport, other (excl. drown by water transp)",White,10**,"3,229,712",0.31**,0.31**,254
+Alabama,2002,"Transport, other (excl. drown by water transp)",Black,--,"1,182,591",--,--,--
+Alabama,2002,Other specified and classifiable,White,21,"3,229,712",0.65,0.63,422
+Alabama,2002,Other specified and classifiable,Black,10**,"1,182,591",0.85**,0.85**,386
+Alabama,2002,Other specified / NEC,White,19**,"3,229,712",0.59**,0.57**,244
+Alabama,2002,Other specified / NEC,Black,--,"1,182,591",--,--,--
+Alabama,2002,Unspecified,White,247,"3,229,712",7.65,7.1,"1,822"
+Alabama,2002,Unspecified,Black,60,"1,182,591",5.07,5.86,"1,138"
+Alabama,2002,Unspecified,American Indian / Alaska Native,--,"27,003",--,--,--
+Alabama,2002,Unspecified,Asian / HI Native / Pac. Islander,--,"40,783",--,--,--
+Alabama,2001,Cut/Pierce,White,31,"3,225,628",0.96,0.96,730
+Alabama,2001,Cut/Pierce,Black,30,"1,177,479",2.55,2.68,791
+Alabama,2001,Drowning (includes water transport),White,47,"3,225,628",1.46,1.51,"1,754"
+Alabama,2001,Drowning (includes water transport),Black,23,"1,177,479",1.95,1.84,929
+Alabama,2001,Fall,White,123,"3,225,628",3.81,3.5,799
+Alabama,2001,Fall,Black,11**,"1,177,479",0.93**,1.15**,98
+Alabama,2001,Fire/Flame,White,67,"3,225,628",2.08,1.96,"1,133"
+Alabama,2001,Fire/Flame,Black,55,"1,177,479",4.67,5.33,"1,134"
+Alabama,2001,Hot object/Substance,Black,--,"1,177,479",--,--,--
+Alabama,2001,Firearm,White,498,"3,225,628",15.44,14.97,"10,476"
+Alabama,2001,Firearm,Black,238,"1,177,479",20.21,19.55,"8,023"
+Alabama,2001,Firearm,Asian / HI Native / Pac. Islander,--,"38,517",--,--,--
+Alabama,2001,Machinery,White,13**,"3,225,628",0.40**,0.37**,212
+Alabama,2001,Machinery,Black,--,"1,177,479",--,--,--
+Alabama,2001,Natural/Environmental,White,21,"3,225,628",0.65,0.61,289
+Alabama,2001,Natural/Environmental,Black,15**,"1,177,479",1.27**,1.51**,201
+Alabama,2001,Drug Poisoning,White,190,"3,225,628",5.89,5.88,"4,559"
+Alabama,2001,Drug Poisoning,Black,25,"1,177,479",2.12,2.34,494
+Alabama,2001,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"38,517",--,--,--
+Alabama,2001,Non-Drug Poisoning,White,38,"3,225,628",1.18,1.14,696
+Alabama,2001,Non-Drug Poisoning,Black,12**,"1,177,479",1.02**,1.17**,220
+Alabama,2001,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"38,517",--,--,--
+Alabama,2001,Struck by / against,White,23,"3,225,628",0.71,0.68,430
+Alabama,2001,Struck by / against,Black,--,"1,177,479",--,--,--
+Alabama,2001,Suffocation,White,147,"3,225,628",4.56,4.43,"2,953"
+Alabama,2001,Suffocation,Black,52,"1,177,479",4.42,5.16,934
+Alabama,2001,Suffocation,American Indian / Alaska Native,--,"26,010",--,--,--
+Alabama,2001,"Motor vehicle, traffic",White,755,"3,225,628",23.41,23.42,"20,547"
+Alabama,2001,"Motor vehicle, traffic",Black,249,"1,177,479",21.15,21.51,"7,378"
+Alabama,2001,"Motor vehicle, traffic",American Indian / Alaska Native,--,"26,010",--,--,--
+Alabama,2001,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"38,517",--,--,--
+Alabama,2001,"Pedal cyclist, other",White,--,"3,225,628",--,--,--
+Alabama,2001,"Pedal cyclist, other",Black,--,"1,177,479",--,--,--
+Alabama,2001,"Pedestrian, other",White,15**,"3,225,628",0.47**,0.46**,334
+Alabama,2001,"Pedestrian, other",Black,24,"1,177,479",2.04,2.09,704
+Alabama,2001,"Transport, other land",White,26,"3,225,628",0.81,0.82,736
+Alabama,2001,"Transport, other land",Black,--,"1,177,479",--,--,--
+Alabama,2001,"Transport, other land",Asian / HI Native / Pac. Islander,--,"38,517",--,--,--
+Alabama,2001,"Transport, other (excl. drown by water transp)",White,20**,"3,225,628",0.62**,0.60**,399
+Alabama,2001,"Transport, other (excl. drown by water transp)",Black,--,"1,177,479",--,--,--
+Alabama,2001,Other specified and classifiable,White,23,"3,225,628",0.71,0.72,680
+Alabama,2001,Other specified and classifiable,Black,--,"1,177,479",--,--,--
+Alabama,2001,Other specified / NEC,White,23,"3,225,628",0.71,0.66,264
+Alabama,2001,Other specified / NEC,Black,--,"1,177,479",--,--,--
+Alabama,2001,Unspecified,White,268,"3,225,628",8.31,7.68,"1,507"
+Alabama,2001,Unspecified,Black,73,"1,177,479",6.2,7.29,"1,237"
+Total,,,,"73,916","94,722,169",78.03,76.96,"1,576,939"
+,,,,,,,,
+Injury Outcome: Fatal,,,,,,,,
+Injury Type: All Injury,,,,,,,,
+Data Years: 2001 to 2020,,,,,,,,
+Geography: Alabama,,,,,,,,
+Intent: All Intents,,,,,,,,
+Mechanism: All Injury,,,,,,,,
+Age: All Ages,,,,,,,,
+Sex: Both Sexes,,,,,,,,
+Race: All Races,,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,,
+YPLL Age: 65,,,,,,,,
+Year and Race Options: 2001 - 2020 by Bridged Race,,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,,

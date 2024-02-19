@@ -1,0 +1,435 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Minnesota,2021,Cut/Pierce,46,"5,707,390",0.81,0.76,846
+Minnesota,2021,Drowning (includes water transport),99,"5,707,390",1.74,1.73,"2,582"
+Minnesota,2021,Fall,"1,370","5,707,390",24,20.1,"2,124"
+Minnesota,2021,Fire/Flame,46,"5,707,390",0.81,0.76,700
+Minnesota,2021,Hot object/Substance,--,"5,707,390",--,--,--
+Minnesota,2021,Firearm,573,"5,707,390",10.04,9.97,"13,191"
+Minnesota,2021,Machinery,10**,"5,707,390",0.18**,0.17**,122
+Minnesota,2021,Natural/Environmental,46,"5,707,390",0.81,0.7,462
+Minnesota,2021,Drug Poisoning,"1,356","5,707,390",23.76,24.53,"32,972"
+Minnesota,2021,Non-Drug Poisoning,109,"5,707,390",1.91,1.93,"2,413"
+Minnesota,2021,Struck by / against,20**,"5,707,390",0.35**,0.32**,261
+Minnesota,2021,Suffocation,354,"5,707,390",6.2,6.2,"8,476"
+Minnesota,2021,"Motor vehicle, traffic",556,"5,707,390",9.74,9.45,"11,035"
+Minnesota,2021,"Pedal cyclist, other",--,"5,707,390",--,--,--
+Minnesota,2021,"Pedestrian, other",10**,"5,707,390",0.18**,0.17**,169
+Minnesota,2021,"Transport, other land",51,"5,707,390",0.89,0.87,"1,301"
+Minnesota,2021,"Transport, other (excl. drown by water transp)",--,"5,707,390",--,--,--
+Minnesota,2021,Other specified and classifiable,55,"5,707,390",0.96,0.89,941
+Minnesota,2021,Other specified / NEC,43,"5,707,390",0.75,0.68,656
+Minnesota,2021,Unspecified,127,"5,707,390",2.23,2,"1,271"
+Minnesota,2020,Cut/Pierce,34,"5,707,165",0.6,0.58,650
+Minnesota,2020,Drowning (includes water transport),96,"5,707,165",1.68,1.62,"2,336"
+Minnesota,2020,Fall,"1,311","5,707,165",22.97,19.2,"2,397"
+Minnesota,2020,Fire/Flame,47,"5,707,165",0.82,0.72,391
+Minnesota,2020,Hot object/Substance,--,"5,707,165",--,--,--
+Minnesota,2020,Firearm,513,"5,707,165",8.99,8.83,"11,744"
+Minnesota,2020,Machinery,15**,"5,707,165",0.26**,0.24**,221
+Minnesota,2020,Natural/Environmental,43,"5,707,165",0.75,0.69,435
+Minnesota,2020,Overexertion,--,"5,707,165",--,--,--
+Minnesota,2020,Drug Poisoning,"1,050","5,707,165",18.4,18.81,"25,485"
+Minnesota,2020,Non-Drug Poisoning,113,"5,707,165",1.98,1.81,"1,839"
+Minnesota,2020,Struck by / against,16**,"5,707,165",0.28**,0.27**,230
+Minnesota,2020,Suffocation,371,"5,707,165",6.5,6.27,"8,219"
+Minnesota,2020,"Motor vehicle, traffic",443,"5,707,165",7.76,7.56,"9,194"
+Minnesota,2020,"Pedal cyclist, other",11**,"5,707,165",0.19**,0.16**,40
+Minnesota,2020,"Pedestrian, other",11**,"5,707,165",0.19**,0.17**,94
+Minnesota,2020,"Transport, other land",58,"5,707,165",1.02,0.96,"1,090"
+Minnesota,2020,"Transport, other (excl. drown by water transp)",10**,"5,707,165",0.18**,0.16**,235
+Minnesota,2020,Other specified and classifiable,45,"5,707,165",0.79,0.72,617
+Minnesota,2020,Other specified / NEC,53,"5,707,165",0.93,0.84,721
+Minnesota,2020,Unspecified,115,"5,707,165",2.02,1.81,"1,386"
+Minnesota,2019,Cut/Pierce,32,"5,640,053",0.57,0.55,601
+Minnesota,2019,Drowning (includes water transport),82,"5,640,053",1.45,1.36,"1,814"
+Minnesota,2019,Fall,"1,247","5,640,053",22.11,17.45,"1,812"
+Minnesota,2019,Fire/Flame,40,"5,640,053",0.71,0.63,530
+Minnesota,2019,Hot object/Substance,--,"5,640,053",--,--,--
+Minnesota,2019,Firearm,465,"5,640,053",8.25,8.12,"10,582"
+Minnesota,2019,Machinery,14**,"5,640,053",0.25**,0.21**,160
+Minnesota,2019,Natural/Environmental,48,"5,640,053",0.85,0.71,342
+Minnesota,2019,Drug Poisoning,792,"5,640,053",14.04,14.19,"18,361"
+Minnesota,2019,Non-Drug Poisoning,134,"5,640,053",2.38,2.3,"2,392"
+Minnesota,2019,Struck by / against,18**,"5,640,053",0.32**,0.31**,259
+Minnesota,2019,Suffocation,387,"5,640,053",6.86,6.76,"9,510"
+Minnesota,2019,"Motor vehicle, traffic",421,"5,640,053",7.46,7.22,"8,280"
+Minnesota,2019,"Pedal cyclist, other",--,"5,640,053",--,--,--
+Minnesota,2019,"Pedestrian, other",10**,"5,640,053",0.18**,0.18**,307
+Minnesota,2019,"Transport, other land",27,"5,640,053",0.48,0.48,605
+Minnesota,2019,"Transport, other (excl. drown by water transp)",--,"5,640,053",--,--,--
+Minnesota,2019,Other specified and classifiable,43,"5,640,053",0.76,0.66,481
+Minnesota,2019,Other specified / NEC,54,"5,640,053",0.96,0.84,577
+Minnesota,2019,Unspecified,108,"5,640,053",1.92,1.61,876
+Minnesota,2018,Cut/Pierce,38,"5,608,762",0.68,0.66,796
+Minnesota,2018,Drowning (includes water transport),66,"5,608,762",1.18,1.17,"1,489"
+Minnesota,2018,Fall,"1,253","5,608,762",22.34,17.59,"1,750"
+Minnesota,2018,Fire/Flame,33,"5,608,762",0.59,0.54,484
+Minnesota,2018,Firearm,437,"5,608,762",7.79,7.8,"10,380"
+Minnesota,2018,Machinery,15**,"5,608,762",0.27**,0.25**,97
+Minnesota,2018,Natural/Environmental,50,"5,608,762",0.89,0.78,584
+Minnesota,2018,Drug Poisoning,636,"5,608,762",11.34,11.45,"14,777"
+Minnesota,2018,Non-Drug Poisoning,131,"5,608,762",2.34,2.21,"2,173"
+Minnesota,2018,Struck by / against,12**,"5,608,762",0.21**,0.22**,242
+Minnesota,2018,Suffocation,349,"5,608,762",6.22,6.07,"7,940"
+Minnesota,2018,"Motor vehicle, traffic",447,"5,608,762",7.97,7.64,"9,216"
+Minnesota,2018,"Pedal cyclist, other",--,"5,608,762",--,--,--
+Minnesota,2018,"Pedestrian, other",18**,"5,608,762",0.32**,0.30**,410
+Minnesota,2018,"Transport, other land",43,"5,608,762",0.77,0.73,837
+Minnesota,2018,"Transport, other (excl. drown by water transp)",--,"5,608,762",--,--,--
+Minnesota,2018,Other specified and classifiable,45,"5,608,762",0.8,0.76,945
+Minnesota,2018,Other specified / NEC,43,"5,608,762",0.77,0.64,405
+Minnesota,2018,Unspecified,105,"5,608,762",1.87,1.63,"1,294"
+Minnesota,2017,Cut/Pierce,30,"5,569,283",0.54,0.52,569
+Minnesota,2017,Drowning (includes water transport),67,"5,569,283",1.2,1.19,"1,675"
+Minnesota,2017,Fall,"1,199","5,569,283",21.53,17.12,"1,472"
+Minnesota,2017,Fire/Flame,67,"5,569,283",1.2,1.02,783
+Minnesota,2017,Hot object/Substance,--,"5,569,283",--,--,--
+Minnesota,2017,Firearm,465,"5,569,283",8.35,8.24,"10,263"
+Minnesota,2017,Machinery,12**,"5,569,283",0.22**,0.19**,89
+Minnesota,2017,Natural/Environmental,37,"5,569,283",0.66,0.61,465
+Minnesota,2017,Drug Poisoning,733,"5,569,283",13.16,13.29,"16,742"
+Minnesota,2017,Non-Drug Poisoning,130,"5,569,283",2.33,2.25,"2,439"
+Minnesota,2017,Struck by / against,13**,"5,569,283",0.23**,0.22**,352
+Minnesota,2017,Suffocation,347,"5,569,283",6.23,6.08,"7,669"
+Minnesota,2017,"Motor vehicle, traffic",411,"5,569,283",7.38,7.15,"8,301"
+Minnesota,2017,"Pedal cyclist, other",--,"5,569,283",--,--,--
+Minnesota,2017,"Pedestrian, other",11**,"5,569,283",0.20**,0.17**,120
+Minnesota,2017,"Transport, other land",41,"5,569,283",0.74,0.76,980
+Minnesota,2017,"Transport, other (excl. drown by water transp)",--,"5,569,283",--,--,--
+Minnesota,2017,Other specified and classifiable,39,"5,569,283",0.7,0.63,437
+Minnesota,2017,Other specified / NEC,41,"5,569,283",0.74,0.65,395
+Minnesota,2017,Unspecified,119,"5,569,283",2.14,1.84,"1,188"
+Minnesota,2016,Cut/Pierce,30,"5,525,360",0.54,0.52,712
+Minnesota,2016,Drowning (includes water transport),86,"5,525,360",1.56,1.49,"2,033"
+Minnesota,2016,Fall,"1,148","5,525,360",20.78,16.76,"1,284"
+Minnesota,2016,Fire/Flame,44,"5,525,360",0.8,0.74,752
+Minnesota,2016,Hot object/Substance,--,"5,525,360",--,--,--
+Minnesota,2016,Firearm,432,"5,525,360",7.82,7.62,"9,465"
+Minnesota,2016,Machinery,16**,"5,525,360",0.29**,0.26**,133
+Minnesota,2016,Natural/Environmental,29,"5,525,360",0.53,0.44,185
+Minnesota,2016,Drug Poisoning,672,"5,525,360",12.16,12.39,"16,149"
+Minnesota,2016,Non-Drug Poisoning,139,"5,525,360",2.52,2.39,"2,327"
+Minnesota,2016,Struck by / against,16**,"5,525,360",0.29**,0.26**,278
+Minnesota,2016,Suffocation,352,"5,525,360",6.37,6.18,"8,230"
+Minnesota,2016,"Motor vehicle, traffic",442,"5,525,360",8,7.72,"9,316"
+Minnesota,2016,"Pedal cyclist, other",--,"5,525,360",--,--,--
+Minnesota,2016,"Pedestrian, other",15**,"5,525,360",0.27**,0.25**,286
+Minnesota,2016,"Transport, other land",35,"5,525,360",0.63,0.62,672
+Minnesota,2016,"Transport, other (excl. drown by water transp)",--,"5,525,360",--,--,--
+Minnesota,2016,Other specified and classifiable,40,"5,525,360",0.72,0.65,698
+Minnesota,2016,Other specified / NEC,42,"5,525,360",0.76,0.71,457
+Minnesota,2016,Unspecified,110,"5,525,360",1.99,1.67,883
+Minnesota,2015,Cut/Pierce,27,"5,484,002",0.49,0.48,533
+Minnesota,2015,Drowning (includes water transport),99,"5,484,002",1.81,1.77,"2,378"
+Minnesota,2015,Fall,"1,114","5,484,002",20.31,16.53,"1,674"
+Minnesota,2015,Fire/Flame,47,"5,484,002",0.86,0.81,933
+Minnesota,2015,Hot object/Substance,--,"5,484,002",--,--,--
+Minnesota,2015,Firearm,410,"5,484,002",7.48,7.45,"9,710"
+Minnesota,2015,Machinery,18**,"5,484,002",0.33**,0.31**,211
+Minnesota,2015,Natural/Environmental,20**,"5,484,002",0.37**,0.34**,206
+Minnesota,2015,Drug Poisoning,581,"5,484,002",10.59,10.63,"12,616"
+Minnesota,2015,Non-Drug Poisoning,132,"5,484,002",2.41,2.37,"2,345"
+Minnesota,2015,Struck by / against,21,"5,484,002",0.38,0.35,176
+Minnesota,2015,Suffocation,361,"5,484,002",6.58,6.51,"8,658"
+Minnesota,2015,"Motor vehicle, traffic",438,"5,484,002",7.99,7.64,"8,610"
+Minnesota,2015,"Pedal cyclist, other",--,"5,484,002",--,--,--
+Minnesota,2015,"Pedestrian, other",10**,"5,484,002",0.18**,0.17**,235
+Minnesota,2015,"Transport, other land",40,"5,484,002",0.73,0.69,744
+Minnesota,2015,"Transport, other (excl. drown by water transp)",--,"5,484,002",--,--,--
+Minnesota,2015,Other specified and classifiable,39,"5,484,002",0.71,0.65,748
+Minnesota,2015,Other specified / NEC,42,"5,484,002",0.77,0.64,352
+Minnesota,2015,Unspecified,119,"5,484,002",2.17,1.89,"1,164"
+Minnesota,2014,Cut/Pierce,19**,"5,452,665",0.35**,0.36**,497
+Minnesota,2014,Drowning (includes water transport),71,"5,452,665",1.3,1.3,"1,576"
+Minnesota,2014,Fall,"1,043","5,452,665",19.13,15.62,"1,337"
+Minnesota,2014,Fire/Flame,41,"5,452,665",0.75,0.72,966
+Minnesota,2014,Hot object/Substance,--,"5,452,665",--,--,--
+Minnesota,2014,Firearm,377,"5,452,665",6.91,6.64,"7,916"
+Minnesota,2014,Machinery,12**,"5,452,665",0.22**,0.20**,162
+Minnesota,2014,Natural/Environmental,43,"5,452,665",0.79,0.73,730
+Minnesota,2014,Drug Poisoning,517,"5,452,665",9.48,9.54,"11,401"
+Minnesota,2014,Non-Drug Poisoning,109,"5,452,665",2,1.91,"1,761"
+Minnesota,2014,Struck by / against,15**,"5,452,665",0.28**,0.25**,197
+Minnesota,2014,Suffocation,342,"5,452,665",6.27,6.08,"7,784"
+Minnesota,2014,"Motor vehicle, traffic",395,"5,452,665",7.24,6.99,"7,858"
+Minnesota,2014,"Pedal cyclist, other",--,"5,452,665",--,--,--
+Minnesota,2014,"Pedestrian, other",15**,"5,452,665",0.28**,0.26**,323
+Minnesota,2014,"Transport, other land",36,"5,452,665",0.66,0.66,804
+Minnesota,2014,"Transport, other (excl. drown by water transp)",--,"5,452,665",--,--,--
+Minnesota,2014,Other specified and classifiable,31,"5,452,665",0.57,0.56,945
+Minnesota,2014,Other specified / NEC,46,"5,452,665",0.84,0.76,415
+Minnesota,2014,Unspecified,102,"5,452,665",1.87,1.64,888
+Minnesota,2013,Cut/Pierce,26,"5,414,722",0.48,0.48,616
+Minnesota,2013,Drowning (includes water transport),58,"5,414,722",1.07,1.06,"1,581"
+Minnesota,2013,Fall,"1,041","5,414,722",19.23,15.97,"1,643"
+Minnesota,2013,Fire/Flame,46,"5,414,722",0.85,0.8,636
+Minnesota,2013,Firearm,427,"5,414,722",7.89,7.65,"9,246"
+Minnesota,2013,Machinery,23,"5,414,722",0.43,0.4,347
+Minnesota,2013,Natural/Environmental,33,"5,414,722",0.61,0.58,492
+Minnesota,2013,Drug Poisoning,523,"5,414,722",9.66,9.56,"11,701"
+Minnesota,2013,Non-Drug Poisoning,111,"5,414,722",2.05,1.98,"1,960"
+Minnesota,2013,Struck by / against,15**,"5,414,722",0.28**,0.23**,238
+Minnesota,2013,Suffocation,294,"5,414,722",5.43,5.17,"6,622"
+Minnesota,2013,"Motor vehicle, traffic",441,"5,414,722",8.14,7.82,"9,048"
+Minnesota,2013,"Pedal cyclist, other",--,"5,414,722",--,--,--
+Minnesota,2013,"Pedestrian, other",12**,"5,414,722",0.22**,0.20**,155
+Minnesota,2013,"Transport, other land",25,"5,414,722",0.46,0.46,730
+Minnesota,2013,"Transport, other (excl. drown by water transp)",--,"5,414,722",--,--,--
+Minnesota,2013,Other specified and classifiable,27,"5,414,722",0.5,0.47,543
+Minnesota,2013,Other specified / NEC,39,"5,414,722",0.72,0.66,351
+Minnesota,2013,Unspecified,127,"5,414,722",2.35,2.05,"1,209"
+Minnesota,2012,Cut/Pierce,23,"5,377,500",0.43,0.39,460
+Minnesota,2012,Drowning (includes water transport),87,"5,377,500",1.62,1.51,"2,149"
+Minnesota,2012,Fall,915,"5,377,500",17.02,14.24,"1,533"
+Minnesota,2012,Fire/Flame,44,"5,377,500",0.82,0.74,516
+Minnesota,2012,Hot object/Substance,--,"5,377,500",--,--,--
+Minnesota,2012,Firearm,382,"5,377,500",7.1,6.95,"8,033"
+Minnesota,2012,Machinery,--,"5,377,500",--,--,--
+Minnesota,2012,Natural/Environmental,24,"5,377,500",0.45,0.4,250
+Minnesota,2012,Drug Poisoning,482,"5,377,500",8.96,8.88,"10,704"
+Minnesota,2012,Non-Drug Poisoning,128,"5,377,500",2.38,2.29,"2,192"
+Minnesota,2012,Struck by / against,14**,"5,377,500",0.26**,0.24**,307
+Minnesota,2012,Suffocation,293,"5,377,500",5.45,5.3,"6,273"
+Minnesota,2012,"Motor vehicle, traffic",455,"5,377,500",8.46,8.26,"10,452"
+Minnesota,2012,"Pedal cyclist, other",--,"5,377,500",--,--,--
+Minnesota,2012,"Pedestrian, other",17**,"5,377,500",0.32**,0.31**,452
+Minnesota,2012,"Transport, other land",33,"5,377,500",0.61,0.6,730
+Minnesota,2012,"Transport, other (excl. drown by water transp)",12**,"5,377,500",0.22**,0.22**,155
+Minnesota,2012,Other specified and classifiable,47,"5,377,500",0.87,0.82,871
+Minnesota,2012,Other specified / NEC,40,"5,377,500",0.74,0.69,419
+Minnesota,2012,Unspecified,114,"5,377,500",2.12,1.84,730
+Minnesota,2011,Cut/Pierce,21,"5,346,620",0.39,0.38,392
+Minnesota,2011,Drowning (includes water transport),73,"5,346,620",1.37,1.34,"1,848"
+Minnesota,2011,Fall,869,"5,346,620",16.25,13.95,"1,587"
+Minnesota,2011,Fire/Flame,48,"5,346,620",0.9,0.82,673
+Minnesota,2011,Hot object/Substance,--,"5,346,620",--,--,--
+Minnesota,2011,Firearm,396,"5,346,620",7.41,7.19,"8,418"
+Minnesota,2011,Machinery,18**,"5,346,620",0.34**,0.31**,227
+Minnesota,2011,Natural/Environmental,26,"5,346,620",0.49,0.48,432
+Minnesota,2011,Overexertion,--,"5,346,620",--,--,--
+Minnesota,2011,Drug Poisoning,511,"5,346,620",9.56,9.33,"10,939"
+Minnesota,2011,Non-Drug Poisoning,138,"5,346,620",2.58,2.47,"2,219"
+Minnesota,2011,Struck by / against,21,"5,346,620",0.39,0.38,412
+Minnesota,2011,Suffocation,308,"5,346,620",5.76,5.67,"7,205"
+Minnesota,2011,"Motor vehicle, traffic",410,"5,346,620",7.67,7.41,"9,279"
+Minnesota,2011,"Pedal cyclist, other",--,"5,346,620",--,--,--
+Minnesota,2011,"Pedestrian, other",16**,"5,346,620",0.30**,0.29**,306
+Minnesota,2011,"Transport, other land",50,"5,346,620",0.94,0.92,"1,186"
+Minnesota,2011,"Transport, other (excl. drown by water transp)",14**,"5,346,620",0.26**,0.24**,329
+Minnesota,2011,Other specified and classifiable,47,"5,346,620",0.88,0.78,862
+Minnesota,2011,Other specified / NEC,49,"5,346,620",0.92,0.8,512
+Minnesota,2011,Unspecified,153,"5,346,620",2.86,2.45,994
+Minnesota,2010,Cut/Pierce,23,"5,303,933",0.43,0.42,581
+Minnesota,2010,Drowning (includes water transport),62,"5,303,933",1.17,1.17,"1,540"
+Minnesota,2010,Fall,799,"5,303,933",15.06,13.07,"1,511"
+Minnesota,2010,Fire/Flame,33,"5,303,933",0.62,0.58,625
+Minnesota,2010,Hot object/Substance,--,"5,303,933",--,--,--
+Minnesota,2010,Firearm,365,"5,303,933",6.88,6.76,"8,334"
+Minnesota,2010,Machinery,11**,"5,303,933",0.21**,0.20**,191
+Minnesota,2010,Natural/Environmental,31,"5,303,933",0.58,0.55,351
+Minnesota,2010,Drug Poisoning,397,"5,303,933",7.49,7.36,"9,237"
+Minnesota,2010,Non-Drug Poisoning,115,"5,303,933",2.17,2.05,"1,855"
+Minnesota,2010,Struck by / against,15**,"5,303,933",0.28**,0.27**,292
+Minnesota,2010,Suffocation,267,"5,303,933",5.03,4.91,"6,587"
+Minnesota,2010,"Motor vehicle, traffic",466,"5,303,933",8.79,8.6,"11,027"
+Minnesota,2010,"Pedal cyclist, other",--,"5,303,933",--,--,--
+Minnesota,2010,"Pedestrian, other",11**,"5,303,933",0.21**,0.19**,173
+Minnesota,2010,"Transport, other land",53,"5,303,933",1,1,"1,060"
+Minnesota,2010,"Transport, other (excl. drown by water transp)",11**,"5,303,933",0.21**,0.21**,339
+Minnesota,2010,Other specified and classifiable,32,"5,303,933",0.6,0.58,683
+Minnesota,2010,Other specified / NEC,48,"5,303,933",0.91,0.83,621
+Minnesota,2010,Unspecified,154,"5,303,933",2.9,2.55,"1,070"
+Minnesota,2009,Cut/Pierce,23,"5,281,203",0.44,0.42,514
+Minnesota,2009,Drowning (includes water transport),69,"5,281,203",1.31,1.26,"1,765"
+Minnesota,2009,Fall,755,"5,281,203",14.3,12.66,"1,986"
+Minnesota,2009,Fire/Flame,33,"5,281,203",0.63,0.58,461
+Minnesota,2009,Hot object/Substance,--,"5,281,203",--,--,--
+Minnesota,2009,Firearm,336,"5,281,203",6.36,6.17,"7,089"
+Minnesota,2009,Machinery,19**,"5,281,203",0.36**,0.35**,248
+Minnesota,2009,Natural/Environmental,30,"5,281,203",0.57,0.56,396
+Minnesota,2009,Drug Poisoning,419,"5,281,203",7.93,7.88,"9,519"
+Minnesota,2009,Non-Drug Poisoning,114,"5,281,203",2.16,2.05,"1,680"
+Minnesota,2009,Struck by / against,14**,"5,281,203",0.27**,0.26**,299
+Minnesota,2009,Suffocation,273,"5,281,203",5.17,5.01,"6,457"
+Minnesota,2009,"Motor vehicle, traffic",463,"5,281,203",8.77,8.64,"10,292"
+Minnesota,2009,"Pedal cyclist, other",--,"5,281,203",--,--,--
+Minnesota,2009,"Pedestrian, other",13**,"5,281,203",0.25**,0.24**,261
+Minnesota,2009,"Transport, other land",32,"5,281,203",0.61,0.6,714
+Minnesota,2009,"Transport, other (excl. drown by water transp)",--,"5,281,203",--,--,--
+Minnesota,2009,Other specified and classifiable,34,"5,281,203",0.64,0.6,643
+Minnesota,2009,Other specified / NEC,39,"5,281,203",0.74,0.67,549
+Minnesota,2009,Unspecified,139,"5,281,203",2.63,2.36,"1,313"
+Minnesota,2008,Cut/Pierce,28,"5,247,018",0.53,0.55,634
+Minnesota,2008,Drowning (includes water transport),63,"5,247,018",1.2,1.18,"1,732"
+Minnesota,2008,Fall,719,"5,247,018",13.7,12.23,"1,429"
+Minnesota,2008,Fire/Flame,37,"5,247,018",0.71,0.67,400
+Minnesota,2008,Firearm,371,"5,247,018",7.07,6.97,"8,576"
+Minnesota,2008,Machinery,19**,"5,247,018",0.36**,0.36**,417
+Minnesota,2008,Natural/Environmental,25,"5,247,018",0.48,0.47,346
+Minnesota,2008,Drug Poisoning,384,"5,247,018",7.32,7.2,"8,969"
+Minnesota,2008,Non-Drug Poisoning,134,"5,247,018",2.55,2.48,"2,352"
+Minnesota,2008,Struck by / against,12**,"5,247,018",0.23**,0.20**,194
+Minnesota,2008,Suffocation,267,"5,247,018",5.09,5.01,"6,863"
+Minnesota,2008,"Motor vehicle, traffic",497,"5,247,018",9.47,9.26,"11,794"
+Minnesota,2008,"Pedal cyclist, other",--,"5,247,018",--,--,--
+Minnesota,2008,"Pedestrian, other",--,"5,247,018",--,--,--
+Minnesota,2008,"Transport, other land",32,"5,247,018",0.61,0.59,820
+Minnesota,2008,"Transport, other (excl. drown by water transp)",--,"5,247,018",--,--,--
+Minnesota,2008,Other specified and classifiable,28,"5,247,018",0.53,0.53,548
+Minnesota,2008,Other specified / NEC,39,"5,247,018",0.74,0.71,415
+Minnesota,2008,Unspecified,164,"5,247,018",3.13,2.79,"1,277"
+Minnesota,2007,Cut/Pierce,27,"5,207,203",0.52,0.5,655
+Minnesota,2007,Drowning (includes water transport),58,"5,207,203",1.11,1.11,"1,723"
+Minnesota,2007,Fall,713,"5,207,203",13.69,12.3,"1,712"
+Minnesota,2007,Fire/Flame,37,"5,207,203",0.71,0.68,659
+Minnesota,2007,Firearm,344,"5,207,203",6.61,6.48,"7,987"
+Minnesota,2007,Machinery,12**,"5,207,203",0.23**,0.22**,261
+Minnesota,2007,Natural/Environmental,29,"5,207,203",0.56,0.53,487
+Minnesota,2007,Drug Poisoning,341,"5,207,203",6.55,6.43,"7,322"
+Minnesota,2007,Non-Drug Poisoning,100,"5,207,203",1.92,1.88,"2,118"
+Minnesota,2007,Struck by / against,11**,"5,207,203",0.21**,0.21**,137
+Minnesota,2007,Suffocation,277,"5,207,203",5.32,5.19,"6,896"
+Minnesota,2007,"Motor vehicle, traffic",578,"5,207,203",11.1,10.93,"13,699"
+Minnesota,2007,"Pedal cyclist, other",--,"5,207,203",--,--,--
+Minnesota,2007,"Pedestrian, other",14**,"5,207,203",0.27**,0.26**,331
+Minnesota,2007,"Transport, other land",39,"5,207,203",0.75,0.72,934
+Minnesota,2007,"Transport, other (excl. drown by water transp)",15**,"5,207,203",0.29**,0.30**,349
+Minnesota,2007,Other specified and classifiable,24,"5,207,203",0.46,0.45,363
+Minnesota,2007,Other specified / NEC,32,"5,207,203",0.62,0.57,254
+Minnesota,2007,Unspecified,179,"5,207,203",3.44,3.02,"1,065"
+Minnesota,2006,Cut/Pierce,32,"5,163,555",0.62,0.63,769
+Minnesota,2006,Drowning (includes water transport),77,"5,163,555",1.49,1.49,"2,497"
+Minnesota,2006,Fall,610,"5,163,555",11.81,10.74,"2,018"
+Minnesota,2006,Fire/Flame,37,"5,163,555",0.72,0.67,711
+Minnesota,2006,Hot object/Substance,--,"5,163,555",--,--,--
+Minnesota,2006,Firearm,329,"5,163,555",6.37,6.3,"7,770"
+Minnesota,2006,Machinery,14**,"5,163,555",0.27**,0.28**,339
+Minnesota,2006,Natural/Environmental,27,"5,163,555",0.52,0.49,350
+Minnesota,2006,Drug Poisoning,311,"5,163,555",6.02,5.95,"7,087"
+Minnesota,2006,Non-Drug Poisoning,87,"5,163,555",1.69,1.66,"2,075"
+Minnesota,2006,Struck by / against,22,"5,163,555",0.43,0.42,436
+Minnesota,2006,Suffocation,257,"5,163,555",4.98,4.83,"6,241"
+Minnesota,2006,"Motor vehicle, traffic",550,"5,163,555",10.65,10.43,"13,696"
+Minnesota,2006,"Pedal cyclist, other",--,"5,163,555",--,--,--
+Minnesota,2006,"Pedestrian, other",20**,"5,163,555",0.39**,0.39**,648
+Minnesota,2006,"Transport, other land",58,"5,163,555",1.12,1.12,"1,354"
+Minnesota,2006,"Transport, other (excl. drown by water transp)",--,"5,163,555",--,--,--
+Minnesota,2006,Other specified and classifiable,33,"5,163,555",0.64,0.62,941
+Minnesota,2006,Other specified / NEC,30,"5,163,555",0.58,0.55,386
+Minnesota,2006,Unspecified,156,"5,163,555",3.02,2.72,"1,168"
+Minnesota,2005,Cut/Pierce,22,"5,119,598",0.43,0.42,447
+Minnesota,2005,Drowning (includes water transport),87,"5,119,598",1.7,1.7,"2,502"
+Minnesota,2005,Fall,594,"5,119,598",11.6,10.72,"1,493"
+Minnesota,2005,Fire/Flame,34,"5,119,598",0.66,0.64,533
+Minnesota,2005,Hot object/Substance,--,"5,119,598",--,--,--
+Minnesota,2005,Firearm,361,"5,119,598",7.05,6.94,"8,780"
+Minnesota,2005,Machinery,18**,"5,119,598",0.35**,0.36**,367
+Minnesota,2005,Natural/Environmental,28,"5,119,598",0.55,0.54,400
+Minnesota,2005,Drug Poisoning,282,"5,119,598",5.51,5.43,"6,664"
+Minnesota,2005,Non-Drug Poisoning,74,"5,119,598",1.45,1.43,"1,568"
+Minnesota,2005,Struck by / against,30,"5,119,598",0.59,0.59,675
+Minnesota,2005,Suffocation,229,"5,119,598",4.47,4.34,"5,675"
+Minnesota,2005,"Motor vehicle, traffic",590,"5,119,598",11.52,11.32,"14,756"
+Minnesota,2005,"Pedal cyclist, other",--,"5,119,598",--,--,--
+Minnesota,2005,"Pedestrian, other",--,"5,119,598",--,--,--
+Minnesota,2005,"Transport, other land",59,"5,119,598",1.15,1.15,"1,424"
+Minnesota,2005,"Transport, other (excl. drown by water transp)",12**,"5,119,598",0.23**,0.23**,234
+Minnesota,2005,Other specified and classifiable,20**,"5,119,598",0.39**,0.37**,359
+Minnesota,2005,Other specified / NEC,41,"5,119,598",0.8,0.76,459
+Minnesota,2005,Unspecified,193,"5,119,598",3.77,3.51,"1,684"
+Minnesota,2004,Cut/Pierce,21,"5,087,713",0.41,0.4,507
+Minnesota,2004,Drowning (includes water transport),70,"5,087,713",1.38,1.36,"1,869"
+Minnesota,2004,Fall,554,"5,087,713",10.89,10.16,"1,222"
+Minnesota,2004,Fire/Flame,29,"5,087,713",0.57,0.55,671
+Minnesota,2004,Hot object/Substance,--,"5,087,713",--,--,--
+Minnesota,2004,Firearm,363,"5,087,713",7.14,7.04,"9,410"
+Minnesota,2004,Machinery,15**,"5,087,713",0.30**,0.28**,213
+Minnesota,2004,Natural/Environmental,33,"5,087,713",0.65,0.63,376
+Minnesota,2004,Drug Poisoning,250,"5,087,713",4.91,4.84,"5,457"
+Minnesota,2004,Non-Drug Poisoning,73,"5,087,713",1.44,1.41,"1,698"
+Minnesota,2004,Struck by / against,15**,"5,087,713",0.30**,0.30**,281
+Minnesota,2004,Suffocation,226,"5,087,713",4.44,4.38,"5,695"
+Minnesota,2004,"Motor vehicle, traffic",605,"5,087,713",11.89,11.73,"15,293"
+Minnesota,2004,"Pedal cyclist, other",--,"5,087,713",--,--,--
+Minnesota,2004,"Pedestrian, other",14**,"5,087,713",0.28**,0.28**,273
+Minnesota,2004,"Transport, other land",53,"5,087,713",1.04,1.04,"1,193"
+Minnesota,2004,"Transport, other (excl. drown by water transp)",20**,"5,087,713",0.39**,0.38**,404
+Minnesota,2004,Other specified and classifiable,27,"5,087,713",0.53,0.52,658
+Minnesota,2004,Other specified / NEC,33,"5,087,713",0.65,0.63,538
+Minnesota,2004,Unspecified,167,"5,087,713",3.28,3.02,855
+Minnesota,2003,Cut/Pierce,18**,"5,053,572",0.36**,0.36**,510
+Minnesota,2003,Drowning (includes water transport),69,"5,053,572",1.37,1.37,"1,758"
+Minnesota,2003,Fall,556,"5,053,572",11,10.23,"1,672"
+Minnesota,2003,Fire/Flame,36,"5,053,572",0.71,0.72,823
+Minnesota,2003,Hot object/Substance,--,"5,053,572",--,--,--
+Minnesota,2003,Firearm,332,"5,053,572",6.57,6.5,"8,383"
+Minnesota,2003,Machinery,13**,"5,053,572",0.26**,0.26**,185
+Minnesota,2003,Natural/Environmental,23,"5,053,572",0.46,0.44,230
+Minnesota,2003,Drug Poisoning,246,"5,053,572",4.87,4.78,"5,577"
+Minnesota,2003,Non-Drug Poisoning,64,"5,053,572",1.27,1.26,"1,525"
+Minnesota,2003,Struck by / against,20**,"5,053,572",0.40**,0.39**,493
+Minnesota,2003,Suffocation,196,"5,053,572",3.88,3.82,"4,957"
+Minnesota,2003,"Motor vehicle, traffic",654,"5,053,572",12.94,12.81,"17,670"
+Minnesota,2003,"Pedal cyclist, other",--,"5,053,572",--,--,--
+Minnesota,2003,"Pedestrian, other",24,"5,053,572",0.48,0.46,596
+Minnesota,2003,"Transport, other land",65,"5,053,572",1.29,1.28,"1,807"
+Minnesota,2003,"Transport, other (excl. drown by water transp)",27,"5,053,572",0.53,0.53,570
+Minnesota,2003,Other specified and classifiable,20**,"5,053,572",0.40**,0.40**,552
+Minnesota,2003,Other specified / NEC,30,"5,053,572",0.59,0.55,465
+Minnesota,2003,Unspecified,191,"5,053,572",3.78,3.5,"1,387"
+Minnesota,2002,Cut/Pierce,29,"5,018,935",0.58,0.57,687
+Minnesota,2002,Drowning (includes water transport),80,"5,018,935",1.59,1.58,"2,288"
+Minnesota,2002,Fall,533,"5,018,935",10.62,10.09,"1,699"
+Minnesota,2002,Fire/Flame,58,"5,018,935",1.16,1.14,"1,153"
+Minnesota,2002,Hot object/Substance,--,"5,018,935",--,--,--
+Minnesota,2002,Firearm,306,"5,018,935",6.1,6.06,"7,637"
+Minnesota,2002,Machinery,14**,"5,018,935",0.28**,0.28**,254
+Minnesota,2002,Natural/Environmental,26,"5,018,935",0.52,0.51,190
+Minnesota,2002,Drug Poisoning,201,"5,018,935",4.01,3.95,"4,735"
+Minnesota,2002,Non-Drug Poisoning,80,"5,018,935",1.59,1.58,"1,778"
+Minnesota,2002,Struck by / against,17**,"5,018,935",0.34**,0.34**,414
+Minnesota,2002,Suffocation,197,"5,018,935",3.93,3.88,"5,330"
+Minnesota,2002,"Motor vehicle, traffic",697,"5,018,935",13.89,13.71,"18,609"
+Minnesota,2002,"Pedal cyclist, other",--,"5,018,935",--,--,--
+Minnesota,2002,"Pedestrian, other",18**,"5,018,935",0.36**,0.35**,507
+Minnesota,2002,"Transport, other land",43,"5,018,935",0.86,0.85,"1,195"
+Minnesota,2002,"Transport, other (excl. drown by water transp)",23,"5,018,935",0.46,0.45,453
+Minnesota,2002,Other specified and classifiable,34,"5,018,935",0.68,0.68,"1,016"
+Minnesota,2002,Other specified / NEC,29,"5,018,935",0.58,0.57,333
+Minnesota,2002,Unspecified,206,"5,018,935",4.1,3.86,"1,583"
+Minnesota,2001,Cut/Pierce,31,"4,982,796",0.62,0.63,715
+Minnesota,2001,Drowning (includes water transport),76,"4,982,796",1.53,1.53,"2,651"
+Minnesota,2001,Fall,503,"4,982,796",10.1,9.66,"2,098"
+Minnesota,2001,Fire/Flame,39,"4,982,796",0.78,0.78,"1,063"
+Minnesota,2001,Hot object/Substance,--,"4,982,796",--,--,--
+Minnesota,2001,Firearm,324,"4,982,796",6.5,6.49,"8,087"
+Minnesota,2001,Machinery,14**,"4,982,796",0.28**,0.29**,222
+Minnesota,2001,Natural/Environmental,35,"4,982,796",0.7,0.72,483
+Minnesota,2001,Drug Poisoning,185,"4,982,796",3.71,3.66,"4,227"
+Minnesota,2001,Non-Drug Poisoning,70,"4,982,796",1.41,1.4,"1,550"
+Minnesota,2001,Struck by / against,17**,"4,982,796",0.34**,0.35**,307
+Minnesota,2001,Suffocation,193,"4,982,796",3.87,3.85,"5,360"
+Minnesota,2001,"Motor vehicle, traffic",588,"4,982,796",11.8,11.79,"15,168"
+Minnesota,2001,"Pedal cyclist, other",--,"4,982,796",--,--,--
+Minnesota,2001,"Pedestrian, other",15**,"4,982,796",0.30**,0.30**,558
+Minnesota,2001,"Transport, other land",40,"4,982,796",0.8,0.8,"1,187"
+Minnesota,2001,"Transport, other (excl. drown by water transp)",12**,"4,982,796",0.24**,0.24**,316
+Minnesota,2001,Other specified and classifiable,30,"4,982,796",0.6,0.59,664
+Minnesota,2001,Other specified / NEC,34,"4,982,796",0.68,0.68,258
+Minnesota,2001,Unspecified,249,"4,982,796",5,4.71,"1,228"
+Total,,,"67,638","112,299,048",60.23,56.79,"1,079,459"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Minnesota,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

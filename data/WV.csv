@@ -1,0 +1,428 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+West Virginia,2021,Cut/Pierce,16**,"1,782,959",0.90**,0.78**,230
+West Virginia,2021,Drowning (includes water transport),27,"1,782,959",1.51,1.55,683
+West Virginia,2021,Fall,486,"1,782,959",27.26,19.85,691
+West Virginia,2021,Fire/Flame,42,"1,782,959",2.36,1.79,303
+West Virginia,2021,Hot object/Substance,--,"1,782,959",--,--,--
+West Virginia,2021,Firearm,319,"1,782,959",17.89,17.31,"6,020"
+West Virginia,2021,Machinery,--,"1,782,959",--,--,--
+West Virginia,2021,Natural/Environmental,10**,"1,782,959",0.56**,0.44**,88
+West Virginia,2021,Drug Poisoning,"1,501","1,782,959",84.19,91.36,"32,972"
+West Virginia,2021,Non-Drug Poisoning,25,"1,782,959",1.4,1.52,440
+West Virginia,2021,Struck by / against,16**,"1,782,959",0.90**,0.91**,296
+West Virginia,2021,Suffocation,144,"1,782,959",8.08,8.22,"3,016"
+West Virginia,2021,"Motor vehicle, traffic",276,"1,782,959",15.48,14.73,"5,185"
+West Virginia,2021,"Pedal cyclist, other",--,"1,782,959",--,--,--
+West Virginia,2021,"Pedestrian, other",--,"1,782,959",--,--,--
+West Virginia,2021,"Transport, other land",26,"1,782,959",1.46,1.16,364
+West Virginia,2021,"Transport, other (excl. drown by water transp)",--,"1,782,959",--,--,--
+West Virginia,2021,Other specified and classifiable,27,"1,782,959",1.51,1.39,389
+West Virginia,2021,Other specified / NEC,16**,"1,782,959",0.90**,0.63**,47
+West Virginia,2021,Unspecified,49,"1,782,959",2.75,2.3,491
+West Virginia,2020,Cut/Pierce,20**,"1,789,798",1.12**,0.97**,201
+West Virginia,2020,Drowning (includes water transport),36,"1,789,798",2.01,2.01,798
+West Virginia,2020,Fall,425,"1,789,798",23.75,17.22,634
+West Virginia,2020,Fire/Flame,42,"1,789,798",2.35,1.86,502
+West Virginia,2020,Hot object/Substance,--,"1,789,798",--,--,--
+West Virginia,2020,Firearm,325,"1,789,798",18.16,17.98,"6,792"
+West Virginia,2020,Machinery,10**,"1,789,798",0.56**,0.44**,80
+West Virginia,2020,Natural/Environmental,--,"1,789,798",--,--,--
+West Virginia,2020,Drug Poisoning,"1,330","1,789,798",74.31,81.33,"29,689"
+West Virginia,2020,Non-Drug Poisoning,27,"1,789,798",1.51,1.2,232
+West Virginia,2020,Struck by / against,17**,"1,789,798",0.95**,0.91**,279
+West Virginia,2020,Suffocation,124,"1,789,798",6.93,7.16,"2,788"
+West Virginia,2020,"Motor vehicle, traffic",273,"1,789,798",15.25,14.76,"5,535"
+West Virginia,2020,"Pedal cyclist, other",--,"1,789,798",--,--,--
+West Virginia,2020,"Pedestrian, other",--,"1,789,798",--,--,--
+West Virginia,2020,"Transport, other land",29,"1,789,798",1.62,1.4,445
+West Virginia,2020,"Transport, other (excl. drown by water transp)",--,"1,789,798",--,--,--
+West Virginia,2020,Other specified and classifiable,26,"1,789,798",1.45,1.52,527
+West Virginia,2020,Other specified / NEC,16**,"1,789,798",0.89**,0.76**,139
+West Virginia,2020,Unspecified,39,"1,789,798",2.18,1.72,312
+West Virginia,2019,Cut/Pierce,15**,"1,795,263",0.84**,0.72**,218
+West Virginia,2019,Drowning (includes water transport),29,"1,795,263",1.62,1.57,633
+West Virginia,2019,Fall,458,"1,795,263",25.51,17.69,615
+West Virginia,2019,Fire/Flame,33,"1,795,263",1.84,1.66,558
+West Virginia,2019,Hot object/Substance,--,"1,795,263",--,--,--
+West Virginia,2019,Firearm,300,"1,795,263",16.71,16.58,"6,317"
+West Virginia,2019,Machinery,--,"1,795,263",--,--,--
+West Virginia,2019,Natural/Environmental,--,"1,795,263",--,--,--
+West Virginia,2019,Drug Poisoning,870,"1,795,263",48.46,53.27,"20,091"
+West Virginia,2019,Non-Drug Poisoning,33,"1,795,263",1.84,1.8,586
+West Virginia,2019,Struck by / against,16**,"1,795,263",0.89**,0.74**,150
+West Virginia,2019,Suffocation,140,"1,795,263",7.8,7.95,"2,967"
+West Virginia,2019,"Motor vehicle, traffic",296,"1,795,263",16.49,15.58,"5,654"
+West Virginia,2019,"Pedal cyclist, other",--,"1,795,263",--,--,--
+West Virginia,2019,"Pedestrian, other",--,"1,795,263",--,--,--
+West Virginia,2019,"Transport, other land",32,"1,795,263",1.78,1.62,507
+West Virginia,2019,"Transport, other (excl. drown by water transp)",--,"1,795,263",--,--,--
+West Virginia,2019,Other specified and classifiable,24,"1,795,263",1.34,1.47,446
+West Virginia,2019,Other specified / NEC,15**,"1,795,263",0.84**,0.64**,191
+West Virginia,2019,Unspecified,42,"1,795,263",2.34,1.79,320
+West Virginia,2018,Cut/Pierce,23,"1,805,953",1.27,1.08,359
+West Virginia,2018,Drowning (includes water transport),30,"1,805,953",1.66,1.72,637
+West Virginia,2018,Fall,359,"1,805,953",19.88,14.13,688
+West Virginia,2018,Fire/Flame,33,"1,805,953",1.83,1.57,453
+West Virginia,2018,Hot object/Substance,--,"1,805,953",--,--,--
+West Virginia,2018,Firearm,343,"1,805,953",18.99,18.12,"6,334"
+West Virginia,2018,Machinery,--,"1,805,953",--,--,--
+West Virginia,2018,Natural/Environmental,--,"1,805,953",--,--,--
+West Virginia,2018,Drug Poisoning,856,"1,805,953",47.4,51.68,"19,881"
+West Virginia,2018,Non-Drug Poisoning,22,"1,805,953",1.22,1.3,466
+West Virginia,2018,Struck by / against,19**,"1,805,953",1.05**,0.93**,213
+West Virginia,2018,Suffocation,132,"1,805,953",7.31,7.29,"2,961"
+West Virginia,2018,"Motor vehicle, traffic",303,"1,805,953",16.78,16.1,"6,279"
+West Virginia,2018,"Pedal cyclist, other",--,"1,805,953",--,--,--
+West Virginia,2018,"Pedestrian, other",--,"1,805,953",--,--,--
+West Virginia,2018,"Transport, other land",27,"1,805,953",1.5,1.22,352
+West Virginia,2018,"Transport, other (excl. drown by water transp)",--,"1,805,953",--,--,--
+West Virginia,2018,Other specified and classifiable,22,"1,805,953",1.22,1.23,562
+West Virginia,2018,Other specified / NEC,19**,"1,805,953",1.05**,0.84**,214
+West Virginia,2018,Unspecified,33,"1,805,953",1.83,1.62,486
+West Virginia,2017,Cut/Pierce,18**,"1,818,683",0.99**,0.95**,323
+West Virginia,2017,Drowning (includes water transport),26,"1,818,683",1.43,1.4,624
+West Virginia,2017,Fall,359,"1,818,683",19.74,14.1,461
+West Virginia,2017,Fire/Flame,51,"1,818,683",2.8,2.29,608
+West Virginia,2017,Hot object/Substance,--,"1,818,683",--,--,--
+West Virginia,2017,Firearm,348,"1,818,683",19.14,18.54,"6,293"
+West Virginia,2017,Machinery,11**,"1,818,683",0.61**,0.48**,80
+West Virginia,2017,Natural/Environmental,12**,"1,818,683",0.66**,0.62**,220
+West Virginia,2017,Drug Poisoning,974,"1,818,683",53.56,57.86,"22,464"
+West Virginia,2017,Non-Drug Poisoning,49,"1,818,683",2.69,2.52,814
+West Virginia,2017,Struck by / against,19**,"1,818,683",1.05**,0.98**,241
+West Virginia,2017,Suffocation,125,"1,818,683",6.87,6.89,"2,541"
+West Virginia,2017,"Motor vehicle, traffic",312,"1,818,683",17.16,16.9,"6,769"
+West Virginia,2017,"Pedal cyclist, other",--,"1,818,683",--,--,--
+West Virginia,2017,"Pedestrian, other",12**,"1,818,683",0.66**,0.62**,265
+West Virginia,2017,"Transport, other land",26,"1,818,683",1.43,1.43,577
+West Virginia,2017,"Transport, other (excl. drown by water transp)",--,"1,818,683",--,--,--
+West Virginia,2017,Other specified and classifiable,21,"1,818,683",1.16,1.08,348
+West Virginia,2017,Other specified / NEC,20**,"1,818,683",1.10**,1.08**,350
+West Virginia,2017,Unspecified,64,"1,818,683",3.52,2.76,560
+West Virginia,2016,Cut/Pierce,17**,"1,832,435",0.93**,0.94**,349
+West Virginia,2016,Drowning (includes water transport),39,"1,832,435",2.13,2.17,"1,107"
+West Virginia,2016,Fall,327,"1,832,435",17.85,13.22,681
+West Virginia,2016,Fire/Flame,48,"1,832,435",2.62,2.23,730
+West Virginia,2016,Hot object/Substance,--,"1,832,435",--,--,--
+West Virginia,2016,Firearm,332,"1,832,435",18.12,17.5,"6,527"
+West Virginia,2016,Machinery,14**,"1,832,435",0.76**,0.60**,91
+West Virginia,2016,Natural/Environmental,22,"1,832,435",1.2,0.99,286
+West Virginia,2016,Drug Poisoning,884,"1,832,435",48.24,52.23,"20,774"
+West Virginia,2016,Non-Drug Poisoning,37,"1,832,435",2.02,1.97,593
+West Virginia,2016,Struck by / against,15**,"1,832,435",0.82**,0.73**,189
+West Virginia,2016,Suffocation,122,"1,832,435",6.66,6.74,"2,640"
+West Virginia,2016,"Motor vehicle, traffic",275,"1,832,435",15.01,14.53,"5,777"
+West Virginia,2016,"Pedal cyclist, other",--,"1,832,435",--,--,--
+West Virginia,2016,"Pedestrian, other",--,"1,832,435",--,--,--
+West Virginia,2016,"Transport, other land",25,"1,832,435",1.36,1.21,403
+West Virginia,2016,"Transport, other (excl. drown by water transp)",--,"1,832,435",--,--,--
+West Virginia,2016,Other specified and classifiable,18**,"1,832,435",0.98**,1.02**,434
+West Virginia,2016,Other specified / NEC,17**,"1,832,435",0.93**,0.76**,211
+West Virginia,2016,Unspecified,47,"1,832,435",2.57,2.08,477
+West Virginia,2015,Cut/Pierce,15**,"1,843,332",0.81**,0.82**,301
+West Virginia,2015,Drowning (includes water transport),27,"1,843,332",1.47,1.46,622
+West Virginia,2015,Fall,326,"1,843,332",17.69,13.23,667
+West Virginia,2015,Fire/Flame,36,"1,843,332",1.95,1.84,568
+West Virginia,2015,Firearm,278,"1,843,332",15.08,14.03,"4,756"
+West Virginia,2015,Machinery,10**,"1,843,332",0.54**,0.44**,74
+West Virginia,2015,Natural/Environmental,15**,"1,843,332",0.81**,0.73**,279
+West Virginia,2015,Drug Poisoning,725,"1,843,332",39.33,41.43,"16,156"
+West Virginia,2015,Non-Drug Poisoning,40,"1,843,332",2.17,2.02,635
+West Virginia,2015,Struck by / against,14**,"1,843,332",0.76**,0.78**,291
+West Virginia,2015,Suffocation,132,"1,843,332",7.16,6.81,"2,513"
+West Virginia,2015,"Motor vehicle, traffic",275,"1,843,332",14.92,14.75,"6,292"
+West Virginia,2015,"Pedal cyclist, other",--,"1,843,332",--,--,--
+West Virginia,2015,"Pedestrian, other",--,"1,843,332",--,--,--
+West Virginia,2015,"Transport, other land",27,"1,843,332",1.47,1.36,570
+West Virginia,2015,Other specified and classifiable,30,"1,843,332",1.63,1.58,724
+West Virginia,2015,Other specified / NEC,16**,"1,843,332",0.87**,0.69**,109
+West Virginia,2015,Unspecified,45,"1,843,332",2.44,1.95,338
+West Virginia,2014,Cut/Pierce,17**,"1,850,569",0.92**,0.91**,309
+West Virginia,2014,Drowning (includes water transport),29,"1,850,569",1.57,1.66,765
+West Virginia,2014,Fall,282,"1,850,569",15.24,11.55,522
+West Virginia,2014,Fire/Flame,32,"1,850,569",1.73,1.4,366
+West Virginia,2014,Firearm,286,"1,850,569",15.46,14.55,"5,404"
+West Virginia,2014,Machinery,--,"1,850,569",--,--,--
+West Virginia,2014,Natural/Environmental,--,"1,850,569",--,--,--
+West Virginia,2014,Drug Poisoning,627,"1,850,569",33.88,35.64,"13,979"
+West Virginia,2014,Non-Drug Poisoning,45,"1,850,569",2.43,2.42,740
+West Virginia,2014,Struck by / against,20**,"1,850,569",1.08**,1.05**,333
+West Virginia,2014,Suffocation,134,"1,850,569",7.24,7.05,"3,012"
+West Virginia,2014,"Motor vehicle, traffic",290,"1,850,569",15.67,14.96,"5,918"
+West Virginia,2014,"Pedal cyclist, other",--,"1,850,569",--,--,--
+West Virginia,2014,"Pedestrian, other",13**,"1,850,569",0.70**,0.62**,264
+West Virginia,2014,"Transport, other land",25,"1,850,569",1.35,1.34,457
+West Virginia,2014,"Transport, other (excl. drown by water transp)",--,"1,850,569",--,--,--
+West Virginia,2014,Other specified and classifiable,18**,"1,850,569",0.97**,0.96**,361
+West Virginia,2014,Other specified / NEC,21,"1,850,569",1.14,1.03,295
+West Virginia,2014,Unspecified,41,"1,850,569",2.22,1.99,593
+West Virginia,2013,Cut/Pierce,16**,"1,854,768",0.86**,0.82**,301
+West Virginia,2013,Drowning (includes water transport),22,"1,854,768",1.19,1.28,546
+West Virginia,2013,Fall,273,"1,854,768",14.72,11.54,642
+West Virginia,2013,Fire/Flame,49,"1,854,768",2.64,2.24,793
+West Virginia,2013,Hot object/Substance,--,"1,854,768",--,--,--
+West Virginia,2013,Firearm,280,"1,854,768",15.1,14.34,"5,065"
+West Virginia,2013,Machinery,11**,"1,854,768",0.59**,0.54**,181
+West Virginia,2013,Natural/Environmental,--,"1,854,768",--,--,--
+West Virginia,2013,Drug Poisoning,570,"1,854,768",30.73,32.15,"13,064"
+West Virginia,2013,Non-Drug Poisoning,36,"1,854,768",1.94,1.87,759
+West Virginia,2013,Struck by / against,22,"1,854,768",1.19,1.04,351
+West Virginia,2013,Suffocation,121,"1,854,768",6.52,5.92,"1,976"
+West Virginia,2013,"Motor vehicle, traffic",310,"1,854,768",16.71,16.33,"7,079"
+West Virginia,2013,"Pedal cyclist, other",--,"1,854,768",--,--,--
+West Virginia,2013,"Pedestrian, other",10**,"1,854,768",0.54**,0.51**,174
+West Virginia,2013,"Transport, other land",20**,"1,854,768",1.08**,1.01**,319
+West Virginia,2013,"Transport, other (excl. drown by water transp)",--,"1,854,768",--,--,--
+West Virginia,2013,Other specified and classifiable,36,"1,854,768",1.94,1.93,881
+West Virginia,2013,Other specified / NEC,17**,"1,854,768",0.92**,0.85**,278
+West Virginia,2013,Unspecified,47,"1,854,768",2.53,2.24,643
+West Virginia,2012,Cut/Pierce,16**,"1,857,446",0.86**,0.79**,303
+West Virginia,2012,Drowning (includes water transport),46,"1,857,446",2.48,2.41,"1,094"
+West Virginia,2012,Fall,250,"1,857,446",13.46,10.61,695
+West Virginia,2012,Fire/Flame,60,"1,857,446",3.23,2.86,"1,021"
+West Virginia,2012,Hot object/Substance,--,"1,857,446",--,--,--
+West Virginia,2012,Firearm,278,"1,857,446",14.97,14.83,"5,979"
+West Virginia,2012,Machinery,14**,"1,857,446",0.75**,0.66**,152
+West Virginia,2012,Natural/Environmental,10**,"1,857,446",0.54**,0.57**,243
+West Virginia,2012,Drug Poisoning,558,"1,857,446",30.04,32.19,"12,813"
+West Virginia,2012,Non-Drug Poisoning,42,"1,857,446",2.26,2.04,729
+West Virginia,2012,Struck by / against,21,"1,857,446",1.13,0.98,306
+West Virginia,2012,Suffocation,136,"1,857,446",7.32,7.1,"2,535"
+West Virginia,2012,"Motor vehicle, traffic",332,"1,857,446",17.87,17.56,"7,462"
+West Virginia,2012,"Pedal cyclist, other",--,"1,857,446",--,--,--
+West Virginia,2012,"Pedestrian, other",12**,"1,857,446",0.65**,0.65**,310
+West Virginia,2012,"Transport, other land",26,"1,857,446",1.4,1.17,364
+West Virginia,2012,Other specified and classifiable,23,"1,857,446",1.24,1.14,462
+West Virginia,2012,Other specified / NEC,18**,"1,857,446",0.97**,0.78**,196
+West Virginia,2012,Unspecified,49,"1,857,446",2.64,2.25,562
+West Virginia,2011,Cut/Pierce,16**,"1,856,606",0.86**,0.88**,342
+West Virginia,2011,Drowning (includes water transport),32,"1,856,606",1.72,1.75,744
+West Virginia,2011,Fall,223,"1,856,606",12.01,9.57,423
+West Virginia,2011,Fire/Flame,37,"1,856,606",1.99,1.74,486
+West Virginia,2011,Firearm,278,"1,856,606",14.97,14.43,"5,629"
+West Virginia,2011,Machinery,12**,"1,856,606",0.65**,0.54**,186
+West Virginia,2011,Natural/Environmental,20**,"1,856,606",1.08**,0.91**,170
+West Virginia,2011,Drug Poisoning,635,"1,856,606",34.2,36.25,"15,141"
+West Virginia,2011,Non-Drug Poisoning,30,"1,856,606",1.62,1.72,726
+West Virginia,2011,Struck by / against,12**,"1,856,606",0.65**,0.64**,220
+West Virginia,2011,Suffocation,124,"1,856,606",6.68,6.43,"2,490"
+West Virginia,2011,"Motor vehicle, traffic",352,"1,856,606",18.96,18.52,"7,733"
+West Virginia,2011,"Pedal cyclist, other",--,"1,856,606",--,--,--
+West Virginia,2011,"Pedestrian, other",12**,"1,856,606",0.65**,0.62**,260
+West Virginia,2011,"Transport, other land",20**,"1,856,606",1.08**,0.88**,182
+West Virginia,2011,"Transport, other (excl. drown by water transp)",--,"1,856,606",--,--,--
+West Virginia,2011,Other specified and classifiable,26,"1,856,606",1.4,1.37,632
+West Virginia,2011,Other specified / NEC,13**,"1,856,606",0.70**,0.59**,128
+West Virginia,2011,Unspecified,56,"1,856,606",3.02,2.65,588
+West Virginia,2010,Cut/Pierce,21,"1,853,008",1.13,1.1,410
+West Virginia,2010,Drowning (includes water transport),37,"1,853,008",2,1.99,898
+West Virginia,2010,Fall,200,"1,853,008",10.79,8.66,508
+West Virginia,2010,Fire/Flame,34,"1,853,008",1.84,1.62,477
+West Virginia,2010,Hot object/Substance,--,"1,853,008",--,--,--
+West Virginia,2010,Firearm,273,"1,853,008",14.73,14.23,"5,175"
+West Virginia,2010,Machinery,11**,"1,853,008",0.59**,0.42**,60
+West Virginia,2010,Natural/Environmental,--,"1,853,008",--,--,--
+West Virginia,2010,Drug Poisoning,512,"1,853,008",27.63,29.14,"12,351"
+West Virginia,2010,Non-Drug Poisoning,43,"1,853,008",2.32,2.1,650
+West Virginia,2010,Struck by / against,19**,"1,853,008",1.03**,0.92**,329
+West Virginia,2010,Suffocation,87,"1,853,008",4.7,4.43,"1,610"
+West Virginia,2010,"Motor vehicle, traffic",285,"1,853,008",15.38,15,"6,225"
+West Virginia,2010,"Pedal cyclist, other",--,"1,853,008",--,--,--
+West Virginia,2010,"Pedestrian, other",--,"1,853,008",--,--,--
+West Virginia,2010,"Transport, other land",21,"1,853,008",1.13,1.01,360
+West Virginia,2010,"Transport, other (excl. drown by water transp)",--,"1,853,008",--,--,--
+West Virginia,2010,Other specified and classifiable,49,"1,853,008",2.64,2.61,"1,180"
+West Virginia,2010,Other specified / NEC,10**,"1,853,008",0.54**,0.48**,143
+West Virginia,2010,Unspecified,55,"1,853,008",2.97,2.67,596
+West Virginia,2009,Cut/Pierce,11**,"1,847,775",0.60**,0.58**,261
+West Virginia,2009,Drowning (includes water transport),29,"1,847,775",1.57,1.56,754
+West Virginia,2009,Fall,154,"1,847,775",8.33,6.89,313
+West Virginia,2009,Fire/Flame,30,"1,847,775",1.62,1.53,525
+West Virginia,2009,Firearm,251,"1,847,775",13.58,13.21,"5,213"
+West Virginia,2009,Machinery,--,"1,847,775",--,--,--
+West Virginia,2009,Natural/Environmental,16**,"1,847,775",0.87**,0.82**,184
+West Virginia,2009,Overexertion,--,"1,847,775",--,--,--
+West Virginia,2009,Drug Poisoning,226,"1,847,775",12.23,12.45,"5,198"
+West Virginia,2009,Non-Drug Poisoning,27,"1,847,775",1.46,1.26,380
+West Virginia,2009,Struck by / against,14**,"1,847,775",0.76**,0.69**,210
+West Virginia,2009,Suffocation,97,"1,847,775",5.25,4.93,"1,454"
+West Virginia,2009,"Motor vehicle, traffic",346,"1,847,775",18.73,18.48,"8,340"
+West Virginia,2009,"Pedal cyclist, other",--,"1,847,775",--,--,--
+West Virginia,2009,"Pedestrian, other",--,"1,847,775",--,--,--
+West Virginia,2009,"Transport, other land",26,"1,847,775",1.41,1.35,542
+West Virginia,2009,Other specified and classifiable,10**,"1,847,775",0.54**,0.53**,267
+West Virginia,2009,Other specified / NEC,21,"1,847,775",1.14,1.01,415
+West Virginia,2009,Unspecified,53,"1,847,775",2.87,2.5,503
+West Virginia,2008,Cut/Pierce,--,"1,840,310",--,--,--
+West Virginia,2008,Drowning (includes water transport),34,"1,840,310",1.85,1.74,774
+West Virginia,2008,Fall,180,"1,840,310",9.78,8.01,583
+West Virginia,2008,Fire/Flame,41,"1,840,310",2.23,2.09,730
+West Virginia,2008,Hot object/Substance,--,"1,840,310",--,--,--
+West Virginia,2008,Firearm,239,"1,840,310",12.99,12.66,"4,762"
+West Virginia,2008,Machinery,11**,"1,840,310",0.60**,0.53**,155
+West Virginia,2008,Natural/Environmental,11**,"1,840,310",0.60**,0.56**,100
+West Virginia,2008,Drug Poisoning,459,"1,840,310",24.94,25.79,"11,330"
+West Virginia,2008,Non-Drug Poisoning,33,"1,840,310",1.79,1.72,631
+West Virginia,2008,Struck by / against,10**,"1,840,310",0.54**,0.57**,233
+West Virginia,2008,Suffocation,108,"1,840,310",5.87,5.63,"2,358"
+West Virginia,2008,"Motor vehicle, traffic",345,"1,840,310",18.75,18.54,"8,385"
+West Virginia,2008,"Pedestrian, other",11**,"1,840,310",0.60**,0.62**,268
+West Virginia,2008,"Transport, other land",28,"1,840,310",1.52,1.37,472
+West Virginia,2008,"Transport, other (excl. drown by water transp)",--,"1,840,310",--,--,--
+West Virginia,2008,Other specified and classifiable,22,"1,840,310",1.2,1.14,382
+West Virginia,2008,Other specified / NEC,21,"1,840,310",1.14,1.12,368
+West Virginia,2008,Unspecified,76,"1,840,310",4.13,3.66,757
+West Virginia,2007,Cut/Pierce,--,"1,834,052",--,--,--
+West Virginia,2007,Drowning (includes water transport),27,"1,834,052",1.47,1.55,641
+West Virginia,2007,Fall,177,"1,834,052",9.65,8.09,729
+West Virginia,2007,Fire/Flame,45,"1,834,052",2.45,2.33,841
+West Virginia,2007,Firearm,267,"1,834,052",14.56,14.06,"5,498"
+West Virginia,2007,Machinery,--,"1,834,052",--,--,--
+West Virginia,2007,Natural/Environmental,16**,"1,834,052",0.87**,0.76**,162
+West Virginia,2007,Drug Poisoning,397,"1,834,052",21.65,22.61,"10,081"
+West Virginia,2007,Non-Drug Poisoning,29,"1,834,052",1.58,1.48,501
+West Virginia,2007,Struck by / against,14**,"1,834,052",0.76**,0.76**,280
+West Virginia,2007,Suffocation,109,"1,834,052",5.94,5.77,"2,277"
+West Virginia,2007,"Motor vehicle, traffic",398,"1,834,052",21.7,21.81,"10,492"
+West Virginia,2007,"Pedal cyclist, other",--,"1,834,052",--,--,--
+West Virginia,2007,"Pedestrian, other",--,"1,834,052",--,--,--
+West Virginia,2007,"Transport, other land",41,"1,834,052",2.24,2.11,714
+West Virginia,2007,"Transport, other (excl. drown by water transp)",--,"1,834,052",--,--,--
+West Virginia,2007,Other specified and classifiable,22,"1,834,052",1.2,1.12,480
+West Virginia,2007,Other specified / NEC,13**,"1,834,052",0.71**,0.61**,122
+West Virginia,2007,Unspecified,100,"1,834,052",5.45,5.12,"1,678"
+West Virginia,2006,Cut/Pierce,26,"1,827,912",1.42,1.38,471
+West Virginia,2006,Drowning (includes water transport),33,"1,827,912",1.81,1.88,874
+West Virginia,2006,Fall,132,"1,827,912",7.22,6.03,520
+West Virginia,2006,Fire/Flame,54,"1,827,912",2.95,2.81,"1,062"
+West Virginia,2006,Firearm,253,"1,827,912",13.84,13.32,"4,911"
+West Virginia,2006,Machinery,12**,"1,827,912",0.66**,0.54**,69
+West Virginia,2006,Natural/Environmental,14**,"1,827,912",0.77**,0.70**,216
+West Virginia,2006,Drug Poisoning,362,"1,827,912",19.8,20.38,"9,483"
+West Virginia,2006,Non-Drug Poisoning,16**,"1,827,912",0.88**,0.84**,301
+West Virginia,2006,Struck by / against,15**,"1,827,912",0.82**,0.72**,248
+West Virginia,2006,Suffocation,95,"1,827,912",5.2,4.97,"1,677"
+West Virginia,2006,"Motor vehicle, traffic",389,"1,827,912",21.28,21.54,"10,389"
+West Virginia,2006,"Pedal cyclist, other",--,"1,827,912",--,--,--
+West Virginia,2006,"Pedestrian, other",10**,"1,827,912",0.55**,0.52**,252
+West Virginia,2006,"Transport, other land",32,"1,827,912",1.75,1.66,717
+West Virginia,2006,"Transport, other (excl. drown by water transp)",--,"1,827,912",--,--,--
+West Virginia,2006,Other specified and classifiable,46,"1,827,912",2.52,2.49,"1,114"
+West Virginia,2006,Other specified / NEC,26,"1,827,912",1.42,1.32,431
+West Virginia,2006,Unspecified,77,"1,827,912",4.21,3.63,492
+West Virginia,2005,Cut/Pierce,--,"1,820,492",--,--,--
+West Virginia,2005,Drowning (includes water transport),18**,"1,820,492",0.99**,1.07**,584
+West Virginia,2005,Fall,140,"1,820,492",7.69,6.6,540
+West Virginia,2005,Fire/Flame,46,"1,820,492",2.53,2.41,969
+West Virginia,2005,Hot object/Substance,--,"1,820,492",--,--,--
+West Virginia,2005,Firearm,261,"1,820,492",14.34,13.72,"5,325"
+West Virginia,2005,Machinery,12**,"1,820,492",0.66**,0.63**,159
+West Virginia,2005,Natural/Environmental,22,"1,820,492",1.21,1.04,208
+West Virginia,2005,Drug Poisoning,184,"1,820,492",10.11,10.45,"4,740"
+West Virginia,2005,Non-Drug Poisoning,17**,"1,820,492",0.93**,0.89**,274
+West Virginia,2005,Struck by / against,11**,"1,820,492",0.60**,0.57**,138
+West Virginia,2005,Suffocation,88,"1,820,492",4.83,4.5,"1,435"
+West Virginia,2005,"Motor vehicle, traffic",373,"1,820,492",20.49,20.27,"9,443"
+West Virginia,2005,"Pedal cyclist, other",--,"1,820,492",--,--,--
+West Virginia,2005,"Pedestrian, other",--,"1,820,492",--,--,--
+West Virginia,2005,"Transport, other land",31,"1,820,492",1.7,1.66,620
+West Virginia,2005,"Transport, other (excl. drown by water transp)",--,"1,820,492",--,--,--
+West Virginia,2005,Other specified and classifiable,15**,"1,820,492",0.82**,0.85**,409
+West Virginia,2005,Other specified / NEC,11**,"1,820,492",0.60**,0.50**,79
+West Virginia,2005,Unspecified,68,"1,820,492",3.74,3.31,571
+West Virginia,2004,Cut/Pierce,13**,"1,816,438",0.72**,0.72**,340
+West Virginia,2004,Drowning (includes water transport),29,"1,816,438",1.6,1.66,875
+West Virginia,2004,Fall,156,"1,816,438",8.59,7.39,555
+West Virginia,2004,Fire/Flame,48,"1,816,438",2.64,2.59,"1,091"
+West Virginia,2004,Hot object/Substance,--,"1,816,438",--,--,--
+West Virginia,2004,Firearm,253,"1,816,438",13.93,13.6,"5,344"
+West Virginia,2004,Machinery,--,"1,816,438",--,--,--
+West Virginia,2004,Natural/Environmental,12**,"1,816,438",0.66**,0.62**,201
+West Virginia,2004,Drug Poisoning,333,"1,816,438",18.33,18.69,"8,334"
+West Virginia,2004,Non-Drug Poisoning,14**,"1,816,438",0.77**,0.73**,236
+West Virginia,2004,Struck by / against,11**,"1,816,438",0.61**,0.55**,133
+West Virginia,2004,Suffocation,106,"1,816,438",5.84,5.45,"1,787"
+West Virginia,2004,"Motor vehicle, traffic",385,"1,816,438",21.2,20.98,"9,977"
+West Virginia,2004,"Pedestrian, other",11**,"1,816,438",0.61**,0.61**,204
+West Virginia,2004,"Transport, other land",26,"1,816,438",1.43,1.34,633
+West Virginia,2004,"Transport, other (excl. drown by water transp)",--,"1,816,438",--,--,--
+West Virginia,2004,Other specified and classifiable,26,"1,816,438",1.43,1.46,585
+West Virginia,2004,Other specified / NEC,16**,"1,816,438",0.88**,0.82**,268
+West Virginia,2004,Unspecified,65,"1,816,438",3.58,3.16,586
+West Virginia,2003,Cut/Pierce,10**,"1,812,295",0.55**,0.54**,247
+West Virginia,2003,Drowning (includes water transport),35,"1,812,295",1.93,1.88,847
+West Virginia,2003,Fall,129,"1,812,295",7.12,6.21,598
+West Virginia,2003,Fire/Flame,45,"1,812,295",2.48,2.44,"1,077"
+West Virginia,2003,Hot object/Substance,--,"1,812,295",--,--,--
+West Virginia,2003,Firearm,265,"1,812,295",14.62,14.01,"5,509"
+West Virginia,2003,Machinery,12**,"1,812,295",0.66**,0.58**,138
+West Virginia,2003,Natural/Environmental,--,"1,812,295",--,--,--
+West Virginia,2003,Overexertion,--,"1,812,295",--,--,--
+West Virginia,2003,Drug Poisoning,262,"1,812,295",14.46,15.04,"6,787"
+West Virginia,2003,Non-Drug Poisoning,14**,"1,812,295",0.77**,0.77**,297
+West Virginia,2003,Struck by / against,19**,"1,812,295",1.05**,0.95**,256
+West Virginia,2003,Suffocation,90,"1,812,295",4.97,4.78,"1,861"
+West Virginia,2003,"Motor vehicle, traffic",372,"1,812,295",20.53,20.05,"9,194"
+West Virginia,2003,"Pedal cyclist, other",--,"1,812,295",--,--,--
+West Virginia,2003,"Pedestrian, other",--,"1,812,295",--,--,--
+West Virginia,2003,"Transport, other land",30,"1,812,295",1.66,1.68,822
+West Virginia,2003,"Transport, other (excl. drown by water transp)",--,"1,812,295",--,--,--
+West Virginia,2003,Other specified and classifiable,15**,"1,812,295",0.83**,0.81**,377
+West Virginia,2003,Other specified / NEC,19**,"1,812,295",1.05**,0.96**,178
+West Virginia,2003,Unspecified,55,"1,812,295",3.04,2.7,376
+West Virginia,2002,Cut/Pierce,13**,"1,805,414",0.72**,0.72**,255
+West Virginia,2002,Drowning (includes water transport),35,"1,805,414",1.94,2.05,"1,246"
+West Virginia,2002,Fall,125,"1,805,414",6.92,6.05,611
+West Virginia,2002,Fire/Flame,29,"1,805,414",1.61,1.58,582
+West Virginia,2002,Hot object/Substance,--,"1,805,414",--,--,--
+West Virginia,2002,Firearm,271,"1,805,414",15.01,14.67,"6,139"
+West Virginia,2002,Machinery,16**,"1,805,414",0.89**,0.80**,279
+West Virginia,2002,Natural/Environmental,11**,"1,805,414",0.61**,0.58**,204
+West Virginia,2002,Drug Poisoning,229,"1,805,414",12.68,12.9,"6,124"
+West Virginia,2002,Non-Drug Poisoning,20**,"1,805,414",1.11**,1.05**,326
+West Virginia,2002,Struck by / against,17**,"1,805,414",0.94**,0.92**,350
+West Virginia,2002,Suffocation,106,"1,805,414",5.87,5.56,"1,769"
+West Virginia,2002,"Motor vehicle, traffic",403,"1,805,414",22.32,21.78,"10,573"
+West Virginia,2002,"Pedal cyclist, other",--,"1,805,414",--,--,--
+West Virginia,2002,"Pedestrian, other",--,"1,805,414",--,--,--
+West Virginia,2002,"Transport, other land",13**,"1,805,414",0.72**,0.68**,243
+West Virginia,2002,"Transport, other (excl. drown by water transp)",--,"1,805,414",--,--,--
+West Virginia,2002,Other specified and classifiable,27,"1,805,414",1.5,1.54,794
+West Virginia,2002,Other specified / NEC,12**,"1,805,414",0.67**,0.62**,230
+West Virginia,2002,Unspecified,69,"1,805,414",3.82,3.43,867
+West Virginia,2001,Cut/Pierce,11**,"1,801,481",0.61**,0.56**,206
+West Virginia,2001,Drowning (includes water transport),39,"1,801,481",2.17,2.22,"1,090"
+West Virginia,2001,Fall,109,"1,801,481",6.05,5.26,560
+West Virginia,2001,Fire/Flame,32,"1,801,481",1.78,1.67,627
+West Virginia,2001,Hot object/Substance,--,"1,801,481",--,--,--
+West Virginia,2001,Firearm,251,"1,801,481",13.93,13.15,"4,504"
+West Virginia,2001,Machinery,--,"1,801,481",--,--,--
+West Virginia,2001,Natural/Environmental,16**,"1,801,481",0.89**,0.85**,254
+West Virginia,2001,Drug Poisoning,206,"1,801,481",11.44,11.52,"4,909"
+West Virginia,2001,Non-Drug Poisoning,19**,"1,801,481",1.06**,1.00**,313
+West Virginia,2001,Struck by / against,15**,"1,801,481",0.83**,0.82**,335
+West Virginia,2001,Suffocation,78,"1,801,481",4.33,4.16,"1,405"
+West Virginia,2001,"Motor vehicle, traffic",346,"1,801,481",19.21,19.21,"9,706"
+West Virginia,2001,"Pedal cyclist, other",--,"1,801,481",--,--,--
+West Virginia,2001,"Pedestrian, other",13**,"1,801,481",0.72**,0.72**,311
+West Virginia,2001,"Transport, other land",25,"1,801,481",1.39,1.35,605
+West Virginia,2001,"Transport, other (excl. drown by water transp)",--,"1,801,481",--,--,--
+West Virginia,2001,Other specified and classifiable,14**,"1,801,481",0.78**,0.78**,386
+West Virginia,2001,Other specified / NEC,25,"1,801,481",1.39,1.3,331
+West Virginia,2001,Unspecified,56,"1,801,481",3.11,2.79,494
+Total,,,"39,444","38,346,989",102.86,99.14,"739,534"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: West Virginia,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

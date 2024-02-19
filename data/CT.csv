@@ -1,0 +1,422 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Connecticut,2021,Cut/Pierce,37,"3,605,597",1.03,1.02,718
+Connecticut,2021,Drowning (includes water transport),40,"3,605,597",1.11,1.08,942
+Connecticut,2021,Fall,541,"3,605,597",15,11.19,"1,111"
+Connecticut,2021,Fire/Flame,27,"3,605,597",0.75,0.59,235
+Connecticut,2021,Hot object/Substance,--,"3,605,597",--,--,--
+Connecticut,2021,Firearm,248,"3,605,597",6.88,6.63,"6,029"
+Connecticut,2021,Machinery,--,"3,605,597",--,--,--
+Connecticut,2021,Natural/Environmental,--,"3,605,597",--,--,--
+Connecticut,2021,Drug Poisoning,"1,552","3,605,597",43.04,42.4,"30,018"
+Connecticut,2021,Non-Drug Poisoning,87,"3,605,597",2.41,2.06,"1,222"
+Connecticut,2021,Struck by / against,14**,"3,605,597",0.39**,0.37**,175
+Connecticut,2021,Suffocation,233,"3,605,597",6.46,5.84,"3,862"
+Connecticut,2021,"Motor vehicle, traffic",318,"3,605,597",8.82,8.66,"7,376"
+Connecticut,2021,"Pedal cyclist, other",--,"3,605,597",--,--,--
+Connecticut,2021,"Pedestrian, other",10**,"3,605,597",0.28**,0.27**,134
+Connecticut,2021,"Transport, other land",12**,"3,605,597",0.33**,0.33**,229
+Connecticut,2021,"Transport, other (excl. drown by water transp)",--,"3,605,597",--,--,--
+Connecticut,2021,Other specified and classifiable,20**,"3,605,597",0.56**,0.47**,301
+Connecticut,2021,Other specified / NEC,17**,"3,605,597",0.47**,0.39**,171
+Connecticut,2021,Unspecified,65,"3,605,597",1.8,1.39,385
+Connecticut,2020,Cut/Pierce,36,"3,600,260",1,0.96,770
+Connecticut,2020,Drowning (includes water transport),35,"3,600,260",0.97,0.92,722
+Connecticut,2020,Fall,517,"3,600,260",14.36,10.94,"1,444"
+Connecticut,2020,Fire/Flame,21,"3,600,260",0.58,0.48,217
+Connecticut,2020,Firearm,219,"3,600,260",6.08,5.95,"4,997"
+Connecticut,2020,Machinery,--,"3,600,260",--,--,--
+Connecticut,2020,Natural/Environmental,10**,"3,600,260",0.28**,0.20**,14
+Connecticut,2020,Drug Poisoning,"1,371","3,600,260",38.08,38.38,"29,090"
+Connecticut,2020,Non-Drug Poisoning,88,"3,600,260",2.44,2.18,"1,191"
+Connecticut,2020,Struck by / against,12**,"3,600,260",0.33**,0.23**,62
+Connecticut,2020,Suffocation,223,"3,600,260",6.19,5.5,"3,333"
+Connecticut,2020,"Motor vehicle, traffic",319,"3,600,260",8.86,8.63,"7,272"
+Connecticut,2020,"Pedal cyclist, other",--,"3,600,260",--,--,--
+Connecticut,2020,"Pedestrian, other",--,"3,600,260",--,--,--
+Connecticut,2020,"Transport, other land",12**,"3,600,260",0.33**,0.32**,285
+Connecticut,2020,Other specified and classifiable,26,"3,600,260",0.72,0.65,476
+Connecticut,2020,Other specified / NEC,16**,"3,600,260",0.44**,0.40**,192
+Connecticut,2020,Unspecified,86,"3,600,260",2.39,1.97,728
+Connecticut,2019,Cut/Pierce,26,"3,566,022",0.73,0.65,321
+Connecticut,2019,Drowning (includes water transport),39,"3,566,022",1.09,1.04,851
+Connecticut,2019,Fall,459,"3,566,022",12.87,9.22,"1,302"
+Connecticut,2019,Fire/Flame,29,"3,566,022",0.81,0.7,310
+Connecticut,2019,Hot object/Substance,--,"3,566,022",--,--,--
+Connecticut,2019,Firearm,190,"3,566,022",5.33,5.3,"4,107"
+Connecticut,2019,Machinery,--,"3,566,022",--,--,--
+Connecticut,2019,Natural/Environmental,10**,"3,566,022",0.28**,0.21**,33
+Connecticut,2019,Drug Poisoning,"1,214","3,566,022",34.04,34.57,"25,790"
+Connecticut,2019,Non-Drug Poisoning,76,"3,566,022",2.13,1.94,"1,260"
+Connecticut,2019,Struck by / against,14**,"3,566,022",0.39**,0.42**,263
+Connecticut,2019,Suffocation,293,"3,566,022",8.22,7.13,"4,274"
+Connecticut,2019,"Motor vehicle, traffic",255,"3,566,022",7.15,6.65,"5,095"
+Connecticut,2019,"Pedal cyclist, other",--,"3,566,022",--,--,--
+Connecticut,2019,"Pedestrian, other",--,"3,566,022",--,--,--
+Connecticut,2019,"Transport, other land",13**,"3,566,022",0.37**,0.33**,277
+Connecticut,2019,"Transport, other (excl. drown by water transp)",--,"3,566,022",--,--,--
+Connecticut,2019,Other specified and classifiable,16**,"3,566,022",0.45**,0.36**,285
+Connecticut,2019,Other specified / NEC,15**,"3,566,022",0.42**,0.35**,199
+Connecticut,2019,Unspecified,95,"3,566,022",2.66,2.04,625
+Connecticut,2018,Cut/Pierce,30,"3,574,561",0.84,0.79,656
+Connecticut,2018,Drowning (includes water transport),42,"3,574,561",1.18,1.25,"1,163"
+Connecticut,2018,Fall,425,"3,574,561",11.89,8.61,"1,100"
+Connecticut,2018,Fire/Flame,14**,"3,574,561",0.39**,0.34**,170
+Connecticut,2018,Hot object/Substance,--,"3,574,561",--,--,--
+Connecticut,2018,Firearm,186,"3,574,561",5.2,4.9,"3,494"
+Connecticut,2018,Machinery,--,"3,574,561",--,--,--
+Connecticut,2018,Natural/Environmental,12**,"3,574,561",0.34**,0.29**,192
+Connecticut,2018,Drug Poisoning,"1,069","3,574,561",29.91,30.57,"23,119"
+Connecticut,2018,Non-Drug Poisoning,73,"3,574,561",2.04,1.93,"1,214"
+Connecticut,2018,Struck by / against,11**,"3,574,561",0.31**,0.25**,126
+Connecticut,2018,Suffocation,256,"3,574,561",7.16,6.17,"3,891"
+Connecticut,2018,"Motor vehicle, traffic",294,"3,574,561",8.23,7.92,"6,665"
+Connecticut,2018,"Pedestrian, other",--,"3,574,561",--,--,--
+Connecticut,2018,"Transport, other land",--,"3,574,561",--,--,--
+Connecticut,2018,"Transport, other (excl. drown by water transp)",--,"3,574,561",--,--,--
+Connecticut,2018,Other specified and classifiable,22,"3,574,561",0.62,0.55,410
+Connecticut,2018,Other specified / NEC,26,"3,574,561",0.73,0.58,258
+Connecticut,2018,Unspecified,121,"3,574,561",3.39,2.62,678
+Connecticut,2017,Cut/Pierce,19**,"3,575,324",0.53**,0.47**,333
+Connecticut,2017,Drowning (includes water transport),36,"3,575,324",1.01,0.98,866
+Connecticut,2017,Fall,421,"3,575,324",11.78,8.52,"1,220"
+Connecticut,2017,Fire/Flame,21,"3,575,324",0.59,0.48,181
+Connecticut,2017,Firearm,188,"3,575,324",5.26,5.15,"4,403"
+Connecticut,2017,Machinery,--,"3,575,324",--,--,--
+Connecticut,2017,Natural/Environmental,--,"3,575,324",--,--,--
+Connecticut,2017,Drug Poisoning,"1,072","3,575,324",29.98,30.95,"25,176"
+Connecticut,2017,Non-Drug Poisoning,65,"3,575,324",1.82,1.56,810
+Connecticut,2017,Struck by / against,10**,"3,575,324",0.28**,0.27**,221
+Connecticut,2017,Suffocation,257,"3,575,324",7.19,6.34,"4,326"
+Connecticut,2017,"Motor vehicle, traffic",284,"3,575,324",7.94,7.61,"5,882"
+Connecticut,2017,"Pedal cyclist, other",--,"3,575,324",--,--,--
+Connecticut,2017,"Pedestrian, other",--,"3,575,324",--,--,--
+Connecticut,2017,"Transport, other land",13**,"3,575,324",0.36**,0.31**,178
+Connecticut,2017,"Transport, other (excl. drown by water transp)",12**,"3,575,324",0.34**,0.27**,131
+Connecticut,2017,Other specified and classifiable,20**,"3,575,324",0.56**,0.54**,545
+Connecticut,2017,Other specified / NEC,25,"3,575,324",0.7,0.52,101
+Connecticut,2017,Unspecified,164,"3,575,324",4.59,3.44,702
+Connecticut,2016,Cut/Pierce,23,"3,579,830",0.64,0.64,471
+Connecticut,2016,Drowning (includes water transport),37,"3,579,830",1.03,1.01,746
+Connecticut,2016,Fall,421,"3,579,830",11.76,8.51,"1,155"
+Connecticut,2016,Fire/Flame,19**,"3,579,830",0.53**,0.43**,197
+Connecticut,2016,Firearm,172,"3,579,830",4.81,4.57,"3,622"
+Connecticut,2016,Machinery,--,"3,579,830",--,--,--
+Connecticut,2016,Natural/Environmental,--,"3,579,830",--,--,--
+Connecticut,2016,Drug Poisoning,971,"3,579,830",27.12,27.39,"21,793"
+Connecticut,2016,Non-Drug Poisoning,79,"3,579,830",2.21,2.13,"1,393"
+Connecticut,2016,Struck by / against,--,"3,579,830",--,--,--
+Connecticut,2016,Suffocation,231,"3,579,830",6.45,5.57,"3,633"
+Connecticut,2016,"Motor vehicle, traffic",292,"3,579,830",8.16,7.74,"6,353"
+Connecticut,2016,"Pedal cyclist, other",--,"3,579,830",--,--,--
+Connecticut,2016,"Pedestrian, other",--,"3,579,830",--,--,--
+Connecticut,2016,"Transport, other land",--,"3,579,830",--,--,--
+Connecticut,2016,"Transport, other (excl. drown by water transp)",--,"3,579,830",--,--,--
+Connecticut,2016,Other specified and classifiable,23,"3,579,830",0.64,0.63,453
+Connecticut,2016,Other specified / NEC,22,"3,579,830",0.62,0.49,181
+Connecticut,2016,Unspecified,158,"3,579,830",4.41,3.32,532
+Connecticut,2015,Cut/Pierce,33,"3,588,561",0.92,0.84,628
+Connecticut,2015,Drowning (includes water transport),39,"3,588,561",1.09,1.03,972
+Connecticut,2015,Fall,460,"3,588,561",12.82,9.37,"1,015"
+Connecticut,2015,Fire/Flame,25,"3,588,561",0.7,0.56,252
+Connecticut,2015,Firearm,189,"3,588,561",5.27,5.31,"4,296"
+Connecticut,2015,Machinery,--,"3,588,561",--,--,--
+Connecticut,2015,Natural/Environmental,10**,"3,588,561",0.28**,0.20**,26
+Connecticut,2015,Drug Poisoning,800,"3,588,561",22.29,22.08,"17,761"
+Connecticut,2015,Non-Drug Poisoning,73,"3,588,561",2.03,1.93,"1,275"
+Connecticut,2015,Struck by / against,--,"3,588,561",--,--,--
+Connecticut,2015,Suffocation,236,"3,588,561",6.58,5.72,"3,293"
+Connecticut,2015,"Motor vehicle, traffic",276,"3,588,561",7.69,7.34,"6,161"
+Connecticut,2015,"Pedal cyclist, other",--,"3,588,561",--,--,--
+Connecticut,2015,"Pedestrian, other",--,"3,588,561",--,--,--
+Connecticut,2015,"Transport, other land",11**,"3,588,561",0.31**,0.30**,289
+Connecticut,2015,"Transport, other (excl. drown by water transp)",--,"3,588,561",--,--,--
+Connecticut,2015,Other specified and classifiable,27,"3,588,561",0.75,0.73,549
+Connecticut,2015,Other specified / NEC,15**,"3,588,561",0.42**,0.40**,256
+Connecticut,2015,Unspecified,129,"3,588,561",3.6,2.74,611
+Connecticut,2014,Cut/Pierce,22,"3,595,697",0.61,0.62,581
+Connecticut,2014,Drowning (includes water transport),29,"3,595,697",0.81,0.79,576
+Connecticut,2014,Fall,417,"3,595,697",11.6,8.47,624
+Connecticut,2014,Fire/Flame,28,"3,595,697",0.78,0.74,572
+Connecticut,2014,Firearm,187,"3,595,697",5.2,4.93,"3,714"
+Connecticut,2014,Machinery,--,"3,595,697",--,--,--
+Connecticut,2014,Natural/Environmental,16**,"3,595,697",0.45**,0.34**,108
+Connecticut,2014,Drug Poisoning,623,"3,595,697",17.33,17.58,"14,056"
+Connecticut,2014,Non-Drug Poisoning,68,"3,595,697",1.89,1.8,"1,197"
+Connecticut,2014,Struck by / against,--,"3,595,697",--,--,--
+Connecticut,2014,Suffocation,255,"3,595,697",7.09,6.22,"3,447"
+Connecticut,2014,"Motor vehicle, traffic",267,"3,595,697",7.43,7.21,"5,985"
+Connecticut,2014,"Pedal cyclist, other",--,"3,595,697",--,--,--
+Connecticut,2014,"Pedestrian, other",--,"3,595,697",--,--,--
+Connecticut,2014,"Transport, other land",10**,"3,595,697",0.28**,0.25**,206
+Connecticut,2014,"Transport, other (excl. drown by water transp)",--,"3,595,697",--,--,--
+Connecticut,2014,Other specified and classifiable,17**,"3,595,697",0.47**,0.43**,353
+Connecticut,2014,Other specified / NEC,24,"3,595,697",0.67,0.61,325
+Connecticut,2014,Unspecified,164,"3,595,697",4.56,3.47,885
+Connecticut,2013,Cut/Pierce,23,"3,595,792",0.64,0.6,545
+Connecticut,2013,Drowning (includes water transport),47,"3,595,792",1.31,1.25,980
+Connecticut,2013,Fall,388,"3,595,792",10.79,8.1,"1,093"
+Connecticut,2013,Fire/Flame,21,"3,595,792",0.58,0.56,419
+Connecticut,2013,Firearm,161,"3,595,792",4.48,4.45,"3,997"
+Connecticut,2013,Machinery,--,"3,595,792",--,--,--
+Connecticut,2013,Natural/Environmental,11**,"3,595,792",0.31**,0.25**,119
+Connecticut,2013,Drug Poisoning,582,"3,595,792",16.19,16.01,"13,010"
+Connecticut,2013,Non-Drug Poisoning,64,"3,595,792",1.78,1.7,"1,110"
+Connecticut,2013,Struck by / against,--,"3,595,792",--,--,--
+Connecticut,2013,Suffocation,260,"3,595,792",7.23,6.26,"3,495"
+Connecticut,2013,"Motor vehicle, traffic",287,"3,595,792",7.98,7.92,"7,307"
+Connecticut,2013,"Pedal cyclist, other",--,"3,595,792",--,--,--
+Connecticut,2013,"Pedestrian, other",12**,"3,595,792",0.33**,0.26**,144
+Connecticut,2013,"Transport, other land",--,"3,595,792",--,--,--
+Connecticut,2013,"Transport, other (excl. drown by water transp)",--,"3,595,792",--,--,--
+Connecticut,2013,Other specified and classifiable,22,"3,595,792",0.61,0.59,555
+Connecticut,2013,Other specified / NEC,13**,"3,595,792",0.36**,0.30**,56
+Connecticut,2013,Unspecified,131,"3,595,792",3.64,2.76,744
+Connecticut,2012,Cut/Pierce,28,"3,595,211",0.78,0.8,727
+Connecticut,2012,Drowning (includes water transport),44,"3,595,211",1.22,1.23,"1,182"
+Connecticut,2012,Fall,353,"3,595,211",9.82,7.69,"1,023"
+Connecticut,2012,Fire/Flame,27,"3,595,211",0.75,0.68,405
+Connecticut,2012,Hot object/Substance,--,"3,595,211",--,--,--
+Connecticut,2012,Firearm,227,"3,595,211",6.31,6.4,"6,203"
+Connecticut,2012,Machinery,--,"3,595,211",--,--,--
+Connecticut,2012,Natural/Environmental,--,"3,595,211",--,--,--
+Connecticut,2012,Drug Poisoning,439,"3,595,211",12.21,12.12,"9,857"
+Connecticut,2012,Non-Drug Poisoning,46,"3,595,211",1.28,1.25,819
+Connecticut,2012,Struck by / against,10**,"3,595,211",0.28**,0.25**,93
+Connecticut,2012,Suffocation,265,"3,595,211",7.37,6.75,"4,065"
+Connecticut,2012,"Motor vehicle, traffic",279,"3,595,211",7.76,7.39,"5,928"
+Connecticut,2012,"Pedal cyclist, other",--,"3,595,211",--,--,--
+Connecticut,2012,"Pedestrian, other",--,"3,595,211",--,--,--
+Connecticut,2012,"Transport, other land",12**,"3,595,211",0.33**,0.35**,335
+Connecticut,2012,"Transport, other (excl. drown by water transp)",--,"3,595,211",--,--,--
+Connecticut,2012,Other specified and classifiable,15**,"3,595,211",0.42**,0.36**,270
+Connecticut,2012,Other specified / NEC,13**,"3,595,211",0.36**,0.32**,172
+Connecticut,2012,Unspecified,155,"3,595,211",4.31,3.32,744
+Connecticut,2011,Cut/Pierce,26,"3,588,632",0.73,0.72,651
+Connecticut,2011,Drowning (includes water transport),50,"3,588,632",1.39,1.37,"1,300"
+Connecticut,2011,Fall,366,"3,588,632",10.2,8.22,896
+Connecticut,2011,Fire/Flame,31,"3,588,632",0.86,0.82,659
+Connecticut,2011,Firearm,210,"3,588,632",5.85,5.84,"5,281"
+Connecticut,2011,Machinery,--,"3,588,632",--,--,--
+Connecticut,2011,Natural/Environmental,23,"3,588,632",0.64,0.49,159
+Connecticut,2011,Drug Poisoning,402,"3,588,632",11.2,11.21,"9,395"
+Connecticut,2011,Non-Drug Poisoning,59,"3,588,632",1.64,1.47,901
+Connecticut,2011,Struck by / against,--,"3,588,632",--,--,--
+Connecticut,2011,Suffocation,238,"3,588,632",6.63,6.06,"3,743"
+Connecticut,2011,"Motor vehicle, traffic",224,"3,588,632",6.24,5.97,"5,211"
+Connecticut,2011,"Pedal cyclist, other",--,"3,588,632",--,--,--
+Connecticut,2011,"Pedestrian, other",--,"3,588,632",--,--,--
+Connecticut,2011,"Transport, other land",--,"3,588,632",--,--,--
+Connecticut,2011,"Transport, other (excl. drown by water transp)",--,"3,588,632",--,--,--
+Connecticut,2011,Other specified and classifiable,17**,"3,588,632",0.47**,0.51**,456
+Connecticut,2011,Other specified / NEC,12**,"3,588,632",0.33**,0.28**,161
+Connecticut,2011,Unspecified,176,"3,588,632",4.9,3.85,"1,023"
+Connecticut,2010,Cut/Pierce,34,"3,574,151",0.95,0.89,757
+Connecticut,2010,Drowning (includes water transport),38,"3,574,151",1.06,1.08,930
+Connecticut,2010,Fall,344,"3,574,151",9.63,7.72,"1,203"
+Connecticut,2010,Fire/Flame,19**,"3,574,151",0.53**,0.44**,165
+Connecticut,2010,Hot object/Substance,--,"3,574,151",--,--,--
+Connecticut,2010,Firearm,209,"3,574,151",5.85,5.85,"5,171"
+Connecticut,2010,Machinery,--,"3,574,151",--,--,--
+Connecticut,2010,Natural/Environmental,20**,"3,574,151",0.56**,0.48**,167
+Connecticut,2010,Drug Poisoning,363,"3,574,151",10.16,10,"8,057"
+Connecticut,2010,Non-Drug Poisoning,41,"3,574,151",1.15,1.06,700
+Connecticut,2010,Struck by / against,--,"3,574,151",--,--,--
+Connecticut,2010,Suffocation,253,"3,574,151",7.08,6.3,"3,515"
+Connecticut,2010,"Motor vehicle, traffic",321,"3,574,151",8.98,8.78,"7,641"
+Connecticut,2010,"Pedal cyclist, other",--,"3,574,151",--,--,--
+Connecticut,2010,"Pedestrian, other",10**,"3,574,151",0.28**,0.24**,55
+Connecticut,2010,"Transport, other land",--,"3,574,151",--,--,--
+Connecticut,2010,"Transport, other (excl. drown by water transp)",--,"3,574,151",--,--,--
+Connecticut,2010,Other specified and classifiable,22,"3,574,151",0.62,0.58,440
+Connecticut,2010,Other specified / NEC,20**,"3,574,151",0.56**,0.49**,285
+Connecticut,2010,Unspecified,153,"3,574,151",4.28,3.45,954
+Connecticut,2009,Cut/Pierce,26,"3,561,807",0.73,0.78,792
+Connecticut,2009,Drowning (includes water transport),45,"3,561,807",1.26,1.24,"1,043"
+Connecticut,2009,Fall,368,"3,561,807",10.33,8.2,986
+Connecticut,2009,Fire/Flame,32,"3,561,807",0.9,0.8,467
+Connecticut,2009,Firearm,173,"3,561,807",4.86,4.9,"4,350"
+Connecticut,2009,Machinery,--,"3,561,807",--,--,--
+Connecticut,2009,Natural/Environmental,--,"3,561,807",--,--,--
+Connecticut,2009,Drug Poisoning,393,"3,561,807",11.03,10.98,"9,267"
+Connecticut,2009,Non-Drug Poisoning,48,"3,561,807",1.35,1.27,826
+Connecticut,2009,Struck by / against,10**,"3,561,807",0.28**,0.28**,318
+Connecticut,2009,Suffocation,224,"3,561,807",6.29,5.74,"3,471"
+Connecticut,2009,"Motor vehicle, traffic",254,"3,561,807",7.13,7.04,"6,074"
+Connecticut,2009,"Pedal cyclist, other",--,"3,561,807",--,--,--
+Connecticut,2009,"Pedestrian, other",18**,"3,561,807",0.51**,0.50**,418
+Connecticut,2009,"Transport, other land",--,"3,561,807",--,--,--
+Connecticut,2009,"Transport, other (excl. drown by water transp)",--,"3,561,807",--,--,--
+Connecticut,2009,Other specified and classifiable,--,"3,561,807",--,--,--
+Connecticut,2009,Other specified / NEC,16**,"3,561,807",0.45**,0.39**,153
+Connecticut,2009,Unspecified,119,"3,561,807",3.34,2.74,675
+Connecticut,2008,Cut/Pierce,34,"3,545,579",0.96,0.97,918
+Connecticut,2008,Drowning (includes water transport),46,"3,545,579",1.3,1.26,"1,041"
+Connecticut,2008,Fall,347,"3,545,579",9.79,7.88,881
+Connecticut,2008,Fire/Flame,30,"3,545,579",0.85,0.76,283
+Connecticut,2008,Hot object/Substance,--,"3,545,579",--,--,--
+Connecticut,2008,Firearm,200,"3,545,579",5.64,5.6,"5,120"
+Connecticut,2008,Machinery,--,"3,545,579",--,--,--
+Connecticut,2008,Natural/Environmental,11**,"3,545,579",0.31**,0.27**,94
+Connecticut,2008,Drug Poisoning,386,"3,545,579",10.89,10.8,"9,232"
+Connecticut,2008,Non-Drug Poisoning,52,"3,545,579",1.47,1.4,866
+Connecticut,2008,Struck by / against,--,"3,545,579",--,--,--
+Connecticut,2008,Suffocation,222,"3,545,579",6.26,5.78,"3,517"
+Connecticut,2008,"Motor vehicle, traffic",320,"3,545,579",9.03,8.89,"7,411"
+Connecticut,2008,"Pedal cyclist, other",--,"3,545,579",--,--,--
+Connecticut,2008,"Pedestrian, other",12**,"3,545,579",0.34**,0.34**,261
+Connecticut,2008,"Transport, other land",10**,"3,545,579",0.28**,0.28**,240
+Connecticut,2008,"Transport, other (excl. drown by water transp)",--,"3,545,579",--,--,--
+Connecticut,2008,Other specified and classifiable,13**,"3,545,579",0.37**,0.34**,222
+Connecticut,2008,Other specified / NEC,26,"3,545,579",0.73,0.68,373
+Connecticut,2008,Unspecified,132,"3,545,579",3.72,2.99,807
+Connecticut,2007,Cut/Pierce,26,"3,527,270",0.74,0.71,569
+Connecticut,2007,Drowning (includes water transport),50,"3,527,270",1.42,1.4,"1,316"
+Connecticut,2007,Fall,297,"3,527,270",8.42,7,970
+Connecticut,2007,Fire/Flame,31,"3,527,270",0.88,0.81,513
+Connecticut,2007,Firearm,149,"3,527,270",4.22,4.15,"3,451"
+Connecticut,2007,Machinery,--,"3,527,270",--,--,--
+Connecticut,2007,Natural/Environmental,18**,"3,527,270",0.51**,0.45**,198
+Connecticut,2007,Drug Poisoning,433,"3,527,270",12.28,12.21,"10,291"
+Connecticut,2007,Non-Drug Poisoning,39,"3,527,270",1.11,1.08,742
+Connecticut,2007,Struck by / against,--,"3,527,270",--,--,--
+Connecticut,2007,Suffocation,220,"3,527,270",6.24,5.62,"3,261"
+Connecticut,2007,"Motor vehicle, traffic",297,"3,527,270",8.42,8.33,"7,484"
+Connecticut,2007,"Pedal cyclist, other",--,"3,527,270",--,--,--
+Connecticut,2007,"Pedestrian, other",17**,"3,527,270",0.48**,0.46**,338
+Connecticut,2007,"Transport, other land",18**,"3,527,270",0.51**,0.55**,700
+Connecticut,2007,"Transport, other (excl. drown by water transp)",--,"3,527,270",--,--,--
+Connecticut,2007,Other specified and classifiable,16**,"3,527,270",0.45**,0.43**,334
+Connecticut,2007,Other specified / NEC,17**,"3,527,270",0.48**,0.43**,116
+Connecticut,2007,Unspecified,127,"3,527,270",3.6,2.95,919
+Connecticut,2006,Cut/Pierce,26,"3,517,460",0.74,0.74,654
+Connecticut,2006,Drowning (includes water transport),40,"3,517,460",1.14,1.11,"1,044"
+Connecticut,2006,Fall,254,"3,517,460",7.22,6.08,"1,028"
+Connecticut,2006,Fire/Flame,21,"3,517,460",0.6,0.53,251
+Connecticut,2006,Hot object/Substance,--,"3,517,460",--,--,--
+Connecticut,2006,Firearm,173,"3,517,460",4.92,4.99,"4,791"
+Connecticut,2006,Natural/Environmental,13**,"3,517,460",0.37**,0.31**,122
+Connecticut,2006,Drug Poisoning,407,"3,517,460",11.57,11.47,"9,882"
+Connecticut,2006,Non-Drug Poisoning,33,"3,517,460",0.94,0.86,494
+Connecticut,2006,Struck by / against,--,"3,517,460",--,--,--
+Connecticut,2006,Suffocation,223,"3,517,460",6.34,5.82,"3,340"
+Connecticut,2006,"Motor vehicle, traffic",355,"3,517,460",10.09,9.98,"8,981"
+Connecticut,2006,"Pedal cyclist, other",--,"3,517,460",--,--,--
+Connecticut,2006,"Pedestrian, other",11**,"3,517,460",0.31**,0.29**,209
+Connecticut,2006,"Transport, other land",--,"3,517,460",--,--,--
+Connecticut,2006,"Transport, other (excl. drown by water transp)",--,"3,517,460",--,--,--
+Connecticut,2006,Other specified and classifiable,17**,"3,517,460",0.48**,0.46**,332
+Connecticut,2006,Other specified / NEC,15**,"3,517,460",0.43**,0.39**,219
+Connecticut,2006,Unspecified,141,"3,517,460",4.01,3.35,917
+Connecticut,2005,Cut/Pierce,16**,"3,506,956",0.46**,0.43**,332
+Connecticut,2005,Drowning (includes water transport),34,"3,506,956",0.97,0.98,949
+Connecticut,2005,Fall,232,"3,506,956",6.62,5.6,931
+Connecticut,2005,Fire/Flame,28,"3,506,956",0.8,0.74,444
+Connecticut,2005,Firearm,187,"3,506,956",5.33,5.34,"4,514"
+Connecticut,2005,Machinery,--,"3,506,956",--,--,--
+Connecticut,2005,Natural/Environmental,21,"3,506,956",0.6,0.53,135
+Connecticut,2005,Overexertion,--,"3,506,956",--,--,--
+Connecticut,2005,Drug Poisoning,295,"3,506,956",8.41,8.5,"7,705"
+Connecticut,2005,Non-Drug Poisoning,37,"3,506,956",1.06,1.04,733
+Connecticut,2005,Struck by / against,15**,"3,506,956",0.43**,0.42**,358
+Connecticut,2005,Suffocation,210,"3,506,956",5.99,5.54,"3,271"
+Connecticut,2005,"Motor vehicle, traffic",284,"3,506,956",8.1,8.08,"7,156"
+Connecticut,2005,"Pedal cyclist, other",--,"3,506,956",--,--,--
+Connecticut,2005,"Pedestrian, other",--,"3,506,956",--,--,--
+Connecticut,2005,"Transport, other land",10**,"3,506,956",0.29**,0.30**,358
+Connecticut,2005,"Transport, other (excl. drown by water transp)",--,"3,506,956",--,--,--
+Connecticut,2005,Other specified and classifiable,20**,"3,506,956",0.57**,0.54**,352
+Connecticut,2005,Other specified / NEC,19**,"3,506,956",0.54**,0.47**,208
+Connecticut,2005,Unspecified,135,"3,506,956",3.85,3.36,"1,480"
+Connecticut,2004,Cut/Pierce,24,"3,496,094",0.69,0.69,712
+Connecticut,2004,Drowning (includes water transport),37,"3,496,094",1.06,1.04,854
+Connecticut,2004,Fall,230,"3,496,094",6.58,5.53,758
+Connecticut,2004,Fire/Flame,34,"3,496,094",0.97,0.91,574
+Connecticut,2004,Hot object/Substance,--,"3,496,094",--,--,--
+Connecticut,2004,Firearm,173,"3,496,094",4.95,5,"4,348"
+Connecticut,2004,Machinery,--,"3,496,094",--,--,--
+Connecticut,2004,Natural/Environmental,10**,"3,496,094",0.29**,0.25**,87
+Connecticut,2004,Drug Poisoning,333,"3,496,094",9.53,9.64,"8,783"
+Connecticut,2004,Non-Drug Poisoning,48,"3,496,094",1.37,1.26,696
+Connecticut,2004,Struck by / against,10**,"3,496,094",0.29**,0.27**,201
+Connecticut,2004,Suffocation,238,"3,496,094",6.81,6.31,"3,770"
+Connecticut,2004,"Motor vehicle, traffic",324,"3,496,094",9.27,9.35,"8,443"
+Connecticut,2004,"Pedal cyclist, other",--,"3,496,094",--,--,--
+Connecticut,2004,"Pedestrian, other",17**,"3,496,094",0.49**,0.47**,336
+Connecticut,2004,"Transport, other land",--,"3,496,094",--,--,--
+Connecticut,2004,"Transport, other (excl. drown by water transp)",--,"3,496,094",--,--,--
+Connecticut,2004,Other specified and classifiable,--,"3,496,094",--,--,--
+Connecticut,2004,Other specified / NEC,22,"3,496,094",0.63,0.61,309
+Connecticut,2004,Unspecified,166,"3,496,094",4.75,4.12,"1,575"
+Connecticut,2003,Cut/Pierce,19**,"3,484,336",0.55**,0.54**,480
+Connecticut,2003,Drowning (includes water transport),37,"3,484,336",1.06,1.03,837
+Connecticut,2003,Fall,180,"3,484,336",5.17,4.38,611
+Connecticut,2003,Fire/Flame,46,"3,484,336",1.32,1.23,607
+Connecticut,2003,Hot object/Substance,--,"3,484,336",--,--,--
+Connecticut,2003,Firearm,153,"3,484,336",4.39,4.37,"3,598"
+Connecticut,2003,Machinery,--,"3,484,336",--,--,--
+Connecticut,2003,Natural/Environmental,16**,"3,484,336",0.46**,0.43**,157
+Connecticut,2003,Drug Poisoning,307,"3,484,336",8.81,8.75,"7,666"
+Connecticut,2003,Non-Drug Poisoning,45,"3,484,336",1.29,1.26,862
+Connecticut,2003,Struck by / against,--,"3,484,336",--,--,--
+Connecticut,2003,Suffocation,186,"3,484,336",5.34,4.94,"2,640"
+Connecticut,2003,"Motor vehicle, traffic",277,"3,484,336",7.95,8.1,"7,476"
+Connecticut,2003,"Pedestrian, other",--,"3,484,336",--,--,--
+Connecticut,2003,"Transport, other land",18**,"3,484,336",0.52**,0.57**,710
+Connecticut,2003,"Transport, other (excl. drown by water transp)",--,"3,484,336",--,--,--
+Connecticut,2003,Other specified and classifiable,14**,"3,484,336",0.40**,0.37**,261
+Connecticut,2003,Other specified / NEC,16**,"3,484,336",0.46**,0.44**,305
+Connecticut,2003,Unspecified,175,"3,484,336",5.02,4.37,"1,379"
+Connecticut,2002,Cut/Pierce,28,"3,458,749",0.81,0.8,590
+Connecticut,2002,Drowning (includes water transport),36,"3,458,749",1.04,1.06,"1,012"
+Connecticut,2002,Fall,180,"3,458,749",5.2,4.49,610
+Connecticut,2002,Fire/Flame,31,"3,458,749",0.9,0.87,369
+Connecticut,2002,Firearm,147,"3,458,749",4.25,4.32,"3,678"
+Connecticut,2002,Natural/Environmental,--,"3,458,749",--,--,--
+Connecticut,2002,Drug Poisoning,354,"3,458,749",10.24,10.26,"9,449"
+Connecticut,2002,Non-Drug Poisoning,26,"3,458,749",0.75,0.73,530
+Connecticut,2002,Struck by / against,--,"3,458,749",--,--,--
+Connecticut,2002,Suffocation,229,"3,458,749",6.62,6.05,"3,051"
+Connecticut,2002,"Motor vehicle, traffic",339,"3,458,749",9.8,9.93,"8,653"
+Connecticut,2002,"Pedal cyclist, other",--,"3,458,749",--,--,--
+Connecticut,2002,"Pedestrian, other",21,"3,458,749",0.61,0.59,414
+Connecticut,2002,"Transport, other land",--,"3,458,749",--,--,--
+Connecticut,2002,"Transport, other (excl. drown by water transp)",--,"3,458,749",--,--,--
+Connecticut,2002,Other specified and classifiable,12**,"3,458,749",0.35**,0.33**,227
+Connecticut,2002,Other specified / NEC,10**,"3,458,749",0.29**,0.26**,95
+Connecticut,2002,Unspecified,134,"3,458,749",3.87,3.4,"1,039"
+Connecticut,2001,Cut/Pierce,21,"3,432,835",0.61,0.63,609
+Connecticut,2001,Drowning (includes water transport),42,"3,432,835",1.22,1.21,"1,243"
+Connecticut,2001,Fall,191,"3,432,835",5.56,4.9,951
+Connecticut,2001,Fire/Flame,33,"3,432,835",0.96,0.93,835
+Connecticut,2001,Hot object/Substance,--,"3,432,835",--,--,--
+Connecticut,2001,Firearm,191,"3,432,835",5.56,5.63,"4,601"
+Connecticut,2001,Machinery,--,"3,432,835",--,--,--
+Connecticut,2001,Natural/Environmental,10**,"3,432,835",0.29**,0.25**,101
+Connecticut,2001,Drug Poisoning,307,"3,432,835",8.94,8.8,"7,485"
+Connecticut,2001,Non-Drug Poisoning,35,"3,432,835",1.02,0.97,628
+Connecticut,2001,Struck by / against,--,"3,432,835",--,--,--
+Connecticut,2001,Suffocation,173,"3,432,835",5.04,4.71,"2,564"
+Connecticut,2001,"Motor vehicle, traffic",313,"3,432,835",9.12,9.36,"8,455"
+Connecticut,2001,"Pedal cyclist, other",--,"3,432,835",--,--,--
+Connecticut,2001,"Pedestrian, other",21,"3,432,835",0.61,0.61,463
+Connecticut,2001,"Transport, other land",--,"3,432,835",--,--,--
+Connecticut,2001,"Transport, other (excl. drown by water transp)",72,"3,432,835",2.1,2.02,"1,673"
+Connecticut,2001,Other specified and classifiable,12**,"3,432,835",0.35**,0.34**,259
+Connecticut,2001,Other specified / NEC,10**,"3,432,835",0.29**,0.27**,201
+Connecticut,2001,Unspecified,109,"3,432,835",3.18,2.85,"1,042"
+Total,,,"43,955","74,570,724",58.94,54.7,"753,657"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Connecticut,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

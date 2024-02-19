@@ -1,0 +1,440 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Colorado,2021,Cut/Pierce,63,"5,812,069",1.08,1.03,"1,289"
+Colorado,2021,Drowning (includes water transport),96,"5,812,069",1.65,1.58,"2,064"
+Colorado,2021,Fall,"1,123","5,812,069",19.32,19.78,"3,441"
+Colorado,2021,Fire/Flame,40,"5,812,069",0.69,0.63,614
+Colorado,2021,Hot object/Substance,--,"5,812,069",--,--,--
+Colorado,2021,Firearm,"1,064","5,812,069",18.31,17.7,"24,764"
+Colorado,2021,Machinery,--,"5,812,069",--,--,--
+Colorado,2021,Natural/Environmental,66,"5,812,069",1.14,1.09,939
+Colorado,2021,Drug Poisoning,"1,887","5,812,069",32.47,31.43,"44,126"
+Colorado,2021,Non-Drug Poisoning,122,"5,812,069",2.1,1.99,"2,177"
+Colorado,2021,Struck by / against,28,"5,812,069",0.48,0.41,277
+Colorado,2021,Suffocation,491,"5,812,069",8.45,8.35,"12,053"
+Colorado,2021,"Motor vehicle, traffic",731,"5,812,069",12.58,12.09,"16,454"
+Colorado,2021,"Pedal cyclist, other",18**,"5,812,069",0.31**,0.26**,213
+Colorado,2021,"Pedestrian, other",13**,"5,812,069",0.22**,0.22**,310
+Colorado,2021,"Transport, other land",42,"5,812,069",0.72,0.73,921
+Colorado,2021,"Transport, other (excl. drown by water transp)",--,"5,812,069",--,--,--
+Colorado,2021,Other specified and classifiable,47,"5,812,069",0.81,0.79,876
+Colorado,2021,Other specified / NEC,54,"5,812,069",0.93,0.9,679
+Colorado,2021,Unspecified,165,"5,812,069",2.84,2.84,"1,154"
+Colorado,2020,Cut/Pierce,65,"5,784,308",1.12,1.1,"1,470"
+Colorado,2020,Drowning (includes water transport),90,"5,784,308",1.56,1.46,"1,942"
+Colorado,2020,Fall,"1,039","5,784,308",17.96,18.54,"3,025"
+Colorado,2020,Fire/Flame,41,"5,784,308",0.71,0.68,682
+Colorado,2020,Hot object/Substance,--,"5,784,308",--,--,--
+Colorado,2020,Firearm,922,"5,784,308",15.94,15.5,"21,831"
+Colorado,2020,Machinery,--,"5,784,308",--,--,--
+Colorado,2020,Natural/Environmental,59,"5,784,308",1.02,0.95,673
+Colorado,2020,Overexertion,--,"5,784,308",--,--,--
+Colorado,2020,Drug Poisoning,"1,492","5,784,308",25.79,24.87,"35,610"
+Colorado,2020,Non-Drug Poisoning,135,"5,784,308",2.33,2.17,"2,328"
+Colorado,2020,Struck by / against,17**,"5,784,308",0.29**,0.29**,151
+Colorado,2020,Suffocation,497,"5,784,308",8.59,8.49,"12,122"
+Colorado,2020,"Motor vehicle, traffic",652,"5,784,308",11.27,10.9,"15,628"
+Colorado,2020,"Pedal cyclist, other",16**,"5,784,308",0.28**,0.25**,102
+Colorado,2020,"Pedestrian, other",--,"5,784,308",--,--,--
+Colorado,2020,"Transport, other land",43,"5,784,308",0.74,0.73,"1,013"
+Colorado,2020,"Transport, other (excl. drown by water transp)",11**,"5,784,308",0.19**,0.18**,120
+Colorado,2020,Other specified and classifiable,43,"5,784,308",0.74,0.69,773
+Colorado,2020,Other specified / NEC,41,"5,784,308",0.71,0.67,607
+Colorado,2020,Unspecified,180,"5,784,308",3.11,3.21,"1,310"
+Colorado,2019,Cut/Pierce,49,"5,758,486",0.85,0.78,882
+Colorado,2019,Drowning (includes water transport),79,"5,758,486",1.37,1.33,"1,827"
+Colorado,2019,Fall,914,"5,758,486",15.87,15.62,"2,508"
+Colorado,2019,Fire/Flame,29,"5,758,486",0.5,0.45,409
+Colorado,2019,Hot object/Substance,--,"5,758,486",--,--,--
+Colorado,2019,Firearm,846,"5,758,486",14.69,14.21,"19,306"
+Colorado,2019,Machinery,--,"5,758,486",--,--,--
+Colorado,2019,Natural/Environmental,55,"5,758,486",0.96,0.88,698
+Colorado,2019,Overexertion,--,"5,758,486",--,--,--
+Colorado,2019,Drug Poisoning,"1,079","5,758,486",18.74,17.96,"24,552"
+Colorado,2019,Non-Drug Poisoning,151,"5,758,486",2.62,2.59,"2,945"
+Colorado,2019,Struck by / against,17**,"5,758,486",0.30**,0.28**,359
+Colorado,2019,Suffocation,528,"5,758,486",9.17,9.2,"13,616"
+Colorado,2019,"Motor vehicle, traffic",614,"5,758,486",10.66,10.2,"13,606"
+Colorado,2019,"Pedal cyclist, other",14**,"5,758,486",0.24**,0.24**,197
+Colorado,2019,"Pedestrian, other",13**,"5,758,486",0.23**,0.20**,347
+Colorado,2019,"Transport, other land",35,"5,758,486",0.61,0.58,847
+Colorado,2019,"Transport, other (excl. drown by water transp)",12**,"5,758,486",0.21**,0.17**,221
+Colorado,2019,Other specified and classifiable,49,"5,758,486",0.85,0.8,987
+Colorado,2019,Other specified / NEC,54,"5,758,486",0.94,0.9,799
+Colorado,2019,Unspecified,179,"5,758,486",3.11,3.01,966
+Colorado,2018,Cut/Pierce,46,"5,697,155",0.81,0.77,"1,105"
+Colorado,2018,Drowning (includes water transport),86,"5,697,155",1.51,1.51,"2,235"
+Colorado,2018,Fall,927,"5,697,155",16.27,16.41,"2,428"
+Colorado,2018,Fire/Flame,43,"5,697,155",0.76,0.67,551
+Colorado,2018,Firearm,889,"5,697,155",15.6,15.13,"20,564"
+Colorado,2018,Machinery,10**,"5,697,155",0.18**,0.15**,106
+Colorado,2018,Natural/Environmental,46,"5,697,155",0.81,0.76,724
+Colorado,2018,Drug Poisoning,995,"5,697,155",17.47,16.68,"21,344"
+Colorado,2018,Non-Drug Poisoning,135,"5,697,155",2.37,2.3,"2,449"
+Colorado,2018,Struck by / against,14**,"5,697,155",0.25**,0.27**,356
+Colorado,2018,Suffocation,494,"5,697,155",8.67,8.56,"12,261"
+Colorado,2018,"Motor vehicle, traffic",655,"5,697,155",11.5,11.21,"14,873"
+Colorado,2018,"Pedal cyclist, other",13**,"5,697,155",0.23**,0.22**,155
+Colorado,2018,"Pedestrian, other",10**,"5,697,155",0.18**,0.17**,316
+Colorado,2018,"Transport, other land",28,"5,697,155",0.49,0.5,576
+Colorado,2018,"Transport, other (excl. drown by water transp)",12**,"5,697,155",0.21**,0.19**,323
+Colorado,2018,Other specified and classifiable,46,"5,697,155",0.81,0.79,"1,201"
+Colorado,2018,Other specified / NEC,61,"5,697,155",1.07,1,800
+Colorado,2018,Unspecified,167,"5,697,155",2.93,2.9,"1,209"
+Colorado,2017,Cut/Pierce,43,"5,617,421",0.77,0.74,"1,054"
+Colorado,2017,Drowning (includes water transport),98,"5,617,421",1.75,1.68,"2,265"
+Colorado,2017,Fall,946,"5,617,421",16.84,17.04,"2,346"
+Colorado,2017,Fire/Flame,32,"5,617,421",0.57,0.53,427
+Colorado,2017,Hot object/Substance,--,"5,617,421",--,--,--
+Colorado,2017,Firearm,779,"5,617,421",13.87,13.35,"17,770"
+Colorado,2017,Machinery,10**,"5,617,421",0.18**,0.17**,180
+Colorado,2017,Natural/Environmental,30,"5,617,421",0.53,0.47,272
+Colorado,2017,Drug Poisoning,"1,015","5,617,421",18.07,17.48,"23,028"
+Colorado,2017,Non-Drug Poisoning,101,"5,617,421",1.8,1.8,"2,093"
+Colorado,2017,Struck by / against,11**,"5,617,421",0.20**,0.19**,198
+Colorado,2017,Suffocation,485,"5,617,421",8.63,8.67,"12,114"
+Colorado,2017,"Motor vehicle, traffic",654,"5,617,421",11.64,11.34,"14,828"
+Colorado,2017,"Pedal cyclist, other",15**,"5,617,421",0.27**,0.25**,129
+Colorado,2017,"Pedestrian, other",11**,"5,617,421",0.20**,0.19**,312
+Colorado,2017,"Transport, other land",31,"5,617,421",0.55,0.53,629
+Colorado,2017,"Transport, other (excl. drown by water transp)",12**,"5,617,421",0.21**,0.22**,306
+Colorado,2017,Other specified and classifiable,47,"5,617,421",0.84,0.82,"1,246"
+Colorado,2017,Other specified / NEC,58,"5,617,421",1.03,1.03,679
+Colorado,2017,Unspecified,166,"5,617,421",2.96,2.95,"1,420"
+Colorado,2016,Cut/Pierce,43,"5,543,844",0.78,0.75,"1,099"
+Colorado,2016,Drowning (includes water transport),77,"5,543,844",1.39,1.38,"2,282"
+Colorado,2016,Fall,893,"5,543,844",16.11,16.47,"2,382"
+Colorado,2016,Fire/Flame,39,"5,543,844",0.7,0.67,497
+Colorado,2016,Hot object/Substance,--,"5,543,844",--,--,--
+Colorado,2016,Firearm,812,"5,543,844",14.65,14.3,"18,349"
+Colorado,2016,Machinery,--,"5,543,844",--,--,--
+Colorado,2016,Natural/Environmental,39,"5,543,844",0.7,0.67,455
+Colorado,2016,Overexertion,--,"5,543,844",--,--,--
+Colorado,2016,Drug Poisoning,942,"5,543,844",16.99,16.47,"21,526"
+Colorado,2016,Non-Drug Poisoning,123,"5,543,844",2.22,2.08,"2,521"
+Colorado,2016,Struck by / against,19**,"5,543,844",0.34**,0.32**,173
+Colorado,2016,Suffocation,437,"5,543,844",7.88,7.86,"10,679"
+Colorado,2016,"Motor vehicle, traffic",620,"5,543,844",11.18,10.88,"13,901"
+Colorado,2016,"Pedal cyclist, other",18**,"5,543,844",0.33**,0.31**,354
+Colorado,2016,"Pedestrian, other",11**,"5,543,844",0.20**,0.17**,211
+Colorado,2016,"Transport, other land",33,"5,543,844",0.6,0.55,752
+Colorado,2016,"Transport, other (excl. drown by water transp)",14**,"5,543,844",0.25**,0.22**,243
+Colorado,2016,Other specified and classifiable,47,"5,543,844",0.85,0.79,722
+Colorado,2016,Other specified / NEC,43,"5,543,844",0.78,0.74,471
+Colorado,2016,Unspecified,153,"5,543,844",2.76,2.86,"1,509"
+Colorado,2015,Cut/Pierce,41,"5,454,328",0.75,0.72,980
+Colorado,2015,Drowning (includes water transport),77,"5,454,328",1.41,1.38,"1,840"
+Colorado,2015,Fall,876,"5,454,328",16.06,16.75,"2,703"
+Colorado,2015,Fire/Flame,27,"5,454,328",0.5,0.46,317
+Colorado,2015,Hot object/Substance,--,"5,454,328",--,--,--
+Colorado,2015,Firearm,701,"5,454,328",12.85,12.55,"15,459"
+Colorado,2015,Machinery,--,"5,454,328",--,--,--
+Colorado,2015,Natural/Environmental,24,"5,454,328",0.44,0.39,253
+Colorado,2015,Drug Poisoning,869,"5,454,328",15.93,15.27,"18,888"
+Colorado,2015,Non-Drug Poisoning,153,"5,454,328",2.81,2.69,"2,858"
+Colorado,2015,Struck by / against,--,"5,454,328",--,--,--
+Colorado,2015,Suffocation,436,"5,454,328",7.99,8.01,"10,353"
+Colorado,2015,"Motor vehicle, traffic",558,"5,454,328",10.23,9.87,"12,605"
+Colorado,2015,"Pedal cyclist, other",--,"5,454,328",--,--,--
+Colorado,2015,"Pedestrian, other",12**,"5,454,328",0.22**,0.22**,147
+Colorado,2015,"Transport, other land",46,"5,454,328",0.84,0.84,979
+Colorado,2015,"Transport, other (excl. drown by water transp)",14**,"5,454,328",0.26**,0.22**,148
+Colorado,2015,Other specified and classifiable,38,"5,454,328",0.7,0.67,948
+Colorado,2015,Other specified / NEC,37,"5,454,328",0.68,0.65,393
+Colorado,2015,Unspecified,163,"5,454,328",2.99,3.06,"1,321"
+Colorado,2014,Cut/Pierce,36,"5,352,637",0.67,0.69,976
+Colorado,2014,Drowning (includes water transport),59,"5,352,637",1.1,1.08,"1,483"
+Colorado,2014,Fall,822,"5,352,637",15.36,16.14,"2,172"
+Colorado,2014,Fire/Flame,29,"5,352,637",0.54,0.52,435
+Colorado,2014,Firearm,663,"5,352,637",12.39,12.21,"13,916"
+Colorado,2014,Machinery,--,"5,352,637",--,--,--
+Colorado,2014,Natural/Environmental,39,"5,352,637",0.73,0.72,623
+Colorado,2014,Drug Poisoning,899,"5,352,637",16.8,16.23,"19,607"
+Colorado,2014,Non-Drug Poisoning,126,"5,352,637",2.35,2.28,"2,240"
+Colorado,2014,Struck by / against,16**,"5,352,637",0.30**,0.30**,269
+Colorado,2014,Suffocation,391,"5,352,637",7.31,7.33,"8,726"
+Colorado,2014,"Motor vehicle, traffic",505,"5,352,637",9.44,9.26,"11,747"
+Colorado,2014,"Pedal cyclist, other",--,"5,352,637",--,--,--
+Colorado,2014,"Pedestrian, other",13**,"5,352,637",0.24**,0.25**,246
+Colorado,2014,"Transport, other land",30,"5,352,637",0.56,0.55,592
+Colorado,2014,"Transport, other (excl. drown by water transp)",27,"5,352,637",0.5,0.47,503
+Colorado,2014,Other specified and classifiable,35,"5,352,637",0.65,0.64,864
+Colorado,2014,Other specified / NEC,46,"5,352,637",0.86,0.84,589
+Colorado,2014,Unspecified,130,"5,352,637",2.43,2.5,"1,582"
+Colorado,2013,Cut/Pierce,50,"5,270,774",0.95,0.95,"1,008"
+Colorado,2013,Drowning (includes water transport),57,"5,270,774",1.08,1.09,"1,511"
+Colorado,2013,Fall,808,"5,270,774",15.33,16.31,"1,895"
+Colorado,2013,Fire/Flame,22,"5,270,774",0.42,0.41,258
+Colorado,2013,Hot object/Substance,--,"5,270,774",--,--,--
+Colorado,2013,Firearm,619,"5,270,774",11.74,11.48,"13,026"
+Colorado,2013,Machinery,--,"5,270,774",--,--,--
+Colorado,2013,Natural/Environmental,53,"5,270,774",1.01,1.01,780
+Colorado,2013,Overexertion,--,"5,270,774",--,--,--
+Colorado,2013,Drug Poisoning,846,"5,270,774",16.05,15.51,"18,423"
+Colorado,2013,Non-Drug Poisoning,130,"5,270,774",2.47,2.36,"2,399"
+Colorado,2013,Struck by / against,12**,"5,270,774",0.23**,0.20**,82
+Colorado,2013,Suffocation,350,"5,270,774",6.64,6.7,"8,743"
+Colorado,2013,"Motor vehicle, traffic",483,"5,270,774",9.16,9.03,"11,585"
+Colorado,2013,"Pedal cyclist, other",13**,"5,270,774",0.25**,0.21**,195
+Colorado,2013,"Pedestrian, other",12**,"5,270,774",0.23**,0.21**,199
+Colorado,2013,"Transport, other land",29,"5,270,774",0.55,0.55,706
+Colorado,2013,"Transport, other (excl. drown by water transp)",16**,"5,270,774",0.30**,0.29**,180
+Colorado,2013,Other specified and classifiable,23,"5,270,774",0.44,0.42,496
+Colorado,2013,Other specified / NEC,36,"5,270,774",0.68,0.71,387
+Colorado,2013,Unspecified,138,"5,270,774",2.62,2.68,"1,405"
+Colorado,2012,Cut/Pierce,52,"5,193,660",1,0.95,"1,205"
+Colorado,2012,Drowning (includes water transport),68,"5,193,660",1.31,1.29,"1,698"
+Colorado,2012,Fall,743,"5,193,660",14.31,15.46,"2,537"
+Colorado,2012,Fire/Flame,29,"5,193,660",0.56,0.55,360
+Colorado,2012,Hot object/Substance,--,"5,193,660",--,--,--
+Colorado,2012,Firearm,672,"5,193,660",12.94,12.43,"14,477"
+Colorado,2012,Machinery,--,"5,193,660",--,--,--
+Colorado,2012,Natural/Environmental,40,"5,193,660",0.77,0.76,789
+Colorado,2012,Drug Poisoning,807,"5,193,660",15.54,14.94,"17,358"
+Colorado,2012,Non-Drug Poisoning,124,"5,193,660",2.39,2.31,"2,181"
+Colorado,2012,Struck by / against,16**,"5,193,660",0.31**,0.31**,340
+Colorado,2012,Suffocation,368,"5,193,660",7.09,7.12,"9,155"
+Colorado,2012,"Motor vehicle, traffic",503,"5,193,660",9.69,9.56,"11,566"
+Colorado,2012,"Pedal cyclist, other",--,"5,193,660",--,--,--
+Colorado,2012,"Pedestrian, other",13**,"5,193,660",0.25**,0.24**,385
+Colorado,2012,"Transport, other land",26,"5,193,660",0.5,0.5,478
+Colorado,2012,"Transport, other (excl. drown by water transp)",13**,"5,193,660",0.25**,0.23**,205
+Colorado,2012,Other specified and classifiable,38,"5,193,660",0.73,0.71,798
+Colorado,2012,Other specified / NEC,38,"5,193,660",0.73,0.74,649
+Colorado,2012,Unspecified,193,"5,193,660",3.72,3.89,"2,125"
+Colorado,2011,Cut/Pierce,31,"5,121,900",0.61,0.62,668
+Colorado,2011,Drowning (includes water transport),59,"5,121,900",1.15,1.15,"1,505"
+Colorado,2011,Fall,696,"5,121,900",13.59,14.81,"2,346"
+Colorado,2011,Fire/Flame,35,"5,121,900",0.68,0.68,390
+Colorado,2011,Hot object/Substance,--,"5,121,900",--,--,--
+Colorado,2011,Firearm,573,"5,121,900",11.19,10.91,"12,461"
+Colorado,2011,Machinery,--,"5,121,900",--,--,--
+Colorado,2011,Natural/Environmental,27,"5,121,900",0.53,0.53,543
+Colorado,2011,Drug Poisoning,843,"5,121,900",16.46,16.02,"19,118"
+Colorado,2011,Non-Drug Poisoning,135,"5,121,900",2.64,2.47,"2,311"
+Colorado,2011,Struck by / against,15**,"5,121,900",0.29**,0.29**,233
+Colorado,2011,Suffocation,349,"5,121,900",6.81,6.94,"8,389"
+Colorado,2011,"Motor vehicle, traffic",483,"5,121,900",9.43,9.32,"11,626"
+Colorado,2011,"Pedal cyclist, other",--,"5,121,900",--,--,--
+Colorado,2011,"Pedestrian, other",16**,"5,121,900",0.31**,0.31**,364
+Colorado,2011,"Transport, other land",21,"5,121,900",0.41,0.42,553
+Colorado,2011,"Transport, other (excl. drown by water transp)",14**,"5,121,900",0.27**,0.25**,216
+Colorado,2011,Other specified and classifiable,37,"5,121,900",0.72,0.69,797
+Colorado,2011,Other specified / NEC,37,"5,121,900",0.72,0.74,555
+Colorado,2011,Unspecified,158,"5,121,900",3.09,3.19,"1,914"
+Colorado,2010,Cut/Pierce,33,"5,029,319",0.66,0.63,954
+Colorado,2010,Drowning (includes water transport),69,"5,029,319",1.37,1.35,"2,187"
+Colorado,2010,Fall,661,"5,029,319",13.14,14.67,"2,169"
+Colorado,2010,Fire/Flame,31,"5,029,319",0.62,0.61,664
+Colorado,2010,Hot object/Substance,--,"5,029,319",--,--,--
+Colorado,2010,Firearm,555,"5,029,319",11.04,10.72,"12,218"
+Colorado,2010,Machinery,--,"5,029,319",--,--,--
+Colorado,2010,Natural/Environmental,14**,"5,029,319",0.28**,0.26**,163
+Colorado,2010,Drug Poisoning,654,"5,029,319",13,12.63,"14,581"
+Colorado,2010,Non-Drug Poisoning,128,"5,029,319",2.55,2.49,"2,621"
+Colorado,2010,Struck by / against,16**,"5,029,319",0.32**,0.29**,301
+Colorado,2010,Suffocation,367,"5,029,319",7.3,7.43,"8,314"
+Colorado,2010,"Motor vehicle, traffic",453,"5,029,319",9.01,8.93,"10,840"
+Colorado,2010,"Pedal cyclist, other",--,"5,029,319",--,--,--
+Colorado,2010,"Pedestrian, other",26,"5,029,319",0.52,0.53,496
+Colorado,2010,"Transport, other land",28,"5,029,319",0.56,0.56,594
+Colorado,2010,"Transport, other (excl. drown by water transp)",15**,"5,029,319",0.30**,0.27**,176
+Colorado,2010,Other specified and classifiable,23,"5,029,319",0.46,0.44,487
+Colorado,2010,Other specified / NEC,35,"5,029,319",0.7,0.75,413
+Colorado,2010,Unspecified,118,"5,029,319",2.35,2.53,"1,654"
+Colorado,2009,Cut/Pierce,39,"4,972,195",0.78,0.77,989
+Colorado,2009,Drowning (includes water transport),65,"4,972,195",1.31,1.32,"1,885"
+Colorado,2009,Fall,583,"4,972,195",11.73,13.03,"2,118"
+Colorado,2009,Fire/Flame,22,"4,972,195",0.44,0.46,274
+Colorado,2009,Hot object/Substance,--,"4,972,195",--,--,--
+Colorado,2009,Firearm,583,"4,972,195",11.73,11.58,"12,731"
+Colorado,2009,Machinery,--,"4,972,195",--,--,--
+Colorado,2009,Natural/Environmental,18**,"4,972,195",0.36**,0.35**,204
+Colorado,2009,Overexertion,--,"4,972,195",--,--,--
+Colorado,2009,Drug Poisoning,769,"4,972,195",15.47,14.94,"17,152"
+Colorado,2009,Non-Drug Poisoning,146,"4,972,195",2.94,2.9,"2,778"
+Colorado,2009,Struck by / against,13**,"4,972,195",0.26**,0.27**,189
+Colorado,2009,Suffocation,362,"4,972,195",7.28,7.43,"8,988"
+Colorado,2009,"Motor vehicle, traffic",529,"4,972,195",10.64,10.63,"12,547"
+Colorado,2009,"Pedal cyclist, other",11**,"4,972,195",0.22**,0.20**,190
+Colorado,2009,"Pedestrian, other",13**,"4,972,195",0.26**,0.27**,251
+Colorado,2009,"Transport, other land",34,"4,972,195",0.68,0.7,731
+Colorado,2009,"Transport, other (excl. drown by water transp)",16**,"4,972,195",0.32**,0.30**,241
+Colorado,2009,Other specified and classifiable,25,"4,972,195",0.5,0.47,671
+Colorado,2009,Other specified / NEC,31,"4,972,195",0.62,0.64,549
+Colorado,2009,Unspecified,111,"4,972,195",2.23,2.38,"1,696"
+Colorado,2008,Cut/Pierce,34,"4,889,730",0.7,0.69,895
+Colorado,2008,Drowning (includes water transport),64,"4,889,730",1.31,1.32,"1,579"
+Colorado,2008,Fall,547,"4,889,730",11.19,12.66,"2,177"
+Colorado,2008,Fire/Flame,36,"4,889,730",0.74,0.74,659
+Colorado,2008,Hot object/Substance,--,"4,889,730",--,--,--
+Colorado,2008,Firearm,513,"4,889,730",10.49,10.39,"10,961"
+Colorado,2008,Machinery,--,"4,889,730",--,--,--
+Colorado,2008,Natural/Environmental,30,"4,889,730",0.61,0.65,688
+Colorado,2008,Overexertion,--,"4,889,730",--,--,--
+Colorado,2008,Drug Poisoning,749,"4,889,730",15.32,14.79,"16,258"
+Colorado,2008,Non-Drug Poisoning,151,"4,889,730",3.09,2.98,"2,994"
+Colorado,2008,Struck by / against,16**,"4,889,730",0.33**,0.34**,410
+Colorado,2008,Suffocation,304,"4,889,730",6.22,6.3,"7,081"
+Colorado,2008,"Motor vehicle, traffic",556,"4,889,730",11.37,11.43,"13,645"
+Colorado,2008,"Pedal cyclist, other",--,"4,889,730",--,--,--
+Colorado,2008,"Pedestrian, other",20**,"4,889,730",0.41**,0.43**,540
+Colorado,2008,"Transport, other land",31,"4,889,730",0.63,0.65,593
+Colorado,2008,"Transport, other (excl. drown by water transp)",21,"4,889,730",0.43,0.45,423
+Colorado,2008,Other specified and classifiable,33,"4,889,730",0.68,0.68,"1,145"
+Colorado,2008,Other specified / NEC,36,"4,889,730",0.74,0.73,586
+Colorado,2008,Unspecified,148,"4,889,730",3.03,3.37,"1,681"
+Colorado,2007,Cut/Pierce,38,"4,803,868",0.79,0.75,972
+Colorado,2007,Drowning (includes water transport),75,"4,803,868",1.56,1.57,"1,933"
+Colorado,2007,Fall,467,"4,803,868",9.72,11.27,"2,135"
+Colorado,2007,Fire/Flame,23,"4,803,868",0.48,0.49,240
+Colorado,2007,Hot object/Substance,--,"4,803,868",--,--,--
+Colorado,2007,Firearm,505,"4,803,868",10.51,10.38,"10,934"
+Colorado,2007,Machinery,12**,"4,803,868",0.25**,0.25**,272
+Colorado,2007,Natural/Environmental,24,"4,803,868",0.5,0.52,434
+Colorado,2007,Drug Poisoning,734,"4,803,868",15.28,14.67,"16,399"
+Colorado,2007,Non-Drug Poisoning,120,"4,803,868",2.5,2.39,"2,483"
+Colorado,2007,Struck by / against,18**,"4,803,868",0.38**,0.37**,325
+Colorado,2007,Suffocation,297,"4,803,868",6.18,6.47,"6,324"
+Colorado,2007,"Motor vehicle, traffic",573,"4,803,868",11.93,11.9,"14,422"
+Colorado,2007,"Pedal cyclist, other",--,"4,803,868",--,--,--
+Colorado,2007,"Pedestrian, other",22,"4,803,868",0.46,0.46,484
+Colorado,2007,"Transport, other land",26,"4,803,868",0.54,0.52,566
+Colorado,2007,"Transport, other (excl. drown by water transp)",13**,"4,803,868",0.27**,0.26**,196
+Colorado,2007,Other specified and classifiable,33,"4,803,868",0.69,0.67,939
+Colorado,2007,Other specified / NEC,44,"4,803,868",0.92,0.95,784
+Colorado,2007,Unspecified,141,"4,803,868",2.94,3.28,"1,457"
+Colorado,2006,Cut/Pierce,40,"4,720,423",0.85,0.83,"1,113"
+Colorado,2006,Drowning (includes water transport),62,"4,720,423",1.31,1.27,"1,970"
+Colorado,2006,Fall,423,"4,720,423",8.96,10.55,"1,806"
+Colorado,2006,Fire/Flame,29,"4,720,423",0.61,0.65,361
+Colorado,2006,Hot object/Substance,--,"4,720,423",--,--,--
+Colorado,2006,Firearm,497,"4,720,423",10.53,10.33,"12,037"
+Colorado,2006,Machinery,--,"4,720,423",--,--,--
+Colorado,2006,Natural/Environmental,40,"4,720,423",0.85,0.87,792
+Colorado,2006,Drug Poisoning,627,"4,720,423",13.28,12.76,"14,644"
+Colorado,2006,Non-Drug Poisoning,90,"4,720,423",1.91,1.92,"1,851"
+Colorado,2006,Struck by / against,13**,"4,720,423",0.28**,0.27**,313
+Colorado,2006,Suffocation,285,"4,720,423",6.04,6.25,"6,920"
+Colorado,2006,"Motor vehicle, traffic",567,"4,720,423",12.01,11.87,"15,134"
+Colorado,2006,"Pedal cyclist, other",--,"4,720,423",--,--,--
+Colorado,2006,"Pedestrian, other",15**,"4,720,423",0.32**,0.31**,411
+Colorado,2006,"Transport, other land",31,"4,720,423",0.66,0.66,790
+Colorado,2006,"Transport, other (excl. drown by water transp)",21,"4,720,423",0.45,0.44,493
+Colorado,2006,Other specified and classifiable,31,"4,720,423",0.66,0.64,769
+Colorado,2006,Other specified / NEC,45,"4,720,423",0.95,0.98,701
+Colorado,2006,Unspecified,143,"4,720,423",3.03,3.44,"1,642"
+Colorado,2005,Cut/Pierce,39,"4,631,888",0.84,0.82,"1,011"
+Colorado,2005,Drowning (includes water transport),57,"4,631,888",1.23,1.27,"1,527"
+Colorado,2005,Fall,396,"4,631,888",8.55,10.29,"1,608"
+Colorado,2005,Fire/Flame,25,"4,631,888",0.54,0.56,419
+Colorado,2005,Hot object/Substance,--,"4,631,888",--,--,--
+Colorado,2005,Firearm,535,"4,631,888",11.55,11.53,"12,531"
+Colorado,2005,Machinery,13**,"4,631,888",0.28**,0.28**,301
+Colorado,2005,Natural/Environmental,53,"4,631,888",1.14,1.1,"1,058"
+Colorado,2005,Drug Poisoning,608,"4,631,888",13.13,12.59,"13,585"
+Colorado,2005,Non-Drug Poisoning,91,"4,631,888",1.97,1.89,"1,720"
+Colorado,2005,Struck by / against,15**,"4,631,888",0.32**,0.34**,194
+Colorado,2005,Suffocation,291,"4,631,888",6.28,6.52,"7,102"
+Colorado,2005,"Motor vehicle, traffic",644,"4,631,888",13.9,13.66,"17,490"
+Colorado,2005,"Pedal cyclist, other",--,"4,631,888",--,--,--
+Colorado,2005,"Pedestrian, other",10**,"4,631,888",0.22**,0.22**,314
+Colorado,2005,"Transport, other land",41,"4,631,888",0.89,0.89,"1,003"
+Colorado,2005,"Transport, other (excl. drown by water transp)",31,"4,631,888",0.67,0.69,488
+Colorado,2005,Other specified and classifiable,32,"4,631,888",0.69,0.68,730
+Colorado,2005,Other specified / NEC,30,"4,631,888",0.65,0.65,522
+Colorado,2005,Unspecified,132,"4,631,888",2.85,3.27,"1,386"
+Colorado,2004,Cut/Pierce,43,"4,575,013",0.94,0.93,"1,036"
+Colorado,2004,Drowning (includes water transport),65,"4,575,013",1.42,1.43,"1,640"
+Colorado,2004,Fall,351,"4,575,013",7.67,9.32,"1,904"
+Colorado,2004,Fire/Flame,20**,"4,575,013",0.44**,0.45**,496
+Colorado,2004,Hot object/Substance,--,"4,575,013",--,--,--
+Colorado,2004,Firearm,553,"4,575,013",12.09,11.96,"12,805"
+Colorado,2004,Machinery,10**,"4,575,013",0.22**,0.23**,198
+Colorado,2004,Natural/Environmental,30,"4,575,013",0.66,0.72,428
+Colorado,2004,Overexertion,--,"4,575,013",--,--,--
+Colorado,2004,Drug Poisoning,518,"4,575,013",11.32,10.89,"11,735"
+Colorado,2004,Non-Drug Poisoning,96,"4,575,013",2.1,2.08,"2,065"
+Colorado,2004,Struck by / against,16**,"4,575,013",0.35**,0.36**,269
+Colorado,2004,Suffocation,282,"4,575,013",6.16,6.45,"6,680"
+Colorado,2004,"Motor vehicle, traffic",684,"4,575,013",14.95,14.97,"18,549"
+Colorado,2004,"Pedal cyclist, other",--,"4,575,013",--,--,--
+Colorado,2004,"Pedestrian, other",15**,"4,575,013",0.33**,0.35**,266
+Colorado,2004,"Transport, other land",23,"4,575,013",0.5,0.49,618
+Colorado,2004,"Transport, other (excl. drown by water transp)",27,"4,575,013",0.59,0.59,537
+Colorado,2004,Other specified and classifiable,26,"4,575,013",0.57,0.56,782
+Colorado,2004,Other specified / NEC,31,"4,575,013",0.68,0.7,521
+Colorado,2004,Unspecified,127,"4,575,013",2.78,3.28,"1,370"
+Colorado,2003,Cut/Pierce,49,"4,528,732",1.08,1.04,"1,334"
+Colorado,2003,Drowning (includes water transport),53,"4,528,732",1.17,1.16,"1,651"
+Colorado,2003,Fall,354,"4,528,732",7.82,9.5,"2,170"
+Colorado,2003,Fire/Flame,23,"4,528,732",0.51,0.53,509
+Colorado,2003,Firearm,501,"4,528,732",11.06,11.13,"11,521"
+Colorado,2003,Machinery,--,"4,528,732",--,--,--
+Colorado,2003,Natural/Environmental,28,"4,528,732",0.62,0.62,622
+Colorado,2003,Drug Poisoning,502,"4,528,732",11.09,10.7,"11,556"
+Colorado,2003,Non-Drug Poisoning,90,"4,528,732",1.99,1.95,"1,927"
+Colorado,2003,Struck by / against,15**,"4,528,732",0.33**,0.32**,308
+Colorado,2003,Suffocation,260,"4,528,732",5.74,5.95,"6,122"
+Colorado,2003,"Motor vehicle, traffic",683,"4,528,732",15.08,15.11,"19,038"
+Colorado,2003,"Pedal cyclist, other",--,"4,528,732",--,--,--
+Colorado,2003,"Pedestrian, other",12**,"4,528,732",0.27**,0.26**,408
+Colorado,2003,"Transport, other land",29,"4,528,732",0.64,0.64,781
+Colorado,2003,"Transport, other (excl. drown by water transp)",35,"4,528,732",0.77,0.74,"1,028"
+Colorado,2003,Other specified and classifiable,35,"4,528,732",0.77,0.77,892
+Colorado,2003,Other specified / NEC,31,"4,528,732",0.69,0.74,555
+Colorado,2003,Unspecified,140,"4,528,732",3.09,3.72,"1,647"
+Colorado,2002,Cut/Pierce,32,"4,490,406",0.71,0.7,843
+Colorado,2002,Drowning (includes water transport),58,"4,490,406",1.29,1.26,"2,199"
+Colorado,2002,Fall,320,"4,490,406",7.13,8.89,"1,783"
+Colorado,2002,Fire/Flame,24,"4,490,406",0.53,0.56,349
+Colorado,2002,Hot object/Substance,--,"4,490,406",--,--,--
+Colorado,2002,Firearm,517,"4,490,406",11.51,11.47,"12,818"
+Colorado,2002,Machinery,--,"4,490,406",--,--,--
+Colorado,2002,Natural/Environmental,27,"4,490,406",0.6,0.62,486
+Colorado,2002,Drug Poisoning,448,"4,490,406",9.98,9.7,"10,315"
+Colorado,2002,Non-Drug Poisoning,104,"4,490,406",2.32,2.33,"1,988"
+Colorado,2002,Struck by / against,17**,"4,490,406",0.38**,0.37**,551
+Colorado,2002,Suffocation,243,"4,490,406",5.41,5.67,"5,934"
+Colorado,2002,"Motor vehicle, traffic",763,"4,490,406",16.99,16.98,"21,330"
+Colorado,2002,"Pedal cyclist, other",--,"4,490,406",--,--,--
+Colorado,2002,"Pedestrian, other",17**,"4,490,406",0.38**,0.39**,332
+Colorado,2002,"Transport, other land",21,"4,490,406",0.47,0.49,458
+Colorado,2002,"Transport, other (excl. drown by water transp)",27,"4,490,406",0.6,0.62,370
+Colorado,2002,Other specified and classifiable,25,"4,490,406",0.56,0.56,548
+Colorado,2002,Other specified / NEC,37,"4,490,406",0.82,0.92,480
+Colorado,2002,Unspecified,137,"4,490,406",3.05,3.75,"1,347"
+Colorado,2001,Cut/Pierce,37,"4,425,687",0.84,0.83,981
+Colorado,2001,Drowning (includes water transport),41,"4,425,687",0.93,0.91,"1,375"
+Colorado,2001,Fall,289,"4,425,687",6.53,8.2,"1,561"
+Colorado,2001,Fire/Flame,23,"4,425,687",0.52,0.56,452
+Colorado,2001,Firearm,510,"4,425,687",11.52,11.68,"12,022"
+Colorado,2001,Machinery,--,"4,425,687",--,--,--
+Colorado,2001,Natural/Environmental,29,"4,425,687",0.66,0.7,478
+Colorado,2001,Drug Poisoning,411,"4,425,687",9.29,8.97,"9,491"
+Colorado,2001,Non-Drug Poisoning,108,"4,425,687",2.44,2.45,"2,134"
+Colorado,2001,Struck by / against,19**,"4,425,687",0.43**,0.44**,405
+Colorado,2001,Suffocation,218,"4,425,687",4.93,5.1,"5,799"
+Colorado,2001,"Motor vehicle, traffic",744,"4,425,687",16.81,16.82,"21,382"
+Colorado,2001,"Pedal cyclist, other",--,"4,425,687",--,--,--
+Colorado,2001,"Pedestrian, other",17**,"4,425,687",0.38**,0.40**,414
+Colorado,2001,"Transport, other land",20**,"4,425,687",0.45**,0.48**,505
+Colorado,2001,"Transport, other (excl. drown by water transp)",19**,"4,425,687",0.43**,0.43**,457
+Colorado,2001,Other specified and classifiable,37,"4,425,687",0.84,0.8,"1,131"
+Colorado,2001,Other specified / NEC,40,"4,425,687",0.9,0.99,664
+Colorado,2001,Unspecified,152,"4,425,687",3.43,4.24,"1,474"
+Total,,,"79,199","107,673,843",73.55,74.01,"1,492,533"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Colorado,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

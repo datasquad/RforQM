@@ -1,0 +1,444 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Georgia,2021,Cut/Pierce,81,"10,799,566",0.75,0.76,"1,890"
+Georgia,2021,Drowning (includes water transport),174,"10,799,566",1.61,1.62,"4,814"
+Georgia,2021,Fall,936,"10,799,566",8.67,8.8,"2,121"
+Georgia,2021,Fire/Flame,131,"10,799,566",1.21,1.17,"1,940"
+Georgia,2021,Hot object/Substance,--,"10,799,566",--,--,--
+Georgia,2021,Firearm,"2,200","10,799,566",20.37,20.29,"58,398"
+Georgia,2021,Machinery,20**,"10,799,566",0.19**,0.17**,262
+Georgia,2021,Natural/Environmental,43,"10,799,566",0.4,0.36,430
+Georgia,2021,Overexertion,--,"10,799,566",--,--,--
+Georgia,2021,Drug Poisoning,"2,500","10,799,566",23.15,23.54,"59,113"
+Georgia,2021,Non-Drug Poisoning,135,"10,799,566",1.25,1.23,"2,678"
+Georgia,2021,Struck by / against,60,"10,799,566",0.56,0.53,"1,079"
+Georgia,2021,Suffocation,584,"10,799,566",5.41,5.5,"13,836"
+Georgia,2021,"Motor vehicle, traffic","1,922","10,799,566",17.8,17.5,"44,079"
+Georgia,2021,"Pedal cyclist, other",--,"10,799,566",--,--,--
+Georgia,2021,"Pedestrian, other",39,"10,799,566",0.36,0.35,759
+Georgia,2021,"Transport, other land",54,"10,799,566",0.5,0.48,"1,233"
+Georgia,2021,"Transport, other (excl. drown by water transp)",21,"10,799,566",0.19,0.2,462
+Georgia,2021,Other specified and classifiable,69,"10,799,566",0.64,0.61,"1,594"
+Georgia,2021,Other specified / NEC,51,"10,799,566",0.47,0.46,889
+Georgia,2021,Unspecified,325,"10,799,566",3.01,3,"3,144"
+Georgia,2020,Cut/Pierce,99,"10,725,800",0.92,0.9,"2,208"
+Georgia,2020,Drowning (includes water transport),162,"10,725,800",1.51,1.5,"4,566"
+Georgia,2020,Fall,916,"10,725,800",8.54,8.88,"2,815"
+Georgia,2020,Fire/Flame,123,"10,725,800",1.15,1.09,"1,841"
+Georgia,2020,Hot object/Substance,--,"10,725,800",--,--,--
+Georgia,2020,Firearm,"1,897","10,725,800",17.69,17.73,"50,390"
+Georgia,2020,Machinery,24,"10,725,800",0.22,0.21,469
+Georgia,2020,Natural/Environmental,65,"10,725,800",0.61,0.54,821
+Georgia,2020,Drug Poisoning,"1,916","10,725,800",17.86,17.98,"43,011"
+Georgia,2020,Non-Drug Poisoning,144,"10,725,800",1.34,1.31,"2,926"
+Georgia,2020,Struck by / against,51,"10,725,800",0.48,0.44,852
+Georgia,2020,Suffocation,568,"10,725,800",5.3,5.47,"14,018"
+Georgia,2020,"Motor vehicle, traffic","1,736","10,725,800",16.19,15.81,"38,856"
+Georgia,2020,"Pedal cyclist, other",--,"10,725,800",--,--,--
+Georgia,2020,"Pedestrian, other",47,"10,725,800",0.44,0.44,"1,168"
+Georgia,2020,"Transport, other land",44,"10,725,800",0.41,0.41,"1,101"
+Georgia,2020,"Transport, other (excl. drown by water transp)",14**,"10,725,800",0.13**,0.12**,305
+Georgia,2020,Other specified and classifiable,55,"10,725,800",0.51,0.51,"1,290"
+Georgia,2020,Other specified / NEC,75,"10,725,800",0.7,0.72,"1,831"
+Georgia,2020,Unspecified,282,"10,725,800",2.63,2.66,"2,964"
+Georgia,2019,Cut/Pierce,77,"10,628,020",0.72,0.72,"1,704"
+Georgia,2019,Drowning (includes water transport),159,"10,628,020",1.5,1.47,"4,529"
+Georgia,2019,Fall,831,"10,628,020",7.82,7.78,"2,154"
+Georgia,2019,Fire/Flame,112,"10,628,020",1.05,0.96,"1,144"
+Georgia,2019,Hot object/Substance,--,"10,628,020",--,--,--
+Georgia,2019,Firearm,"1,695","10,628,020",15.95,15.76,"41,802"
+Georgia,2019,Machinery,23,"10,628,020",0.22,0.2,256
+Georgia,2019,Natural/Environmental,53,"10,628,020",0.5,0.48,804
+Georgia,2019,Overexertion,--,"10,628,020",--,--,--
+Georgia,2019,Drug Poisoning,"1,408","10,628,020",13.25,13.07,"29,323"
+Georgia,2019,Non-Drug Poisoning,122,"10,628,020",1.15,1.14,"2,423"
+Georgia,2019,Struck by / against,39,"10,628,020",0.37,0.35,662
+Georgia,2019,Suffocation,647,"10,628,020",6.09,6.14,"14,865"
+Georgia,2019,"Motor vehicle, traffic","1,492","10,628,020",14.04,13.66,"33,200"
+Georgia,2019,"Pedal cyclist, other",--,"10,628,020",--,--,--
+Georgia,2019,"Pedestrian, other",30,"10,628,020",0.28,0.27,497
+Georgia,2019,"Transport, other land",51,"10,628,020",0.48,0.46,969
+Georgia,2019,"Transport, other (excl. drown by water transp)",14**,"10,628,020",0.13**,0.12**,217
+Georgia,2019,Other specified and classifiable,63,"10,628,020",0.59,0.62,"1,504"
+Georgia,2019,Other specified / NEC,60,"10,628,020",0.57,0.54,"1,119"
+Georgia,2019,Unspecified,229,"10,628,020",2.16,2.11,"2,364"
+Georgia,2018,Cut/Pierce,76,"10,519,389",0.72,0.73,"1,718"
+Georgia,2018,Drowning (includes water transport),151,"10,519,389",1.44,1.42,"4,173"
+Georgia,2018,Fall,744,"10,519,389",7.07,7.34,"2,380"
+Georgia,2018,Fire/Flame,125,"10,519,389",1.19,1.14,"1,578"
+Georgia,2018,Firearm,"1,680","10,519,389",15.97,15.73,"40,829"
+Georgia,2018,Machinery,15**,"10,519,389",0.14**,0.13**,190
+Georgia,2018,Natural/Environmental,54,"10,519,389",0.51,0.48,628
+Georgia,2018,Overexertion,--,"10,519,389",--,--,--
+Georgia,2018,Drug Poisoning,"1,404","10,519,389",13.35,13.24,"29,924"
+Georgia,2018,Non-Drug Poisoning,109,"10,519,389",1.04,1.01,"2,129"
+Georgia,2018,Struck by / against,22,"10,519,389",0.21,0.2,425
+Georgia,2018,Suffocation,581,"10,519,389",5.52,5.61,"13,753"
+Georgia,2018,"Motor vehicle, traffic","1,474","10,519,389",14.01,13.66,"33,886"
+Georgia,2018,"Pedal cyclist, other",13**,"10,519,389",0.12**,0.12**,218
+Georgia,2018,"Pedestrian, other",45,"10,519,389",0.43,0.42,"1,142"
+Georgia,2018,"Transport, other land",37,"10,519,389",0.35,0.35,796
+Georgia,2018,"Transport, other (excl. drown by water transp)",16**,"10,519,389",0.15**,0.14**,219
+Georgia,2018,Other specified and classifiable,53,"10,519,389",0.5,0.5,"1,104"
+Georgia,2018,Other specified / NEC,41,"10,519,389",0.39,0.38,567
+Georgia,2018,Unspecified,262,"10,519,389",2.49,2.51,"3,261"
+Georgia,2017,Cut/Pierce,80,"10,417,031",0.77,0.72,"1,495"
+Georgia,2017,Drowning (includes water transport),162,"10,417,031",1.56,1.57,"4,819"
+Georgia,2017,Fall,740,"10,417,031",7.1,7.45,"2,377"
+Georgia,2017,Fire/Flame,129,"10,417,031",1.24,1.21,"1,735"
+Georgia,2017,Firearm,"1,623","10,417,031",15.58,15.38,"40,990"
+Georgia,2017,Machinery,23,"10,417,031",0.22,0.21,224
+Georgia,2017,Natural/Environmental,62,"10,417,031",0.6,0.57,757
+Georgia,2017,Overexertion,--,"10,417,031",--,--,--
+Georgia,2017,Drug Poisoning,"1,537","10,417,031",14.76,14.73,"35,246"
+Georgia,2017,Non-Drug Poisoning,127,"10,417,031",1.22,1.19,"2,590"
+Georgia,2017,Struck by / against,34,"10,417,031",0.33,0.31,569
+Georgia,2017,Suffocation,563,"10,417,031",5.41,5.46,"12,900"
+Georgia,2017,"Motor vehicle, traffic","1,512","10,417,031",14.52,14.18,"34,432"
+Georgia,2017,"Pedal cyclist, other",--,"10,417,031",--,--,--
+Georgia,2017,"Pedestrian, other",33,"10,417,031",0.32,0.32,835
+Georgia,2017,"Transport, other land",48,"10,417,031",0.46,0.45,"1,465"
+Georgia,2017,"Transport, other (excl. drown by water transp)",18**,"10,417,031",0.17**,0.19**,436
+Georgia,2017,Other specified and classifiable,56,"10,417,031",0.54,0.53,"1,329"
+Georgia,2017,Other specified / NEC,50,"10,417,031",0.48,0.49,717
+Georgia,2017,Unspecified,278,"10,417,031",2.67,2.77,"3,222"
+Georgia,2016,Cut/Pierce,87,"10,308,442",0.84,0.83,"2,114"
+Georgia,2016,Drowning (includes water transport),176,"10,308,442",1.71,1.7,"5,220"
+Georgia,2016,Fall,828,"10,308,442",8.03,8.58,"2,675"
+Georgia,2016,Fire/Flame,150,"10,308,442",1.46,1.4,"2,477"
+Georgia,2016,Hot object/Substance,--,"10,308,442",--,--,--
+Georgia,2016,Firearm,"1,571","10,308,442",15.24,14.93,"39,977"
+Georgia,2016,Machinery,14**,"10,308,442",0.14**,0.13**,131
+Georgia,2016,Natural/Environmental,42,"10,308,442",0.41,0.41,703
+Georgia,2016,Drug Poisoning,"1,394","10,308,442",13.52,13.28,"30,299"
+Georgia,2016,Non-Drug Poisoning,133,"10,308,442",1.29,1.27,"2,594"
+Georgia,2016,Struck by / against,37,"10,308,442",0.36,0.34,707
+Georgia,2016,Suffocation,541,"10,308,442",5.25,5.38,"12,559"
+Georgia,2016,"Motor vehicle, traffic","1,573","10,308,442",15.26,14.93,"37,041"
+Georgia,2016,"Pedal cyclist, other",--,"10,308,442",--,--,--
+Georgia,2016,"Pedestrian, other",35,"10,308,442",0.34,0.34,846
+Georgia,2016,"Transport, other land",46,"10,308,442",0.45,0.46,"1,187"
+Georgia,2016,"Transport, other (excl. drown by water transp)",13**,"10,308,442",0.13**,0.13**,299
+Georgia,2016,Other specified and classifiable,65,"10,308,442",0.63,0.6,"1,498"
+Georgia,2016,Other specified / NEC,57,"10,308,442",0.55,0.54,992
+Georgia,2016,Unspecified,248,"10,308,442",2.41,2.53,"2,285"
+Georgia,2015,Cut/Pierce,68,"10,183,353",0.67,0.66,"1,487"
+Georgia,2015,Drowning (includes water transport),155,"10,183,353",1.52,1.5,"4,612"
+Georgia,2015,Fall,755,"10,183,353",7.41,8.1,"2,506"
+Georgia,2015,Fire/Flame,126,"10,183,353",1.24,1.2,"1,353"
+Georgia,2015,Hot object/Substance,--,"10,183,353",--,--,--
+Georgia,2015,Firearm,"1,448","10,183,353",14.22,14.12,"36,142"
+Georgia,2015,Machinery,21,"10,183,353",0.21,0.21,300
+Georgia,2015,Natural/Environmental,36,"10,183,353",0.35,0.36,379
+Georgia,2015,Overexertion,--,"10,183,353",--,--,--
+Georgia,2015,Drug Poisoning,"1,302","10,183,353",12.79,12.71,"29,887"
+Georgia,2015,Non-Drug Poisoning,116,"10,183,353",1.14,1.1,"2,219"
+Georgia,2015,Struck by / against,33,"10,183,353",0.32,0.32,709
+Georgia,2015,Suffocation,535,"10,183,353",5.25,5.34,"12,338"
+Georgia,2015,"Motor vehicle, traffic","1,407","10,183,353",13.82,13.68,"33,604"
+Georgia,2015,"Pedal cyclist, other",--,"10,183,353",--,--,--
+Georgia,2015,"Pedestrian, other",43,"10,183,353",0.42,0.43,934
+Georgia,2015,"Transport, other land",40,"10,183,353",0.39,0.42,802
+Georgia,2015,"Transport, other (excl. drown by water transp)",12**,"10,183,353",0.12**,0.11**,345
+Georgia,2015,Other specified and classifiable,70,"10,183,353",0.69,0.69,"1,957"
+Georgia,2015,Other specified / NEC,42,"10,183,353",0.41,0.41,807
+Georgia,2015,Unspecified,260,"10,183,353",2.55,2.69,"2,715"
+Georgia,2014,Cut/Pierce,81,"10,071,204",0.8,0.79,"1,589"
+Georgia,2014,Drowning (includes water transport),145,"10,071,204",1.44,1.44,"4,862"
+Georgia,2014,Fall,726,"10,071,204",7.21,8,"2,211"
+Georgia,2014,Fire/Flame,126,"10,071,204",1.25,1.24,"1,994"
+Georgia,2014,Hot object/Substance,--,"10,071,204",--,--,--
+Georgia,2014,Firearm,"1,391","10,071,204",13.81,13.67,"33,019"
+Georgia,2014,Machinery,22,"10,071,204",0.22,0.21,283
+Georgia,2014,Natural/Environmental,54,"10,071,204",0.54,0.5,506
+Georgia,2014,Drug Poisoning,"1,206","10,071,204",11.98,11.87,"27,019"
+Georgia,2014,Non-Drug Poisoning,94,"10,071,204",0.93,0.92,"1,780"
+Georgia,2014,Struck by / against,30,"10,071,204",0.3,0.3,534
+Georgia,2014,Suffocation,479,"10,071,204",4.76,4.91,"10,941"
+Georgia,2014,"Motor vehicle, traffic","1,230","10,071,204",12.21,12.1,"28,889"
+Georgia,2014,"Pedal cyclist, other",--,"10,071,204",--,--,--
+Georgia,2014,"Pedestrian, other",32,"10,071,204",0.32,0.31,741
+Georgia,2014,"Transport, other land",51,"10,071,204",0.51,0.52,"1,015"
+Georgia,2014,"Transport, other (excl. drown by water transp)",18**,"10,071,204",0.18**,0.17**,349
+Georgia,2014,Other specified and classifiable,43,"10,071,204",0.43,0.42,"1,286"
+Georgia,2014,Other specified / NEC,51,"10,071,204",0.51,0.51,653
+Georgia,2014,Unspecified,215,"10,071,204",2.14,2.3,"2,553"
+Georgia,2013,Cut/Pierce,67,"9,975,592",0.67,0.64,"1,389"
+Georgia,2013,Drowning (includes water transport),115,"9,975,592",1.15,1.14,"3,714"
+Georgia,2013,Fall,673,"9,975,592",6.75,7.66,"2,529"
+Georgia,2013,Fire/Flame,142,"9,975,592",1.42,1.41,"2,755"
+Georgia,2013,Hot object/Substance,--,"9,975,592",--,--,--
+Georgia,2013,Firearm,"1,262","9,975,592",12.65,12.58,"29,628"
+Georgia,2013,Machinery,13**,"9,975,592",0.13**,0.13**,210
+Georgia,2013,Natural/Environmental,29,"9,975,592",0.29,0.3,378
+Georgia,2013,Drug Poisoning,"1,098","9,975,592",11.01,10.78,"22,902"
+Georgia,2013,Non-Drug Poisoning,103,"9,975,592",1.03,1.03,"1,953"
+Georgia,2013,Struck by / against,34,"9,975,592",0.34,0.35,669
+Georgia,2013,Suffocation,464,"9,975,592",4.65,4.76,"10,562"
+Georgia,2013,"Motor vehicle, traffic","1,222","9,975,592",12.25,12.2,"29,256"
+Georgia,2013,"Pedal cyclist, other",10**,"9,975,592",0.10**,0.10**,213
+Georgia,2013,"Pedestrian, other",34,"9,975,592",0.34,0.35,"1,091"
+Georgia,2013,"Transport, other land",44,"9,975,592",0.44,0.43,972
+Georgia,2013,"Transport, other (excl. drown by water transp)",13**,"9,975,592",0.13**,0.11**,237
+Georgia,2013,Other specified and classifiable,54,"9,975,592",0.54,0.52,"1,433"
+Georgia,2013,Other specified / NEC,71,"9,975,592",0.71,0.69,"1,119"
+Georgia,2013,Unspecified,209,"9,975,592",2.1,2.25,"3,177"
+Georgia,2012,Cut/Pierce,89,"9,903,580",0.9,0.89,"2,292"
+Georgia,2012,Drowning (includes water transport),126,"9,903,580",1.27,1.28,"3,657"
+Georgia,2012,Fall,673,"9,903,580",6.8,7.92,"2,123"
+Georgia,2012,Fire/Flame,95,"9,903,580",0.96,0.98,"1,407"
+Georgia,2012,Hot object/Substance,--,"9,903,580",--,--,--
+Georgia,2012,Firearm,"1,286","9,903,580",12.99,12.79,"29,984"
+Georgia,2012,Machinery,23,"9,903,580",0.23,0.23,338
+Georgia,2012,Natural/Environmental,35,"9,903,580",0.35,0.35,407
+Georgia,2012,Drug Poisoning,"1,056","9,903,580",10.66,10.56,"23,118"
+Georgia,2012,Non-Drug Poisoning,110,"9,903,580",1.11,1.07,"2,223"
+Georgia,2012,Struck by / against,31,"9,903,580",0.31,0.32,458
+Georgia,2012,Suffocation,421,"9,903,580",4.25,4.36,"10,182"
+Georgia,2012,"Motor vehicle, traffic","1,243","9,903,580",12.55,12.53,"28,961"
+Georgia,2012,"Pedal cyclist, other",--,"9,903,580",--,--,--
+Georgia,2012,"Pedestrian, other",34,"9,903,580",0.34,0.35,840
+Georgia,2012,"Transport, other land",56,"9,903,580",0.57,0.58,"1,216"
+Georgia,2012,"Transport, other (excl. drown by water transp)",19**,"9,903,580",0.19**,0.19**,321
+Georgia,2012,Other specified and classifiable,49,"9,903,580",0.5,0.49,"1,083"
+Georgia,2012,Other specified / NEC,63,"9,903,580",0.64,0.66,"1,131"
+Georgia,2012,Unspecified,220,"9,903,580",2.22,2.39,"2,508"
+Georgia,2011,Cut/Pierce,85,"9,803,630",0.87,0.86,"2,245"
+Georgia,2011,Drowning (includes water transport),141,"9,803,630",1.44,1.43,"4,265"
+Georgia,2011,Fall,688,"9,803,630",7.02,8.33,"2,371"
+Georgia,2011,Fire/Flame,127,"9,803,630",1.3,1.31,"2,139"
+Georgia,2011,Hot object/Substance,--,"9,803,630",--,--,--
+Georgia,2011,Firearm,"1,232","9,803,630",12.57,12.54,"28,973"
+Georgia,2011,Machinery,20**,"9,803,630",0.20**,0.21**,414
+Georgia,2011,Natural/Environmental,49,"9,803,630",0.5,0.51,841
+Georgia,2011,Drug Poisoning,"1,058","9,803,630",10.79,10.66,"23,661"
+Georgia,2011,Non-Drug Poisoning,119,"9,803,630",1.21,1.18,"2,364"
+Georgia,2011,Struck by / against,37,"9,803,630",0.38,0.4,829
+Georgia,2011,Suffocation,427,"9,803,630",4.36,4.51,"9,437"
+Georgia,2011,"Motor vehicle, traffic","1,243","9,803,630",12.68,12.67,"29,325"
+Georgia,2011,"Pedal cyclist, other",--,"9,803,630",--,--,--
+Georgia,2011,"Pedestrian, other",34,"9,803,630",0.35,0.34,831
+Georgia,2011,"Transport, other land",37,"9,803,630",0.38,0.39,602
+Georgia,2011,"Transport, other (excl. drown by water transp)",19**,"9,803,630",0.19**,0.19**,353
+Georgia,2011,Other specified and classifiable,57,"9,803,630",0.58,0.57,"1,439"
+Georgia,2011,Other specified / NEC,47,"9,803,630",0.48,0.51,683
+Georgia,2011,Unspecified,228,"9,803,630",2.33,2.51,"3,350"
+Georgia,2010,Cut/Pierce,85,"9,688,737",0.88,0.85,"2,014"
+Georgia,2010,Drowning (includes water transport),164,"9,688,737",1.69,1.69,"4,954"
+Georgia,2010,Fall,631,"9,688,737",6.51,7.91,"2,422"
+Georgia,2010,Fire/Flame,116,"9,688,737",1.2,1.27,"1,609"
+Georgia,2010,Hot object/Substance,--,"9,688,737",--,--,--
+Georgia,2010,Firearm,"1,223","9,688,737",12.62,12.61,"29,362"
+Georgia,2010,Machinery,16**,"9,688,737",0.17**,0.17**,327
+Georgia,2010,Natural/Environmental,49,"9,688,737",0.51,0.55,497
+Georgia,2010,Overexertion,--,"9,688,737",--,--,--
+Georgia,2010,Drug Poisoning,"1,054","9,688,737",10.88,10.72,"23,810"
+Georgia,2010,Non-Drug Poisoning,135,"9,688,737",1.39,1.4,"2,341"
+Georgia,2010,Struck by / against,30,"9,688,737",0.31,0.31,477
+Georgia,2010,Suffocation,435,"9,688,737",4.49,4.76,"9,453"
+Georgia,2010,"Motor vehicle, traffic","1,261","9,688,737",13.02,13.12,"30,047"
+Georgia,2010,"Pedal cyclist, other",--,"9,688,737",--,--,--
+Georgia,2010,"Pedestrian, other",46,"9,688,737",0.48,0.49,"1,397"
+Georgia,2010,"Transport, other land",48,"9,688,737",0.5,0.53,974
+Georgia,2010,"Transport, other (excl. drown by water transp)",16**,"9,688,737",0.17**,0.16**,308
+Georgia,2010,Other specified and classifiable,79,"9,688,737",0.82,0.8,"1,988"
+Georgia,2010,Other specified / NEC,51,"9,688,737",0.53,0.54,914
+Georgia,2010,Unspecified,178,"9,688,737",1.84,2.03,"2,940"
+Georgia,2009,Cut/Pierce,66,"9,620,846",0.69,0.72,"1,536"
+Georgia,2009,Drowning (includes water transport),134,"9,620,846",1.39,1.4,"3,972"
+Georgia,2009,Fall,694,"9,620,846",7.21,8.94,"2,003"
+Georgia,2009,Fire/Flame,129,"9,620,846",1.34,1.43,"2,402"
+Georgia,2009,Hot object/Substance,--,"9,620,846",--,--,--
+Georgia,2009,Firearm,"1,247","9,620,846",12.96,13.06,"29,023"
+Georgia,2009,Machinery,16**,"9,620,846",0.17**,0.17**,150
+Georgia,2009,Natural/Environmental,37,"9,620,846",0.39,0.42,534
+Georgia,2009,Drug Poisoning,"1,007","9,620,846",10.47,10.34,"22,753"
+Georgia,2009,Non-Drug Poisoning,123,"9,620,846",1.28,1.28,"2,341"
+Georgia,2009,Struck by / against,30,"9,620,846",0.31,0.31,792
+Georgia,2009,Suffocation,429,"9,620,846",4.46,4.65,"10,012"
+Georgia,2009,"Motor vehicle, traffic","1,311","9,620,846",13.63,13.7,"30,626"
+Georgia,2009,"Pedal cyclist, other",--,"9,620,846",--,--,--
+Georgia,2009,"Pedestrian, other",38,"9,620,846",0.4,0.39,"1,220"
+Georgia,2009,"Transport, other land",32,"9,620,846",0.33,0.37,494
+Georgia,2009,"Transport, other (excl. drown by water transp)",20**,"9,620,846",0.21**,0.19**,347
+Georgia,2009,Other specified and classifiable,59,"9,620,846",0.61,0.61,"1,522"
+Georgia,2009,Other specified / NEC,60,"9,620,846",0.62,0.67,"1,103"
+Georgia,2009,Unspecified,254,"9,620,846",2.64,3,"3,132"
+Georgia,2008,Cut/Pierce,89,"9,504,843",0.94,0.94,"2,176"
+Georgia,2008,Drowning (includes water transport),156,"9,504,843",1.64,1.65,"4,892"
+Georgia,2008,Fall,622,"9,504,843",6.54,8.13,"2,485"
+Georgia,2008,Fire/Flame,102,"9,504,843",1.07,1.13,"1,815"
+Georgia,2008,Hot object/Substance,--,"9,504,843",--,--,--
+Georgia,2008,Firearm,"1,177","9,504,843",12.38,12.43,"29,507"
+Georgia,2008,Machinery,17**,"9,504,843",0.18**,0.19**,313
+Georgia,2008,Natural/Environmental,32,"9,504,843",0.34,0.36,519
+Georgia,2008,Drug Poisoning,935,"9,504,843",9.84,9.72,"21,788"
+Georgia,2008,Non-Drug Poisoning,114,"9,504,843",1.2,1.17,"2,318"
+Georgia,2008,Struck by / against,45,"9,504,843",0.47,0.47,"1,014"
+Georgia,2008,Suffocation,389,"9,504,843",4.09,4.34,"9,257"
+Georgia,2008,"Motor vehicle, traffic","1,459","9,504,843",15.35,15.49,"36,504"
+Georgia,2008,"Pedal cyclist, other",--,"9,504,843",--,--,--
+Georgia,2008,"Pedestrian, other",37,"9,504,843",0.39,0.39,"1,106"
+Georgia,2008,"Transport, other land",37,"9,504,843",0.39,0.41,"1,038"
+Georgia,2008,"Transport, other (excl. drown by water transp)",18**,"9,504,843",0.19**,0.19**,312
+Georgia,2008,Other specified and classifiable,63,"9,504,843",0.66,0.66,"1,551"
+Georgia,2008,Other specified / NEC,56,"9,504,843",0.59,0.63,920
+Georgia,2008,Unspecified,223,"9,504,843",2.35,2.68,"3,143"
+Georgia,2007,Cut/Pierce,87,"9,349,988",0.93,0.93,"2,380"
+Georgia,2007,Drowning (includes water transport),157,"9,349,988",1.68,1.67,"5,269"
+Georgia,2007,Fall,611,"9,349,988",6.54,8.24,"2,473"
+Georgia,2007,Fire/Flame,139,"9,349,988",1.49,1.6,"2,293"
+Georgia,2007,Hot object/Substance,--,"9,349,988",--,--,--
+Georgia,2007,Firearm,"1,244","9,349,988",13.31,13.41,"31,401"
+Georgia,2007,Machinery,24,"9,349,988",0.26,0.27,538
+Georgia,2007,Natural/Environmental,42,"9,349,988",0.45,0.46,951
+Georgia,2007,Overexertion,--,"9,349,988",--,--,--
+Georgia,2007,Drug Poisoning,923,"9,349,988",9.87,9.69,"21,780"
+Georgia,2007,Non-Drug Poisoning,114,"9,349,988",1.22,1.22,"2,379"
+Georgia,2007,Struck by / against,47,"9,349,988",0.5,0.53,949
+Georgia,2007,Suffocation,384,"9,349,988",4.11,4.4,"9,025"
+Georgia,2007,"Motor vehicle, traffic","1,683","9,349,988",18,18.07,"45,175"
+Georgia,2007,"Pedal cyclist, other",--,"9,349,988",--,--,--
+Georgia,2007,"Pedestrian, other",42,"9,349,988",0.45,0.45,"1,282"
+Georgia,2007,"Transport, other land",45,"9,349,988",0.48,0.5,"1,202"
+Georgia,2007,"Transport, other (excl. drown by water transp)",26,"9,349,988",0.28,0.28,577
+Georgia,2007,Other specified and classifiable,61,"9,349,988",0.65,0.62,"1,764"
+Georgia,2007,Other specified / NEC,72,"9,349,988",0.77,0.82,"1,148"
+Georgia,2007,Unspecified,178,"9,349,988",1.9,2.17,"2,676"
+Georgia,2006,Cut/Pierce,100,"9,155,813",1.09,1.1,"2,239"
+Georgia,2006,Drowning (includes water transport),134,"9,155,813",1.46,1.47,"4,313"
+Georgia,2006,Fall,601,"9,155,813",6.56,8.34,"2,327"
+Georgia,2006,Fire/Flame,139,"9,155,813",1.52,1.65,"2,552"
+Georgia,2006,Hot object/Substance,--,"9,155,813",--,--,--
+Georgia,2006,Firearm,"1,144","9,155,813",12.5,12.54,"28,659"
+Georgia,2006,Machinery,35,"9,155,813",0.38,0.4,600
+Georgia,2006,Natural/Environmental,27,"9,155,813",0.3,0.32,351
+Georgia,2006,Overexertion,--,"9,155,813",--,--,--
+Georgia,2006,Drug Poisoning,830,"9,155,813",9.07,8.92,"19,437"
+Georgia,2006,Non-Drug Poisoning,61,"9,155,813",0.67,0.66,"1,227"
+Georgia,2006,Struck by / against,30,"9,155,813",0.33,0.32,737
+Georgia,2006,Suffocation,369,"9,155,813",4.03,4.29,"8,721"
+Georgia,2006,"Motor vehicle, traffic","1,686","9,155,813",18.42,18.59,"44,566"
+Georgia,2006,"Pedal cyclist, other",--,"9,155,813",--,--,--
+Georgia,2006,"Pedestrian, other",42,"9,155,813",0.46,0.46,"1,376"
+Georgia,2006,"Transport, other land",45,"9,155,813",0.49,0.5,"1,061"
+Georgia,2006,"Transport, other (excl. drown by water transp)",30,"9,155,813",0.33,0.32,707
+Georgia,2006,Other specified and classifiable,50,"9,155,813",0.55,0.55,"1,435"
+Georgia,2006,Other specified / NEC,58,"9,155,813",0.63,0.68,992
+Georgia,2006,Unspecified,202,"9,155,813",2.21,2.54,"3,145"
+Georgia,2005,Cut/Pierce,103,"8,925,922",1.15,1.15,"2,744"
+Georgia,2005,Drowning (includes water transport),141,"8,925,922",1.58,1.56,"5,009"
+Georgia,2005,Fall,564,"8,925,922",6.32,8.07,"2,548"
+Georgia,2005,Fire/Flame,134,"8,925,922",1.5,1.62,"2,783"
+Georgia,2005,Hot object/Substance,--,"8,925,922",--,--,--
+Georgia,2005,Firearm,"1,064","8,925,922",11.92,12.05,"25,809"
+Georgia,2005,Machinery,28,"8,925,922",0.31,0.32,466
+Georgia,2005,Natural/Environmental,38,"8,925,922",0.43,0.44,889
+Georgia,2005,Overexertion,--,"8,925,922",--,--,--
+Georgia,2005,Drug Poisoning,738,"8,925,922",8.27,8.15,"17,297"
+Georgia,2005,Non-Drug Poisoning,74,"8,925,922",0.83,0.84,"1,324"
+Georgia,2005,Struck by / against,31,"8,925,922",0.35,0.35,788
+Georgia,2005,Suffocation,353,"8,925,922",3.96,4.26,"8,217"
+Georgia,2005,"Motor vehicle, traffic","1,635","8,925,922",18.32,18.55,"42,599"
+Georgia,2005,"Pedal cyclist, other",--,"8,925,922",--,--,--
+Georgia,2005,"Pedestrian, other",51,"8,925,922",0.57,0.57,"1,425"
+Georgia,2005,"Transport, other land",90,"8,925,922",1.01,1.03,"2,637"
+Georgia,2005,"Transport, other (excl. drown by water transp)",18**,"8,925,922",0.20**,0.20**,406
+Georgia,2005,Other specified and classifiable,81,"8,925,922",0.91,0.93,"1,902"
+Georgia,2005,Other specified / NEC,81,"8,925,922",0.91,1.02,"1,379"
+Georgia,2005,Unspecified,197,"8,925,922",2.21,2.58,"2,650"
+Georgia,2004,Cut/Pierce,102,"8,769,252",1.16,1.17,"2,552"
+Georgia,2004,Drowning (includes water transport),143,"8,769,252",1.63,1.62,"4,881"
+Georgia,2004,Fall,581,"8,769,252",6.63,8.5,"2,916"
+Georgia,2004,Fire/Flame,151,"8,769,252",1.72,1.82,"3,657"
+Georgia,2004,Hot object/Substance,--,"8,769,252",--,--,--
+Georgia,2004,Firearm,"1,062","8,769,252",12.11,12.16,"26,495"
+Georgia,2004,Machinery,24,"8,769,252",0.27,0.29,347
+Georgia,2004,Natural/Environmental,30,"8,769,252",0.34,0.35,711
+Georgia,2004,Drug Poisoning,666,"8,769,252",7.6,7.47,"15,912"
+Georgia,2004,Non-Drug Poisoning,90,"8,769,252",1.03,1.04,"1,940"
+Georgia,2004,Struck by / against,35,"8,769,252",0.4,0.41,757
+Georgia,2004,Suffocation,381,"8,769,252",4.35,4.65,"9,617"
+Georgia,2004,"Motor vehicle, traffic","1,443","8,769,252",16.46,16.76,"37,435"
+Georgia,2004,"Pedal cyclist, other",--,"8,769,252",--,--,--
+Georgia,2004,"Pedestrian, other",65,"8,769,252",0.74,0.76,"1,596"
+Georgia,2004,"Transport, other land",147,"8,769,252",1.68,1.67,"4,576"
+Georgia,2004,"Transport, other (excl. drown by water transp)",28,"8,769,252",0.32,0.31,746
+Georgia,2004,Other specified and classifiable,111,"8,769,252",1.27,1.28,"3,031"
+Georgia,2004,Other specified / NEC,121,"8,769,252",1.38,1.58,"1,758"
+Georgia,2004,Unspecified,207,"8,769,252",2.36,2.74,"3,238"
+Georgia,2003,Cut/Pierce,103,"8,622,793",1.2,1.21,"2,575"
+Georgia,2003,Drowning (includes water transport),144,"8,622,793",1.67,1.7,"4,488"
+Georgia,2003,Fall,455,"8,622,793",5.28,6.91,"1,880"
+Georgia,2003,Fire/Flame,146,"8,622,793",1.69,1.83,"3,132"
+Georgia,2003,Hot object/Substance,--,"8,622,793",--,--,--
+Georgia,2003,Firearm,"1,173","8,622,793",13.6,13.72,"29,276"
+Georgia,2003,Machinery,23,"8,622,793",0.27,0.28,425
+Georgia,2003,Natural/Environmental,40,"8,622,793",0.46,0.51,863
+Georgia,2003,Drug Poisoning,607,"8,622,793",7.04,6.92,"14,956"
+Georgia,2003,Non-Drug Poisoning,91,"8,622,793",1.06,1.05,"1,871"
+Georgia,2003,Struck by / against,50,"8,622,793",0.58,0.6,"1,099"
+Georgia,2003,Suffocation,377,"8,622,793",4.37,4.72,"9,344"
+Georgia,2003,"Motor vehicle, traffic","1,389","8,622,793",16.11,16.35,"38,255"
+Georgia,2003,"Pedal cyclist, other",--,"8,622,793",--,--,--
+Georgia,2003,"Pedestrian, other",65,"8,622,793",0.75,0.78,"1,553"
+Georgia,2003,"Transport, other land",162,"8,622,793",1.88,1.87,"4,794"
+Georgia,2003,"Transport, other (excl. drown by water transp)",27,"8,622,793",0.31,0.32,407
+Georgia,2003,Other specified and classifiable,100,"8,622,793",1.16,1.19,"2,675"
+Georgia,2003,Other specified / NEC,181,"8,622,793",2.1,2.51,"2,044"
+Georgia,2003,Unspecified,194,"8,622,793",2.25,2.7,"2,531"
+Georgia,2002,Cut/Pierce,72,"8,508,256",0.85,0.82,"1,999"
+Georgia,2002,Drowning (includes water transport),129,"8,508,256",1.52,1.48,"4,870"
+Georgia,2002,Fall,450,"8,508,256",5.29,6.87,"2,353"
+Georgia,2002,Fire/Flame,144,"8,508,256",1.69,1.8,"3,026"
+Georgia,2002,Hot object/Substance,--,"8,508,256",--,--,--
+Georgia,2002,Firearm,"1,133","8,508,256",13.32,13.39,"29,024"
+Georgia,2002,Machinery,20**,"8,508,256",0.24**,0.28**,194
+Georgia,2002,Natural/Environmental,41,"8,508,256",0.48,0.53,620
+Georgia,2002,Drug Poisoning,563,"8,508,256",6.62,6.5,"13,762"
+Georgia,2002,Non-Drug Poisoning,83,"8,508,256",0.98,0.98,"1,748"
+Georgia,2002,Struck by / against,58,"8,508,256",0.68,0.7,"1,263"
+Georgia,2002,Suffocation,326,"8,508,256",3.83,4.11,"7,785"
+Georgia,2002,"Motor vehicle, traffic","1,487","8,508,256",17.48,17.75,"41,121"
+Georgia,2002,"Pedal cyclist, other",--,"8,508,256",--,--,--
+Georgia,2002,"Pedestrian, other",36,"8,508,256",0.42,0.42,909
+Georgia,2002,"Transport, other land",38,"8,508,256",0.45,0.47,"1,006"
+Georgia,2002,"Transport, other (excl. drown by water transp)",25,"8,508,256",0.29,0.3,503
+Georgia,2002,Other specified and classifiable,94,"8,508,256",1.11,1.11,"2,548"
+Georgia,2002,Other specified / NEC,144,"8,508,256",1.69,2.05,"1,640"
+Georgia,2002,Unspecified,170,"8,508,256",2,2.41,"2,504"
+Georgia,2001,Cut/Pierce,57,"8,377,038",0.68,0.66,"1,629"
+Georgia,2001,Drowning (includes water transport),142,"8,377,038",1.7,1.67,"4,957"
+Georgia,2001,Fall,449,"8,377,038",5.36,6.86,"2,909"
+Georgia,2001,Fire/Flame,150,"8,377,038",1.79,1.93,"3,345"
+Georgia,2001,Hot object/Substance,--,"8,377,038",--,--,--
+Georgia,2001,Firearm,"1,124","8,377,038",13.42,13.44,"29,538"
+Georgia,2001,Machinery,15**,"8,377,038",0.18**,0.19**,325
+Georgia,2001,Natural/Environmental,37,"8,377,038",0.44,0.52,558
+Georgia,2001,Drug Poisoning,511,"8,377,038",6.1,6.01,"12,288"
+Georgia,2001,Non-Drug Poisoning,80,"8,377,038",0.96,0.97,"1,867"
+Georgia,2001,Struck by / against,53,"8,377,038",0.63,0.65,"1,342"
+Georgia,2001,Suffocation,372,"8,377,038",4.44,4.83,"8,745"
+Georgia,2001,"Motor vehicle, traffic","1,594","8,377,038",19.03,19.31,"44,139"
+Georgia,2001,"Pedal cyclist, other",--,"8,377,038",--,--,--
+Georgia,2001,"Pedestrian, other",40,"8,377,038",0.48,0.48,"1,180"
+Georgia,2001,"Transport, other land",46,"8,377,038",0.55,0.59,947
+Georgia,2001,"Transport, other (excl. drown by water transp)",24,"8,377,038",0.29,0.3,481
+Georgia,2001,Other specified and classifiable,56,"8,377,038",0.67,0.67,"1,548"
+Georgia,2001,Other specified / NEC,189,"8,377,038",2.26,2.59,"3,158"
+Georgia,2001,Unspecified,174,"8,377,038",2.08,2.52,"2,331"
+Total,,,"129,812","203,859,095",63.68,64.94,"2,746,248"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Georgia,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

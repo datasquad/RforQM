@@ -1,0 +1,431 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Alabama,2021,Cut/Pierce,48,"5,039,877",0.95,1,"1,009"
+Alabama,2021,Drowning (includes water transport),82,"5,039,877",1.63,1.59,"1,924"
+Alabama,2021,Fall,321,"5,039,877",6.37,5.43,"1,382"
+Alabama,2021,Fire/Flame,113,"5,039,877",2.24,1.89,"1,208"
+Alabama,2021,Hot object/Substance,--,"5,039,877",--,--,--
+Alabama,2021,Firearm,"1,315","5,039,877",26.09,26.29,"34,236"
+Alabama,2021,Machinery,12**,"5,039,877",0.24**,0.21**,160
+Alabama,2021,Natural/Environmental,34,"5,039,877",0.68,0.56,504
+Alabama,2021,Drug Poisoning,"1,408","5,039,877",27.94,30.1,"33,079"
+Alabama,2021,Non-Drug Poisoning,79,"5,039,877",1.57,1.59,"1,500"
+Alabama,2021,Struck by / against,24,"5,039,877",0.48,0.42,371
+Alabama,2021,Suffocation,249,"5,039,877",4.94,5.02,"5,325"
+Alabama,2021,"Motor vehicle, traffic","1,035","5,039,877",20.54,20.47,"24,244"
+Alabama,2021,"Pedal cyclist, other",--,"5,039,877",--,--,--
+Alabama,2021,"Pedestrian, other",19**,"5,039,877",0.38**,0.37**,390
+Alabama,2021,"Transport, other land",22,"5,039,877",0.44,0.41,450
+Alabama,2021,"Transport, other (excl. drown by water transp)",--,"5,039,877",--,--,--
+Alabama,2021,Other specified and classifiable,29,"5,039,877",0.58,0.55,598
+Alabama,2021,Other specified / NEC,28,"5,039,877",0.56,0.56,526
+Alabama,2021,Unspecified,334,"5,039,877",6.63,5.93,"3,038"
+Alabama,2020,Cut/Pierce,49,"5,024,803",0.98,0.97,"1,120"
+Alabama,2020,Drowning (includes water transport),78,"5,024,803",1.55,1.55,"1,871"
+Alabama,2020,Fall,308,"5,024,803",6.13,5.14,917
+Alabama,2020,Fire/Flame,116,"5,024,803",2.31,2.08,"1,514"
+Alabama,2020,Hot object/Substance,--,"5,024,803",--,--,--
+Alabama,2020,Firearm,"1,141","5,024,803",22.71,23.05,"28,718"
+Alabama,2020,Machinery,15**,"5,024,803",0.30**,0.28**,212
+Alabama,2020,Natural/Environmental,43,"5,024,803",0.86,0.81,673
+Alabama,2020,Drug Poisoning,"1,029","5,024,803",20.48,21.84,"23,855"
+Alabama,2020,Non-Drug Poisoning,74,"5,024,803",1.47,1.37,"1,126"
+Alabama,2020,Struck by / against,27,"5,024,803",0.54,0.51,515
+Alabama,2020,Suffocation,290,"5,024,803",5.77,5.9,"7,108"
+Alabama,2020,"Motor vehicle, traffic",952,"5,024,803",18.95,18.81,"22,274"
+Alabama,2020,"Pedal cyclist, other",--,"5,024,803",--,--,--
+Alabama,2020,"Pedestrian, other",20**,"5,024,803",0.40**,0.38**,477
+Alabama,2020,"Transport, other land",23,"5,024,803",0.46,0.45,504
+Alabama,2020,"Transport, other (excl. drown by water transp)",10**,"5,024,803",0.20**,0.20**,206
+Alabama,2020,Other specified and classifiable,22,"5,024,803",0.44,0.47,651
+Alabama,2020,Other specified / NEC,21,"5,024,803",0.42,0.41,370
+Alabama,2020,Unspecified,290,"5,024,803",5.77,5.12,"2,368"
+Alabama,2019,Cut/Pierce,42,"4,907,965",0.86,0.87,960
+Alabama,2019,Drowning (includes water transport),98,"4,907,965",2,2.02,"2,864"
+Alabama,2019,Fall,299,"4,907,965",6.09,4.91,835
+Alabama,2019,Fire/Flame,93,"4,907,965",1.9,1.75,"1,494"
+Alabama,2019,Firearm,"1,076","4,907,965",21.92,22.15,"25,736"
+Alabama,2019,Machinery,--,"4,907,965",--,--,--
+Alabama,2019,Natural/Environmental,61,"4,907,965",1.24,1.14,985
+Alabama,2019,Overexertion,--,"4,907,965",--,--,--
+Alabama,2019,Drug Poisoning,768,"4,907,965",15.65,16.42,"17,284"
+Alabama,2019,Non-Drug Poisoning,59,"4,907,965",1.2,1.28,"1,147"
+Alabama,2019,Struck by / against,28,"4,907,965",0.57,0.51,500
+Alabama,2019,Suffocation,304,"4,907,965",6.19,6.29,"7,324"
+Alabama,2019,"Motor vehicle, traffic",981,"4,907,965",19.99,19.79,"22,487"
+Alabama,2019,"Pedal cyclist, other",--,"4,907,965",--,--,--
+Alabama,2019,"Pedestrian, other",15**,"4,907,965",0.31**,0.25**,204
+Alabama,2019,"Transport, other land",33,"4,907,965",0.67,0.65,941
+Alabama,2019,"Transport, other (excl. drown by water transp)",11**,"4,907,965",0.22**,0.22**,238
+Alabama,2019,Other specified and classifiable,33,"4,907,965",0.67,0.72,752
+Alabama,2019,Other specified / NEC,31,"4,907,965",0.63,0.59,549
+Alabama,2019,Unspecified,265,"4,907,965",5.4,4.55,"1,922"
+Alabama,2018,Cut/Pierce,54,"4,891,628",1.1,1.03,"1,038"
+Alabama,2018,Drowning (includes water transport),75,"4,891,628",1.53,1.51,"2,248"
+Alabama,2018,Fall,274,"4,891,628",5.6,4.64,989
+Alabama,2018,Fire/Flame,89,"4,891,628",1.82,1.7,"1,432"
+Alabama,2018,Hot object/Substance,--,"4,891,628",--,--,--
+Alabama,2018,Firearm,"1,064","4,891,628",21.75,21.69,"26,185"
+Alabama,2018,Machinery,12**,"4,891,628",0.25**,0.21**,174
+Alabama,2018,Natural/Environmental,38,"4,891,628",0.78,0.64,456
+Alabama,2018,Drug Poisoning,775,"4,891,628",15.84,16.6,"17,510"
+Alabama,2018,Non-Drug Poisoning,67,"4,891,628",1.37,1.33,"1,186"
+Alabama,2018,Struck by / against,15**,"4,891,628",0.31**,0.27**,199
+Alabama,2018,Suffocation,303,"4,891,628",6.19,6.34,"7,260"
+Alabama,2018,"Motor vehicle, traffic","1,030","4,891,628",21.06,20.74,"23,461"
+Alabama,2018,"Pedal cyclist, other",--,"4,891,628",--,--,--
+Alabama,2018,"Pedestrian, other",15**,"4,891,628",0.31**,0.32**,357
+Alabama,2018,"Transport, other land",32,"4,891,628",0.65,0.59,467
+Alabama,2018,"Transport, other (excl. drown by water transp)",--,"4,891,628",--,--,--
+Alabama,2018,Other specified and classifiable,22,"4,891,628",0.45,0.45,659
+Alabama,2018,Other specified / NEC,21,"4,891,628",0.43,0.39,324
+Alabama,2018,Unspecified,252,"4,891,628",5.15,4.38,"1,682"
+Alabama,2017,Cut/Pierce,39,"4,877,989",0.8,0.8,786
+Alabama,2017,Drowning (includes water transport),88,"4,877,989",1.8,1.75,"2,013"
+Alabama,2017,Fall,253,"4,877,989",5.19,4.39,"1,125"
+Alabama,2017,Fire/Flame,74,"4,877,989",1.52,1.27,868
+Alabama,2017,Hot object/Substance,--,"4,877,989",--,--,--
+Alabama,2017,Firearm,"1,124","4,877,989",23.04,22.84,"26,549"
+Alabama,2017,Machinery,15**,"4,877,989",0.31**,0.28**,200
+Alabama,2017,Natural/Environmental,35,"4,877,989",0.72,0.6,465
+Alabama,2017,Drug Poisoning,835,"4,877,989",17.12,18,"19,771"
+Alabama,2017,Non-Drug Poisoning,49,"4,877,989",1.01,1.07,"1,173"
+Alabama,2017,Struck by / against,17**,"4,877,989",0.35**,0.31**,279
+Alabama,2017,Suffocation,316,"4,877,989",6.48,6.32,"6,523"
+Alabama,2017,"Motor vehicle, traffic","1,016","4,877,989",20.83,20.49,"23,347"
+Alabama,2017,"Pedal cyclist, other",--,"4,877,989",--,--,--
+Alabama,2017,"Pedestrian, other",15**,"4,877,989",0.31**,0.30**,355
+Alabama,2017,"Transport, other land",16**,"4,877,989",0.33**,0.33**,471
+Alabama,2017,"Transport, other (excl. drown by water transp)",--,"4,877,989",--,--,--
+Alabama,2017,Other specified and classifiable,30,"4,877,989",0.62,0.64,828
+Alabama,2017,Other specified / NEC,24,"4,877,989",0.49,0.47,410
+Alabama,2017,Unspecified,262,"4,877,989",5.37,4.79,"2,251"
+Alabama,2016,Cut/Pierce,49,"4,866,824",1.01,1.02,"1,064"
+Alabama,2016,Drowning (includes water transport),89,"4,866,824",1.83,1.83,"2,294"
+Alabama,2016,Fall,252,"4,866,824",5.18,4.39,946
+Alabama,2016,Fire/Flame,103,"4,866,824",2.12,1.93,"1,609"
+Alabama,2016,Firearm,"1,046","4,866,824",21.49,21.38,"25,140"
+Alabama,2016,Machinery,19**,"4,866,824",0.39**,0.36**,231
+Alabama,2016,Natural/Environmental,29,"4,866,824",0.6,0.53,442
+Alabama,2016,Drug Poisoning,756,"4,866,824",15.53,16.19,"17,762"
+Alabama,2016,Non-Drug Poisoning,76,"4,866,824",1.56,1.51,"1,396"
+Alabama,2016,Struck by / against,18**,"4,866,824",0.37**,0.37**,306
+Alabama,2016,Suffocation,273,"4,866,824",5.61,5.49,"6,050"
+Alabama,2016,"Motor vehicle, traffic","1,129","4,866,824",23.2,23.33,"27,599"
+Alabama,2016,"Pedestrian, other",14**,"4,866,824",0.29**,0.29**,328
+Alabama,2016,"Transport, other land",28,"4,866,824",0.58,0.58,667
+Alabama,2016,"Transport, other (excl. drown by water transp)",--,"4,866,824",--,--,--
+Alabama,2016,Other specified and classifiable,19**,"4,866,824",0.39**,0.39**,450
+Alabama,2016,Other specified / NEC,13**,"4,866,824",0.27**,0.23**,108
+Alabama,2016,Unspecified,233,"4,866,824",4.79,4.35,"1,871"
+Alabama,2015,Cut/Pierce,41,"4,854,803",0.85,0.86,823
+Alabama,2015,Drowning (includes water transport),90,"4,854,803",1.85,1.8,"2,356"
+Alabama,2015,Fall,265,"4,854,803",5.46,4.81,"1,019"
+Alabama,2015,Fire/Flame,92,"4,854,803",1.9,1.74,"1,330"
+Alabama,2015,Hot object/Substance,--,"4,854,803",--,--,--
+Alabama,2015,Firearm,958,"4,854,803",19.73,19.6,"22,293"
+Alabama,2015,Machinery,18**,"4,854,803",0.37**,0.31**,155
+Alabama,2015,Natural/Environmental,25,"4,854,803",0.52,0.47,222
+Alabama,2015,Drug Poisoning,736,"4,854,803",15.16,15.7,"16,715"
+Alabama,2015,Non-Drug Poisoning,71,"4,854,803",1.46,1.43,"1,360"
+Alabama,2015,Struck by / against,17**,"4,854,803",0.35**,0.32**,238
+Alabama,2015,Suffocation,246,"4,854,803",5.07,4.9,"4,720"
+Alabama,2015,"Motor vehicle, traffic",929,"4,854,803",19.14,18.56,"21,472"
+Alabama,2015,"Pedal cyclist, other",--,"4,854,803",--,--,--
+Alabama,2015,"Pedestrian, other",21,"4,854,803",0.43,0.45,662
+Alabama,2015,"Transport, other land",28,"4,854,803",0.58,0.59,566
+Alabama,2015,"Transport, other (excl. drown by water transp)",--,"4,854,803",--,--,--
+Alabama,2015,Other specified and classifiable,25,"4,854,803",0.52,0.52,704
+Alabama,2015,Other specified / NEC,20**,"4,854,803",0.41**,0.38**,277
+Alabama,2015,Unspecified,271,"4,854,803",5.58,5.09,"2,466"
+Alabama,2014,Cut/Pierce,30,"4,843,737",0.62,0.58,678
+Alabama,2014,Drowning (includes water transport),86,"4,843,737",1.78,1.78,"2,547"
+Alabama,2014,Fall,229,"4,843,737",4.73,4.22,917
+Alabama,2014,Fire/Flame,95,"4,843,737",1.96,1.8,"1,093"
+Alabama,2014,Hot object/Substance,--,"4,843,737",--,--,--
+Alabama,2014,Firearm,815,"4,843,737",16.83,16.83,"18,606"
+Alabama,2014,Machinery,15**,"4,843,737",0.31**,0.27**,155
+Alabama,2014,Natural/Environmental,28,"4,843,737",0.58,0.51,426
+Alabama,2014,Drug Poisoning,723,"4,843,737",14.93,15.12,"16,007"
+Alabama,2014,Non-Drug Poisoning,54,"4,843,737",1.12,1.1,"1,117"
+Alabama,2014,Struck by / against,26,"4,843,737",0.54,0.51,367
+Alabama,2014,Suffocation,281,"4,843,737",5.8,5.75,"5,462"
+Alabama,2014,"Motor vehicle, traffic",865,"4,843,737",17.86,17.5,"20,123"
+Alabama,2014,"Pedal cyclist, other",--,"4,843,737",--,--,--
+Alabama,2014,"Pedestrian, other",16**,"4,843,737",0.33**,0.35**,480
+Alabama,2014,"Transport, other land",26,"4,843,737",0.54,0.54,701
+Alabama,2014,"Transport, other (excl. drown by water transp)",16**,"4,843,737",0.33**,0.34**,352
+Alabama,2014,Other specified and classifiable,19**,"4,843,737",0.39**,0.41**,433
+Alabama,2014,Other specified / NEC,15**,"4,843,737",0.31**,0.29**,153
+Alabama,2014,Unspecified,280,"4,843,737",5.78,5.26,"2,099"
+Alabama,2013,Cut/Pierce,64,"4,831,586",1.33,1.19,"1,272"
+Alabama,2013,Drowning (includes water transport),85,"4,831,586",1.76,1.71,"2,342"
+Alabama,2013,Fall,254,"4,831,586",5.26,4.75,"1,074"
+Alabama,2013,Fire/Flame,91,"4,831,586",1.88,1.86,"1,523"
+Alabama,2013,Firearm,860,"4,831,586",17.8,17.51,"19,584"
+Alabama,2013,Machinery,14**,"4,831,586",0.29**,0.28**,144
+Alabama,2013,Natural/Environmental,23,"4,831,586",0.48,0.42,346
+Alabama,2013,Drug Poisoning,598,"4,831,586",12.38,12.76,"13,726"
+Alabama,2013,Non-Drug Poisoning,50,"4,831,586",1.04,1.02,866
+Alabama,2013,Struck by / against,10**,"4,831,586",0.21**,0.19**,236
+Alabama,2013,Suffocation,261,"4,831,586",5.4,5.31,"5,569"
+Alabama,2013,"Motor vehicle, traffic",878,"4,831,586",18.17,18.14,"22,022"
+Alabama,2013,"Pedestrian, other",18**,"4,831,586",0.37**,0.38**,408
+Alabama,2013,"Transport, other land",28,"4,831,586",0.58,0.6,876
+Alabama,2013,"Transport, other (excl. drown by water transp)",--,"4,831,586",--,--,--
+Alabama,2013,Other specified and classifiable,14**,"4,831,586",0.29**,0.28**,373
+Alabama,2013,Other specified / NEC,23,"4,831,586",0.48,0.48,399
+Alabama,2013,Unspecified,265,"4,831,586",5.49,5.08,"1,862"
+Alabama,2012,Cut/Pierce,52,"4,816,632",1.08,1.12,"1,244"
+Alabama,2012,Drowning (includes water transport),108,"4,816,632",2.24,2.33,"3,598"
+Alabama,2012,Fall,206,"4,816,632",4.28,3.95,655
+Alabama,2012,Fire/Flame,85,"4,816,632",1.77,1.64,"1,304"
+Alabama,2012,Hot object/Substance,--,"4,816,632",--,--,--
+Alabama,2012,Firearm,831,"4,816,632",17.25,16.98,"18,857"
+Alabama,2012,Machinery,14**,"4,816,632",0.29**,0.27**,210
+Alabama,2012,Natural/Environmental,28,"4,816,632",0.58,0.56,402
+Alabama,2012,Overexertion,--,"4,816,632",--,--,--
+Alabama,2012,Drug Poisoning,562,"4,816,632",11.67,12.03,"13,293"
+Alabama,2012,Non-Drug Poisoning,49,"4,816,632",1.02,1.02,"1,073"
+Alabama,2012,Struck by / against,20**,"4,816,632",0.42**,0.40**,421
+Alabama,2012,Suffocation,263,"4,816,632",5.46,5.35,"5,863"
+Alabama,2012,"Motor vehicle, traffic",832,"4,816,632",17.27,17.08,"20,482"
+Alabama,2012,"Pedal cyclist, other",--,"4,816,632",--,--,--
+Alabama,2012,"Pedestrian, other",22,"4,816,632",0.46,0.46,705
+Alabama,2012,"Transport, other land",25,"4,816,632",0.52,0.54,470
+Alabama,2012,"Transport, other (excl. drown by water transp)",12**,"4,816,632",0.25**,0.24**,222
+Alabama,2012,Other specified and classifiable,23,"4,816,632",0.48,0.5,502
+Alabama,2012,Other specified / NEC,15**,"4,816,632",0.31**,0.30**,265
+Alabama,2012,Unspecified,319,"4,816,632",6.62,6.22,"3,160"
+Alabama,2011,Cut/Pierce,49,"4,799,642",1.02,1.02,"1,624"
+Alabama,2011,Drowning (includes water transport),89,"4,799,642",1.85,1.87,"2,819"
+Alabama,2011,Fall,205,"4,799,642",4.27,3.98,909
+Alabama,2011,Fire/Flame,104,"4,799,642",2.17,2.05,"2,023"
+Alabama,2011,Hot object/Substance,--,"4,799,642",--,--,--
+Alabama,2011,Firearm,785,"4,799,642",16.36,15.99,"17,922"
+Alabama,2011,Machinery,13**,"4,799,642",0.27**,0.27**,293
+Alabama,2011,Natural/Environmental,262,"4,799,642",5.46,5.16,"4,485"
+Alabama,2011,Drug Poisoning,552,"4,799,642",11.5,11.76,"12,913"
+Alabama,2011,Non-Drug Poisoning,66,"4,799,642",1.38,1.36,"1,230"
+Alabama,2011,Struck by / against,20**,"4,799,642",0.42**,0.37**,274
+Alabama,2011,Suffocation,250,"4,799,642",5.21,5.13,"5,594"
+Alabama,2011,"Motor vehicle, traffic",930,"4,799,642",19.38,19.3,"22,845"
+Alabama,2011,"Pedal cyclist, other",--,"4,799,642",--,--,--
+Alabama,2011,"Pedestrian, other",16**,"4,799,642",0.33**,0.33**,339
+Alabama,2011,"Transport, other land",33,"4,799,642",0.69,0.68,850
+Alabama,2011,"Transport, other (excl. drown by water transp)",--,"4,799,642",--,--,--
+Alabama,2011,Other specified and classifiable,19**,"4,799,642",0.40**,0.39**,340
+Alabama,2011,Other specified / NEC,19**,"4,799,642",0.40**,0.39**,333
+Alabama,2011,Unspecified,350,"4,799,642",7.29,6.88,"2,759"
+Alabama,2010,Cut/Pierce,55,"4,780,118",1.15,1.17,"1,290"
+Alabama,2010,Drowning (includes water transport),110,"4,780,118",2.3,2.24,"3,095"
+Alabama,2010,Fall,219,"4,780,118",4.58,4.36,"1,158"
+Alabama,2010,Fire/Flame,118,"4,780,118",2.47,2.43,"2,330"
+Alabama,2010,Hot object/Substance,--,"4,780,118",--,--,--
+Alabama,2010,Firearm,782,"4,780,118",16.36,16.18,"18,485"
+Alabama,2010,Machinery,--,"4,780,118",--,--,--
+Alabama,2010,Natural/Environmental,26,"4,780,118",0.54,0.51,431
+Alabama,2010,Drug Poisoning,547,"4,780,118",11.44,11.81,"13,165"
+Alabama,2010,Non-Drug Poisoning,75,"4,780,118",1.57,1.56,"1,360"
+Alabama,2010,Struck by / against,11**,"4,780,118",0.23**,0.23**,239
+Alabama,2010,Suffocation,260,"4,780,118",5.44,5.34,"5,437"
+Alabama,2010,"Motor vehicle, traffic",900,"4,780,118",18.83,18.69,"22,369"
+Alabama,2010,"Pedal cyclist, other",--,"4,780,118",--,--,--
+Alabama,2010,"Pedestrian, other",16**,"4,780,118",0.34**,0.33**,440
+Alabama,2010,"Transport, other land",39,"4,780,118",0.82,0.82,"1,181"
+Alabama,2010,"Transport, other (excl. drown by water transp)",11**,"4,780,118",0.23**,0.22**,242
+Alabama,2010,Other specified and classifiable,23,"4,780,118",0.48,0.46,430
+Alabama,2010,Other specified / NEC,20**,"4,780,118",0.42**,0.39**,330
+Alabama,2010,Unspecified,299,"4,780,118",6.26,6.01,"2,583"
+Alabama,2009,Cut/Pierce,40,"4,757,938",0.84,0.85,"1,099"
+Alabama,2009,Drowning (includes water transport),96,"4,757,938",2.02,2.03,"3,021"
+Alabama,2009,Fall,202,"4,757,938",4.25,4.11,660
+Alabama,2009,Fire/Flame,87,"4,757,938",1.83,1.76,"1,563"
+Alabama,2009,Firearm,830,"4,757,938",17.45,17.19,"18,574"
+Alabama,2009,Machinery,--,"4,757,938",--,--,--
+Alabama,2009,Natural/Environmental,25,"4,757,938",0.53,0.48,229
+Alabama,2009,Drug Poisoning,630,"4,757,938",13.24,13.64,"15,090"
+Alabama,2009,Non-Drug Poisoning,48,"4,757,938",1.01,0.97,792
+Alabama,2009,Struck by / against,15**,"4,757,938",0.32**,0.29**,248
+Alabama,2009,Suffocation,267,"4,757,938",5.61,5.61,"4,840"
+Alabama,2009,"Motor vehicle, traffic",873,"4,757,938",18.35,18.06,"21,133"
+Alabama,2009,"Pedal cyclist, other",--,"4,757,938",--,--,--
+Alabama,2009,"Pedestrian, other",27,"4,757,938",0.57,0.59,492
+Alabama,2009,"Transport, other land",54,"4,757,938",1.14,1.15,"1,499"
+Alabama,2009,"Transport, other (excl. drown by water transp)",--,"4,757,938",--,--,--
+Alabama,2009,Other specified and classifiable,29,"4,757,938",0.61,0.61,793
+Alabama,2009,Other specified / NEC,22,"4,757,938",0.46,0.45,261
+Alabama,2009,Unspecified,242,"4,757,938",5.09,4.99,"2,402"
+Alabama,2008,Cut/Pierce,42,"4,718,206",0.89,0.88,"1,038"
+Alabama,2008,Drowning (includes water transport),93,"4,718,206",1.97,1.96,"2,719"
+Alabama,2008,Fall,206,"4,718,206",4.37,4.21,"1,142"
+Alabama,2008,Fire/Flame,95,"4,718,206",2.01,1.94,"1,656"
+Alabama,2008,Hot object/Substance,--,"4,718,206",--,--,--
+Alabama,2008,Firearm,820,"4,718,206",17.38,17.31,"20,840"
+Alabama,2008,Machinery,14**,"4,718,206",0.30**,0.28**,157
+Alabama,2008,Natural/Environmental,23,"4,718,206",0.49,0.46,253
+Alabama,2008,Overexertion,--,"4,718,206",--,--,--
+Alabama,2008,Drug Poisoning,607,"4,718,206",12.87,12.99,"14,340"
+Alabama,2008,Non-Drug Poisoning,67,"4,718,206",1.42,1.37,"1,324"
+Alabama,2008,Struck by / against,17**,"4,718,206",0.36**,0.37**,354
+Alabama,2008,Suffocation,230,"4,718,206",4.88,4.84,"4,800"
+Alabama,2008,"Motor vehicle, traffic","1,027","4,718,206",21.77,21.51,"26,867"
+Alabama,2008,"Pedal cyclist, other",--,"4,718,206",--,--,--
+Alabama,2008,"Pedestrian, other",26,"4,718,206",0.55,0.53,576
+Alabama,2008,"Transport, other land",45,"4,718,206",0.95,0.96,"1,474"
+Alabama,2008,"Transport, other (excl. drown by water transp)",15**,"4,718,206",0.32**,0.30**,284
+Alabama,2008,Other specified and classifiable,31,"4,718,206",0.66,0.65,816
+Alabama,2008,Other specified / NEC,18**,"4,718,206",0.38**,0.37**,274
+Alabama,2008,Unspecified,303,"4,718,206",6.42,6.28,"2,648"
+Alabama,2007,Cut/Pierce,49,"4,672,840",1.05,1.04,"1,111"
+Alabama,2007,Drowning (includes water transport),84,"4,672,840",1.8,1.82,"2,801"
+Alabama,2007,Fall,174,"4,672,840",3.72,3.61,990
+Alabama,2007,Fire/Flame,93,"4,672,840",1.99,1.91,"1,459"
+Alabama,2007,Hot object/Substance,--,"4,672,840",--,--,--
+Alabama,2007,Firearm,812,"4,672,840",17.38,17.24,"20,737"
+Alabama,2007,Machinery,13**,"4,672,840",0.28**,0.27**,269
+Alabama,2007,Natural/Environmental,34,"4,672,840",0.73,0.68,713
+Alabama,2007,Drug Poisoning,511,"4,672,840",10.94,11.1,"12,428"
+Alabama,2007,Non-Drug Poisoning,66,"4,672,840",1.41,1.38,"1,178"
+Alabama,2007,Struck by / against,21,"4,672,840",0.45,0.45,384
+Alabama,2007,Suffocation,252,"4,672,840",5.39,5.42,"5,891"
+Alabama,2007,"Motor vehicle, traffic","1,175","4,672,840",25.15,24.94,"29,629"
+Alabama,2007,"Pedal cyclist, other",--,"4,672,840",--,--,--
+Alabama,2007,"Pedestrian, other",17**,"4,672,840",0.36**,0.35**,373
+Alabama,2007,"Transport, other land",34,"4,672,840",0.73,0.72,793
+Alabama,2007,"Transport, other (excl. drown by water transp)",10**,"4,672,840",0.21**,0.20**,194
+Alabama,2007,Other specified and classifiable,32,"4,672,840",0.69,0.68,813
+Alabama,2007,Other specified / NEC,24,"4,672,840",0.51,0.52,419
+Alabama,2007,Unspecified,289,"4,672,840",6.19,6.02,"2,685"
+Alabama,2006,Cut/Pierce,45,"4,628,981",0.97,0.98,994
+Alabama,2006,Drowning (includes water transport),100,"4,628,981",2.16,2.15,"3,117"
+Alabama,2006,Fall,185,"4,628,981",4,3.86,786
+Alabama,2006,Fire/Flame,94,"4,628,981",2.03,1.95,"1,483"
+Alabama,2006,Hot object/Substance,--,"4,628,981",--,--,--
+Alabama,2006,Firearm,780,"4,628,981",16.85,16.7,"19,449"
+Alabama,2006,Machinery,10**,"4,628,981",0.22**,0.19**,123
+Alabama,2006,Natural/Environmental,16**,"4,628,981",0.35**,0.33**,177
+Alabama,2006,Drug Poisoning,398,"4,628,981",8.6,8.74,"10,223"
+Alabama,2006,Non-Drug Poisoning,37,"4,628,981",0.8,0.79,767
+Alabama,2006,Struck by / against,23,"4,628,981",0.5,0.49,525
+Alabama,2006,Suffocation,273,"4,628,981",5.9,5.99,"6,460"
+Alabama,2006,"Motor vehicle, traffic","1,195","4,628,981",25.82,25.82,"33,279"
+Alabama,2006,"Pedestrian, other",27,"4,628,981",0.58,0.59,851
+Alabama,2006,"Transport, other land",24,"4,628,981",0.52,0.52,676
+Alabama,2006,"Transport, other (excl. drown by water transp)",10**,"4,628,981",0.22**,0.20**,149
+Alabama,2006,Other specified and classifiable,23,"4,628,981",0.5,0.5,586
+Alabama,2006,Other specified / NEC,26,"4,628,981",0.56,0.55,488
+Alabama,2006,Unspecified,357,"4,628,981",7.71,7.68,"4,718"
+Alabama,2005,Cut/Pierce,45,"4,569,805",0.99,1,"1,217"
+Alabama,2005,Drowning (includes water transport),91,"4,569,805",1.99,2,"2,616"
+Alabama,2005,Fall,158,"4,569,805",3.46,3.42,984
+Alabama,2005,Fire/Flame,111,"4,569,805",2.43,2.36,"2,024"
+Alabama,2005,Hot object/Substance,--,"4,569,805",--,--,--
+Alabama,2005,Firearm,736,"4,569,805",16.11,15.99,"18,005"
+Alabama,2005,Machinery,13**,"4,569,805",0.28**,0.27**,84
+Alabama,2005,Natural/Environmental,19**,"4,569,805",0.42**,0.40**,243
+Alabama,2005,Drug Poisoning,283,"4,569,805",6.19,6.32,"7,338"
+Alabama,2005,Non-Drug Poisoning,42,"4,569,805",0.92,0.92,935
+Alabama,2005,Struck by / against,29,"4,569,805",0.64,0.63,471
+Alabama,2005,Suffocation,264,"4,569,805",5.78,5.77,"5,373"
+Alabama,2005,"Motor vehicle, traffic","1,162","4,569,805",25.43,25.08,"30,438"
+Alabama,2005,"Pedal cyclist, other",--,"4,569,805",--,--,--
+Alabama,2005,"Pedestrian, other",22,"4,569,805",0.48,0.46,628
+Alabama,2005,"Transport, other land",26,"4,569,805",0.57,0.56,678
+Alabama,2005,"Transport, other (excl. drown by water transp)",--,"4,569,805",--,--,--
+Alabama,2005,Other specified and classifiable,25,"4,569,805",0.55,0.56,515
+Alabama,2005,Other specified / NEC,25,"4,569,805",0.55,0.55,391
+Alabama,2005,Unspecified,379,"4,569,805",8.29,8.21,"3,667"
+Alabama,2004,Cut/Pierce,50,"4,530,729",1.1,1.11,"1,249"
+Alabama,2004,Drowning (includes water transport),82,"4,530,729",1.81,1.81,"2,466"
+Alabama,2004,Fall,174,"4,530,729",3.84,3.81,"1,036"
+Alabama,2004,Fire/Flame,114,"4,530,729",2.52,2.48,"2,312"
+Alabama,2004,Hot object/Substance,--,"4,530,729",--,--,--
+Alabama,2004,Firearm,679,"4,530,729",14.99,14.79,"16,046"
+Alabama,2004,Machinery,18**,"4,530,729",0.40**,0.38**,241
+Alabama,2004,Natural/Environmental,25,"4,530,729",0.55,0.55,178
+Alabama,2004,Drug Poisoning,283,"4,530,729",6.25,6.31,"7,050"
+Alabama,2004,Non-Drug Poisoning,38,"4,530,729",0.84,0.87,754
+Alabama,2004,Struck by / against,29,"4,530,729",0.64,0.61,515
+Alabama,2004,Suffocation,222,"4,530,729",4.9,4.93,"4,501"
+Alabama,2004,"Motor vehicle, traffic","1,227","4,530,729",27.08,27,"32,608"
+Alabama,2004,"Pedal cyclist, other",--,"4,530,729",--,--,--
+Alabama,2004,"Pedestrian, other",19**,"4,530,729",0.42**,0.42**,509
+Alabama,2004,"Transport, other land",32,"4,530,729",0.71,0.73,841
+Alabama,2004,"Transport, other (excl. drown by water transp)",--,"4,530,729",--,--,--
+Alabama,2004,Other specified and classifiable,35,"4,530,729",0.77,0.78,"1,043"
+Alabama,2004,Other specified / NEC,17**,"4,530,729",0.38**,0.37**,379
+Alabama,2004,Unspecified,312,"4,530,729",6.89,6.88,"2,885"
+Alabama,2003,Cut/Pierce,53,"4,503,491",1.18,1.19,"1,537"
+Alabama,2003,Drowning (includes water transport),77,"4,503,491",1.71,1.74,"2,639"
+Alabama,2003,Fall,177,"4,503,491",3.93,3.88,672
+Alabama,2003,Fire/Flame,113,"4,503,491",2.51,2.49,"2,281"
+Alabama,2003,Hot object/Substance,--,"4,503,491",--,--,--
+Alabama,2003,Firearm,765,"4,503,491",16.99,16.8,"18,716"
+Alabama,2003,Machinery,16**,"4,503,491",0.36**,0.35**,385
+Alabama,2003,Natural/Environmental,20**,"4,503,491",0.44**,0.44**,146
+Alabama,2003,Drug Poisoning,197,"4,503,491",4.37,4.44,"4,792"
+Alabama,2003,Non-Drug Poisoning,38,"4,503,491",0.84,0.84,649
+Alabama,2003,Struck by / against,13**,"4,503,491",0.29**,0.28**,233
+Alabama,2003,Suffocation,201,"4,503,491",4.46,4.52,"3,620"
+Alabama,2003,"Motor vehicle, traffic","1,041","4,503,491",23.12,23.04,"27,477"
+Alabama,2003,"Pedestrian, other",12**,"4,503,491",0.27**,0.26**,334
+Alabama,2003,"Transport, other land",41,"4,503,491",0.91,0.9,"1,050"
+Alabama,2003,"Transport, other (excl. drown by water transp)",--,"4,503,491",--,--,--
+Alabama,2003,Other specified and classifiable,28,"4,503,491",0.62,0.64,708
+Alabama,2003,Other specified / NEC,24,"4,503,491",0.53,0.52,403
+Alabama,2003,Unspecified,355,"4,503,491",7.88,7.85,"3,569"
+Alabama,2002,Cut/Pierce,69,"4,480,089",1.54,1.53,"1,446"
+Alabama,2002,Drowning (includes water transport),87,"4,480,089",1.94,1.96,"2,849"
+Alabama,2002,Fall,165,"4,480,089",3.68,3.67,"1,272"
+Alabama,2002,Fire/Flame,84,"4,480,089",1.88,1.86,"1,782"
+Alabama,2002,Hot object/Substance,--,"4,480,089",--,--,--
+Alabama,2002,Firearm,724,"4,480,089",16.16,16.08,"17,885"
+Alabama,2002,Machinery,12**,"4,480,089",0.27**,0.26**,180
+Alabama,2002,Natural/Environmental,34,"4,480,089",0.76,0.74,455
+Alabama,2002,Drug Poisoning,211,"4,480,089",4.71,4.74,"5,160"
+Alabama,2002,Non-Drug Poisoning,49,"4,480,089",1.09,1.08,965
+Alabama,2002,Struck by / against,19**,"4,480,089",0.42**,0.42**,376
+Alabama,2002,Suffocation,228,"4,480,089",5.09,5.1,"4,427"
+Alabama,2002,"Motor vehicle, traffic","1,090","4,480,089",24.33,24.25,"29,847"
+Alabama,2002,"Pedestrian, other",21,"4,480,089",0.47,0.45,507
+Alabama,2002,"Transport, other land",25,"4,480,089",0.56,0.57,675
+Alabama,2002,"Transport, other (excl. drown by water transp)",11**,"4,480,089",0.25**,0.25**,271
+Alabama,2002,Other specified and classifiable,31,"4,480,089",0.69,0.7,808
+Alabama,2002,Other specified / NEC,26,"4,480,089",0.58,0.58,335
+Alabama,2002,Unspecified,311,"4,480,089",6.94,6.96,"3,053"
+Alabama,2001,Cut/Pierce,61,"4,467,634",1.37,1.37,"1,521"
+Alabama,2001,Drowning (includes water transport),70,"4,467,634",1.57,1.58,"2,683"
+Alabama,2001,Fall,134,"4,467,634",3,2.98,897
+Alabama,2001,Fire/Flame,122,"4,467,634",2.73,2.71,"2,267"
+Alabama,2001,Hot object/Substance,--,"4,467,634",--,--,--
+Alabama,2001,Firearm,737,"4,467,634",16.5,16.41,"18,539"
+Alabama,2001,Machinery,17**,"4,467,634",0.38**,0.37**,354
+Alabama,2001,Natural/Environmental,36,"4,467,634",0.81,0.8,490
+Alabama,2001,Drug Poisoning,216,"4,467,634",4.84,4.88,"5,094"
+Alabama,2001,Non-Drug Poisoning,51,"4,467,634",1.14,1.15,961
+Alabama,2001,Struck by / against,29,"4,467,634",0.65,0.64,635
+Alabama,2001,Suffocation,200,"4,467,634",4.48,4.48,"3,887"
+Alabama,2001,"Motor vehicle, traffic","1,012","4,467,634",22.65,22.59,"28,187"
+Alabama,2001,"Pedal cyclist, other",--,"4,467,634",--,--,--
+Alabama,2001,"Pedestrian, other",39,"4,467,634",0.87,0.89,"1,038"
+Alabama,2001,"Transport, other land",31,"4,467,634",0.69,0.7,820
+Alabama,2001,"Transport, other (excl. drown by water transp)",21,"4,467,634",0.47,0.47,436
+Alabama,2001,Other specified and classifiable,28,"4,467,634",0.63,0.62,847
+Alabama,2001,Other specified / NEC,25,"4,467,634",0.56,0.56,352
+Alabama,2001,Unspecified,341,"4,467,634",7.63,7.64,"2,744"
+Total,,,"79,080","99,865,317",79.19,78.16,"1,687,057"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Alabama,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

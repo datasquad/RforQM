@@ -1,0 +1,965 @@
+State,Year,Mechanism,Race,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Alaska,2020,Cut/Pierce,White,--,"500,604",--,--,--
+Alaska,2020,Cut/Pierce,American Indian / Alaska Native,--,"128,350",--,--,--
+Alaska,2020,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2020,Drowning (includes water transport),White,14**,"500,604",2.80**,2.50**,341
+Alaska,2020,Drowning (includes water transport),Black,--,"36,078",--,--,--
+Alaska,2020,Drowning (includes water transport),American Indian / Alaska Native,25,"128,350",19.48,22.09,613
+Alaska,2020,Fall,White,46,"500,604",9.19,10.13,169
+Alaska,2020,Fall,Black,--,"36,078",--,--,--
+Alaska,2020,Fall,American Indian / Alaska Native,13**,"128,350",10.13**,17.33**,11
+Alaska,2020,Fall,Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2020,Fire/Flame,White,--,"500,604",--,--,--
+Alaska,2020,Fire/Flame,American Indian / Alaska Native,--,"128,350",--,--,--
+Alaska,2020,Fire/Flame,Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2020,Firearm,White,107,"500,604",21.37,20.42,"2,265"
+Alaska,2020,Firearm,Black,--,"36,078",--,--,--
+Alaska,2020,Firearm,American Indian / Alaska Native,53,"128,350",41.29,38.56,"1,942"
+Alaska,2020,Firearm,Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2020,Machinery,White,--,"500,604",--,--,--
+Alaska,2020,Natural/Environmental,White,15**,"500,604",3.00**,2.77**,325
+Alaska,2020,Natural/Environmental,Black,--,"36,078",--,--,--
+Alaska,2020,Natural/Environmental,American Indian / Alaska Native,14**,"128,350",10.91**,11.89**,225
+Alaska,2020,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2020,Drug Poisoning,White,91,"500,604",18.18,17.59,"2,031"
+Alaska,2020,Drug Poisoning,Black,13**,"36,078",36.03**,37.25**,390
+Alaska,2020,Drug Poisoning,American Indian / Alaska Native,51,"128,350",39.74,45.4,"1,328"
+Alaska,2020,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2020,Non-Drug Poisoning,White,18**,"500,604",3.60**,3.82**,356
+Alaska,2020,Non-Drug Poisoning,American Indian / Alaska Native,23,"128,350",17.92,19.48,439
+Alaska,2020,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2020,Struck by / against,White,--,"500,604",--,--,--
+Alaska,2020,Struck by / against,American Indian / Alaska Native,--,"128,350",--,--,--
+Alaska,2020,Suffocation,White,39,"500,604",7.79,8.47,942
+Alaska,2020,Suffocation,Black,--,"36,078",--,--,--
+Alaska,2020,Suffocation,American Indian / Alaska Native,41,"128,350",31.94,30.23,"1,518"
+Alaska,2020,Suffocation,Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2020,"Motor vehicle, traffic",White,51,"500,604",10.19,9.93,"1,140"
+Alaska,2020,"Motor vehicle, traffic",Black,--,"36,078",--,--,--
+Alaska,2020,"Motor vehicle, traffic",American Indian / Alaska Native,14**,"128,350",10.91**,10.89**,342
+Alaska,2020,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2020,"Pedal cyclist, other",White,--,"500,604",--,--,--
+Alaska,2020,"Pedestrian, other",American Indian / Alaska Native,--,"128,350",--,--,--
+Alaska,2020,"Transport, other land",White,--,"500,604",--,--,--
+Alaska,2020,"Transport, other land",Black,--,"36,078",--,--,--
+Alaska,2020,"Transport, other land",American Indian / Alaska Native,--,"128,350",--,--,--
+Alaska,2020,"Transport, other (excl. drown by water transp)",White,--,"500,604",--,--,--
+Alaska,2020,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"128,350",--,--,--
+Alaska,2020,Other specified and classifiable,White,--,"500,604",--,--,--
+Alaska,2020,Other specified and classifiable,American Indian / Alaska Native,--,"128,350",--,--,--
+Alaska,2020,Other specified / NEC,White,--,"500,604",--,--,--
+Alaska,2020,Other specified / NEC,American Indian / Alaska Native,--,"128,350",--,--,--
+Alaska,2020,Unspecified,White,--,"500,604",--,--,--
+Alaska,2020,Unspecified,Black,--,"36,078",--,--,--
+Alaska,2020,Unspecified,American Indian / Alaska Native,--,"128,350",--,--,--
+Alaska,2020,Unspecified,Asian / HI Native / Pac. Islander,--,"66,126",--,--,--
+Alaska,2019,Cut/Pierce,White,--,"503,427",--,--,--
+Alaska,2019,Cut/Pierce,American Indian / Alaska Native,--,"128,158",--,--,--
+Alaska,2019,Drowning (includes water transport),White,16**,"503,427",3.18**,2.76**,364
+Alaska,2019,Drowning (includes water transport),American Indian / Alaska Native,17**,"128,158",13.27**,15.34**,436
+Alaska,2019,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"65,688",--,--,--
+Alaska,2019,Fall,White,51,"503,427",10.13,11.37,206
+Alaska,2019,Fall,Black,--,"36,330",--,--,--
+Alaska,2019,Fall,American Indian / Alaska Native,13**,"128,158",10.14**,18.78**,96
+Alaska,2019,Fall,Asian / HI Native / Pac. Islander,--,"65,688",--,--,--
+Alaska,2019,Fire/Flame,White,--,"503,427",--,--,--
+Alaska,2019,Fire/Flame,American Indian / Alaska Native,--,"128,158",--,--,--
+Alaska,2019,Firearm,White,108,"503,427",21.45,20.52,"2,464"
+Alaska,2019,Firearm,Black,--,"36,330",--,--,--
+Alaska,2019,Firearm,American Indian / Alaska Native,55,"128,158",42.92,45.76,"1,764"
+Alaska,2019,Firearm,Asian / HI Native / Pac. Islander,--,"65,688",--,--,--
+Alaska,2019,Machinery,White,--,"503,427",--,--,--
+Alaska,2019,Natural/Environmental,White,--,"503,427",--,--,--
+Alaska,2019,Natural/Environmental,American Indian / Alaska Native,11**,"128,158",8.58**,11.13**,214
+Alaska,2019,Drug Poisoning,White,81,"503,427",16.09,15.32,"1,857"
+Alaska,2019,Drug Poisoning,Black,--,"36,330",--,--,--
+Alaska,2019,Drug Poisoning,American Indian / Alaska Native,40,"128,158",31.21,34.08,"1,047"
+Alaska,2019,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"65,688",--,--,--
+Alaska,2019,Non-Drug Poisoning,White,21,"503,427",4.17,4.38,475
+Alaska,2019,Non-Drug Poisoning,American Indian / Alaska Native,21,"128,158",16.39,17.99,618
+Alaska,2019,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"65,688",--,--,--
+Alaska,2019,Struck by / against,White,--,"503,427",--,--,--
+Alaska,2019,Struck by / against,Asian / HI Native / Pac. Islander,--,"65,688",--,--,--
+Alaska,2019,Suffocation,White,38,"503,427",7.55,8.01,982
+Alaska,2019,Suffocation,Black,--,"36,330",--,--,--
+Alaska,2019,Suffocation,American Indian / Alaska Native,55,"128,158",42.92,46.74,"1,865"
+Alaska,2019,Suffocation,Asian / HI Native / Pac. Islander,--,"65,688",--,--,--
+Alaska,2019,"Motor vehicle, traffic",White,47,"503,427",9.34,9.12,926
+Alaska,2019,"Motor vehicle, traffic",Black,--,"36,330",--,--,--
+Alaska,2019,"Motor vehicle, traffic",American Indian / Alaska Native,17**,"128,158",13.27**,14.46**,492
+Alaska,2019,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"65,688",--,--,--
+Alaska,2019,"Pedal cyclist, other",Black,--,"36,330",--,--,--
+Alaska,2019,"Pedal cyclist, other",American Indian / Alaska Native,--,"128,158",--,--,--
+Alaska,2019,"Pedestrian, other",White,--,"503,427",--,--,--
+Alaska,2019,"Pedestrian, other",American Indian / Alaska Native,--,"128,158",--,--,--
+Alaska,2019,"Transport, other land",White,--,"503,427",--,--,--
+Alaska,2019,"Transport, other land",American Indian / Alaska Native,15**,"128,158",11.70**,11.94**,403
+Alaska,2019,"Transport, other (excl. drown by water transp)",White,16**,"503,427",3.18**,2.81**,233
+Alaska,2019,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"65,688",--,--,--
+Alaska,2019,Other specified and classifiable,White,--,"503,427",--,--,--
+Alaska,2019,Other specified and classifiable,American Indian / Alaska Native,--,"128,158",--,--,--
+Alaska,2019,Other specified / NEC,White,--,"503,427",--,--,--
+Alaska,2019,Other specified / NEC,Black,--,"36,330",--,--,--
+Alaska,2019,Other specified / NEC,American Indian / Alaska Native,--,"128,158",--,--,--
+Alaska,2019,Unspecified,White,11**,"503,427",2.19**,2.32**,81
+Alaska,2019,Unspecified,American Indian / Alaska Native,--,"128,158",--,--,--
+Alaska,2018,Cut/Pierce,White,--,"506,976",--,--,--
+Alaska,2018,Cut/Pierce,Black,--,"36,516",--,--,--
+Alaska,2018,Cut/Pierce,American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"65,043",--,--,--
+Alaska,2018,Drowning (includes water transport),White,21,"506,976",4.14,3.41,234
+Alaska,2018,Drowning (includes water transport),American Indian / Alaska Native,28,"128,089",21.86,23.96,589
+Alaska,2018,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"65,043",--,--,--
+Alaska,2018,Fall,White,33,"506,976",6.51,7.66,247
+Alaska,2018,Fall,Black,--,"36,516",--,--,--
+Alaska,2018,Fall,American Indian / Alaska Native,12**,"128,089",9.37**,15.49**,36
+Alaska,2018,Fall,Asian / HI Native / Pac. Islander,--,"65,043",--,--,--
+Alaska,2018,Fire/Flame,White,--,"506,976",--,--,--
+Alaska,2018,Fire/Flame,American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,Hot object/Substance,American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,Firearm,White,95,"506,976",18.74,18.13,"2,024"
+Alaska,2018,Firearm,Black,13**,"36,516",35.60**,31.37**,469
+Alaska,2018,Firearm,American Indian / Alaska Native,39,"128,089",30.45,27.99,"1,385"
+Alaska,2018,Firearm,Asian / HI Native / Pac. Islander,--,"65,043",--,--,--
+Alaska,2018,Machinery,White,--,"506,976",--,--,--
+Alaska,2018,Natural/Environmental,White,10**,"506,976",1.97**,2.25**,128
+Alaska,2018,Natural/Environmental,American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,Drug Poisoning,White,77,"506,976",15.19,14.11,"1,673"
+Alaska,2018,Drug Poisoning,Black,--,"36,516",--,--,--
+Alaska,2018,Drug Poisoning,American Indian / Alaska Native,24,"128,089",18.74,21.67,597
+Alaska,2018,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"65,043",--,--,--
+Alaska,2018,Non-Drug Poisoning,White,19**,"506,976",3.75**,3.77**,311
+Alaska,2018,Non-Drug Poisoning,American Indian / Alaska Native,34,"128,089",26.54,32.59,728
+Alaska,2018,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"65,043",--,--,--
+Alaska,2018,Struck by / against,White,--,"506,976",--,--,--
+Alaska,2018,Struck by / against,Black,--,"36,516",--,--,--
+Alaska,2018,Struck by / against,American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,Suffocation,White,35,"506,976",6.9,7,830
+Alaska,2018,Suffocation,American Indian / Alaska Native,40,"128,089",31.23,30.84,"1,473"
+Alaska,2018,Suffocation,Asian / HI Native / Pac. Islander,--,"65,043",--,--,--
+Alaska,2018,"Motor vehicle, traffic",White,53,"506,976",10.45,10.03,"1,151"
+Alaska,2018,"Motor vehicle, traffic",Black,--,"36,516",--,--,--
+Alaska,2018,"Motor vehicle, traffic",American Indian / Alaska Native,27,"128,089",21.08,20.45,836
+Alaska,2018,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"65,043",--,--,--
+Alaska,2018,"Pedal cyclist, other",White,--,"506,976",--,--,--
+Alaska,2018,"Pedestrian, other",White,--,"506,976",--,--,--
+Alaska,2018,"Pedestrian, other",American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,"Transport, other land",White,--,"506,976",--,--,--
+Alaska,2018,"Transport, other land",Black,--,"36,516",--,--,--
+Alaska,2018,"Transport, other land",American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,"Transport, other (excl. drown by water transp)",White,16**,"506,976",3.16**,2.89**,294
+Alaska,2018,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,Other specified and classifiable,Black,--,"36,516",--,--,--
+Alaska,2018,Other specified and classifiable,American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,Other specified / NEC,White,--,"506,976",--,--,--
+Alaska,2018,Other specified / NEC,Black,--,"36,516",--,--,--
+Alaska,2018,Other specified / NEC,American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2018,Unspecified,White,10**,"506,976",1.97**,1.90**,112
+Alaska,2018,Unspecified,American Indian / Alaska Native,--,"128,089",--,--,--
+Alaska,2017,Cut/Pierce,White,--,"511,851",--,--,--
+Alaska,2017,Cut/Pierce,American Indian / Alaska Native,12**,"127,751",9.39**,10.13**,377
+Alaska,2017,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"64,937",--,--,--
+Alaska,2017,Drowning (includes water transport),White,11**,"511,851",2.15**,1.65**,169
+Alaska,2017,Drowning (includes water transport),Black,--,"36,444",--,--,--
+Alaska,2017,Drowning (includes water transport),American Indian / Alaska Native,22,"127,751",17.22,17.38,619
+Alaska,2017,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"64,937",--,--,--
+Alaska,2017,Fall,White,55,"511,851",10.75,13.46,248
+Alaska,2017,Fall,American Indian / Alaska Native,13**,"127,751",10.18**,13.44**,228
+Alaska,2017,Fall,Asian / HI Native / Pac. Islander,--,"64,937",--,--,--
+Alaska,2017,Fire/Flame,White,--,"511,851",--,--,--
+Alaska,2017,Fire/Flame,Black,--,"36,444",--,--,--
+Alaska,2017,Fire/Flame,American Indian / Alaska Native,--,"127,751",--,--,--
+Alaska,2017,Fire/Flame,Asian / HI Native / Pac. Islander,--,"64,937",--,--,--
+Alaska,2017,Firearm,White,105,"511,851",20.51,20.37,"2,357"
+Alaska,2017,Firearm,Black,18**,"36,444",49.39**,47.78**,662
+Alaska,2017,Firearm,American Indian / Alaska Native,51,"127,751",39.92,40.31,"1,686"
+Alaska,2017,Firearm,Asian / HI Native / Pac. Islander,--,"64,937",--,--,--
+Alaska,2017,Natural/Environmental,White,--,"511,851",--,--,--
+Alaska,2017,Natural/Environmental,American Indian / Alaska Native,19**,"127,751",14.87**,17.88**,493
+Alaska,2017,Drug Poisoning,White,98,"511,851",19.15,19.46,"2,203"
+Alaska,2017,Drug Poisoning,Black,--,"36,444",--,--,--
+Alaska,2017,Drug Poisoning,American Indian / Alaska Native,38,"127,751",29.75,31.61,"1,017"
+Alaska,2017,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"64,937",--,--,--
+Alaska,2017,Non-Drug Poisoning,White,21,"511,851",4.1,4.35,455
+Alaska,2017,Non-Drug Poisoning,Black,--,"36,444",--,--,--
+Alaska,2017,Non-Drug Poisoning,American Indian / Alaska Native,14**,"127,751",10.96**,11.71**,392
+Alaska,2017,Struck by / against,White,--,"511,851",--,--,--
+Alaska,2017,Struck by / against,Black,--,"36,444",--,--,--
+Alaska,2017,Struck by / against,American Indian / Alaska Native,--,"127,751",--,--,--
+Alaska,2017,Suffocation,White,31,"511,851",6.06,6.09,839
+Alaska,2017,Suffocation,American Indian / Alaska Native,39,"127,751",30.53,31.4,"1,350"
+Alaska,2017,Suffocation,Asian / HI Native / Pac. Islander,--,"64,937",--,--,--
+Alaska,2017,"Motor vehicle, traffic",White,53,"511,851",10.36,10.44,"1,212"
+Alaska,2017,"Motor vehicle, traffic",Black,--,"36,444",--,--,--
+Alaska,2017,"Motor vehicle, traffic",American Indian / Alaska Native,28,"127,751",21.92,22.61,836
+Alaska,2017,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"64,937",--,--,--
+Alaska,2017,"Pedestrian, other",White,--,"511,851",--,--,--
+Alaska,2017,"Transport, other land",White,--,"511,851",--,--,--
+Alaska,2017,"Transport, other land",American Indian / Alaska Native,11**,"127,751",8.61**,10.72**,230
+Alaska,2017,"Transport, other land",Asian / HI Native / Pac. Islander,--,"64,937",--,--,--
+Alaska,2017,"Transport, other (excl. drown by water transp)",White,--,"511,851",--,--,--
+Alaska,2017,Other specified and classifiable,White,--,"511,851",--,--,--
+Alaska,2017,Other specified / NEC,White,--,"511,851",--,--,--
+Alaska,2017,Other specified / NEC,American Indian / Alaska Native,--,"127,751",--,--,--
+Alaska,2017,Unspecified,White,12**,"511,851",2.34**,2.54**,183
+Alaska,2017,Unspecified,Black,--,"36,444",--,--,--
+Alaska,2017,Unspecified,American Indian / Alaska Native,--,"127,751",--,--,--
+Alaska,2016,Cut/Pierce,White,--,"516,375",--,--,--
+Alaska,2016,Cut/Pierce,American Indian / Alaska Native,--,"127,301",--,--,--
+Alaska,2016,Drowning (includes water transport),White,17**,"516,375",3.29**,3.50**,450
+Alaska,2016,Drowning (includes water transport),American Indian / Alaska Native,32,"127,301",25.14,29.82,781
+Alaska,2016,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"62,891",--,--,--
+Alaska,2016,Fall,White,62,"516,375",12.01,15.27,377
+Alaska,2016,Fall,Black,--,"36,008",--,--,--
+Alaska,2016,Fall,American Indian / Alaska Native,11**,"127,301",8.64**,14.55**,106
+Alaska,2016,Fall,Asian / HI Native / Pac. Islander,--,"62,891",--,--,--
+Alaska,2016,Fire/Flame,White,--,"516,375",--,--,--
+Alaska,2016,Fire/Flame,American Indian / Alaska Native,--,"127,301",--,--,--
+Alaska,2016,Firearm,White,106,"516,375",20.53,19.85,"2,890"
+Alaska,2016,Firearm,Black,11**,"36,008",30.55**,22.38**,393
+Alaska,2016,Firearm,American Indian / Alaska Native,50,"127,301",39.28,38.28,"1,779"
+Alaska,2016,Firearm,Asian / HI Native / Pac. Islander,10**,"62,891",15.90**,14.78**,328
+Alaska,2016,Natural/Environmental,White,--,"516,375",--,--,--
+Alaska,2016,Natural/Environmental,American Indian / Alaska Native,12**,"127,301",9.43**,8.88**,203
+Alaska,2016,Drug Poisoning,White,95,"516,375",18.4,17.55,"2,219"
+Alaska,2016,Drug Poisoning,Black,--,"36,008",--,--,--
+Alaska,2016,Drug Poisoning,American Indian / Alaska Native,21,"127,301",16.5,17.76,621
+Alaska,2016,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"62,891",--,--,--
+Alaska,2016,Non-Drug Poisoning,White,11**,"516,375",2.13**,1.84**,95
+Alaska,2016,Non-Drug Poisoning,Black,--,"36,008",--,--,--
+Alaska,2016,Non-Drug Poisoning,American Indian / Alaska Native,22,"127,301",17.28,18.98,627
+Alaska,2016,Struck by / against,White,--,"516,375",--,--,--
+Alaska,2016,Struck by / against,Black,--,"36,008",--,--,--
+Alaska,2016,Suffocation,White,33,"516,375",6.39,7.01,806
+Alaska,2016,Suffocation,Black,--,"36,008",--,--,--
+Alaska,2016,Suffocation,American Indian / Alaska Native,29,"127,301",22.78,22.21,"1,129"
+Alaska,2016,Suffocation,Asian / HI Native / Pac. Islander,--,"62,891",--,--,--
+Alaska,2016,"Motor vehicle, traffic",White,57,"516,375",11.04,10.48,"1,455"
+Alaska,2016,"Motor vehicle, traffic",Black,--,"36,008",--,--,--
+Alaska,2016,"Motor vehicle, traffic",American Indian / Alaska Native,24,"127,301",18.85,21.31,604
+Alaska,2016,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"62,891",--,--,--
+Alaska,2016,"Pedal cyclist, other",White,--,"516,375",--,--,--
+Alaska,2016,"Pedestrian, other",White,--,"516,375",--,--,--
+Alaska,2016,"Pedestrian, other",Black,--,"36,008",--,--,--
+Alaska,2016,"Transport, other land",White,--,"516,375",--,--,--
+Alaska,2016,"Transport, other land",American Indian / Alaska Native,--,"127,301",--,--,--
+Alaska,2016,"Transport, other land",Asian / HI Native / Pac. Islander,--,"62,891",--,--,--
+Alaska,2016,"Transport, other (excl. drown by water transp)",White,20**,"516,375",3.87**,3.75**,426
+Alaska,2016,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"127,301",--,--,--
+Alaska,2016,Other specified and classifiable,White,--,"516,375",--,--,--
+Alaska,2016,Other specified and classifiable,American Indian / Alaska Native,--,"127,301",--,--,--
+Alaska,2016,Other specified / NEC,White,--,"516,375",--,--,--
+Alaska,2016,Other specified / NEC,American Indian / Alaska Native,--,"127,301",--,--,--
+Alaska,2016,Unspecified,White,--,"516,375",--,--,--
+Alaska,2016,Unspecified,American Indian / Alaska Native,--,"127,301",--,--,--
+Alaska,2016,Unspecified,Asian / HI Native / Pac. Islander,--,"62,891",--,--,--
+Alaska,2015,Cut/Pierce,White,--,"516,068",--,--,--
+Alaska,2015,Cut/Pierce,American Indian / Alaska Native,--,"126,461",--,--,--
+Alaska,2015,Drowning (includes water transport),White,19**,"516,068",3.68**,3.49**,405
+Alaska,2015,Drowning (includes water transport),Black,--,"35,203",--,--,--
+Alaska,2015,Drowning (includes water transport),American Indian / Alaska Native,21,"126,461",16.61,16.78,704
+Alaska,2015,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"60,698",--,--,--
+Alaska,2015,Fall,White,41,"516,068",7.95,10.91,176
+Alaska,2015,Fall,Black,--,"35,203",--,--,--
+Alaska,2015,Fall,American Indian / Alaska Native,12**,"126,461",9.49**,17.85**,126
+Alaska,2015,Fire/Flame,White,--,"516,068",--,--,--
+Alaska,2015,Fire/Flame,Black,--,"35,203",--,--,--
+Alaska,2015,Fire/Flame,American Indian / Alaska Native,--,"126,461",--,--,--
+Alaska,2015,Fire/Flame,Asian / HI Native / Pac. Islander,--,"60,698",--,--,--
+Alaska,2015,Firearm,White,113,"516,068",21.9,21.54,"2,774"
+Alaska,2015,Firearm,Black,14**,"35,203",39.77**,30.94**,593
+Alaska,2015,Firearm,American Indian / Alaska Native,46,"126,461",36.38,35.02,"1,611"
+Alaska,2015,Firearm,Asian / HI Native / Pac. Islander,--,"60,698",--,--,--
+Alaska,2015,Machinery,White,--,"516,068",--,--,--
+Alaska,2015,Machinery,American Indian / Alaska Native,--,"126,461",--,--,--
+Alaska,2015,Natural/Environmental,White,11**,"516,068",2.13**,1.89**,189
+Alaska,2015,Natural/Environmental,American Indian / Alaska Native,10**,"126,461",7.91**,7.71**,168
+Alaska,2015,Drug Poisoning,White,77,"516,068",14.92,13.68,"1,921"
+Alaska,2015,Drug Poisoning,Black,--,"35,203",--,--,--
+Alaska,2015,Drug Poisoning,American Indian / Alaska Native,40,"126,461",31.63,33.7,"1,055"
+Alaska,2015,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"60,698",--,--,--
+Alaska,2015,Non-Drug Poisoning,White,16**,"516,068",3.10**,3.11**,346
+Alaska,2015,Non-Drug Poisoning,Black,--,"35,203",--,--,--
+Alaska,2015,Non-Drug Poisoning,American Indian / Alaska Native,26,"126,461",20.56,24.51,618
+Alaska,2015,Struck by / against,White,--,"516,068",--,--,--
+Alaska,2015,Struck by / against,American Indian / Alaska Native,--,"126,461",--,--,--
+Alaska,2015,Suffocation,White,35,"516,068",6.78,7.82,758
+Alaska,2015,Suffocation,Black,--,"35,203",--,--,--
+Alaska,2015,Suffocation,American Indian / Alaska Native,40,"126,461",31.63,30.67,"1,478"
+Alaska,2015,Suffocation,Asian / HI Native / Pac. Islander,--,"60,698",--,--,--
+Alaska,2015,"Motor vehicle, traffic",White,40,"516,068",7.75,8.4,922
+Alaska,2015,"Motor vehicle, traffic",Black,--,"35,203",--,--,--
+Alaska,2015,"Motor vehicle, traffic",American Indian / Alaska Native,15**,"126,461",11.86**,13.89**,390
+Alaska,2015,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"60,698",--,--,--
+Alaska,2015,"Pedal cyclist, other",White,--,"516,068",--,--,--
+Alaska,2015,"Pedestrian, other",White,--,"516,068",--,--,--
+Alaska,2015,"Pedestrian, other",American Indian / Alaska Native,--,"126,461",--,--,--
+Alaska,2015,"Transport, other land",White,--,"516,068",--,--,--
+Alaska,2015,"Transport, other land",Black,--,"35,203",--,--,--
+Alaska,2015,"Transport, other land",American Indian / Alaska Native,--,"126,461",--,--,--
+Alaska,2015,"Transport, other (excl. drown by water transp)",White,--,"516,068",--,--,--
+Alaska,2015,Other specified and classifiable,White,--,"516,068",--,--,--
+Alaska,2015,Other specified and classifiable,American Indian / Alaska Native,--,"126,461",--,--,--
+Alaska,2015,Other specified / NEC,White,--,"516,068",--,--,--
+Alaska,2015,Other specified / NEC,American Indian / Alaska Native,--,"126,461",--,--,--
+Alaska,2015,Unspecified,White,--,"516,068",--,--,--
+Alaska,2015,Unspecified,American Indian / Alaska Native,--,"126,461",--,--,--
+Alaska,2014,Cut/Pierce,White,--,"517,304",--,--,--
+Alaska,2014,Cut/Pierce,Black,--,"34,958",--,--,--
+Alaska,2014,Cut/Pierce,American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2014,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"59,232",--,--,--
+Alaska,2014,Drowning (includes water transport),White,21,"517,304",4.06,3.54,408
+Alaska,2014,Drowning (includes water transport),Black,--,"34,958",--,--,--
+Alaska,2014,Drowning (includes water transport),American Indian / Alaska Native,20**,"125,581",15.93**,17.44**,557
+Alaska,2014,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"59,232",--,--,--
+Alaska,2014,Fall,White,27,"517,304",5.22,6.44,308
+Alaska,2014,Fall,American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2014,Fall,Asian / HI Native / Pac. Islander,--,"59,232",--,--,--
+Alaska,2014,Fire/Flame,White,--,"517,304",--,--,--
+Alaska,2014,Fire/Flame,American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2014,Firearm,White,100,"517,304",19.33,18.54,"2,293"
+Alaska,2014,Firearm,Black,--,"34,958",--,--,--
+Alaska,2014,Firearm,American Indian / Alaska Native,33,"125,581",26.28,26.78,"1,076"
+Alaska,2014,Firearm,Asian / HI Native / Pac. Islander,--,"59,232",--,--,--
+Alaska,2014,Machinery,American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2014,Machinery,Asian / HI Native / Pac. Islander,--,"59,232",--,--,--
+Alaska,2014,Natural/Environmental,White,--,"517,304",--,--,--
+Alaska,2014,Natural/Environmental,American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2014,Drug Poisoning,White,88,"517,304",17.01,16.03,"1,923"
+Alaska,2014,Drug Poisoning,Black,--,"34,958",--,--,--
+Alaska,2014,Drug Poisoning,American Indian / Alaska Native,28,"125,581",22.3,26.25,771
+Alaska,2014,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"59,232",--,--,--
+Alaska,2014,Non-Drug Poisoning,White,15**,"517,304",2.90**,2.91**,277
+Alaska,2014,Non-Drug Poisoning,Black,--,"34,958",--,--,--
+Alaska,2014,Non-Drug Poisoning,American Indian / Alaska Native,21,"125,581",16.72,20.35,599
+Alaska,2014,Struck by / against,White,--,"517,304",--,--,--
+Alaska,2014,Struck by / against,American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2014,Suffocation,White,38,"517,304",7.35,8.04,937
+Alaska,2014,Suffocation,American Indian / Alaska Native,17**,"125,581",13.54**,12.43**,689
+Alaska,2014,Suffocation,Asian / HI Native / Pac. Islander,--,"59,232",--,--,--
+Alaska,2014,"Motor vehicle, traffic",White,46,"517,304",8.89,7.89,972
+Alaska,2014,"Motor vehicle, traffic",Black,--,"34,958",--,--,--
+Alaska,2014,"Motor vehicle, traffic",American Indian / Alaska Native,20**,"125,581",15.93**,17.80**,539
+Alaska,2014,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"59,232",--,--,--
+Alaska,2014,"Pedestrian, other",American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2014,"Transport, other land",White,--,"517,304",--,--,--
+Alaska,2014,"Transport, other land",American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2014,"Transport, other (excl. drown by water transp)",White,--,"517,304",--,--,--
+Alaska,2014,Other specified and classifiable,White,--,"517,304",--,--,--
+Alaska,2014,Other specified and classifiable,Black,--,"34,958",--,--,--
+Alaska,2014,Other specified and classifiable,American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2014,Other specified / NEC,White,--,"517,304",--,--,--
+Alaska,2014,Other specified / NEC,Black,--,"34,958",--,--,--
+Alaska,2014,Unspecified,White,21,"517,304",4.06,5.69,165
+Alaska,2014,Unspecified,Black,--,"34,958",--,--,--
+Alaska,2014,Unspecified,American Indian / Alaska Native,--,"125,581",--,--,--
+Alaska,2013,Cut/Pierce,American Indian / Alaska Native,--,"124,657",--,--,--
+Alaska,2013,Drowning (includes water transport),White,14**,"519,680",2.69**,2.44**,348
+Alaska,2013,Drowning (includes water transport),Black,--,"34,987",--,--,--
+Alaska,2013,Drowning (includes water transport),American Indian / Alaska Native,15**,"124,657",12.03**,14.87**,356
+Alaska,2013,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"58,302",--,--,--
+Alaska,2013,Fall,White,20**,"519,680",3.85**,4.87**,265
+Alaska,2013,Fall,Black,--,"34,987",--,--,--
+Alaska,2013,Fall,American Indian / Alaska Native,11**,"124,657",8.82**,12.93**,149
+Alaska,2013,Fall,Asian / HI Native / Pac. Islander,--,"58,302",--,--,--
+Alaska,2013,Fire/Flame,White,--,"519,680",--,--,--
+Alaska,2013,Fire/Flame,American Indian / Alaska Native,--,"124,657",--,--,--
+Alaska,2013,Firearm,White,95,"519,680",18.28,18.34,"2,367"
+Alaska,2013,Firearm,Black,--,"34,987",--,--,--
+Alaska,2013,Firearm,American Indian / Alaska Native,42,"124,657",33.69,32.73,"1,467"
+Alaska,2013,Firearm,Asian / HI Native / Pac. Islander,--,"58,302",--,--,--
+Alaska,2013,Machinery,White,--,"519,680",--,--,--
+Alaska,2013,Machinery,American Indian / Alaska Native,--,"124,657",--,--,--
+Alaska,2013,Natural/Environmental,White,--,"519,680",--,--,--
+Alaska,2013,Natural/Environmental,American Indian / Alaska Native,--,"124,657",--,--,--
+Alaska,2013,Drug Poisoning,White,79,"519,680",15.2,14.69,"1,745"
+Alaska,2013,Drug Poisoning,Black,--,"34,987",--,--,--
+Alaska,2013,Drug Poisoning,American Indian / Alaska Native,19**,"124,657",15.24**,18.55**,420
+Alaska,2013,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"58,302",--,--,--
+Alaska,2013,Non-Drug Poisoning,White,17**,"519,680",3.27**,3.18**,377
+Alaska,2013,Non-Drug Poisoning,American Indian / Alaska Native,20**,"124,657",16.04**,17.88**,573
+Alaska,2013,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"58,302",--,--,--
+Alaska,2013,Struck by / against,White,--,"519,680",--,--,--
+Alaska,2013,Suffocation,White,26,"519,680",5,5.37,802
+Alaska,2013,Suffocation,Black,--,"34,987",--,--,--
+Alaska,2013,Suffocation,American Indian / Alaska Native,20**,"124,657",16.04**,14.19**,803
+Alaska,2013,"Motor vehicle, traffic",White,34,"519,680",6.54,6.11,819
+Alaska,2013,"Motor vehicle, traffic",Black,--,"34,987",--,--,--
+Alaska,2013,"Motor vehicle, traffic",American Indian / Alaska Native,10**,"124,657",8.02**,7.08**,401
+Alaska,2013,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"58,302",--,--,--
+Alaska,2013,"Pedestrian, other",American Indian / Alaska Native,--,"124,657",--,--,--
+Alaska,2013,"Transport, other land",White,--,"519,680",--,--,--
+Alaska,2013,"Transport, other land",American Indian / Alaska Native,--,"124,657",--,--,--
+Alaska,2013,"Transport, other (excl. drown by water transp)",White,17**,"519,680",3.27**,3.08**,366
+Alaska,2013,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"124,657",--,--,--
+Alaska,2013,Other specified and classifiable,White,--,"519,680",--,--,--
+Alaska,2013,Other specified / NEC,White,--,"519,680",--,--,--
+Alaska,2013,Other specified / NEC,American Indian / Alaska Native,--,"124,657",--,--,--
+Alaska,2013,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"58,302",--,--,--
+Alaska,2013,Unspecified,White,26,"519,680",5,6.54,239
+Alaska,2013,Unspecified,Black,--,"34,987",--,--,--
+Alaska,2013,Unspecified,American Indian / Alaska Native,13**,"124,657",10.43**,15.07**,276
+Alaska,2013,Unspecified,Asian / HI Native / Pac. Islander,--,"58,302",--,--,--
+Alaska,2012,Cut/Pierce,White,--,"517,364",--,--,--
+Alaska,2012,Cut/Pierce,Black,--,"34,085",--,--,--
+Alaska,2012,Cut/Pierce,American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,Drowning (includes water transport),White,18**,"517,364",3.48**,3.01**,376
+Alaska,2012,Drowning (includes water transport),Black,--,"34,085",--,--,--
+Alaska,2012,Drowning (includes water transport),American Indian / Alaska Native,13**,"123,496",10.53**,11.64**,383
+Alaska,2012,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2012,Fall,White,21,"517,364",4.06,5.17,132
+Alaska,2012,Fall,Black,--,"34,085",--,--,--
+Alaska,2012,Fall,American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,Fall,Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2012,Fire/Flame,White,12**,"517,364",2.32**,2.57**,146
+Alaska,2012,Fire/Flame,American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,Firearm,White,86,"517,364",16.62,16.13,"1,983"
+Alaska,2012,Firearm,Black,--,"34,085",--,--,--
+Alaska,2012,Firearm,American Indian / Alaska Native,31,"123,496",25.1,24.37,"1,056"
+Alaska,2012,Firearm,Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2012,Machinery,White,--,"517,364",--,--,--
+Alaska,2012,Machinery,American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,Natural/Environmental,White,--,"517,364",--,--,--
+Alaska,2012,Natural/Environmental,American Indian / Alaska Native,11**,"123,496",8.91**,11.19**,242
+Alaska,2012,Drug Poisoning,White,94,"517,364",18.17,17.4,"2,325"
+Alaska,2012,Drug Poisoning,Black,--,"34,085",--,--,--
+Alaska,2012,Drug Poisoning,American Indian / Alaska Native,28,"123,496",22.67,25.36,707
+Alaska,2012,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2012,Non-Drug Poisoning,White,14**,"517,364",2.71**,2.43**,290
+Alaska,2012,Non-Drug Poisoning,American Indian / Alaska Native,11**,"123,496",8.91**,9.53**,239
+Alaska,2012,Struck by / against,White,--,"517,364",--,--,--
+Alaska,2012,Struck by / against,American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,Suffocation,White,22,"517,364",4.25,4.61,602
+Alaska,2012,Suffocation,Black,--,"34,085",--,--,--
+Alaska,2012,Suffocation,American Indian / Alaska Native,32,"123,496",25.91,26.94,"1,135"
+Alaska,2012,Suffocation,Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2012,"Motor vehicle, traffic",White,44,"517,364",8.51,8.39,"1,062"
+Alaska,2012,"Motor vehicle, traffic",Black,--,"34,085",--,--,--
+Alaska,2012,"Motor vehicle, traffic",American Indian / Alaska Native,14**,"123,496",11.34**,11.42**,460
+Alaska,2012,"Pedestrian, other",American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,"Pedestrian, other",Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2012,"Transport, other land",White,--,"517,364",--,--,--
+Alaska,2012,"Transport, other land",American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,"Transport, other land",Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2012,"Transport, other (excl. drown by water transp)",White,--,"517,364",--,--,--
+Alaska,2012,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,Other specified and classifiable,White,--,"517,364",--,--,--
+Alaska,2012,Other specified and classifiable,Black,--,"34,085",--,--,--
+Alaska,2012,Other specified and classifiable,American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2012,Other specified / NEC,American Indian / Alaska Native,--,"123,496",--,--,--
+Alaska,2012,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2012,Unspecified,White,18**,"517,364",3.48**,4.85**,114
+Alaska,2012,Unspecified,Black,--,"34,085",--,--,--
+Alaska,2012,Unspecified,American Indian / Alaska Native,14**,"123,496",11.34**,21.59**,43
+Alaska,2012,Unspecified,Asian / HI Native / Pac. Islander,--,"55,865",--,--,--
+Alaska,2011,Cut/Pierce,White,--,"513,789",--,--,--
+Alaska,2011,Cut/Pierce,Black,--,"32,700",--,--,--
+Alaska,2011,Cut/Pierce,American Indian / Alaska Native,--,"122,230",--,--,--
+Alaska,2011,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"53,630",--,--,--
+Alaska,2011,Drowning (includes water transport),White,18**,"513,789",3.50**,3.89**,606
+Alaska,2011,Drowning (includes water transport),American Indian / Alaska Native,12**,"122,230",9.82**,9.59**,417
+Alaska,2011,Fall,White,17**,"513,789",3.31**,4.54**,217
+Alaska,2011,Fall,Black,--,"32,700",--,--,--
+Alaska,2011,Fall,American Indian / Alaska Native,--,"122,230",--,--,--
+Alaska,2011,Fall,Asian / HI Native / Pac. Islander,--,"53,630",--,--,--
+Alaska,2011,Fire/Flame,White,--,"513,789",--,--,--
+Alaska,2011,Fire/Flame,American Indian / Alaska Native,--,"122,230",--,--,--
+Alaska,2011,Firearm,White,80,"513,789",15.57,14.94,"1,742"
+Alaska,2011,Firearm,Black,--,"32,700",--,--,--
+Alaska,2011,Firearm,American Indian / Alaska Native,39,"122,230",31.91,30.7,"1,308"
+Alaska,2011,Firearm,Asian / HI Native / Pac. Islander,--,"53,630",--,--,--
+Alaska,2011,Machinery,White,--,"513,789",--,--,--
+Alaska,2011,Machinery,American Indian / Alaska Native,--,"122,230",--,--,--
+Alaska,2011,Natural/Environmental,White,10**,"513,789",1.95**,2.01**,155
+Alaska,2011,Natural/Environmental,American Indian / Alaska Native,14**,"122,230",11.45**,12.36**,361
+Alaska,2011,Drug Poisoning,White,89,"513,789",17.32,15.7,"1,976"
+Alaska,2011,Drug Poisoning,Black,--,"32,700",--,--,--
+Alaska,2011,Drug Poisoning,American Indian / Alaska Native,16**,"122,230",13.09**,13.84**,465
+Alaska,2011,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"53,630",--,--,--
+Alaska,2011,Non-Drug Poisoning,White,21,"513,789",4.09,3.57,477
+Alaska,2011,Non-Drug Poisoning,American Indian / Alaska Native,23,"122,230",18.82,20.99,521
+Alaska,2011,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"53,630",--,--,--
+Alaska,2011,Struck by / against,White,--,"513,789",--,--,--
+Alaska,2011,Struck by / against,Asian / HI Native / Pac. Islander,--,"53,630",--,--,--
+Alaska,2011,Suffocation,White,24,"513,789",4.67,5.54,516
+Alaska,2011,Suffocation,Black,--,"32,700",--,--,--
+Alaska,2011,Suffocation,American Indian / Alaska Native,19**,"122,230",15.54**,15.47**,673
+Alaska,2011,Suffocation,Asian / HI Native / Pac. Islander,--,"53,630",--,--,--
+Alaska,2011,"Motor vehicle, traffic",White,52,"513,789",10.12,10.34,"1,185"
+Alaska,2011,"Motor vehicle, traffic",Black,--,"32,700",--,--,--
+Alaska,2011,"Motor vehicle, traffic",American Indian / Alaska Native,11**,"122,230",9.00**,8.17**,417
+Alaska,2011,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"53,630",--,--,--
+Alaska,2011,"Pedal cyclist, other",American Indian / Alaska Native,--,"122,230",--,--,--
+Alaska,2011,"Transport, other land",White,--,"513,789",--,--,--
+Alaska,2011,"Transport, other land",American Indian / Alaska Native,--,"122,230",--,--,--
+Alaska,2011,"Transport, other (excl. drown by water transp)",White,15**,"513,789",2.92**,2.97**,452
+Alaska,2011,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"122,230",--,--,--
+Alaska,2011,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"53,630",--,--,--
+Alaska,2011,Other specified and classifiable,White,--,"513,789",--,--,--
+Alaska,2011,Other specified and classifiable,American Indian / Alaska Native,--,"122,230",--,--,--
+Alaska,2011,Other specified / NEC,American Indian / Alaska Native,--,"122,230",--,--,--
+Alaska,2011,Unspecified,White,21,"513,789",4.09,6.13,222
+Alaska,2011,Unspecified,American Indian / Alaska Native,12**,"122,230",9.82**,12.67**,301
+Alaska,2010,Cut/Pierce,White,--,"507,633",--,--,--
+Alaska,2010,Cut/Pierce,American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,Drowning (includes water transport),White,25,"507,633",4.93,4.93,438
+Alaska,2010,Drowning (includes water transport),Black,--,"31,379",--,--,--
+Alaska,2010,Drowning (includes water transport),American Indian / Alaska Native,21,"120,285",17.46,17.93,664
+Alaska,2010,Fall,White,26,"507,633",5.12,7.3,174
+Alaska,2010,Fall,Black,--,"31,379",--,--,--
+Alaska,2010,Fall,American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,Fall,Asian / HI Native / Pac. Islander,--,"50,949",--,--,--
+Alaska,2010,Fire/Flame,White,--,"507,633",--,--,--
+Alaska,2010,Fire/Flame,American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,Firearm,White,91,"507,633",17.93,17.86,"2,163"
+Alaska,2010,Firearm,Black,--,"31,379",--,--,--
+Alaska,2010,Firearm,American Indian / Alaska Native,42,"120,285",34.92,33.7,"1,545"
+Alaska,2010,Firearm,Asian / HI Native / Pac. Islander,--,"50,949",--,--,--
+Alaska,2010,Machinery,White,--,"507,633",--,--,--
+Alaska,2010,Machinery,American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,Natural/Environmental,White,10**,"507,633",1.97**,1.71**,154
+Alaska,2010,Natural/Environmental,American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,Drug Poisoning,White,65,"507,633",12.81,12.2,"1,437"
+Alaska,2010,Drug Poisoning,Black,--,"31,379",--,--,--
+Alaska,2010,Drug Poisoning,American Indian / Alaska Native,12**,"120,285",9.98**,11.33**,312
+Alaska,2010,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"50,949",--,--,--
+Alaska,2010,Non-Drug Poisoning,White,13**,"507,633",2.56**,2.29**,237
+Alaska,2010,Non-Drug Poisoning,American Indian / Alaska Native,28,"120,285",23.28,25.84,660
+Alaska,2010,Suffocation,White,33,"507,633",6.5,6.37,891
+Alaska,2010,Suffocation,American Indian / Alaska Native,26,"120,285",21.62,21.2,857
+Alaska,2010,Suffocation,Asian / HI Native / Pac. Islander,--,"50,949",--,--,--
+Alaska,2010,"Motor vehicle, traffic",White,45,"507,633",8.87,8.96,777
+Alaska,2010,"Motor vehicle, traffic",Black,--,"31,379",--,--,--
+Alaska,2010,"Motor vehicle, traffic",American Indian / Alaska Native,10**,"120,285",8.31**,7.82**,367
+Alaska,2010,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"50,949",--,--,--
+Alaska,2010,"Pedal cyclist, other",American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,"Pedestrian, other",American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,"Transport, other land",White,--,"507,633",--,--,--
+Alaska,2010,"Transport, other land",American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,"Transport, other (excl. drown by water transp)",White,29,"507,633",5.71,5.89,660
+Alaska,2010,Other specified and classifiable,White,--,"507,633",--,--,--
+Alaska,2010,Other specified and classifiable,American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,Other specified / NEC,Black,--,"31,379",--,--,--
+Alaska,2010,Other specified / NEC,American Indian / Alaska Native,--,"120,285",--,--,--
+Alaska,2010,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"50,949",--,--,--
+Alaska,2010,Unspecified,White,22,"507,633",4.33,7.52,165
+Alaska,2010,Unspecified,American Indian / Alaska Native,11**,"120,285",9.15**,14.77**,283
+Alaska,2010,Unspecified,Asian / HI Native / Pac. Islander,--,"50,949",--,--,--
+Alaska,2009,Cut/Pierce,White,--,"499,867",--,--,--
+Alaska,2009,Drowning (includes water transport),White,16**,"499,867",3.20**,3.05**,383
+Alaska,2009,Drowning (includes water transport),American Indian / Alaska Native,10**,"119,327",8.38**,8.77**,329
+Alaska,2009,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"49,128",--,--,--
+Alaska,2009,Fall,White,20**,"499,867",4.00**,5.38**,241
+Alaska,2009,Fall,American Indian / Alaska Native,--,"119,327",--,--,--
+Alaska,2009,Fire/Flame,White,--,"499,867",--,--,--
+Alaska,2009,Fire/Flame,Black,--,"30,573",--,--,--
+Alaska,2009,Fire/Flame,American Indian / Alaska Native,--,"119,327",--,--,--
+Alaska,2009,Firearm,White,63,"499,867",12.6,11.83,"1,516"
+Alaska,2009,Firearm,Black,--,"30,573",--,--,--
+Alaska,2009,Firearm,American Indian / Alaska Native,33,"119,327",27.66,27.06,"1,174"
+Alaska,2009,Firearm,Asian / HI Native / Pac. Islander,--,"49,128",--,--,--
+Alaska,2009,Machinery,White,--,"499,867",--,--,--
+Alaska,2009,Machinery,American Indian / Alaska Native,--,"119,327",--,--,--
+Alaska,2009,Natural/Environmental,White,11**,"499,867",2.20**,2.17**,218
+Alaska,2009,Natural/Environmental,American Indian / Alaska Native,12**,"119,327",10.06**,10.15**,370
+Alaska,2009,Drug Poisoning,White,99,"499,867",19.81,17.79,"2,133"
+Alaska,2009,Drug Poisoning,Black,--,"30,573",--,--,--
+Alaska,2009,Drug Poisoning,American Indian / Alaska Native,28,"119,327",23.47,27.57,686
+Alaska,2009,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"49,128",--,--,--
+Alaska,2009,Non-Drug Poisoning,White,17**,"499,867",3.40**,3.13**,321
+Alaska,2009,Non-Drug Poisoning,American Indian / Alaska Native,25,"119,327",20.95,25.14,544
+Alaska,2009,Suffocation,White,23,"499,867",4.6,4.4,492
+Alaska,2009,Suffocation,Black,--,"30,573",--,--,--
+Alaska,2009,Suffocation,American Indian / Alaska Native,23,"119,327",19.28,20.14,930
+Alaska,2009,Suffocation,Asian / HI Native / Pac. Islander,--,"49,128",--,--,--
+Alaska,2009,"Motor vehicle, traffic",White,37,"499,867",7.4,7.16,977
+Alaska,2009,"Motor vehicle, traffic",Black,--,"30,573",--,--,--
+Alaska,2009,"Motor vehicle, traffic",American Indian / Alaska Native,17**,"119,327",14.25**,16.60**,428
+Alaska,2009,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"49,128",--,--,--
+Alaska,2009,"Pedal cyclist, other",White,--,"499,867",--,--,--
+Alaska,2009,"Pedestrian, other",White,--,"499,867",--,--,--
+Alaska,2009,"Pedestrian, other",American Indian / Alaska Native,--,"119,327",--,--,--
+Alaska,2009,"Transport, other land",White,--,"499,867",--,--,--
+Alaska,2009,"Transport, other land",American Indian / Alaska Native,13**,"119,327",10.89**,11.57**,416
+Alaska,2009,"Transport, other (excl. drown by water transp)",White,--,"499,867",--,--,--
+Alaska,2009,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"119,327",--,--,--
+Alaska,2009,Other specified / NEC,White,--,"499,867",--,--,--
+Alaska,2009,Unspecified,White,14**,"499,867",2.80**,5.04**,53
+Alaska,2009,Unspecified,American Indian / Alaska Native,12**,"119,327",10.06**,19.70**,170
+Alaska,2008,Cut/Pierce,White,--,"493,848",--,--,--
+Alaska,2008,Cut/Pierce,American Indian / Alaska Native,--,"117,364",--,--,--
+Alaska,2008,Drowning (includes water transport),White,23,"493,848",4.66,4.04,533
+Alaska,2008,Drowning (includes water transport),American Indian / Alaska Native,18**,"117,364",15.34**,17.00**,539
+Alaska,2008,Fall,White,21,"493,848",4.25,6.14,121
+Alaska,2008,Fall,American Indian / Alaska Native,--,"117,364",--,--,--
+Alaska,2008,Fire/Flame,White,--,"493,848",--,--,--
+Alaska,2008,Fire/Flame,American Indian / Alaska Native,--,"117,364",--,--,--
+Alaska,2008,Firearm,White,97,"493,848",19.64,19.58,"2,174"
+Alaska,2008,Firearm,Black,--,"30,042",--,--,--
+Alaska,2008,Firearm,American Indian / Alaska Native,37,"117,364",31.53,30.13,"1,348"
+Alaska,2008,Firearm,Asian / HI Native / Pac. Islander,--,"46,026",--,--,--
+Alaska,2008,Machinery,White,--,"493,848",--,--,--
+Alaska,2008,Natural/Environmental,White,--,"493,848",--,--,--
+Alaska,2008,Natural/Environmental,American Indian / Alaska Native,--,"117,364",--,--,--
+Alaska,2008,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"46,026",--,--,--
+Alaska,2008,Drug Poisoning,White,92,"493,848",18.63,17.21,"2,156"
+Alaska,2008,Drug Poisoning,Black,--,"30,042",--,--,--
+Alaska,2008,Drug Poisoning,American Indian / Alaska Native,30,"117,364",25.56,28.4,799
+Alaska,2008,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"46,026",--,--,--
+Alaska,2008,Non-Drug Poisoning,White,17**,"493,848",3.44**,3.58**,227
+Alaska,2008,Non-Drug Poisoning,American Indian / Alaska Native,22,"117,364",18.75,22.55,496
+Alaska,2008,Struck by / against,White,--,"493,848",--,--,--
+Alaska,2008,Suffocation,White,31,"493,848",6.28,7.17,786
+Alaska,2008,Suffocation,American Indian / Alaska Native,22,"117,364",18.75,16.69,896
+Alaska,2008,Suffocation,Asian / HI Native / Pac. Islander,--,"46,026",--,--,--
+Alaska,2008,"Motor vehicle, traffic",White,39,"493,848",7.9,8.12,"1,099"
+Alaska,2008,"Motor vehicle, traffic",Black,--,"30,042",--,--,--
+Alaska,2008,"Motor vehicle, traffic",American Indian / Alaska Native,17**,"117,364",14.49**,15.96**,587
+Alaska,2008,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"46,026",--,--,--
+Alaska,2008,"Pedestrian, other",White,--,"493,848",--,--,--
+Alaska,2008,"Transport, other land",White,--,"493,848",--,--,--
+Alaska,2008,"Transport, other land",American Indian / Alaska Native,--,"117,364",--,--,--
+Alaska,2008,"Transport, other (excl. drown by water transp)",White,11**,"493,848",2.23**,1.86**,183
+Alaska,2008,Other specified and classifiable,White,--,"493,848",--,--,--
+Alaska,2008,Other specified and classifiable,American Indian / Alaska Native,--,"117,364",--,--,--
+Alaska,2008,Other specified / NEC,White,--,"493,848",--,--,--
+Alaska,2008,Other specified / NEC,American Indian / Alaska Native,--,"117,364",--,--,--
+Alaska,2008,Unspecified,White,15**,"493,848",3.04**,5.00**,148
+Alaska,2008,Unspecified,American Indian / Alaska Native,--,"117,364",--,--,--
+Alaska,2007,Cut/Pierce,White,--,"490,318",--,--,--
+Alaska,2007,Cut/Pierce,American Indian / Alaska Native,--,"116,253",--,--,--
+Alaska,2007,Drowning (includes water transport),White,20**,"490,318",4.08**,3.90**,531
+Alaska,2007,Drowning (includes water transport),American Indian / Alaska Native,16**,"116,253",13.76**,13.82**,520
+Alaska,2007,Fall,White,23,"490,318",4.69,7.4,225
+Alaska,2007,Fall,American Indian / Alaska Native,--,"116,253",--,--,--
+Alaska,2007,Fall,Asian / HI Native / Pac. Islander,--,"43,992",--,--,--
+Alaska,2007,Fire/Flame,White,--,"490,318",--,--,--
+Alaska,2007,Fire/Flame,Black,--,"29,560",--,--,--
+Alaska,2007,Fire/Flame,American Indian / Alaska Native,--,"116,253",--,--,--
+Alaska,2007,Fire/Flame,Asian / HI Native / Pac. Islander,--,"43,992",--,--,--
+Alaska,2007,Firearm,White,83,"490,318",16.93,17.63,"1,770"
+Alaska,2007,Firearm,Black,--,"29,560",--,--,--
+Alaska,2007,Firearm,American Indian / Alaska Native,30,"116,253",25.81,23.77,"1,085"
+Alaska,2007,Firearm,Asian / HI Native / Pac. Islander,--,"43,992",--,--,--
+Alaska,2007,Machinery,White,--,"490,318",--,--,--
+Alaska,2007,Natural/Environmental,White,--,"490,318",--,--,--
+Alaska,2007,Natural/Environmental,American Indian / Alaska Native,17**,"116,253",14.62**,17.09**,437
+Alaska,2007,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"43,992",--,--,--
+Alaska,2007,Drug Poisoning,White,60,"490,318",12.24,11.32,"1,532"
+Alaska,2007,Drug Poisoning,Black,--,"29,560",--,--,--
+Alaska,2007,Drug Poisoning,American Indian / Alaska Native,11**,"116,253",9.46**,10.80**,244
+Alaska,2007,Non-Drug Poisoning,White,13**,"490,318",2.65**,2.58**,208
+Alaska,2007,Non-Drug Poisoning,Black,--,"29,560",--,--,--
+Alaska,2007,Non-Drug Poisoning,American Indian / Alaska Native,16**,"116,253",13.76**,14.73**,484
+Alaska,2007,Struck by / against,White,--,"490,318",--,--,--
+Alaska,2007,Suffocation,White,30,"490,318",6.12,6.87,"1,036"
+Alaska,2007,Suffocation,Black,--,"29,560",--,--,--
+Alaska,2007,Suffocation,American Indian / Alaska Native,31,"116,253",26.67,24.74,"1,329"
+Alaska,2007,Suffocation,Asian / HI Native / Pac. Islander,--,"43,992",--,--,--
+Alaska,2007,"Motor vehicle, traffic",White,58,"490,318",11.83,11.36,"1,565"
+Alaska,2007,"Motor vehicle, traffic",Black,--,"29,560",--,--,--
+Alaska,2007,"Motor vehicle, traffic",American Indian / Alaska Native,21,"116,253",18.06,17.56,692
+Alaska,2007,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"43,992",--,--,--
+Alaska,2007,"Pedal cyclist, other",American Indian / Alaska Native,--,"116,253",--,--,--
+Alaska,2007,"Pedestrian, other",American Indian / Alaska Native,--,"116,253",--,--,--
+Alaska,2007,"Transport, other land",White,10**,"490,318",2.04**,1.86**,297
+Alaska,2007,"Transport, other land",American Indian / Alaska Native,--,"116,253",--,--,--
+Alaska,2007,"Transport, other (excl. drown by water transp)",White,15**,"490,318",3.06**,3.00**,307
+Alaska,2007,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"116,253",--,--,--
+Alaska,2007,Other specified and classifiable,White,--,"490,318",--,--,--
+Alaska,2007,Other specified and classifiable,American Indian / Alaska Native,--,"116,253",--,--,--
+Alaska,2007,Other specified / NEC,White,--,"490,318",--,--,--
+Alaska,2007,Other specified / NEC,Black,--,"29,560",--,--,--
+Alaska,2007,Other specified / NEC,American Indian / Alaska Native,--,"116,253",--,--,--
+Alaska,2007,Unspecified,White,15**,"490,318",3.06**,4.69**,159
+Alaska,2007,Unspecified,Black,--,"29,560",--,--,--
+Alaska,2007,Unspecified,American Indian / Alaska Native,10**,"116,253",8.60**,15.40**,225
+Alaska,2007,Unspecified,Asian / HI Native / Pac. Islander,--,"43,992",--,--,--
+Alaska,2006,Cut/Pierce,White,--,"487,845",--,--,--
+Alaska,2006,Cut/Pierce,American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"42,646",--,--,--
+Alaska,2006,Drowning (includes water transport),White,15**,"487,845",3.08**,2.71**,422
+Alaska,2006,Drowning (includes water transport),American Indian / Alaska Native,16**,"115,614",13.84**,15.77**,506
+Alaska,2006,Fall,White,20**,"487,845",4.10**,5.97**,303
+Alaska,2006,Fall,American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,Fall,Asian / HI Native / Pac. Islander,--,"42,646",--,--,--
+Alaska,2006,Fire/Flame,White,--,"487,845",--,--,--
+Alaska,2006,Fire/Flame,American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,Firearm,White,71,"487,845",14.55,15.13,"1,664"
+Alaska,2006,Firearm,Black,--,"29,045",--,--,--
+Alaska,2006,Firearm,American Indian / Alaska Native,30,"115,614",25.95,25.67,"1,009"
+Alaska,2006,Firearm,Asian / HI Native / Pac. Islander,--,"42,646",--,--,--
+Alaska,2006,Machinery,White,--,"487,845",--,--,--
+Alaska,2006,Machinery,American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,Natural/Environmental,White,--,"487,845",--,--,--
+Alaska,2006,Natural/Environmental,American Indian / Alaska Native,13**,"115,614",11.24**,12.88**,368
+Alaska,2006,Drug Poisoning,White,62,"487,845",12.71,11.76,"1,504"
+Alaska,2006,Drug Poisoning,Black,--,"29,045",--,--,--
+Alaska,2006,Drug Poisoning,American Indian / Alaska Native,13**,"115,614",11.24**,14.42**,335
+Alaska,2006,Non-Drug Poisoning,White,--,"487,845",--,--,--
+Alaska,2006,Non-Drug Poisoning,American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,Struck by / against,White,--,"487,845",--,--,--
+Alaska,2006,Suffocation,White,19**,"487,845",3.90**,4.09**,499
+Alaska,2006,Suffocation,American Indian / Alaska Native,30,"115,614",25.95,21.37,"1,414"
+Alaska,2006,Suffocation,Asian / HI Native / Pac. Islander,--,"42,646",--,--,--
+Alaska,2006,"Motor vehicle, traffic",White,55,"487,845",11.27,11.57,"1,434"
+Alaska,2006,"Motor vehicle, traffic",Black,--,"29,045",--,--,--
+Alaska,2006,"Motor vehicle, traffic",American Indian / Alaska Native,17**,"115,614",14.70**,14.84**,505
+Alaska,2006,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"42,646",--,--,--
+Alaska,2006,"Pedal cyclist, other",White,--,"487,845",--,--,--
+Alaska,2006,"Pedestrian, other",American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,"Transport, other land",White,--,"487,845",--,--,--
+Alaska,2006,"Transport, other land",American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,"Transport, other (excl. drown by water transp)",White,18**,"487,845",3.69**,3.57**,566
+Alaska,2006,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"42,646",--,--,--
+Alaska,2006,Other specified and classifiable,White,--,"487,845",--,--,--
+Alaska,2006,Other specified and classifiable,American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,Other specified / NEC,White,--,"487,845",--,--,--
+Alaska,2006,Other specified / NEC,American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,Unspecified,White,--,"487,845",--,--,--
+Alaska,2006,Unspecified,American Indian / Alaska Native,--,"115,614",--,--,--
+Alaska,2006,Unspecified,Asian / HI Native / Pac. Islander,--,"42,646",--,--,--
+Alaska,2005,Cut/Pierce,White,--,"482,624",--,--,--
+Alaska,2005,Drowning (includes water transport),White,13**,"482,624",2.69**,2.63**,324
+Alaska,2005,Drowning (includes water transport),American Indian / Alaska Native,31,"114,260",27.13,29.78,"1,002"
+Alaska,2005,Fall,White,16**,"482,624",3.32**,4.26**,281
+Alaska,2005,Fall,American Indian / Alaska Native,--,"114,260",--,--,--
+Alaska,2005,Fall,Asian / HI Native / Pac. Islander,--,"41,215",--,--,--
+Alaska,2005,Fire/Flame,White,--,"482,624",--,--,--
+Alaska,2005,Fire/Flame,American Indian / Alaska Native,--,"114,260",--,--,--
+Alaska,2005,Firearm,White,63,"482,624",13.05,13.13,"1,486"
+Alaska,2005,Firearm,Black,--,"28,736",--,--,--
+Alaska,2005,Firearm,American Indian / Alaska Native,43,"114,260",37.63,38.38,"1,421"
+Alaska,2005,Firearm,Asian / HI Native / Pac. Islander,--,"41,215",--,--,--
+Alaska,2005,Natural/Environmental,White,--,"482,624",--,--,--
+Alaska,2005,Natural/Environmental,American Indian / Alaska Native,--,"114,260",--,--,--
+Alaska,2005,Drug Poisoning,White,58,"482,624",12.02,11.06,"1,494"
+Alaska,2005,Drug Poisoning,Black,--,"28,736",--,--,--
+Alaska,2005,Drug Poisoning,American Indian / Alaska Native,20**,"114,260",17.50**,20.25**,487
+Alaska,2005,Non-Drug Poisoning,White,--,"482,624",--,--,--
+Alaska,2005,Non-Drug Poisoning,American Indian / Alaska Native,--,"114,260",--,--,--
+Alaska,2005,Struck by / against,White,--,"482,624",--,--,--
+Alaska,2005,Suffocation,White,34,"482,624",7.05,7.17,"1,227"
+Alaska,2005,Suffocation,Black,--,"28,736",--,--,--
+Alaska,2005,Suffocation,American Indian / Alaska Native,15**,"114,260",13.13**,12.18**,597
+Alaska,2005,Suffocation,Asian / HI Native / Pac. Islander,--,"41,215",--,--,--
+Alaska,2005,"Motor vehicle, traffic",White,62,"482,624",12.85,13.3,"1,593"
+Alaska,2005,"Motor vehicle, traffic",American Indian / Alaska Native,12**,"114,260",10.50**,11.26**,399
+Alaska,2005,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"41,215",--,--,--
+Alaska,2005,"Pedestrian, other",White,--,"482,624",--,--,--
+Alaska,2005,"Pedestrian, other",American Indian / Alaska Native,--,"114,260",--,--,--
+Alaska,2005,"Transport, other land",White,--,"482,624",--,--,--
+Alaska,2005,"Transport, other land",American Indian / Alaska Native,13**,"114,260",11.38**,10.14**,490
+Alaska,2005,"Transport, other (excl. drown by water transp)",White,--,"482,624",--,--,--
+Alaska,2005,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"114,260",--,--,--
+Alaska,2005,Other specified and classifiable,White,--,"482,624",--,--,--
+Alaska,2005,Other specified and classifiable,American Indian / Alaska Native,--,"114,260",--,--,--
+Alaska,2005,Other specified / NEC,White,--,"482,624",--,--,--
+Alaska,2005,Other specified / NEC,American Indian / Alaska Native,--,"114,260",--,--,--
+Alaska,2005,Unspecified,White,12**,"482,624",2.49**,4.37**,183
+Alaska,2005,Unspecified,American Indian / Alaska Native,--,"114,260",--,--,--
+Alaska,2005,Unspecified,Asian / HI Native / Pac. Islander,--,"41,215",--,--,--
+Alaska,2004,Cut/Pierce,White,--,"478,426",--,--,--
+Alaska,2004,Cut/Pierce,American Indian / Alaska Native,--,"112,686",--,--,--
+Alaska,2004,Drowning (includes water transport),White,26,"478,426",5.43,5.21,683
+Alaska,2004,Drowning (includes water transport),American Indian / Alaska Native,20**,"112,686",17.75**,17.15**,709
+Alaska,2004,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"39,441",--,--,--
+Alaska,2004,Fall,White,12**,"478,426",2.51**,3.54**,181
+Alaska,2004,Fall,American Indian / Alaska Native,--,"112,686",--,--,--
+Alaska,2004,Fire/Flame,White,--,"478,426",--,--,--
+Alaska,2004,Fire/Flame,Black,--,"28,646",--,--,--
+Alaska,2004,Fire/Flame,American Indian / Alaska Native,--,"112,686",--,--,--
+Alaska,2004,Firearm,White,73,"478,426",15.26,15.05,"1,887"
+Alaska,2004,Firearm,Black,--,"28,646",--,--,--
+Alaska,2004,Firearm,American Indian / Alaska Native,33,"112,686",29.29,28.35,"1,168"
+Alaska,2004,Firearm,Asian / HI Native / Pac. Islander,--,"39,441",--,--,--
+Alaska,2004,Machinery,White,--,"478,426",--,--,--
+Alaska,2004,Natural/Environmental,White,--,"478,426",--,--,--
+Alaska,2004,Natural/Environmental,American Indian / Alaska Native,--,"112,686",--,--,--
+Alaska,2004,Overexertion,American Indian / Alaska Native,--,"112,686",--,--,--
+Alaska,2004,Drug Poisoning,White,66,"478,426",13.8,13.04,"1,745"
+Alaska,2004,Drug Poisoning,Black,--,"28,646",--,--,--
+Alaska,2004,Drug Poisoning,American Indian / Alaska Native,16**,"112,686",14.20**,16.17**,452
+Alaska,2004,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"39,441",--,--,--
+Alaska,2004,Non-Drug Poisoning,White,14**,"478,426",2.93**,2.99**,360
+Alaska,2004,Non-Drug Poisoning,American Indian / Alaska Native,--,"112,686",--,--,--
+Alaska,2004,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"39,441",--,--,--
+Alaska,2004,Struck by / against,White,--,"478,426",--,--,--
+Alaska,2004,Suffocation,White,19**,"478,426",3.97**,4.60**,694
+Alaska,2004,Suffocation,Black,--,"28,646",--,--,--
+Alaska,2004,Suffocation,American Indian / Alaska Native,30,"112,686",26.62,25.86,"1,233"
+Alaska,2004,Suffocation,Asian / HI Native / Pac. Islander,--,"39,441",--,--,--
+Alaska,2004,"Motor vehicle, traffic",White,76,"478,426",15.89,16.84,"1,933"
+Alaska,2004,"Motor vehicle, traffic",Black,--,"28,646",--,--,--
+Alaska,2004,"Motor vehicle, traffic",American Indian / Alaska Native,18**,"112,686",15.97**,17.98**,542
+Alaska,2004,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"39,441",--,--,--
+Alaska,2004,"Pedestrian, other",White,--,"478,426",--,--,--
+Alaska,2004,"Transport, other land",White,--,"478,426",--,--,--
+Alaska,2004,"Transport, other land",American Indian / Alaska Native,--,"112,686",--,--,--
+Alaska,2004,"Transport, other (excl. drown by water transp)",White,15**,"478,426",3.14**,3.09**,323
+Alaska,2004,Other specified and classifiable,White,--,"478,426",--,--,--
+Alaska,2004,Other specified / NEC,White,--,"478,426",--,--,--
+Alaska,2004,Other specified / NEC,Black,--,"28,646",--,--,--
+Alaska,2004,Other specified / NEC,American Indian / Alaska Native,--,"112,686",--,--,--
+Alaska,2004,Unspecified,White,10**,"478,426",2.09**,4.62**,74
+Alaska,2004,Unspecified,Black,--,"28,646",--,--,--
+Alaska,2004,Unspecified,American Indian / Alaska Native,--,"112,686",--,--,--
+Alaska,2004,Unspecified,Asian / HI Native / Pac. Islander,--,"39,441",--,--,--
+Alaska,2003,Cut/Pierce,White,--,"471,504",--,--,--
+Alaska,2003,Cut/Pierce,American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,Drowning (includes water transport),White,17**,"471,504",3.61**,3.99**,309
+Alaska,2003,Drowning (includes water transport),Black,--,"28,179",--,--,--
+Alaska,2003,Drowning (includes water transport),American Indian / Alaska Native,15**,"110,895",13.53**,14.30**,469
+Alaska,2003,Fall,White,10**,"471,504",2.12**,2.99**,87
+Alaska,2003,Fall,American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,Fire/Flame,White,--,"471,504",--,--,--
+Alaska,2003,Fire/Flame,American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,Firearm,White,73,"471,504",15.48,16.71,"1,771"
+Alaska,2003,Firearm,Black,--,"28,179",--,--,--
+Alaska,2003,Firearm,American Indian / Alaska Native,37,"110,895",33.37,30.67,"1,408"
+Alaska,2003,Firearm,Asian / HI Native / Pac. Islander,--,"37,748",--,--,--
+Alaska,2003,Machinery,White,--,"471,504",--,--,--
+Alaska,2003,Natural/Environmental,White,--,"471,504",--,--,--
+Alaska,2003,Natural/Environmental,American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,Drug Poisoning,White,62,"471,504",13.15,12.84,"1,630"
+Alaska,2003,Drug Poisoning,Black,--,"28,179",--,--,--
+Alaska,2003,Drug Poisoning,American Indian / Alaska Native,19**,"110,895",17.13**,18.85**,564
+Alaska,2003,Non-Drug Poisoning,White,--,"471,504",--,--,--
+Alaska,2003,Non-Drug Poisoning,American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"37,748",--,--,--
+Alaska,2003,Struck by / against,White,--,"471,504",--,--,--
+Alaska,2003,Suffocation,White,15**,"471,504",3.18**,3.40**,386
+Alaska,2003,Suffocation,Black,--,"28,179",--,--,--
+Alaska,2003,Suffocation,American Indian / Alaska Native,20**,"110,895",18.04**,15.52**,846
+Alaska,2003,Suffocation,Asian / HI Native / Pac. Islander,--,"37,748",--,--,--
+Alaska,2003,"Motor vehicle, traffic",White,77,"471,504",16.33,17.21,"2,156"
+Alaska,2003,"Motor vehicle, traffic",Black,--,"28,179",--,--,--
+Alaska,2003,"Motor vehicle, traffic",American Indian / Alaska Native,19**,"110,895",17.13**,18.02**,646
+Alaska,2003,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"37,748",--,--,--
+Alaska,2003,"Pedal cyclist, other",American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,"Pedestrian, other",White,--,"471,504",--,--,--
+Alaska,2003,"Pedestrian, other",American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,"Transport, other land",White,--,"471,504",--,--,--
+Alaska,2003,"Transport, other land",American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,"Transport, other (excl. drown by water transp)",White,15**,"471,504",3.18**,3.15**,251
+Alaska,2003,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"37,748",--,--,--
+Alaska,2003,Other specified and classifiable,White,--,"471,504",--,--,--
+Alaska,2003,Other specified / NEC,White,--,"471,504",--,--,--
+Alaska,2003,Other specified / NEC,American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,Unspecified,White,20**,"471,504",4.24**,7.07**,213
+Alaska,2003,Unspecified,American Indian / Alaska Native,--,"110,895",--,--,--
+Alaska,2003,Unspecified,Asian / HI Native / Pac. Islander,--,"37,748",--,--,--
+Alaska,2002,Cut/Pierce,White,--,"468,675",--,--,--
+Alaska,2002,Cut/Pierce,Black,--,"28,140",--,--,--
+Alaska,2002,Cut/Pierce,American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2002,Drowning (includes water transport),White,20**,"468,675",4.27**,4.06**,668
+Alaska,2002,Drowning (includes water transport),Black,--,"28,140",--,--,--
+Alaska,2002,Drowning (includes water transport),American Indian / Alaska Native,21,"109,728",19.14,19.56,773
+Alaska,2002,Fall,White,16**,"468,675",3.41**,4.46**,324
+Alaska,2002,Fall,American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2002,Fire/Flame,White,--,"468,675",--,--,--
+Alaska,2002,Fire/Flame,Black,--,"28,140",--,--,--
+Alaska,2002,Fire/Flame,American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2002,Firearm,White,82,"468,675",17.5,17.74,"1,886"
+Alaska,2002,Firearm,Black,--,"28,140",--,--,--
+Alaska,2002,Firearm,American Indian / Alaska Native,41,"109,728",37.37,35.65,"1,533"
+Alaska,2002,Firearm,Asian / HI Native / Pac. Islander,--,"35,727",--,--,--
+Alaska,2002,Machinery,White,--,"468,675",--,--,--
+Alaska,2002,Natural/Environmental,White,12**,"468,675",2.56**,2.26**,311
+Alaska,2002,Natural/Environmental,American Indian / Alaska Native,12**,"109,728",10.94**,11.80**,333
+Alaska,2002,Drug Poisoning,White,68,"468,675",14.51,12.78,"1,522"
+Alaska,2002,Drug Poisoning,Black,--,"28,140",--,--,--
+Alaska,2002,Drug Poisoning,American Indian / Alaska Native,15**,"109,728",13.67**,15.69**,346
+Alaska,2002,Non-Drug Poisoning,White,--,"468,675",--,--,--
+Alaska,2002,Non-Drug Poisoning,American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2002,Struck by / against,White,--,"468,675",--,--,--
+Alaska,2002,Struck by / against,American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2002,Suffocation,White,25,"468,675",5.33,6.39,837
+Alaska,2002,Suffocation,American Indian / Alaska Native,11**,"109,728",10.03**,9.13**,491
+Alaska,2002,Suffocation,Asian / HI Native / Pac. Islander,--,"35,727",--,--,--
+Alaska,2002,"Motor vehicle, traffic",White,66,"468,675",14.08,15.59,"1,734"
+Alaska,2002,"Motor vehicle, traffic",Black,--,"28,140",--,--,--
+Alaska,2002,"Motor vehicle, traffic",American Indian / Alaska Native,26,"109,728",23.7,28.29,625
+Alaska,2002,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"35,727",--,--,--
+Alaska,2002,"Pedal cyclist, other",White,--,"468,675",--,--,--
+Alaska,2002,"Pedestrian, other",White,--,"468,675",--,--,--
+Alaska,2002,"Pedestrian, other",American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2002,"Pedestrian, other",Asian / HI Native / Pac. Islander,--,"35,727",--,--,--
+Alaska,2002,"Transport, other land",White,--,"468,675",--,--,--
+Alaska,2002,"Transport, other land",American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2002,"Transport, other (excl. drown by water transp)",White,20**,"468,675",4.27**,4.06**,328
+Alaska,2002,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2002,Other specified and classifiable,White,--,"468,675",--,--,--
+Alaska,2002,Other specified / NEC,White,--,"468,675",--,--,--
+Alaska,2002,Other specified / NEC,American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2002,Unspecified,White,20**,"468,675",4.27**,6.90**,243
+Alaska,2002,Unspecified,Black,--,"28,140",--,--,--
+Alaska,2002,Unspecified,American Indian / Alaska Native,--,"109,728",--,--,--
+Alaska,2001,Cut/Pierce,White,--,"463,805",--,--,--
+Alaska,2001,Cut/Pierce,Black,--,"27,331",--,--,--
+Alaska,2001,Cut/Pierce,American Indian / Alaska Native,--,"108,708",--,--,--
+Alaska,2001,Drowning (includes water transport),White,17**,"463,805",3.67**,3.96**,506
+Alaska,2001,Drowning (includes water transport),American Indian / Alaska Native,21,"108,708",19.32,19.46,776
+Alaska,2001,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"33,843",--,--,--
+Alaska,2001,Fall,White,16**,"463,805",3.45**,5.04**,285
+Alaska,2001,Fall,American Indian / Alaska Native,--,"108,708",--,--,--
+Alaska,2001,Fall,Asian / HI Native / Pac. Islander,--,"33,843",--,--,--
+Alaska,2001,Fire/Flame,White,--,"463,805",--,--,--
+Alaska,2001,Fire/Flame,Black,--,"27,331",--,--,--
+Alaska,2001,Fire/Flame,American Indian / Alaska Native,--,"108,708",--,--,--
+Alaska,2001,Fire/Flame,Asian / HI Native / Pac. Islander,--,"33,843",--,--,--
+Alaska,2001,Firearm,White,59,"463,805",12.72,12.52,"1,568"
+Alaska,2001,Firearm,Black,--,"27,331",--,--,--
+Alaska,2001,Firearm,American Indian / Alaska Native,34,"108,708",31.28,31.46,"1,199"
+Alaska,2001,Machinery,White,--,"463,805",--,--,--
+Alaska,2001,Machinery,Asian / HI Native / Pac. Islander,--,"33,843",--,--,--
+Alaska,2001,Natural/Environmental,White,--,"463,805",--,--,--
+Alaska,2001,Natural/Environmental,American Indian / Alaska Native,--,"108,708",--,--,--
+Alaska,2001,Drug Poisoning,White,48,"463,805",10.35,9.46,"1,214"
+Alaska,2001,Drug Poisoning,Black,--,"27,331",--,--,--
+Alaska,2001,Drug Poisoning,American Indian / Alaska Native,11**,"108,708",10.12**,11.13**,320
+Alaska,2001,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"33,843",--,--,--
+Alaska,2001,Non-Drug Poisoning,White,20**,"463,805",4.31**,3.84**,447
+Alaska,2001,Non-Drug Poisoning,American Indian / Alaska Native,14**,"108,708",12.88**,13.11**,468
+Alaska,2001,Struck by / against,White,--,"463,805",--,--,--
+Alaska,2001,Struck by / against,American Indian / Alaska Native,--,"108,708",--,--,--
+Alaska,2001,Struck by / against,Asian / HI Native / Pac. Islander,--,"33,843",--,--,--
+Alaska,2001,Suffocation,White,22,"463,805",4.74,5.1,923
+Alaska,2001,Suffocation,Black,--,"27,331",--,--,--
+Alaska,2001,Suffocation,American Indian / Alaska Native,23,"108,708",21.16,23.37,877
+Alaska,2001,"Motor vehicle, traffic",White,70,"463,805",15.09,16.65,"1,868"
+Alaska,2001,"Motor vehicle, traffic",Black,--,"27,331",--,--,--
+Alaska,2001,"Motor vehicle, traffic",American Indian / Alaska Native,12**,"108,708",11.04**,12.01**,397
+Alaska,2001,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"33,843",--,--,--
+Alaska,2001,"Pedestrian, other",White,--,"463,805",--,--,--
+Alaska,2001,"Pedestrian, other",Black,--,"27,331",--,--,--
+Alaska,2001,"Pedestrian, other",American Indian / Alaska Native,--,"108,708",--,--,--
+Alaska,2001,"Transport, other land",White,--,"463,805",--,--,--
+Alaska,2001,"Transport, other land",Black,--,"27,331",--,--,--
+Alaska,2001,"Transport, other land",American Indian / Alaska Native,--,"108,708",--,--,--
+Alaska,2001,"Transport, other (excl. drown by water transp)",White,10**,"463,805",2.16**,1.95**,226
+Alaska,2001,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,11**,"108,708",10.12**,12.91**,198
+Alaska,2001,Other specified and classifiable,White,--,"463,805",--,--,--
+Alaska,2001,Other specified / NEC,White,--,"463,805",--,--,--
+Alaska,2001,Other specified / NEC,American Indian / Alaska Native,--,"108,708",--,--,--
+Alaska,2001,Unspecified,White,13**,"463,805",2.80**,5.76**,82
+Alaska,2001,Unspecified,American Indian / Alaska Native,--,"108,708",--,--,--
+Alaska,2001,Unspecified,Asian / HI Native / Pac. Islander,--,"33,843",--,--,--
+Total,,,,"12,082","14,053,244",85.97,90.55,"298,812"
+,,,,,,,,
+Injury Outcome: Fatal,,,,,,,,
+Injury Type: All Injury,,,,,,,,
+Data Years: 2001 to 2020,,,,,,,,
+Geography: Alaska,,,,,,,,
+Intent: All Intents,,,,,,,,
+Mechanism: All Injury,,,,,,,,
+Age: All Ages,,,,,,,,
+Sex: Both Sexes,,,,,,,,
+Race: All Races,,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,,
+YPLL Age: 65,,,,,,,,
+Year and Race Options: 2001 - 2020 by Bridged Race,,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,,

@@ -1,0 +1,424 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Utah,2021,Cut/Pierce,14**,"3,337,975",0.42**,0.43**,442
+Utah,2021,Drowning (includes water transport),48,"3,337,975",1.44,1.48,"1,320"
+Utah,2021,Fall,418,"3,337,975",12.52,16.23,"1,173"
+Utah,2021,Fire/Flame,13**,"3,337,975",0.39**,0.38**,308
+Utah,2021,Hot object/Substance,--,"3,337,975",--,--,--
+Utah,2021,Firearm,450,"3,337,975",13.48,13.95,"10,871"
+Utah,2021,Machinery,--,"3,337,975",--,--,--
+Utah,2021,Natural/Environmental,22,"3,337,975",0.66,0.72,296
+Utah,2021,Drug Poisoning,662,"3,337,975",19.83,21.12,"14,727"
+Utah,2021,Non-Drug Poisoning,48,"3,337,975",1.44,1.53,"1,067"
+Utah,2021,Struck by / against,11**,"3,337,975",0.33**,0.33**,232
+Utah,2021,Suffocation,228,"3,337,975",6.83,7.26,"5,392"
+Utah,2021,"Motor vehicle, traffic",331,"3,337,975",9.92,10.2,"7,959"
+Utah,2021,"Pedal cyclist, other",--,"3,337,975",--,--,--
+Utah,2021,"Pedestrian, other",--,"3,337,975",--,--,--
+Utah,2021,"Transport, other land",22,"3,337,975",0.66,0.69,560
+Utah,2021,"Transport, other (excl. drown by water transp)",--,"3,337,975",--,--,--
+Utah,2021,Other specified and classifiable,30,"3,337,975",0.9,0.93,764
+Utah,2021,Other specified / NEC,12**,"3,337,975",0.36**,0.44**,75
+Utah,2021,Unspecified,49,"3,337,975",1.47,1.68,554
+Utah,2020,Cut/Pierce,15**,"3,281,684",0.46**,0.45**,376
+Utah,2020,Drowning (includes water transport),50,"3,281,684",1.52,1.58,"1,260"
+Utah,2020,Fall,378,"3,281,684",11.52,14.99,"1,015"
+Utah,2020,Fire/Flame,16**,"3,281,684",0.49**,0.48**,319
+Utah,2020,Firearm,429,"3,281,684",13.07,13.49,"11,111"
+Utah,2020,Machinery,--,"3,281,684",--,--,--
+Utah,2020,Natural/Environmental,20**,"3,281,684",0.61**,0.67**,446
+Utah,2020,Drug Poisoning,622,"3,281,684",18.95,20.42,"13,776"
+Utah,2020,Non-Drug Poisoning,65,"3,281,684",1.98,2.12,"1,120"
+Utah,2020,Struck by / against,--,"3,281,684",--,--,--
+Utah,2020,Suffocation,213,"3,281,684",6.49,6.79,"6,175"
+Utah,2020,"Motor vehicle, traffic",299,"3,281,684",9.11,9.54,"6,467"
+Utah,2020,"Pedal cyclist, other",16**,"3,281,684",0.49**,0.53**,111
+Utah,2020,"Pedestrian, other",--,"3,281,684",--,--,--
+Utah,2020,"Transport, other land",31,"3,281,684",0.95,0.98,899
+Utah,2020,"Transport, other (excl. drown by water transp)",11**,"3,281,684",0.34**,0.35**,152
+Utah,2020,Other specified and classifiable,25,"3,281,684",0.76,0.76,595
+Utah,2020,Other specified / NEC,19**,"3,281,684",0.58**,0.64**,246
+Utah,2020,Unspecified,48,"3,281,684",1.46,1.75,332
+Utah,2019,Cut/Pierce,20**,"3,203,383",0.62**,0.62**,409
+Utah,2019,Drowning (includes water transport),44,"3,203,383",1.37,1.48,"1,011"
+Utah,2019,Fall,351,"3,203,383",10.96,13.46,619
+Utah,2019,Fire/Flame,17**,"3,203,383",0.53**,0.60**,156
+Utah,2019,Firearm,394,"3,203,383",12.3,12.81,"10,202"
+Utah,2019,Machinery,--,"3,203,383",--,--,--
+Utah,2019,Natural/Environmental,22,"3,203,383",0.69,0.78,358
+Utah,2019,Drug Poisoning,571,"3,203,383",17.83,18.98,"11,942"
+Utah,2019,Non-Drug Poisoning,53,"3,203,383",1.66,1.82,"1,089"
+Utah,2019,Struck by / against,11**,"3,203,383",0.34**,0.38**,261
+Utah,2019,Suffocation,242,"3,203,383",7.56,7.9,"6,510"
+Utah,2019,"Motor vehicle, traffic",231,"3,203,383",7.21,7.58,"5,590"
+Utah,2019,"Pedal cyclist, other",--,"3,203,383",--,--,--
+Utah,2019,"Pedestrian, other",--,"3,203,383",--,--,--
+Utah,2019,"Transport, other land",18**,"3,203,383",0.56**,0.63**,277
+Utah,2019,"Transport, other (excl. drown by water transp)",10**,"3,203,383",0.31**,0.33**,258
+Utah,2019,Other specified and classifiable,31,"3,203,383",0.97,0.98,781
+Utah,2019,Other specified / NEC,30,"3,203,383",0.94,1,410
+Utah,2019,Unspecified,52,"3,203,383",1.62,1.87,641
+Utah,2018,Cut/Pierce,20**,"3,155,153",0.63**,0.67**,523
+Utah,2018,Drowning (includes water transport),37,"3,155,153",1.17,1.27,954
+Utah,2018,Fall,276,"3,155,153",8.75,10.81,"1,123"
+Utah,2018,Fire/Flame,18**,"3,155,153",0.57**,0.60**,350
+Utah,2018,Hot object/Substance,--,"3,155,153",--,--,--
+Utah,2018,Firearm,397,"3,155,153",12.58,13.16,"10,183"
+Utah,2018,Machinery,--,"3,155,153",--,--,--
+Utah,2018,Natural/Environmental,15**,"3,155,153",0.48**,0.51**,280
+Utah,2018,Drug Poisoning,624,"3,155,153",19.78,21.13,"13,782"
+Utah,2018,Non-Drug Poisoning,63,"3,155,153",2,2.11,"1,301"
+Utah,2018,Struck by / against,--,"3,155,153",--,--,--
+Utah,2018,Suffocation,241,"3,155,153",7.64,8.19,"5,858"
+Utah,2018,"Motor vehicle, traffic",239,"3,155,153",7.58,7.86,"5,994"
+Utah,2018,"Pedal cyclist, other",--,"3,155,153",--,--,--
+Utah,2018,"Pedestrian, other",--,"3,155,153",--,--,--
+Utah,2018,"Transport, other land",21,"3,155,153",0.67,0.7,506
+Utah,2018,"Transport, other (excl. drown by water transp)",--,"3,155,153",--,--,--
+Utah,2018,Other specified and classifiable,22,"3,155,153",0.7,0.71,701
+Utah,2018,Other specified / NEC,16**,"3,155,153",0.51**,0.57**,140
+Utah,2018,Unspecified,70,"3,155,153",2.22,2.75,679
+Utah,2017,Cut/Pierce,10**,"3,103,540",0.32**,0.37**,133
+Utah,2017,Drowning (includes water transport),32,"3,103,540",1.03,1.06,871
+Utah,2017,Fall,238,"3,103,540",7.67,9.52,914
+Utah,2017,Fire/Flame,21,"3,103,540",0.68,0.74,167
+Utah,2017,Hot object/Substance,--,"3,103,540",--,--,--
+Utah,2017,Firearm,410,"3,103,540",13.21,14.03,"10,043"
+Utah,2017,Machinery,--,"3,103,540",--,--,--
+Utah,2017,Natural/Environmental,15**,"3,103,540",0.48**,0.52**,317
+Utah,2017,Drug Poisoning,650,"3,103,540",20.94,22.41,"14,738"
+Utah,2017,Non-Drug Poisoning,64,"3,103,540",2.06,2.23,"1,434"
+Utah,2017,Struck by / against,14**,"3,103,540",0.45**,0.49**,374
+Utah,2017,Suffocation,208,"3,103,540",6.7,7.14,"5,592"
+Utah,2017,"Motor vehicle, traffic",280,"3,103,540",9.02,9.47,"6,754"
+Utah,2017,"Pedestrian, other",--,"3,103,540",--,--,--
+Utah,2017,"Transport, other land",15**,"3,103,540",0.48**,0.49**,409
+Utah,2017,"Transport, other (excl. drown by water transp)",14**,"3,103,540",0.45**,0.52**,340
+Utah,2017,Other specified and classifiable,14**,"3,103,540",0.45**,0.48**,349
+Utah,2017,Other specified / NEC,14**,"3,103,540",0.45**,0.48**,216
+Utah,2017,Unspecified,74,"3,103,540",2.38,2.87,708
+Utah,2016,Cut/Pierce,11**,"3,044,241",0.36**,0.39**,240
+Utah,2016,Drowning (includes water transport),43,"3,044,241",1.41,1.4,"1,408"
+Utah,2016,Fall,220,"3,044,241",7.23,8.98,"1,299"
+Utah,2016,Fire/Flame,16**,"3,044,241",0.53**,0.58**,334
+Utah,2016,Firearm,370,"3,044,241",12.15,12.95,"8,784"
+Utah,2016,Machinery,--,"3,044,241",--,--,--
+Utah,2016,Natural/Environmental,12**,"3,044,241",0.39**,0.42**,69
+Utah,2016,Drug Poisoning,635,"3,044,241",20.86,22.34,"14,847"
+Utah,2016,Non-Drug Poisoning,73,"3,044,241",2.4,2.55,"1,743"
+Utah,2016,Struck by / against,--,"3,044,241",--,--,--
+Utah,2016,Suffocation,228,"3,044,241",7.49,8.02,"5,846"
+Utah,2016,"Motor vehicle, traffic",270,"3,044,241",8.87,9.34,"6,910"
+Utah,2016,"Pedal cyclist, other",--,"3,044,241",--,--,--
+Utah,2016,"Pedestrian, other",--,"3,044,241",--,--,--
+Utah,2016,"Transport, other land",17**,"3,044,241",0.56**,0.56**,449
+Utah,2016,"Transport, other (excl. drown by water transp)",--,"3,044,241",--,--,--
+Utah,2016,Other specified and classifiable,30,"3,044,241",0.99,1.04,930
+Utah,2016,Other specified / NEC,11**,"3,044,241",0.36**,0.39**,193
+Utah,2016,Unspecified,81,"3,044,241",2.66,3.23,550
+Utah,2015,Cut/Pierce,11**,"2,983,626",0.37**,0.41**,275
+Utah,2015,Drowning (includes water transport),37,"2,983,626",1.24,1.2,"1,246"
+Utah,2015,Fall,200,"2,983,626",6.7,8.56,928
+Utah,2015,Fire/Flame,11**,"2,983,626",0.37**,0.43**,78
+Utah,2015,Firearm,367,"2,983,626",12.3,12.87,"9,205"
+Utah,2015,Machinery,--,"2,983,626",--,--,--
+Utah,2015,Natural/Environmental,27,"2,983,626",0.91,0.94,705
+Utah,2015,Drug Poisoning,646,"2,983,626",21.65,23.5,"14,665"
+Utah,2015,Non-Drug Poisoning,68,"2,983,626",2.28,2.6,"1,359"
+Utah,2015,Struck by / against,12**,"2,983,626",0.40**,0.41**,236
+Utah,2015,Suffocation,220,"2,983,626",7.37,7.78,"6,150"
+Utah,2015,"Motor vehicle, traffic",269,"2,983,626",9.02,9.43,"6,932"
+Utah,2015,"Pedal cyclist, other",--,"2,983,626",--,--,--
+Utah,2015,"Pedestrian, other",--,"2,983,626",--,--,--
+Utah,2015,"Transport, other land",15**,"2,983,626",0.50**,0.55**,408
+Utah,2015,"Transport, other (excl. drown by water transp)",12**,"2,983,626",0.40**,0.44**,291
+Utah,2015,Other specified and classifiable,24,"2,983,626",0.8,0.88,564
+Utah,2015,Other specified / NEC,15**,"2,983,626",0.50**,0.57**,181
+Utah,2015,Unspecified,106,"2,983,626",3.55,4.42,504
+Utah,2014,Cut/Pierce,15**,"2,938,327",0.51**,0.59**,351
+Utah,2014,Drowning (includes water transport),40,"2,938,327",1.36,1.44,"1,147"
+Utah,2014,Fall,213,"2,938,327",7.25,9.36,871
+Utah,2014,Fire/Flame,12**,"2,938,327",0.41**,0.44**,265
+Utah,2014,Hot object/Substance,--,"2,938,327",--,--,--
+Utah,2014,Firearm,337,"2,938,327",11.47,12.43,"7,971"
+Utah,2014,Machinery,10**,"2,938,327",0.34**,0.39**,190
+Utah,2014,Natural/Environmental,14**,"2,938,327",0.48**,0.51**,336
+Utah,2014,Drug Poisoning,603,"2,938,327",20.52,22.41,"13,910"
+Utah,2014,Non-Drug Poisoning,59,"2,938,327",2.01,2.21,"1,510"
+Utah,2014,Struck by / against,--,"2,938,327",--,--,--
+Utah,2014,Suffocation,195,"2,938,327",6.64,7.1,"4,712"
+Utah,2014,"Motor vehicle, traffic",240,"2,938,327",8.17,8.73,"5,838"
+Utah,2014,"Pedal cyclist, other",--,"2,938,327",--,--,--
+Utah,2014,"Pedestrian, other",--,"2,938,327",--,--,--
+Utah,2014,"Transport, other land",18**,"2,938,327",0.61**,0.67**,345
+Utah,2014,"Transport, other (excl. drown by water transp)",15**,"2,938,327",0.51**,0.54**,274
+Utah,2014,Other specified and classifiable,18**,"2,938,327",0.61**,0.65**,452
+Utah,2014,Other specified / NEC,12**,"2,938,327",0.41**,0.48**,216
+Utah,2014,Unspecified,106,"2,938,327",3.61,4.64,645
+Utah,2013,Cut/Pierce,12**,"2,898,773",0.41**,0.47**,309
+Utah,2013,Drowning (includes water transport),35,"2,898,773",1.21,1.21,"1,075"
+Utah,2013,Fall,246,"2,898,773",8.49,10.8,"1,413"
+Utah,2013,Fire/Flame,--,"2,898,773",--,--,--
+Utah,2013,Firearm,339,"2,898,773",11.7,12.6,"7,506"
+Utah,2013,Machinery,--,"2,898,773",--,--,--
+Utah,2013,Natural/Environmental,18**,"2,898,773",0.62**,0.72**,106
+Utah,2013,Drug Poisoning,594,"2,898,773",20.49,21.98,"14,490"
+Utah,2013,Non-Drug Poisoning,47,"2,898,773",1.62,1.87,928
+Utah,2013,Struck by / against,--,"2,898,773",--,--,--
+Utah,2013,Suffocation,221,"2,898,773",7.62,8.13,"5,645"
+Utah,2013,"Motor vehicle, traffic",209,"2,898,773",7.21,7.82,"4,557"
+Utah,2013,"Pedal cyclist, other",--,"2,898,773",--,--,--
+Utah,2013,"Pedestrian, other",13**,"2,898,773",0.45**,0.48**,376
+Utah,2013,"Transport, other land",16**,"2,898,773",0.55**,0.62**,248
+Utah,2013,"Transport, other (excl. drown by water transp)",13**,"2,898,773",0.45**,0.47**,349
+Utah,2013,Other specified and classifiable,--,"2,898,773",--,--,--
+Utah,2013,Other specified / NEC,18**,"2,898,773",0.62**,0.75**,236
+Utah,2013,Unspecified,95,"2,898,773",3.28,4.15,516
+Utah,2012,Cut/Pierce,21,"2,854,146",0.74,0.82,415
+Utah,2012,Drowning (includes water transport),30,"2,854,146",1.05,1.08,"1,084"
+Utah,2012,Fall,230,"2,854,146",8.06,10.51,"1,063"
+Utah,2012,Fire/Flame,10**,"2,854,146",0.35**,0.41**,145
+Utah,2012,Firearm,324,"2,854,146",11.35,12.4,"7,474"
+Utah,2012,Machinery,--,"2,854,146",--,--,--
+Utah,2012,Natural/Environmental,19**,"2,854,146",0.67**,0.81**,263
+Utah,2012,Drug Poisoning,601,"2,854,146",21.06,23.09,"13,873"
+Utah,2012,Non-Drug Poisoning,71,"2,854,146",2.49,2.72,"1,502"
+Utah,2012,Struck by / against,--,"2,854,146",--,--,--
+Utah,2012,Suffocation,167,"2,854,146",5.85,6.27,"4,176"
+Utah,2012,"Motor vehicle, traffic",228,"2,854,146",7.99,8.5,"5,876"
+Utah,2012,"Pedal cyclist, other",--,"2,854,146",--,--,--
+Utah,2012,"Pedestrian, other",--,"2,854,146",--,--,--
+Utah,2012,"Transport, other land",18**,"2,854,146",0.63**,0.66**,429
+Utah,2012,"Transport, other (excl. drown by water transp)",--,"2,854,146",--,--,--
+Utah,2012,Other specified and classifiable,12**,"2,854,146",0.42**,0.41**,378
+Utah,2012,Other specified / NEC,15**,"2,854,146",0.53**,0.68**,74
+Utah,2012,Unspecified,105,"2,854,146",3.68,4.83,501
+Utah,2011,Cut/Pierce,12**,"2,814,797",0.43**,0.46**,300
+Utah,2011,Drowning (includes water transport),42,"2,814,797",1.49,1.53,"1,399"
+Utah,2011,Fall,203,"2,814,797",7.21,9.67,818
+Utah,2011,Fire/Flame,12**,"2,814,797",0.43**,0.47**,148
+Utah,2011,Hot object/Substance,--,"2,814,797",--,--,--
+Utah,2011,Firearm,308,"2,814,797",10.94,12.09,"6,556"
+Utah,2011,Machinery,--,"2,814,797",--,--,--
+Utah,2011,Natural/Environmental,20**,"2,814,797",0.71**,0.81**,332
+Utah,2011,Drug Poisoning,504,"2,814,797",17.91,19.46,"12,394"
+Utah,2011,Non-Drug Poisoning,65,"2,814,797",2.31,2.51,"1,342"
+Utah,2011,Struck by / against,--,"2,814,797",--,--,--
+Utah,2011,Suffocation,176,"2,814,797",6.25,6.79,"4,578"
+Utah,2011,"Motor vehicle, traffic",257,"2,814,797",9.13,9.43,"6,872"
+Utah,2011,"Pedal cyclist, other",--,"2,814,797",--,--,--
+Utah,2011,"Pedestrian, other",11**,"2,814,797",0.39**,0.39**,439
+Utah,2011,"Transport, other land",19**,"2,814,797",0.68**,0.77**,473
+Utah,2011,"Transport, other (excl. drown by water transp)",10**,"2,814,797",0.36**,0.36**,292
+Utah,2011,Other specified and classifiable,17**,"2,814,797",0.60**,0.65**,411
+Utah,2011,Other specified / NEC,22,"2,814,797",0.78,0.87,393
+Utah,2011,Unspecified,97,"2,814,797",3.45,4.41,865
+Utah,2010,Cut/Pierce,--,"2,763,891",--,--,--
+Utah,2010,Drowning (includes water transport),38,"2,763,891",1.38,1.39,"1,237"
+Utah,2010,Fall,187,"2,763,891",6.77,8.96,903
+Utah,2010,Fire/Flame,14**,"2,763,891",0.51**,0.58**,346
+Utah,2010,Hot object/Substance,--,"2,763,891",--,--,--
+Utah,2010,Firearm,314,"2,763,891",11.36,12.16,"7,426"
+Utah,2010,Machinery,--,"2,763,891",--,--,--
+Utah,2010,Natural/Environmental,12**,"2,763,891",0.43**,0.49**,299
+Utah,2010,Drug Poisoning,433,"2,763,891",15.67,16.77,"11,247"
+Utah,2010,Non-Drug Poisoning,55,"2,763,891",1.99,2.29,"1,085"
+Utah,2010,Struck by / against,--,"2,763,891",--,--,--
+Utah,2010,Suffocation,157,"2,763,891",5.68,5.92,"4,576"
+Utah,2010,"Motor vehicle, traffic",247,"2,763,891",8.94,9.71,"6,097"
+Utah,2010,"Pedal cyclist, other",--,"2,763,891",--,--,--
+Utah,2010,"Pedestrian, other",13**,"2,763,891",0.47**,0.47**,470
+Utah,2010,"Transport, other land",24,"2,763,891",0.87,0.9,657
+Utah,2010,"Transport, other (excl. drown by water transp)",--,"2,763,891",--,--,--
+Utah,2010,Other specified and classifiable,13**,"2,763,891",0.47**,0.52**,360
+Utah,2010,Other specified / NEC,18**,"2,763,891",0.65**,0.80**,256
+Utah,2010,Unspecified,104,"2,763,891",3.76,4.78,834
+Utah,2009,Cut/Pierce,10**,"2,723,421",0.37**,0.38**,276
+Utah,2009,Drowning (includes water transport),34,"2,723,421",1.25,1.18,"1,130"
+Utah,2009,Fall,178,"2,723,421",6.54,8.66,"1,157"
+Utah,2009,Fire/Flame,14**,"2,723,421",0.51**,0.61**,174
+Utah,2009,Firearm,260,"2,723,421",9.55,10.46,"6,197"
+Utah,2009,Machinery,--,"2,723,421",--,--,--
+Utah,2009,Natural/Environmental,11**,"2,723,421",0.40**,0.50**,160
+Utah,2009,Drug Poisoning,478,"2,723,421",17.55,19.18,"12,199"
+Utah,2009,Non-Drug Poisoning,68,"2,723,421",2.5,2.82,"1,568"
+Utah,2009,Struck by / against,--,"2,723,421",--,--,--
+Utah,2009,Suffocation,160,"2,723,421",5.88,6.13,"4,866"
+Utah,2009,"Motor vehicle, traffic",246,"2,723,421",9.03,9.95,"6,215"
+Utah,2009,"Pedal cyclist, other",--,"2,723,421",--,--,--
+Utah,2009,"Pedestrian, other",--,"2,723,421",--,--,--
+Utah,2009,"Transport, other land",11**,"2,723,421",0.40**,0.45**,310
+Utah,2009,"Transport, other (excl. drown by water transp)",--,"2,723,421",--,--,--
+Utah,2009,Other specified and classifiable,15**,"2,723,421",0.55**,0.58**,405
+Utah,2009,Other specified / NEC,10**,"2,723,421",0.37**,0.48**,117
+Utah,2009,Unspecified,90,"2,723,421",3.31,4.26,873
+Utah,2008,Cut/Pierce,12**,"2,663,029",0.45**,0.47**,260
+Utah,2008,Drowning (includes water transport),23,"2,663,029",0.86,0.83,859
+Utah,2008,Fall,152,"2,663,029",5.71,7.62,"1,077"
+Utah,2008,Fire/Flame,--,"2,663,029",--,--,--
+Utah,2008,Firearm,238,"2,663,029",8.94,9.68,"5,803"
+Utah,2008,Machinery,--,"2,663,029",--,--,--
+Utah,2008,Natural/Environmental,19**,"2,663,029",0.71**,0.74**,573
+Utah,2008,Drug Poisoning,468,"2,663,029",17.57,18.89,"11,775"
+Utah,2008,Non-Drug Poisoning,58,"2,663,029",2.18,2.43,"1,249"
+Utah,2008,Struck by / against,--,"2,663,029",--,--,--
+Utah,2008,Suffocation,132,"2,663,029",4.96,5.41,"3,528"
+Utah,2008,"Motor vehicle, traffic",284,"2,663,029",10.67,11.21,"7,932"
+Utah,2008,"Pedal cyclist, other",--,"2,663,029",--,--,--
+Utah,2008,"Pedestrian, other",--,"2,663,029",--,--,--
+Utah,2008,"Transport, other land",19**,"2,663,029",0.71**,0.79**,516
+Utah,2008,"Transport, other (excl. drown by water transp)",22,"2,663,029",0.83,0.89,479
+Utah,2008,Other specified and classifiable,--,"2,663,029",--,--,--
+Utah,2008,Other specified / NEC,--,"2,663,029",--,--,--
+Utah,2008,Unspecified,87,"2,663,029",3.27,4.3,840
+Utah,2007,Cut/Pierce,10**,"2,597,746",0.39**,0.41**,252
+Utah,2007,Drowning (includes water transport),23,"2,597,746",0.89,0.87,840
+Utah,2007,Fall,141,"2,597,746",5.43,7.42,812
+Utah,2007,Fire/Flame,27,"2,597,746",1.04,1.13,701
+Utah,2007,Hot object/Substance,--,"2,597,746",--,--,--
+Utah,2007,Firearm,253,"2,597,746",9.74,10.63,"6,026"
+Utah,2007,Machinery,--,"2,597,746",--,--,--
+Utah,2007,Natural/Environmental,29,"2,597,746",1.12,1.29,624
+Utah,2007,Drug Poisoning,511,"2,597,746",19.67,21.33,"13,135"
+Utah,2007,Non-Drug Poisoning,34,"2,597,746",1.31,1.48,645
+Utah,2007,Struck by / against,12**,"2,597,746",0.46**,0.44**,496
+Utah,2007,Suffocation,136,"2,597,746",5.24,5.38,"3,969"
+Utah,2007,"Motor vehicle, traffic",293,"2,597,746",11.28,11.73,"8,483"
+Utah,2007,"Pedestrian, other",11**,"2,597,746",0.42**,0.41**,396
+Utah,2007,"Transport, other land",22,"2,597,746",0.85,0.84,726
+Utah,2007,"Transport, other (excl. drown by water transp)",11**,"2,597,746",0.42**,0.47**,323
+Utah,2007,Other specified and classifiable,15**,"2,597,746",0.58**,0.53**,610
+Utah,2007,Other specified / NEC,14**,"2,597,746",0.54**,0.66**,235
+Utah,2007,Unspecified,63,"2,597,746",2.43,3.2,582
+Utah,2006,Cut/Pierce,--,"2,525,507",--,--,--
+Utah,2006,Drowning (includes water transport),40,"2,525,507",1.58,1.41,"1,522"
+Utah,2006,Fall,103,"2,525,507",4.08,5.31,952
+Utah,2006,Fire/Flame,10**,"2,525,507",0.40**,0.49**,125
+Utah,2006,Firearm,224,"2,525,507",8.87,9.75,"5,318"
+Utah,2006,Machinery,--,"2,525,507",--,--,--
+Utah,2006,Natural/Environmental,12**,"2,525,507",0.48**,0.50**,292
+Utah,2006,Drug Poisoning,444,"2,525,507",17.58,19.05,"11,267"
+Utah,2006,Non-Drug Poisoning,32,"2,525,507",1.27,1.39,748
+Utah,2006,Struck by / against,--,"2,525,507",--,--,--
+Utah,2006,Suffocation,123,"2,525,507",4.87,5.23,"3,403"
+Utah,2006,"Motor vehicle, traffic",326,"2,525,507",12.91,13.43,"9,181"
+Utah,2006,"Pedal cyclist, other",--,"2,525,507",--,--,--
+Utah,2006,"Pedestrian, other",--,"2,525,507",--,--,--
+Utah,2006,"Transport, other land",16**,"2,525,507",0.63**,0.65**,454
+Utah,2006,"Transport, other (excl. drown by water transp)",--,"2,525,507",--,--,--
+Utah,2006,Other specified and classifiable,15**,"2,525,507",0.59**,0.62**,513
+Utah,2006,Other specified / NEC,17**,"2,525,507",0.67**,0.77**,285
+Utah,2006,Unspecified,72,"2,525,507",2.85,3.59,"1,090"
+Utah,2005,Cut/Pierce,12**,"2,457,719",0.49**,0.48**,383
+Utah,2005,Drowning (includes water transport),38,"2,457,719",1.55,1.51,"1,235"
+Utah,2005,Fall,119,"2,457,719",4.84,6.52,953
+Utah,2005,Fire/Flame,17**,"2,457,719",0.69**,0.77**,389
+Utah,2005,Firearm,227,"2,457,719",9.24,9.91,"5,567"
+Utah,2005,Machinery,--,"2,457,719",--,--,--
+Utah,2005,Natural/Environmental,14**,"2,457,719",0.57**,0.61**,315
+Utah,2005,Drug Poisoning,438,"2,457,719",17.82,19.31,"11,405"
+Utah,2005,Non-Drug Poisoning,24,"2,457,719",0.98,1.11,530
+Utah,2005,Struck by / against,12**,"2,457,719",0.49**,0.58**,313
+Utah,2005,Suffocation,125,"2,457,719",5.09,5.39,"3,649"
+Utah,2005,"Motor vehicle, traffic",303,"2,457,719",12.33,12.91,"8,463"
+Utah,2005,"Pedal cyclist, other",--,"2,457,719",--,--,--
+Utah,2005,"Pedestrian, other",--,"2,457,719",--,--,--
+Utah,2005,"Transport, other land",17**,"2,457,719",0.69**,0.80**,402
+Utah,2005,"Transport, other (excl. drown by water transp)",--,"2,457,719",--,--,--
+Utah,2005,Other specified and classifiable,12**,"2,457,719",0.49**,0.42**,477
+Utah,2005,Other specified / NEC,17**,"2,457,719",0.69**,0.74**,501
+Utah,2005,Unspecified,77,"2,457,719",3.13,4.19,788
+Utah,2004,Cut/Pierce,--,"2,401,580",--,--,--
+Utah,2004,Drowning (includes water transport),34,"2,401,580",1.42,1.39,"1,216"
+Utah,2004,Fall,114,"2,401,580",4.75,6.55,777
+Utah,2004,Fire/Flame,15**,"2,401,580",0.63**,0.69**,361
+Utah,2004,Hot object/Substance,--,"2,401,580",--,--,--
+Utah,2004,Firearm,225,"2,401,580",9.37,10.13,"5,388"
+Utah,2004,Machinery,--,"2,401,580",--,--,--
+Utah,2004,Natural/Environmental,15**,"2,401,580",0.63**,0.70**,373
+Utah,2004,Drug Poisoning,358,"2,401,580",14.91,16.32,"9,337"
+Utah,2004,Non-Drug Poisoning,32,"2,401,580",1.33,1.55,659
+Utah,2004,Struck by / against,11**,"2,401,580",0.46**,0.50**,296
+Utah,2004,Suffocation,132,"2,401,580",5.5,5.8,"4,110"
+Utah,2004,"Motor vehicle, traffic",302,"2,401,580",12.58,13.23,"8,293"
+Utah,2004,"Pedal cyclist, other",--,"2,401,580",--,--,--
+Utah,2004,"Pedestrian, other",12**,"2,401,580",0.50**,0.48**,543
+Utah,2004,"Transport, other land",14**,"2,401,580",0.58**,0.59**,451
+Utah,2004,"Transport, other (excl. drown by water transp)",--,"2,401,580",--,--,--
+Utah,2004,Other specified and classifiable,15**,"2,401,580",0.63**,0.60**,478
+Utah,2004,Other specified / NEC,--,"2,401,580",--,--,--
+Utah,2004,Unspecified,66,"2,401,580",2.75,3.87,452
+Utah,2003,Cut/Pierce,11**,"2,360,137",0.47**,0.54**,235
+Utah,2003,Drowning (includes water transport),20**,"2,360,137",0.85**,0.82**,726
+Utah,2003,Fall,112,"2,360,137",4.75,6.52,813
+Utah,2003,Fire/Flame,13**,"2,360,137",0.55**,0.75**,152
+Utah,2003,Hot object/Substance,--,"2,360,137",--,--,--
+Utah,2003,Firearm,230,"2,360,137",9.75,10.51,"5,878"
+Utah,2003,Machinery,--,"2,360,137",--,--,--
+Utah,2003,Natural/Environmental,12**,"2,360,137",0.51**,0.62**,231
+Utah,2003,Drug Poisoning,353,"2,360,137",14.96,16.06,"9,805"
+Utah,2003,Non-Drug Poisoning,36,"2,360,137",1.53,1.74,859
+Utah,2003,Struck by / against,--,"2,360,137",--,--,--
+Utah,2003,Suffocation,123,"2,360,137",5.21,5.93,"2,922"
+Utah,2003,"Motor vehicle, traffic",287,"2,360,137",12.16,12.7,"8,167"
+Utah,2003,"Pedal cyclist, other",--,"2,360,137",--,--,--
+Utah,2003,"Pedestrian, other",10**,"2,360,137",0.42**,0.37**,493
+Utah,2003,"Transport, other land",18**,"2,360,137",0.76**,0.75**,564
+Utah,2003,"Transport, other (excl. drown by water transp)",23,"2,360,137",0.98,1.11,487
+Utah,2003,Other specified and classifiable,--,"2,360,137",--,--,--
+Utah,2003,Other specified / NEC,15**,"2,360,137",0.64**,0.78**,247
+Utah,2003,Unspecified,77,"2,360,137",3.26,4.54,620
+Utah,2002,Cut/Pierce,11**,"2,324,815",0.47**,0.46**,361
+Utah,2002,Drowning (includes water transport),22,"2,324,815",0.95,0.83,975
+Utah,2002,Fall,117,"2,324,815",5.03,7.09,711
+Utah,2002,Fire/Flame,13**,"2,324,815",0.56**,0.60**,328
+Utah,2002,Hot object/Substance,--,"2,324,815",--,--,--
+Utah,2002,Firearm,207,"2,324,815",8.9,9.6,"5,522"
+Utah,2002,Machinery,--,"2,324,815",--,--,--
+Utah,2002,Natural/Environmental,13**,"2,324,815",0.56**,0.62**,301
+Utah,2002,Drug Poisoning,288,"2,324,815",12.39,14,"7,216"
+Utah,2002,Non-Drug Poisoning,31,"2,324,815",1.33,1.53,648
+Utah,2002,Struck by / against,12**,"2,324,815",0.52**,0.66**,227
+Utah,2002,Suffocation,130,"2,324,815",5.59,6.25,"3,484"
+Utah,2002,"Motor vehicle, traffic",313,"2,324,815",13.46,14.06,"9,037"
+Utah,2002,"Pedal cyclist, other",--,"2,324,815",--,--,--
+Utah,2002,"Pedestrian, other",--,"2,324,815",--,--,--
+Utah,2002,"Transport, other land",15**,"2,324,815",0.65**,0.68**,435
+Utah,2002,"Transport, other (excl. drown by water transp)",16**,"2,324,815",0.69**,0.85**,337
+Utah,2002,Other specified and classifiable,12**,"2,324,815",0.52**,0.53**,412
+Utah,2002,Other specified / NEC,12**,"2,324,815",0.52**,0.68**,159
+Utah,2002,Unspecified,56,"2,324,815",2.41,3.46,392
+Utah,2001,Cut/Pierce,16**,"2,283,715",0.70**,0.75**,425
+Utah,2001,Drowning (includes water transport),40,"2,283,715",1.75,1.64,"1,524"
+Utah,2001,Fall,96,"2,283,715",4.2,5.89,674
+Utah,2001,Fire/Flame,--,"2,283,715",--,--,--
+Utah,2001,Firearm,229,"2,283,715",10.03,10.99,"5,966"
+Utah,2001,Machinery,--,"2,283,715",--,--,--
+Utah,2001,Natural/Environmental,10**,"2,283,715",0.44**,0.52**,208
+Utah,2001,Drug Poisoning,209,"2,283,715",9.15,10.45,"5,074"
+Utah,2001,Non-Drug Poisoning,35,"2,283,715",1.53,1.61,964
+Utah,2001,Struck by / against,13**,"2,283,715",0.57**,0.63**,291
+Utah,2001,Suffocation,94,"2,283,715",4.12,4.59,"2,570"
+Utah,2001,"Motor vehicle, traffic",288,"2,283,715",12.61,13.24,"8,349"
+Utah,2001,"Pedal cyclist, other",--,"2,283,715",--,--,--
+Utah,2001,"Pedestrian, other",--,"2,283,715",--,--,--
+Utah,2001,"Transport, other land",12**,"2,283,715",0.53**,0.54**,351
+Utah,2001,"Transport, other (excl. drown by water transp)",22,"2,283,715",0.96,1.06,583
+Utah,2001,Other specified and classifiable,18**,"2,283,715",0.79**,0.85**,636
+Utah,2001,Other specified / NEC,23,"2,283,715",1.01,1.24,411
+Utah,2001,Unspecified,54,"2,283,715",2.37,3.27,533
+Total,,,"37,114","58,717,205",63.21,70.2,"806,310"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Utah,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

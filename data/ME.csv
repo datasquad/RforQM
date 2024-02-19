@@ -1,0 +1,404 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Maine,2021,Cut/Pierce,--,"1,372,247",--,--,--
+Maine,2021,Drowning (includes water transport),28,"1,372,247",2.04,2.16,738
+Maine,2021,Fall,351,"1,372,247",25.58,17.74,298
+Maine,2021,Fire/Flame,25,"1,372,247",1.82,1.5,383
+Maine,2021,Firearm,178,"1,372,247",12.97,12.58,"3,432"
+Maine,2021,Machinery,--,"1,372,247",--,--,--
+Maine,2021,Natural/Environmental,11**,"1,372,247",0.80**,0.66**,90
+Maine,2021,Drug Poisoning,611,"1,372,247",44.53,47.5,"13,138"
+Maine,2021,Non-Drug Poisoning,61,"1,372,247",4.45,4.01,875
+Maine,2021,Struck by / against,--,"1,372,247",--,--,--
+Maine,2021,Suffocation,96,"1,372,247",7,6.86,"2,066"
+Maine,2021,"Motor vehicle, traffic",172,"1,372,247",12.53,11.88,"3,314"
+Maine,2021,"Pedestrian, other",--,"1,372,247",--,--,--
+Maine,2021,"Transport, other land",12**,"1,372,247",0.87**,0.82**,221
+Maine,2021,Other specified and classifiable,10**,"1,372,247",0.73**,0.65**,219
+Maine,2021,Other specified / NEC,--,"1,372,247",--,--,--
+Maine,2021,Unspecified,28,"1,372,247",2.04,1.56,154
+Maine,2020,Cut/Pierce,11**,"1,362,280",0.81**,0.79**,205
+Maine,2020,Drowning (includes water transport),29,"1,362,280",2.13,2.01,584
+Maine,2020,Fall,364,"1,362,280",26.72,18.71,313
+Maine,2020,Fire/Flame,16**,"1,362,280",1.18**,1.10**,268
+Maine,2020,Firearm,153,"1,362,280",11.23,10.28,"2,558"
+Maine,2020,Natural/Environmental,15**,"1,362,280",1.10**,1.02**,151
+Maine,2020,Drug Poisoning,496,"1,362,280",36.41,39.15,"10,900"
+Maine,2020,Non-Drug Poisoning,39,"1,362,280",2.86,2.65,531
+Maine,2020,Struck by / against,--,"1,362,280",--,--,--
+Maine,2020,Suffocation,73,"1,362,280",5.36,5.6,"1,857"
+Maine,2020,"Motor vehicle, traffic",171,"1,362,280",12.55,11.95,"3,551"
+Maine,2020,"Pedal cyclist, other",--,"1,362,280",--,--,--
+Maine,2020,"Pedestrian, other",--,"1,362,280",--,--,--
+Maine,2020,"Transport, other land",17**,"1,362,280",1.25**,1.13**,299
+Maine,2020,"Transport, other (excl. drown by water transp)",--,"1,362,280",--,--,--
+Maine,2020,Other specified and classifiable,--,"1,362,280",--,--,--
+Maine,2020,Other specified / NEC,--,"1,362,280",--,--,--
+Maine,2020,Unspecified,17**,"1,362,280",1.25**,0.92**,128
+Maine,2019,Cut/Pierce,13**,"1,345,770",0.97**,0.88**,173
+Maine,2019,Drowning (includes water transport),29,"1,345,770",2.16,2.05,496
+Maine,2019,Fall,373,"1,345,770",27.72,18.14,362
+Maine,2019,Fire/Flame,23,"1,345,770",1.71,1.29,163
+Maine,2019,Firearm,163,"1,345,770",12.11,11.43,"3,088"
+Maine,2019,Machinery,--,"1,345,770",--,--,--
+Maine,2019,Natural/Environmental,--,"1,345,770",--,--,--
+Maine,2019,Drug Poisoning,371,"1,345,770",27.57,29.97,"8,509"
+Maine,2019,Non-Drug Poisoning,43,"1,345,770",3.2,2.85,570
+Maine,2019,Struck by / against,--,"1,345,770",--,--,--
+Maine,2019,Suffocation,101,"1,345,770",7.51,7.76,"2,393"
+Maine,2019,"Motor vehicle, traffic",159,"1,345,770",11.82,10.98,"3,072"
+Maine,2019,"Pedestrian, other",--,"1,345,770",--,--,--
+Maine,2019,"Transport, other land",10**,"1,345,770",0.74**,0.72**,193
+Maine,2019,"Transport, other (excl. drown by water transp)",--,"1,345,770",--,--,--
+Maine,2019,Other specified and classifiable,--,"1,345,770",--,--,--
+Maine,2019,Other specified / NEC,--,"1,345,770",--,--,--
+Maine,2019,Unspecified,18**,"1,345,770",1.34**,0.86**,9
+Maine,2018,Cut/Pierce,12**,"1,340,123",0.90**,0.80**,227
+Maine,2018,Drowning (includes water transport),25,"1,340,123",1.87,1.74,500
+Maine,2018,Fall,393,"1,340,123",29.33,19.32,267
+Maine,2018,Fire/Flame,23,"1,340,123",1.72,1.43,227
+Maine,2018,Firearm,159,"1,340,123",11.87,10.31,"2,416"
+Maine,2018,Machinery,--,"1,340,123",--,--,--
+Maine,2018,Natural/Environmental,--,"1,340,123",--,--,--
+Maine,2018,Drug Poisoning,345,"1,340,123",25.74,27.92,"7,958"
+Maine,2018,Non-Drug Poisoning,47,"1,340,123",3.51,3.21,726
+Maine,2018,Struck by / against,--,"1,340,123",--,--,--
+Maine,2018,Suffocation,89,"1,340,123",6.64,6.87,"2,312"
+Maine,2018,"Motor vehicle, traffic",150,"1,340,123",11.19,10.39,"2,797"
+Maine,2018,"Pedestrian, other",--,"1,340,123",--,--,--
+Maine,2018,"Transport, other land",--,"1,340,123",--,--,--
+Maine,2018,"Transport, other (excl. drown by water transp)",--,"1,340,123",--,--,--
+Maine,2018,Other specified and classifiable,12**,"1,340,123",0.90**,0.80**,164
+Maine,2018,Other specified / NEC,10**,"1,340,123",0.75**,0.62**,123
+Maine,2018,Unspecified,13**,"1,340,123",0.97**,0.63**,40
+Maine,2017,Cut/Pierce,--,"1,335,743",--,--,--
+Maine,2017,Drowning (includes water transport),23,"1,335,743",1.72,1.82,464
+Maine,2017,Fall,247,"1,335,743",18.49,12.37,295
+Maine,2017,Fire/Flame,12**,"1,335,743",0.90**,0.82**,173
+Maine,2017,Firearm,172,"1,335,743",12.88,11.59,"2,723"
+Maine,2017,Machinery,--,"1,335,743",--,--,--
+Maine,2017,Natural/Environmental,11**,"1,335,743",0.82**,0.74**,123
+Maine,2017,Drug Poisoning,424,"1,335,743",31.74,34.47,"10,097"
+Maine,2017,Non-Drug Poisoning,36,"1,335,743",2.7,2.56,603
+Maine,2017,Struck by / against,--,"1,335,743",--,--,--
+Maine,2017,Suffocation,91,"1,335,743",6.81,6.49,"1,757"
+Maine,2017,"Motor vehicle, traffic",177,"1,335,743",13.25,12.78,"3,531"
+Maine,2017,"Pedal cyclist, other",--,"1,335,743",--,--,--
+Maine,2017,"Pedestrian, other",--,"1,335,743",--,--,--
+Maine,2017,"Transport, other land",14**,"1,335,743",1.05**,1.04**,260
+Maine,2017,"Transport, other (excl. drown by water transp)",--,"1,335,743",--,--,--
+Maine,2017,Other specified and classifiable,--,"1,335,743",--,--,--
+Maine,2017,Other specified / NEC,16**,"1,335,743",1.20**,0.87**,73
+Maine,2017,Unspecified,65,"1,335,743",4.87,3.34,137
+Maine,2016,Cut/Pierce,10**,"1,332,348",0.75**,0.58**,90
+Maine,2016,Drowning (includes water transport),31,"1,332,348",2.33,2.47,805
+Maine,2016,Fall,234,"1,332,348",17.56,12.21,441
+Maine,2016,Fire/Flame,14**,"1,332,348",1.05**,0.75**,129
+Maine,2016,Firearm,123,"1,332,348",9.23,8.23,"2,205"
+Maine,2016,Machinery,--,"1,332,348",--,--,--
+Maine,2016,Natural/Environmental,--,"1,332,348",--,--,--
+Maine,2016,Drug Poisoning,353,"1,332,348",26.5,28.82,"8,488"
+Maine,2016,Non-Drug Poisoning,30,"1,332,348",2.25,2.27,477
+Maine,2016,Struck by / against,--,"1,332,348",--,--,--
+Maine,2016,Suffocation,92,"1,332,348",6.91,6.75,"2,040"
+Maine,2016,"Motor vehicle, traffic",168,"1,332,348",12.61,12.31,"3,660"
+Maine,2016,"Pedestrian, other",--,"1,332,348",--,--,--
+Maine,2016,"Transport, other land",--,"1,332,348",--,--,--
+Maine,2016,"Transport, other (excl. drown by water transp)",--,"1,332,348",--,--,--
+Maine,2016,Other specified and classifiable,--,"1,332,348",--,--,--
+Maine,2016,Other specified / NEC,--,"1,332,348",--,--,--
+Maine,2016,Unspecified,73,"1,332,348",5.48,3.74,122
+Maine,2015,Cut/Pierce,--,"1,329,098",--,--,--
+Maine,2015,Drowning (includes water transport),41,"1,329,098",3.09,2.79,744
+Maine,2015,Fall,198,"1,329,098",14.9,10.65,396
+Maine,2015,Fire/Flame,15**,"1,329,098",1.13**,0.91**,176
+Maine,2015,Firearm,144,"1,329,098",10.83,9.91,"2,322"
+Maine,2015,Machinery,--,"1,329,098",--,--,--
+Maine,2015,Natural/Environmental,--,"1,329,098",--,--,--
+Maine,2015,Drug Poisoning,269,"1,329,098",20.24,21.2,"6,172"
+Maine,2015,Non-Drug Poisoning,41,"1,329,098",3.09,2.75,562
+Maine,2015,Struck by / against,--,"1,329,098",--,--,--
+Maine,2015,Suffocation,94,"1,329,098",7.07,6.71,"1,924"
+Maine,2015,"Motor vehicle, traffic",144,"1,329,098",10.83,10.82,"3,161"
+Maine,2015,"Pedestrian, other",--,"1,329,098",--,--,--
+Maine,2015,"Transport, other land",--,"1,329,098",--,--,--
+Maine,2015,Other specified and classifiable,--,"1,329,098",--,--,--
+Maine,2015,Other specified / NEC,13**,"1,329,098",0.98**,0.72**,77
+Maine,2015,Unspecified,83,"1,329,098",6.25,4.52,251
+Maine,2014,Cut/Pierce,--,"1,331,217",--,--,--
+Maine,2014,Drowning (includes water transport),25,"1,331,217",1.88,1.88,567
+Maine,2014,Fall,168,"1,331,217",12.62,9.01,417
+Maine,2014,Fire/Flame,22,"1,331,217",1.65,1.57,507
+Maine,2014,Firearm,133,"1,331,217",9.99,9.41,"2,399"
+Maine,2014,Machinery,--,"1,331,217",--,--,--
+Maine,2014,Natural/Environmental,--,"1,331,217",--,--,--
+Maine,2014,Overexertion,--,"1,331,217",--,--,--
+Maine,2014,Drug Poisoning,216,"1,331,217",16.23,17.09,"4,907"
+Maine,2014,Non-Drug Poisoning,27,"1,331,217",2.03,1.87,465
+Maine,2014,Struck by / against,--,"1,331,217",--,--,--
+Maine,2014,Suffocation,92,"1,331,217",6.91,6.56,"1,968"
+Maine,2014,"Motor vehicle, traffic",132,"1,331,217",9.92,9.46,"2,847"
+Maine,2014,"Pedestrian, other",--,"1,331,217",--,--,--
+Maine,2014,"Transport, other land",--,"1,331,217",--,--,--
+Maine,2014,"Transport, other (excl. drown by water transp)",--,"1,331,217",--,--,--
+Maine,2014,Other specified and classifiable,--,"1,331,217",--,--,--
+Maine,2014,Other specified / NEC,--,"1,331,217",--,--,--
+Maine,2014,Unspecified,87,"1,331,217",6.54,4.5,96
+Maine,2013,Cut/Pierce,--,"1,328,543",--,--,--
+Maine,2013,Drowning (includes water transport),22,"1,328,543",1.66,1.63,440
+Maine,2013,Fall,160,"1,328,543",12.04,8.9,465
+Maine,2013,Fire/Flame,15**,"1,328,543",1.13**,0.93**,203
+Maine,2013,Hot object/Substance,--,"1,328,543",--,--,--
+Maine,2013,Firearm,158,"1,328,543",11.89,10.8,"2,673"
+Maine,2013,Machinery,--,"1,328,543",--,--,--
+Maine,2013,Natural/Environmental,--,"1,328,543",--,--,--
+Maine,2013,Drug Poisoning,174,"1,328,543",13.1,13.18,"3,548"
+Maine,2013,Non-Drug Poisoning,33,"1,328,543",2.48,2.34,584
+Maine,2013,Struck by / against,--,"1,328,543",--,--,--
+Maine,2013,Suffocation,87,"1,328,543",6.55,6.3,"1,825"
+Maine,2013,"Motor vehicle, traffic",145,"1,328,543",10.91,10.26,"2,941"
+Maine,2013,"Pedal cyclist, other",--,"1,328,543",--,--,--
+Maine,2013,"Pedestrian, other",--,"1,328,543",--,--,--
+Maine,2013,"Transport, other land",17**,"1,328,543",1.28**,1.38**,440
+Maine,2013,"Transport, other (excl. drown by water transp)",--,"1,328,543",--,--,--
+Maine,2013,Other specified and classifiable,--,"1,328,543",--,--,--
+Maine,2013,Other specified / NEC,--,"1,328,543",--,--,--
+Maine,2013,Unspecified,72,"1,328,543",5.42,3.98,179
+Maine,2012,Cut/Pierce,10**,"1,328,094",0.75**,0.80**,171
+Maine,2012,Drowning (includes water transport),22,"1,328,094",1.66,1.46,274
+Maine,2012,Fall,139,"1,328,094",10.47,7.86,479
+Maine,2012,Fire/Flame,17**,"1,328,094",1.28**,1.32**,431
+Maine,2012,Hot object/Substance,--,"1,328,094",--,--,--
+Maine,2012,Firearm,130,"1,328,094",9.79,9.02,"2,321"
+Maine,2012,Machinery,--,"1,328,094",--,--,--
+Maine,2012,Natural/Environmental,--,"1,328,094",--,--,--
+Maine,2012,Drug Poisoning,150,"1,328,094",11.29,11.61,"3,364"
+Maine,2012,Non-Drug Poisoning,23,"1,328,094",1.73,1.68,491
+Maine,2012,Struck by / against,--,"1,328,094",--,--,--
+Maine,2012,Suffocation,82,"1,328,094",6.17,5.73,"1,293"
+Maine,2012,"Motor vehicle, traffic",156,"1,328,094",11.75,11.32,"3,524"
+Maine,2012,"Pedal cyclist, other",--,"1,328,094",--,--,--
+Maine,2012,"Pedestrian, other",--,"1,328,094",--,--,--
+Maine,2012,"Transport, other land",11**,"1,328,094",0.83**,0.86**,273
+Maine,2012,"Transport, other (excl. drown by water transp)",--,"1,328,094",--,--,--
+Maine,2012,Other specified and classifiable,--,"1,328,094",--,--,--
+Maine,2012,Other specified / NEC,10**,"1,328,094",0.75**,0.73**,272
+Maine,2012,Unspecified,78,"1,328,094",5.87,4.55,444
+Maine,2011,Cut/Pierce,--,"1,328,473",--,--,--
+Maine,2011,Drowning (includes water transport),35,"1,328,473",2.64,2.49,711
+Maine,2011,Fall,118,"1,328,473",8.88,6.71,208
+Maine,2011,Fire/Flame,20**,"1,328,473",1.51**,1.19**,166
+Maine,2011,Hot object/Substance,--,"1,328,473",--,--,--
+Maine,2011,Firearm,136,"1,328,473",10.24,9.5,"2,365"
+Maine,2011,Machinery,--,"1,328,473",--,--,--
+Maine,2011,Natural/Environmental,10**,"1,328,473",0.75**,0.55**,80
+Maine,2011,Drug Poisoning,156,"1,328,473",11.74,11.84,"3,271"
+Maine,2011,Non-Drug Poisoning,25,"1,328,473",1.88,1.76,407
+Maine,2011,Struck by / against,--,"1,328,473",--,--,--
+Maine,2011,Suffocation,82,"1,328,473",6.17,6.11,"1,866"
+Maine,2011,"Motor vehicle, traffic",140,"1,328,473",10.54,10.14,"3,197"
+Maine,2011,"Pedestrian, other",--,"1,328,473",--,--,--
+Maine,2011,"Transport, other land",14**,"1,328,473",1.05**,1.05**,305
+Maine,2011,"Transport, other (excl. drown by water transp)",--,"1,328,473",--,--,--
+Maine,2011,Other specified and classifiable,--,"1,328,473",--,--,--
+Maine,2011,Other specified / NEC,--,"1,328,473",--,--,--
+Maine,2011,Unspecified,81,"1,328,473",6.1,4.63,307
+Maine,2010,Cut/Pierce,--,"1,328,354",--,--,--
+Maine,2010,Drowning (includes water transport),35,"1,328,354",2.64,2.5,786
+Maine,2010,Fall,87,"1,328,354",6.55,5.24,277
+Maine,2010,Fire/Flame,--,"1,328,354",--,--,--
+Maine,2010,Firearm,113,"1,328,354",8.51,7.86,"2,111"
+Maine,2010,Machinery,--,"1,328,354",--,--,--
+Maine,2010,Natural/Environmental,--,"1,328,354",--,--,--
+Maine,2010,Drug Poisoning,135,"1,328,354",10.16,10.49,"3,151"
+Maine,2010,Non-Drug Poisoning,14**,"1,328,354",1.05**,1.05**,217
+Maine,2010,Struck by / against,--,"1,328,354",--,--,--
+Maine,2010,Suffocation,66,"1,328,354",4.97,4.49,"1,271"
+Maine,2010,"Motor vehicle, traffic",158,"1,328,354",11.89,11.21,"3,509"
+Maine,2010,"Pedestrian, other",--,"1,328,354",--,--,--
+Maine,2010,"Transport, other land",11**,"1,328,354",0.83**,0.77**,190
+Maine,2010,"Transport, other (excl. drown by water transp)",--,"1,328,354",--,--,--
+Maine,2010,Other specified and classifiable,--,"1,328,354",--,--,--
+Maine,2010,Other specified / NEC,10**,"1,328,354",0.75**,0.63**,110
+Maine,2010,Unspecified,90,"1,328,354",6.78,5.28,447
+Maine,2009,Cut/Pierce,--,"1,329,590",--,--,--
+Maine,2009,Drowning (includes water transport),27,"1,329,590",2.03,2.15,875
+Maine,2009,Fall,110,"1,329,590",8.27,6.39,329
+Maine,2009,Fire/Flame,15**,"1,329,590",1.13**,1.11**,322
+Maine,2009,Firearm,122,"1,329,590",9.18,8.58,"2,019"
+Maine,2009,Machinery,--,"1,329,590",--,--,--
+Maine,2009,Natural/Environmental,--,"1,329,590",--,--,--
+Maine,2009,Drug Poisoning,173,"1,329,590",13.01,12.78,"3,796"
+Maine,2009,Non-Drug Poisoning,35,"1,329,590",2.63,2.31,583
+Maine,2009,Struck by / against,--,"1,329,590",--,--,--
+Maine,2009,Suffocation,77,"1,329,590",5.79,5.27,"1,412"
+Maine,2009,"Motor vehicle, traffic",154,"1,329,590",11.58,11.21,"3,425"
+Maine,2009,"Pedal cyclist, other",--,"1,329,590",--,--,--
+Maine,2009,"Pedestrian, other",--,"1,329,590",--,--,--
+Maine,2009,"Transport, other land",11**,"1,329,590",0.83**,0.70**,167
+Maine,2009,"Transport, other (excl. drown by water transp)",--,"1,329,590",--,--,--
+Maine,2009,Other specified and classifiable,--,"1,329,590",--,--,--
+Maine,2009,Other specified / NEC,--,"1,329,590",--,--,--
+Maine,2009,Unspecified,75,"1,329,590",5.64,4.51,459
+Maine,2008,Cut/Pierce,15**,"1,330,509",1.13**,1.21**,391
+Maine,2008,Drowning (includes water transport),30,"1,330,509",2.26,2.17,637
+Maine,2008,Fall,98,"1,330,509",7.37,5.88,289
+Maine,2008,Fire/Flame,11**,"1,330,509",0.83**,0.70**,150
+Maine,2008,Firearm,122,"1,330,509",9.17,8.42,"2,101"
+Maine,2008,Machinery,--,"1,330,509",--,--,--
+Maine,2008,Natural/Environmental,--,"1,330,509",--,--,--
+Maine,2008,Drug Poisoning,162,"1,330,509",12.18,12.37,"3,776"
+Maine,2008,Non-Drug Poisoning,37,"1,330,509",2.78,2.68,728
+Maine,2008,Struck by / against,--,"1,330,509",--,--,--
+Maine,2008,Suffocation,77,"1,330,509",5.79,5.61,"1,475"
+Maine,2008,"Motor vehicle, traffic",161,"1,330,509",12.1,11.6,"3,333"
+Maine,2008,"Pedestrian, other",--,"1,330,509",--,--,--
+Maine,2008,"Transport, other land",10**,"1,330,509",0.75**,0.71**,289
+Maine,2008,"Transport, other (excl. drown by water transp)",--,"1,330,509",--,--,--
+Maine,2008,Other specified and classifiable,--,"1,330,509",--,--,--
+Maine,2008,Other specified / NEC,--,"1,330,509",--,--,--
+Maine,2008,Unspecified,87,"1,330,509",6.54,5.32,473
+Maine,2007,Cut/Pierce,--,"1,327,040",--,--,--
+Maine,2007,Drowning (includes water transport),30,"1,327,040",2.26,2.24,757
+Maine,2007,Fall,90,"1,327,040",6.78,5.65,420
+Maine,2007,Fire/Flame,--,"1,327,040",--,--,--
+Maine,2007,Firearm,107,"1,327,040",8.06,7.61,"1,942"
+Maine,2007,Machinery,--,"1,327,040",--,--,--
+Maine,2007,Natural/Environmental,11**,"1,327,040",0.83**,0.62**,64
+Maine,2007,Drug Poisoning,159,"1,327,040",11.98,12.47,"4,049"
+Maine,2007,Non-Drug Poisoning,27,"1,327,040",2.04,1.8,453
+Maine,2007,Struck by / against,--,"1,327,040",--,--,--
+Maine,2007,Suffocation,77,"1,327,040",5.8,5.64,"1,811"
+Maine,2007,"Motor vehicle, traffic",179,"1,327,040",13.49,13.31,"4,201"
+Maine,2007,"Pedal cyclist, other",--,"1,327,040",--,--,--
+Maine,2007,"Pedestrian, other",11**,"1,327,040",0.83**,0.79**,237
+Maine,2007,"Transport, other land",11**,"1,327,040",0.83**,0.80**,300
+Maine,2007,"Transport, other (excl. drown by water transp)",--,"1,327,040",--,--,--
+Maine,2007,Other specified and classifiable,--,"1,327,040",--,--,--
+Maine,2007,Other specified / NEC,--,"1,327,040",--,--,--
+Maine,2007,Unspecified,69,"1,327,040",5.2,4.37,414
+Maine,2006,Cut/Pierce,--,"1,323,619",--,--,--
+Maine,2006,Drowning (includes water transport),24,"1,323,619",1.81,1.6,430
+Maine,2006,Fall,80,"1,323,619",6.04,4.93,270
+Maine,2006,Fire/Flame,10**,"1,323,619",0.76**,0.72**,204
+Maine,2006,Firearm,105,"1,323,619",7.93,7.28,"1,868"
+Maine,2006,Machinery,--,"1,323,619",--,--,--
+Maine,2006,Natural/Environmental,11**,"1,323,619",0.83**,0.70**,85
+Maine,2006,Drug Poisoning,159,"1,323,619",12.01,12.05,"3,923"
+Maine,2006,Non-Drug Poisoning,20**,"1,323,619",1.51**,1.57**,545
+Maine,2006,Struck by / against,--,"1,323,619",--,--,--
+Maine,2006,Suffocation,64,"1,323,619",4.84,4.65,"1,255"
+Maine,2006,"Motor vehicle, traffic",182,"1,323,619",13.75,13.42,"4,444"
+Maine,2006,"Pedestrian, other",--,"1,323,619",--,--,--
+Maine,2006,"Transport, other land",12**,"1,323,619",0.91**,0.90**,382
+Maine,2006,"Transport, other (excl. drown by water transp)",--,"1,323,619",--,--,--
+Maine,2006,Other specified and classifiable,10**,"1,323,619",0.76**,0.75**,216
+Maine,2006,Other specified / NEC,--,"1,323,619",--,--,--
+Maine,2006,Unspecified,57,"1,323,619",4.31,3.54,223
+Maine,2005,Cut/Pierce,--,"1,318,787",--,--,--
+Maine,2005,Drowning (includes water transport),32,"1,318,787",2.43,2.26,642
+Maine,2005,Fall,91,"1,318,787",6.9,5.88,407
+Maine,2005,Fire/Flame,17**,"1,318,787",1.29**,1.23**,347
+Maine,2005,Firearm,109,"1,318,787",8.27,7.71,"1,657"
+Maine,2005,Machinery,--,"1,318,787",--,--,--
+Maine,2005,Natural/Environmental,16**,"1,318,787",1.21**,1.10**,254
+Maine,2005,Drug Poisoning,163,"1,318,787",12.36,12.41,"4,010"
+Maine,2005,Non-Drug Poisoning,10**,"1,318,787",0.76**,0.65**,175
+Maine,2005,Struck by / against,--,"1,318,787",--,--,--
+Maine,2005,Suffocation,59,"1,318,787",4.47,4.33,"1,259"
+Maine,2005,"Motor vehicle, traffic",179,"1,318,787",13.57,13.31,"4,468"
+Maine,2005,"Pedestrian, other",--,"1,318,787",--,--,--
+Maine,2005,"Transport, other land",--,"1,318,787",--,--,--
+Maine,2005,"Transport, other (excl. drown by water transp)",--,"1,318,787",--,--,--
+Maine,2005,Other specified and classifiable,--,"1,318,787",--,--,--
+Maine,2005,Other specified / NEC,--,"1,318,787",--,--,--
+Maine,2005,Unspecified,67,"1,318,787",5.08,4.33,326
+Maine,2004,Cut/Pierce,--,"1,313,688",--,--,--
+Maine,2004,Drowning (includes water transport),30,"1,313,688",2.28,2.24,807
+Maine,2004,Fall,57,"1,313,688",4.34,3.77,311
+Maine,2004,Fire/Flame,--,"1,313,688",--,--,--
+Maine,2004,Firearm,108,"1,313,688",8.22,7.9,"2,275"
+Maine,2004,Natural/Environmental,--,"1,313,688",--,--,--
+Maine,2004,Drug Poisoning,140,"1,313,688",10.66,11.02,"3,852"
+Maine,2004,Non-Drug Poisoning,--,"1,313,688",--,--,--
+Maine,2004,Struck by / against,--,"1,313,688",--,--,--
+Maine,2004,Suffocation,63,"1,313,688",4.8,4.45,"1,005"
+Maine,2004,"Motor vehicle, traffic",167,"1,313,688",12.71,12.79,"4,399"
+Maine,2004,"Pedestrian, other",--,"1,313,688",--,--,--
+Maine,2004,"Transport, other land",16**,"1,313,688",1.22**,1.25**,465
+Maine,2004,"Transport, other (excl. drown by water transp)",--,"1,313,688",--,--,--
+Maine,2004,Other specified and classifiable,--,"1,313,688",--,--,--
+Maine,2004,Other specified / NEC,10**,"1,313,688",0.76**,0.74**,175
+Maine,2004,Unspecified,53,"1,313,688",4.03,3.53,271
+Maine,2003,Cut/Pierce,11**,"1,306,513",0.84**,0.81**,236
+Maine,2003,Drowning (includes water transport),21,"1,306,513",1.61,1.5,396
+Maine,2003,Fall,80,"1,306,513",6.12,5.26,234
+Maine,2003,Fire/Flame,17**,"1,306,513",1.30**,1.21**,276
+Maine,2003,Firearm,82,"1,306,513",6.28,6.02,"1,606"
+Maine,2003,Machinery,--,"1,306,513",--,--,--
+Maine,2003,Natural/Environmental,--,"1,306,513",--,--,--
+Maine,2003,Drug Poisoning,133,"1,306,513",10.18,10.33,"3,510"
+Maine,2003,Non-Drug Poisoning,11**,"1,306,513",0.84**,0.76**,119
+Maine,2003,Struck by / against,--,"1,306,513",--,--,--
+Maine,2003,Suffocation,52,"1,306,513",3.98,3.8,945
+Maine,2003,"Motor vehicle, traffic",191,"1,306,513",14.62,14.39,"4,227"
+Maine,2003,"Pedestrian, other",--,"1,306,513",--,--,--
+Maine,2003,"Transport, other land",10**,"1,306,513",0.77**,0.80**,346
+Maine,2003,"Transport, other (excl. drown by water transp)",--,"1,306,513",--,--,--
+Maine,2003,Other specified and classifiable,--,"1,306,513",--,--,--
+Maine,2003,Other specified / NEC,--,"1,306,513",--,--,--
+Maine,2003,Unspecified,29,"1,306,513",2.22,2.05,331
+Maine,2002,Cut/Pierce,--,"1,295,960",--,--,--
+Maine,2002,Drowning (includes water transport),18**,"1,295,960",1.39**,1.38**,449
+Maine,2002,Fall,87,"1,295,960",6.71,5.81,244
+Maine,2002,Fire/Flame,11**,"1,295,960",0.85**,0.82**,241
+Maine,2002,Hot object/Substance,--,"1,295,960",--,--,--
+Maine,2002,Firearm,88,"1,295,960",6.79,6.63,"1,725"
+Maine,2002,Machinery,--,"1,295,960",--,--,--
+Maine,2002,Natural/Environmental,--,"1,295,960",--,--,--
+Maine,2002,Drug Poisoning,139,"1,295,960",10.73,11.05,"3,765"
+Maine,2002,Non-Drug Poisoning,12**,"1,295,960",0.93**,0.87**,244
+Maine,2002,Struck by / against,--,"1,295,960",--,--,--
+Maine,2002,Suffocation,71,"1,295,960",5.48,5.24,"1,172"
+Maine,2002,"Motor vehicle, traffic",203,"1,295,960",15.66,15.36,"4,685"
+Maine,2002,"Pedal cyclist, other",--,"1,295,960",--,--,--
+Maine,2002,"Pedestrian, other",--,"1,295,960",--,--,--
+Maine,2002,"Transport, other land",10**,"1,295,960",0.77**,0.82**,329
+Maine,2002,"Transport, other (excl. drown by water transp)",--,"1,295,960",--,--,--
+Maine,2002,Other specified and classifiable,--,"1,295,960",--,--,--
+Maine,2002,Other specified / NEC,--,"1,295,960",--,--,--
+Maine,2002,Unspecified,18**,"1,295,960",1.39**,1.24**,137
+Maine,2001,Cut/Pierce,--,"1,285,692",--,--,--
+Maine,2001,Drowning (includes water transport),29,"1,285,692",2.26,2.14,572
+Maine,2001,Fall,91,"1,285,692",7.08,6.2,382
+Maine,2001,Fire/Flame,13**,"1,285,692",1.01**,0.97**,279
+Maine,2001,Firearm,98,"1,285,692",7.62,7.29,"1,771"
+Maine,2001,Machinery,--,"1,285,692",--,--,--
+Maine,2001,Natural/Environmental,--,"1,285,692",--,--,--
+Maine,2001,Drug Poisoning,85,"1,285,692",6.61,6.53,"2,060"
+Maine,2001,Non-Drug Poisoning,--,"1,285,692",--,--,--
+Maine,2001,Struck by / against,--,"1,285,692",--,--,--
+Maine,2001,Suffocation,78,"1,285,692",6.07,5.81,"1,337"
+Maine,2001,"Motor vehicle, traffic",190,"1,285,692",14.78,14.42,"4,456"
+Maine,2001,"Pedal cyclist, other",--,"1,285,692",--,--,--
+Maine,2001,"Pedestrian, other",--,"1,285,692",--,--,--
+Maine,2001,"Transport, other land",11**,"1,285,692",0.86**,0.89**,320
+Maine,2001,"Transport, other (excl. drown by water transp)",--,"1,285,692",--,--,--
+Maine,2001,Other specified and classifiable,--,"1,285,692",--,--,--
+Maine,2001,Other specified / NEC,--,"1,285,692",--,--,--
+Maine,2001,Unspecified,29,"1,285,692",2.26,2.07,308
+Total,,,"20,411","27,893,688",73.17,67.45,"336,008"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Maine,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

@@ -1,0 +1,446 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Missouri,2021,Cut/Pierce,59,"6,168,187",0.96,0.93,"1,129"
+Missouri,2021,Drowning (includes water transport),121,"6,168,187",1.96,1.95,"3,332"
+Missouri,2021,Fall,880,"6,168,187",14.27,11.58,"1,953"
+Missouri,2021,Fire/Flame,106,"6,168,187",1.72,1.57,"1,893"
+Missouri,2021,Hot object/Substance,--,"6,168,187",--,--,--
+Missouri,2021,Firearm,"1,414","6,168,187",22.92,23.11,"36,322"
+Missouri,2021,Machinery,21,"6,168,187",0.34,0.27,217
+Missouri,2021,Natural/Environmental,59,"6,168,187",0.96,0.78,405
+Missouri,2021,Drug Poisoning,"2,155","6,168,187",34.94,36.62,"50,790"
+Missouri,2021,Non-Drug Poisoning,103,"6,168,187",1.67,1.63,"1,861"
+Missouri,2021,Struck by / against,20**,"6,168,187",0.32**,0.29**,294
+Missouri,2021,Suffocation,460,"6,168,187",7.46,7.58,"12,130"
+Missouri,2021,"Motor vehicle, traffic","1,009","6,168,187",16.36,16.03,"22,373"
+Missouri,2021,"Pedal cyclist, other",--,"6,168,187",--,--,--
+Missouri,2021,"Pedestrian, other",22,"6,168,187",0.36,0.34,403
+Missouri,2021,"Transport, other land",51,"6,168,187",0.83,0.76,958
+Missouri,2021,"Transport, other (excl. drown by water transp)",17**,"6,168,187",0.28**,0.23**,276
+Missouri,2021,Other specified and classifiable,41,"6,168,187",0.67,0.66,962
+Missouri,2021,Other specified / NEC,28,"6,168,187",0.45,0.43,522
+Missouri,2021,Unspecified,255,"6,168,187",4.13,3.5,"1,437"
+Missouri,2020,Cut/Pierce,58,"6,154,481",0.94,0.93,"1,190"
+Missouri,2020,Drowning (includes water transport),87,"6,154,481",1.41,1.41,"2,136"
+Missouri,2020,Fall,887,"6,154,481",14.41,11.63,"1,190"
+Missouri,2020,Fire/Flame,113,"6,154,481",1.84,1.58,"1,238"
+Missouri,2020,Hot object/Substance,--,"6,154,481",--,--,--
+Missouri,2020,Firearm,"1,426","6,154,481",23.17,23.78,"38,017"
+Missouri,2020,Machinery,20**,"6,154,481",0.33**,0.29**,167
+Missouri,2020,Natural/Environmental,40,"6,154,481",0.65,0.59,412
+Missouri,2020,Overexertion,--,"6,154,481",--,--,--
+Missouri,2020,Drug Poisoning,"1,875","6,154,481",30.47,31.83,"45,423"
+Missouri,2020,Non-Drug Poisoning,93,"6,154,481",1.51,1.49,"1,654"
+Missouri,2020,Struck by / against,27,"6,154,481",0.44,0.4,397
+Missouri,2020,Suffocation,468,"6,154,481",7.6,7.54,"11,507"
+Missouri,2020,"Motor vehicle, traffic",994,"6,154,481",16.15,16.07,"23,010"
+Missouri,2020,"Pedal cyclist, other",--,"6,154,481",--,--,--
+Missouri,2020,"Pedestrian, other",20**,"6,154,481",0.33**,0.33**,424
+Missouri,2020,"Transport, other land",37,"6,154,481",0.6,0.57,702
+Missouri,2020,"Transport, other (excl. drown by water transp)",--,"6,154,481",--,--,--
+Missouri,2020,Other specified and classifiable,49,"6,154,481",0.8,0.76,"1,048"
+Missouri,2020,Other specified / NEC,23,"6,154,481",0.37,0.35,502
+Missouri,2020,Unspecified,225,"6,154,481",3.66,3.11,"1,488"
+Missouri,2019,Cut/Pierce,55,"6,140,475",0.9,0.82,944
+Missouri,2019,Drowning (includes water transport),98,"6,140,475",1.6,1.61,"2,422"
+Missouri,2019,Fall,804,"6,140,475",13.09,10.22,"1,851"
+Missouri,2019,Fire/Flame,92,"6,140,475",1.5,1.31,"1,303"
+Missouri,2019,Hot object/Substance,--,"6,140,475",--,--,--
+Missouri,2019,Firearm,"1,252","6,140,475",20.39,20.52,"31,526"
+Missouri,2019,Machinery,27,"6,140,475",0.44,0.38,191
+Missouri,2019,Natural/Environmental,52,"6,140,475",0.85,0.73,574
+Missouri,2019,Drug Poisoning,"1,583","6,140,475",25.78,26.79,"36,351"
+Missouri,2019,Non-Drug Poisoning,83,"6,140,475",1.35,1.36,"1,653"
+Missouri,2019,Struck by / against,18**,"6,140,475",0.29**,0.28**,265
+Missouri,2019,Suffocation,484,"6,140,475",7.88,7.81,"11,996"
+Missouri,2019,"Motor vehicle, traffic",926,"6,140,475",15.08,14.83,"20,960"
+Missouri,2019,"Pedal cyclist, other",--,"6,140,475",--,--,--
+Missouri,2019,"Pedestrian, other",18**,"6,140,475",0.29**,0.28**,426
+Missouri,2019,"Transport, other land",31,"6,140,475",0.51,0.49,654
+Missouri,2019,"Transport, other (excl. drown by water transp)",--,"6,140,475",--,--,--
+Missouri,2019,Other specified and classifiable,42,"6,140,475",0.68,0.71,"1,216"
+Missouri,2019,Other specified / NEC,34,"6,140,475",0.55,0.49,495
+Missouri,2019,Unspecified,199,"6,140,475",3.24,2.59,"1,130"
+Missouri,2018,Cut/Pierce,56,"6,125,986",0.91,0.9,"1,239"
+Missouri,2018,Drowning (includes water transport),88,"6,125,986",1.44,1.48,"2,544"
+Missouri,2018,Fall,814,"6,125,986",13.29,10.46,"1,632"
+Missouri,2018,Fire/Flame,105,"6,125,986",1.71,1.54,"1,974"
+Missouri,2018,Firearm,"1,311","6,125,986",21.4,21.35,"31,995"
+Missouri,2018,Machinery,17**,"6,125,986",0.28**,0.27**,161
+Missouri,2018,Natural/Environmental,48,"6,125,986",0.78,0.66,688
+Missouri,2018,Overexertion,--,"6,125,986",--,--,--
+Missouri,2018,Drug Poisoning,"1,610","6,125,986",26.28,27.37,"38,524"
+Missouri,2018,Non-Drug Poisoning,97,"6,125,986",1.58,1.55,"1,739"
+Missouri,2018,Struck by / against,23,"6,125,986",0.38,0.29,251
+Missouri,2018,Suffocation,490,"6,125,986",8,8.08,"12,434"
+Missouri,2018,"Motor vehicle, traffic",916,"6,125,986",14.95,14.63,"20,364"
+Missouri,2018,"Pedal cyclist, other",--,"6,125,986",--,--,--
+Missouri,2018,"Pedestrian, other",17**,"6,125,986",0.28**,0.28**,344
+Missouri,2018,"Transport, other land",39,"6,125,986",0.64,0.61,734
+Missouri,2018,"Transport, other (excl. drown by water transp)",--,"6,125,986",--,--,--
+Missouri,2018,Other specified and classifiable,43,"6,125,986",0.7,0.71,"1,062"
+Missouri,2018,Other specified / NEC,46,"6,125,986",0.75,0.65,728
+Missouri,2018,Unspecified,215,"6,125,986",3.51,2.83,"1,403"
+Missouri,2017,Cut/Pierce,58,"6,111,382",0.95,0.92,980
+Missouri,2017,Drowning (includes water transport),95,"6,111,382",1.55,1.54,"2,499"
+Missouri,2017,Fall,792,"6,111,382",12.96,10.41,"1,805"
+Missouri,2017,Fire/Flame,90,"6,111,382",1.47,1.33,"1,084"
+Missouri,2017,Hot object/Substance,--,"6,111,382",--,--,--
+Missouri,2017,Firearm,"1,307","6,111,382",21.39,21.33,"32,902"
+Missouri,2017,Machinery,27,"6,111,382",0.44,0.4,370
+Missouri,2017,Natural/Environmental,38,"6,111,382",0.62,0.57,454
+Missouri,2017,Drug Poisoning,"1,367","6,111,382",22.37,23.18,"33,139"
+Missouri,2017,Non-Drug Poisoning,93,"6,111,382",1.52,1.54,"1,841"
+Missouri,2017,Struck by / against,22,"6,111,382",0.36,0.33,284
+Missouri,2017,Suffocation,436,"6,111,382",7.13,7.23,"12,311"
+Missouri,2017,"Motor vehicle, traffic",954,"6,111,382",15.61,15.25,"22,200"
+Missouri,2017,"Pedal cyclist, other",--,"6,111,382",--,--,--
+Missouri,2017,"Pedestrian, other",15**,"6,111,382",0.25**,0.23**,386
+Missouri,2017,"Transport, other land",48,"6,111,382",0.79,0.79,"1,210"
+Missouri,2017,"Transport, other (excl. drown by water transp)",--,"6,111,382",--,--,--
+Missouri,2017,Other specified and classifiable,51,"6,111,382",0.84,0.8,"1,076"
+Missouri,2017,Other specified / NEC,35,"6,111,382",0.57,0.53,623
+Missouri,2017,Unspecified,226,"6,111,382",3.7,3,"1,111"
+Missouri,2016,Cut/Pierce,59,"6,091,384",0.97,0.98,"1,228"
+Missouri,2016,Drowning (includes water transport),73,"6,091,384",1.2,1.2,"2,283"
+Missouri,2016,Fall,768,"6,091,384",12.61,10.05,"1,261"
+Missouri,2016,Fire/Flame,84,"6,091,384",1.38,1.25,"1,202"
+Missouri,2016,Hot object/Substance,--,"6,091,384",--,--,--
+Missouri,2016,Firearm,"1,144","6,091,384",18.78,18.83,"28,950"
+Missouri,2016,Machinery,17**,"6,091,384",0.28**,0.27**,235
+Missouri,2016,Natural/Environmental,45,"6,091,384",0.74,0.64,549
+Missouri,2016,Overexertion,--,"6,091,384",--,--,--
+Missouri,2016,Drug Poisoning,"1,371","6,091,384",22.51,23.63,"33,267"
+Missouri,2016,Non-Drug Poisoning,87,"6,091,384",1.43,1.39,"1,403"
+Missouri,2016,Struck by / against,31,"6,091,384",0.51,0.49,515
+Missouri,2016,Suffocation,459,"6,091,384",7.54,7.63,"12,479"
+Missouri,2016,"Motor vehicle, traffic",966,"6,091,384",15.86,15.56,"22,300"
+Missouri,2016,"Pedal cyclist, other",--,"6,091,384",--,--,--
+Missouri,2016,"Pedestrian, other",24,"6,091,384",0.39,0.36,511
+Missouri,2016,"Transport, other land",30,"6,091,384",0.49,0.48,689
+Missouri,2016,"Transport, other (excl. drown by water transp)",--,"6,091,384",--,--,--
+Missouri,2016,Other specified and classifiable,40,"6,091,384",0.66,0.68,944
+Missouri,2016,Other specified / NEC,29,"6,091,384",0.48,0.43,406
+Missouri,2016,Unspecified,205,"6,091,384",3.37,2.9,"1,664"
+Missouri,2015,Cut/Pierce,48,"6,075,411",0.79,0.81,878
+Missouri,2015,Drowning (includes water transport),88,"6,075,411",1.45,1.43,"2,356"
+Missouri,2015,Fall,762,"6,075,411",12.54,10.19,"1,542"
+Missouri,2015,Fire/Flame,97,"6,075,411",1.6,1.49,"2,204"
+Missouri,2015,Hot object/Substance,--,"6,075,411",--,--,--
+Missouri,2015,Firearm,"1,094","6,075,411",18.01,17.94,"26,839"
+Missouri,2015,Machinery,10**,"6,075,411",0.17**,0.15**,99
+Missouri,2015,Natural/Environmental,46,"6,075,411",0.76,0.65,414
+Missouri,2015,Drug Poisoning,"1,066","6,075,411",17.55,17.85,"24,659"
+Missouri,2015,Non-Drug Poisoning,92,"6,075,411",1.51,1.53,"1,998"
+Missouri,2015,Struck by / against,27,"6,075,411",0.44,0.38,317
+Missouri,2015,Suffocation,421,"6,075,411",6.93,6.98,"11,364"
+Missouri,2015,"Motor vehicle, traffic",885,"6,075,411",14.57,14.04,"19,819"
+Missouri,2015,"Pedal cyclist, other",--,"6,075,411",--,--,--
+Missouri,2015,"Pedestrian, other",23,"6,075,411",0.38,0.37,465
+Missouri,2015,"Transport, other land",39,"6,075,411",0.64,0.59,730
+Missouri,2015,"Transport, other (excl. drown by water transp)",11**,"6,075,411",0.18**,0.19**,219
+Missouri,2015,Other specified and classifiable,38,"6,075,411",0.63,0.65,848
+Missouri,2015,Other specified / NEC,45,"6,075,411",0.74,0.68,683
+Missouri,2015,Unspecified,210,"6,075,411",3.46,2.89,"1,246"
+Missouri,2014,Cut/Pierce,45,"6,059,130",0.74,0.77,"1,084"
+Missouri,2014,Drowning (includes water transport),77,"6,059,130",1.27,1.24,"2,097"
+Missouri,2014,Fall,712,"6,059,130",11.75,9.71,"1,522"
+Missouri,2014,Fire/Flame,78,"6,059,130",1.29,1.18,"1,275"
+Missouri,2014,Hot object/Substance,--,"6,059,130",--,--,--
+Missouri,2014,Firearm,943,"6,059,130",15.56,15.23,"21,178"
+Missouri,2014,Machinery,26,"6,059,130",0.43,0.4,269
+Missouri,2014,Natural/Environmental,35,"6,059,130",0.58,0.54,510
+Missouri,2014,Overexertion,--,"6,059,130",--,--,--
+Missouri,2014,Drug Poisoning,"1,067","6,059,130",17.61,18.21,"24,960"
+Missouri,2014,Non-Drug Poisoning,109,"6,059,130",1.8,1.72,"1,757"
+Missouri,2014,Struck by / against,24,"6,059,130",0.4,0.36,372
+Missouri,2014,Suffocation,457,"6,059,130",7.54,7.52,"12,025"
+Missouri,2014,"Motor vehicle, traffic",755,"6,059,130",12.46,12.21,"17,837"
+Missouri,2014,"Pedal cyclist, other",--,"6,059,130",--,--,--
+Missouri,2014,"Pedestrian, other",17**,"6,059,130",0.28**,0.27**,434
+Missouri,2014,"Transport, other land",37,"6,059,130",0.61,0.6,714
+Missouri,2014,"Transport, other (excl. drown by water transp)",--,"6,059,130",--,--,--
+Missouri,2014,Other specified and classifiable,45,"6,059,130",0.74,0.77,"1,123"
+Missouri,2014,Other specified / NEC,28,"6,059,130",0.46,0.44,394
+Missouri,2014,Unspecified,206,"6,059,130",3.4,2.85,"1,375"
+Missouri,2013,Cut/Pierce,48,"6,042,989",0.79,0.77,806
+Missouri,2013,Drowning (includes water transport),79,"6,042,989",1.31,1.29,"2,168"
+Missouri,2013,Fall,669,"6,042,989",11.07,9.22,"1,558"
+Missouri,2013,Fire/Flame,95,"6,042,989",1.57,1.44,"1,562"
+Missouri,2013,Hot object/Substance,--,"6,042,989",--,--,--
+Missouri,2013,Firearm,880,"6,042,989",14.56,14.34,"19,987"
+Missouri,2013,Machinery,25,"6,042,989",0.41,0.41,458
+Missouri,2013,Natural/Environmental,40,"6,042,989",0.66,0.58,493
+Missouri,2013,Overexertion,--,"6,042,989",--,--,--
+Missouri,2013,Drug Poisoning,"1,025","6,042,989",16.96,17.49,"22,863"
+Missouri,2013,Non-Drug Poisoning,91,"6,042,989",1.51,1.51,"1,952"
+Missouri,2013,Struck by / against,26,"6,042,989",0.43,0.41,366
+Missouri,2013,Suffocation,400,"6,042,989",6.62,6.73,"11,621"
+Missouri,2013,"Motor vehicle, traffic",747,"6,042,989",12.36,12.14,"18,204"
+Missouri,2013,"Pedal cyclist, other",--,"6,042,989",--,--,--
+Missouri,2013,"Pedestrian, other",13**,"6,042,989",0.22**,0.20**,390
+Missouri,2013,"Transport, other land",28,"6,042,989",0.46,0.4,308
+Missouri,2013,"Transport, other (excl. drown by water transp)",--,"6,042,989",--,--,--
+Missouri,2013,Other specified and classifiable,45,"6,042,989",0.75,0.74,816
+Missouri,2013,Other specified / NEC,32,"6,042,989",0.53,0.48,437
+Missouri,2013,Unspecified,192,"6,042,989",3.18,2.73,"1,230"
+Missouri,2012,Cut/Pierce,45,"6,026,027",0.75,0.67,806
+Missouri,2012,Drowning (includes water transport),69,"6,026,027",1.15,1.16,"1,822"
+Missouri,2012,Fall,627,"6,026,027",10.41,8.86,"1,599"
+Missouri,2012,Fire/Flame,78,"6,026,027",1.29,1.25,"1,377"
+Missouri,2012,Hot object/Substance,--,"6,026,027",--,--,--
+Missouri,2012,Firearm,882,"6,026,027",14.64,14.49,"21,324"
+Missouri,2012,Machinery,19**,"6,026,027",0.32**,0.28**,113
+Missouri,2012,Natural/Environmental,58,"6,026,027",0.96,0.85,574
+Missouri,2012,Drug Poisoning,942,"6,026,027",15.63,16.16,"21,926"
+Missouri,2012,Non-Drug Poisoning,96,"6,026,027",1.59,1.52,"1,839"
+Missouri,2012,Struck by / against,22,"6,026,027",0.37,0.37,339
+Missouri,2012,Suffocation,393,"6,026,027",6.52,6.38,"9,994"
+Missouri,2012,"Motor vehicle, traffic",845,"6,026,027",14.02,13.86,"20,122"
+Missouri,2012,"Pedal cyclist, other",--,"6,026,027",--,--,--
+Missouri,2012,"Pedestrian, other",26,"6,026,027",0.43,0.45,853
+Missouri,2012,"Transport, other land",27,"6,026,027",0.45,0.45,795
+Missouri,2012,"Transport, other (excl. drown by water transp)",17**,"6,026,027",0.28**,0.27**,332
+Missouri,2012,Other specified and classifiable,40,"6,026,027",0.66,0.62,925
+Missouri,2012,Other specified / NEC,46,"6,026,027",0.76,0.7,713
+Missouri,2012,Unspecified,202,"6,026,027",3.35,2.95,"1,717"
+Missouri,2011,Cut/Pierce,42,"6,011,182",0.7,0.73,923
+Missouri,2011,Drowning (includes water transport),111,"6,011,182",1.85,1.83,"3,130"
+Missouri,2011,Fall,646,"6,011,182",10.75,9.28,"1,486"
+Missouri,2011,Fire/Flame,84,"6,011,182",1.4,1.31,"1,477"
+Missouri,2011,Hot object/Substance,--,"6,011,182",--,--,--
+Missouri,2011,Firearm,854,"6,011,182",14.21,13.99,"19,834"
+Missouri,2011,Machinery,17**,"6,011,182",0.28**,0.27**,214
+Missouri,2011,Natural/Environmental,202,"6,011,182",3.36,3.1,"2,641"
+Missouri,2011,Overexertion,--,"6,011,182",--,--,--
+Missouri,2011,Drug Poisoning,963,"6,011,182",16.02,16.47,"23,328"
+Missouri,2011,Non-Drug Poisoning,96,"6,011,182",1.6,1.6,"1,761"
+Missouri,2011,Struck by / against,27,"6,011,182",0.45,0.42,515
+Missouri,2011,Suffocation,432,"6,011,182",7.19,7.14,"11,573"
+Missouri,2011,"Motor vehicle, traffic",817,"6,011,182",13.59,13.38,"20,678"
+Missouri,2011,"Pedal cyclist, other",--,"6,011,182",--,--,--
+Missouri,2011,"Pedestrian, other",16**,"6,011,182",0.27**,0.26**,349
+Missouri,2011,"Transport, other land",42,"6,011,182",0.7,0.68,942
+Missouri,2011,"Transport, other (excl. drown by water transp)",--,"6,011,182",--,--,--
+Missouri,2011,Other specified and classifiable,36,"6,011,182",0.6,0.61,"1,078"
+Missouri,2011,Other specified / NEC,23,"6,011,182",0.38,0.37,353
+Missouri,2011,Unspecified,200,"6,011,182",3.33,2.97,"1,872"
+Missouri,2010,Cut/Pierce,37,"5,988,941",0.62,0.64,918
+Missouri,2010,Drowning (includes water transport),82,"5,988,941",1.37,1.35,"2,449"
+Missouri,2010,Fall,613,"5,988,941",10.24,8.94,"1,362"
+Missouri,2010,Fire/Flame,103,"5,988,941",1.72,1.64,"2,045"
+Missouri,2010,Hot object/Substance,--,"5,988,941",--,--,--
+Missouri,2010,Firearm,846,"5,988,941",14.13,13.93,"20,545"
+Missouri,2010,Machinery,15**,"5,988,941",0.25**,0.24**,190
+Missouri,2010,Natural/Environmental,47,"5,988,941",0.79,0.7,586
+Missouri,2010,Overexertion,--,"5,988,941",--,--,--
+Missouri,2010,Drug Poisoning,998,"5,988,941",16.66,17.02,"24,216"
+Missouri,2010,Non-Drug Poisoning,87,"5,988,941",1.45,1.42,"1,694"
+Missouri,2010,Struck by / against,26,"5,988,941",0.43,0.41,485
+Missouri,2010,Suffocation,385,"5,988,941",6.43,6.35,"9,921"
+Missouri,2010,"Motor vehicle, traffic",837,"5,988,941",13.98,13.7,"19,834"
+Missouri,2010,"Pedal cyclist, other",--,"5,988,941",--,--,--
+Missouri,2010,"Pedestrian, other",15**,"5,988,941",0.25**,0.24**,287
+Missouri,2010,"Transport, other land",34,"5,988,941",0.57,0.55,603
+Missouri,2010,"Transport, other (excl. drown by water transp)",13**,"5,988,941",0.22**,0.20**,207
+Missouri,2010,Other specified and classifiable,32,"5,988,941",0.53,0.53,973
+Missouri,2010,Other specified / NEC,27,"5,988,941",0.45,0.42,412
+Missouri,2010,Unspecified,185,"5,988,941",3.09,2.77,"1,676"
+Missouri,2009,Cut/Pierce,51,"5,961,088",0.86,0.84,"1,220"
+Missouri,2009,Drowning (includes water transport),87,"5,961,088",1.46,1.42,"2,370"
+Missouri,2009,Fall,640,"5,961,088",10.74,9.53,"1,564"
+Missouri,2009,Fire/Flame,107,"5,961,088",1.8,1.67,"2,056"
+Missouri,2009,Firearm,822,"5,961,088",13.79,13.71,"20,690"
+Missouri,2009,Machinery,28,"5,961,088",0.47,0.43,391
+Missouri,2009,Natural/Environmental,41,"5,961,088",0.69,0.63,596
+Missouri,2009,Overexertion,--,"5,961,088",--,--,--
+Missouri,2009,Drug Poisoning,863,"5,961,088",14.48,14.67,"21,102"
+Missouri,2009,Non-Drug Poisoning,99,"5,961,088",1.66,1.64,"1,863"
+Missouri,2009,Struck by / against,19**,"5,961,088",0.32**,0.30**,262
+Missouri,2009,Suffocation,362,"5,961,088",6.07,6.08,"10,019"
+Missouri,2009,"Motor vehicle, traffic",901,"5,961,088",15.12,14.9,"21,906"
+Missouri,2009,"Pedal cyclist, other",--,"5,961,088",--,--,--
+Missouri,2009,"Pedestrian, other",21,"5,961,088",0.35,0.34,537
+Missouri,2009,"Transport, other land",35,"5,961,088",0.59,0.56,698
+Missouri,2009,"Transport, other (excl. drown by water transp)",13**,"5,961,088",0.22**,0.21**,304
+Missouri,2009,Other specified and classifiable,50,"5,961,088",0.84,0.88,"1,441"
+Missouri,2009,Other specified / NEC,35,"5,961,088",0.59,0.56,518
+Missouri,2009,Unspecified,133,"5,961,088",2.23,2.04,"1,593"
+Missouri,2008,Cut/Pierce,54,"5,923,916",0.91,0.9,"1,074"
+Missouri,2008,Drowning (includes water transport),89,"5,923,916",1.5,1.49,"2,376"
+Missouri,2008,Fall,683,"5,923,916",11.53,10.29,"1,538"
+Missouri,2008,Fire/Flame,82,"5,923,916",1.38,1.3,"1,389"
+Missouri,2008,Hot object/Substance,--,"5,923,916",--,--,--
+Missouri,2008,Firearm,818,"5,923,916",13.81,13.74,"20,854"
+Missouri,2008,Machinery,19**,"5,923,916",0.32**,0.32**,192
+Missouri,2008,Natural/Environmental,46,"5,923,916",0.78,0.7,500
+Missouri,2008,Overexertion,--,"5,923,916",--,--,--
+Missouri,2008,Drug Poisoning,765,"5,923,916",12.91,13.12,"18,422"
+Missouri,2008,Non-Drug Poisoning,102,"5,923,916",1.72,1.75,"1,983"
+Missouri,2008,Struck by / against,21,"5,923,916",0.35,0.33,388
+Missouri,2008,Suffocation,388,"5,923,916",6.55,6.57,"11,488"
+Missouri,2008,"Motor vehicle, traffic",947,"5,923,916",15.99,15.74,"24,062"
+Missouri,2008,"Pedal cyclist, other",--,"5,923,916",--,--,--
+Missouri,2008,"Pedestrian, other",29,"5,923,916",0.49,0.5,692
+Missouri,2008,"Transport, other land",42,"5,923,916",0.71,0.69,"1,194"
+Missouri,2008,"Transport, other (excl. drown by water transp)",12**,"5,923,916",0.20**,0.20**,326
+Missouri,2008,Other specified and classifiable,40,"5,923,916",0.68,0.68,"1,083"
+Missouri,2008,Other specified / NEC,49,"5,923,916",0.83,0.8,745
+Missouri,2008,Unspecified,150,"5,923,916",2.53,2.39,"2,027"
+Missouri,2007,Cut/Pierce,46,"5,887,612",0.78,0.76,"1,024"
+Missouri,2007,Drowning (includes water transport),88,"5,887,612",1.5,1.48,"2,870"
+Missouri,2007,Fall,688,"5,887,612",11.69,10.5,"1,692"
+Missouri,2007,Fire/Flame,107,"5,887,612",1.82,1.74,"2,105"
+Missouri,2007,Hot object/Substance,--,"5,887,612",--,--,--
+Missouri,2007,Firearm,759,"5,887,612",12.89,12.79,"18,232"
+Missouri,2007,Machinery,18**,"5,887,612",0.31**,0.29**,251
+Missouri,2007,Natural/Environmental,55,"5,887,612",0.93,0.88,804
+Missouri,2007,Drug Poisoning,714,"5,887,612",12.13,12.25,"16,933"
+Missouri,2007,Non-Drug Poisoning,94,"5,887,612",1.6,1.57,"1,656"
+Missouri,2007,Struck by / against,23,"5,887,612",0.39,0.36,468
+Missouri,2007,Suffocation,344,"5,887,612",5.84,5.87,"10,127"
+Missouri,2007,"Motor vehicle, traffic","1,012","5,887,612",17.19,16.89,"25,819"
+Missouri,2007,"Pedal cyclist, other",--,"5,887,612",--,--,--
+Missouri,2007,"Pedestrian, other",23,"5,887,612",0.39,0.39,451
+Missouri,2007,"Transport, other land",37,"5,887,612",0.63,0.6,545
+Missouri,2007,"Transport, other (excl. drown by water transp)",10**,"5,887,612",0.17**,0.17**,211
+Missouri,2007,Other specified and classifiable,42,"5,887,612",0.71,0.72,"1,226"
+Missouri,2007,Other specified / NEC,43,"5,887,612",0.73,0.71,684
+Missouri,2007,Unspecified,166,"5,887,612",2.82,2.65,"2,652"
+Missouri,2006,Cut/Pierce,50,"5,842,704",0.86,0.86,"1,226"
+Missouri,2006,Drowning (includes water transport),86,"5,842,704",1.47,1.44,"2,535"
+Missouri,2006,Fall,619,"5,842,704",10.59,9.69,"2,167"
+Missouri,2006,Fire/Flame,96,"5,842,704",1.64,1.58,"2,208"
+Missouri,2006,Hot object/Substance,--,"5,842,704",--,--,--
+Missouri,2006,Firearm,767,"5,842,704",13.13,13,"19,164"
+Missouri,2006,Machinery,24,"5,842,704",0.41,0.39,309
+Missouri,2006,Natural/Environmental,55,"5,842,704",0.94,0.87,581
+Missouri,2006,Overexertion,--,"5,842,704",--,--,--
+Missouri,2006,Drug Poisoning,743,"5,842,704",12.72,12.95,"18,735"
+Missouri,2006,Non-Drug Poisoning,86,"5,842,704",1.47,1.44,"1,811"
+Missouri,2006,Struck by / against,14**,"5,842,704",0.24**,0.22**,187
+Missouri,2006,Suffocation,341,"5,842,704",5.84,5.78,"8,780"
+Missouri,2006,"Motor vehicle, traffic","1,076","5,842,704",18.42,18.18,"28,785"
+Missouri,2006,"Pedal cyclist, other",--,"5,842,704",--,--,--
+Missouri,2006,"Pedestrian, other",28,"5,842,704",0.48,0.46,666
+Missouri,2006,"Transport, other land",30,"5,842,704",0.51,0.52,721
+Missouri,2006,"Transport, other (excl. drown by water transp)",10**,"5,842,704",0.17**,0.18**,308
+Missouri,2006,Other specified and classifiable,44,"5,842,704",0.75,0.74,944
+Missouri,2006,Other specified / NEC,40,"5,842,704",0.69,0.68,708
+Missouri,2006,Unspecified,196,"5,842,704",3.36,3.17,"2,454"
+Missouri,2005,Cut/Pierce,55,"5,790,300",0.95,0.98,"1,350"
+Missouri,2005,Drowning (includes water transport),73,"5,790,300",1.26,1.26,"2,364"
+Missouri,2005,Fall,508,"5,790,300",8.77,7.98,"1,267"
+Missouri,2005,Fire/Flame,74,"5,790,300",1.28,1.24,"1,400"
+Missouri,2005,Hot object/Substance,--,"5,790,300",--,--,--
+Missouri,2005,Firearm,752,"5,790,300",12.99,12.9,"18,693"
+Missouri,2005,Machinery,35,"5,790,300",0.6,0.57,364
+Missouri,2005,Natural/Environmental,58,"5,790,300",1,0.93,580
+Missouri,2005,Overexertion,--,"5,790,300",--,--,--
+Missouri,2005,Drug Poisoning,608,"5,790,300",10.5,10.65,"14,494"
+Missouri,2005,Non-Drug Poisoning,68,"5,790,300",1.17,1.17,"1,558"
+Missouri,2005,Struck by / against,27,"5,790,300",0.47,0.47,662
+Missouri,2005,Suffocation,303,"5,790,300",5.23,5.23,"7,579"
+Missouri,2005,"Motor vehicle, traffic","1,167","5,790,300",20.15,19.83,"30,628"
+Missouri,2005,"Pedal cyclist, other",--,"5,790,300",--,--,--
+Missouri,2005,"Pedestrian, other",18**,"5,790,300",0.31**,0.30**,254
+Missouri,2005,"Transport, other land",33,"5,790,300",0.57,0.56,614
+Missouri,2005,"Transport, other (excl. drown by water transp)",15**,"5,790,300",0.26**,0.25**,292
+Missouri,2005,Other specified and classifiable,65,"5,790,300",1.12,1.12,"1,858"
+Missouri,2005,Other specified / NEC,48,"5,790,300",0.83,0.81,822
+Missouri,2005,Unspecified,162,"5,790,300",2.8,2.63,"1,801"
+Missouri,2004,Cut/Pierce,47,"5,747,741",0.82,0.81,"1,198"
+Missouri,2004,Drowning (includes water transport),74,"5,747,741",1.29,1.3,"2,171"
+Missouri,2004,Fall,540,"5,747,741",9.4,8.6,"1,223"
+Missouri,2004,Fire/Flame,104,"5,747,741",1.81,1.78,"2,462"
+Missouri,2004,Hot object/Substance,--,"5,747,741",--,--,--
+Missouri,2004,Firearm,664,"5,747,741",11.55,11.44,"16,042"
+Missouri,2004,Machinery,33,"5,747,741",0.57,0.55,275
+Missouri,2004,Natural/Environmental,30,"5,747,741",0.52,0.51,487
+Missouri,2004,Drug Poisoning,548,"5,747,741",9.53,9.74,"13,568"
+Missouri,2004,Non-Drug Poisoning,73,"5,747,741",1.27,1.25,"1,443"
+Missouri,2004,Struck by / against,28,"5,747,741",0.49,0.47,408
+Missouri,2004,Suffocation,305,"5,747,741",5.31,5.29,"8,443"
+Missouri,2004,"Motor vehicle, traffic","1,080","5,747,741",18.79,18.57,"29,457"
+Missouri,2004,"Pedal cyclist, other",--,"5,747,741",--,--,--
+Missouri,2004,"Pedestrian, other",22,"5,747,741",0.38,0.39,624
+Missouri,2004,"Transport, other land",28,"5,747,741",0.49,0.48,826
+Missouri,2004,"Transport, other (excl. drown by water transp)",--,"5,747,741",--,--,--
+Missouri,2004,Other specified and classifiable,48,"5,747,741",0.84,0.84,"1,240"
+Missouri,2004,Other specified / NEC,49,"5,747,741",0.85,0.83,731
+Missouri,2004,Unspecified,181,"5,747,741",3.15,2.97,"2,089"
+Missouri,2003,Cut/Pierce,45,"5,709,403",0.79,0.8,"1,200"
+Missouri,2003,Drowning (includes water transport),71,"5,709,403",1.24,1.26,"2,254"
+Missouri,2003,Fall,510,"5,709,403",8.93,8.26,"1,786"
+Missouri,2003,Fire/Flame,80,"5,709,403",1.4,1.35,"1,535"
+Missouri,2003,Hot object/Substance,--,"5,709,403",--,--,--
+Missouri,2003,Firearm,657,"5,709,403",11.51,11.42,"15,706"
+Missouri,2003,Machinery,29,"5,709,403",0.51,0.48,355
+Missouri,2003,Natural/Environmental,62,"5,709,403",1.09,1.03,940
+Missouri,2003,Drug Poisoning,522,"5,709,403",9.14,9.26,"12,663"
+Missouri,2003,Non-Drug Poisoning,82,"5,709,403",1.44,1.41,"1,565"
+Missouri,2003,Struck by / against,21,"5,709,403",0.37,0.35,365
+Missouri,2003,Suffocation,276,"5,709,403",4.83,4.71,"6,467"
+Missouri,2003,"Motor vehicle, traffic","1,190","5,709,403",20.84,20.58,"30,676"
+Missouri,2003,"Pedal cyclist, other",--,"5,709,403",--,--,--
+Missouri,2003,"Pedestrian, other",20**,"5,709,403",0.35**,0.35**,433
+Missouri,2003,"Transport, other land",35,"5,709,403",0.61,0.61,969
+Missouri,2003,"Transport, other (excl. drown by water transp)",12**,"5,709,403",0.21**,0.21**,308
+Missouri,2003,Other specified and classifiable,44,"5,709,403",0.77,0.78,"1,298"
+Missouri,2003,Other specified / NEC,40,"5,709,403",0.7,0.68,724
+Missouri,2003,Unspecified,173,"5,709,403",3.03,2.83,"1,722"
+Missouri,2002,Cut/Pierce,61,"5,674,825",1.08,1.05,"1,617"
+Missouri,2002,Drowning (includes water transport),84,"5,674,825",1.48,1.5,"2,923"
+Missouri,2002,Fall,435,"5,674,825",7.67,7.09,"1,400"
+Missouri,2002,Fire/Flame,104,"5,674,825",1.83,1.82,"2,603"
+Missouri,2002,Hot object/Substance,--,"5,674,825",--,--,--
+Missouri,2002,Firearm,696,"5,674,825",12.27,12.21,"17,034"
+Missouri,2002,Machinery,21,"5,674,825",0.37,0.37,374
+Missouri,2002,Natural/Environmental,54,"5,674,825",0.95,0.91,596
+Missouri,2002,Drug Poisoning,416,"5,674,825",7.33,7.44,"10,446"
+Missouri,2002,Non-Drug Poisoning,74,"5,674,825",1.3,1.3,"1,485"
+Missouri,2002,Struck by / against,25,"5,674,825",0.44,0.43,382
+Missouri,2002,Suffocation,282,"5,674,825",4.97,4.88,"6,598"
+Missouri,2002,"Motor vehicle, traffic","1,191","5,674,825",20.99,20.8,"32,568"
+Missouri,2002,"Pedal cyclist, other",--,"5,674,825",--,--,--
+Missouri,2002,"Pedestrian, other",14**,"5,674,825",0.25**,0.25**,443
+Missouri,2002,"Transport, other land",23,"5,674,825",0.41,0.4,490
+Missouri,2002,"Transport, other (excl. drown by water transp)",27,"5,674,825",0.48,0.46,707
+Missouri,2002,Other specified and classifiable,38,"5,674,825",0.67,0.68,"1,322"
+Missouri,2002,Other specified / NEC,34,"5,674,825",0.6,0.58,372
+Missouri,2002,Unspecified,187,"5,674,825",3.3,3.1,"1,931"
+Missouri,2001,Cut/Pierce,56,"5,641,142",0.99,0.99,"1,422"
+Missouri,2001,Drowning (includes water transport),72,"5,641,142",1.28,1.27,"2,265"
+Missouri,2001,Fall,452,"5,641,142",8.01,7.41,"1,448"
+Missouri,2001,Fire/Flame,99,"5,641,142",1.76,1.73,"2,116"
+Missouri,2001,Hot object/Substance,--,"5,641,142",--,--,--
+Missouri,2001,Firearm,744,"5,641,142",13.19,13.14,"19,215"
+Missouri,2001,Machinery,28,"5,641,142",0.5,0.48,293
+Missouri,2001,Natural/Environmental,50,"5,641,142",0.89,0.86,918
+Missouri,2001,Drug Poisoning,351,"5,641,142",6.22,6.28,"8,223"
+Missouri,2001,Non-Drug Poisoning,71,"5,641,142",1.26,1.27,"1,720"
+Missouri,2001,Struck by / against,31,"5,641,142",0.55,0.53,632
+Missouri,2001,Suffocation,305,"5,641,142",5.41,5.32,"7,240"
+Missouri,2001,"Motor vehicle, traffic","1,082","5,641,142",19.18,19.06,"29,275"
+Missouri,2001,"Pedal cyclist, other",--,"5,641,142",--,--,--
+Missouri,2001,"Pedestrian, other",17**,"5,641,142",0.30**,0.31**,445
+Missouri,2001,"Transport, other land",32,"5,641,142",0.57,0.57,796
+Missouri,2001,"Transport, other (excl. drown by water transp)",22,"5,641,142",0.39,0.39,474
+Missouri,2001,Other specified and classifiable,57,"5,641,142",1.01,1.03,"1,890"
+Missouri,2001,Other specified / NEC,65,"5,641,142",1.15,1.13,"1,173"
+Missouri,2001,Unspecified,177,"5,641,142",3.14,2.94,"2,110"
+Total,,,"100,276","125,174,306",80.11,77.96,"2,039,604"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Missouri,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

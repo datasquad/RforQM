@@ -1,0 +1,433 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Indiana,2021,Cut/Pierce,55,"6,805,985",0.81,0.81,"1,110"
+Indiana,2021,Drowning (includes water transport),99,"6,805,985",1.46,1.49,"2,988"
+Indiana,2021,Fall,692,"6,805,985",10.17,9.01,"1,798"
+Indiana,2021,Fire/Flame,96,"6,805,985",1.41,1.28,"1,321"
+Indiana,2021,Hot object/Substance,--,"6,805,985",--,--,--
+Indiana,2021,Firearm,"1,251","6,805,985",18.38,18.4,"32,423"
+Indiana,2021,Machinery,16**,"6,805,985",0.24**,0.21**,120
+Indiana,2021,Natural/Environmental,40,"6,805,985",0.59,0.55,416
+Indiana,2021,Overexertion,--,"6,805,985",--,--,--
+Indiana,2021,Drug Poisoning,"2,811","6,805,985",41.3,43.11,"65,737"
+Indiana,2021,Non-Drug Poisoning,146,"6,805,985",2.15,2.16,"2,689"
+Indiana,2021,Struck by / against,32,"6,805,985",0.47,0.42,529
+Indiana,2021,Suffocation,469,"6,805,985",6.89,7.02,"11,728"
+Indiana,2021,"Motor vehicle, traffic",969,"6,805,985",14.24,14.21,"23,056"
+Indiana,2021,"Pedal cyclist, other",--,"6,805,985",--,--,--
+Indiana,2021,"Pedestrian, other",20**,"6,805,985",0.29**,0.30**,513
+Indiana,2021,"Transport, other land",31,"6,805,985",0.46,0.44,435
+Indiana,2021,"Transport, other (excl. drown by water transp)",--,"6,805,985",--,--,--
+Indiana,2021,Other specified and classifiable,48,"6,805,985",0.71,0.71,"1,160"
+Indiana,2021,Other specified / NEC,47,"6,805,985",0.69,0.63,435
+Indiana,2021,Unspecified,392,"6,805,985",5.76,5.24,"2,288"
+Indiana,2020,Cut/Pierce,68,"6,785,644",1,1.02,"1,564"
+Indiana,2020,Drowning (includes water transport),96,"6,785,644",1.42,1.4,"2,418"
+Indiana,2020,Fall,616,"6,785,644",9.08,7.89,"1,534"
+Indiana,2020,Fire/Flame,96,"6,785,644",1.42,1.32,"1,649"
+Indiana,2020,Firearm,"1,159","6,785,644",17.08,17.2,"30,991"
+Indiana,2020,Machinery,20**,"6,785,644",0.30**,0.25**,249
+Indiana,2020,Natural/Environmental,37,"6,785,644",0.55,0.49,389
+Indiana,2020,Overexertion,--,"6,785,644",--,--,--
+Indiana,2020,Drug Poisoning,"2,321","6,785,644",34.21,36.34,"57,598"
+Indiana,2020,Non-Drug Poisoning,114,"6,785,644",1.68,1.66,"2,178"
+Indiana,2020,Struck by / against,26,"6,785,644",0.38,0.36,429
+Indiana,2020,Suffocation,489,"6,785,644",7.21,7.29,"12,273"
+Indiana,2020,"Motor vehicle, traffic",923,"6,785,644",13.6,13.39,"21,037"
+Indiana,2020,"Pedal cyclist, other",--,"6,785,644",--,--,--
+Indiana,2020,"Pedestrian, other",11**,"6,785,644",0.16**,0.17**,250
+Indiana,2020,"Transport, other land",36,"6,785,644",0.53,0.52,763
+Indiana,2020,"Transport, other (excl. drown by water transp)",10**,"6,785,644",0.15**,0.14**,214
+Indiana,2020,Other specified and classifiable,52,"6,785,644",0.77,0.79,"1,379"
+Indiana,2020,Other specified / NEC,35,"6,785,644",0.52,0.46,252
+Indiana,2020,Unspecified,347,"6,785,644",5.11,4.63,"2,306"
+Indiana,2019,Cut/Pierce,59,"6,731,010",0.88,0.86,"1,196"
+Indiana,2019,Drowning (includes water transport),89,"6,731,010",1.32,1.32,"2,582"
+Indiana,2019,Fall,554,"6,731,010",8.23,7.03,"1,830"
+Indiana,2019,Fire/Flame,87,"6,731,010",1.29,1.15,"1,264"
+Indiana,2019,Hot object/Substance,--,"6,731,010",--,--,--
+Indiana,2019,Firearm,958,"6,731,010",14.23,14,"23,357"
+Indiana,2019,Machinery,15**,"6,731,010",0.22**,0.21**,150
+Indiana,2019,Natural/Environmental,49,"6,731,010",0.73,0.67,687
+Indiana,2019,Drug Poisoning,"1,699","6,731,010",25.24,26.64,"39,819"
+Indiana,2019,Non-Drug Poisoning,147,"6,731,010",2.18,2.21,"2,846"
+Indiana,2019,Struck by / against,25,"6,731,010",0.37,0.35,504
+Indiana,2019,Suffocation,477,"6,731,010",7.09,7.06,"11,363"
+Indiana,2019,"Motor vehicle, traffic",839,"6,731,010",12.47,12.04,"18,109"
+Indiana,2019,"Pedal cyclist, other",11**,"6,731,010",0.16**,0.16**,165
+Indiana,2019,"Pedestrian, other",26,"6,731,010",0.39,0.39,605
+Indiana,2019,"Transport, other land",27,"6,731,010",0.4,0.38,568
+Indiana,2019,"Transport, other (excl. drown by water transp)",16**,"6,731,010",0.24**,0.22**,295
+Indiana,2019,Other specified and classifiable,27,"6,731,010",0.4,0.4,705
+Indiana,2019,Other specified / NEC,32,"6,731,010",0.48,0.45,508
+Indiana,2019,Unspecified,338,"6,731,010",5.02,4.36,"1,944"
+Indiana,2018,Cut/Pierce,53,"6,698,481",0.79,0.81,"1,158"
+Indiana,2018,Drowning (includes water transport),88,"6,698,481",1.31,1.33,"2,357"
+Indiana,2018,Fall,566,"6,698,481",8.45,7.17,"1,477"
+Indiana,2018,Fire/Flame,105,"6,698,481",1.57,1.47,"1,674"
+Indiana,2018,Firearm,977,"6,698,481",14.59,14.69,"24,261"
+Indiana,2018,Machinery,25,"6,698,481",0.37,0.37,613
+Indiana,2018,Natural/Environmental,60,"6,698,481",0.9,0.8,850
+Indiana,2018,Drug Poisoning,"1,629","6,698,481",24.32,25.52,"39,115"
+Indiana,2018,Non-Drug Poisoning,153,"6,698,481",2.28,2.26,"2,619"
+Indiana,2018,Struck by / against,33,"6,698,481",0.49,0.51,598
+Indiana,2018,Suffocation,508,"6,698,481",7.58,7.53,"12,323"
+Indiana,2018,"Motor vehicle, traffic",834,"6,698,481",12.45,12.34,"19,086"
+Indiana,2018,"Pedal cyclist, other",--,"6,698,481",--,--,--
+Indiana,2018,"Pedestrian, other",27,"6,698,481",0.4,0.38,642
+Indiana,2018,"Transport, other land",27,"6,698,481",0.4,0.36,645
+Indiana,2018,"Transport, other (excl. drown by water transp)",11**,"6,698,481",0.16**,0.15**,140
+Indiana,2018,Other specified and classifiable,32,"6,698,481",0.48,0.49,"1,017"
+Indiana,2018,Other specified / NEC,33,"6,698,481",0.49,0.45,320
+Indiana,2018,Unspecified,320,"6,698,481",4.78,4.14,"2,299"
+Indiana,2017,Cut/Pierce,57,"6,662,068",0.86,0.84,"1,192"
+Indiana,2017,Drowning (includes water transport),101,"6,662,068",1.52,1.6,"3,109"
+Indiana,2017,Fall,545,"6,662,068",8.18,7.1,"1,650"
+Indiana,2017,Fire/Flame,78,"6,662,068",1.17,1.04,"1,145"
+Indiana,2017,Firearm,"1,016","6,662,068",15.25,15.2,"25,523"
+Indiana,2017,Machinery,14**,"6,662,068",0.21**,0.21**,165
+Indiana,2017,Natural/Environmental,33,"6,662,068",0.5,0.39,196
+Indiana,2017,Drug Poisoning,"1,852","6,662,068",27.8,29.34,"45,539"
+Indiana,2017,Non-Drug Poisoning,134,"6,662,068",2.01,1.97,"2,546"
+Indiana,2017,Struck by / against,21,"6,662,068",0.32,0.31,353
+Indiana,2017,Suffocation,555,"6,662,068",8.33,8.3,"13,513"
+Indiana,2017,"Motor vehicle, traffic",880,"6,662,068",13.21,12.9,"19,746"
+Indiana,2017,"Pedal cyclist, other",--,"6,662,068",--,--,--
+Indiana,2017,"Pedestrian, other",15**,"6,662,068",0.23**,0.26**,563
+Indiana,2017,"Transport, other land",33,"6,662,068",0.5,0.49,888
+Indiana,2017,"Transport, other (excl. drown by water transp)",--,"6,662,068",--,--,--
+Indiana,2017,Other specified and classifiable,37,"6,662,068",0.56,0.56,"1,167"
+Indiana,2017,Other specified / NEC,29,"6,662,068",0.44,0.38,247
+Indiana,2017,Unspecified,300,"6,662,068",4.5,3.93,"1,799"
+Indiana,2016,Cut/Pierce,56,"6,637,898",0.84,0.87,"1,544"
+Indiana,2016,Drowning (includes water transport),81,"6,637,898",1.22,1.21,"2,229"
+Indiana,2016,Fall,491,"6,637,898",7.4,6.46,"1,419"
+Indiana,2016,Fire/Flame,70,"6,637,898",1.06,1,"1,269"
+Indiana,2016,Hot object/Substance,--,"6,637,898",--,--,--
+Indiana,2016,Firearm,997,"6,637,898",15.02,14.89,"24,063"
+Indiana,2016,Machinery,12**,"6,637,898",0.18**,0.19**,221
+Indiana,2016,Natural/Environmental,29,"6,637,898",0.44,0.4,345
+Indiana,2016,Drug Poisoning,"1,526","6,637,898",22.99,23.91,"37,792"
+Indiana,2016,Non-Drug Poisoning,137,"6,637,898",2.06,2.05,"2,793"
+Indiana,2016,Struck by / against,24,"6,637,898",0.36,0.38,670
+Indiana,2016,Suffocation,492,"6,637,898",7.41,7.48,"12,654"
+Indiana,2016,"Motor vehicle, traffic",809,"6,637,898",12.19,11.86,"18,340"
+Indiana,2016,"Pedal cyclist, other",--,"6,637,898",--,--,--
+Indiana,2016,"Pedestrian, other",17**,"6,637,898",0.26**,0.25**,309
+Indiana,2016,"Transport, other land",35,"6,637,898",0.53,0.5,845
+Indiana,2016,"Transport, other (excl. drown by water transp)",--,"6,637,898",--,--,--
+Indiana,2016,Other specified and classifiable,37,"6,637,898",0.56,0.55,881
+Indiana,2016,Other specified / NEC,29,"6,637,898",0.44,0.42,362
+Indiana,2016,Unspecified,325,"6,637,898",4.9,4.39,"2,608"
+Indiana,2015,Cut/Pierce,44,"6,611,442",0.67,0.64,908
+Indiana,2015,Drowning (includes water transport),79,"6,611,442",1.2,1.2,"2,183"
+Indiana,2015,Fall,472,"6,611,442",7.14,6.2,"1,044"
+Indiana,2015,Fire/Flame,67,"6,611,442",1.01,0.96,812
+Indiana,2015,Hot object/Substance,--,"6,611,442",--,--,--
+Indiana,2015,Firearm,846,"6,611,442",12.8,12.72,"21,039"
+Indiana,2015,Machinery,13**,"6,611,442",0.20**,0.19**,153
+Indiana,2015,Natural/Environmental,38,"6,611,442",0.58,0.54,391
+Indiana,2015,Drug Poisoning,"1,245","6,611,442",18.83,19.51,"30,269"
+Indiana,2015,Non-Drug Poisoning,135,"6,611,442",2.04,2,"2,471"
+Indiana,2015,Struck by / against,13**,"6,611,442",0.20**,0.18**,341
+Indiana,2015,Suffocation,480,"6,611,442",7.26,7.2,"11,096"
+Indiana,2015,"Motor vehicle, traffic",822,"6,611,442",12.43,12.13,"18,830"
+Indiana,2015,"Pedal cyclist, other",--,"6,611,442",--,--,--
+Indiana,2015,"Pedestrian, other",30,"6,611,442",0.45,0.44,876
+Indiana,2015,"Transport, other land",30,"6,611,442",0.45,0.45,604
+Indiana,2015,"Transport, other (excl. drown by water transp)",--,"6,611,442",--,--,--
+Indiana,2015,Other specified and classifiable,45,"6,611,442",0.68,0.65,"1,067"
+Indiana,2015,Other specified / NEC,39,"6,611,442",0.59,0.56,435
+Indiana,2015,Unspecified,344,"6,611,442",5.2,4.64,"2,874"
+Indiana,2014,Cut/Pierce,41,"6,596,019",0.62,0.62,926
+Indiana,2014,Drowning (includes water transport),85,"6,596,019",1.29,1.29,"2,757"
+Indiana,2014,Fall,417,"6,596,019",6.32,5.61,"1,039"
+Indiana,2014,Fire/Flame,102,"6,596,019",1.55,1.47,"1,984"
+Indiana,2014,Hot object/Substance,--,"6,596,019",--,--,--
+Indiana,2014,Firearm,818,"6,596,019",12.4,12.34,"19,663"
+Indiana,2014,Machinery,11**,"6,596,019",0.17**,0.16**,250
+Indiana,2014,Natural/Environmental,39,"6,596,019",0.59,0.52,309
+Indiana,2014,Drug Poisoning,"1,172","6,596,019",17.77,18.18,"27,064"
+Indiana,2014,Non-Drug Poisoning,144,"6,596,019",2.18,2.16,"2,730"
+Indiana,2014,Struck by / against,25,"6,596,019",0.38,0.37,330
+Indiana,2014,Suffocation,440,"6,596,019",6.67,6.75,"11,318"
+Indiana,2014,"Motor vehicle, traffic",727,"6,596,019",11.02,10.82,"16,104"
+Indiana,2014,"Pedal cyclist, other",10**,"6,596,019",0.15**,0.13**,174
+Indiana,2014,"Pedestrian, other",10**,"6,596,019",0.15**,0.14**,53
+Indiana,2014,"Transport, other land",49,"6,596,019",0.74,0.76,"1,009"
+Indiana,2014,"Transport, other (excl. drown by water transp)",--,"6,596,019",--,--,--
+Indiana,2014,Other specified and classifiable,35,"6,596,019",0.53,0.54,"1,062"
+Indiana,2014,Other specified / NEC,31,"6,596,019",0.47,0.44,299
+Indiana,2014,Unspecified,296,"6,596,019",4.49,4.07,"3,219"
+Indiana,2013,Cut/Pierce,34,"6,570,575",0.52,0.52,631
+Indiana,2013,Drowning (includes water transport),73,"6,570,575",1.11,1.14,"2,345"
+Indiana,2013,Fall,426,"6,570,575",6.48,5.89,"1,391"
+Indiana,2013,Fire/Flame,94,"6,570,575",1.43,1.38,"1,834"
+Indiana,2013,Firearm,857,"6,570,575",13.04,13.03,"21,158"
+Indiana,2013,Machinery,14**,"6,570,575",0.21**,0.20**,194
+Indiana,2013,Natural/Environmental,33,"6,570,575",0.5,0.45,470
+Indiana,2013,Overexertion,--,"6,570,575",--,--,--
+Indiana,2013,Drug Poisoning,"1,064","6,570,575",16.19,16.55,"25,132"
+Indiana,2013,Non-Drug Poisoning,122,"6,570,575",1.86,1.85,"2,416"
+Indiana,2013,Struck by / against,18**,"6,570,575",0.27**,0.27**,339
+Indiana,2013,Suffocation,421,"6,570,575",6.41,6.4,"10,815"
+Indiana,2013,"Motor vehicle, traffic",800,"6,570,575",12.18,11.96,"19,329"
+Indiana,2013,"Pedal cyclist, other",--,"6,570,575",--,--,--
+Indiana,2013,"Pedestrian, other",19**,"6,570,575",0.29**,0.29**,552
+Indiana,2013,"Transport, other land",36,"6,570,575",0.55,0.55,"1,087"
+Indiana,2013,"Transport, other (excl. drown by water transp)",--,"6,570,575",--,--,--
+Indiana,2013,Other specified and classifiable,33,"6,570,575",0.5,0.51,"1,004"
+Indiana,2013,Other specified / NEC,37,"6,570,575",0.56,0.51,324
+Indiana,2013,Unspecified,318,"6,570,575",4.84,4.36,"2,470"
+Indiana,2012,Cut/Pierce,46,"6,538,989",0.7,0.69,761
+Indiana,2012,Drowning (includes water transport),83,"6,538,989",1.27,1.23,"2,455"
+Indiana,2012,Fall,429,"6,538,989",6.56,5.87,"1,367"
+Indiana,2012,Fire/Flame,72,"6,538,989",1.1,1.05,952
+Indiana,2012,Firearm,800,"6,538,989",12.23,12.16,"18,464"
+Indiana,2012,Machinery,15**,"6,538,989",0.23**,0.21**,220
+Indiana,2012,Natural/Environmental,48,"6,538,989",0.73,0.69,739
+Indiana,2012,Overexertion,--,"6,538,989",--,--,--
+Indiana,2012,Drug Poisoning,"1,011","6,538,989",15.46,15.99,"24,826"
+Indiana,2012,Non-Drug Poisoning,93,"6,538,989",1.42,1.4,"1,742"
+Indiana,2012,Struck by / against,27,"6,538,989",0.41,0.38,346
+Indiana,2012,Suffocation,411,"6,538,989",6.29,6.27,"9,609"
+Indiana,2012,"Motor vehicle, traffic",761,"6,538,989",11.64,11.49,"18,738"
+Indiana,2012,"Pedal cyclist, other",--,"6,538,989",--,--,--
+Indiana,2012,"Pedestrian, other",15**,"6,538,989",0.23**,0.22**,385
+Indiana,2012,"Transport, other land",44,"6,538,989",0.67,0.68,"1,082"
+Indiana,2012,"Transport, other (excl. drown by water transp)",--,"6,538,989",--,--,--
+Indiana,2012,Other specified and classifiable,38,"6,538,989",0.58,0.56,985
+Indiana,2012,Other specified / NEC,49,"6,538,989",0.75,0.7,436
+Indiana,2012,Unspecified,264,"6,538,989",4.04,3.73,"2,121"
+Indiana,2011,Cut/Pierce,52,"6,517,250",0.8,0.82,"1,159"
+Indiana,2011,Drowning (includes water transport),95,"6,517,250",1.46,1.4,"2,584"
+Indiana,2011,Fall,440,"6,517,250",6.75,6.28,"1,783"
+Indiana,2011,Fire/Flame,83,"6,517,250",1.27,1.21,"1,510"
+Indiana,2011,Firearm,638,"6,517,250",9.79,9.7,"14,909"
+Indiana,2011,Machinery,17**,"6,517,250",0.26**,0.24**,315
+Indiana,2011,Natural/Environmental,36,"6,517,250",0.55,0.52,378
+Indiana,2011,Overexertion,--,"6,517,250",--,--,--
+Indiana,2011,Drug Poisoning,975,"6,517,250",14.96,15.34,"23,306"
+Indiana,2011,Non-Drug Poisoning,127,"6,517,250",1.95,1.98,"2,491"
+Indiana,2011,Struck by / against,32,"6,517,250",0.49,0.49,469
+Indiana,2011,Suffocation,407,"6,517,250",6.25,6.35,"10,198"
+Indiana,2011,"Motor vehicle, traffic",729,"6,517,250",11.19,11.05,"17,187"
+Indiana,2011,"Pedal cyclist, other",--,"6,517,250",--,--,--
+Indiana,2011,"Pedestrian, other",14**,"6,517,250",0.22**,0.22**,401
+Indiana,2011,"Transport, other land",30,"6,517,250",0.46,0.46,899
+Indiana,2011,"Transport, other (excl. drown by water transp)",14**,"6,517,250",0.22**,0.22**,425
+Indiana,2011,Other specified and classifiable,43,"6,517,250",0.66,0.66,"1,072"
+Indiana,2011,Other specified / NEC,50,"6,517,250",0.77,0.7,601
+Indiana,2011,Unspecified,268,"6,517,250",4.11,3.79,"2,137"
+Indiana,2010,Cut/Pierce,32,"6,484,050",0.49,0.47,652
+Indiana,2010,Drowning (includes water transport),81,"6,484,050",1.25,1.26,"2,570"
+Indiana,2010,Fall,372,"6,484,050",5.74,5.39,"1,631"
+Indiana,2010,Fire/Flame,88,"6,484,050",1.36,1.33,"1,409"
+Indiana,2010,Hot object/Substance,--,"6,484,050",--,--,--
+Indiana,2010,Firearm,709,"6,484,050",10.94,10.82,"16,519"
+Indiana,2010,Machinery,16**,"6,484,050",0.25**,0.25**,201
+Indiana,2010,Natural/Environmental,21,"6,484,050",0.32,0.29,353
+Indiana,2010,Drug Poisoning,927,"6,484,050",14.3,14.39,"21,939"
+Indiana,2010,Non-Drug Poisoning,96,"6,484,050",1.48,1.44,"1,993"
+Indiana,2010,Struck by / against,20**,"6,484,050",0.31**,0.29**,285
+Indiana,2010,Suffocation,366,"6,484,050",5.65,5.64,"8,633"
+Indiana,2010,"Motor vehicle, traffic",734,"6,484,050",11.32,11.34,"17,874"
+Indiana,2010,"Pedal cyclist, other",--,"6,484,050",--,--,--
+Indiana,2010,"Pedestrian, other",18**,"6,484,050",0.28**,0.27**,515
+Indiana,2010,"Transport, other land",32,"6,484,050",0.49,0.48,871
+Indiana,2010,"Transport, other (excl. drown by water transp)",--,"6,484,050",--,--,--
+Indiana,2010,Other specified and classifiable,34,"6,484,050",0.52,0.54,968
+Indiana,2010,Other specified / NEC,40,"6,484,050",0.62,0.58,295
+Indiana,2010,Unspecified,276,"6,484,050",4.26,4.05,"2,264"
+Indiana,2009,Cut/Pierce,46,"6,459,325",0.71,0.7,959
+Indiana,2009,Drowning (includes water transport),89,"6,459,325",1.38,1.35,"2,558"
+Indiana,2009,Fall,382,"6,459,325",5.91,5.52,"1,139"
+Indiana,2009,Fire/Flame,76,"6,459,325",1.18,1.13,"1,642"
+Indiana,2009,Hot object/Substance,--,"6,459,325",--,--,--
+Indiana,2009,Firearm,735,"6,459,325",11.38,11.33,"17,119"
+Indiana,2009,Machinery,32,"6,459,325",0.5,0.47,463
+Indiana,2009,Natural/Environmental,15**,"6,459,325",0.23**,0.22**,245
+Indiana,2009,Drug Poisoning,896,"6,459,325",13.87,14.02,"20,967"
+Indiana,2009,Non-Drug Poisoning,133,"6,459,325",2.06,2.08,"2,633"
+Indiana,2009,Struck by / against,24,"6,459,325",0.37,0.37,540
+Indiana,2009,Suffocation,368,"6,459,325",5.7,5.76,"9,880"
+Indiana,2009,"Motor vehicle, traffic",690,"6,459,325",10.68,10.67,"16,600"
+Indiana,2009,"Pedal cyclist, other",--,"6,459,325",--,--,--
+Indiana,2009,"Pedestrian, other",25,"6,459,325",0.39,0.36,616
+Indiana,2009,"Transport, other land",20**,"6,459,325",0.31**,0.33**,715
+Indiana,2009,"Transport, other (excl. drown by water transp)",12**,"6,459,325",0.19**,0.18**,117
+Indiana,2009,Other specified and classifiable,32,"6,459,325",0.5,0.49,775
+Indiana,2009,Other specified / NEC,38,"6,459,325",0.59,0.57,321
+Indiana,2009,Unspecified,267,"6,459,325",4.13,3.92,"2,628"
+Indiana,2008,Cut/Pierce,36,"6,424,806",0.56,0.58,745
+Indiana,2008,Drowning (includes water transport),97,"6,424,806",1.51,1.52,"2,927"
+Indiana,2008,Fall,349,"6,424,806",5.43,5.21,"1,423"
+Indiana,2008,Fire/Flame,78,"6,424,806",1.21,1.19,"1,503"
+Indiana,2008,Firearm,723,"6,424,806",11.25,11.24,"17,080"
+Indiana,2008,Machinery,35,"6,424,806",0.55,0.53,623
+Indiana,2008,Natural/Environmental,25,"6,424,806",0.39,0.37,246
+Indiana,2008,Drug Poisoning,830,"6,424,806",12.92,13.23,"20,689"
+Indiana,2008,Non-Drug Poisoning,121,"6,424,806",1.88,1.92,"2,640"
+Indiana,2008,Struck by / against,37,"6,424,806",0.58,0.55,810
+Indiana,2008,Suffocation,371,"6,424,806",5.77,5.8,"10,307"
+Indiana,2008,"Motor vehicle, traffic",825,"6,424,806",12.84,12.73,"21,994"
+Indiana,2008,"Pedal cyclist, other",--,"6,424,806",--,--,--
+Indiana,2008,"Pedestrian, other",21,"6,424,806",0.33,0.33,553
+Indiana,2008,"Transport, other land",40,"6,424,806",0.62,0.64,907
+Indiana,2008,"Transport, other (excl. drown by water transp)",--,"6,424,806",--,--,--
+Indiana,2008,Other specified and classifiable,27,"6,424,806",0.42,0.42,879
+Indiana,2008,Other specified / NEC,41,"6,424,806",0.64,0.66,812
+Indiana,2008,Unspecified,294,"6,424,806",4.58,4.36,"1,986"
+Indiana,2007,Cut/Pierce,25,"6,379,599",0.39,0.38,373
+Indiana,2007,Drowning (includes water transport),79,"6,379,599",1.24,1.22,"2,357"
+Indiana,2007,Fall,335,"6,379,599",5.25,5.1,"1,543"
+Indiana,2007,Fire/Flame,98,"6,379,599",1.54,1.53,"2,188"
+Indiana,2007,Firearm,670,"6,379,599",10.5,10.5,"16,519"
+Indiana,2007,Machinery,15**,"6,379,599",0.24**,0.22**,218
+Indiana,2007,Natural/Environmental,26,"6,379,599",0.41,0.41,497
+Indiana,2007,Drug Poisoning,781,"6,379,599",12.24,12.38,"20,461"
+Indiana,2007,Non-Drug Poisoning,117,"6,379,599",1.83,1.8,"2,480"
+Indiana,2007,Struck by / against,23,"6,379,599",0.36,0.37,540
+Indiana,2007,Suffocation,384,"6,379,599",6.02,6.01,"9,933"
+Indiana,2007,"Motor vehicle, traffic",897,"6,379,599",14.06,14.01,"22,320"
+Indiana,2007,"Pedal cyclist, other",--,"6,379,599",--,--,--
+Indiana,2007,"Pedestrian, other",23,"6,379,599",0.36,0.38,590
+Indiana,2007,"Transport, other land",44,"6,379,599",0.69,0.69,"1,230"
+Indiana,2007,"Transport, other (excl. drown by water transp)",10**,"6,379,599",0.16**,0.14**,197
+Indiana,2007,Other specified and classifiable,23,"6,379,599",0.36,0.36,673
+Indiana,2007,Other specified / NEC,23,"6,379,599",0.36,0.35,247
+Indiana,2007,Unspecified,299,"6,379,599",4.69,4.51,"2,884"
+Indiana,2006,Cut/Pierce,46,"6,332,669",0.73,0.73,"1,169"
+Indiana,2006,Drowning (includes water transport),93,"6,332,669",1.47,1.46,"3,105"
+Indiana,2006,Fall,327,"6,332,669",5.16,5.07,"1,648"
+Indiana,2006,Fire/Flame,106,"6,332,669",1.67,1.67,"2,357"
+Indiana,2006,Firearm,742,"6,332,669",11.72,11.63,"18,701"
+Indiana,2006,Machinery,18**,"6,332,669",0.28**,0.28**,362
+Indiana,2006,Natural/Environmental,23,"6,332,669",0.36,0.34,460
+Indiana,2006,Drug Poisoning,736,"6,332,669",11.62,11.7,"18,980"
+Indiana,2006,Non-Drug Poisoning,73,"6,332,669",1.15,1.13,"1,415"
+Indiana,2006,Struck by / against,30,"6,332,669",0.47,0.46,631
+Indiana,2006,Suffocation,357,"6,332,669",5.64,5.72,"9,494"
+Indiana,2006,"Motor vehicle, traffic",922,"6,332,669",14.56,14.45,"24,255"
+Indiana,2006,"Pedal cyclist, other",--,"6,332,669",--,--,--
+Indiana,2006,"Pedestrian, other",22,"6,332,669",0.35,0.35,491
+Indiana,2006,"Transport, other land",39,"6,332,669",0.62,0.61,"1,008"
+Indiana,2006,"Transport, other (excl. drown by water transp)",15**,"6,332,669",0.24**,0.23**,286
+Indiana,2006,Other specified and classifiable,38,"6,332,669",0.6,0.6,"1,002"
+Indiana,2006,Other specified / NEC,36,"6,332,669",0.57,0.56,519
+Indiana,2006,Unspecified,285,"6,332,669",4.5,4.39,"2,325"
+Indiana,2005,Cut/Pierce,35,"6,278,616",0.56,0.57,876
+Indiana,2005,Drowning (includes water transport),77,"6,278,616",1.23,1.24,"2,647"
+Indiana,2005,Fall,304,"6,278,616",4.84,4.75,"1,287"
+Indiana,2005,Fire/Flame,97,"6,278,616",1.55,1.55,"2,634"
+Indiana,2005,Hot object/Substance,--,"6,278,616",--,--,--
+Indiana,2005,Firearm,705,"6,278,616",11.23,11.11,"17,529"
+Indiana,2005,Machinery,25,"6,278,616",0.4,0.38,367
+Indiana,2005,Natural/Environmental,49,"6,278,616",0.78,0.78,994
+Indiana,2005,Drug Poisoning,610,"6,278,616",9.72,9.82,"15,970"
+Indiana,2005,Non-Drug Poisoning,76,"6,278,616",1.21,1.19,"1,630"
+Indiana,2005,Struck by / against,44,"6,278,616",0.7,0.69,"1,136"
+Indiana,2005,Suffocation,342,"6,278,616",5.45,5.44,"8,541"
+Indiana,2005,"Motor vehicle, traffic",957,"6,278,616",15.24,15.09,"24,890"
+Indiana,2005,"Pedestrian, other",19**,"6,278,616",0.30**,0.30**,450
+Indiana,2005,"Transport, other land",35,"6,278,616",0.56,0.54,"1,031"
+Indiana,2005,"Transport, other (excl. drown by water transp)",--,"6,278,616",--,--,--
+Indiana,2005,Other specified and classifiable,55,"6,278,616",0.88,0.88,"1,419"
+Indiana,2005,Other specified / NEC,24,"6,278,616",0.38,0.37,403
+Indiana,2005,Unspecified,339,"6,278,616",5.4,5.3,"2,429"
+Indiana,2004,Cut/Pierce,29,"6,233,007",0.47,0.47,708
+Indiana,2004,Drowning (includes water transport),82,"6,233,007",1.32,1.31,"2,494"
+Indiana,2004,Fall,278,"6,233,007",4.46,4.42,"1,489"
+Indiana,2004,Fire/Flame,108,"6,233,007",1.73,1.74,"3,165"
+Indiana,2004,Hot object/Substance,--,"6,233,007",--,--,--
+Indiana,2004,Firearm,639,"6,233,007",10.25,10.22,"15,955"
+Indiana,2004,Machinery,26,"6,233,007",0.42,0.42,426
+Indiana,2004,Natural/Environmental,33,"6,233,007",0.53,0.52,422
+Indiana,2004,Drug Poisoning,542,"6,233,007",8.7,8.75,"13,597"
+Indiana,2004,Non-Drug Poisoning,82,"6,233,007",1.32,1.31,"1,655"
+Indiana,2004,Struck by / against,27,"6,233,007",0.43,0.42,534
+Indiana,2004,Suffocation,360,"6,233,007",5.78,5.8,"9,356"
+Indiana,2004,"Motor vehicle, traffic",987,"6,233,007",15.84,15.71,"26,734"
+Indiana,2004,"Pedal cyclist, other",--,"6,233,007",--,--,--
+Indiana,2004,"Pedestrian, other",22,"6,233,007",0.35,0.35,563
+Indiana,2004,"Transport, other land",20**,"6,233,007",0.32**,0.32**,549
+Indiana,2004,"Transport, other (excl. drown by water transp)",14**,"6,233,007",0.23**,0.22**,231
+Indiana,2004,Other specified and classifiable,23,"6,233,007",0.37,0.36,661
+Indiana,2004,Other specified / NEC,28,"6,233,007",0.45,0.45,414
+Indiana,2004,Unspecified,359,"6,233,007",5.76,5.69,"2,156"
+Indiana,2003,Cut/Pierce,35,"6,196,638",0.57,0.56,767
+Indiana,2003,Drowning (includes water transport),63,"6,196,638",1.02,1.02,"1,947"
+Indiana,2003,Fall,265,"6,196,638",4.28,4.27,"1,328"
+Indiana,2003,Fire/Flame,103,"6,196,638",1.66,1.63,"2,243"
+Indiana,2003,Firearm,696,"6,196,638",11.23,11.19,"18,421"
+Indiana,2003,Machinery,21,"6,196,638",0.34,0.34,259
+Indiana,2003,Natural/Environmental,26,"6,196,638",0.42,0.43,434
+Indiana,2003,Drug Poisoning,434,"6,196,638",7,7.07,"11,032"
+Indiana,2003,Non-Drug Poisoning,99,"6,196,638",1.6,1.59,"2,167"
+Indiana,2003,Struck by / against,25,"6,196,638",0.4,0.4,647
+Indiana,2003,Suffocation,325,"6,196,638",5.25,5.28,"8,898"
+Indiana,2003,"Motor vehicle, traffic",912,"6,196,638",14.72,14.57,"23,816"
+Indiana,2003,"Pedal cyclist, other",--,"6,196,638",--,--,--
+Indiana,2003,"Pedestrian, other",15**,"6,196,638",0.24**,0.24**,484
+Indiana,2003,"Transport, other land",41,"6,196,638",0.66,0.65,"1,187"
+Indiana,2003,"Transport, other (excl. drown by water transp)",21,"6,196,638",0.34,0.34,385
+Indiana,2003,Other specified and classifiable,24,"6,196,638",0.39,0.38,609
+Indiana,2003,Other specified / NEC,28,"6,196,638",0.45,0.45,470
+Indiana,2003,Unspecified,309,"6,196,638",4.99,4.98,"1,966"
+Indiana,2002,Cut/Pierce,49,"6,155,967",0.8,0.8,"1,129"
+Indiana,2002,Drowning (includes water transport),75,"6,155,967",1.22,1.2,"2,520"
+Indiana,2002,Fall,264,"6,155,967",4.29,4.3,"1,141"
+Indiana,2002,Fire/Flame,88,"6,155,967",1.43,1.43,"1,880"
+Indiana,2002,Hot object/Substance,--,"6,155,967",--,--,--
+Indiana,2002,Firearm,723,"6,155,967",11.75,11.68,"18,512"
+Indiana,2002,Machinery,26,"6,155,967",0.42,0.42,346
+Indiana,2002,Natural/Environmental,28,"6,155,967",0.46,0.46,349
+Indiana,2002,Overexertion,--,"6,155,967",--,--,--
+Indiana,2002,Drug Poisoning,293,"6,155,967",4.76,4.8,"7,215"
+Indiana,2002,Non-Drug Poisoning,89,"6,155,967",1.45,1.45,"1,535"
+Indiana,2002,Struck by / against,28,"6,155,967",0.46,0.45,810
+Indiana,2002,Suffocation,333,"6,155,967",5.41,5.43,"8,460"
+Indiana,2002,"Motor vehicle, traffic",937,"6,155,967",15.22,15.11,"24,329"
+Indiana,2002,"Pedal cyclist, other",--,"6,155,967",--,--,--
+Indiana,2002,"Pedestrian, other",29,"6,155,967",0.47,0.47,787
+Indiana,2002,"Transport, other land",25,"6,155,967",0.41,0.41,877
+Indiana,2002,"Transport, other (excl. drown by water transp)",10**,"6,155,967",0.16**,0.16**,230
+Indiana,2002,Other specified and classifiable,40,"6,155,967",0.65,0.65,"1,334"
+Indiana,2002,Other specified / NEC,36,"6,155,967",0.59,0.58,534
+Indiana,2002,Unspecified,326,"6,155,967",5.3,5.33,"2,194"
+Indiana,2001,Cut/Pierce,35,"6,127,760",0.57,0.57,917
+Indiana,2001,Drowning (includes water transport),78,"6,127,760",1.27,1.27,"2,701"
+Indiana,2001,Fall,278,"6,127,760",4.54,4.61,"1,656"
+Indiana,2001,Fire/Flame,115,"6,127,760",1.88,1.87,"2,673"
+Indiana,2001,Hot object/Substance,--,"6,127,760",--,--,--
+Indiana,2001,Firearm,729,"6,127,760",11.9,11.82,"18,963"
+Indiana,2001,Machinery,20**,"6,127,760",0.33**,0.33**,397
+Indiana,2001,Natural/Environmental,26,"6,127,760",0.42,0.43,298
+Indiana,2001,Overexertion,--,"6,127,760",--,--,--
+Indiana,2001,Drug Poisoning,283,"6,127,760",4.62,4.67,"7,246"
+Indiana,2001,Non-Drug Poisoning,97,"6,127,760",1.58,1.59,"1,963"
+Indiana,2001,Struck by / against,24,"6,127,760",0.39,0.4,626
+Indiana,2001,Suffocation,331,"6,127,760",5.4,5.42,"8,066"
+Indiana,2001,"Motor vehicle, traffic",929,"6,127,760",15.16,15.08,"24,258"
+Indiana,2001,"Pedal cyclist, other",--,"6,127,760",--,--,--
+Indiana,2001,"Pedestrian, other",26,"6,127,760",0.42,0.43,822
+Indiana,2001,"Transport, other land",42,"6,127,760",0.69,0.69,"1,072"
+Indiana,2001,"Transport, other (excl. drown by water transp)",13**,"6,127,760",0.21**,0.21**,350
+Indiana,2001,Other specified and classifiable,42,"6,127,760",0.69,0.69,"1,076"
+Indiana,2001,Other specified / NEC,56,"6,127,760",0.91,0.92,"1,325"
+Indiana,2001,Unspecified,325,"6,127,760",5.3,5.37,"2,428"
+Total,,,"94,714","136,227,798",69.53,68.8,"1,992,277"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Indiana,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

@@ -1,0 +1,446 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+New York,2021,Cut/Pierce,212,"19,835,913",1.07,1.05,"4,672"
+New York,2021,Drowning (includes water transport),230,"19,835,913",1.16,1.11,"5,209"
+New York,2021,Fall,"2,136","19,835,913",10.77,8.42,"7,894"
+New York,2021,Fire/Flame,188,"19,835,913",0.95,0.82,"2,555"
+New York,2021,Hot object/Substance,--,"19,835,913",--,--,--
+New York,2021,Firearm,"1,078","19,835,913",5.44,5.41,"28,086"
+New York,2021,Machinery,22,"19,835,913",0.11,0.11,421
+New York,2021,Natural/Environmental,90,"19,835,913",0.45,0.4,"1,164"
+New York,2021,Drug Poisoning,"5,842","19,835,913",29.45,28.7,"116,728"
+New York,2021,Non-Drug Poisoning,220,"19,835,913",1.11,1.06,"3,793"
+New York,2021,Struck by / against,67,"19,835,913",0.34,0.32,"1,114"
+New York,2021,Suffocation,932,"19,835,913",4.7,4.41,"18,586"
+New York,2021,"Motor vehicle, traffic","1,333","19,835,913",6.72,6.36,"28,061"
+New York,2021,"Pedal cyclist, other",15**,"19,835,913",0.08**,0.06**,127
+New York,2021,"Pedestrian, other",49,"19,835,913",0.25,0.24,"1,130"
+New York,2021,"Transport, other land",56,"19,835,913",0.28,0.28,"1,164"
+New York,2021,"Transport, other (excl. drown by water transp)",15**,"19,835,913",0.08**,0.07**,294
+New York,2021,Other specified and classifiable,125,"19,835,913",0.63,0.6,"2,332"
+New York,2021,Other specified / NEC,114,"19,835,913",0.58,0.54,"1,905"
+New York,2021,Unspecified,355,"19,835,913",1.79,1.49,"3,085"
+New York,2020,Cut/Pierce,215,"20,154,933",1.07,1.06,"4,977"
+New York,2020,Drowning (includes water transport),242,"20,154,933",1.2,1.16,"5,731"
+New York,2020,Fall,"1,958","20,154,933",9.72,7.81,"7,743"
+New York,2020,Fire/Flame,168,"20,154,933",0.83,0.72,"1,886"
+New York,2020,Hot object/Substance,--,"20,154,933",--,--,--
+New York,2020,Firearm,"1,052","20,154,933",5.22,5.09,"26,821"
+New York,2020,Machinery,13**,"20,154,933",0.07**,0.06**,201
+New York,2020,Natural/Environmental,64,"20,154,933",0.32,0.26,506
+New York,2020,Overexertion,--,"20,154,933",--,--,--
+New York,2020,Drug Poisoning,"4,965","20,154,933",24.63,24.16,"105,892"
+New York,2020,Non-Drug Poisoning,210,"20,154,933",1.04,1.01,"3,699"
+New York,2020,Struck by / against,50,"20,154,933",0.25,0.22,678
+New York,2020,Suffocation,878,"20,154,933",4.36,4.14,"17,417"
+New York,2020,"Motor vehicle, traffic","1,157","20,154,933",5.74,5.5,"26,025"
+New York,2020,"Pedal cyclist, other",26,"20,154,933",0.13,0.13,443
+New York,2020,"Pedestrian, other",40,"20,154,933",0.2,0.19,865
+New York,2020,"Transport, other land",46,"20,154,933",0.23,0.22,980
+New York,2020,"Transport, other (excl. drown by water transp)",16**,"20,154,933",0.08**,0.07**,347
+New York,2020,Other specified and classifiable,119,"20,154,933",0.59,0.57,"2,582"
+New York,2020,Other specified / NEC,109,"20,154,933",0.54,0.49,"1,635"
+New York,2020,Unspecified,362,"20,154,933",1.8,1.53,"3,643"
+New York,2019,Cut/Pierce,182,"19,463,131",0.94,0.93,"4,201"
+New York,2019,Drowning (includes water transport),184,"19,463,131",0.95,0.92,"4,620"
+New York,2019,Fall,"1,909","19,463,131",9.81,7.5,"7,708"
+New York,2019,Fire/Flame,159,"19,463,131",0.82,0.75,"2,627"
+New York,2019,Hot object/Substance,--,"19,463,131",--,--,--
+New York,2019,Firearm,804,"19,463,131",4.13,3.91,"18,203"
+New York,2019,Machinery,22,"19,463,131",0.11,0.11,351
+New York,2019,Natural/Environmental,90,"19,463,131",0.46,0.41,722
+New York,2019,Drug Poisoning,"3,617","19,463,131",18.58,18.14,"76,755"
+New York,2019,Non-Drug Poisoning,207,"19,463,131",1.06,1.01,"3,618"
+New York,2019,Struck by / against,48,"19,463,131",0.25,0.22,730
+New York,2019,Suffocation,975,"19,463,131",5.01,4.8,"21,366"
+New York,2019,"Motor vehicle, traffic","1,072","19,463,131",5.51,5.1,"21,389"
+New York,2019,"Pedal cyclist, other",12**,"19,463,131",0.06**,0.06**,227
+New York,2019,"Pedestrian, other",43,"19,463,131",0.22,0.2,845
+New York,2019,"Transport, other land",50,"19,463,131",0.26,0.25,890
+New York,2019,"Transport, other (excl. drown by water transp)",13**,"19,463,131",0.07**,0.05**,196
+New York,2019,Other specified and classifiable,111,"19,463,131",0.57,0.54,"2,394"
+New York,2019,Other specified / NEC,115,"19,463,131",0.59,0.51,"1,544"
+New York,2019,Unspecified,408,"19,463,131",2.1,1.72,"3,802"
+New York,2018,Cut/Pierce,168,"19,544,098",0.86,0.85,"3,984"
+New York,2018,Drowning (includes water transport),212,"19,544,098",1.09,1.03,"4,672"
+New York,2018,Fall,"1,862","19,544,098",9.53,7.41,"7,660"
+New York,2018,Fire/Flame,186,"19,544,098",0.95,0.86,"2,890"
+New York,2018,Hot object/Substance,10**,"19,544,098",0.05**,0.05**,32
+New York,2018,Firearm,821,"19,544,098",4.2,4.03,"19,407"
+New York,2018,Machinery,29,"19,544,098",0.15,0.13,417
+New York,2018,Natural/Environmental,79,"19,544,098",0.4,0.34,598
+New York,2018,Overexertion,--,"19,544,098",--,--,--
+New York,2018,Drug Poisoning,"3,697","19,544,098",18.92,18.37,"80,552"
+New York,2018,Non-Drug Poisoning,256,"19,544,098",1.31,1.24,"4,415"
+New York,2018,Struck by / against,51,"19,544,098",0.26,0.24,707
+New York,2018,Suffocation,937,"19,544,098",4.79,4.49,"18,271"
+New York,2018,"Motor vehicle, traffic","1,024","19,544,098",5.24,4.83,"19,972"
+New York,2018,"Pedal cyclist, other",14**,"19,544,098",0.07**,0.06**,214
+New York,2018,"Pedestrian, other",47,"19,544,098",0.24,0.22,728
+New York,2018,"Transport, other land",43,"19,544,098",0.22,0.2,792
+New York,2018,"Transport, other (excl. drown by water transp)",20**,"19,544,098",0.10**,0.09**,406
+New York,2018,Other specified and classifiable,149,"19,544,098",0.76,0.73,"3,709"
+New York,2018,Other specified / NEC,90,"19,544,098",0.46,0.41,"1,271"
+New York,2018,Unspecified,375,"19,544,098",1.92,1.55,"2,910"
+New York,2017,Cut/Pierce,163,"19,593,849",0.83,0.8,"4,020"
+New York,2017,Drowning (includes water transport),203,"19,593,849",1.04,1,"5,153"
+New York,2017,Fall,"1,811","19,593,849",9.24,7.34,"7,444"
+New York,2017,Fire/Flame,176,"19,593,849",0.9,0.81,"2,623"
+New York,2017,Hot object/Substance,13**,"19,593,849",0.07**,0.06**,64
+New York,2017,Firearm,772,"19,593,849",3.94,3.78,"17,953"
+New York,2017,Machinery,18**,"19,593,849",0.09**,0.09**,216
+New York,2017,Natural/Environmental,45,"19,593,849",0.23,0.19,323
+New York,2017,Overexertion,--,"19,593,849",--,--,--
+New York,2017,Drug Poisoning,"3,921","19,593,849",20.01,19.59,"89,278"
+New York,2017,Non-Drug Poisoning,263,"19,593,849",1.34,1.27,"4,903"
+New York,2017,Struck by / against,47,"19,593,849",0.24,0.22,756
+New York,2017,Suffocation,"1,018","19,593,849",5.2,4.89,"20,516"
+New York,2017,"Motor vehicle, traffic","1,098","19,593,849",5.6,5.25,"22,989"
+New York,2017,"Pedal cyclist, other",12**,"19,593,849",0.06**,0.05**,89
+New York,2017,"Pedestrian, other",35,"19,593,849",0.18,0.16,722
+New York,2017,"Transport, other land",58,"19,593,849",0.3,0.31,"1,401"
+New York,2017,"Transport, other (excl. drown by water transp)",20**,"19,593,849",0.10**,0.10**,477
+New York,2017,Other specified and classifiable,108,"19,593,849",0.55,0.54,"2,534"
+New York,2017,Other specified / NEC,98,"19,593,849",0.5,0.45,"1,416"
+New York,2017,Unspecified,426,"19,593,849",2.17,1.75,"2,634"
+New York,2016,Cut/Pierce,170,"19,636,391",0.87,0.85,"4,063"
+New York,2016,Drowning (includes water transport),199,"19,636,391",1.01,0.98,"5,058"
+New York,2016,Fall,"1,695","19,636,391",8.63,6.93,"7,521"
+New York,2016,Fire/Flame,135,"19,636,391",0.69,0.63,"2,308"
+New York,2016,Hot object/Substance,--,"19,636,391",--,--,--
+New York,2016,Firearm,900,"19,636,391",4.58,4.44,"21,468"
+New York,2016,Machinery,22,"19,636,391",0.11,0.11,342
+New York,2016,Natural/Environmental,43,"19,636,391",0.22,0.19,573
+New York,2016,Overexertion,--,"19,636,391",--,--,--
+New York,2016,Drug Poisoning,"3,638","19,636,391",18.53,18.02,"85,386"
+New York,2016,Non-Drug Poisoning,275,"19,636,391",1.4,1.33,"4,827"
+New York,2016,Struck by / against,44,"19,636,391",0.22,0.2,681
+New York,2016,Suffocation,914,"19,636,391",4.66,4.39,"17,831"
+New York,2016,"Motor vehicle, traffic","1,105","19,636,391",5.63,5.23,"22,690"
+New York,2016,"Pedal cyclist, other",11**,"19,636,391",0.06**,0.04**,53
+New York,2016,"Pedestrian, other",45,"19,636,391",0.23,0.23,898
+New York,2016,"Transport, other land",42,"19,636,391",0.21,0.21,"1,049"
+New York,2016,"Transport, other (excl. drown by water transp)",13**,"19,636,391",0.07**,0.07**,229
+New York,2016,Other specified and classifiable,119,"19,636,391",0.61,0.58,"2,785"
+New York,2016,Other specified / NEC,95,"19,636,391",0.48,0.43,"1,352"
+New York,2016,Unspecified,606,"19,636,391",3.09,2.59,"5,262"
+New York,2015,Cut/Pierce,151,"19,657,321",0.77,0.72,"3,566"
+New York,2015,Drowning (includes water transport),204,"19,657,321",1.04,1.02,"5,308"
+New York,2015,Fall,"1,630","19,657,321",8.29,6.77,"7,151"
+New York,2015,Fire/Flame,166,"19,657,321",0.84,0.75,"2,314"
+New York,2015,Hot object/Substance,12**,"19,657,321",0.06**,0.05**,26
+New York,2015,Firearm,849,"19,657,321",4.32,4.16,"21,127"
+New York,2015,Machinery,20**,"19,657,321",0.10**,0.10**,308
+New York,2015,Natural/Environmental,75,"19,657,321",0.38,0.33,821
+New York,2015,Overexertion,--,"19,657,321",--,--,--
+New York,2015,Drug Poisoning,"2,754","19,657,321",14.01,13.66,"63,677"
+New York,2015,Non-Drug Poisoning,285,"19,657,321",1.45,1.35,"5,080"
+New York,2015,Struck by / against,33,"19,657,321",0.17,0.17,779
+New York,2015,Suffocation,965,"19,657,321",4.91,4.54,"17,366"
+New York,2015,"Motor vehicle, traffic","1,149","19,657,321",5.85,5.46,"23,862"
+New York,2015,"Pedal cyclist, other",15**,"19,657,321",0.08**,0.07**,234
+New York,2015,"Pedestrian, other",41,"19,657,321",0.21,0.19,708
+New York,2015,"Transport, other land",62,"19,657,321",0.32,0.32,"1,613"
+New York,2015,"Transport, other (excl. drown by water transp)",15**,"19,657,321",0.08**,0.06**,130
+New York,2015,Other specified and classifiable,106,"19,657,321",0.54,0.52,"2,450"
+New York,2015,Other specified / NEC,84,"19,657,321",0.43,0.37,852
+New York,2015,Unspecified,546,"19,657,321",2.78,2.36,"5,294"
+New York,2014,Cut/Pierce,182,"19,653,431",0.93,0.93,"4,704"
+New York,2014,Drowning (includes water transport),177,"19,653,431",0.9,0.87,"4,495"
+New York,2014,Fall,"1,700","19,653,431",8.65,7.21,"7,287"
+New York,2014,Fire/Flame,158,"19,653,431",0.8,0.72,"2,397"
+New York,2014,Hot object/Substance,--,"19,653,431",--,--,--
+New York,2014,Firearm,875,"19,653,431",4.45,4.22,"20,988"
+New York,2014,Machinery,20**,"19,653,431",0.10**,0.09**,298
+New York,2014,Natural/Environmental,65,"19,653,431",0.33,0.29,658
+New York,2014,Drug Poisoning,"2,300","19,653,431",11.7,11.29,"51,889"
+New York,2014,Non-Drug Poisoning,240,"19,653,431",1.22,1.14,"4,256"
+New York,2014,Struck by / against,54,"19,653,431",0.28,0.26,"1,000"
+New York,2014,Suffocation,946,"19,653,431",4.81,4.51,"18,390"
+New York,2014,"Motor vehicle, traffic","1,086","19,653,431",5.53,5.22,"22,783"
+New York,2014,"Pedal cyclist, other",12**,"19,653,431",0.06**,0.05**,132
+New York,2014,"Pedestrian, other",59,"19,653,431",0.3,0.28,"1,146"
+New York,2014,"Transport, other land",68,"19,653,431",0.35,0.34,"1,479"
+New York,2014,"Transport, other (excl. drown by water transp)",20**,"19,653,431",0.10**,0.10**,358
+New York,2014,Other specified and classifiable,128,"19,653,431",0.65,0.63,"2,738"
+New York,2014,Other specified / NEC,116,"19,653,431",0.59,0.54,"1,689"
+New York,2014,Unspecified,374,"19,653,431",1.9,1.63,"3,322"
+New York,2013,Cut/Pierce,168,"19,626,488",0.86,0.82,"4,234"
+New York,2013,Drowning (includes water transport),180,"19,626,488",0.92,0.9,"4,492"
+New York,2013,Fall,"1,595","19,626,488",8.13,6.84,"6,952"
+New York,2013,Fire/Flame,170,"19,626,488",0.87,0.79,"2,890"
+New York,2013,Hot object/Substance,--,"19,626,488",--,--,--
+New York,2013,Firearm,863,"19,626,488",4.4,4.18,"20,344"
+New York,2013,Machinery,25,"19,626,488",0.13,0.11,431
+New York,2013,Natural/Environmental,77,"19,626,488",0.39,0.35,794
+New York,2013,Overexertion,--,"19,626,488",--,--,--
+New York,2013,Drug Poisoning,"2,309","19,626,488",11.77,11.25,"50,560"
+New York,2013,Non-Drug Poisoning,263,"19,626,488",1.34,1.24,"4,248"
+New York,2013,Struck by / against,47,"19,626,488",0.24,0.23,875
+New York,2013,Suffocation,885,"19,626,488",4.51,4.29,"18,614"
+New York,2013,"Motor vehicle, traffic","1,254","19,626,488",6.39,6.01,"27,247"
+New York,2013,"Pedal cyclist, other",17**,"19,626,488",0.09**,0.07**,271
+New York,2013,"Pedestrian, other",52,"19,626,488",0.27,0.25,"1,149"
+New York,2013,"Transport, other land",71,"19,626,488",0.36,0.35,"1,636"
+New York,2013,"Transport, other (excl. drown by water transp)",--,"19,626,488",--,--,--
+New York,2013,Other specified and classifiable,120,"19,626,488",0.61,0.59,"2,876"
+New York,2013,Other specified / NEC,91,"19,626,488",0.46,0.42,"1,288"
+New York,2013,Unspecified,369,"19,626,488",1.88,1.64,"4,434"
+New York,2012,Cut/Pierce,178,"19,574,362",0.91,0.87,"4,664"
+New York,2012,Drowning (includes water transport),218,"19,574,362",1.11,1.07,"5,796"
+New York,2012,Fall,"1,548","19,574,362",7.91,6.78,"7,779"
+New York,2012,Fire/Flame,130,"19,574,362",0.66,0.61,"1,622"
+New York,2012,Hot object/Substance,--,"19,574,362",--,--,--
+New York,2012,Firearm,977,"19,574,362",4.99,4.8,"25,127"
+New York,2012,Machinery,22,"19,574,362",0.11,0.1,241
+New York,2012,Natural/Environmental,99,"19,574,362",0.51,0.44,"1,114"
+New York,2012,Drug Poisoning,"2,106","19,574,362",10.76,10.38,"46,892"
+New York,2012,Non-Drug Poisoning,284,"19,574,362",1.45,1.36,"4,883"
+New York,2012,Struck by / against,39,"19,574,362",0.2,0.19,938
+New York,2012,Suffocation,814,"19,574,362",4.16,3.96,"17,404"
+New York,2012,"Motor vehicle, traffic","1,319","19,574,362",6.74,6.39,"27,947"
+New York,2012,"Pedal cyclist, other",23,"19,574,362",0.12,0.12,390
+New York,2012,"Pedestrian, other",70,"19,574,362",0.36,0.35,"1,478"
+New York,2012,"Transport, other land",32,"19,574,362",0.16,0.15,902
+New York,2012,"Transport, other (excl. drown by water transp)",17**,"19,574,362",0.09**,0.08**,326
+New York,2012,Other specified and classifiable,105,"19,574,362",0.54,0.51,"2,564"
+New York,2012,Other specified / NEC,110,"19,574,362",0.56,0.52,"1,683"
+New York,2012,Unspecified,422,"19,574,362",2.16,1.88,"5,037"
+New York,2011,Cut/Pierce,207,"19,499,921",1.06,1.02,"5,347"
+New York,2011,Drowning (includes water transport),184,"19,499,921",0.94,0.93,"4,737"
+New York,2011,Fall,"1,502","19,499,921",7.7,6.64,"6,385"
+New York,2011,Fire/Flame,159,"19,499,921",0.82,0.77,"2,542"
+New York,2011,Hot object/Substance,--,"19,499,921",--,--,--
+New York,2011,Firearm,997,"19,499,921",5.11,4.92,"26,007"
+New York,2011,Machinery,22,"19,499,921",0.11,0.11,457
+New York,2011,Natural/Environmental,78,"19,499,921",0.4,0.35,660
+New York,2011,Overexertion,--,"19,499,921",--,--,--
+New York,2011,Drug Poisoning,"1,948","19,499,921",9.99,9.65,"44,052"
+New York,2011,Non-Drug Poisoning,244,"19,499,921",1.25,1.16,"4,404"
+New York,2011,Struck by / against,49,"19,499,921",0.25,0.24,903
+New York,2011,Suffocation,890,"19,499,921",4.56,4.38,"19,083"
+New York,2011,"Motor vehicle, traffic","1,304","19,499,921",6.69,6.35,"26,830"
+New York,2011,"Pedal cyclist, other",--,"19,499,921",--,--,--
+New York,2011,"Pedestrian, other",36,"19,499,921",0.19,0.18,920
+New York,2011,"Transport, other land",46,"19,499,921",0.24,0.24,"1,213"
+New York,2011,"Transport, other (excl. drown by water transp)",17**,"19,499,921",0.09**,0.08**,257
+New York,2011,Other specified and classifiable,115,"19,499,921",0.59,0.57,"2,788"
+New York,2011,Other specified / NEC,124,"19,499,921",0.64,0.58,"1,792"
+New York,2011,Unspecified,401,"19,499,921",2.06,1.83,"5,003"
+New York,2010,Cut/Pierce,211,"19,378,117",1.09,1.05,"6,333"
+New York,2010,Drowning (includes water transport),222,"19,378,117",1.15,1.12,"6,118"
+New York,2010,Fall,"1,320","19,378,117",6.81,5.96,"5,806"
+New York,2010,Fire/Flame,139,"19,378,117",0.72,0.67,"2,276"
+New York,2010,Hot object/Substance,--,"19,378,117",--,--,--
+New York,2010,Firearm,"1,011","19,378,117",5.22,5.07,"26,760"
+New York,2010,Machinery,16**,"19,378,117",0.08**,0.07**,145
+New York,2010,Natural/Environmental,53,"19,378,117",0.27,0.25,491
+New York,2010,Drug Poisoning,"1,557","19,378,117",8.04,7.78,"34,164"
+New York,2010,Non-Drug Poisoning,235,"19,378,117",1.21,1.14,"4,303"
+New York,2010,Struck by / against,35,"19,378,117",0.18,0.18,490
+New York,2010,Suffocation,887,"19,378,117",4.58,4.33,"18,619"
+New York,2010,"Motor vehicle, traffic","1,290","19,378,117",6.66,6.36,"29,506"
+New York,2010,"Pedal cyclist, other",10**,"19,378,117",0.05**,0.05**,240
+New York,2010,"Pedestrian, other",36,"19,378,117",0.19,0.18,799
+New York,2010,"Transport, other land",42,"19,378,117",0.22,0.22,"1,138"
+New York,2010,"Transport, other (excl. drown by water transp)",16**,"19,378,117",0.08**,0.08**,202
+New York,2010,Other specified and classifiable,106,"19,378,117",0.55,0.55,"2,828"
+New York,2010,Other specified / NEC,106,"19,378,117",0.55,0.51,"1,721"
+New York,2010,Unspecified,431,"19,378,117",2.22,2.02,"5,778"
+New York,2009,Cut/Pierce,209,"19,307,066",1.08,1.05,"5,728"
+New York,2009,Drowning (includes water transport),151,"19,307,066",0.78,0.78,"4,018"
+New York,2009,Fall,"1,278","19,307,066",6.62,5.86,"7,268"
+New York,2009,Fire/Flame,190,"19,307,066",0.98,0.94,"3,531"
+New York,2009,Hot object/Substance,--,"19,307,066",--,--,--
+New York,2009,Firearm,958,"19,307,066",4.96,4.79,"25,476"
+New York,2009,Machinery,21,"19,307,066",0.11,0.1,304
+New York,2009,Natural/Environmental,47,"19,307,066",0.24,0.23,466
+New York,2009,Drug Poisoning,"1,592","19,307,066",8.25,7.97,"34,210"
+New York,2009,Non-Drug Poisoning,230,"19,307,066",1.19,1.15,"4,153"
+New York,2009,Struck by / against,26,"19,307,066",0.14,0.13,448
+New York,2009,Suffocation,779,"19,307,066",4.04,3.88,"16,410"
+New York,2009,"Motor vehicle, traffic","1,217","19,307,066",6.3,6.04,"28,145"
+New York,2009,"Pedal cyclist, other",16**,"19,307,066",0.08**,0.08**,229
+New York,2009,"Pedestrian, other",86,"19,307,066",0.45,0.44,"1,957"
+New York,2009,"Transport, other land",48,"19,307,066",0.25,0.25,"1,319"
+New York,2009,"Transport, other (excl. drown by water transp)",47,"19,307,066",0.24,0.23,897
+New York,2009,Other specified and classifiable,96,"19,307,066",0.5,0.48,"2,045"
+New York,2009,Other specified / NEC,94,"19,307,066",0.49,0.46,"1,547"
+New York,2009,Unspecified,337,"19,307,066",1.75,1.58,"4,319"
+New York,2008,Cut/Pierce,215,"19,212,436",1.12,1.09,"6,346"
+New York,2008,Drowning (includes water transport),167,"19,212,436",0.87,0.87,"4,885"
+New York,2008,Fall,"1,324","19,212,436",6.89,6.19,"7,435"
+New York,2008,Fire/Flame,179,"19,212,436",0.93,0.9,"3,498"
+New York,2008,Hot object/Substance,--,"19,212,436",--,--,--
+New York,2008,Firearm,963,"19,212,436",5.01,4.9,"26,209"
+New York,2008,Machinery,28,"19,212,436",0.15,0.14,551
+New York,2008,Natural/Environmental,59,"19,212,436",0.31,0.28,526
+New York,2008,Drug Poisoning,"1,691","19,212,436",8.8,8.52,"36,354"
+New York,2008,Non-Drug Poisoning,219,"19,212,436",1.14,1.08,"4,084"
+New York,2008,Struck by / against,43,"19,212,436",0.22,0.21,861
+New York,2008,Suffocation,765,"19,212,436",3.98,3.83,"15,744"
+New York,2008,"Motor vehicle, traffic","1,243","19,212,436",6.47,6.23,"27,729"
+New York,2008,"Pedal cyclist, other",22,"19,212,436",0.12,0.11,616
+New York,2008,"Pedestrian, other",71,"19,212,436",0.37,0.34,"1,513"
+New York,2008,"Transport, other land",43,"19,212,436",0.22,0.22,"1,040"
+New York,2008,"Transport, other (excl. drown by water transp)",21,"19,212,436",0.11,0.1,355
+New York,2008,Other specified and classifiable,114,"19,212,436",0.59,0.59,"2,747"
+New York,2008,Other specified / NEC,108,"19,212,436",0.56,0.53,"1,713"
+New York,2008,Unspecified,327,"19,212,436",1.7,1.6,"5,255"
+New York,2007,Cut/Pierce,166,"19,132,335",0.87,0.87,"4,519"
+New York,2007,Drowning (includes water transport),175,"19,132,335",0.92,0.92,"5,111"
+New York,2007,Fall,"1,283","19,132,335",6.71,6.07,"6,781"
+New York,2007,Fire/Flame,192,"19,132,335",1,0.98,"4,056"
+New York,2007,Hot object/Substance,10**,"19,132,335",0.05**,0.05**,10
+New York,2007,Firearm,985,"19,132,335",5.15,5.04,"26,605"
+New York,2007,Machinery,28,"19,132,335",0.15,0.14,478
+New York,2007,Natural/Environmental,69,"19,132,335",0.36,0.34,791
+New York,2007,Overexertion,--,"19,132,335",--,--,--
+New York,2007,Drug Poisoning,"1,708","19,132,335",8.93,8.65,"36,995"
+New York,2007,Non-Drug Poisoning,137,"19,132,335",0.72,0.68,"2,643"
+New York,2007,Struck by / against,36,"19,132,335",0.19,0.18,656
+New York,2007,Suffocation,728,"19,132,335",3.81,3.66,"15,117"
+New York,2007,"Motor vehicle, traffic","1,431","19,132,335",7.48,7.25,"33,586"
+New York,2007,"Pedal cyclist, other",24,"19,132,335",0.13,0.13,662
+New York,2007,"Pedestrian, other",64,"19,132,335",0.34,0.31,"1,282"
+New York,2007,"Transport, other land",47,"19,132,335",0.25,0.24,"1,214"
+New York,2007,"Transport, other (excl. drown by water transp)",21,"19,132,335",0.11,0.1,275
+New York,2007,Other specified and classifiable,122,"19,132,335",0.64,0.62,"2,905"
+New York,2007,Other specified / NEC,94,"19,132,335",0.49,0.47,"1,620"
+New York,2007,Unspecified,385,"19,132,335",2.01,1.85,"4,691"
+New York,2006,Cut/Pierce,211,"19,104,631",1.1,1.07,"5,568"
+New York,2006,Drowning (includes water transport),200,"19,104,631",1.05,1.02,"5,099"
+New York,2006,Fall,"1,186","19,104,631",6.21,5.66,"6,292"
+New York,2006,Fire/Flame,189,"19,104,631",0.99,0.94,"3,178"
+New York,2006,Hot object/Substance,13**,"19,104,631",0.07**,0.06**,66
+New York,2006,Firearm,"1,002","19,104,631",5.25,5.14,"28,835"
+New York,2006,Machinery,24,"19,104,631",0.13,0.12,399
+New York,2006,Natural/Environmental,102,"19,104,631",0.53,0.5,"1,113"
+New York,2006,Drug Poisoning,"1,680","19,104,631",8.79,8.58,"37,040"
+New York,2006,Non-Drug Poisoning,106,"19,104,631",0.56,0.53,"1,851"
+New York,2006,Struck by / against,53,"19,104,631",0.28,0.27,"1,176"
+New York,2006,Suffocation,743,"19,104,631",3.89,3.79,"15,926"
+New York,2006,"Motor vehicle, traffic","1,558","19,104,631",8.16,7.93,"37,110"
+New York,2006,"Pedal cyclist, other",19**,"19,104,631",0.10**,0.10**,556
+New York,2006,"Pedestrian, other",55,"19,104,631",0.29,0.27,865
+New York,2006,"Transport, other land",46,"19,104,631",0.24,0.24,"1,200"
+New York,2006,"Transport, other (excl. drown by water transp)",17**,"19,104,631",0.09**,0.08**,351
+New York,2006,Other specified and classifiable,96,"19,104,631",0.5,0.49,"2,216"
+New York,2006,Other specified / NEC,107,"19,104,631",0.56,0.54,"2,230"
+New York,2006,Unspecified,393,"19,104,631",2.06,1.91,"4,738"
+New York,2005,Cut/Pierce,219,"19,132,610",1.15,1.12,"6,376"
+New York,2005,Drowning (includes water transport),160,"19,132,610",0.84,0.84,"5,010"
+New York,2005,Fall,"1,181","19,132,610",6.17,5.7,"6,298"
+New York,2005,Fire/Flame,193,"19,132,610",1.01,0.98,"3,389"
+New York,2005,Hot object/Substance,15**,"19,132,610",0.08**,0.07**,201
+New York,2005,Firearm,"1,019","19,132,610",5.33,5.21,"27,685"
+New York,2005,Machinery,23,"19,132,610",0.12,0.12,590
+New York,2005,Natural/Environmental,55,"19,132,610",0.29,0.27,615
+New York,2005,Drug Poisoning,944,"19,132,610",4.93,4.8,"20,031"
+New York,2005,Non-Drug Poisoning,103,"19,132,610",0.54,0.51,"1,823"
+New York,2005,Struck by / against,35,"19,132,610",0.18,0.18,761
+New York,2005,Suffocation,654,"19,132,610",3.42,3.31,"13,524"
+New York,2005,"Motor vehicle, traffic","1,475","19,132,610",7.71,7.52,"35,264"
+New York,2005,"Pedal cyclist, other",19**,"19,132,610",0.10**,0.10**,487
+New York,2005,"Pedestrian, other",82,"19,132,610",0.43,0.42,"1,685"
+New York,2005,"Transport, other land",65,"19,132,610",0.34,0.34,"1,828"
+New York,2005,"Transport, other (excl. drown by water transp)",12**,"19,132,610",0.06**,0.06**,232
+New York,2005,Other specified and classifiable,115,"19,132,610",0.6,0.59,"2,773"
+New York,2005,Other specified / NEC,87,"19,132,610",0.46,0.44,"1,741"
+New York,2005,Unspecified,432,"19,132,610",2.26,2.13,"5,386"
+New York,2004,Cut/Pierce,205,"19,171,567",1.07,1.05,"5,968"
+New York,2004,Drowning (includes water transport),138,"19,171,567",0.72,0.71,"4,046"
+New York,2004,Fall,"1,158","19,171,567",6.04,5.67,"7,251"
+New York,2004,Fire/Flame,203,"19,171,567",1.06,1.02,"3,545"
+New York,2004,Hot object/Substance,12**,"19,171,567",0.06**,0.06**,124
+New York,2004,Firearm,951,"19,171,567",4.96,4.88,"26,411"
+New York,2004,Machinery,19**,"19,171,567",0.10**,0.09**,305
+New York,2004,Natural/Environmental,51,"19,171,567",0.27,0.25,412
+New York,2004,Drug Poisoning,831,"19,171,567",4.34,4.25,"17,923"
+New York,2004,Non-Drug Poisoning,102,"19,171,567",0.53,0.52,"2,201"
+New York,2004,Struck by / against,40,"19,171,567",0.21,0.21,872
+New York,2004,Suffocation,660,"19,171,567",3.44,3.35,"12,806"
+New York,2004,"Motor vehicle, traffic","1,529","19,171,567",7.98,7.83,"37,064"
+New York,2004,"Pedal cyclist, other",18**,"19,171,567",0.09**,0.09**,435
+New York,2004,"Pedestrian, other",89,"19,171,567",0.46,0.45,"1,879"
+New York,2004,"Transport, other land",68,"19,171,567",0.36,0.35,"1,683"
+New York,2004,"Transport, other (excl. drown by water transp)",18**,"19,171,567",0.09**,0.09**,218
+New York,2004,Other specified and classifiable,109,"19,171,567",0.57,0.56,"2,503"
+New York,2004,Other specified / NEC,90,"19,171,567",0.47,0.46,"1,634"
+New York,2004,Unspecified,403,"19,171,567",2.1,1.99,"4,538"
+New York,2003,Cut/Pierce,198,"19,175,939",1.03,1.01,"5,417"
+New York,2003,Drowning (includes water transport),146,"19,175,939",0.76,0.76,"4,300"
+New York,2003,Fall,"1,149","19,175,939",5.99,5.67,"6,641"
+New York,2003,Fire/Flame,226,"19,175,939",1.18,1.16,"4,176"
+New York,2003,Hot object/Substance,15**,"19,175,939",0.08**,0.07**,26
+New York,2003,Firearm,"1,034","19,175,939",5.39,5.32,"30,593"
+New York,2003,Machinery,18**,"19,175,939",0.09**,0.09**,445
+New York,2003,Natural/Environmental,59,"19,175,939",0.31,0.3,824
+New York,2003,Drug Poisoning,964,"19,175,939",5.03,4.95,"21,172"
+New York,2003,Non-Drug Poisoning,121,"19,175,939",0.63,0.62,"2,394"
+New York,2003,Struck by / against,31,"19,175,939",0.16,0.16,663
+New York,2003,Suffocation,632,"19,175,939",3.3,3.2,"12,125"
+New York,2003,"Motor vehicle, traffic","1,522","19,175,939",7.94,7.79,"36,843"
+New York,2003,"Pedal cyclist, other",17**,"19,175,939",0.09**,0.09**,409
+New York,2003,"Pedestrian, other",75,"19,175,939",0.39,0.38,"1,550"
+New York,2003,"Transport, other land",103,"19,175,939",0.54,0.53,"2,755"
+New York,2003,"Transport, other (excl. drown by water transp)",45,"19,175,939",0.24,0.23,"1,118"
+New York,2003,Other specified and classifiable,82,"19,175,939",0.43,0.42,"2,182"
+New York,2003,Other specified / NEC,86,"19,175,939",0.45,0.44,"1,837"
+New York,2003,Unspecified,451,"19,175,939",2.35,2.24,"5,391"
+New York,2002,Cut/Pierce,224,"19,137,800",1.17,1.16,"6,636"
+New York,2002,Drowning (includes water transport),201,"19,137,800",1.05,1.05,"5,812"
+New York,2002,Fall,"1,080","19,137,800",5.64,5.39,"6,974"
+New York,2002,Fire/Flame,199,"19,137,800",1.04,1.03,"4,418"
+New York,2002,Hot object/Substance,--,"19,137,800",--,--,--
+New York,2002,Firearm,994,"19,137,800",5.19,5.13,"28,277"
+New York,2002,Machinery,19**,"19,137,800",0.10**,0.10**,400
+New York,2002,Natural/Environmental,61,"19,137,800",0.32,0.31,669
+New York,2002,Overexertion,--,"19,137,800",--,--,--
+New York,2002,Drug Poisoning,923,"19,137,800",4.82,4.77,"21,170"
+New York,2002,Non-Drug Poisoning,91,"19,137,800",0.48,0.46,"1,693"
+New York,2002,Struck by / against,52,"19,137,800",0.27,0.27,"1,241"
+New York,2002,Suffocation,623,"19,137,800",3.26,3.21,"13,598"
+New York,2002,"Motor vehicle, traffic","1,629","19,137,800",8.51,8.41,"40,521"
+New York,2002,"Pedal cyclist, other",19**,"19,137,800",0.10**,0.10**,506
+New York,2002,"Pedestrian, other",74,"19,137,800",0.39,0.38,"1,825"
+New York,2002,"Transport, other land",75,"19,137,800",0.39,0.39,"1,642"
+New York,2002,"Transport, other (excl. drown by water transp)",24,"19,137,800",0.13,0.12,559
+New York,2002,Other specified and classifiable,108,"19,137,800",0.56,0.56,"2,736"
+New York,2002,Other specified / NEC,109,"19,137,800",0.57,0.56,"1,739"
+New York,2002,Unspecified,479,"19,137,800",2.5,2.41,"5,982"
+New York,2001,Cut/Pierce,219,"19,082,838",1.15,1.14,"6,185"
+New York,2001,Drowning (includes water transport),188,"19,082,838",0.99,0.99,"5,838"
+New York,2001,Fall,"1,070","19,082,838",5.61,5.4,"7,406"
+New York,2001,Fire/Flame,213,"19,082,838",1.12,1.1,"4,336"
+New York,2001,Hot object/Substance,16**,"19,082,838",0.08**,0.08**,175
+New York,2001,Firearm,"1,068","19,082,838",5.6,5.54,"31,772"
+New York,2001,Machinery,13**,"19,082,838",0.07**,0.07**,326
+New York,2001,Natural/Environmental,52,"19,082,838",0.27,0.26,440
+New York,2001,Drug Poisoning,"1,079","19,082,838",5.65,5.57,"24,757"
+New York,2001,Non-Drug Poisoning,122,"19,082,838",0.64,0.63,"2,406"
+New York,2001,Struck by / against,46,"19,082,838",0.24,0.24,"1,133"
+New York,2001,Suffocation,615,"19,082,838",3.22,3.18,"12,938"
+New York,2001,"Motor vehicle, traffic","1,620","19,082,838",8.49,8.42,"40,965"
+New York,2001,"Pedal cyclist, other",11**,"19,082,838",0.06**,0.06**,107
+New York,2001,"Pedestrian, other",110,"19,082,838",0.58,0.57,"1,741"
+New York,2001,"Transport, other land",58,"19,082,838",0.3,0.3,"1,530"
+New York,2001,"Transport, other (excl. drown by water transp)","2,011","19,082,838",10.54,10.35,"50,660"
+New York,2001,Other specified and classifiable,93,"19,082,838",0.49,0.48,"2,490"
+New York,2001,Other specified / NEC,150,"19,082,838",0.79,0.77,"2,799"
+New York,2001,Unspecified,470,"19,082,838",2.46,2.38,"5,552"
+Total,,,"183,485","408,075,177",44.96,42.44,"3,434,984"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: New York,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

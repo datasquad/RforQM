@@ -1,0 +1,438 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Mississippi,2021,Cut/Pierce,40,"2,949,965",1.36,1.3,755
+Mississippi,2021,Drowning (includes water transport),51,"2,949,965",1.73,1.72,"1,433"
+Mississippi,2021,Fall,339,"2,949,965",11.49,10.25,761
+Mississippi,2021,Fire/Flame,105,"2,949,965",3.56,3.14,"1,263"
+Mississippi,2021,Hot object/Substance,--,"2,949,965",--,--,--
+Mississippi,2021,Firearm,962,"2,949,965",32.61,33.82,"26,747"
+Mississippi,2021,Machinery,--,"2,949,965",--,--,--
+Mississippi,2021,Natural/Environmental,20**,"2,949,965",0.68**,0.58**,187
+Mississippi,2021,Drug Poisoning,787,"2,949,965",26.68,28.42,"18,409"
+Mississippi,2021,Non-Drug Poisoning,28,"2,949,965",0.95,0.93,420
+Mississippi,2021,Struck by / against,21,"2,949,965",0.71,0.67,342
+Mississippi,2021,Suffocation,234,"2,949,965",7.93,7.91,"5,384"
+Mississippi,2021,"Motor vehicle, traffic",836,"2,949,965",28.34,27.92,"19,098"
+Mississippi,2021,"Pedal cyclist, other",--,"2,949,965",--,--,--
+Mississippi,2021,"Pedestrian, other",--,"2,949,965",--,--,--
+Mississippi,2021,"Transport, other land",29,"2,949,965",0.98,0.98,824
+Mississippi,2021,"Transport, other (excl. drown by water transp)",--,"2,949,965",--,--,--
+Mississippi,2021,Other specified and classifiable,33,"2,949,965",1.12,1.05,732
+Mississippi,2021,Other specified / NEC,12**,"2,949,965",0.41**,0.38**,210
+Mississippi,2021,Unspecified,109,"2,949,965",3.7,3.43,"1,272"
+Mississippi,2020,Cut/Pierce,45,"2,956,870",1.52,1.55,992
+Mississippi,2020,Drowning (includes water transport),61,"2,956,870",2.06,2,"1,688"
+Mississippi,2020,Fall,360,"2,956,870",12.18,10.91,629
+Mississippi,2020,Fire/Flame,85,"2,956,870",2.88,2.75,"1,571"
+Mississippi,2020,Hot object/Substance,--,"2,956,870",--,--,--
+Mississippi,2020,Firearm,818,"2,956,870",27.66,28.7,"22,727"
+Mississippi,2020,Machinery,--,"2,956,870",--,--,--
+Mississippi,2020,Natural/Environmental,33,"2,956,870",1.12,1.03,302
+Mississippi,2020,Drug Poisoning,586,"2,956,870",19.82,21.2,"13,699"
+Mississippi,2020,Non-Drug Poisoning,30,"2,956,870",1.02,1.02,590
+Mississippi,2020,Struck by / against,21,"2,956,870",0.71,0.74,319
+Mississippi,2020,Suffocation,186,"2,956,870",6.29,6.23,"3,804"
+Mississippi,2020,"Motor vehicle, traffic",816,"2,956,870",27.6,27.77,"19,882"
+Mississippi,2020,"Pedal cyclist, other",--,"2,956,870",--,--,--
+Mississippi,2020,"Pedestrian, other",17**,"2,956,870",0.58**,0.54**,374
+Mississippi,2020,"Transport, other land",27,"2,956,870",0.91,0.85,504
+Mississippi,2020,"Transport, other (excl. drown by water transp)",--,"2,956,870",--,--,--
+Mississippi,2020,Other specified and classifiable,28,"2,956,870",0.95,0.9,522
+Mississippi,2020,Other specified / NEC,24,"2,956,870",0.81,0.76,369
+Mississippi,2020,Unspecified,90,"2,956,870",3.04,2.91,"1,104"
+Mississippi,2019,Cut/Pierce,38,"2,978,227",1.28,1.3,783
+Mississippi,2019,Drowning (includes water transport),70,"2,978,227",2.35,2.46,"2,319"
+Mississippi,2019,Fall,331,"2,978,227",11.11,9.5,545
+Mississippi,2019,Fire/Flame,71,"2,978,227",2.38,2.03,727
+Mississippi,2019,Hot object/Substance,--,"2,978,227",--,--,--
+Mississippi,2019,Firearm,710,"2,978,227",23.84,24.21,"18,515"
+Mississippi,2019,Machinery,--,"2,978,227",--,--,--
+Mississippi,2019,Natural/Environmental,31,"2,978,227",1.04,0.98,397
+Mississippi,2019,Drug Poisoning,394,"2,978,227",13.23,13.63,"8,241"
+Mississippi,2019,Non-Drug Poisoning,38,"2,978,227",1.28,1.25,648
+Mississippi,2019,Struck by / against,23,"2,978,227",0.77,0.72,435
+Mississippi,2019,Suffocation,206,"2,978,227",6.92,6.97,"4,457"
+Mississippi,2019,"Motor vehicle, traffic",724,"2,978,227",24.31,24.15,"16,070"
+Mississippi,2019,"Pedal cyclist, other",--,"2,978,227",--,--,--
+Mississippi,2019,"Pedestrian, other",18**,"2,978,227",0.60**,0.59**,283
+Mississippi,2019,"Transport, other land",19**,"2,978,227",0.64**,0.60**,593
+Mississippi,2019,"Transport, other (excl. drown by water transp)",--,"2,978,227",--,--,--
+Mississippi,2019,Other specified and classifiable,30,"2,978,227",1.01,0.95,635
+Mississippi,2019,Other specified / NEC,21,"2,978,227",0.71,0.67,365
+Mississippi,2019,Unspecified,78,"2,978,227",2.62,2.37,934
+Mississippi,2018,Cut/Pierce,24,"2,982,879",0.81,0.76,470
+Mississippi,2018,Drowning (includes water transport),50,"2,982,879",1.68,1.69,"1,383"
+Mississippi,2018,Fall,283,"2,982,879",9.49,8.29,502
+Mississippi,2018,Fire/Flame,89,"2,982,879",2.98,2.71,"1,251"
+Mississippi,2018,Hot object/Substance,--,"2,982,879",--,--,--
+Mississippi,2018,Firearm,681,"2,982,879",22.83,22.86,"17,283"
+Mississippi,2018,Machinery,12**,"2,982,879",0.40**,0.35**,85
+Mississippi,2018,Natural/Environmental,26,"2,982,879",0.87,0.75,154
+Mississippi,2018,Drug Poisoning,310,"2,982,879",10.39,10.93,"6,598"
+Mississippi,2018,Non-Drug Poisoning,23,"2,982,879",0.77,0.7,324
+Mississippi,2018,Struck by / against,13**,"2,982,879",0.44**,0.39**,191
+Mississippi,2018,Suffocation,187,"2,982,879",6.27,6.08,"3,322"
+Mississippi,2018,"Motor vehicle, traffic",669,"2,982,879",22.43,22.1,"15,041"
+Mississippi,2018,"Pedal cyclist, other",--,"2,982,879",--,--,--
+Mississippi,2018,"Pedestrian, other",16**,"2,982,879",0.54**,0.55**,480
+Mississippi,2018,"Transport, other land",29,"2,982,879",0.97,0.97,709
+Mississippi,2018,"Transport, other (excl. drown by water transp)",--,"2,982,879",--,--,--
+Mississippi,2018,Other specified and classifiable,24,"2,982,879",0.81,0.77,500
+Mississippi,2018,Other specified / NEC,23,"2,982,879",0.77,0.72,445
+Mississippi,2018,Unspecified,78,"2,982,879",2.62,2.38,"1,011"
+Mississippi,2017,Cut/Pierce,34,"2,990,674",1.14,1.19,782
+Mississippi,2017,Drowning (includes water transport),48,"2,990,674",1.61,1.64,"1,697"
+Mississippi,2017,Fall,291,"2,990,674",9.73,8.61,417
+Mississippi,2017,Fire/Flame,63,"2,990,674",2.11,1.85,795
+Mississippi,2017,Hot object/Substance,--,"2,990,674",--,--,--
+Mississippi,2017,Firearm,632,"2,990,674",21.13,21.43,"15,814"
+Mississippi,2017,Machinery,16**,"2,990,674",0.54**,0.47**,188
+Mississippi,2017,Natural/Environmental,19**,"2,990,674",0.64**,0.55**,200
+Mississippi,2017,Drug Poisoning,354,"2,990,674",11.84,12.05,"7,530"
+Mississippi,2017,Non-Drug Poisoning,25,"2,990,674",0.84,0.86,402
+Mississippi,2017,Struck by / against,17**,"2,990,674",0.57**,0.54**,443
+Mississippi,2017,Suffocation,180,"2,990,674",6.02,6.01,"3,576"
+Mississippi,2017,"Motor vehicle, traffic",750,"2,990,674",25.08,24.86,"17,299"
+Mississippi,2017,"Pedal cyclist, other",--,"2,990,674",--,--,--
+Mississippi,2017,"Pedestrian, other",13**,"2,990,674",0.44**,0.45**,440
+Mississippi,2017,"Transport, other land",15**,"2,990,674",0.50**,0.51**,385
+Mississippi,2017,"Transport, other (excl. drown by water transp)",11**,"2,990,674",0.37**,0.34**,231
+Mississippi,2017,Other specified and classifiable,23,"2,990,674",0.77,0.78,565
+Mississippi,2017,Other specified / NEC,18**,"2,990,674",0.60**,0.60**,237
+Mississippi,2017,Unspecified,89,"2,990,674",2.98,2.83,838
+Mississippi,2016,Cut/Pierce,45,"2,990,595",1.51,1.61,"1,032"
+Mississippi,2016,Drowning (includes water transport),76,"2,990,595",2.54,2.58,"2,282"
+Mississippi,2016,Fall,290,"2,990,595",9.7,8.86,446
+Mississippi,2016,Fire/Flame,63,"2,990,595",2.11,2.08,918
+Mississippi,2016,Hot object/Substance,--,"2,990,595",--,--,--
+Mississippi,2016,Firearm,587,"2,990,595",19.63,19.82,"15,363"
+Mississippi,2016,Machinery,21,"2,990,595",0.7,0.65,178
+Mississippi,2016,Natural/Environmental,24,"2,990,595",0.8,0.72,319
+Mississippi,2016,Overexertion,--,"2,990,595",--,--,--
+Mississippi,2016,Drug Poisoning,352,"2,990,595",11.77,12.13,"7,602"
+Mississippi,2016,Non-Drug Poisoning,28,"2,990,595",0.94,0.94,497
+Mississippi,2016,Struck by / against,15**,"2,990,595",0.50**,0.50**,226
+Mississippi,2016,Suffocation,189,"2,990,595",6.32,6.27,"3,817"
+Mississippi,2016,"Motor vehicle, traffic",761,"2,990,595",25.45,25.26,"18,294"
+Mississippi,2016,"Pedal cyclist, other",--,"2,990,595",--,--,--
+Mississippi,2016,"Pedestrian, other",10**,"2,990,595",0.33**,0.33**,197
+Mississippi,2016,"Transport, other land",19**,"2,990,595",0.64**,0.66**,439
+Mississippi,2016,"Transport, other (excl. drown by water transp)",10**,"2,990,595",0.33**,0.43**,272
+Mississippi,2016,Other specified and classifiable,19**,"2,990,595",0.64**,0.63**,278
+Mississippi,2016,Other specified / NEC,12**,"2,990,595",0.40**,0.42**,195
+Mississippi,2016,Unspecified,62,"2,990,595",2.07,1.9,613
+Mississippi,2015,Cut/Pierce,37,"2,990,231",1.24,1.23,786
+Mississippi,2015,Drowning (includes water transport),56,"2,990,231",1.87,1.85,"1,583"
+Mississippi,2015,Fall,282,"2,990,231",9.43,8.75,547
+Mississippi,2015,Fire/Flame,68,"2,990,231",2.27,2.1,811
+Mississippi,2015,Hot object/Substance,--,"2,990,231",--,--,--
+Mississippi,2015,Firearm,589,"2,990,231",19.7,19.49,"13,089"
+Mississippi,2015,Machinery,13**,"2,990,231",0.44**,0.40**,91
+Mississippi,2015,Natural/Environmental,26,"2,990,231",0.87,0.8,287
+Mississippi,2015,Drug Poisoning,351,"2,990,231",11.74,12.33,"7,767"
+Mississippi,2015,Non-Drug Poisoning,26,"2,990,231",0.87,0.93,580
+Mississippi,2015,Struck by / against,12**,"2,990,231",0.40**,0.38**,266
+Mississippi,2015,Suffocation,226,"2,990,231",7.56,7.49,"5,716"
+Mississippi,2015,"Motor vehicle, traffic",742,"2,990,231",24.81,24.94,"18,173"
+Mississippi,2015,"Pedal cyclist, other",--,"2,990,231",--,--,--
+Mississippi,2015,"Pedestrian, other",15**,"2,990,231",0.50**,0.48**,306
+Mississippi,2015,"Transport, other land",24,"2,990,231",0.8,0.75,645
+Mississippi,2015,"Transport, other (excl. drown by water transp)",--,"2,990,231",--,--,--
+Mississippi,2015,Other specified and classifiable,26,"2,990,231",0.87,0.9,521
+Mississippi,2015,Other specified / NEC,28,"2,990,231",0.94,0.92,561
+Mississippi,2015,Unspecified,94,"2,990,231",3.14,2.85,"1,153"
+Mississippi,2014,Cut/Pierce,38,"2,991,892",1.27,1.32,867
+Mississippi,2014,Drowning (includes water transport),58,"2,991,892",1.94,1.92,"1,841"
+Mississippi,2014,Fall,246,"2,991,892",8.22,7.68,518
+Mississippi,2014,Fire/Flame,73,"2,991,892",2.44,2.37,"1,337"
+Mississippi,2014,Firearm,547,"2,991,892",18.28,18.3,"13,614"
+Mississippi,2014,Machinery,--,"2,991,892",--,--,--
+Mississippi,2014,Natural/Environmental,43,"2,991,892",1.44,1.37,649
+Mississippi,2014,Drug Poisoning,336,"2,991,892",11.23,11.61,"7,292"
+Mississippi,2014,Non-Drug Poisoning,41,"2,991,892",1.37,1.41,906
+Mississippi,2014,Struck by / against,23,"2,991,892",0.77,0.75,400
+Mississippi,2014,Suffocation,249,"2,991,892",8.32,8.16,"5,338"
+Mississippi,2014,"Motor vehicle, traffic",648,"2,991,892",21.66,21.34,"15,627"
+Mississippi,2014,"Pedestrian, other",14**,"2,991,892",0.47**,0.46**,336
+Mississippi,2014,"Transport, other land",19**,"2,991,892",0.64**,0.60**,366
+Mississippi,2014,"Transport, other (excl. drown by water transp)",--,"2,991,892",--,--,--
+Mississippi,2014,Other specified and classifiable,20**,"2,991,892",0.67**,0.72**,488
+Mississippi,2014,Other specified / NEC,21,"2,991,892",0.7,0.72,455
+Mississippi,2014,Unspecified,88,"2,991,892",2.94,2.78,948
+Mississippi,2013,Cut/Pierce,33,"2,989,839",1.1,1.11,766
+Mississippi,2013,Drowning (includes water transport),60,"2,989,839",2.01,1.94,"1,677"
+Mississippi,2013,Fall,257,"2,989,839",8.6,8.18,583
+Mississippi,2013,Fire/Flame,72,"2,989,839",2.41,2.33,"1,099"
+Mississippi,2013,Firearm,525,"2,989,839",17.56,17.66,"12,914"
+Mississippi,2013,Machinery,14**,"2,989,839",0.47**,0.41**,112
+Mississippi,2013,Natural/Environmental,12**,"2,989,839",0.40**,0.37**,253
+Mississippi,2013,Drug Poisoning,316,"2,989,839",10.57,10.8,"6,705"
+Mississippi,2013,Non-Drug Poisoning,26,"2,989,839",0.87,0.87,375
+Mississippi,2013,Struck by / against,13**,"2,989,839",0.44**,0.43**,275
+Mississippi,2013,Suffocation,266,"2,989,839",8.9,8.85,"4,834"
+Mississippi,2013,"Motor vehicle, traffic",650,"2,989,839",21.74,21.49,"15,230"
+Mississippi,2013,"Pedal cyclist, other",--,"2,989,839",--,--,--
+Mississippi,2013,"Pedestrian, other",20**,"2,989,839",0.67**,0.67**,755
+Mississippi,2013,"Transport, other land",21,"2,989,839",0.7,0.7,562
+Mississippi,2013,"Transport, other (excl. drown by water transp)",--,"2,989,839",--,--,--
+Mississippi,2013,Other specified and classifiable,28,"2,989,839",0.94,0.95,511
+Mississippi,2013,Other specified / NEC,27,"2,989,839",0.9,0.86,412
+Mississippi,2013,Unspecified,66,"2,989,839",2.21,2.17,755
+Mississippi,2012,Cut/Pierce,31,"2,984,599",1.04,1.05,788
+Mississippi,2012,Drowning (includes water transport),63,"2,984,599",2.11,2.12,"2,021"
+Mississippi,2012,Fall,247,"2,984,599",8.28,8.07,"1,020"
+Mississippi,2012,Fire/Flame,71,"2,984,599",2.38,2.35,"1,214"
+Mississippi,2012,Firearm,535,"2,984,599",17.93,18.3,"12,597"
+Mississippi,2012,Machinery,13**,"2,984,599",0.44**,0.37**,82
+Mississippi,2012,Natural/Environmental,23,"2,984,599",0.77,0.74,291
+Mississippi,2012,Drug Poisoning,310,"2,984,599",10.39,10.67,"6,584"
+Mississippi,2012,Non-Drug Poisoning,35,"2,984,599",1.17,1.19,611
+Mississippi,2012,Struck by / against,19**,"2,984,599",0.64**,0.58**,362
+Mississippi,2012,Suffocation,189,"2,984,599",6.33,6.45,"4,219"
+Mississippi,2012,"Motor vehicle, traffic",668,"2,984,599",22.38,22.36,"16,096"
+Mississippi,2012,"Pedal cyclist, other",--,"2,984,599",--,--,--
+Mississippi,2012,"Pedestrian, other",14**,"2,984,599",0.47**,0.49**,375
+Mississippi,2012,"Transport, other land",22,"2,984,599",0.74,0.74,489
+Mississippi,2012,"Transport, other (excl. drown by water transp)",--,"2,984,599",--,--,--
+Mississippi,2012,Other specified and classifiable,30,"2,984,599",1.01,1.1,688
+Mississippi,2012,Other specified / NEC,20**,"2,984,599",0.67**,0.72**,361
+Mississippi,2012,Unspecified,82,"2,984,599",2.75,2.67,"1,150"
+Mississippi,2011,Cut/Pierce,46,"2,979,147",1.54,1.59,"1,092"
+Mississippi,2011,Drowning (includes water transport),69,"2,979,147",2.32,2.28,"2,031"
+Mississippi,2011,Fall,283,"2,979,147",9.5,9.37,487
+Mississippi,2011,Fire/Flame,91,"2,979,147",3.06,2.97,"1,758"
+Mississippi,2011,Hot object/Substance,--,"2,979,147",--,--,--
+Mississippi,2011,Firearm,530,"2,979,147",17.79,17.9,"12,945"
+Mississippi,2011,Machinery,--,"2,979,147",--,--,--
+Mississippi,2011,Natural/Environmental,55,"2,979,147",1.85,1.75,531
+Mississippi,2011,Overexertion,--,"2,979,147",--,--,--
+Mississippi,2011,Drug Poisoning,302,"2,979,147",10.14,10.72,"6,598"
+Mississippi,2011,Non-Drug Poisoning,24,"2,979,147",0.81,0.86,475
+Mississippi,2011,Struck by / against,15**,"2,979,147",0.50**,0.49**,281
+Mississippi,2011,Suffocation,176,"2,979,147",5.91,5.92,"3,624"
+Mississippi,2011,"Motor vehicle, traffic",701,"2,979,147",23.53,23.32,"17,732"
+Mississippi,2011,"Pedal cyclist, other",--,"2,979,147",--,--,--
+Mississippi,2011,"Pedestrian, other",14**,"2,979,147",0.47**,0.45**,316
+Mississippi,2011,"Transport, other land",18**,"2,979,147",0.60**,0.62**,444
+Mississippi,2011,"Transport, other (excl. drown by water transp)",--,"2,979,147",--,--,--
+Mississippi,2011,Other specified and classifiable,30,"2,979,147",1.01,1.04,809
+Mississippi,2011,Other specified / NEC,17**,"2,979,147",0.57**,0.57**,266
+Mississippi,2011,Unspecified,78,"2,979,147",2.62,2.54,"1,174"
+Mississippi,2010,Cut/Pierce,37,"2,968,129",1.25,1.22,946
+Mississippi,2010,Drowning (includes water transport),69,"2,968,129",2.33,2.33,"1,937"
+Mississippi,2010,Fall,284,"2,968,129",9.57,9.6,841
+Mississippi,2010,Fire/Flame,91,"2,968,129",3.07,2.98,"1,726"
+Mississippi,2010,Hot object/Substance,--,"2,968,129",--,--,--
+Mississippi,2010,Firearm,475,"2,968,129",16,16.05,"11,588"
+Mississippi,2010,Machinery,--,"2,968,129",--,--,--
+Mississippi,2010,Natural/Environmental,50,"2,968,129",1.69,1.6,744
+Mississippi,2010,Overexertion,--,"2,968,129",--,--,--
+Mississippi,2010,Drug Poisoning,334,"2,968,129",11.25,11.35,"7,521"
+Mississippi,2010,Non-Drug Poisoning,36,"2,968,129",1.21,1.27,656
+Mississippi,2010,Struck by / against,28,"2,968,129",0.94,0.95,592
+Mississippi,2010,Suffocation,176,"2,968,129",5.93,5.88,"3,683"
+Mississippi,2010,"Motor vehicle, traffic",660,"2,968,129",22.24,22.22,"16,125"
+Mississippi,2010,"Pedal cyclist, other",--,"2,968,129",--,--,--
+Mississippi,2010,"Pedestrian, other",23,"2,968,129",0.78,0.8,595
+Mississippi,2010,"Transport, other land",14**,"2,968,129",0.47**,0.46**,247
+Mississippi,2010,"Transport, other (excl. drown by water transp)",--,"2,968,129",--,--,--
+Mississippi,2010,Other specified and classifiable,29,"2,968,129",0.98,0.97,607
+Mississippi,2010,Other specified / NEC,25,"2,968,129",0.84,0.82,328
+Mississippi,2010,Unspecified,66,"2,968,129",2.22,2.24,753
+Mississippi,2009,Cut/Pierce,42,"2,958,774",1.42,1.42,925
+Mississippi,2009,Drowning (includes water transport),79,"2,958,774",2.67,2.69,"2,384"
+Mississippi,2009,Fall,241,"2,958,774",8.15,8.18,736
+Mississippi,2009,Fire/Flame,85,"2,958,774",2.87,2.8,"2,326"
+Mississippi,2009,Hot object/Substance,--,"2,958,774",--,--,--
+Mississippi,2009,Firearm,487,"2,958,774",16.46,16.65,"11,623"
+Mississippi,2009,Machinery,--,"2,958,774",--,--,--
+Mississippi,2009,Natural/Environmental,18**,"2,958,774",0.61**,0.64**,230
+Mississippi,2009,Drug Poisoning,323,"2,958,774",10.92,11.26,"7,209"
+Mississippi,2009,Non-Drug Poisoning,26,"2,958,774",0.88,0.92,501
+Mississippi,2009,Struck by / against,23,"2,958,774",0.78,0.82,397
+Mississippi,2009,Suffocation,166,"2,958,774",5.61,5.59,"3,618"
+Mississippi,2009,"Motor vehicle, traffic",710,"2,958,774",24,24.13,"18,940"
+Mississippi,2009,"Pedal cyclist, other",--,"2,958,774",--,--,--
+Mississippi,2009,"Pedestrian, other",21,"2,958,774",0.71,0.64,436
+Mississippi,2009,"Transport, other land",25,"2,958,774",0.85,0.86,541
+Mississippi,2009,"Transport, other (excl. drown by water transp)",--,"2,958,774",--,--,--
+Mississippi,2009,Other specified and classifiable,25,"2,958,774",0.85,0.82,669
+Mississippi,2009,Other specified / NEC,26,"2,958,774",0.88,0.87,310
+Mississippi,2009,Unspecified,52,"2,958,774",1.76,1.71,710
+Mississippi,2008,Cut/Pierce,38,"2,947,806",1.29,1.32,977
+Mississippi,2008,Drowning (includes water transport),62,"2,947,806",2.1,2.05,"1,889"
+Mississippi,2008,Fall,244,"2,947,806",8.28,8.46,678
+Mississippi,2008,Fire/Flame,81,"2,947,806",2.75,2.63,"1,119"
+Mississippi,2008,Hot object/Substance,--,"2,947,806",--,--,--
+Mississippi,2008,Firearm,568,"2,947,806",19.27,19.25,"14,419"
+Mississippi,2008,Machinery,10**,"2,947,806",0.34**,0.36**,240
+Mississippi,2008,Natural/Environmental,14**,"2,947,806",0.48**,0.45**,205
+Mississippi,2008,Drug Poisoning,303,"2,947,806",10.28,10.56,"6,661"
+Mississippi,2008,Non-Drug Poisoning,44,"2,947,806",1.49,1.56,"1,124"
+Mississippi,2008,Struck by / against,19**,"2,947,806",0.65**,0.66**,324
+Mississippi,2008,Suffocation,198,"2,947,806",6.72,6.74,"5,518"
+Mississippi,2008,"Motor vehicle, traffic",752,"2,947,806",25.51,25.64,"19,291"
+Mississippi,2008,"Pedestrian, other",13**,"2,947,806",0.44**,0.44**,197
+Mississippi,2008,"Transport, other land",26,"2,947,806",0.88,0.86,610
+Mississippi,2008,"Transport, other (excl. drown by water transp)",--,"2,947,806",--,--,--
+Mississippi,2008,Other specified and classifiable,29,"2,947,806",0.98,1,813
+Mississippi,2008,Other specified / NEC,30,"2,947,806",1.02,1.03,509
+Mississippi,2008,Unspecified,68,"2,947,806",2.31,2.26,"1,142"
+Mississippi,2007,Cut/Pierce,41,"2,928,350",1.4,1.38,"1,035"
+Mississippi,2007,Drowning (includes water transport),53,"2,928,350",1.81,1.81,"1,504"
+Mississippi,2007,Fall,194,"2,928,350",6.63,6.88,504
+Mississippi,2007,Fire/Flame,87,"2,928,350",2.97,2.9,"2,054"
+Mississippi,2007,Hot object/Substance,--,"2,928,350",--,--,--
+Mississippi,2007,Firearm,535,"2,928,350",18.27,18.28,"13,584"
+Mississippi,2007,Machinery,11**,"2,928,350",0.38**,0.38**,244
+Mississippi,2007,Natural/Environmental,17**,"2,928,350",0.58**,0.59**,232
+Mississippi,2007,Drug Poisoning,314,"2,928,350",10.72,10.94,"7,154"
+Mississippi,2007,Non-Drug Poisoning,29,"2,928,350",0.99,0.98,528
+Mississippi,2007,Struck by / against,30,"2,928,350",1.02,0.99,510
+Mississippi,2007,Suffocation,196,"2,928,350",6.69,6.75,"5,291"
+Mississippi,2007,"Motor vehicle, traffic",877,"2,928,350",29.95,30.2,"23,703"
+Mississippi,2007,"Pedal cyclist, other",--,"2,928,350",--,--,--
+Mississippi,2007,"Pedestrian, other",23,"2,928,350",0.79,0.81,608
+Mississippi,2007,"Transport, other land",31,"2,928,350",1.06,1.07,748
+Mississippi,2007,"Transport, other (excl. drown by water transp)",--,"2,928,350",--,--,--
+Mississippi,2007,Other specified and classifiable,25,"2,928,350",0.85,0.85,731
+Mississippi,2007,Other specified / NEC,13**,"2,928,350",0.44**,0.43**,334
+Mississippi,2007,Unspecified,48,"2,928,350",1.64,1.64,691
+Mississippi,2006,Cut/Pierce,45,"2,904,978",1.55,1.56,"1,153"
+Mississippi,2006,Drowning (includes water transport),66,"2,904,978",2.27,2.29,"1,980"
+Mississippi,2006,Fall,198,"2,904,978",6.82,7.05,760
+Mississippi,2006,Fire/Flame,87,"2,904,978",3,3.01,"1,764"
+Mississippi,2006,Hot object/Substance,--,"2,904,978",--,--,--
+Mississippi,2006,Firearm,475,"2,904,978",16.35,16.54,"12,365"
+Mississippi,2006,Machinery,14**,"2,904,978",0.48**,0.45**,231
+Mississippi,2006,Natural/Environmental,19**,"2,904,978",0.65**,0.66**,297
+Mississippi,2006,Overexertion,--,"2,904,978",--,--,--
+Mississippi,2006,Drug Poisoning,339,"2,904,978",11.67,12.02,"8,065"
+Mississippi,2006,Non-Drug Poisoning,30,"2,904,978",1.03,1.08,600
+Mississippi,2006,Struck by / against,30,"2,904,978",1.03,1.06,553
+Mississippi,2006,Suffocation,161,"2,904,978",5.54,5.65,"3,586"
+Mississippi,2006,"Motor vehicle, traffic",928,"2,904,978",31.95,31.93,"25,787"
+Mississippi,2006,"Pedestrian, other",17**,"2,904,978",0.59**,0.62**,263
+Mississippi,2006,"Transport, other land",34,"2,904,978",1.17,1.17,629
+Mississippi,2006,"Transport, other (excl. drown by water transp)",12**,"2,904,978",0.41**,0.40**,211
+Mississippi,2006,Other specified and classifiable,34,"2,904,978",1.17,1.18,773
+Mississippi,2006,Other specified / NEC,21,"2,904,978",0.72,0.74,184
+Mississippi,2006,Unspecified,59,"2,904,978",2.03,2.08,592
+Mississippi,2005,Cut/Pierce,43,"2,905,943",1.48,1.52,"1,022"
+Mississippi,2005,Drowning (includes water transport),55,"2,905,943",1.89,1.91,"1,763"
+Mississippi,2005,Fall,198,"2,905,943",6.81,7.07,816
+Mississippi,2005,Fire/Flame,77,"2,905,943",2.65,2.65,"1,396"
+Mississippi,2005,Hot object/Substance,--,"2,905,943",--,--,--
+Mississippi,2005,Firearm,455,"2,905,943",15.66,15.98,"11,259"
+Mississippi,2005,Machinery,--,"2,905,943",--,--,--
+Mississippi,2005,Natural/Environmental,198,"2,905,943",6.81,6.73,"1,635"
+Mississippi,2005,Overexertion,--,"2,905,943",--,--,--
+Mississippi,2005,Drug Poisoning,248,"2,905,943",8.53,8.82,"6,210"
+Mississippi,2005,Non-Drug Poisoning,24,"2,905,943",0.83,0.86,482
+Mississippi,2005,Struck by / against,24,"2,905,943",0.83,0.79,542
+Mississippi,2005,Suffocation,167,"2,905,943",5.75,5.87,"3,700"
+Mississippi,2005,"Motor vehicle, traffic",919,"2,905,943",31.63,31.73,"25,116"
+Mississippi,2005,"Pedal cyclist, other",--,"2,905,943",--,--,--
+Mississippi,2005,"Pedestrian, other",24,"2,905,943",0.83,0.82,559
+Mississippi,2005,"Transport, other land",33,"2,905,943",1.14,1.12,637
+Mississippi,2005,"Transport, other (excl. drown by water transp)",13**,"2,905,943",0.45**,0.41**,213
+Mississippi,2005,Other specified and classifiable,39,"2,905,943",1.34,1.36,"1,084"
+Mississippi,2005,Other specified / NEC,18**,"2,905,943",0.62**,0.62**,235
+Mississippi,2005,Unspecified,58,"2,905,943",2,2.05,907
+Mississippi,2004,Cut/Pierce,33,"2,889,010",1.14,1.16,861
+Mississippi,2004,Drowning (includes water transport),65,"2,889,010",2.25,2.25,"2,247"
+Mississippi,2004,Fall,187,"2,889,010",6.47,6.82,806
+Mississippi,2004,Fire/Flame,92,"2,889,010",3.18,3.27,"1,971"
+Mississippi,2004,Hot object/Substance,--,"2,889,010",--,--,--
+Mississippi,2004,Firearm,471,"2,889,010",16.3,16.41,"11,973"
+Mississippi,2004,Machinery,--,"2,889,010",--,--,--
+Mississippi,2004,Natural/Environmental,27,"2,889,010",0.94,0.97,495
+Mississippi,2004,Overexertion,--,"2,889,010",--,--,--
+Mississippi,2004,Drug Poisoning,224,"2,889,010",7.75,8.13,"5,750"
+Mississippi,2004,Non-Drug Poisoning,31,"2,889,010",1.07,1.08,679
+Mississippi,2004,Struck by / against,32,"2,889,010",1.11,1.11,517
+Mississippi,2004,Suffocation,141,"2,889,010",4.88,5.02,"2,526"
+Mississippi,2004,"Motor vehicle, traffic",879,"2,889,010",30.43,30.25,"23,094"
+Mississippi,2004,"Pedal cyclist, other",--,"2,889,010",--,--,--
+Mississippi,2004,"Pedestrian, other",24,"2,889,010",0.83,0.84,840
+Mississippi,2004,"Transport, other land",26,"2,889,010",0.9,0.9,586
+Mississippi,2004,"Transport, other (excl. drown by water transp)",--,"2,889,010",--,--,--
+Mississippi,2004,Other specified and classifiable,29,"2,889,010",1,1.01,753
+Mississippi,2004,Other specified / NEC,21,"2,889,010",0.73,0.76,406
+Mississippi,2004,Unspecified,72,"2,889,010",2.49,2.55,"1,528"
+Mississippi,2003,Cut/Pierce,41,"2,868,312",1.43,1.44,"1,091"
+Mississippi,2003,Drowning (includes water transport),73,"2,868,312",2.55,2.56,"2,320"
+Mississippi,2003,Fall,169,"2,868,312",5.89,6.22,580
+Mississippi,2003,Fire/Flame,89,"2,868,312",3.1,3.16,"1,794"
+Mississippi,2003,Hot object/Substance,--,"2,868,312",--,--,--
+Mississippi,2003,Firearm,477,"2,868,312",16.63,16.81,"11,401"
+Mississippi,2003,Machinery,--,"2,868,312",--,--,--
+Mississippi,2003,Natural/Environmental,26,"2,868,312",0.91,0.93,241
+Mississippi,2003,Drug Poisoning,207,"2,868,312",7.22,7.47,"5,128"
+Mississippi,2003,Non-Drug Poisoning,16**,"2,868,312",0.56**,0.56**,374
+Mississippi,2003,Struck by / against,22,"2,868,312",0.77,0.78,505
+Mississippi,2003,Suffocation,161,"2,868,312",5.61,5.75,"3,325"
+Mississippi,2003,"Motor vehicle, traffic",877,"2,868,312",30.58,30.74,"23,343"
+Mississippi,2003,"Pedestrian, other",--,"2,868,312",--,--,--
+Mississippi,2003,"Transport, other land",18**,"2,868,312",0.63**,0.60**,341
+Mississippi,2003,"Transport, other (excl. drown by water transp)",10**,"2,868,312",0.35**,0.35**,250
+Mississippi,2003,Other specified and classifiable,29,"2,868,312",1.01,1.03,620
+Mississippi,2003,Other specified / NEC,30,"2,868,312",1.05,1.07,611
+Mississippi,2003,Unspecified,66,"2,868,312",2.3,2.34,867
+Mississippi,2002,Cut/Pierce,52,"2,858,681",1.82,1.84,"1,062"
+Mississippi,2002,Drowning (includes water transport),72,"2,858,681",2.52,2.55,"2,269"
+Mississippi,2002,Fall,183,"2,858,681",6.4,6.78,733
+Mississippi,2002,Fire/Flame,118,"2,858,681",4.13,4.2,"3,224"
+Mississippi,2002,Hot object/Substance,--,"2,858,681",--,--,--
+Mississippi,2002,Firearm,492,"2,858,681",17.21,17.34,"13,385"
+Mississippi,2002,Machinery,--,"2,858,681",--,--,--
+Mississippi,2002,Natural/Environmental,17**,"2,858,681",0.60**,0.63**,222
+Mississippi,2002,Overexertion,--,"2,858,681",--,--,--
+Mississippi,2002,Drug Poisoning,183,"2,858,681",6.4,6.62,"4,766"
+Mississippi,2002,Non-Drug Poisoning,15**,"2,858,681",0.53**,0.55**,415
+Mississippi,2002,Struck by / against,27,"2,858,681",0.94,0.96,561
+Mississippi,2002,Suffocation,128,"2,858,681",4.48,4.63,"2,421"
+Mississippi,2002,"Motor vehicle, traffic",854,"2,858,681",29.87,29.97,"22,874"
+Mississippi,2002,"Pedal cyclist, other",--,"2,858,681",--,--,--
+Mississippi,2002,"Pedestrian, other",18**,"2,858,681",0.63**,0.62**,656
+Mississippi,2002,"Transport, other land",22,"2,858,681",0.77,0.76,533
+Mississippi,2002,"Transport, other (excl. drown by water transp)",--,"2,858,681",--,--,--
+Mississippi,2002,Other specified and classifiable,45,"2,858,681",1.57,1.61,"1,123"
+Mississippi,2002,Other specified / NEC,21,"2,858,681",0.74,0.76,497
+Mississippi,2002,Unspecified,68,"2,858,681",2.38,2.48,792
+Mississippi,2001,Cut/Pierce,47,"2,852,994",1.65,1.7,"1,259"
+Mississippi,2001,Drowning (includes water transport),95,"2,852,994",3.33,3.32,"3,488"
+Mississippi,2001,Fall,172,"2,852,994",6.03,6.36,465
+Mississippi,2001,Fire/Flame,87,"2,852,994",3.05,3.11,"2,348"
+Mississippi,2001,Hot object/Substance,--,"2,852,994",--,--,--
+Mississippi,2001,Firearm,502,"2,852,994",17.6,17.64,"13,215"
+Mississippi,2001,Machinery,--,"2,852,994",--,--,--
+Mississippi,2001,Natural/Environmental,28,"2,852,994",0.98,1,421
+Mississippi,2001,Overexertion,--,"2,852,994",--,--,--
+Mississippi,2001,Drug Poisoning,169,"2,852,994",5.92,6.18,"4,257"
+Mississippi,2001,Non-Drug Poisoning,13**,"2,852,994",0.46**,0.46**,278
+Mississippi,2001,Struck by / against,32,"2,852,994",1.12,1.15,656
+Mississippi,2001,Suffocation,161,"2,852,994",5.64,5.75,"3,498"
+Mississippi,2001,"Motor vehicle, traffic",791,"2,852,994",27.73,27.84,"21,926"
+Mississippi,2001,"Pedal cyclist, other",--,"2,852,994",--,--,--
+Mississippi,2001,"Pedestrian, other",20**,"2,852,994",0.70**,0.71**,477
+Mississippi,2001,"Transport, other land",31,"2,852,994",1.09,1.09,880
+Mississippi,2001,"Transport, other (excl. drown by water transp)",--,"2,852,994",--,--,--
+Mississippi,2001,Other specified and classifiable,33,"2,852,994",1.16,1.18,893
+Mississippi,2001,Other specified / NEC,15**,"2,852,994",0.53**,0.53**,212
+Mississippi,2001,Unspecified,64,"2,852,994",2.24,2.33,761
+Total,,,"54,129","61,867,895",87.49,87.65,"1,165,687"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Mississippi,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

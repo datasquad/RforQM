@@ -1,0 +1,435 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Arkansas,2021,Cut/Pierce,38,"3,025,891",1.26,1.25,816
+Arkansas,2021,Drowning (includes water transport),75,"3,025,891",2.48,2.44,"2,181"
+Arkansas,2021,Fall,288,"3,025,891",9.52,8.09,886
+Arkansas,2021,Fire/Flame,88,"3,025,891",2.91,2.64,"1,401"
+Arkansas,2021,Hot object/Substance,--,"3,025,891",--,--,--
+Arkansas,2021,Firearm,698,"3,025,891",23.07,23.26,"16,741"
+Arkansas,2021,Machinery,--,"3,025,891",--,--,--
+Arkansas,2021,Natural/Environmental,29,"3,025,891",0.96,0.8,231
+Arkansas,2021,Drug Poisoning,637,"3,025,891",21.05,22.33,"15,309"
+Arkansas,2021,Non-Drug Poisoning,60,"3,025,891",1.98,2.06,"1,274"
+Arkansas,2021,Struck by / against,19**,"3,025,891",0.63**,0.61**,385
+Arkansas,2021,Suffocation,229,"3,025,891",7.57,7.7,"4,600"
+Arkansas,2021,"Motor vehicle, traffic",697,"3,025,891",23.04,22.88,"14,878"
+Arkansas,2021,"Pedal cyclist, other",--,"3,025,891",--,--,--
+Arkansas,2021,"Pedestrian, other",14**,"3,025,891",0.46**,0.46**,283
+Arkansas,2021,"Transport, other land",31,"3,025,891",1.02,1.06,812
+Arkansas,2021,"Transport, other (excl. drown by water transp)",12**,"3,025,891",0.40**,0.35**,143
+Arkansas,2021,Other specified and classifiable,27,"3,025,891",0.89,0.96,559
+Arkansas,2021,Other specified / NEC,22,"3,025,891",0.73,0.73,431
+Arkansas,2021,Unspecified,112,"3,025,891",3.7,3.26,974
+Arkansas,2020,Cut/Pierce,54,"3,012,232",1.79,1.72,907
+Arkansas,2020,Drowning (includes water transport),69,"3,012,232",2.29,2.38,"1,985"
+Arkansas,2020,Fall,250,"3,012,232",8.3,6.83,583
+Arkansas,2020,Fire/Flame,51,"3,012,232",1.69,1.49,634
+Arkansas,2020,Hot object/Substance,--,"3,012,232",--,--,--
+Arkansas,2020,Firearm,673,"3,012,232",22.34,22.73,"16,828"
+Arkansas,2020,Machinery,--,"3,012,232",--,--,--
+Arkansas,2020,Natural/Environmental,21,"3,012,232",0.7,0.62,310
+Arkansas,2020,Drug Poisoning,546,"3,012,232",18.13,19.15,"12,493"
+Arkansas,2020,Non-Drug Poisoning,62,"3,012,232",2.06,2.1,"1,175"
+Arkansas,2020,Struck by / against,23,"3,012,232",0.76,0.69,317
+Arkansas,2020,Suffocation,228,"3,012,232",7.57,7.65,"5,195"
+Arkansas,2020,"Motor vehicle, traffic",652,"3,012,232",21.65,21.63,"14,855"
+Arkansas,2020,"Pedal cyclist, other",--,"3,012,232",--,--,--
+Arkansas,2020,"Pedestrian, other",11**,"3,012,232",0.37**,0.34**,250
+Arkansas,2020,"Transport, other land",33,"3,012,232",1.1,1.09,676
+Arkansas,2020,"Transport, other (excl. drown by water transp)",--,"3,012,232",--,--,--
+Arkansas,2020,Other specified and classifiable,13**,"3,012,232",0.43**,0.43**,240
+Arkansas,2020,Other specified / NEC,20**,"3,012,232",0.66**,0.62**,301
+Arkansas,2020,Unspecified,134,"3,012,232",4.45,3.91,"1,293"
+Arkansas,2019,Cut/Pierce,31,"3,020,985",1.03,1.01,702
+Arkansas,2019,Drowning (includes water transport),59,"3,020,985",1.95,1.94,"1,494"
+Arkansas,2019,Fall,236,"3,020,985",7.81,6.3,584
+Arkansas,2019,Fire/Flame,60,"3,020,985",1.99,1.78,923
+Arkansas,2019,Firearm,580,"3,020,985",19.2,19.24,"13,915"
+Arkansas,2019,Machinery,--,"3,020,985",--,--,--
+Arkansas,2019,Natural/Environmental,30,"3,020,985",0.99,0.9,314
+Arkansas,2019,Drug Poisoning,388,"3,020,985",12.84,13.56,"8,941"
+Arkansas,2019,Non-Drug Poisoning,55,"3,020,985",1.82,1.84,"1,139"
+Arkansas,2019,Struck by / against,18**,"3,020,985",0.60**,0.53**,310
+Arkansas,2019,Suffocation,216,"3,020,985",7.15,7.05,"4,730"
+Arkansas,2019,"Motor vehicle, traffic",534,"3,020,985",17.68,17.41,"11,582"
+Arkansas,2019,"Pedal cyclist, other",--,"3,020,985",--,--,--
+Arkansas,2019,"Pedestrian, other",10**,"3,020,985",0.33**,0.33**,288
+Arkansas,2019,"Transport, other land",27,"3,020,985",0.89,0.86,576
+Arkansas,2019,"Transport, other (excl. drown by water transp)",--,"3,020,985",--,--,--
+Arkansas,2019,Other specified and classifiable,19**,"3,020,985",0.63**,0.57**,346
+Arkansas,2019,Other specified / NEC,21,"3,020,985",0.7,0.62,344
+Arkansas,2019,Unspecified,124,"3,020,985",4.11,3.46,"1,066"
+Arkansas,2018,Cut/Pierce,34,"3,012,161",1.13,1.13,753
+Arkansas,2018,Drowning (includes water transport),51,"3,012,161",1.69,1.75,"1,620"
+Arkansas,2018,Fall,253,"3,012,161",8.4,6.86,672
+Arkansas,2018,Fire/Flame,55,"3,012,161",1.83,1.66,778
+Arkansas,2018,Hot object/Substance,--,"3,012,161",--,--,--
+Arkansas,2018,Firearm,573,"3,012,161",19.02,18.97,"13,271"
+Arkansas,2018,Machinery,12**,"3,012,161",0.40**,0.37**,108
+Arkansas,2018,Natural/Environmental,32,"3,012,161",1.06,0.96,444
+Arkansas,2018,Drug Poisoning,444,"3,012,161",14.74,15.75,"10,404"
+Arkansas,2018,Non-Drug Poisoning,50,"3,012,161",1.66,1.68,"1,018"
+Arkansas,2018,Struck by / against,19**,"3,012,161",0.63**,0.60**,328
+Arkansas,2018,Suffocation,211,"3,012,161",7.01,6.98,"4,827"
+Arkansas,2018,"Motor vehicle, traffic",535,"3,012,161",17.76,17.26,"11,803"
+Arkansas,2018,"Pedestrian, other",--,"3,012,161",--,--,--
+Arkansas,2018,"Transport, other land",19**,"3,012,161",0.63**,0.66**,384
+Arkansas,2018,"Transport, other (excl. drown by water transp)",--,"3,012,161",--,--,--
+Arkansas,2018,Other specified and classifiable,19**,"3,012,161",0.63**,0.66**,541
+Arkansas,2018,Other specified / NEC,26,"3,012,161",0.86,0.72,178
+Arkansas,2018,Unspecified,86,"3,012,161",2.86,2.44,857
+Arkansas,2017,Cut/Pierce,38,"3,003,855",1.27,1.3,820
+Arkansas,2017,Drowning (includes water transport),63,"3,003,855",2.1,2.24,"2,136"
+Arkansas,2017,Fall,308,"3,003,855",10.25,8.54,802
+Arkansas,2017,Fire/Flame,73,"3,003,855",2.43,2.19,853
+Arkansas,2017,Hot object/Substance,--,"3,003,855",--,--,--
+Arkansas,2017,Firearm,613,"3,003,855",20.41,20.24,"13,599"
+Arkansas,2017,Machinery,12**,"3,003,855",0.40**,0.36**,185
+Arkansas,2017,Natural/Environmental,21,"3,003,855",0.7,0.59,218
+Arkansas,2017,Drug Poisoning,446,"3,003,855",14.85,15.53,"10,374"
+Arkansas,2017,Non-Drug Poisoning,61,"3,003,855",2.03,2.1,"1,337"
+Arkansas,2017,Struck by / against,18**,"3,003,855",0.60**,0.53**,269
+Arkansas,2017,Suffocation,228,"3,003,855",7.59,7.76,"6,672"
+Arkansas,2017,"Motor vehicle, traffic",549,"3,003,855",18.28,17.91,"11,943"
+Arkansas,2017,"Pedal cyclist, other",--,"3,003,855",--,--,--
+Arkansas,2017,"Pedestrian, other",--,"3,003,855",--,--,--
+Arkansas,2017,"Transport, other land",31,"3,003,855",1.03,0.94,518
+Arkansas,2017,"Transport, other (excl. drown by water transp)",--,"3,003,855",--,--,--
+Arkansas,2017,Other specified and classifiable,22,"3,003,855",0.73,0.8,744
+Arkansas,2017,Other specified / NEC,18**,"3,003,855",0.60**,0.56**,276
+Arkansas,2017,Unspecified,99,"3,003,855",3.3,2.93,"1,290"
+Arkansas,2016,Cut/Pierce,35,"2,991,815",1.17,1.17,734
+Arkansas,2016,Drowning (includes water transport),71,"2,991,815",2.37,2.44,"2,012"
+Arkansas,2016,Fall,250,"2,991,815",8.36,6.98,801
+Arkansas,2016,Fire/Flame,64,"2,991,815",2.14,1.98,"1,049"
+Arkansas,2016,Hot object/Substance,--,"2,991,815",--,--,--
+Arkansas,2016,Firearm,541,"2,991,815",18.08,17.7,"11,677"
+Arkansas,2016,Machinery,--,"2,991,815",--,--,--
+Arkansas,2016,Natural/Environmental,18**,"2,991,815",0.60**,0.59**,372
+Arkansas,2016,Overexertion,--,"2,991,815",--,--,--
+Arkansas,2016,Drug Poisoning,401,"2,991,815",13.4,14.02,"8,883"
+Arkansas,2016,Non-Drug Poisoning,75,"2,991,815",2.51,2.73,"1,492"
+Arkansas,2016,Struck by / against,19**,"2,991,815",0.64**,0.54**,379
+Arkansas,2016,Suffocation,215,"2,991,815",7.19,7.33,"5,435"
+Arkansas,2016,"Motor vehicle, traffic",608,"2,991,815",20.32,19.9,"13,114"
+Arkansas,2016,"Pedal cyclist, other",--,"2,991,815",--,--,--
+Arkansas,2016,"Pedestrian, other",16**,"2,991,815",0.54**,0.57**,507
+Arkansas,2016,"Transport, other land",21,"2,991,815",0.7,0.68,337
+Arkansas,2016,"Transport, other (excl. drown by water transp)",10**,"2,991,815",0.33**,0.26**,53
+Arkansas,2016,Other specified and classifiable,18**,"2,991,815",0.60**,0.66**,535
+Arkansas,2016,Other specified / NEC,17**,"2,991,815",0.57**,0.56**,339
+Arkansas,2016,Unspecified,110,"2,991,815",3.68,3.32,"1,132"
+Arkansas,2015,Cut/Pierce,31,"2,979,732",1.04,1.06,773
+Arkansas,2015,Drowning (includes water transport),53,"2,979,732",1.78,1.78,"1,460"
+Arkansas,2015,Fall,274,"2,979,732",9.2,7.83,626
+Arkansas,2015,Fire/Flame,74,"2,979,732",2.48,2.22,"1,047"
+Arkansas,2015,Hot object/Substance,--,"2,979,732",--,--,--
+Arkansas,2015,Firearm,520,"2,979,732",17.45,16.89,"11,221"
+Arkansas,2015,Machinery,--,"2,979,732",--,--,--
+Arkansas,2015,Natural/Environmental,35,"2,979,732",1.18,1.11,615
+Arkansas,2015,Drug Poisoning,392,"2,979,732",13.16,13.83,"8,439"
+Arkansas,2015,Non-Drug Poisoning,51,"2,979,732",1.71,1.88,"1,166"
+Arkansas,2015,Struck by / against,17**,"2,979,732",0.57**,0.50**,248
+Arkansas,2015,Suffocation,209,"2,979,732",7.01,7.08,"4,849"
+Arkansas,2015,"Motor vehicle, traffic",572,"2,979,732",19.2,18.8,"13,037"
+Arkansas,2015,"Pedal cyclist, other",--,"2,979,732",--,--,--
+Arkansas,2015,"Pedestrian, other",14**,"2,979,732",0.47**,0.50**,514
+Arkansas,2015,"Transport, other land",20**,"2,979,732",0.67**,0.64**,355
+Arkansas,2015,"Transport, other (excl. drown by water transp)",--,"2,979,732",--,--,--
+Arkansas,2015,Other specified and classifiable,22,"2,979,732",0.74,0.68,512
+Arkansas,2015,Other specified / NEC,17**,"2,979,732",0.57**,0.53**,196
+Arkansas,2015,Unspecified,93,"2,979,732",3.12,2.67,968
+Arkansas,2014,Cut/Pierce,36,"2,968,759",1.21,1.18,728
+Arkansas,2014,Drowning (includes water transport),52,"2,968,759",1.75,1.82,"1,503"
+Arkansas,2014,Fall,240,"2,968,759",8.08,6.99,538
+Arkansas,2014,Fire/Flame,64,"2,968,759",2.16,1.96,951
+Arkansas,2014,Hot object/Substance,--,"2,968,759",--,--,--
+Arkansas,2014,Firearm,496,"2,968,759",16.71,16.49,"10,527"
+Arkansas,2014,Machinery,10**,"2,968,759",0.34**,0.30**,121
+Arkansas,2014,Natural/Environmental,32,"2,968,759",1.08,0.98,567
+Arkansas,2014,Drug Poisoning,356,"2,968,759",11.99,12.59,"8,208"
+Arkansas,2014,Non-Drug Poisoning,58,"2,968,759",1.95,2.04,"1,215"
+Arkansas,2014,Struck by / against,19**,"2,968,759",0.64**,0.54**,275
+Arkansas,2014,Suffocation,210,"2,968,759",7.07,6.94,"4,097"
+Arkansas,2014,"Motor vehicle, traffic",506,"2,968,759",17.04,17.03,"11,409"
+Arkansas,2014,"Pedal cyclist, other",--,"2,968,759",--,--,--
+Arkansas,2014,"Pedestrian, other",16**,"2,968,759",0.54**,0.53**,453
+Arkansas,2014,"Transport, other land",20**,"2,968,759",0.67**,0.71**,369
+Arkansas,2014,"Transport, other (excl. drown by water transp)",--,"2,968,759",--,--,--
+Arkansas,2014,Other specified and classifiable,22,"2,968,759",0.74,0.73,615
+Arkansas,2014,Other specified / NEC,18**,"2,968,759",0.61**,0.60**,379
+Arkansas,2014,Unspecified,117,"2,968,759",3.94,3.49,818
+Arkansas,2013,Cut/Pierce,40,"2,960,459",1.35,1.38,803
+Arkansas,2013,Drowning (includes water transport),52,"2,960,459",1.76,1.76,"1,578"
+Arkansas,2013,Fall,236,"2,960,459",7.97,6.95,623
+Arkansas,2013,Fire/Flame,58,"2,960,459",1.96,1.87,892
+Arkansas,2013,Hot object/Substance,--,"2,960,459",--,--,--
+Arkansas,2013,Firearm,501,"2,960,459",16.92,16.69,"11,162"
+Arkansas,2013,Machinery,12**,"2,960,459",0.41**,0.35**,154
+Arkansas,2013,Natural/Environmental,22,"2,960,459",0.74,0.67,250
+Arkansas,2013,Drug Poisoning,319,"2,960,459",10.78,11.04,"7,298"
+Arkansas,2013,Non-Drug Poisoning,44,"2,960,459",1.49,1.46,849
+Arkansas,2013,Struck by / against,14**,"2,960,459",0.47**,0.46**,336
+Arkansas,2013,Suffocation,198,"2,960,459",6.69,6.61,"4,515"
+Arkansas,2013,"Motor vehicle, traffic",509,"2,960,459",17.19,17.4,"12,489"
+Arkansas,2013,"Pedal cyclist, other",--,"2,960,459",--,--,--
+Arkansas,2013,"Pedestrian, other",12**,"2,960,459",0.41**,0.36**,197
+Arkansas,2013,"Transport, other land",28,"2,960,459",0.95,0.9,603
+Arkansas,2013,"Transport, other (excl. drown by water transp)",--,"2,960,459",--,--,--
+Arkansas,2013,Other specified and classifiable,29,"2,960,459",0.98,0.94,656
+Arkansas,2013,Other specified / NEC,14**,"2,960,459",0.47**,0.44**,269
+Arkansas,2013,Unspecified,90,"2,960,459",3.04,2.75,871
+Arkansas,2012,Cut/Pierce,52,"2,952,876",1.76,1.84,"1,184"
+Arkansas,2012,Drowning (includes water transport),60,"2,952,876",2.03,2.07,"2,075"
+Arkansas,2012,Fall,250,"2,952,876",8.47,7.53,648
+Arkansas,2012,Fire/Flame,71,"2,952,876",2.4,2.18,"1,161"
+Arkansas,2012,Hot object/Substance,--,"2,952,876",--,--,--
+Arkansas,2012,Firearm,490,"2,952,876",16.59,16.51,"11,230"
+Arkansas,2012,Machinery,14**,"2,952,876",0.47**,0.42**,113
+Arkansas,2012,Natural/Environmental,20**,"2,952,876",0.68**,0.66**,365
+Arkansas,2012,Overexertion,--,"2,952,876",--,--,--
+Arkansas,2012,Drug Poisoning,373,"2,952,876",12.63,13.16,"8,664"
+Arkansas,2012,Non-Drug Poisoning,47,"2,952,876",1.59,1.61,929
+Arkansas,2012,Struck by / against,20**,"2,952,876",0.68**,0.60**,300
+Arkansas,2012,Suffocation,165,"2,952,876",5.59,5.58,"3,793"
+Arkansas,2012,"Motor vehicle, traffic",584,"2,952,876",19.78,19.3,"13,682"
+Arkansas,2012,"Pedal cyclist, other",--,"2,952,876",--,--,--
+Arkansas,2012,"Pedestrian, other",14**,"2,952,876",0.47**,0.48**,416
+Arkansas,2012,"Transport, other land",28,"2,952,876",0.95,0.95,739
+Arkansas,2012,"Transport, other (excl. drown by water transp)",--,"2,952,876",--,--,--
+Arkansas,2012,Other specified and classifiable,29,"2,952,876",0.98,0.99,750
+Arkansas,2012,Other specified / NEC,18**,"2,952,876",0.61**,0.55**,185
+Arkansas,2012,Unspecified,95,"2,952,876",3.22,2.96,"1,198"
+Arkansas,2011,Cut/Pierce,32,"2,941,038",1.09,1.07,783
+Arkansas,2011,Drowning (includes water transport),68,"2,941,038",2.31,2.3,"2,116"
+Arkansas,2011,Fall,224,"2,941,038",7.62,6.77,697
+Arkansas,2011,Fire/Flame,48,"2,941,038",1.63,1.53,888
+Arkansas,2011,Hot object/Substance,--,"2,941,038",--,--,--
+Arkansas,2011,Firearm,462,"2,941,038",15.71,16,"11,037"
+Arkansas,2011,Machinery,--,"2,941,038",--,--,--
+Arkansas,2011,Natural/Environmental,54,"2,941,038",1.84,1.69,856
+Arkansas,2011,Drug Poisoning,355,"2,941,038",12.07,12.6,"8,435"
+Arkansas,2011,Non-Drug Poisoning,52,"2,941,038",1.77,1.73,880
+Arkansas,2011,Struck by / against,18**,"2,941,038",0.61**,0.59**,365
+Arkansas,2011,Suffocation,186,"2,941,038",6.32,6.21,"3,720"
+Arkansas,2011,"Motor vehicle, traffic",573,"2,941,038",19.48,19.51,"13,545"
+Arkansas,2011,"Pedal cyclist, other",--,"2,941,038",--,--,--
+Arkansas,2011,"Pedestrian, other",18**,"2,941,038",0.61**,0.58**,393
+Arkansas,2011,"Transport, other land",20**,"2,941,038",0.68**,0.70**,522
+Arkansas,2011,"Transport, other (excl. drown by water transp)",--,"2,941,038",--,--,--
+Arkansas,2011,Other specified and classifiable,18**,"2,941,038",0.61**,0.63**,420
+Arkansas,2011,Other specified / NEC,19**,"2,941,038",0.65**,0.60**,253
+Arkansas,2011,Unspecified,88,"2,941,038",2.99,2.74,962
+Arkansas,2010,Cut/Pierce,22,"2,916,029",0.75,0.76,481
+Arkansas,2010,Drowning (includes water transport),68,"2,916,029",2.33,2.39,"2,071"
+Arkansas,2010,Fall,229,"2,916,029",7.85,7.17,690
+Arkansas,2010,Fire/Flame,40,"2,916,029",1.37,1.34,904
+Arkansas,2010,Firearm,419,"2,916,029",14.37,14.39,"9,250"
+Arkansas,2010,Machinery,11**,"2,916,029",0.38**,0.33**,51
+Arkansas,2010,Natural/Environmental,42,"2,916,029",1.44,1.41,489
+Arkansas,2010,Overexertion,--,"2,916,029",--,--,--
+Arkansas,2010,Drug Poisoning,350,"2,916,029",12,12.54,"8,508"
+Arkansas,2010,Non-Drug Poisoning,47,"2,916,029",1.61,1.67,963
+Arkansas,2010,Struck by / against,13**,"2,916,029",0.45**,0.47**,361
+Arkansas,2010,Suffocation,192,"2,916,029",6.58,6.61,"3,945"
+Arkansas,2010,"Motor vehicle, traffic",573,"2,916,029",19.65,19.48,"14,572"
+Arkansas,2010,"Pedal cyclist, other",--,"2,916,029",--,--,--
+Arkansas,2010,"Pedestrian, other",16**,"2,916,029",0.55**,0.54**,316
+Arkansas,2010,"Transport, other land",35,"2,916,029",1.2,1.17,747
+Arkansas,2010,"Transport, other (excl. drown by water transp)",15**,"2,916,029",0.51**,0.53**,352
+Arkansas,2010,Other specified and classifiable,23,"2,916,029",0.79,0.79,587
+Arkansas,2010,Other specified / NEC,22,"2,916,029",0.75,0.74,402
+Arkansas,2010,Unspecified,76,"2,916,029",2.61,2.37,863
+Arkansas,2009,Cut/Pierce,28,"2,896,843",0.97,1,661
+Arkansas,2009,Drowning (includes water transport),80,"2,896,843",2.76,2.81,"2,265"
+Arkansas,2009,Fall,198,"2,896,843",6.84,6.27,609
+Arkansas,2009,Fire/Flame,80,"2,896,843",2.76,2.63,"1,767"
+Arkansas,2009,Firearm,465,"2,896,843",16.05,16.03,"11,051"
+Arkansas,2009,Machinery,13**,"2,896,843",0.45**,0.42**,148
+Arkansas,2009,Natural/Environmental,25,"2,896,843",0.86,0.79,313
+Arkansas,2009,Drug Poisoning,351,"2,896,843",12.12,12.66,"8,220"
+Arkansas,2009,Non-Drug Poisoning,61,"2,896,843",2.11,2.14,"1,213"
+Arkansas,2009,Struck by / against,21,"2,896,843",0.73,0.67,303
+Arkansas,2009,Suffocation,160,"2,896,843",5.52,5.49,"3,191"
+Arkansas,2009,"Motor vehicle, traffic",606,"2,896,843",20.92,20.76,"14,273"
+Arkansas,2009,"Pedal cyclist, other",--,"2,896,843",--,--,--
+Arkansas,2009,"Pedestrian, other",12**,"2,896,843",0.41**,0.42**,250
+Arkansas,2009,"Transport, other land",35,"2,896,843",1.21,1.22,969
+Arkansas,2009,"Transport, other (excl. drown by water transp)",--,"2,896,843",--,--,--
+Arkansas,2009,Other specified and classifiable,--,"2,896,843",--,--,--
+Arkansas,2009,Other specified / NEC,14**,"2,896,843",0.48**,0.45**,174
+Arkansas,2009,Unspecified,78,"2,896,843",2.69,2.59,941
+Arkansas,2008,Cut/Pierce,29,"2,874,554",1.01,1,581
+Arkansas,2008,Drowning (includes water transport),63,"2,874,554",2.19,2.18,"1,790"
+Arkansas,2008,Fall,185,"2,874,554",6.44,5.92,525
+Arkansas,2008,Fire/Flame,74,"2,874,554",2.57,2.48,"1,193"
+Arkansas,2008,Hot object/Substance,--,"2,874,554",--,--,--
+Arkansas,2008,Firearm,444,"2,874,554",15.45,15.6,"10,137"
+Arkansas,2008,Machinery,--,"2,874,554",--,--,--
+Arkansas,2008,Natural/Environmental,46,"2,874,554",1.6,1.56,780
+Arkansas,2008,Drug Poisoning,360,"2,874,554",12.52,13.08,"8,962"
+Arkansas,2008,Non-Drug Poisoning,50,"2,874,554",1.74,1.73,"1,103"
+Arkansas,2008,Struck by / against,20**,"2,874,554",0.70**,0.71**,595
+Arkansas,2008,Suffocation,163,"2,874,554",5.67,5.55,"4,021"
+Arkansas,2008,"Motor vehicle, traffic",617,"2,874,554",21.46,21.32,"15,672"
+Arkansas,2008,"Pedal cyclist, other",--,"2,874,554",--,--,--
+Arkansas,2008,"Pedestrian, other",11**,"2,874,554",0.38**,0.40**,260
+Arkansas,2008,"Transport, other land",26,"2,874,554",0.9,0.9,762
+Arkansas,2008,"Transport, other (excl. drown by water transp)",--,"2,874,554",--,--,--
+Arkansas,2008,Other specified and classifiable,26,"2,874,554",0.9,0.93,718
+Arkansas,2008,Other specified / NEC,20**,"2,874,554",0.70**,0.66**,300
+Arkansas,2008,Unspecified,113,"2,874,554",3.93,3.7,"1,568"
+Arkansas,2007,Cut/Pierce,30,"2,848,650",1.05,1.07,571
+Arkansas,2007,Drowning (includes water transport),69,"2,848,650",2.42,2.44,"2,480"
+Arkansas,2007,Fall,186,"2,848,650",6.53,6,566
+Arkansas,2007,Fire/Flame,69,"2,848,650",2.42,2.32,"1,276"
+Arkansas,2007,Hot object/Substance,--,"2,848,650",--,--,--
+Arkansas,2007,Firearm,426,"2,848,650",14.95,15.09,"10,172"
+Arkansas,2007,Machinery,--,"2,848,650",--,--,--
+Arkansas,2007,Natural/Environmental,15**,"2,848,650",0.53**,0.50**,151
+Arkansas,2007,Drug Poisoning,301,"2,848,650",10.57,10.86,"7,453"
+Arkansas,2007,Non-Drug Poisoning,58,"2,848,650",2.04,2.09,"1,116"
+Arkansas,2007,Struck by / against,21,"2,848,650",0.74,0.7,281
+Arkansas,2007,Suffocation,175,"2,848,650",6.14,6.17,"3,340"
+Arkansas,2007,"Motor vehicle, traffic",646,"2,848,650",22.68,22.38,"16,894"
+Arkansas,2007,"Pedal cyclist, other",--,"2,848,650",--,--,--
+Arkansas,2007,"Pedestrian, other",12**,"2,848,650",0.42**,0.42**,401
+Arkansas,2007,"Transport, other land",30,"2,848,650",1.05,1.07,884
+Arkansas,2007,"Transport, other (excl. drown by water transp)",--,"2,848,650",--,--,--
+Arkansas,2007,Other specified and classifiable,20**,"2,848,650",0.70**,0.72**,431
+Arkansas,2007,Other specified / NEC,13**,"2,848,650",0.46**,0.42**,287
+Arkansas,2007,Unspecified,115,"2,848,650",4.04,3.83,"1,937"
+Arkansas,2006,Cut/Pierce,26,"2,821,761",0.92,0.96,634
+Arkansas,2006,Drowning (includes water transport),55,"2,821,761",1.95,1.95,"1,758"
+Arkansas,2006,Fall,181,"2,821,761",6.41,6.02,"1,092"
+Arkansas,2006,Fire/Flame,59,"2,821,761",2.09,2.03,857
+Arkansas,2006,Firearm,426,"2,821,761",15.1,15.12,"9,827"
+Arkansas,2006,Machinery,10**,"2,821,761",0.35**,0.33**,236
+Arkansas,2006,Natural/Environmental,16**,"2,821,761",0.57**,0.54**,220
+Arkansas,2006,Overexertion,--,"2,821,761",--,--,--
+Arkansas,2006,Drug Poisoning,285,"2,821,761",10.1,10.47,"7,287"
+Arkansas,2006,Non-Drug Poisoning,38,"2,821,761",1.35,1.37,882
+Arkansas,2006,Struck by / against,11**,"2,821,761",0.39**,0.39**,210
+Arkansas,2006,Suffocation,159,"2,821,761",5.64,5.54,"3,625"
+Arkansas,2006,"Motor vehicle, traffic",701,"2,821,761",24.84,24.9,"19,431"
+Arkansas,2006,"Pedal cyclist, other",--,"2,821,761",--,--,--
+Arkansas,2006,"Pedestrian, other",19**,"2,821,761",0.67**,0.66**,528
+Arkansas,2006,"Transport, other land",30,"2,821,761",1.06,1.01,737
+Arkansas,2006,"Transport, other (excl. drown by water transp)",--,"2,821,761",--,--,--
+Arkansas,2006,Other specified and classifiable,21,"2,821,761",0.74,0.74,479
+Arkansas,2006,Other specified / NEC,23,"2,821,761",0.82,0.77,317
+Arkansas,2006,Unspecified,104,"2,821,761",3.69,3.54,"1,449"
+Arkansas,2005,Cut/Pierce,33,"2,781,097",1.19,1.2,933
+Arkansas,2005,Drowning (includes water transport),73,"2,781,097",2.63,2.63,"2,395"
+Arkansas,2005,Fall,138,"2,781,097",4.96,4.61,554
+Arkansas,2005,Fire/Flame,81,"2,781,097",2.91,2.9,"2,201"
+Arkansas,2005,Hot object/Substance,--,"2,781,097",--,--,--
+Arkansas,2005,Firearm,439,"2,781,097",15.79,15.62,"11,066"
+Arkansas,2005,Machinery,11**,"2,781,097",0.40**,0.43**,235
+Arkansas,2005,Natural/Environmental,15**,"2,781,097",0.54**,0.49**,169
+Arkansas,2005,Drug Poisoning,269,"2,781,097",9.67,10.07,"6,617"
+Arkansas,2005,Non-Drug Poisoning,35,"2,781,097",1.26,1.25,616
+Arkansas,2005,Struck by / against,13**,"2,781,097",0.47**,0.46**,285
+Arkansas,2005,Suffocation,148,"2,781,097",5.32,5.25,"3,372"
+Arkansas,2005,"Motor vehicle, traffic",674,"2,781,097",24.24,23.89,"17,506"
+Arkansas,2005,"Pedal cyclist, other",--,"2,781,097",--,--,--
+Arkansas,2005,"Pedestrian, other",13**,"2,781,097",0.47**,0.46**,371
+Arkansas,2005,"Transport, other land",22,"2,781,097",0.79,0.8,507
+Arkansas,2005,"Transport, other (excl. drown by water transp)",13**,"2,781,097",0.47**,0.47**,278
+Arkansas,2005,Other specified and classifiable,24,"2,781,097",0.86,0.87,691
+Arkansas,2005,Other specified / NEC,26,"2,781,097",0.94,0.95,633
+Arkansas,2005,Unspecified,62,"2,781,097",2.23,2.11,950
+Arkansas,2004,Cut/Pierce,32,"2,749,686",1.16,1.18,881
+Arkansas,2004,Drowning (includes water transport),53,"2,749,686",1.93,1.95,"1,744"
+Arkansas,2004,Fall,156,"2,749,686",5.67,5.29,671
+Arkansas,2004,Fire/Flame,74,"2,749,686",2.69,2.65,"1,788"
+Arkansas,2004,Hot object/Substance,--,"2,749,686",--,--,--
+Arkansas,2004,Firearm,406,"2,749,686",14.77,14.65,"8,642"
+Arkansas,2004,Machinery,10**,"2,749,686",0.36**,0.36**,248
+Arkansas,2004,Natural/Environmental,17**,"2,749,686",0.62**,0.60**,254
+Arkansas,2004,Drug Poisoning,230,"2,749,686",8.37,8.6,"5,769"
+Arkansas,2004,Non-Drug Poisoning,25,"2,749,686",0.91,0.88,375
+Arkansas,2004,Struck by / against,13**,"2,749,686",0.47**,0.48**,324
+Arkansas,2004,Suffocation,166,"2,749,686",6.04,5.97,"3,351"
+Arkansas,2004,"Motor vehicle, traffic",754,"2,749,686",27.42,27.46,"21,186"
+Arkansas,2004,"Pedal cyclist, other",--,"2,749,686",--,--,--
+Arkansas,2004,"Pedestrian, other",12**,"2,749,686",0.44**,0.41**,183
+Arkansas,2004,"Transport, other land",25,"2,749,686",0.91,0.87,641
+Arkansas,2004,"Transport, other (excl. drown by water transp)",--,"2,749,686",--,--,--
+Arkansas,2004,Other specified and classifiable,33,"2,749,686",1.2,1.21,923
+Arkansas,2004,Other specified / NEC,18**,"2,749,686",0.66**,0.64**,363
+Arkansas,2004,Unspecified,63,"2,749,686",2.29,2.17,798
+Arkansas,2003,Cut/Pierce,33,"2,724,816",1.21,1.24,684
+Arkansas,2003,Drowning (includes water transport),55,"2,724,816",2.02,2.03,"1,483"
+Arkansas,2003,Fall,173,"2,724,816",6.35,5.95,925
+Arkansas,2003,Fire/Flame,58,"2,724,816",2.13,2.06,"1,035"
+Arkansas,2003,Hot object/Substance,--,"2,724,816",--,--,--
+Arkansas,2003,Firearm,413,"2,724,816",15.16,14.96,"9,653"
+Arkansas,2003,Machinery,12**,"2,724,816",0.44**,0.43**,204
+Arkansas,2003,Natural/Environmental,18**,"2,724,816",0.66**,0.64**,285
+Arkansas,2003,Overexertion,--,"2,724,816",--,--,--
+Arkansas,2003,Drug Poisoning,184,"2,724,816",6.75,7.06,"4,601"
+Arkansas,2003,Non-Drug Poisoning,35,"2,724,816",1.28,1.26,790
+Arkansas,2003,Struck by / against,15**,"2,724,816",0.55**,0.54**,268
+Arkansas,2003,Suffocation,127,"2,724,816",4.66,4.56,"2,963"
+Arkansas,2003,"Motor vehicle, traffic",695,"2,724,816",25.51,25.28,"18,894"
+Arkansas,2003,"Pedal cyclist, other",--,"2,724,816",--,--,--
+Arkansas,2003,"Pedestrian, other",11**,"2,724,816",0.40**,0.38**,321
+Arkansas,2003,"Transport, other land",27,"2,724,816",0.99,1.01,809
+Arkansas,2003,"Transport, other (excl. drown by water transp)",--,"2,724,816",--,--,--
+Arkansas,2003,Other specified and classifiable,18**,"2,724,816",0.66**,0.65**,343
+Arkansas,2003,Other specified / NEC,14**,"2,724,816",0.51**,0.50**,131
+Arkansas,2003,Unspecified,94,"2,724,816",3.45,3.29,"1,208"
+Arkansas,2002,Cut/Pierce,17**,"2,705,927",0.63**,0.62**,377
+Arkansas,2002,Drowning (includes water transport),81,"2,705,927",2.99,2.99,"2,266"
+Arkansas,2002,Fall,174,"2,705,927",6.43,5.93,865
+Arkansas,2002,Fire/Flame,60,"2,705,927",2.22,2.16,"1,358"
+Arkansas,2002,Firearm,441,"2,705,927",16.3,16.29,"11,053"
+Arkansas,2002,Machinery,--,"2,705,927",--,--,--
+Arkansas,2002,Natural/Environmental,12**,"2,705,927",0.44**,0.44**,129
+Arkansas,2002,Drug Poisoning,176,"2,705,927",6.5,6.8,"4,544"
+Arkansas,2002,Non-Drug Poisoning,29,"2,705,927",1.07,1.06,607
+Arkansas,2002,Struck by / against,11**,"2,705,927",0.41**,0.42**,275
+Arkansas,2002,Suffocation,153,"2,705,927",5.65,5.56,"3,580"
+Arkansas,2002,"Motor vehicle, traffic",673,"2,705,927",24.87,24.66,"18,262"
+Arkansas,2002,"Pedal cyclist, other",--,"2,705,927",--,--,--
+Arkansas,2002,"Pedestrian, other",17**,"2,705,927",0.63**,0.66**,586
+Arkansas,2002,"Transport, other land",24,"2,705,927",0.89,0.87,550
+Arkansas,2002,"Transport, other (excl. drown by water transp)",12**,"2,705,927",0.44**,0.44**,195
+Arkansas,2002,Other specified and classifiable,26,"2,705,927",0.96,0.95,629
+Arkansas,2002,Other specified / NEC,15**,"2,705,927",0.55**,0.54**,371
+Arkansas,2002,Unspecified,72,"2,705,927",2.66,2.56,"1,104"
+Arkansas,2001,Cut/Pierce,34,"2,691,571",1.26,1.28,902
+Arkansas,2001,Drowning (includes water transport),60,"2,691,571",2.23,2.24,"2,038"
+Arkansas,2001,Fall,142,"2,691,571",5.28,4.91,681
+Arkansas,2001,Fire/Flame,102,"2,691,571",3.79,3.78,"2,842"
+Arkansas,2001,Hot object/Substance,--,"2,691,571",--,--,--
+Arkansas,2001,Firearm,412,"2,691,571",15.31,15.27,"9,845"
+Arkansas,2001,Machinery,--,"2,691,571",--,--,--
+Arkansas,2001,Natural/Environmental,20**,"2,691,571",0.74**,0.70**,164
+Arkansas,2001,Drug Poisoning,126,"2,691,571",4.68,4.86,"3,134"
+Arkansas,2001,Non-Drug Poisoning,22,"2,691,571",0.82,0.83,636
+Arkansas,2001,Struck by / against,14**,"2,691,571",0.52**,0.52**,357
+Arkansas,2001,Suffocation,142,"2,691,571",5.28,5.19,"3,209"
+Arkansas,2001,"Motor vehicle, traffic",641,"2,691,571",23.82,23.6,"17,870"
+Arkansas,2001,"Pedestrian, other",18**,"2,691,571",0.67**,0.68**,451
+Arkansas,2001,"Transport, other land",24,"2,691,571",0.89,0.88,678
+Arkansas,2001,"Transport, other (excl. drown by water transp)",--,"2,691,571",--,--,--
+Arkansas,2001,Other specified and classifiable,17**,"2,691,571",0.63**,0.65**,466
+Arkansas,2001,Other specified / NEC,21,"2,691,571",0.78,0.76,415
+Arkansas,2001,Unspecified,109,"2,691,571",4.05,3.9,"1,684"
+Total,,,"48,582","60,880,737",79.8,78.72,"1,019,559"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Arkansas,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

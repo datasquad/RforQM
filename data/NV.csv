@@ -1,0 +1,428 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Nevada,2021,Cut/Pierce,33,"3,143,991",1.05,1.04,662
+Nevada,2021,Drowning (includes water transport),64,"3,143,991",2.04,2.04,"1,620"
+Nevada,2021,Fall,405,"3,143,991",12.88,12.21,"1,269"
+Nevada,2021,Fire/Flame,38,"3,143,991",1.21,1.11,703
+Nevada,2021,Hot object/Substance,--,"3,143,991",--,--,--
+Nevada,2021,Firearm,633,"3,143,991",20.13,19.76,"13,895"
+Nevada,2021,Machinery,--,"3,143,991",--,--,--
+Nevada,2021,Natural/Environmental,106,"3,143,991",3.37,2.76,729
+Nevada,2021,Overexertion,--,"3,143,991",--,--,--
+Nevada,2021,Drug Poisoning,949,"3,143,991",30.19,29.07,"19,804"
+Nevada,2021,Non-Drug Poisoning,42,"3,143,991",1.34,1.27,799
+Nevada,2021,Struck by / against,--,"3,143,991",--,--,--
+Nevada,2021,Suffocation,203,"3,143,991",6.46,6.53,"5,158"
+Nevada,2021,"Motor vehicle, traffic",399,"3,143,991",12.69,12.04,"8,352"
+Nevada,2021,"Pedal cyclist, other",--,"3,143,991",--,--,--
+Nevada,2021,"Pedestrian, other",--,"3,143,991",--,--,--
+Nevada,2021,"Transport, other land",19**,"3,143,991",0.60**,0.59**,357
+Nevada,2021,"Transport, other (excl. drown by water transp)",--,"3,143,991",--,--,--
+Nevada,2021,Other specified and classifiable,26,"3,143,991",0.83,0.84,707
+Nevada,2021,Other specified / NEC,17**,"3,143,991",0.54**,0.50**,196
+Nevada,2021,Unspecified,66,"3,143,991",2.1,2,932
+Nevada,2020,Cut/Pierce,36,"3,114,071",1.16,1.2,862
+Nevada,2020,Drowning (includes water transport),63,"3,114,071",2.02,1.91,"1,124"
+Nevada,2020,Fall,353,"3,114,071",11.34,10.96,"1,265"
+Nevada,2020,Fire/Flame,32,"3,114,071",1.03,0.92,354
+Nevada,2020,Firearm,547,"3,114,071",17.57,17.18,"11,231"
+Nevada,2020,Machinery,--,"3,114,071",--,--,--
+Nevada,2020,Natural/Environmental,65,"3,114,071",2.09,1.86,711
+Nevada,2020,Drug Poisoning,832,"3,114,071",26.72,25.97,"18,449"
+Nevada,2020,Non-Drug Poisoning,50,"3,114,071",1.61,1.54,914
+Nevada,2020,Struck by / against,13**,"3,114,071",0.42**,0.36**,116
+Nevada,2020,Suffocation,167,"3,114,071",5.36,5.41,"4,220"
+Nevada,2020,"Motor vehicle, traffic",342,"3,114,071",10.98,10.61,"7,699"
+Nevada,2020,"Pedal cyclist, other",--,"3,114,071",--,--,--
+Nevada,2020,"Pedestrian, other",12**,"3,114,071",0.39**,0.37**,149
+Nevada,2020,"Transport, other land",17**,"3,114,071",0.55**,0.56**,425
+Nevada,2020,"Transport, other (excl. drown by water transp)",--,"3,114,071",--,--,--
+Nevada,2020,Other specified and classifiable,21,"3,114,071",0.67,0.65,345
+Nevada,2020,Other specified / NEC,26,"3,114,071",0.84,0.8,252
+Nevada,2020,Unspecified,60,"3,114,071",1.93,1.8,862
+Nevada,2019,Cut/Pierce,21,"3,090,771",0.68,0.66,360
+Nevada,2019,Drowning (includes water transport),49,"3,090,771",1.59,1.58,"1,390"
+Nevada,2019,Fall,354,"3,090,771",11.45,10.72,"1,108"
+Nevada,2019,Fire/Flame,16**,"3,090,771",0.52**,0.42**,150
+Nevada,2019,Hot object/Substance,--,"3,090,771",--,--,--
+Nevada,2019,Firearm,490,"3,090,771",15.85,15.24,"9,790"
+Nevada,2019,Machinery,--,"3,090,771",--,--,--
+Nevada,2019,Natural/Environmental,47,"3,090,771",1.52,1.3,489
+Nevada,2019,Drug Poisoning,647,"3,090,771",20.93,20.02,"12,325"
+Nevada,2019,Non-Drug Poisoning,41,"3,090,771",1.33,1.23,555
+Nevada,2019,Struck by / against,--,"3,090,771",--,--,--
+Nevada,2019,Suffocation,210,"3,090,771",6.79,6.77,"5,509"
+Nevada,2019,"Motor vehicle, traffic",294,"3,090,771",9.51,9.09,"5,621"
+Nevada,2019,"Pedal cyclist, other",--,"3,090,771",--,--,--
+Nevada,2019,"Pedestrian, other",--,"3,090,771",--,--,--
+Nevada,2019,"Transport, other land",15**,"3,090,771",0.49**,0.45**,291
+Nevada,2019,"Transport, other (excl. drown by water transp)",--,"3,090,771",--,--,--
+Nevada,2019,Other specified and classifiable,24,"3,090,771",0.78,0.74,564
+Nevada,2019,Other specified / NEC,15**,"3,090,771",0.49**,0.42**,185
+Nevada,2019,Unspecified,60,"3,090,771",1.94,1.79,740
+Nevada,2018,Cut/Pierce,35,"3,030,725",1.16,1.08,734
+Nevada,2018,Drowning (includes water transport),38,"3,030,725",1.25,1.17,779
+Nevada,2018,Fall,338,"3,030,725",11.15,10.64,990
+Nevada,2018,Fire/Flame,32,"3,030,725",1.06,0.95,307
+Nevada,2018,Hot object/Substance,--,"3,030,725",--,--,--
+Nevada,2018,Firearm,550,"3,030,725",18.15,17.87,"11,779"
+Nevada,2018,Machinery,--,"3,030,725",--,--,--
+Nevada,2018,Natural/Environmental,79,"3,030,725",2.61,2.38,661
+Nevada,2018,Drug Poisoning,688,"3,030,725",22.7,21.18,"11,915"
+Nevada,2018,Non-Drug Poisoning,37,"3,030,725",1.22,1.18,724
+Nevada,2018,Struck by / against,--,"3,030,725",--,--,--
+Nevada,2018,Suffocation,197,"3,030,725",6.5,6.7,"5,710"
+Nevada,2018,"Motor vehicle, traffic",356,"3,030,725",11.75,11.31,"7,244"
+Nevada,2018,"Pedal cyclist, other",--,"3,030,725",--,--,--
+Nevada,2018,"Pedestrian, other",--,"3,030,725",--,--,--
+Nevada,2018,"Transport, other land",15**,"3,030,725",0.50**,0.51**,276
+Nevada,2018,"Transport, other (excl. drown by water transp)",--,"3,030,725",--,--,--
+Nevada,2018,Other specified and classifiable,17**,"3,030,725",0.56**,0.59**,472
+Nevada,2018,Other specified / NEC,12**,"3,030,725",0.40**,0.36**,243
+Nevada,2018,Unspecified,66,"3,030,725",2.18,2.09,"1,122"
+Nevada,2017,Cut/Pierce,36,"2,972,097",1.21,1.16,830
+Nevada,2017,Drowning (includes water transport),43,"2,972,097",1.45,1.41,"1,148"
+Nevada,2017,Fall,316,"2,972,097",10.63,10.32,"1,181"
+Nevada,2017,Fire/Flame,21,"2,972,097",0.71,0.65,382
+Nevada,2017,Hot object/Substance,--,"2,972,097",--,--,--
+Nevada,2017,Firearm,508,"2,972,097",17.09,16.85,"11,389"
+Nevada,2017,Machinery,--,"2,972,097",--,--,--
+Nevada,2017,Natural/Environmental,79,"2,972,097",2.66,2.45,913
+Nevada,2017,Drug Poisoning,676,"2,972,097",22.75,21.73,"12,258"
+Nevada,2017,Non-Drug Poisoning,53,"2,972,097",1.78,1.72,875
+Nevada,2017,Struck by / against,--,"2,972,097",--,--,--
+Nevada,2017,Suffocation,191,"2,972,097",6.43,6.45,"4,429"
+Nevada,2017,"Motor vehicle, traffic",326,"2,972,097",10.97,10.38,"6,610"
+Nevada,2017,"Pedal cyclist, other",--,"2,972,097",--,--,--
+Nevada,2017,"Pedestrian, other",--,"2,972,097",--,--,--
+Nevada,2017,"Transport, other land",22,"2,972,097",0.74,0.72,429
+Nevada,2017,"Transport, other (excl. drown by water transp)",--,"2,972,097",--,--,--
+Nevada,2017,Other specified and classifiable,26,"2,972,097",0.88,0.82,491
+Nevada,2017,Other specified / NEC,15**,"2,972,097",0.51**,0.50**,308
+Nevada,2017,Unspecified,77,"2,972,097",2.59,2.46,"1,211"
+Nevada,2016,Cut/Pierce,39,"2,919,555",1.34,1.28,784
+Nevada,2016,Drowning (includes water transport),41,"2,919,555",1.4,1.37,989
+Nevada,2016,Fall,274,"2,919,555",9.39,9.5,"1,099"
+Nevada,2016,Fire/Flame,24,"2,919,555",0.82,0.7,282
+Nevada,2016,Hot object/Substance,--,"2,919,555",--,--,--
+Nevada,2016,Firearm,498,"2,919,555",17.06,16.88,"10,407"
+Nevada,2016,Machinery,--,"2,919,555",--,--,--
+Nevada,2016,Natural/Environmental,47,"2,919,555",1.61,1.55,383
+Nevada,2016,Drug Poisoning,665,"2,919,555",22.78,21.72,"12,745"
+Nevada,2016,Non-Drug Poisoning,59,"2,919,555",2.02,1.99,970
+Nevada,2016,Struck by / against,--,"2,919,555",--,--,--
+Nevada,2016,Suffocation,171,"2,919,555",5.86,5.85,"3,993"
+Nevada,2016,"Motor vehicle, traffic",348,"2,919,555",11.92,11.5,"7,486"
+Nevada,2016,"Pedal cyclist, other",--,"2,919,555",--,--,--
+Nevada,2016,"Pedestrian, other",--,"2,919,555",--,--,--
+Nevada,2016,"Transport, other land",14**,"2,919,555",0.48**,0.45**,251
+Nevada,2016,"Transport, other (excl. drown by water transp)",--,"2,919,555",--,--,--
+Nevada,2016,Other specified and classifiable,24,"2,919,555",0.82,0.76,565
+Nevada,2016,Other specified / NEC,14**,"2,919,555",0.48**,0.45**,140
+Nevada,2016,Unspecified,57,"2,919,555",1.95,1.88,848
+Nevada,2015,Cut/Pierce,24,"2,868,531",0.84,0.81,458
+Nevada,2015,Drowning (includes water transport),46,"2,868,531",1.6,1.62,"1,427"
+Nevada,2015,Fall,262,"2,868,531",9.13,9.21,"1,269"
+Nevada,2015,Fire/Flame,11**,"2,868,531",0.38**,0.37**,107
+Nevada,2015,Firearm,446,"2,868,531",15.55,15,"9,155"
+Nevada,2015,Machinery,--,"2,868,531",--,--,--
+Nevada,2015,Natural/Environmental,26,"2,868,531",0.91,0.87,320
+Nevada,2015,Drug Poisoning,619,"2,868,531",21.58,20.44,"11,718"
+Nevada,2015,Non-Drug Poisoning,45,"2,868,531",1.57,1.55,882
+Nevada,2015,Struck by / against,--,"2,868,531",--,--,--
+Nevada,2015,Suffocation,190,"2,868,531",6.62,6.73,"4,870"
+Nevada,2015,"Motor vehicle, traffic",344,"2,868,531",11.99,11.94,"8,095"
+Nevada,2015,"Pedal cyclist, other",10**,"2,868,531",0.35**,0.32**,242
+Nevada,2015,"Pedestrian, other",--,"2,868,531",--,--,--
+Nevada,2015,"Transport, other land",21,"2,868,531",0.73,0.74,493
+Nevada,2015,"Transport, other (excl. drown by water transp)",--,"2,868,531",--,--,--
+Nevada,2015,Other specified and classifiable,12**,"2,868,531",0.42**,0.41**,413
+Nevada,2015,Other specified / NEC,10**,"2,868,531",0.35**,0.38**,245
+Nevada,2015,Unspecified,48,"2,868,531",1.67,1.65,800
+Nevada,2014,Cut/Pierce,40,"2,818,935",1.42,1.41,894
+Nevada,2014,Drowning (includes water transport),39,"2,818,935",1.38,1.4,948
+Nevada,2014,Fall,212,"2,818,935",7.52,7.54,952
+Nevada,2014,Fire/Flame,20**,"2,818,935",0.71**,0.67**,408
+Nevada,2014,Hot object/Substance,--,"2,818,935",--,--,--
+Nevada,2014,Firearm,429,"2,818,935",15.22,14.83,"8,691"
+Nevada,2014,Machinery,--,"2,818,935",--,--,--
+Nevada,2014,Natural/Environmental,14**,"2,818,935",0.50**,0.46**,115
+Nevada,2014,Drug Poisoning,545,"2,818,935",19.33,18.5,"10,496"
+Nevada,2014,Non-Drug Poisoning,45,"2,818,935",1.6,1.58,875
+Nevada,2014,Struck by / against,--,"2,818,935",--,--,--
+Nevada,2014,Suffocation,182,"2,818,935",6.46,6.41,"3,682"
+Nevada,2014,"Motor vehicle, traffic",304,"2,818,935",10.78,10.61,"7,362"
+Nevada,2014,"Pedal cyclist, other",--,"2,818,935",--,--,--
+Nevada,2014,"Pedestrian, other",--,"2,818,935",--,--,--
+Nevada,2014,"Transport, other land",15**,"2,818,935",0.53**,0.51**,291
+Nevada,2014,"Transport, other (excl. drown by water transp)",--,"2,818,935",--,--,--
+Nevada,2014,Other specified and classifiable,15**,"2,818,935",0.53**,0.50**,388
+Nevada,2014,Other specified / NEC,--,"2,818,935",--,--,--
+Nevada,2014,Unspecified,54,"2,818,935",1.92,1.97,969
+Nevada,2013,Cut/Pierce,36,"2,776,956",1.3,1.31,983
+Nevada,2013,Drowning (includes water transport),46,"2,776,956",1.66,1.59,"1,131"
+Nevada,2013,Fall,185,"2,776,956",6.66,7.12,"1,125"
+Nevada,2013,Fire/Flame,18**,"2,776,956",0.65**,0.60**,194
+Nevada,2013,Firearm,395,"2,776,956",14.22,13.8,"7,725"
+Nevada,2013,Machinery,--,"2,776,956",--,--,--
+Nevada,2013,Natural/Environmental,40,"2,776,956",1.44,1.34,371
+Nevada,2013,Drug Poisoning,614,"2,776,956",22.11,21.08,"11,858"
+Nevada,2013,Non-Drug Poisoning,31,"2,776,956",1.12,1.05,580
+Nevada,2013,Struck by / against,--,"2,776,956",--,--,--
+Nevada,2013,Suffocation,154,"2,776,956",5.55,5.54,"3,720"
+Nevada,2013,"Motor vehicle, traffic",267,"2,776,956",9.62,9.53,"6,355"
+Nevada,2013,"Pedal cyclist, other",--,"2,776,956",--,--,--
+Nevada,2013,"Pedestrian, other",--,"2,776,956",--,--,--
+Nevada,2013,"Transport, other land",14**,"2,776,956",0.50**,0.50**,229
+Nevada,2013,"Transport, other (excl. drown by water transp)",12**,"2,776,956",0.43**,0.41**,216
+Nevada,2013,Other specified and classifiable,16**,"2,776,956",0.58**,0.57**,455
+Nevada,2013,Other specified / NEC,11**,"2,776,956",0.40**,0.38**,182
+Nevada,2013,Unspecified,58,"2,776,956",2.09,2.04,881
+Nevada,2012,Cut/Pierce,23,"2,744,670",0.84,0.81,468
+Nevada,2012,Drowning (includes water transport),37,"2,744,670",1.35,1.36,997
+Nevada,2012,Fall,203,"2,744,670",7.4,8.03,"1,069"
+Nevada,2012,Fire/Flame,24,"2,744,670",0.87,0.83,577
+Nevada,2012,Hot object/Substance,--,"2,744,670",--,--,--
+Nevada,2012,Firearm,360,"2,744,670",13.12,12.84,"7,414"
+Nevada,2012,Machinery,--,"2,744,670",--,--,--
+Nevada,2012,Natural/Environmental,11**,"2,744,670",0.40**,0.40**,243
+Nevada,2012,Drug Poisoning,602,"2,744,670",21.93,20.94,"11,854"
+Nevada,2012,Non-Drug Poisoning,64,"2,744,670",2.33,2.28,"1,186"
+Nevada,2012,Struck by / against,--,"2,744,670",--,--,--
+Nevada,2012,Suffocation,151,"2,744,670",5.5,5.54,"3,583"
+Nevada,2012,"Motor vehicle, traffic",281,"2,744,670",10.24,9.89,"5,761"
+Nevada,2012,"Pedal cyclist, other",--,"2,744,670",--,--,--
+Nevada,2012,"Pedestrian, other",--,"2,744,670",--,--,--
+Nevada,2012,"Transport, other land",--,"2,744,670",--,--,--
+Nevada,2012,"Transport, other (excl. drown by water transp)",--,"2,744,670",--,--,--
+Nevada,2012,Other specified and classifiable,--,"2,744,670",--,--,--
+Nevada,2012,Other specified / NEC,--,"2,744,670",--,--,--
+Nevada,2012,Unspecified,47,"2,744,670",1.71,1.7,820
+Nevada,2011,Cut/Pierce,18**,"2,713,114",0.66**,0.66**,643
+Nevada,2011,Drowning (includes water transport),40,"2,713,114",1.47,1.49,"1,154"
+Nevada,2011,Fall,176,"2,713,114",6.49,7.18,853
+Nevada,2011,Fire/Flame,24,"2,713,114",0.89,0.86,540
+Nevada,2011,Hot object/Substance,--,"2,713,114",--,--,--
+Nevada,2011,Firearm,376,"2,713,114",13.86,13.66,"8,218"
+Nevada,2011,Machinery,--,"2,713,114",--,--,--
+Nevada,2011,Natural/Environmental,16**,"2,713,114",0.59**,0.58**,144
+Nevada,2011,Drug Poisoning,639,"2,713,114",23.55,22.87,"13,522"
+Nevada,2011,Non-Drug Poisoning,45,"2,713,114",1.66,1.65,845
+Nevada,2011,Struck by / against,--,"2,713,114",--,--,--
+Nevada,2011,Suffocation,150,"2,713,114",5.53,5.55,"3,636"
+Nevada,2011,"Motor vehicle, traffic",264,"2,713,114",9.73,9.62,"6,007"
+Nevada,2011,"Pedal cyclist, other",--,"2,713,114",--,--,--
+Nevada,2011,"Pedestrian, other",--,"2,713,114",--,--,--
+Nevada,2011,"Transport, other land",17**,"2,713,114",0.63**,0.63**,418
+Nevada,2011,"Transport, other (excl. drown by water transp)",--,"2,713,114",--,--,--
+Nevada,2011,Other specified and classifiable,11**,"2,713,114",0.41**,0.40**,494
+Nevada,2011,Other specified / NEC,11**,"2,713,114",0.41**,0.41**,293
+Nevada,2011,Unspecified,44,"2,713,114",1.62,1.63,743
+Nevada,2010,Cut/Pierce,31,"2,700,683",1.15,1.15,823
+Nevada,2010,Drowning (includes water transport),40,"2,700,683",1.48,1.52,"1,303"
+Nevada,2010,Fall,166,"2,700,683",6.15,7.26,953
+Nevada,2010,Fire/Flame,17**,"2,700,683",0.63**,0.62**,135
+Nevada,2010,Firearm,395,"2,700,683",14.63,14.49,"7,561"
+Nevada,2010,Machinery,--,"2,700,683",--,--,--
+Nevada,2010,Natural/Environmental,11**,"2,700,683",0.41**,0.43**,140
+Nevada,2010,Drug Poisoning,578,"2,700,683",21.4,20.75,"11,709"
+Nevada,2010,Non-Drug Poisoning,51,"2,700,683",1.89,1.87,"1,205"
+Nevada,2010,Struck by / against,--,"2,700,683",--,--,--
+Nevada,2010,Suffocation,162,"2,700,683",6,6.04,"4,185"
+Nevada,2010,"Motor vehicle, traffic",273,"2,700,683",10.11,10.17,"6,223"
+Nevada,2010,"Pedal cyclist, other",--,"2,700,683",--,--,--
+Nevada,2010,"Pedestrian, other",--,"2,700,683",--,--,--
+Nevada,2010,"Transport, other land",18**,"2,700,683",0.67**,0.66**,396
+Nevada,2010,Other specified and classifiable,18**,"2,700,683",0.67**,0.68**,834
+Nevada,2010,Other specified / NEC,13**,"2,700,683",0.48**,0.46**,292
+Nevada,2010,Unspecified,52,"2,700,683",1.93,2.01,978
+Nevada,2009,Cut/Pierce,20**,"2,684,665",0.75**,0.74**,429
+Nevada,2009,Drowning (includes water transport),32,"2,684,665",1.19,1.18,"1,218"
+Nevada,2009,Fall,151,"2,684,665",5.63,6.63,812
+Nevada,2009,Fire/Flame,13**,"2,684,665",0.48**,0.49**,93
+Nevada,2009,Hot object/Substance,--,"2,684,665",--,--,--
+Nevada,2009,Firearm,406,"2,684,665",15.12,15.11,"8,158"
+Nevada,2009,Machinery,--,"2,684,665",--,--,--
+Nevada,2009,Natural/Environmental,--,"2,684,665",--,--,--
+Nevada,2009,Drug Poisoning,550,"2,684,665",20.49,20.13,"11,784"
+Nevada,2009,Non-Drug Poisoning,35,"2,684,665",1.3,1.33,889
+Nevada,2009,Struck by / against,--,"2,684,665",--,--,--
+Nevada,2009,Suffocation,146,"2,684,665",5.44,5.56,"3,508"
+Nevada,2009,"Motor vehicle, traffic",243,"2,684,665",9.05,9.09,"5,851"
+Nevada,2009,"Pedal cyclist, other",--,"2,684,665",--,--,--
+Nevada,2009,"Pedestrian, other",--,"2,684,665",--,--,--
+Nevada,2009,"Transport, other land",11**,"2,684,665",0.41**,0.38**,248
+Nevada,2009,"Transport, other (excl. drown by water transp)",14**,"2,684,665",0.52**,0.50**,270
+Nevada,2009,Other specified and classifiable,13**,"2,684,665",0.48**,0.49**,471
+Nevada,2009,Other specified / NEC,15**,"2,684,665",0.56**,0.49**,253
+Nevada,2009,Unspecified,48,"2,684,665",1.79,1.89,"1,066"
+Nevada,2008,Cut/Pierce,33,"2,653,630",1.24,1.21,672
+Nevada,2008,Drowning (includes water transport),45,"2,653,630",1.7,1.61,"1,465"
+Nevada,2008,Fall,159,"2,653,630",5.99,7.46,"1,003"
+Nevada,2008,Fire/Flame,31,"2,653,630",1.17,1.24,325
+Nevada,2008,Hot object/Substance,--,"2,653,630",--,--,--
+Nevada,2008,Firearm,404,"2,653,630",15.22,15.15,"8,453"
+Nevada,2008,Machinery,--,"2,653,630",--,--,--
+Nevada,2008,Natural/Environmental,20**,"2,653,630",0.75**,0.78**,362
+Nevada,2008,Drug Poisoning,519,"2,653,630",19.56,19.2,"11,290"
+Nevada,2008,Non-Drug Poisoning,37,"2,653,630",1.39,1.34,702
+Nevada,2008,Struck by / against,13**,"2,653,630",0.49**,0.47**,401
+Nevada,2008,Suffocation,157,"2,653,630",5.92,5.96,"3,979"
+Nevada,2008,"Motor vehicle, traffic",326,"2,653,630",12.29,12.11,"8,124"
+Nevada,2008,"Pedal cyclist, other",--,"2,653,630",--,--,--
+Nevada,2008,"Pedestrian, other",--,"2,653,630",--,--,--
+Nevada,2008,"Transport, other land",13**,"2,653,630",0.49**,0.46**,463
+Nevada,2008,"Transport, other (excl. drown by water transp)",12**,"2,653,630",0.45**,0.46**,86
+Nevada,2008,Other specified and classifiable,--,"2,653,630",--,--,--
+Nevada,2008,Other specified / NEC,16**,"2,653,630",0.60**,0.59**,429
+Nevada,2008,Unspecified,63,"2,653,630",2.37,2.51,983
+Nevada,2007,Cut/Pierce,26,"2,601,072",1,0.95,461
+Nevada,2007,Drowning (includes water transport),42,"2,601,072",1.62,1.63,"1,458"
+Nevada,2007,Fall,175,"2,601,072",6.73,7.87,"1,307"
+Nevada,2007,Fire/Flame,33,"2,601,072",1.27,1.3,472
+Nevada,2007,Firearm,414,"2,601,072",15.92,15.87,"9,439"
+Nevada,2007,Machinery,--,"2,601,072",--,--,--
+Nevada,2007,Natural/Environmental,17**,"2,601,072",0.65**,0.66**,169
+Nevada,2007,Drug Poisoning,499,"2,601,072",19.18,18.81,"11,289"
+Nevada,2007,Non-Drug Poisoning,41,"2,601,072",1.58,1.57,822
+Nevada,2007,Struck by / against,11**,"2,601,072",0.42**,0.42**,401
+Nevada,2007,Suffocation,121,"2,601,072",4.65,4.76,"3,317"
+Nevada,2007,"Motor vehicle, traffic",378,"2,601,072",14.53,14.54,"9,326"
+Nevada,2007,"Pedal cyclist, other",--,"2,601,072",--,--,--
+Nevada,2007,"Pedestrian, other",11**,"2,601,072",0.42**,0.43**,220
+Nevada,2007,"Transport, other land",27,"2,601,072",1.04,1.08,642
+Nevada,2007,"Transport, other (excl. drown by water transp)",12**,"2,601,072",0.46**,0.43**,141
+Nevada,2007,Other specified and classifiable,24,"2,601,072",0.92,0.96,645
+Nevada,2007,Other specified / NEC,22,"2,601,072",0.85,0.83,502
+Nevada,2007,Unspecified,52,"2,601,072",2,2.28,666
+Nevada,2006,Cut/Pierce,26,"2,522,658",1.03,1.08,644
+Nevada,2006,Drowning (includes water transport),32,"2,522,658",1.27,1.27,998
+Nevada,2006,Fall,141,"2,522,658",5.59,6.42,"1,367"
+Nevada,2006,Fire/Flame,40,"2,522,658",1.59,1.52,705
+Nevada,2006,Hot object/Substance,--,"2,522,658",--,--,--
+Nevada,2006,Firearm,405,"2,522,658",16.05,16.3,"9,447"
+Nevada,2006,Machinery,--,"2,522,658",--,--,--
+Nevada,2006,Natural/Environmental,11**,"2,522,658",0.44**,0.43**,101
+Nevada,2006,Drug Poisoning,461,"2,522,658",18.27,17.92,"10,169"
+Nevada,2006,Non-Drug Poisoning,27,"2,522,658",1.07,1.04,526
+Nevada,2006,Struck by / against,--,"2,522,658",--,--,--
+Nevada,2006,Suffocation,137,"2,522,658",5.43,5.49,"3,589"
+Nevada,2006,"Motor vehicle, traffic",426,"2,522,658",16.89,17.03,"10,902"
+Nevada,2006,"Pedal cyclist, other",--,"2,522,658",--,--,--
+Nevada,2006,"Pedestrian, other",--,"2,522,658",--,--,--
+Nevada,2006,"Transport, other land",15**,"2,522,658",0.60**,0.54**,351
+Nevada,2006,"Transport, other (excl. drown by water transp)",--,"2,522,658",--,--,--
+Nevada,2006,Other specified and classifiable,19**,"2,522,658",0.75**,0.74**,578
+Nevada,2006,Other specified / NEC,21,"2,522,658",0.83,0.89,369
+Nevada,2006,Unspecified,58,"2,522,658",2.3,2.43,"1,256"
+Nevada,2005,Cut/Pierce,31,"2,432,143",1.28,1.22,919
+Nevada,2005,Drowning (includes water transport),34,"2,432,143",1.4,1.34,"1,166"
+Nevada,2005,Fall,153,"2,432,143",6.29,7.55,"1,162"
+Nevada,2005,Fire/Flame,19**,"2,432,143",0.78**,0.90**,295
+Nevada,2005,Hot object/Substance,--,"2,432,143",--,--,--
+Nevada,2005,Firearm,390,"2,432,143",16.04,16.09,"8,885"
+Nevada,2005,Machinery,--,"2,432,143",--,--,--
+Nevada,2005,Natural/Environmental,37,"2,432,143",1.52,1.58,595
+Nevada,2005,Drug Poisoning,457,"2,432,143",18.79,18.62,"10,352"
+Nevada,2005,Non-Drug Poisoning,22,"2,432,143",0.91,0.94,345
+Nevada,2005,Struck by / against,--,"2,432,143",--,--,--
+Nevada,2005,Suffocation,117,"2,432,143",4.81,4.89,"3,036"
+Nevada,2005,"Motor vehicle, traffic",430,"2,432,143",17.68,17.85,"10,292"
+Nevada,2005,"Pedal cyclist, other",--,"2,432,143",--,--,--
+Nevada,2005,"Pedestrian, other",17**,"2,432,143",0.70**,0.68**,662
+Nevada,2005,"Transport, other land",15**,"2,432,143",0.62**,0.61**,415
+Nevada,2005,"Transport, other (excl. drown by water transp)",--,"2,432,143",--,--,--
+Nevada,2005,Other specified and classifiable,17**,"2,432,143",0.70**,0.67**,615
+Nevada,2005,Other specified / NEC,15**,"2,432,143",0.62**,0.62**,334
+Nevada,2005,Unspecified,37,"2,432,143",1.52,1.6,950
+Nevada,2004,Cut/Pierce,31,"2,346,222",1.32,1.33,841
+Nevada,2004,Drowning (includes water transport),26,"2,346,222",1.11,1.13,760
+Nevada,2004,Fall,125,"2,346,222",5.33,6.43,"1,124"
+Nevada,2004,Fire/Flame,17**,"2,346,222",0.73**,0.74**,368
+Nevada,2004,Hot object/Substance,--,"2,346,222",--,--,--
+Nevada,2004,Firearm,392,"2,346,222",16.71,16.74,"8,459"
+Nevada,2004,Machinery,--,"2,346,222",--,--,--
+Nevada,2004,Natural/Environmental,10**,"2,346,222",0.43**,0.46**,138
+Nevada,2004,Drug Poisoning,380,"2,346,222",16.2,16.01,"8,895"
+Nevada,2004,Non-Drug Poisoning,24,"2,346,222",1.02,1.03,430
+Nevada,2004,Struck by / against,--,"2,346,222",--,--,--
+Nevada,2004,Suffocation,137,"2,346,222",5.84,6.02,"3,667"
+Nevada,2004,"Motor vehicle, traffic",408,"2,346,222",17.39,17.46,"9,689"
+Nevada,2004,"Pedal cyclist, other",--,"2,346,222",--,--,--
+Nevada,2004,"Pedestrian, other",--,"2,346,222",--,--,--
+Nevada,2004,"Transport, other land",10**,"2,346,222",0.43**,0.45**,331
+Nevada,2004,"Transport, other (excl. drown by water transp)",16**,"2,346,222",0.68**,0.68**,338
+Nevada,2004,Other specified and classifiable,10**,"2,346,222",0.43**,0.43**,222
+Nevada,2004,Other specified / NEC,14**,"2,346,222",0.60**,0.58**,343
+Nevada,2004,Unspecified,54,"2,346,222",2.3,2.66,959
+Nevada,2003,Cut/Pierce,39,"2,248,850",1.73,1.7,758
+Nevada,2003,Drowning (includes water transport),31,"2,248,850",1.38,1.39,"1,153"
+Nevada,2003,Fall,107,"2,248,850",4.76,5.67,860
+Nevada,2003,Fire/Flame,16**,"2,248,850",0.71**,0.76**,325
+Nevada,2003,Firearm,374,"2,248,850",16.63,17.04,"8,493"
+Nevada,2003,Machinery,--,"2,248,850",--,--,--
+Nevada,2003,Natural/Environmental,15**,"2,248,850",0.67**,0.63**,272
+Nevada,2003,Drug Poisoning,342,"2,248,850",15.21,15.18,"7,694"
+Nevada,2003,Non-Drug Poisoning,31,"2,248,850",1.38,1.36,605
+Nevada,2003,Struck by / against,--,"2,248,850",--,--,--
+Nevada,2003,Suffocation,128,"2,248,850",5.69,5.96,"3,614"
+Nevada,2003,"Motor vehicle, traffic",359,"2,248,850",15.96,16.15,"9,751"
+Nevada,2003,"Pedal cyclist, other",--,"2,248,850",--,--,--
+Nevada,2003,"Pedestrian, other",13**,"2,248,850",0.58**,0.56**,240
+Nevada,2003,"Transport, other land",12**,"2,248,850",0.53**,0.54**,310
+Nevada,2003,"Transport, other (excl. drown by water transp)",12**,"2,248,850",0.53**,0.51**,257
+Nevada,2003,Other specified and classifiable,14**,"2,248,850",0.62**,0.55**,445
+Nevada,2003,Other specified / NEC,11**,"2,248,850",0.49**,0.55**,173
+Nevada,2003,Unspecified,48,"2,248,850",2.13,2.33,894
+Nevada,2002,Cut/Pierce,28,"2,173,791",1.29,1.38,562
+Nevada,2002,Drowning (includes water transport),34,"2,173,791",1.56,1.59,"1,094"
+Nevada,2002,Fall,100,"2,173,791",4.6,5.8,840
+Nevada,2002,Fire/Flame,19**,"2,173,791",0.87**,0.82**,213
+Nevada,2002,Firearm,370,"2,173,791",17.02,17.06,"8,557"
+Nevada,2002,Machinery,--,"2,173,791",--,--,--
+Nevada,2002,Natural/Environmental,17**,"2,173,791",0.78**,0.83**,397
+Nevada,2002,Drug Poisoning,323,"2,173,791",14.86,14.73,"7,108"
+Nevada,2002,Non-Drug Poisoning,15**,"2,173,791",0.69**,0.68**,287
+Nevada,2002,Struck by / against,--,"2,173,791",--,--,--
+Nevada,2002,Suffocation,117,"2,173,791",5.38,5.69,"3,104"
+Nevada,2002,"Motor vehicle, traffic",381,"2,173,791",17.53,17.95,"9,269"
+Nevada,2002,"Pedal cyclist, other",--,"2,173,791",--,--,--
+Nevada,2002,"Pedestrian, other",--,"2,173,791",--,--,--
+Nevada,2002,"Transport, other land",--,"2,173,791",--,--,--
+Nevada,2002,"Transport, other (excl. drown by water transp)",14**,"2,173,791",0.64**,0.63**,354
+Nevada,2002,Other specified and classifiable,15**,"2,173,791",0.69**,0.67**,417
+Nevada,2002,Other specified / NEC,11**,"2,173,791",0.51**,0.53**,218
+Nevada,2002,Unspecified,57,"2,173,791",2.62,2.89,758
+Nevada,2001,Cut/Pierce,31,"2,098,399",1.48,1.46,761
+Nevada,2001,Drowning (includes water transport),29,"2,098,399",1.38,1.48,933
+Nevada,2001,Fall,75,"2,098,399",3.57,4.32,597
+Nevada,2001,Fire/Flame,21,"2,098,399",1,0.96,529
+Nevada,2001,Firearm,345,"2,098,399",16.44,16.55,"8,018"
+Nevada,2001,Natural/Environmental,17**,"2,098,399",0.81**,0.86**,408
+Nevada,2001,Drug Poisoning,261,"2,098,399",12.44,12.26,"5,832"
+Nevada,2001,Non-Drug Poisoning,35,"2,098,399",1.67,1.73,679
+Nevada,2001,Struck by / against,--,"2,098,399",--,--,--
+Nevada,2001,Suffocation,111,"2,098,399",5.29,5.56,"2,580"
+Nevada,2001,"Motor vehicle, traffic",319,"2,098,399",15.2,15.56,"7,643"
+Nevada,2001,"Pedal cyclist, other",--,"2,098,399",--,--,--
+Nevada,2001,"Pedestrian, other",10**,"2,098,399",0.48**,0.54**,155
+Nevada,2001,"Transport, other land",15**,"2,098,399",0.72**,0.72**,440
+Nevada,2001,"Transport, other (excl. drown by water transp)",19**,"2,098,399",0.91**,0.90**,476
+Nevada,2001,Other specified and classifiable,13**,"2,098,399",0.62**,0.61**,475
+Nevada,2001,Other specified / NEC,15**,"2,098,399",0.72**,0.74**,271
+Nevada,2001,Unspecified,51,"2,098,399",2.43,2.93,701
+Total,,,"42,041","56,655,529",74.2,73.87,"832,370"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Nevada,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

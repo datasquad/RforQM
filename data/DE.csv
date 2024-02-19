@@ -1,0 +1,384 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Delaware,2021,Cut/Pierce,14**,"1,003,384",1.40**,1.17**,188
+Delaware,2021,Drowning (includes water transport),15**,"1,003,384",1.50**,1.61**,408
+Delaware,2021,Fall,95,"1,003,384",9.47,7.45,204
+Delaware,2021,Fire/Flame,10**,"1,003,384",1.00**,0.79**,136
+Delaware,2021,Firearm,158,"1,003,384",15.75,16.67,"4,238"
+Delaware,2021,Natural/Environmental,--,"1,003,384",--,--,--
+Delaware,2021,Drug Poisoning,513,"1,003,384",51.13,53.9,"10,469"
+Delaware,2021,Non-Drug Poisoning,14**,"1,003,384",1.40**,1.46**,391
+Delaware,2021,Struck by / against,--,"1,003,384",--,--,--
+Delaware,2021,Suffocation,58,"1,003,384",5.78,5.47,"1,078"
+Delaware,2021,"Motor vehicle, traffic",143,"1,003,384",14.25,14.07,"3,175"
+Delaware,2021,"Pedal cyclist, other",--,"1,003,384",--,--,--
+Delaware,2021,"Pedestrian, other",--,"1,003,384",--,--,--
+Delaware,2021,"Transport, other land",--,"1,003,384",--,--,--
+Delaware,2021,Other specified and classifiable,--,"1,003,384",--,--,--
+Delaware,2021,Other specified / NEC,--,"1,003,384",--,--,--
+Delaware,2021,Unspecified,34,"1,003,384",3.39,2.9,290
+Delaware,2020,Cut/Pierce,--,"991,886",--,--,--
+Delaware,2020,Drowning (includes water transport),10**,"991,886",1.01**,0.89**,228
+Delaware,2020,Fall,104,"991,886",10.49,8.2,192
+Delaware,2020,Fire/Flame,--,"991,886",--,--,--
+Delaware,2020,Firearm,135,"991,886",13.61,14.34,"3,892"
+Delaware,2020,Natural/Environmental,--,"991,886",--,--,--
+Delaware,2020,Drug Poisoning,444,"991,886",44.76,47.03,"9,469"
+Delaware,2020,Non-Drug Poisoning,12**,"991,886",1.21**,1.32**,216
+Delaware,2020,Struck by / against,--,"991,886",--,--,--
+Delaware,2020,Suffocation,61,"991,886",6.15,5.88,"1,229"
+Delaware,2020,"Motor vehicle, traffic",123,"991,886",12.4,11.98,"2,608"
+Delaware,2020,"Transport, other land",--,"991,886",--,--,--
+Delaware,2020,Other specified and classifiable,--,"991,886",--,--,--
+Delaware,2020,Other specified / NEC,--,"991,886",--,--,--
+Delaware,2020,Unspecified,23,"991,886",2.32,1.78,102
+Delaware,2019,Cut/Pierce,--,"976,668",--,--,--
+Delaware,2019,Drowning (includes water transport),12**,"976,668",1.23**,1.20**,273
+Delaware,2019,Fall,97,"976,668",9.93,7.46,116
+Delaware,2019,Fire/Flame,12**,"976,668",1.23**,0.99**,247
+Delaware,2019,Firearm,93,"976,668",9.52,9.94,"2,241"
+Delaware,2019,Machinery,--,"976,668",--,--,--
+Delaware,2019,Natural/Environmental,--,"976,668",--,--,--
+Delaware,2019,Drug Poisoning,435,"976,668",44.54,48.19,"10,563"
+Delaware,2019,Non-Drug Poisoning,16**,"976,668",1.64**,1.65**,360
+Delaware,2019,Struck by / against,--,"976,668",--,--,--
+Delaware,2019,Suffocation,56,"976,668",5.73,5.61,"1,021"
+Delaware,2019,"Motor vehicle, traffic",131,"976,668",13.41,13.19,"2,881"
+Delaware,2019,"Pedal cyclist, other",--,"976,668",--,--,--
+Delaware,2019,"Pedestrian, other",--,"976,668",--,--,--
+Delaware,2019,"Transport, other land",--,"976,668",--,--,--
+Delaware,2019,"Transport, other (excl. drown by water transp)",--,"976,668",--,--,--
+Delaware,2019,Other specified and classifiable,--,"976,668",--,--,--
+Delaware,2019,Other specified / NEC,--,"976,668",--,--,--
+Delaware,2019,Unspecified,22,"976,668",2.25,1.74,166
+Delaware,2018,Cut/Pierce,--,"966,985",--,--,--
+Delaware,2018,Drowning (includes water transport),11**,"966,985",1.14**,1.08**,256
+Delaware,2018,Fall,73,"966,985",7.55,5.68,100
+Delaware,2018,Fire/Flame,10**,"966,985",1.03**,0.81**,100
+Delaware,2018,Firearm,107,"966,985",11.07,11.57,"3,000"
+Delaware,2018,Natural/Environmental,--,"966,985",--,--,--
+Delaware,2018,Drug Poisoning,401,"966,985",41.47,43.9,"9,265"
+Delaware,2018,Non-Drug Poisoning,18**,"966,985",1.86**,1.94**,302
+Delaware,2018,Struck by / against,--,"966,985",--,--,--
+Delaware,2018,Suffocation,60,"966,985",6.21,5.84,"1,245"
+Delaware,2018,"Motor vehicle, traffic",118,"966,985",12.2,11.76,"2,666"
+Delaware,2018,"Pedestrian, other",--,"966,985",--,--,--
+Delaware,2018,"Transport, other land",--,"966,985",--,--,--
+Delaware,2018,Other specified and classifiable,--,"966,985",--,--,--
+Delaware,2018,Other specified / NEC,--,"966,985",--,--,--
+Delaware,2018,Unspecified,19**,"966,985",1.97**,1.55**,190
+Delaware,2017,Cut/Pierce,--,"957,942",--,--,--
+Delaware,2017,Drowning (includes water transport),11**,"957,942",1.15**,1.08**,297
+Delaware,2017,Fall,86,"957,942",8.98,6.97,255
+Delaware,2017,Fire/Flame,11**,"957,942",1.15**,0.95**,139
+Delaware,2017,Hot object/Substance,--,"957,942",--,--,--
+Delaware,2017,Firearm,111,"957,942",11.59,11.65,"2,998"
+Delaware,2017,Natural/Environmental,--,"957,942",--,--,--
+Delaware,2017,Drug Poisoning,338,"957,942",35.28,37.52,"8,089"
+Delaware,2017,Non-Drug Poisoning,18**,"957,942",1.88**,1.79**,351
+Delaware,2017,Suffocation,56,"957,942",5.85,5.81,"1,317"
+Delaware,2017,"Motor vehicle, traffic",123,"957,942",12.84,12.52,"2,548"
+Delaware,2017,"Pedestrian, other",--,"957,942",--,--,--
+Delaware,2017,"Transport, other land",--,"957,942",--,--,--
+Delaware,2017,Other specified and classifiable,--,"957,942",--,--,--
+Delaware,2017,Other specified / NEC,10**,"957,942",1.04**,1.01**,93
+Delaware,2017,Unspecified,20**,"957,942",2.09**,1.80**,213
+Delaware,2016,Cut/Pierce,10**,"949,989",1.05**,1.07**,255
+Delaware,2016,Drowning (includes water transport),--,"949,989",--,--,--
+Delaware,2016,Fall,76,"949,989",8,6.27,301
+Delaware,2016,Fire/Flame,--,"949,989",--,--,--
+Delaware,2016,Firearm,111,"949,989",11.68,10.96,"2,468"
+Delaware,2016,Machinery,--,"949,989",--,--,--
+Delaware,2016,Natural/Environmental,--,"949,989",--,--,--
+Delaware,2016,Drug Poisoning,282,"949,989",29.69,30.89,"6,914"
+Delaware,2016,Non-Drug Poisoning,12**,"949,989",1.26**,1.15**,217
+Delaware,2016,Struck by / against,--,"949,989",--,--,--
+Delaware,2016,Suffocation,40,"949,989",4.21,3.85,745
+Delaware,2016,"Motor vehicle, traffic",114,"949,989",12,11.77,"2,516"
+Delaware,2016,"Pedestrian, other",--,"949,989",--,--,--
+Delaware,2016,"Transport, other land",--,"949,989",--,--,--
+Delaware,2016,"Transport, other (excl. drown by water transp)",--,"949,989",--,--,--
+Delaware,2016,Other specified and classifiable,--,"949,989",--,--,--
+Delaware,2016,Other specified / NEC,--,"949,989",--,--,--
+Delaware,2016,Unspecified,21,"949,989",2.21,1.92,161
+Delaware,2015,Cut/Pierce,--,"942,065",--,--,--
+Delaware,2015,Drowning (includes water transport),12**,"942,065",1.27**,1.25**,238
+Delaware,2015,Fall,70,"942,065",7.43,6.25,244
+Delaware,2015,Fire/Flame,--,"942,065",--,--,--
+Delaware,2015,Firearm,112,"942,065",11.89,12.07,"3,130"
+Delaware,2015,Machinery,--,"942,065",--,--,--
+Delaware,2015,Natural/Environmental,--,"942,065",--,--,--
+Delaware,2015,Drug Poisoning,198,"942,065",21.02,21.95,"4,912"
+Delaware,2015,Non-Drug Poisoning,15**,"942,065",1.59**,1.65**,363
+Delaware,2015,Struck by / against,--,"942,065",--,--,--
+Delaware,2015,Suffocation,57,"942,065",6.05,5.83,"1,143"
+Delaware,2015,"Motor vehicle, traffic",126,"942,065",13.38,13.08,"2,550"
+Delaware,2015,"Pedal cyclist, other",--,"942,065",--,--,--
+Delaware,2015,"Pedestrian, other",--,"942,065",--,--,--
+Delaware,2015,"Transport, other land",--,"942,065",--,--,--
+Delaware,2015,Other specified and classifiable,--,"942,065",--,--,--
+Delaware,2015,Other specified / NEC,--,"942,065",--,--,--
+Delaware,2015,Unspecified,24,"942,065",2.55,2.2,289
+Delaware,2014,Cut/Pierce,--,"933,131",--,--,--
+Delaware,2014,Drowning (includes water transport),10**,"933,131",1.07**,1.07**,273
+Delaware,2014,Fall,73,"933,131",7.82,6.55,130
+Delaware,2014,Fire/Flame,--,"933,131",--,--,--
+Delaware,2014,Firearm,102,"933,131",10.93,10.94,"2,210"
+Delaware,2014,Machinery,--,"933,131",--,--,--
+Delaware,2014,Natural/Environmental,--,"933,131",--,--,--
+Delaware,2014,Drug Poisoning,189,"933,131",20.25,21.37,"4,531"
+Delaware,2014,Non-Drug Poisoning,10**,"933,131",1.07**,0.87**,177
+Delaware,2014,Struck by / against,--,"933,131",--,--,--
+Delaware,2014,Suffocation,49,"933,131",5.25,5.1,884
+Delaware,2014,"Motor vehicle, traffic",121,"933,131",12.97,12.49,"2,802"
+Delaware,2014,"Pedal cyclist, other",--,"933,131",--,--,--
+Delaware,2014,"Pedestrian, other",--,"933,131",--,--,--
+Delaware,2014,"Transport, other land",--,"933,131",--,--,--
+Delaware,2014,"Transport, other (excl. drown by water transp)",--,"933,131",--,--,--
+Delaware,2014,Other specified and classifiable,--,"933,131",--,--,--
+Delaware,2014,Other specified / NEC,--,"933,131",--,--,--
+Delaware,2014,Unspecified,36,"933,131",3.86,3.52,468
+Delaware,2013,Cut/Pierce,--,"924,062",--,--,--
+Delaware,2013,Drowning (includes water transport),--,"924,062",--,--,--
+Delaware,2013,Fall,85,"924,062",9.2,8.1,309
+Delaware,2013,Fire/Flame,14**,"924,062",1.52**,1.33**,114
+Delaware,2013,Firearm,100,"924,062",10.82,10.39,"2,140"
+Delaware,2013,Natural/Environmental,--,"924,062",--,--,--
+Delaware,2013,Drug Poisoning,166,"924,062",17.96,18.7,"3,903"
+Delaware,2013,Non-Drug Poisoning,24,"924,062",2.6,2.5,455
+Delaware,2013,Suffocation,48,"924,062",5.19,4.88,964
+Delaware,2013,"Motor vehicle, traffic",113,"924,062",12.23,11.98,"2,435"
+Delaware,2013,"Pedestrian, other",--,"924,062",--,--,--
+Delaware,2013,"Transport, other land",--,"924,062",--,--,--
+Delaware,2013,"Transport, other (excl. drown by water transp)",--,"924,062",--,--,--
+Delaware,2013,Other specified and classifiable,--,"924,062",--,--,--
+Delaware,2013,Other specified / NEC,--,"924,062",--,--,--
+Delaware,2013,Unspecified,26,"924,062",2.81,2.56,244
+Delaware,2012,Cut/Pierce,--,"915,518",--,--,--
+Delaware,2012,Drowning (includes water transport),11**,"915,518",1.20**,1.14**,199
+Delaware,2012,Fall,81,"915,518",8.85,7.7,309
+Delaware,2012,Fire/Flame,--,"915,518",--,--,--
+Delaware,2012,Firearm,96,"915,518",10.49,10.54,"2,560"
+Delaware,2012,Machinery,--,"915,518",--,--,--
+Delaware,2012,Natural/Environmental,--,"915,518",--,--,--
+Delaware,2012,Drug Poisoning,141,"915,518",15.4,15.17,"3,254"
+Delaware,2012,Non-Drug Poisoning,15**,"915,518",1.64**,1.45**,199
+Delaware,2012,Struck by / against,--,"915,518",--,--,--
+Delaware,2012,Suffocation,58,"915,518",6.34,6.13,"1,343"
+Delaware,2012,"Motor vehicle, traffic",109,"915,518",11.91,12.08,"2,663"
+Delaware,2012,"Pedal cyclist, other",--,"915,518",--,--,--
+Delaware,2012,"Pedestrian, other",--,"915,518",--,--,--
+Delaware,2012,"Transport, other land",--,"915,518",--,--,--
+Delaware,2012,"Transport, other (excl. drown by water transp)",--,"915,518",--,--,--
+Delaware,2012,Other specified and classifiable,10**,"915,518",1.09**,1.01**,266
+Delaware,2012,Other specified / NEC,--,"915,518",--,--,--
+Delaware,2012,Unspecified,26,"915,518",2.84,2.64,389
+Delaware,2011,Cut/Pierce,--,"907,590",--,--,--
+Delaware,2011,Drowning (includes water transport),12**,"907,590",1.32**,1.22**,239
+Delaware,2011,Fall,51,"907,590",5.62,5,266
+Delaware,2011,Fire/Flame,--,"907,590",--,--,--
+Delaware,2011,Firearm,77,"907,590",8.48,8.13,"1,818"
+Delaware,2011,Machinery,--,"907,590",--,--,--
+Delaware,2011,Natural/Environmental,--,"907,590",--,--,--
+Delaware,2011,Drug Poisoning,160,"907,590",17.63,17.6,"3,872"
+Delaware,2011,Non-Drug Poisoning,10**,"907,590",1.10**,1.11**,186
+Delaware,2011,Struck by / against,--,"907,590",--,--,--
+Delaware,2011,Suffocation,38,"907,590",4.19,3.73,613
+Delaware,2011,"Motor vehicle, traffic",93,"907,590",10.25,10.26,"2,370"
+Delaware,2011,"Pedestrian, other",--,"907,590",--,--,--
+Delaware,2011,"Transport, other land",--,"907,590",--,--,--
+Delaware,2011,Other specified and classifiable,10**,"907,590",1.10**,1.21**,283
+Delaware,2011,Other specified / NEC,--,"907,590",--,--,--
+Delaware,2011,Unspecified,29,"907,590",3.2,2.91,254
+Delaware,2010,Cut/Pierce,--,"897,947",--,--,--
+Delaware,2010,Drowning (includes water transport),11**,"897,947",1.23**,1.32**,372
+Delaware,2010,Fall,50,"897,947",5.57,5,132
+Delaware,2010,Fire/Flame,13**,"897,947",1.45**,1.45**,251
+Delaware,2010,Firearm,88,"897,947",9.8,9.88,"2,526"
+Delaware,2010,Natural/Environmental,--,"897,947",--,--,--
+Delaware,2010,Drug Poisoning,145,"897,947",16.15,16.6,"3,530"
+Delaware,2010,Non-Drug Poisoning,17**,"897,947",1.89**,1.74**,271
+Delaware,2010,Struck by / against,--,"897,947",--,--,--
+Delaware,2010,Suffocation,51,"897,947",5.68,5.36,980
+Delaware,2010,"Motor vehicle, traffic",107,"897,947",11.92,11.99,"2,802"
+Delaware,2010,"Pedal cyclist, other",--,"897,947",--,--,--
+Delaware,2010,"Transport, other land",--,"897,947",--,--,--
+Delaware,2010,"Transport, other (excl. drown by water transp)",--,"897,947",--,--,--
+Delaware,2010,Other specified and classifiable,--,"897,947",--,--,--
+Delaware,2010,Other specified / NEC,--,"897,947",--,--,--
+Delaware,2010,Unspecified,30,"897,947",3.34,3.01,373
+Delaware,2009,Cut/Pierce,--,"891,730",--,--,--
+Delaware,2009,Drowning (includes water transport),10**,"891,730",1.12**,1.18**,288
+Delaware,2009,Fall,64,"891,730",7.18,6.49,136
+Delaware,2009,Fire/Flame,--,"891,730",--,--,--
+Delaware,2009,Firearm,76,"891,730",8.52,8.76,"2,076"
+Delaware,2009,Machinery,--,"891,730",--,--,--
+Delaware,2009,Drug Poisoning,136,"891,730",15.25,15.47,"3,319"
+Delaware,2009,Non-Drug Poisoning,10**,"891,730",1.12**,1.16**,222
+Delaware,2009,Struck by / against,--,"891,730",--,--,--
+Delaware,2009,Suffocation,52,"891,730",5.83,5.68,"1,155"
+Delaware,2009,"Motor vehicle, traffic",103,"891,730",11.55,11.62,"2,683"
+Delaware,2009,"Pedal cyclist, other",--,"891,730",--,--,--
+Delaware,2009,"Pedestrian, other",--,"891,730",--,--,--
+Delaware,2009,"Transport, other land",--,"891,730",--,--,--
+Delaware,2009,"Transport, other (excl. drown by water transp)",--,"891,730",--,--,--
+Delaware,2009,Other specified and classifiable,--,"891,730",--,--,--
+Delaware,2009,Other specified / NEC,--,"891,730",--,--,--
+Delaware,2009,Unspecified,21,"891,730",2.36,2.2,299
+Delaware,2008,Cut/Pierce,--,"883,874",--,--,--
+Delaware,2008,Drowning (includes water transport),14**,"883,874",1.58**,1.61**,516
+Delaware,2008,Fall,56,"883,874",6.34,5.97,231
+Delaware,2008,Fire/Flame,--,"883,874",--,--,--
+Delaware,2008,Firearm,95,"883,874",10.75,10.65,"2,594"
+Delaware,2008,Machinery,--,"883,874",--,--,--
+Delaware,2008,Natural/Environmental,--,"883,874",--,--,--
+Delaware,2008,Drug Poisoning,124,"883,874",14.03,14.36,"3,091"
+Delaware,2008,Non-Drug Poisoning,17**,"883,874",1.92**,1.84**,417
+Delaware,2008,Struck by / against,--,"883,874",--,--,--
+Delaware,2008,Suffocation,54,"883,874",6.11,5.9,"1,073"
+Delaware,2008,"Motor vehicle, traffic",123,"883,874",13.92,14.16,"3,095"
+Delaware,2008,"Pedal cyclist, other",--,"883,874",--,--,--
+Delaware,2008,"Pedestrian, other",--,"883,874",--,--,--
+Delaware,2008,"Transport, other land",--,"883,874",--,--,--
+Delaware,2008,Other specified and classifiable,--,"883,874",--,--,--
+Delaware,2008,Other specified / NEC,--,"883,874",--,--,--
+Delaware,2008,Unspecified,22,"883,874",2.49,2.37,187
+Delaware,2007,Cut/Pierce,--,"871,749",--,--,--
+Delaware,2007,Drowning (includes water transport),--,"871,749",--,--,--
+Delaware,2007,Fall,49,"871,749",5.62,5.31,230
+Delaware,2007,Fire/Flame,11**,"871,749",1.26**,1.15**,129
+Delaware,2007,Hot object/Substance,--,"871,749",--,--,--
+Delaware,2007,Firearm,79,"871,749",9.06,8.91,"1,795"
+Delaware,2007,Natural/Environmental,--,"871,749",--,--,--
+Delaware,2007,Drug Poisoning,97,"871,749",11.13,11.42,"2,461"
+Delaware,2007,Non-Drug Poisoning,--,"871,749",--,--,--
+Delaware,2007,Struck by / against,--,"871,749",--,--,--
+Delaware,2007,Suffocation,36,"871,749",4.13,4.12,715
+Delaware,2007,"Motor vehicle, traffic",116,"871,749",13.31,13.15,"3,162"
+Delaware,2007,"Pedal cyclist, other",--,"871,749",--,--,--
+Delaware,2007,"Pedestrian, other",--,"871,749",--,--,--
+Delaware,2007,"Transport, other land",--,"871,749",--,--,--
+Delaware,2007,"Transport, other (excl. drown by water transp)",--,"871,749",--,--,--
+Delaware,2007,Other specified and classifiable,--,"871,749",--,--,--
+Delaware,2007,Other specified / NEC,--,"871,749",--,--,--
+Delaware,2007,Unspecified,28,"871,749",3.21,3,266
+Delaware,2006,Cut/Pierce,--,"859,268",--,--,--
+Delaware,2006,Drowning (includes water transport),11**,"859,268",1.28**,1.27**,236
+Delaware,2006,Fall,47,"859,268",5.47,5.19,118
+Delaware,2006,Fire/Flame,11**,"859,268",1.28**,1.22**,182
+Delaware,2006,Firearm,79,"859,268",9.19,9.2,"2,018"
+Delaware,2006,Machinery,--,"859,268",--,--,--
+Delaware,2006,Natural/Environmental,--,"859,268",--,--,--
+Delaware,2006,Drug Poisoning,78,"859,268",9.08,9.27,"2,149"
+Delaware,2006,Non-Drug Poisoning,--,"859,268",--,--,--
+Delaware,2006,Suffocation,55,"859,268",6.4,6.33,"1,173"
+Delaware,2006,"Motor vehicle, traffic",137,"859,268",15.94,16,"3,358"
+Delaware,2006,"Pedal cyclist, other",--,"859,268",--,--,--
+Delaware,2006,"Pedestrian, other",--,"859,268",--,--,--
+Delaware,2006,"Transport, other land",--,"859,268",--,--,--
+Delaware,2006,Other specified and classifiable,--,"859,268",--,--,--
+Delaware,2006,Other specified / NEC,--,"859,268",--,--,--
+Delaware,2006,Unspecified,31,"859,268",3.61,3.5,524
+Delaware,2005,Cut/Pierce,11**,"845,150",1.30**,1.32**,299
+Delaware,2005,Drowning (includes water transport),--,"845,150",--,--,--
+Delaware,2005,Fall,53,"845,150",6.27,6.18,276
+Delaware,2005,Fire/Flame,16**,"845,150",1.89**,1.86**,325
+Delaware,2005,Firearm,75,"845,150",8.87,8.79,"1,979"
+Delaware,2005,Machinery,--,"845,150",--,--,--
+Delaware,2005,Natural/Environmental,--,"845,150",--,--,--
+Delaware,2005,Drug Poisoning,62,"845,150",7.34,7.43,"1,588"
+Delaware,2005,Non-Drug Poisoning,--,"845,150",--,--,--
+Delaware,2005,Struck by / against,--,"845,150",--,--,--
+Delaware,2005,Suffocation,45,"845,150",5.32,5.3,693
+Delaware,2005,"Motor vehicle, traffic",119,"845,150",14.08,13.81,"2,975"
+Delaware,2005,"Pedestrian, other",--,"845,150",--,--,--
+Delaware,2005,"Transport, other land",--,"845,150",--,--,--
+Delaware,2005,"Transport, other (excl. drown by water transp)",--,"845,150",--,--,--
+Delaware,2005,Other specified and classifiable,--,"845,150",--,--,--
+Delaware,2005,Other specified / NEC,--,"845,150",--,--,--
+Delaware,2005,Unspecified,30,"845,150",3.55,3.45,288
+Delaware,2004,Cut/Pierce,--,"830,803",--,--,--
+Delaware,2004,Drowning (includes water transport),14**,"830,803",1.69**,1.71**,371
+Delaware,2004,Fall,51,"830,803",6.14,6.04,76
+Delaware,2004,Fire/Flame,10**,"830,803",1.20**,1.23**,272
+Delaware,2004,Firearm,75,"830,803",9.03,8.78,"1,907"
+Delaware,2004,Natural/Environmental,--,"830,803",--,--,--
+Delaware,2004,Drug Poisoning,63,"830,803",7.58,7.62,"1,556"
+Delaware,2004,Non-Drug Poisoning,--,"830,803",--,--,--
+Delaware,2004,Struck by / against,--,"830,803",--,--,--
+Delaware,2004,Suffocation,40,"830,803",4.82,4.92,975
+Delaware,2004,"Motor vehicle, traffic",138,"830,803",16.61,16.58,"3,583"
+Delaware,2004,"Pedestrian, other",--,"830,803",--,--,--
+Delaware,2004,"Transport, other land",--,"830,803",--,--,--
+Delaware,2004,"Transport, other (excl. drown by water transp)",--,"830,803",--,--,--
+Delaware,2004,Other specified and classifiable,--,"830,803",--,--,--
+Delaware,2004,Other specified / NEC,--,"830,803",--,--,--
+Delaware,2004,Unspecified,16**,"830,803",1.93**,1.94**,234
+Delaware,2003,Cut/Pierce,--,"818,003",--,--,--
+Delaware,2003,Drowning (includes water transport),--,"818,003",--,--,--
+Delaware,2003,Fall,28,"818,003",3.42,3.41,170
+Delaware,2003,Fire/Flame,--,"818,003",--,--,--
+Delaware,2003,Firearm,65,"818,003",7.95,7.86,"1,620"
+Delaware,2003,Natural/Environmental,--,"818,003",--,--,--
+Delaware,2003,Drug Poisoning,77,"818,003",9.41,9.46,"1,951"
+Delaware,2003,Non-Drug Poisoning,--,"818,003",--,--,--
+Delaware,2003,Suffocation,43,"818,003",5.26,5.2,728
+Delaware,2003,"Motor vehicle, traffic",131,"818,003",16.02,15.79,"3,620"
+Delaware,2003,"Pedal cyclist, other",--,"818,003",--,--,--
+Delaware,2003,"Pedestrian, other",--,"818,003",--,--,--
+Delaware,2003,"Transport, other land",--,"818,003",--,--,--
+Delaware,2003,"Transport, other (excl. drown by water transp)",--,"818,003",--,--,--
+Delaware,2003,Other specified and classifiable,--,"818,003",--,--,--
+Delaware,2003,Other specified / NEC,--,"818,003",--,--,--
+Delaware,2003,Unspecified,24,"818,003",2.93,2.93,227
+Delaware,2002,Cut/Pierce,--,"806,169",--,--,--
+Delaware,2002,Drowning (includes water transport),12**,"806,169",1.49**,1.50**,392
+Delaware,2002,Fall,40,"806,169",4.96,5.16,297
+Delaware,2002,Fire/Flame,--,"806,169",--,--,--
+Delaware,2002,Firearm,74,"806,169",9.18,9.07,"2,003"
+Delaware,2002,Machinery,--,"806,169",--,--,--
+Delaware,2002,Natural/Environmental,--,"806,169",--,--,--
+Delaware,2002,Drug Poisoning,84,"806,169",10.42,10.46,"2,017"
+Delaware,2002,Non-Drug Poisoning,--,"806,169",--,--,--
+Delaware,2002,Struck by / against,--,"806,169",--,--,--
+Delaware,2002,Suffocation,32,"806,169",3.97,3.98,624
+Delaware,2002,"Motor vehicle, traffic",118,"806,169",14.64,14.53,"3,150"
+Delaware,2002,"Pedal cyclist, other",--,"806,169",--,--,--
+Delaware,2002,"Pedestrian, other",--,"806,169",--,--,--
+Delaware,2002,"Transport, other land",--,"806,169",--,--,--
+Delaware,2002,Other specified and classifiable,--,"806,169",--,--,--
+Delaware,2002,Other specified / NEC,--,"806,169",--,--,--
+Delaware,2002,Unspecified,18**,"806,169",2.23**,2.26**,116
+Delaware,2001,Cut/Pierce,--,"795,699",--,--,--
+Delaware,2001,Drowning (includes water transport),13**,"795,699",1.63**,1.65**,370
+Delaware,2001,Fall,41,"795,699",5.15,5.24,244
+Delaware,2001,Fire/Flame,24,"795,699",3.02,3.04,684
+Delaware,2001,Firearm,76,"795,699",9.55,9.47,"1,822"
+Delaware,2001,Machinery,--,"795,699",--,--,--
+Delaware,2001,Natural/Environmental,--,"795,699",--,--,--
+Delaware,2001,Drug Poisoning,64,"795,699",8.04,8.07,"1,593"
+Delaware,2001,Non-Drug Poisoning,--,"795,699",--,--,--
+Delaware,2001,Struck by / against,--,"795,699",--,--,--
+Delaware,2001,Suffocation,32,"795,699",4.02,3.98,724
+Delaware,2001,"Motor vehicle, traffic",122,"795,699",15.33,15.31,"3,381"
+Delaware,2001,"Pedal cyclist, other",--,"795,699",--,--,--
+Delaware,2001,"Transport, other land",--,"795,699",--,--,--
+Delaware,2001,"Transport, other (excl. drown by water transp)",--,"795,699",--,--,--
+Delaware,2001,Other specified and classifiable,--,"795,699",--,--,--
+Delaware,2001,Other specified / NEC,10**,"795,699",1.26**,1.26**,91
+Delaware,2001,Unspecified,31,"795,699",3.9,4.03,303
+Total,,,"12,980","18,969,612",68.43,67.32,"267,892"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Delaware,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

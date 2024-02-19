@@ -1,0 +1,407 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Wyoming,2021,Cut/Pierce,--,"578,803",--,--,--
+Wyoming,2021,Drowning (includes water transport),--,"578,803",--,--,--
+Wyoming,2021,Fall,71,"578,803",12.27,10.88,223
+Wyoming,2021,Fire/Flame,11**,"578,803",1.90**,1.71**,189
+Wyoming,2021,Hot object/Substance,--,"578,803",--,--,--
+Wyoming,2021,Firearm,155,"578,803",26.78,26.47,"3,249"
+Wyoming,2021,Machinery,--,"578,803",--,--,--
+Wyoming,2021,Natural/Environmental,11**,"578,803",1.90**,1.69**,119
+Wyoming,2021,Drug Poisoning,109,"578,803",18.83,18.91,"2,326"
+Wyoming,2021,Non-Drug Poisoning,17**,"578,803",2.94**,2.92**,344
+Wyoming,2021,Struck by / against,--,"578,803",--,--,--
+Wyoming,2021,Suffocation,63,"578,803",10.89,11.54,"1,635"
+Wyoming,2021,"Motor vehicle, traffic",93,"578,803",16.07,15.84,"2,290"
+Wyoming,2021,"Pedal cyclist, other",--,"578,803",--,--,--
+Wyoming,2021,"Pedestrian, other",--,"578,803",--,--,--
+Wyoming,2021,"Transport, other land",--,"578,803",--,--,--
+Wyoming,2021,"Transport, other (excl. drown by water transp)",--,"578,803",--,--,--
+Wyoming,2021,Other specified and classifiable,--,"578,803",--,--,--
+Wyoming,2021,Other specified / NEC,--,"578,803",--,--,--
+Wyoming,2021,Unspecified,22,"578,803",3.8,3.45,174
+Wyoming,2020,Cut/Pierce,--,"577,267",--,--,--
+Wyoming,2020,Drowning (includes water transport),--,"577,267",--,--,--
+Wyoming,2020,Fall,94,"577,267",16.28,14.74,235
+Wyoming,2020,Fire/Flame,--,"577,267",--,--,--
+Wyoming,2020,Firearm,154,"577,267",26.68,26.28,"3,209"
+Wyoming,2020,Machinery,--,"577,267",--,--,--
+Wyoming,2020,Natural/Environmental,14**,"577,267",2.43**,2.18**,139
+Wyoming,2020,Drug Poisoning,99,"577,267",17.15,17.41,"2,037"
+Wyoming,2020,Non-Drug Poisoning,18**,"577,267",3.12**,3.18**,303
+Wyoming,2020,Struck by / against,--,"577,267",--,--,--
+Wyoming,2020,Suffocation,48,"577,267",8.32,8.8,"1,267"
+Wyoming,2020,"Motor vehicle, traffic",103,"577,267",17.84,17.02,"2,118"
+Wyoming,2020,"Pedestrian, other",--,"577,267",--,--,--
+Wyoming,2020,"Transport, other land",13**,"577,267",2.25**,2.21**,294
+Wyoming,2020,"Transport, other (excl. drown by water transp)",--,"577,267",--,--,--
+Wyoming,2020,Other specified and classifiable,--,"577,267",--,--,--
+Wyoming,2020,Other specified / NEC,--,"577,267",--,--,--
+Wyoming,2020,Unspecified,13**,"577,267",2.25**,2.05**,151
+Wyoming,2019,Cut/Pierce,--,"580,116",--,--,--
+Wyoming,2019,Drowning (includes water transport),11**,"580,116",1.90**,1.92**,244
+Wyoming,2019,Fall,102,"580,116",17.58,14.88,373
+Wyoming,2019,Fire/Flame,--,"580,116",--,--,--
+Wyoming,2019,Firearm,133,"580,116",22.93,22.4,"2,659"
+Wyoming,2019,Machinery,--,"580,116",--,--,--
+Wyoming,2019,Natural/Environmental,12**,"580,116",2.07**,1.74**,114
+Wyoming,2019,Overexertion,--,"580,116",--,--,--
+Wyoming,2019,Drug Poisoning,79,"580,116",13.62,14.07,"1,646"
+Wyoming,2019,Non-Drug Poisoning,22,"580,116",3.79,3.79,275
+Wyoming,2019,Struck by / against,--,"580,116",--,--,--
+Wyoming,2019,Suffocation,64,"580,116",11.03,11.5,"1,627"
+Wyoming,2019,"Motor vehicle, traffic",105,"580,116",18.1,18.53,"2,544"
+Wyoming,2019,"Pedestrian, other",--,"580,116",--,--,--
+Wyoming,2019,"Transport, other land",--,"580,116",--,--,--
+Wyoming,2019,"Transport, other (excl. drown by water transp)",--,"580,116",--,--,--
+Wyoming,2019,Other specified and classifiable,--,"580,116",--,--,--
+Wyoming,2019,Other specified / NEC,--,"580,116",--,--,--
+Wyoming,2019,Unspecified,22,"580,116",3.79,3.29,243
+Wyoming,2018,Cut/Pierce,--,"579,054",--,--,--
+Wyoming,2018,Drowning (includes water transport),--,"579,054",--,--,--
+Wyoming,2018,Fall,108,"579,054",18.65,15.69,91
+Wyoming,2018,Fire/Flame,10**,"579,054",1.73**,1.46**,45
+Wyoming,2018,Firearm,124,"579,054",21.41,21.03,"2,632"
+Wyoming,2018,Machinery,--,"579,054",--,--,--
+Wyoming,2018,Natural/Environmental,11**,"579,054",1.90**,2.00**,227
+Wyoming,2018,Drug Poisoning,66,"579,054",11.4,11.03,"1,201"
+Wyoming,2018,Non-Drug Poisoning,17**,"579,054",2.94**,2.91**,249
+Wyoming,2018,Struck by / against,--,"579,054",--,--,--
+Wyoming,2018,Suffocation,43,"579,054",7.43,7.31,"1,035"
+Wyoming,2018,"Motor vehicle, traffic",93,"579,054",16.06,15.91,"2,277"
+Wyoming,2018,"Pedestrian, other",--,"579,054",--,--,--
+Wyoming,2018,"Transport, other land",--,"579,054",--,--,--
+Wyoming,2018,"Transport, other (excl. drown by water transp)",--,"579,054",--,--,--
+Wyoming,2018,Other specified and classifiable,12**,"579,054",2.07**,2.09**,360
+Wyoming,2018,Other specified / NEC,--,"579,054",--,--,--
+Wyoming,2018,Unspecified,11**,"579,054",1.90**,1.64**,43
+Wyoming,2017,Cut/Pierce,--,"579,994",--,--,--
+Wyoming,2017,Drowning (includes water transport),14**,"579,994",2.41**,2.14**,351
+Wyoming,2017,Fall,89,"579,994",15.35,12.86,329
+Wyoming,2017,Fire/Flame,--,"579,994",--,--,--
+Wyoming,2017,Hot object/Substance,--,"579,994",--,--,--
+Wyoming,2017,Firearm,113,"579,994",19.48,18.7,"2,158"
+Wyoming,2017,Machinery,--,"579,994",--,--,--
+Wyoming,2017,Natural/Environmental,--,"579,994",--,--,--
+Wyoming,2017,Drug Poisoning,69,"579,994",11.9,12.16,"1,326"
+Wyoming,2017,Non-Drug Poisoning,20**,"579,994",3.45**,3.96**,525
+Wyoming,2017,Struck by / against,--,"579,994",--,--,--
+Wyoming,2017,Suffocation,60,"579,994",10.35,10.08,"1,592"
+Wyoming,2017,"Motor vehicle, traffic",99,"579,994",17.07,17.26,"2,320"
+Wyoming,2017,"Pedestrian, other",--,"579,994",--,--,--
+Wyoming,2017,"Transport, other land",--,"579,994",--,--,--
+Wyoming,2017,"Transport, other (excl. drown by water transp)",--,"579,994",--,--,--
+Wyoming,2017,Other specified and classifiable,--,"579,994",--,--,--
+Wyoming,2017,Other specified / NEC,--,"579,994",--,--,--
+Wyoming,2017,Unspecified,16**,"579,994",2.76**,2.44**,186
+Wyoming,2016,Cut/Pierce,--,"585,243",--,--,--
+Wyoming,2016,Drowning (includes water transport),14**,"585,243",2.39**,2.85**,375
+Wyoming,2016,Fall,92,"585,243",15.72,14.26,425
+Wyoming,2016,Fire/Flame,--,"585,243",--,--,--
+Wyoming,2016,Firearm,101,"585,243",17.26,17.51,"1,776"
+Wyoming,2016,Machinery,--,"585,243",--,--,--
+Wyoming,2016,Natural/Environmental,--,"585,243",--,--,--
+Wyoming,2016,Drug Poisoning,99,"585,243",16.92,17.59,"2,136"
+Wyoming,2016,Non-Drug Poisoning,25,"585,243",4.27,4.38,487
+Wyoming,2016,Struck by / against,--,"585,243",--,--,--
+Wyoming,2016,Suffocation,40,"585,243",6.84,7.09,"1,012"
+Wyoming,2016,"Motor vehicle, traffic",95,"585,243",16.23,16.02,"2,115"
+Wyoming,2016,"Pedestrian, other",--,"585,243",--,--,--
+Wyoming,2016,"Transport, other land",12**,"585,243",2.05**,1.88**,179
+Wyoming,2016,"Transport, other (excl. drown by water transp)",--,"585,243",--,--,--
+Wyoming,2016,Other specified and classifiable,--,"585,243",--,--,--
+Wyoming,2016,Other specified / NEC,--,"585,243",--,--,--
+Wyoming,2016,Unspecified,20**,"585,243",3.42**,3.41**,167
+Wyoming,2015,Cut/Pierce,--,"586,389",--,--,--
+Wyoming,2015,Drowning (includes water transport),--,"586,389",--,--,--
+Wyoming,2015,Fall,92,"586,389",15.69,14.14,541
+Wyoming,2015,Fire/Flame,--,"586,389",--,--,--
+Wyoming,2015,Firearm,113,"586,389",19.27,19.47,"2,500"
+Wyoming,2015,Machinery,--,"586,389",--,--,--
+Wyoming,2015,Natural/Environmental,--,"586,389",--,--,--
+Wyoming,2015,Drug Poisoning,96,"586,389",16.37,16.66,"2,079"
+Wyoming,2015,Non-Drug Poisoning,21,"586,389",3.58,3.78,389
+Wyoming,2015,Struck by / against,--,"586,389",--,--,--
+Wyoming,2015,Suffocation,62,"586,389",10.57,11.1,"1,484"
+Wyoming,2015,"Motor vehicle, traffic",121,"586,389",20.64,20.75,"3,121"
+Wyoming,2015,"Pedal cyclist, other",--,"586,389",--,--,--
+Wyoming,2015,"Pedestrian, other",--,"586,389",--,--,--
+Wyoming,2015,"Transport, other land",16**,"586,389",2.73**,2.52**,366
+Wyoming,2015,"Transport, other (excl. drown by water transp)",--,"586,389",--,--,--
+Wyoming,2015,Other specified and classifiable,--,"586,389",--,--,--
+Wyoming,2015,Other specified / NEC,--,"586,389",--,--,--
+Wyoming,2015,Unspecified,21,"586,389",3.58,3.34,343
+Wyoming,2014,Cut/Pierce,--,"583,159",--,--,--
+Wyoming,2014,Drowning (includes water transport),17**,"583,159",2.92**,2.75**,410
+Wyoming,2014,Fall,53,"583,159",9.09,8.64,196
+Wyoming,2014,Fire/Flame,--,"583,159",--,--,--
+Wyoming,2014,Firearm,93,"583,159",15.95,16.36,"2,253"
+Wyoming,2014,Machinery,--,"583,159",--,--,--
+Wyoming,2014,Natural/Environmental,12**,"583,159",2.06**,1.78**,98
+Wyoming,2014,Drug Poisoning,109,"583,159",18.69,19.31,"2,364"
+Wyoming,2014,Non-Drug Poisoning,19**,"583,159",3.26**,3.26**,319
+Wyoming,2014,Struck by / against,--,"583,159",--,--,--
+Wyoming,2014,Suffocation,29,"583,159",4.97,4.58,936
+Wyoming,2014,"Motor vehicle, traffic",120,"583,159",20.58,20.21,"2,732"
+Wyoming,2014,"Pedal cyclist, other",--,"583,159",--,--,--
+Wyoming,2014,"Transport, other land",10**,"583,159",1.72**,1.59**,145
+Wyoming,2014,"Transport, other (excl. drown by water transp)",--,"583,159",--,--,--
+Wyoming,2014,Other specified and classifiable,--,"583,159",--,--,--
+Wyoming,2014,Other specified / NEC,--,"583,159",--,--,--
+Wyoming,2014,Unspecified,21,"583,159",3.6,3.35,302
+Wyoming,2013,Cut/Pierce,--,"582,620",--,--,--
+Wyoming,2013,Drowning (includes water transport),12**,"582,620",2.06**,2.12**,316
+Wyoming,2013,Fall,62,"582,620",10.64,10.11,327
+Wyoming,2013,Fire/Flame,--,"582,620",--,--,--
+Wyoming,2013,Firearm,102,"582,620",17.51,16.53,"1,976"
+Wyoming,2013,Machinery,--,"582,620",--,--,--
+Wyoming,2013,Natural/Environmental,11**,"582,620",1.89**,1.98**,210
+Wyoming,2013,Drug Poisoning,98,"582,620",16.82,17.16,"2,067"
+Wyoming,2013,Non-Drug Poisoning,14**,"582,620",2.40**,2.28**,241
+Wyoming,2013,Struck by / against,--,"582,620",--,--,--
+Wyoming,2013,Suffocation,32,"582,620",5.49,5.71,900
+Wyoming,2013,"Motor vehicle, traffic",84,"582,620",14.42,14.56,"2,318"
+Wyoming,2013,"Pedal cyclist, other",--,"582,620",--,--,--
+Wyoming,2013,"Pedestrian, other",--,"582,620",--,--,--
+Wyoming,2013,"Transport, other land",--,"582,620",--,--,--
+Wyoming,2013,"Transport, other (excl. drown by water transp)",--,"582,620",--,--,--
+Wyoming,2013,Other specified and classifiable,--,"582,620",--,--,--
+Wyoming,2013,Other specified / NEC,--,"582,620",--,--,--
+Wyoming,2013,Unspecified,22,"582,620",3.78,3.66,148
+Wyoming,2012,Cut/Pierce,--,"576,656",--,--,--
+Wyoming,2012,Drowning (includes water transport),11**,"576,656",1.91**,1.89**,354
+Wyoming,2012,Fall,55,"576,656",9.54,9.59,325
+Wyoming,2012,Fire/Flame,--,"576,656",--,--,--
+Wyoming,2012,Firearm,117,"576,656",20.29,20.12,"2,559"
+Wyoming,2012,Machinery,--,"576,656",--,--,--
+Wyoming,2012,Natural/Environmental,--,"576,656",--,--,--
+Wyoming,2012,Drug Poisoning,98,"576,656",17,16.91,"1,992"
+Wyoming,2012,Non-Drug Poisoning,14**,"576,656",2.43**,2.44**,453
+Wyoming,2012,Struck by / against,--,"576,656",--,--,--
+Wyoming,2012,Suffocation,52,"576,656",9.02,9.27,"1,311"
+Wyoming,2012,"Motor vehicle, traffic",94,"576,656",16.3,16.13,"2,431"
+Wyoming,2012,"Pedestrian, other",--,"576,656",--,--,--
+Wyoming,2012,"Transport, other land",10**,"576,656",1.73**,1.62**,211
+Wyoming,2012,"Transport, other (excl. drown by water transp)",--,"576,656",--,--,--
+Wyoming,2012,Other specified and classifiable,--,"576,656",--,--,--
+Wyoming,2012,Other specified / NEC,--,"576,656",--,--,--
+Wyoming,2012,Unspecified,15**,"576,656",2.60**,2.47**,265
+Wyoming,2011,Cut/Pierce,--,"567,491",--,--,--
+Wyoming,2011,Drowning (includes water transport),16**,"567,491",2.82**,2.80**,473
+Wyoming,2011,Fall,62,"567,491",10.93,10.79,337
+Wyoming,2011,Fire/Flame,--,"567,491",--,--,--
+Wyoming,2011,Firearm,96,"567,491",16.92,16.75,"2,148"
+Wyoming,2011,Machinery,--,"567,491",--,--,--
+Wyoming,2011,Natural/Environmental,10**,"567,491",1.76**,1.72**,336
+Wyoming,2011,Drug Poisoning,85,"567,491",14.98,15.26,"1,891"
+Wyoming,2011,Non-Drug Poisoning,17**,"567,491",3.00**,3.02**,352
+Wyoming,2011,Struck by / against,--,"567,491",--,--,--
+Wyoming,2011,Suffocation,27,"567,491",4.76,4.96,853
+Wyoming,2011,"Motor vehicle, traffic",105,"567,491",18.5,18.95,"2,825"
+Wyoming,2011,"Pedal cyclist, other",--,"567,491",--,--,--
+Wyoming,2011,"Pedestrian, other",--,"567,491",--,--,--
+Wyoming,2011,"Transport, other land",--,"567,491",--,--,--
+Wyoming,2011,"Transport, other (excl. drown by water transp)",--,"567,491",--,--,--
+Wyoming,2011,Other specified and classifiable,--,"567,491",--,--,--
+Wyoming,2011,Other specified / NEC,--,"567,491",--,--,--
+Wyoming,2011,Unspecified,23,"567,491",4.05,4.12,216
+Wyoming,2010,Cut/Pierce,--,"563,775",--,--,--
+Wyoming,2010,Drowning (includes water transport),--,"563,775",--,--,--
+Wyoming,2010,Fall,48,"563,775",8.51,9,302
+Wyoming,2010,Fire/Flame,--,"563,775",--,--,--
+Wyoming,2010,Firearm,92,"563,775",16.32,15.53,"1,991"
+Wyoming,2010,Machinery,--,"563,775",--,--,--
+Wyoming,2010,Natural/Environmental,10**,"563,775",1.77**,1.66**,60
+Wyoming,2010,Drug Poisoning,85,"563,775",15.08,14.79,"1,815"
+Wyoming,2010,Non-Drug Poisoning,19**,"563,775",3.37**,3.41**,373
+Wyoming,2010,Struck by / against,--,"563,775",--,--,--
+Wyoming,2010,Suffocation,45,"563,775",7.98,8.23,973
+Wyoming,2010,"Motor vehicle, traffic",127,"563,775",22.53,21.03,"2,722"
+Wyoming,2010,"Pedestrian, other",--,"563,775",--,--,--
+Wyoming,2010,"Transport, other land",11**,"563,775",1.95**,1.74**,202
+Wyoming,2010,"Transport, other (excl. drown by water transp)",--,"563,775",--,--,--
+Wyoming,2010,Other specified and classifiable,--,"563,775",--,--,--
+Wyoming,2010,Other specified / NEC,--,"563,775",--,--,--
+Wyoming,2010,Unspecified,14**,"563,775",2.48**,2.42**,52
+Wyoming,2009,Cut/Pierce,--,"559,851",--,--,--
+Wyoming,2009,Drowning (includes water transport),11**,"559,851",1.97**,2.07**,327
+Wyoming,2009,Fall,51,"559,851",9.11,9.4,365
+Wyoming,2009,Fire/Flame,--,"559,851",--,--,--
+Wyoming,2009,Firearm,96,"559,851",17.15,17.59,"2,170"
+Wyoming,2009,Machinery,--,"559,851",--,--,--
+Wyoming,2009,Natural/Environmental,--,"559,851",--,--,--
+Wyoming,2009,Drug Poisoning,60,"559,851",10.72,10.9,"1,469"
+Wyoming,2009,Non-Drug Poisoning,16**,"559,851",2.86**,2.98**,264
+Wyoming,2009,Struck by / against,--,"559,851",--,--,--
+Wyoming,2009,Suffocation,36,"559,851",6.43,6.61,951
+Wyoming,2009,"Motor vehicle, traffic",104,"559,851",18.58,18.57,"2,818"
+Wyoming,2009,"Pedestrian, other",--,"559,851",--,--,--
+Wyoming,2009,"Transport, other land",--,"559,851",--,--,--
+Wyoming,2009,Other specified and classifiable,--,"559,851",--,--,--
+Wyoming,2009,Other specified / NEC,--,"559,851",--,--,--
+Wyoming,2009,Unspecified,18**,"559,851",3.22**,3.19**,246
+Wyoming,2008,Cut/Pierce,--,"546,043",--,--,--
+Wyoming,2008,Drowning (includes water transport),--,"546,043",--,--,--
+Wyoming,2008,Fall,52,"546,043",9.52,9.97,283
+Wyoming,2008,Fire/Flame,--,"546,043",--,--,--
+Wyoming,2008,Hot object/Substance,--,"546,043",--,--,--
+Wyoming,2008,Firearm,93,"546,043",17.03,16.91,"1,767"
+Wyoming,2008,Machinery,--,"546,043",--,--,--
+Wyoming,2008,Natural/Environmental,12**,"546,043",2.20**,2.19**,209
+Wyoming,2008,Drug Poisoning,74,"546,043",13.55,14.1,"1,866"
+Wyoming,2008,Non-Drug Poisoning,24,"546,043",4.4,4.1,455
+Wyoming,2008,Struck by / against,--,"546,043",--,--,--
+Wyoming,2008,Suffocation,38,"546,043",6.96,6.94,"1,334"
+Wyoming,2008,"Motor vehicle, traffic",131,"546,043",23.99,22.95,"3,517"
+Wyoming,2008,"Pedal cyclist, other",--,"546,043",--,--,--
+Wyoming,2008,"Pedestrian, other",--,"546,043",--,--,--
+Wyoming,2008,"Transport, other land",10**,"546,043",1.83**,1.82**,202
+Wyoming,2008,"Transport, other (excl. drown by water transp)",--,"546,043",--,--,--
+Wyoming,2008,Other specified and classifiable,--,"546,043",--,--,--
+Wyoming,2008,Other specified / NEC,--,"546,043",--,--,--
+Wyoming,2008,Unspecified,26,"546,043",4.76,5.03,314
+Wyoming,2007,Cut/Pierce,--,"534,876",--,--,--
+Wyoming,2007,Drowning (includes water transport),13**,"534,876",2.43**,2.26**,441
+Wyoming,2007,Fall,33,"534,876",6.17,6.5,86
+Wyoming,2007,Fire/Flame,--,"534,876",--,--,--
+Wyoming,2007,Firearm,76,"534,876",14.21,14.66,"1,779"
+Wyoming,2007,Machinery,--,"534,876",--,--,--
+Wyoming,2007,Natural/Environmental,--,"534,876",--,--,--
+Wyoming,2007,Drug Poisoning,63,"534,876",11.78,12.31,"1,568"
+Wyoming,2007,Non-Drug Poisoning,--,"534,876",--,--,--
+Wyoming,2007,Struck by / against,--,"534,876",--,--,--
+Wyoming,2007,Suffocation,23,"534,876",4.3,4.53,604
+Wyoming,2007,"Motor vehicle, traffic",122,"534,876",22.81,22.55,"3,595"
+Wyoming,2007,"Pedal cyclist, other",--,"534,876",--,--,--
+Wyoming,2007,"Pedestrian, other",--,"534,876",--,--,--
+Wyoming,2007,"Transport, other land",16**,"534,876",2.99**,3.10**,479
+Wyoming,2007,"Transport, other (excl. drown by water transp)",--,"534,876",--,--,--
+Wyoming,2007,Other specified and classifiable,--,"534,876",--,--,--
+Wyoming,2007,Other specified / NEC,--,"534,876",--,--,--
+Wyoming,2007,Unspecified,29,"534,876",5.42,5.49,412
+Wyoming,2006,Cut/Pierce,--,"522,667",--,--,--
+Wyoming,2006,Drowning (includes water transport),--,"522,667",--,--,--
+Wyoming,2006,Fall,40,"522,667",7.65,7.6,275
+Wyoming,2006,Fire/Flame,--,"522,667",--,--,--
+Wyoming,2006,Firearm,80,"522,667",15.31,14.85,"1,602"
+Wyoming,2006,Machinery,--,"522,667",--,--,--
+Wyoming,2006,Natural/Environmental,--,"522,667",--,--,--
+Wyoming,2006,Drug Poisoning,55,"522,667",10.52,10.36,"1,214"
+Wyoming,2006,Non-Drug Poisoning,--,"522,667",--,--,--
+Wyoming,2006,Struck by / against,--,"522,667",--,--,--
+Wyoming,2006,Suffocation,33,"522,667",6.31,6.29,822
+Wyoming,2006,"Motor vehicle, traffic",146,"522,667",27.93,27.75,"4,172"
+Wyoming,2006,"Pedal cyclist, other",--,"522,667",--,--,--
+Wyoming,2006,"Pedestrian, other",--,"522,667",--,--,--
+Wyoming,2006,"Transport, other land",--,"522,667",--,--,--
+Wyoming,2006,"Transport, other (excl. drown by water transp)",--,"522,667",--,--,--
+Wyoming,2006,Other specified and classifiable,--,"522,667",--,--,--
+Wyoming,2006,Other specified / NEC,--,"522,667",--,--,--
+Wyoming,2006,Unspecified,26,"522,667",4.97,5.38,323
+Wyoming,2005,Cut/Pierce,--,"514,157",--,--,--
+Wyoming,2005,Drowning (includes water transport),15**,"514,157",2.92**,2.82**,570
+Wyoming,2005,Fall,43,"514,157",8.36,8.83,228
+Wyoming,2005,Fire/Flame,--,"514,157",--,--,--
+Wyoming,2005,Firearm,71,"514,157",13.81,13.39,"1,414"
+Wyoming,2005,Machinery,--,"514,157",--,--,--
+Wyoming,2005,Natural/Environmental,--,"514,157",--,--,--
+Wyoming,2005,Drug Poisoning,26,"514,157",5.06,4.9,597
+Wyoming,2005,Non-Drug Poisoning,13**,"514,157",2.53**,2.51**,315
+Wyoming,2005,Struck by / against,--,"514,157",--,--,--
+Wyoming,2005,Suffocation,29,"514,157",5.64,5.89,769
+Wyoming,2005,"Motor vehicle, traffic",145,"514,157",28.2,28.11,"3,933"
+Wyoming,2005,"Pedestrian, other",--,"514,157",--,--,--
+Wyoming,2005,"Transport, other land",12**,"514,157",2.33**,2.36**,197
+Wyoming,2005,"Transport, other (excl. drown by water transp)",--,"514,157",--,--,--
+Wyoming,2005,Other specified and classifiable,11**,"514,157",2.14**,1.95**,302
+Wyoming,2005,Other specified / NEC,--,"514,157",--,--,--
+Wyoming,2005,Unspecified,17**,"514,157",3.31**,3.54**,297
+Wyoming,2004,Cut/Pierce,--,"509,106",--,--,--
+Wyoming,2004,Drowning (includes water transport),10**,"509,106",1.96**,2.00**,385
+Wyoming,2004,Fall,35,"509,106",6.88,7.2,166
+Wyoming,2004,Fire/Flame,--,"509,106",--,--,--
+Wyoming,2004,Hot object/Substance,--,"509,106",--,--,--
+Wyoming,2004,Firearm,56,"509,106",11,11.15,"1,095"
+Wyoming,2004,Machinery,--,"509,106",--,--,--
+Wyoming,2004,Natural/Environmental,--,"509,106",--,--,--
+Wyoming,2004,Drug Poisoning,46,"509,106",9.04,8.99,"1,114"
+Wyoming,2004,Non-Drug Poisoning,--,"509,106",--,--,--
+Wyoming,2004,Struck by / against,--,"509,106",--,--,--
+Wyoming,2004,Suffocation,30,"509,106",5.89,6.37,"1,152"
+Wyoming,2004,"Motor vehicle, traffic",114,"509,106",22.39,21.17,"3,039"
+Wyoming,2004,"Pedestrian, other",--,"509,106",--,--,--
+Wyoming,2004,"Transport, other land",--,"509,106",--,--,--
+Wyoming,2004,"Transport, other (excl. drown by water transp)",--,"509,106",--,--,--
+Wyoming,2004,Other specified and classifiable,--,"509,106",--,--,--
+Wyoming,2004,Other specified / NEC,--,"509,106",--,--,--
+Wyoming,2004,Unspecified,17**,"509,106",3.34**,3.42**,361
+Wyoming,2003,Cut/Pierce,--,"503,453",--,--,--
+Wyoming,2003,Drowning (includes water transport),--,"503,453",--,--,--
+Wyoming,2003,Fall,44,"503,453",8.74,9.22,150
+Wyoming,2003,Fire/Flame,--,"503,453",--,--,--
+Wyoming,2003,Firearm,89,"503,453",17.68,17.46,"1,908"
+Wyoming,2003,Machinery,--,"503,453",--,--,--
+Wyoming,2003,Natural/Environmental,10**,"503,453",1.99**,1.89**,250
+Wyoming,2003,Drug Poisoning,30,"503,453",5.96,5.8,709
+Wyoming,2003,Non-Drug Poisoning,--,"503,453",--,--,--
+Wyoming,2003,Struck by / against,--,"503,453",--,--,--
+Wyoming,2003,Suffocation,37,"503,453",7.35,7.96,894
+Wyoming,2003,"Motor vehicle, traffic",125,"503,453",24.83,24.67,"3,436"
+Wyoming,2003,"Pedestrian, other",--,"503,453",--,--,--
+Wyoming,2003,"Transport, other land",10**,"503,453",1.99**,2.05**,311
+Wyoming,2003,"Transport, other (excl. drown by water transp)",--,"503,453",--,--,--
+Wyoming,2003,Other specified and classifiable,--,"503,453",--,--,--
+Wyoming,2003,Other specified / NEC,--,"503,453",--,--,--
+Wyoming,2003,Unspecified,20**,"503,453",3.97**,4.27**,396
+Wyoming,2002,Cut/Pierce,--,"500,017",--,--,--
+Wyoming,2002,Drowning (includes water transport),10**,"500,017",2.00**,2.00**,403
+Wyoming,2002,Fall,33,"500,017",6.6,7.17,171
+Wyoming,2002,Fire/Flame,--,"500,017",--,--,--
+Wyoming,2002,Firearm,95,"500,017",19,18.87,"2,159"
+Wyoming,2002,Machinery,--,"500,017",--,--,--
+Wyoming,2002,Natural/Environmental,--,"500,017",--,--,--
+Wyoming,2002,Drug Poisoning,34,"500,017",6.8,6.8,905
+Wyoming,2002,Non-Drug Poisoning,10**,"500,017",2.00**,2.00**,266
+Wyoming,2002,Struck by / against,--,"500,017",--,--,--
+Wyoming,2002,Suffocation,27,"500,017",5.4,5.28,785
+Wyoming,2002,"Motor vehicle, traffic",148,"500,017",29.6,29.44,"4,383"
+Wyoming,2002,"Pedestrian, other",--,"500,017",--,--,--
+Wyoming,2002,"Transport, other land",12**,"500,017",2.40**,2.37**,411
+Wyoming,2002,"Transport, other (excl. drown by water transp)",--,"500,017",--,--,--
+Wyoming,2002,Other specified and classifiable,--,"500,017",--,--,--
+Wyoming,2002,Other specified / NEC,--,"500,017",--,--,--
+Wyoming,2002,Unspecified,22,"500,017",4.4,4.49,164
+Wyoming,2001,Cut/Pierce,--,"494,657",--,--,--
+Wyoming,2001,Drowning (includes water transport),19**,"494,657",3.84**,3.72**,520
+Wyoming,2001,Fall,22,"494,657",4.45,4.74,179
+Wyoming,2001,Fire/Flame,--,"494,657",--,--,--
+Wyoming,2001,Firearm,70,"494,657",14.15,13.91,"1,735"
+Wyoming,2001,Machinery,--,"494,657",--,--,--
+Wyoming,2001,Natural/Environmental,10**,"494,657",2.02**,2.10**,250
+Wyoming,2001,Drug Poisoning,22,"494,657",4.45,4.6,602
+Wyoming,2001,Non-Drug Poisoning,15**,"494,657",3.03**,2.85**,370
+Wyoming,2001,Struck by / against,--,"494,657",--,--,--
+Wyoming,2001,Suffocation,30,"494,657",6.07,6.04,851
+Wyoming,2001,"Motor vehicle, traffic",136,"494,657",27.49,27.29,"3,388"
+Wyoming,2001,"Pedal cyclist, other",--,"494,657",--,--,--
+Wyoming,2001,"Pedestrian, other",--,"494,657",--,--,--
+Wyoming,2001,"Transport, other land",--,"494,657",--,--,--
+Wyoming,2001,"Transport, other (excl. drown by water transp)",--,"494,657",--,--,--
+Wyoming,2001,Other specified and classifiable,--,"494,657",--,--,--
+Wyoming,2001,Other specified / NEC,--,"494,657",--,--,--
+Wyoming,2001,Unspecified,15**,"494,657",3.03**,3.30**,78
+Total,,,"10,195","11,625,394",87.7,86.94,"207,821"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Wyoming,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

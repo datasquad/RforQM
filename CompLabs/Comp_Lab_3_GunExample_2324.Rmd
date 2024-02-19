@@ -6,30 +6,208 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
-## R Markdown
 
-This can be taken into account by adding "state fixed effcets".
+# Introduction
 
-```{r, eval = TRUE}
-mod4 <- lm(Age.Adjusted.Rate~law.officers.pc+ur+alcc.pc+State,data=data2)
-stargazer(mod2,mod3,mod4,type = "text", keep = c("law.officers.pc","ur","alcc.pc"))
+In this computer lab you will be practicing the following skills
+
+* import data
+* estimate and compare single and multiple regressions
+* Perform robust regression inference
+* explore the functionality of a new function without being told how everything works
+
+Let's start by loading some useful packages
+
+```{r}
+library(readxl)       # enable the read_excel function
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # plotting toolbox
+library(stargazer)    # for nice regression output
+library(AER)          # access to HS robust standard errors
 ```
 
-Before we discuss what this regression actually did, we can observe something really interesting. 
-
-* The $R^2$ of the regression has dramatically increased to 84%
-* All three coefficients we previously estimated have now been estimated to be very statistically significant.
-* The sign of the coefficient to `law.officers.pc` has changed, it is now negative.
-* A lot of coefficients have been added to the model, one for each state, but for Alabama.
-
-What the addition of the factor variable `State` does is that it includes a dummy variable for each state. For instance `StateArizona` is a variable that take sthe value 
-
-
-As an aside, if you estimate a model that has heaps of coefficients, like `mod4` but you are mainly interested in a subset of these coefficients then you can ask `stargazer` to only show that particular subset. You can try the following command. 
+and setting the working directory
 
 ```{r, eval = FALSE}
-stargazer(mod2,mod3,mod4,type = "text", keep = c("law.officers.pc","ur","alcc.pc"))
+setwd(XXXX)
 ```
+
+You should also save the separately supplied `stargazer_HC.r` file in your working directory. This will make it straightforward to estimate and compare regressions with robust standard errors. Once you have done that you should include the following line into your code which basically makes this function available to you.
+
+```{r}
+source("stargazer_HC.r")  # includes the robust regression 
+```
+
+# Context
+
+We are continuing work that eventually aims to replicate some of the work in this paper:
+
+Siegel et al (2019) The Impact of State Firearm Laws on Homicide and Suicide Deaths in the USA, 1991–2016: a Panel Study, J Gen Intern Med 34(10):2021–8.
+
+# Data Import
+
+As in Computer Lab 2 we import the dataset for the gun law example, however, do upload the new csv file "US_Gun_example_v2.csv" which now includes the proportion of 18 to 24 years old and information on the region in which each state is located in. 
+
+```{r, eval = FALSE}
+data2 <- read.csv("../data/US_Gun_example_v2.csv", stringsAsFactors = TRUE)          # import data
+str(data2)
+
+```
+
+
+```{r, echo = FALSE}
+data2 <- read.csv("../data/US_Gun_example_v2.csv", stringsAsFactors = TRUE)          # import data
+str(data2)
+
+```
+You should find that `data2` has 1,071 rows and 20 variables.
+
+# Regression
+
+## Previous work
+
+In last week's computer lab we concluded by estimating these two regression models:
+
+
+$mod2: AAR_i = \alpha + gamma_1~lo.pc_i + v_i$
+
+$mod3: AAR_i = \alpha + beta_1~lo.pc_i + \beta_2 ~ ur_i + \beta3 ~alcc.pc_i + u_i$
+
+```{r, eval = TRUE}
+mod2 <- lm(Age.Adjusted.Rate~law.officers.pc,data=data2)
+mod3 <- lm(Age.Adjusted.Rate~law.officers.pc+ur+alcc.pc,data=data2)
+stargazer(mod2,mod3,type = "text")
+```
+We were potentially puzzled by the very low $R^2$ for these regressions (meaning that less than 2% of the variation in the dependent variable is explained by variation in the explanatory variables). We plotted a scatter graph where different colors represents different states. 
+
+```{r}
+ggplot(data2,aes(law.officers.pc,Age.Adjusted.Rate, color = State)) +
+  geom_point() +
+  guides(color = "none") + # removes the legend
+  ggtitle("Number of law enforcement officers v Deaths by Firearms")
+```
+
+What you can see from here is that observations for the same state cluster together and that different states seem to differ significantly between each other. This variation is not reflected in the above estimation. 
+
+## Robust standard errors
+
+This is how far we got last time. Before we continue to work on that issue, we will look at the issue of performing inference. 
+
+You would have learned in the lectures that in practice we wish to account for the fact that error terms are not homoskedastic, meaning that error term variances may well vary in some systematic way. If that is so, then the way in which standard regression functions (like `lm`) estimate coefficient standard errors (the values in parenthesis underneath the parameter estimates in the regression output) is incorrect. There are different ways in which this can be corrected. The `stargazer_HC` function has one of them implemented and by displaying results using `stargazer_HC` you will ensure that inference on regression coefficients is robust to the presence of error heteroskedasticity.
+
+So let's display the same regression results but with heteroskedasticty robust standard errors, often also called White standard errors.
+
+```{r, eval = TRUE}
+stargazer_HC(mod2,mod3,type_out = "text")
+```
+You should compare these standard errors to the ones in the previous output. They are different. But note that calculating White standard errors leaves the actual coefficient estimates unchanged.
+
+From now on we will typically calculate heteroskedasticity robust standard errors.
+
+## Multiple regression and fixed effects
+
+### Region Effects
+
+Let us consider whether the variation we see between states is actually variation between regions in the U.S. First check how many states are in each region. There are many ways to achieve this. In the end you should be able to replicate the information in the following table.
+
+```{r, echo = FALSE}
+table1 <- data2 %>% filter(Year == "2020") %>% # pick any year
+  group_by(Region) %>% # groups by region
+  summarise(n = n()) %>% # summarises each group by calculating obs
+  print() 
+```
+
+One way of doing that would be by completing the following code skeleton:
+
+```{r, eval = FALSE}
+table1 <- data2 %>% XXXX(XXXX) %>% # pick any year
+  XXXX(XXXX) %>% # groups by region
+  XXXX(n = n()) %>% # summarises each group by calculating obs
+  print()  
+```
+
+If we believe that a significant proportion of the variation in the dependent variable can be explained by regional variation then we should include region-fixed-effects. This is done by including the `Region` variable into the regression. As `Region` is a factor variable, R will automatically create and include a dummy variable for each region. 
+
+```{r, eval = TRUE}
+mod4 <- lm(Age.Adjusted.Rate~law.officers.pc+ur+alcc.pc+Region,data=data2)
+stargazer_HC(mod2,mod3,mod4,type_out = "text")
+```
+
+As an example, the new variable `RegionWest` is a variable that takes the value 1 for all states that are in the West and 0 for all others. You can see that the inclusion of the Region dummy variables has significantly increased the $R^2$. We had four regions, but only three dummy variables were included. Why is there no dummy variable for the Midwest region?
+
+Also compare the coefficient estimates between `mod3` and `mod4`. Do you notice that the effect of the alcohol consumption, which was previously estimated to be significantly negative, now is statistically significant and positive? Clearly regional variation is important in explaining variation in the number of firearm deaths. Leaving these variables out does bad things (technically it introduces biases - and that is a bad thing).
+
+### State Effects
+
+You may wonder whether one shouldn't include state rather than region dummies. And that would be a fair suggestion. Estimate a new model `mod5` which is identical to `mod4` other than replacing the `Region` variable with the `State` variable. Then create an output in which you display models `mod2` to `mod5`.
+
+```{r, echo = FALSE, results = "hide"}
+mod5 <- lm(Age.Adjusted.Rate~law.officers.pc+ur+alcc.pc+State,data=data2)
+stargazer_HC(mod2,mod3,mod4,mod5,type_out = "text")
+```
+You should receive a really long output as the new regression has now included a lot of state dummy variables. Display the results instead with the following line.
+
+```{r, eval = TRUE}
+stargazer_HC(mod2,mod3,mod4,mod5,keep = c("law.officers.pc", "ur", "alcc.pc"),omit.stat=c("f"),type_out = "text")
+```
+Much better. Try and figure out what the additional options `keep = c("law.officers.pc", "ur", "alcc.pc")` and `omit.stat=c("f")` did. The help function `?stargazer` will be useful (as `stargazer_HC` actually calls `stargazer` there is no need to use the help for `stargazer_HC` as the above options come from `stargazer`.)
+
+
+## Inference on regression coefficients
+
+If you want to perform a hypothesis test say on $\beta_3$ (the coefficient on the `alcc.pc` variable), then the usual hypothesis to pose is $H_0: \beta_3 = 0$ versus $H_A: \beta_3 \neq 0$.
+
+It is the p-value to that hypothesis test which is represented by the asteriks next to the estimated coefficient in the standard regression output. Let's confirm that by looking back at the results using the robust standard errors. The estimated coefficient to the `alcc.pc` variable is -0.528 and the (**) indicate that the p-value to that test is smaller than 0.05 (but not smaller than 0.01). 
+
+Here is how you can perform this test manually using the `lht` (stands for Linear Hypothesis Test) function which is written to use regression output (here saved in `mod3`) for hypothesis testing.
+
+```{r}
+lht(mod3,"alcc.pc=0", white.adjust = TRUE)
+```
+The option `white.adjust = TRUE` is there to ensure that this procedure is using the heteroskedasticity robust standard errors. There is a lot of information, but the important one is the value displayed under ("Pr(>F)"), that is the p-value. Here it is, 0.02725, and, as predicted, is < 0.05 but larger than 0.01.
+
+Confirm that p-value for $H_0: \beta_2 = 0$ versus $H_A: \beta_2 \neq 0$ (coefficient on `ur` in `mod3`) is larger than 0.1.
+
+```{r, eval = FALSE}
+XXXX(XXXX,"XXXX", white.adjust = XXXX)
+```
+```{r, echo = FALSE}
+lht(mod3,"ur=0", white.adjust = TRUE)
+```
+
+The use of the `lht` function is that you can test different hypothesis. Say $H_0: \beta_3 = -0.5$ versus $H_A: \beta_3 \neq -0.5$ (coefficient on `law.officers.pc`).
+
+```{r}
+lht(mod3,"alcc.pc=-0.5", white.adjust = TRUE)
+```
+
+So, that null hypothesis cannot be rejected at any of the usual significance level.
+
+Even more so, you can use this function to test multiple hypotheses. Say you want to test whether the inclusion of the additional two variables (in `mod3` as opposed to `mod2"`) is relevant. If it wasn't then the following null hypothesis should be correct: $H_0: \beta_2=\beta_3=0$. We call this a multiple hypothesis.
+
+Use the help function (`?lht`) or search for advice () on how to use the `lht` function to test this hypothesis. If you get it right you should get the following output.
+
+```{r, echo = FALSE}
+lht(mod3,c("ur=0","alcc.pc=0"), white.adjust = TRUE)
+```
+
+The hypothesis that none of these two variables is relevant can only be rejected marginally, at a 10% significance level as the p-value is 0.05277.
+
+Are you getting the same conclusion if you test the same hypothesis in the model with state fixed effects? You should get the following output.
+
+```{r, echo = FALSE}
+lht(mod5,c("ur=0","alcc.pc=0"), white.adjust = TRUE)
+```
+
+Here it seems very obvious (very small p-value) that $H_0: \beta_2=\beta_3=0$ should be rejected as the p-value is very small. What we can conclude from this is that not including the important state fixed effects also made it difficult to detect whether the `alcc.pc` and the `ur` variables were important in explaining variation in the rate of firearm deaths. Recall that going to a model with region or state fixed effects actually even changed the sign of the coefficient. 
+
+The techniques you covered in this computer lab are absolutely fundamental to the remainder of this unit, so please ensure that you have not rushed over the material. Even better, you should experiment yourself and answer some of your own questions. And if you need questions, here are a few:
+
+* What happens if you include other variables? 
+* What other types of hypothesis can I test with `lht`?
+* Can I also include Year fixed effects?
+* If I include `Year` as a variable, why does it matter whether I include `Year` or `as.factor(Year)`)?
+

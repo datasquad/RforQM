@@ -1,0 +1,440 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Pennsylvania,2021,Cut/Pierce,108,"12,964,056",0.83,0.8,"2,011"
+Pennsylvania,2021,Drowning (includes water transport),165,"12,964,056",1.27,1.25,"4,006"
+Pennsylvania,2021,Fall,"2,444","12,964,056",18.85,13.8,"4,348"
+Pennsylvania,2021,Fire/Flame,200,"12,964,056",1.54,1.35,"2,826"
+Pennsylvania,2021,Hot object/Substance,--,"12,964,056",--,--,--
+Pennsylvania,2021,Firearm,"1,905","12,964,056",14.69,14.74,"47,890"
+Pennsylvania,2021,Machinery,21,"12,964,056",0.16,0.14,255
+Pennsylvania,2021,Natural/Environmental,98,"12,964,056",0.76,0.59,738
+Pennsylvania,2021,Drug Poisoning,"5,449","12,964,056",42.03,43.29,"117,312"
+Pennsylvania,2021,Non-Drug Poisoning,189,"12,964,056",1.46,1.41,"3,173"
+Pennsylvania,2021,Struck by / against,55,"12,964,056",0.42,0.38,849
+Pennsylvania,2021,Suffocation,916,"12,964,056",7.07,6.53,"16,255"
+Pennsylvania,2021,"Motor vehicle, traffic","1,312","12,964,056",10.12,9.64,"26,269"
+Pennsylvania,2021,"Pedal cyclist, other",12**,"12,964,056",0.09**,0.09**,265
+Pennsylvania,2021,"Pedestrian, other",46,"12,964,056",0.36,0.35,950
+Pennsylvania,2021,"Transport, other land",62,"12,964,056",0.48,0.44,"1,165"
+Pennsylvania,2021,"Transport, other (excl. drown by water transp)",--,"12,964,056",--,--,--
+Pennsylvania,2021,Other specified and classifiable,94,"12,964,056",0.73,0.67,"1,791"
+Pennsylvania,2021,Other specified / NEC,75,"12,964,056",0.58,0.49,"1,012"
+Pennsylvania,2021,Unspecified,343,"12,964,056",2.65,2.06,"2,263"
+Pennsylvania,2020,Cut/Pierce,102,"12,989,625",0.79,0.82,"2,430"
+Pennsylvania,2020,Drowning (includes water transport),127,"12,989,625",0.98,1.01,"3,758"
+Pennsylvania,2020,Fall,"2,170","12,989,625",16.71,12.12,"3,249"
+Pennsylvania,2020,Fire/Flame,163,"12,989,625",1.26,1.08,"2,619"
+Pennsylvania,2020,Hot object/Substance,--,"12,989,625",--,--,--
+Pennsylvania,2020,Firearm,"1,752","12,989,625",13.49,13.41,"43,758"
+Pennsylvania,2020,Machinery,26,"12,989,625",0.2,0.18,380
+Pennsylvania,2020,Natural/Environmental,69,"12,989,625",0.53,0.4,340
+Pennsylvania,2020,Overexertion,--,"12,989,625",--,--,--
+Pennsylvania,2020,Drug Poisoning,"5,168","12,989,625",39.79,41.59,"116,413"
+Pennsylvania,2020,Non-Drug Poisoning,148,"12,989,625",1.14,1.09,"2,470"
+Pennsylvania,2020,Struck by / against,54,"12,989,625",0.42,0.38,912
+Pennsylvania,2020,Suffocation,850,"12,989,625",6.54,6.03,"15,075"
+Pennsylvania,2020,"Motor vehicle, traffic","1,175","12,989,625",9.05,8.67,"24,501"
+Pennsylvania,2020,"Pedal cyclist, other",14**,"12,989,625",0.11**,0.09**,248
+Pennsylvania,2020,"Pedestrian, other",25,"12,989,625",0.19,0.19,523
+Pennsylvania,2020,"Transport, other land",67,"12,989,625",0.52,0.5,"1,447"
+Pennsylvania,2020,"Transport, other (excl. drown by water transp)",--,"12,989,625",--,--,--
+Pennsylvania,2020,Other specified and classifiable,72,"12,989,625",0.55,0.55,"1,671"
+Pennsylvania,2020,Other specified / NEC,83,"12,989,625",0.64,0.53,836
+Pennsylvania,2020,Unspecified,358,"12,989,625",2.76,2.11,"2,357"
+Pennsylvania,2019,Cut/Pierce,88,"12,798,883",0.69,0.67,"1,965"
+Pennsylvania,2019,Drowning (includes water transport),125,"12,798,883",0.98,0.99,"3,159"
+Pennsylvania,2019,Fall,"2,073","12,798,883",16.2,11.21,"4,018"
+Pennsylvania,2019,Fire/Flame,120,"12,798,883",0.94,0.84,"1,912"
+Pennsylvania,2019,Hot object/Substance,--,"12,798,883",--,--,--
+Pennsylvania,2019,Firearm,"1,541","12,798,883",12.04,11.65,"34,355"
+Pennsylvania,2019,Machinery,22,"12,798,883",0.17,0.15,240
+Pennsylvania,2019,Natural/Environmental,80,"12,798,883",0.63,0.48,656
+Pennsylvania,2019,Drug Poisoning,"4,377","12,798,883",34.2,35.64,"98,962"
+Pennsylvania,2019,Non-Drug Poisoning,292,"12,798,883",2.28,2.22,"5,452"
+Pennsylvania,2019,Struck by / against,52,"12,798,883",0.41,0.36,740
+Pennsylvania,2019,Suffocation,920,"12,798,883",7.19,6.71,"16,860"
+Pennsylvania,2019,"Motor vehicle, traffic","1,079","12,798,883",8.43,7.85,"21,348"
+Pennsylvania,2019,"Pedal cyclist, other",14**,"12,798,883",0.11**,0.10**,176
+Pennsylvania,2019,"Pedestrian, other",35,"12,798,883",0.27,0.24,588
+Pennsylvania,2019,"Transport, other land",48,"12,798,883",0.38,0.35,900
+Pennsylvania,2019,"Transport, other (excl. drown by water transp)",13**,"12,798,883",0.10**,0.09**,211
+Pennsylvania,2019,Other specified and classifiable,73,"12,798,883",0.57,0.54,"1,370"
+Pennsylvania,2019,Other specified / NEC,66,"12,798,883",0.52,0.44,837
+Pennsylvania,2019,Unspecified,391,"12,798,883",3.06,2.32,"2,631"
+Pennsylvania,2018,Cut/Pierce,104,"12,809,107",0.81,0.78,"2,250"
+Pennsylvania,2018,Drowning (includes water transport),134,"12,809,107",1.05,1.04,"3,202"
+Pennsylvania,2018,Fall,"1,863","12,809,107",14.54,10.1,"3,337"
+Pennsylvania,2018,Fire/Flame,158,"12,809,107",1.23,1.05,"2,093"
+Pennsylvania,2018,Hot object/Substance,--,"12,809,107",--,--,--
+Pennsylvania,2018,Firearm,"1,654","12,809,107",12.91,12.48,"37,539"
+Pennsylvania,2018,Machinery,23,"12,809,107",0.18,0.16,408
+Pennsylvania,2018,Natural/Environmental,72,"12,809,107",0.56,0.45,612
+Pennsylvania,2018,Drug Poisoning,"4,415","12,809,107",34.47,36.15,"104,623"
+Pennsylvania,2018,Non-Drug Poisoning,300,"12,809,107",2.34,2.3,"5,889"
+Pennsylvania,2018,Struck by / against,54,"12,809,107",0.42,0.38,689
+Pennsylvania,2018,Suffocation,937,"12,809,107",7.32,6.83,"17,596"
+Pennsylvania,2018,"Motor vehicle, traffic","1,240","12,809,107",9.68,9.02,"24,159"
+Pennsylvania,2018,"Pedal cyclist, other",--,"12,809,107",--,--,--
+Pennsylvania,2018,"Pedestrian, other",35,"12,809,107",0.27,0.26,902
+Pennsylvania,2018,"Transport, other land",61,"12,809,107",0.48,0.46,"1,380"
+Pennsylvania,2018,"Transport, other (excl. drown by water transp)",--,"12,809,107",--,--,--
+Pennsylvania,2018,Other specified and classifiable,84,"12,809,107",0.66,0.65,"1,946"
+Pennsylvania,2018,Other specified / NEC,68,"12,809,107",0.53,0.47,873
+Pennsylvania,2018,Unspecified,390,"12,809,107",3.05,2.22,"1,852"
+Pennsylvania,2017,Cut/Pierce,96,"12,794,679",0.75,0.72,"1,756"
+Pennsylvania,2017,Drowning (includes water transport),139,"12,794,679",1.09,1.1,"4,008"
+Pennsylvania,2017,Fall,"1,833","12,794,679",14.33,9.96,"3,541"
+Pennsylvania,2017,Fire/Flame,158,"12,794,679",1.24,1.07,"2,507"
+Pennsylvania,2017,Hot object/Substance,--,"12,794,679",--,--,--
+Pennsylvania,2017,Firearm,"1,636","12,794,679",12.79,12.46,"38,125"
+Pennsylvania,2017,Machinery,26,"12,794,679",0.2,0.16,245
+Pennsylvania,2017,Natural/Environmental,54,"12,794,679",0.42,0.35,540
+Pennsylvania,2017,Drug Poisoning,"5,388","12,794,679",42.11,44.24,"132,582"
+Pennsylvania,2017,Non-Drug Poisoning,275,"12,794,679",2.15,2.16,"5,622"
+Pennsylvania,2017,Struck by / against,40,"12,794,679",0.31,0.29,664
+Pennsylvania,2017,Suffocation,"1,008","12,794,679",7.88,7.26,"18,101"
+Pennsylvania,2017,"Motor vehicle, traffic","1,194","12,794,679",9.33,8.92,"24,397"
+Pennsylvania,2017,"Pedal cyclist, other",13**,"12,794,679",0.10**,0.08**,126
+Pennsylvania,2017,"Pedestrian, other",33,"12,794,679",0.26,0.22,556
+Pennsylvania,2017,"Transport, other land",90,"12,794,679",0.7,0.69,"2,297"
+Pennsylvania,2017,"Transport, other (excl. drown by water transp)",--,"12,794,679",--,--,--
+Pennsylvania,2017,Other specified and classifiable,94,"12,794,679",0.74,0.71,"2,271"
+Pennsylvania,2017,Other specified / NEC,71,"12,794,679",0.56,0.49,"1,007"
+Pennsylvania,2017,Unspecified,417,"12,794,679",3.26,2.45,"2,502"
+Pennsylvania,2016,Cut/Pierce,115,"12,788,468",0.9,0.87,"2,306"
+Pennsylvania,2016,Drowning (includes water transport),121,"12,788,468",0.95,0.92,"3,169"
+Pennsylvania,2016,Fall,"1,665","12,788,468",13.02,9.21,"4,025"
+Pennsylvania,2016,Fire/Flame,136,"12,788,468",1.06,0.87,"1,652"
+Pennsylvania,2016,Hot object/Substance,--,"12,788,468",--,--,--
+Pennsylvania,2016,Firearm,"1,555","12,788,468",12.16,11.87,"36,781"
+Pennsylvania,2016,Machinery,26,"12,788,468",0.2,0.18,416
+Pennsylvania,2016,Natural/Environmental,43,"12,788,468",0.34,0.26,349
+Pennsylvania,2016,Drug Poisoning,"4,627","12,788,468",36.18,37.8,"113,320"
+Pennsylvania,2016,Non-Drug Poisoning,246,"12,788,468",1.92,1.92,"4,607"
+Pennsylvania,2016,Struck by / against,50,"12,788,468",0.39,0.35,629
+Pennsylvania,2016,Suffocation,837,"12,788,468",6.55,6.09,"16,011"
+Pennsylvania,2016,"Motor vehicle, traffic","1,225","12,788,468",9.58,9.23,"26,910"
+Pennsylvania,2016,"Pedal cyclist, other",10**,"12,788,468",0.08**,0.07**,246
+Pennsylvania,2016,"Pedestrian, other",35,"12,788,468",0.27,0.25,772
+Pennsylvania,2016,"Transport, other land",64,"12,788,468",0.5,0.47,"1,285"
+Pennsylvania,2016,"Transport, other (excl. drown by water transp)",--,"12,788,468",--,--,--
+Pennsylvania,2016,Other specified and classifiable,90,"12,788,468",0.7,0.68,"2,119"
+Pennsylvania,2016,Other specified / NEC,72,"12,788,468",0.56,0.51,"1,157"
+Pennsylvania,2016,Unspecified,358,"12,788,468",2.8,2.06,"1,967"
+Pennsylvania,2015,Cut/Pierce,107,"12,789,838",0.84,0.76,"1,911"
+Pennsylvania,2015,Drowning (includes water transport),143,"12,789,838",1.12,1.08,"3,430"
+Pennsylvania,2015,Fall,"1,760","12,789,838",13.76,9.86,"4,048"
+Pennsylvania,2015,Fire/Flame,150,"12,789,838",1.17,1,"1,756"
+Pennsylvania,2015,Hot object/Substance,--,"12,789,838",--,--,--
+Pennsylvania,2015,Firearm,"1,485","12,789,838",11.61,11.31,"34,016"
+Pennsylvania,2015,Machinery,24,"12,789,838",0.19,0.17,316
+Pennsylvania,2015,Natural/Environmental,77,"12,789,838",0.6,0.45,341
+Pennsylvania,2015,Drug Poisoning,"3,264","12,789,838",25.52,26.31,"78,468"
+Pennsylvania,2015,Non-Drug Poisoning,195,"12,789,838",1.53,1.47,"3,657"
+Pennsylvania,2015,Struck by / against,34,"12,789,838",0.27,0.26,641
+Pennsylvania,2015,Suffocation,884,"12,789,838",6.91,6.27,"15,544"
+Pennsylvania,2015,"Motor vehicle, traffic","1,244","12,789,838",9.73,9.16,"25,972"
+Pennsylvania,2015,"Pedal cyclist, other",10**,"12,789,838",0.08**,0.07**,162
+Pennsylvania,2015,"Pedestrian, other",32,"12,789,838",0.25,0.25,880
+Pennsylvania,2015,"Transport, other land",63,"12,789,838",0.49,0.48,"1,388"
+Pennsylvania,2015,"Transport, other (excl. drown by water transp)",13**,"12,789,838",0.10**,0.08**,111
+Pennsylvania,2015,Other specified and classifiable,75,"12,789,838",0.59,0.57,"1,583"
+Pennsylvania,2015,Other specified / NEC,68,"12,789,838",0.53,0.46,989
+Pennsylvania,2015,Unspecified,426,"12,789,838",3.33,2.56,"3,189"
+Pennsylvania,2014,Cut/Pierce,92,"12,792,392",0.72,0.71,"2,104"
+Pennsylvania,2014,Drowning (includes water transport),143,"12,792,392",1.12,1.06,"3,128"
+Pennsylvania,2014,Fall,"1,667","12,792,392",13.03,9.34,"3,845"
+Pennsylvania,2014,Fire/Flame,158,"12,792,392",1.24,1.08,"2,315"
+Pennsylvania,2014,Hot object/Substance,--,"12,792,392",--,--,--
+Pennsylvania,2014,Firearm,"1,390","12,792,392",10.87,10.41,"30,115"
+Pennsylvania,2014,Machinery,23,"12,792,392",0.18,0.18,517
+Pennsylvania,2014,Natural/Environmental,69,"12,792,392",0.54,0.45,637
+Pennsylvania,2014,Drug Poisoning,"2,732","12,792,392",21.36,21.89,"64,522"
+Pennsylvania,2014,Non-Drug Poisoning,214,"12,792,392",1.67,1.58,"3,871"
+Pennsylvania,2014,Struck by / against,47,"12,792,392",0.37,0.33,866
+Pennsylvania,2014,Suffocation,825,"12,792,392",6.45,5.86,"14,156"
+Pennsylvania,2014,"Motor vehicle, traffic","1,223","12,792,392",9.56,9.02,"25,449"
+Pennsylvania,2014,"Pedal cyclist, other",--,"12,792,392",--,--,--
+Pennsylvania,2014,"Pedestrian, other",36,"12,792,392",0.28,0.27,792
+Pennsylvania,2014,"Transport, other land",58,"12,792,392",0.45,0.43,"1,208"
+Pennsylvania,2014,"Transport, other (excl. drown by water transp)",--,"12,792,392",--,--,--
+Pennsylvania,2014,Other specified and classifiable,90,"12,792,392",0.7,0.72,"2,224"
+Pennsylvania,2014,Other specified / NEC,81,"12,792,392",0.63,0.53,866
+Pennsylvania,2014,Unspecified,364,"12,792,392",2.85,2.17,"2,018"
+Pennsylvania,2013,Cut/Pierce,98,"12,779,538",0.77,0.74,"1,947"
+Pennsylvania,2013,Drowning (includes water transport),134,"12,779,538",1.05,1,"3,309"
+Pennsylvania,2013,Fall,"1,636","12,779,538",12.8,9.28,"3,966"
+Pennsylvania,2013,Fire/Flame,151,"12,779,538",1.18,1.07,"2,646"
+Pennsylvania,2013,Hot object/Substance,--,"12,779,538",--,--,--
+Pennsylvania,2013,Firearm,"1,451","12,779,538",11.35,11.1,"32,865"
+Pennsylvania,2013,Machinery,30,"12,779,538",0.24,0.2,485
+Pennsylvania,2013,Natural/Environmental,52,"12,779,538",0.41,0.33,350
+Pennsylvania,2013,Drug Poisoning,"2,426","12,779,538",18.98,19.41,"56,536"
+Pennsylvania,2013,Non-Drug Poisoning,184,"12,779,538",1.44,1.34,"3,094"
+Pennsylvania,2013,Struck by / against,46,"12,779,538",0.36,0.32,713
+Pennsylvania,2013,Suffocation,846,"12,779,538",6.62,6.1,"15,645"
+Pennsylvania,2013,"Motor vehicle, traffic","1,273","12,779,538",9.96,9.46,"27,898"
+Pennsylvania,2013,"Pedal cyclist, other",--,"12,779,538",--,--,--
+Pennsylvania,2013,"Pedestrian, other",34,"12,779,538",0.27,0.28,972
+Pennsylvania,2013,"Transport, other land",79,"12,779,538",0.62,0.58,"1,828"
+Pennsylvania,2013,"Transport, other (excl. drown by water transp)",14**,"12,779,538",0.11**,0.10**,189
+Pennsylvania,2013,Other specified and classifiable,83,"12,779,538",0.65,0.65,"2,045"
+Pennsylvania,2013,Other specified / NEC,64,"12,779,538",0.5,0.44,728
+Pennsylvania,2013,Unspecified,326,"12,779,538",2.55,2.04,"2,695"
+Pennsylvania,2012,Cut/Pierce,90,"12,769,123",0.71,0.72,"2,150"
+Pennsylvania,2012,Drowning (includes water transport),136,"12,769,123",1.07,1.07,"3,942"
+Pennsylvania,2012,Fall,"1,527","12,769,123",11.96,8.73,"3,622"
+Pennsylvania,2012,Fire/Flame,142,"12,769,123",1.11,1.01,"2,336"
+Pennsylvania,2012,Firearm,"1,453","12,769,123",11.38,11.11,"35,270"
+Pennsylvania,2012,Machinery,34,"12,769,123",0.27,0.24,387
+Pennsylvania,2012,Natural/Environmental,48,"12,769,123",0.38,0.31,502
+Pennsylvania,2012,Drug Poisoning,"2,365","12,769,123",18.52,18.85,"56,018"
+Pennsylvania,2012,Non-Drug Poisoning,199,"12,769,123",1.56,1.43,"3,115"
+Pennsylvania,2012,Struck by / against,40,"12,769,123",0.31,0.3,836
+Pennsylvania,2012,Suffocation,811,"12,769,123",6.35,5.88,"14,894"
+Pennsylvania,2012,"Motor vehicle, traffic","1,316","12,769,123",10.31,9.86,"30,390"
+Pennsylvania,2012,"Pedal cyclist, other",12**,"12,769,123",0.09**,0.09**,182
+Pennsylvania,2012,"Pedestrian, other",37,"12,769,123",0.29,0.27,680
+Pennsylvania,2012,"Transport, other land",93,"12,769,123",0.73,0.71,"2,372"
+Pennsylvania,2012,"Transport, other (excl. drown by water transp)",11**,"12,769,123",0.09**,0.07**,130
+Pennsylvania,2012,Other specified and classifiable,73,"12,769,123",0.57,0.56,"1,650"
+Pennsylvania,2012,Other specified / NEC,76,"12,769,123",0.6,0.56,"1,160"
+Pennsylvania,2012,Unspecified,375,"12,769,123",2.94,2.24,"2,723"
+Pennsylvania,2011,Cut/Pierce,104,"12,747,052",0.82,0.8,"2,409"
+Pennsylvania,2011,Drowning (includes water transport),155,"12,747,052",1.22,1.17,"3,778"
+Pennsylvania,2011,Fall,"1,502","12,747,052",11.78,8.78,"3,740"
+Pennsylvania,2011,Fire/Flame,168,"12,747,052",1.32,1.22,"3,390"
+Pennsylvania,2011,Hot object/Substance,--,"12,747,052",--,--,--
+Pennsylvania,2011,Firearm,"1,438","12,747,052",11.28,11,"34,870"
+Pennsylvania,2011,Machinery,27,"12,747,052",0.21,0.19,432
+Pennsylvania,2011,Natural/Environmental,67,"12,747,052",0.53,0.43,697
+Pennsylvania,2011,Overexertion,--,"12,747,052",--,--,--
+Pennsylvania,2011,Drug Poisoning,"2,289","12,747,052",17.96,18.33,"54,317"
+Pennsylvania,2011,Non-Drug Poisoning,193,"12,747,052",1.51,1.47,"3,429"
+Pennsylvania,2011,Struck by / against,40,"12,747,052",0.31,0.29,654
+Pennsylvania,2011,Suffocation,775,"12,747,052",6.08,5.64,"14,827"
+Pennsylvania,2011,"Motor vehicle, traffic","1,440","12,747,052",11.3,10.74,"31,731"
+Pennsylvania,2011,"Pedal cyclist, other",--,"12,747,052",--,--,--
+Pennsylvania,2011,"Pedestrian, other",41,"12,747,052",0.32,0.28,692
+Pennsylvania,2011,"Transport, other land",50,"12,747,052",0.39,0.37,991
+Pennsylvania,2011,"Transport, other (excl. drown by water transp)",12**,"12,747,052",0.09**,0.09**,228
+Pennsylvania,2011,Other specified and classifiable,92,"12,747,052",0.72,0.68,"2,141"
+Pennsylvania,2011,Other specified / NEC,78,"12,747,052",0.61,0.56,"1,107"
+Pennsylvania,2011,Unspecified,346,"12,747,052",2.71,2.16,"2,744"
+Pennsylvania,2010,Cut/Pierce,113,"12,702,891",0.89,0.85,"2,252"
+Pennsylvania,2010,Drowning (includes water transport),125,"12,702,891",0.98,0.95,"3,247"
+Pennsylvania,2010,Fall,"1,457","12,702,891",11.47,8.61,"3,330"
+Pennsylvania,2010,Fire/Flame,157,"12,702,891",1.24,1.14,"2,843"
+Pennsylvania,2010,Hot object/Substance,--,"12,702,891",--,--,--
+Pennsylvania,2010,Firearm,"1,307","12,702,891",10.29,10.11,"32,580"
+Pennsylvania,2010,Machinery,34,"12,702,891",0.27,0.23,432
+Pennsylvania,2010,Natural/Environmental,66,"12,702,891",0.52,0.43,706
+Pennsylvania,2010,Drug Poisoning,"1,916","12,702,891",15.08,15.31,"45,399"
+Pennsylvania,2010,Non-Drug Poisoning,181,"12,702,891",1.43,1.37,"3,557"
+Pennsylvania,2010,Struck by / against,40,"12,702,891",0.32,0.27,535
+Pennsylvania,2010,Suffocation,768,"12,702,891",6.05,5.68,"16,006"
+Pennsylvania,2010,"Motor vehicle, traffic","1,388","12,702,891",10.93,10.59,"33,265"
+Pennsylvania,2010,"Pedal cyclist, other",--,"12,702,891",--,--,--
+Pennsylvania,2010,"Pedestrian, other",49,"12,702,891",0.39,0.38,"1,171"
+Pennsylvania,2010,"Transport, other land",46,"12,702,891",0.36,0.34,945
+Pennsylvania,2010,"Transport, other (excl. drown by water transp)",11**,"12,702,891",0.09**,0.08**,208
+Pennsylvania,2010,Other specified and classifiable,90,"12,702,891",0.71,0.68,"1,957"
+Pennsylvania,2010,Other specified / NEC,99,"12,702,891",0.78,0.7,"1,430"
+Pennsylvania,2010,Unspecified,337,"12,702,891",2.65,2.07,"2,441"
+Pennsylvania,2009,Cut/Pierce,91,"12,666,858",0.72,0.68,"1,859"
+Pennsylvania,2009,Drowning (includes water transport),128,"12,666,858",1.01,0.99,"3,398"
+Pennsylvania,2009,Fall,"1,379","12,666,858",10.89,8.26,"3,402"
+Pennsylvania,2009,Fire/Flame,145,"12,666,858",1.15,1.07,"2,681"
+Pennsylvania,2009,Hot object/Substance,--,"12,666,858",--,--,--
+Pennsylvania,2009,Firearm,"1,349","12,666,858",10.65,10.41,"31,275"
+Pennsylvania,2009,Machinery,23,"12,666,858",0.18,0.16,233
+Pennsylvania,2009,Natural/Environmental,33,"12,666,858",0.26,0.23,401
+Pennsylvania,2009,Drug Poisoning,"1,909","12,666,858",15.07,15.28,"44,872"
+Pennsylvania,2009,Non-Drug Poisoning,177,"12,666,858",1.4,1.34,"3,023"
+Pennsylvania,2009,Struck by / against,34,"12,666,858",0.27,0.24,556
+Pennsylvania,2009,Suffocation,723,"12,666,858",5.71,5.22,"13,078"
+Pennsylvania,2009,"Motor vehicle, traffic","1,311","12,666,858",10.35,10.01,"30,789"
+Pennsylvania,2009,"Pedal cyclist, other",--,"12,666,858",--,--,--
+Pennsylvania,2009,"Pedestrian, other",59,"12,666,858",0.47,0.44,"1,212"
+Pennsylvania,2009,"Transport, other land",54,"12,666,858",0.43,0.43,"1,636"
+Pennsylvania,2009,"Transport, other (excl. drown by water transp)",11**,"12,666,858",0.09**,0.08**,309
+Pennsylvania,2009,Other specified and classifiable,95,"12,666,858",0.75,0.71,"1,956"
+Pennsylvania,2009,Other specified / NEC,83,"12,666,858",0.66,0.6,"1,206"
+Pennsylvania,2009,Unspecified,310,"12,666,858",2.45,1.92,"2,398"
+Pennsylvania,2008,Cut/Pierce,92,"12,612,285",0.73,0.72,"2,031"
+Pennsylvania,2008,Drowning (includes water transport),117,"12,612,285",0.93,0.92,"3,342"
+Pennsylvania,2008,Fall,"1,301","12,612,285",10.32,7.97,"4,295"
+Pennsylvania,2008,Fire/Flame,189,"12,612,285",1.5,1.4,"3,957"
+Pennsylvania,2008,Hot object/Substance,--,"12,612,285",--,--,--
+Pennsylvania,2008,Firearm,"1,345","12,612,285",10.66,10.53,"32,628"
+Pennsylvania,2008,Machinery,51,"12,612,285",0.4,0.37,845
+Pennsylvania,2008,Natural/Environmental,45,"12,612,285",0.36,0.31,653
+Pennsylvania,2008,Drug Poisoning,"1,850","12,612,285",14.67,14.93,"44,463"
+Pennsylvania,2008,Non-Drug Poisoning,181,"12,612,285",1.44,1.36,"3,365"
+Pennsylvania,2008,Struck by / against,48,"12,612,285",0.38,0.37,916
+Pennsylvania,2008,Suffocation,776,"12,612,285",6.15,5.73,"14,575"
+Pennsylvania,2008,"Motor vehicle, traffic","1,538","12,612,285",12.19,11.81,"36,984"
+Pennsylvania,2008,"Pedal cyclist, other",--,"12,612,285",--,--,--
+Pennsylvania,2008,"Pedestrian, other",37,"12,612,285",0.29,0.28,883
+Pennsylvania,2008,"Transport, other land",37,"12,612,285",0.29,0.28,741
+Pennsylvania,2008,"Transport, other (excl. drown by water transp)",10**,"12,612,285",0.08**,0.08**,192
+Pennsylvania,2008,Other specified and classifiable,76,"12,612,285",0.6,0.58,"1,644"
+Pennsylvania,2008,Other specified / NEC,97,"12,612,285",0.77,0.68,"1,355"
+Pennsylvania,2008,Unspecified,398,"12,612,285",3.16,2.49,"2,861"
+Pennsylvania,2007,Cut/Pierce,116,"12,563,937",0.92,0.89,"2,487"
+Pennsylvania,2007,Drowning (includes water transport),124,"12,563,937",0.99,0.98,"3,521"
+Pennsylvania,2007,Fall,"1,192","12,563,937",9.49,7.35,"3,809"
+Pennsylvania,2007,Fire/Flame,203,"12,563,937",1.62,1.56,"4,875"
+Pennsylvania,2007,Hot object/Substance,--,"12,563,937",--,--,--
+Pennsylvania,2007,Firearm,"1,325","12,563,937",10.55,10.52,"33,987"
+Pennsylvania,2007,Machinery,33,"12,563,937",0.26,0.24,516
+Pennsylvania,2007,Natural/Environmental,42,"12,563,937",0.33,0.28,366
+Pennsylvania,2007,Overexertion,--,"12,563,937",--,--,--
+Pennsylvania,2007,Drug Poisoning,"1,733","12,563,937",13.79,13.84,"42,118"
+Pennsylvania,2007,Non-Drug Poisoning,178,"12,563,937",1.42,1.36,"3,266"
+Pennsylvania,2007,Struck by / against,63,"12,563,937",0.5,0.49,"1,394"
+Pennsylvania,2007,Suffocation,756,"12,563,937",6.02,5.58,"13,740"
+Pennsylvania,2007,"Motor vehicle, traffic","1,545","12,563,937",12.3,11.85,"38,153"
+Pennsylvania,2007,"Pedal cyclist, other",--,"12,563,937",--,--,--
+Pennsylvania,2007,"Pedestrian, other",44,"12,563,937",0.35,0.33,896
+Pennsylvania,2007,"Transport, other land",45,"12,563,937",0.36,0.36,"1,205"
+Pennsylvania,2007,"Transport, other (excl. drown by water transp)",12**,"12,563,937",0.10**,0.09**,168
+Pennsylvania,2007,Other specified and classifiable,82,"12,563,937",0.65,0.65,"1,850"
+Pennsylvania,2007,Other specified / NEC,83,"12,563,937",0.66,0.61,"1,284"
+Pennsylvania,2007,Unspecified,376,"12,563,937",2.99,2.45,"2,933"
+Pennsylvania,2006,Cut/Pierce,103,"12,510,809",0.82,0.81,"2,221"
+Pennsylvania,2006,Drowning (includes water transport),145,"12,510,809",1.16,1.15,"3,698"
+Pennsylvania,2006,Fall,989,"12,510,809",7.91,6.22,"3,526"
+Pennsylvania,2006,Fire/Flame,201,"12,510,809",1.61,1.49,"3,374"
+Pennsylvania,2006,Hot object/Substance,--,"12,510,809",--,--,--
+Pennsylvania,2006,Firearm,"1,371","12,510,809",10.96,10.9,"36,366"
+Pennsylvania,2006,Machinery,42,"12,510,809",0.34,0.33,847
+Pennsylvania,2006,Natural/Environmental,56,"12,510,809",0.45,0.39,597
+Pennsylvania,2006,Drug Poisoning,"1,638","12,510,809",13.09,13.48,"42,258"
+Pennsylvania,2006,Non-Drug Poisoning,123,"12,510,809",0.98,0.93,"2,403"
+Pennsylvania,2006,Struck by / against,35,"12,510,809",0.28,0.26,594
+Pennsylvania,2006,Suffocation,635,"12,510,809",5.08,4.67,"11,320"
+Pennsylvania,2006,"Motor vehicle, traffic","1,587","12,510,809",12.69,12.39,"38,976"
+Pennsylvania,2006,"Pedal cyclist, other",--,"12,510,809",--,--,--
+Pennsylvania,2006,"Pedestrian, other",30,"12,510,809",0.24,0.22,599
+Pennsylvania,2006,"Transport, other land",37,"12,510,809",0.3,0.31,981
+Pennsylvania,2006,"Transport, other (excl. drown by water transp)",16**,"12,510,809",0.13**,0.12**,319
+Pennsylvania,2006,Other specified and classifiable,62,"12,510,809",0.5,0.49,"1,488"
+Pennsylvania,2006,Other specified / NEC,90,"12,510,809",0.72,0.64,"1,365"
+Pennsylvania,2006,Unspecified,462,"12,510,809",3.69,3.02,"3,631"
+Pennsylvania,2005,Cut/Pierce,123,"12,449,990",0.99,0.98,"2,976"
+Pennsylvania,2005,Drowning (includes water transport),150,"12,449,990",1.21,1.19,"4,139"
+Pennsylvania,2005,Fall,981,"12,449,990",7.88,6.28,"3,520"
+Pennsylvania,2005,Fire/Flame,192,"12,449,990",1.54,1.45,"4,018"
+Pennsylvania,2005,Hot object/Substance,--,"12,449,990",--,--,--
+Pennsylvania,2005,Firearm,"1,352","12,449,990",10.86,10.76,"33,997"
+Pennsylvania,2005,Machinery,39,"12,449,990",0.31,0.28,585
+Pennsylvania,2005,Natural/Environmental,56,"12,449,990",0.45,0.39,572
+Pennsylvania,2005,Drug Poisoning,"1,613","12,449,990",12.96,13.17,"40,307"
+Pennsylvania,2005,Non-Drug Poisoning,132,"12,449,990",1.06,1,"2,370"
+Pennsylvania,2005,Struck by / against,44,"12,449,990",0.35,0.34,861
+Pennsylvania,2005,Suffocation,680,"12,449,990",5.46,5.12,"12,826"
+Pennsylvania,2005,"Motor vehicle, traffic","1,725","12,449,990",13.86,13.46,"42,233"
+Pennsylvania,2005,"Pedal cyclist, other",--,"12,449,990",--,--,--
+Pennsylvania,2005,"Pedestrian, other",30,"12,449,990",0.24,0.23,640
+Pennsylvania,2005,"Transport, other land",54,"12,449,990",0.43,0.42,"1,379"
+Pennsylvania,2005,"Transport, other (excl. drown by water transp)",18**,"12,449,990",0.15**,0.14**,337
+Pennsylvania,2005,Other specified and classifiable,55,"12,449,990",0.44,0.44,"1,264"
+Pennsylvania,2005,Other specified / NEC,104,"12,449,990",0.84,0.76,"1,496"
+Pennsylvania,2005,Unspecified,400,"12,449,990",3.21,2.64,"2,780"
+Pennsylvania,2004,Cut/Pierce,101,"12,410,722",0.81,0.8,"2,319"
+Pennsylvania,2004,Drowning (includes water transport),122,"12,410,722",0.98,0.99,"3,714"
+Pennsylvania,2004,Fall,"1,030","12,410,722",8.3,6.73,"3,888"
+Pennsylvania,2004,Fire/Flame,188,"12,410,722",1.52,1.42,"3,670"
+Pennsylvania,2004,Hot object/Substance,--,"12,410,722",--,--,--
+Pennsylvania,2004,Firearm,"1,270","12,410,722",10.23,10.2,"32,567"
+Pennsylvania,2004,Machinery,34,"12,410,722",0.27,0.27,734
+Pennsylvania,2004,Natural/Environmental,62,"12,410,722",0.5,0.45,660
+Pennsylvania,2004,Drug Poisoning,"1,544","12,410,722",12.44,12.7,"39,864"
+Pennsylvania,2004,Non-Drug Poisoning,137,"12,410,722",1.1,1.02,"2,090"
+Pennsylvania,2004,Struck by / against,49,"12,410,722",0.4,0.38,"1,101"
+Pennsylvania,2004,Suffocation,692,"12,410,722",5.58,5.22,"13,225"
+Pennsylvania,2004,"Motor vehicle, traffic","1,550","12,410,722",12.49,12.08,"36,848"
+Pennsylvania,2004,"Pedal cyclist, other",--,"12,410,722",--,--,--
+Pennsylvania,2004,"Pedestrian, other",37,"12,410,722",0.3,0.28,890
+Pennsylvania,2004,"Transport, other land",37,"12,410,722",0.3,0.29,961
+Pennsylvania,2004,"Transport, other (excl. drown by water transp)",10**,"12,410,722",0.08**,0.08**,227
+Pennsylvania,2004,Other specified and classifiable,85,"12,410,722",0.69,0.68,"2,110"
+Pennsylvania,2004,Other specified / NEC,65,"12,410,722",0.52,0.47,950
+Pennsylvania,2004,Unspecified,424,"12,410,722",3.42,2.85,"3,456"
+Pennsylvania,2003,Cut/Pierce,111,"12,374,658",0.9,0.88,"2,529"
+Pennsylvania,2003,Drowning (includes water transport),125,"12,374,658",1.01,1.01,"3,677"
+Pennsylvania,2003,Fall,906,"12,374,658",7.32,5.97,"3,682"
+Pennsylvania,2003,Fire/Flame,196,"12,374,658",1.58,1.5,"3,839"
+Pennsylvania,2003,Hot object/Substance,--,"12,374,658",--,--,--
+Pennsylvania,2003,Firearm,"1,230","12,374,658",9.94,9.87,"31,406"
+Pennsylvania,2003,Machinery,35,"12,374,658",0.28,0.26,492
+Pennsylvania,2003,Natural/Environmental,69,"12,374,658",0.56,0.48,700
+Pennsylvania,2003,Overexertion,--,"12,374,658",--,--,--
+Pennsylvania,2003,Drug Poisoning,"1,381","12,374,658",11.16,11.37,"35,196"
+Pennsylvania,2003,Non-Drug Poisoning,144,"12,374,658",1.16,1.14,"3,477"
+Pennsylvania,2003,Struck by / against,43,"12,374,658",0.35,0.34,939
+Pennsylvania,2003,Suffocation,625,"12,374,658",5.05,4.73,"11,760"
+Pennsylvania,2003,"Motor vehicle, traffic","1,615","12,374,658",13.05,12.75,"41,141"
+Pennsylvania,2003,"Pedal cyclist, other",--,"12,374,658",--,--,--
+Pennsylvania,2003,"Pedestrian, other",37,"12,374,658",0.3,0.29,910
+Pennsylvania,2003,"Transport, other land",38,"12,374,658",0.31,0.31,"1,036"
+Pennsylvania,2003,"Transport, other (excl. drown by water transp)",20**,"12,374,658",0.16**,0.16**,387
+Pennsylvania,2003,Other specified and classifiable,92,"12,374,658",0.74,0.73,"1,989"
+Pennsylvania,2003,Other specified / NEC,77,"12,374,658",0.62,0.59,"1,498"
+Pennsylvania,2003,Unspecified,429,"12,374,658",3.47,2.85,"2,642"
+Pennsylvania,2002,Cut/Pierce,80,"12,331,031",0.65,0.64,"1,939"
+Pennsylvania,2002,Drowning (includes water transport),117,"12,331,031",0.95,0.95,"3,328"
+Pennsylvania,2002,Fall,805,"12,331,031",6.53,5.4,"3,837"
+Pennsylvania,2002,Fire/Flame,139,"12,331,031",1.13,1.07,"2,805"
+Pennsylvania,2002,Hot object/Substance,--,"12,331,031",--,--,--
+Pennsylvania,2002,Firearm,"1,220","12,331,031",9.89,9.96,"32,248"
+Pennsylvania,2002,Machinery,29,"12,331,031",0.24,0.22,480
+Pennsylvania,2002,Natural/Environmental,84,"12,331,031",0.68,0.59,671
+Pennsylvania,2002,Drug Poisoning,"1,097","12,331,031",8.9,9.07,"28,259"
+Pennsylvania,2002,Non-Drug Poisoning,138,"12,331,031",1.12,1.09,"2,929"
+Pennsylvania,2002,Struck by / against,39,"12,331,031",0.32,0.31,849
+Pennsylvania,2002,Suffocation,696,"12,331,031",5.64,5.2,"11,536"
+Pennsylvania,2002,"Motor vehicle, traffic","1,702","12,331,031",13.8,13.54,"43,341"
+Pennsylvania,2002,"Pedal cyclist, other",--,"12,331,031",--,--,--
+Pennsylvania,2002,"Pedestrian, other",36,"12,331,031",0.29,0.28,867
+Pennsylvania,2002,"Transport, other land",35,"12,331,031",0.28,0.28,881
+Pennsylvania,2002,"Transport, other (excl. drown by water transp)",10**,"12,331,031",0.08**,0.08**,233
+Pennsylvania,2002,Other specified and classifiable,71,"12,331,031",0.58,0.58,"1,964"
+Pennsylvania,2002,Other specified / NEC,91,"12,331,031",0.74,0.67,"1,277"
+Pennsylvania,2002,Unspecified,424,"12,331,031",3.44,2.88,"3,244"
+Pennsylvania,2001,Cut/Pierce,38,"12,298,970",0.31,0.31,835
+Pennsylvania,2001,Drowning (includes water transport),128,"12,298,970",1.04,1.06,"3,815"
+Pennsylvania,2001,Fall,733,"12,298,970",5.96,4.99,"3,745"
+Pennsylvania,2001,Fire/Flame,169,"12,298,970",1.37,1.31,"3,474"
+Pennsylvania,2001,Hot object/Substance,--,"12,298,970",--,--,--
+Pennsylvania,2001,Firearm,"1,172","12,298,970",9.53,9.53,"29,884"
+Pennsylvania,2001,Machinery,19**,"12,298,970",0.15**,0.15**,354
+Pennsylvania,2001,Natural/Environmental,55,"12,298,970",0.45,0.39,525
+Pennsylvania,2001,Drug Poisoning,958,"12,298,970",7.79,7.91,"24,689"
+Pennsylvania,2001,Non-Drug Poisoning,99,"12,298,970",0.81,0.77,"1,852"
+Pennsylvania,2001,Struck by / against,53,"12,298,970",0.43,0.42,"1,179"
+Pennsylvania,2001,Suffocation,689,"12,298,970",5.6,5.21,"11,883"
+Pennsylvania,2001,"Motor vehicle, traffic","1,503","12,298,970",12.22,12.01,"38,347"
+Pennsylvania,2001,"Pedal cyclist, other",--,"12,298,970",--,--,--
+Pennsylvania,2001,"Pedestrian, other",84,"12,298,970",0.68,0.66,"1,958"
+Pennsylvania,2001,"Transport, other land",102,"12,298,970",0.83,0.79,"2,296"
+Pennsylvania,2001,"Transport, other (excl. drown by water transp)",55,"12,298,970",0.45,0.41,"1,089"
+Pennsylvania,2001,Other specified and classifiable,65,"12,298,970",0.53,0.51,"1,404"
+Pennsylvania,2001,Other specified / NEC,110,"12,298,970",0.89,0.86,"2,327"
+Pennsylvania,2001,Unspecified,567,"12,298,970",4.61,3.91,"4,326"
+Total,,,"194,428","265,944,912",73.11,68.64,"3,633,566"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Pennsylvania,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

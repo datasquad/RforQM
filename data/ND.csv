@@ -1,0 +1,396 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+North Dakota,2021,Cut/Pierce,--,"774,948",--,--,--
+North Dakota,2021,Drowning (includes water transport),13**,"774,948",1.68**,1.77**,330
+North Dakota,2021,Fall,134,"774,948",17.29,13.98,322
+North Dakota,2021,Fire/Flame,--,"774,948",--,--,--
+North Dakota,2021,Firearm,128,"774,948",16.52,16.78,"2,915"
+North Dakota,2021,Machinery,--,"774,948",--,--,--
+North Dakota,2021,Natural/Environmental,--,"774,948",--,--,--
+North Dakota,2021,Drug Poisoning,124,"774,948",16,17.24,"3,528"
+North Dakota,2021,Non-Drug Poisoning,20**,"774,948",2.58**,2.48**,440
+North Dakota,2021,Struck by / against,--,"774,948",--,--,--
+North Dakota,2021,Suffocation,59,"774,948",7.61,7.79,"1,444"
+North Dakota,2021,"Motor vehicle, traffic",113,"774,948",14.58,14.22,"2,991"
+North Dakota,2021,"Pedestrian, other",--,"774,948",--,--,--
+North Dakota,2021,"Transport, other land",--,"774,948",--,--,--
+North Dakota,2021,"Transport, other (excl. drown by water transp)",--,"774,948",--,--,--
+North Dakota,2021,Other specified and classifiable,--,"774,948",--,--,--
+North Dakota,2021,Other specified / NEC,--,"774,948",--,--,--
+North Dakota,2021,Unspecified,26,"774,948",3.36,2.75,68
+North Dakota,2020,Cut/Pierce,--,"778,962",--,--,--
+North Dakota,2020,Drowning (includes water transport),10**,"778,962",1.28**,1.20**,307
+North Dakota,2020,Fall,113,"778,962",14.51,11.96,268
+North Dakota,2020,Fire/Flame,--,"778,962",--,--,--
+North Dakota,2020,Firearm,100,"778,962",12.84,13.37,"2,497"
+North Dakota,2020,Machinery,--,"778,962",--,--,--
+North Dakota,2020,Natural/Environmental,--,"778,962",--,--,--
+North Dakota,2020,Drug Poisoning,114,"778,962",14.64,14.93,"3,501"
+North Dakota,2020,Non-Drug Poisoning,22,"778,962",2.82,3.01,445
+North Dakota,2020,Struck by / against,--,"778,962",--,--,--
+North Dakota,2020,Suffocation,73,"778,962",9.37,8.89,"1,433"
+North Dakota,2020,"Motor vehicle, traffic",99,"778,962",12.71,12.81,"2,520"
+North Dakota,2020,"Pedal cyclist, other",--,"778,962",--,--,--
+North Dakota,2020,"Transport, other land",--,"778,962",--,--,--
+North Dakota,2020,"Transport, other (excl. drown by water transp)",--,"778,962",--,--,--
+North Dakota,2020,Other specified and classifiable,--,"778,962",--,--,--
+North Dakota,2020,Other specified / NEC,--,"778,962",--,--,--
+North Dakota,2020,Unspecified,31,"778,962",3.98,3.48,190
+North Dakota,2019,Cut/Pierce,--,"763,724",--,--,--
+North Dakota,2019,Drowning (includes water transport),13**,"763,724",1.70**,1.54**,284
+North Dakota,2019,Fall,83,"763,724",10.87,8.03,183
+North Dakota,2019,Fire/Flame,--,"763,724",--,--,--
+North Dakota,2019,Firearm,93,"763,724",12.18,12.53,"2,024"
+North Dakota,2019,Machinery,--,"763,724",--,--,--
+North Dakota,2019,Natural/Environmental,18**,"763,724",2.36**,2.23**,230
+North Dakota,2019,Drug Poisoning,82,"763,724",10.74,11.1,"1,921"
+North Dakota,2019,Non-Drug Poisoning,27,"763,724",3.54,3.61,485
+North Dakota,2019,Struck by / against,--,"763,724",--,--,--
+North Dakota,2019,Suffocation,60,"763,724",7.86,7.71,"1,147"
+North Dakota,2019,"Motor vehicle, traffic",97,"763,724",12.7,13.06,"2,109"
+North Dakota,2019,"Pedal cyclist, other",--,"763,724",--,--,--
+North Dakota,2019,"Pedestrian, other",--,"763,724",--,--,--
+North Dakota,2019,"Transport, other land",--,"763,724",--,--,--
+North Dakota,2019,Other specified and classifiable,--,"763,724",--,--,--
+North Dakota,2019,Other specified / NEC,--,"763,724",--,--,--
+North Dakota,2019,Unspecified,29,"763,724",3.8,2.94,55
+North Dakota,2018,Cut/Pierce,--,"760,062",--,--,--
+North Dakota,2018,Drowning (includes water transport),11**,"760,062",1.45**,1.22**,332
+North Dakota,2018,Fall,93,"760,062",12.24,9.1,305
+North Dakota,2018,Fire/Flame,--,"760,062",--,--,--
+North Dakota,2018,Firearm,89,"760,062",11.71,11.36,"2,240"
+North Dakota,2018,Machinery,--,"760,062",--,--,--
+North Dakota,2018,Natural/Environmental,11**,"760,062",1.45**,1.31**,152
+North Dakota,2018,Drug Poisoning,70,"760,062",9.21,10.15,"1,740"
+North Dakota,2018,Non-Drug Poisoning,18**,"760,062",2.37**,2.18**,353
+North Dakota,2018,Struck by / against,--,"760,062",--,--,--
+North Dakota,2018,Suffocation,69,"760,062",9.08,8.18,"1,728"
+North Dakota,2018,"Motor vehicle, traffic",100,"760,062",13.16,12.17,"1,993"
+North Dakota,2018,"Pedal cyclist, other",--,"760,062",--,--,--
+North Dakota,2018,"Pedestrian, other",--,"760,062",--,--,--
+North Dakota,2018,"Transport, other land",--,"760,062",--,--,--
+North Dakota,2018,"Transport, other (excl. drown by water transp)",--,"760,062",--,--,--
+North Dakota,2018,Other specified and classifiable,--,"760,062",--,--,--
+North Dakota,2018,Other specified / NEC,--,"760,062",--,--,--
+North Dakota,2018,Unspecified,38,"760,062",5,4.03,443
+North Dakota,2017,Cut/Pierce,--,"756,755",--,--,--
+North Dakota,2017,Drowning (includes water transport),17**,"756,755",2.25**,2.27**,474
+North Dakota,2017,Fall,67,"756,755",8.85,6.53,109
+North Dakota,2017,Fire/Flame,--,"756,755",--,--,--
+North Dakota,2017,Firearm,103,"756,755",13.61,13.16,"2,644"
+North Dakota,2017,Machinery,--,"756,755",--,--,--
+North Dakota,2017,Natural/Environmental,--,"756,755",--,--,--
+North Dakota,2017,Drug Poisoning,68,"756,755",8.99,9.3,"1,835"
+North Dakota,2017,Non-Drug Poisoning,19**,"756,755",2.51**,2.66**,489
+North Dakota,2017,Suffocation,67,"756,755",8.85,8.53,"1,332"
+North Dakota,2017,"Motor vehicle, traffic",109,"756,755",14.4,13.85,"2,787"
+North Dakota,2017,"Pedestrian, other",--,"756,755",--,--,--
+North Dakota,2017,"Transport, other land",--,"756,755",--,--,--
+North Dakota,2017,"Transport, other (excl. drown by water transp)",--,"756,755",--,--,--
+North Dakota,2017,Other specified and classifiable,--,"756,755",--,--,--
+North Dakota,2017,Other specified / NEC,--,"756,755",--,--,--
+North Dakota,2017,Unspecified,25,"756,755",3.3,2.99,161
+North Dakota,2016,Cut/Pierce,--,"756,114",--,--,--
+North Dakota,2016,Drowning (includes water transport),--,"756,114",--,--,--
+North Dakota,2016,Fall,93,"756,114",12.3,9.67,133
+North Dakota,2016,Fire/Flame,--,"756,114",--,--,--
+North Dakota,2016,Firearm,90,"756,114",11.9,11.91,"2,069"
+North Dakota,2016,Machinery,--,"756,114",--,--,--
+North Dakota,2016,Natural/Environmental,--,"756,114",--,--,--
+North Dakota,2016,Drug Poisoning,77,"756,114",10.18,10.29,"1,880"
+North Dakota,2016,Non-Drug Poisoning,18**,"756,114",2.38**,2.71**,385
+North Dakota,2016,Struck by / against,--,"756,114",--,--,--
+North Dakota,2016,Suffocation,65,"756,114",8.6,8.31,"1,648"
+North Dakota,2016,"Motor vehicle, traffic",117,"756,114",15.47,15.33,"2,752"
+North Dakota,2016,"Pedal cyclist, other",--,"756,114",--,--,--
+North Dakota,2016,"Pedestrian, other",--,"756,114",--,--,--
+North Dakota,2016,"Transport, other land",--,"756,114",--,--,--
+North Dakota,2016,"Transport, other (excl. drown by water transp)",--,"756,114",--,--,--
+North Dakota,2016,Other specified and classifiable,--,"756,114",--,--,--
+North Dakota,2016,Other specified / NEC,--,"756,114",--,--,--
+North Dakota,2016,Unspecified,16**,"756,114",2.12**,1.73**,70
+North Dakota,2015,Cut/Pierce,--,"755,537",--,--,--
+North Dakota,2015,Drowning (includes water transport),--,"755,537",--,--,--
+North Dakota,2015,Fall,95,"755,537",12.57,9.52,171
+North Dakota,2015,Fire/Flame,--,"755,537",--,--,--
+North Dakota,2015,Firearm,92,"755,537",12.18,12.73,"2,105"
+North Dakota,2015,Machinery,--,"755,537",--,--,--
+North Dakota,2015,Natural/Environmental,--,"755,537",--,--,--
+North Dakota,2015,Drug Poisoning,61,"755,537",8.07,8.58,"1,546"
+North Dakota,2015,Non-Drug Poisoning,25,"755,537",3.31,3.18,659
+North Dakota,2015,Struck by / against,--,"755,537",--,--,--
+North Dakota,2015,Suffocation,53,"755,537",7.02,6.67,"1,010"
+North Dakota,2015,"Motor vehicle, traffic",119,"755,537",15.75,14.84,"3,029"
+North Dakota,2015,"Pedestrian, other",--,"755,537",--,--,--
+North Dakota,2015,"Transport, other land",21,"755,537",2.78,2.83,413
+North Dakota,2015,Other specified and classifiable,--,"755,537",--,--,--
+North Dakota,2015,Other specified / NEC,--,"755,537",--,--,--
+North Dakota,2015,Unspecified,23,"755,537",3.04,2.57,218
+North Dakota,2014,Cut/Pierce,--,"738,736",--,--,--
+North Dakota,2014,Drowning (includes water transport),12**,"738,736",1.62**,1.64**,424
+North Dakota,2014,Fall,103,"738,736",13.94,11.25,204
+North Dakota,2014,Fire/Flame,--,"738,736",--,--,--
+North Dakota,2014,Firearm,96,"738,736",13,12.05,"2,220"
+North Dakota,2014,Machinery,--,"738,736",--,--,--
+North Dakota,2014,Natural/Environmental,--,"738,736",--,--,--
+North Dakota,2014,Drug Poisoning,43,"738,736",5.82,6.34,980
+North Dakota,2014,Non-Drug Poisoning,19**,"738,736",2.57**,2.60**,317
+North Dakota,2014,Struck by / against,--,"738,736",--,--,--
+North Dakota,2014,Suffocation,70,"738,736",9.48,8.78,"1,345"
+North Dakota,2014,"Motor vehicle, traffic",96,"738,736",13,12.72,"2,533"
+North Dakota,2014,"Pedestrian, other",--,"738,736",--,--,--
+North Dakota,2014,"Transport, other land",--,"738,736",--,--,--
+North Dakota,2014,"Transport, other (excl. drown by water transp)",--,"738,736",--,--,--
+North Dakota,2014,Other specified and classifiable,--,"738,736",--,--,--
+North Dakota,2014,Other specified / NEC,--,"738,736",--,--,--
+North Dakota,2014,Unspecified,28,"738,736",3.79,2.91,131
+North Dakota,2013,Cut/Pierce,--,"723,149",--,--,--
+North Dakota,2013,Drowning (includes water transport),--,"723,149",--,--,--
+North Dakota,2013,Fall,76,"723,149",10.51,8.48,185
+North Dakota,2013,Fire/Flame,--,"723,149",--,--,--
+North Dakota,2013,Firearm,86,"723,149",11.89,11.67,"2,226"
+North Dakota,2013,Machinery,--,"723,149",--,--,--
+North Dakota,2013,Natural/Environmental,--,"723,149",--,--,--
+North Dakota,2013,Drug Poisoning,20**,"723,149",2.77**,2.70**,503
+North Dakota,2013,Non-Drug Poisoning,--,"723,149",--,--,--
+North Dakota,2013,Struck by / against,--,"723,149",--,--,--
+North Dakota,2013,Suffocation,56,"723,149",7.74,7.29,"1,401"
+North Dakota,2013,"Motor vehicle, traffic",113,"723,149",15.63,16.2,"2,820"
+North Dakota,2013,"Pedestrian, other",--,"723,149",--,--,--
+North Dakota,2013,"Transport, other land",11**,"723,149",1.52**,1.62**,240
+North Dakota,2013,"Transport, other (excl. drown by water transp)",--,"723,149",--,--,--
+North Dakota,2013,Other specified and classifiable,--,"723,149",--,--,--
+North Dakota,2013,Other specified / NEC,--,"723,149",--,--,--
+North Dakota,2013,Unspecified,45,"723,149",6.22,4.92,186
+North Dakota,2012,Cut/Pierce,11**,"702,227",1.57**,1.51**,284
+North Dakota,2012,Drowning (includes water transport),--,"702,227",--,--,--
+North Dakota,2012,Fall,64,"702,227",9.11,6.94,107
+North Dakota,2012,Fire/Flame,--,"702,227",--,--,--
+North Dakota,2012,Firearm,73,"702,227",10.4,10.42,"1,749"
+North Dakota,2012,Machinery,--,"702,227",--,--,--
+North Dakota,2012,Natural/Environmental,--,"702,227",--,--,--
+North Dakota,2012,Drug Poisoning,21,"702,227",2.99,3.17,453
+North Dakota,2012,Non-Drug Poisoning,10**,"702,227",1.42**,1.45**,150
+North Dakota,2012,Struck by / against,--,"702,227",--,--,--
+North Dakota,2012,Suffocation,45,"702,227",6.41,6.09,958
+North Dakota,2012,"Motor vehicle, traffic",125,"702,227",17.8,17.99,"3,165"
+North Dakota,2012,"Pedestrian, other",--,"702,227",--,--,--
+North Dakota,2012,"Transport, other land",--,"702,227",--,--,--
+North Dakota,2012,"Transport, other (excl. drown by water transp)",--,"702,227",--,--,--
+North Dakota,2012,Other specified and classifiable,--,"702,227",--,--,--
+North Dakota,2012,Other specified / NEC,--,"702,227",--,--,--
+North Dakota,2012,Unspecified,50,"702,227",7.12,5.33,191
+North Dakota,2011,Cut/Pierce,--,"685,526",--,--,--
+North Dakota,2011,Drowning (includes water transport),11**,"685,526",1.61**,1.41**,253
+North Dakota,2011,Fall,65,"685,526",9.48,7.61,116
+North Dakota,2011,Fire/Flame,--,"685,526",--,--,--
+North Dakota,2011,Firearm,61,"685,526",8.9,8.87,"1,224"
+North Dakota,2011,Machinery,--,"685,526",--,--,--
+North Dakota,2011,Natural/Environmental,--,"685,526",--,--,--
+North Dakota,2011,Drug Poisoning,16**,"685,526",2.33**,2.03**,185
+North Dakota,2011,Non-Drug Poisoning,--,"685,526",--,--,--
+North Dakota,2011,Struck by / against,--,"685,526",--,--,--
+North Dakota,2011,Suffocation,53,"685,526",7.73,7.35,"1,122"
+North Dakota,2011,"Motor vehicle, traffic",132,"685,526",19.26,18.4,"3,620"
+North Dakota,2011,"Pedal cyclist, other",--,"685,526",--,--,--
+North Dakota,2011,"Pedestrian, other",--,"685,526",--,--,--
+North Dakota,2011,"Transport, other land",--,"685,526",--,--,--
+North Dakota,2011,"Transport, other (excl. drown by water transp)",--,"685,526",--,--,--
+North Dakota,2011,Other specified and classifiable,--,"685,526",--,--,--
+North Dakota,2011,Other specified / NEC,--,"685,526",--,--,--
+North Dakota,2011,Unspecified,22,"685,526",3.21,2.66,178
+North Dakota,2010,Cut/Pierce,--,"672,575",--,--,--
+North Dakota,2010,Drowning (includes water transport),21,"672,575",3.12,3.24,678
+North Dakota,2010,Fall,83,"672,575",12.34,9.34,117
+North Dakota,2010,Fire/Flame,--,"672,575",--,--,--
+North Dakota,2010,Firearm,65,"672,575",9.66,9.56,"1,475"
+North Dakota,2010,Machinery,--,"672,575",--,--,--
+North Dakota,2010,Natural/Environmental,--,"672,575",--,--,--
+North Dakota,2010,Drug Poisoning,23,"672,575",3.42,3.39,525
+North Dakota,2010,Non-Drug Poisoning,16**,"672,575",2.38**,2.31**,281
+North Dakota,2010,Struck by / against,--,"672,575",--,--,--
+North Dakota,2010,Suffocation,49,"672,575",7.29,6.9,"1,257"
+North Dakota,2010,"Motor vehicle, traffic",89,"672,575",13.23,13.41,"2,255"
+North Dakota,2010,"Pedestrian, other",--,"672,575",--,--,--
+North Dakota,2010,"Transport, other land",--,"672,575",--,--,--
+North Dakota,2010,"Transport, other (excl. drown by water transp)",--,"672,575",--,--,--
+North Dakota,2010,Other specified and classifiable,--,"672,575",--,--,--
+North Dakota,2010,Other specified / NEC,--,"672,575",--,--,--
+North Dakota,2010,Unspecified,25,"672,575",3.72,2.99,215
+North Dakota,2009,Cut/Pierce,--,"664,968",--,--,--
+North Dakota,2009,Drowning (includes water transport),10**,"664,968",1.50**,1.30**,304
+North Dakota,2009,Fall,81,"664,968",12.18,9.52,257
+North Dakota,2009,Fire/Flame,--,"664,968",--,--,--
+North Dakota,2009,Firearm,59,"664,968",8.87,8.92,"1,576"
+North Dakota,2009,Machinery,--,"664,968",--,--,--
+North Dakota,2009,Natural/Environmental,--,"664,968",--,--,--
+North Dakota,2009,Drug Poisoning,27,"664,968",4.06,4.45,774
+North Dakota,2009,Non-Drug Poisoning,17**,"664,968",2.56**,2.59**,389
+North Dakota,2009,Struck by / against,--,"664,968",--,--,--
+North Dakota,2009,Suffocation,45,"664,968",6.77,6.68,"1,173"
+North Dakota,2009,"Motor vehicle, traffic",121,"664,968",18.2,17.28,"2,740"
+North Dakota,2009,"Pedal cyclist, other",--,"664,968",--,--,--
+North Dakota,2009,"Pedestrian, other",--,"664,968",--,--,--
+North Dakota,2009,"Transport, other land",10**,"664,968",1.50**,1.49**,179
+North Dakota,2009,"Transport, other (excl. drown by water transp)",--,"664,968",--,--,--
+North Dakota,2009,Other specified and classifiable,--,"664,968",--,--,--
+North Dakota,2009,Other specified / NEC,--,"664,968",--,--,--
+North Dakota,2009,Unspecified,18**,"664,968",2.71**,2.28**,254
+North Dakota,2008,Cut/Pierce,--,"657,569",--,--,--
+North Dakota,2008,Drowning (includes water transport),--,"657,569",--,--,--
+North Dakota,2008,Fall,99,"657,569",15.06,11.52,310
+North Dakota,2008,Fire/Flame,10**,"657,569",1.52**,1.19**,70
+North Dakota,2008,Firearm,59,"657,569",8.97,8.51,"1,218"
+North Dakota,2008,Machinery,--,"657,569",--,--,--
+North Dakota,2008,Natural/Environmental,--,"657,569",--,--,--
+North Dakota,2008,Drug Poisoning,46,"657,569",7,7.54,"1,025"
+North Dakota,2008,Non-Drug Poisoning,11**,"657,569",1.67**,1.86**,264
+North Dakota,2008,Struck by / against,--,"657,569",--,--,--
+North Dakota,2008,Suffocation,34,"657,569",5.17,4.79,762
+North Dakota,2008,"Motor vehicle, traffic",116,"657,569",17.64,17.29,"3,049"
+North Dakota,2008,"Pedestrian, other",--,"657,569",--,--,--
+North Dakota,2008,"Transport, other land",--,"657,569",--,--,--
+North Dakota,2008,"Transport, other (excl. drown by water transp)",--,"657,569",--,--,--
+North Dakota,2008,Other specified and classifiable,--,"657,569",--,--,--
+North Dakota,2008,Other specified / NEC,--,"657,569",--,--,--
+North Dakota,2008,Unspecified,19**,"657,569",2.89**,2.18**,52
+North Dakota,2007,Cut/Pierce,--,"652,822",--,--,--
+North Dakota,2007,Drowning (includes water transport),10**,"652,822",1.53**,1.40**,283
+North Dakota,2007,Fall,69,"652,822",10.57,8.02,202
+North Dakota,2007,Fire/Flame,--,"652,822",--,--,--
+North Dakota,2007,Firearm,57,"652,822",8.73,8.28,"1,202"
+North Dakota,2007,Machinery,--,"652,822",--,--,--
+North Dakota,2007,Natural/Environmental,10**,"652,822",1.53**,1.39**,185
+North Dakota,2007,Drug Poisoning,32,"652,822",4.9,4.75,800
+North Dakota,2007,Non-Drug Poisoning,17**,"652,822",2.60**,2.68**,362
+North Dakota,2007,Struck by / against,--,"652,822",--,--,--
+North Dakota,2007,Suffocation,35,"652,822",5.36,5.24,756
+North Dakota,2007,"Motor vehicle, traffic",105,"652,822",16.08,15.83,"3,127"
+North Dakota,2007,"Pedestrian, other",--,"652,822",--,--,--
+North Dakota,2007,"Transport, other land",--,"652,822",--,--,--
+North Dakota,2007,"Transport, other (excl. drown by water transp)",--,"652,822",--,--,--
+North Dakota,2007,Other specified and classifiable,--,"652,822",--,--,--
+North Dakota,2007,Other specified / NEC,--,"652,822",--,--,--
+North Dakota,2007,Unspecified,14**,"652,822",2.15**,1.78**,187
+North Dakota,2006,Cut/Pierce,--,"649,422",--,--,--
+North Dakota,2006,Drowning (includes water transport),14**,"649,422",2.16**,2.09**,420
+North Dakota,2006,Fall,79,"649,422",12.17,9.39,209
+North Dakota,2006,Fire/Flame,--,"649,422",--,--,--
+North Dakota,2006,Firearm,46,"649,422",7.08,6.62,"1,288"
+North Dakota,2006,Machinery,--,"649,422",--,--,--
+North Dakota,2006,Natural/Environmental,--,"649,422",--,--,--
+North Dakota,2006,Drug Poisoning,14**,"649,422",2.16**,2.10**,272
+North Dakota,2006,Non-Drug Poisoning,--,"649,422",--,--,--
+North Dakota,2006,Struck by / against,--,"649,422",--,--,--
+North Dakota,2006,Suffocation,43,"649,422",6.62,6.33,"1,163"
+North Dakota,2006,"Motor vehicle, traffic",103,"649,422",15.86,16.11,"2,737"
+North Dakota,2006,"Pedestrian, other",--,"649,422",--,--,--
+North Dakota,2006,"Transport, other land",12**,"649,422",1.85**,1.76**,292
+North Dakota,2006,"Transport, other (excl. drown by water transp)",--,"649,422",--,--,--
+North Dakota,2006,Other specified and classifiable,--,"649,422",--,--,--
+North Dakota,2006,Other specified / NEC,--,"649,422",--,--,--
+North Dakota,2006,Unspecified,25,"649,422",3.85,3.64,394
+North Dakota,2005,Cut/Pierce,--,"646,089",--,--,--
+North Dakota,2005,Drowning (includes water transport),10**,"646,089",1.55**,1.60**,236
+North Dakota,2005,Fall,76,"646,089",11.76,8.86,155
+North Dakota,2005,Fire/Flame,13**,"646,089",2.01**,1.93**,163
+North Dakota,2005,Firearm,61,"646,089",9.44,8.9,"1,608"
+North Dakota,2005,Machinery,--,"646,089",--,--,--
+North Dakota,2005,Natural/Environmental,--,"646,089",--,--,--
+North Dakota,2005,Drug Poisoning,12**,"646,089",1.86**,1.81**,294
+North Dakota,2005,Non-Drug Poisoning,13**,"646,089",2.01**,2.29**,258
+North Dakota,2005,Struck by / against,--,"646,089",--,--,--
+North Dakota,2005,Suffocation,31,"646,089",4.8,4.23,929
+North Dakota,2005,"Motor vehicle, traffic",121,"646,089",18.73,17.95,"3,242"
+North Dakota,2005,"Pedal cyclist, other",--,"646,089",--,--,--
+North Dakota,2005,"Pedestrian, other",--,"646,089",--,--,--
+North Dakota,2005,"Transport, other land",--,"646,089",--,--,--
+North Dakota,2005,"Transport, other (excl. drown by water transp)",--,"646,089",--,--,--
+North Dakota,2005,Other specified and classifiable,--,"646,089",--,--,--
+North Dakota,2005,Other specified / NEC,--,"646,089",--,--,--
+North Dakota,2005,Unspecified,23,"646,089",3.56,2.78,75
+North Dakota,2004,Cut/Pierce,--,"644,705",--,--,--
+North Dakota,2004,Drowning (includes water transport),13**,"644,705",2.02**,2.07**,319
+North Dakota,2004,Fall,76,"644,705",11.79,8.46,128
+North Dakota,2004,Fire/Flame,--,"644,705",--,--,--
+North Dakota,2004,Firearm,50,"644,705",7.76,7.5,"1,397"
+North Dakota,2004,Machinery,--,"644,705",--,--,--
+North Dakota,2004,Natural/Environmental,--,"644,705",--,--,--
+North Dakota,2004,Drug Poisoning,17**,"644,705",2.64**,2.48**,459
+North Dakota,2004,Non-Drug Poisoning,13**,"644,705",2.02**,1.97**,228
+North Dakota,2004,Struck by / against,--,"644,705",--,--,--
+North Dakota,2004,Suffocation,36,"644,705",5.58,5.54,962
+North Dakota,2004,"Motor vehicle, traffic",116,"644,705",17.99,17.65,"2,733"
+North Dakota,2004,"Pedestrian, other",--,"644,705",--,--,--
+North Dakota,2004,"Transport, other land",--,"644,705",--,--,--
+North Dakota,2004,"Transport, other (excl. drown by water transp)",--,"644,705",--,--,--
+North Dakota,2004,Other specified and classifiable,--,"644,705",--,--,--
+North Dakota,2004,Other specified / NEC,--,"644,705",--,--,--
+North Dakota,2004,Unspecified,--,"644,705",--,--,--
+North Dakota,2003,Drowning (includes water transport),--,"638,817",--,--,--
+North Dakota,2003,Fall,72,"638,817",11.27,8.49,41
+North Dakota,2003,Fire/Flame,--,"638,817",--,--,--
+North Dakota,2003,Firearm,58,"638,817",9.08,8.83,"1,453"
+North Dakota,2003,Machinery,--,"638,817",--,--,--
+North Dakota,2003,Natural/Environmental,11**,"638,817",1.72**,1.62**,220
+North Dakota,2003,Drug Poisoning,22,"638,817",3.44,3.44,538
+North Dakota,2003,Non-Drug Poisoning,13**,"638,817",2.04**,2.31**,395
+North Dakota,2003,Struck by / against,--,"638,817",--,--,--
+North Dakota,2003,Suffocation,34,"638,817",5.32,4.56,818
+North Dakota,2003,"Motor vehicle, traffic",110,"638,817",17.22,16.37,"2,659"
+North Dakota,2003,"Pedal cyclist, other",--,"638,817",--,--,--
+North Dakota,2003,"Pedestrian, other",--,"638,817",--,--,--
+North Dakota,2003,"Transport, other land",12**,"638,817",1.88**,1.75**,430
+North Dakota,2003,Other specified and classifiable,--,"638,817",--,--,--
+North Dakota,2003,Other specified / NEC,--,"638,817",--,--,--
+North Dakota,2003,Unspecified,10**,"638,817",1.57**,1.15**,62
+North Dakota,2002,Drowning (includes water transport),--,"638,168",--,--,--
+North Dakota,2002,Fall,55,"638,168",8.62,6.7,228
+North Dakota,2002,Fire/Flame,10**,"638,168",1.57**,1.62**,307
+North Dakota,2002,Firearm,58,"638,168",9.09,9.12,"1,284"
+North Dakota,2002,Machinery,--,"638,168",--,--,--
+North Dakota,2002,Natural/Environmental,--,"638,168",--,--,--
+North Dakota,2002,Drug Poisoning,17**,"638,168",2.66**,2.62**,368
+North Dakota,2002,Non-Drug Poisoning,16**,"638,168",2.51**,2.46**,287
+North Dakota,2002,Struck by / against,--,"638,168",--,--,--
+North Dakota,2002,Suffocation,26,"638,168",4.07,3.91,433
+North Dakota,2002,"Motor vehicle, traffic",104,"638,168",16.3,15.23,"2,451"
+North Dakota,2002,"Pedestrian, other",--,"638,168",--,--,--
+North Dakota,2002,"Transport, other land",--,"638,168",--,--,--
+North Dakota,2002,"Transport, other (excl. drown by water transp)",--,"638,168",--,--,--
+North Dakota,2002,Other specified and classifiable,10**,"638,168",1.57**,1.64**,263
+North Dakota,2002,Other specified / NEC,--,"638,168",--,--,--
+North Dakota,2002,Unspecified,11**,"638,168",1.72**,1.45**,75
+North Dakota,2001,Cut/Pierce,--,"639,062",--,--,--
+North Dakota,2001,Drowning (includes water transport),--,"639,062",--,--,--
+North Dakota,2001,Fall,58,"639,062",9.08,6.91,205
+North Dakota,2001,Fire/Flame,--,"639,062",--,--,--
+North Dakota,2001,Firearm,47,"639,062",7.36,7.6,"1,028"
+North Dakota,2001,Machinery,--,"639,062",--,--,--
+North Dakota,2001,Natural/Environmental,--,"639,062",--,--,--
+North Dakota,2001,Drug Poisoning,14**,"639,062",2.19**,2.39**,357
+North Dakota,2001,Non-Drug Poisoning,11**,"639,062",1.72**,1.74**,269
+North Dakota,2001,Struck by / against,--,"639,062",--,--,--
+North Dakota,2001,Suffocation,26,"639,062",4.07,3.99,519
+North Dakota,2001,"Motor vehicle, traffic",112,"639,062",17.53,17.01,"2,959"
+North Dakota,2001,"Pedestrian, other",--,"639,062",--,--,--
+North Dakota,2001,"Transport, other land",--,"639,062",--,--,--
+North Dakota,2001,"Transport, other (excl. drown by water transp)",--,"639,062",--,--,--
+North Dakota,2001,Other specified and classifiable,--,"639,062",--,--,--
+North Dakota,2001,Other specified / NEC,--,"639,062",--,--,--
+North Dakota,2001,Unspecified,16**,"639,062",2.50**,2.12**,140
+Total,,,"9,681","14,699,937",65.86,61.74,"183,766"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: North Dakota,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

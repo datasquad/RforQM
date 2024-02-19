@@ -1,0 +1,1272 @@
+State,Year,Mechanism,Race,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Arizona,2020,Cut/Pierce,White,41,"6,217,929",0.66,0.63,654
+Arizona,2020,Cut/Pierce,Black,--,"450,623",--,--,--
+Arizona,2020,Cut/Pierce,American Indian / Alaska Native,14**,"420,587",3.33**,3.65**,419
+Arizona,2020,Drowning (includes water transport),White,97,"6,217,929",1.56,1.49,"1,949"
+Arizona,2020,Drowning (includes water transport),Black,--,"450,623",--,--,--
+Arizona,2020,Drowning (includes water transport),American Indian / Alaska Native,--,"420,587",--,--,--
+Arizona,2020,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"332,262",--,--,--
+Arizona,2020,Fall,White,"1,069","6,217,929",17.19,11.89,"1,487"
+Arizona,2020,Fall,Black,18**,"450,623",3.99**,6.10**,119
+Arizona,2020,Fall,American Indian / Alaska Native,50,"420,587",11.89,17.06,421
+Arizona,2020,Fall,Asian / HI Native / Pac. Islander,14**,"332,262",4.21**,5.22**,59
+Arizona,2020,Fire/Flame,White,49,"6,217,929",0.79,0.68,630
+Arizona,2020,Fire/Flame,Black,--,"450,623",--,--,--
+Arizona,2020,Fire/Flame,American Indian / Alaska Native,12**,"420,587",2.85**,3.36**,224
+Arizona,2020,Fire/Flame,Asian / HI Native / Pac. Islander,--,"332,262",--,--,--
+Arizona,2020,Hot object/Substance,White,--,"6,217,929",--,--,--
+Arizona,2020,Firearm,White,"1,026","6,217,929",16.5,15.76,"20,220"
+Arizona,2020,Firearm,Black,134,"450,623",29.74,28.42,"4,467"
+Arizona,2020,Firearm,American Indian / Alaska Native,87,"420,587",20.69,20.5,"2,868"
+Arizona,2020,Firearm,Asian / HI Native / Pac. Islander,18**,"332,262",5.42**,5.21**,494
+Arizona,2020,Machinery,White,--,"6,217,929",--,--,--
+Arizona,2020,Natural/Environmental,White,193,"6,217,929",3.1,2.5,"1,492"
+Arizona,2020,Natural/Environmental,Black,19**,"450,623",4.22**,4.55**,323
+Arizona,2020,Natural/Environmental,American Indian / Alaska Native,31,"420,587",7.37,8.33,424
+Arizona,2020,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"332,262",--,--,--
+Arizona,2020,Drug Poisoning,White,"2,133","6,217,929",34.3,36.06,"52,681"
+Arizona,2020,Drug Poisoning,Black,206,"450,623",45.71,44.72,"5,447"
+Arizona,2020,Drug Poisoning,American Indian / Alaska Native,183,"420,587",43.51,43.93,"5,611"
+Arizona,2020,Drug Poisoning,Asian / HI Native / Pac. Islander,28,"332,262",8.43,7.84,861
+Arizona,2020,Non-Drug Poisoning,White,114,"6,217,929",1.83,1.78,"1,836"
+Arizona,2020,Non-Drug Poisoning,Black,--,"450,623",--,--,--
+Arizona,2020,Non-Drug Poisoning,American Indian / Alaska Native,87,"420,587",20.69,23.34,"1,832"
+Arizona,2020,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"332,262",--,--,--
+Arizona,2020,Struck by / against,White,22,"6,217,929",0.35,0.34,394
+Arizona,2020,Struck by / against,Black,--,"450,623",--,--,--
+Arizona,2020,Struck by / against,American Indian / Alaska Native,--,"420,587",--,--,--
+Arizona,2020,Suffocation,White,336,"6,217,929",5.4,5.38,"7,765"
+Arizona,2020,Suffocation,Black,22,"450,623",4.88,5.01,734
+Arizona,2020,Suffocation,American Indian / Alaska Native,57,"420,587",13.55,12.92,"2,042"
+Arizona,2020,Suffocation,Asian / HI Native / Pac. Islander,--,"332,262",--,--,--
+Arizona,2020,"Motor vehicle, traffic",White,808,"6,217,929",13,12.34,"17,596"
+Arizona,2020,"Motor vehicle, traffic",Black,53,"450,623",11.76,11.09,"1,526"
+Arizona,2020,"Motor vehicle, traffic",American Indian / Alaska Native,121,"420,587",28.77,29.84,"3,557"
+Arizona,2020,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,21,"332,262",6.32,6.62,416
+Arizona,2020,"Pedal cyclist, other",White,16**,"6,217,929",0.26**,0.20**,71
+Arizona,2020,"Pedal cyclist, other",Black,--,"450,623",--,--,--
+Arizona,2020,"Pedestrian, other",White,11**,"6,217,929",0.18**,0.20**,340
+Arizona,2020,"Pedestrian, other",Black,--,"450,623",--,--,--
+Arizona,2020,"Pedestrian, other",American Indian / Alaska Native,--,"420,587",--,--,--
+Arizona,2020,"Transport, other land",White,46,"6,217,929",0.74,0.76,"1,194"
+Arizona,2020,"Transport, other land",American Indian / Alaska Native,--,"420,587",--,--,--
+Arizona,2020,"Transport, other (excl. drown by water transp)",White,15**,"6,217,929",0.24**,0.24**,288
+Arizona,2020,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"420,587",--,--,--
+Arizona,2020,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"332,262",--,--,--
+Arizona,2020,Other specified and classifiable,White,56,"6,217,929",0.9,0.83,868
+Arizona,2020,Other specified and classifiable,Black,--,"450,623",--,--,--
+Arizona,2020,Other specified and classifiable,American Indian / Alaska Native,--,"420,587",--,--,--
+Arizona,2020,Other specified / NEC,White,38,"6,217,929",0.61,0.5,500
+Arizona,2020,Other specified / NEC,Black,--,"450,623",--,--,--
+Arizona,2020,Other specified / NEC,American Indian / Alaska Native,11**,"420,587",2.62**,2.91**,206
+Arizona,2020,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"332,262",--,--,--
+Arizona,2020,Unspecified,White,106,"6,217,929",1.71,1.43,"1,065"
+Arizona,2020,Unspecified,Black,15**,"450,623",3.33**,3.94**,475
+Arizona,2020,Unspecified,American Indian / Alaska Native,28,"420,587",6.66,7.63,521
+Arizona,2020,Unspecified,Asian / HI Native / Pac. Islander,--,"332,262",--,--,--
+Arizona,2019,Cut/Pierce,White,50,"6,120,738",0.82,0.77,829
+Arizona,2019,Cut/Pierce,Black,--,"434,571",--,--,--
+Arizona,2019,Cut/Pierce,American Indian / Alaska Native,19**,"415,075",4.58**,4.88**,543
+Arizona,2019,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"321,459",--,--,--
+Arizona,2019,Drowning (includes water transport),White,99,"6,120,738",1.62,1.43,"1,830"
+Arizona,2019,Drowning (includes water transport),Black,--,"434,571",--,--,--
+Arizona,2019,Drowning (includes water transport),American Indian / Alaska Native,12**,"415,075",2.89**,2.92**,327
+Arizona,2019,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"321,459",--,--,--
+Arizona,2019,Fall,White,"1,069","6,120,738",17.47,12.35,"1,669"
+Arizona,2019,Fall,Black,19**,"434,571",4.37**,6.72**,217
+Arizona,2019,Fall,American Indian / Alaska Native,40,"415,075",9.64,14.29,404
+Arizona,2019,Fall,Asian / HI Native / Pac. Islander,13**,"321,459",4.04**,5.65**,65
+Arizona,2019,Fire/Flame,White,46,"6,120,738",0.75,0.59,352
+Arizona,2019,Fire/Flame,Black,--,"434,571",--,--,--
+Arizona,2019,Fire/Flame,American Indian / Alaska Native,--,"415,075",--,--,--
+Arizona,2019,Hot object/Substance,White,--,"6,120,738",--,--,--
+Arizona,2019,Hot object/Substance,American Indian / Alaska Native,--,"415,075",--,--,--
+Arizona,2019,Firearm,White,997,"6,120,738",16.29,15.43,"19,326"
+Arizona,2019,Firearm,Black,74,"434,571",17.03,15.56,"2,576"
+Arizona,2019,Firearm,American Indian / Alaska Native,51,"415,075",12.29,12.53,"1,571"
+Arizona,2019,Firearm,Asian / HI Native / Pac. Islander,14**,"321,459",4.36**,4.15**,444
+Arizona,2019,Machinery,White,--,"6,120,738",--,--,--
+Arizona,2019,Natural/Environmental,White,123,"6,120,738",2.01,1.59,"1,004"
+Arizona,2019,Natural/Environmental,Black,13**,"434,571",2.99**,3.48**,266
+Arizona,2019,Natural/Environmental,American Indian / Alaska Native,30,"415,075",7.23,8.57,538
+Arizona,2019,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"321,459",--,--,--
+Arizona,2019,Drug Poisoning,White,"1,658","6,120,738",27.09,27.82,"38,048"
+Arizona,2019,Drug Poisoning,Black,132,"434,571",30.38,31.37,"3,316"
+Arizona,2019,Drug Poisoning,American Indian / Alaska Native,96,"415,075",23.13,24.03,"2,394"
+Arizona,2019,Drug Poisoning,Asian / HI Native / Pac. Islander,21,"321,459",6.53,6.02,574
+Arizona,2019,Non-Drug Poisoning,White,99,"6,120,738",1.62,1.56,"1,504"
+Arizona,2019,Non-Drug Poisoning,Black,--,"434,571",--,--,--
+Arizona,2019,Non-Drug Poisoning,American Indian / Alaska Native,53,"415,075",12.77,14.23,976
+Arizona,2019,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"321,459",--,--,--
+Arizona,2019,Struck by / against,White,14**,"6,120,738",0.23**,0.20**,192
+Arizona,2019,Struck by / against,American Indian / Alaska Native,--,"415,075",--,--,--
+Arizona,2019,Struck by / against,Asian / HI Native / Pac. Islander,--,"321,459",--,--,--
+Arizona,2019,Suffocation,White,368,"6,120,738",6.01,5.86,"8,135"
+Arizona,2019,Suffocation,Black,18**,"434,571",4.14**,3.90**,673
+Arizona,2019,Suffocation,American Indian / Alaska Native,79,"415,075",19.03,18.92,"2,640"
+Arizona,2019,Suffocation,Asian / HI Native / Pac. Islander,12**,"321,459",3.73**,3.65**,268
+Arizona,2019,"Motor vehicle, traffic",White,772,"6,120,738",12.61,11.97,"15,649"
+Arizona,2019,"Motor vehicle, traffic",Black,43,"434,571",9.9,9.44,"1,300"
+Arizona,2019,"Motor vehicle, traffic",American Indian / Alaska Native,112,"415,075",26.98,28.71,"3,075"
+Arizona,2019,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,18**,"321,459",5.60**,5.71**,312
+Arizona,2019,"Pedal cyclist, other",White,13**,"6,120,738",0.21**,0.20**,297
+Arizona,2019,"Pedal cyclist, other",American Indian / Alaska Native,--,"415,075",--,--,--
+Arizona,2019,"Pedestrian, other",White,--,"6,120,738",--,--,--
+Arizona,2019,"Pedestrian, other",American Indian / Alaska Native,--,"415,075",--,--,--
+Arizona,2019,"Transport, other land",White,36,"6,120,738",0.59,0.57,608
+Arizona,2019,"Transport, other land",Black,--,"434,571",--,--,--
+Arizona,2019,"Transport, other land",American Indian / Alaska Native,--,"415,075",--,--,--
+Arizona,2019,"Transport, other (excl. drown by water transp)",White,16**,"6,120,738",0.26**,0.26**,307
+Arizona,2019,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"415,075",--,--,--
+Arizona,2019,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"321,459",--,--,--
+Arizona,2019,Other specified and classifiable,White,43,"6,120,738",0.7,0.69,738
+Arizona,2019,Other specified and classifiable,Black,--,"434,571",--,--,--
+Arizona,2019,Other specified and classifiable,American Indian / Alaska Native,11**,"415,075",2.65**,2.62**,259
+Arizona,2019,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"321,459",--,--,--
+Arizona,2019,Other specified / NEC,White,36,"6,120,738",0.59,0.5,392
+Arizona,2019,Other specified / NEC,Black,--,"434,571",--,--,--
+Arizona,2019,Other specified / NEC,American Indian / Alaska Native,--,"415,075",--,--,--
+Arizona,2019,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"321,459",--,--,--
+Arizona,2019,Unspecified,White,103,"6,120,738",1.68,1.48,"1,528"
+Arizona,2019,Unspecified,Black,--,"434,571",--,--,--
+Arizona,2019,Unspecified,American Indian / Alaska Native,24,"415,075",5.78,6.1,587
+Arizona,2019,Unspecified,Asian / HI Native / Pac. Islander,--,"321,459",--,--,--
+Arizona,2018,Cut/Pierce,White,42,"6,026,621",0.7,0.71,"1,004"
+Arizona,2018,Cut/Pierce,Black,10**,"418,432",2.39**,2.34**,310
+Arizona,2018,Cut/Pierce,American Indian / Alaska Native,14**,"409,153",3.42**,3.95**,342
+Arizona,2018,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"310,022",--,--,--
+Arizona,2018,Drowning (includes water transport),White,85,"6,026,621",1.41,1.41,"2,426"
+Arizona,2018,Drowning (includes water transport),Black,10**,"418,432",2.39**,2.26**,338
+Arizona,2018,Drowning (includes water transport),American Indian / Alaska Native,10**,"409,153",2.44**,2.54**,319
+Arizona,2018,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"310,022",--,--,--
+Arizona,2018,Fall,White,"1,035","6,026,621",17.17,12.26,"1,341"
+Arizona,2018,Fall,Black,16**,"418,432",3.82**,7.42**,55
+Arizona,2018,Fall,American Indian / Alaska Native,43,"409,153",10.51,16.42,192
+Arizona,2018,Fall,Asian / HI Native / Pac. Islander,22,"310,022",7.1,11.18,36
+Arizona,2018,Fire/Flame,White,31,"6,026,621",0.51,0.44,379
+Arizona,2018,Fire/Flame,American Indian / Alaska Native,--,"409,153",--,--,--
+Arizona,2018,Hot object/Substance,White,--,"6,026,621",--,--,--
+Arizona,2018,Hot object/Substance,American Indian / Alaska Native,--,"409,153",--,--,--
+Arizona,2018,Firearm,White,979,"6,026,621",16.25,15.19,"18,481"
+Arizona,2018,Firearm,Black,95,"418,432",22.7,22.03,"3,001"
+Arizona,2018,Firearm,American Indian / Alaska Native,58,"409,153",14.18,14.33,"1,747"
+Arizona,2018,Firearm,Asian / HI Native / Pac. Islander,15**,"310,022",4.84**,4.66**,451
+Arizona,2018,Machinery,White,--,"6,026,621",--,--,--
+Arizona,2018,Natural/Environmental,White,93,"6,026,621",1.54,1.24,708
+Arizona,2018,Natural/Environmental,Black,--,"418,432",--,--,--
+Arizona,2018,Natural/Environmental,American Indian / Alaska Native,18**,"409,153",4.40**,5.30**,176
+Arizona,2018,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"310,022",--,--,--
+Arizona,2018,Drug Poisoning,White,"1,443","6,026,621",23.94,24.59,"32,191"
+Arizona,2018,Drug Poisoning,Black,109,"418,432",26.05,26.45,"2,369"
+Arizona,2018,Drug Poisoning,American Indian / Alaska Native,95,"409,153",23.22,23.75,"2,735"
+Arizona,2018,Drug Poisoning,Asian / HI Native / Pac. Islander,23,"310,022",7.42,6.66,674
+Arizona,2018,Non-Drug Poisoning,White,104,"6,026,621",1.73,1.65,"1,842"
+Arizona,2018,Non-Drug Poisoning,Black,--,"418,432",--,--,--
+Arizona,2018,Non-Drug Poisoning,American Indian / Alaska Native,52,"409,153",12.71,14.53,946
+Arizona,2018,Struck by / against,White,15**,"6,026,621",0.25**,0.24**,230
+Arizona,2018,Struck by / against,American Indian / Alaska Native,--,"409,153",--,--,--
+Arizona,2018,Suffocation,White,364,"6,026,621",6.04,5.95,"8,071"
+Arizona,2018,Suffocation,Black,23,"418,432",5.5,5.43,910
+Arizona,2018,Suffocation,American Indian / Alaska Native,91,"409,153",22.24,20.78,"3,284"
+Arizona,2018,Suffocation,Asian / HI Native / Pac. Islander,13**,"310,022",4.19**,4.61**,376
+Arizona,2018,"Motor vehicle, traffic",White,753,"6,026,621",12.5,11.68,"15,240"
+Arizona,2018,"Motor vehicle, traffic",Black,56,"418,432",13.38,13.19,"1,596"
+Arizona,2018,"Motor vehicle, traffic",American Indian / Alaska Native,171,"409,153",41.79,45.18,"4,612"
+Arizona,2018,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,21,"310,022",6.77,6.68,384
+Arizona,2018,"Pedal cyclist, other",White,13**,"6,026,621",0.22**,0.19**,138
+Arizona,2018,"Pedal cyclist, other",American Indian / Alaska Native,--,"409,153",--,--,--
+Arizona,2018,"Pedal cyclist, other",Asian / HI Native / Pac. Islander,--,"310,022",--,--,--
+Arizona,2018,"Pedestrian, other",White,11**,"6,026,621",0.18**,0.19**,309
+Arizona,2018,"Pedestrian, other",Black,--,"418,432",--,--,--
+Arizona,2018,"Pedestrian, other",American Indian / Alaska Native,--,"409,153",--,--,--
+Arizona,2018,"Transport, other land",White,37,"6,026,621",0.61,0.61,861
+Arizona,2018,"Transport, other land",American Indian / Alaska Native,--,"409,153",--,--,--
+Arizona,2018,"Transport, other land",Asian / HI Native / Pac. Islander,--,"310,022",--,--,--
+Arizona,2018,"Transport, other (excl. drown by water transp)",White,12**,"6,026,621",0.20**,0.16**,82
+Arizona,2018,Other specified and classifiable,White,52,"6,026,621",0.86,0.83,"1,061"
+Arizona,2018,Other specified and classifiable,Black,--,"418,432",--,--,--
+Arizona,2018,Other specified and classifiable,American Indian / Alaska Native,--,"409,153",--,--,--
+Arizona,2018,Other specified / NEC,White,47,"6,026,621",0.78,0.73,826
+Arizona,2018,Other specified / NEC,Black,--,"418,432",--,--,--
+Arizona,2018,Other specified / NEC,American Indian / Alaska Native,--,"409,153",--,--,--
+Arizona,2018,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"310,022",--,--,--
+Arizona,2018,Unspecified,White,102,"6,026,621",1.69,1.45,"1,179"
+Arizona,2018,Unspecified,Black,10**,"418,432",2.39**,2.22**,364
+Arizona,2018,Unspecified,American Indian / Alaska Native,24,"409,153",5.87,6.74,605
+Arizona,2018,Unspecified,Asian / HI Native / Pac. Islander,--,"310,022",--,--,--
+Arizona,2017,Cut/Pierce,White,51,"5,940,347",0.86,0.81,836
+Arizona,2017,Cut/Pierce,Black,--,"402,977",--,--,--
+Arizona,2017,Cut/Pierce,American Indian / Alaska Native,15**,"402,447",3.73**,4.00**,445
+Arizona,2017,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"302,317",--,--,--
+Arizona,2017,Drowning (includes water transport),White,95,"5,940,347",1.6,1.6,"2,562"
+Arizona,2017,Drowning (includes water transport),Black,11**,"402,977",2.73**,2.52**,406
+Arizona,2017,Drowning (includes water transport),American Indian / Alaska Native,12**,"402,447",2.98**,2.78**,396
+Arizona,2017,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"302,317",--,--,--
+Arizona,2017,Fall,White,"1,042","5,940,347",17.54,12.79,"1,549"
+Arizona,2017,Fall,Black,12**,"402,977",2.98**,5.90**,47
+Arizona,2017,Fall,American Indian / Alaska Native,45,"402,447",11.18,17.18,264
+Arizona,2017,Fall,Asian / HI Native / Pac. Islander,15**,"302,317",4.96**,7.73**,100
+Arizona,2017,Fire/Flame,White,48,"5,940,347",0.81,0.72,565
+Arizona,2017,Fire/Flame,Black,--,"402,977",--,--,--
+Arizona,2017,Fire/Flame,American Indian / Alaska Native,10**,"402,447",2.49**,3.41**,125
+Arizona,2017,Fire/Flame,Asian / HI Native / Pac. Islander,--,"302,317",--,--,--
+Arizona,2017,Hot object/Substance,White,--,"5,940,347",--,--,--
+Arizona,2017,Firearm,White,983,"5,940,347",16.55,15.76,"19,377"
+Arizona,2017,Firearm,Black,83,"402,977",20.6,20.45,"2,559"
+Arizona,2017,Firearm,American Indian / Alaska Native,55,"402,447",13.67,13.45,"1,905"
+Arizona,2017,Firearm,Asian / HI Native / Pac. Islander,13**,"302,317",4.30**,4.29**,234
+Arizona,2017,Machinery,Black,--,"402,977",--,--,--
+Arizona,2017,Natural/Environmental,White,128,"5,940,347",2.16,1.83,"1,538"
+Arizona,2017,Natural/Environmental,Black,--,"402,977",--,--,--
+Arizona,2017,Natural/Environmental,American Indian / Alaska Native,28,"402,447",6.96,9.07,400
+Arizona,2017,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"302,317",--,--,--
+Arizona,2017,Overexertion,White,--,"5,940,347",--,--,--
+Arizona,2017,Drug Poisoning,White,"1,359","5,940,347",22.88,23.25,"28,445"
+Arizona,2017,Drug Poisoning,Black,91,"402,977",22.58,23.67,"2,075"
+Arizona,2017,Drug Poisoning,American Indian / Alaska Native,66,"402,447",16.4,18.14,"1,736"
+Arizona,2017,Drug Poisoning,Asian / HI Native / Pac. Islander,16**,"302,317",5.29**,5.02**,325
+Arizona,2017,Non-Drug Poisoning,White,88,"5,940,347",1.48,1.47,"1,432"
+Arizona,2017,Non-Drug Poisoning,Black,--,"402,977",--,--,--
+Arizona,2017,Non-Drug Poisoning,American Indian / Alaska Native,54,"402,447",13.42,16.33,952
+Arizona,2017,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"302,317",--,--,--
+Arizona,2017,Struck by / against,White,13**,"5,940,347",0.22**,0.21**,250
+Arizona,2017,Struck by / against,American Indian / Alaska Native,--,"402,447",--,--,--
+Arizona,2017,Suffocation,White,318,"5,940,347",5.35,5.31,"8,019"
+Arizona,2017,Suffocation,Black,21,"402,977",5.21,6.35,576
+Arizona,2017,Suffocation,American Indian / Alaska Native,75,"402,447",18.64,19.19,"2,317"
+Arizona,2017,Suffocation,Asian / HI Native / Pac. Islander,13**,"302,317",4.30**,4.51**,252
+Arizona,2017,"Motor vehicle, traffic",White,745,"5,940,347",12.54,12.04,"15,671"
+Arizona,2017,"Motor vehicle, traffic",Black,59,"402,977",14.64,15.67,"1,482"
+Arizona,2017,"Motor vehicle, traffic",American Indian / Alaska Native,167,"402,447",41.5,44.57,"4,463"
+Arizona,2017,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,18**,"302,317",5.95**,6.40**,280
+Arizona,2017,"Pedal cyclist, other",White,11**,"5,940,347",0.19**,0.15**,68
+Arizona,2017,"Pedal cyclist, other",Black,--,"402,977",--,--,--
+Arizona,2017,"Pedestrian, other",White,14**,"5,940,347",0.24**,0.24**,264
+Arizona,2017,"Pedestrian, other",Black,--,"402,977",--,--,--
+Arizona,2017,"Pedestrian, other",American Indian / Alaska Native,--,"402,447",--,--,--
+Arizona,2017,"Transport, other land",White,29,"5,940,347",0.49,0.49,576
+Arizona,2017,"Transport, other land",American Indian / Alaska Native,--,"402,447",--,--,--
+Arizona,2017,"Transport, other land",Asian / HI Native / Pac. Islander,--,"302,317",--,--,--
+Arizona,2017,"Transport, other (excl. drown by water transp)",White,19**,"5,940,347",0.32**,0.33**,564
+Arizona,2017,Other specified and classifiable,White,61,"5,940,347",1.03,0.97,"1,071"
+Arizona,2017,Other specified and classifiable,Black,--,"402,977",--,--,--
+Arizona,2017,Other specified and classifiable,American Indian / Alaska Native,--,"402,447",--,--,--
+Arizona,2017,Other specified / NEC,White,45,"5,940,347",0.76,0.65,441
+Arizona,2017,Other specified / NEC,Black,--,"402,977",--,--,--
+Arizona,2017,Other specified / NEC,American Indian / Alaska Native,--,"402,447",--,--,--
+Arizona,2017,Unspecified,White,103,"5,940,347",1.73,1.53,"1,373"
+Arizona,2017,Unspecified,Black,--,"402,977",--,--,--
+Arizona,2017,Unspecified,American Indian / Alaska Native,23,"402,447",5.72,6.54,621
+Arizona,2017,Unspecified,Asian / HI Native / Pac. Islander,--,"302,317",--,--,--
+Arizona,2016,Cut/Pierce,White,30,"5,866,937",0.51,0.5,609
+Arizona,2016,Cut/Pierce,Black,--,"389,062",--,--,--
+Arizona,2016,Cut/Pierce,American Indian / Alaska Native,16**,"396,100",4.04**,3.76**,482
+Arizona,2016,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,Drowning (includes water transport),White,98,"5,866,937",1.67,1.6,"2,487"
+Arizona,2016,Drowning (includes water transport),Black,--,"389,062",--,--,--
+Arizona,2016,Drowning (includes water transport),American Indian / Alaska Native,--,"396,100",--,--,--
+Arizona,2016,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,Fall,White,"1,061","5,866,937",18.08,13.61,"1,550"
+Arizona,2016,Fall,Black,11**,"389,062",2.83**,5.37**,34
+Arizona,2016,Fall,American Indian / Alaska Native,44,"396,100",11.11,17.89,387
+Arizona,2016,Fall,Asian / HI Native / Pac. Islander,17**,"292,668",5.81**,8.99**,59
+Arizona,2016,Fire/Flame,White,37,"5,866,937",0.63,0.52,353
+Arizona,2016,Fire/Flame,Black,--,"389,062",--,--,--
+Arizona,2016,Fire/Flame,American Indian / Alaska Native,10**,"396,100",2.53**,2.85**,188
+Arizona,2016,Fire/Flame,Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,Hot object/Substance,White,--,"5,866,937",--,--,--
+Arizona,2016,Hot object/Substance,Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,Firearm,White,955,"5,866,937",16.28,15.34,"17,596"
+Arizona,2016,Firearm,Black,84,"389,062",21.59,21.03,"2,705"
+Arizona,2016,Firearm,American Indian / Alaska Native,36,"396,100",9.09,9.01,"1,160"
+Arizona,2016,Firearm,Asian / HI Native / Pac. Islander,19**,"292,668",6.49**,6.11**,639
+Arizona,2016,Machinery,White,--,"5,866,937",--,--,--
+Arizona,2016,Natural/Environmental,White,104,"5,866,937",1.77,1.46,879
+Arizona,2016,Natural/Environmental,Black,--,"389,062",--,--,--
+Arizona,2016,Natural/Environmental,American Indian / Alaska Native,26,"396,100",6.56,8.52,332
+Arizona,2016,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,Drug Poisoning,White,"1,239","5,866,937",21.12,21.44,"26,528"
+Arizona,2016,Drug Poisoning,Black,68,"389,062",17.48,18.86,"1,476"
+Arizona,2016,Drug Poisoning,American Indian / Alaska Native,61,"396,100",15.4,16.34,"1,622"
+Arizona,2016,Drug Poisoning,Asian / HI Native / Pac. Islander,14**,"292,668",4.78**,4.75**,356
+Arizona,2016,Non-Drug Poisoning,White,120,"5,866,937",2.05,1.96,"1,921"
+Arizona,2016,Non-Drug Poisoning,Black,--,"389,062",--,--,--
+Arizona,2016,Non-Drug Poisoning,American Indian / Alaska Native,75,"396,100",18.94,21.42,"1,445"
+Arizona,2016,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,Struck by / against,White,--,"5,866,937",--,--,--
+Arizona,2016,Struck by / against,American Indian / Alaska Native,--,"396,100",--,--,--
+Arizona,2016,Struck by / against,Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,Suffocation,White,307,"5,866,937",5.23,5.21,"6,795"
+Arizona,2016,Suffocation,Black,18**,"389,062",4.63**,4.50**,732
+Arizona,2016,Suffocation,American Indian / Alaska Native,70,"396,100",17.67,16.96,"2,440"
+Arizona,2016,Suffocation,Asian / HI Native / Pac. Islander,14**,"292,668",4.78**,4.43**,433
+Arizona,2016,"Motor vehicle, traffic",White,706,"5,866,937",12.03,11.43,"14,407"
+Arizona,2016,"Motor vehicle, traffic",Black,63,"389,062",16.19,17.65,"1,706"
+Arizona,2016,"Motor vehicle, traffic",American Indian / Alaska Native,146,"396,100",36.86,40.19,"4,070"
+Arizona,2016,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,19**,"292,668",6.49**,7.03**,370
+Arizona,2016,"Pedal cyclist, other",White,--,"5,866,937",--,--,--
+Arizona,2016,"Pedestrian, other",White,22,"5,866,937",0.38,0.38,611
+Arizona,2016,"Pedestrian, other",Black,--,"389,062",--,--,--
+Arizona,2016,"Pedestrian, other",American Indian / Alaska Native,--,"396,100",--,--,--
+Arizona,2016,"Transport, other land",White,41,"5,866,937",0.7,0.67,921
+Arizona,2016,"Transport, other land",Black,--,"389,062",--,--,--
+Arizona,2016,"Transport, other land",American Indian / Alaska Native,--,"396,100",--,--,--
+Arizona,2016,"Transport, other land",Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,"Transport, other (excl. drown by water transp)",White,14**,"5,866,937",0.24**,0.22**,207
+Arizona,2016,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"396,100",--,--,--
+Arizona,2016,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,Other specified and classifiable,White,46,"5,866,937",0.78,0.7,795
+Arizona,2016,Other specified and classifiable,Black,--,"389,062",--,--,--
+Arizona,2016,Other specified and classifiable,American Indian / Alaska Native,--,"396,100",--,--,--
+Arizona,2016,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2016,Other specified / NEC,White,38,"5,866,937",0.65,0.57,515
+Arizona,2016,Other specified / NEC,Black,--,"389,062",--,--,--
+Arizona,2016,Other specified / NEC,American Indian / Alaska Native,--,"396,100",--,--,--
+Arizona,2016,Unspecified,White,98,"5,866,937",1.67,1.48,"1,232"
+Arizona,2016,Unspecified,Black,--,"389,062",--,--,--
+Arizona,2016,Unspecified,American Indian / Alaska Native,27,"396,100",6.82,8.14,528
+Arizona,2016,Unspecified,Asian / HI Native / Pac. Islander,--,"292,668",--,--,--
+Arizona,2015,Cut/Pierce,White,41,"5,789,724",0.71,0.66,705
+Arizona,2015,Cut/Pierce,Black,--,"373,741",--,--,--
+Arizona,2015,Cut/Pierce,American Indian / Alaska Native,10**,"389,602",2.57**,2.86**,272
+Arizona,2015,Drowning (includes water transport),White,82,"5,789,724",1.42,1.36,"1,967"
+Arizona,2015,Drowning (includes water transport),Black,--,"373,741",--,--,--
+Arizona,2015,Drowning (includes water transport),American Indian / Alaska Native,--,"389,602",--,--,--
+Arizona,2015,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"279,743",--,--,--
+Arizona,2015,Fall,White,985,"5,789,724",17.01,13.15,"1,866"
+Arizona,2015,Fall,Black,22,"373,741",5.89,11.69,28
+Arizona,2015,Fall,American Indian / Alaska Native,39,"389,602",10.01,17.53,293
+Arizona,2015,Fall,Asian / HI Native / Pac. Islander,16**,"279,743",5.72**,9.72**,57
+Arizona,2015,Fire/Flame,White,27,"5,789,724",0.47,0.42,306
+Arizona,2015,Fire/Flame,Black,--,"373,741",--,--,--
+Arizona,2015,Fire/Flame,American Indian / Alaska Native,--,"389,602",--,--,--
+Arizona,2015,Firearm,White,862,"5,789,724",14.89,14.17,"16,270"
+Arizona,2015,Firearm,Black,58,"373,741",15.52,13.67,"2,175"
+Arizona,2015,Firearm,American Indian / Alaska Native,40,"389,602",10.27,9.99,"1,392"
+Arizona,2015,Firearm,Asian / HI Native / Pac. Islander,10**,"279,743",3.58**,3.31**,251
+Arizona,2015,Machinery,White,--,"5,789,724",--,--,--
+Arizona,2015,Machinery,American Indian / Alaska Native,--,"389,602",--,--,--
+Arizona,2015,Natural/Environmental,White,59,"5,789,724",1.02,0.9,867
+Arizona,2015,Natural/Environmental,Black,--,"373,741",--,--,--
+Arizona,2015,Natural/Environmental,American Indian / Alaska Native,25,"389,602",6.42,9.36,269
+Arizona,2015,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"279,743",--,--,--
+Arizona,2015,Drug Poisoning,White,"1,167","5,789,724",20.16,20.36,"23,702"
+Arizona,2015,Drug Poisoning,Black,56,"373,741",14.98,16.34,"1,189"
+Arizona,2015,Drug Poisoning,American Indian / Alaska Native,43,"389,602",11.04,12.48,"1,059"
+Arizona,2015,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"279,743",--,--,--
+Arizona,2015,Non-Drug Poisoning,White,79,"5,789,724",1.36,1.43,"1,566"
+Arizona,2015,Non-Drug Poisoning,Black,--,"373,741",--,--,--
+Arizona,2015,Non-Drug Poisoning,American Indian / Alaska Native,50,"389,602",12.83,14.76,"1,155"
+Arizona,2015,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"279,743",--,--,--
+Arizona,2015,Struck by / against,White,--,"5,789,724",--,--,--
+Arizona,2015,Struck by / against,Black,--,"373,741",--,--,--
+Arizona,2015,Struck by / against,American Indian / Alaska Native,--,"389,602",--,--,--
+Arizona,2015,Suffocation,White,342,"5,789,724",5.91,5.88,"7,711"
+Arizona,2015,Suffocation,Black,11**,"373,741",2.94**,2.99**,435
+Arizona,2015,Suffocation,American Indian / Alaska Native,58,"389,602",14.89,14.88,"1,921"
+Arizona,2015,Suffocation,Asian / HI Native / Pac. Islander,13**,"279,743",4.65**,4.61**,412
+Arizona,2015,"Motor vehicle, traffic",White,642,"5,789,724",11.09,10.7,"13,157"
+Arizona,2015,"Motor vehicle, traffic",Black,42,"373,741",11.24,12.05,"1,190"
+Arizona,2015,"Motor vehicle, traffic",American Indian / Alaska Native,170,"389,602",43.63,44.36,"4,837"
+Arizona,2015,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,15**,"279,743",5.36**,5.78**,290
+Arizona,2015,"Pedal cyclist, other",White,15**,"5,789,724",0.26**,0.23**,257
+Arizona,2015,"Pedal cyclist, other",American Indian / Alaska Native,--,"389,602",--,--,--
+Arizona,2015,"Pedestrian, other",White,--,"5,789,724",--,--,--
+Arizona,2015,"Pedestrian, other",Black,--,"373,741",--,--,--
+Arizona,2015,"Pedestrian, other",American Indian / Alaska Native,--,"389,602",--,--,--
+Arizona,2015,"Transport, other land",White,42,"5,789,724",0.73,0.72,794
+Arizona,2015,"Transport, other land",Black,--,"373,741",--,--,--
+Arizona,2015,"Transport, other land",American Indian / Alaska Native,--,"389,602",--,--,--
+Arizona,2015,"Transport, other land",Asian / HI Native / Pac. Islander,--,"279,743",--,--,--
+Arizona,2015,"Transport, other (excl. drown by water transp)",White,12**,"5,789,724",0.21**,0.19**,104
+Arizona,2015,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"389,602",--,--,--
+Arizona,2015,Other specified and classifiable,White,26,"5,789,724",0.45,0.44,549
+Arizona,2015,Other specified and classifiable,Black,--,"373,741",--,--,--
+Arizona,2015,Other specified and classifiable,American Indian / Alaska Native,10**,"389,602",2.57**,3.09**,201
+Arizona,2015,Other specified / NEC,White,32,"5,789,724",0.55,0.49,309
+Arizona,2015,Other specified / NEC,Black,--,"373,741",--,--,--
+Arizona,2015,Other specified / NEC,American Indian / Alaska Native,10**,"389,602",2.57**,3.73**,174
+Arizona,2015,Unspecified,White,98,"5,789,724",1.69,1.61,"1,569"
+Arizona,2015,Unspecified,Black,14**,"373,741",3.75**,3.99**,378
+Arizona,2015,Unspecified,American Indian / Alaska Native,27,"389,602",6.93,7.99,693
+Arizona,2014,Cut/Pierce,White,49,"5,719,152",0.86,0.83,971
+Arizona,2014,Cut/Pierce,Black,--,"360,255",--,--,--
+Arizona,2014,Cut/Pierce,American Indian / Alaska Native,--,"383,884",--,--,--
+Arizona,2014,Drowning (includes water transport),White,76,"5,719,152",1.33,1.34,"1,998"
+Arizona,2014,Drowning (includes water transport),Black,--,"360,255",--,--,--
+Arizona,2014,Drowning (includes water transport),American Indian / Alaska Native,10**,"383,884",2.61**,2.81**,304
+Arizona,2014,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"269,582",--,--,--
+Arizona,2014,Fall,White,922,"5,719,152",16.12,12.84,"1,880"
+Arizona,2014,Fall,Black,15**,"360,255",4.16**,9.93**,2
+Arizona,2014,Fall,American Indian / Alaska Native,25,"383,884",6.51,9.53,321
+Arizona,2014,Fall,Asian / HI Native / Pac. Islander,17**,"269,582",6.31**,12.57**,36
+Arizona,2014,Fire/Flame,White,32,"5,719,152",0.56,0.46,280
+Arizona,2014,Fire/Flame,Black,--,"360,255",--,--,--
+Arizona,2014,Fire/Flame,American Indian / Alaska Native,--,"383,884",--,--,--
+Arizona,2014,Fire/Flame,Asian / HI Native / Pac. Islander,--,"269,582",--,--,--
+Arizona,2014,Hot object/Substance,White,--,"5,719,152",--,--,--
+Arizona,2014,Firearm,White,822,"5,719,152",14.37,13.8,"15,694"
+Arizona,2014,Firearm,Black,61,"360,255",16.93,16.62,"1,804"
+Arizona,2014,Firearm,American Indian / Alaska Native,37,"383,884",9.64,9.77,"1,132"
+Arizona,2014,Firearm,Asian / HI Native / Pac. Islander,--,"269,582",--,--,--
+Arizona,2014,Machinery,White,--,"5,719,152",--,--,--
+Arizona,2014,Machinery,American Indian / Alaska Native,--,"383,884",--,--,--
+Arizona,2014,Natural/Environmental,White,47,"5,719,152",0.82,0.73,390
+Arizona,2014,Natural/Environmental,Black,--,"360,255",--,--,--
+Arizona,2014,Natural/Environmental,American Indian / Alaska Native,19**,"383,884",4.95**,5.96**,383
+Arizona,2014,Drug Poisoning,White,"1,099","5,719,152",19.22,19.28,"21,477"
+Arizona,2014,Drug Poisoning,Black,49,"360,255",13.6,15.02,915
+Arizona,2014,Drug Poisoning,American Indian / Alaska Native,51,"383,884",13.29,14.49,"1,296"
+Arizona,2014,Drug Poisoning,Asian / HI Native / Pac. Islander,12**,"269,582",4.45**,4.02**,285
+Arizona,2014,Non-Drug Poisoning,White,92,"5,719,152",1.61,1.57,"1,539"
+Arizona,2014,Non-Drug Poisoning,Black,--,"360,255",--,--,--
+Arizona,2014,Non-Drug Poisoning,American Indian / Alaska Native,50,"383,884",13.03,14.97,"1,118"
+Arizona,2014,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"269,582",--,--,--
+Arizona,2014,Struck by / against,White,--,"5,719,152",--,--,--
+Arizona,2014,Struck by / against,American Indian / Alaska Native,--,"383,884",--,--,--
+Arizona,2014,Suffocation,White,343,"5,719,152",6,5.89,"7,496"
+Arizona,2014,Suffocation,Black,22,"360,255",6.11,5.45,810
+Arizona,2014,Suffocation,American Indian / Alaska Native,59,"383,884",15.37,15.88,"1,915"
+Arizona,2014,Suffocation,Asian / HI Native / Pac. Islander,12**,"269,582",4.45**,4.13**,292
+Arizona,2014,"Motor vehicle, traffic",White,607,"5,719,152",10.61,10.16,"12,736"
+Arizona,2014,"Motor vehicle, traffic",Black,33,"360,255",9.16,10.47,866
+Arizona,2014,"Motor vehicle, traffic",American Indian / Alaska Native,164,"383,884",42.72,44.84,"4,445"
+Arizona,2014,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"269,582",--,--,--
+Arizona,2014,"Pedal cyclist, other",White,--,"5,719,152",--,--,--
+Arizona,2014,"Pedal cyclist, other",Black,--,"360,255",--,--,--
+Arizona,2014,"Pedestrian, other",White,13**,"5,719,152",0.23**,0.23**,377
+Arizona,2014,"Pedestrian, other",American Indian / Alaska Native,--,"383,884",--,--,--
+Arizona,2014,"Transport, other land",White,33,"5,719,152",0.58,0.54,650
+Arizona,2014,"Transport, other land",Black,--,"360,255",--,--,--
+Arizona,2014,"Transport, other land",American Indian / Alaska Native,--,"383,884",--,--,--
+Arizona,2014,"Transport, other (excl. drown by water transp)",White,--,"5,719,152",--,--,--
+Arizona,2014,Other specified and classifiable,White,36,"5,719,152",0.63,0.59,572
+Arizona,2014,Other specified and classifiable,Black,--,"360,255",--,--,--
+Arizona,2014,Other specified and classifiable,American Indian / Alaska Native,--,"383,884",--,--,--
+Arizona,2014,Other specified / NEC,White,40,"5,719,152",0.7,0.66,617
+Arizona,2014,Other specified / NEC,Black,--,"360,255",--,--,--
+Arizona,2014,Other specified / NEC,American Indian / Alaska Native,--,"383,884",--,--,--
+Arizona,2014,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"269,582",--,--,--
+Arizona,2014,Unspecified,White,96,"5,719,152",1.68,1.5,"1,258"
+Arizona,2014,Unspecified,Black,--,"360,255",--,--,--
+Arizona,2014,Unspecified,American Indian / Alaska Native,22,"383,884",5.73,6.64,501
+Arizona,2013,Cut/Pierce,White,50,"5,651,452",0.89,0.85,"1,178"
+Arizona,2013,Cut/Pierce,Black,--,"348,298",--,--,--
+Arizona,2013,Cut/Pierce,American Indian / Alaska Native,15**,"377,601",3.97**,3.73**,487
+Arizona,2013,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"257,339",--,--,--
+Arizona,2013,Drowning (includes water transport),White,76,"5,651,452",1.35,1.36,"1,996"
+Arizona,2013,Drowning (includes water transport),Black,--,"348,298",--,--,--
+Arizona,2013,Drowning (includes water transport),American Indian / Alaska Native,--,"377,601",--,--,--
+Arizona,2013,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"257,339",--,--,--
+Arizona,2013,Fall,White,870,"5,651,452",15.39,12.48,"1,518"
+Arizona,2013,Fall,Black,10**,"348,298",2.87**,6.41**,53
+Arizona,2013,Fall,American Indian / Alaska Native,29,"377,601",7.68,12.78,378
+Arizona,2013,Fall,Asian / HI Native / Pac. Islander,10**,"257,339",3.89**,6.57**,89
+Arizona,2013,Fire/Flame,White,63,"5,651,452",1.12,1.05,"1,027"
+Arizona,2013,Fire/Flame,Black,--,"348,298",--,--,--
+Arizona,2013,Fire/Flame,American Indian / Alaska Native,--,"377,601",--,--,--
+Arizona,2013,Hot object/Substance,White,--,"5,651,452",--,--,--
+Arizona,2013,Firearm,White,826,"5,651,452",14.62,14.17,"15,904"
+Arizona,2013,Firearm,Black,56,"348,298",16.08,15.33,"1,850"
+Arizona,2013,Firearm,American Indian / Alaska Native,44,"377,601",11.65,12.39,"1,286"
+Arizona,2013,Firearm,Asian / HI Native / Pac. Islander,15**,"257,339",5.83**,5.74**,417
+Arizona,2013,Machinery,White,--,"5,651,452",--,--,--
+Arizona,2013,Natural/Environmental,White,73,"5,651,452",1.29,1.14,939
+Arizona,2013,Natural/Environmental,Black,--,"348,298",--,--,--
+Arizona,2013,Natural/Environmental,American Indian / Alaska Native,25,"377,601",6.62,9.4,341
+Arizona,2013,Overexertion,White,--,"5,651,452",--,--,--
+Arizona,2013,Drug Poisoning,White,"1,107","5,651,452",19.59,19.81,"22,658"
+Arizona,2013,Drug Poisoning,Black,43,"348,298",12.35,13.63,767
+Arizona,2013,Drug Poisoning,American Indian / Alaska Native,68,"377,601",18.01,19.56,"1,711"
+Arizona,2013,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"257,339",--,--,--
+Arizona,2013,Non-Drug Poisoning,White,89,"5,651,452",1.58,1.56,"1,716"
+Arizona,2013,Non-Drug Poisoning,Black,--,"348,298",--,--,--
+Arizona,2013,Non-Drug Poisoning,American Indian / Alaska Native,60,"377,601",15.89,18.07,"1,340"
+Arizona,2013,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"257,339",--,--,--
+Arizona,2013,Struck by / against,White,12**,"5,651,452",0.21**,0.21**,334
+Arizona,2013,Struck by / against,American Indian / Alaska Native,--,"377,601",--,--,--
+Arizona,2013,Suffocation,White,300,"5,651,452",5.31,5.29,"6,561"
+Arizona,2013,Suffocation,Black,10**,"348,298",2.87**,3.00**,358
+Arizona,2013,Suffocation,American Indian / Alaska Native,58,"377,601",15.36,15.54,"2,019"
+Arizona,2013,Suffocation,Asian / HI Native / Pac. Islander,--,"257,339",--,--,--
+Arizona,2013,"Motor vehicle, traffic",White,657,"5,651,452",11.63,11.2,"13,846"
+Arizona,2013,"Motor vehicle, traffic",Black,33,"348,298",9.48,9.69,"1,043"
+Arizona,2013,"Motor vehicle, traffic",American Indian / Alaska Native,118,"377,601",31.25,33.53,"3,429"
+Arizona,2013,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,12**,"257,339",4.66**,5.76**,213
+Arizona,2013,"Pedal cyclist, other",White,10**,"5,651,452",0.18**,0.15**,71
+Arizona,2013,"Pedal cyclist, other",Black,--,"348,298",--,--,--
+Arizona,2013,"Pedal cyclist, other",American Indian / Alaska Native,--,"377,601",--,--,--
+Arizona,2013,"Pedestrian, other",White,21,"5,651,452",0.37,0.34,378
+Arizona,2013,"Pedestrian, other",American Indian / Alaska Native,--,"377,601",--,--,--
+Arizona,2013,"Transport, other land",White,31,"5,651,452",0.55,0.51,651
+Arizona,2013,"Transport, other land",Asian / HI Native / Pac. Islander,--,"257,339",--,--,--
+Arizona,2013,"Transport, other (excl. drown by water transp)",White,13**,"5,651,452",0.23**,0.23**,339
+Arizona,2013,Other specified and classifiable,White,43,"5,651,452",0.76,0.71,894
+Arizona,2013,Other specified and classifiable,Black,--,"348,298",--,--,--
+Arizona,2013,Other specified and classifiable,American Indian / Alaska Native,--,"377,601",--,--,--
+Arizona,2013,Other specified / NEC,White,38,"5,651,452",0.67,0.62,462
+Arizona,2013,Other specified / NEC,Black,--,"348,298",--,--,--
+Arizona,2013,Other specified / NEC,American Indian / Alaska Native,--,"377,601",--,--,--
+Arizona,2013,Unspecified,White,105,"5,651,452",1.86,1.73,"1,724"
+Arizona,2013,Unspecified,Black,12**,"348,298",3.45**,3.85**,338
+Arizona,2013,Unspecified,American Indian / Alaska Native,26,"377,601",6.89,8.14,689
+Arizona,2013,Unspecified,Asian / HI Native / Pac. Islander,--,"257,339",--,--,--
+Arizona,2012,Cut/Pierce,White,45,"5,600,542",0.8,0.85,"1,060"
+Arizona,2012,Cut/Pierce,Black,--,"337,789",--,--,--
+Arizona,2012,Cut/Pierce,American Indian / Alaska Native,20**,"371,744",5.38**,5.01**,662
+Arizona,2012,Drowning (includes water transport),White,88,"5,600,542",1.57,1.58,"2,522"
+Arizona,2012,Drowning (includes water transport),Black,--,"337,789",--,--,--
+Arizona,2012,Drowning (includes water transport),American Indian / Alaska Native,14**,"371,744",3.77**,3.87**,448
+Arizona,2012,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2012,Fall,White,769,"5,600,542",13.73,11.35,"1,460"
+Arizona,2012,Fall,Black,12**,"337,789",3.55**,6.78**,107
+Arizona,2012,Fall,American Indian / Alaska Native,31,"371,744",8.34,13.1,416
+Arizona,2012,Fall,Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2012,Fire/Flame,White,43,"5,600,542",0.77,0.69,586
+Arizona,2012,Fire/Flame,Black,--,"337,789",--,--,--
+Arizona,2012,Fire/Flame,American Indian / Alaska Native,--,"371,744",--,--,--
+Arizona,2012,Fire/Flame,Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2012,Hot object/Substance,White,--,"5,600,542",--,--,--
+Arizona,2012,Firearm,White,840,"5,600,542",15,14.44,"16,913"
+Arizona,2012,Firearm,Black,46,"337,789",13.62,13.03,"1,537"
+Arizona,2012,Firearm,American Indian / Alaska Native,48,"371,744",12.91,12.72,"1,515"
+Arizona,2012,Firearm,Asian / HI Native / Pac. Islander,12**,"246,269",4.87**,5.02**,314
+Arizona,2012,Machinery,White,--,"5,600,542",--,--,--
+Arizona,2012,Natural/Environmental,White,57,"5,600,542",1.02,0.91,472
+Arizona,2012,Natural/Environmental,Black,--,"337,789",--,--,--
+Arizona,2012,Natural/Environmental,American Indian / Alaska Native,16**,"371,744",4.30**,5.49**,273
+Arizona,2012,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2012,Drug Poisoning,White,"1,032","5,600,542",18.43,18.75,"21,366"
+Arizona,2012,Drug Poisoning,Black,49,"337,789",14.51,16.15,"1,061"
+Arizona,2012,Drug Poisoning,American Indian / Alaska Native,46,"371,744",12.37,13.52,"1,179"
+Arizona,2012,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2012,Non-Drug Poisoning,White,84,"5,600,542",1.5,1.45,"1,409"
+Arizona,2012,Non-Drug Poisoning,Black,--,"337,789",--,--,--
+Arizona,2012,Non-Drug Poisoning,American Indian / Alaska Native,61,"371,744",16.41,19.99,"1,347"
+Arizona,2012,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2012,Struck by / against,White,11**,"5,600,542",0.20**,0.19**,269
+Arizona,2012,Struck by / against,American Indian / Alaska Native,--,"371,744",--,--,--
+Arizona,2012,Suffocation,White,263,"5,600,542",4.7,4.68,"5,986"
+Arizona,2012,Suffocation,Black,10**,"337,789",2.96**,3.12**,314
+Arizona,2012,Suffocation,American Indian / Alaska Native,49,"371,744",13.18,12.39,"1,890"
+Arizona,2012,Suffocation,Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2012,"Motor vehicle, traffic",White,618,"5,600,542",11.04,10.7,"14,110"
+Arizona,2012,"Motor vehicle, traffic",Black,28,"337,789",8.29,9,836
+Arizona,2012,"Motor vehicle, traffic",American Indian / Alaska Native,117,"371,744",31.47,31.63,"3,800"
+Arizona,2012,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,11**,"246,269",4.47**,3.98**,402
+Arizona,2012,"Pedal cyclist, other",White,--,"5,600,542",--,--,--
+Arizona,2012,"Pedal cyclist, other",American Indian / Alaska Native,--,"371,744",--,--,--
+Arizona,2012,"Pedal cyclist, other",Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2012,"Pedestrian, other",White,10**,"5,600,542",0.18**,0.16**,169
+Arizona,2012,"Pedestrian, other",American Indian / Alaska Native,--,"371,744",--,--,--
+Arizona,2012,"Transport, other land",White,35,"5,600,542",0.63,0.61,856
+Arizona,2012,"Transport, other land",Black,--,"337,789",--,--,--
+Arizona,2012,"Transport, other land",American Indian / Alaska Native,--,"371,744",--,--,--
+Arizona,2012,"Transport, other land",Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2012,"Transport, other (excl. drown by water transp)",White,25,"5,600,542",0.45,0.4,342
+Arizona,2012,Other specified and classifiable,White,39,"5,600,542",0.7,0.68,831
+Arizona,2012,Other specified and classifiable,Black,--,"337,789",--,--,--
+Arizona,2012,Other specified and classifiable,American Indian / Alaska Native,--,"371,744",--,--,--
+Arizona,2012,Other specified / NEC,White,38,"5,600,542",0.68,0.65,559
+Arizona,2012,Other specified / NEC,Black,--,"337,789",--,--,--
+Arizona,2012,Other specified / NEC,American Indian / Alaska Native,--,"371,744",--,--,--
+Arizona,2012,Unspecified,White,100,"5,600,542",1.79,1.73,"1,702"
+Arizona,2012,Unspecified,Black,--,"337,789",--,--,--
+Arizona,2012,Unspecified,American Indian / Alaska Native,33,"371,744",8.88,10.26,844
+Arizona,2012,Unspecified,Asian / HI Native / Pac. Islander,--,"246,269",--,--,--
+Arizona,2011,Cut/Pierce,White,38,"5,545,271",0.69,0.68,898
+Arizona,2011,Cut/Pierce,Black,--,"326,863",--,--,--
+Arizona,2011,Cut/Pierce,American Indian / Alaska Native,14**,"365,246",3.83**,3.82**,443
+Arizona,2011,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,Drowning (includes water transport),White,84,"5,545,271",1.52,1.5,"2,312"
+Arizona,2011,Drowning (includes water transport),Black,--,"326,863",--,--,--
+Arizona,2011,Drowning (includes water transport),American Indian / Alaska Native,--,"365,246",--,--,--
+Arizona,2011,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,Fall,White,772,"5,545,271",13.92,11.84,"1,399"
+Arizona,2011,Fall,Black,11**,"326,863",3.37**,8.67**,0
+Arizona,2011,Fall,American Indian / Alaska Native,33,"365,246",9.04,17.48,227
+Arizona,2011,Fall,Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,Fire/Flame,White,36,"5,545,271",0.65,0.57,558
+Arizona,2011,Fire/Flame,Black,--,"326,863",--,--,--
+Arizona,2011,Fire/Flame,American Indian / Alaska Native,--,"365,246",--,--,--
+Arizona,2011,Hot object/Substance,White,--,"5,545,271",--,--,--
+Arizona,2011,Firearm,White,860,"5,545,271",15.51,15.08,"17,404"
+Arizona,2011,Firearm,Black,51,"326,863",15.6,15.19,"1,680"
+Arizona,2011,Firearm,American Indian / Alaska Native,48,"365,246",13.14,12.85,"1,559"
+Arizona,2011,Firearm,Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,Machinery,White,--,"5,545,271",--,--,--
+Arizona,2011,Natural/Environmental,White,62,"5,545,271",1.12,1.02,617
+Arizona,2011,Natural/Environmental,Black,--,"326,863",--,--,--
+Arizona,2011,Natural/Environmental,American Indian / Alaska Native,15**,"365,246",4.11**,5.65**,279
+Arizona,2011,Overexertion,White,--,"5,545,271",--,--,--
+Arizona,2011,Drug Poisoning,White,996,"5,545,271",17.96,18.31,"21,812"
+Arizona,2011,Drug Poisoning,Black,34,"326,863",10.4,11.2,737
+Arizona,2011,Drug Poisoning,American Indian / Alaska Native,35,"365,246",9.58,10.68,909
+Arizona,2011,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,Non-Drug Poisoning,White,82,"5,545,271",1.48,1.45,"1,414"
+Arizona,2011,Non-Drug Poisoning,Black,--,"326,863",--,--,--
+Arizona,2011,Non-Drug Poisoning,American Indian / Alaska Native,61,"365,246",16.7,18.71,"1,468"
+Arizona,2011,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,Struck by / against,White,10**,"5,545,271",0.18**,0.18**,337
+Arizona,2011,Struck by / against,Black,--,"326,863",--,--,--
+Arizona,2011,Struck by / against,American Indian / Alaska Native,--,"365,246",--,--,--
+Arizona,2011,Suffocation,White,278,"5,545,271",5.01,5.1,"6,950"
+Arizona,2011,Suffocation,Black,17**,"326,863",5.20**,5.09**,595
+Arizona,2011,Suffocation,American Indian / Alaska Native,52,"365,246",14.24,14.42,"1,758"
+Arizona,2011,Suffocation,Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,"Motor vehicle, traffic",White,614,"5,545,271",11.07,10.7,"12,898"
+Arizona,2011,"Motor vehicle, traffic",Black,32,"326,863",9.79,10.99,832
+Arizona,2011,"Motor vehicle, traffic",American Indian / Alaska Native,159,"365,246",43.53,45.95,"4,652"
+Arizona,2011,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,12**,"236,036",5.08**,6.18**,125
+Arizona,2011,"Pedal cyclist, other",White,--,"5,545,271",--,--,--
+Arizona,2011,"Pedestrian, other",White,11**,"5,545,271",0.20**,0.18**,293
+Arizona,2011,"Pedestrian, other",American Indian / Alaska Native,--,"365,246",--,--,--
+Arizona,2011,"Transport, other land",White,42,"5,545,271",0.76,0.78,932
+Arizona,2011,"Transport, other land",Black,--,"326,863",--,--,--
+Arizona,2011,"Transport, other land",American Indian / Alaska Native,--,"365,246",--,--,--
+Arizona,2011,"Transport, other land",Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,"Transport, other (excl. drown by water transp)",White,22,"5,545,271",0.4,0.36,555
+Arizona,2011,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,Other specified and classifiable,White,32,"5,545,271",0.58,0.55,517
+Arizona,2011,Other specified and classifiable,Black,--,"326,863",--,--,--
+Arizona,2011,Other specified and classifiable,American Indian / Alaska Native,--,"365,246",--,--,--
+Arizona,2011,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2011,Other specified / NEC,White,35,"5,545,271",0.63,0.58,434
+Arizona,2011,Other specified / NEC,Black,--,"326,863",--,--,--
+Arizona,2011,Other specified / NEC,American Indian / Alaska Native,--,"365,246",--,--,--
+Arizona,2011,Unspecified,White,112,"5,545,271",2.02,1.91,"1,895"
+Arizona,2011,Unspecified,Black,10**,"326,863",3.06**,3.67**,290
+Arizona,2011,Unspecified,American Indian / Alaska Native,24,"365,246",6.57,7.51,794
+Arizona,2011,Unspecified,Asian / HI Native / Pac. Islander,--,"236,036",--,--,--
+Arizona,2010,Cut/Pierce,White,38,"5,493,846",0.69,0.69,927
+Arizona,2010,Cut/Pierce,Black,--,"316,052",--,--,--
+Arizona,2010,Cut/Pierce,American Indian / Alaska Native,16**,"358,491",4.46**,4.07**,582
+Arizona,2010,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2010,Drowning (includes water transport),White,89,"5,493,846",1.62,1.58,"2,866"
+Arizona,2010,Drowning (includes water transport),Black,--,"316,052",--,--,--
+Arizona,2010,Drowning (includes water transport),American Indian / Alaska Native,11**,"358,491",3.07**,3.22**,312
+Arizona,2010,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2010,Fall,White,750,"5,493,846",13.65,12.01,"1,440"
+Arizona,2010,Fall,Black,--,"316,052",--,--,--
+Arizona,2010,Fall,American Indian / Alaska Native,33,"358,491",9.21,19.87,184
+Arizona,2010,Fall,Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2010,Fire/Flame,White,27,"5,493,846",0.49,0.46,473
+Arizona,2010,Fire/Flame,American Indian / Alaska Native,--,"358,491",--,--,--
+Arizona,2010,Fire/Flame,Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2010,Firearm,White,831,"5,493,846",15.13,14.89,"17,228"
+Arizona,2010,Firearm,Black,44,"316,052",13.92,13.17,"1,528"
+Arizona,2010,Firearm,American Indian / Alaska Native,41,"358,491",11.44,10.93,"1,404"
+Arizona,2010,Firearm,Asian / HI Native / Pac. Islander,15**,"223,903",6.70**,6.14**,418
+Arizona,2010,Machinery,White,11**,"5,493,846",0.20**,0.20**,233
+Arizona,2010,Machinery,American Indian / Alaska Native,--,"358,491",--,--,--
+Arizona,2010,Natural/Environmental,White,52,"5,493,846",0.95,0.86,708
+Arizona,2010,Natural/Environmental,Black,--,"316,052",--,--,--
+Arizona,2010,Natural/Environmental,American Indian / Alaska Native,18**,"358,491",5.02**,7.01**,278
+Arizona,2010,Overexertion,White,--,"5,493,846",--,--,--
+Arizona,2010,Drug Poisoning,White,"1,014","5,493,846",18.46,18.86,"22,471"
+Arizona,2010,Drug Poisoning,Black,36,"316,052",11.39,12.51,706
+Arizona,2010,Drug Poisoning,American Indian / Alaska Native,41,"358,491",11.44,12.33,"1,153"
+Arizona,2010,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2010,Non-Drug Poisoning,White,89,"5,493,846",1.62,1.58,"1,288"
+Arizona,2010,Non-Drug Poisoning,Black,--,"316,052",--,--,--
+Arizona,2010,Non-Drug Poisoning,American Indian / Alaska Native,38,"358,491",10.6,13.32,830
+Arizona,2010,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2010,Struck by / against,White,--,"5,493,846",--,--,--
+Arizona,2010,Struck by / against,Black,--,"316,052",--,--,--
+Arizona,2010,Struck by / against,American Indian / Alaska Native,--,"358,491",--,--,--
+Arizona,2010,Suffocation,White,302,"5,493,846",5.5,5.35,"6,211"
+Arizona,2010,Suffocation,Black,12**,"316,052",3.80**,4.99**,244
+Arizona,2010,Suffocation,American Indian / Alaska Native,58,"358,491",16.18,16.3,"2,003"
+Arizona,2010,Suffocation,Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2010,"Motor vehicle, traffic",White,583,"5,493,846",10.61,10.22,"11,626"
+Arizona,2010,"Motor vehicle, traffic",Black,29,"316,052",9.18,10.93,804
+Arizona,2010,"Motor vehicle, traffic",American Indian / Alaska Native,121,"358,491",33.75,36.08,"3,779"
+Arizona,2010,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,11**,"223,903",4.91**,5.77**,201
+Arizona,2010,"Pedal cyclist, other",White,--,"5,493,846",--,--,--
+Arizona,2010,"Pedal cyclist, other",Black,--,"316,052",--,--,--
+Arizona,2010,"Pedestrian, other",White,22,"5,493,846",0.4,0.4,694
+Arizona,2010,"Pedestrian, other",American Indian / Alaska Native,10**,"358,491",2.79**,2.92**,255
+Arizona,2010,"Transport, other land",White,32,"5,493,846",0.58,0.58,713
+Arizona,2010,"Transport, other land",American Indian / Alaska Native,--,"358,491",--,--,--
+Arizona,2010,"Transport, other (excl. drown by water transp)",White,22,"5,493,846",0.4,0.39,368
+Arizona,2010,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2010,Other specified and classifiable,White,31,"5,493,846",0.56,0.57,595
+Arizona,2010,Other specified and classifiable,Black,--,"316,052",--,--,--
+Arizona,2010,Other specified and classifiable,American Indian / Alaska Native,--,"358,491",--,--,--
+Arizona,2010,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2010,Other specified / NEC,White,53,"5,493,846",0.97,0.94,922
+Arizona,2010,Other specified / NEC,Black,--,"316,052",--,--,--
+Arizona,2010,Other specified / NEC,American Indian / Alaska Native,--,"358,491",--,--,--
+Arizona,2010,Unspecified,White,103,"5,493,846",1.88,1.8,"1,898"
+Arizona,2010,Unspecified,Black,--,"316,052",--,--,--
+Arizona,2010,Unspecified,American Indian / Alaska Native,19**,"358,491",5.30**,6.37**,464
+Arizona,2010,Unspecified,Asian / HI Native / Pac. Islander,--,"223,903",--,--,--
+Arizona,2009,Cut/Pierce,White,56,"5,464,047",1.03,1.05,"1,383"
+Arizona,2009,Cut/Pierce,Black,--,"308,020",--,--,--
+Arizona,2009,Cut/Pierce,American Indian / Alaska Native,12**,"353,144",3.40**,3.58**,391
+Arizona,2009,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2009,Drowning (includes water transport),White,94,"5,464,047",1.72,1.64,"2,644"
+Arizona,2009,Drowning (includes water transport),Black,--,"308,020",--,--,--
+Arizona,2009,Drowning (includes water transport),American Indian / Alaska Native,14**,"353,144",3.96**,4.31**,480
+Arizona,2009,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2009,Fall,White,705,"5,464,047",12.9,11.46,"1,106"
+Arizona,2009,Fall,Black,--,"308,020",--,--,--
+Arizona,2009,Fall,American Indian / Alaska Native,30,"353,144",8.5,17.71,161
+Arizona,2009,Fall,Asian / HI Native / Pac. Islander,11**,"217,943",5.05**,10.90**,51
+Arizona,2009,Fire/Flame,White,31,"5,464,047",0.57,0.53,470
+Arizona,2009,Fire/Flame,Black,--,"308,020",--,--,--
+Arizona,2009,Fire/Flame,American Indian / Alaska Native,--,"353,144",--,--,--
+Arizona,2009,Hot object/Substance,White,--,"5,464,047",--,--,--
+Arizona,2009,Firearm,White,773,"5,464,047",14.15,13.91,"15,131"
+Arizona,2009,Firearm,Black,44,"308,020",14.29,13.23,"1,573"
+Arizona,2009,Firearm,American Indian / Alaska Native,33,"353,144",9.35,8.92,"1,100"
+Arizona,2009,Firearm,Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2009,Machinery,White,--,"5,464,047",--,--,--
+Arizona,2009,Natural/Environmental,White,81,"5,464,047",1.48,1.12,786
+Arizona,2009,Natural/Environmental,Black,--,"308,020",--,--,--
+Arizona,2009,Natural/Environmental,American Indian / Alaska Native,18**,"353,144",5.10**,8.07**,265
+Arizona,2009,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2009,Drug Poisoning,White,926,"5,464,047",16.95,17.26,"20,268"
+Arizona,2009,Drug Poisoning,Black,35,"308,020",11.36,12,788
+Arizona,2009,Drug Poisoning,American Indian / Alaska Native,39,"353,144",11.04,11.8,"1,155"
+Arizona,2009,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2009,Non-Drug Poisoning,White,81,"5,464,047",1.48,1.48,"1,611"
+Arizona,2009,Non-Drug Poisoning,Black,--,"308,020",--,--,--
+Arizona,2009,Non-Drug Poisoning,American Indian / Alaska Native,33,"353,144",9.35,10.51,855
+Arizona,2009,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2009,Struck by / against,White,--,"5,464,047",--,--,--
+Arizona,2009,Struck by / against,Black,--,"308,020",--,--,--
+Arizona,2009,Suffocation,White,270,"5,464,047",4.94,4.92,"5,575"
+Arizona,2009,Suffocation,Black,--,"308,020",--,--,--
+Arizona,2009,Suffocation,American Indian / Alaska Native,46,"353,144",13.03,13.43,"1,492"
+Arizona,2009,Suffocation,Asian / HI Native / Pac. Islander,10**,"217,943",4.59**,5.01**,296
+Arizona,2009,"Motor vehicle, traffic",White,587,"5,464,047",10.74,10.58,"13,592"
+Arizona,2009,"Motor vehicle, traffic",Black,31,"308,020",10.06,10.76,810
+Arizona,2009,"Motor vehicle, traffic",American Indian / Alaska Native,117,"353,144",33.13,34.28,"3,554"
+Arizona,2009,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,10**,"217,943",4.59**,4.93**,297
+Arizona,2009,"Pedal cyclist, other",White,--,"5,464,047",--,--,--
+Arizona,2009,"Pedal cyclist, other",Black,--,"308,020",--,--,--
+Arizona,2009,"Pedestrian, other",White,15**,"5,464,047",0.28**,0.27**,533
+Arizona,2009,"Pedestrian, other",Black,--,"308,020",--,--,--
+Arizona,2009,"Pedestrian, other",American Indian / Alaska Native,13**,"353,144",3.68**,4.38**,387
+Arizona,2009,"Transport, other land",White,44,"5,464,047",0.81,0.77,768
+Arizona,2009,"Transport, other land",American Indian / Alaska Native,11**,"353,144",3.12**,2.67**,457
+Arizona,2009,"Transport, other land",Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2009,"Transport, other (excl. drown by water transp)",White,14**,"5,464,047",0.26**,0.25**,166
+Arizona,2009,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"353,144",--,--,--
+Arizona,2009,Other specified and classifiable,White,51,"5,464,047",0.93,0.89,989
+Arizona,2009,Other specified and classifiable,Black,--,"308,020",--,--,--
+Arizona,2009,Other specified and classifiable,American Indian / Alaska Native,--,"353,144",--,--,--
+Arizona,2009,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2009,Other specified / NEC,White,37,"5,464,047",0.68,0.6,464
+Arizona,2009,Other specified / NEC,Black,--,"308,020",--,--,--
+Arizona,2009,Other specified / NEC,American Indian / Alaska Native,--,"353,144",--,--,--
+Arizona,2009,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2009,Unspecified,White,89,"5,464,047",1.63,1.48,"1,539"
+Arizona,2009,Unspecified,Black,--,"308,020",--,--,--
+Arizona,2009,Unspecified,American Indian / Alaska Native,25,"353,144",7.08,8.18,656
+Arizona,2009,Unspecified,Asian / HI Native / Pac. Islander,--,"217,943",--,--,--
+Arizona,2008,Cut/Pierce,White,46,"5,429,954",0.85,0.85,"1,197"
+Arizona,2008,Cut/Pierce,Black,--,"294,617",--,--,--
+Arizona,2008,Cut/Pierce,American Indian / Alaska Native,17**,"346,539",4.91**,4.53**,581
+Arizona,2008,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,Drowning (includes water transport),White,71,"5,429,954",1.31,1.28,"2,241"
+Arizona,2008,Drowning (includes water transport),Black,--,"294,617",--,--,--
+Arizona,2008,Drowning (includes water transport),American Indian / Alaska Native,10**,"346,539",2.89**,2.70**,382
+Arizona,2008,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,Fall,White,719,"5,429,954",13.24,12.15,"1,503"
+Arizona,2008,Fall,Black,12**,"294,617",4.07**,8.31**,62
+Arizona,2008,Fall,American Indian / Alaska Native,25,"346,539",7.21,14.42,215
+Arizona,2008,Fall,Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,Fire/Flame,White,57,"5,429,954",1.05,1,622
+Arizona,2008,Fire/Flame,Black,--,"294,617",--,--,--
+Arizona,2008,Fire/Flame,American Indian / Alaska Native,--,"346,539",--,--,--
+Arizona,2008,Fire/Flame,Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,Hot object/Substance,White,--,"5,429,954",--,--,--
+Arizona,2008,Firearm,White,809,"5,429,954",14.9,14.64,"17,857"
+Arizona,2008,Firearm,Black,61,"294,617",20.71,20.45,"2,066"
+Arizona,2008,Firearm,American Indian / Alaska Native,30,"346,539",8.66,8.11,"1,050"
+Arizona,2008,Firearm,Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,Machinery,White,--,"5,429,954",--,--,--
+Arizona,2008,Natural/Environmental,White,43,"5,429,954",0.79,0.71,498
+Arizona,2008,Natural/Environmental,Black,--,"294,617",--,--,--
+Arizona,2008,Natural/Environmental,American Indian / Alaska Native,17**,"346,539",4.91**,7.48**,251
+Arizona,2008,Drug Poisoning,White,758,"5,429,954",13.96,14.31,"16,067"
+Arizona,2008,Drug Poisoning,Black,39,"294,617",13.24,14.77,826
+Arizona,2008,Drug Poisoning,American Indian / Alaska Native,27,"346,539",7.79,8.41,687
+Arizona,2008,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,Non-Drug Poisoning,White,91,"5,429,954",1.68,1.62,"1,470"
+Arizona,2008,Non-Drug Poisoning,Black,--,"294,617",--,--,--
+Arizona,2008,Non-Drug Poisoning,American Indian / Alaska Native,28,"346,539",8.08,10.43,512
+Arizona,2008,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,Struck by / against,White,12**,"5,429,954",0.22**,0.22**,404
+Arizona,2008,Struck by / against,American Indian / Alaska Native,--,"346,539",--,--,--
+Arizona,2008,Suffocation,White,258,"5,429,954",4.75,4.74,"5,678"
+Arizona,2008,Suffocation,Black,14**,"294,617",4.75**,4.72**,513
+Arizona,2008,Suffocation,American Indian / Alaska Native,42,"346,539",12.12,11.67,"1,512"
+Arizona,2008,Suffocation,Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,"Motor vehicle, traffic",White,699,"5,429,954",12.87,12.69,"16,122"
+Arizona,2008,"Motor vehicle, traffic",Black,32,"294,617",10.86,10.67,954
+Arizona,2008,"Motor vehicle, traffic",American Indian / Alaska Native,138,"346,539",39.82,44.02,"3,971"
+Arizona,2008,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,"Pedal cyclist, other",White,--,"5,429,954",--,--,--
+Arizona,2008,"Pedal cyclist, other",Black,--,"294,617",--,--,--
+Arizona,2008,"Pedestrian, other",White,23,"5,429,954",0.42,0.42,722
+Arizona,2008,"Pedestrian, other",Black,--,"294,617",--,--,--
+Arizona,2008,"Pedestrian, other",American Indian / Alaska Native,--,"346,539",--,--,--
+Arizona,2008,"Transport, other land",White,73,"5,429,954",1.34,1.31,"1,642"
+Arizona,2008,"Transport, other land",Black,--,"294,617",--,--,--
+Arizona,2008,"Transport, other land",American Indian / Alaska Native,--,"346,539",--,--,--
+Arizona,2008,"Transport, other land",Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,"Transport, other (excl. drown by water transp)",White,39,"5,429,954",0.72,0.71,748
+Arizona,2008,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2008,Other specified and classifiable,White,44,"5,429,954",0.81,0.82,"1,026"
+Arizona,2008,Other specified and classifiable,Black,--,"294,617",--,--,--
+Arizona,2008,Other specified and classifiable,American Indian / Alaska Native,--,"346,539",--,--,--
+Arizona,2008,Other specified / NEC,White,36,"5,429,954",0.66,0.65,580
+Arizona,2008,Other specified / NEC,American Indian / Alaska Native,--,"346,539",--,--,--
+Arizona,2008,Unspecified,White,108,"5,429,954",1.99,1.91,"1,603"
+Arizona,2008,Unspecified,Black,--,"294,617",--,--,--
+Arizona,2008,Unspecified,American Indian / Alaska Native,23,"346,539",6.64,7.03,736
+Arizona,2008,Unspecified,Asian / HI Native / Pac. Islander,--,"209,252",--,--,--
+Arizona,2007,Cut/Pierce,White,54,"5,354,405",1.01,1.02,"1,372"
+Arizona,2007,Cut/Pierce,Black,--,"278,537",--,--,--
+Arizona,2007,Cut/Pierce,American Indian / Alaska Native,14**,"336,800",4.16**,4.19**,459
+Arizona,2007,Drowning (includes water transport),White,89,"5,354,405",1.66,1.66,"2,892"
+Arizona,2007,Drowning (includes water transport),Black,--,"278,537",--,--,--
+Arizona,2007,Drowning (includes water transport),American Indian / Alaska Native,--,"336,800",--,--,--
+Arizona,2007,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"197,939",--,--,--
+Arizona,2007,Fall,White,708,"5,354,405",13.22,12.26,"1,437"
+Arizona,2007,Fall,Black,11**,"278,537",3.95**,8.83**,49
+Arizona,2007,Fall,American Indian / Alaska Native,29,"336,800",8.61,13.4,468
+Arizona,2007,Fall,Asian / HI Native / Pac. Islander,--,"197,939",--,--,--
+Arizona,2007,Fire/Flame,White,36,"5,354,405",0.67,0.66,743
+Arizona,2007,Fire/Flame,American Indian / Alaska Native,--,"336,800",--,--,--
+Arizona,2007,Hot object/Substance,White,--,"5,354,405",--,--,--
+Arizona,2007,Firearm,White,848,"5,354,405",15.84,15.75,"21,089"
+Arizona,2007,Firearm,Black,68,"278,537",24.41,22.31,"2,456"
+Arizona,2007,Firearm,American Indian / Alaska Native,29,"336,800",8.61,7.97,"1,025"
+Arizona,2007,Firearm,Asian / HI Native / Pac. Islander,--,"197,939",--,--,--
+Arizona,2007,Machinery,Black,--,"278,537",--,--,--
+Arizona,2007,Natural/Environmental,White,52,"5,354,405",0.97,0.88,872
+Arizona,2007,Natural/Environmental,Black,--,"278,537",--,--,--
+Arizona,2007,Natural/Environmental,American Indian / Alaska Native,14**,"336,800",4.16**,6.47**,240
+Arizona,2007,Drug Poisoning,White,872,"5,354,405",16.29,16.72,"19,353"
+Arizona,2007,Drug Poisoning,Black,42,"278,537",15.08,17.55,846
+Arizona,2007,Drug Poisoning,American Indian / Alaska Native,24,"336,800",7.13,9.35,497
+Arizona,2007,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"197,939",--,--,--
+Arizona,2007,Non-Drug Poisoning,White,82,"5,354,405",1.53,1.56,"1,770"
+Arizona,2007,Non-Drug Poisoning,American Indian / Alaska Native,18**,"336,800",5.34**,6.23**,424
+Arizona,2007,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"197,939",--,--,--
+Arizona,2007,Struck by / against,White,11**,"5,354,405",0.21**,0.19**,303
+Arizona,2007,Struck by / against,American Indian / Alaska Native,--,"336,800",--,--,--
+Arizona,2007,Struck by / against,Asian / HI Native / Pac. Islander,--,"197,939",--,--,--
+Arizona,2007,Suffocation,White,281,"5,354,405",5.25,5.17,"6,472"
+Arizona,2007,Suffocation,Black,--,"278,537",--,--,--
+Arizona,2007,Suffocation,American Indian / Alaska Native,35,"336,800",10.39,11.2,"1,111"
+Arizona,2007,Suffocation,Asian / HI Native / Pac. Islander,--,"197,939",--,--,--
+Arizona,2007,"Motor vehicle, traffic",White,804,"5,354,405",15.02,15.07,"20,858"
+Arizona,2007,"Motor vehicle, traffic",Black,30,"278,537",10.77,12.43,836
+Arizona,2007,"Motor vehicle, traffic",American Indian / Alaska Native,159,"336,800",47.21,49.58,"4,957"
+Arizona,2007,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,23,"197,939",11.62,13.83,462
+Arizona,2007,"Pedal cyclist, other",White,--,"5,354,405",--,--,--
+Arizona,2007,"Pedal cyclist, other",Black,--,"278,537",--,--,--
+Arizona,2007,"Pedal cyclist, other",American Indian / Alaska Native,--,"336,800",--,--,--
+Arizona,2007,"Pedestrian, other",White,19**,"5,354,405",0.36**,0.34**,558
+Arizona,2007,"Pedestrian, other",Black,--,"278,537",--,--,--
+Arizona,2007,"Pedestrian, other",American Indian / Alaska Native,--,"336,800",--,--,--
+Arizona,2007,"Transport, other land",White,76,"5,354,405",1.42,1.48,"2,323"
+Arizona,2007,"Transport, other land",Black,--,"278,537",--,--,--
+Arizona,2007,"Transport, other land",American Indian / Alaska Native,--,"336,800",--,--,--
+Arizona,2007,"Transport, other (excl. drown by water transp)",White,28,"5,354,405",0.52,0.51,604
+Arizona,2007,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"336,800",--,--,--
+Arizona,2007,Other specified and classifiable,White,63,"5,354,405",1.18,1.17,"1,482"
+Arizona,2007,Other specified and classifiable,Black,--,"278,537",--,--,--
+Arizona,2007,Other specified and classifiable,American Indian / Alaska Native,--,"336,800",--,--,--
+Arizona,2007,Other specified / NEC,White,50,"5,354,405",0.93,0.88,681
+Arizona,2007,Other specified / NEC,Black,--,"278,537",--,--,--
+Arizona,2007,Other specified / NEC,American Indian / Alaska Native,--,"336,800",--,--,--
+Arizona,2007,Unspecified,White,136,"5,354,405",2.54,2.42,"2,743"
+Arizona,2007,Unspecified,Black,--,"278,537",--,--,--
+Arizona,2007,Unspecified,American Indian / Alaska Native,17**,"336,800",5.05**,6.72**,314
+Arizona,2007,Unspecified,Asian / HI Native / Pac. Islander,--,"197,939",--,--,--
+Arizona,2006,Cut/Pierce,White,66,"5,255,478",1.26,1.26,"1,436"
+Arizona,2006,Cut/Pierce,Black,--,"262,150",--,--,--
+Arizona,2006,Cut/Pierce,American Indian / Alaska Native,20**,"327,058",6.12**,5.94**,661
+Arizona,2006,Drowning (includes water transport),White,86,"5,255,478",1.64,1.59,"2,758"
+Arizona,2006,Drowning (includes water transport),Black,--,"262,150",--,--,--
+Arizona,2006,Drowning (includes water transport),American Indian / Alaska Native,--,"327,058",--,--,--
+Arizona,2006,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"184,455",--,--,--
+Arizona,2006,Fall,White,693,"5,255,478",13.19,12.39,"1,843"
+Arizona,2006,Fall,Black,--,"262,150",--,--,--
+Arizona,2006,Fall,American Indian / Alaska Native,25,"327,058",7.64,13.37,326
+Arizona,2006,Fall,Asian / HI Native / Pac. Islander,--,"184,455",--,--,--
+Arizona,2006,Fire/Flame,White,44,"5,255,478",0.84,0.81,892
+Arizona,2006,Fire/Flame,Black,--,"262,150",--,--,--
+Arizona,2006,Fire/Flame,American Indian / Alaska Native,--,"327,058",--,--,--
+Arizona,2006,Hot object/Substance,White,--,"5,255,478",--,--,--
+Arizona,2006,Hot object/Substance,American Indian / Alaska Native,--,"327,058",--,--,--
+Arizona,2006,Firearm,White,884,"5,255,478",16.82,16.66,"21,590"
+Arizona,2006,Firearm,Black,58,"262,150",22.13,20.61,"1,965"
+Arizona,2006,Firearm,American Indian / Alaska Native,34,"327,058",10.4,8.3,"1,401"
+Arizona,2006,Firearm,Asian / HI Native / Pac. Islander,--,"184,455",--,--,--
+Arizona,2006,Machinery,White,--,"5,255,478",--,--,--
+Arizona,2006,Machinery,American Indian / Alaska Native,--,"327,058",--,--,--
+Arizona,2006,Natural/Environmental,White,94,"5,255,478",1.79,1.59,"1,131"
+Arizona,2006,Natural/Environmental,Black,--,"262,150",--,--,--
+Arizona,2006,Natural/Environmental,American Indian / Alaska Native,20**,"327,058",6.12**,8.41**,318
+Arizona,2006,Drug Poisoning,White,793,"5,255,478",15.09,15.45,"17,467"
+Arizona,2006,Drug Poisoning,Black,49,"262,150",18.69,22.83,932
+Arizona,2006,Drug Poisoning,American Indian / Alaska Native,29,"327,058",8.87,10.09,771
+Arizona,2006,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"184,455",--,--,--
+Arizona,2006,Non-Drug Poisoning,White,57,"5,255,478",1.09,1.12,"1,211"
+Arizona,2006,Non-Drug Poisoning,Black,--,"262,150",--,--,--
+Arizona,2006,Non-Drug Poisoning,American Indian / Alaska Native,--,"327,058",--,--,--
+Arizona,2006,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"184,455",--,--,--
+Arizona,2006,Struck by / against,White,25,"5,255,478",0.48,0.47,634
+Arizona,2006,Struck by / against,American Indian / Alaska Native,--,"327,058",--,--,--
+Arizona,2006,Suffocation,White,248,"5,255,478",4.72,4.73,"5,863"
+Arizona,2006,Suffocation,Black,--,"262,150",--,--,--
+Arizona,2006,Suffocation,American Indian / Alaska Native,47,"327,058",14.37,15.81,"1,549"
+Arizona,2006,Suffocation,Asian / HI Native / Pac. Islander,--,"184,455",--,--,--
+Arizona,2006,"Motor vehicle, traffic",White,"1,047","5,255,478",19.92,19.75,"26,910"
+Arizona,2006,"Motor vehicle, traffic",Black,38,"262,150",14.5,15.22,"1,123"
+Arizona,2006,"Motor vehicle, traffic",American Indian / Alaska Native,171,"327,058",52.28,57.25,"4,896"
+Arizona,2006,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,--,"184,455",--,--,--
+Arizona,2006,"Pedal cyclist, other",White,--,"5,255,478",--,--,--
+Arizona,2006,"Pedestrian, other",White,21,"5,255,478",0.4,0.41,699
+Arizona,2006,"Pedestrian, other",Black,--,"262,150",--,--,--
+Arizona,2006,"Pedestrian, other",American Indian / Alaska Native,12**,"327,058",3.67**,3.73**,445
+Arizona,2006,"Transport, other land",White,53,"5,255,478",1.01,0.99,"1,228"
+Arizona,2006,"Transport, other land",American Indian / Alaska Native,--,"327,058",--,--,--
+Arizona,2006,"Transport, other (excl. drown by water transp)",White,33,"5,255,478",0.63,0.62,614
+Arizona,2006,"Transport, other (excl. drown by water transp)",Black,--,"262,150",--,--,--
+Arizona,2006,Other specified and classifiable,White,44,"5,255,478",0.84,0.8,"1,012"
+Arizona,2006,Other specified and classifiable,Black,--,"262,150",--,--,--
+Arizona,2006,Other specified and classifiable,American Indian / Alaska Native,--,"327,058",--,--,--
+Arizona,2006,Other specified / NEC,White,40,"5,255,478",0.76,0.71,542
+Arizona,2006,Other specified / NEC,Black,--,"262,150",--,--,--
+Arizona,2006,Other specified / NEC,American Indian / Alaska Native,10**,"327,058",3.06**,3.67**,263
+Arizona,2006,Unspecified,White,119,"5,255,478",2.26,2.18,"2,003"
+Arizona,2006,Unspecified,Black,--,"262,150",--,--,--
+Arizona,2006,Unspecified,American Indian / Alaska Native,19**,"327,058",5.81**,6.18**,572
+Arizona,2006,Unspecified,Asian / HI Native / Pac. Islander,--,"184,455",--,--,--
+Arizona,2005,Cut/Pierce,White,53,"5,111,992",1.04,1.05,"1,232"
+Arizona,2005,Cut/Pierce,Black,--,"243,074",--,--,--
+Arizona,2005,Cut/Pierce,American Indian / Alaska Native,12**,"316,197",3.80**,4.16**,370
+Arizona,2005,Drowning (includes water transport),White,83,"5,111,992",1.62,1.58,"2,699"
+Arizona,2005,Drowning (includes water transport),Black,--,"243,074",--,--,--
+Arizona,2005,Drowning (includes water transport),American Indian / Alaska Native,10**,"316,197",3.16**,3.57**,307
+Arizona,2005,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"167,814",--,--,--
+Arizona,2005,Fall,White,677,"5,111,992",13.24,12.54,"1,868"
+Arizona,2005,Fall,Black,--,"243,074",--,--,--
+Arizona,2005,Fall,American Indian / Alaska Native,17**,"316,197",5.38**,9.61**,200
+Arizona,2005,Fall,Asian / HI Native / Pac. Islander,--,"167,814",--,--,--
+Arizona,2005,Fire/Flame,White,60,"5,111,992",1.17,1.16,"1,552"
+Arizona,2005,Fire/Flame,Black,--,"243,074",--,--,--
+Arizona,2005,Fire/Flame,American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,Fire/Flame,Asian / HI Native / Pac. Islander,--,"167,814",--,--,--
+Arizona,2005,Hot object/Substance,White,--,"5,111,992",--,--,--
+Arizona,2005,Hot object/Substance,American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,Firearm,White,828,"5,111,992",16.2,16.13,"20,672"
+Arizona,2005,Firearm,Black,47,"243,074",19.34,19.1,"1,560"
+Arizona,2005,Firearm,American Indian / Alaska Native,50,"316,197",15.81,14.03,"1,890"
+Arizona,2005,Firearm,Asian / HI Native / Pac. Islander,--,"167,814",--,--,--
+Arizona,2005,Machinery,White,--,"5,111,992",--,--,--
+Arizona,2005,Machinery,Black,--,"243,074",--,--,--
+Arizona,2005,Machinery,American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,Natural/Environmental,White,88,"5,111,992",1.72,1.56,902
+Arizona,2005,Natural/Environmental,Black,--,"243,074",--,--,--
+Arizona,2005,Natural/Environmental,American Indian / Alaska Native,33,"316,197",10.44,15.21,512
+Arizona,2005,Drug Poisoning,White,719,"5,111,992",14.07,14.54,"16,030"
+Arizona,2005,Drug Poisoning,Black,41,"243,074",16.87,18.7,925
+Arizona,2005,Drug Poisoning,American Indian / Alaska Native,31,"316,197",9.8,11.45,767
+Arizona,2005,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"167,814",--,--,--
+Arizona,2005,Non-Drug Poisoning,White,49,"5,111,992",0.96,0.99,"1,123"
+Arizona,2005,Non-Drug Poisoning,American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"167,814",--,--,--
+Arizona,2005,Struck by / against,White,17**,"5,111,992",0.33**,0.32**,306
+Arizona,2005,Struck by / against,Black,--,"243,074",--,--,--
+Arizona,2005,Struck by / against,American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,Suffocation,White,314,"5,111,992",6.14,6.09,"7,791"
+Arizona,2005,Suffocation,Black,--,"243,074",--,--,--
+Arizona,2005,Suffocation,American Indian / Alaska Native,45,"316,197",14.23,13.59,"1,686"
+Arizona,2005,Suffocation,Asian / HI Native / Pac. Islander,--,"167,814",--,--,--
+Arizona,2005,"Motor vehicle, traffic",White,936,"5,111,992",18.31,18.25,"23,856"
+Arizona,2005,"Motor vehicle, traffic",Black,49,"243,074",20.16,20.31,"1,552"
+Arizona,2005,"Motor vehicle, traffic",American Indian / Alaska Native,164,"316,197",51.87,54.82,"5,066"
+Arizona,2005,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,12**,"167,814",7.15**,7.63**,284
+Arizona,2005,"Pedal cyclist, other",White,--,"5,111,992",--,--,--
+Arizona,2005,"Pedal cyclist, other",American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,"Pedestrian, other",White,22,"5,111,992",0.43,0.42,598
+Arizona,2005,"Pedestrian, other",Black,--,"243,074",--,--,--
+Arizona,2005,"Pedestrian, other",American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,"Transport, other land",White,34,"5,111,992",0.67,0.66,748
+Arizona,2005,"Transport, other land",American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,"Transport, other land",Asian / HI Native / Pac. Islander,--,"167,814",--,--,--
+Arizona,2005,"Transport, other (excl. drown by water transp)",White,17**,"5,111,992",0.33**,0.35**,432
+Arizona,2005,Other specified and classifiable,White,60,"5,111,992",1.17,1.21,"1,608"
+Arizona,2005,Other specified and classifiable,Black,--,"243,074",--,--,--
+Arizona,2005,Other specified and classifiable,American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,Other specified / NEC,White,43,"5,111,992",0.84,0.78,811
+Arizona,2005,Other specified / NEC,American Indian / Alaska Native,--,"316,197",--,--,--
+Arizona,2005,Unspecified,White,149,"5,111,992",2.92,2.72,"2,121"
+Arizona,2005,Unspecified,Black,--,"243,074",--,--,--
+Arizona,2005,Unspecified,American Indian / Alaska Native,15**,"316,197",4.74**,5.66**,357
+Arizona,2005,Unspecified,Asian / HI Native / Pac. Islander,--,"167,814",--,--,--
+Arizona,2004,Cut/Pierce,White,58,"4,965,804",1.17,1.18,"1,596"
+Arizona,2004,Cut/Pierce,Black,--,"226,956",--,--,--
+Arizona,2004,Cut/Pierce,American Indian / Alaska Native,14**,"306,256",4.57**,4.65**,459
+Arizona,2004,Drowning (includes water transport),White,99,"4,965,804",1.99,1.93,"2,877"
+Arizona,2004,Drowning (includes water transport),Black,--,"226,956",--,--,--
+Arizona,2004,Drowning (includes water transport),American Indian / Alaska Native,--,"306,256",--,--,--
+Arizona,2004,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"153,388",--,--,--
+Arizona,2004,Fall,White,507,"4,965,804",10.21,9.84,"1,181"
+Arizona,2004,Fall,Black,--,"226,956",--,--,--
+Arizona,2004,Fall,American Indian / Alaska Native,24,"306,256",7.84,15.24,231
+Arizona,2004,Fall,Asian / HI Native / Pac. Islander,--,"153,388",--,--,--
+Arizona,2004,Fire/Flame,White,33,"4,965,804",0.67,0.65,415
+Arizona,2004,Fire/Flame,Black,--,"226,956",--,--,--
+Arizona,2004,Fire/Flame,American Indian / Alaska Native,--,"306,256",--,--,--
+Arizona,2004,Hot object/Substance,White,--,"4,965,804",--,--,--
+Arizona,2004,Firearm,White,809,"4,965,804",16.29,16.15,"19,404"
+Arizona,2004,Firearm,Black,46,"226,956",20.27,19.6,"1,500"
+Arizona,2004,Firearm,American Indian / Alaska Native,41,"306,256",13.39,12.54,"1,511"
+Arizona,2004,Firearm,Asian / HI Native / Pac. Islander,--,"153,388",--,--,--
+Arizona,2004,Machinery,White,--,"4,965,804",--,--,--
+Arizona,2004,Natural/Environmental,White,62,"4,965,804",1.25,0.84,949
+Arizona,2004,Natural/Environmental,Black,--,"226,956",--,--,--
+Arizona,2004,Natural/Environmental,American Indian / Alaska Native,12**,"306,256",3.92**,4.64**,152
+Arizona,2004,Drug Poisoning,White,682,"4,965,804",13.73,14.21,"15,027"
+Arizona,2004,Drug Poisoning,Black,24,"226,956",10.58,12.43,475
+Arizona,2004,Drug Poisoning,American Indian / Alaska Native,37,"306,256",12.08,12.8,"1,025"
+Arizona,2004,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"153,388",--,--,--
+Arizona,2004,Non-Drug Poisoning,White,51,"4,965,804",1.03,1.04,"1,114"
+Arizona,2004,Non-Drug Poisoning,Black,--,"226,956",--,--,--
+Arizona,2004,Non-Drug Poisoning,American Indian / Alaska Native,--,"306,256",--,--,--
+Arizona,2004,Struck by / against,White,11**,"4,965,804",0.22**,0.23**,219
+Arizona,2004,Struck by / against,American Indian / Alaska Native,--,"306,256",--,--,--
+Arizona,2004,Suffocation,White,233,"4,965,804",4.69,4.72,"5,529"
+Arizona,2004,Suffocation,Black,--,"226,956",--,--,--
+Arizona,2004,Suffocation,American Indian / Alaska Native,44,"306,256",14.37,16.14,"1,419"
+Arizona,2004,Suffocation,Asian / HI Native / Pac. Islander,--,"153,388",--,--,--
+Arizona,2004,"Motor vehicle, traffic",White,893,"4,965,804",17.98,17.71,"22,795"
+Arizona,2004,"Motor vehicle, traffic",Black,34,"226,956",14.98,14.05,"1,194"
+Arizona,2004,"Motor vehicle, traffic",American Indian / Alaska Native,143,"306,256",46.69,58.42,"3,626"
+Arizona,2004,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,10**,"153,388",6.52**,8.71**,220
+Arizona,2004,"Pedal cyclist, other",White,12**,"4,965,804",0.24**,0.24**,295
+Arizona,2004,"Pedal cyclist, other",American Indian / Alaska Native,--,"306,256",--,--,--
+Arizona,2004,"Pedestrian, other",White,14**,"4,965,804",0.28**,0.27**,370
+Arizona,2004,"Pedestrian, other",Black,--,"226,956",--,--,--
+Arizona,2004,"Pedestrian, other",American Indian / Alaska Native,10**,"306,256",3.27**,3.76**,273
+Arizona,2004,"Transport, other land",White,38,"4,965,804",0.77,0.76,"1,128"
+Arizona,2004,"Transport, other land",American Indian / Alaska Native,--,"306,256",--,--,--
+Arizona,2004,"Transport, other (excl. drown by water transp)",White,26,"4,965,804",0.52,0.51,411
+Arizona,2004,"Transport, other (excl. drown by water transp)",Asian / HI Native / Pac. Islander,--,"153,388",--,--,--
+Arizona,2004,Other specified and classifiable,White,39,"4,965,804",0.79,0.75,756
+Arizona,2004,Other specified and classifiable,American Indian / Alaska Native,--,"306,256",--,--,--
+Arizona,2004,Other specified / NEC,White,41,"4,965,804",0.83,0.83,736
+Arizona,2004,Other specified / NEC,Black,--,"226,956",--,--,--
+Arizona,2004,Other specified / NEC,American Indian / Alaska Native,--,"306,256",--,--,--
+Arizona,2004,Unspecified,White,145,"4,965,804",2.92,2.81,"2,086"
+Arizona,2004,Unspecified,Black,--,"226,956",--,--,--
+Arizona,2004,Unspecified,American Indian / Alaska Native,15**,"306,256",4.90**,8.40**,188
+Arizona,2003,Cut/Pierce,White,40,"4,854,518",0.82,0.81,895
+Arizona,2003,Cut/Pierce,Black,--,"213,993",--,--,--
+Arizona,2003,Cut/Pierce,American Indian / Alaska Native,10**,"298,633",3.35**,3.30**,351
+Arizona,2003,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"143,220",--,--,--
+Arizona,2003,Drowning (includes water transport),White,84,"4,854,518",1.73,1.69,"2,669"
+Arizona,2003,Drowning (includes water transport),Black,--,"213,993",--,--,--
+Arizona,2003,Drowning (includes water transport),American Indian / Alaska Native,10**,"298,633",3.35**,3.39**,330
+Arizona,2003,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"143,220",--,--,--
+Arizona,2003,Fall,White,474,"4,854,518",9.76,9.47,"1,329"
+Arizona,2003,Fall,Black,--,"213,993",--,--,--
+Arizona,2003,Fall,American Indian / Alaska Native,27,"298,633",9.04,17.12,329
+Arizona,2003,Fall,Asian / HI Native / Pac. Islander,--,"143,220",--,--,--
+Arizona,2003,Fire/Flame,White,49,"4,854,518",1.01,0.97,651
+Arizona,2003,Fire/Flame,Black,--,"213,993",--,--,--
+Arizona,2003,Fire/Flame,American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,Hot object/Substance,White,--,"4,854,518",--,--,--
+Arizona,2003,Firearm,White,752,"4,854,518",15.49,15.25,"17,932"
+Arizona,2003,Firearm,Black,48,"213,993",22.43,20.73,"1,575"
+Arizona,2003,Firearm,American Indian / Alaska Native,46,"298,633",15.4,16.18,"1,488"
+Arizona,2003,Firearm,Asian / HI Native / Pac. Islander,--,"143,220",--,--,--
+Arizona,2003,Machinery,White,--,"4,854,518",--,--,--
+Arizona,2003,Machinery,Black,--,"213,993",--,--,--
+Arizona,2003,Natural/Environmental,White,56,"4,854,518",1.15,0.97,932
+Arizona,2003,Natural/Environmental,Black,--,"213,993",--,--,--
+Arizona,2003,Natural/Environmental,American Indian / Alaska Native,22,"298,633",7.37,9.16,572
+Arizona,2003,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"143,220",--,--,--
+Arizona,2003,Overexertion,American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,Drug Poisoning,White,617,"4,854,518",12.71,13.16,"13,969"
+Arizona,2003,Drug Poisoning,Black,33,"213,993",15.42,18.38,674
+Arizona,2003,Drug Poisoning,American Indian / Alaska Native,24,"298,633",8.04,9.2,665
+Arizona,2003,Non-Drug Poisoning,White,56,"4,854,518",1.15,1.18,"1,177"
+Arizona,2003,Non-Drug Poisoning,Black,--,"213,993",--,--,--
+Arizona,2003,Non-Drug Poisoning,American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,Struck by / against,White,12**,"4,854,518",0.25**,0.24**,178
+Arizona,2003,Struck by / against,Black,--,"213,993",--,--,--
+Arizona,2003,Struck by / against,American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,Suffocation,White,265,"4,854,518",5.46,5.43,"6,149"
+Arizona,2003,Suffocation,Black,11**,"213,993",5.14**,4.71**,451
+Arizona,2003,Suffocation,American Indian / Alaska Native,41,"298,633",13.73,12.51,"1,609"
+Arizona,2003,Suffocation,Asian / HI Native / Pac. Islander,--,"143,220",--,--,--
+Arizona,2003,"Motor vehicle, traffic",White,831,"4,854,518",17.12,17.18,"21,529"
+Arizona,2003,"Motor vehicle, traffic",Black,31,"213,993",14.49,16.91,864
+Arizona,2003,"Motor vehicle, traffic",American Indian / Alaska Native,188,"298,633",62.95,63.96,"6,173"
+Arizona,2003,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,14**,"143,220",9.78**,12.72**,290
+Arizona,2003,"Pedal cyclist, other",White,--,"4,854,518",--,--,--
+Arizona,2003,"Pedal cyclist, other",American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,"Pedestrian, other",White,10**,"4,854,518",0.21**,0.20**,165
+Arizona,2003,"Pedestrian, other",American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,"Transport, other land",White,42,"4,854,518",0.87,0.86,"1,181"
+Arizona,2003,"Transport, other land",Black,--,"213,993",--,--,--
+Arizona,2003,"Transport, other land",American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,"Transport, other (excl. drown by water transp)",White,36,"4,854,518",0.74,0.71,520
+Arizona,2003,"Transport, other (excl. drown by water transp)",American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,Other specified and classifiable,White,28,"4,854,518",0.58,0.56,732
+Arizona,2003,Other specified and classifiable,American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"143,220",--,--,--
+Arizona,2003,Other specified / NEC,White,31,"4,854,518",0.64,0.61,484
+Arizona,2003,Other specified / NEC,Black,--,"213,993",--,--,--
+Arizona,2003,Other specified / NEC,American Indian / Alaska Native,--,"298,633",--,--,--
+Arizona,2003,Unspecified,White,124,"4,854,518",2.55,2.44,"1,874"
+Arizona,2003,Unspecified,Black,11**,"213,993",5.14**,5.77**,286
+Arizona,2003,Unspecified,American Indian / Alaska Native,26,"298,633",8.71,12.83,569
+Arizona,2003,Unspecified,Asian / HI Native / Pac. Islander,--,"143,220",--,--,--
+Arizona,2002,Cut/Pierce,White,42,"4,766,279",0.88,0.86,"1,011"
+Arizona,2002,Cut/Pierce,Black,--,"204,176",--,--,--
+Arizona,2002,Cut/Pierce,American Indian / Alaska Native,21,"291,458",7.21,7.77,616
+Arizona,2002,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"134,342",--,--,--
+Arizona,2002,Drowning (includes water transport),White,76,"4,766,279",1.6,1.57,"2,781"
+Arizona,2002,Drowning (includes water transport),Black,--,"204,176",--,--,--
+Arizona,2002,Drowning (includes water transport),American Indian / Alaska Native,--,"291,458",--,--,--
+Arizona,2002,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"134,342",--,--,--
+Arizona,2002,Fall,White,447,"4,766,279",9.38,9.15,"1,600"
+Arizona,2002,Fall,Black,--,"204,176",--,--,--
+Arizona,2002,Fall,American Indian / Alaska Native,21,"291,458",7.21,13.44,197
+Arizona,2002,Fall,Asian / HI Native / Pac. Islander,--,"134,342",--,--,--
+Arizona,2002,Fire/Flame,White,42,"4,766,279",0.88,0.86,599
+Arizona,2002,Fire/Flame,Black,--,"204,176",--,--,--
+Arizona,2002,Fire/Flame,American Indian / Alaska Native,--,"291,458",--,--,--
+Arizona,2002,Hot object/Substance,White,--,"4,766,279",--,--,--
+Arizona,2002,Firearm,White,880,"4,766,279",18.46,18.3,"21,679"
+Arizona,2002,Firearm,Black,41,"204,176",20.08,17.43,"1,557"
+Arizona,2002,Firearm,American Indian / Alaska Native,42,"291,458",14.41,13.49,"1,551"
+Arizona,2002,Firearm,Asian / HI Native / Pac. Islander,--,"134,342",--,--,--
+Arizona,2002,Machinery,White,--,"4,766,279",--,--,--
+Arizona,2002,Natural/Environmental,White,59,"4,766,279",1.24,1.08,755
+Arizona,2002,Natural/Environmental,American Indian / Alaska Native,15**,"291,458",5.15**,8.50**,175
+Arizona,2002,Natural/Environmental,Asian / HI Native / Pac. Islander,--,"134,342",--,--,--
+Arizona,2002,Drug Poisoning,White,562,"4,766,279",11.79,12.16,"12,840"
+Arizona,2002,Drug Poisoning,Black,33,"204,176",16.16,17.57,800
+Arizona,2002,Drug Poisoning,American Indian / Alaska Native,29,"291,458",9.95,10.14,842
+Arizona,2002,Non-Drug Poisoning,White,60,"4,766,279",1.26,1.24,"1,235"
+Arizona,2002,Non-Drug Poisoning,Black,--,"204,176",--,--,--
+Arizona,2002,Non-Drug Poisoning,American Indian / Alaska Native,--,"291,458",--,--,--
+Arizona,2002,Struck by / against,White,12**,"4,766,279",0.25**,0.25**,233
+Arizona,2002,Struck by / against,American Indian / Alaska Native,--,"291,458",--,--,--
+Arizona,2002,Suffocation,White,216,"4,766,279",4.53,4.49,"4,585"
+Arizona,2002,Suffocation,Black,--,"204,176",--,--,--
+Arizona,2002,Suffocation,American Indian / Alaska Native,29,"291,458",9.95,10.43,877
+Arizona,2002,Suffocation,Asian / HI Native / Pac. Islander,--,"134,342",--,--,--
+Arizona,2002,"Motor vehicle, traffic",White,858,"4,766,279",18,17.89,"20,406"
+Arizona,2002,"Motor vehicle, traffic",Black,23,"204,176",11.27,11.18,766
+Arizona,2002,"Motor vehicle, traffic",American Indian / Alaska Native,183,"291,458",62.79,65.24,"6,094"
+Arizona,2002,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,10**,"134,342",7.44**,9.92**,136
+Arizona,2002,"Pedal cyclist, other",White,--,"4,766,279",--,--,--
+Arizona,2002,"Pedal cyclist, other",Black,--,"204,176",--,--,--
+Arizona,2002,"Pedestrian, other",White,21,"4,766,279",0.44,0.45,468
+Arizona,2002,"Pedestrian, other",American Indian / Alaska Native,--,"291,458",--,--,--
+Arizona,2002,"Transport, other land",White,33,"4,766,279",0.69,0.69,846
+Arizona,2002,"Transport, other land",Black,--,"204,176",--,--,--
+Arizona,2002,"Transport, other land",American Indian / Alaska Native,--,"291,458",--,--,--
+Arizona,2002,"Transport, other (excl. drown by water transp)",White,26,"4,766,279",0.55,0.55,566
+Arizona,2002,Other specified and classifiable,White,34,"4,766,279",0.71,0.72,829
+Arizona,2002,Other specified and classifiable,Black,--,"204,176",--,--,--
+Arizona,2002,Other specified and classifiable,American Indian / Alaska Native,--,"291,458",--,--,--
+Arizona,2002,Other specified / NEC,White,40,"4,766,279",0.84,0.8,804
+Arizona,2002,Other specified / NEC,Black,--,"204,176",--,--,--
+Arizona,2002,Other specified / NEC,American Indian / Alaska Native,--,"291,458",--,--,--
+Arizona,2002,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"134,342",--,--,--
+Arizona,2002,Unspecified,White,105,"4,766,279",2.2,2.18,"1,336"
+Arizona,2002,Unspecified,Black,--,"204,176",--,--,--
+Arizona,2002,Unspecified,American Indian / Alaska Native,18**,"291,458",6.18**,8.00**,395
+Arizona,2001,Cut/Pierce,White,59,"4,669,299",1.26,1.29,"1,581"
+Arizona,2001,Cut/Pierce,Black,--,"194,201",--,--,--
+Arizona,2001,Cut/Pierce,American Indian / Alaska Native,13**,"284,705",4.57**,4.37**,463
+Arizona,2001,Cut/Pierce,Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Arizona,2001,Drowning (includes water transport),White,90,"4,669,299",1.93,1.83,"3,235"
+Arizona,2001,Drowning (includes water transport),Black,--,"194,201",--,--,--
+Arizona,2001,Drowning (includes water transport),American Indian / Alaska Native,--,"284,705",--,--,--
+Arizona,2001,Drowning (includes water transport),Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Arizona,2001,Fall,White,434,"4,669,299",9.3,9.14,"1,260"
+Arizona,2001,Fall,Black,--,"194,201",--,--,--
+Arizona,2001,Fall,American Indian / Alaska Native,19**,"284,705",6.67**,12.09**,235
+Arizona,2001,Fall,Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Arizona,2001,Fire/Flame,White,44,"4,669,299",0.94,0.93,"1,126"
+Arizona,2001,Fire/Flame,Black,--,"194,201",--,--,--
+Arizona,2001,Fire/Flame,American Indian / Alaska Native,10**,"284,705",3.51**,3.61**,323
+Arizona,2001,Hot object/Substance,White,--,"4,669,299",--,--,--
+Arizona,2001,Firearm,White,754,"4,669,299",16.15,15.99,"18,829"
+Arizona,2001,Firearm,Black,47,"194,201",24.2,23.69,"1,457"
+Arizona,2001,Firearm,American Indian / Alaska Native,34,"284,705",11.94,11.32,"1,296"
+Arizona,2001,Firearm,Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Arizona,2001,Machinery,White,--,"4,669,299",--,--,--
+Arizona,2001,Natural/Environmental,White,50,"4,669,299",1.07,0.87,629
+Arizona,2001,Natural/Environmental,Black,--,"194,201",--,--,--
+Arizona,2001,Natural/Environmental,American Indian / Alaska Native,11**,"284,705",3.86**,5.35**,225
+Arizona,2001,Drug Poisoning,White,506,"4,669,299",10.84,11.26,"12,090"
+Arizona,2001,Drug Poisoning,Black,22,"194,201",11.33,12.8,503
+Arizona,2001,Drug Poisoning,American Indian / Alaska Native,23,"284,705",8.08,8.84,657
+Arizona,2001,Drug Poisoning,Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Arizona,2001,Non-Drug Poisoning,White,56,"4,669,299",1.2,1.21,"1,146"
+Arizona,2001,Non-Drug Poisoning,Black,--,"194,201",--,--,--
+Arizona,2001,Non-Drug Poisoning,American Indian / Alaska Native,--,"284,705",--,--,--
+Arizona,2001,Non-Drug Poisoning,Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Arizona,2001,Struck by / against,White,18**,"4,669,299",0.39**,0.38**,307
+Arizona,2001,Struck by / against,American Indian / Alaska Native,--,"284,705",--,--,--
+Arizona,2001,Suffocation,White,192,"4,669,299",4.11,4.09,"4,991"
+Arizona,2001,Suffocation,Black,11**,"194,201",5.66**,5.82**,425
+Arizona,2001,Suffocation,American Indian / Alaska Native,46,"284,705",16.16,16.25,"1,651"
+Arizona,2001,Suffocation,Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Arizona,2001,"Motor vehicle, traffic",White,776,"4,669,299",16.62,16.54,"20,366"
+Arizona,2001,"Motor vehicle, traffic",Black,35,"194,201",18.02,19.23,"1,123"
+Arizona,2001,"Motor vehicle, traffic",American Indian / Alaska Native,174,"284,705",61.12,66.86,"5,676"
+Arizona,2001,"Motor vehicle, traffic",Asian / HI Native / Pac. Islander,11**,"125,272",8.78**,9.01**,329
+Arizona,2001,"Pedal cyclist, other",White,--,"4,669,299",--,--,--
+Arizona,2001,"Pedal cyclist, other",American Indian / Alaska Native,--,"284,705",--,--,--
+Arizona,2001,"Pedestrian, other",White,32,"4,669,299",0.69,0.7,949
+Arizona,2001,"Pedestrian, other",Black,--,"194,201",--,--,--
+Arizona,2001,"Pedestrian, other",American Indian / Alaska Native,14**,"284,705",4.92**,6.18**,367
+Arizona,2001,"Transport, other land",White,41,"4,669,299",0.88,0.87,"1,088"
+Arizona,2001,"Transport, other land",Black,--,"194,201",--,--,--
+Arizona,2001,"Transport, other land",American Indian / Alaska Native,--,"284,705",--,--,--
+Arizona,2001,"Transport, other (excl. drown by water transp)",White,22,"4,669,299",0.47,0.47,523
+Arizona,2001,Other specified and classifiable,White,31,"4,669,299",0.66,0.67,723
+Arizona,2001,Other specified and classifiable,American Indian / Alaska Native,--,"284,705",--,--,--
+Arizona,2001,Other specified and classifiable,Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Arizona,2001,Other specified / NEC,White,35,"4,669,299",0.75,0.75,825
+Arizona,2001,Other specified / NEC,Black,--,"194,201",--,--,--
+Arizona,2001,Other specified / NEC,American Indian / Alaska Native,--,"284,705",--,--,--
+Arizona,2001,Other specified / NEC,Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Arizona,2001,Unspecified,White,101,"4,669,299",2.16,2.1,"1,595"
+Arizona,2001,Unspecified,Black,--,"194,201",--,--,--
+Arizona,2001,Unspecified,American Indian / Alaska Native,11**,"284,705",3.86**,3.42**,350
+Arizona,2001,Unspecified,Asian / HI Native / Pac. Islander,--,"125,272",--,--,--
+Total,,,,"102,310","127,984,667",79.94,78.55,"1,976,116"
+,,,,,,,,
+Injury Outcome: Fatal,,,,,,,,
+Injury Type: All Injury,,,,,,,,
+Data Years: 2001 to 2020,,,,,,,,
+Geography: Arizona,,,,,,,,
+Intent: All Intents,,,,,,,,
+Mechanism: All Injury,,,,,,,,
+Age: All Ages,,,,,,,,
+Sex: Both Sexes,,,,,,,,
+Race: All Races,,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,,
+YPLL Age: 65,,,,,,,,
+Year and Race Options: 2001 - 2020 by Bridged Race,,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,,

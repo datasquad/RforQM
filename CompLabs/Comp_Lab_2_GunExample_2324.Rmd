@@ -17,8 +17,7 @@ In this computer lab you will be practicing the following
 * Creating time series plots with ggplot
 * Merge datafiles
 * Performing hypothesis tests to test the equality of means
-* Estimate regressions
-* Perform inference on regression coefficients
+* Estimate and interpret regressions
 
 Let's start by loading some useful packages
 
@@ -48,9 +47,9 @@ str(data)
 ```
 
 ```{r, echo = FALSE}
-setwd("C:/Rcode/RforQM/Data_Introduction")
+setwd("C:/Rcode/RforQM/CompLabs")
 
-data <- read.csv("US_Gun_example.csv", stringsAsFactors = TRUE)          # import data
+data <- read.csv("../data/US_Gun_example.csv", stringsAsFactors = TRUE)          # import data
 str(data)
 
 ```
@@ -74,7 +73,7 @@ str(data_pop)
 ```
 
 ```{r, echo = FALSE}
-data_pop <- read.csv("US states population age and sex.csv", stringsAsFactors = TRUE)    
+data_pop <- read.csv("../data/US states population age and sex.csv", stringsAsFactors = TRUE)    
 str(data_pop)
 ```
 
@@ -190,7 +189,7 @@ Arizona     | AZ         | West
 You will first have to find a dataset on the internet that maps states to regions. Go to your favorite search engine and search for something like "csv us States and regions". Alternatively you could enlist the help of an AI. For instance you could go to Google Bart and ask something like "create a csv file that maps US states to regions". Then save that file into your working directory and merge the Region variable into your `data2` file.
 
 ```{r}
-states_info <- read_xlsx("states.xlsx")  
+states_info <- read_xlsx("../data/states.xlsx")  
 states_info <- states_info %>%  select(STATEAB, Region)
 names(states_info)[names(states_info)=="STATEAB"] <- "State_code"
 data2 <- merge(data2, states_info)
@@ -389,7 +388,7 @@ t.test(test_data_SO$avg_fad.rate,test_data_WE$avg_fad.rate, mu=0)  # testing tha
 
 The p-value is certainly larger than any of the usual significance levels and we fail to reject $H_0$. This means that the opposition governor's statement is supported by the data or at least the data do not contradict it.
 
-# Regression and inference
+# Regression 
 
 To perform inference in the context of regressions it pays to use an additional package, the `car` package. So please load this package.
 
@@ -449,46 +448,8 @@ ggplot(data2,aes(law.officers.pc,Age.Adjusted.Rate, color = State)) +
 
 What you can see from here is that observations for the same state cluster together and that different states seem to differ significantly between each other. This variation is not reflected in the above estimation. In next week's computer lab you will see how this issue can be tackled. 
 
-## Inference on regression coefficients
+# Summary
 
-If you want to perform a hypothesis test say on $\beta_3$ (the coefficient on the `alcc.pc` variable), then the usual hypothesis to pose is $H_0: \beta_3 = 0$ versus $H_A: \beta_3 \neq 0$.
+In today's computer lab you achieved a lot. You produced various plots and started to explore the amaing power of the ggplot package. You merged data, performed hypothesis tests and learned how to run and display multiple regressions.
 
-It is the p-value to that hypothesis test which is represented by the asteriks next to the estimated coefficient. Let's confirm that. The estimated coefficient to the `alcc.pc` variable is -0.528 and the (*) indicate that the p-value to that test is smaller than 0.1 (but not smaller than 0.05).
-
-Here is how you can perform this test manually using the `lht` (stands for Linear Hypothesis Test) function which is written to use regression output (here saved in `mod4`) for hypothesis testing.
-
-```{r}
-lht(mod3,"alcc.pc=0")
-```
-
-There is a lot of information, but the important one is the value displayed under ("Pr(>F)"), that is the p-value. Here it is, 0.06529, and, as predicted, is < 0.1, but larger than 0.05.
-
-Confirm that p-value for $H_0: \beta_2 = 0$ versus $H_A: \beta_2 \neq 0$ (coefficient on `ur`) is larger than 0.1.
-
-
-```{r, eval = FALSE}
-XXXX(XXXX,"XXXX")
-```
-```{r, echo = FALSE}
-lht(mod3,"ur=0")
-```
-
-The use of the `lht` function is that you can test different hypothesis. Say $H_0: \beta_1 = 0.01$ versus $H_A: \beta_4 \neq 0.01$ (coefficient on `law.officers.pc`).
-
-```{r}
-lht(mod3,"law.officers.pc=0.01")
-```
-
-So, that null hypothesis can be rejected at a 5% but not at a 1% level.
-
-Even more so, you can use this function to test multiple hypotheses. Say you want to test whether the inclusion of the additional two variables (in `mod3` as opposed to `mod"3"`) is relevant. If it wasn't then the following null hypothesis should be correct: $H_0: \beta_2=\beta_3=0$. We call this a multiple hypothesis.
-
-Use the help function (`?lht`) or search for advice () on how to use the `lht` function to test this hypothesis. If you get it right you should get the following output.
-
-```{r, echo = FALSE}
-lht(mod3,c("ur=0","alcc.pc=0"))
-```
-
-The hypothesis that none of these two variables is relevant cannot be rejected, even at a 10% significance level as the p-value 0.1452.
-
-The techniques you covered in this computer lab are absolutely fundamental to the remainder of this unit, so please ensure that you have not rushed over the material.
+TAKE A BREAK!

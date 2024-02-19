@@ -1,0 +1,436 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Illinois,2021,Cut/Pierce,80,"12,671,469",0.63,0.61,"1,541"
+Illinois,2021,Drowning (includes water transport),196,"12,671,469",1.55,1.49,"4,447"
+Illinois,2021,Fall,"1,495","12,671,469",11.8,9.9,"4,567"
+Illinois,2021,Fire/Flame,168,"12,671,469",1.33,1.19,"2,534"
+Illinois,2021,Hot object/Substance,--,"12,671,469",--,--,--
+Illinois,2021,Firearm,"1,995","12,671,469",15.74,16.01,"58,246"
+Illinois,2021,Machinery,12**,"12,671,469",0.10**,0.08**,43
+Illinois,2021,Natural/Environmental,68,"12,671,469",0.54,0.46,737
+Illinois,2021,Drug Poisoning,"3,762","12,671,469",29.69,29.05,"76,937"
+Illinois,2021,Non-Drug Poisoning,150,"12,671,469",1.18,1.16,"2,671"
+Illinois,2021,Struck by / against,33,"12,671,469",0.26,0.24,514
+Illinois,2021,Suffocation,777,"12,671,469",6.13,5.86,"16,001"
+Illinois,2021,"Motor vehicle, traffic","1,428","12,671,469",11.27,10.94,"31,920"
+Illinois,2021,"Pedal cyclist, other",15**,"12,671,469",0.12**,0.10**,117
+Illinois,2021,"Pedestrian, other",46,"12,671,469",0.36,0.36,983
+Illinois,2021,"Transport, other land",40,"12,671,469",0.32,0.3,962
+Illinois,2021,"Transport, other (excl. drown by water transp)",--,"12,671,469",--,--,--
+Illinois,2021,Other specified and classifiable,98,"12,671,469",0.77,0.77,"2,261"
+Illinois,2021,Other specified / NEC,58,"12,671,469",0.46,0.41,827
+Illinois,2021,Unspecified,315,"12,671,469",2.49,2.19,"2,397"
+Illinois,2020,Cut/Pierce,94,"12,785,245",0.74,0.72,"2,057"
+Illinois,2020,Drowning (includes water transport),183,"12,785,245",1.43,1.39,"4,600"
+Illinois,2020,Fall,"1,410","12,785,245",11.03,9.39,"3,796"
+Illinois,2020,Fire/Flame,135,"12,785,245",1.06,0.93,"1,993"
+Illinois,2020,Firearm,"1,745","12,785,245",13.65,13.82,"51,432"
+Illinois,2020,Machinery,15**,"12,785,245",0.12**,0.11**,235
+Illinois,2020,Natural/Environmental,67,"12,785,245",0.52,0.46,658
+Illinois,2020,Drug Poisoning,"3,549","12,785,245",27.76,27.52,"75,331"
+Illinois,2020,Non-Drug Poisoning,166,"12,785,245",1.3,1.3,"3,345"
+Illinois,2020,Struck by / against,25,"12,785,245",0.2,0.17,381
+Illinois,2020,Suffocation,789,"12,785,245",6.17,6.02,"16,827"
+Illinois,2020,"Motor vehicle, traffic","1,268","12,785,245",9.92,9.62,"29,322"
+Illinois,2020,"Pedal cyclist, other",14**,"12,785,245",0.11**,0.10**,239
+Illinois,2020,"Pedestrian, other",24,"12,785,245",0.19,0.18,568
+Illinois,2020,"Transport, other land",52,"12,785,245",0.41,0.41,"1,225"
+Illinois,2020,"Transport, other (excl. drown by water transp)",14**,"12,785,245",0.11**,0.09**,139
+Illinois,2020,Other specified and classifiable,91,"12,785,245",0.71,0.7,"2,378"
+Illinois,2020,Other specified / NEC,60,"12,785,245",0.47,0.44,"1,145"
+Illinois,2020,Unspecified,322,"12,785,245",2.52,2.18,"1,955"
+Illinois,2019,Cut/Pierce,103,"12,667,017",0.81,0.77,"1,930"
+Illinois,2019,Drowning (includes water transport),194,"12,667,017",1.53,1.47,"4,515"
+Illinois,2019,Fall,"1,278","12,667,017",10.09,8.24,"3,191"
+Illinois,2019,Fire/Flame,131,"12,667,017",1.03,0.91,"1,751"
+Illinois,2019,Hot object/Substance,--,"12,667,017",--,--,--
+Illinois,2019,Firearm,"1,367","12,667,017",10.79,10.8,"37,755"
+Illinois,2019,Machinery,13**,"12,667,017",0.10**,0.10**,223
+Illinois,2019,Natural/Environmental,78,"12,667,017",0.62,0.53,556
+Illinois,2019,Drug Poisoning,"2,790","12,667,017",22.03,21.91,"57,680"
+Illinois,2019,Non-Drug Poisoning,168,"12,667,017",1.33,1.3,"3,127"
+Illinois,2019,Struck by / against,28,"12,667,017",0.22,0.2,464
+Illinois,2019,Suffocation,841,"12,667,017",6.64,6.38,"18,347"
+Illinois,2019,"Motor vehicle, traffic","1,102","12,667,017",8.7,8.36,"23,003"
+Illinois,2019,"Pedal cyclist, other",--,"12,667,017",--,--,--
+Illinois,2019,"Pedestrian, other",41,"12,667,017",0.32,0.31,939
+Illinois,2019,"Transport, other land",46,"12,667,017",0.36,0.34,878
+Illinois,2019,"Transport, other (excl. drown by water transp)",--,"12,667,017",--,--,--
+Illinois,2019,Other specified and classifiable,109,"12,667,017",0.86,0.83,"2,668"
+Illinois,2019,Other specified / NEC,73,"12,667,017",0.58,0.54,"1,102"
+Illinois,2019,Unspecified,293,"12,667,017",2.31,1.95,"2,278"
+Illinois,2018,Cut/Pierce,117,"12,724,685",0.92,0.88,"2,449"
+Illinois,2018,Drowning (includes water transport),160,"12,724,685",1.26,1.19,"4,116"
+Illinois,2018,Fall,"1,231","12,724,685",9.67,8.02,"3,729"
+Illinois,2018,Fire/Flame,137,"12,724,685",1.08,0.98,"2,306"
+Illinois,2018,Hot object/Substance,--,"12,724,685",--,--,--
+Illinois,2018,Firearm,"1,382","12,724,685",10.86,10.8,"37,957"
+Illinois,2018,Machinery,18**,"12,724,685",0.14**,0.13**,118
+Illinois,2018,Natural/Environmental,77,"12,724,685",0.61,0.54,671
+Illinois,2018,Drug Poisoning,"2,722","12,724,685",21.39,21.27,"59,953"
+Illinois,2018,Non-Drug Poisoning,182,"12,724,685",1.43,1.43,"3,596"
+Illinois,2018,Struck by / against,32,"12,724,685",0.25,0.23,509
+Illinois,2018,Suffocation,827,"12,724,685",6.5,6.32,"19,068"
+Illinois,2018,"Motor vehicle, traffic","1,151","12,724,685",9.05,8.68,"24,519"
+Illinois,2018,"Pedal cyclist, other",--,"12,724,685",--,--,--
+Illinois,2018,"Pedestrian, other",43,"12,724,685",0.34,0.32,882
+Illinois,2018,"Transport, other land",35,"12,724,685",0.28,0.28,871
+Illinois,2018,"Transport, other (excl. drown by water transp)",--,"12,724,685",--,--,--
+Illinois,2018,Other specified and classifiable,115,"12,724,685",0.9,0.86,"2,538"
+Illinois,2018,Other specified / NEC,68,"12,724,685",0.53,0.49,"1,237"
+Illinois,2018,Unspecified,353,"12,724,685",2.77,2.39,"2,683"
+Illinois,2017,Cut/Pierce,91,"12,779,893",0.71,0.68,"1,841"
+Illinois,2017,Drowning (includes water transport),164,"12,779,893",1.28,1.28,"4,422"
+Illinois,2017,Fall,"1,151","12,779,893",9.01,7.6,"3,776"
+Illinois,2017,Fire/Flame,129,"12,779,893",1.01,0.9,"2,055"
+Illinois,2017,Hot object/Substance,--,"12,779,893",--,--,--
+Illinois,2017,Firearm,"1,543","12,779,893",12.07,12.07,"45,186"
+Illinois,2017,Machinery,10**,"12,779,893",0.08**,0.08**,202
+Illinois,2017,Natural/Environmental,63,"12,779,893",0.49,0.45,646
+Illinois,2017,Drug Poisoning,"2,778","12,779,893",21.74,21.62,"62,509"
+Illinois,2017,Non-Drug Poisoning,167,"12,779,893",1.31,1.25,"3,284"
+Illinois,2017,Struck by / against,39,"12,779,893",0.31,0.29,759
+Illinois,2017,Suffocation,834,"12,779,893",6.53,6.34,"19,863"
+Illinois,2017,"Motor vehicle, traffic","1,178","12,779,893",9.22,8.86,"26,833"
+Illinois,2017,"Pedal cyclist, other",13**,"12,779,893",0.10**,0.10**,329
+Illinois,2017,"Pedestrian, other",40,"12,779,893",0.31,0.31,990
+Illinois,2017,"Transport, other land",53,"12,779,893",0.42,0.39,"1,034"
+Illinois,2017,"Transport, other (excl. drown by water transp)",12**,"12,779,893",0.09**,0.08**,163
+Illinois,2017,Other specified and classifiable,99,"12,779,893",0.78,0.77,"2,588"
+Illinois,2017,Other specified / NEC,64,"12,779,893",0.5,0.45,806
+Illinois,2017,Unspecified,336,"12,779,893",2.63,2.28,"2,490"
+Illinois,2016,Cut/Pierce,116,"12,821,709",0.91,0.83,"2,646"
+Illinois,2016,Drowning (includes water transport),165,"12,821,709",1.29,1.23,"4,220"
+Illinois,2016,Fall,"1,142","12,821,709",8.91,7.66,"3,548"
+Illinois,2016,Fire/Flame,135,"12,821,709",1.05,0.94,"2,213"
+Illinois,2016,Hot object/Substance,--,"12,821,709",--,--,--
+Illinois,2016,Firearm,"1,490","12,821,709",11.62,11.6,"43,709"
+Illinois,2016,Machinery,26,"12,821,709",0.2,0.19,345
+Illinois,2016,Natural/Environmental,55,"12,821,709",0.43,0.39,502
+Illinois,2016,Drug Poisoning,"2,411","12,821,709",18.8,18.84,"55,718"
+Illinois,2016,Non-Drug Poisoning,219,"12,821,709",1.71,1.69,"4,332"
+Illinois,2016,Struck by / against,29,"12,821,709",0.23,0.22,528
+Illinois,2016,Suffocation,763,"12,821,709",5.95,5.82,"17,341"
+Illinois,2016,"Motor vehicle, traffic","1,122","12,821,709",8.75,8.5,"25,471"
+Illinois,2016,"Pedal cyclist, other",10**,"12,821,709",0.08**,0.07**,105
+Illinois,2016,"Pedestrian, other",31,"12,821,709",0.24,0.23,620
+Illinois,2016,"Transport, other land",49,"12,821,709",0.38,0.37,"1,267"
+Illinois,2016,"Transport, other (excl. drown by water transp)",13**,"12,821,709",0.10**,0.08**,128
+Illinois,2016,Other specified and classifiable,103,"12,821,709",0.8,0.8,"2,703"
+Illinois,2016,Other specified / NEC,83,"12,821,709",0.65,0.58,986
+Illinois,2016,Unspecified,294,"12,821,709",2.29,1.99,"2,082"
+Illinois,2015,Cut/Pierce,72,"12,859,585",0.56,0.55,"1,704"
+Illinois,2015,Drowning (includes water transport),150,"12,859,585",1.17,1.17,"3,534"
+Illinois,2015,Fall,"1,090","12,859,585",8.48,7.41,"3,343"
+Illinois,2015,Fire/Flame,128,"12,859,585",1,0.93,"1,777"
+Illinois,2015,Hot object/Substance,--,"12,859,585",--,--,--
+Illinois,2015,Firearm,"1,220","12,859,585",9.49,9.39,"34,670"
+Illinois,2015,Machinery,23,"12,859,585",0.18,0.16,361
+Illinois,2015,Natural/Environmental,42,"12,859,585",0.33,0.3,377
+Illinois,2015,Drug Poisoning,"1,835","12,859,585",14.27,14.09,"41,783"
+Illinois,2015,Non-Drug Poisoning,194,"12,859,585",1.51,1.49,"3,637"
+Illinois,2015,Struck by / against,20**,"12,859,585",0.16**,0.16**,493
+Illinois,2015,Suffocation,802,"12,859,585",6.24,6.06,"18,433"
+Illinois,2015,"Motor vehicle, traffic","1,058","12,859,585",8.23,7.86,"23,655"
+Illinois,2015,"Pedal cyclist, other",11**,"12,859,585",0.09**,0.08**,177
+Illinois,2015,"Pedestrian, other",43,"12,859,585",0.33,0.32,986
+Illinois,2015,"Transport, other land",36,"12,859,585",0.28,0.27,674
+Illinois,2015,"Transport, other (excl. drown by water transp)",17**,"12,859,585",0.13**,0.14**,371
+Illinois,2015,Other specified and classifiable,119,"12,859,585",0.93,0.91,"2,869"
+Illinois,2015,Other specified / NEC,59,"12,859,585",0.46,0.44,"1,211"
+Illinois,2015,Unspecified,321,"12,859,585",2.5,2.24,"2,550"
+Illinois,2014,Cut/Pierce,91,"12,885,092",0.71,0.67,"2,118"
+Illinois,2014,Drowning (includes water transport),141,"12,885,092",1.09,1.09,"4,047"
+Illinois,2014,Fall,"1,116","12,885,092",8.66,7.61,"3,845"
+Illinois,2014,Fire/Flame,124,"12,885,092",0.96,0.91,"1,813"
+Illinois,2014,Firearm,"1,179","12,885,092",9.15,9.03,"33,027"
+Illinois,2014,Machinery,18**,"12,885,092",0.14**,0.13**,195
+Illinois,2014,Natural/Environmental,66,"12,885,092",0.51,0.47,736
+Illinois,2014,Drug Poisoning,"1,705","12,885,092",13.23,13.09,"38,489"
+Illinois,2014,Non-Drug Poisoning,203,"12,885,092",1.58,1.51,"3,568"
+Illinois,2014,Struck by / against,38,"12,885,092",0.3,0.28,736
+Illinois,2014,Suffocation,762,"12,885,092",5.91,5.77,"16,936"
+Illinois,2014,"Motor vehicle, traffic","1,026","12,885,092",7.96,7.72,"23,588"
+Illinois,2014,"Pedal cyclist, other",11**,"12,885,092",0.09**,0.08**,127
+Illinois,2014,"Pedestrian, other",24,"12,885,092",0.19,0.17,568
+Illinois,2014,"Transport, other land",46,"12,885,092",0.36,0.34,"1,037"
+Illinois,2014,"Transport, other (excl. drown by water transp)",--,"12,885,092",--,--,--
+Illinois,2014,Other specified and classifiable,93,"12,885,092",0.72,0.71,"2,695"
+Illinois,2014,Other specified / NEC,50,"12,885,092",0.39,0.36,872
+Illinois,2014,Unspecified,282,"12,885,092",2.19,1.96,"2,289"
+Illinois,2013,Cut/Pierce,126,"12,895,778",0.98,0.95,"3,214"
+Illinois,2013,Drowning (includes water transport),142,"12,895,778",1.1,1.12,"3,442"
+Illinois,2013,Fall,"1,032","12,895,778",8,7.22,"3,477"
+Illinois,2013,Fire/Flame,117,"12,895,778",0.91,0.88,"2,096"
+Illinois,2013,Hot object/Substance,--,"12,895,778",--,--,--
+Illinois,2013,Firearm,"1,117","12,895,778",8.66,8.52,"30,891"
+Illinois,2013,Machinery,22,"12,895,778",0.17,0.16,264
+Illinois,2013,Natural/Environmental,65,"12,895,778",0.5,0.46,714
+Illinois,2013,Drug Poisoning,"1,579","12,895,778",12.24,12.03,"36,420"
+Illinois,2013,Non-Drug Poisoning,194,"12,895,778",1.5,1.49,"3,474"
+Illinois,2013,Struck by / against,25,"12,895,778",0.19,0.19,503
+Illinois,2013,Suffocation,764,"12,895,778",5.92,5.74,"16,804"
+Illinois,2013,"Motor vehicle, traffic","1,053","12,895,778",8.17,8.01,"24,686"
+Illinois,2013,"Pedal cyclist, other",11**,"12,895,778",0.09**,0.08**,218
+Illinois,2013,"Pedestrian, other",38,"12,895,778",0.3,0.29,655
+Illinois,2013,"Transport, other land",62,"12,895,778",0.48,0.47,"1,500"
+Illinois,2013,"Transport, other (excl. drown by water transp)",--,"12,895,778",--,--,--
+Illinois,2013,Other specified and classifiable,85,"12,895,778",0.66,0.63,"1,985"
+Illinois,2013,Other specified / NEC,65,"12,895,778",0.5,0.45,958
+Illinois,2013,Unspecified,283,"12,895,778",2.2,1.99,"2,157"
+Illinois,2012,Cut/Pierce,95,"12,883,029",0.74,0.73,"2,315"
+Illinois,2012,Drowning (includes water transport),176,"12,883,029",1.37,1.35,"4,566"
+Illinois,2012,Fall,956,"12,883,029",7.42,6.78,"3,336"
+Illinois,2012,Fire/Flame,108,"12,883,029",0.84,0.79,"2,135"
+Illinois,2012,Hot object/Substance,--,"12,883,029",--,--,--
+Illinois,2012,Firearm,"1,178","12,883,029",9.14,8.97,"32,952"
+Illinois,2012,Machinery,23,"12,883,029",0.18,0.16,342
+Illinois,2012,Natural/Environmental,60,"12,883,029",0.47,0.43,592
+Illinois,2012,Overexertion,--,"12,883,029",--,--,--
+Illinois,2012,Drug Poisoning,"1,628","12,883,029",12.64,12.51,"38,758"
+Illinois,2012,Non-Drug Poisoning,156,"12,883,029",1.21,1.18,"3,020"
+Illinois,2012,Struck by / against,24,"12,883,029",0.19,0.18,474
+Illinois,2012,Suffocation,709,"12,883,029",5.5,5.41,"15,859"
+Illinois,2012,"Motor vehicle, traffic","1,072","12,883,029",8.32,8.09,"25,423"
+Illinois,2012,"Pedal cyclist, other",--,"12,883,029",--,--,--
+Illinois,2012,"Pedestrian, other",34,"12,883,029",0.26,0.25,738
+Illinois,2012,"Transport, other land",46,"12,883,029",0.36,0.35,"1,104"
+Illinois,2012,"Transport, other (excl. drown by water transp)",17**,"12,883,029",0.13**,0.13**,239
+Illinois,2012,Other specified and classifiable,92,"12,883,029",0.71,0.72,"2,412"
+Illinois,2012,Other specified / NEC,67,"12,883,029",0.52,0.49,"1,184"
+Illinois,2012,Unspecified,316,"12,883,029",2.45,2.21,"2,827"
+Illinois,2011,Cut/Pierce,77,"12,867,783",0.6,0.58,"1,669"
+Illinois,2011,Drowning (includes water transport),155,"12,867,783",1.21,1.21,"4,570"
+Illinois,2011,Fall,851,"12,867,783",6.61,6.15,"3,075"
+Illinois,2011,Fire/Flame,123,"12,867,783",0.96,0.91,"2,290"
+Illinois,2011,Hot object/Substance,--,"12,867,783",--,--,--
+Illinois,2011,Firearm,"1,114","12,867,783",8.66,8.54,"31,724"
+Illinois,2011,Machinery,14**,"12,867,783",0.11**,0.10**,195
+Illinois,2011,Natural/Environmental,49,"12,867,783",0.38,0.37,464
+Illinois,2011,Drug Poisoning,"1,408","12,867,783",10.94,10.91,"34,009"
+Illinois,2011,Non-Drug Poisoning,144,"12,867,783",1.12,1.1,"2,714"
+Illinois,2011,Struck by / against,24,"12,867,783",0.19,0.19,596
+Illinois,2011,Suffocation,755,"12,867,783",5.87,5.74,"17,843"
+Illinois,2011,"Motor vehicle, traffic","1,002","12,867,783",7.79,7.68,"23,548"
+Illinois,2011,"Pedal cyclist, other",10**,"12,867,783",0.08**,0.08**,193
+Illinois,2011,"Pedestrian, other",50,"12,867,783",0.39,0.39,"1,212"
+Illinois,2011,"Transport, other land",63,"12,867,783",0.49,0.5,"1,267"
+Illinois,2011,"Transport, other (excl. drown by water transp)",16**,"12,867,783",0.12**,0.12**,291
+Illinois,2011,Other specified and classifiable,94,"12,867,783",0.73,0.72,"2,978"
+Illinois,2011,Other specified / NEC,55,"12,867,783",0.43,0.4,792
+Illinois,2011,Unspecified,347,"12,867,783",2.7,2.5,"3,374"
+Illinois,2010,Cut/Pierce,103,"12,831,572",0.8,0.79,"2,405"
+Illinois,2010,Drowning (includes water transport),139,"12,831,572",1.08,1.07,"4,465"
+Illinois,2010,Fall,922,"12,831,572",7.19,6.77,"3,440"
+Illinois,2010,Fire/Flame,112,"12,831,572",0.87,0.85,"2,514"
+Illinois,2010,Hot object/Substance,--,"12,831,572",--,--,--
+Illinois,2010,Firearm,"1,064","12,831,572",8.29,8.19,"30,370"
+Illinois,2010,Machinery,27,"12,831,572",0.21,0.2,398
+Illinois,2010,Natural/Environmental,40,"12,831,572",0.31,0.3,484
+Illinois,2010,Drug Poisoning,"1,288","12,831,572",10.04,9.98,"31,271"
+Illinois,2010,Non-Drug Poisoning,135,"12,831,572",1.05,1.04,"2,704"
+Illinois,2010,Struck by / against,18**,"12,831,572",0.14**,0.13**,371
+Illinois,2010,Suffocation,750,"12,831,572",5.85,5.76,"16,903"
+Illinois,2010,"Motor vehicle, traffic",988,"12,831,572",7.7,7.51,"24,413"
+Illinois,2010,"Pedal cyclist, other",--,"12,831,572",--,--,--
+Illinois,2010,"Pedestrian, other",51,"12,831,572",0.4,0.39,"1,183"
+Illinois,2010,"Transport, other land",45,"12,831,572",0.35,0.34,"1,160"
+Illinois,2010,"Transport, other (excl. drown by water transp)",18**,"12,831,572",0.14**,0.13**,311
+Illinois,2010,Other specified and classifiable,79,"12,831,572",0.62,0.61,"2,469"
+Illinois,2010,Other specified / NEC,56,"12,831,572",0.44,0.42,"1,003"
+Illinois,2010,Unspecified,264,"12,831,572",2.06,1.89,"2,030"
+Illinois,2009,Cut/Pierce,126,"12,796,778",0.99,0.96,"3,306"
+Illinois,2009,Drowning (includes water transport),137,"12,796,778",1.07,1.04,"3,344"
+Illinois,2009,Fall,841,"12,796,778",6.57,6.28,"3,660"
+Illinois,2009,Fire/Flame,106,"12,796,778",0.83,0.81,"1,761"
+Illinois,2009,Firearm,"1,058","12,796,778",8.27,8.17,"30,664"
+Illinois,2009,Machinery,24,"12,796,778",0.19,0.19,337
+Illinois,2009,Natural/Environmental,42,"12,796,778",0.33,0.32,623
+Illinois,2009,Drug Poisoning,"1,381","12,796,778",10.79,10.79,"33,221"
+Illinois,2009,Non-Drug Poisoning,172,"12,796,778",1.34,1.32,"3,340"
+Illinois,2009,Struck by / against,26,"12,796,778",0.2,0.2,670
+Illinois,2009,Suffocation,705,"12,796,778",5.51,5.5,"16,745"
+Illinois,2009,"Motor vehicle, traffic",987,"12,796,778",7.71,7.67,"24,011"
+Illinois,2009,"Pedal cyclist, other",--,"12,796,778",--,--,--
+Illinois,2009,"Pedestrian, other",55,"12,796,778",0.43,0.43,"1,465"
+Illinois,2009,"Transport, other land",70,"12,796,778",0.55,0.54,"2,036"
+Illinois,2009,"Transport, other (excl. drown by water transp)",13**,"12,796,778",0.10**,0.09**,196
+Illinois,2009,Other specified and classifiable,74,"12,796,778",0.58,0.58,"2,089"
+Illinois,2009,Other specified / NEC,75,"12,796,778",0.59,0.58,"1,667"
+Illinois,2009,Unspecified,278,"12,796,778",2.17,2.02,"2,741"
+Illinois,2008,Cut/Pierce,107,"12,747,038",0.84,0.83,"2,953"
+Illinois,2008,Drowning (includes water transport),139,"12,747,038",1.09,1.08,"3,980"
+Illinois,2008,Fall,841,"12,747,038",6.6,6.33,"3,707"
+Illinois,2008,Fire/Flame,133,"12,747,038",1.04,1.05,"2,516"
+Illinois,2008,Hot object/Substance,--,"12,747,038",--,--,--
+Illinois,2008,Firearm,"1,105","12,747,038",8.67,8.55,"31,600"
+Illinois,2008,Machinery,31,"12,747,038",0.24,0.25,426
+Illinois,2008,Natural/Environmental,51,"12,747,038",0.4,0.39,491
+Illinois,2008,Overexertion,--,"12,747,038",--,--,--
+Illinois,2008,Drug Poisoning,"1,353","12,747,038",10.61,10.6,"32,767"
+Illinois,2008,Non-Drug Poisoning,173,"12,747,038",1.36,1.34,"3,584"
+Illinois,2008,Struck by / against,38,"12,747,038",0.3,0.3,"1,001"
+Illinois,2008,Suffocation,714,"12,747,038",5.6,5.55,"16,066"
+Illinois,2008,"Motor vehicle, traffic","1,076","12,747,038",8.44,8.34,"27,094"
+Illinois,2008,"Pedal cyclist, other",13**,"12,747,038",0.10**,0.10**,258
+Illinois,2008,"Pedestrian, other",56,"12,747,038",0.44,0.43,"1,317"
+Illinois,2008,"Transport, other land",94,"12,747,038",0.74,0.73,"2,435"
+Illinois,2008,"Transport, other (excl. drown by water transp)",--,"12,747,038",--,--,--
+Illinois,2008,Other specified and classifiable,101,"12,747,038",0.79,0.79,"3,349"
+Illinois,2008,Other specified / NEC,90,"12,747,038",0.71,0.7,"1,548"
+Illinois,2008,Unspecified,315,"12,747,038",2.47,2.33,"2,660"
+Illinois,2007,Cut/Pierce,116,"12,695,866",0.91,0.92,"2,868"
+Illinois,2007,Drowning (includes water transport),169,"12,695,866",1.33,1.32,"4,645"
+Illinois,2007,Fall,728,"12,695,866",5.73,5.54,"3,566"
+Illinois,2007,Fire/Flame,169,"12,695,866",1.33,1.31,"3,704"
+Illinois,2007,Hot object/Substance,--,"12,695,866",--,--,--
+Illinois,2007,Firearm,"1,032","12,695,866",8.13,8.03,"30,242"
+Illinois,2007,Machinery,22,"12,695,866",0.17,0.17,225
+Illinois,2007,Natural/Environmental,51,"12,695,866",0.4,0.39,701
+Illinois,2007,Drug Poisoning,"1,192","12,695,866",9.39,9.37,"28,517"
+Illinois,2007,Non-Drug Poisoning,149,"12,695,866",1.17,1.14,"3,170"
+Illinois,2007,Struck by / against,31,"12,695,866",0.24,0.24,753
+Illinois,2007,Suffocation,671,"12,695,866",5.29,5.23,"15,370"
+Illinois,2007,"Motor vehicle, traffic","1,322","12,695,866",10.41,10.29,"35,210"
+Illinois,2007,"Pedal cyclist, other",12**,"12,695,866",0.10**,0.09**,193
+Illinois,2007,"Pedestrian, other",46,"12,695,866",0.36,0.36,"1,256"
+Illinois,2007,"Transport, other land",52,"12,695,866",0.41,0.41,"1,108"
+Illinois,2007,"Transport, other (excl. drown by water transp)",21,"12,695,866",0.17,0.16,323
+Illinois,2007,Other specified and classifiable,98,"12,695,866",0.77,0.77,"2,945"
+Illinois,2007,Other specified / NEC,87,"12,695,866",0.69,0.68,"1,351"
+Illinois,2007,Unspecified,447,"12,695,866",3.52,3.38,"3,572"
+Illinois,2006,Cut/Pierce,113,"12,643,955",0.89,0.89,"2,857"
+Illinois,2006,Drowning (includes water transport),136,"12,643,955",1.08,1.08,"4,193"
+Illinois,2006,Fall,703,"12,643,955",5.56,5.43,"3,500"
+Illinois,2006,Fire/Flame,136,"12,643,955",1.08,1.07,"2,947"
+Illinois,2006,Hot object/Substance,--,"12,643,955",--,--,--
+Illinois,2006,Firearm,"1,036","12,643,955",8.19,8.08,"30,904"
+Illinois,2006,Machinery,18**,"12,643,955",0.14**,0.14**,231
+Illinois,2006,Natural/Environmental,51,"12,643,955",0.4,0.4,710
+Illinois,2006,Drug Poisoning,"1,369","12,643,955",10.83,10.82,"33,726"
+Illinois,2006,Non-Drug Poisoning,130,"12,643,955",1.03,1.02,"2,634"
+Illinois,2006,Struck by / against,29,"12,643,955",0.23,0.24,685
+Illinois,2006,Suffocation,618,"12,643,955",4.89,4.84,"14,961"
+Illinois,2006,"Motor vehicle, traffic","1,365","12,643,955",10.8,10.66,"35,371"
+Illinois,2006,"Pedal cyclist, other",16**,"12,643,955",0.13**,0.13**,248
+Illinois,2006,"Pedestrian, other",41,"12,643,955",0.32,0.32,"1,060"
+Illinois,2006,"Transport, other land",61,"12,643,955",0.48,0.47,"1,343"
+Illinois,2006,"Transport, other (excl. drown by water transp)",14**,"12,643,955",0.11**,0.11**,278
+Illinois,2006,Other specified and classifiable,75,"12,643,955",0.59,0.59,"2,066"
+Illinois,2006,Other specified / NEC,73,"12,643,955",0.58,0.58,"1,158"
+Illinois,2006,Unspecified,418,"12,643,955",3.31,3.21,"3,563"
+Illinois,2005,Cut/Pierce,119,"12,609,903",0.94,0.93,"3,108"
+Illinois,2005,Drowning (includes water transport),181,"12,609,903",1.44,1.43,"5,483"
+Illinois,2005,Fall,643,"12,609,903",5.1,5.01,"3,481"
+Illinois,2005,Fire/Flame,125,"12,609,903",0.99,0.98,"2,308"
+Illinois,2005,Firearm,"1,019","12,609,903",8.08,8.01,"28,481"
+Illinois,2005,Machinery,16**,"12,609,903",0.13**,0.13**,297
+Illinois,2005,Natural/Environmental,51,"12,609,903",0.4,0.4,574
+Illinois,2005,Drug Poisoning,"1,067","12,609,903",8.46,8.4,"26,064"
+Illinois,2005,Non-Drug Poisoning,153,"12,609,903",1.21,1.21,"3,180"
+Illinois,2005,Struck by / against,13**,"12,609,903",0.10**,0.10**,354
+Illinois,2005,Suffocation,643,"12,609,903",5.1,5.04,"14,208"
+Illinois,2005,"Motor vehicle, traffic","1,422","12,609,903",11.28,11.21,"36,483"
+Illinois,2005,"Pedal cyclist, other",--,"12,609,903",--,--,--
+Illinois,2005,"Pedestrian, other",45,"12,609,903",0.36,0.36,786
+Illinois,2005,"Transport, other land",56,"12,609,903",0.44,0.46,"1,418"
+Illinois,2005,"Transport, other (excl. drown by water transp)",16**,"12,609,903",0.13**,0.13**,434
+Illinois,2005,Other specified and classifiable,75,"12,609,903",0.6,0.6,"1,888"
+Illinois,2005,Other specified / NEC,70,"12,609,903",0.56,0.54,"1,215"
+Illinois,2005,Unspecified,504,"12,609,903",4,3.93,"5,458"
+Illinois,2004,Cut/Pierce,121,"12,589,773",0.96,0.97,"3,247"
+Illinois,2004,Drowning (includes water transport),133,"12,589,773",1.06,1.05,"4,330"
+Illinois,2004,Fall,643,"12,589,773",5.11,5.09,"4,439"
+Illinois,2004,Fire/Flame,146,"12,589,773",1.16,1.14,"3,194"
+Illinois,2004,Hot object/Substance,--,"12,589,773",--,--,--
+Illinois,2004,Firearm,994,"12,589,773",7.9,7.8,"28,901"
+Illinois,2004,Machinery,25,"12,589,773",0.2,0.2,430
+Illinois,2004,Natural/Environmental,60,"12,589,773",0.48,0.47,788
+Illinois,2004,Overexertion,--,"12,589,773",--,--,--
+Illinois,2004,Drug Poisoning,"1,035","12,589,773",8.22,8.25,"25,607"
+Illinois,2004,Non-Drug Poisoning,123,"12,589,773",0.98,0.97,"2,357"
+Illinois,2004,Struck by / against,23,"12,589,773",0.18,0.18,538
+Illinois,2004,Suffocation,629,"12,589,773",5,4.98,"14,303"
+Illinois,2004,"Motor vehicle, traffic","1,462","12,589,773",11.61,11.54,"37,085"
+Illinois,2004,"Pedal cyclist, other",--,"12,589,773",--,--,--
+Illinois,2004,"Pedestrian, other",44,"12,589,773",0.35,0.35,"1,076"
+Illinois,2004,"Transport, other land",51,"12,589,773",0.41,0.41,"1,636"
+Illinois,2004,"Transport, other (excl. drown by water transp)",38,"12,589,773",0.3,0.3,834
+Illinois,2004,Other specified and classifiable,80,"12,589,773",0.64,0.63,"2,079"
+Illinois,2004,Other specified / NEC,73,"12,589,773",0.58,0.57,"1,506"
+Illinois,2004,Unspecified,446,"12,589,773",3.54,3.5,"4,058"
+Illinois,2003,Cut/Pierce,126,"12,556,006",1,1,"3,406"
+Illinois,2003,Drowning (includes water transport),130,"12,556,006",1.04,1.03,"3,651"
+Illinois,2003,Fall,588,"12,556,006",4.68,4.72,"4,211"
+Illinois,2003,Fire/Flame,164,"12,556,006",1.31,1.31,"3,393"
+Illinois,2003,Hot object/Substance,--,"12,556,006",--,--,--
+Illinois,2003,Firearm,"1,146","12,556,006",9.13,9.01,"34,299"
+Illinois,2003,Machinery,18**,"12,556,006",0.14**,0.14**,281
+Illinois,2003,Natural/Environmental,35,"12,556,006",0.28,0.28,181
+Illinois,2003,Drug Poisoning,847,"12,556,006",6.75,6.73,"21,492"
+Illinois,2003,Non-Drug Poisoning,122,"12,556,006",0.97,0.98,"2,773"
+Illinois,2003,Struck by / against,59,"12,556,006",0.47,0.46,"1,879"
+Illinois,2003,Suffocation,569,"12,556,006",4.53,4.52,"13,221"
+Illinois,2003,"Motor vehicle, traffic","1,462","12,556,006",11.64,11.61,"37,846"
+Illinois,2003,"Pedal cyclist, other",--,"12,556,006",--,--,--
+Illinois,2003,"Pedestrian, other",44,"12,556,006",0.35,0.35,"1,197"
+Illinois,2003,"Transport, other land",55,"12,556,006",0.44,0.43,"1,764"
+Illinois,2003,"Transport, other (excl. drown by water transp)",10**,"12,556,006",0.08**,0.08**,144
+Illinois,2003,Other specified and classifiable,73,"12,556,006",0.58,0.58,"1,728"
+Illinois,2003,Other specified / NEC,97,"12,556,006",0.77,0.77,"1,886"
+Illinois,2003,Unspecified,464,"12,556,006",3.7,3.68,"3,904"
+Illinois,2002,Cut/Pierce,108,"12,525,556",0.86,0.86,"2,855"
+Illinois,2002,Drowning (includes water transport),173,"12,525,556",1.38,1.38,"5,550"
+Illinois,2002,Fall,601,"12,525,556",4.8,4.86,"5,226"
+Illinois,2002,Fire/Flame,159,"12,525,556",1.27,1.28,"3,734"
+Illinois,2002,Hot object/Substance,--,"12,525,556",--,--,--
+Illinois,2002,Firearm,"1,231","12,525,556",9.83,9.69,"36,369"
+Illinois,2002,Machinery,27,"12,525,556",0.22,0.22,384
+Illinois,2002,Natural/Environmental,74,"12,525,556",0.59,0.6,866
+Illinois,2002,Drug Poisoning,986,"12,525,556",7.87,7.88,"24,064"
+Illinois,2002,Non-Drug Poisoning,143,"12,525,556",1.14,1.14,"3,075"
+Illinois,2002,Struck by / against,43,"12,525,556",0.34,0.35,849
+Illinois,2002,Suffocation,651,"12,525,556",5.2,5.2,"15,779"
+Illinois,2002,"Motor vehicle, traffic","1,533","12,525,556",12.24,12.21,"41,036"
+Illinois,2002,"Pedal cyclist, other",12**,"12,525,556",0.10**,0.10**,241
+Illinois,2002,"Pedestrian, other",50,"12,525,556",0.4,0.4,"1,236"
+Illinois,2002,"Transport, other land",51,"12,525,556",0.41,0.41,"1,068"
+Illinois,2002,"Transport, other (excl. drown by water transp)",19**,"12,525,556",0.15**,0.15**,473
+Illinois,2002,Other specified and classifiable,80,"12,525,556",0.64,0.64,"2,371"
+Illinois,2002,Other specified / NEC,97,"12,525,556",0.77,0.78,"1,955"
+Illinois,2002,Unspecified,478,"12,525,556",3.82,3.81,"3,491"
+Illinois,2001,Cut/Pierce,105,"12,488,445",0.84,0.84,"2,942"
+Illinois,2001,Drowning (includes water transport),154,"12,488,445",1.23,1.24,"4,572"
+Illinois,2001,Fall,585,"12,488,445",4.68,4.75,"4,514"
+Illinois,2001,Fire/Flame,177,"12,488,445",1.42,1.43,"4,081"
+Illinois,2001,Hot object/Substance,--,"12,488,445",--,--,--
+Illinois,2001,Firearm,"1,289","12,488,445",10.32,10.21,"38,090"
+Illinois,2001,Machinery,21,"12,488,445",0.17,0.17,366
+Illinois,2001,Natural/Environmental,58,"12,488,445",0.46,0.47,858
+Illinois,2001,Drug Poisoning,892,"12,488,445",7.14,7.15,"22,003"
+Illinois,2001,Non-Drug Poisoning,137,"12,488,445",1.1,1.1,"2,986"
+Illinois,2001,Struck by / against,46,"12,488,445",0.37,0.37,"1,267"
+Illinois,2001,Suffocation,613,"12,488,445",4.91,4.93,"13,833"
+Illinois,2001,"Motor vehicle, traffic","1,551","12,488,445",12.42,12.41,"40,735"
+Illinois,2001,"Pedal cyclist, other",--,"12,488,445",--,--,--
+Illinois,2001,"Pedestrian, other",64,"12,488,445",0.51,0.51,"1,583"
+Illinois,2001,"Transport, other land",43,"12,488,445",0.34,0.35,"1,268"
+Illinois,2001,"Transport, other (excl. drown by water transp)",36,"12,488,445",0.29,0.29,854
+Illinois,2001,Other specified and classifiable,96,"12,488,445",0.77,0.77,"2,564"
+Illinois,2001,Other specified / NEC,105,"12,488,445",0.84,0.85,"1,750"
+Illinois,2001,Unspecified,451,"12,488,445",3.61,3.64,"4,316"
+Total,,,"152,171","267,326,177",56.92,55.46,"3,155,821"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Illinois,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

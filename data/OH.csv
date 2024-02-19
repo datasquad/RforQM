@@ -1,0 +1,444 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Ohio,2021,Cut/Pierce,73,"11,780,017",0.62,0.62,"1,481"
+Ohio,2021,Drowning (includes water transport),160,"11,780,017",1.36,1.38,"4,438"
+Ohio,2021,Fall,"1,929","11,780,017",16.38,13.27,"3,810"
+Ohio,2021,Fire/Flame,166,"11,780,017",1.41,1.22,"2,406"
+Ohio,2021,Hot object/Substance,--,"11,780,017",--,--,--
+Ohio,2021,Firearm,"1,911","11,780,017",16.22,16.47,"49,823"
+Ohio,2021,Machinery,26,"11,780,017",0.22,0.2,406
+Ohio,2021,Natural/Environmental,71,"11,780,017",0.6,0.5,620
+Ohio,2021,Overexertion,--,"11,780,017",--,--,--
+Ohio,2021,Drug Poisoning,"5,397","11,780,017",45.82,48.27,"119,852"
+Ohio,2021,Non-Drug Poisoning,154,"11,780,017",1.31,1.27,"2,670"
+Ohio,2021,Struck by / against,32,"11,780,017",0.27,0.26,448
+Ohio,2021,Suffocation,788,"11,780,017",6.69,6.69,"19,165"
+Ohio,2021,"Motor vehicle, traffic","1,452","11,780,017",12.33,11.99,"30,818"
+Ohio,2021,"Pedal cyclist, other",--,"11,780,017",--,--,--
+Ohio,2021,"Pedestrian, other",32,"11,780,017",0.27,0.27,721
+Ohio,2021,"Transport, other land",53,"11,780,017",0.45,0.43,"1,177"
+Ohio,2021,"Transport, other (excl. drown by water transp)",--,"11,780,017",--,--,--
+Ohio,2021,Other specified and classifiable,93,"11,780,017",0.79,0.78,"1,862"
+Ohio,2021,Other specified / NEC,115,"11,780,017",0.98,0.88,"1,312"
+Ohio,2021,Unspecified,372,"11,780,017",3.16,2.64,"2,686"
+Ohio,2020,Cut/Pierce,109,"11,790,587",0.92,0.92,"2,355"
+Ohio,2020,Drowning (includes water transport),178,"11,790,587",1.51,1.49,"5,018"
+Ohio,2020,Fall,"1,816","11,790,587",15.4,12.47,"3,167"
+Ohio,2020,Fire/Flame,117,"11,790,587",0.99,0.84,"1,341"
+Ohio,2020,Hot object/Substance,--,"11,790,587",--,--,--
+Ohio,2020,Firearm,"1,764","11,790,587",14.96,15.05,"45,774"
+Ohio,2020,Machinery,19**,"11,790,587",0.16**,0.14**,315
+Ohio,2020,Natural/Environmental,53,"11,790,587",0.45,0.39,698
+Ohio,2020,Drug Poisoning,"5,204","11,790,587",44.14,46.76,"121,831"
+Ohio,2020,Non-Drug Poisoning,174,"11,790,587",1.48,1.48,"3,138"
+Ohio,2020,Struck by / against,51,"11,790,587",0.43,0.4,811
+Ohio,2020,Suffocation,733,"11,790,587",6.22,6.24,"17,733"
+Ohio,2020,"Motor vehicle, traffic","1,328","11,790,587",11.26,11.07,"28,898"
+Ohio,2020,"Pedal cyclist, other",12**,"11,790,587",0.10**,0.09**,173
+Ohio,2020,"Pedestrian, other",17**,"11,790,587",0.14**,0.14**,309
+Ohio,2020,"Transport, other land",52,"11,790,587",0.44,0.42,"1,156"
+Ohio,2020,"Transport, other (excl. drown by water transp)",--,"11,790,587",--,--,--
+Ohio,2020,Other specified and classifiable,83,"11,790,587",0.7,0.72,"1,966"
+Ohio,2020,Other specified / NEC,106,"11,790,587",0.9,0.77,"1,174"
+Ohio,2020,Unspecified,375,"11,790,587",3.18,2.68,"2,510"
+Ohio,2019,Cut/Pierce,77,"11,696,507",0.66,0.67,"1,536"
+Ohio,2019,Drowning (includes water transport),138,"11,696,507",1.18,1.19,"3,890"
+Ohio,2019,Fall,"1,748","11,696,507",14.95,11.47,"3,481"
+Ohio,2019,Fire/Flame,139,"11,696,507",1.19,1.06,"2,219"
+Ohio,2019,Hot object/Substance,--,"11,696,507",--,--,--
+Ohio,2019,Firearm,"1,578","11,696,507",13.49,13.31,"36,661"
+Ohio,2019,Machinery,25,"11,696,507",0.21,0.19,269
+Ohio,2019,Natural/Environmental,74,"11,696,507",0.63,0.54,632
+Ohio,2019,Drug Poisoning,"4,251","11,696,507",36.34,38.31,"98,166"
+Ohio,2019,Non-Drug Poisoning,162,"11,696,507",1.39,1.39,"3,006"
+Ohio,2019,Struck by / against,44,"11,696,507",0.38,0.34,712
+Ohio,2019,Suffocation,860,"11,696,507",7.35,7.36,"21,632"
+Ohio,2019,"Motor vehicle, traffic","1,219","11,696,507",10.42,10.09,"25,407"
+Ohio,2019,"Pedal cyclist, other",--,"11,696,507",--,--,--
+Ohio,2019,"Pedestrian, other",28,"11,696,507",0.24,0.21,427
+Ohio,2019,"Transport, other land",53,"11,696,507",0.45,0.42,992
+Ohio,2019,"Transport, other (excl. drown by water transp)",10**,"11,696,507",0.09**,0.08**,129
+Ohio,2019,Other specified and classifiable,88,"11,696,507",0.75,0.72,"1,913"
+Ohio,2019,Other specified / NEC,102,"11,696,507",0.87,0.76,"1,132"
+Ohio,2019,Unspecified,347,"11,696,507",2.97,2.39,"2,393"
+Ohio,2018,Cut/Pierce,108,"11,680,892",0.93,0.91,"2,216"
+Ohio,2018,Drowning (includes water transport),135,"11,680,892",1.16,1.16,"3,448"
+Ohio,2018,Fall,"1,541","11,680,892",13.19,10.23,"3,007"
+Ohio,2018,Fire/Flame,162,"11,680,892",1.39,1.25,"2,648"
+Ohio,2018,Hot object/Substance,--,"11,680,892",--,--,--
+Ohio,2018,Firearm,"1,555","11,680,892",13.31,13.07,"35,748"
+Ohio,2018,Machinery,21,"11,680,892",0.18,0.17,353
+Ohio,2018,Natural/Environmental,64,"11,680,892",0.55,0.47,541
+Ohio,2018,Overexertion,--,"11,680,892",--,--,--
+Ohio,2018,Drug Poisoning,"3,980","11,680,892",34.07,35.96,"94,095"
+Ohio,2018,Non-Drug Poisoning,174,"11,680,892",1.49,1.48,"2,931"
+Ohio,2018,Struck by / against,41,"11,680,892",0.35,0.31,550
+Ohio,2018,Suffocation,899,"11,680,892",7.7,7.51,"20,990"
+Ohio,2018,"Motor vehicle, traffic","1,170","11,680,892",10.02,9.71,"24,737"
+Ohio,2018,"Pedal cyclist, other",10**,"11,680,892",0.09**,0.07**,96
+Ohio,2018,"Pedestrian, other",33,"11,680,892",0.28,0.3,927
+Ohio,2018,"Transport, other land",60,"11,680,892",0.51,0.5,"1,293"
+Ohio,2018,"Transport, other (excl. drown by water transp)",12**,"11,680,892",0.10**,0.09**,186
+Ohio,2018,Other specified and classifiable,89,"11,680,892",0.76,0.78,"2,281"
+Ohio,2018,Other specified / NEC,107,"11,680,892",0.92,0.87,"1,760"
+Ohio,2018,Unspecified,328,"11,680,892",2.81,2.29,"2,831"
+Ohio,2017,Cut/Pierce,79,"11,665,706",0.68,0.68,"1,511"
+Ohio,2017,Drowning (includes water transport),141,"11,665,706",1.21,1.22,"3,971"
+Ohio,2017,Fall,"1,643","11,665,706",14.08,10.99,"3,199"
+Ohio,2017,Fire/Flame,152,"11,665,706",1.3,1.23,"2,613"
+Ohio,2017,Hot object/Substance,--,"11,665,706",--,--,--
+Ohio,2017,Firearm,"1,589","11,665,706",13.62,13.67,"39,039"
+Ohio,2017,Machinery,27,"11,665,706",0.23,0.21,441
+Ohio,2017,Natural/Environmental,49,"11,665,706",0.42,0.37,792
+Ohio,2017,Drug Poisoning,"5,111","11,665,706",43.81,46.54,"122,134"
+Ohio,2017,Non-Drug Poisoning,209,"11,665,706",1.79,1.77,"3,660"
+Ohio,2017,Struck by / against,38,"11,665,706",0.33,0.31,748
+Ohio,2017,Suffocation,806,"11,665,706",6.91,6.91,"19,122"
+Ohio,2017,"Motor vehicle, traffic","1,278","11,665,706",10.96,10.71,"28,652"
+Ohio,2017,"Pedal cyclist, other",--,"11,665,706",--,--,--
+Ohio,2017,"Pedestrian, other",37,"11,665,706",0.32,0.33,"1,078"
+Ohio,2017,"Transport, other land",38,"11,665,706",0.33,0.32,818
+Ohio,2017,"Transport, other (excl. drown by water transp)",--,"11,665,706",--,--,--
+Ohio,2017,Other specified and classifiable,91,"11,665,706",0.78,0.75,"1,994"
+Ohio,2017,Other specified / NEC,101,"11,665,706",0.87,0.79,"1,445"
+Ohio,2017,Unspecified,300,"11,665,706",2.57,2.18,"2,960"
+Ohio,2016,Cut/Pierce,73,"11,640,060",0.63,0.62,"1,517"
+Ohio,2016,Drowning (includes water transport),120,"11,640,060",1.03,1.03,"3,535"
+Ohio,2016,Fall,"1,523","11,640,060",13.08,10.33,"3,217"
+Ohio,2016,Fire/Flame,145,"11,640,060",1.25,1.16,"2,511"
+Ohio,2016,Hot object/Substance,--,"11,640,060",--,--,--
+Ohio,2016,Firearm,"1,524","11,640,060",13.09,12.84,"35,811"
+Ohio,2016,Machinery,26,"11,640,060",0.22,0.18,193
+Ohio,2016,Natural/Environmental,54,"11,640,060",0.46,0.39,622
+Ohio,2016,Overexertion,--,"11,640,060",--,--,--
+Ohio,2016,Drug Poisoning,"4,329","11,640,060",37.19,39.07,"104,394"
+Ohio,2016,Non-Drug Poisoning,171,"11,640,060",1.47,1.38,"2,790"
+Ohio,2016,Struck by / against,37,"11,640,060",0.32,0.3,761
+Ohio,2016,Suffocation,731,"11,640,060",6.28,6.15,"16,407"
+Ohio,2016,"Motor vehicle, traffic","1,260","11,640,060",10.83,10.47,"26,830"
+Ohio,2016,"Pedal cyclist, other",--,"11,640,060",--,--,--
+Ohio,2016,"Pedestrian, other",36,"11,640,060",0.31,0.29,760
+Ohio,2016,"Transport, other land",56,"11,640,060",0.48,0.46,"1,106"
+Ohio,2016,"Transport, other (excl. drown by water transp)",--,"11,640,060",--,--,--
+Ohio,2016,Other specified and classifiable,61,"11,640,060",0.52,0.51,"1,479"
+Ohio,2016,Other specified / NEC,105,"11,640,060",0.9,0.77,"1,164"
+Ohio,2016,Unspecified,313,"11,640,060",2.69,2.26,"2,809"
+Ohio,2015,Cut/Pierce,87,"11,622,315",0.75,0.72,"1,779"
+Ohio,2015,Drowning (includes water transport),119,"11,622,315",1.02,1.03,"3,517"
+Ohio,2015,Fall,"1,336","11,622,315",11.5,9.22,"3,238"
+Ohio,2015,Fire/Flame,145,"11,622,315",1.25,1.09,"2,233"
+Ohio,2015,Hot object/Substance,--,"11,622,315",--,--,--
+Ohio,2015,Firearm,"1,397","11,622,315",12.02,11.91,"33,312"
+Ohio,2015,Machinery,22,"11,622,315",0.19,0.19,380
+Ohio,2015,Natural/Environmental,54,"11,622,315",0.47,0.39,499
+Ohio,2015,Overexertion,--,"11,622,315",--,--,--
+Ohio,2015,Drug Poisoning,"3,310","11,622,315",28.48,29.97,"79,468"
+Ohio,2015,Non-Drug Poisoning,187,"11,622,315",1.61,1.56,"3,261"
+Ohio,2015,Struck by / against,40,"11,622,315",0.34,0.33,702
+Ohio,2015,Suffocation,740,"11,622,315",6.37,6.25,"17,163"
+Ohio,2015,"Motor vehicle, traffic","1,190","11,622,315",10.24,9.92,"25,456"
+Ohio,2015,"Pedal cyclist, other",--,"11,622,315",--,--,--
+Ohio,2015,"Pedestrian, other",28,"11,622,315",0.24,0.25,692
+Ohio,2015,"Transport, other land",74,"11,622,315",0.64,0.6,"1,523"
+Ohio,2015,"Transport, other (excl. drown by water transp)",--,"11,622,315",--,--,--
+Ohio,2015,Other specified and classifiable,68,"11,622,315",0.59,0.57,"1,682"
+Ohio,2015,Other specified / NEC,89,"11,622,315",0.77,0.67,"1,077"
+Ohio,2015,Unspecified,330,"11,622,315",2.84,2.39,"3,381"
+Ohio,2014,Cut/Pierce,79,"11,606,573",0.68,0.66,"1,578"
+Ohio,2014,Drowning (includes water transport),116,"11,606,573",1,1.01,"3,279"
+Ohio,2014,Fall,"1,404","11,606,573",12.1,9.83,"3,302"
+Ohio,2014,Fire/Flame,124,"11,606,573",1.07,0.98,"2,050"
+Ohio,2014,Hot object/Substance,--,"11,606,573",--,--,--
+Ohio,2014,Firearm,"1,211","11,606,573",10.43,10.29,"27,974"
+Ohio,2014,Machinery,28,"11,606,573",0.24,0.24,355
+Ohio,2014,Natural/Environmental,56,"11,606,573",0.48,0.44,539
+Ohio,2014,Overexertion,--,"11,606,573",--,--,--
+Ohio,2014,Drug Poisoning,"2,744","11,606,573",23.64,24.62,"64,799"
+Ohio,2014,Non-Drug Poisoning,183,"11,606,573",1.58,1.53,"2,924"
+Ohio,2014,Struck by / against,30,"11,606,573",0.26,0.22,291
+Ohio,2014,Suffocation,718,"11,606,573",6.19,6.04,"15,515"
+Ohio,2014,"Motor vehicle, traffic","1,067","11,606,573",9.19,8.92,"23,587"
+Ohio,2014,"Pedal cyclist, other",14**,"11,606,573",0.12**,0.10**,94
+Ohio,2014,"Pedestrian, other",31,"11,606,573",0.27,0.27,566
+Ohio,2014,"Transport, other land",56,"11,606,573",0.48,0.48,"1,281"
+Ohio,2014,"Transport, other (excl. drown by water transp)",21,"11,606,573",0.18,0.18,539
+Ohio,2014,Other specified and classifiable,76,"11,606,573",0.66,0.66,"1,793"
+Ohio,2014,Other specified / NEC,82,"11,606,573",0.71,0.63,949
+Ohio,2014,Unspecified,323,"11,606,573",2.78,2.3,"2,183"
+Ohio,2013,Cut/Pierce,91,"11,579,692",0.79,0.76,"1,883"
+Ohio,2013,Drowning (includes water transport),126,"11,579,692",1.09,1.07,"3,556"
+Ohio,2013,Fall,"1,215","11,579,692",10.49,8.63,"3,259"
+Ohio,2013,Fire/Flame,118,"11,579,692",1.02,0.96,"2,336"
+Ohio,2013,Hot object/Substance,--,"11,579,692",--,--,--
+Ohio,2013,Firearm,"1,289","11,579,692",11.13,10.97,"29,987"
+Ohio,2013,Machinery,29,"11,579,692",0.25,0.22,402
+Ohio,2013,Natural/Environmental,34,"11,579,692",0.29,0.27,392
+Ohio,2013,Overexertion,--,"11,579,692",--,--,--
+Ohio,2013,Drug Poisoning,"2,347","11,579,692",20.27,20.81,"53,046"
+Ohio,2013,Non-Drug Poisoning,150,"11,579,692",1.3,1.26,"2,790"
+Ohio,2013,Struck by / against,33,"11,579,692",0.29,0.26,390
+Ohio,2013,Suffocation,697,"11,579,692",6.02,5.95,"17,114"
+Ohio,2013,"Motor vehicle, traffic","1,077","11,579,692",9.3,8.98,"23,167"
+Ohio,2013,"Pedal cyclist, other",--,"11,579,692",--,--,--
+Ohio,2013,"Pedestrian, other",27,"11,579,692",0.23,0.24,695
+Ohio,2013,"Transport, other land",64,"11,579,692",0.55,0.55,"1,536"
+Ohio,2013,"Transport, other (excl. drown by water transp)",--,"11,579,692",--,--,--
+Ohio,2013,Other specified and classifiable,77,"11,579,692",0.67,0.63,"1,629"
+Ohio,2013,Other specified / NEC,80,"11,579,692",0.69,0.63,"1,027"
+Ohio,2013,Unspecified,319,"11,579,692",2.76,2.34,"2,911"
+Ohio,2012,Cut/Pierce,82,"11,550,971",0.71,0.71,"1,749"
+Ohio,2012,Drowning (includes water transport),130,"11,550,971",1.13,1.12,"3,713"
+Ohio,2012,Fall,"1,193","11,550,971",10.33,8.55,"3,152"
+Ohio,2012,Fire/Flame,100,"11,550,971",0.87,0.79,"1,719"
+Ohio,2012,Hot object/Substance,--,"11,550,971",--,--,--
+Ohio,2012,Firearm,"1,263","11,550,971",10.93,10.81,"28,758"
+Ohio,2012,Machinery,32,"11,550,971",0.28,0.25,577
+Ohio,2012,Natural/Environmental,41,"11,550,971",0.36,0.3,492
+Ohio,2012,Drug Poisoning,"2,125","11,550,971",18.4,18.91,"48,797"
+Ohio,2012,Non-Drug Poisoning,175,"11,550,971",1.52,1.45,"3,220"
+Ohio,2012,Struck by / against,33,"11,550,971",0.29,0.27,632
+Ohio,2012,Suffocation,789,"11,550,971",6.83,6.73,"18,639"
+Ohio,2012,"Motor vehicle, traffic","1,208","11,550,971",10.46,10.2,"26,491"
+Ohio,2012,"Pedal cyclist, other",--,"11,550,971",--,--,--
+Ohio,2012,"Pedestrian, other",25,"11,550,971",0.22,0.2,539
+Ohio,2012,"Transport, other land",42,"11,550,971",0.36,0.35,928
+Ohio,2012,"Transport, other (excl. drown by water transp)",--,"11,550,971",--,--,--
+Ohio,2012,Other specified and classifiable,71,"11,550,971",0.62,0.61,"1,553"
+Ohio,2012,Other specified / NEC,86,"11,550,971",0.75,0.66,"1,007"
+Ohio,2012,Unspecified,343,"11,550,971",2.97,2.58,"3,268"
+Ohio,2011,Cut/Pierce,78,"11,545,735",0.68,0.67,"1,750"
+Ohio,2011,Drowning (includes water transport),94,"11,545,735",0.81,0.82,"2,957"
+Ohio,2011,Fall,"1,195","11,545,735",10.35,8.65,"3,103"
+Ohio,2011,Fire/Flame,106,"11,545,735",0.92,0.88,"2,118"
+Ohio,2011,Hot object/Substance,--,"11,545,735",--,--,--
+Ohio,2011,Firearm,"1,227","11,545,735",10.63,10.51,"29,693"
+Ohio,2011,Machinery,20**,"11,545,735",0.17**,0.16**,356
+Ohio,2011,Natural/Environmental,38,"11,545,735",0.33,0.3,411
+Ohio,2011,Drug Poisoning,"2,025","11,545,735",17.54,17.76,"45,406"
+Ohio,2011,Non-Drug Poisoning,180,"11,545,735",1.56,1.49,"3,237"
+Ohio,2011,Struck by / against,41,"11,545,735",0.36,0.35,863
+Ohio,2011,Suffocation,728,"11,545,735",6.31,6.21,"16,917"
+Ohio,2011,"Motor vehicle, traffic","1,122","11,545,735",9.72,9.61,"26,212"
+Ohio,2011,"Pedal cyclist, other",--,"11,545,735",--,--,--
+Ohio,2011,"Pedestrian, other",19**,"11,545,735",0.17**,0.16**,418
+Ohio,2011,"Transport, other land",55,"11,545,735",0.48,0.44,"1,075"
+Ohio,2011,"Transport, other (excl. drown by water transp)",18**,"11,545,735",0.16**,0.15**,337
+Ohio,2011,Other specified and classifiable,104,"11,545,735",0.9,0.9,"2,557"
+Ohio,2011,Other specified / NEC,101,"11,545,735",0.88,0.83,"1,577"
+Ohio,2011,Unspecified,346,"11,545,735",3,2.59,"2,696"
+Ohio,2010,Cut/Pierce,82,"11,536,763",0.71,0.72,"2,030"
+Ohio,2010,Drowning (includes water transport),111,"11,536,763",0.96,0.98,"3,752"
+Ohio,2010,Fall,"1,190","11,536,763",10.32,8.81,"3,208"
+Ohio,2010,Fire/Flame,145,"11,536,763",1.26,1.2,"2,863"
+Ohio,2010,Hot object/Substance,--,"11,536,763",--,--,--
+Ohio,2010,Firearm,"1,148","11,536,763",9.95,9.95,"27,599"
+Ohio,2010,Machinery,34,"11,536,763",0.3,0.28,515
+Ohio,2010,Natural/Environmental,56,"11,536,763",0.49,0.46,"1,108"
+Ohio,2010,Drug Poisoning,"1,835","11,536,763",15.91,16.16,"42,268"
+Ohio,2010,Non-Drug Poisoning,166,"11,536,763",1.44,1.39,"2,927"
+Ohio,2010,Struck by / against,45,"11,536,763",0.39,0.38,876
+Ohio,2010,Suffocation,678,"11,536,763",5.88,5.77,"15,424"
+Ohio,2010,"Motor vehicle, traffic","1,183","11,536,763",10.25,10.04,"27,936"
+Ohio,2010,"Pedal cyclist, other",--,"11,536,763",--,--,--
+Ohio,2010,"Pedestrian, other",29,"11,536,763",0.25,0.25,629
+Ohio,2010,"Transport, other land",64,"11,536,763",0.56,0.55,"1,421"
+Ohio,2010,"Transport, other (excl. drown by water transp)",11**,"11,536,763",0.10**,0.09**,163
+Ohio,2010,Other specified and classifiable,84,"11,536,763",0.73,0.75,"2,229"
+Ohio,2010,Other specified / NEC,81,"11,536,763",0.7,0.63,"1,164"
+Ohio,2010,Unspecified,339,"11,536,763",2.94,2.57,"2,836"
+Ohio,2009,Cut/Pierce,79,"11,528,896",0.69,0.68,"1,647"
+Ohio,2009,Drowning (includes water transport),96,"11,528,896",0.83,0.83,"2,712"
+Ohio,2009,Fall,950,"11,528,896",8.24,7.11,"2,673"
+Ohio,2009,Fire/Flame,111,"11,528,896",0.96,0.93,"2,405"
+Ohio,2009,Hot object/Substance,--,"11,528,896",--,--,--
+Ohio,2009,Firearm,991,"11,528,896",8.6,8.5,"23,524"
+Ohio,2009,Machinery,11**,"11,528,896",0.10**,0.09**,182
+Ohio,2009,Natural/Environmental,35,"11,528,896",0.3,0.26,356
+Ohio,2009,Drug Poisoning,"1,236","11,528,896",10.72,10.92,"27,997"
+Ohio,2009,Non-Drug Poisoning,126,"11,528,896",1.09,1.06,"2,226"
+Ohio,2009,Struck by / against,27,"11,528,896",0.23,0.22,361
+Ohio,2009,Suffocation,609,"11,528,896",5.28,5.18,"13,939"
+Ohio,2009,"Motor vehicle, traffic",965,"11,528,896",8.37,8.26,"22,591"
+Ohio,2009,"Pedal cyclist, other",--,"11,528,896",--,--,--
+Ohio,2009,"Pedestrian, other",40,"11,528,896",0.35,0.35,"1,060"
+Ohio,2009,"Transport, other land",43,"11,528,896",0.37,0.37,"1,109"
+Ohio,2009,"Transport, other (excl. drown by water transp)",--,"11,528,896",--,--,--
+Ohio,2009,Other specified and classifiable,80,"11,528,896",0.69,0.7,"2,090"
+Ohio,2009,Other specified / NEC,81,"11,528,896",0.7,0.66,"1,199"
+Ohio,2009,Unspecified,359,"11,528,896",3.11,2.76,"2,928"
+Ohio,2008,Cut/Pierce,63,"11,515,391",0.55,0.55,"1,293"
+Ohio,2008,Drowning (includes water transport),132,"11,515,391",1.15,1.15,"3,670"
+Ohio,2008,Fall,"1,098","11,515,391",9.54,8.3,"3,285"
+Ohio,2008,Fire/Flame,163,"11,515,391",1.42,1.38,"3,562"
+Ohio,2008,Hot object/Substance,--,"11,515,391",--,--,--
+Ohio,2008,Firearm,"1,115","11,515,391",9.68,9.67,"27,256"
+Ohio,2008,Machinery,25,"11,515,391",0.22,0.2,297
+Ohio,2008,Natural/Environmental,40,"11,515,391",0.35,0.32,504
+Ohio,2008,Drug Poisoning,"1,733","11,515,391",15.05,15.18,"39,448"
+Ohio,2008,Non-Drug Poisoning,191,"11,515,391",1.66,1.62,"3,705"
+Ohio,2008,Struck by / against,39,"11,515,391",0.34,0.33,802
+Ohio,2008,Suffocation,714,"11,515,391",6.2,6.13,"17,328"
+Ohio,2008,"Motor vehicle, traffic","1,234","11,515,391",10.72,10.5,"29,703"
+Ohio,2008,"Pedal cyclist, other",13**,"11,515,391",0.11**,0.12**,252
+Ohio,2008,"Pedestrian, other",35,"11,515,391",0.3,0.3,878
+Ohio,2008,"Transport, other land",64,"11,515,391",0.56,0.56,"1,394"
+Ohio,2008,"Transport, other (excl. drown by water transp)",18**,"11,515,391",0.16**,0.15**,318
+Ohio,2008,Other specified and classifiable,71,"11,515,391",0.62,0.6,"1,679"
+Ohio,2008,Other specified / NEC,97,"11,515,391",0.84,0.8,"1,546"
+Ohio,2008,Unspecified,385,"11,515,391",3.34,2.97,"2,931"
+Ohio,2007,Cut/Pierce,86,"11,500,468",0.75,0.75,"2,043"
+Ohio,2007,Drowning (includes water transport),125,"11,500,468",1.09,1.08,"3,815"
+Ohio,2007,Fall,"1,013","11,500,468",8.81,7.86,"3,284"
+Ohio,2007,Fire/Flame,144,"11,500,468",1.25,1.19,"2,839"
+Ohio,2007,Hot object/Substance,--,"11,500,468",--,--,--
+Ohio,2007,Firearm,"1,105","11,500,468",9.61,9.55,"27,599"
+Ohio,2007,Machinery,27,"11,500,468",0.24,0.22,389
+Ohio,2007,Natural/Environmental,33,"11,500,468",0.29,0.25,379
+Ohio,2007,Drug Poisoning,"1,592","11,500,468",13.84,13.91,"36,410"
+Ohio,2007,Non-Drug Poisoning,161,"11,500,468",1.4,1.36,"3,091"
+Ohio,2007,Struck by / against,35,"11,500,468",0.3,0.29,660
+Ohio,2007,Suffocation,601,"11,500,468",5.23,5.24,"15,553"
+Ohio,2007,"Motor vehicle, traffic","1,338","11,500,468",11.63,11.5,"33,288"
+Ohio,2007,"Pedal cyclist, other",--,"11,500,468",--,--,--
+Ohio,2007,"Pedestrian, other",46,"11,500,468",0.4,0.39,"1,113"
+Ohio,2007,"Transport, other land",62,"11,500,468",0.54,0.54,"1,591"
+Ohio,2007,"Transport, other (excl. drown by water transp)",20**,"11,500,468",0.17**,0.16**,384
+Ohio,2007,Other specified and classifiable,78,"11,500,468",0.68,0.67,"2,168"
+Ohio,2007,Other specified / NEC,103,"11,500,468",0.9,0.85,"1,688"
+Ohio,2007,Unspecified,373,"11,500,468",3.24,2.91,"2,911"
+Ohio,2006,Cut/Pierce,92,"11,481,213",0.8,0.78,"2,195"
+Ohio,2006,Drowning (includes water transport),121,"11,481,213",1.05,1.05,"3,367"
+Ohio,2006,Fall,934,"11,481,213",8.14,7.34,"3,155"
+Ohio,2006,Fire/Flame,171,"11,481,213",1.49,1.47,"3,889"
+Ohio,2006,Hot object/Substance,--,"11,481,213",--,--,--
+Ohio,2006,Firearm,"1,114","11,481,213",9.7,9.66,"28,195"
+Ohio,2006,Machinery,29,"11,481,213",0.25,0.24,363
+Ohio,2006,Natural/Environmental,43,"11,481,213",0.38,0.35,695
+Ohio,2006,Drug Poisoning,"1,515","11,481,213",13.2,13.23,"35,523"
+Ohio,2006,Non-Drug Poisoning,141,"11,481,213",1.23,1.19,"2,526"
+Ohio,2006,Struck by / against,39,"11,481,213",0.34,0.32,794
+Ohio,2006,Suffocation,648,"11,481,213",5.64,5.54,"15,457"
+Ohio,2006,"Motor vehicle, traffic","1,309","11,481,213",11.4,11.25,"31,823"
+Ohio,2006,"Pedal cyclist, other",--,"11,481,213",--,--,--
+Ohio,2006,"Pedestrian, other",37,"11,481,213",0.32,0.33,"1,051"
+Ohio,2006,"Transport, other land",63,"11,481,213",0.55,0.54,"1,814"
+Ohio,2006,"Transport, other (excl. drown by water transp)",13**,"11,481,213",0.11**,0.10**,260
+Ohio,2006,Other specified and classifiable,88,"11,481,213",0.77,0.77,"2,551"
+Ohio,2006,Other specified / NEC,113,"11,481,213",0.98,0.94,"1,875"
+Ohio,2006,Unspecified,448,"11,481,213",3.9,3.54,"2,891"
+Ohio,2005,Cut/Pierce,87,"11,463,320",0.76,0.75,"2,051"
+Ohio,2005,Drowning (includes water transport),130,"11,463,320",1.13,1.13,"4,307"
+Ohio,2005,Fall,871,"11,463,320",7.6,7.01,"3,359"
+Ohio,2005,Fire/Flame,132,"11,463,320",1.15,1.13,"3,082"
+Ohio,2005,Hot object/Substance,--,"11,463,320",--,--,--
+Ohio,2005,Firearm,"1,116","11,463,320",9.74,9.63,"26,849"
+Ohio,2005,Machinery,33,"11,463,320",0.29,0.28,670
+Ohio,2005,Natural/Environmental,38,"11,463,320",0.33,0.31,371
+Ohio,2005,Drug Poisoning,"1,243","11,463,320",10.84,10.89,"29,340"
+Ohio,2005,Non-Drug Poisoning,128,"11,463,320",1.12,1.1,"2,698"
+Ohio,2005,Struck by / against,21,"11,463,320",0.18,0.18,451
+Ohio,2005,Suffocation,595,"11,463,320",5.19,5.15,"15,093"
+Ohio,2005,"Motor vehicle, traffic","1,351","11,463,320",11.79,11.71,"33,649"
+Ohio,2005,"Pedal cyclist, other",--,"11,463,320",--,--,--
+Ohio,2005,"Pedestrian, other",38,"11,463,320",0.33,0.33,891
+Ohio,2005,"Transport, other land",44,"11,463,320",0.38,0.39,"1,264"
+Ohio,2005,"Transport, other (excl. drown by water transp)",25,"11,463,320",0.22,0.21,532
+Ohio,2005,Other specified and classifiable,91,"11,463,320",0.79,0.78,"2,122"
+Ohio,2005,Other specified / NEC,94,"11,463,320",0.82,0.78,"1,482"
+Ohio,2005,Unspecified,458,"11,463,320",4,3.73,"3,931"
+Ohio,2004,Cut/Pierce,91,"11,452,251",0.8,0.78,"2,049"
+Ohio,2004,Drowning (includes water transport),117,"11,452,251",1.02,1.03,"4,206"
+Ohio,2004,Fall,762,"11,452,251",6.65,6.18,"3,082"
+Ohio,2004,Fire/Flame,125,"11,452,251",1.09,1.07,"3,087"
+Ohio,2004,Hot object/Substance,--,"11,452,251",--,--,--
+Ohio,2004,Firearm,"1,036","11,452,251",9.05,8.97,"24,762"
+Ohio,2004,Machinery,33,"11,452,251",0.29,0.28,524
+Ohio,2004,Natural/Environmental,46,"11,452,251",0.4,0.39,607
+Ohio,2004,Drug Poisoning,"1,136","11,452,251",9.92,9.9,"26,669"
+Ohio,2004,Non-Drug Poisoning,161,"11,452,251",1.41,1.4,"3,390"
+Ohio,2004,Struck by / against,29,"11,452,251",0.25,0.25,521
+Ohio,2004,Suffocation,623,"11,452,251",5.44,5.37,"14,297"
+Ohio,2004,"Motor vehicle, traffic","1,330","11,452,251",11.61,11.51,"35,432"
+Ohio,2004,"Pedal cyclist, other",--,"11,452,251",--,--,--
+Ohio,2004,"Pedestrian, other",38,"11,452,251",0.33,0.32,995
+Ohio,2004,"Transport, other land",47,"11,452,251",0.41,0.41,"1,399"
+Ohio,2004,"Transport, other (excl. drown by water transp)",28,"11,452,251",0.24,0.25,670
+Ohio,2004,Other specified and classifiable,88,"11,452,251",0.77,0.77,"2,348"
+Ohio,2004,Other specified / NEC,68,"11,452,251",0.59,0.58,935
+Ohio,2004,Unspecified,468,"11,452,251",4.09,3.87,"4,083"
+Ohio,2003,Cut/Pierce,97,"11,434,788",0.85,0.86,"2,538"
+Ohio,2003,Drowning (includes water transport),106,"11,434,788",0.93,0.93,"3,598"
+Ohio,2003,Fall,692,"11,434,788",6.05,5.7,"2,893"
+Ohio,2003,Fire/Flame,149,"11,434,788",1.3,1.29,"3,890"
+Ohio,2003,Hot object/Substance,--,"11,434,788",--,--,--
+Ohio,2003,Firearm,934,"11,434,788",8.17,8.12,"22,946"
+Ohio,2003,Machinery,18**,"11,434,788",0.16**,0.15**,233
+Ohio,2003,Natural/Environmental,36,"11,434,788",0.32,0.3,494
+Ohio,2003,Overexertion,--,"11,434,788",--,--,--
+Ohio,2003,Drug Poisoning,775,"11,434,788",6.78,6.79,"18,319"
+Ohio,2003,Non-Drug Poisoning,89,"11,434,788",0.78,0.78,"1,953"
+Ohio,2003,Struck by / against,35,"11,434,788",0.31,0.3,771
+Ohio,2003,Suffocation,515,"11,434,788",4.5,4.44,"11,217"
+Ohio,2003,"Motor vehicle, traffic","1,304","11,434,788",11.4,11.31,"33,105"
+Ohio,2003,"Pedal cyclist, other",--,"11,434,788",--,--,--
+Ohio,2003,"Pedestrian, other",21,"11,434,788",0.18,0.19,693
+Ohio,2003,"Transport, other land",59,"11,434,788",0.52,0.51,"1,688"
+Ohio,2003,"Transport, other (excl. drown by water transp)",17**,"11,434,788",0.15**,0.15**,496
+Ohio,2003,Other specified and classifiable,85,"11,434,788",0.74,0.75,"2,475"
+Ohio,2003,Other specified / NEC,75,"11,434,788",0.66,0.63,876
+Ohio,2003,Unspecified,415,"11,434,788",3.63,3.44,"2,632"
+Ohio,2002,Cut/Pierce,86,"11,407,889",0.75,0.76,"2,011"
+Ohio,2002,Drowning (includes water transport),150,"11,407,889",1.32,1.32,"4,603"
+Ohio,2002,Fall,673,"11,407,889",5.9,5.61,"2,881"
+Ohio,2002,Fire/Flame,154,"11,407,889",1.35,1.33,"3,770"
+Ohio,2002,Hot object/Substance,--,"11,407,889",--,--,--
+Ohio,2002,Firearm,"1,069","11,407,889",9.37,9.31,"25,104"
+Ohio,2002,Machinery,16**,"11,407,889",0.14**,0.14**,390
+Ohio,2002,Natural/Environmental,47,"11,407,889",0.41,0.4,475
+Ohio,2002,Drug Poisoning,931,"11,407,889",8.16,8.19,"21,678"
+Ohio,2002,Non-Drug Poisoning,131,"11,407,889",1.15,1.13,"2,475"
+Ohio,2002,Struck by / against,46,"11,407,889",0.4,0.39,876
+Ohio,2002,Suffocation,521,"11,407,889",4.57,4.54,"12,472"
+Ohio,2002,"Motor vehicle, traffic","1,547","11,407,889",13.56,13.48,"39,514"
+Ohio,2002,"Pedal cyclist, other",--,"11,407,889",--,--,--
+Ohio,2002,"Pedestrian, other",33,"11,407,889",0.29,0.29,971
+Ohio,2002,"Transport, other land",60,"11,407,889",0.53,0.51,"1,505"
+Ohio,2002,"Transport, other (excl. drown by water transp)",27,"11,407,889",0.24,0.24,663
+Ohio,2002,Other specified and classifiable,81,"11,407,889",0.71,0.71,"2,335"
+Ohio,2002,Other specified / NEC,92,"11,407,889",0.81,0.78,"1,318"
+Ohio,2002,Unspecified,424,"11,407,889",3.72,3.56,"2,700"
+Ohio,2001,Cut/Pierce,71,"11,387,404",0.62,0.63,"1,739"
+Ohio,2001,Drowning (includes water transport),130,"11,387,404",1.14,1.15,"4,622"
+Ohio,2001,Fall,616,"11,387,404",5.41,5.2,"2,899"
+Ohio,2001,Fire/Flame,148,"11,387,404",1.3,1.3,"3,831"
+Ohio,2001,Hot object/Substance,--,"11,387,404",--,--,--
+Ohio,2001,Firearm,"1,029","11,387,404",9.04,9,"24,237"
+Ohio,2001,Machinery,20**,"11,387,404",0.18**,0.17**,310
+Ohio,2001,Natural/Environmental,47,"11,387,404",0.41,0.4,641
+Ohio,2001,Drug Poisoning,737,"11,387,404",6.47,6.47,"17,560"
+Ohio,2001,Non-Drug Poisoning,127,"11,387,404",1.12,1.11,"2,440"
+Ohio,2001,Struck by / against,46,"11,387,404",0.4,0.4,"1,072"
+Ohio,2001,Suffocation,535,"11,387,404",4.7,4.65,"11,889"
+Ohio,2001,"Motor vehicle, traffic","1,424","11,387,404",12.51,12.47,"37,278"
+Ohio,2001,"Pedal cyclist, other",--,"11,387,404",--,--,--
+Ohio,2001,"Pedestrian, other",24,"11,387,404",0.21,0.21,714
+Ohio,2001,"Transport, other land",65,"11,387,404",0.57,0.57,"1,700"
+Ohio,2001,"Transport, other (excl. drown by water transp)",17**,"11,387,404",0.15**,0.15**,253
+Ohio,2001,Other specified and classifiable,86,"11,387,404",0.76,0.76,"2,624"
+Ohio,2001,Other specified / NEC,66,"11,387,404",0.58,0.56,872
+Ohio,2001,Unspecified,497,"11,387,404",4.36,4.23,"3,883"
+Total,,,"173,631","242,867,438",71.49,69.49,"3,378,377"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Ohio,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

@@ -49,7 +49,7 @@ The data are from a variety of sources and some of them are collated in "US_Gun_
 * Data for a number of covariates (unemployment rate, number of officers, etc.)
 
 ```{r, echo = TRUE, error = FALSE, message = FALSE, results = FALSE, warning = FALSE, eval=TRUE}
-merge_data <- read.csv("US_Gun_example.csv") # import data
+merge_data <- read.csv("../data/US_Gun_example.csv") # import data
 ```
 
 This dataset was created with a significant amount of data handling and cleaning. 
@@ -284,9 +284,9 @@ If, however, the absolute value of the  \textbf{test statistic} is < the  \textb
 ## Hypothesis Testing - Introduction
 
 **Example**
-The test statistic
+The test statistic for testing the equality of the average violent crime (vc) in 2001 and 2021.
 
-\[t = \dfrac{\bar{fds}_{2021} - \bar{fds}_{2001}}{\sqrt{\frac{s_{fds,2021}}{n}+\frac{s_{fds,2001}}{n}}}\]
+\[t = \dfrac{\bar{vc}_{2021} - \bar{vc}_{2001}}{\sqrt{\frac{s_{vc,2021}}{n}+\frac{s_{vc,2001}}{n}}}\]
 
 How is this test statistic distributed (assuming $H_0$ is true)? \textcolor{red}{**If**}
 
@@ -321,7 +321,7 @@ paste("mean_2021 - mean_2001 =", round(mean_2021,2),
 
 Is this different \textcolor{student}{~~~statistically and/or economically~~~} significant?
 
-\textcolor{student}{Comment that the difference, 54, is about 13% of the 2001 mean.}
+The difference, 54, is about 13% of the 2001 mean.
 
 ## Hypothesis Testing - Example 1
 
@@ -507,7 +507,7 @@ Regressions with dummy variables can be very useful. T-test for $\beta =0$ is a 
 \normalsize
 
 ## Regression Analysis - Example 3
-
+\scriptsize
 We now estimate a regression model which includes a constant and the number of law enforcement officers (per 100,000), `law.officer.pc`, as an explanatory variable (only 2021 data).
 
 $vcrime.pc_{i} = \alpha + \beta~ law.officer.pc_{i} + u_{i}$
@@ -550,7 +550,7 @@ ggplot(test_data, aes(x=law.officers.pc, y=vcrime.pc)) +
 
 ## Regression Analysis - What does it actually do?
 
-Two interpretations (noye that here $y$ is the dependent and $x$ the explanatory variable)
+Two interpretations (note that here $y$ is the dependent and $x$ the explanatory variable)
 
 1) Finds the regression line (via $\widehat{\alpha}$ and $\widehat{\beta}$) that \textcolor{student}{~~minimises~~} the residual sum of squares $\Sigma (y_{i} - \widehat{\alpha} - \widehat{\beta}~ x_{i})^2$.
 $\rightarrow$ \textcolor{red}{Ordinary Least Squares (OLS)}

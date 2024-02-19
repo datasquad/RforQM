@@ -1,0 +1,432 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Maryland,2021,Cut/Pierce,55,"6,165,129",0.89,0.86,"1,330"
+Maryland,2021,Drowning (includes water transport),70,"6,165,129",1.14,1.14,"1,637"
+Maryland,2021,Fall,893,"6,165,129",14.49,12.47,"1,898"
+Maryland,2021,Fire/Flame,48,"6,165,129",0.78,0.71,812
+Maryland,2021,Hot object/Substance,--,"6,165,129",--,--,--
+Maryland,2021,Firearm,915,"6,165,129",14.84,15.23,"24,989"
+Maryland,2021,Machinery,--,"6,165,129",--,--,--
+Maryland,2021,Natural/Environmental,28,"6,165,129",0.45,0.41,249
+Maryland,2021,Drug Poisoning,"2,737","6,165,129",44.4,42.63,"54,001"
+Maryland,2021,Non-Drug Poisoning,91,"6,165,129",1.48,1.44,"1,776"
+Maryland,2021,Struck by / against,20**,"6,165,129",0.32**,0.32**,344
+Maryland,2021,Suffocation,316,"6,165,129",5.13,5.06,"6,294"
+Maryland,2021,"Motor vehicle, traffic",641,"6,165,129",10.4,10.23,"15,122"
+Maryland,2021,"Pedal cyclist, other",--,"6,165,129",--,--,--
+Maryland,2021,"Pedestrian, other",17**,"6,165,129",0.28**,0.25**,283
+Maryland,2021,"Transport, other land",12**,"6,165,129",0.20**,0.17**,155
+Maryland,2021,Other specified and classifiable,32,"6,165,129",0.52,0.52,700
+Maryland,2021,Other specified / NEC,34,"6,165,129",0.55,0.47,164
+Maryland,2021,Unspecified,163,"6,165,129",2.64,2.43,"2,059"
+Maryland,2020,Cut/Pierce,64,"6,172,679",1.04,1.05,"1,541"
+Maryland,2020,Drowning (includes water transport),89,"6,172,679",1.44,1.42,"2,022"
+Maryland,2020,Fall,857,"6,172,679",13.88,12.1,"2,186"
+Maryland,2020,Fire/Flame,34,"6,172,679",0.55,0.5,354
+Maryland,2020,Hot object/Substance,--,"6,172,679",--,--,--
+Maryland,2020,Firearm,803,"6,172,679",13.01,13.26,"22,407"
+Maryland,2020,Machinery,--,"6,172,679",--,--,--
+Maryland,2020,Natural/Environmental,32,"6,172,679",0.52,0.47,376
+Maryland,2020,Drug Poisoning,"2,771","6,172,679",44.89,43.58,"57,480"
+Maryland,2020,Non-Drug Poisoning,87,"6,172,679",1.41,1.36,"1,442"
+Maryland,2020,Struck by / against,16**,"6,172,679",0.26**,0.24**,283
+Maryland,2020,Suffocation,297,"6,172,679",4.81,4.68,"5,697"
+Maryland,2020,"Motor vehicle, traffic",618,"6,172,679",10.01,9.84,"13,756"
+Maryland,2020,"Pedal cyclist, other",--,"6,172,679",--,--,--
+Maryland,2020,"Pedestrian, other",12**,"6,172,679",0.19**,0.20**,268
+Maryland,2020,"Transport, other land",16**,"6,172,679",0.26**,0.25**,306
+Maryland,2020,"Transport, other (excl. drown by water transp)",--,"6,172,679",--,--,--
+Maryland,2020,Other specified and classifiable,30,"6,172,679",0.49,0.46,838
+Maryland,2020,Other specified / NEC,30,"6,172,679",0.49,0.42,329
+Maryland,2020,Unspecified,175,"6,172,679",2.84,2.62,"1,930"
+Maryland,2019,Cut/Pierce,48,"6,054,954",0.79,0.78,"1,085"
+Maryland,2019,Drowning (includes water transport),83,"6,054,954",1.37,1.28,"1,834"
+Maryland,2019,Fall,808,"6,054,954",13.34,11.24,"2,255"
+Maryland,2019,Fire/Flame,55,"6,054,954",0.91,0.8,585
+Maryland,2019,Hot object/Substance,--,"6,054,954",--,--,--
+Maryland,2019,Firearm,757,"6,054,954",12.5,12.54,"20,829"
+Maryland,2019,Machinery,--,"6,054,954",--,--,--
+Maryland,2019,Natural/Environmental,37,"6,054,954",0.61,0.54,378
+Maryland,2019,Drug Poisoning,"2,369","6,054,954",39.13,37.88,"49,226"
+Maryland,2019,Non-Drug Poisoning,90,"6,054,954",1.49,1.44,"1,776"
+Maryland,2019,Struck by / against,19**,"6,054,954",0.31**,0.27**,241
+Maryland,2019,Suffocation,314,"6,054,954",5.19,4.87,"5,781"
+Maryland,2019,"Motor vehicle, traffic",537,"6,054,954",8.87,8.59,"12,057"
+Maryland,2019,"Pedal cyclist, other",--,"6,054,954",--,--,--
+Maryland,2019,"Pedestrian, other",11**,"6,054,954",0.18**,0.19**,239
+Maryland,2019,"Transport, other land",18**,"6,054,954",0.30**,0.28**,328
+Maryland,2019,"Transport, other (excl. drown by water transp)",--,"6,054,954",--,--,--
+Maryland,2019,Other specified and classifiable,37,"6,054,954",0.61,0.54,808
+Maryland,2019,Other specified / NEC,49,"6,054,954",0.81,0.77,702
+Maryland,2019,Unspecified,167,"6,054,954",2.76,2.48,"2,058"
+Maryland,2018,Cut/Pierce,47,"6,042,153",0.78,0.72,"1,056"
+Maryland,2018,Drowning (includes water transport),82,"6,042,153",1.36,1.33,"1,922"
+Maryland,2018,Fall,727,"6,042,153",12.03,10.29,"1,544"
+Maryland,2018,Fire/Flame,59,"6,042,153",0.98,0.9,808
+Maryland,2018,Hot object/Substance,--,"6,042,153",--,--,--
+Maryland,2018,Firearm,707,"6,042,153",11.7,11.62,"18,386"
+Maryland,2018,Machinery,--,"6,042,153",--,--,--
+Maryland,2018,Natural/Environmental,42,"6,042,153",0.7,0.63,477
+Maryland,2018,Drug Poisoning,"2,324","6,042,153",38.46,37.06,"48,723"
+Maryland,2018,Non-Drug Poisoning,96,"6,042,153",1.59,1.51,"1,955"
+Maryland,2018,Struck by / against,17**,"6,042,153",0.28**,0.27**,234
+Maryland,2018,Suffocation,320,"6,042,153",5.3,5.02,"6,194"
+Maryland,2018,"Motor vehicle, traffic",509,"6,042,153",8.42,8.25,"11,624"
+Maryland,2018,"Pedal cyclist, other",--,"6,042,153",--,--,--
+Maryland,2018,"Pedestrian, other",11**,"6,042,153",0.18**,0.15**,213
+Maryland,2018,"Transport, other land",--,"6,042,153",--,--,--
+Maryland,2018,"Transport, other (excl. drown by water transp)",--,"6,042,153",--,--,--
+Maryland,2018,Other specified and classifiable,34,"6,042,153",0.56,0.53,717
+Maryland,2018,Other specified / NEC,31,"6,042,153",0.51,0.52,474
+Maryland,2018,Unspecified,156,"6,042,153",2.58,2.39,"2,210"
+Maryland,2017,Cut/Pierce,54,"6,028,186",0.9,0.94,"1,532"
+Maryland,2017,Drowning (includes water transport),72,"6,028,186",1.19,1.21,"2,105"
+Maryland,2017,Fall,779,"6,028,186",12.92,11.13,"2,049"
+Maryland,2017,Fire/Flame,64,"6,028,186",1.06,0.98,"1,207"
+Maryland,2017,Hot object/Substance,--,"6,028,186",--,--,--
+Maryland,2017,Firearm,742,"6,028,186",12.31,12.32,"20,514"
+Maryland,2017,Machinery,--,"6,028,186",--,--,--
+Maryland,2017,Natural/Environmental,25,"6,028,186",0.42,0.37,263
+Maryland,2017,Drug Poisoning,"2,247","6,028,186",37.28,36.33,"50,243"
+Maryland,2017,Non-Drug Poisoning,83,"6,028,186",1.38,1.3,"1,440"
+Maryland,2017,Struck by / against,13**,"6,028,186",0.22**,0.21**,219
+Maryland,2017,Suffocation,330,"6,028,186",5.47,5.22,"6,537"
+Maryland,2017,"Motor vehicle, traffic",567,"6,028,186",9.41,9.09,"12,439"
+Maryland,2017,"Pedal cyclist, other",--,"6,028,186",--,--,--
+Maryland,2017,"Pedestrian, other",12**,"6,028,186",0.20**,0.19**,233
+Maryland,2017,"Transport, other land",18**,"6,028,186",0.30**,0.31**,465
+Maryland,2017,"Transport, other (excl. drown by water transp)",--,"6,028,186",--,--,--
+Maryland,2017,Other specified and classifiable,26,"6,028,186",0.43,0.45,820
+Maryland,2017,Other specified / NEC,39,"6,028,186",0.65,0.61,543
+Maryland,2017,Unspecified,135,"6,028,186",2.24,2.07,"2,231"
+Maryland,2016,Cut/Pierce,57,"6,007,014",0.95,0.98,"1,443"
+Maryland,2016,Drowning (includes water transport),76,"6,007,014",1.27,1.22,"1,792"
+Maryland,2016,Fall,723,"6,007,014",12.04,10.67,"1,996"
+Maryland,2016,Fire/Flame,53,"6,007,014",0.88,0.79,917
+Maryland,2016,Hot object/Substance,--,"6,007,014",--,--,--
+Maryland,2016,Firearm,707,"6,007,014",11.77,11.88,"19,826"
+Maryland,2016,Machinery,--,"6,007,014",--,--,--
+Maryland,2016,Natural/Environmental,32,"6,007,014",0.53,0.47,376
+Maryland,2016,Drug Poisoning,"2,044","6,007,014",34.03,33.19,"45,992"
+Maryland,2016,Non-Drug Poisoning,102,"6,007,014",1.7,1.67,"2,250"
+Maryland,2016,Struck by / against,19**,"6,007,014",0.32**,0.30**,370
+Maryland,2016,Suffocation,267,"6,007,014",4.45,4.3,"5,347"
+Maryland,2016,"Motor vehicle, traffic",556,"6,007,014",9.26,9.08,"12,995"
+Maryland,2016,"Pedal cyclist, other",--,"6,007,014",--,--,--
+Maryland,2016,"Pedestrian, other",13**,"6,007,014",0.22**,0.22**,390
+Maryland,2016,"Transport, other land",21,"6,007,014",0.35,0.34,484
+Maryland,2016,"Transport, other (excl. drown by water transp)",--,"6,007,014",--,--,--
+Maryland,2016,Other specified and classifiable,44,"6,007,014",0.73,0.71,"1,091"
+Maryland,2016,Other specified / NEC,39,"6,007,014",0.65,0.61,546
+Maryland,2016,Unspecified,130,"6,007,014",2.16,2.08,"2,478"
+Maryland,2015,Cut/Pierce,57,"5,988,528",0.95,0.93,"1,603"
+Maryland,2015,Drowning (includes water transport),60,"5,988,528",1,0.97,"1,498"
+Maryland,2015,Fall,640,"5,988,528",10.69,9.71,"1,768"
+Maryland,2015,Fire/Flame,54,"5,988,528",0.9,0.83,"1,094"
+Maryland,2015,Hot object/Substance,--,"5,988,528",--,--,--
+Maryland,2015,Firearm,708,"5,988,528",11.82,11.89,"19,627"
+Maryland,2015,Machinery,--,"5,988,528",--,--,--
+Maryland,2015,Natural/Environmental,19**,"5,988,528",0.32**,0.29**,171
+Maryland,2015,Drug Poisoning,"1,285","5,988,528",21.46,21.03,"29,087"
+Maryland,2015,Non-Drug Poisoning,85,"5,988,528",1.42,1.37,"1,943"
+Maryland,2015,Struck by / against,--,"5,988,528",--,--,--
+Maryland,2015,Suffocation,252,"5,988,528",4.21,4.04,"5,295"
+Maryland,2015,"Motor vehicle, traffic",507,"5,988,528",8.47,8.08,"11,338"
+Maryland,2015,"Pedal cyclist, other",--,"5,988,528",--,--,--
+Maryland,2015,"Pedestrian, other",--,"5,988,528",--,--,--
+Maryland,2015,"Transport, other land",36,"5,988,528",0.6,0.58,"1,069"
+Maryland,2015,"Transport, other (excl. drown by water transp)",12**,"5,988,528",0.20**,0.18**,269
+Maryland,2015,Other specified and classifiable,39,"5,988,528",0.65,0.64,"1,020"
+Maryland,2015,Other specified / NEC,38,"5,988,528",0.64,0.6,599
+Maryland,2015,Unspecified,144,"5,988,528",2.41,2.26,"2,155"
+Maryland,2014,Cut/Pierce,67,"5,960,064",1.12,1.14,"1,644"
+Maryland,2014,Drowning (includes water transport),72,"5,960,064",1.21,1.2,"1,937"
+Maryland,2014,Fall,589,"5,960,064",9.88,9.05,"1,706"
+Maryland,2014,Fire/Flame,51,"5,960,064",0.86,0.8,910
+Maryland,2014,Firearm,546,"5,960,064",9.16,9,"13,260"
+Maryland,2014,Machinery,--,"5,960,064",--,--,--
+Maryland,2014,Natural/Environmental,31,"5,960,064",0.52,0.51,425
+Maryland,2014,Drug Poisoning,"1,070","5,960,064",17.95,17.42,"23,834"
+Maryland,2014,Non-Drug Poisoning,79,"5,960,064",1.33,1.28,"1,496"
+Maryland,2014,Struck by / against,13**,"5,960,064",0.22**,0.21**,183
+Maryland,2014,Suffocation,269,"5,960,064",4.51,4.41,"5,908"
+Maryland,2014,"Motor vehicle, traffic",459,"5,960,064",7.7,7.45,"10,552"
+Maryland,2014,"Pedal cyclist, other",--,"5,960,064",--,--,--
+Maryland,2014,"Pedestrian, other",15**,"5,960,064",0.25**,0.24**,299
+Maryland,2014,"Transport, other land",13**,"5,960,064",0.22**,0.19**,211
+Maryland,2014,"Transport, other (excl. drown by water transp)",--,"5,960,064",--,--,--
+Maryland,2014,Other specified and classifiable,27,"5,960,064",0.45,0.44,553
+Maryland,2014,Other specified / NEC,36,"5,960,064",0.6,0.57,553
+Maryland,2014,Unspecified,129,"5,960,064",2.16,2.1,"2,481"
+Maryland,2013,Cut/Pierce,62,"5,925,197",1.05,1,"1,551"
+Maryland,2013,Drowning (includes water transport),67,"5,925,197",1.13,1.09,"1,752"
+Maryland,2013,Fall,567,"5,925,197",9.57,8.83,"1,775"
+Maryland,2013,Fire/Flame,65,"5,925,197",1.1,1.03,903
+Maryland,2013,Firearm,578,"5,925,197",9.76,9.64,"15,747"
+Maryland,2013,Machinery,--,"5,925,197",--,--,--
+Maryland,2013,Natural/Environmental,25,"5,925,197",0.42,0.35,240
+Maryland,2013,Overexertion,--,"5,925,197",--,--,--
+Maryland,2013,Drug Poisoning,892,"5,925,197",15.05,14.54,"20,700"
+Maryland,2013,Non-Drug Poisoning,71,"5,925,197",1.2,1.14,"1,454"
+Maryland,2013,Struck by / against,15**,"5,925,197",0.25**,0.23**,340
+Maryland,2013,Suffocation,268,"5,925,197",4.52,4.41,"5,678"
+Maryland,2013,"Motor vehicle, traffic",515,"5,925,197",8.69,8.45,"11,880"
+Maryland,2013,"Pedal cyclist, other",--,"5,925,197",--,--,--
+Maryland,2013,"Pedestrian, other",18**,"5,925,197",0.30**,0.30**,520
+Maryland,2013,"Transport, other land",10**,"5,925,197",0.17**,0.19**,127
+Maryland,2013,"Transport, other (excl. drown by water transp)",--,"5,925,197",--,--,--
+Maryland,2013,Other specified and classifiable,30,"5,925,197",0.51,0.52,801
+Maryland,2013,Other specified / NEC,42,"5,925,197",0.71,0.66,548
+Maryland,2013,Unspecified,101,"5,925,197",1.71,1.64,"1,635"
+Maryland,2012,Cut/Pierce,52,"5,888,375",0.88,0.88,"1,153"
+Maryland,2012,Drowning (includes water transport),73,"5,888,375",1.24,1.26,"2,288"
+Maryland,2012,Fall,581,"5,888,375",9.87,9.29,"1,911"
+Maryland,2012,Fire/Flame,40,"5,888,375",0.68,0.65,811
+Maryland,2012,Hot object/Substance,--,"5,888,375",--,--,--
+Maryland,2012,Firearm,589,"5,888,375",10,9.83,"15,191"
+Maryland,2012,Machinery,--,"5,888,375",--,--,--
+Maryland,2012,Natural/Environmental,26,"5,888,375",0.44,0.41,189
+Maryland,2012,Drug Poisoning,831,"5,888,375",14.11,13.64,"18,633"
+Maryland,2012,Non-Drug Poisoning,69,"5,888,375",1.17,1.13,"1,350"
+Maryland,2012,Struck by / against,24,"5,888,375",0.41,0.41,438
+Maryland,2012,Suffocation,249,"5,888,375",4.23,4.11,"5,362"
+Maryland,2012,"Motor vehicle, traffic",536,"5,888,375",9.1,8.89,"12,827"
+Maryland,2012,"Pedal cyclist, other",--,"5,888,375",--,--,--
+Maryland,2012,"Pedestrian, other",14**,"5,888,375",0.24**,0.23**,319
+Maryland,2012,"Transport, other land",10**,"5,888,375",0.17**,0.19**,315
+Maryland,2012,"Transport, other (excl. drown by water transp)",--,"5,888,375",--,--,--
+Maryland,2012,Other specified and classifiable,30,"5,888,375",0.51,0.49,531
+Maryland,2012,Other specified / NEC,48,"5,888,375",0.82,0.76,803
+Maryland,2012,Unspecified,116,"5,888,375",1.97,1.91,"2,137"
+Maryland,2011,Cut/Pierce,63,"5,840,241",1.08,1.04,"1,740"
+Maryland,2011,Drowning (includes water transport),92,"5,840,241",1.58,1.52,"2,301"
+Maryland,2011,Fall,544,"5,840,241",9.32,8.88,"1,747"
+Maryland,2011,Fire/Flame,47,"5,840,241",0.81,0.78,693
+Maryland,2011,Hot object/Substance,--,"5,840,241",--,--,--
+Maryland,2011,Firearm,542,"5,840,241",9.28,9.21,"14,811"
+Maryland,2011,Machinery,--,"5,840,241",--,--,--
+Maryland,2011,Natural/Environmental,20**,"5,840,241",0.34**,0.31**,227
+Maryland,2011,Overexertion,--,"5,840,241",--,--,--
+Maryland,2011,Drug Poisoning,707,"5,840,241",12.11,11.7,"16,679"
+Maryland,2011,Non-Drug Poisoning,77,"5,840,241",1.32,1.27,"1,472"
+Maryland,2011,Struck by / against,16**,"5,840,241",0.27**,0.26**,295
+Maryland,2011,Suffocation,252,"5,840,241",4.32,4.13,"4,982"
+Maryland,2011,"Motor vehicle, traffic",506,"5,840,241",8.66,8.42,"12,709"
+Maryland,2011,"Pedal cyclist, other",--,"5,840,241",--,--,--
+Maryland,2011,"Pedestrian, other",17**,"5,840,241",0.29**,0.29**,267
+Maryland,2011,"Transport, other land",--,"5,840,241",--,--,--
+Maryland,2011,"Transport, other (excl. drown by water transp)",--,"5,840,241",--,--,--
+Maryland,2011,Other specified and classifiable,33,"5,840,241",0.57,0.55,707
+Maryland,2011,Other specified / NEC,32,"5,840,241",0.55,0.55,479
+Maryland,2011,Unspecified,153,"5,840,241",2.62,2.57,"2,762"
+Maryland,2010,Cut/Pierce,61,"5,773,787",1.06,1.04,"1,490"
+Maryland,2010,Drowning (includes water transport),68,"5,773,787",1.18,1.14,"1,656"
+Maryland,2010,Fall,465,"5,773,787",8.05,7.92,"1,473"
+Maryland,2010,Fire/Flame,73,"5,773,787",1.26,1.2,"1,561"
+Maryland,2010,Hot object/Substance,--,"5,773,787",--,--,--
+Maryland,2010,Firearm,538,"5,773,787",9.32,9.26,"14,863"
+Maryland,2010,Machinery,--,"5,773,787",--,--,--
+Maryland,2010,Natural/Environmental,28,"5,773,787",0.49,0.47,452
+Maryland,2010,Drug Poisoning,650,"5,773,787",11.26,10.95,"15,666"
+Maryland,2010,Non-Drug Poisoning,78,"5,773,787",1.35,1.28,"1,581"
+Maryland,2010,Struck by / against,26,"5,773,787",0.45,0.43,501
+Maryland,2010,Suffocation,242,"5,773,787",4.19,4.07,"5,330"
+Maryland,2010,"Motor vehicle, traffic",488,"5,773,787",8.45,8.26,"11,601"
+Maryland,2010,"Pedal cyclist, other",--,"5,773,787",--,--,--
+Maryland,2010,"Pedestrian, other",37,"5,773,787",0.64,0.63,911
+Maryland,2010,"Transport, other land",16**,"5,773,787",0.28**,0.26**,370
+Maryland,2010,"Transport, other (excl. drown by water transp)",--,"5,773,787",--,--,--
+Maryland,2010,Other specified and classifiable,27,"5,773,787",0.47,0.46,559
+Maryland,2010,Other specified / NEC,39,"5,773,787",0.68,0.64,614
+Maryland,2010,Unspecified,104,"5,773,787",1.8,1.82,"2,314"
+Maryland,2009,Cut/Pierce,65,"5,730,388",1.13,1.13,"1,913"
+Maryland,2009,Drowning (includes water transport),56,"5,730,388",0.98,0.95,"1,368"
+Maryland,2009,Fall,443,"5,730,388",7.73,7.64,"2,009"
+Maryland,2009,Fire/Flame,59,"5,730,388",1.03,1,766
+Maryland,2009,Hot object/Substance,--,"5,730,388",--,--,--
+Maryland,2009,Firearm,586,"5,730,388",10.23,10.19,"15,918"
+Maryland,2009,Machinery,--,"5,730,388",--,--,--
+Maryland,2009,Natural/Environmental,21,"5,730,388",0.37,0.35,444
+Maryland,2009,Drug Poisoning,743,"5,730,388",12.97,12.4,"16,398"
+Maryland,2009,Non-Drug Poisoning,53,"5,730,388",0.93,0.92,"1,176"
+Maryland,2009,Struck by / against,17**,"5,730,388",0.30**,0.29**,500
+Maryland,2009,Suffocation,247,"5,730,388",4.31,4.25,"6,128"
+Maryland,2009,"Motor vehicle, traffic",592,"5,730,388",10.33,10.11,"14,072"
+Maryland,2009,"Pedal cyclist, other",--,"5,730,388",--,--,--
+Maryland,2009,"Pedestrian, other",26,"5,730,388",0.45,0.44,622
+Maryland,2009,"Transport, other land",21,"5,730,388",0.37,0.34,345
+Maryland,2009,"Transport, other (excl. drown by water transp)",10**,"5,730,388",0.18**,0.16**,165
+Maryland,2009,Other specified and classifiable,18**,"5,730,388",0.31**,0.30**,422
+Maryland,2009,Other specified / NEC,52,"5,730,388",0.91,0.9,"1,104"
+Maryland,2009,Unspecified,88,"5,730,388",1.54,1.49,"1,872"
+Maryland,2008,Cut/Pierce,63,"5,684,965",1.11,1.09,"1,917"
+Maryland,2008,Drowning (includes water transport),80,"5,684,965",1.41,1.4,"2,162"
+Maryland,2008,Fall,463,"5,684,965",8.14,8.14,"1,631"
+Maryland,2008,Fire/Flame,55,"5,684,965",0.97,0.95,"1,214"
+Maryland,2008,Hot object/Substance,--,"5,684,965",--,--,--
+Maryland,2008,Firearm,665,"5,684,965",11.7,11.61,"18,958"
+Maryland,2008,Machinery,--,"5,684,965",--,--,--
+Maryland,2008,Natural/Environmental,27,"5,684,965",0.48,0.47,369
+Maryland,2008,Drug Poisoning,693,"5,684,965",12.19,11.73,"15,486"
+Maryland,2008,Non-Drug Poisoning,55,"5,684,965",0.97,0.91,992
+Maryland,2008,Struck by / against,17**,"5,684,965",0.30**,0.30**,453
+Maryland,2008,Suffocation,207,"5,684,965",3.64,3.54,"5,043"
+Maryland,2008,"Motor vehicle, traffic",622,"5,684,965",10.94,10.92,"15,497"
+Maryland,2008,"Pedal cyclist, other",--,"5,684,965",--,--,--
+Maryland,2008,"Pedestrian, other",28,"5,684,965",0.49,0.49,611
+Maryland,2008,"Transport, other land",22,"5,684,965",0.39,0.41,383
+Maryland,2008,"Transport, other (excl. drown by water transp)",11**,"5,684,965",0.19**,0.19**,267
+Maryland,2008,Other specified and classifiable,30,"5,684,965",0.53,0.51,651
+Maryland,2008,Other specified / NEC,37,"5,684,965",0.65,0.62,797
+Maryland,2008,Unspecified,99,"5,684,965",1.74,1.68,"1,983"
+Maryland,2007,Cut/Pierce,78,"5,653,408",1.38,1.38,"2,138"
+Maryland,2007,Drowning (includes water transport),71,"5,653,408",1.26,1.22,"1,817"
+Maryland,2007,Fall,424,"5,653,408",7.5,7.58,"1,547"
+Maryland,2007,Fire/Flame,89,"5,653,408",1.57,1.6,"2,144"
+Maryland,2007,Hot object/Substance,--,"5,653,408",--,--,--
+Maryland,2007,Firearm,678,"5,653,408",11.99,12.04,"20,689"
+Maryland,2007,Machinery,--,"5,653,408",--,--,--
+Maryland,2007,Natural/Environmental,22,"5,653,408",0.39,0.37,206
+Maryland,2007,Drug Poisoning,769,"5,653,408",13.6,13.19,"17,930"
+Maryland,2007,Non-Drug Poisoning,82,"5,653,408",1.45,1.39,"1,766"
+Maryland,2007,Struck by / against,22,"5,653,408",0.39,0.37,489
+Maryland,2007,Suffocation,234,"5,653,408",4.14,4.12,"6,030"
+Maryland,2007,"Motor vehicle, traffic",650,"5,653,408",11.5,11.44,"17,889"
+Maryland,2007,"Pedal cyclist, other",--,"5,653,408",--,--,--
+Maryland,2007,"Pedestrian, other",20**,"5,653,408",0.35**,0.36**,520
+Maryland,2007,"Transport, other land",19**,"5,653,408",0.34**,0.34**,576
+Maryland,2007,"Transport, other (excl. drown by water transp)",--,"5,653,408",--,--,--
+Maryland,2007,Other specified and classifiable,33,"5,653,408",0.58,0.57,668
+Maryland,2007,Other specified / NEC,41,"5,653,408",0.73,0.74,758
+Maryland,2007,Unspecified,119,"5,653,408",2.11,2.08,"2,239"
+Maryland,2006,Cut/Pierce,82,"5,627,367",1.46,1.45,"2,410"
+Maryland,2006,Drowning (includes water transport),83,"5,627,367",1.48,1.48,"2,462"
+Maryland,2006,Fall,392,"5,627,367",6.97,7.15,"1,879"
+Maryland,2006,Fire/Flame,50,"5,627,367",0.89,0.87,868
+Maryland,2006,Firearm,678,"5,627,367",12.05,12.1,"19,987"
+Maryland,2006,Machinery,--,"5,627,367",--,--,--
+Maryland,2006,Natural/Environmental,25,"5,627,367",0.44,0.44,319
+Maryland,2006,Drug Poisoning,762,"5,627,367",13.54,13.12,"18,496"
+Maryland,2006,Non-Drug Poisoning,26,"5,627,367",0.46,0.45,564
+Maryland,2006,Struck by / against,16**,"5,627,367",0.28**,0.28**,564
+Maryland,2006,Suffocation,200,"5,627,367",3.55,3.57,"4,965"
+Maryland,2006,"Motor vehicle, traffic",710,"5,627,367",12.62,12.56,"17,809"
+Maryland,2006,"Pedal cyclist, other",--,"5,627,367",--,--,--
+Maryland,2006,"Pedestrian, other",16**,"5,627,367",0.28**,0.28**,449
+Maryland,2006,"Transport, other land",24,"5,627,367",0.43,0.43,504
+Maryland,2006,"Transport, other (excl. drown by water transp)",--,"5,627,367",--,--,--
+Maryland,2006,Other specified and classifiable,33,"5,627,367",0.59,0.59,787
+Maryland,2006,Other specified / NEC,46,"5,627,367",0.82,0.81,"1,073"
+Maryland,2006,Unspecified,102,"5,627,367",1.81,1.79,"2,184"
+Maryland,2005,Cut/Pierce,84,"5,592,379",1.5,1.5,"2,387"
+Maryland,2005,Drowning (includes water transport),79,"5,592,379",1.41,1.41,"2,020"
+Maryland,2005,Fall,323,"5,592,379",5.78,6.01,"1,350"
+Maryland,2005,Fire/Flame,64,"5,592,379",1.14,1.18,"1,251"
+Maryland,2005,Firearm,657,"5,592,379",11.75,11.86,"19,912"
+Maryland,2005,Machinery,11**,"5,592,379",0.20**,0.19**,211
+Maryland,2005,Natural/Environmental,36,"5,592,379",0.64,0.62,507
+Maryland,2005,Drug Poisoning,656,"5,592,379",11.73,11.39,"15,329"
+Maryland,2005,Non-Drug Poisoning,41,"5,592,379",0.73,0.73,784
+Maryland,2005,Struck by / against,15**,"5,592,379",0.27**,0.26**,471
+Maryland,2005,Suffocation,211,"5,592,379",3.77,3.84,"4,845"
+Maryland,2005,"Motor vehicle, traffic",607,"5,592,379",10.85,10.85,"15,570"
+Maryland,2005,"Pedal cyclist, other",--,"5,592,379",--,--,--
+Maryland,2005,"Pedestrian, other",26,"5,592,379",0.47,0.47,695
+Maryland,2005,"Transport, other land",36,"5,592,379",0.64,0.64,887
+Maryland,2005,"Transport, other (excl. drown by water transp)",--,"5,592,379",--,--,--
+Maryland,2005,Other specified and classifiable,33,"5,592,379",0.59,0.59,713
+Maryland,2005,Other specified / NEC,41,"5,592,379",0.73,0.74,849
+Maryland,2005,Unspecified,121,"5,592,379",2.16,2.19,"2,381"
+Maryland,2004,Cut/Pierce,72,"5,546,935",1.3,1.3,"1,976"
+Maryland,2004,Drowning (includes water transport),75,"5,546,935",1.35,1.35,"1,762"
+Maryland,2004,Fall,335,"5,546,935",6.04,6.38,"1,447"
+Maryland,2004,Fire/Flame,77,"5,546,935",1.39,1.42,"1,635"
+Maryland,2004,Firearm,656,"5,546,935",11.83,11.93,"19,365"
+Maryland,2004,Machinery,12**,"5,546,935",0.22**,0.21**,198
+Maryland,2004,Natural/Environmental,29,"5,546,935",0.52,0.54,252
+Maryland,2004,Drug Poisoning,676,"5,546,935",12.19,11.85,"16,064"
+Maryland,2004,Non-Drug Poisoning,31,"5,546,935",0.56,0.52,514
+Maryland,2004,Struck by / against,21,"5,546,935",0.38,0.38,561
+Maryland,2004,Suffocation,204,"5,546,935",3.68,3.68,"5,024"
+Maryland,2004,"Motor vehicle, traffic",661,"5,546,935",11.92,11.96,"17,477"
+Maryland,2004,"Pedestrian, other",30,"5,546,935",0.54,0.56,924
+Maryland,2004,"Transport, other land",33,"5,546,935",0.6,0.6,855
+Maryland,2004,"Transport, other (excl. drown by water transp)",--,"5,546,935",--,--,--
+Maryland,2004,Other specified and classifiable,22,"5,546,935",0.4,0.38,487
+Maryland,2004,Other specified / NEC,40,"5,546,935",0.72,0.72,756
+Maryland,2004,Unspecified,102,"5,546,935",1.84,1.89,"1,982"
+Maryland,2003,Cut/Pierce,82,"5,496,269",1.49,1.49,"2,577"
+Maryland,2003,Drowning (includes water transport),82,"5,496,269",1.49,1.5,"2,315"
+Maryland,2003,Fall,322,"5,496,269",5.86,6.27,"1,685"
+Maryland,2003,Fire/Flame,55,"5,496,269",1,1.02,"1,130"
+Maryland,2003,Hot object/Substance,--,"5,496,269",--,--,--
+Maryland,2003,Firearm,648,"5,496,269",11.79,11.96,"19,211"
+Maryland,2003,Machinery,--,"5,496,269",--,--,--
+Maryland,2003,Natural/Environmental,21,"5,496,269",0.38,0.38,256
+Maryland,2003,Drug Poisoning,779,"5,496,269",14.17,13.75,"18,505"
+Maryland,2003,Non-Drug Poisoning,66,"5,496,269",1.2,1.18,"1,569"
+Maryland,2003,Struck by / against,17**,"5,496,269",0.31**,0.31**,354
+Maryland,2003,Suffocation,199,"5,496,269",3.62,3.66,"5,139"
+Maryland,2003,"Motor vehicle, traffic",692,"5,496,269",12.59,12.68,"18,126"
+Maryland,2003,"Pedal cyclist, other",--,"5,496,269",--,--,--
+Maryland,2003,"Pedestrian, other",21,"5,496,269",0.38,0.38,469
+Maryland,2003,"Transport, other land",28,"5,496,269",0.51,0.53,665
+Maryland,2003,"Transport, other (excl. drown by water transp)",--,"5,496,269",--,--,--
+Maryland,2003,Other specified and classifiable,25,"5,496,269",0.46,0.45,736
+Maryland,2003,Other specified / NEC,47,"5,496,269",0.86,0.83,"1,220"
+Maryland,2003,Unspecified,99,"5,496,269",1.8,1.86,"1,810"
+Maryland,2002,Cut/Pierce,79,"5,440,389",1.45,1.45,"2,217"
+Maryland,2002,Drowning (includes water transport),65,"5,440,389",1.2,1.21,"1,820"
+Maryland,2002,Fall,273,"5,440,389",5.02,5.44,"1,363"
+Maryland,2002,Fire/Flame,56,"5,440,389",1.03,1.06,"1,272"
+Maryland,2002,Hot object/Substance,--,"5,440,389",--,--,--
+Maryland,2002,Firearm,615,"5,440,389",11.3,11.54,"18,466"
+Maryland,2002,Machinery,--,"5,440,389",--,--,--
+Maryland,2002,Natural/Environmental,44,"5,440,389",0.81,0.83,455
+Maryland,2002,Drug Poisoning,723,"5,440,389",13.29,12.87,"17,864"
+Maryland,2002,Non-Drug Poisoning,37,"5,440,389",0.68,0.68,701
+Maryland,2002,Struck by / against,39,"5,440,389",0.72,0.71,936
+Maryland,2002,Suffocation,196,"5,440,389",3.6,3.67,"4,932"
+Maryland,2002,"Motor vehicle, traffic",707,"5,440,389",13,13.16,"18,718"
+Maryland,2002,"Pedal cyclist, other",--,"5,440,389",--,--,--
+Maryland,2002,"Pedestrian, other",11**,"5,440,389",0.20**,0.20**,262
+Maryland,2002,"Transport, other land",12**,"5,440,389",0.22**,0.23**,309
+Maryland,2002,"Transport, other (excl. drown by water transp)",12**,"5,440,389",0.22**,0.21**,225
+Maryland,2002,Other specified and classifiable,44,"5,440,389",0.81,0.81,"1,361"
+Maryland,2002,Other specified / NEC,37,"5,440,389",0.68,0.68,919
+Maryland,2002,Unspecified,76,"5,440,389",1.4,1.43,"1,176"
+Maryland,2001,Cut/Pierce,56,"5,374,691",1.04,1.05,"1,655"
+Maryland,2001,Drowning (includes water transport),70,"5,374,691",1.3,1.31,"1,907"
+Maryland,2001,Fall,233,"5,374,691",4.34,4.68,"1,705"
+Maryland,2001,Fire/Flame,78,"5,374,691",1.45,1.48,"1,808"
+Maryland,2001,Hot object/Substance,--,"5,374,691",--,--,--
+Maryland,2001,Firearm,607,"5,374,691",11.29,11.47,"18,668"
+Maryland,2001,Machinery,--,"5,374,691",--,--,--
+Maryland,2001,Natural/Environmental,19**,"5,374,691",0.35**,0.36**,193
+Maryland,2001,Drug Poisoning,639,"5,374,691",11.89,11.5,"15,927"
+Maryland,2001,Non-Drug Poisoning,48,"5,374,691",0.89,0.88,"1,055"
+Maryland,2001,Struck by / against,41,"5,374,691",0.76,0.75,"1,043"
+Maryland,2001,Suffocation,175,"5,374,691",3.26,3.34,"4,128"
+Maryland,2001,"Motor vehicle, traffic",689,"5,374,691",12.82,13.07,"17,956"
+Maryland,2001,"Pedal cyclist, other",--,"5,374,691",--,--,--
+Maryland,2001,"Pedestrian, other",35,"5,374,691",0.65,0.66,872
+Maryland,2001,"Transport, other land",22,"5,374,691",0.41,0.42,592
+Maryland,2001,"Transport, other (excl. drown by water transp)",60,"5,374,691",1.12,1.07,"1,155"
+Maryland,2001,Other specified and classifiable,26,"5,374,691",0.48,0.48,877
+Maryland,2001,Other specified / NEC,49,"5,374,691",0.91,0.92,"1,196"
+Maryland,2001,Unspecified,81,"5,374,691",1.51,1.63,"1,000"
+Total,,,"81,176","121,993,098",66.54,65.04,"1,672,246"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Maryland,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

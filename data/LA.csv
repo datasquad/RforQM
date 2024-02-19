@@ -1,0 +1,436 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Louisiana,2021,Cut/Pierce,59,"4,624,047",1.28,1.3,"1,451"
+Louisiana,2021,Drowning (includes water transport),138,"4,624,047",2.98,3.04,"3,809"
+Louisiana,2021,Fall,462,"4,624,047",9.99,9.05,"1,374"
+Louisiana,2021,Fire/Flame,78,"4,624,047",1.69,1.46,918
+Louisiana,2021,Hot object/Substance,--,"4,624,047",--,--,--
+Louisiana,2021,Firearm,"1,314","4,624,047",28.42,29.06,"38,051"
+Louisiana,2021,Machinery,--,"4,624,047",--,--,--
+Louisiana,2021,Natural/Environmental,50,"4,624,047",1.08,0.91,477
+Louisiana,2021,Drug Poisoning,"2,463","4,624,047",53.27,56.23,"56,183"
+Louisiana,2021,Non-Drug Poisoning,66,"4,624,047",1.43,1.46,"1,249"
+Louisiana,2021,Struck by / against,35,"4,624,047",0.76,0.71,579
+Louisiana,2021,Suffocation,324,"4,624,047",7.01,7.23,"9,215"
+Louisiana,2021,"Motor vehicle, traffic","1,004","4,624,047",21.71,21.95,"24,190"
+Louisiana,2021,"Pedal cyclist, other",--,"4,624,047",--,--,--
+Louisiana,2021,"Pedestrian, other",19**,"4,624,047",0.41**,0.39**,412
+Louisiana,2021,"Transport, other land",23,"4,624,047",0.5,0.44,499
+Louisiana,2021,"Transport, other (excl. drown by water transp)",13**,"4,624,047",0.28**,0.24**,248
+Louisiana,2021,Other specified and classifiable,33,"4,624,047",0.71,0.73,964
+Louisiana,2021,Other specified / NEC,44,"4,624,047",0.95,0.91,655
+Louisiana,2021,Unspecified,172,"4,624,047",3.72,3.42,"1,751"
+Louisiana,2020,Cut/Pierce,64,"4,651,203",1.38,1.41,"1,404"
+Louisiana,2020,Drowning (includes water transport),121,"4,651,203",2.6,2.71,"3,870"
+Louisiana,2020,Fall,367,"4,651,203",7.89,7.16,"1,126"
+Louisiana,2020,Fire/Flame,86,"4,651,203",1.85,1.65,"1,185"
+Louisiana,2020,Hot object/Substance,--,"4,651,203",--,--,--
+Louisiana,2020,Firearm,"1,183","4,651,203",25.43,26.15,"34,248"
+Louisiana,2020,Machinery,--,"4,651,203",--,--,--
+Louisiana,2020,Natural/Environmental,45,"4,651,203",0.97,0.87,756
+Louisiana,2020,Drug Poisoning,"1,896","4,651,203",40.76,42.64,"42,989"
+Louisiana,2020,Non-Drug Poisoning,60,"4,651,203",1.29,1.26,"1,098"
+Louisiana,2020,Struck by / against,31,"4,651,203",0.67,0.59,309
+Louisiana,2020,Suffocation,339,"4,651,203",7.29,7.39,"9,469"
+Louisiana,2020,"Motor vehicle, traffic",821,"4,651,203",17.65,17.48,"18,832"
+Louisiana,2020,"Pedal cyclist, other",--,"4,651,203",--,--,--
+Louisiana,2020,"Pedestrian, other",25,"4,651,203",0.54,0.53,605
+Louisiana,2020,"Transport, other land",32,"4,651,203",0.69,0.69,649
+Louisiana,2020,"Transport, other (excl. drown by water transp)",23,"4,651,203",0.49,0.49,506
+Louisiana,2020,Other specified and classifiable,41,"4,651,203",0.88,0.85,794
+Louisiana,2020,Other specified / NEC,41,"4,651,203",0.88,0.86,702
+Louisiana,2020,Unspecified,174,"4,651,203",3.74,3.47,"1,598"
+Louisiana,2019,Cut/Pierce,44,"4,658,285",0.95,0.9,829
+Louisiana,2019,Drowning (includes water transport),115,"4,658,285",2.47,2.42,"2,863"
+Louisiana,2019,Fall,338,"4,658,285",7.26,6.35,"1,180"
+Louisiana,2019,Fire/Flame,76,"4,658,285",1.63,1.47,"1,108"
+Louisiana,2019,Hot object/Substance,--,"4,658,285",--,--,--
+Louisiana,2019,Firearm,"1,013","4,658,285",21.75,22.08,"26,661"
+Louisiana,2019,Machinery,--,"4,658,285",--,--,--
+Louisiana,2019,Natural/Environmental,21,"4,658,285",0.45,0.42,434
+Louisiana,2019,Drug Poisoning,"1,267","4,658,285",27.2,28.36,"27,443"
+Louisiana,2019,Non-Drug Poisoning,57,"4,658,285",1.22,1.24,"1,247"
+Louisiana,2019,Struck by / against,16**,"4,658,285",0.34**,0.37**,276
+Louisiana,2019,Suffocation,366,"4,658,285",7.86,8,"10,014"
+Louisiana,2019,"Motor vehicle, traffic",728,"4,658,285",15.63,15.76,"16,522"
+Louisiana,2019,"Pedal cyclist, other",10**,"4,658,285",0.22**,0.18**,166
+Louisiana,2019,"Pedestrian, other",14**,"4,658,285",0.30**,0.29**,375
+Louisiana,2019,"Transport, other land",30,"4,658,285",0.64,0.66,731
+Louisiana,2019,"Transport, other (excl. drown by water transp)",23,"4,658,285",0.49,0.45,441
+Louisiana,2019,Other specified and classifiable,43,"4,658,285",0.92,0.97,"1,058"
+Louisiana,2019,Other specified / NEC,41,"4,658,285",0.88,0.8,668
+Louisiana,2019,Unspecified,174,"4,658,285",3.74,3.34,"1,843"
+Louisiana,2018,Cut/Pierce,39,"4,664,450",0.84,0.81,983
+Louisiana,2018,Drowning (includes water transport),97,"4,664,450",2.08,2.01,"2,712"
+Louisiana,2018,Fall,360,"4,664,450",7.72,6.92,"1,294"
+Louisiana,2018,Fire/Flame,90,"4,664,450",1.93,1.79,"1,558"
+Louisiana,2018,Hot object/Substance,--,"4,664,450",--,--,--
+Louisiana,2018,Firearm,991,"4,664,450",21.25,21.29,"25,877"
+Louisiana,2018,Machinery,--,"4,664,450",--,--,--
+Louisiana,2018,Natural/Environmental,39,"4,664,450",0.84,0.77,489
+Louisiana,2018,Drug Poisoning,"1,140","4,664,450",24.44,25.53,"25,512"
+Louisiana,2018,Non-Drug Poisoning,44,"4,664,450",0.94,0.93,965
+Louisiana,2018,Struck by / against,23,"4,664,450",0.49,0.45,352
+Louisiana,2018,Suffocation,328,"4,664,450",7.03,6.98,"8,993"
+Louisiana,2018,"Motor vehicle, traffic",788,"4,664,450",16.89,16.73,"19,198"
+Louisiana,2018,"Pedal cyclist, other",12**,"4,664,450",0.26**,0.22**,141
+Louisiana,2018,"Pedestrian, other",18**,"4,664,450",0.39**,0.37**,332
+Louisiana,2018,"Transport, other land",24,"4,664,450",0.52,0.48,322
+Louisiana,2018,"Transport, other (excl. drown by water transp)",--,"4,664,450",--,--,--
+Louisiana,2018,Other specified and classifiable,46,"4,664,450",0.99,0.98,"1,041"
+Louisiana,2018,Other specified / NEC,29,"4,664,450",0.62,0.61,574
+Louisiana,2018,Unspecified,123,"4,664,450",2.64,2.45,"1,290"
+Louisiana,2017,Cut/Pierce,54,"4,673,673",1.16,1.19,"1,335"
+Louisiana,2017,Drowning (includes water transport),122,"4,673,673",2.61,2.57,"3,310"
+Louisiana,2017,Fall,348,"4,673,673",7.45,6.84,"1,524"
+Louisiana,2017,Fire/Flame,79,"4,673,673",1.69,1.55,"1,371"
+Louisiana,2017,Firearm,"1,008","4,673,673",21.57,21.68,"27,350"
+Louisiana,2017,Machinery,--,"4,673,673",--,--,--
+Louisiana,2017,Natural/Environmental,21,"4,673,673",0.45,0.43,502
+Louisiana,2017,Drug Poisoning,"1,108","4,673,673",23.71,24.61,"25,298"
+Louisiana,2017,Non-Drug Poisoning,56,"4,673,673",1.2,1.16,"1,239"
+Louisiana,2017,Struck by / against,21,"4,673,673",0.45,0.4,326
+Louisiana,2017,Suffocation,360,"4,673,673",7.7,7.62,"10,035"
+Louisiana,2017,"Motor vehicle, traffic",793,"4,673,673",16.97,16.99,"19,987"
+Louisiana,2017,"Pedal cyclist, other",10**,"4,673,673",0.21**,0.17**,167
+Louisiana,2017,"Pedestrian, other",14**,"4,673,673",0.30**,0.27**,289
+Louisiana,2017,"Transport, other land",31,"4,673,673",0.66,0.63,629
+Louisiana,2017,"Transport, other (excl. drown by water transp)",--,"4,673,673",--,--,--
+Louisiana,2017,Other specified and classifiable,47,"4,673,673",1.01,1.01,"1,103"
+Louisiana,2017,Other specified / NEC,39,"4,673,673",0.83,0.83,582
+Louisiana,2017,Unspecified,147,"4,673,673",3.15,2.93,"1,927"
+Louisiana,2016,Cut/Pierce,38,"4,681,346",0.81,0.78,"1,047"
+Louisiana,2016,Drowning (includes water transport),122,"4,681,346",2.61,2.57,"3,708"
+Louisiana,2016,Fall,327,"4,681,346",6.99,6.45,"1,038"
+Louisiana,2016,Fire/Flame,67,"4,681,346",1.43,1.31,"1,239"
+Louisiana,2016,Hot object/Substance,--,"4,681,346",--,--,--
+Louisiana,2016,Firearm,987,"4,681,346",21.08,21.2,"26,422"
+Louisiana,2016,Machinery,12**,"4,681,346",0.26**,0.22**,129
+Louisiana,2016,Natural/Environmental,31,"4,681,346",0.66,0.63,458
+Louisiana,2016,Drug Poisoning,996,"4,681,346",21.28,21.91,"22,768"
+Louisiana,2016,Non-Drug Poisoning,57,"4,681,346",1.22,1.25,"1,313"
+Louisiana,2016,Struck by / against,17**,"4,681,346",0.36**,0.37**,349
+Louisiana,2016,Suffocation,349,"4,681,346",7.46,7.37,"9,859"
+Louisiana,2016,"Motor vehicle, traffic",807,"4,681,346",17.24,17.08,"19,758"
+Louisiana,2016,"Pedal cyclist, other",--,"4,681,346",--,--,--
+Louisiana,2016,"Pedestrian, other",23,"4,681,346",0.49,0.5,723
+Louisiana,2016,"Transport, other land",21,"4,681,346",0.45,0.5,606
+Louisiana,2016,"Transport, other (excl. drown by water transp)",17**,"4,681,346",0.36**,0.36**,318
+Louisiana,2016,Other specified and classifiable,35,"4,681,346",0.75,0.75,886
+Louisiana,2016,Other specified / NEC,35,"4,681,346",0.75,0.72,572
+Louisiana,2016,Unspecified,158,"4,681,346",3.38,3.19,"1,784"
+Louisiana,2015,Cut/Pierce,49,"4,666,998",1.05,1.08,"1,220"
+Louisiana,2015,Drowning (includes water transport),135,"4,666,998",2.89,2.88,"4,331"
+Louisiana,2015,Fall,350,"4,666,998",7.5,7.11,"1,238"
+Louisiana,2015,Fire/Flame,74,"4,666,998",1.59,1.41,866
+Louisiana,2015,Hot object/Substance,--,"4,666,998",--,--,--
+Louisiana,2015,Firearm,952,"4,666,998",20.4,20.37,"24,158"
+Louisiana,2015,Machinery,10**,"4,666,998",0.21**,0.20**,114
+Louisiana,2015,Natural/Environmental,22,"4,666,998",0.47,0.44,331
+Louisiana,2015,Drug Poisoning,861,"4,666,998",18.45,19.01,"19,613"
+Louisiana,2015,Non-Drug Poisoning,66,"4,666,998",1.41,1.43,"1,409"
+Louisiana,2015,Struck by / against,17**,"4,666,998",0.36**,0.32**,250
+Louisiana,2015,Suffocation,349,"4,666,998",7.48,7.49,"10,119"
+Louisiana,2015,"Motor vehicle, traffic",782,"4,666,998",16.76,16.42,"19,182"
+Louisiana,2015,"Pedal cyclist, other",--,"4,666,998",--,--,--
+Louisiana,2015,"Pedestrian, other",16**,"4,666,998",0.34**,0.34**,437
+Louisiana,2015,"Transport, other land",20**,"4,666,998",0.43**,0.44**,564
+Louisiana,2015,"Transport, other (excl. drown by water transp)",10**,"4,666,998",0.21**,0.23**,200
+Louisiana,2015,Other specified and classifiable,42,"4,666,998",0.9,0.91,"1,253"
+Louisiana,2015,Other specified / NEC,33,"4,666,998",0.71,0.67,421
+Louisiana,2015,Unspecified,151,"4,666,998",3.24,3.1,"1,772"
+Louisiana,2014,Cut/Pierce,54,"4,645,938",1.16,1.14,"1,215"
+Louisiana,2014,Drowning (includes water transport),117,"4,645,938",2.52,2.43,"3,582"
+Louisiana,2014,Fall,274,"4,645,938",5.9,5.6,990
+Louisiana,2014,Fire/Flame,77,"4,645,938",1.66,1.59,"1,246"
+Louisiana,2014,Hot object/Substance,--,"4,645,938",--,--,--
+Louisiana,2014,Firearm,896,"4,645,938",19.29,18.98,"23,074"
+Louisiana,2014,Machinery,12**,"4,645,938",0.26**,0.28**,269
+Louisiana,2014,Natural/Environmental,18**,"4,645,938",0.39**,0.36**,220
+Louisiana,2014,Drug Poisoning,777,"4,645,938",16.72,16.93,"17,085"
+Louisiana,2014,Non-Drug Poisoning,55,"4,645,938",1.18,1.16,979
+Louisiana,2014,Struck by / against,18**,"4,645,938",0.39**,0.39**,294
+Louisiana,2014,Suffocation,300,"4,645,938",6.46,6.48,"8,614"
+Louisiana,2014,"Motor vehicle, traffic",768,"4,645,938",16.53,16.31,"19,550"
+Louisiana,2014,"Pedal cyclist, other",--,"4,645,938",--,--,--
+Louisiana,2014,"Pedestrian, other",29,"4,645,938",0.62,0.6,"1,079"
+Louisiana,2014,"Transport, other land",25,"4,645,938",0.54,0.52,642
+Louisiana,2014,"Transport, other (excl. drown by water transp)",15**,"4,645,938",0.32**,0.33**,315
+Louisiana,2014,Other specified and classifiable,41,"4,645,938",0.88,0.87,"1,248"
+Louisiana,2014,Other specified / NEC,27,"4,645,938",0.58,0.55,391
+Louisiana,2014,Unspecified,145,"4,645,938",3.12,3.01,"1,794"
+Louisiana,2013,Cut/Pierce,40,"4,626,040",0.87,0.85,873
+Louisiana,2013,Drowning (includes water transport),88,"4,626,040",1.9,1.91,"2,750"
+Louisiana,2013,Fall,317,"4,626,040",6.85,6.81,"1,074"
+Louisiana,2013,Fire/Flame,59,"4,626,040",1.28,1.23,"1,003"
+Louisiana,2013,Hot object/Substance,--,"4,626,040",--,--,--
+Louisiana,2013,Firearm,886,"4,626,040",19.15,19.1,"24,075"
+Louisiana,2013,Machinery,11**,"4,626,040",0.24**,0.22**,212
+Louisiana,2013,Natural/Environmental,20**,"4,626,040",0.43**,0.45**,362
+Louisiana,2013,Drug Poisoning,809,"4,626,040",17.49,17.68,"18,000"
+Louisiana,2013,Non-Drug Poisoning,39,"4,626,040",0.84,0.85,812
+Louisiana,2013,Struck by / against,23,"4,626,040",0.5,0.46,401
+Louisiana,2013,Suffocation,256,"4,626,040",5.53,5.49,"7,474"
+Louisiana,2013,"Motor vehicle, traffic",727,"4,626,040",15.72,15.62,"17,786"
+Louisiana,2013,"Pedal cyclist, other",--,"4,626,040",--,--,--
+Louisiana,2013,"Pedestrian, other",17**,"4,626,040",0.37**,0.33**,267
+Louisiana,2013,"Transport, other land",33,"4,626,040",0.71,0.75,874
+Louisiana,2013,"Transport, other (excl. drown by water transp)",14**,"4,626,040",0.30**,0.30**,245
+Louisiana,2013,Other specified and classifiable,41,"4,626,040",0.89,0.91,"1,126"
+Louisiana,2013,Other specified / NEC,36,"4,626,040",0.78,0.74,437
+Louisiana,2013,Unspecified,152,"4,626,040",3.29,3.24,"1,960"
+Louisiana,2012,Cut/Pierce,61,"4,602,067",1.33,1.34,"1,773"
+Louisiana,2012,Drowning (includes water transport),107,"4,602,067",2.33,2.24,"2,928"
+Louisiana,2012,Fall,264,"4,602,067",5.74,5.74,"1,342"
+Louisiana,2012,Fire/Flame,56,"4,602,067",1.22,1.19,"1,133"
+Louisiana,2012,Hot object/Substance,--,"4,602,067",--,--,--
+Louisiana,2012,Firearm,845,"4,602,067",18.36,18.42,"23,191"
+Louisiana,2012,Machinery,13**,"4,602,067",0.28**,0.27**,137
+Louisiana,2012,Natural/Environmental,23,"4,602,067",0.5,0.51,446
+Louisiana,2012,Drug Poisoning,566,"4,602,067",12.3,12.33,"13,034"
+Louisiana,2012,Non-Drug Poisoning,42,"4,602,067",0.91,0.84,802
+Louisiana,2012,Struck by / against,17**,"4,602,067",0.37**,0.36**,354
+Louisiana,2012,Suffocation,272,"4,602,067",5.91,6.03,"7,125"
+Louisiana,2012,"Motor vehicle, traffic","1,022","4,602,067",22.21,21.67,"19,853"
+Louisiana,2012,"Pedal cyclist, other",--,"4,602,067",--,--,--
+Louisiana,2012,"Pedestrian, other",21,"4,602,067",0.46,0.48,490
+Louisiana,2012,"Transport, other land",21,"4,602,067",0.46,0.49,695
+Louisiana,2012,"Transport, other (excl. drown by water transp)",--,"4,602,067",--,--,--
+Louisiana,2012,Other specified and classifiable,56,"4,602,067",1.22,1.21,859
+Louisiana,2012,Other specified / NEC,28,"4,602,067",0.61,0.61,378
+Louisiana,2012,Unspecified,131,"4,602,067",2.85,2.92,"1,806"
+Louisiana,2011,Cut/Pierce,32,"4,576,244",0.7,0.67,756
+Louisiana,2011,Drowning (includes water transport),117,"4,576,244",2.56,2.52,"3,417"
+Louisiana,2011,Fall,205,"4,576,244",4.48,4.49,"1,026"
+Louisiana,2011,Fire/Flame,80,"4,576,244",1.75,1.71,"1,180"
+Louisiana,2011,Hot object/Substance,--,"4,576,244",--,--,--
+Louisiana,2011,Firearm,865,"4,576,244",18.9,18.76,"23,684"
+Louisiana,2011,Machinery,16**,"4,576,244",0.35**,0.32**,248
+Louisiana,2011,Natural/Environmental,25,"4,576,244",0.55,0.57,395
+Louisiana,2011,Drug Poisoning,601,"4,576,244",13.13,13.42,"13,767"
+Louisiana,2011,Non-Drug Poisoning,38,"4,576,244",0.83,0.8,726
+Louisiana,2011,Struck by / against,11**,"4,576,244",0.24**,0.26**,251
+Louisiana,2011,Suffocation,250,"4,576,244",5.46,5.54,"6,690"
+Louisiana,2011,"Motor vehicle, traffic",719,"4,576,244",15.71,15.48,"17,694"
+Louisiana,2011,"Pedal cyclist, other",--,"4,576,244",--,--,--
+Louisiana,2011,"Pedestrian, other",13**,"4,576,244",0.28**,0.31**,337
+Louisiana,2011,"Transport, other land",27,"4,576,244",0.59,0.57,666
+Louisiana,2011,"Transport, other (excl. drown by water transp)",12**,"4,576,244",0.26**,0.23**,109
+Louisiana,2011,Other specified and classifiable,44,"4,576,244",0.96,1.01,"1,186"
+Louisiana,2011,Other specified / NEC,43,"4,576,244",0.94,0.94,725
+Louisiana,2011,Unspecified,178,"4,576,244",3.89,3.82,"2,894"
+Louisiana,2010,Cut/Pierce,55,"4,533,500",1.21,1.22,"1,584"
+Louisiana,2010,Drowning (includes water transport),119,"4,533,500",2.63,2.63,"3,810"
+Louisiana,2010,Fall,208,"4,533,500",4.59,4.68,861
+Louisiana,2010,Fire/Flame,80,"4,533,500",1.77,1.78,"1,452"
+Louisiana,2010,Hot object/Substance,--,"4,533,500",--,--,--
+Louisiana,2010,Firearm,864,"4,533,500",19.06,19.11,"23,509"
+Louisiana,2010,Machinery,13**,"4,533,500",0.29**,0.26**,211
+Louisiana,2010,Natural/Environmental,35,"4,533,500",0.77,0.77,677
+Louisiana,2010,Drug Poisoning,591,"4,533,500",13.04,13.13,"14,256"
+Louisiana,2010,Non-Drug Poisoning,60,"4,533,500",1.32,1.35,"1,129"
+Louisiana,2010,Struck by / against,12**,"4,533,500",0.27**,0.25**,212
+Louisiana,2010,Suffocation,213,"4,533,500",4.7,4.73,"5,487"
+Louisiana,2010,"Motor vehicle, traffic",701,"4,533,500",15.46,15.38,"18,894"
+Louisiana,2010,"Pedal cyclist, other",--,"4,533,500",--,--,--
+Louisiana,2010,"Pedestrian, other",14**,"4,533,500",0.31**,0.29**,318
+Louisiana,2010,"Transport, other land",19**,"4,533,500",0.42**,0.42**,544
+Louisiana,2010,"Transport, other (excl. drown by water transp)",--,"4,533,500",--,--,--
+Louisiana,2010,Other specified and classifiable,32,"4,533,500",0.71,0.74,883
+Louisiana,2010,Other specified / NEC,31,"4,533,500",0.68,0.71,598
+Louisiana,2010,Unspecified,143,"4,533,500",3.15,3.17,"1,520"
+Louisiana,2009,Cut/Pierce,47,"4,491,648",1.05,1.07,"1,242"
+Louisiana,2009,Drowning (includes water transport),129,"4,491,648",2.87,2.84,"3,878"
+Louisiana,2009,Fall,230,"4,491,648",5.12,5.27,"1,103"
+Louisiana,2009,Fire/Flame,61,"4,491,648",1.36,1.35,"1,415"
+Louisiana,2009,Hot object/Substance,--,"4,491,648",--,--,--
+Louisiana,2009,Firearm,810,"4,491,648",18.03,18.03,"22,841"
+Louisiana,2009,Machinery,23,"4,491,648",0.51,0.5,404
+Louisiana,2009,Natural/Environmental,20**,"4,491,648",0.45**,0.46**,591
+Louisiana,2009,Drug Poisoning,584,"4,491,648",13,13.13,"13,739"
+Louisiana,2009,Non-Drug Poisoning,46,"4,491,648",1.02,1.06,"1,006"
+Louisiana,2009,Struck by / against,15**,"4,491,648",0.33**,0.31**,407
+Louisiana,2009,Suffocation,217,"4,491,648",4.83,4.85,"5,588"
+Louisiana,2009,"Motor vehicle, traffic",814,"4,491,648",18.12,18.05,"21,512"
+Louisiana,2009,"Pedal cyclist, other",--,"4,491,648",--,--,--
+Louisiana,2009,"Pedestrian, other",33,"4,491,648",0.74,0.75,945
+Louisiana,2009,"Transport, other land",36,"4,491,648",0.8,0.78,788
+Louisiana,2009,"Transport, other (excl. drown by water transp)",17**,"4,491,648",0.38**,0.36**,357
+Louisiana,2009,Other specified and classifiable,46,"4,491,648",1.02,1.04,"1,398"
+Louisiana,2009,Other specified / NEC,26,"4,491,648",0.58,0.59,519
+Louisiana,2009,Unspecified,152,"4,491,648",3.38,3.47,"2,162"
+Louisiana,2008,Cut/Pierce,48,"4,435,586",1.08,1.12,"1,310"
+Louisiana,2008,Drowning (includes water transport),137,"4,435,586",3.09,3.11,"4,520"
+Louisiana,2008,Fall,237,"4,435,586",5.34,5.44,"1,000"
+Louisiana,2008,Fire/Flame,90,"4,435,586",2.03,2.07,"2,415"
+Louisiana,2008,Hot object/Substance,--,"4,435,586",--,--,--
+Louisiana,2008,Firearm,822,"4,435,586",18.53,18.34,"23,322"
+Louisiana,2008,Machinery,10**,"4,435,586",0.23**,0.23**,191
+Louisiana,2008,Natural/Environmental,13**,"4,435,586",0.29**,0.29**,108
+Louisiana,2008,Drug Poisoning,647,"4,435,586",14.59,14.87,"15,652"
+Louisiana,2008,Non-Drug Poisoning,48,"4,435,586",1.08,1.05,871
+Louisiana,2008,Struck by / against,17**,"4,435,586",0.38**,0.38**,295
+Louisiana,2008,Suffocation,258,"4,435,586",5.82,5.99,"6,982"
+Louisiana,2008,"Motor vehicle, traffic",886,"4,435,586",19.98,19.9,"24,009"
+Louisiana,2008,"Pedal cyclist, other",--,"4,435,586",--,--,--
+Louisiana,2008,"Pedestrian, other",29,"4,435,586",0.65,0.67,774
+Louisiana,2008,"Transport, other land",40,"4,435,586",0.9,0.89,"1,244"
+Louisiana,2008,"Transport, other (excl. drown by water transp)",15**,"4,435,586",0.34**,0.33**,458
+Louisiana,2008,Other specified and classifiable,31,"4,435,586",0.7,0.7,960
+Louisiana,2008,Other specified / NEC,25,"4,435,586",0.56,0.56,493
+Louisiana,2008,Unspecified,217,"4,435,586",4.89,5,"2,434"
+Louisiana,2007,Cut/Pierce,68,"4,375,581",1.55,1.6,"2,003"
+Louisiana,2007,Drowning (includes water transport),108,"4,375,581",2.47,2.44,"3,126"
+Louisiana,2007,Fall,175,"4,375,581",4,4.13,"1,030"
+Louisiana,2007,Fire/Flame,93,"4,375,581",2.13,2.15,"1,817"
+Louisiana,2007,Hot object/Substance,--,"4,375,581",--,--,--
+Louisiana,2007,Firearm,869,"4,375,581",19.86,19.77,"25,092"
+Louisiana,2007,Machinery,17**,"4,375,581",0.39**,0.37**,261
+Louisiana,2007,Natural/Environmental,15**,"4,375,581",0.34**,0.34**,219
+Louisiana,2007,Drug Poisoning,808,"4,375,581",18.47,18.68,"21,758"
+Louisiana,2007,Non-Drug Poisoning,42,"4,375,581",0.96,0.93,726
+Louisiana,2007,Struck by / against,13**,"4,375,581",0.30**,0.30**,371
+Louisiana,2007,Suffocation,238,"4,375,581",5.44,5.54,"5,946"
+Louisiana,2007,"Motor vehicle, traffic","1,008","4,375,581",23.04,22.84,"27,940"
+Louisiana,2007,"Pedal cyclist, other",--,"4,375,581",--,--,--
+Louisiana,2007,"Pedestrian, other",27,"4,375,581",0.62,0.64,798
+Louisiana,2007,"Transport, other land",25,"4,375,581",0.57,0.6,847
+Louisiana,2007,"Transport, other (excl. drown by water transp)",--,"4,375,581",--,--,--
+Louisiana,2007,Other specified and classifiable,30,"4,375,581",0.69,0.64,661
+Louisiana,2007,Other specified / NEC,34,"4,375,581",0.78,0.79,717
+Louisiana,2007,Unspecified,185,"4,375,581",4.23,4.43,"2,062"
+Louisiana,2006,Cut/Pierce,51,"4,302,665",1.19,1.2,"1,424"
+Louisiana,2006,Drowning (includes water transport),108,"4,302,665",2.51,2.49,"3,513"
+Louisiana,2006,Fall,183,"4,302,665",4.25,4.46,757
+Louisiana,2006,Fire/Flame,83,"4,302,665",1.93,1.9,"1,768"
+Louisiana,2006,Hot object/Substance,--,"4,302,665",--,--,--
+Louisiana,2006,Firearm,831,"4,302,665",19.31,19.02,"23,759"
+Louisiana,2006,Machinery,11**,"4,302,665",0.26**,0.25**,93
+Louisiana,2006,Natural/Environmental,16**,"4,302,665",0.37**,0.37**,276
+Louisiana,2006,Drug Poisoning,705,"4,302,665",16.39,16.46,"18,691"
+Louisiana,2006,Non-Drug Poisoning,30,"4,302,665",0.7,0.7,720
+Louisiana,2006,Struck by / against,17**,"4,302,665",0.40**,0.40**,410
+Louisiana,2006,Suffocation,238,"4,302,665",5.53,5.71,"5,979"
+Louisiana,2006,"Motor vehicle, traffic",989,"4,302,665",22.99,22.81,"27,240"
+Louisiana,2006,"Pedal cyclist, other",10**,"4,302,665",0.23**,0.22**,233
+Louisiana,2006,"Pedestrian, other",18**,"4,302,665",0.42**,0.41**,517
+Louisiana,2006,"Transport, other land",27,"4,302,665",0.63,0.62,798
+Louisiana,2006,"Transport, other (excl. drown by water transp)",19**,"4,302,665",0.44**,0.44**,329
+Louisiana,2006,Other specified and classifiable,38,"4,302,665",0.88,0.87,964
+Louisiana,2006,Other specified / NEC,30,"4,302,665",0.7,0.68,330
+Louisiana,2006,Unspecified,175,"4,302,665",4.07,4.23,"2,435"
+Louisiana,2005,Cut/Pierce,74,"4,576,628",1.62,1.64,"1,828"
+Louisiana,2005,Drowning (includes water transport),122,"4,576,628",2.67,2.67,"3,590"
+Louisiana,2005,Fall,184,"4,576,628",4.02,4.31,"1,079"
+Louisiana,2005,Fire/Flame,119,"4,576,628",2.6,2.62,"3,186"
+Louisiana,2005,Hot object/Substance,--,"4,576,628",--,--,--
+Louisiana,2005,Firearm,858,"4,576,628",18.75,18.35,"25,491"
+Louisiana,2005,Machinery,13**,"4,576,628",0.28**,0.29**,278
+Louisiana,2005,Natural/Environmental,658,"4,576,628",14.38,15.04,"4,034"
+Louisiana,2005,Drug Poisoning,661,"4,576,628",14.44,14.64,"17,781"
+Louisiana,2005,Non-Drug Poisoning,35,"4,576,628",0.77,0.79,558
+Louisiana,2005,Struck by / against,20**,"4,576,628",0.44**,0.42**,508
+Louisiana,2005,Suffocation,231,"4,576,628",5.05,5.18,"5,347"
+Louisiana,2005,"Motor vehicle, traffic",996,"4,576,628",21.76,21.47,"27,200"
+Louisiana,2005,"Pedal cyclist, other",--,"4,576,628",--,--,--
+Louisiana,2005,"Pedestrian, other",20**,"4,576,628",0.44**,0.46**,594
+Louisiana,2005,"Transport, other land",30,"4,576,628",0.66,0.66,679
+Louisiana,2005,"Transport, other (excl. drown by water transp)",23,"4,576,628",0.5,0.49,470
+Louisiana,2005,Other specified and classifiable,43,"4,576,628",0.94,0.91,"1,123"
+Louisiana,2005,Other specified / NEC,32,"4,576,628",0.7,0.69,553
+Louisiana,2005,Unspecified,171,"4,576,628",3.74,4.03,"1,387"
+Louisiana,2004,Cut/Pierce,49,"4,552,238",1.08,1.11,"1,353"
+Louisiana,2004,Drowning (includes water transport),135,"4,552,238",2.97,2.97,"4,026"
+Louisiana,2004,Fall,171,"4,552,238",3.76,3.98,"1,217"
+Louisiana,2004,Fire/Flame,99,"4,552,238",2.18,2.21,"2,749"
+Louisiana,2004,Firearm,902,"4,552,238",19.81,19.52,"26,292"
+Louisiana,2004,Machinery,20**,"4,552,238",0.44**,0.42**,481
+Louisiana,2004,Natural/Environmental,17**,"4,552,238",0.37**,0.39**,278
+Louisiana,2004,Drug Poisoning,539,"4,552,238",11.84,12.01,"14,498"
+Louisiana,2004,Non-Drug Poisoning,27,"4,552,238",0.59,0.6,585
+Louisiana,2004,Struck by / against,22,"4,552,238",0.48,0.49,365
+Louisiana,2004,Suffocation,258,"4,552,238",5.67,5.8,"6,754"
+Louisiana,2004,"Motor vehicle, traffic",999,"4,552,238",21.95,21.79,"28,342"
+Louisiana,2004,"Pedal cyclist, other",--,"4,552,238",--,--,--
+Louisiana,2004,"Pedestrian, other",29,"4,552,238",0.64,0.65,878
+Louisiana,2004,"Transport, other land",24,"4,552,238",0.53,0.53,703
+Louisiana,2004,"Transport, other (excl. drown by water transp)",21,"4,552,238",0.46,0.47,610
+Louisiana,2004,Other specified and classifiable,35,"4,552,238",0.77,0.79,"1,197"
+Louisiana,2004,Other specified / NEC,35,"4,552,238",0.77,0.78,687
+Louisiana,2004,Unspecified,171,"4,552,238",3.76,4.05,"2,216"
+Louisiana,2003,Cut/Pierce,54,"4,521,042",1.19,1.22,"1,528"
+Louisiana,2003,Drowning (includes water transport),120,"4,521,042",2.65,2.63,"3,749"
+Louisiana,2003,Fall,138,"4,521,042",3.05,3.27,864
+Louisiana,2003,Fire/Flame,90,"4,521,042",1.99,2.02,"2,235"
+Louisiana,2003,Hot object/Substance,--,"4,521,042",--,--,--
+Louisiana,2003,Firearm,847,"4,521,042",18.74,18.61,"24,506"
+Louisiana,2003,Machinery,--,"4,521,042",--,--,--
+Louisiana,2003,Natural/Environmental,13**,"4,521,042",0.29**,0.30**,116
+Louisiana,2003,Overexertion,--,"4,521,042",--,--,--
+Louisiana,2003,Drug Poisoning,536,"4,521,042",11.86,12.07,"14,507"
+Louisiana,2003,Non-Drug Poisoning,27,"4,521,042",0.6,0.61,489
+Louisiana,2003,Struck by / against,27,"4,521,042",0.6,0.6,643
+Louisiana,2003,Suffocation,214,"4,521,042",4.73,4.9,"4,847"
+Louisiana,2003,"Motor vehicle, traffic",934,"4,521,042",20.66,20.59,"25,567"
+Louisiana,2003,"Pedal cyclist, other",--,"4,521,042",--,--,--
+Louisiana,2003,"Pedestrian, other",16**,"4,521,042",0.35**,0.34**,479
+Louisiana,2003,"Transport, other land",25,"4,521,042",0.55,0.56,457
+Louisiana,2003,"Transport, other (excl. drown by water transp)",25,"4,521,042",0.55,0.56,659
+Louisiana,2003,Other specified and classifiable,46,"4,521,042",1.02,1.03,"1,406"
+Louisiana,2003,Other specified / NEC,30,"4,521,042",0.66,0.67,502
+Louisiana,2003,Unspecified,221,"4,521,042",4.89,5.26,"2,649"
+Louisiana,2002,Cut/Pierce,56,"4,497,267",1.25,1.24,"1,704"
+Louisiana,2002,Drowning (includes water transport),146,"4,497,267",3.25,3.29,"4,658"
+Louisiana,2002,Fall,155,"4,497,267",3.45,3.74,"1,035"
+Louisiana,2002,Fire/Flame,109,"4,497,267",2.42,2.5,"2,937"
+Louisiana,2002,Hot object/Substance,--,"4,497,267",--,--,--
+Louisiana,2002,Firearm,876,"4,497,267",19.48,19.31,"25,760"
+Louisiana,2002,Machinery,--,"4,497,267",--,--,--
+Louisiana,2002,Natural/Environmental,25,"4,497,267",0.56,0.59,263
+Louisiana,2002,Drug Poisoning,365,"4,497,267",8.12,8.25,"10,184"
+Louisiana,2002,Non-Drug Poisoning,26,"4,497,267",0.58,0.58,613
+Louisiana,2002,Struck by / against,25,"4,497,267",0.56,0.57,487
+Louisiana,2002,Suffocation,210,"4,497,267",4.67,4.82,"4,909"
+Louisiana,2002,"Motor vehicle, traffic",927,"4,497,267",20.61,20.55,"25,894"
+Louisiana,2002,"Pedal cyclist, other",--,"4,497,267",--,--,--
+Louisiana,2002,"Pedestrian, other",25,"4,497,267",0.56,0.55,827
+Louisiana,2002,"Transport, other land",26,"4,497,267",0.58,0.59,703
+Louisiana,2002,"Transport, other (excl. drown by water transp)",31,"4,497,267",0.69,0.68,870
+Louisiana,2002,Other specified and classifiable,38,"4,497,267",0.85,0.87,"1,284"
+Louisiana,2002,Other specified / NEC,64,"4,497,267",1.42,1.44,"1,380"
+Louisiana,2002,Unspecified,196,"4,497,267",4.36,4.78,"1,691"
+Louisiana,2001,Cut/Pierce,44,"4,477,875",0.98,0.99,"1,138"
+Louisiana,2001,Drowning (includes water transport),125,"4,477,875",2.79,2.79,"3,856"
+Louisiana,2001,Fall,160,"4,477,875",3.57,3.89,"1,264"
+Louisiana,2001,Fire/Flame,108,"4,477,875",2.41,2.47,"3,029"
+Louisiana,2001,Hot object/Substance,--,"4,477,875",--,--,--
+Louisiana,2001,Firearm,781,"4,477,875",17.44,17.46,"22,128"
+Louisiana,2001,Machinery,--,"4,477,875",--,--,--
+Louisiana,2001,Natural/Environmental,28,"4,477,875",0.63,0.65,248
+Louisiana,2001,Drug Poisoning,265,"4,477,875",5.92,5.99,"6,920"
+Louisiana,2001,Non-Drug Poisoning,33,"4,477,875",0.74,0.76,722
+Louisiana,2001,Struck by / against,33,"4,477,875",0.74,0.75,623
+Louisiana,2001,Suffocation,185,"4,477,875",4.13,4.27,"4,604"
+Louisiana,2001,"Motor vehicle, traffic",958,"4,477,875",21.39,21.41,"26,947"
+Louisiana,2001,"Pedal cyclist, other",--,"4,477,875",--,--,--
+Louisiana,2001,"Pedestrian, other",21,"4,477,875",0.47,0.47,718
+Louisiana,2001,"Transport, other land",27,"4,477,875",0.6,0.61,756
+Louisiana,2001,"Transport, other (excl. drown by water transp)",33,"4,477,875",0.74,0.75,863
+Louisiana,2001,Other specified and classifiable,46,"4,477,875",1.03,1.04,"1,398"
+Louisiana,2001,Other specified / NEC,51,"4,477,875",1.14,1.17,"1,132"
+Louisiana,2001,Unspecified,198,"4,477,875",4.42,4.87,"1,718"
+Total,,,"81,777","95,834,321",85.33,85.55,"1,909,724"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Louisiana,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

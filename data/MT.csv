@@ -1,0 +1,411 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Montana,2021,Cut/Pierce,11**,"1,104,271",1.00**,0.99**,220
+Montana,2021,Drowning (includes water transport),30,"1,104,271",2.72,2.46,405
+Montana,2021,Fall,236,"1,104,271",21.37,17.68,480
+Montana,2021,Fire/Flame,23,"1,104,271",2.08,1.93,270
+Montana,2021,Firearm,280,"1,104,271",25.36,25.11,"6,354"
+Montana,2021,Machinery,--,"1,104,271",--,--,--
+Montana,2021,Natural/Environmental,28,"1,104,271",2.54,2.24,428
+Montana,2021,Drug Poisoning,199,"1,104,271",18.02,19.59,"4,442"
+Montana,2021,Non-Drug Poisoning,26,"1,104,271",2.35,2.26,414
+Montana,2021,Struck by / against,--,"1,104,271",--,--,--
+Montana,2021,Suffocation,99,"1,104,271",8.97,9.21,"2,332"
+Montana,2021,"Motor vehicle, traffic",243,"1,104,271",22.01,21.83,"5,778"
+Montana,2021,"Pedal cyclist, other",--,"1,104,271",--,--,--
+Montana,2021,"Pedestrian, other",--,"1,104,271",--,--,--
+Montana,2021,"Transport, other land",29,"1,104,271",2.63,2.39,578
+Montana,2021,"Transport, other (excl. drown by water transp)",--,"1,104,271",--,--,--
+Montana,2021,Other specified and classifiable,18**,"1,104,271",1.63**,1.61**,448
+Montana,2021,Other specified / NEC,12**,"1,104,271",1.09**,1.08**,160
+Montana,2021,Unspecified,46,"1,104,271",4.17,3.28,298
+Montana,2020,Cut/Pierce,16**,"1,086,193",1.47**,1.59**,363
+Montana,2020,Drowning (includes water transport),39,"1,086,193",3.59,3.4,736
+Montana,2020,Fall,212,"1,086,193",19.52,15.67,426
+Montana,2020,Fire/Flame,17**,"1,086,193",1.57**,1.31**,305
+Montana,2020,Firearm,238,"1,086,193",21.91,20.72,"4,865"
+Montana,2020,Machinery,--,"1,086,193",--,--,--
+Montana,2020,Natural/Environmental,21,"1,086,193",1.93,1.79,331
+Montana,2020,Drug Poisoning,162,"1,086,193",14.91,15.35,"3,365"
+Montana,2020,Non-Drug Poisoning,32,"1,086,193",2.95,3.01,602
+Montana,2020,Struck by / against,10**,"1,086,193",0.92**,0.77**,185
+Montana,2020,Suffocation,95,"1,086,193",8.75,8.6,"2,037"
+Montana,2020,"Motor vehicle, traffic",193,"1,086,193",17.77,18.21,"4,873"
+Montana,2020,"Pedal cyclist, other",--,"1,086,193",--,--,--
+Montana,2020,"Pedestrian, other",12**,"1,086,193",1.11**,1.17**,213
+Montana,2020,"Transport, other land",11**,"1,086,193",1.01**,0.98**,211
+Montana,2020,"Transport, other (excl. drown by water transp)",--,"1,086,193",--,--,--
+Montana,2020,Other specified and classifiable,--,"1,086,193",--,--,--
+Montana,2020,Other specified / NEC,--,"1,086,193",--,--,--
+Montana,2020,Unspecified,33,"1,086,193",3.04,2.54,307
+Montana,2019,Cut/Pierce,--,"1,070,123",--,--,--
+Montana,2019,Drowning (includes water transport),30,"1,070,123",2.8,2.62,537
+Montana,2019,Fall,196,"1,070,123",18.32,14.01,423
+Montana,2019,Fire/Flame,10**,"1,070,123",0.93**,0.77**,140
+Montana,2019,Firearm,209,"1,070,123",19.53,18.89,"4,200"
+Montana,2019,Machinery,--,"1,070,123",--,--,--
+Montana,2019,Natural/Environmental,18**,"1,070,123",1.68**,1.45**,231
+Montana,2019,Drug Poisoning,143,"1,070,123",13.36,14.22,"2,898"
+Montana,2019,Non-Drug Poisoning,21,"1,070,123",1.96,1.83,347
+Montana,2019,Struck by / against,--,"1,070,123",--,--,--
+Montana,2019,Suffocation,112,"1,070,123",10.47,10.25,"2,581"
+Montana,2019,"Motor vehicle, traffic",174,"1,070,123",16.26,15.96,"3,769"
+Montana,2019,"Pedal cyclist, other",--,"1,070,123",--,--,--
+Montana,2019,"Pedestrian, other",10**,"1,070,123",0.93**,0.86**,221
+Montana,2019,"Transport, other land",19**,"1,070,123",1.78**,1.49**,205
+Montana,2019,"Transport, other (excl. drown by water transp)",--,"1,070,123",--,--,--
+Montana,2019,Other specified and classifiable,12**,"1,070,123",1.12**,0.91**,181
+Montana,2019,Other specified / NEC,16**,"1,070,123",1.50**,1.28**,178
+Montana,2019,Unspecified,33,"1,070,123",3.08,2.27,122
+Montana,2018,Cut/Pierce,--,"1,061,818",--,--,--
+Montana,2018,Drowning (includes water transport),24,"1,061,818",2.26,2.49,683
+Montana,2018,Fall,179,"1,061,818",16.86,12.81,270
+Montana,2018,Fire/Flame,13**,"1,061,818",1.22**,1.03**,192
+Montana,2018,Hot object/Substance,--,"1,061,818",--,--,--
+Montana,2018,Firearm,186,"1,061,818",17.52,17.27,"3,750"
+Montana,2018,Machinery,--,"1,061,818",--,--,--
+Montana,2018,Natural/Environmental,23,"1,061,818",2.17,2.03,400
+Montana,2018,Drug Poisoning,125,"1,061,818",11.77,12.2,"2,592"
+Montana,2018,Non-Drug Poisoning,31,"1,061,818",2.92,2.56,563
+Montana,2018,Struck by / against,--,"1,061,818",--,--,--
+Montana,2018,Suffocation,92,"1,061,818",8.66,8.89,"2,366"
+Montana,2018,"Motor vehicle, traffic",171,"1,061,818",16.1,16.06,"4,263"
+Montana,2018,"Pedestrian, other",--,"1,061,818",--,--,--
+Montana,2018,"Transport, other land",10**,"1,061,818",0.94**,0.99**,229
+Montana,2018,"Transport, other (excl. drown by water transp)",--,"1,061,818",--,--,--
+Montana,2018,Other specified and classifiable,--,"1,061,818",--,--,--
+Montana,2018,Other specified / NEC,16**,"1,061,818",1.51**,1.31**,270
+Montana,2018,Unspecified,30,"1,061,818",2.83,2.36,299
+Montana,2017,Cut/Pierce,19**,"1,053,862",1.80**,1.71**,381
+Montana,2017,Drowning (includes water transport),17**,"1,053,862",1.61**,1.60**,374
+Montana,2017,Fall,178,"1,053,862",16.89,13.38,524
+Montana,2017,Fire/Flame,--,"1,053,862",--,--,--
+Montana,2017,Firearm,244,"1,053,862",23.15,22.51,"4,532"
+Montana,2017,Machinery,--,"1,053,862",--,--,--
+Montana,2017,Natural/Environmental,18**,"1,053,862",1.71**,1.54**,251
+Montana,2017,Drug Poisoning,119,"1,053,862",11.29,11.6,"2,541"
+Montana,2017,Non-Drug Poisoning,30,"1,053,862",2.85,2.83,612
+Montana,2017,Struck by / against,--,"1,053,862",--,--,--
+Montana,2017,Suffocation,79,"1,053,862",7.5,7.53,"2,058"
+Montana,2017,"Motor vehicle, traffic",167,"1,053,862",15.85,15.93,"4,131"
+Montana,2017,"Pedal cyclist, other",--,"1,053,862",--,--,--
+Montana,2017,"Pedestrian, other",--,"1,053,862",--,--,--
+Montana,2017,"Transport, other land",16**,"1,053,862",1.52**,1.30**,244
+Montana,2017,Other specified and classifiable,--,"1,053,862",--,--,--
+Montana,2017,Other specified / NEC,11**,"1,053,862",1.04**,0.93**,75
+Montana,2017,Unspecified,26,"1,053,862",2.47,2.14,224
+Montana,2016,Cut/Pierce,13**,"1,042,137",1.25**,1.32**,406
+Montana,2016,Drowning (includes water transport),16**,"1,042,137",1.54**,1.45**,330
+Montana,2016,Fall,172,"1,042,137",16.51,12.81,480
+Montana,2016,Fire/Flame,15**,"1,042,137",1.44**,1.16**,229
+Montana,2016,Firearm,194,"1,042,137",18.62,18.99,"4,202"
+Montana,2016,Machinery,--,"1,042,137",--,--,--
+Montana,2016,Natural/Environmental,21,"1,042,137",2.02,1.98,354
+Montana,2016,Drug Poisoning,119,"1,042,137",11.42,11.65,"2,460"
+Montana,2016,Non-Drug Poisoning,28,"1,042,137",2.69,2.9,717
+Montana,2016,Struck by / against,--,"1,042,137",--,--,--
+Montana,2016,Suffocation,105,"1,042,137",10.08,10.12,"2,678"
+Montana,2016,"Motor vehicle, traffic",187,"1,042,137",17.94,17.48,"4,270"
+Montana,2016,"Pedestrian, other",--,"1,042,137",--,--,--
+Montana,2016,"Transport, other land",16**,"1,042,137",1.54**,1.49**,342
+Montana,2016,"Transport, other (excl. drown by water transp)",--,"1,042,137",--,--,--
+Montana,2016,Other specified and classifiable,--,"1,042,137",--,--,--
+Montana,2016,Other specified / NEC,12**,"1,042,137",1.15**,0.97**,130
+Montana,2016,Unspecified,53,"1,042,137",5.09,4.02,303
+Montana,2015,Cut/Pierce,16**,"1,031,495",1.55**,1.31**,224
+Montana,2015,Drowning (includes water transport),20**,"1,031,495",1.94**,2.12**,627
+Montana,2015,Fall,177,"1,031,495",17.16,13.47,542
+Montana,2015,Fire/Flame,10**,"1,031,495",0.97**,0.88**,189
+Montana,2015,Firearm,205,"1,031,495",19.87,19.37,"4,287"
+Montana,2015,Machinery,--,"1,031,495",--,--,--
+Montana,2015,Natural/Environmental,--,"1,031,495",--,--,--
+Montana,2015,Drug Poisoning,138,"1,031,495",13.38,13.66,"2,775"
+Montana,2015,Non-Drug Poisoning,26,"1,031,495",2.52,2.34,369
+Montana,2015,Struck by / against,--,"1,031,495",--,--,--
+Montana,2015,Suffocation,88,"1,031,495",8.53,8.16,"1,810"
+Montana,2015,"Motor vehicle, traffic",206,"1,031,495",19.97,19.63,"4,976"
+Montana,2015,"Pedal cyclist, other",--,"1,031,495",--,--,--
+Montana,2015,"Pedestrian, other",--,"1,031,495",--,--,--
+Montana,2015,"Transport, other land",16**,"1,031,495",1.55**,1.52**,275
+Montana,2015,"Transport, other (excl. drown by water transp)",--,"1,031,495",--,--,--
+Montana,2015,Other specified and classifiable,--,"1,031,495",--,--,--
+Montana,2015,Other specified / NEC,12**,"1,031,495",1.16**,1.22**,271
+Montana,2015,Unspecified,52,"1,031,495",5.04,4.38,485
+Montana,2014,Cut/Pierce,16**,"1,022,657",1.57**,1.55**,289
+Montana,2014,Drowning (includes water transport),18**,"1,022,657",1.76**,1.66**,494
+Montana,2014,Fall,152,"1,022,657",14.86,12,362
+Montana,2014,Fire/Flame,13**,"1,022,657",1.27**,1.13**,159
+Montana,2014,Firearm,172,"1,022,657",16.82,16.09,"3,037"
+Montana,2014,Machinery,--,"1,022,657",--,--,--
+Montana,2014,Natural/Environmental,24,"1,022,657",2.35,2.28,308
+Montana,2014,Drug Poisoning,125,"1,022,657",12.22,12.46,"2,461"
+Montana,2014,Non-Drug Poisoning,30,"1,022,657",2.93,2.73,465
+Montana,2014,Struck by / against,--,"1,022,657",--,--,--
+Montana,2014,Suffocation,75,"1,022,657",7.33,7.01,"1,415"
+Montana,2014,"Motor vehicle, traffic",186,"1,022,657",18.19,18.43,"4,826"
+Montana,2014,"Pedestrian, other",--,"1,022,657",--,--,--
+Montana,2014,"Transport, other land",19**,"1,022,657",1.86**,1.88**,390
+Montana,2014,"Transport, other (excl. drown by water transp)",--,"1,022,657",--,--,--
+Montana,2014,Other specified and classifiable,--,"1,022,657",--,--,--
+Montana,2014,Other specified / NEC,12**,"1,022,657",1.17**,1.05**,117
+Montana,2014,Unspecified,40,"1,022,657",3.91,3.33,294
+Montana,2013,Cut/Pierce,--,"1,014,158",--,--,--
+Montana,2013,Drowning (includes water transport),25,"1,014,158",2.47,2.37,607
+Montana,2013,Fall,160,"1,014,158",15.78,12.9,500
+Montana,2013,Fire/Flame,16**,"1,014,158",1.58**,1.56**,263
+Montana,2013,Firearm,172,"1,014,158",16.96,16.77,"3,627"
+Montana,2013,Machinery,--,"1,014,158",--,--,--
+Montana,2013,Natural/Environmental,12**,"1,014,158",1.18**,0.98**,92
+Montana,2013,Drug Poisoning,137,"1,014,158",13.51,14.4,"3,009"
+Montana,2013,Non-Drug Poisoning,23,"1,014,158",2.27,2.16,365
+Montana,2013,Struck by / against,--,"1,014,158",--,--,--
+Montana,2013,Suffocation,81,"1,014,158",7.99,7.97,"1,982"
+Montana,2013,"Motor vehicle, traffic",224,"1,014,158",22.09,21.82,"5,519"
+Montana,2013,"Pedal cyclist, other",--,"1,014,158",--,--,--
+Montana,2013,"Transport, other land",17**,"1,014,158",1.68**,1.77**,417
+Montana,2013,"Transport, other (excl. drown by water transp)",--,"1,014,158",--,--,--
+Montana,2013,Other specified and classifiable,--,"1,014,158",--,--,--
+Montana,2013,Other specified / NEC,--,"1,014,158",--,--,--
+Montana,2013,Unspecified,36,"1,014,158",3.55,3.04,297
+Montana,2012,Cut/Pierce,--,"1,004,168",--,--,--
+Montana,2012,Drowning (includes water transport),29,"1,004,168",2.89,2.95,758
+Montana,2012,Fall,115,"1,004,168",11.45,9.27,169
+Montana,2012,Fire/Flame,--,"1,004,168",--,--,--
+Montana,2012,Firearm,171,"1,004,168",17.03,16.64,"3,452"
+Montana,2012,Machinery,--,"1,004,168",--,--,--
+Montana,2012,Natural/Environmental,16**,"1,004,168",1.59**,1.52**,399
+Montana,2012,Drug Poisoning,118,"1,004,168",11.75,11.89,"2,569"
+Montana,2012,Non-Drug Poisoning,18**,"1,004,168",1.79**,1.76**,363
+Montana,2012,Struck by / against,--,"1,004,168",--,--,--
+Montana,2012,Suffocation,77,"1,004,168",7.67,7.19,"1,458"
+Montana,2012,"Motor vehicle, traffic",197,"1,004,168",19.62,19.21,"4,922"
+Montana,2012,"Pedal cyclist, other",--,"1,004,168",--,--,--
+Montana,2012,"Pedestrian, other",--,"1,004,168",--,--,--
+Montana,2012,"Transport, other land",10**,"1,004,168",1.00**,1.11**,243
+Montana,2012,"Transport, other (excl. drown by water transp)",--,"1,004,168",--,--,--
+Montana,2012,Other specified and classifiable,12**,"1,004,168",1.20**,1.05**,181
+Montana,2012,Other specified / NEC,--,"1,004,168",--,--,--
+Montana,2012,Unspecified,52,"1,004,168",5.18,4.34,387
+Montana,2011,Cut/Pierce,--,"997,518",--,--,--
+Montana,2011,Drowning (includes water transport),30,"997,518",3.01,2.9,642
+Montana,2011,Fall,142,"997,518",14.24,11.45,427
+Montana,2011,Fire/Flame,16**,"997,518",1.60**,1.46**,179
+Montana,2011,Firearm,167,"997,518",16.74,16.34,"3,535"
+Montana,2011,Machinery,--,"997,518",--,--,--
+Montana,2011,Natural/Environmental,18**,"997,518",1.80**,1.73**,247
+Montana,2011,Drug Poisoning,141,"997,518",14.14,14.4,"2,926"
+Montana,2011,Non-Drug Poisoning,18**,"997,518",1.80**,1.76**,327
+Montana,2011,Struck by / against,--,"997,518",--,--,--
+Montana,2011,Suffocation,74,"997,518",7.42,7.08,"1,309"
+Montana,2011,"Motor vehicle, traffic",186,"997,518",18.65,18.39,"4,450"
+Montana,2011,"Pedal cyclist, other",--,"997,518",--,--,--
+Montana,2011,"Pedestrian, other",10**,"997,518",1.00**,1.00**,383
+Montana,2011,"Transport, other land",17**,"997,518",1.70**,1.69**,364
+Montana,2011,"Transport, other (excl. drown by water transp)",10**,"997,518",1.00**,0.91**,139
+Montana,2011,Other specified and classifiable,12**,"997,518",1.20**,1.16**,360
+Montana,2011,Other specified / NEC,--,"997,518",--,--,--
+Montana,2011,Unspecified,43,"997,518",4.31,3.79,286
+Montana,2010,Cut/Pierce,--,"989,400",--,--,--
+Montana,2010,Drowning (includes water transport),29,"989,400",2.93,2.98,795
+Montana,2010,Fall,129,"989,400",13.04,11.12,478
+Montana,2010,Fire/Flame,13**,"989,400",1.31**,1.27**,423
+Montana,2010,Firearm,164,"989,400",16.58,15.57,"3,118"
+Montana,2010,Machinery,--,"989,400",--,--,--
+Montana,2010,Natural/Environmental,12**,"989,400",1.21**,1.13**,164
+Montana,2010,Drug Poisoning,118,"989,400",11.93,12.95,"2,744"
+Montana,2010,Non-Drug Poisoning,25,"989,400",2.53,2.32,368
+Montana,2010,Struck by / against,--,"989,400",--,--,--
+Montana,2010,Suffocation,70,"989,400",7.08,6.71,"1,455"
+Montana,2010,"Motor vehicle, traffic",179,"989,400",18.09,18.32,"4,887"
+Montana,2010,"Pedal cyclist, other",--,"989,400",--,--,--
+Montana,2010,"Pedestrian, other",--,"989,400",--,--,--
+Montana,2010,"Transport, other land",12**,"989,400",1.21**,1.05**,245
+Montana,2010,"Transport, other (excl. drown by water transp)",--,"989,400",--,--,--
+Montana,2010,Other specified and classifiable,10**,"989,400",1.01**,1.03**,255
+Montana,2010,Other specified / NEC,10**,"989,400",1.01**,1.06**,305
+Montana,2010,Unspecified,42,"989,400",4.25,3.55,145
+Montana,2009,Cut/Pierce,--,"983,982",--,--,--
+Montana,2009,Drowning (includes water transport),27,"983,982",2.74,2.61,526
+Montana,2009,Fall,123,"983,982",12.5,10.41,369
+Montana,2009,Fire/Flame,10**,"983,982",1.02**,0.98**,239
+Montana,2009,Firearm,166,"983,982",16.87,16.04,"3,183"
+Montana,2009,Machinery,--,"983,982",--,--,--
+Montana,2009,Natural/Environmental,17**,"983,982",1.73**,1.49**,172
+Montana,2009,Drug Poisoning,142,"983,982",14.43,14.59,"3,127"
+Montana,2009,Non-Drug Poisoning,26,"983,982",2.64,2.65,559
+Montana,2009,Struck by / against,--,"983,982",--,--,--
+Montana,2009,Suffocation,63,"983,982",6.4,6.32,"1,436"
+Montana,2009,"Motor vehicle, traffic",218,"983,982",22.16,22.45,"5,687"
+Montana,2009,"Pedestrian, other",--,"983,982",--,--,--
+Montana,2009,"Transport, other land",15**,"983,982",1.52**,1.58**,411
+Montana,2009,"Transport, other (excl. drown by water transp)",--,"983,982",--,--,--
+Montana,2009,Other specified and classifiable,14**,"983,982",1.42**,1.44**,266
+Montana,2009,Other specified / NEC,16**,"983,982",1.63**,1.46**,168
+Montana,2009,Unspecified,36,"983,982",3.66,3.29,304
+Montana,2008,Cut/Pierce,12**,"976,415",1.23**,1.46**,354
+Montana,2008,Drowning (includes water transport),26,"976,415",2.66,2.57,554
+Montana,2008,Fall,133,"976,415",13.62,11.59,520
+Montana,2008,Fire/Flame,--,"976,415",--,--,--
+Montana,2008,Firearm,155,"976,415",15.87,15.74,"3,678"
+Montana,2008,Machinery,--,"976,415",--,--,--
+Montana,2008,Natural/Environmental,18**,"976,415",1.84**,1.83**,289
+Montana,2008,Drug Poisoning,134,"976,415",13.72,14.1,"2,969"
+Montana,2008,Non-Drug Poisoning,30,"976,415",3.07,3.17,680
+Montana,2008,Struck by / against,--,"976,415",--,--,--
+Montana,2008,Suffocation,52,"976,415",5.33,5.22,"1,073"
+Montana,2008,"Motor vehicle, traffic",208,"976,415",21.3,21.6,"5,664"
+Montana,2008,"Pedal cyclist, other",--,"976,415",--,--,--
+Montana,2008,"Pedestrian, other",--,"976,415",--,--,--
+Montana,2008,"Transport, other land",10**,"976,415",1.02**,0.95**,301
+Montana,2008,"Transport, other (excl. drown by water transp)",--,"976,415",--,--,--
+Montana,2008,Other specified and classifiable,--,"976,415",--,--,--
+Montana,2008,Other specified / NEC,--,"976,415",--,--,--
+Montana,2008,Unspecified,35,"976,415",3.59,3.41,381
+Montana,2007,Cut/Pierce,--,"964,706",--,--,--
+Montana,2007,Drowning (includes water transport),23,"964,706",2.38,2.41,744
+Montana,2007,Fall,108,"964,706",11.2,9.61,414
+Montana,2007,Fire/Flame,11**,"964,706",1.14**,1.15**,110
+Montana,2007,Firearm,139,"964,706",14.41,13.54,"2,572"
+Montana,2007,Machinery,--,"964,706",--,--,--
+Montana,2007,Natural/Environmental,16**,"964,706",1.66**,1.50**,254
+Montana,2007,Drug Poisoning,125,"964,706",12.96,12.8,"2,789"
+Montana,2007,Non-Drug Poisoning,27,"964,706",2.8,2.44,496
+Montana,2007,Struck by / against,--,"964,706",--,--,--
+Montana,2007,Suffocation,47,"964,706",4.87,4.77,"1,015"
+Montana,2007,"Motor vehicle, traffic",253,"964,706",26.23,25.88,"6,460"
+Montana,2007,"Pedal cyclist, other",--,"964,706",--,--,--
+Montana,2007,"Pedestrian, other",--,"964,706",--,--,--
+Montana,2007,"Transport, other land",19**,"964,706",1.97**,1.81**,254
+Montana,2007,"Transport, other (excl. drown by water transp)",12**,"964,706",1.24**,1.22**,311
+Montana,2007,Other specified and classifiable,11**,"964,706",1.14**,1.12**,252
+Montana,2007,Other specified / NEC,--,"964,706",--,--,--
+Montana,2007,Unspecified,44,"964,706",4.56,3.76,98
+Montana,2006,Cut/Pierce,--,"952,692",--,--,--
+Montana,2006,Drowning (includes water transport),23,"952,692",2.41,2.42,550
+Montana,2006,Fall,102,"952,692",10.71,9.26,551
+Montana,2006,Fire/Flame,--,"952,692",--,--,--
+Montana,2006,Firearm,120,"952,692",12.6,12.25,"2,425"
+Montana,2006,Machinery,--,"952,692",--,--,--
+Montana,2006,Natural/Environmental,13**,"952,692",1.37**,1.21**,276
+Montana,2006,Drug Poisoning,97,"952,692",10.18,10.13,"2,375"
+Montana,2006,Non-Drug Poisoning,29,"952,692",3.04,3.31,641
+Montana,2006,Struck by / against,--,"952,692",--,--,--
+Montana,2006,Suffocation,54,"952,692",5.67,5.38,"1,108"
+Montana,2006,"Motor vehicle, traffic",245,"952,692",25.72,25.25,"6,203"
+Montana,2006,"Pedal cyclist, other",--,"952,692",--,--,--
+Montana,2006,"Pedestrian, other",--,"952,692",--,--,--
+Montana,2006,"Transport, other land",18**,"952,692",1.89**,1.79**,330
+Montana,2006,"Transport, other (excl. drown by water transp)",--,"952,692",--,--,--
+Montana,2006,Other specified and classifiable,15**,"952,692",1.57**,1.63**,397
+Montana,2006,Other specified / NEC,10**,"952,692",1.05**,1.06**,144
+Montana,2006,Unspecified,44,"952,692",4.62,4.3,605
+Montana,2005,Cut/Pierce,--,"940,102",--,--,--
+Montana,2005,Drowning (includes water transport),20**,"940,102",2.13**,2.05**,566
+Montana,2005,Fall,116,"940,102",12.34,10.61,300
+Montana,2005,Fire/Flame,11**,"940,102",1.17**,1.04**,166
+Montana,2005,Hot object/Substance,--,"940,102",--,--,--
+Montana,2005,Firearm,161,"940,102",17.13,16.85,"3,513"
+Montana,2005,Machinery,--,"940,102",--,--,--
+Montana,2005,Natural/Environmental,13**,"940,102",1.38**,1.30**,281
+Montana,2005,Overexertion,--,"940,102",--,--,--
+Montana,2005,Drug Poisoning,96,"940,102",10.21,10.14,"2,094"
+Montana,2005,Non-Drug Poisoning,16**,"940,102",1.70**,1.68**,219
+Montana,2005,Struck by / against,--,"940,102",--,--,--
+Montana,2005,Suffocation,52,"940,102",5.53,5.45,"1,315"
+Montana,2005,"Motor vehicle, traffic",222,"940,102",23.61,23.53,"5,533"
+Montana,2005,"Pedestrian, other",11**,"940,102",1.17**,1.20**,275
+Montana,2005,"Transport, other land",10**,"940,102",1.06**,1.04**,159
+Montana,2005,"Transport, other (excl. drown by water transp)",--,"940,102",--,--,--
+Montana,2005,Other specified and classifiable,--,"940,102",--,--,--
+Montana,2005,Other specified / NEC,--,"940,102",--,--,--
+Montana,2005,Unspecified,20**,"940,102",2.13**,1.88**,50
+Montana,2004,Cut/Pierce,--,"930,009",--,--,--
+Montana,2004,Drowning (includes water transport),20**,"930,009",2.15**,2.18**,525
+Montana,2004,Fall,100,"930,009",10.75,9.45,458
+Montana,2004,Fire/Flame,12**,"930,009",1.29**,1.27**,307
+Montana,2004,Firearm,125,"930,009",13.44,13.05,"2,722"
+Montana,2004,Machinery,--,"930,009",--,--,--
+Montana,2004,Natural/Environmental,11**,"930,009",1.18**,1.17**,169
+Montana,2004,Drug Poisoning,98,"930,009",10.54,10.74,"2,183"
+Montana,2004,Non-Drug Poisoning,28,"930,009",3.01,2.98,624
+Montana,2004,Struck by / against,--,"930,009",--,--,--
+Montana,2004,Suffocation,48,"930,009",5.16,5.16,"1,070"
+Montana,2004,"Motor vehicle, traffic",225,"930,009",24.19,23.81,"5,908"
+Montana,2004,"Pedestrian, other",--,"930,009",--,--,--
+Montana,2004,"Transport, other land",15**,"930,009",1.61**,1.62**,446
+Montana,2004,"Transport, other (excl. drown by water transp)",24,"930,009",2.58,2.57,562
+Montana,2004,Other specified and classifiable,--,"930,009",--,--,--
+Montana,2004,Other specified / NEC,--,"930,009",--,--,--
+Montana,2004,Unspecified,24,"930,009",2.58,2.33,176
+Montana,2003,Cut/Pierce,--,"919,630",--,--,--
+Montana,2003,Drowning (includes water transport),26,"919,630",2.83,2.74,702
+Montana,2003,Fall,71,"919,630",7.72,6.94,331
+Montana,2003,Fire/Flame,--,"919,630",--,--,--
+Montana,2003,Hot object/Substance,--,"919,630",--,--,--
+Montana,2003,Firearm,145,"919,630",15.77,15.68,"3,284"
+Montana,2003,Machinery,--,"919,630",--,--,--
+Montana,2003,Natural/Environmental,20**,"919,630",2.18**,2.06**,381
+Montana,2003,Overexertion,--,"919,630",--,--,--
+Montana,2003,Drug Poisoning,93,"919,630",10.11,10.57,"2,170"
+Montana,2003,Non-Drug Poisoning,14**,"919,630",1.52**,1.46**,269
+Montana,2003,Struck by / against,--,"919,630",--,--,--
+Montana,2003,Suffocation,56,"919,630",6.09,6.38,"1,476"
+Montana,2003,"Motor vehicle, traffic",247,"919,630",26.86,26.28,"6,398"
+Montana,2003,"Pedal cyclist, other",--,"919,630",--,--,--
+Montana,2003,"Pedestrian, other",--,"919,630",--,--,--
+Montana,2003,"Transport, other land",--,"919,630",--,--,--
+Montana,2003,"Transport, other (excl. drown by water transp)",--,"919,630",--,--,--
+Montana,2003,Other specified and classifiable,--,"919,630",--,--,--
+Montana,2003,Other specified / NEC,--,"919,630",--,--,--
+Montana,2003,Unspecified,41,"919,630",4.46,4.02,319
+Montana,2002,Cut/Pierce,--,"911,667",--,--,--
+Montana,2002,Drowning (includes water transport),24,"911,667",2.63,2.49,534
+Montana,2002,Fall,115,"911,667",12.61,11.38,415
+Montana,2002,Fire/Flame,10**,"911,667",1.10**,1.05**,142
+Montana,2002,Firearm,134,"911,667",14.7,14.61,"2,985"
+Montana,2002,Machinery,--,"911,667",--,--,--
+Montana,2002,Natural/Environmental,17**,"911,667",1.87**,1.99**,423
+Montana,2002,Drug Poisoning,78,"911,667",8.56,8.66,"1,770"
+Montana,2002,Non-Drug Poisoning,18**,"911,667",1.97**,1.99**,428
+Montana,2002,Struck by / against,--,"911,667",--,--,--
+Montana,2002,Suffocation,37,"911,667",4.06,3.94,800
+Montana,2002,"Motor vehicle, traffic",242,"911,667",26.55,26.3,"6,462"
+Montana,2002,"Pedestrian, other",--,"911,667",--,--,--
+Montana,2002,"Transport, other land",16**,"911,667",1.76**,1.68**,335
+Montana,2002,"Transport, other (excl. drown by water transp)",--,"911,667",--,--,--
+Montana,2002,Other specified and classifiable,--,"911,667",--,--,--
+Montana,2002,Other specified / NEC,--,"911,667",--,--,--
+Montana,2002,Unspecified,20**,"911,667",2.19**,1.97**,101
+Montana,2001,Cut/Pierce,--,"906,961",--,--,--
+Montana,2001,Drowning (includes water transport),20**,"906,961",2.21**,2.17**,705
+Montana,2001,Fall,110,"906,961",12.13,11.1,436
+Montana,2001,Fire/Flame,--,"906,961",--,--,--
+Montana,2001,Firearm,160,"906,961",17.64,17.77,"3,566"
+Montana,2001,Machinery,--,"906,961",--,--,--
+Montana,2001,Natural/Environmental,20**,"906,961",2.21**,2.10**,343
+Montana,2001,Drug Poisoning,56,"906,961",6.17,6.25,"1,248"
+Montana,2001,Non-Drug Poisoning,19**,"906,961",2.10**,2.13**,350
+Montana,2001,Struck by / against,--,"906,961",--,--,--
+Montana,2001,Suffocation,33,"906,961",3.64,3.63,662
+Montana,2001,"Motor vehicle, traffic",210,"906,961",23.15,23.13,"5,561"
+Montana,2001,"Pedestrian, other",--,"906,961",--,--,--
+Montana,2001,"Transport, other land",--,"906,961",--,--,--
+Montana,2001,"Transport, other (excl. drown by water transp)",--,"906,961",--,--,--
+Montana,2001,Other specified and classifiable,--,"906,961",--,--,--
+Montana,2001,Other specified / NEC,10**,"906,961",1.10**,1.02**,137
+Montana,2001,Unspecified,19**,"906,961",2.10**,1.98**,129
+Total,,,"18,969","20,963,964",90.48,86.48,"350,246"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Montana,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

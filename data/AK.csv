@@ -1,0 +1,403 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Alaska,2021,Cut/Pierce,--,"732,673",--,--,--
+Alaska,2021,Drowning (includes water transport),37,"732,673",5.05,5.27,877
+Alaska,2021,Fall,79,"732,673",10.78,13.29,408
+Alaska,2021,Fire/Flame,23,"732,673",3.14,2.9,237
+Alaska,2021,Hot object/Substance,--,"732,673",--,--,--
+Alaska,2021,Firearm,182,"732,673",24.84,25.06,"5,036"
+Alaska,2021,Machinery,--,"732,673",--,--,--
+Alaska,2021,Natural/Environmental,36,"732,673",4.91,4.8,523
+Alaska,2021,Drug Poisoning,260,"732,673",35.49,35.19,"6,263"
+Alaska,2021,Non-Drug Poisoning,38,"732,673",5.19,5.08,735
+Alaska,2021,Struck by / against,--,"732,673",--,--,--
+Alaska,2021,Suffocation,75,"732,673",10.24,10.43,"2,191"
+Alaska,2021,"Motor vehicle, traffic",84,"732,673",11.47,11.58,"2,054"
+Alaska,2021,"Pedestrian, other",--,"732,673",--,--,--
+Alaska,2021,"Transport, other land",11**,"732,673",1.50**,1.46**,232
+Alaska,2021,"Transport, other (excl. drown by water transp)",--,"732,673",--,--,--
+Alaska,2021,Other specified and classifiable,--,"732,673",--,--,--
+Alaska,2021,Other specified / NEC,--,"732,673",--,--,--
+Alaska,2021,Unspecified,21,"732,673",2.87,3.26,263
+Alaska,2020,Cut/Pierce,15**,"732,441",2.05**,1.97**,277
+Alaska,2020,Drowning (includes water transport),40,"732,441",5.46,5.27,987
+Alaska,2020,Fall,66,"732,441",9.01,11.96,209
+Alaska,2020,Fire/Flame,16**,"732,441",2.18**,2.23**,207
+Alaska,2020,Firearm,175,"732,441",23.89,23.49,"4,743"
+Alaska,2020,Machinery,--,"732,441",--,--,--
+Alaska,2020,Natural/Environmental,33,"732,441",4.51,4.16,630
+Alaska,2020,Drug Poisoning,160,"732,441",21.85,21.93,"3,916"
+Alaska,2020,Non-Drug Poisoning,42,"732,441",5.73,5.73,798
+Alaska,2020,Struck by / against,10**,"732,441",1.37**,1.23**,161
+Alaska,2020,Suffocation,86,"732,441",11.74,12.37,"2,717"
+Alaska,2020,"Motor vehicle, traffic",71,"732,441",9.69,9.59,"1,653"
+Alaska,2020,"Pedal cyclist, other",--,"732,441",--,--,--
+Alaska,2020,"Pedestrian, other",--,"732,441",--,--,--
+Alaska,2020,"Transport, other land",11**,"732,441",1.50**,1.68**,384
+Alaska,2020,"Transport, other (excl. drown by water transp)",14**,"732,441",1.91**,1.96**,216
+Alaska,2020,Other specified and classifiable,--,"732,441",--,--,--
+Alaska,2020,Other specified / NEC,--,"732,441",--,--,--
+Alaska,2020,Unspecified,13**,"732,441",1.78**,1.81**,204
+Alaska,2019,Cut/Pierce,13**,"733,603",1.77**,1.81**,348
+Alaska,2019,Drowning (includes water transport),34,"733,603",4.64,4.41,836
+Alaska,2019,Fall,68,"733,603",9.27,12,302
+Alaska,2019,Fire/Flame,14**,"733,603",1.91**,1.66**,259
+Alaska,2019,Firearm,179,"733,603",24.4,24.42,"4,831"
+Alaska,2019,Machinery,--,"733,603",--,--,--
+Alaska,2019,Natural/Environmental,19**,"733,603",2.59**,2.57**,397
+Alaska,2019,Drug Poisoning,132,"733,603",17.99,17.59,"3,197"
+Alaska,2019,Non-Drug Poisoning,43,"733,603",5.86,6.19,"1,108"
+Alaska,2019,Struck by / against,--,"733,603",--,--,--
+Alaska,2019,Suffocation,98,"733,603",13.36,14.23,"2,933"
+Alaska,2019,"Motor vehicle, traffic",72,"733,603",9.82,9.78,"1,706"
+Alaska,2019,"Pedal cyclist, other",--,"733,603",--,--,--
+Alaska,2019,"Pedestrian, other",--,"733,603",--,--,--
+Alaska,2019,"Transport, other land",21,"733,603",2.86,2.79,577
+Alaska,2019,"Transport, other (excl. drown by water transp)",17**,"733,603",2.32**,2.15**,233
+Alaska,2019,Other specified and classifiable,--,"733,603",--,--,--
+Alaska,2019,Other specified / NEC,10**,"733,603",1.36**,1.36**,204
+Alaska,2019,Unspecified,19**,"733,603",2.59**,2.86**,294
+Alaska,2018,Cut/Pierce,14**,"736,624",1.90**,1.83**,283
+Alaska,2018,Drowning (includes water transport),51,"736,624",6.92,6.41,921
+Alaska,2018,Fall,47,"736,624",6.38,8.12,283
+Alaska,2018,Fire/Flame,12**,"736,624",1.63**,1.58**,268
+Alaska,2018,Hot object/Substance,--,"736,624",--,--,--
+Alaska,2018,Firearm,155,"736,624",21.04,20.76,"4,186"
+Alaska,2018,Machinery,--,"736,624",--,--,--
+Alaska,2018,Natural/Environmental,16**,"736,624",2.17**,2.52**,250
+Alaska,2018,Drug Poisoning,110,"736,624",14.93,14.48,"2,458"
+Alaska,2018,Non-Drug Poisoning,54,"736,624",7.33,7.73,"1,039"
+Alaska,2018,Struck by / against,--,"736,624",--,--,--
+Alaska,2018,Suffocation,76,"736,624",10.32,10.42,"2,314"
+Alaska,2018,"Motor vehicle, traffic",82,"736,624",11.13,10.85,"2,062"
+Alaska,2018,"Pedal cyclist, other",--,"736,624",--,--,--
+Alaska,2018,"Pedestrian, other",--,"736,624",--,--,--
+Alaska,2018,"Transport, other land",13**,"736,624",1.77**,1.68**,274
+Alaska,2018,"Transport, other (excl. drown by water transp)",17**,"736,624",2.31**,2.23**,322
+Alaska,2018,Other specified and classifiable,--,"736,624",--,--,--
+Alaska,2018,Other specified / NEC,--,"736,624",--,--,--
+Alaska,2018,Unspecified,13**,"736,624",1.77**,1.93**,152
+Alaska,2017,Cut/Pierce,19**,"740,983",2.56**,2.55**,471
+Alaska,2017,Drowning (includes water transport),40,"740,983",5.4,5,"1,014"
+Alaska,2017,Fall,69,"740,983",9.31,12.55,476
+Alaska,2017,Fire/Flame,18**,"740,983",2.43**,2.46**,601
+Alaska,2017,Firearm,180,"740,983",24.29,24.51,"4,923"
+Alaska,2017,Natural/Environmental,28,"740,983",3.78,3.74,728
+Alaska,2017,Drug Poisoning,147,"740,983",19.84,20.21,"3,418"
+Alaska,2017,Non-Drug Poisoning,36,"740,983",4.86,5.11,876
+Alaska,2017,Struck by / against,--,"740,983",--,--,--
+Alaska,2017,Suffocation,75,"740,983",10.12,10.27,"2,305"
+Alaska,2017,"Motor vehicle, traffic",85,"740,983",11.47,11.8,"2,119"
+Alaska,2017,"Pedestrian, other",--,"740,983",--,--,--
+Alaska,2017,"Transport, other land",15**,"740,983",2.02**,2.20**,304
+Alaska,2017,"Transport, other (excl. drown by water transp)",--,"740,983",--,--,--
+Alaska,2017,Other specified and classifiable,--,"740,983",--,--,--
+Alaska,2017,Other specified / NEC,--,"740,983",--,--,--
+Alaska,2017,Unspecified,17**,"740,983",2.29**,2.58**,245
+Alaska,2016,Cut/Pierce,--,"742,575",--,--,--
+Alaska,2016,Drowning (includes water transport),50,"742,575",6.73,7.04,"1,270"
+Alaska,2016,Fall,79,"742,575",10.64,14.93,552
+Alaska,2016,Fire/Flame,14**,"742,575",1.89**,2.04**,287
+Alaska,2016,Firearm,177,"742,575",23.84,23,"5,390"
+Alaska,2016,Natural/Environmental,20**,"742,575",2.69**,2.44**,329
+Alaska,2016,Drug Poisoning,128,"742,575",17.24,16.72,"3,126"
+Alaska,2016,Non-Drug Poisoning,34,"742,575",4.58,4.46,730
+Alaska,2016,Struck by / against,--,"742,575",--,--,--
+Alaska,2016,Suffocation,68,"742,575",9.16,10.05,"2,049"
+Alaska,2016,"Motor vehicle, traffic",86,"742,575",11.58,11.43,"2,169"
+Alaska,2016,"Pedal cyclist, other",--,"742,575",--,--,--
+Alaska,2016,"Pedestrian, other",--,"742,575",--,--,--
+Alaska,2016,"Transport, other land",11**,"742,575",1.48**,1.48**,258
+Alaska,2016,"Transport, other (excl. drown by water transp)",24,"742,575",3.23,3.26,536
+Alaska,2016,Other specified and classifiable,--,"742,575",--,--,--
+Alaska,2016,Other specified / NEC,--,"742,575",--,--,--
+Alaska,2016,Unspecified,10**,"742,575",1.35**,1.32**,150
+Alaska,2015,Cut/Pierce,--,"738,430",--,--,--
+Alaska,2015,Drowning (includes water transport),44,"738,430",5.96,5.83,"1,176"
+Alaska,2015,Fall,54,"738,430",7.31,10.96,336
+Alaska,2015,Fire/Flame,15**,"738,430",2.03**,2.47**,308
+Alaska,2015,Firearm,177,"738,430",23.97,23.46,"5,151"
+Alaska,2015,Machinery,--,"738,430",--,--,--
+Alaska,2015,Natural/Environmental,21,"738,430",2.84,2.47,357
+Alaska,2015,Drug Poisoning,122,"738,430",16.52,15.57,"3,074"
+Alaska,2015,Non-Drug Poisoning,43,"738,430",5.82,6.12,993
+Alaska,2015,Struck by / against,--,"738,430",--,--,--
+Alaska,2015,Suffocation,83,"738,430",11.24,12.19,"2,427"
+Alaska,2015,"Motor vehicle, traffic",59,"738,430",7.99,8.61,"1,464"
+Alaska,2015,"Pedal cyclist, other",--,"738,430",--,--,--
+Alaska,2015,"Pedestrian, other",--,"738,430",--,--,--
+Alaska,2015,"Transport, other land",12**,"738,430",1.63**,1.51**,255
+Alaska,2015,"Transport, other (excl. drown by water transp)",--,"738,430",--,--,--
+Alaska,2015,Other specified and classifiable,--,"738,430",--,--,--
+Alaska,2015,Other specified / NEC,--,"738,430",--,--,--
+Alaska,2015,Unspecified,12**,"738,430",1.63**,2.08**,125
+Alaska,2014,Cut/Pierce,10**,"737,075",1.36**,1.36**,238
+Alaska,2014,Drowning (includes water transport),43,"737,075",5.83,5.64,"1,030"
+Alaska,2014,Fall,36,"737,075",4.88,6.4,393
+Alaska,2014,Fire/Flame,14**,"737,075",1.90**,1.95**,119
+Alaska,2014,Firearm,145,"737,075",19.67,19.08,"3,723"
+Alaska,2014,Machinery,--,"737,075",--,--,--
+Alaska,2014,Natural/Environmental,10**,"737,075",1.36**,1.49**,62
+Alaska,2014,Drug Poisoning,124,"737,075",16.82,16.57,"2,926"
+Alaska,2014,Non-Drug Poisoning,37,"737,075",5.02,5.44,903
+Alaska,2014,Struck by / against,--,"737,075",--,--,--
+Alaska,2014,Suffocation,57,"737,075",7.73,8.26,"1,669"
+Alaska,2014,"Motor vehicle, traffic",74,"737,075",10.04,9.46,"1,716"
+Alaska,2014,"Pedestrian, other",--,"737,075",--,--,--
+Alaska,2014,"Transport, other land",14**,"737,075",1.90**,1.73**,336
+Alaska,2014,"Transport, other (excl. drown by water transp)",--,"737,075",--,--,--
+Alaska,2014,Other specified and classifiable,--,"737,075",--,--,--
+Alaska,2014,Other specified / NEC,--,"737,075",--,--,--
+Alaska,2014,Unspecified,27,"737,075",3.66,5.23,325
+Alaska,2013,Cut/Pierce,--,"737,626",--,--,--
+Alaska,2013,Drowning (includes water transport),33,"737,626",4.47,4.5,862
+Alaska,2013,Fall,34,"737,626",4.61,6.13,455
+Alaska,2013,Fire/Flame,13**,"737,626",1.76**,2.03**,287
+Alaska,2013,Firearm,144,"737,626",19.52,19.53,"4,101"
+Alaska,2013,Machinery,--,"737,626",--,--,--
+Alaska,2013,Natural/Environmental,10**,"737,626",1.36**,1.43**,261
+Alaska,2013,Drug Poisoning,105,"737,626",14.24,14.25,"2,307"
+Alaska,2013,Non-Drug Poisoning,38,"737,626",5.15,5.25,994
+Alaska,2013,Struck by / against,--,"737,626",--,--,--
+Alaska,2013,Suffocation,47,"737,626",6.37,6.4,"1,612"
+Alaska,2013,"Motor vehicle, traffic",50,"737,626",6.78,6.4,"1,392"
+Alaska,2013,"Pedestrian, other",--,"737,626",--,--,--
+Alaska,2013,"Transport, other land",15**,"737,626",2.03**,1.91**,448
+Alaska,2013,"Transport, other (excl. drown by water transp)",25,"737,626",3.39,3.29,578
+Alaska,2013,Other specified and classifiable,--,"737,626",--,--,--
+Alaska,2013,Other specified / NEC,--,"737,626",--,--,--
+Alaska,2013,Unspecified,43,"737,626",5.83,7.79,571
+Alaska,2012,Cut/Pierce,11**,"730,810",1.51**,1.40**,217
+Alaska,2012,Drowning (includes water transport),33,"730,810",4.52,4.26,805
+Alaska,2012,Fall,32,"730,810",4.38,5.85,279
+Alaska,2012,Fire/Flame,20**,"730,810",2.74**,3.17**,261
+Alaska,2012,Firearm,132,"730,810",18.06,17.72,"3,516"
+Alaska,2012,Machinery,--,"730,810",--,--,--
+Alaska,2012,Natural/Environmental,16**,"730,810",2.19**,2.40**,293
+Alaska,2012,Drug Poisoning,129,"730,810",17.65,17.42,"3,178"
+Alaska,2012,Non-Drug Poisoning,25,"730,810",3.42,3.14,529
+Alaska,2012,Struck by / against,--,"730,810",--,--,--
+Alaska,2012,Suffocation,57,"730,810",7.8,8.27,"1,849"
+Alaska,2012,"Motor vehicle, traffic",59,"730,810",8.07,8.2,"1,552"
+Alaska,2012,"Pedestrian, other",--,"730,810",--,--,--
+Alaska,2012,"Transport, other land",14**,"730,810",1.92**,1.90**,345
+Alaska,2012,"Transport, other (excl. drown by water transp)",--,"730,810",--,--,--
+Alaska,2012,Other specified and classifiable,--,"730,810",--,--,--
+Alaska,2012,Other specified / NEC,--,"730,810",--,--,--
+Alaska,2012,Unspecified,37,"730,810",5.06,7.33,247
+Alaska,2011,Cut/Pierce,--,"722,349",--,--,--
+Alaska,2011,Drowning (includes water transport),30,"722,349",4.15,4.31,"1,023"
+Alaska,2011,Fall,26,"722,349",3.6,5.08,337
+Alaska,2011,Fire/Flame,12**,"722,349",1.66**,1.84**,221
+Alaska,2011,Firearm,126,"722,349",17.44,17.01,"3,263"
+Alaska,2011,Machinery,--,"722,349",--,--,--
+Alaska,2011,Natural/Environmental,24,"722,349",3.32,3.38,516
+Alaska,2011,Drug Poisoning,107,"722,349",14.81,14.01,"2,474"
+Alaska,2011,Non-Drug Poisoning,45,"722,349",6.23,5.88,"1,016"
+Alaska,2011,Struck by / against,--,"722,349",--,--,--
+Alaska,2011,Suffocation,49,"722,349",6.78,7.6,"1,364"
+Alaska,2011,"Motor vehicle, traffic",71,"722,349",9.83,10.01,"1,836"
+Alaska,2011,"Pedal cyclist, other",--,"722,349",--,--,--
+Alaska,2011,"Transport, other land",17**,"722,349",2.35**,2.37**,548
+Alaska,2011,"Transport, other (excl. drown by water transp)",20**,"722,349",2.77**,2.90**,534
+Alaska,2011,Other specified and classifiable,--,"722,349",--,--,--
+Alaska,2011,Other specified / NEC,--,"722,349",--,--,--
+Alaska,2011,Unspecified,33,"722,349",4.57,6.7,523
+Alaska,2010,Cut/Pierce,--,"710,246",--,--,--
+Alaska,2010,Drowning (includes water transport),48,"710,246",6.76,6.83,"1,173"
+Alaska,2010,Fall,34,"710,246",4.79,7.22,283
+Alaska,2010,Fire/Flame,10**,"710,246",1.41**,1.66**,232
+Alaska,2010,Firearm,144,"710,246",20.28,20.51,"4,000"
+Alaska,2010,Machinery,--,"710,246",--,--,--
+Alaska,2010,Natural/Environmental,17**,"710,246",2.39**,2.40**,285
+Alaska,2010,Drug Poisoning,83,"710,246",11.69,11.59,"1,880"
+Alaska,2010,Non-Drug Poisoning,41,"710,246",5.77,5.53,897
+Alaska,2010,Suffocation,61,"710,246",8.59,8.43,"1,796"
+Alaska,2010,"Motor vehicle, traffic",59,"710,246",8.31,8.53,"1,228"
+Alaska,2010,"Pedal cyclist, other",--,"710,246",--,--,--
+Alaska,2010,"Pedestrian, other",--,"710,246",--,--,--
+Alaska,2010,"Transport, other land",13**,"710,246",1.83**,1.94**,500
+Alaska,2010,"Transport, other (excl. drown by water transp)",29,"710,246",4.08,4.37,660
+Alaska,2010,Other specified and classifiable,--,"710,246",--,--,--
+Alaska,2010,Other specified / NEC,--,"710,246",--,--,--
+Alaska,2010,Unspecified,34,"710,246",4.79,8.14,513
+Alaska,2009,Cut/Pierce,--,"698,895",--,--,--
+Alaska,2009,Drowning (includes water transport),27,"698,895",3.86,3.83,712
+Alaska,2009,Fall,25,"698,895",3.58,5.14,358
+Alaska,2009,Fire/Flame,12**,"698,895",1.72**,1.71**,278
+Alaska,2009,Firearm,104,"698,895",14.88,14.68,"2,919"
+Alaska,2009,Machinery,--,"698,895",--,--,--
+Alaska,2009,Natural/Environmental,23,"698,895",3.29,3.24,588
+Alaska,2009,Drug Poisoning,131,"698,895",18.74,17.74,"2,873"
+Alaska,2009,Non-Drug Poisoning,42,"698,895",6.01,6.07,865
+Alaska,2009,Suffocation,48,"698,895",6.87,7.12,"1,520"
+Alaska,2009,"Motor vehicle, traffic",58,"698,895",8.3,8.2,"1,553"
+Alaska,2009,"Pedal cyclist, other",--,"698,895",--,--,--
+Alaska,2009,"Pedestrian, other",--,"698,895",--,--,--
+Alaska,2009,"Transport, other land",22,"698,895",3.15,3.17,717
+Alaska,2009,"Transport, other (excl. drown by water transp)",--,"698,895",--,--,--
+Alaska,2009,Other specified / NEC,--,"698,895",--,--,--
+Alaska,2009,Unspecified,26,"698,895",3.72,6.69,223
+Alaska,2008,Cut/Pierce,--,"687,280",--,--,--
+Alaska,2008,Drowning (includes water transport),41,"687,280",5.97,5.73,"1,072"
+Alaska,2008,Fall,26,"687,280",3.78,6.09,156
+Alaska,2008,Fire/Flame,13**,"687,280",1.89**,1.74**,418
+Alaska,2008,Firearm,142,"687,280",20.66,20.91,"3,749"
+Alaska,2008,Machinery,--,"687,280",--,--,--
+Alaska,2008,Natural/Environmental,15**,"687,280",2.18**,2.44**,395
+Alaska,2008,Drug Poisoning,127,"687,280",18.48,17.87,"3,055"
+Alaska,2008,Non-Drug Poisoning,39,"687,280",5.68,6.07,723
+Alaska,2008,Struck by / against,--,"687,280",--,--,--
+Alaska,2008,Suffocation,54,"687,280",7.86,8.48,"1,702"
+Alaska,2008,"Motor vehicle, traffic",59,"687,280",8.59,9.08,"1,809"
+Alaska,2008,"Pedestrian, other",--,"687,280",--,--,--
+Alaska,2008,"Transport, other land",13**,"687,280",1.89**,2.19**,396
+Alaska,2008,"Transport, other (excl. drown by water transp)",11**,"687,280",1.60**,1.42**,183
+Alaska,2008,Other specified and classifiable,--,"687,280",--,--,--
+Alaska,2008,Other specified / NEC,--,"687,280",--,--,--
+Alaska,2008,Unspecified,20**,"687,280",2.91**,4.55**,324
+Alaska,2007,Cut/Pierce,--,"680,123",--,--,--
+Alaska,2007,Drowning (includes water transport),36,"680,123",5.29,5.12,"1,051"
+Alaska,2007,Fall,31,"680,123",4.56,7.21,402
+Alaska,2007,Fire/Flame,21,"680,123",3.09,3.37,736
+Alaska,2007,Firearm,120,"680,123",17.64,18.2,"3,094"
+Alaska,2007,Machinery,--,"680,123",--,--,--
+Alaska,2007,Natural/Environmental,19**,"680,123",2.79**,2.91**,457
+Alaska,2007,Drug Poisoning,72,"680,123",10.59,10.16,"1,804"
+Alaska,2007,Non-Drug Poisoning,30,"680,123",4.41,4.38,744
+Alaska,2007,Struck by / against,--,"680,123",--,--,--
+Alaska,2007,Suffocation,64,"680,123",9.41,9.8,"2,515"
+Alaska,2007,"Motor vehicle, traffic",87,"680,123",12.79,12.64,"2,418"
+Alaska,2007,"Pedal cyclist, other",--,"680,123",--,--,--
+Alaska,2007,"Pedestrian, other",--,"680,123",--,--,--
+Alaska,2007,"Transport, other land",18**,"680,123",2.65**,2.41**,616
+Alaska,2007,"Transport, other (excl. drown by water transp)",16**,"680,123",2.35**,2.38**,323
+Alaska,2007,Other specified and classifiable,--,"680,123",--,--,--
+Alaska,2007,Other specified / NEC,--,"680,123",--,--,--
+Alaska,2007,Unspecified,27,"680,123",3.97,6.18,494
+Alaska,2006,Cut/Pierce,10**,"675,150",1.48**,1.50**,349
+Alaska,2006,Drowning (includes water transport),31,"675,150",4.59,4.64,928
+Alaska,2006,Fall,22,"675,150",3.26,5.12,342
+Alaska,2006,Fire/Flame,17**,"675,150",2.52**,2.80**,442
+Alaska,2006,Firearm,111,"675,150",16.44,16.92,"3,081"
+Alaska,2006,Machinery,--,"675,150",--,--,--
+Alaska,2006,Natural/Environmental,21,"675,150",3.11,3.26,585
+Alaska,2006,Drug Poisoning,76,"675,150",11.26,11.08,"1,858"
+Alaska,2006,Non-Drug Poisoning,17**,"675,150",2.52**,2.32**,400
+Alaska,2006,Struck by / against,--,"675,150",--,--,--
+Alaska,2006,Suffocation,51,"675,150",7.55,7.56,"1,954"
+Alaska,2006,"Motor vehicle, traffic",76,"675,150",11.26,11.49,"2,080"
+Alaska,2006,"Pedal cyclist, other",--,"675,150",--,--,--
+Alaska,2006,"Pedestrian, other",--,"675,150",--,--,--
+Alaska,2006,"Transport, other land",--,"675,150",--,--,--
+Alaska,2006,"Transport, other (excl. drown by water transp)",22,"675,150",3.26,3.13,679
+Alaska,2006,Other specified and classifiable,--,"675,150",--,--,--
+Alaska,2006,Other specified / NEC,--,"675,150",--,--,--
+Alaska,2006,Unspecified,19**,"675,150",2.81**,5.48**,151
+Alaska,2005,Cut/Pierce,--,"666,835",--,--,--
+Alaska,2005,Drowning (includes water transport),44,"666,835",6.6,6.86,"1,326"
+Alaska,2005,Fall,21,"666,835",3.15,4.13,400
+Alaska,2005,Fire/Flame,17**,"666,835",2.55**,2.80**,400
+Alaska,2005,Firearm,116,"666,835",17.4,17.46,"3,310"
+Alaska,2005,Natural/Environmental,18**,"666,835",2.70**,2.96**,341
+Alaska,2005,Drug Poisoning,79,"666,835",11.85,11.41,"2,004"
+Alaska,2005,Non-Drug Poisoning,--,"666,835",--,--,--
+Alaska,2005,Struck by / against,--,"666,835",--,--,--
+Alaska,2005,Suffocation,54,"666,835",8.1,7.95,"2,107"
+Alaska,2005,"Motor vehicle, traffic",75,"666,835",11.25,11.75,"2,038"
+Alaska,2005,"Pedestrian, other",--,"666,835",--,--,--
+Alaska,2005,"Transport, other land",16**,"666,835",2.40**,2.24**,575
+Alaska,2005,"Transport, other (excl. drown by water transp)",10**,"666,835",1.50**,1.59**,291
+Alaska,2005,Other specified and classifiable,--,"666,835",--,--,--
+Alaska,2005,Other specified / NEC,--,"666,835",--,--,--
+Alaska,2005,Unspecified,22,"666,835",3.3,5.38,381
+Alaska,2004,Cut/Pierce,--,"659,199",--,--,--
+Alaska,2004,Drowning (includes water transport),49,"659,199",7.43,7.09,"1,427"
+Alaska,2004,Fall,16**,"659,199",2.43**,3.78**,284
+Alaska,2004,Fire/Flame,--,"659,199",--,--,--
+Alaska,2004,Firearm,117,"659,199",17.75,17.51,"3,456"
+Alaska,2004,Machinery,--,"659,199",--,--,--
+Alaska,2004,Natural/Environmental,11**,"659,199",1.67**,1.79**,195
+Alaska,2004,Overexertion,--,"659,199",--,--,--
+Alaska,2004,Drug Poisoning,86,"659,199",13.05,12.81,"2,336"
+Alaska,2004,Non-Drug Poisoning,18**,"659,199",2.73**,2.79**,466
+Alaska,2004,Struck by / against,--,"659,199",--,--,--
+Alaska,2004,Suffocation,52,"659,199",7.89,8.65,"2,008"
+Alaska,2004,"Motor vehicle, traffic",102,"659,199",15.47,16.42,"2,721"
+Alaska,2004,"Pedestrian, other",--,"659,199",--,--,--
+Alaska,2004,"Transport, other land",16**,"659,199",2.43**,2.29**,473
+Alaska,2004,"Transport, other (excl. drown by water transp)",15**,"659,199",2.28**,2.33**,323
+Alaska,2004,Other specified and classifiable,--,"659,199",--,--,--
+Alaska,2004,Other specified / NEC,12**,"659,199",1.82**,1.98**,276
+Alaska,2004,Unspecified,18**,"659,199",2.73**,5.84**,193
+Alaska,2003,Cut/Pierce,--,"648,326",--,--,--
+Alaska,2003,Drowning (includes water transport),34,"648,326",5.24,5.64,895
+Alaska,2003,Fall,12**,"648,326",1.85**,2.63**,147
+Alaska,2003,Fire/Flame,--,"648,326",--,--,--
+Alaska,2003,Firearm,120,"648,326",18.51,19.24,"3,502"
+Alaska,2003,Machinery,--,"648,326",--,--,--
+Alaska,2003,Natural/Environmental,10**,"648,326",1.54**,1.96**,212
+Alaska,2003,Drug Poisoning,83,"648,326",12.8,12.75,"2,289"
+Alaska,2003,Non-Drug Poisoning,17**,"648,326",2.62**,2.65**,437
+Alaska,2003,Struck by / against,--,"648,326",--,--,--
+Alaska,2003,Suffocation,39,"648,326",6.02,6.41,"1,331"
+Alaska,2003,"Motor vehicle, traffic",105,"648,326",16.2,16.98,"3,093"
+Alaska,2003,"Pedal cyclist, other",--,"648,326",--,--,--
+Alaska,2003,"Pedestrian, other",--,"648,326",--,--,--
+Alaska,2003,"Transport, other land",14**,"648,326",2.16**,2.04**,528
+Alaska,2003,"Transport, other (excl. drown by water transp)",16**,"648,326",2.47**,2.57**,286
+Alaska,2003,Other specified and classifiable,--,"648,326",--,--,--
+Alaska,2003,Other specified / NEC,--,"648,326",--,--,--
+Alaska,2003,Unspecified,26,"648,326",4.01,6.78,346
+Alaska,2002,Cut/Pierce,--,"642,270",--,--,--
+Alaska,2002,Drowning (includes water transport),42,"642,270",6.54,6.49,"1,482"
+Alaska,2002,Fall,20**,"642,270",3.11**,3.92**,481
+Alaska,2002,Fire/Flame,--,"642,270",--,--,--
+Alaska,2002,Firearm,127,"642,270",19.77,19.89,"3,590"
+Alaska,2002,Machinery,--,"642,270",--,--,--
+Alaska,2002,Natural/Environmental,24,"642,270",3.74,3.52,644
+Alaska,2002,Drug Poisoning,84,"642,270",13.08,12.14,"1,883"
+Alaska,2002,Non-Drug Poisoning,12**,"642,270",1.87**,1.75**,312
+Alaska,2002,Struck by / against,--,"642,270",--,--,--
+Alaska,2002,Suffocation,37,"642,270",5.76,6.46,"1,393"
+Alaska,2002,"Motor vehicle, traffic",99,"642,270",15.41,16.81,"2,613"
+Alaska,2002,"Pedal cyclist, other",--,"642,270",--,--,--
+Alaska,2002,"Pedestrian, other",--,"642,270",--,--,--
+Alaska,2002,"Transport, other land",11**,"642,270",1.71**,1.82**,207
+Alaska,2002,"Transport, other (excl. drown by water transp)",21,"642,270",3.27,3.3,352
+Alaska,2002,Other specified and classifiable,--,"642,270",--,--,--
+Alaska,2002,Other specified / NEC,--,"642,270",--,--,--
+Alaska,2002,Unspecified,28,"642,270",4.36,7.13,412
+Alaska,2001,Cut/Pierce,--,"633,687",--,--,--
+Alaska,2001,Drowning (includes water transport),39,"633,687",6.15,6.38,"1,347"
+Alaska,2001,Fall,23,"633,687",3.63,4.85,468
+Alaska,2001,Fire/Flame,15**,"633,687",2.37**,2.56**,297
+Alaska,2001,Firearm,95,"633,687",14.99,14.83,"2,846"
+Alaska,2001,Machinery,--,"633,687",--,--,--
+Alaska,2001,Natural/Environmental,15**,"633,687",2.37**,2.69**,387
+Alaska,2001,Drug Poisoning,62,"633,687",9.78,9.41,"1,613"
+Alaska,2001,Non-Drug Poisoning,34,"633,687",5.37,5.15,915
+Alaska,2001,Struck by / against,--,"633,687",--,--,--
+Alaska,2001,Suffocation,47,"633,687",7.42,7.84,"1,930"
+Alaska,2001,"Motor vehicle, traffic",86,"633,687",13.57,15.05,"2,407"
+Alaska,2001,"Pedestrian, other",--,"633,687",--,--,--
+Alaska,2001,"Transport, other land",16**,"633,687",2.53**,2.40**,460
+Alaska,2001,"Transport, other (excl. drown by water transp)",21,"633,687",3.31,3.31,424
+Alaska,2001,Other specified and classifiable,--,"633,687",--,--,--
+Alaska,2001,Other specified / NEC,--,"633,687",--,--,--
+Alaska,2001,Unspecified,19**,"633,687",3.00**,5.83**,174
+Total,,,"12,973","14,787,200",87.73,92.41,"318,645"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Alaska,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

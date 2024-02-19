@@ -1,0 +1,439 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Michigan,2021,Cut/Pierce,106,"10,050,811",1.06,1.02,"2,281"
+Michigan,2021,Drowning (includes water transport),160,"10,050,811",1.59,1.54,"3,877"
+Michigan,2021,Fall,"1,581","10,050,811",15.73,12.84,"2,910"
+Michigan,2021,Fire/Flame,134,"10,050,811",1.33,1.1,"1,287"
+Michigan,2021,Hot object/Substance,--,"10,050,811",--,--,--
+Michigan,2021,Firearm,"1,544","10,050,811",15.36,15.36,"37,975"
+Michigan,2021,Machinery,17**,"10,050,811",0.17**,0.16**,290
+Michigan,2021,Natural/Environmental,78,"10,050,811",0.78,0.7,"1,041"
+Michigan,2021,Overexertion,--,"10,050,811",--,--,--
+Michigan,2021,Drug Poisoning,"3,089","10,050,811",30.73,31.5,"65,043"
+Michigan,2021,Non-Drug Poisoning,165,"10,050,811",1.64,1.59,"3,098"
+Michigan,2021,Struck by / against,29,"10,050,811",0.29,0.24,339
+Michigan,2021,Suffocation,652,"10,050,811",6.49,6.54,"16,118"
+Michigan,2021,"Motor vehicle, traffic","1,302","10,050,811",12.95,12.69,"28,492"
+Michigan,2021,"Pedal cyclist, other",15**,"10,050,811",0.15**,0.14**,242
+Michigan,2021,"Pedestrian, other",12**,"10,050,811",0.12**,0.12**,307
+Michigan,2021,"Transport, other land",48,"10,050,811",0.48,0.45,984
+Michigan,2021,"Transport, other (excl. drown by water transp)",19**,"10,050,811",0.19**,0.18**,447
+Michigan,2021,Other specified and classifiable,80,"10,050,811",0.8,0.74,"1,423"
+Michigan,2021,Other specified / NEC,69,"10,050,811",0.69,0.58,701
+Michigan,2021,Unspecified,207,"10,050,811",2.06,1.72,"1,532"
+Michigan,2020,Cut/Pierce,94,"10,067,664",0.93,0.91,"2,009"
+Michigan,2020,Drowning (includes water transport),173,"10,067,664",1.72,1.58,"3,258"
+Michigan,2020,Fall,"1,534","10,067,664",15.24,12.39,"2,318"
+Michigan,2020,Fire/Flame,150,"10,067,664",1.49,1.34,"2,413"
+Michigan,2020,Hot object/Substance,--,"10,067,664",--,--,--
+Michigan,2020,Firearm,"1,454","10,067,664",14.44,14.43,"35,675"
+Michigan,2020,Machinery,19**,"10,067,664",0.19**,0.16**,114
+Michigan,2020,Natural/Environmental,57,"10,067,664",0.57,0.45,402
+Michigan,2020,Overexertion,--,"10,067,664",--,--,--
+Michigan,2020,Drug Poisoning,"2,759","10,067,664",27.41,28.23,"59,870"
+Michigan,2020,Non-Drug Poisoning,172,"10,067,664",1.71,1.62,"2,964"
+Michigan,2020,Struck by / against,33,"10,067,664",0.33,0.3,410
+Michigan,2020,Suffocation,673,"10,067,664",6.69,6.7,"16,528"
+Michigan,2020,"Motor vehicle, traffic","1,175","10,067,664",11.67,11.32,"25,167"
+Michigan,2020,"Pedal cyclist, other",16**,"10,067,664",0.16**,0.12**,179
+Michigan,2020,"Pedestrian, other",13**,"10,067,664",0.13**,0.14**,386
+Michigan,2020,"Transport, other land",47,"10,067,664",0.47,0.44,801
+Michigan,2020,"Transport, other (excl. drown by water transp)",14**,"10,067,664",0.14**,0.15**,358
+Michigan,2020,Other specified and classifiable,88,"10,067,664",0.87,0.86,"1,604"
+Michigan,2020,Other specified / NEC,64,"10,067,664",0.64,0.58,854
+Michigan,2020,Unspecified,211,"10,067,664",2.1,1.79,"1,925"
+Michigan,2019,Cut/Pierce,84,"9,984,795",0.84,0.79,"1,672"
+Michigan,2019,Drowning (includes water transport),137,"9,984,795",1.37,1.33,"3,171"
+Michigan,2019,Fall,"1,320","9,984,795",13.22,10.13,"1,730"
+Michigan,2019,Fire/Flame,111,"9,984,795",1.11,0.95,"1,627"
+Michigan,2019,Hot object/Substance,--,"9,984,795",--,--,--
+Michigan,2019,Firearm,"1,220","9,984,795",12.22,12.04,"28,871"
+Michigan,2019,Machinery,21,"9,984,795",0.21,0.17,163
+Michigan,2019,Natural/Environmental,84,"9,984,795",0.84,0.71,738
+Michigan,2019,Drug Poisoning,"2,385","9,984,795",23.89,24.48,"51,035"
+Michigan,2019,Non-Drug Poisoning,215,"9,984,795",2.15,2.06,"3,703"
+Michigan,2019,Struck by / against,30,"9,984,795",0.3,0.27,463
+Michigan,2019,Suffocation,733,"9,984,795",7.34,7.26,"17,739"
+Michigan,2019,"Motor vehicle, traffic","1,017","9,984,795",10.19,9.72,"21,025"
+Michigan,2019,"Pedal cyclist, other",--,"9,984,795",--,--,--
+Michigan,2019,"Pedestrian, other",14**,"9,984,795",0.14**,0.13**,243
+Michigan,2019,"Transport, other land",67,"9,984,795",0.67,0.67,"1,536"
+Michigan,2019,"Transport, other (excl. drown by water transp)",--,"9,984,795",--,--,--
+Michigan,2019,Other specified and classifiable,84,"9,984,795",0.84,0.81,"1,533"
+Michigan,2019,Other specified / NEC,63,"9,984,795",0.63,0.54,808
+Michigan,2019,Unspecified,280,"9,984,795",2.8,2.4,"2,594"
+Michigan,2018,Cut/Pierce,75,"9,987,286",0.75,0.68,"1,383"
+Michigan,2018,Drowning (includes water transport),157,"9,987,286",1.57,1.58,"3,833"
+Michigan,2018,Fall,"1,249","9,987,286",12.51,9.71,"1,616"
+Michigan,2018,Fire/Flame,129,"9,987,286",1.29,1.23,"2,570"
+Michigan,2018,Hot object/Substance,--,"9,987,286",--,--,--
+Michigan,2018,Firearm,"1,310","9,987,286",13.12,12.83,"29,982"
+Michigan,2018,Machinery,10**,"9,987,286",0.10**,0.07**,58
+Michigan,2018,Natural/Environmental,59,"9,987,286",0.59,0.5,431
+Michigan,2018,Drug Poisoning,"2,591","9,987,286",25.94,26.74,"56,277"
+Michigan,2018,Non-Drug Poisoning,182,"9,987,286",1.82,1.74,"3,312"
+Michigan,2018,Struck by / against,39,"9,987,286",0.39,0.33,475
+Michigan,2018,Suffocation,733,"9,987,286",7.34,7.43,"19,017"
+Michigan,2018,"Motor vehicle, traffic",988,"9,987,286",9.89,9.4,"20,618"
+Michigan,2018,"Pedal cyclist, other",--,"9,987,286",--,--,--
+Michigan,2018,"Pedestrian, other",18**,"9,987,286",0.18**,0.18**,455
+Michigan,2018,"Transport, other land",43,"9,987,286",0.43,0.47,989
+Michigan,2018,"Transport, other (excl. drown by water transp)",13**,"9,987,286",0.13**,0.11**,160
+Michigan,2018,Other specified and classifiable,65,"9,987,286",0.65,0.63,"1,459"
+Michigan,2018,Other specified / NEC,63,"9,987,286",0.63,0.55,810
+Michigan,2018,Unspecified,338,"9,987,286",3.38,2.97,"3,912"
+Michigan,2017,Cut/Pierce,81,"9,976,752",0.81,0.81,"1,762"
+Michigan,2017,Drowning (includes water transport),135,"9,976,752",1.35,1.34,"3,520"
+Michigan,2017,Fall,"1,171","9,976,752",11.74,9.3,"2,163"
+Michigan,2017,Fire/Flame,89,"9,976,752",0.89,0.79,"1,078"
+Michigan,2017,Hot object/Substance,--,"9,976,752",--,--,--
+Michigan,2017,Firearm,"1,138","9,976,752",11.41,11.16,"26,472"
+Michigan,2017,Machinery,--,"9,976,752",--,--,--
+Michigan,2017,Natural/Environmental,48,"9,976,752",0.48,0.4,455
+Michigan,2017,Drug Poisoning,"2,694","9,976,752",27,27.69,"60,620"
+Michigan,2017,Non-Drug Poisoning,184,"9,976,752",1.84,1.8,"3,344"
+Michigan,2017,Struck by / against,32,"9,976,752",0.32,0.29,418
+Michigan,2017,Suffocation,701,"9,976,752",7.03,7.07,"17,455"
+Michigan,2017,"Motor vehicle, traffic","1,007","9,976,752",10.09,9.64,"21,143"
+Michigan,2017,"Pedal cyclist, other",10**,"9,976,752",0.10**,0.09**,159
+Michigan,2017,"Pedestrian, other",17**,"9,976,752",0.17**,0.15**,409
+Michigan,2017,"Transport, other land",53,"9,976,752",0.53,0.52,"1,099"
+Michigan,2017,"Transport, other (excl. drown by water transp)",--,"9,976,752",--,--,--
+Michigan,2017,Other specified and classifiable,72,"9,976,752",0.72,0.67,"1,572"
+Michigan,2017,Other specified / NEC,51,"9,976,752",0.51,0.45,659
+Michigan,2017,Unspecified,560,"9,976,752",5.61,4.81,"5,746"
+Michigan,2016,Cut/Pierce,79,"9,954,117",0.79,0.78,"1,941"
+Michigan,2016,Drowning (includes water transport),166,"9,954,117",1.67,1.55,"3,919"
+Michigan,2016,Fall,980,"9,954,117",9.85,7.9,"2,092"
+Michigan,2016,Fire/Flame,115,"9,954,117",1.16,1.03,"1,459"
+Michigan,2016,Hot object/Substance,--,"9,954,117",--,--,--
+Michigan,2016,Firearm,"1,230","9,954,117",12.36,12.19,"29,520"
+Michigan,2016,Machinery,15**,"9,954,117",0.15**,0.13**,231
+Michigan,2016,Natural/Environmental,48,"9,954,117",0.48,0.44,570
+Michigan,2016,Drug Poisoning,"2,347","9,954,117",23.58,24.31,"53,925"
+Michigan,2016,Non-Drug Poisoning,208,"9,954,117",2.09,2.11,"4,217"
+Michigan,2016,Struck by / against,28,"9,954,117",0.28,0.25,585
+Michigan,2016,Suffocation,612,"9,954,117",6.15,6.14,"16,107"
+Michigan,2016,"Motor vehicle, traffic",936,"9,954,117",9.4,9.03,"20,271"
+Michigan,2016,"Pedal cyclist, other",--,"9,954,117",--,--,--
+Michigan,2016,"Pedestrian, other",14**,"9,954,117",0.14**,0.14**,272
+Michigan,2016,"Transport, other land",49,"9,954,117",0.49,0.48,"1,020"
+Michigan,2016,"Transport, other (excl. drown by water transp)",13**,"9,954,117",0.13**,0.13**,248
+Michigan,2016,Other specified and classifiable,64,"9,954,117",0.64,0.65,"1,410"
+Michigan,2016,Other specified / NEC,63,"9,954,117",0.63,0.6,797
+Michigan,2016,Unspecified,682,"9,954,117",6.85,5.87,"6,713"
+Michigan,2015,Cut/Pierce,70,"9,934,483",0.71,0.71,"1,429"
+Michigan,2015,Drowning (includes water transport),112,"9,934,483",1.13,1.08,"2,457"
+Michigan,2015,Fall,971,"9,934,483",9.77,7.95,"1,929"
+Michigan,2015,Fire/Flame,94,"9,934,483",0.95,0.86,"1,575"
+Michigan,2015,Hot object/Substance,--,"9,934,483",--,--,--
+Michigan,2015,Firearm,"1,164","9,934,483",11.72,11.65,"27,177"
+Michigan,2015,Machinery,17**,"9,934,483",0.17**,0.15**,247
+Michigan,2015,Natural/Environmental,47,"9,934,483",0.47,0.41,410
+Michigan,2015,Drug Poisoning,"1,980","9,934,483",19.93,20.36,"44,186"
+Michigan,2015,Non-Drug Poisoning,205,"9,934,483",2.06,2.02,"3,766"
+Michigan,2015,Struck by / against,30,"9,934,483",0.3,0.28,522
+Michigan,2015,Suffocation,720,"9,934,483",7.25,7.25,"19,086"
+Michigan,2015,"Motor vehicle, traffic",840,"9,934,483",8.46,8.1,"18,753"
+Michigan,2015,"Pedal cyclist, other",13**,"9,934,483",0.13**,0.11**,152
+Michigan,2015,"Pedestrian, other",14**,"9,934,483",0.14**,0.12**,175
+Michigan,2015,"Transport, other land",37,"9,934,483",0.37,0.38,954
+Michigan,2015,"Transport, other (excl. drown by water transp)",--,"9,934,483",--,--,--
+Michigan,2015,Other specified and classifiable,61,"9,934,483",0.61,0.56,"1,171"
+Michigan,2015,Other specified / NEC,60,"9,934,483",0.6,0.53,871
+Michigan,2015,Unspecified,541,"9,934,483",5.45,4.81,"6,320"
+Michigan,2014,Cut/Pierce,78,"9,932,033",0.79,0.79,"1,876"
+Michigan,2014,Drowning (includes water transport),108,"9,932,033",1.09,1.06,"2,594"
+Michigan,2014,Fall,"1,117","9,932,033",11.25,9.16,"2,424"
+Michigan,2014,Fire/Flame,133,"9,932,033",1.34,1.16,"1,751"
+Michigan,2014,Hot object/Substance,--,"9,932,033",--,--,--
+Michigan,2014,Firearm,"1,095","9,932,033",11.03,10.97,"26,754"
+Michigan,2014,Machinery,14**,"9,932,033",0.14**,0.14**,251
+Michigan,2014,Natural/Environmental,52,"9,932,033",0.52,0.46,573
+Michigan,2014,Drug Poisoning,"1,762","9,932,033",17.74,17.93,"38,539"
+Michigan,2014,Non-Drug Poisoning,159,"9,932,033",1.6,1.53,"2,722"
+Michigan,2014,Struck by / against,38,"9,932,033",0.38,0.38,572
+Michigan,2014,Suffocation,670,"9,932,033",6.75,6.64,"17,103"
+Michigan,2014,"Motor vehicle, traffic",953,"9,932,033",9.6,9.22,"21,157"
+Michigan,2014,"Pedal cyclist, other",--,"9,932,033",--,--,--
+Michigan,2014,"Pedestrian, other",21,"9,932,033",0.21,0.22,554
+Michigan,2014,"Transport, other land",58,"9,932,033",0.58,0.57,"1,364"
+Michigan,2014,"Transport, other (excl. drown by water transp)",10**,"9,932,033",0.10**,0.10**,163
+Michigan,2014,Other specified and classifiable,65,"9,932,033",0.65,0.61,"1,371"
+Michigan,2014,Other specified / NEC,74,"9,932,033",0.75,0.69,"1,107"
+Michigan,2014,Unspecified,235,"9,932,033",2.37,2.05,"2,164"
+Michigan,2013,Cut/Pierce,67,"9,914,802",0.68,0.67,"1,572"
+Michigan,2013,Drowning (includes water transport),106,"9,914,802",1.07,1.06,"2,869"
+Michigan,2013,Fall,"1,013","9,914,802",10.22,8.51,"2,472"
+Michigan,2013,Fire/Flame,139,"9,914,802",1.4,1.24,"1,839"
+Michigan,2013,Hot object/Substance,--,"9,914,802",--,--,--
+Michigan,2013,Firearm,"1,190","9,914,802",12,11.93,"28,553"
+Michigan,2013,Machinery,16**,"9,914,802",0.16**,0.15**,186
+Michigan,2013,Natural/Environmental,55,"9,914,802",0.56,0.49,548
+Michigan,2013,Drug Poisoning,"1,553","9,914,802",15.66,15.83,"34,671"
+Michigan,2013,Non-Drug Poisoning,150,"9,914,802",1.51,1.5,"2,806"
+Michigan,2013,Struck by / against,47,"9,914,802",0.47,0.45,756
+Michigan,2013,Suffocation,620,"9,914,802",6.25,6.28,"16,436"
+Michigan,2013,"Motor vehicle, traffic",993,"9,914,802",10.02,9.69,"20,888"
+Michigan,2013,"Pedal cyclist, other",13**,"9,914,802",0.13**,0.11**,92
+Michigan,2013,"Pedestrian, other",18**,"9,914,802",0.18**,0.17**,392
+Michigan,2013,"Transport, other land",62,"9,914,802",0.63,0.62,"1,216"
+Michigan,2013,"Transport, other (excl. drown by water transp)",17**,"9,914,802",0.17**,0.16**,440
+Michigan,2013,Other specified and classifiable,68,"9,914,802",0.69,0.64,"1,169"
+Michigan,2013,Other specified / NEC,68,"9,914,802",0.69,0.62,"1,008"
+Michigan,2013,Unspecified,213,"9,914,802",2.15,1.83,"1,887"
+Michigan,2012,Cut/Pierce,77,"9,898,289",0.78,0.74,"1,578"
+Michigan,2012,Drowning (includes water transport),143,"9,898,289",1.45,1.47,"4,202"
+Michigan,2012,Fall,891,"9,898,289",9,7.61,"2,331"
+Michigan,2012,Fire/Flame,115,"9,898,289",1.16,1.05,"1,492"
+Michigan,2012,Hot object/Substance,--,"9,898,289",--,--,--
+Michigan,2012,Firearm,"1,222","9,898,289",12.35,12.23,"31,308"
+Michigan,2012,Machinery,15**,"9,898,289",0.15**,0.14**,189
+Michigan,2012,Natural/Environmental,36,"9,898,289",0.36,0.34,320
+Michigan,2012,Drug Poisoning,"1,308","9,898,289",13.21,13.49,"30,170"
+Michigan,2012,Non-Drug Poisoning,153,"9,898,289",1.55,1.52,"2,908"
+Michigan,2012,Struck by / against,38,"9,898,289",0.38,0.39,696
+Michigan,2012,Suffocation,613,"9,898,289",6.19,6.32,"17,424"
+Michigan,2012,"Motor vehicle, traffic","1,006","9,898,289",10.16,9.86,"23,376"
+Michigan,2012,"Pedal cyclist, other",--,"9,898,289",--,--,--
+Michigan,2012,"Pedestrian, other",17**,"9,898,289",0.17**,0.17**,443
+Michigan,2012,"Transport, other land",40,"9,898,289",0.4,0.41,815
+Michigan,2012,"Transport, other (excl. drown by water transp)",15**,"9,898,289",0.15**,0.14**,135
+Michigan,2012,Other specified and classifiable,61,"9,898,289",0.62,0.62,"1,593"
+Michigan,2012,Other specified / NEC,79,"9,898,289",0.8,0.75,"1,241"
+Michigan,2012,Unspecified,221,"9,898,289",2.23,1.95,"1,813"
+Michigan,2011,Cut/Pierce,74,"9,883,053",0.75,0.77,"1,903"
+Michigan,2011,Drowning (includes water transport),148,"9,883,053",1.5,1.52,"4,134"
+Michigan,2011,Fall,922,"9,883,053",9.33,7.86,"2,596"
+Michigan,2011,Fire/Flame,114,"9,883,053",1.15,1.06,"1,660"
+Michigan,2011,Hot object/Substance,--,"9,883,053",--,--,--
+Michigan,2011,Firearm,"1,156","9,883,053",11.7,11.79,"28,741"
+Michigan,2011,Machinery,28,"9,883,053",0.28,0.27,489
+Michigan,2011,Natural/Environmental,67,"9,883,053",0.68,0.58,755
+Michigan,2011,Overexertion,--,"9,883,053",--,--,--
+Michigan,2011,Drug Poisoning,"1,386","9,883,053",14.02,14.3,"31,835"
+Michigan,2011,Non-Drug Poisoning,183,"9,883,053",1.85,1.84,"3,622"
+Michigan,2011,Struck by / against,27,"9,883,053",0.27,0.25,440
+Michigan,2011,Suffocation,594,"9,883,053",6.01,6.12,"16,088"
+Michigan,2011,"Motor vehicle, traffic",965,"9,883,053",9.76,9.46,"22,280"
+Michigan,2011,"Pedal cyclist, other",--,"9,883,053",--,--,--
+Michigan,2011,"Pedestrian, other",11**,"9,883,053",0.11**,0.11**,248
+Michigan,2011,"Transport, other land",57,"9,883,053",0.58,0.56,"1,122"
+Michigan,2011,"Transport, other (excl. drown by water transp)",19**,"9,883,053",0.19**,0.18**,240
+Michigan,2011,Other specified and classifiable,77,"9,883,053",0.78,0.72,"1,566"
+Michigan,2011,Other specified / NEC,60,"9,883,053",0.61,0.56,587
+Michigan,2011,Unspecified,240,"9,883,053",2.43,2.15,"2,328"
+Michigan,2010,Cut/Pierce,90,"9,884,112",0.91,0.9,"2,161"
+Michigan,2010,Drowning (includes water transport),135,"9,884,112",1.37,1.38,"3,746"
+Michigan,2010,Fall,860,"9,884,112",8.7,7.59,"2,644"
+Michigan,2010,Fire/Flame,122,"9,884,112",1.23,1.15,"2,312"
+Michigan,2010,Hot object/Substance,--,"9,884,112",--,--,--
+Michigan,2010,Firearm,"1,076","9,884,112",10.89,10.98,"27,120"
+Michigan,2010,Machinery,16**,"9,884,112",0.16**,0.15**,121
+Michigan,2010,Natural/Environmental,45,"9,884,112",0.46,0.41,445
+Michigan,2010,Drug Poisoning,"1,394","9,884,112",14.1,13.96,"30,688"
+Michigan,2010,Non-Drug Poisoning,136,"9,884,112",1.38,1.32,"2,438"
+Michigan,2010,Struck by / against,26,"9,884,112",0.26,0.26,492
+Michigan,2010,Suffocation,541,"9,884,112",5.47,5.45,"14,688"
+Michigan,2010,"Motor vehicle, traffic",989,"9,884,112",10.01,9.7,"22,434"
+Michigan,2010,"Pedal cyclist, other",10**,"9,884,112",0.10**,0.10**,151
+Michigan,2010,"Pedestrian, other",32,"9,884,112",0.32,0.31,871
+Michigan,2010,"Transport, other land",62,"9,884,112",0.63,0.62,"1,521"
+Michigan,2010,"Transport, other (excl. drown by water transp)",23,"9,884,112",0.23,0.22,453
+Michigan,2010,Other specified and classifiable,60,"9,884,112",0.61,0.6,"1,478"
+Michigan,2010,Other specified / NEC,75,"9,884,112",0.76,0.71,"1,235"
+Michigan,2010,Unspecified,243,"9,884,112",2.46,2.19,"1,890"
+Michigan,2009,Cut/Pierce,76,"9,901,591",0.77,0.75,"1,716"
+Michigan,2009,Drowning (includes water transport),122,"9,901,591",1.23,1.2,"3,066"
+Michigan,2009,Fall,795,"9,901,591",8.03,7.1,"2,130"
+Michigan,2009,Fire/Flame,154,"9,901,591",1.56,1.51,"3,126"
+Michigan,2009,Firearm,"1,095","9,901,591",11.06,11.08,"27,109"
+Michigan,2009,Machinery,13**,"9,901,591",0.13**,0.12**,177
+Michigan,2009,Natural/Environmental,54,"9,901,591",0.55,0.5,604
+Michigan,2009,Drug Poisoning,"1,429","9,901,591",14.43,14.51,"32,272"
+Michigan,2009,Non-Drug Poisoning,155,"9,901,591",1.57,1.5,"2,833"
+Michigan,2009,Struck by / against,34,"9,901,591",0.34,0.32,621
+Michigan,2009,Suffocation,512,"9,901,591",5.17,5.21,"14,189"
+Michigan,2009,"Motor vehicle, traffic",899,"9,901,591",9.08,8.88,"21,226"
+Michigan,2009,"Pedal cyclist, other",11**,"9,901,591",0.11**,0.10**,120
+Michigan,2009,"Pedestrian, other",31,"9,901,591",0.31,0.31,819
+Michigan,2009,"Transport, other land",60,"9,901,591",0.61,0.62,"1,683"
+Michigan,2009,"Transport, other (excl. drown by water transp)",11**,"9,901,591",0.11**,0.11**,276
+Michigan,2009,Other specified and classifiable,61,"9,901,591",0.62,0.6,"1,312"
+Michigan,2009,Other specified / NEC,100,"9,901,591",1.01,0.95,"1,577"
+Michigan,2009,Unspecified,225,"9,901,591",2.27,2.06,"1,691"
+Michigan,2008,Cut/Pierce,73,"9,946,889",0.73,0.71,"1,613"
+Michigan,2008,Drowning (includes water transport),138,"9,946,889",1.39,1.38,"3,263"
+Michigan,2008,Fall,794,"9,946,889",7.98,7.2,"2,499"
+Michigan,2008,Fire/Flame,137,"9,946,889",1.38,1.31,"2,238"
+Michigan,2008,Hot object/Substance,--,"9,946,889",--,--,--
+Michigan,2008,Firearm,"1,081","9,946,889",10.87,10.96,"27,588"
+Michigan,2008,Machinery,32,"9,946,889",0.32,0.31,412
+Michigan,2008,Natural/Environmental,61,"9,946,889",0.61,0.56,523
+Michigan,2008,Drug Poisoning,"1,239","9,946,889",12.46,12.38,"28,263"
+Michigan,2008,Non-Drug Poisoning,160,"9,946,889",1.61,1.56,"2,891"
+Michigan,2008,Struck by / against,28,"9,946,889",0.28,0.27,597
+Michigan,2008,Suffocation,528,"9,946,889",5.31,5.35,"14,310"
+Michigan,2008,"Motor vehicle, traffic","1,043","9,946,889",10.49,10.3,"23,882"
+Michigan,2008,"Pedal cyclist, other",--,"9,946,889",--,--,--
+Michigan,2008,"Pedestrian, other",17**,"9,946,889",0.17**,0.17**,311
+Michigan,2008,"Transport, other land",59,"9,946,889",0.59,0.6,"1,525"
+Michigan,2008,"Transport, other (excl. drown by water transp)",14**,"9,946,889",0.14**,0.14**,253
+Michigan,2008,Other specified and classifiable,60,"9,946,889",0.6,0.6,"1,315"
+Michigan,2008,Other specified / NEC,96,"9,946,889",0.97,0.93,"1,650"
+Michigan,2008,Unspecified,229,"9,946,889",2.3,2.12,"1,638"
+Michigan,2007,Cut/Pierce,98,"10,001,284",0.98,0.95,"2,179"
+Michigan,2007,Drowning (includes water transport),132,"10,001,284",1.32,1.31,"3,513"
+Michigan,2007,Fall,758,"10,001,284",7.58,7.06,"2,591"
+Michigan,2007,Fire/Flame,141,"10,001,284",1.41,1.39,"3,005"
+Michigan,2007,Firearm,"1,095","10,001,284",10.95,11.03,"28,217"
+Michigan,2007,Machinery,26,"10,001,284",0.26,0.25,555
+Michigan,2007,Natural/Environmental,56,"10,001,284",0.56,0.5,443
+Michigan,2007,Drug Poisoning,"1,236","10,001,284",12.36,12.2,"27,503"
+Michigan,2007,Non-Drug Poisoning,123,"10,001,284",1.23,1.17,"2,390"
+Michigan,2007,Struck by / against,21,"10,001,284",0.21,0.2,515
+Michigan,2007,Suffocation,504,"10,001,284",5.04,5.09,"13,815"
+Michigan,2007,"Motor vehicle, traffic","1,160","10,001,284",11.6,11.43,"27,628"
+Michigan,2007,"Pedal cyclist, other",--,"10,001,284",--,--,--
+Michigan,2007,"Pedestrian, other",24,"10,001,284",0.24,0.24,605
+Michigan,2007,"Transport, other land",61,"10,001,284",0.61,0.6,"1,543"
+Michigan,2007,"Transport, other (excl. drown by water transp)",14**,"10,001,284",0.14**,0.15**,299
+Michigan,2007,Other specified and classifiable,67,"10,001,284",0.67,0.68,"1,711"
+Michigan,2007,Other specified / NEC,92,"10,001,284",0.92,0.86,"1,368"
+Michigan,2007,Unspecified,263,"10,001,284",2.63,2.45,"2,000"
+Michigan,2006,Cut/Pierce,79,"10,036,081",0.79,0.79,"1,818"
+Michigan,2006,Drowning (includes water transport),122,"10,036,081",1.22,1.22,"3,568"
+Michigan,2006,Fall,691,"10,036,081",6.89,6.49,"2,473"
+Michigan,2006,Fire/Flame,129,"10,036,081",1.29,1.25,"2,550"
+Michigan,2006,Hot object/Substance,--,"10,036,081",--,--,--
+Michigan,2006,Firearm,"1,157","10,036,081",11.53,11.53,"29,323"
+Michigan,2006,Machinery,19**,"10,036,081",0.19**,0.19**,384
+Michigan,2006,Natural/Environmental,56,"10,036,081",0.56,0.54,604
+Michigan,2006,Drug Poisoning,"1,176","10,036,081",11.72,11.7,"27,905"
+Michigan,2006,Non-Drug Poisoning,111,"10,036,081",1.11,1.09,"2,174"
+Michigan,2006,Struck by / against,33,"10,036,081",0.33,0.32,747
+Michigan,2006,Suffocation,472,"10,036,081",4.7,4.7,"12,657"
+Michigan,2006,"Motor vehicle, traffic","1,126","10,036,081",11.22,11.09,"27,385"
+Michigan,2006,"Pedal cyclist, other",--,"10,036,081",--,--,--
+Michigan,2006,"Pedestrian, other",31,"10,036,081",0.31,0.31,717
+Michigan,2006,"Transport, other land",47,"10,036,081",0.47,0.48,"1,498"
+Michigan,2006,"Transport, other (excl. drown by water transp)",20**,"10,036,081",0.20**,0.19**,309
+Michigan,2006,Other specified and classifiable,77,"10,036,081",0.77,0.78,"1,956"
+Michigan,2006,Other specified / NEC,100,"10,036,081",1,0.98,"1,881"
+Michigan,2006,Unspecified,257,"10,036,081",2.56,2.46,"1,757"
+Michigan,2005,Cut/Pierce,84,"10,051,137",0.84,0.84,"2,014"
+Michigan,2005,Drowning (includes water transport),146,"10,051,137",1.45,1.46,"3,778"
+Michigan,2005,Fall,646,"10,051,137",6.43,6.24,"2,610"
+Michigan,2005,Fire/Flame,146,"10,051,137",1.45,1.42,"3,057"
+Michigan,2005,Hot object/Substance,--,"10,051,137",--,--,--
+Michigan,2005,Firearm,"1,074","10,051,137",10.69,10.78,"27,719"
+Michigan,2005,Machinery,19**,"10,051,137",0.19**,0.19**,359
+Michigan,2005,Natural/Environmental,53,"10,051,137",0.53,0.52,710
+Michigan,2005,Drug Poisoning,985,"10,051,137",9.8,9.76,"23,292"
+Michigan,2005,Non-Drug Poisoning,113,"10,051,137",1.12,1.09,"2,289"
+Michigan,2005,Struck by / against,23,"10,051,137",0.23,0.23,527
+Michigan,2005,Suffocation,499,"10,051,137",4.97,5,"13,880"
+Michigan,2005,"Motor vehicle, traffic","1,174","10,051,137",11.68,11.62,"29,018"
+Michigan,2005,"Pedal cyclist, other",--,"10,051,137",--,--,--
+Michigan,2005,"Pedestrian, other",33,"10,051,137",0.33,0.32,542
+Michigan,2005,"Transport, other land",49,"10,051,137",0.49,0.48,"1,153"
+Michigan,2005,"Transport, other (excl. drown by water transp)",17**,"10,051,137",0.17**,0.16**,312
+Michigan,2005,Other specified and classifiable,83,"10,051,137",0.83,0.86,"2,992"
+Michigan,2005,Other specified / NEC,94,"10,051,137",0.94,0.91,"1,494"
+Michigan,2005,Unspecified,238,"10,051,137",2.37,2.32,"1,593"
+Michigan,2004,Cut/Pierce,96,"10,055,315",0.96,0.94,"2,274"
+Michigan,2004,Drowning (includes water transport),105,"10,055,315",1.04,1.05,"2,860"
+Michigan,2004,Fall,665,"10,055,315",6.61,6.49,"2,775"
+Michigan,2004,Fire/Flame,140,"10,055,315",1.39,1.39,"2,809"
+Michigan,2004,Hot object/Substance,--,"10,055,315",--,--,--
+Michigan,2004,Firearm,"1,048","10,055,315",10.42,10.52,"28,066"
+Michigan,2004,Machinery,25,"10,055,315",0.25,0.24,423
+Michigan,2004,Natural/Environmental,55,"10,055,315",0.55,0.54,839
+Michigan,2004,Drug Poisoning,867,"10,055,315",8.62,8.63,"20,790"
+Michigan,2004,Non-Drug Poisoning,129,"10,055,315",1.28,1.27,"2,449"
+Michigan,2004,Struck by / against,16**,"10,055,315",0.16**,0.16**,399
+Michigan,2004,Suffocation,504,"10,055,315",5.01,5.04,"13,520"
+Michigan,2004,"Motor vehicle, traffic","1,233","10,055,315",12.26,12.21,"31,395"
+Michigan,2004,"Pedal cyclist, other",--,"10,055,315",--,--,--
+Michigan,2004,"Pedestrian, other",17**,"10,055,315",0.17**,0.17**,542
+Michigan,2004,"Transport, other land",74,"10,055,315",0.74,0.75,"2,065"
+Michigan,2004,"Transport, other (excl. drown by water transp)",18**,"10,055,315",0.18**,0.17**,463
+Michigan,2004,Other specified and classifiable,67,"10,055,315",0.67,0.66,"2,110"
+Michigan,2004,Other specified / NEC,94,"10,055,315",0.94,0.93,"1,654"
+Michigan,2004,Unspecified,224,"10,055,315",2.23,2.2,"1,385"
+Michigan,2003,Cut/Pierce,91,"10,041,152",0.91,0.91,"2,213"
+Michigan,2003,Drowning (includes water transport),129,"10,041,152",1.29,1.29,"3,977"
+Michigan,2003,Fall,584,"10,041,152",5.82,5.78,"2,009"
+Michigan,2003,Fire/Flame,150,"10,041,152",1.49,1.5,"3,858"
+Michigan,2003,Hot object/Substance,--,"10,041,152",--,--,--
+Michigan,2003,Firearm,"1,030","10,041,152",10.26,10.33,"27,565"
+Michigan,2003,Machinery,18**,"10,041,152",0.18**,0.18**,276
+Michigan,2003,Natural/Environmental,53,"10,041,152",0.53,0.51,547
+Michigan,2003,Drug Poisoning,761,"10,041,152",7.58,7.57,"17,229"
+Michigan,2003,Non-Drug Poisoning,92,"10,041,152",0.92,0.92,"1,913"
+Michigan,2003,Struck by / against,36,"10,041,152",0.36,0.36,663
+Michigan,2003,Suffocation,462,"10,041,152",4.6,4.64,"12,186"
+Michigan,2003,"Motor vehicle, traffic","1,320","10,041,152",13.15,13.07,"33,430"
+Michigan,2003,"Pedal cyclist, other",--,"10,041,152",--,--,--
+Michigan,2003,"Pedestrian, other",28,"10,041,152",0.28,0.28,632
+Michigan,2003,"Transport, other land",70,"10,041,152",0.7,0.7,"1,906"
+Michigan,2003,"Transport, other (excl. drown by water transp)",25,"10,041,152",0.25,0.24,540
+Michigan,2003,Other specified and classifiable,56,"10,041,152",0.56,0.55,"1,412"
+Michigan,2003,Other specified / NEC,105,"10,041,152",1.05,1.04,"2,071"
+Michigan,2003,Unspecified,293,"10,041,152",2.92,2.91,"1,866"
+Michigan,2002,Cut/Pierce,99,"10,015,710",0.99,0.99,"2,624"
+Michigan,2002,Drowning (includes water transport),154,"10,015,710",1.54,1.56,"4,993"
+Michigan,2002,Fall,521,"10,015,710",5.2,5.26,"2,169"
+Michigan,2002,Fire/Flame,155,"10,015,710",1.55,1.54,"4,289"
+Michigan,2002,Hot object/Substance,--,"10,015,710",--,--,--
+Michigan,2002,Firearm,"1,092","10,015,710",10.9,10.99,"29,061"
+Michigan,2002,Machinery,20**,"10,015,710",0.20**,0.20**,357
+Michigan,2002,Natural/Environmental,63,"10,015,710",0.63,0.63,800
+Michigan,2002,Drug Poisoning,751,"10,015,710",7.5,7.49,"17,394"
+Michigan,2002,Non-Drug Poisoning,133,"10,015,710",1.33,1.32,"2,521"
+Michigan,2002,Struck by / against,36,"10,015,710",0.36,0.36,828
+Michigan,2002,Suffocation,488,"10,015,710",4.87,4.93,"13,270"
+Michigan,2002,"Motor vehicle, traffic","1,321","10,015,710",13.19,13.2,"34,421"
+Michigan,2002,"Pedal cyclist, other",--,"10,015,710",--,--,--
+Michigan,2002,"Pedestrian, other",28,"10,015,710",0.28,0.28,714
+Michigan,2002,"Transport, other land",58,"10,015,710",0.58,0.59,"1,779"
+Michigan,2002,"Transport, other (excl. drown by water transp)",21,"10,015,710",0.21,0.21,288
+Michigan,2002,Other specified and classifiable,63,"10,015,710",0.63,0.62,"1,803"
+Michigan,2002,Other specified / NEC,84,"10,015,710",0.84,0.82,"1,202"
+Michigan,2002,Unspecified,282,"10,015,710",2.82,2.87,"1,773"
+Michigan,2001,Cut/Pierce,87,"9,991,120",0.87,0.87,"2,380"
+Michigan,2001,Drowning (includes water transport),142,"9,991,120",1.42,1.42,"4,193"
+Michigan,2001,Fall,523,"9,991,120",5.24,5.35,"2,422"
+Michigan,2001,Fire/Flame,150,"9,991,120",1.5,1.51,"3,577"
+Michigan,2001,Hot object/Substance,--,"9,991,120",--,--,--
+Michigan,2001,Firearm,"1,077","9,991,120",10.78,10.83,"29,191"
+Michigan,2001,Machinery,33,"9,991,120",0.33,0.33,558
+Michigan,2001,Natural/Environmental,52,"9,991,120",0.52,0.53,453
+Michigan,2001,Overexertion,--,"9,991,120",--,--,--
+Michigan,2001,Drug Poisoning,621,"9,991,120",6.22,6.18,"14,064"
+Michigan,2001,Non-Drug Poisoning,107,"9,991,120",1.07,1.07,"2,221"
+Michigan,2001,Struck by / against,23,"9,991,120",0.23,0.23,571
+Michigan,2001,Suffocation,471,"9,991,120",4.71,4.78,"12,056"
+Michigan,2001,"Motor vehicle, traffic","1,370","9,991,120",13.71,13.76,"35,039"
+Michigan,2001,"Pedal cyclist, other",--,"9,991,120",--,--,--
+Michigan,2001,"Pedestrian, other",33,"9,991,120",0.33,0.33,927
+Michigan,2001,"Transport, other land",65,"9,991,120",0.65,0.65,"1,836"
+Michigan,2001,"Transport, other (excl. drown by water transp)",21,"9,991,120",0.21,0.21,406
+Michigan,2001,Other specified and classifiable,67,"9,991,120",0.67,0.68,"2,045"
+Michigan,2001,Other specified / NEC,78,"9,991,120",0.78,0.78,"1,347"
+Michigan,2001,Unspecified,333,"9,991,120",3.33,3.41,"2,385"
+Total,,,"137,968","209,508,476",65.85,64.01,"2,696,842"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Michigan,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

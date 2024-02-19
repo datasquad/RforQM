@@ -1,0 +1,421 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Nebraska,2021,Cut/Pierce,14**,"1,963,692",0.71**,0.69**,244
+Nebraska,2021,Drowning (includes water transport),29,"1,963,692",1.48,1.46,753
+Nebraska,2021,Fall,235,"1,963,692",11.97,10.37,688
+Nebraska,2021,Fire/Flame,26,"1,963,692",1.32,1.19,379
+Nebraska,2021,Firearm,200,"1,963,692",10.19,10.33,"4,874"
+Nebraska,2021,Machinery,--,"1,963,692",--,--,--
+Nebraska,2021,Natural/Environmental,14**,"1,963,692",0.71**,0.65**,164
+Nebraska,2021,Overexertion,--,"1,963,692",--,--,--
+Nebraska,2021,Drug Poisoning,214,"1,963,692",10.9,11.35,"5,014"
+Nebraska,2021,Non-Drug Poisoning,25,"1,963,692",1.27,1.33,501
+Nebraska,2021,Struck by / against,11**,"1,963,692",0.56**,0.61**,271
+Nebraska,2021,Suffocation,159,"1,963,692",8.1,8.11,"3,865"
+Nebraska,2021,"Motor vehicle, traffic",242,"1,963,692",12.32,11.99,"5,224"
+Nebraska,2021,"Pedal cyclist, other",--,"1,963,692",--,--,--
+Nebraska,2021,"Pedestrian, other",--,"1,963,692",--,--,--
+Nebraska,2021,"Transport, other land",17**,"1,963,692",0.87**,0.77**,229
+Nebraska,2021,"Transport, other (excl. drown by water transp)",--,"1,963,692",--,--,--
+Nebraska,2021,Other specified and classifiable,14**,"1,963,692",0.71**,0.62**,345
+Nebraska,2021,Other specified / NEC,13**,"1,963,692",0.66**,0.54**,98
+Nebraska,2021,Unspecified,44,"1,963,692",2.24,1.96,272
+Nebraska,2020,Cut/Pierce,17**,"1,961,455",0.87**,0.87**,417
+Nebraska,2020,Drowning (includes water transport),14**,"1,961,455",0.71**,0.66**,359
+Nebraska,2020,Fall,266,"1,961,455",13.56,11.34,581
+Nebraska,2020,Fire/Flame,22,"1,961,455",1.12,1,383
+Nebraska,2020,Hot object/Substance,--,"1,961,455",--,--,--
+Nebraska,2020,Firearm,197,"1,961,455",10.04,10.04,"4,545"
+Nebraska,2020,Machinery,--,"1,961,455",--,--,--
+Nebraska,2020,Natural/Environmental,14**,"1,961,455",0.71**,0.64**,174
+Nebraska,2020,Overexertion,--,"1,961,455",--,--,--
+Nebraska,2020,Drug Poisoning,214,"1,961,455",10.91,11.1,"4,943"
+Nebraska,2020,Non-Drug Poisoning,33,"1,961,455",1.68,1.79,774
+Nebraska,2020,Struck by / against,10**,"1,961,455",0.51**,0.51**,119
+Nebraska,2020,Suffocation,154,"1,961,455",7.85,7.88,"3,935"
+Nebraska,2020,"Motor vehicle, traffic",229,"1,961,455",11.68,11.35,"5,158"
+Nebraska,2020,"Pedal cyclist, other",--,"1,961,455",--,--,--
+Nebraska,2020,"Pedestrian, other",--,"1,961,455",--,--,--
+Nebraska,2020,"Transport, other land",14**,"1,961,455",0.71**,0.69**,314
+Nebraska,2020,Other specified and classifiable,15**,"1,961,455",0.77**,0.77**,272
+Nebraska,2020,Other specified / NEC,16**,"1,961,455",0.82**,0.76**,206
+Nebraska,2020,Unspecified,55,"1,961,455",2.8,2.38,171
+Nebraska,2019,Cut/Pierce,--,"1,932,571",--,--,--
+Nebraska,2019,Drowning (includes water transport),22,"1,932,571",1.14,1.19,642
+Nebraska,2019,Fall,247,"1,932,571",12.78,10.24,659
+Nebraska,2019,Fire/Flame,16**,"1,932,571",0.83**,0.79**,238
+Nebraska,2019,Hot object/Substance,--,"1,932,571",--,--,--
+Nebraska,2019,Firearm,205,"1,932,571",10.61,10.23,"4,211"
+Nebraska,2019,Machinery,--,"1,932,571",--,--,--
+Nebraska,2019,Natural/Environmental,22,"1,932,571",1.14,0.97,193
+Nebraska,2019,Drug Poisoning,161,"1,932,571",8.33,8.77,"3,372"
+Nebraska,2019,Non-Drug Poisoning,40,"1,932,571",2.07,2.05,693
+Nebraska,2019,Struck by / against,--,"1,932,571",--,--,--
+Nebraska,2019,Suffocation,148,"1,932,571",7.66,7.51,"2,989"
+Nebraska,2019,"Motor vehicle, traffic",253,"1,932,571",13.09,12.81,"5,930"
+Nebraska,2019,"Pedal cyclist, other",--,"1,932,571",--,--,--
+Nebraska,2019,"Pedestrian, other",--,"1,932,571",--,--,--
+Nebraska,2019,"Transport, other land",13**,"1,932,571",0.67**,0.63**,233
+Nebraska,2019,"Transport, other (excl. drown by water transp)",--,"1,932,571",--,--,--
+Nebraska,2019,Other specified and classifiable,10**,"1,932,571",0.52**,0.54**,404
+Nebraska,2019,Other specified / NEC,19**,"1,932,571",0.98**,0.91**,241
+Nebraska,2019,Unspecified,47,"1,932,571",2.43,1.94,167
+Nebraska,2018,Cut/Pierce,10**,"1,925,512",0.52**,0.53**,116
+Nebraska,2018,Drowning (includes water transport),16**,"1,925,512",0.83**,0.83**,461
+Nebraska,2018,Fall,242,"1,925,512",12.57,10,432
+Nebraska,2018,Fire/Flame,15**,"1,925,512",0.78**,0.65**,134
+Nebraska,2018,Firearm,183,"1,925,512",9.5,9.07,"3,475"
+Nebraska,2018,Machinery,--,"1,925,512",--,--,--
+Nebraska,2018,Natural/Environmental,14**,"1,925,512",0.73**,0.67**,71
+Nebraska,2018,Drug Poisoning,138,"1,925,512",7.17,7.4,"2,834"
+Nebraska,2018,Non-Drug Poisoning,38,"1,925,512",1.97,1.98,609
+Nebraska,2018,Struck by / against,--,"1,925,512",--,--,--
+Nebraska,2018,Suffocation,138,"1,925,512",7.17,6.8,"3,162"
+Nebraska,2018,"Motor vehicle, traffic",243,"1,925,512",12.62,12.59,"5,768"
+Nebraska,2018,"Pedestrian, other",--,"1,925,512",--,--,--
+Nebraska,2018,"Transport, other land",12**,"1,925,512",0.62**,0.66**,309
+Nebraska,2018,"Transport, other (excl. drown by water transp)",--,"1,925,512",--,--,--
+Nebraska,2018,Other specified and classifiable,11**,"1,925,512",0.57**,0.54**,144
+Nebraska,2018,Other specified / NEC,--,"1,925,512",--,--,--
+Nebraska,2018,Unspecified,46,"1,925,512",2.39,1.92,304
+Nebraska,2017,Cut/Pierce,18**,"1,916,998",0.94**,0.93**,290
+Nebraska,2017,Drowning (includes water transport),17**,"1,916,998",0.89**,0.88**,490
+Nebraska,2017,Fall,224,"1,916,998",11.69,9.22,525
+Nebraska,2017,Fire/Flame,--,"1,916,998",--,--,--
+Nebraska,2017,Hot object/Substance,--,"1,916,998",--,--,--
+Nebraska,2017,Firearm,160,"1,916,998",8.35,8.33,"3,570"
+Nebraska,2017,Machinery,--,"1,916,998",--,--,--
+Nebraska,2017,Natural/Environmental,--,"1,916,998",--,--,--
+Nebraska,2017,Drug Poisoning,152,"1,916,998",7.93,8.09,"3,301"
+Nebraska,2017,Non-Drug Poisoning,37,"1,916,998",1.93,2.03,693
+Nebraska,2017,Struck by / against,--,"1,916,998",--,--,--
+Nebraska,2017,Suffocation,146,"1,916,998",7.62,7.74,"3,560"
+Nebraska,2017,"Motor vehicle, traffic",250,"1,916,998",13.04,12.84,"5,846"
+Nebraska,2017,"Pedal cyclist, other",--,"1,916,998",--,--,--
+Nebraska,2017,"Pedestrian, other",--,"1,916,998",--,--,--
+Nebraska,2017,"Transport, other land",13**,"1,916,998",0.68**,0.68**,267
+Nebraska,2017,Other specified and classifiable,--,"1,916,998",--,--,--
+Nebraska,2017,Other specified / NEC,15**,"1,916,998",0.78**,0.63**,50
+Nebraska,2017,Unspecified,82,"1,916,998",4.28,3.63,448
+Nebraska,2016,Cut/Pierce,--,"1,906,483",--,--,--
+Nebraska,2016,Drowning (includes water transport),27,"1,906,483",1.42,1.44,895
+Nebraska,2016,Fall,226,"1,906,483",11.85,9.42,334
+Nebraska,2016,Fire/Flame,25,"1,906,483",1.31,1.25,580
+Nebraska,2016,Hot object/Substance,--,"1,906,483",--,--,--
+Nebraska,2016,Firearm,171,"1,906,483",8.97,9.12,"4,302"
+Nebraska,2016,Machinery,10**,"1,906,483",0.53**,0.49**,73
+Nebraska,2016,Natural/Environmental,--,"1,906,483",--,--,--
+Nebraska,2016,Drug Poisoning,120,"1,906,483",6.29,6.5,"2,534"
+Nebraska,2016,Non-Drug Poisoning,43,"1,906,483",2.26,2.26,641
+Nebraska,2016,Struck by / against,--,"1,906,483",--,--,--
+Nebraska,2016,Suffocation,134,"1,906,483",7.03,6.84,"3,075"
+Nebraska,2016,"Motor vehicle, traffic",203,"1,906,483",10.65,10.6,"4,718"
+Nebraska,2016,"Pedal cyclist, other",--,"1,906,483",--,--,--
+Nebraska,2016,"Pedestrian, other",--,"1,906,483",--,--,--
+Nebraska,2016,"Transport, other land",20**,"1,906,483",1.05**,0.95**,462
+Nebraska,2016,"Transport, other (excl. drown by water transp)",--,"1,906,483",--,--,--
+Nebraska,2016,Other specified and classifiable,15**,"1,906,483",0.79**,0.76**,293
+Nebraska,2016,Other specified / NEC,22,"1,906,483",1.15,1,237
+Nebraska,2016,Unspecified,60,"1,906,483",3.15,2.64,382
+Nebraska,2015,Cut/Pierce,11**,"1,892,059",0.58**,0.55**,245
+Nebraska,2015,Drowning (includes water transport),20**,"1,892,059",1.06**,0.99**,531
+Nebraska,2015,Fall,220,"1,892,059",11.63,9.46,652
+Nebraska,2015,Fire/Flame,21,"1,892,059",1.11,1.03,177
+Nebraska,2015,Firearm,169,"1,892,059",8.93,8.85,"4,368"
+Nebraska,2015,Machinery,--,"1,892,059",--,--,--
+Nebraska,2015,Natural/Environmental,--,"1,892,059",--,--,--
+Nebraska,2015,Overexertion,--,"1,892,059",--,--,--
+Nebraska,2015,Drug Poisoning,126,"1,892,059",6.66,7.08,"2,667"
+Nebraska,2015,Non-Drug Poisoning,34,"1,892,059",1.8,1.71,609
+Nebraska,2015,Struck by / against,--,"1,892,059",--,--,--
+Nebraska,2015,Suffocation,122,"1,892,059",6.45,6.07,"2,572"
+Nebraska,2015,"Motor vehicle, traffic",261,"1,892,059",13.79,13.52,"6,333"
+Nebraska,2015,"Pedestrian, other",--,"1,892,059",--,--,--
+Nebraska,2015,"Transport, other land",12**,"1,892,059",0.63**,0.61**,240
+Nebraska,2015,"Transport, other (excl. drown by water transp)",--,"1,892,059",--,--,--
+Nebraska,2015,Other specified and classifiable,--,"1,892,059",--,--,--
+Nebraska,2015,Other specified / NEC,13**,"1,892,059",0.69**,0.63**,99
+Nebraska,2015,Unspecified,76,"1,892,059",4.02,3.31,422
+Nebraska,2014,Cut/Pierce,12**,"1,879,955",0.64**,0.62**,199
+Nebraska,2014,Drowning (includes water transport),24,"1,879,955",1.28,1.19,564
+Nebraska,2014,Fall,222,"1,879,955",11.81,9.55,498
+Nebraska,2014,Fire/Flame,20**,"1,879,955",1.06**,1.01**,298
+Nebraska,2014,Firearm,179,"1,879,955",9.52,9.44,"4,221"
+Nebraska,2014,Machinery,--,"1,879,955",--,--,--
+Nebraska,2014,Natural/Environmental,13**,"1,879,955",0.69**,0.66**,151
+Nebraska,2014,Drug Poisoning,125,"1,879,955",6.65,7.06,"2,864"
+Nebraska,2014,Non-Drug Poisoning,30,"1,879,955",1.6,1.58,577
+Nebraska,2014,Struck by / against,10**,"1,879,955",0.53**,0.51**,116
+Nebraska,2014,Suffocation,128,"1,879,955",6.81,6.5,"2,774"
+Nebraska,2014,"Motor vehicle, traffic",247,"1,879,955",13.14,12.98,"5,749"
+Nebraska,2014,"Pedestrian, other",--,"1,879,955",--,--,--
+Nebraska,2014,"Transport, other land",--,"1,879,955",--,--,--
+Nebraska,2014,"Transport, other (excl. drown by water transp)",--,"1,879,955",--,--,--
+Nebraska,2014,Other specified and classifiable,--,"1,879,955",--,--,--
+Nebraska,2014,Other specified / NEC,13**,"1,879,955",0.69**,0.60**,124
+Nebraska,2014,Unspecified,62,"1,879,955",3.3,2.82,470
+Nebraska,2013,Cut/Pierce,15**,"1,865,813",0.80**,0.74**,250
+Nebraska,2013,Drowning (includes water transport),12**,"1,865,813",0.64**,0.65**,267
+Nebraska,2013,Fall,194,"1,865,813",10.4,8.61,419
+Nebraska,2013,Fire/Flame,19**,"1,865,813",1.02**,0.92**,260
+Nebraska,2013,Firearm,168,"1,865,813",9,9.07,"3,651"
+Nebraska,2013,Machinery,--,"1,865,813",--,--,--
+Nebraska,2013,Natural/Environmental,10**,"1,865,813",0.54**,0.47**,91
+Nebraska,2013,Drug Poisoning,117,"1,865,813",6.27,6.42,"2,387"
+Nebraska,2013,Non-Drug Poisoning,27,"1,865,813",1.45,1.48,415
+Nebraska,2013,Struck by / against,--,"1,865,813",--,--,--
+Nebraska,2013,Suffocation,113,"1,865,813",6.06,5.76,"2,339"
+Nebraska,2013,"Motor vehicle, traffic",229,"1,865,813",12.27,12.14,"5,906"
+Nebraska,2013,"Pedestrian, other",--,"1,865,813",--,--,--
+Nebraska,2013,"Transport, other land",--,"1,865,813",--,--,--
+Nebraska,2013,"Transport, other (excl. drown by water transp)",--,"1,865,813",--,--,--
+Nebraska,2013,Other specified and classifiable,--,"1,865,813",--,--,--
+Nebraska,2013,Other specified / NEC,14**,"1,865,813",0.75**,0.67**,84
+Nebraska,2013,Unspecified,64,"1,865,813",3.43,2.93,572
+Nebraska,2012,Cut/Pierce,10**,"1,853,691",0.54**,0.59**,287
+Nebraska,2012,Drowning (includes water transport),26,"1,853,691",1.4,1.36,603
+Nebraska,2012,Fall,216,"1,853,691",11.65,9.68,525
+Nebraska,2012,Fire/Flame,18**,"1,853,691",0.97**,0.88**,285
+Nebraska,2012,Hot object/Substance,--,"1,853,691",--,--,--
+Nebraska,2012,Firearm,167,"1,853,691",9.01,9.09,"3,976"
+Nebraska,2012,Machinery,--,"1,853,691",--,--,--
+Nebraska,2012,Natural/Environmental,14**,"1,853,691",0.76**,0.67**,95
+Nebraska,2012,Drug Poisoning,146,"1,853,691",7.88,7.89,"3,190"
+Nebraska,2012,Non-Drug Poisoning,35,"1,853,691",1.89,1.93,603
+Nebraska,2012,Struck by / against,--,"1,853,691",--,--,--
+Nebraska,2012,Suffocation,96,"1,853,691",5.18,5.05,"2,114"
+Nebraska,2012,"Motor vehicle, traffic",243,"1,853,691",13.11,13.09,"6,274"
+Nebraska,2012,"Pedestrian, other",--,"1,853,691",--,--,--
+Nebraska,2012,"Transport, other land",13**,"1,853,691",0.70**,0.66**,273
+Nebraska,2012,"Transport, other (excl. drown by water transp)",--,"1,853,691",--,--,--
+Nebraska,2012,Other specified and classifiable,12**,"1,853,691",0.65**,0.68**,303
+Nebraska,2012,Other specified / NEC,13**,"1,853,691",0.70**,0.65**,153
+Nebraska,2012,Unspecified,70,"1,853,691",3.78,3.17,378
+Nebraska,2011,Cut/Pierce,18**,"1,840,914",0.98**,1.01**,501
+Nebraska,2011,Drowning (includes water transport),14**,"1,840,914",0.76**,0.73**,398
+Nebraska,2011,Fall,181,"1,840,914",9.83,8.1,419
+Nebraska,2011,Fire/Flame,11**,"1,840,914",0.60**,0.56**,122
+Nebraska,2011,Firearm,161,"1,840,914",8.75,8.9,"3,575"
+Nebraska,2011,Machinery,--,"1,840,914",--,--,--
+Nebraska,2011,Natural/Environmental,14**,"1,840,914",0.76**,0.71**,139
+Nebraska,2011,Drug Poisoning,129,"1,840,914",7.01,7.22,"2,750"
+Nebraska,2011,Non-Drug Poisoning,24,"1,840,914",1.3,1.37,412
+Nebraska,2011,Struck by / against,--,"1,840,914",--,--,--
+Nebraska,2011,Suffocation,108,"1,840,914",5.87,5.64,"2,349"
+Nebraska,2011,"Motor vehicle, traffic",172,"1,840,914",9.34,8.97,"3,481"
+Nebraska,2011,"Pedal cyclist, other",--,"1,840,914",--,--,--
+Nebraska,2011,"Pedestrian, other",--,"1,840,914",--,--,--
+Nebraska,2011,"Transport, other land",21,"1,840,914",1.14,1.1,421
+Nebraska,2011,"Transport, other (excl. drown by water transp)",--,"1,840,914",--,--,--
+Nebraska,2011,Other specified and classifiable,--,"1,840,914",--,--,--
+Nebraska,2011,Other specified / NEC,16**,"1,840,914",0.87**,0.83**,140
+Nebraska,2011,Unspecified,69,"1,840,914",3.75,3.07,264
+Nebraska,2010,Cut/Pierce,13**,"1,826,311",0.71**,0.70**,261
+Nebraska,2010,Drowning (includes water transport),25,"1,826,311",1.37,1.38,903
+Nebraska,2010,Fall,204,"1,826,311",11.17,9.37,672
+Nebraska,2010,Fire/Flame,15**,"1,826,311",0.82**,0.74**,292
+Nebraska,2010,Firearm,152,"1,826,311",8.32,8.16,"3,353"
+Nebraska,2010,Machinery,--,"1,826,311",--,--,--
+Nebraska,2010,Natural/Environmental,--,"1,826,311",--,--,--
+Nebraska,2010,Drug Poisoning,117,"1,826,311",6.41,6.67,"2,686"
+Nebraska,2010,Non-Drug Poisoning,34,"1,826,311",1.86,1.9,729
+Nebraska,2010,Struck by / against,10**,"1,826,311",0.55**,0.50**,185
+Nebraska,2010,Suffocation,91,"1,826,311",4.98,4.88,"1,868"
+Nebraska,2010,"Motor vehicle, traffic",201,"1,826,311",11.01,10.79,"4,994"
+Nebraska,2010,"Pedal cyclist, other",--,"1,826,311",--,--,--
+Nebraska,2010,"Pedestrian, other",--,"1,826,311",--,--,--
+Nebraska,2010,"Transport, other land",13**,"1,826,311",0.71**,0.76**,123
+Nebraska,2010,"Transport, other (excl. drown by water transp)",--,"1,826,311",--,--,--
+Nebraska,2010,Other specified and classifiable,17**,"1,826,311",0.93**,0.92**,519
+Nebraska,2010,Other specified / NEC,13**,"1,826,311",0.71**,0.60**,89
+Nebraska,2010,Unspecified,46,"1,826,311",2.52,2.11,337
+Nebraska,2009,Cut/Pierce,10**,"1,812,683",0.55**,0.54**,309
+Nebraska,2009,Drowning (includes water transport),11**,"1,812,683",0.61**,0.65**,361
+Nebraska,2009,Fall,189,"1,812,683",10.43,8.82,671
+Nebraska,2009,Fire/Flame,14**,"1,812,683",0.77**,0.74**,279
+Nebraska,2009,Hot object/Substance,--,"1,812,683",--,--,--
+Nebraska,2009,Firearm,132,"1,812,683",7.28,7.26,"2,934"
+Nebraska,2009,Machinery,--,"1,812,683",--,--,--
+Nebraska,2009,Natural/Environmental,--,"1,812,683",--,--,--
+Nebraska,2009,Overexertion,--,"1,812,683",--,--,--
+Nebraska,2009,Drug Poisoning,106,"1,812,683",5.85,5.92,"2,039"
+Nebraska,2009,Non-Drug Poisoning,29,"1,812,683",1.6,1.62,494
+Nebraska,2009,Struck by / against,11**,"1,812,683",0.61**,0.54**,239
+Nebraska,2009,Suffocation,88,"1,812,683",4.86,4.67,"1,648"
+Nebraska,2009,"Motor vehicle, traffic",232,"1,812,683",12.8,12.89,"6,211"
+Nebraska,2009,"Pedal cyclist, other",--,"1,812,683",--,--,--
+Nebraska,2009,"Pedestrian, other",--,"1,812,683",--,--,--
+Nebraska,2009,"Transport, other land",25,"1,812,683",1.38,1.41,656
+Nebraska,2009,"Transport, other (excl. drown by water transp)",--,"1,812,683",--,--,--
+Nebraska,2009,Other specified and classifiable,--,"1,812,683",--,--,--
+Nebraska,2009,Other specified / NEC,14**,"1,812,683",0.77**,0.68**,125
+Nebraska,2009,Unspecified,35,"1,812,683",1.93,1.61,298
+Nebraska,2008,Cut/Pierce,13**,"1,796,378",0.72**,0.70**,320
+Nebraska,2008,Drowning (includes water transport),18**,"1,796,378",1.00**,0.98**,654
+Nebraska,2008,Fall,207,"1,796,378",11.52,9.61,398
+Nebraska,2008,Fire/Flame,19**,"1,796,378",1.06**,1.03**,475
+Nebraska,2008,Firearm,150,"1,796,378",8.35,8.27,"3,840"
+Nebraska,2008,Machinery,--,"1,796,378",--,--,--
+Nebraska,2008,Natural/Environmental,13**,"1,796,378",0.72**,0.67**,179
+Nebraska,2008,Drug Poisoning,94,"1,796,378",5.23,5.48,"1,892"
+Nebraska,2008,Non-Drug Poisoning,38,"1,796,378",2.12,2.08,864
+Nebraska,2008,Struck by / against,--,"1,796,378",--,--,--
+Nebraska,2008,Suffocation,116,"1,796,378",6.46,6.2,"2,942"
+Nebraska,2008,"Motor vehicle, traffic",231,"1,796,378",12.86,12.51,"5,554"
+Nebraska,2008,"Pedal cyclist, other",--,"1,796,378",--,--,--
+Nebraska,2008,"Pedestrian, other",--,"1,796,378",--,--,--
+Nebraska,2008,"Transport, other land",13**,"1,796,378",0.72**,0.73**,243
+Nebraska,2008,"Transport, other (excl. drown by water transp)",--,"1,796,378",--,--,--
+Nebraska,2008,Other specified and classifiable,11**,"1,796,378",0.61**,0.62**,259
+Nebraska,2008,Other specified / NEC,10**,"1,796,378",0.56**,0.49**,47
+Nebraska,2008,Unspecified,41,"1,796,378",2.28,1.99,335
+Nebraska,2007,Cut/Pierce,14**,"1,783,440",0.79**,0.81**,365
+Nebraska,2007,Drowning (includes water transport),18**,"1,783,440",1.01**,0.99**,444
+Nebraska,2007,Fall,165,"1,783,440",9.25,7.83,336
+Nebraska,2007,Fire/Flame,17**,"1,783,440",0.95**,0.94**,566
+Nebraska,2007,Firearm,142,"1,783,440",7.96,7.95,"3,625"
+Nebraska,2007,Machinery,--,"1,783,440",--,--,--
+Nebraska,2007,Natural/Environmental,--,"1,783,440",--,--,--
+Nebraska,2007,Drug Poisoning,80,"1,783,440",4.49,4.77,"1,809"
+Nebraska,2007,Non-Drug Poisoning,38,"1,783,440",2.13,2.22,756
+Nebraska,2007,Struck by / against,--,"1,783,440",--,--,--
+Nebraska,2007,Suffocation,101,"1,783,440",5.66,5.52,"2,272"
+Nebraska,2007,"Motor vehicle, traffic",266,"1,783,440",14.92,14.71,"7,089"
+Nebraska,2007,"Pedestrian, other",--,"1,783,440",--,--,--
+Nebraska,2007,"Transport, other land",18**,"1,783,440",1.01**,0.98**,352
+Nebraska,2007,"Transport, other (excl. drown by water transp)",--,"1,783,440",--,--,--
+Nebraska,2007,Other specified and classifiable,11**,"1,783,440",0.62**,0.57**,251
+Nebraska,2007,Other specified / NEC,12**,"1,783,440",0.67**,0.66**,116
+Nebraska,2007,Unspecified,41,"1,783,440",2.3,1.95,456
+Nebraska,2006,Cut/Pierce,--,"1,772,693",--,--,--
+Nebraska,2006,Drowning (includes water transport),13**,"1,772,693",0.73**,0.73**,400
+Nebraska,2006,Fall,170,"1,772,693",9.59,8.12,579
+Nebraska,2006,Fire/Flame,27,"1,772,693",1.52,1.54,"1,002"
+Nebraska,2006,Hot object/Substance,--,"1,772,693",--,--,--
+Nebraska,2006,Firearm,141,"1,772,693",7.95,7.69,"3,210"
+Nebraska,2006,Machinery,--,"1,772,693",--,--,--
+Nebraska,2006,Natural/Environmental,--,"1,772,693",--,--,--
+Nebraska,2006,Overexertion,--,"1,772,693",--,--,--
+Nebraska,2006,Drug Poisoning,91,"1,772,693",5.13,5.31,"2,173"
+Nebraska,2006,Non-Drug Poisoning,32,"1,772,693",1.81,1.84,634
+Nebraska,2006,Struck by / against,11**,"1,772,693",0.62**,0.60**,123
+Nebraska,2006,Suffocation,94,"1,772,693",5.3,5.11,"2,014"
+Nebraska,2006,"Motor vehicle, traffic",261,"1,772,693",14.72,14.36,"7,058"
+Nebraska,2006,"Pedal cyclist, other",--,"1,772,693",--,--,--
+Nebraska,2006,"Pedestrian, other",--,"1,772,693",--,--,--
+Nebraska,2006,"Transport, other land",14**,"1,772,693",0.79**,0.75**,336
+Nebraska,2006,"Transport, other (excl. drown by water transp)",--,"1,772,693",--,--,--
+Nebraska,2006,Other specified and classifiable,11**,"1,772,693",0.62**,0.63**,169
+Nebraska,2006,Other specified / NEC,11**,"1,772,693",0.62**,0.55**,144
+Nebraska,2006,Unspecified,61,"1,772,693",3.44,3,745
+Nebraska,2005,Cut/Pierce,--,"1,761,497",--,--,--
+Nebraska,2005,Drowning (includes water transport),11**,"1,761,497",0.62**,0.61**,378
+Nebraska,2005,Fall,153,"1,761,497",8.69,7.5,354
+Nebraska,2005,Fire/Flame,28,"1,761,497",1.59,1.53,649
+Nebraska,2005,Firearm,135,"1,761,497",7.66,7.67,"3,501"
+Nebraska,2005,Machinery,--,"1,761,497",--,--,--
+Nebraska,2005,Natural/Environmental,11**,"1,761,497",0.62**,0.58**,257
+Nebraska,2005,Drug Poisoning,86,"1,761,497",4.88,5,"1,886"
+Nebraska,2005,Non-Drug Poisoning,21,"1,761,497",1.19,1.25,446
+Nebraska,2005,Struck by / against,--,"1,761,497",--,--,--
+Nebraska,2005,Suffocation,126,"1,761,497",7.15,6.86,"1,929"
+Nebraska,2005,"Motor vehicle, traffic",273,"1,761,497",15.5,15.11,"6,953"
+Nebraska,2005,"Pedal cyclist, other",--,"1,761,497",--,--,--
+Nebraska,2005,"Pedestrian, other",--,"1,761,497",--,--,--
+Nebraska,2005,"Transport, other land",16**,"1,761,497",0.91**,0.89**,472
+Nebraska,2005,"Transport, other (excl. drown by water transp)",--,"1,761,497",--,--,--
+Nebraska,2005,Other specified and classifiable,11**,"1,761,497",0.62**,0.60**,333
+Nebraska,2005,Other specified / NEC,12**,"1,761,497",0.68**,0.70**,244
+Nebraska,2005,Unspecified,64,"1,761,497",3.63,3.08,454
+Nebraska,2004,Cut/Pierce,--,"1,749,370",--,--,--
+Nebraska,2004,Drowning (includes water transport),30,"1,749,370",1.72,1.74,948
+Nebraska,2004,Fall,175,"1,749,370",10,8.73,556
+Nebraska,2004,Fire/Flame,16**,"1,749,370",0.92**,0.93**,442
+Nebraska,2004,Firearm,119,"1,749,370",6.8,6.71,"2,791"
+Nebraska,2004,Machinery,--,"1,749,370",--,--,--
+Nebraska,2004,Natural/Environmental,--,"1,749,370",--,--,--
+Nebraska,2004,Overexertion,--,"1,749,370",--,--,--
+Nebraska,2004,Drug Poisoning,59,"1,749,370",3.37,3.59,"1,499"
+Nebraska,2004,Non-Drug Poisoning,30,"1,749,370",1.72,1.72,695
+Nebraska,2004,Struck by / against,--,"1,749,370",--,--,--
+Nebraska,2004,Suffocation,132,"1,749,370",7.55,6.74,"1,618"
+Nebraska,2004,"Motor vehicle, traffic",269,"1,749,370",15.38,14.92,"6,947"
+Nebraska,2004,"Pedestrian, other",--,"1,749,370",--,--,--
+Nebraska,2004,"Transport, other land",16**,"1,749,370",0.92**,0.86**,232
+Nebraska,2004,"Transport, other (excl. drown by water transp)",--,"1,749,370",--,--,--
+Nebraska,2004,Other specified and classifiable,14**,"1,749,370",0.80**,0.84**,434
+Nebraska,2004,Other specified / NEC,--,"1,749,370",--,--,--
+Nebraska,2004,Unspecified,65,"1,749,370",3.72,3.26,729
+Nebraska,2003,Cut/Pierce,13**,"1,738,643",0.75**,0.80**,258
+Nebraska,2003,Drowning (includes water transport),26,"1,738,643",1.5,1.47,829
+Nebraska,2003,Fall,139,"1,738,643",8,6.91,352
+Nebraska,2003,Fire/Flame,17**,"1,738,643",0.98**,0.98**,324
+Nebraska,2003,Hot object/Substance,--,"1,738,643",--,--,--
+Nebraska,2003,Firearm,134,"1,738,643",7.71,7.64,"3,413"
+Nebraska,2003,Machinery,--,"1,738,643",--,--,--
+Nebraska,2003,Natural/Environmental,--,"1,738,643",--,--,--
+Nebraska,2003,Drug Poisoning,55,"1,738,643",3.16,3.2,"1,213"
+Nebraska,2003,Non-Drug Poisoning,27,"1,738,643",1.55,1.6,620
+Nebraska,2003,Struck by / against,10**,"1,738,643",0.58**,0.57**,99
+Nebraska,2003,Suffocation,116,"1,738,643",6.67,6.33,"1,746"
+Nebraska,2003,"Motor vehicle, traffic",294,"1,738,643",16.91,16.62,"8,518"
+Nebraska,2003,"Pedestrian, other",--,"1,738,643",--,--,--
+Nebraska,2003,"Transport, other land",17**,"1,738,643",0.98**,1.00**,341
+Nebraska,2003,"Transport, other (excl. drown by water transp)",--,"1,738,643",--,--,--
+Nebraska,2003,Other specified and classifiable,14**,"1,738,643",0.81**,0.81**,492
+Nebraska,2003,Other specified / NEC,11**,"1,738,643",0.63**,0.59**,164
+Nebraska,2003,Unspecified,72,"1,738,643",4.14,3.66,599
+Nebraska,2002,Cut/Pierce,--,"1,728,292",--,--,--
+Nebraska,2002,Drowning (includes water transport),27,"1,728,292",1.56,1.62,906
+Nebraska,2002,Fall,191,"1,728,292",11.05,9.62,833
+Nebraska,2002,Fire/Flame,14**,"1,728,292",0.81**,0.79**,152
+Nebraska,2002,Hot object/Substance,--,"1,728,292",--,--,--
+Nebraska,2002,Firearm,140,"1,728,292",8.1,8.05,"3,118"
+Nebraska,2002,Machinery,--,"1,728,292",--,--,--
+Nebraska,2002,Natural/Environmental,12**,"1,728,292",0.69**,0.66**,220
+Nebraska,2002,Drug Poisoning,66,"1,728,292",3.82,3.94,"1,499"
+Nebraska,2002,Non-Drug Poisoning,28,"1,728,292",1.62,1.69,628
+Nebraska,2002,Struck by / against,--,"1,728,292",--,--,--
+Nebraska,2002,Suffocation,114,"1,728,292",6.6,6.33,"1,933"
+Nebraska,2002,"Motor vehicle, traffic",319,"1,728,292",18.46,18.02,"9,017"
+Nebraska,2002,"Pedestrian, other",12**,"1,728,292",0.69**,0.70**,374
+Nebraska,2002,"Transport, other land",16**,"1,728,292",0.93**,0.93**,375
+Nebraska,2002,"Transport, other (excl. drown by water transp)",--,"1,728,292",--,--,--
+Nebraska,2002,Other specified and classifiable,17**,"1,728,292",0.98**,0.98**,442
+Nebraska,2002,Other specified / NEC,12**,"1,728,292",0.69**,0.66**,208
+Nebraska,2002,Unspecified,47,"1,728,292",2.72,2.36,230
+Nebraska,2001,Cut/Pierce,11**,"1,719,836",0.64**,0.65**,317
+Nebraska,2001,Drowning (includes water transport),14**,"1,719,836",0.81**,0.81**,393
+Nebraska,2001,Fall,136,"1,719,836",7.91,6.83,425
+Nebraska,2001,Fire/Flame,24,"1,719,836",1.4,1.37,604
+Nebraska,2001,Hot object/Substance,--,"1,719,836",--,--,--
+Nebraska,2001,Firearm,140,"1,719,836",8.14,8.12,"3,331"
+Nebraska,2001,Machinery,--,"1,719,836",--,--,--
+Nebraska,2001,Natural/Environmental,12**,"1,719,836",0.70**,0.69**,146
+Nebraska,2001,Overexertion,--,"1,719,836",--,--,--
+Nebraska,2001,Drug Poisoning,66,"1,719,836",3.84,3.96,"1,694"
+Nebraska,2001,Non-Drug Poisoning,30,"1,719,836",1.74,1.73,489
+Nebraska,2001,Struck by / against,--,"1,719,836",--,--,--
+Nebraska,2001,Suffocation,93,"1,719,836",5.41,5.14,"1,596"
+Nebraska,2001,"Motor vehicle, traffic",254,"1,719,836",14.77,14.59,"6,956"
+Nebraska,2001,"Pedestrian, other",--,"1,719,836",--,--,--
+Nebraska,2001,"Transport, other land",16**,"1,719,836",0.93**,0.89**,419
+Nebraska,2001,"Transport, other (excl. drown by water transp)",--,"1,719,836",--,--,--
+Nebraska,2001,Other specified and classifiable,12**,"1,719,836",0.70**,0.72**,287
+Nebraska,2001,Other specified / NEC,--,"1,719,836",--,--,--
+Nebraska,2001,Unspecified,57,"1,719,836",3.31,2.89,294
+Total,,,"22,195","38,628,286",57.46,54.73,"398,622"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Nebraska,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

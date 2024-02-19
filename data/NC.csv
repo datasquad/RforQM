@@ -1,0 +1,439 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+North Carolina,2021,Cut/Pierce,78,"10,551,162",0.74,0.7,"1,545"
+North Carolina,2021,Drowning (includes water transport),148,"10,551,162",1.4,1.43,"3,836"
+North Carolina,2021,Fall,"1,673","10,551,162",15.86,14.08,"3,099"
+North Carolina,2021,Fire/Flame,143,"10,551,162",1.36,1.18,"1,729"
+North Carolina,2021,Hot object/Substance,--,"10,551,162",--,--,--
+North Carolina,2021,Firearm,"1,839","10,551,162",17.43,17.2,"47,216"
+North Carolina,2021,Machinery,15**,"10,551,162",0.14**,0.13**,182
+North Carolina,2021,Natural/Environmental,61,"10,551,162",0.58,0.51,756
+North Carolina,2021,Drug Poisoning,"3,981","10,551,162",37.73,39.25,"95,814"
+North Carolina,2021,Non-Drug Poisoning,129,"10,551,162",1.22,1.19,"2,397"
+North Carolina,2021,Struck by / against,50,"10,551,162",0.47,0.43,832
+North Carolina,2021,Suffocation,589,"10,551,162",5.58,5.46,"12,099"
+North Carolina,2021,"Motor vehicle, traffic","1,867","10,551,162",17.7,17.19,"41,764"
+North Carolina,2021,"Pedal cyclist, other",13**,"10,551,162",0.12**,0.10**,157
+North Carolina,2021,"Pedestrian, other",37,"10,551,162",0.35,0.34,708
+North Carolina,2021,"Transport, other land",56,"10,551,162",0.53,0.5,"1,146"
+North Carolina,2021,"Transport, other (excl. drown by water transp)",10**,"10,551,162",0.10**,0.07**,123
+North Carolina,2021,Other specified and classifiable,64,"10,551,162",0.61,0.55,"1,110"
+North Carolina,2021,Other specified / NEC,71,"10,551,162",0.67,0.66,"1,396"
+North Carolina,2021,Unspecified,304,"10,551,162",2.88,2.53,"2,287"
+North Carolina,2020,Cut/Pierce,80,"10,457,177",0.77,0.72,"1,411"
+North Carolina,2020,Drowning (includes water transport),150,"10,457,177",1.43,1.39,"3,730"
+North Carolina,2020,Fall,"1,560","10,457,177",14.92,13.29,"2,722"
+North Carolina,2020,Fire/Flame,113,"10,457,177",1.08,0.98,"1,343"
+North Carolina,2020,Hot object/Substance,--,"10,457,177",--,--,--
+North Carolina,2020,Firearm,"1,699","10,457,177",16.25,16.17,"43,790"
+North Carolina,2020,Machinery,20**,"10,457,177",0.19**,0.17**,243
+North Carolina,2020,Natural/Environmental,45,"10,457,177",0.43,0.39,727
+North Carolina,2020,Overexertion,--,"10,457,177",--,--,--
+North Carolina,2020,Drug Poisoning,"3,146","10,457,177",30.09,31.22,"76,856"
+North Carolina,2020,Non-Drug Poisoning,149,"10,457,177",1.43,1.37,"2,546"
+North Carolina,2020,Struck by / against,36,"10,457,177",0.34,0.32,503
+North Carolina,2020,Suffocation,541,"10,457,177",5.17,5.17,"12,188"
+North Carolina,2020,"Motor vehicle, traffic","1,692","10,457,177",16.18,15.85,"38,755"
+North Carolina,2020,"Pedal cyclist, other",14**,"10,457,177",0.13**,0.11**,188
+North Carolina,2020,"Pedestrian, other",37,"10,457,177",0.35,0.35,730
+North Carolina,2020,"Transport, other land",63,"10,457,177",0.6,0.59,"1,441"
+North Carolina,2020,"Transport, other (excl. drown by water transp)",--,"10,457,177",--,--,--
+North Carolina,2020,Other specified and classifiable,71,"10,457,177",0.68,0.69,"1,920"
+North Carolina,2020,Other specified / NEC,43,"10,457,177",0.41,0.37,536
+North Carolina,2020,Unspecified,341,"10,457,177",3.26,2.94,"2,768"
+North Carolina,2019,Cut/Pierce,108,"10,501,384",1.03,1.01,"2,293"
+North Carolina,2019,Drowning (includes water transport),133,"10,501,384",1.27,1.24,"3,399"
+North Carolina,2019,Fall,"1,511","10,501,384",14.39,12.31,"2,965"
+North Carolina,2019,Fire/Flame,121,"10,501,384",1.15,0.95,"1,074"
+North Carolina,2019,Hot object/Substance,--,"10,501,384",--,--,--
+North Carolina,2019,Firearm,"1,397","10,501,384",13.3,13.04,"33,721"
+North Carolina,2019,Machinery,21,"10,501,384",0.2,0.17,89
+North Carolina,2019,Natural/Environmental,42,"10,501,384",0.4,0.34,334
+North Carolina,2019,Drug Poisoning,"2,266","10,501,384",21.58,22.27,"54,983"
+North Carolina,2019,Non-Drug Poisoning,123,"10,501,384",1.17,1.15,"2,315"
+North Carolina,2019,Struck by / against,33,"10,501,384",0.31,0.28,461
+North Carolina,2019,Suffocation,555,"10,501,384",5.29,5.2,"11,964"
+North Carolina,2019,"Motor vehicle, traffic","1,561","10,501,384",14.87,14.23,"33,613"
+North Carolina,2019,"Pedal cyclist, other",10**,"10,501,384",0.10**,0.09**,226
+North Carolina,2019,"Pedestrian, other",36,"10,501,384",0.34,0.34,790
+North Carolina,2019,"Transport, other land",41,"10,501,384",0.39,0.39,"1,033"
+North Carolina,2019,"Transport, other (excl. drown by water transp)",22,"10,501,384",0.21,0.18,309
+North Carolina,2019,Other specified and classifiable,50,"10,501,384",0.48,0.47,"1,107"
+North Carolina,2019,Other specified / NEC,46,"10,501,384",0.44,0.39,674
+North Carolina,2019,Unspecified,283,"10,501,384",2.7,2.4,"2,166"
+North Carolina,2018,Cut/Pierce,84,"10,391,358",0.81,0.76,"1,417"
+North Carolina,2018,Drowning (includes water transport),126,"10,391,358",1.21,1.24,"3,608"
+North Carolina,2018,Fall,"1,364","10,391,358",13.13,11.31,"2,366"
+North Carolina,2018,Fire/Flame,137,"10,391,358",1.32,1.15,"1,596"
+North Carolina,2018,Hot object/Substance,--,"10,391,358",--,--,--
+North Carolina,2018,Firearm,"1,416","10,391,358",13.63,13.25,"32,530"
+North Carolina,2018,Machinery,12**,"10,391,358",0.12**,0.10**,160
+North Carolina,2018,Natural/Environmental,63,"10,391,358",0.61,0.54,714
+North Carolina,2018,Overexertion,--,"10,391,358",--,--,--
+North Carolina,2018,Drug Poisoning,"2,259","10,391,358",21.74,22.37,"53,607"
+North Carolina,2018,Non-Drug Poisoning,129,"10,391,358",1.24,1.19,"2,275"
+North Carolina,2018,Struck by / against,47,"10,391,358",0.45,0.4,549
+North Carolina,2018,Suffocation,598,"10,391,358",5.76,5.54,"11,783"
+North Carolina,2018,"Motor vehicle, traffic","1,532","10,391,358",14.74,14.2,"33,003"
+North Carolina,2018,"Pedal cyclist, other",--,"10,391,358",--,--,--
+North Carolina,2018,"Pedestrian, other",37,"10,391,358",0.36,0.35,930
+North Carolina,2018,"Transport, other land",44,"10,391,358",0.42,0.4,933
+North Carolina,2018,"Transport, other (excl. drown by water transp)",10**,"10,391,358",0.10**,0.10**,222
+North Carolina,2018,Other specified and classifiable,50,"10,391,358",0.48,0.45,"1,045"
+North Carolina,2018,Other specified / NEC,52,"10,391,358",0.5,0.45,547
+North Carolina,2018,Unspecified,278,"10,391,358",2.68,2.4,"2,370"
+North Carolina,2017,Cut/Pierce,80,"10,275,758",0.78,0.79,"1,480"
+North Carolina,2017,Drowning (includes water transport),129,"10,275,758",1.26,1.23,"3,385"
+North Carolina,2017,Fall,"1,297","10,275,758",12.62,11.11,"2,323"
+North Carolina,2017,Fire/Flame,123,"10,275,758",1.2,1.07,"1,446"
+North Carolina,2017,Hot object/Substance,--,"10,275,758",--,--,--
+North Carolina,2017,Firearm,"1,430","10,275,758",13.92,13.63,"32,379"
+North Carolina,2017,Machinery,25,"10,275,758",0.24,0.23,297
+North Carolina,2017,Natural/Environmental,37,"10,275,758",0.36,0.32,594
+North Carolina,2017,Overexertion,--,"10,275,758",--,--,--
+North Carolina,2017,Drug Poisoning,"2,414","10,275,758",23.49,24.12,"59,109"
+North Carolina,2017,Non-Drug Poisoning,122,"10,275,758",1.19,1.22,"2,449"
+North Carolina,2017,Struck by / against,54,"10,275,758",0.53,0.48,690
+North Carolina,2017,Suffocation,596,"10,275,758",5.8,5.66,"12,944"
+North Carolina,2017,"Motor vehicle, traffic","1,470","10,275,758",14.31,13.89,"32,775"
+North Carolina,2017,"Pedal cyclist, other",--,"10,275,758",--,--,--
+North Carolina,2017,"Pedestrian, other",28,"10,275,758",0.27,0.27,555
+North Carolina,2017,"Transport, other land",54,"10,275,758",0.53,0.5,"1,016"
+North Carolina,2017,"Transport, other (excl. drown by water transp)",17**,"10,275,758",0.17**,0.16**,333
+North Carolina,2017,Other specified and classifiable,70,"10,275,758",0.68,0.65,"1,671"
+North Carolina,2017,Other specified / NEC,61,"10,275,758",0.59,0.53,839
+North Carolina,2017,Unspecified,291,"10,275,758",2.83,2.6,"2,623"
+North Carolina,2016,Cut/Pierce,88,"10,161,802",0.87,0.84,"1,714"
+North Carolina,2016,Drowning (includes water transport),118,"10,161,802",1.16,1.14,"3,517"
+North Carolina,2016,Fall,"1,246","10,161,802",12.26,11.01,"2,683"
+North Carolina,2016,Fire/Flame,119,"10,161,802",1.17,1.05,"1,493"
+North Carolina,2016,Hot object/Substance,--,"10,161,802",--,--,--
+North Carolina,2016,Firearm,"1,409","10,161,802",13.87,13.59,"32,927"
+North Carolina,2016,Machinery,26,"10,161,802",0.26,0.24,423
+North Carolina,2016,Natural/Environmental,67,"10,161,802",0.66,0.61,"1,054"
+North Carolina,2016,Drug Poisoning,"1,956","10,161,802",19.25,19.61,"46,568"
+North Carolina,2016,Non-Drug Poisoning,136,"10,161,802",1.34,1.24,"2,183"
+North Carolina,2016,Struck by / against,35,"10,161,802",0.34,0.31,460
+North Carolina,2016,Suffocation,518,"10,161,802",5.1,4.98,"10,946"
+North Carolina,2016,"Motor vehicle, traffic","1,472","10,161,802",14.49,14.21,"34,669"
+North Carolina,2016,"Pedal cyclist, other",12**,"10,161,802",0.12**,0.10**,139
+North Carolina,2016,"Pedestrian, other",44,"10,161,802",0.43,0.41,997
+North Carolina,2016,"Transport, other land",55,"10,161,802",0.54,0.52,939
+North Carolina,2016,"Transport, other (excl. drown by water transp)",11**,"10,161,802",0.11**,0.10**,196
+North Carolina,2016,Other specified and classifiable,66,"10,161,802",0.65,0.62,"1,542"
+North Carolina,2016,Other specified / NEC,70,"10,161,802",0.69,0.65,994
+North Carolina,2016,Unspecified,247,"10,161,802",2.43,2.2,"2,546"
+North Carolina,2015,Cut/Pierce,92,"10,037,218",0.92,0.92,"1,906"
+North Carolina,2015,Drowning (includes water transport),115,"10,037,218",1.15,1.1,"2,887"
+North Carolina,2015,Fall,"1,193","10,037,218",11.89,10.79,"2,376"
+North Carolina,2015,Fire/Flame,114,"10,037,218",1.14,1.01,964
+North Carolina,2015,Hot object/Substance,--,"10,037,218",--,--,--
+North Carolina,2015,Firearm,"1,289","10,037,218",12.84,12.47,"28,716"
+North Carolina,2015,Machinery,14**,"10,037,218",0.14**,0.13**,143
+North Carolina,2015,Natural/Environmental,41,"10,037,218",0.41,0.37,430
+North Carolina,2015,Drug Poisoning,"1,567","10,037,218",15.61,15.74,"34,928"
+North Carolina,2015,Non-Drug Poisoning,162,"10,037,218",1.61,1.56,"2,952"
+North Carolina,2015,Struck by / against,36,"10,037,218",0.36,0.34,576
+North Carolina,2015,Suffocation,519,"10,037,218",5.17,5.05,"10,048"
+North Carolina,2015,"Motor vehicle, traffic","1,464","10,037,218",14.59,14.17,"33,133"
+North Carolina,2015,"Pedal cyclist, other",--,"10,037,218",--,--,--
+North Carolina,2015,"Pedestrian, other",36,"10,037,218",0.36,0.35,679
+North Carolina,2015,"Transport, other land",49,"10,037,218",0.49,0.45,795
+North Carolina,2015,"Transport, other (excl. drown by water transp)",19**,"10,037,218",0.19**,0.18**,424
+North Carolina,2015,Other specified and classifiable,68,"10,037,218",0.68,0.69,"1,556"
+North Carolina,2015,Other specified / NEC,52,"10,037,218",0.52,0.49,785
+North Carolina,2015,Unspecified,253,"10,037,218",2.52,2.34,"2,922"
+North Carolina,2014,Cut/Pierce,94,"9,937,295",0.95,0.91,"1,867"
+North Carolina,2014,Drowning (includes water transport),120,"9,937,295",1.21,1.25,"3,825"
+North Carolina,2014,Fall,"1,096","9,937,295",11.03,10.17,"2,012"
+North Carolina,2014,Fire/Flame,132,"9,937,295",1.33,1.26,"1,829"
+North Carolina,2014,Hot object/Substance,--,"9,937,295",--,--,--
+North Carolina,2014,Firearm,"1,206","9,937,295",12.14,11.76,"26,649"
+North Carolina,2014,Machinery,26,"9,937,295",0.26,0.25,336
+North Carolina,2014,Natural/Environmental,38,"9,937,295",0.38,0.36,444
+North Carolina,2014,Drug Poisoning,"1,358","9,937,295",13.67,13.73,"30,301"
+North Carolina,2014,Non-Drug Poisoning,164,"9,937,295",1.65,1.55,"2,920"
+North Carolina,2014,Struck by / against,49,"9,937,295",0.49,0.49,"1,005"
+North Carolina,2014,Suffocation,490,"9,937,295",4.93,4.82,"10,443"
+North Carolina,2014,"Motor vehicle, traffic","1,344","9,937,295",13.53,13.18,"30,677"
+North Carolina,2014,"Pedal cyclist, other",--,"9,937,295",--,--,--
+North Carolina,2014,"Pedestrian, other",38,"9,937,295",0.38,0.38,901
+North Carolina,2014,"Transport, other land",41,"9,937,295",0.41,0.41,655
+North Carolina,2014,"Transport, other (excl. drown by water transp)",12**,"9,937,295",0.12**,0.11**,262
+North Carolina,2014,Other specified and classifiable,56,"9,937,295",0.56,0.57,"1,329"
+North Carolina,2014,Other specified / NEC,56,"9,937,295",0.56,0.5,546
+North Carolina,2014,Unspecified,216,"9,937,295",2.17,2.01,"1,952"
+North Carolina,2013,Cut/Pierce,82,"9,846,717",0.83,0.81,"1,821"
+North Carolina,2013,Drowning (includes water transport),129,"9,846,717",1.31,1.29,"3,583"
+North Carolina,2013,Fall,"1,010","9,846,717",10.26,9.63,"2,497"
+North Carolina,2013,Fire/Flame,108,"9,846,717",1.1,1.03,"1,386"
+North Carolina,2013,Hot object/Substance,--,"9,846,717",--,--,--
+North Carolina,2013,Firearm,"1,223","9,846,717",12.42,12.13,"27,354"
+North Carolina,2013,Machinery,20**,"9,846,717",0.20**,0.18**,165
+North Carolina,2013,Natural/Environmental,24,"9,846,717",0.24,0.22,287
+North Carolina,2013,Drug Poisoning,"1,259","9,846,717",12.79,12.8,"27,873"
+North Carolina,2013,Non-Drug Poisoning,140,"9,846,717",1.42,1.35,"2,293"
+North Carolina,2013,Struck by / against,33,"9,846,717",0.34,0.32,704
+North Carolina,2013,Suffocation,463,"9,846,717",4.7,4.58,"9,773"
+North Carolina,2013,"Motor vehicle, traffic","1,321","9,846,717",13.42,13.09,"30,303"
+North Carolina,2013,"Pedal cyclist, other",--,"9,846,717",--,--,--
+North Carolina,2013,"Pedestrian, other",30,"9,846,717",0.31,0.29,651
+North Carolina,2013,"Transport, other land",32,"9,846,717",0.33,0.31,747
+North Carolina,2013,"Transport, other (excl. drown by water transp)",14**,"9,846,717",0.14**,0.14**,248
+North Carolina,2013,Other specified and classifiable,52,"9,846,717",0.53,0.51,"1,433"
+North Carolina,2013,Other specified / NEC,52,"9,846,717",0.53,0.51,700
+North Carolina,2013,Unspecified,263,"9,846,717",2.67,2.52,"2,297"
+North Carolina,2012,Cut/Pierce,70,"9,751,810",0.72,0.72,"1,574"
+North Carolina,2012,Drowning (includes water transport),135,"9,751,810",1.38,1.35,"3,781"
+North Carolina,2012,Fall,938,"9,751,810",9.62,9.15,"2,386"
+North Carolina,2012,Fire/Flame,113,"9,751,810",1.16,1.08,"1,486"
+North Carolina,2012,Hot object/Substance,--,"9,751,810",--,--,--
+North Carolina,2012,Firearm,"1,175","9,751,810",12.05,11.67,"26,202"
+North Carolina,2012,Machinery,18**,"9,751,810",0.19**,0.19**,310
+North Carolina,2012,Natural/Environmental,43,"9,751,810",0.44,0.41,491
+North Carolina,2012,Drug Poisoning,"1,298","9,751,810",13.31,13.29,"29,069"
+North Carolina,2012,Non-Drug Poisoning,138,"9,751,810",1.42,1.36,"2,646"
+North Carolina,2012,Struck by / against,31,"9,751,810",0.32,0.3,548
+North Carolina,2012,Suffocation,456,"9,751,810",4.68,4.64,"10,411"
+North Carolina,2012,"Motor vehicle, traffic","1,282","9,751,810",13.15,12.98,"30,859"
+North Carolina,2012,"Pedal cyclist, other",15**,"9,751,810",0.15**,0.14**,226
+North Carolina,2012,"Pedestrian, other",26,"9,751,810",0.27,0.27,799
+North Carolina,2012,"Transport, other land",51,"9,751,810",0.52,0.53,"1,148"
+North Carolina,2012,"Transport, other (excl. drown by water transp)",17**,"9,751,810",0.17**,0.16**,224
+North Carolina,2012,Other specified and classifiable,52,"9,751,810",0.53,0.53,"1,355"
+North Carolina,2012,Other specified / NEC,43,"9,751,810",0.44,0.45,778
+North Carolina,2012,Unspecified,310,"9,751,810",3.18,3.05,"2,798"
+North Carolina,2011,Cut/Pierce,87,"9,658,913",0.9,0.91,"2,275"
+North Carolina,2011,Drowning (includes water transport),142,"9,658,913",1.47,1.43,"3,677"
+North Carolina,2011,Fall,913,"9,658,913",9.45,9.19,"2,117"
+North Carolina,2011,Fire/Flame,122,"9,658,913",1.26,1.17,"1,534"
+North Carolina,2011,Firearm,"1,154","9,658,913",11.95,11.73,"26,592"
+North Carolina,2011,Machinery,30,"9,658,913",0.31,0.29,384
+North Carolina,2011,Natural/Environmental,68,"9,658,913",0.7,0.66,"1,117"
+North Carolina,2011,Drug Poisoning,"1,264","9,658,913",13.09,13.01,"29,270"
+North Carolina,2011,Non-Drug Poisoning,152,"9,658,913",1.57,1.52,"2,593"
+North Carolina,2011,Struck by / against,34,"9,658,913",0.35,0.33,475
+North Carolina,2011,Suffocation,449,"9,658,913",4.65,4.64,"9,562"
+North Carolina,2011,"Motor vehicle, traffic","1,229","9,658,913",12.72,12.57,"30,296"
+North Carolina,2011,"Pedal cyclist, other",--,"9,658,913",--,--,--
+North Carolina,2011,"Pedestrian, other",26,"9,658,913",0.27,0.26,583
+North Carolina,2011,"Transport, other land",35,"9,658,913",0.36,0.35,752
+North Carolina,2011,"Transport, other (excl. drown by water transp)",14**,"9,658,913",0.15**,0.13**,226
+North Carolina,2011,Other specified and classifiable,50,"9,658,913",0.52,0.51,"1,227"
+North Carolina,2011,Other specified / NEC,39,"9,658,913",0.4,0.38,571
+North Carolina,2011,Unspecified,296,"9,658,913",3.07,2.93,"2,766"
+North Carolina,2010,Cut/Pierce,72,"9,535,762",0.76,0.75,"1,834"
+North Carolina,2010,Drowning (includes water transport),153,"9,535,762",1.6,1.6,"4,650"
+North Carolina,2010,Fall,867,"9,535,762",9.09,9.07,"2,054"
+North Carolina,2010,Fire/Flame,113,"9,535,762",1.19,1.12,"1,309"
+North Carolina,2010,Firearm,"1,123","9,535,762",11.78,11.57,"25,725"
+North Carolina,2010,Machinery,19**,"9,535,762",0.20**,0.19**,200
+North Carolina,2010,Natural/Environmental,45,"9,535,762",0.47,0.45,436
+North Carolina,2010,Drug Poisoning,"1,093","9,535,762",11.46,11.39,"24,906"
+North Carolina,2010,Non-Drug Poisoning,126,"9,535,762",1.32,1.26,"2,296"
+North Carolina,2010,Struck by / against,32,"9,535,762",0.34,0.33,380
+North Carolina,2010,Suffocation,424,"9,535,762",4.45,4.43,"8,373"
+North Carolina,2010,"Motor vehicle, traffic","1,317","9,535,762",13.81,13.75,"32,026"
+North Carolina,2010,"Pedal cyclist, other",10**,"9,535,762",0.11**,0.10**,141
+North Carolina,2010,"Pedestrian, other",32,"9,535,762",0.34,0.34,909
+North Carolina,2010,"Transport, other land",50,"9,535,762",0.52,0.52,"1,260"
+North Carolina,2010,"Transport, other (excl. drown by water transp)",11**,"9,535,762",0.12**,0.11**,243
+North Carolina,2010,Other specified and classifiable,48,"9,535,762",0.5,0.48,"1,243"
+North Carolina,2010,Other specified / NEC,37,"9,535,762",0.39,0.38,636
+North Carolina,2010,Unspecified,358,"9,535,762",3.75,3.66,"3,422"
+North Carolina,2009,Cut/Pierce,86,"9,449,566",0.91,0.9,"2,107"
+North Carolina,2009,Drowning (includes water transport),124,"9,449,566",1.31,1.28,"3,520"
+North Carolina,2009,Fall,854,"9,449,566",9.04,9.06,"2,398"
+North Carolina,2009,Fire/Flame,111,"9,449,566",1.18,1.14,"1,679"
+North Carolina,2009,Hot object/Substance,--,"9,449,566",--,--,--
+North Carolina,2009,Firearm,"1,112","9,449,566",11.77,11.59,"25,145"
+North Carolina,2009,Machinery,15**,"9,449,566",0.16**,0.16**,145
+North Carolina,2009,Natural/Environmental,32,"9,449,566",0.34,0.34,354
+North Carolina,2009,Overexertion,--,"9,449,566",--,--,--
+North Carolina,2009,Drug Poisoning,"1,191","9,449,566",12.6,12.62,"28,425"
+North Carolina,2009,Non-Drug Poisoning,149,"9,449,566",1.58,1.54,"3,045"
+North Carolina,2009,Struck by / against,26,"9,449,566",0.28,0.27,408
+North Carolina,2009,Suffocation,459,"9,449,566",4.86,4.89,"9,624"
+North Carolina,2009,"Motor vehicle, traffic","1,354","9,449,566",14.33,14.13,"34,087"
+North Carolina,2009,"Pedal cyclist, other",--,"9,449,566",--,--,--
+North Carolina,2009,"Pedestrian, other",33,"9,449,566",0.35,0.36,837
+North Carolina,2009,"Transport, other land",43,"9,449,566",0.46,0.46,"1,024"
+North Carolina,2009,"Transport, other (excl. drown by water transp)",18**,"9,449,566",0.19**,0.18**,251
+North Carolina,2009,Other specified and classifiable,44,"9,449,566",0.47,0.45,"1,097"
+North Carolina,2009,Other specified / NEC,69,"9,449,566",0.73,0.74,"1,224"
+North Carolina,2009,Unspecified,247,"9,449,566",2.61,2.62,"2,371"
+North Carolina,2008,Cut/Pierce,95,"9,309,449",1.02,1.02,"2,396"
+North Carolina,2008,Drowning (includes water transport),128,"9,309,449",1.38,1.36,"3,976"
+North Carolina,2008,Fall,764,"9,309,449",8.21,8.41,"2,211"
+North Carolina,2008,Fire/Flame,119,"9,309,449",1.28,1.23,"1,867"
+North Carolina,2008,Hot object/Substance,--,"9,309,449",--,--,--
+North Carolina,2008,Firearm,"1,160","9,309,449",12.46,12.31,"27,942"
+North Carolina,2008,Machinery,26,"9,309,449",0.28,0.27,284
+North Carolina,2008,Natural/Environmental,48,"9,309,449",0.52,0.5,616
+North Carolina,2008,Drug Poisoning,"1,196","9,309,449",12.85,12.8,"28,923"
+North Carolina,2008,Non-Drug Poisoning,100,"9,309,449",1.07,1.06,"2,052"
+North Carolina,2008,Struck by / against,30,"9,309,449",0.32,0.31,615
+North Carolina,2008,Suffocation,471,"9,309,449",5.06,5.11,"10,166"
+North Carolina,2008,"Motor vehicle, traffic","1,520","9,309,449",16.33,16.2,"38,241"
+North Carolina,2008,"Pedal cyclist, other",15**,"9,309,449",0.16**,0.16**,284
+North Carolina,2008,"Pedestrian, other",32,"9,309,449",0.34,0.35,"1,041"
+North Carolina,2008,"Transport, other land",36,"9,309,449",0.39,0.38,927
+North Carolina,2008,"Transport, other (excl. drown by water transp)",16**,"9,309,449",0.17**,0.16**,318
+North Carolina,2008,Other specified and classifiable,62,"9,309,449",0.67,0.64,"2,017"
+North Carolina,2008,Other specified / NEC,65,"9,309,449",0.7,0.7,994
+North Carolina,2008,Unspecified,334,"9,309,449",3.59,3.64,"3,137"
+North Carolina,2007,Cut/Pierce,98,"9,118,037",1.08,1.08,"2,384"
+North Carolina,2007,Drowning (includes water transport),124,"9,118,037",1.36,1.35,"4,040"
+North Carolina,2007,Fall,634,"9,118,037",6.95,7.11,"2,342"
+North Carolina,2007,Fire/Flame,159,"9,118,037",1.74,1.72,"2,737"
+North Carolina,2007,Hot object/Substance,--,"9,118,037",--,--,--
+North Carolina,2007,Firearm,"1,116","9,118,037",12.24,12.17,"27,294"
+North Carolina,2007,Machinery,31,"9,118,037",0.34,0.32,524
+North Carolina,2007,Natural/Environmental,42,"9,118,037",0.46,0.45,410
+North Carolina,2007,Drug Poisoning,"1,084","9,118,037",11.89,11.86,"26,062"
+North Carolina,2007,Non-Drug Poisoning,99,"9,118,037",1.09,1.03,"1,776"
+North Carolina,2007,Struck by / against,24,"9,118,037",0.26,0.26,445
+North Carolina,2007,Suffocation,404,"9,118,037",4.43,4.53,"9,460"
+North Carolina,2007,"Motor vehicle, traffic","1,750","9,118,037",19.19,19.07,"45,346"
+North Carolina,2007,"Pedal cyclist, other",--,"9,118,037",--,--,--
+North Carolina,2007,"Pedestrian, other",31,"9,118,037",0.34,0.33,801
+North Carolina,2007,"Transport, other land",59,"9,118,037",0.65,0.64,"1,562"
+North Carolina,2007,"Transport, other (excl. drown by water transp)",12**,"9,118,037",0.13**,0.13**,219
+North Carolina,2007,Other specified and classifiable,47,"9,118,037",0.52,0.51,"1,240"
+North Carolina,2007,Other specified / NEC,77,"9,118,037",0.84,0.85,"1,387"
+North Carolina,2007,Unspecified,419,"9,118,037",4.6,4.68,"3,204"
+North Carolina,2006,Cut/Pierce,87,"8,917,270",0.98,0.95,"2,171"
+North Carolina,2006,Drowning (includes water transport),123,"8,917,270",1.38,1.35,"3,284"
+North Carolina,2006,Fall,554,"8,917,270",6.21,6.44,"2,065"
+North Carolina,2006,Fire/Flame,131,"8,917,270",1.47,1.47,"2,292"
+North Carolina,2006,Hot object/Substance,--,"8,917,270",--,--,--
+North Carolina,2006,Firearm,"1,133","8,917,270",12.71,12.55,"28,181"
+North Carolina,2006,Machinery,28,"8,917,270",0.31,0.3,291
+North Carolina,2006,Natural/Environmental,37,"8,917,270",0.42,0.41,819
+North Carolina,2006,Overexertion,--,"8,917,270",--,--,--
+North Carolina,2006,Drug Poisoning,"1,059","8,917,270",11.88,11.82,"26,316"
+North Carolina,2006,Non-Drug Poisoning,86,"8,917,270",0.96,0.95,"1,660"
+North Carolina,2006,Struck by / against,43,"8,917,270",0.48,0.49,"1,002"
+North Carolina,2006,Suffocation,414,"8,917,270",4.64,4.69,"8,103"
+North Carolina,2006,"Motor vehicle, traffic","1,655","8,917,270",18.56,18.49,"42,668"
+North Carolina,2006,"Pedal cyclist, other",--,"8,917,270",--,--,--
+North Carolina,2006,"Pedestrian, other",31,"8,917,270",0.35,0.36,807
+North Carolina,2006,"Transport, other land",41,"8,917,270",0.46,0.46,"1,028"
+North Carolina,2006,"Transport, other (excl. drown by water transp)",24,"8,917,270",0.27,0.26,657
+North Carolina,2006,Other specified and classifiable,52,"8,917,270",0.58,0.58,"1,446"
+North Carolina,2006,Other specified / NEC,65,"8,917,270",0.73,0.71,"1,232"
+North Carolina,2006,Unspecified,374,"8,917,270",4.19,4.32,"3,280"
+North Carolina,2005,Cut/Pierce,104,"8,705,407",1.2,1.2,"2,558"
+North Carolina,2005,Drowning (includes water transport),108,"8,705,407",1.24,1.25,"3,345"
+North Carolina,2005,Fall,624,"8,705,407",7.17,7.5,"2,496"
+North Carolina,2005,Fire/Flame,127,"8,705,407",1.46,1.46,"2,460"
+North Carolina,2005,Hot object/Substance,--,"8,705,407",--,--,--
+North Carolina,2005,Firearm,"1,119","8,705,407",12.85,12.74,"27,459"
+North Carolina,2005,Machinery,24,"8,705,407",0.28,0.27,312
+North Carolina,2005,Natural/Environmental,46,"8,705,407",0.53,0.51,613
+North Carolina,2005,Drug Poisoning,"1,000","8,705,407",11.49,11.39,"24,678"
+North Carolina,2005,Non-Drug Poisoning,96,"8,705,407",1.1,1.1,"1,751"
+North Carolina,2005,Struck by / against,35,"8,705,407",0.4,0.39,550
+North Carolina,2005,Suffocation,375,"8,705,407",4.31,4.39,"7,542"
+North Carolina,2005,"Motor vehicle, traffic","1,621","8,705,407",18.62,18.52,"42,233"
+North Carolina,2005,"Pedal cyclist, other",--,"8,705,407",--,--,--
+North Carolina,2005,"Pedestrian, other",32,"8,705,407",0.37,0.35,610
+North Carolina,2005,"Transport, other land",42,"8,705,407",0.48,0.49,"1,457"
+North Carolina,2005,"Transport, other (excl. drown by water transp)",16**,"8,705,407",0.18**,0.17**,175
+North Carolina,2005,Other specified and classifiable,51,"8,705,407",0.59,0.58,"1,513"
+North Carolina,2005,Other specified / NEC,49,"8,705,407",0.56,0.57,703
+North Carolina,2005,Unspecified,372,"8,705,407",4.27,4.44,"2,965"
+North Carolina,2004,Cut/Pierce,115,"8,553,152",1.35,1.33,"2,721"
+North Carolina,2004,Drowning (includes water transport),110,"8,553,152",1.29,1.27,"3,348"
+North Carolina,2004,Fall,607,"8,553,152",7.1,7.52,"2,019"
+North Carolina,2004,Fire/Flame,137,"8,553,152",1.6,1.61,"2,725"
+North Carolina,2004,Hot object/Substance,--,"8,553,152",--,--,--
+North Carolina,2004,Firearm,"1,055","8,553,152",12.34,12.22,"26,303"
+North Carolina,2004,Machinery,44,"8,553,152",0.51,0.52,724
+North Carolina,2004,Natural/Environmental,36,"8,553,152",0.42,0.42,735
+North Carolina,2004,Drug Poisoning,854,"8,553,152",9.99,9.91,"20,953"
+North Carolina,2004,Non-Drug Poisoning,88,"8,553,152",1.03,1.02,"1,762"
+North Carolina,2004,Struck by / against,41,"8,553,152",0.48,0.48,767
+North Carolina,2004,Suffocation,420,"8,553,152",4.91,5.01,"9,520"
+North Carolina,2004,"Motor vehicle, traffic","1,650","8,553,152",19.29,19.29,"44,720"
+North Carolina,2004,"Pedal cyclist, other",--,"8,553,152",--,--,--
+North Carolina,2004,"Pedestrian, other",39,"8,553,152",0.46,0.46,"1,038"
+North Carolina,2004,"Transport, other land",35,"8,553,152",0.41,0.41,"1,110"
+North Carolina,2004,"Transport, other (excl. drown by water transp)",25,"8,553,152",0.29,0.28,598
+North Carolina,2004,Other specified and classifiable,56,"8,553,152",0.66,0.64,"1,556"
+North Carolina,2004,Other specified / NEC,58,"8,553,152",0.68,0.69,970
+North Carolina,2004,Unspecified,338,"8,553,152",3.95,4.17,"3,162"
+North Carolina,2003,Cut/Pierce,110,"8,422,501",1.31,1.28,"2,580"
+North Carolina,2003,Drowning (includes water transport),113,"8,422,501",1.34,1.34,"3,807"
+North Carolina,2003,Fall,499,"8,422,501",5.93,6.28,"2,089"
+North Carolina,2003,Fire/Flame,131,"8,422,501",1.56,1.56,"2,548"
+North Carolina,2003,Firearm,"1,055","8,422,501",12.53,12.35,"26,840"
+North Carolina,2003,Machinery,19**,"8,422,501",0.23**,0.23**,160
+North Carolina,2003,Natural/Environmental,38,"8,422,501",0.45,0.45,626
+North Carolina,2003,Drug Poisoning,762,"8,422,501",9.05,8.99,"18,967"
+North Carolina,2003,Non-Drug Poisoning,115,"8,422,501",1.37,1.35,"2,082"
+North Carolina,2003,Struck by / against,31,"8,422,501",0.37,0.36,448
+North Carolina,2003,Suffocation,344,"8,422,501",4.08,4.2,"6,685"
+North Carolina,2003,"Motor vehicle, traffic","1,620","8,422,501",19.23,19.26,"43,466"
+North Carolina,2003,"Pedal cyclist, other",--,"8,422,501",--,--,--
+North Carolina,2003,"Pedestrian, other",32,"8,422,501",0.38,0.38,"1,011"
+North Carolina,2003,"Transport, other land",28,"8,422,501",0.33,0.34,751
+North Carolina,2003,"Transport, other (excl. drown by water transp)",19**,"8,422,501",0.23**,0.22**,508
+North Carolina,2003,Other specified and classifiable,59,"8,422,501",0.7,0.69,"1,603"
+North Carolina,2003,Other specified / NEC,53,"8,422,501",0.63,0.63,823
+North Carolina,2003,Unspecified,409,"8,422,501",4.86,5.15,"3,539"
+North Carolina,2002,Cut/Pierce,82,"8,326,201",0.99,0.98,"1,942"
+North Carolina,2002,Drowning (includes water transport),114,"8,326,201",1.37,1.35,"3,333"
+North Carolina,2002,Fall,474,"8,326,201",5.69,6.14,"1,904"
+North Carolina,2002,Fire/Flame,140,"8,326,201",1.68,1.7,"3,265"
+North Carolina,2002,Hot object/Substance,--,"8,326,201",--,--,--
+North Carolina,2002,Firearm,"1,136","8,326,201",13.64,13.43,"26,960"
+North Carolina,2002,Machinery,29,"8,326,201",0.35,0.35,376
+North Carolina,2002,Natural/Environmental,55,"8,326,201",0.66,0.69,556
+North Carolina,2002,Drug Poisoning,647,"8,326,201",7.77,7.72,"16,031"
+North Carolina,2002,Non-Drug Poisoning,90,"8,326,201",1.08,1.07,"1,865"
+North Carolina,2002,Struck by / against,42,"8,326,201",0.5,0.5,"1,028"
+North Carolina,2002,Suffocation,339,"8,326,201",4.07,4.17,"6,874"
+North Carolina,2002,"Motor vehicle, traffic","1,663","8,326,201",19.97,19.85,"44,369"
+North Carolina,2002,"Pedal cyclist, other",--,"8,326,201",--,--,--
+North Carolina,2002,"Pedestrian, other",25,"8,326,201",0.3,0.3,911
+North Carolina,2002,"Transport, other land",24,"8,326,201",0.29,0.29,769
+North Carolina,2002,"Transport, other (excl. drown by water transp)",17**,"8,326,201",0.20**,0.21**,228
+North Carolina,2002,Other specified and classifiable,45,"8,326,201",0.54,0.54,"1,093"
+North Carolina,2002,Other specified / NEC,58,"8,326,201",0.7,0.72,876
+North Carolina,2002,Unspecified,392,"8,326,201",4.71,5.06,"3,674"
+North Carolina,2001,Cut/Pierce,93,"8,210,122",1.13,1.11,"2,289"
+North Carolina,2001,Drowning (includes water transport),119,"8,210,122",1.45,1.45,"3,942"
+North Carolina,2001,Fall,431,"8,210,122",5.25,5.7,"1,577"
+North Carolina,2001,Fire/Flame,125,"8,210,122",1.52,1.52,"2,012"
+North Carolina,2001,Hot object/Substance,--,"8,210,122",--,--,--
+North Carolina,2001,Firearm,"1,093","8,210,122",13.31,13.06,"27,191"
+North Carolina,2001,Machinery,21,"8,210,122",0.26,0.26,300
+North Carolina,2001,Natural/Environmental,32,"8,210,122",0.39,0.41,400
+North Carolina,2001,Drug Poisoning,551,"8,210,122",6.71,6.65,"13,235"
+North Carolina,2001,Non-Drug Poisoning,103,"8,210,122",1.26,1.24,"2,508"
+North Carolina,2001,Struck by / against,39,"8,210,122",0.48,0.47,661
+North Carolina,2001,Suffocation,316,"8,210,122",3.85,3.99,"6,677"
+North Carolina,2001,"Motor vehicle, traffic","1,612","8,210,122",19.63,19.55,"43,056"
+North Carolina,2001,"Pedal cyclist, other",--,"8,210,122",--,--,--
+North Carolina,2001,"Pedestrian, other",33,"8,210,122",0.4,0.39,726
+North Carolina,2001,"Transport, other land",38,"8,210,122",0.46,0.46,966
+North Carolina,2001,"Transport, other (excl. drown by water transp)",22,"8,210,122",0.27,0.26,510
+North Carolina,2001,Other specified and classifiable,52,"8,210,122",0.63,0.63,"1,735"
+North Carolina,2001,Other specified / NEC,49,"8,210,122",0.6,0.61,813
+North Carolina,2001,Unspecified,332,"8,210,122",4.04,4.34,"2,750"
+Total,,,"143,525","200,118,061",71.72,70.56,"2,820,778"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: North Carolina,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

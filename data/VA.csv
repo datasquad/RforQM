@@ -1,0 +1,438 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Virginia,2021,Cut/Pierce,74,"8,642,274",0.86,0.78,"1,090"
+Virginia,2021,Drowning (includes water transport),115,"8,642,274",1.33,1.25,"2,365"
+Virginia,2021,Fall,"1,130","8,642,274",13.08,11.69,"2,122"
+Virginia,2021,Fire/Flame,102,"8,642,274",1.18,1.07,"1,397"
+Virginia,2021,Hot object/Substance,--,"8,642,274",--,--,--
+Virginia,2021,Firearm,"1,248","8,642,274",14.44,14.24,"31,955"
+Virginia,2021,Machinery,15**,"8,642,274",0.17**,0.15**,92
+Virginia,2021,Natural/Environmental,54,"8,642,274",0.63,0.53,400
+Virginia,2021,Drug Poisoning,"2,626","8,642,274",30.39,30.48,"60,330"
+Virginia,2021,Non-Drug Poisoning,95,"8,642,274",1.1,1.05,"1,989"
+Virginia,2021,Struck by / against,33,"8,642,274",0.38,0.33,399
+Virginia,2021,Suffocation,463,"8,642,274",5.36,5.13,"8,573"
+Virginia,2021,"Motor vehicle, traffic",997,"8,642,274",11.54,11.01,"20,786"
+Virginia,2021,"Pedal cyclist, other",--,"8,642,274",--,--,--
+Virginia,2021,"Pedestrian, other",16**,"8,642,274",0.19**,0.18**,263
+Virginia,2021,"Transport, other land",33,"8,642,274",0.38,0.35,693
+Virginia,2021,"Transport, other (excl. drown by water transp)",15**,"8,642,274",0.17**,0.18**,349
+Virginia,2021,Other specified and classifiable,52,"8,642,274",0.6,0.57,949
+Virginia,2021,Other specified / NEC,44,"8,642,274",0.51,0.47,653
+Virginia,2021,Unspecified,122,"8,642,274",1.41,1.3,"1,309"
+Virginia,2020,Cut/Pierce,70,"8,632,044",0.81,0.78,"1,395"
+Virginia,2020,Drowning (includes water transport),115,"8,632,044",1.33,1.29,"2,583"
+Virginia,2020,Fall,"1,033","8,632,044",11.97,10.85,"2,334"
+Virginia,2020,Fire/Flame,100,"8,632,044",1.16,0.99,837
+Virginia,2020,Hot object/Substance,--,"8,632,044",--,--,--
+Virginia,2020,Firearm,"1,174","8,632,044",13.6,13.36,"29,332"
+Virginia,2020,Machinery,11**,"8,632,044",0.13**,0.11**,111
+Virginia,2020,Natural/Environmental,35,"8,632,044",0.41,0.37,437
+Virginia,2020,Overexertion,--,"8,632,044",--,--,--
+Virginia,2020,Drug Poisoning,"2,240","8,632,044",25.95,26.32,"52,790"
+Virginia,2020,Non-Drug Poisoning,97,"8,632,044",1.12,1.09,"1,811"
+Virginia,2020,Struck by / against,21,"8,632,044",0.24,0.23,286
+Virginia,2020,Suffocation,482,"8,632,044",5.58,5.41,"9,456"
+Virginia,2020,"Motor vehicle, traffic",910,"8,632,044",10.54,10.12,"19,885"
+Virginia,2020,"Pedal cyclist, other",--,"8,632,044",--,--,--
+Virginia,2020,"Pedestrian, other",15**,"8,632,044",0.17**,0.17**,204
+Virginia,2020,"Transport, other land",19**,"8,632,044",0.22**,0.22**,392
+Virginia,2020,"Transport, other (excl. drown by water transp)",--,"8,632,044",--,--,--
+Virginia,2020,Other specified and classifiable,46,"8,632,044",0.53,0.51,"1,015"
+Virginia,2020,Other specified / NEC,35,"8,632,044",0.41,0.37,630
+Virginia,2020,Unspecified,123,"8,632,044",1.43,1.33,"1,409"
+Virginia,2019,Cut/Pierce,67,"8,556,642",0.78,0.75,"1,320"
+Virginia,2019,Drowning (includes water transport),104,"8,556,642",1.22,1.12,"2,197"
+Virginia,2019,Fall,994,"8,556,642",11.62,9.99,"1,847"
+Virginia,2019,Fire/Flame,81,"8,556,642",0.95,0.8,494
+Virginia,2019,Hot object/Substance,--,"8,556,642",--,--,--
+Virginia,2019,Firearm,"1,025","8,556,642",11.98,11.62,"23,504"
+Virginia,2019,Machinery,--,"8,556,642",--,--,--
+Virginia,2019,Natural/Environmental,44,"8,556,642",0.51,0.47,391
+Virginia,2019,Drug Poisoning,"1,547","8,556,642",18.08,18.14,"36,091"
+Virginia,2019,Non-Drug Poisoning,86,"8,556,642",1.01,0.99,"1,486"
+Virginia,2019,Struck by / against,43,"8,556,642",0.5,0.44,375
+Virginia,2019,Suffocation,465,"8,556,642",5.43,5.18,"9,197"
+Virginia,2019,"Motor vehicle, traffic",870,"8,556,642",10.17,9.62,"17,551"
+Virginia,2019,"Pedal cyclist, other",--,"8,556,642",--,--,--
+Virginia,2019,"Pedestrian, other",17**,"8,556,642",0.20**,0.17**,355
+Virginia,2019,"Transport, other land",28,"8,556,642",0.33,0.3,427
+Virginia,2019,"Transport, other (excl. drown by water transp)",--,"8,556,642",--,--,--
+Virginia,2019,Other specified and classifiable,52,"8,556,642",0.61,0.6,"1,397"
+Virginia,2019,Other specified / NEC,36,"8,556,642",0.42,0.4,595
+Virginia,2019,Unspecified,151,"8,556,642",1.77,1.59,"1,221"
+Virginia,2018,Cut/Pierce,72,"8,510,920",0.85,0.83,"1,541"
+Virginia,2018,Drowning (includes water transport),107,"8,510,920",1.26,1.2,"2,499"
+Virginia,2018,Fall,998,"8,510,920",11.73,10.37,"2,544"
+Virginia,2018,Fire/Flame,81,"8,510,920",0.95,0.82,683
+Virginia,2018,Hot object/Substance,--,"8,510,920",--,--,--
+Virginia,2018,Firearm,"1,035","8,510,920",12.16,11.77,"24,164"
+Virginia,2018,Machinery,--,"8,510,920",--,--,--
+Virginia,2018,Natural/Environmental,59,"8,510,920",0.69,0.63,669
+Virginia,2018,Drug Poisoning,"1,448","8,510,920",17.01,17.14,"33,772"
+Virginia,2018,Non-Drug Poisoning,103,"8,510,920",1.21,1.15,"1,917"
+Virginia,2018,Struck by / against,32,"8,510,920",0.38,0.35,697
+Virginia,2018,Suffocation,496,"8,510,920",5.83,5.63,"9,778"
+Virginia,2018,"Motor vehicle, traffic",890,"8,510,920",10.46,10.02,"19,061"
+Virginia,2018,"Pedal cyclist, other",--,"8,510,920",--,--,--
+Virginia,2018,"Pedestrian, other",19**,"8,510,920",0.22**,0.23**,550
+Virginia,2018,"Transport, other land",28,"8,510,920",0.33,0.32,588
+Virginia,2018,"Transport, other (excl. drown by water transp)",12**,"8,510,920",0.14**,0.12**,181
+Virginia,2018,Other specified and classifiable,37,"8,510,920",0.44,0.41,795
+Virginia,2018,Other specified / NEC,36,"8,510,920",0.42,0.38,386
+Virginia,2018,Unspecified,195,"8,510,920",2.29,2.01,"1,134"
+Virginia,2017,Cut/Pierce,63,"8,471,011",0.74,0.73,"1,475"
+Virginia,2017,Drowning (includes water transport),87,"8,471,011",1.03,0.96,"1,927"
+Virginia,2017,Fall,922,"8,471,011",10.88,9.76,"2,278"
+Virginia,2017,Fire/Flame,80,"8,471,011",0.94,0.84,933
+Virginia,2017,Hot object/Substance,--,"8,471,011",--,--,--
+Virginia,2017,Firearm,"1,041","8,471,011",12.29,11.86,"24,597"
+Virginia,2017,Machinery,13**,"8,471,011",0.15**,0.14**,106
+Virginia,2017,Natural/Environmental,31,"8,471,011",0.37,0.33,258
+Virginia,2017,Drug Poisoning,"1,507","8,471,011",17.79,17.77,"35,582"
+Virginia,2017,Non-Drug Poisoning,119,"8,471,011",1.41,1.29,"1,933"
+Virginia,2017,Struck by / against,25,"8,471,011",0.3,0.28,485
+Virginia,2017,Suffocation,471,"8,471,011",5.56,5.41,"9,448"
+Virginia,2017,"Motor vehicle, traffic",865,"8,471,011",10.21,9.64,"17,433"
+Virginia,2017,"Pedal cyclist, other",--,"8,471,011",--,--,--
+Virginia,2017,"Pedestrian, other",15**,"8,471,011",0.18**,0.17**,396
+Virginia,2017,"Transport, other land",33,"8,471,011",0.39,0.38,902
+Virginia,2017,"Transport, other (excl. drown by water transp)",--,"8,471,011",--,--,--
+Virginia,2017,Other specified and classifiable,47,"8,471,011",0.56,0.53,"1,010"
+Virginia,2017,Other specified / NEC,44,"8,471,011",0.52,0.48,769
+Virginia,2017,Unspecified,256,"8,471,011",3.02,2.76,"1,882"
+Virginia,2016,Cut/Pierce,69,"8,417,651",0.82,0.78,"1,410"
+Virginia,2016,Drowning (includes water transport),109,"8,417,651",1.3,1.24,"2,546"
+Virginia,2016,Fall,881,"8,417,651",10.47,9.63,"2,118"
+Virginia,2016,Fire/Flame,95,"8,417,651",1.13,1.04,"1,358"
+Virginia,2016,Firearm,"1,049","8,417,651",12.46,11.99,"23,931"
+Virginia,2016,Machinery,17**,"8,417,651",0.20**,0.20**,236
+Virginia,2016,Natural/Environmental,52,"8,417,651",0.62,0.57,477
+Virginia,2016,Drug Poisoning,"1,405","8,417,651",16.69,16.65,"34,554"
+Virginia,2016,Non-Drug Poisoning,115,"8,417,651",1.37,1.3,"2,132"
+Virginia,2016,Struck by / against,29,"8,417,651",0.35,0.31,443
+Virginia,2016,Suffocation,429,"8,417,651",5.1,4.93,"8,358"
+Virginia,2016,"Motor vehicle, traffic",806,"8,417,651",9.58,9.28,"17,959"
+Virginia,2016,"Pedal cyclist, other",--,"8,417,651",--,--,--
+Virginia,2016,"Pedestrian, other",--,"8,417,651",--,--,--
+Virginia,2016,"Transport, other land",32,"8,417,651",0.38,0.36,482
+Virginia,2016,"Transport, other (excl. drown by water transp)",--,"8,417,651",--,--,--
+Virginia,2016,Other specified and classifiable,52,"8,417,651",0.62,0.59,"1,287"
+Virginia,2016,Other specified / NEC,52,"8,417,651",0.62,0.58,608
+Virginia,2016,Unspecified,215,"8,417,651",2.55,2.36,"1,940"
+Virginia,2015,Cut/Pierce,64,"8,367,303",0.77,0.73,"1,333"
+Virginia,2015,Drowning (includes water transport),114,"8,367,303",1.36,1.33,"3,051"
+Virginia,2015,Fall,875,"8,367,303",10.46,9.87,"2,186"
+Virginia,2015,Fire/Flame,95,"8,367,303",1.14,1.04,"1,484"
+Virginia,2015,Hot object/Substance,--,"8,367,303",--,--,--
+Virginia,2015,Firearm,946,"8,367,303",11.31,10.87,"21,477"
+Virginia,2015,Machinery,11**,"8,367,303",0.13**,0.13**,134
+Virginia,2015,Natural/Environmental,37,"8,367,303",0.44,0.42,351
+Virginia,2015,Drug Poisoning,"1,039","8,367,303",12.42,12.37,"25,136"
+Virginia,2015,Non-Drug Poisoning,90,"8,367,303",1.08,1.01,"1,648"
+Virginia,2015,Struck by / against,20**,"8,367,303",0.24**,0.22**,273
+Virginia,2015,Suffocation,455,"8,367,303",5.44,5.29,"9,303"
+Virginia,2015,"Motor vehicle, traffic",764,"8,367,303",9.13,8.77,"16,073"
+Virginia,2015,"Pedal cyclist, other",--,"8,367,303",--,--,--
+Virginia,2015,"Pedestrian, other",17**,"8,367,303",0.20**,0.20**,355
+Virginia,2015,"Transport, other land",39,"8,367,303",0.47,0.47,981
+Virginia,2015,"Transport, other (excl. drown by water transp)",--,"8,367,303",--,--,--
+Virginia,2015,Other specified and classifiable,46,"8,367,303",0.55,0.53,"1,100"
+Virginia,2015,Other specified / NEC,25,"8,367,303",0.3,0.27,321
+Virginia,2015,Unspecified,363,"8,367,303",4.34,4.11,"2,616"
+Virginia,2014,Cut/Pierce,69,"8,315,430",0.83,0.78,"1,397"
+Virginia,2014,Drowning (includes water transport),105,"8,315,430",1.26,1.21,"2,703"
+Virginia,2014,Fall,814,"8,315,430",9.79,9.45,"2,286"
+Virginia,2014,Fire/Flame,90,"8,315,430",1.08,1.03,"1,378"
+Virginia,2014,Hot object/Substance,--,"8,315,430",--,--,--
+Virginia,2014,Firearm,889,"8,315,430",10.69,10.28,"19,408"
+Virginia,2014,Machinery,13**,"8,315,430",0.16**,0.15**,206
+Virginia,2014,Natural/Environmental,43,"8,315,430",0.52,0.47,410
+Virginia,2014,Overexertion,--,"8,315,430",--,--,--
+Virginia,2014,Drug Poisoning,980,"8,315,430",11.79,11.69,"22,755"
+Virginia,2014,Non-Drug Poisoning,72,"8,315,430",0.87,0.84,"1,464"
+Virginia,2014,Struck by / against,26,"8,315,430",0.31,0.29,533
+Virginia,2014,Suffocation,450,"8,315,430",5.41,5.27,"9,618"
+Virginia,2014,"Motor vehicle, traffic",756,"8,315,430",9.09,8.79,"17,433"
+Virginia,2014,"Pedal cyclist, other",--,"8,315,430",--,--,--
+Virginia,2014,"Pedestrian, other",20**,"8,315,430",0.24**,0.23**,438
+Virginia,2014,"Transport, other land",25,"8,315,430",0.3,0.28,464
+Virginia,2014,"Transport, other (excl. drown by water transp)",12**,"8,315,430",0.14**,0.15**,295
+Virginia,2014,Other specified and classifiable,38,"8,315,430",0.46,0.46,"1,023"
+Virginia,2014,Other specified / NEC,35,"8,315,430",0.42,0.4,611
+Virginia,2014,Unspecified,252,"8,315,430",3.03,2.85,"1,833"
+Virginia,2013,Cut/Pierce,48,"8,255,861",0.58,0.56,978
+Virginia,2013,Drowning (includes water transport),116,"8,255,861",1.41,1.36,"2,973"
+Virginia,2013,Fall,748,"8,255,861",9.06,8.88,"2,476"
+Virginia,2013,Fire/Flame,89,"8,255,861",1.08,1.04,"1,172"
+Virginia,2013,Firearm,864,"8,255,861",10.47,10.11,"18,504"
+Virginia,2013,Machinery,13**,"8,255,861",0.16**,0.14**,103
+Virginia,2013,Natural/Environmental,43,"8,255,861",0.52,0.49,477
+Virginia,2013,Drug Poisoning,854,"8,255,861",10.34,10.19,"20,128"
+Virginia,2013,Non-Drug Poisoning,89,"8,255,861",1.08,1,"1,574"
+Virginia,2013,Struck by / against,30,"8,255,861",0.36,0.35,471
+Virginia,2013,Suffocation,424,"8,255,861",5.14,5.06,"8,103"
+Virginia,2013,"Motor vehicle, traffic",741,"8,255,861",8.98,8.64,"16,292"
+Virginia,2013,"Pedal cyclist, other",--,"8,255,861",--,--,--
+Virginia,2013,"Pedestrian, other",22,"8,255,861",0.27,0.28,514
+Virginia,2013,"Transport, other land",28,"8,255,861",0.34,0.32,450
+Virginia,2013,"Transport, other (excl. drown by water transp)",--,"8,255,861",--,--,--
+Virginia,2013,Other specified and classifiable,41,"8,255,861",0.5,0.5,"1,193"
+Virginia,2013,Other specified / NEC,42,"8,255,861",0.51,0.47,562
+Virginia,2013,Unspecified,223,"8,255,861",2.7,2.65,"1,633"
+Virginia,2012,Cut/Pierce,65,"8,187,456",0.79,0.77,"1,598"
+Virginia,2012,Drowning (includes water transport),102,"8,187,456",1.25,1.18,"2,513"
+Virginia,2012,Fall,705,"8,187,456",8.61,8.47,"1,935"
+Virginia,2012,Fire/Flame,72,"8,187,456",0.88,0.84,878
+Virginia,2012,Firearm,840,"8,187,456",10.26,10.05,"18,663"
+Virginia,2012,Machinery,18**,"8,187,456",0.22**,0.20**,106
+Virginia,2012,Natural/Environmental,45,"8,187,456",0.55,0.52,372
+Virginia,2012,Drug Poisoning,733,"8,187,456",8.95,8.86,"17,568"
+Virginia,2012,Non-Drug Poisoning,101,"8,187,456",1.23,1.19,"2,122"
+Virginia,2012,Struck by / against,32,"8,187,456",0.39,0.35,481
+Virginia,2012,Suffocation,396,"8,187,456",4.84,4.75,"7,294"
+Virginia,2012,"Motor vehicle, traffic",816,"8,187,456",9.97,9.6,"18,282"
+Virginia,2012,"Pedal cyclist, other",--,"8,187,456",--,--,--
+Virginia,2012,"Pedestrian, other",15**,"8,187,456",0.18**,0.18**,225
+Virginia,2012,"Transport, other land",26,"8,187,456",0.32,0.31,598
+Virginia,2012,"Transport, other (excl. drown by water transp)",--,"8,187,456",--,--,--
+Virginia,2012,Other specified and classifiable,38,"8,187,456",0.46,0.47,956
+Virginia,2012,Other specified / NEC,37,"8,187,456",0.45,0.44,624
+Virginia,2012,Unspecified,304,"8,187,456",3.71,3.67,"2,027"
+Virginia,2011,Cut/Pierce,56,"8,102,437",0.69,0.65,"1,084"
+Virginia,2011,Drowning (includes water transport),101,"8,102,437",1.25,1.22,"2,757"
+Virginia,2011,Fall,576,"8,102,437",7.11,7.13,"1,831"
+Virginia,2011,Fire/Flame,68,"8,102,437",0.84,0.8,861
+Virginia,2011,Hot object/Substance,--,"8,102,437",--,--,--
+Virginia,2011,Firearm,868,"8,102,437",10.71,10.39,"18,925"
+Virginia,2011,Machinery,18**,"8,102,437",0.22**,0.21**,270
+Virginia,2011,Natural/Environmental,53,"8,102,437",0.65,0.6,789
+Virginia,2011,Drug Poisoning,798,"8,102,437",9.85,9.69,"19,026"
+Virginia,2011,Non-Drug Poisoning,82,"8,102,437",1.01,0.97,"1,596"
+Virginia,2011,Struck by / against,25,"8,102,437",0.31,0.29,408
+Virginia,2011,Suffocation,398,"8,102,437",4.91,4.86,"8,076"
+Virginia,2011,"Motor vehicle, traffic",784,"8,102,437",9.68,9.46,"18,719"
+Virginia,2011,"Pedal cyclist, other",--,"8,102,437",--,--,--
+Virginia,2011,"Pedestrian, other",16**,"8,102,437",0.20**,0.19**,439
+Virginia,2011,"Transport, other land",29,"8,102,437",0.36,0.36,621
+Virginia,2011,"Transport, other (excl. drown by water transp)",18**,"8,102,437",0.22**,0.23**,498
+Virginia,2011,Other specified and classifiable,45,"8,102,437",0.56,0.56,"1,191"
+Virginia,2011,Other specified / NEC,26,"8,102,437",0.32,0.33,329
+Virginia,2011,Unspecified,304,"8,102,437",3.75,3.78,"2,061"
+Virginia,2010,Cut/Pierce,54,"8,001,046",0.68,0.65,"1,456"
+Virginia,2010,Drowning (includes water transport),109,"8,001,046",1.36,1.35,"2,881"
+Virginia,2010,Fall,564,"8,001,046",7.05,7.21,"2,171"
+Virginia,2010,Fire/Flame,91,"8,001,046",1.14,1.1,"1,575"
+Virginia,2010,Hot object/Substance,--,"8,001,046",--,--,--
+Virginia,2010,Firearm,875,"8,001,046",10.94,10.69,"19,651"
+Virginia,2010,Machinery,17**,"8,001,046",0.21**,0.21**,102
+Virginia,2010,Natural/Environmental,41,"8,001,046",0.51,0.48,429
+Virginia,2010,Overexertion,--,"8,001,046",--,--,--
+Virginia,2010,Drug Poisoning,558,"8,001,046",6.97,6.81,"13,326"
+Virginia,2010,Non-Drug Poisoning,72,"8,001,046",0.9,0.83,"1,232"
+Virginia,2010,Struck by / against,28,"8,001,046",0.35,0.33,521
+Virginia,2010,Suffocation,366,"8,001,046",4.57,4.57,"7,461"
+Virginia,2010,"Motor vehicle, traffic",690,"8,001,046",8.62,8.56,"16,300"
+Virginia,2010,"Pedal cyclist, other",10**,"8,001,046",0.13**,0.12**,243
+Virginia,2010,"Pedestrian, other",25,"8,001,046",0.31,0.31,585
+Virginia,2010,"Transport, other land",33,"8,001,046",0.41,0.41,828
+Virginia,2010,"Transport, other (excl. drown by water transp)",14**,"8,001,046",0.18**,0.17**,258
+Virginia,2010,Other specified and classifiable,32,"8,001,046",0.4,0.41,"1,102"
+Virginia,2010,Other specified / NEC,53,"8,001,046",0.66,0.65,875
+Virginia,2010,Unspecified,295,"8,001,046",3.69,3.74,"1,938"
+Virginia,2009,Cut/Pierce,60,"7,925,937",0.76,0.72,"1,226"
+Virginia,2009,Drowning (includes water transport),100,"7,925,937",1.26,1.23,"2,069"
+Virginia,2009,Fall,523,"7,925,937",6.6,6.81,"1,729"
+Virginia,2009,Fire/Flame,76,"7,925,937",0.96,0.93,870
+Virginia,2009,Hot object/Substance,--,"7,925,937",--,--,--
+Virginia,2009,Firearm,836,"7,925,937",10.55,10.28,"19,736"
+Virginia,2009,Machinery,21,"7,925,937",0.27,0.27,296
+Virginia,2009,Natural/Environmental,37,"7,925,937",0.47,0.46,417
+Virginia,2009,Drug Poisoning,685,"7,925,937",8.64,8.49,"16,371"
+Virginia,2009,Non-Drug Poisoning,91,"7,925,937",1.15,1.1,"1,701"
+Virginia,2009,Struck by / against,27,"7,925,937",0.34,0.32,535
+Virginia,2009,Suffocation,395,"7,925,937",4.98,4.99,"7,355"
+Virginia,2009,"Motor vehicle, traffic",782,"7,925,937",9.87,9.7,"19,288"
+Virginia,2009,"Pedal cyclist, other",--,"7,925,937",--,--,--
+Virginia,2009,"Pedestrian, other",29,"7,925,937",0.37,0.37,479
+Virginia,2009,"Transport, other land",28,"7,925,937",0.35,0.36,684
+Virginia,2009,"Transport, other (excl. drown by water transp)",--,"7,925,937",--,--,--
+Virginia,2009,Other specified and classifiable,46,"7,925,937",0.58,0.56,"1,501"
+Virginia,2009,Other specified / NEC,47,"7,925,937",0.59,0.58,782
+Virginia,2009,Unspecified,256,"7,925,937",3.23,3.34,"1,673"
+Virginia,2008,Cut/Pierce,87,"7,833,496",1.11,1.1,"2,172"
+Virginia,2008,Drowning (includes water transport),105,"7,833,496",1.34,1.32,"2,733"
+Virginia,2008,Fall,545,"7,833,496",6.96,7.33,"2,056"
+Virginia,2008,Fire/Flame,90,"7,833,496",1.15,1.15,"1,141"
+Virginia,2008,Hot object/Substance,--,"7,833,496",--,--,--
+Virginia,2008,Firearm,817,"7,833,496",10.43,10.18,"19,380"
+Virginia,2008,Machinery,19**,"7,833,496",0.24**,0.23**,232
+Virginia,2008,Natural/Environmental,26,"7,833,496",0.33,0.33,334
+Virginia,2008,Overexertion,--,"7,833,496",--,--,--
+Virginia,2008,Drug Poisoning,718,"7,833,496",9.17,8.99,"18,092"
+Virginia,2008,Non-Drug Poisoning,84,"7,833,496",1.07,1.02,"1,641"
+Virginia,2008,Struck by / against,38,"7,833,496",0.49,0.45,511
+Virginia,2008,Suffocation,403,"7,833,496",5.15,5.21,"7,707"
+Virginia,2008,"Motor vehicle, traffic",845,"7,833,496",10.79,10.55,"22,279"
+Virginia,2008,"Pedal cyclist, other",--,"7,833,496",--,--,--
+Virginia,2008,"Pedestrian, other",28,"7,833,496",0.36,0.35,726
+Virginia,2008,"Transport, other land",28,"7,833,496",0.36,0.35,663
+Virginia,2008,"Transport, other (excl. drown by water transp)",19**,"7,833,496",0.24**,0.24**,428
+Virginia,2008,Other specified and classifiable,57,"7,833,496",0.73,0.72,"1,642"
+Virginia,2008,Other specified / NEC,45,"7,833,496",0.57,0.58,850
+Virginia,2008,Unspecified,258,"7,833,496",3.29,3.42,"1,775"
+Virginia,2007,Cut/Pierce,63,"7,751,000",0.81,0.79,"1,460"
+Virginia,2007,Drowning (includes water transport),95,"7,751,000",1.23,1.2,"2,763"
+Virginia,2007,Fall,469,"7,751,000",6.05,6.38,"2,230"
+Virginia,2007,Fire/Flame,103,"7,751,000",1.33,1.31,"2,007"
+Virginia,2007,Hot object/Substance,--,"7,751,000",--,--,--
+Virginia,2007,Firearm,825,"7,751,000",10.64,10.4,"19,401"
+Virginia,2007,Machinery,14**,"7,751,000",0.18**,0.19**,165
+Virginia,2007,Natural/Environmental,32,"7,751,000",0.41,0.42,606
+Virginia,2007,Drug Poisoning,700,"7,751,000",9.03,8.88,"17,427"
+Virginia,2007,Non-Drug Poisoning,79,"7,751,000",1.02,0.98,"1,680"
+Virginia,2007,Struck by / against,38,"7,751,000",0.49,0.49,841
+Virginia,2007,Suffocation,354,"7,751,000",4.57,4.63,"6,487"
+Virginia,2007,"Motor vehicle, traffic","1,037","7,751,000",13.38,13.17,"26,640"
+Virginia,2007,"Pedal cyclist, other",--,"7,751,000",--,--,--
+Virginia,2007,"Pedestrian, other",24,"7,751,000",0.31,0.3,456
+Virginia,2007,"Transport, other land",37,"7,751,000",0.48,0.48,785
+Virginia,2007,"Transport, other (excl. drown by water transp)",16**,"7,751,000",0.21**,0.20**,348
+Virginia,2007,Other specified and classifiable,48,"7,751,000",0.62,0.63,"1,228"
+Virginia,2007,Other specified / NEC,63,"7,751,000",0.81,0.8,"1,420"
+Virginia,2007,Unspecified,304,"7,751,000",3.92,4.18,"1,733"
+Virginia,2006,Cut/Pierce,69,"7,673,725",0.9,0.88,"1,594"
+Virginia,2006,Drowning (includes water transport),122,"7,673,725",1.59,1.58,"3,234"
+Virginia,2006,Fall,413,"7,673,725",5.38,5.76,"2,227"
+Virginia,2006,Fire/Flame,95,"7,673,725",1.24,1.26,"1,080"
+Virginia,2006,Hot object/Substance,--,"7,673,725",--,--,--
+Virginia,2006,Firearm,816,"7,673,725",10.63,10.37,"19,133"
+Virginia,2006,Machinery,29,"7,673,725",0.38,0.37,317
+Virginia,2006,Natural/Environmental,37,"7,673,725",0.48,0.47,467
+Virginia,2006,Drug Poisoning,629,"7,673,725",8.2,7.99,"15,565"
+Virginia,2006,Non-Drug Poisoning,63,"7,673,725",0.82,0.82,"1,154"
+Virginia,2006,Struck by / against,34,"7,673,725",0.44,0.43,680
+Virginia,2006,Suffocation,325,"7,673,725",4.24,4.35,"6,608"
+Virginia,2006,"Motor vehicle, traffic",932,"7,673,725",12.15,11.96,"24,510"
+Virginia,2006,"Pedal cyclist, other",--,"7,673,725",--,--,--
+Virginia,2006,"Pedestrian, other",19**,"7,673,725",0.25**,0.25**,486
+Virginia,2006,"Transport, other land",30,"7,673,725",0.39,0.38,654
+Virginia,2006,"Transport, other (excl. drown by water transp)",34,"7,673,725",0.44,0.42,660
+Virginia,2006,Other specified and classifiable,55,"7,673,725",0.72,0.72,"1,639"
+Virginia,2006,Other specified / NEC,46,"7,673,725",0.6,0.59,856
+Virginia,2006,Unspecified,301,"7,673,725",3.92,4.26,"1,963"
+Virginia,2005,Cut/Pierce,72,"7,577,105",0.95,0.92,"1,568"
+Virginia,2005,Drowning (includes water transport),94,"7,577,105",1.24,1.24,"2,732"
+Virginia,2005,Fall,384,"7,577,105",5.07,5.42,"1,928"
+Virginia,2005,Fire/Flame,85,"7,577,105",1.12,1.14,"1,465"
+Virginia,2005,Hot object/Substance,--,"7,577,105",--,--,--
+Virginia,2005,Firearm,888,"7,577,105",11.72,11.48,"22,249"
+Virginia,2005,Machinery,26,"7,577,105",0.34,0.33,377
+Virginia,2005,Natural/Environmental,43,"7,577,105",0.57,0.59,499
+Virginia,2005,Drug Poisoning,581,"7,577,105",7.67,7.48,"14,067"
+Virginia,2005,Non-Drug Poisoning,66,"7,577,105",0.87,0.85,"1,281"
+Virginia,2005,Struck by / against,34,"7,577,105",0.45,0.44,807
+Virginia,2005,Suffocation,328,"7,577,105",4.33,4.46,"6,461"
+Virginia,2005,"Motor vehicle, traffic",932,"7,577,105",12.3,12.2,"23,789"
+Virginia,2005,"Pedal cyclist, other",--,"7,577,105",--,--,--
+Virginia,2005,"Pedestrian, other",28,"7,577,105",0.37,0.37,691
+Virginia,2005,"Transport, other land",40,"7,577,105",0.53,0.52,"1,004"
+Virginia,2005,"Transport, other (excl. drown by water transp)",36,"7,577,105",0.48,0.46,929
+Virginia,2005,Other specified and classifiable,53,"7,577,105",0.7,0.7,"1,569"
+Virginia,2005,Other specified / NEC,45,"7,577,105",0.59,0.61,807
+Virginia,2005,Unspecified,300,"7,577,105",3.96,4.34,"2,321"
+Virginia,2004,Cut/Pierce,62,"7,475,575",0.83,0.81,"1,624"
+Virginia,2004,Drowning (includes water transport),121,"7,475,575",1.62,1.59,"3,572"
+Virginia,2004,Fall,397,"7,475,575",5.31,5.82,"1,952"
+Virginia,2004,Fire/Flame,126,"7,475,575",1.69,1.73,"2,580"
+Virginia,2004,Hot object/Substance,--,"7,475,575",--,--,--
+Virginia,2004,Firearm,817,"7,475,575",10.93,10.81,"19,732"
+Virginia,2004,Machinery,27,"7,475,575",0.36,0.37,386
+Virginia,2004,Natural/Environmental,32,"7,475,575",0.43,0.46,468
+Virginia,2004,Drug Poisoning,558,"7,475,575",7.46,7.29,"14,071"
+Virginia,2004,Non-Drug Poisoning,69,"7,475,575",0.92,0.88,"1,418"
+Virginia,2004,Struck by / against,26,"7,475,575",0.35,0.34,498
+Virginia,2004,Suffocation,331,"7,475,575",4.43,4.58,"6,394"
+Virginia,2004,"Motor vehicle, traffic",972,"7,475,575",13,12.97,"24,865"
+Virginia,2004,"Pedal cyclist, other",--,"7,475,575",--,--,--
+Virginia,2004,"Pedestrian, other",20**,"7,475,575",0.27**,0.28**,307
+Virginia,2004,"Transport, other land",33,"7,475,575",0.44,0.44,"1,090"
+Virginia,2004,"Transport, other (excl. drown by water transp)",--,"7,475,575",--,--,--
+Virginia,2004,Other specified and classifiable,33,"7,475,575",0.44,0.42,822
+Virginia,2004,Other specified / NEC,34,"7,475,575",0.46,0.46,600
+Virginia,2004,Unspecified,247,"7,475,575",3.3,3.67,"1,654"
+Virginia,2003,Cut/Pierce,54,"7,366,977",0.73,0.72,"1,474"
+Virginia,2003,Drowning (includes water transport),123,"7,366,977",1.67,1.7,"3,286"
+Virginia,2003,Fall,410,"7,366,977",5.57,6.13,"2,046"
+Virginia,2003,Fire/Flame,93,"7,366,977",1.26,1.3,"1,822"
+Virginia,2003,Hot object/Substance,--,"7,366,977",--,--,--
+Virginia,2003,Firearm,811,"7,366,977",11.01,10.86,"21,310"
+Virginia,2003,Machinery,26,"7,366,977",0.35,0.36,381
+Virginia,2003,Natural/Environmental,37,"7,366,977",0.5,0.52,550
+Virginia,2003,Drug Poisoning,547,"7,366,977",7.43,7.22,"13,350"
+Virginia,2003,Non-Drug Poisoning,85,"7,366,977",1.15,1.15,"1,832"
+Virginia,2003,Struck by / against,18**,"7,366,977",0.24**,0.25**,270
+Virginia,2003,Suffocation,312,"7,366,977",4.24,4.37,"6,060"
+Virginia,2003,"Motor vehicle, traffic",989,"7,366,977",13.43,13.44,"24,910"
+Virginia,2003,"Pedal cyclist, other",--,"7,366,977",--,--,--
+Virginia,2003,"Pedestrian, other",16**,"7,366,977",0.22**,0.22**,281
+Virginia,2003,"Transport, other land",19**,"7,366,977",0.26**,0.26**,568
+Virginia,2003,"Transport, other (excl. drown by water transp)",21,"7,366,977",0.29,0.27,429
+Virginia,2003,Other specified and classifiable,49,"7,366,977",0.67,0.66,"1,690"
+Virginia,2003,Other specified / NEC,43,"7,366,977",0.58,0.59,750
+Virginia,2003,Unspecified,299,"7,366,977",4.06,4.49,"2,346"
+Virginia,2002,Cut/Pierce,49,"7,286,873",0.67,0.67,"1,068"
+Virginia,2002,Drowning (includes water transport),127,"7,286,873",1.74,1.75,"3,858"
+Virginia,2002,Fall,334,"7,286,873",4.58,5.13,"1,787"
+Virginia,2002,Fire/Flame,80,"7,286,873",1.1,1.17,"1,534"
+Virginia,2002,Hot object/Substance,--,"7,286,873",--,--,--
+Virginia,2002,Firearm,806,"7,286,873",11.06,11.01,"19,487"
+Virginia,2002,Machinery,14**,"7,286,873",0.19**,0.19**,196
+Virginia,2002,Natural/Environmental,40,"7,286,873",0.55,0.58,498
+Virginia,2002,Drug Poisoning,509,"7,286,873",6.99,6.78,"12,959"
+Virginia,2002,Non-Drug Poisoning,65,"7,286,873",0.89,0.87,"1,432"
+Virginia,2002,Struck by / against,32,"7,286,873",0.44,0.44,857
+Virginia,2002,Suffocation,311,"7,286,873",4.27,4.45,"5,972"
+Virginia,2002,"Motor vehicle, traffic",940,"7,286,873",12.9,12.89,"24,903"
+Virginia,2002,"Pedal cyclist, other",--,"7,286,873",--,--,--
+Virginia,2002,"Pedestrian, other",17**,"7,286,873",0.23**,0.23**,433
+Virginia,2002,"Transport, other land",20**,"7,286,873",0.27**,0.28**,568
+Virginia,2002,"Transport, other (excl. drown by water transp)",14**,"7,286,873",0.19**,0.19**,389
+Virginia,2002,Other specified and classifiable,49,"7,286,873",0.67,0.66,"1,151"
+Virginia,2002,Other specified / NEC,51,"7,286,873",0.7,0.71,"1,013"
+Virginia,2002,Unspecified,277,"7,286,873",3.8,4.32,"1,678"
+Virginia,2001,Cut/Pierce,54,"7,198,362",0.75,0.74,"1,375"
+Virginia,2001,Drowning (includes water transport),108,"7,198,362",1.5,1.48,"3,219"
+Virginia,2001,Fall,339,"7,198,362",4.71,5.32,"1,870"
+Virginia,2001,Fire/Flame,96,"7,198,362",1.33,1.4,"1,578"
+Virginia,2001,Hot object/Substance,--,"7,198,362",--,--,--
+Virginia,2001,Firearm,771,"7,198,362",10.71,10.62,"19,718"
+Virginia,2001,Machinery,33,"7,198,362",0.46,0.46,499
+Virginia,2001,Natural/Environmental,38,"7,198,362",0.53,0.54,527
+Virginia,2001,Drug Poisoning,459,"7,198,362",6.38,6.17,"11,389"
+Virginia,2001,Non-Drug Poisoning,62,"7,198,362",0.86,0.84,"1,385"
+Virginia,2001,Struck by / against,34,"7,198,362",0.47,0.47,690
+Virginia,2001,Suffocation,288,"7,198,362",4,4.24,"5,578"
+Virginia,2001,"Motor vehicle, traffic",935,"7,198,362",12.99,13.09,"23,133"
+Virginia,2001,"Pedal cyclist, other",12**,"7,198,362",0.17**,0.16**,284
+Virginia,2001,"Pedestrian, other",15**,"7,198,362",0.21**,0.22**,376
+Virginia,2001,"Transport, other land",24,"7,198,362",0.33,0.34,527
+Virginia,2001,"Transport, other (excl. drown by water transp)",136,"7,198,362",1.89,1.81,"2,777"
+Virginia,2001,Other specified and classifiable,46,"7,198,362",0.64,0.64,"1,567"
+Virginia,2001,Other specified / NEC,53,"7,198,362",0.74,0.77,635
+Virginia,2001,Unspecified,284,"7,198,362",3.95,4.51,"2,081"
+Total,,,"98,924","168,549,125",58.69,57.65,"1,883,548"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Virginia,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

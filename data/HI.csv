@@ -1,0 +1,411 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Hawaii,2021,Cut/Pierce,13**,"1,441,553",0.90**,0.87**,250
+Hawaii,2021,Drowning (includes water transport),54,"1,441,553",3.75,3.57,971
+Hawaii,2021,Fall,195,"1,441,553",13.53,9.99,"1,074"
+Hawaii,2021,Fire/Flame,--,"1,441,553",--,--,--
+Hawaii,2021,Hot object/Substance,--,"1,441,553",--,--,--
+Hawaii,2021,Firearm,71,"1,441,553",4.93,4.84,"1,559"
+Hawaii,2021,Machinery,--,"1,441,553",--,--,--
+Hawaii,2021,Natural/Environmental,--,"1,441,553",--,--,--
+Hawaii,2021,Drug Poisoning,269,"1,441,553",18.66,17.15,"3,981"
+Hawaii,2021,Non-Drug Poisoning,14**,"1,441,553",0.97**,0.99**,338
+Hawaii,2021,Struck by / against,--,"1,441,553",--,--,--
+Hawaii,2021,Suffocation,144,"1,441,553",9.99,9.49,"3,000"
+Hawaii,2021,"Motor vehicle, traffic",93,"1,441,553",6.45,6.18,"1,841"
+Hawaii,2021,"Pedal cyclist, other",--,"1,441,553",--,--,--
+Hawaii,2021,"Pedestrian, other",--,"1,441,553",--,--,--
+Hawaii,2021,"Transport, other land",--,"1,441,553",--,--,--
+Hawaii,2021,"Transport, other (excl. drown by water transp)",--,"1,441,553",--,--,--
+Hawaii,2021,Other specified and classifiable,10**,"1,441,553",0.69**,0.52**,75
+Hawaii,2021,Other specified / NEC,--,"1,441,553",--,--,--
+Hawaii,2021,Unspecified,24,"1,441,553",1.67,1.37,242
+Hawaii,2020,Cut/Pierce,11**,"1,451,911",0.76**,0.81**,215
+Hawaii,2020,Drowning (includes water transport),56,"1,451,911",3.86,3.78,"1,137"
+Hawaii,2020,Fall,182,"1,451,911",12.54,8.89,579
+Hawaii,2020,Fire/Flame,--,"1,451,911",--,--,--
+Hawaii,2020,Hot object/Substance,--,"1,451,911",--,--,--
+Hawaii,2020,Firearm,50,"1,451,911",3.44,3.31,947
+Hawaii,2020,Machinery,--,"1,451,911",--,--,--
+Hawaii,2020,Natural/Environmental,--,"1,451,911",--,--,--
+Hawaii,2020,Drug Poisoning,274,"1,451,911",18.87,17.51,"4,001"
+Hawaii,2020,Non-Drug Poisoning,23,"1,451,911",1.58,1.51,376
+Hawaii,2020,Struck by / against,--,"1,451,911",--,--,--
+Hawaii,2020,Suffocation,144,"1,451,911",9.92,9.48,"2,906"
+Hawaii,2020,"Motor vehicle, traffic",86,"1,451,911",5.92,5.49,"1,810"
+Hawaii,2020,"Pedal cyclist, other",--,"1,451,911",--,--,--
+Hawaii,2020,"Transport, other land",--,"1,451,911",--,--,--
+Hawaii,2020,"Transport, other (excl. drown by water transp)",--,"1,451,911",--,--,--
+Hawaii,2020,Other specified and classifiable,--,"1,451,911",--,--,--
+Hawaii,2020,Other specified / NEC,--,"1,451,911",--,--,--
+Hawaii,2020,Unspecified,42,"1,451,911",2.89,2.47,484
+Hawaii,2019,Cut/Pierce,17**,"1,415,615",1.20**,1.08**,224
+Hawaii,2019,Drowning (includes water transport),54,"1,415,615",3.82,3.63,885
+Hawaii,2019,Fall,191,"1,415,615",13.49,9.36,775
+Hawaii,2019,Fire/Flame,10**,"1,415,615",0.71**,0.49**,61
+Hawaii,2019,Hot object/Substance,--,"1,415,615",--,--,--
+Hawaii,2019,Firearm,62,"1,415,615",4.38,4.47,"1,368"
+Hawaii,2019,Machinery,--,"1,415,615",--,--,--
+Hawaii,2019,Natural/Environmental,--,"1,415,615",--,--,--
+Hawaii,2019,Drug Poisoning,242,"1,415,615",17.1,15.94,"3,534"
+Hawaii,2019,Non-Drug Poisoning,23,"1,415,615",1.63,1.48,358
+Hawaii,2019,Struck by / against,--,"1,415,615",--,--,--
+Hawaii,2019,Suffocation,165,"1,415,615",11.66,11.19,"3,425"
+Hawaii,2019,"Motor vehicle, traffic",118,"1,415,615",8.34,8.09,"2,758"
+Hawaii,2019,"Pedal cyclist, other",--,"1,415,615",--,--,--
+Hawaii,2019,"Pedestrian, other",--,"1,415,615",--,--,--
+Hawaii,2019,"Transport, other land",--,"1,415,615",--,--,--
+Hawaii,2019,"Transport, other (excl. drown by water transp)",10**,"1,415,615",0.71**,0.67**,217
+Hawaii,2019,Other specified and classifiable,--,"1,415,615",--,--,--
+Hawaii,2019,Other specified / NEC,--,"1,415,615",--,--,--
+Hawaii,2019,Unspecified,19**,"1,415,615",1.34**,1.07**,285
+Hawaii,2018,Cut/Pierce,14**,"1,423,102",0.98**,0.87**,297
+Hawaii,2018,Drowning (includes water transport),55,"1,423,102",3.87,3.45,932
+Hawaii,2018,Fall,201,"1,423,102",14.12,9.62,769
+Hawaii,2018,Fire/Flame,--,"1,423,102",--,--,--
+Hawaii,2018,Hot object/Substance,--,"1,423,102",--,--,--
+Hawaii,2018,Firearm,59,"1,423,102",4.15,4.02,971
+Hawaii,2018,Machinery,--,"1,423,102",--,--,--
+Hawaii,2018,Natural/Environmental,--,"1,423,102",--,--,--
+Hawaii,2018,Drug Poisoning,213,"1,423,102",14.97,14.32,"3,339"
+Hawaii,2018,Non-Drug Poisoning,17**,"1,423,102",1.20**,1.27**,389
+Hawaii,2018,Struck by / against,--,"1,423,102",--,--,--
+Hawaii,2018,Suffocation,132,"1,423,102",9.28,8.54,"2,677"
+Hawaii,2018,"Motor vehicle, traffic",111,"1,423,102",7.8,7.6,"2,280"
+Hawaii,2018,"Pedal cyclist, other",--,"1,423,102",--,--,--
+Hawaii,2018,"Pedestrian, other",--,"1,423,102",--,--,--
+Hawaii,2018,"Transport, other land",--,"1,423,102",--,--,--
+Hawaii,2018,"Transport, other (excl. drown by water transp)",--,"1,423,102",--,--,--
+Hawaii,2018,Other specified and classifiable,--,"1,423,102",--,--,--
+Hawaii,2018,Other specified / NEC,--,"1,423,102",--,--,--
+Hawaii,2018,Unspecified,17**,"1,423,102",1.20**,1.02**,201
+Hawaii,2017,Cut/Pierce,10**,"1,425,763",0.70**,0.67**,280
+Hawaii,2017,Drowning (includes water transport),56,"1,425,763",3.93,3.68,949
+Hawaii,2017,Fall,190,"1,425,763",13.33,9.72,967
+Hawaii,2017,Fire/Flame,10**,"1,425,763",0.70**,0.57**,89
+Hawaii,2017,Firearm,39,"1,425,763",2.74,2.45,681
+Hawaii,2017,Natural/Environmental,--,"1,425,763",--,--,--
+Hawaii,2017,Drug Poisoning,203,"1,425,763",14.24,13.81,"3,379"
+Hawaii,2017,Non-Drug Poisoning,21,"1,425,763",1.47,1.44,400
+Hawaii,2017,Struck by / against,--,"1,425,763",--,--,--
+Hawaii,2017,Suffocation,164,"1,425,763",11.5,10.86,"3,612"
+Hawaii,2017,"Motor vehicle, traffic",103,"1,425,763",7.22,6.9,"2,458"
+Hawaii,2017,"Pedal cyclist, other",--,"1,425,763",--,--,--
+Hawaii,2017,"Pedestrian, other",--,"1,425,763",--,--,--
+Hawaii,2017,"Transport, other land",--,"1,425,763",--,--,--
+Hawaii,2017,"Transport, other (excl. drown by water transp)",13**,"1,425,763",0.91**,0.93**,360
+Hawaii,2017,Other specified and classifiable,--,"1,425,763",--,--,--
+Hawaii,2017,Other specified / NEC,14**,"1,425,763",0.98**,0.73**,113
+Hawaii,2017,Unspecified,29,"1,425,763",2.03,1.77,262
+Hawaii,2016,Cut/Pierce,12**,"1,428,885",0.84**,0.78**,242
+Hawaii,2016,Drowning (includes water transport),38,"1,428,885",2.66,2.46,788
+Hawaii,2016,Fall,181,"1,428,885",12.67,9.52,"1,117"
+Hawaii,2016,Fire/Flame,--,"1,428,885",--,--,--
+Hawaii,2016,Firearm,66,"1,428,885",4.62,4.5,"1,550"
+Hawaii,2016,Natural/Environmental,--,"1,428,885",--,--,--
+Hawaii,2016,Drug Poisoning,191,"1,428,885",13.37,12.64,"3,179"
+Hawaii,2016,Non-Drug Poisoning,10**,"1,428,885",0.70**,0.56**,99
+Hawaii,2016,Struck by / against,--,"1,428,885",--,--,--
+Hawaii,2016,Suffocation,116,"1,428,885",8.12,7.88,"2,718"
+Hawaii,2016,"Motor vehicle, traffic",132,"1,428,885",9.24,8.96,"3,076"
+Hawaii,2016,"Pedestrian, other",--,"1,428,885",--,--,--
+Hawaii,2016,"Transport, other land",--,"1,428,885",--,--,--
+Hawaii,2016,"Transport, other (excl. drown by water transp)",15**,"1,428,885",1.05**,0.98**,404
+Hawaii,2016,Other specified and classifiable,--,"1,428,885",--,--,--
+Hawaii,2016,Other specified / NEC,--,"1,428,885",--,--,--
+Hawaii,2016,Unspecified,24,"1,428,885",1.68,1.51,322
+Hawaii,2015,Cut/Pierce,18**,"1,422,999",1.27**,1.30**,338
+Hawaii,2015,Drowning (includes water transport),50,"1,422,999",3.51,3.23,"1,134"
+Hawaii,2015,Fall,165,"1,422,999",11.6,8.67,763
+Hawaii,2015,Fire/Flame,10**,"1,422,999",0.70**,0.52**,131
+Hawaii,2015,Firearm,55,"1,422,999",3.87,3.58,999
+Hawaii,2015,Natural/Environmental,--,"1,422,999",--,--,--
+Hawaii,2015,Overexertion,--,"1,422,999",--,--,--
+Hawaii,2015,Drug Poisoning,169,"1,422,999",11.88,11.3,"2,851"
+Hawaii,2015,Non-Drug Poisoning,14**,"1,422,999",0.98**,0.84**,216
+Hawaii,2015,Struck by / against,--,"1,422,999",--,--,--
+Hawaii,2015,Suffocation,136,"1,422,999",9.56,9.12,"3,257"
+Hawaii,2015,"Motor vehicle, traffic",99,"1,422,999",6.96,6.6,"2,225"
+Hawaii,2015,"Pedal cyclist, other",--,"1,422,999",--,--,--
+Hawaii,2015,"Pedestrian, other",--,"1,422,999",--,--,--
+Hawaii,2015,"Transport, other land",--,"1,422,999",--,--,--
+Hawaii,2015,"Transport, other (excl. drown by water transp)",--,"1,422,999",--,--,--
+Hawaii,2015,Other specified and classifiable,10**,"1,422,999",0.70**,0.71**,289
+Hawaii,2015,Other specified / NEC,13**,"1,422,999",0.91**,0.85**,188
+Hawaii,2015,Unspecified,38,"1,422,999",2.67,2.08,259
+Hawaii,2014,Cut/Pierce,14**,"1,415,335",0.99**,0.98**,273
+Hawaii,2014,Drowning (includes water transport),46,"1,415,335",3.25,3.22,987
+Hawaii,2014,Fall,174,"1,415,335",12.29,9.55,"1,101"
+Hawaii,2014,Fire/Flame,--,"1,415,335",--,--,--
+Hawaii,2014,Firearm,40,"1,415,335",2.83,2.69,569
+Hawaii,2014,Machinery,--,"1,415,335",--,--,--
+Hawaii,2014,Natural/Environmental,--,"1,415,335",--,--,--
+Hawaii,2014,Drug Poisoning,157,"1,415,335",11.09,10.63,"2,659"
+Hawaii,2014,Non-Drug Poisoning,13**,"1,415,335",0.92**,0.90**,192
+Hawaii,2014,Struck by / against,10**,"1,415,335",0.71**,0.66**,205
+Hawaii,2014,Suffocation,117,"1,415,335",8.27,7.87,"2,592"
+Hawaii,2014,"Motor vehicle, traffic",99,"1,415,335",7,6.48,"2,114"
+Hawaii,2014,"Pedestrian, other",--,"1,415,335",--,--,--
+Hawaii,2014,"Transport, other land",--,"1,415,335",--,--,--
+Hawaii,2014,"Transport, other (excl. drown by water transp)",--,"1,415,335",--,--,--
+Hawaii,2014,Other specified and classifiable,--,"1,415,335",--,--,--
+Hawaii,2014,Other specified / NEC,--,"1,415,335",--,--,--
+Hawaii,2014,Unspecified,20**,"1,415,335",1.41**,1.26**,304
+Hawaii,2013,Cut/Pierce,16**,"1,408,822",1.14**,1.04**,290
+Hawaii,2013,Drowning (includes water transport),50,"1,408,822",3.55,3.38,842
+Hawaii,2013,Fall,137,"1,408,822",9.72,7.93,972
+Hawaii,2013,Fire/Flame,10**,"1,408,822",0.71**,0.51**,106
+Hawaii,2013,Firearm,38,"1,408,822",2.7,2.58,682
+Hawaii,2013,Machinery,--,"1,408,822",--,--,--
+Hawaii,2013,Natural/Environmental,--,"1,408,822",--,--,--
+Hawaii,2013,Drug Poisoning,158,"1,408,822",11.22,10.8,"3,025"
+Hawaii,2013,Non-Drug Poisoning,10**,"1,408,822",0.71**,0.62**,136
+Hawaii,2013,Struck by / against,--,"1,408,822",--,--,--
+Hawaii,2013,Suffocation,117,"1,408,822",8.31,7.86,"2,635"
+Hawaii,2013,"Motor vehicle, traffic",106,"1,408,822",7.52,7.48,"2,752"
+Hawaii,2013,"Pedal cyclist, other",--,"1,408,822",--,--,--
+Hawaii,2013,"Pedestrian, other",--,"1,408,822",--,--,--
+Hawaii,2013,"Transport, other land",--,"1,408,822",--,--,--
+Hawaii,2013,"Transport, other (excl. drown by water transp)",--,"1,408,822",--,--,--
+Hawaii,2013,Other specified and classifiable,--,"1,408,822",--,--,--
+Hawaii,2013,Other specified / NEC,11**,"1,408,822",0.78**,0.60**,109
+Hawaii,2013,Unspecified,21,"1,408,822",1.49,1.32,354
+Hawaii,2012,Cut/Pierce,10**,"1,395,199",0.72**,0.68**,261
+Hawaii,2012,Drowning (includes water transport),51,"1,395,199",3.66,3.7,"1,064"
+Hawaii,2012,Fall,149,"1,395,199",10.68,8.89,"1,028"
+Hawaii,2012,Fire/Flame,--,"1,395,199",--,--,--
+Hawaii,2012,Firearm,51,"1,395,199",3.66,3.36,879
+Hawaii,2012,Machinery,--,"1,395,199",--,--,--
+Hawaii,2012,Natural/Environmental,--,"1,395,199",--,--,--
+Hawaii,2012,Drug Poisoning,155,"1,395,199",11.11,10.9,"3,039"
+Hawaii,2012,Non-Drug Poisoning,--,"1,395,199",--,--,--
+Hawaii,2012,Struck by / against,--,"1,395,199",--,--,--
+Hawaii,2012,Suffocation,108,"1,395,199",7.74,7.31,"2,125"
+Hawaii,2012,"Motor vehicle, traffic",130,"1,395,199",9.32,8.93,"3,134"
+Hawaii,2012,"Pedal cyclist, other",--,"1,395,199",--,--,--
+Hawaii,2012,"Pedestrian, other",--,"1,395,199",--,--,--
+Hawaii,2012,"Transport, other land",--,"1,395,199",--,--,--
+Hawaii,2012,"Transport, other (excl. drown by water transp)",--,"1,395,199",--,--,--
+Hawaii,2012,Other specified and classifiable,--,"1,395,199",--,--,--
+Hawaii,2012,Other specified / NEC,11**,"1,395,199",0.79**,0.64**,115
+Hawaii,2012,Unspecified,31,"1,395,199",2.22,1.83,294
+Hawaii,2011,Cut/Pierce,11**,"1,379,562",0.80**,0.75**,283
+Hawaii,2011,Drowning (includes water transport),58,"1,379,562",4.2,4.01,"1,414"
+Hawaii,2011,Fall,153,"1,379,562",11.09,9.11,858
+Hawaii,2011,Fire/Flame,--,"1,379,562",--,--,--
+Hawaii,2011,Hot object/Substance,--,"1,379,562",--,--,--
+Hawaii,2011,Firearm,49,"1,379,562",3.55,3.42,"1,089"
+Hawaii,2011,Machinery,--,"1,379,562",--,--,--
+Hawaii,2011,Natural/Environmental,--,"1,379,562",--,--,--
+Hawaii,2011,Drug Poisoning,180,"1,379,562",13.05,12.24,"2,955"
+Hawaii,2011,Non-Drug Poisoning,18**,"1,379,562",1.31**,1.18**,220
+Hawaii,2011,Struck by / against,--,"1,379,562",--,--,--
+Hawaii,2011,Suffocation,131,"1,379,562",9.5,8.96,"3,029"
+Hawaii,2011,"Motor vehicle, traffic",105,"1,379,562",7.61,7.37,"2,658"
+Hawaii,2011,"Pedal cyclist, other",--,"1,379,562",--,--,--
+Hawaii,2011,"Pedestrian, other",--,"1,379,562",--,--,--
+Hawaii,2011,"Transport, other land",--,"1,379,562",--,--,--
+Hawaii,2011,"Transport, other (excl. drown by water transp)",12**,"1,379,562",0.87**,0.84**,228
+Hawaii,2011,Other specified and classifiable,--,"1,379,562",--,--,--
+Hawaii,2011,Other specified / NEC,14**,"1,379,562",1.02**,0.84**,96
+Hawaii,2011,Unspecified,23,"1,379,562",1.67,1.41,199
+Hawaii,2010,Cut/Pierce,15**,"1,360,304",1.10**,1.06**,286
+Hawaii,2010,Drowning (includes water transport),44,"1,360,304",3.24,3.06,872
+Hawaii,2010,Fall,115,"1,360,304",8.45,7.16,753
+Hawaii,2010,Fire/Flame,--,"1,360,304",--,--,--
+Hawaii,2010,Firearm,45,"1,360,304",3.31,3.21,948
+Hawaii,2010,Machinery,--,"1,360,304",--,--,--
+Hawaii,2010,Natural/Environmental,--,"1,360,304",--,--,--
+Hawaii,2010,Drug Poisoning,151,"1,360,304",11.1,10.89,"2,840"
+Hawaii,2010,Non-Drug Poisoning,32,"1,360,304",2.35,2.16,526
+Hawaii,2010,Struck by / against,--,"1,360,304",--,--,--
+Hawaii,2010,Suffocation,127,"1,360,304",9.34,9.33,"3,142"
+Hawaii,2010,"Motor vehicle, traffic",119,"1,360,304",8.75,8.71,"2,799"
+Hawaii,2010,"Pedestrian, other",--,"1,360,304",--,--,--
+Hawaii,2010,"Transport, other land",--,"1,360,304",--,--,--
+Hawaii,2010,"Transport, other (excl. drown by water transp)",--,"1,360,304",--,--,--
+Hawaii,2010,Other specified and classifiable,--,"1,360,304",--,--,--
+Hawaii,2010,Other specified / NEC,11**,"1,360,304",0.81**,0.68**,87
+Hawaii,2010,Unspecified,23,"1,360,304",1.69,1.46,196
+Hawaii,2009,Cut/Pierce,--,"1,346,717",--,--,--
+Hawaii,2009,Drowning (includes water transport),51,"1,346,717",3.79,3.54,"1,080"
+Hawaii,2009,Fall,114,"1,346,717",8.47,7.18,787
+Hawaii,2009,Fire/Flame,--,"1,346,717",--,--,--
+Hawaii,2009,Firearm,47,"1,346,717",3.49,3.34,875
+Hawaii,2009,Machinery,--,"1,346,717",--,--,--
+Hawaii,2009,Natural/Environmental,--,"1,346,717",--,--,--
+Hawaii,2009,Drug Poisoning,136,"1,346,717",10.1,9.64,"2,599"
+Hawaii,2009,Non-Drug Poisoning,37,"1,346,717",2.75,2.6,711
+Hawaii,2009,Struck by / against,--,"1,346,717",--,--,--
+Hawaii,2009,Suffocation,125,"1,346,717",9.28,8.76,"2,515"
+Hawaii,2009,"Motor vehicle, traffic",117,"1,346,717",8.69,8.41,"3,289"
+Hawaii,2009,"Pedestrian, other",--,"1,346,717",--,--,--
+Hawaii,2009,"Transport, other land",--,"1,346,717",--,--,--
+Hawaii,2009,"Transport, other (excl. drown by water transp)",--,"1,346,717",--,--,--
+Hawaii,2009,Other specified and classifiable,--,"1,346,717",--,--,--
+Hawaii,2009,Other specified / NEC,10**,"1,346,717",0.74**,0.66**,117
+Hawaii,2009,Unspecified,19**,"1,346,717",1.41**,1.38**,372
+Hawaii,2008,Cut/Pierce,13**,"1,332,213",0.98**,0.97**,279
+Hawaii,2008,Drowning (includes water transport),39,"1,332,213",2.93,2.68,954
+Hawaii,2008,Fall,118,"1,332,213",8.86,7.67,741
+Hawaii,2008,Fire/Flame,--,"1,332,213",--,--,--
+Hawaii,2008,Firearm,41,"1,332,213",3.08,3.04,803
+Hawaii,2008,Machinery,--,"1,332,213",--,--,--
+Hawaii,2008,Natural/Environmental,--,"1,332,213",--,--,--
+Hawaii,2008,Drug Poisoning,123,"1,332,213",9.23,9.04,"2,372"
+Hawaii,2008,Non-Drug Poisoning,36,"1,332,213",2.7,2.61,783
+Hawaii,2008,Struck by / against,--,"1,332,213",--,--,--
+Hawaii,2008,Suffocation,87,"1,332,213",6.53,6.28,"2,048"
+Hawaii,2008,"Motor vehicle, traffic",105,"1,332,213",7.88,7.58,"2,426"
+Hawaii,2008,"Transport, other land",--,"1,332,213",--,--,--
+Hawaii,2008,"Transport, other (excl. drown by water transp)",--,"1,332,213",--,--,--
+Hawaii,2008,Other specified and classifiable,--,"1,332,213",--,--,--
+Hawaii,2008,Other specified / NEC,10**,"1,332,213",0.75**,0.70**,165
+Hawaii,2008,Unspecified,29,"1,332,213",2.18,1.83,180
+Hawaii,2007,Cut/Pierce,14**,"1,315,675",1.06**,1.01**,320
+Hawaii,2007,Drowning (includes water transport),46,"1,315,675",3.5,3.33,"1,093"
+Hawaii,2007,Fall,150,"1,315,675",11.4,10.04,910
+Hawaii,2007,Fire/Flame,--,"1,315,675",--,--,--
+Hawaii,2007,Hot object/Substance,--,"1,315,675",--,--,--
+Hawaii,2007,Firearm,36,"1,315,675",2.74,2.44,652
+Hawaii,2007,Machinery,--,"1,315,675",--,--,--
+Hawaii,2007,Natural/Environmental,--,"1,315,675",--,--,--
+Hawaii,2007,Drug Poisoning,136,"1,315,675",10.34,10.01,"2,676"
+Hawaii,2007,Non-Drug Poisoning,20**,"1,315,675",1.52**,1.40**,336
+Hawaii,2007,Struck by / against,--,"1,315,675",--,--,--
+Hawaii,2007,Suffocation,94,"1,315,675",7.15,6.89,"1,922"
+Hawaii,2007,"Motor vehicle, traffic",125,"1,315,675",9.5,9.21,"3,141"
+Hawaii,2007,"Pedal cyclist, other",--,"1,315,675",--,--,--
+Hawaii,2007,"Pedestrian, other",11**,"1,315,675",0.84**,0.81**,217
+Hawaii,2007,"Transport, other land",--,"1,315,675",--,--,--
+Hawaii,2007,"Transport, other (excl. drown by water transp)",--,"1,315,675",--,--,--
+Hawaii,2007,Other specified and classifiable,--,"1,315,675",--,--,--
+Hawaii,2007,Other specified / NEC,--,"1,315,675",--,--,--
+Hawaii,2007,Unspecified,24,"1,315,675",1.82,1.57,179
+Hawaii,2006,Cut/Pierce,--,"1,309,731",--,--,--
+Hawaii,2006,Drowning (includes water transport),35,"1,309,731",2.67,2.58,699
+Hawaii,2006,Fall,123,"1,309,731",9.39,8.47,906
+Hawaii,2006,Fire/Flame,--,"1,309,731",--,--,--
+Hawaii,2006,Firearm,33,"1,309,731",2.52,2.39,730
+Hawaii,2006,Machinery,--,"1,309,731",--,--,--
+Hawaii,2006,Natural/Environmental,--,"1,309,731",--,--,--
+Hawaii,2006,Drug Poisoning,86,"1,309,731",6.57,6.42,"1,802"
+Hawaii,2006,Non-Drug Poisoning,30,"1,309,731",2.29,2.11,526
+Hawaii,2006,Struck by / against,--,"1,309,731",--,--,--
+Hawaii,2006,Suffocation,96,"1,309,731",7.33,7.02,"1,833"
+Hawaii,2006,"Motor vehicle, traffic",150,"1,309,731",11.45,11.22,"3,804"
+Hawaii,2006,"Pedal cyclist, other",--,"1,309,731",--,--,--
+Hawaii,2006,"Pedestrian, other",--,"1,309,731",--,--,--
+Hawaii,2006,"Transport, other land",--,"1,309,731",--,--,--
+Hawaii,2006,"Transport, other (excl. drown by water transp)",--,"1,309,731",--,--,--
+Hawaii,2006,Other specified and classifiable,--,"1,309,731",--,--,--
+Hawaii,2006,Other specified / NEC,--,"1,309,731",--,--,--
+Hawaii,2006,Unspecified,64,"1,309,731",4.89,4.46,733
+Hawaii,2005,Cut/Pierce,11**,"1,292,729",0.85**,0.80**,234
+Hawaii,2005,Drowning (includes water transport),47,"1,292,729",3.64,3.58,974
+Hawaii,2005,Fall,111,"1,292,729",8.59,7.72,538
+Hawaii,2005,Fire/Flame,--,"1,292,729",--,--,--
+Hawaii,2005,Firearm,28,"1,292,729",2.17,2.14,635
+Hawaii,2005,Machinery,--,"1,292,729",--,--,--
+Hawaii,2005,Natural/Environmental,--,"1,292,729",--,--,--
+Hawaii,2005,Drug Poisoning,126,"1,292,729",9.75,9.37,"2,443"
+Hawaii,2005,Non-Drug Poisoning,18**,"1,292,729",1.39**,1.32**,309
+Hawaii,2005,Struck by / against,--,"1,292,729",--,--,--
+Hawaii,2005,Suffocation,89,"1,292,729",6.89,6.68,"2,049"
+Hawaii,2005,"Motor vehicle, traffic",136,"1,292,729",10.52,10.35,"3,250"
+Hawaii,2005,"Pedal cyclist, other",--,"1,292,729",--,--,--
+Hawaii,2005,"Pedestrian, other",--,"1,292,729",--,--,--
+Hawaii,2005,"Transport, other land",--,"1,292,729",--,--,--
+Hawaii,2005,"Transport, other (excl. drown by water transp)",--,"1,292,729",--,--,--
+Hawaii,2005,Other specified and classifiable,--,"1,292,729",--,--,--
+Hawaii,2005,Other specified / NEC,--,"1,292,729",--,--,--
+Hawaii,2005,Unspecified,30,"1,292,729",2.32,2.15,371
+Hawaii,2004,Cut/Pierce,12**,"1,273,569",0.94**,0.88**,262
+Hawaii,2004,Drowning (includes water transport),35,"1,273,569",2.75,2.63,800
+Hawaii,2004,Fall,83,"1,273,569",6.52,6.05,645
+Hawaii,2004,Fire/Flame,12**,"1,273,569",0.94**,0.92**,313
+Hawaii,2004,Firearm,41,"1,273,569",3.22,3.1,797
+Hawaii,2004,Machinery,--,"1,273,569",--,--,--
+Hawaii,2004,Natural/Environmental,--,"1,273,569",--,--,--
+Hawaii,2004,Drug Poisoning,103,"1,273,569",8.09,7.87,"2,007"
+Hawaii,2004,Non-Drug Poisoning,17**,"1,273,569",1.34**,1.29**,286
+Hawaii,2004,Struck by / against,--,"1,273,569",--,--,--
+Hawaii,2004,Suffocation,71,"1,273,569",5.58,5.44,"1,423"
+Hawaii,2004,"Motor vehicle, traffic",138,"1,273,569",10.84,10.76,"3,615"
+Hawaii,2004,"Pedestrian, other",--,"1,273,569",--,--,--
+Hawaii,2004,"Transport, other land",--,"1,273,569",--,--,--
+Hawaii,2004,"Transport, other (excl. drown by water transp)",--,"1,273,569",--,--,--
+Hawaii,2004,Other specified and classifiable,--,"1,273,569",--,--,--
+Hawaii,2004,Other specified / NEC,--,"1,273,569",--,--,--
+Hawaii,2004,Unspecified,42,"1,273,569",3.3,3.02,425
+Hawaii,2003,Cut/Pierce,--,"1,251,154",--,--,--
+Hawaii,2003,Drowning (includes water transport),32,"1,251,154",2.56,2.49,800
+Hawaii,2003,Fall,120,"1,251,154",9.59,9,977
+Hawaii,2003,Fire/Flame,--,"1,251,154",--,--,--
+Hawaii,2003,Firearm,37,"1,251,154",2.96,2.89,768
+Hawaii,2003,Natural/Environmental,--,"1,251,154",--,--,--
+Hawaii,2003,Drug Poisoning,92,"1,251,154",7.35,7.09,"1,625"
+Hawaii,2003,Non-Drug Poisoning,20**,"1,251,154",1.60**,1.53**,428
+Hawaii,2003,Struck by / against,--,"1,251,154",--,--,--
+Hawaii,2003,Suffocation,94,"1,251,154",7.51,7.3,"1,756"
+Hawaii,2003,"Motor vehicle, traffic",140,"1,251,154",11.19,10.88,"3,993"
+Hawaii,2003,"Pedal cyclist, other",--,"1,251,154",--,--,--
+Hawaii,2003,"Pedestrian, other",--,"1,251,154",--,--,--
+Hawaii,2003,"Transport, other land",--,"1,251,154",--,--,--
+Hawaii,2003,"Transport, other (excl. drown by water transp)",--,"1,251,154",--,--,--
+Hawaii,2003,Other specified and classifiable,--,"1,251,154",--,--,--
+Hawaii,2003,Other specified / NEC,--,"1,251,154",--,--,--
+Hawaii,2003,Unspecified,32,"1,251,154",2.56,2.41,260
+Hawaii,2002,Cut/Pierce,--,"1,239,613",--,--,--
+Hawaii,2002,Drowning (includes water transport),35,"1,239,613",2.82,2.87,"1,025"
+Hawaii,2002,Fall,91,"1,239,613",7.34,7.1,"1,090"
+Hawaii,2002,Fire/Flame,--,"1,239,613",--,--,--
+Hawaii,2002,Firearm,36,"1,239,613",2.9,2.82,737
+Hawaii,2002,Machinery,--,"1,239,613",--,--,--
+Hawaii,2002,Natural/Environmental,--,"1,239,613",--,--,--
+Hawaii,2002,Drug Poisoning,77,"1,239,613",6.21,6.12,"1,455"
+Hawaii,2002,Non-Drug Poisoning,19**,"1,239,613",1.53**,1.49**,389
+Hawaii,2002,Struck by / against,--,"1,239,613",--,--,--
+Hawaii,2002,Suffocation,107,"1,239,613",8.63,8.57,"2,274"
+Hawaii,2002,"Motor vehicle, traffic",118,"1,239,613",9.52,9.31,"3,044"
+Hawaii,2002,"Pedal cyclist, other",--,"1,239,613",--,--,--
+Hawaii,2002,"Pedestrian, other",--,"1,239,613",--,--,--
+Hawaii,2002,"Transport, other land",--,"1,239,613",--,--,--
+Hawaii,2002,"Transport, other (excl. drown by water transp)",--,"1,239,613",--,--,--
+Hawaii,2002,Other specified and classifiable,--,"1,239,613",--,--,--
+Hawaii,2002,Other specified / NEC,--,"1,239,613",--,--,--
+Hawaii,2002,Unspecified,57,"1,239,613",4.6,4.46,512
+Hawaii,2001,Cut/Pierce,12**,"1,225,948",0.98**,0.96**,172
+Hawaii,2001,Drowning (includes water transport),36,"1,225,948",2.94,2.91,972
+Hawaii,2001,Fall,95,"1,225,948",7.75,7.56,769
+Hawaii,2001,Fire/Flame,--,"1,225,948",--,--,--
+Hawaii,2001,Firearm,47,"1,225,948",3.83,3.74,"1,242"
+Hawaii,2001,Machinery,--,"1,225,948",--,--,--
+Hawaii,2001,Natural/Environmental,--,"1,225,948",--,--,--
+Hawaii,2001,Drug Poisoning,77,"1,225,948",6.28,6.16,"1,704"
+Hawaii,2001,Non-Drug Poisoning,17**,"1,225,948",1.39**,1.36**,306
+Hawaii,2001,Struck by / against,--,"1,225,948",--,--,--
+Hawaii,2001,Suffocation,80,"1,225,948",6.53,6.48,"1,828"
+Hawaii,2001,"Motor vehicle, traffic",122,"1,225,948",9.95,9.85,"3,108"
+Hawaii,2001,"Pedal cyclist, other",--,"1,225,948",--,--,--
+Hawaii,2001,"Pedestrian, other",11**,"1,225,948",0.90**,0.87**,176
+Hawaii,2001,"Transport, other land",--,"1,225,948",--,--,--
+Hawaii,2001,"Transport, other (excl. drown by water transp)",10**,"1,225,948",0.82**,0.81**,314
+Hawaii,2001,Other specified and classifiable,--,"1,225,948",--,--,--
+Hawaii,2001,Other specified / NEC,--,"1,225,948",--,--,--
+Hawaii,2001,Unspecified,29,"1,225,948",2.37,2.32,193
+Total,,,"15,444","28,556,399",54.08,50.05,"264,196"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Hawaii,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

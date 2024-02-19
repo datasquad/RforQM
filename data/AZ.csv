@@ -1,0 +1,440 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Arizona,2021,Cut/Pierce,90,"7,276,316",1.24,1.23,"2,152"
+Arizona,2021,Drowning (includes water transport),130,"7,276,316",1.79,1.81,"3,778"
+Arizona,2021,Fall,"1,171","7,276,316",16.09,13.08,"2,462"
+Arizona,2021,Fire/Flame,74,"7,276,316",1.02,0.86,901
+Arizona,2021,Hot object/Substance,--,"7,276,316",--,--,--
+Arizona,2021,Firearm,"1,365","7,276,316",18.76,18.22,"30,959"
+Arizona,2021,Machinery,--,"7,276,316",--,--,--
+Arizona,2021,Natural/Environmental,237,"7,276,316",3.26,2.75,"2,060"
+Arizona,2021,Drug Poisoning,"2,730","7,276,316",37.52,38.67,"65,560"
+Arizona,2021,Non-Drug Poisoning,184,"7,276,316",2.53,2.46,"2,929"
+Arizona,2021,Struck by / against,23,"7,276,316",0.32,0.28,210
+Arizona,2021,Suffocation,489,"7,276,316",6.72,6.75,"12,434"
+Arizona,2021,"Motor vehicle, traffic","1,330","7,276,316",18.28,17.89,"29,993"
+Arizona,2021,"Pedal cyclist, other",16**,"7,276,316",0.22**,0.18**,118
+Arizona,2021,"Pedestrian, other",23,"7,276,316",0.32,0.3,431
+Arizona,2021,"Transport, other land",46,"7,276,316",0.63,0.63,982
+Arizona,2021,"Transport, other (excl. drown by water transp)",22,"7,276,316",0.3,0.27,310
+Arizona,2021,Other specified and classifiable,63,"7,276,316",0.87,0.81,"1,159"
+Arizona,2021,Other specified / NEC,66,"7,276,316",0.91,0.82,822
+Arizona,2021,Unspecified,129,"7,276,316",1.77,1.6,"1,836"
+Arizona,2020,Cut/Pierce,63,"7,177,986",0.88,0.89,"1,380"
+Arizona,2020,Drowning (includes water transport),112,"7,177,986",1.56,1.51,"2,329"
+Arizona,2020,Fall,"1,151","7,177,986",16.04,13.02,"2,086"
+Arizona,2020,Fire/Flame,65,"7,177,986",0.91,0.83,952
+Arizona,2020,Hot object/Substance,--,"7,177,986",--,--,--
+Arizona,2020,Firearm,"1,265","7,177,986",17.62,17.29,"28,049"
+Arizona,2020,Machinery,--,"7,177,986",--,--,--
+Arizona,2020,Natural/Environmental,247,"7,177,986",3.44,2.98,"2,300"
+Arizona,2020,Drug Poisoning,"2,550","7,177,986",35.53,36.72,"64,600"
+Arizona,2020,Non-Drug Poisoning,212,"7,177,986",2.95,3.01,"3,926"
+Arizona,2020,Struck by / against,28,"7,177,986",0.39,0.37,496
+Arizona,2020,Suffocation,421,"7,177,986",5.87,5.9,"10,727"
+Arizona,2020,"Motor vehicle, traffic","1,003","7,177,986",13.97,13.46,"23,095"
+Arizona,2020,"Pedal cyclist, other",17**,"7,177,986",0.24**,0.20**,114
+Arizona,2020,"Pedestrian, other",21,"7,177,986",0.29,0.31,632
+Arizona,2020,"Transport, other land",52,"7,177,986",0.72,0.75,"1,353"
+Arizona,2020,"Transport, other (excl. drown by water transp)",17**,"7,177,986",0.24**,0.24**,399
+Arizona,2020,Other specified and classifiable,66,"7,177,986",0.92,0.87,"1,148"
+Arizona,2020,Other specified / NEC,55,"7,177,986",0.77,0.68,860
+Arizona,2020,Unspecified,150,"7,177,986",2.09,1.93,"2,080"
+Arizona,2019,Cut/Pierce,73,"7,291,843",1,0.99,"1,475"
+Arizona,2019,Drowning (includes water transport),121,"7,291,843",1.66,1.54,"2,516"
+Arizona,2019,Fall,"1,141","7,291,843",15.65,12.23,"2,355"
+Arizona,2019,Fire/Flame,57,"7,291,843",0.78,0.65,528
+Arizona,2019,Hot object/Substance,--,"7,291,843",--,--,--
+Arizona,2019,Firearm,"1,136","7,291,843",15.58,15.02,"23,917"
+Arizona,2019,Machinery,--,"7,291,843",--,--,--
+Arizona,2019,Natural/Environmental,170,"7,291,843",2.33,2.03,"1,824"
+Arizona,2019,Drug Poisoning,"1,907","7,291,843",26.15,26.71,"44,332"
+Arizona,2019,Non-Drug Poisoning,162,"7,291,843",2.22,2.19,"2,663"
+Arizona,2019,Struck by / against,16**,"7,291,843",0.22**,0.20**,254
+Arizona,2019,Suffocation,477,"7,291,843",6.54,6.45,"11,716"
+Arizona,2019,"Motor vehicle, traffic",945,"7,291,843",12.96,12.47,"20,336"
+Arizona,2019,"Pedal cyclist, other",16**,"7,291,843",0.22**,0.21**,396
+Arizona,2019,"Pedestrian, other",15**,"7,291,843",0.21**,0.21**,295
+Arizona,2019,"Transport, other land",46,"7,291,843",0.63,0.62,922
+Arizona,2019,"Transport, other (excl. drown by water transp)",18**,"7,291,843",0.25**,0.25**,364
+Arizona,2019,Other specified and classifiable,57,"7,291,843",0.78,0.77,"1,112"
+Arizona,2019,Other specified / NEC,46,"7,291,843",0.63,0.58,599
+Arizona,2019,Unspecified,140,"7,291,843",1.92,1.78,"2,471"
+Arizona,2018,Cut/Pierce,67,"7,164,228",0.94,0.97,"1,675"
+Arizona,2018,Drowning (includes water transport),110,"7,164,228",1.54,1.54,"3,142"
+Arizona,2018,Fall,"1,116","7,164,228",15.58,12.26,"1,624"
+Arizona,2018,Fire/Flame,35,"7,164,228",0.49,0.43,457
+Arizona,2018,Hot object/Substance,--,"7,164,228",--,--,--
+Arizona,2018,Firearm,"1,147","7,164,228",16.01,15.3,"23,680"
+Arizona,2018,Machinery,--,"7,164,228",--,--,--
+Arizona,2018,Natural/Environmental,120,"7,164,228",1.68,1.42,"1,084"
+Arizona,2018,Drug Poisoning,"1,670","7,164,228",23.31,23.73,"37,969"
+Arizona,2018,Non-Drug Poisoning,163,"7,164,228",2.28,2.25,"2,985"
+Arizona,2018,Struck by / against,16**,"7,164,228",0.22**,0.22**,267
+Arizona,2018,Suffocation,491,"7,164,228",6.85,6.85,"12,641"
+Arizona,2018,"Motor vehicle, traffic","1,001","7,164,228",13.97,13.41,"21,832"
+Arizona,2018,"Pedal cyclist, other",15**,"7,164,228",0.21**,0.19**,161
+Arizona,2018,"Pedestrian, other",17**,"7,164,228",0.24**,0.25**,469
+Arizona,2018,"Transport, other land",42,"7,164,228",0.59,0.58,"1,063"
+Arizona,2018,"Transport, other (excl. drown by water transp)",12**,"7,164,228",0.17**,0.14**,82
+Arizona,2018,Other specified and classifiable,62,"7,164,228",0.87,0.84,"1,236"
+Arizona,2018,Other specified / NEC,59,"7,164,228",0.82,0.78,"1,009"
+Arizona,2018,Unspecified,139,"7,164,228",1.94,1.8,"2,209"
+Arizona,2017,Cut/Pierce,73,"7,048,088",1.04,1.04,"1,436"
+Arizona,2017,Drowning (includes water transport),124,"7,048,088",1.76,1.75,"3,432"
+Arizona,2017,Fall,"1,114","7,048,088",15.81,12.68,"1,960"
+Arizona,2017,Fire/Flame,65,"7,048,088",0.92,0.88,821
+Arizona,2017,Hot object/Substance,--,"7,048,088",--,--,--
+Arizona,2017,Firearm,"1,134","7,048,088",16.09,15.6,"24,075"
+Arizona,2017,Machinery,--,"7,048,088",--,--,--
+Arizona,2017,Natural/Environmental,160,"7,048,088",2.27,2.02,"1,957"
+Arizona,2017,Overexertion,--,"7,048,088",--,--,--
+Arizona,2017,Drug Poisoning,"1,532","7,048,088",21.74,22.11,"32,581"
+Arizona,2017,Non-Drug Poisoning,144,"7,048,088",2.04,2.08,"2,457"
+Arizona,2017,Struck by / against,17**,"7,048,088",0.24**,0.24**,337
+Arizona,2017,Suffocation,427,"7,048,088",6.06,6.01,"11,164"
+Arizona,2017,"Motor vehicle, traffic",989,"7,048,088",14.03,13.69,"21,896"
+Arizona,2017,"Pedal cyclist, other",12**,"7,048,088",0.17**,0.14**,102
+Arizona,2017,"Pedestrian, other",19**,"7,048,088",0.27**,0.29**,408
+Arizona,2017,"Transport, other land",33,"7,048,088",0.47,0.46,706
+Arizona,2017,"Transport, other (excl. drown by water transp)",19**,"7,048,088",0.27**,0.27**,564
+Arizona,2017,Other specified and classifiable,72,"7,048,088",1.02,0.99,"1,379"
+Arizona,2017,Other specified / NEC,51,"7,048,088",0.72,0.65,661
+Arizona,2017,Unspecified,135,"7,048,088",1.92,1.8,"2,182"
+Arizona,2016,Cut/Pierce,55,"6,944,767",0.79,0.79,"1,488"
+Arizona,2016,Drowning (includes water transport),123,"6,944,767",1.77,1.74,"3,367"
+Arizona,2016,Fall,"1,133","6,944,767",16.31,13.54,"2,030"
+Arizona,2016,Fire/Flame,50,"6,944,767",0.72,0.65,597
+Arizona,2016,Hot object/Substance,--,"6,944,767",--,--,--
+Arizona,2016,Firearm,"1,094","6,944,767",15.75,15.18,"22,100"
+Arizona,2016,Machinery,--,"6,944,767",--,--,--
+Arizona,2016,Natural/Environmental,140,"6,944,767",2.02,1.77,"1,383"
+Arizona,2016,Drug Poisoning,"1,382","6,944,767",19.9,20.16,"29,982"
+Arizona,2016,Non-Drug Poisoning,202,"6,944,767",2.91,2.88,"3,553"
+Arizona,2016,Struck by / against,15**,"6,944,767",0.22**,0.20**,245
+Arizona,2016,Suffocation,409,"6,944,767",5.89,5.93,"10,400"
+Arizona,2016,"Motor vehicle, traffic",934,"6,944,767",13.45,13.14,"20,553"
+Arizona,2016,"Pedal cyclist, other",--,"6,944,767",--,--,--
+Arizona,2016,"Pedestrian, other",30,"6,944,767",0.43,0.43,897
+Arizona,2016,"Transport, other land",52,"6,944,767",0.75,0.73,"1,215"
+Arizona,2016,"Transport, other (excl. drown by water transp)",16**,"6,944,767",0.23**,0.22**,280
+Arizona,2016,Other specified and classifiable,56,"6,944,767",0.81,0.75,"1,105"
+Arizona,2016,Other specified / NEC,48,"6,944,767",0.69,0.64,743
+Arizona,2016,Unspecified,135,"6,944,767",1.94,1.81,"1,926"
+Arizona,2015,Cut/Pierce,57,"6,832,810",0.83,0.81,"1,220"
+Arizona,2015,Drowning (includes water transport),101,"6,832,810",1.48,1.43,"2,615"
+Arizona,2015,Fall,"1,062","6,832,810",15.54,13.17,"2,244"
+Arizona,2015,Fire/Flame,39,"6,832,810",0.57,0.53,529
+Arizona,2015,Firearm,970,"6,832,810",14.2,13.77,"20,088"
+Arizona,2015,Machinery,--,"6,832,810",--,--,--
+Arizona,2015,Natural/Environmental,87,"6,832,810",1.27,1.18,"1,177"
+Arizona,2015,Drug Poisoning,"1,274","6,832,810",18.65,18.91,"26,212"
+Arizona,2015,Non-Drug Poisoning,135,"6,832,810",1.98,2.1,"2,899"
+Arizona,2015,Struck by / against,10**,"6,832,810",0.15**,0.13**,213
+Arizona,2015,Suffocation,424,"6,832,810",6.21,6.22,"10,479"
+Arizona,2015,"Motor vehicle, traffic",869,"6,832,810",12.72,12.53,"19,474"
+Arizona,2015,"Pedal cyclist, other",16**,"6,832,810",0.23**,0.21**,316
+Arizona,2015,"Pedestrian, other",14**,"6,832,810",0.21**,0.22**,430
+Arizona,2015,"Transport, other land",51,"6,832,810",0.75,0.75,"1,109"
+Arizona,2015,"Transport, other (excl. drown by water transp)",13**,"6,832,810",0.19**,0.18**,148
+Arizona,2015,Other specified and classifiable,43,"6,832,810",0.63,0.62,966
+Arizona,2015,Other specified / NEC,47,"6,832,810",0.69,0.65,563
+Arizona,2015,Unspecified,139,"6,832,810",2.03,2,"2,640"
+Arizona,2014,Cut/Pierce,60,"6,732,873",0.89,0.88,"1,317"
+Arizona,2014,Drowning (includes water transport),96,"6,732,873",1.43,1.45,"2,716"
+Arizona,2014,Fall,979,"6,732,873",14.54,12.7,"2,239"
+Arizona,2014,Fire/Flame,43,"6,732,873",0.64,0.58,578
+Arizona,2014,Hot object/Substance,--,"6,732,873",--,--,--
+Arizona,2014,Firearm,927,"6,732,873",13.77,13.45,"18,852"
+Arizona,2014,Machinery,--,"6,732,873",--,--,--
+Arizona,2014,Natural/Environmental,69,"6,732,873",1.03,1,874
+Arizona,2014,Drug Poisoning,"1,211","6,732,873",17.99,18.13,"23,973"
+Arizona,2014,Non-Drug Poisoning,144,"6,732,873",2.14,2.16,"2,694"
+Arizona,2014,Struck by / against,10**,"6,732,873",0.15**,0.14**,123
+Arizona,2014,Suffocation,436,"6,732,873",6.48,6.45,"10,513"
+Arizona,2014,"Motor vehicle, traffic",813,"6,732,873",12.08,11.74,"18,364"
+Arizona,2014,"Pedal cyclist, other",--,"6,732,873",--,--,--
+Arizona,2014,"Pedestrian, other",15**,"6,732,873",0.22**,0.22**,417
+Arizona,2014,"Transport, other land",40,"6,732,873",0.59,0.58,789
+Arizona,2014,"Transport, other (excl. drown by water transp)",--,"6,732,873",--,--,--
+Arizona,2014,Other specified and classifiable,41,"6,732,873",0.61,0.59,764
+Arizona,2014,Other specified / NEC,46,"6,732,873",0.68,0.65,647
+Arizona,2014,Unspecified,124,"6,732,873",1.84,1.73,"2,017"
+Arizona,2013,Cut/Pierce,73,"6,634,690",1.1,1.07,"1,910"
+Arizona,2013,Drowning (includes water transport),91,"6,634,690",1.37,1.39,"2,609"
+Arizona,2013,Fall,919,"6,634,690",13.85,12.35,"2,038"
+Arizona,2013,Fire/Flame,72,"6,634,690",1.09,1.04,"1,151"
+Arizona,2013,Hot object/Substance,--,"6,634,690",--,--,--
+Arizona,2013,Firearm,941,"6,634,690",14.18,14.01,"19,457"
+Arizona,2013,Machinery,--,"6,634,690",--,--,--
+Arizona,2013,Natural/Environmental,105,"6,634,690",1.58,1.46,"1,339"
+Arizona,2013,Overexertion,--,"6,634,690",--,--,--
+Arizona,2013,Drug Poisoning,"1,222","6,634,690",18.42,18.65,"25,285"
+Arizona,2013,Non-Drug Poisoning,154,"6,634,690",2.32,2.34,"3,153"
+Arizona,2013,Struck by / against,16**,"6,634,690",0.24**,0.23**,447
+Arizona,2013,Suffocation,372,"6,634,690",5.61,5.64,"8,999"
+Arizona,2013,"Motor vehicle, traffic",820,"6,634,690",12.36,12.06,"18,531"
+Arizona,2013,"Pedal cyclist, other",12**,"6,634,690",0.18**,0.16**,116
+Arizona,2013,"Pedestrian, other",28,"6,634,690",0.42,0.4,784
+Arizona,2013,"Transport, other land",32,"6,634,690",0.48,0.45,715
+Arizona,2013,"Transport, other (excl. drown by water transp)",13**,"6,634,690",0.20**,0.20**,339
+Arizona,2013,Other specified and classifiable,52,"6,634,690",0.78,0.75,"1,279"
+Arizona,2013,Other specified / NEC,44,"6,634,690",0.66,0.64,667
+Arizona,2013,Unspecified,144,"6,634,690",2.17,2.11,"2,816"
+Arizona,2012,Cut/Pierce,70,"6,556,344",1.07,1.11,"1,814"
+Arizona,2012,Drowning (includes water transport),116,"6,556,344",1.77,1.79,"3,671"
+Arizona,2012,Fall,819,"6,556,344",12.49,11.34,"2,065"
+Arizona,2012,Fire/Flame,50,"6,556,344",0.76,0.72,739
+Arizona,2012,Hot object/Substance,--,"6,556,344",--,--,--
+Arizona,2012,Firearm,946,"6,556,344",14.43,14.1,"20,279"
+Arizona,2012,Machinery,--,"6,556,344",--,--,--
+Arizona,2012,Natural/Environmental,76,"6,556,344",1.16,1.11,753
+Arizona,2012,Drug Poisoning,"1,134","6,556,344",17.3,17.66,"23,841"
+Arizona,2012,Non-Drug Poisoning,150,"6,556,344",2.29,2.34,"2,834"
+Arizona,2012,Struck by / against,12**,"6,556,344",0.18**,0.18**,331
+Arizona,2012,Suffocation,329,"6,556,344",5.02,5.08,"8,380"
+Arizona,2012,"Motor vehicle, traffic",774,"6,556,344",11.81,11.6,"19,148"
+Arizona,2012,"Pedal cyclist, other",--,"6,556,344",--,--,--
+Arizona,2012,"Pedestrian, other",16**,"6,556,344",0.24**,0.24**,291
+Arizona,2012,"Transport, other land",41,"6,556,344",0.63,0.62,"1,019"
+Arizona,2012,"Transport, other (excl. drown by water transp)",25,"6,556,344",0.38,0.35,342
+Arizona,2012,Other specified and classifiable,44,"6,556,344",0.67,0.66,"1,074"
+Arizona,2012,Other specified / NEC,45,"6,556,344",0.69,0.68,752
+Arizona,2012,Unspecified,144,"6,556,344",2.2,2.17,"2,768"
+Arizona,2011,Cut/Pierce,59,"6,473,416",0.91,0.91,"1,507"
+Arizona,2011,Drowning (includes water transport),106,"6,473,416",1.64,1.64,"3,104"
+Arizona,2011,Fall,822,"6,473,416",12.7,11.82,"1,650"
+Arizona,2011,Fire/Flame,40,"6,473,416",0.62,0.56,582
+Arizona,2011,Hot object/Substance,--,"6,473,416",--,--,--
+Arizona,2011,Firearm,964,"6,473,416",14.89,14.68,"20,829"
+Arizona,2011,Machinery,--,"6,473,416",--,--,--
+Arizona,2011,Natural/Environmental,86,"6,473,416",1.33,1.27,971
+Arizona,2011,Overexertion,--,"6,473,416",--,--,--
+Arizona,2011,Drug Poisoning,"1,071","6,473,416",16.55,16.88,"23,610"
+Arizona,2011,Non-Drug Poisoning,148,"6,473,416",2.29,2.33,"3,017"
+Arizona,2011,Struck by / against,12**,"6,473,416",0.19**,0.18**,385
+Arizona,2011,Suffocation,356,"6,473,416",5.5,5.62,"9,493"
+Arizona,2011,"Motor vehicle, traffic",817,"6,473,416",12.62,12.36,"18,507"
+Arizona,2011,"Pedal cyclist, other",--,"6,473,416",--,--,--
+Arizona,2011,"Pedestrian, other",15**,"6,473,416",0.23**,0.22**,406
+Arizona,2011,"Transport, other land",49,"6,473,416",0.76,0.78,"1,039"
+Arizona,2011,"Transport, other (excl. drown by water transp)",24,"6,473,416",0.37,0.34,642
+Arizona,2011,Other specified and classifiable,44,"6,473,416",0.68,0.66,942
+Arizona,2011,Other specified / NEC,45,"6,473,416",0.7,0.66,630
+Arizona,2011,Unspecified,150,"6,473,416",2.32,2.3,"3,048"
+Arizona,2010,Cut/Pierce,62,"6,392,292",0.97,0.98,"1,769"
+Arizona,2010,Drowning (includes water transport),108,"6,392,292",1.69,1.64,"3,379"
+Arizona,2010,Fall,795,"6,392,292",12.44,11.94,"1,655"
+Arizona,2010,Fire/Flame,31,"6,392,292",0.49,0.48,563
+Arizona,2010,Firearm,931,"6,392,292",14.56,14.53,"20,578"
+Arizona,2010,Machinery,12**,"6,392,292",0.19**,0.19**,262
+Arizona,2010,Natural/Environmental,76,"6,392,292",1.19,1.13,"1,086"
+Arizona,2010,Overexertion,--,"6,392,292",--,--,--
+Arizona,2010,Drug Poisoning,"1,098","6,392,292",17.18,17.59,"24,548"
+Arizona,2010,Non-Drug Poisoning,131,"6,392,292",2.05,2.05,"2,158"
+Arizona,2010,Struck by / against,10**,"6,392,292",0.16**,0.15**,232
+Arizona,2010,Suffocation,377,"6,392,292",5.9,5.84,"8,541"
+Arizona,2010,"Motor vehicle, traffic",744,"6,392,292",11.64,11.52,"16,410"
+Arizona,2010,"Pedal cyclist, other",--,"6,392,292",--,--,--
+Arizona,2010,"Pedestrian, other",32,"6,392,292",0.5,0.5,949
+Arizona,2010,"Transport, other land",35,"6,392,292",0.55,0.54,799
+Arizona,2010,"Transport, other (excl. drown by water transp)",25,"6,392,292",0.39,0.39,447
+Arizona,2010,Other specified and classifiable,38,"6,392,292",0.59,0.61,777
+Arizona,2010,Other specified / NEC,61,"6,392,292",0.95,0.96,"1,097"
+Arizona,2010,Unspecified,131,"6,392,292",2.05,2.03,"2,640"
+Arizona,2009,Cut/Pierce,75,"6,343,154",1.18,1.22,"1,971"
+Arizona,2009,Drowning (includes water transport),117,"6,343,154",1.85,1.8,"3,459"
+Arizona,2009,Fall,752,"6,343,154",11.86,11.5,"1,339"
+Arizona,2009,Fire/Flame,39,"6,343,154",0.62,0.6,737
+Arizona,2009,Hot object/Substance,--,"6,343,154",--,--,--
+Arizona,2009,Firearm,856,"6,343,154",13.5,13.49,"17,909"
+Arizona,2009,Machinery,--,"6,343,154",--,--,--
+Arizona,2009,Natural/Environmental,103,"6,343,154",1.62,1.34,"1,145"
+Arizona,2009,Drug Poisoning,"1,002","6,343,154",15.8,16.14,"22,255"
+Arizona,2009,Non-Drug Poisoning,122,"6,343,154",1.92,1.96,"2,607"
+Arizona,2009,Struck by / against,11**,"6,343,154",0.17**,0.17**,349
+Arizona,2009,Suffocation,332,"6,343,154",5.23,5.3,"7,512"
+Arizona,2009,"Motor vehicle, traffic",745,"6,343,154",11.75,11.68,"18,253"
+Arizona,2009,"Pedal cyclist, other",--,"6,343,154",--,--,--
+Arizona,2009,"Pedestrian, other",29,"6,343,154",0.46,0.46,944
+Arizona,2009,"Transport, other land",56,"6,343,154",0.88,0.87,"1,256"
+Arizona,2009,"Transport, other (excl. drown by water transp)",15**,"6,343,154",0.24**,0.24**,166
+Arizona,2009,Other specified and classifiable,62,"6,343,154",0.98,0.95,"1,413"
+Arizona,2009,Other specified / NEC,44,"6,343,154",0.69,0.65,674
+Arizona,2009,Unspecified,123,"6,343,154",1.94,1.89,"2,479"
+Arizona,2008,Cut/Pierce,69,"6,280,362",1.1,1.11,"1,948"
+Arizona,2008,Drowning (includes water transport),94,"6,280,362",1.5,1.45,"3,067"
+Arizona,2008,Fall,763,"6,280,362",12.15,12.14,"1,780"
+Arizona,2008,Fire/Flame,62,"6,280,362",0.99,0.98,724
+Arizona,2008,Hot object/Substance,--,"6,280,362",--,--,--
+Arizona,2008,Firearm,907,"6,280,362",14.44,14.36,"21,117"
+Arizona,2008,Machinery,--,"6,280,362",--,--,--
+Arizona,2008,Natural/Environmental,61,"6,280,362",0.97,0.94,749
+Arizona,2008,Drug Poisoning,828,"6,280,362",13.18,13.58,"17,667"
+Arizona,2008,Non-Drug Poisoning,123,"6,280,362",1.96,1.96,"2,023"
+Arizona,2008,Struck by / against,16**,"6,280,362",0.26**,0.26**,528
+Arizona,2008,Suffocation,322,"6,280,362",5.13,5.2,"7,857"
+Arizona,2008,"Motor vehicle, traffic",878,"6,280,362",13.98,13.94,"21,342"
+Arizona,2008,"Pedal cyclist, other",--,"6,280,362",--,--,--
+Arizona,2008,"Pedestrian, other",31,"6,280,362",0.49,0.5,961
+Arizona,2008,"Transport, other land",82,"6,280,362",1.31,1.29,"1,850"
+Arizona,2008,"Transport, other (excl. drown by water transp)",40,"6,280,362",0.64,0.64,777
+Arizona,2008,Other specified and classifiable,49,"6,280,362",0.78,0.79,"1,158"
+Arizona,2008,Other specified / NEC,43,"6,280,362",0.69,0.7,730
+Arizona,2008,Unspecified,141,"6,280,362",2.25,2.26,"2,695"
+Arizona,2007,Cut/Pierce,72,"6,167,681",1.17,1.18,"1,906"
+Arizona,2007,Drowning (includes water transport),106,"6,167,681",1.72,1.69,"3,263"
+Arizona,2007,Fall,753,"6,167,681",12.21,12.31,"1,955"
+Arizona,2007,Fire/Flame,40,"6,167,681",0.65,0.64,797
+Arizona,2007,Hot object/Substance,--,"6,167,681",--,--,--
+Arizona,2007,Firearm,951,"6,167,681",15.42,15.38,"24,792"
+Arizona,2007,Machinery,--,"6,167,681",--,--,--
+Arizona,2007,Natural/Environmental,68,"6,167,681",1.1,1.05,"1,112"
+Arizona,2007,Drug Poisoning,943,"6,167,681",15.29,15.78,"20,832"
+Arizona,2007,Non-Drug Poisoning,101,"6,167,681",1.64,1.68,"2,246"
+Arizona,2007,Struck by / against,15**,"6,167,681",0.24**,0.23**,408
+Arizona,2007,Suffocation,331,"6,167,681",5.37,5.4,"8,056"
+Arizona,2007,"Motor vehicle, traffic","1,016","6,167,681",16.47,16.57,"27,113"
+Arizona,2007,"Pedal cyclist, other",--,"6,167,681",--,--,--
+Arizona,2007,"Pedestrian, other",28,"6,167,681",0.45,0.44,946
+Arizona,2007,"Transport, other land",86,"6,167,681",1.39,1.45,"2,552"
+Arizona,2007,"Transport, other (excl. drown by water transp)",29,"6,167,681",0.47,0.47,637
+Arizona,2007,Other specified and classifiable,76,"6,167,681",1.23,1.23,"1,920"
+Arizona,2007,Other specified / NEC,62,"6,167,681",1.01,1,932
+Arizona,2007,Unspecified,162,"6,167,681",2.63,2.59,"3,472"
+Arizona,2006,Cut/Pierce,91,"6,029,141",1.51,1.54,"2,248"
+Arizona,2006,Drowning (includes water transport),103,"6,029,141",1.71,1.66,"3,359"
+Arizona,2006,Fall,733,"6,029,141",12.16,12.36,"2,304"
+Arizona,2006,Fire/Flame,51,"6,029,141",0.85,0.83,"1,150"
+Arizona,2006,Hot object/Substance,--,"6,029,141",--,--,--
+Arizona,2006,Firearm,982,"6,029,141",16.29,16.22,"25,122"
+Arizona,2006,Machinery,--,"6,029,141",--,--,--
+Arizona,2006,Natural/Environmental,121,"6,029,141",2.01,1.88,"1,512"
+Arizona,2006,Drug Poisoning,876,"6,029,141",14.53,14.96,"19,278"
+Arizona,2006,Non-Drug Poisoning,65,"6,029,141",1.08,1.13,"1,455"
+Arizona,2006,Struck by / against,26,"6,029,141",0.43,0.43,650
+Arizona,2006,Suffocation,311,"6,029,141",5.16,5.23,"7,872"
+Arizona,2006,"Motor vehicle, traffic","1,264","6,029,141",20.97,20.87,"33,124"
+Arizona,2006,"Pedal cyclist, other",--,"6,029,141",--,--,--
+Arizona,2006,"Pedestrian, other",34,"6,029,141",0.56,0.56,"1,162"
+Arizona,2006,"Transport, other land",60,"6,029,141",1,0.99,"1,507"
+Arizona,2006,"Transport, other (excl. drown by water transp)",34,"6,029,141",0.56,0.56,651
+Arizona,2006,Other specified and classifiable,54,"6,029,141",0.9,0.87,"1,319"
+Arizona,2006,Other specified / NEC,52,"6,029,141",0.86,0.86,872
+Arizona,2006,Unspecified,147,"6,029,141",2.44,2.43,"2,757"
+Arizona,2005,Cut/Pierce,68,"5,839,077",1.17,1.18,"1,706"
+Arizona,2005,Drowning (includes water transport),101,"5,839,077",1.73,1.69,"3,212"
+Arizona,2005,Fall,710,"5,839,077",12.16,12.41,"2,151"
+Arizona,2005,Fire/Flame,69,"5,839,077",1.18,1.17,"1,710"
+Arizona,2005,Hot object/Substance,--,"5,839,077",--,--,--
+Arizona,2005,Firearm,934,"5,839,077",16,16,"24,354"
+Arizona,2005,Machinery,--,"5,839,077",--,--,--
+Arizona,2005,Natural/Environmental,130,"5,839,077",2.23,2.15,"1,492"
+Arizona,2005,Drug Poisoning,794,"5,839,077",13.6,14.12,"17,828"
+Arizona,2005,Non-Drug Poisoning,56,"5,839,077",0.96,0.99,"1,401"
+Arizona,2005,Struck by / against,20**,"5,839,077",0.34**,0.34**,374
+Arizona,2005,Suffocation,369,"5,839,077",6.32,6.33,"9,702"
+Arizona,2005,"Motor vehicle, traffic","1,161","5,839,077",19.88,19.93,"30,758"
+Arizona,2005,"Pedal cyclist, other",--,"5,839,077",--,--,--
+Arizona,2005,"Pedestrian, other",29,"5,839,077",0.5,0.49,745
+Arizona,2005,"Transport, other land",40,"5,839,077",0.69,0.69,885
+Arizona,2005,"Transport, other (excl. drown by water transp)",17**,"5,839,077",0.29**,0.31**,432
+Arizona,2005,Other specified and classifiable,69,"5,839,077",1.18,1.21,"1,819"
+Arizona,2005,Other specified / NEC,46,"5,839,077",0.79,0.75,919
+Arizona,2005,Unspecified,172,"5,839,077",2.95,2.87,"2,638"
+Arizona,2004,Cut/Pierce,75,"5,652,404",1.33,1.35,"2,131"
+Arizona,2004,Drowning (includes water transport),118,"5,652,404",2.09,2.03,"3,542"
+Arizona,2004,Fall,541,"5,652,404",9.57,9.93,"1,473"
+Arizona,2004,Fire/Flame,41,"5,652,404",0.73,0.73,554
+Arizona,2004,Hot object/Substance,--,"5,652,404",--,--,--
+Arizona,2004,Firearm,897,"5,652,404",15.87,15.84,"22,415"
+Arizona,2004,Machinery,--,"5,652,404",--,--,--
+Arizona,2004,Natural/Environmental,76,"5,652,404",1.35,0.95,"1,101"
+Arizona,2004,Drug Poisoning,744,"5,652,404",13.16,13.69,"16,553"
+Arizona,2004,Non-Drug Poisoning,55,"5,652,404",0.97,1,"1,261"
+Arizona,2004,Struck by / against,13**,"5,652,404",0.23**,0.24**,284
+Arizona,2004,Suffocation,286,"5,652,404",5.06,5.17,"7,151"
+Arizona,2004,"Motor vehicle, traffic","1,080","5,652,404",19.11,18.95,"27,835"
+Arizona,2004,"Pedal cyclist, other",13**,"5,652,404",0.23**,0.23**,318
+Arizona,2004,"Pedestrian, other",25,"5,652,404",0.44,0.44,652
+Arizona,2004,"Transport, other land",40,"5,652,404",0.71,0.71,"1,187"
+Arizona,2004,"Transport, other (excl. drown by water transp)",27,"5,652,404",0.48,0.48,451
+Arizona,2004,Other specified and classifiable,42,"5,652,404",0.74,0.72,888
+Arizona,2004,Other specified / NEC,50,"5,652,404",0.89,0.9,872
+Arizona,2004,Unspecified,165,"5,652,404",2.92,2.92,"2,489"
+Arizona,2003,Cut/Pierce,56,"5,510,364",1.02,1.02,"1,435"
+Arizona,2003,Drowning (includes water transport),101,"5,510,364",1.83,1.79,"3,339"
+Arizona,2003,Fall,512,"5,510,364",9.29,9.67,"1,761"
+Arizona,2003,Fire/Flame,60,"5,510,364",1.09,1.07,"1,009"
+Arizona,2003,Hot object/Substance,--,"5,510,364",--,--,--
+Arizona,2003,Firearm,849,"5,510,364",15.41,15.29,"21,112"
+Arizona,2003,Machinery,--,"5,510,364",--,--,--
+Arizona,2003,Natural/Environmental,84,"5,510,364",1.52,1.39,"1,581"
+Arizona,2003,Overexertion,--,"5,510,364",--,--,--
+Arizona,2003,Drug Poisoning,674,"5,510,364",12.23,12.75,"15,308"
+Arizona,2003,Non-Drug Poisoning,64,"5,510,364",1.16,1.21,"1,393"
+Arizona,2003,Struck by / against,16**,"5,510,364",0.29**,0.29**,239
+Arizona,2003,Suffocation,325,"5,510,364",5.9,5.94,"8,372"
+Arizona,2003,"Motor vehicle, traffic","1,064","5,510,364",19.31,19.44,"28,856"
+Arizona,2003,"Pedal cyclist, other",--,"5,510,364",--,--,--
+Arizona,2003,"Pedestrian, other",15**,"5,510,364",0.27**,0.27**,356
+Arizona,2003,"Transport, other land",51,"5,510,364",0.93,0.92,"1,499"
+Arizona,2003,"Transport, other (excl. drown by water transp)",37,"5,510,364",0.67,0.66,553
+Arizona,2003,Other specified and classifiable,36,"5,510,364",0.65,0.64,"1,050"
+Arizona,2003,Other specified / NEC,39,"5,510,364",0.71,0.7,667
+Arizona,2003,Unspecified,163,"5,510,364",2.96,2.94,"2,827"
+Arizona,2002,Cut/Pierce,68,"5,396,255",1.26,1.26,"1,721"
+Arizona,2002,Drowning (includes water transport),85,"5,396,255",1.58,1.55,"3,123"
+Arizona,2002,Fall,474,"5,396,255",8.78,9.16,"1,851"
+Arizona,2002,Fire/Flame,49,"5,396,255",0.91,0.92,747
+Arizona,2002,Hot object/Substance,--,"5,396,255",--,--,--
+Arizona,2002,Firearm,968,"5,396,255",17.94,17.89,"24,916"
+Arizona,2002,Machinery,--,"5,396,255",--,--,--
+Arizona,2002,Natural/Environmental,75,"5,396,255",1.39,1.29,952
+Arizona,2002,Drug Poisoning,624,"5,396,255",11.56,11.99,"14,482"
+Arizona,2002,Non-Drug Poisoning,66,"5,396,255",1.22,1.22,"1,374"
+Arizona,2002,Struck by / against,14**,"5,396,255",0.26**,0.26**,251
+Arizona,2002,Suffocation,253,"5,396,255",4.69,4.72,"5,702"
+Arizona,2002,"Motor vehicle, traffic","1,074","5,396,255",19.9,19.99,"27,402"
+Arizona,2002,"Pedal cyclist, other",--,"5,396,255",--,--,--
+Arizona,2002,"Pedestrian, other",27,"5,396,255",0.5,0.51,739
+Arizona,2002,"Transport, other land",42,"5,396,255",0.78,0.76,"1,173"
+Arizona,2002,"Transport, other (excl. drown by water transp)",26,"5,396,255",0.48,0.49,566
+Arizona,2002,Other specified and classifiable,40,"5,396,255",0.74,0.75,"1,044"
+Arizona,2002,Other specified / NEC,52,"5,396,255",0.96,0.95,"1,060"
+Arizona,2002,Unspecified,127,"5,396,255",2.35,2.42,"1,894"
+Arizona,2001,Cut/Pierce,81,"5,273,477",1.54,1.56,"2,307"
+Arizona,2001,Drowning (includes water transport),102,"5,273,477",1.93,1.83,"3,791"
+Arizona,2001,Fall,464,"5,273,477",8.8,9.26,"1,529"
+Arizona,2001,Fire/Flame,55,"5,273,477",1.04,1.04,"1,489"
+Arizona,2001,Hot object/Substance,--,"5,273,477",--,--,--
+Arizona,2001,Firearm,842,"5,273,477",15.97,15.92,"21,728"
+Arizona,2001,Machinery,--,"5,273,477",--,--,--
+Arizona,2001,Natural/Environmental,62,"5,273,477",1.18,1.02,861
+Arizona,2001,Drug Poisoning,552,"5,273,477",10.47,10.93,"13,275"
+Arizona,2001,Non-Drug Poisoning,63,"5,273,477",1.2,1.23,"1,341"
+Arizona,2001,Struck by / against,23,"5,273,477",0.44,0.45,482
+Arizona,2001,Suffocation,252,"5,273,477",4.78,4.8,"7,114"
+Arizona,2001,"Motor vehicle, traffic",996,"5,273,477",18.89,18.93,"27,494"
+Arizona,2001,"Pedal cyclist, other",--,"5,273,477",--,--,--
+Arizona,2001,"Pedestrian, other",51,"5,273,477",0.97,0.96,"1,440"
+Arizona,2001,"Transport, other land",51,"5,273,477",0.97,0.96,"1,566"
+Arizona,2001,"Transport, other (excl. drown by water transp)",22,"5,273,477",0.42,0.42,523
+Arizona,2001,Other specified and classifiable,39,"5,273,477",0.74,0.75,"1,012"
+Arizona,2001,Other specified / NEC,47,"5,273,477",0.89,0.9,"1,233"
+Arizona,2001,Unspecified,117,"5,273,477",2.22,2.21,"2,060"
+Total,,,"110,509","135,017,568",81.85,80.39,"2,135,289"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Arizona,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

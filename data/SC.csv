@@ -1,0 +1,438 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+South Carolina,2021,Cut/Pierce,36,"5,190,705",0.69,0.7,711
+South Carolina,2021,Drowning (includes water transport),91,"5,190,705",1.75,1.68,"1,896"
+South Carolina,2021,Fall,717,"5,190,705",13.81,11.72,"1,473"
+South Carolina,2021,Fire/Flame,95,"5,190,705",1.83,1.62,"1,228"
+South Carolina,2021,Firearm,"1,136","5,190,705",21.89,22.42,"29,840"
+South Carolina,2021,Machinery,--,"5,190,705",--,--,--
+South Carolina,2021,Natural/Environmental,39,"5,190,705",0.75,0.66,507
+South Carolina,2021,Drug Poisoning,"2,138","5,190,705",41.19,42.86,"47,721"
+South Carolina,2021,Non-Drug Poisoning,77,"5,190,705",1.48,1.45,"1,445"
+South Carolina,2021,Struck by / against,18**,"5,190,705",0.35**,0.30**,236
+South Carolina,2021,Suffocation,309,"5,190,705",5.95,5.92,"7,040"
+South Carolina,2021,"Motor vehicle, traffic","1,207","5,190,705",23.25,23.13,"28,246"
+South Carolina,2021,"Pedal cyclist, other",--,"5,190,705",--,--,--
+South Carolina,2021,"Pedestrian, other",12**,"5,190,705",0.23**,0.21**,168
+South Carolina,2021,"Transport, other land",28,"5,190,705",0.54,0.51,631
+South Carolina,2021,"Transport, other (excl. drown by water transp)",--,"5,190,705",--,--,--
+South Carolina,2021,Other specified and classifiable,27,"5,190,705",0.52,0.5,497
+South Carolina,2021,Other specified / NEC,34,"5,190,705",0.66,0.55,372
+South Carolina,2021,Unspecified,226,"5,190,705",4.35,3.8,"1,630"
+South Carolina,2020,Cut/Pierce,54,"5,130,729",1.05,1.05,"1,163"
+South Carolina,2020,Drowning (includes water transport),109,"5,130,729",2.12,2.13,"2,821"
+South Carolina,2020,Fall,686,"5,130,729",13.37,11.6,"1,308"
+South Carolina,2020,Fire/Flame,84,"5,130,729",1.64,1.45,"1,182"
+South Carolina,2020,Hot object/Substance,--,"5,130,729",--,--,--
+South Carolina,2020,Firearm,"1,131","5,130,729",22.04,22.38,"30,092"
+South Carolina,2020,Machinery,10**,"5,130,729",0.20**,0.16**,82
+South Carolina,2020,Natural/Environmental,47,"5,130,729",0.92,0.77,403
+South Carolina,2020,Drug Poisoning,"1,739","5,130,729",33.89,35.38,"39,386"
+South Carolina,2020,Non-Drug Poisoning,77,"5,130,729",1.5,1.51,"1,514"
+South Carolina,2020,Struck by / against,12**,"5,130,729",0.23**,0.19**,112
+South Carolina,2020,Suffocation,338,"5,130,729",6.59,6.63,"7,632"
+South Carolina,2020,"Motor vehicle, traffic","1,087","5,130,729",21.19,21.21,"25,273"
+South Carolina,2020,"Pedal cyclist, other",12**,"5,130,729",0.23**,0.21**,163
+South Carolina,2020,"Pedestrian, other",25,"5,130,729",0.49,0.47,393
+South Carolina,2020,"Transport, other land",21,"5,130,729",0.41,0.38,395
+South Carolina,2020,"Transport, other (excl. drown by water transp)",15**,"5,130,729",0.29**,0.30**,454
+South Carolina,2020,Other specified and classifiable,28,"5,130,729",0.55,0.49,580
+South Carolina,2020,Other specified / NEC,26,"5,130,729",0.51,0.44,267
+South Carolina,2020,Unspecified,221,"5,130,729",4.31,3.78,"1,464"
+South Carolina,2019,Cut/Pierce,41,"5,157,702",0.8,0.75,824
+South Carolina,2019,Drowning (includes water transport),97,"5,157,702",1.88,1.9,"2,522"
+South Carolina,2019,Fall,621,"5,157,702",12.04,9.94,"1,460"
+South Carolina,2019,Fire/Flame,70,"5,157,702",1.36,1.18,871
+South Carolina,2019,Hot object/Substance,--,"5,157,702",--,--,--
+South Carolina,2019,Firearm,"1,012","5,157,702",19.62,19.77,"25,415"
+South Carolina,2019,Machinery,--,"5,157,702",--,--,--
+South Carolina,2019,Natural/Environmental,25,"5,157,702",0.49,0.44,334
+South Carolina,2019,Drug Poisoning,"1,127","5,157,702",21.85,22.69,"24,816"
+South Carolina,2019,Non-Drug Poisoning,60,"5,157,702",1.16,1.19,"1,144"
+South Carolina,2019,Struck by / against,19**,"5,157,702",0.37**,0.36**,392
+South Carolina,2019,Suffocation,381,"5,157,702",7.39,7.28,"8,541"
+South Carolina,2019,"Motor vehicle, traffic",983,"5,157,702",19.06,18.83,"21,313"
+South Carolina,2019,"Pedal cyclist, other",10**,"5,157,702",0.19**,0.16**,171
+South Carolina,2019,"Pedestrian, other",25,"5,157,702",0.49,0.48,426
+South Carolina,2019,"Transport, other land",28,"5,157,702",0.54,0.57,682
+South Carolina,2019,"Transport, other (excl. drown by water transp)",--,"5,157,702",--,--,--
+South Carolina,2019,Other specified and classifiable,33,"5,157,702",0.64,0.61,892
+South Carolina,2019,Other specified / NEC,20**,"5,157,702",0.39**,0.33**,173
+South Carolina,2019,Unspecified,194,"5,157,702",3.76,3.23,"1,321"
+South Carolina,2018,Cut/Pierce,57,"5,091,702",1.12,1.07,"1,240"
+South Carolina,2018,Drowning (includes water transport),78,"5,091,702",1.53,1.43,"1,920"
+South Carolina,2018,Fall,606,"5,091,702",11.9,10.08,"1,419"
+South Carolina,2018,Fire/Flame,95,"5,091,702",1.87,1.58,"1,095"
+South Carolina,2018,Hot object/Substance,--,"5,091,702",--,--,--
+South Carolina,2018,Firearm,895,"5,091,702",17.58,17.49,"22,273"
+South Carolina,2018,Machinery,--,"5,091,702",--,--,--
+South Carolina,2018,Natural/Environmental,53,"5,091,702",1.04,0.9,597
+South Carolina,2018,Overexertion,--,"5,091,702",--,--,--
+South Carolina,2018,Drug Poisoning,"1,125","5,091,702",22.1,22.66,"24,762"
+South Carolina,2018,Non-Drug Poisoning,45,"5,091,702",0.88,0.85,801
+South Carolina,2018,Struck by / against,16**,"5,091,702",0.31**,0.32**,366
+South Carolina,2018,Suffocation,362,"5,091,702",7.11,7.19,"8,781"
+South Carolina,2018,"Motor vehicle, traffic","1,017","5,091,702",19.97,19.67,"22,947"
+South Carolina,2018,"Pedal cyclist, other",--,"5,091,702",--,--,--
+South Carolina,2018,"Pedestrian, other",26,"5,091,702",0.51,0.51,665
+South Carolina,2018,"Transport, other land",19**,"5,091,702",0.37**,0.36**,418
+South Carolina,2018,"Transport, other (excl. drown by water transp)",10**,"5,091,702",0.20**,0.18**,119
+South Carolina,2018,Other specified and classifiable,34,"5,091,702",0.67,0.62,749
+South Carolina,2018,Other specified / NEC,51,"5,091,702",1,0.94,844
+South Carolina,2018,Unspecified,199,"5,091,702",3.91,3.42,"1,501"
+South Carolina,2017,Cut/Pierce,54,"5,027,102",1.07,1.04,"1,170"
+South Carolina,2017,Drowning (includes water transport),85,"5,027,102",1.69,1.71,"2,475"
+South Carolina,2017,Fall,480,"5,027,102",9.55,8.21,"1,237"
+South Carolina,2017,Fire/Flame,107,"5,027,102",2.13,1.85,"1,612"
+South Carolina,2017,Hot object/Substance,--,"5,027,102",--,--,--
+South Carolina,2017,Firearm,893,"5,027,102",17.76,17.57,"21,125"
+South Carolina,2017,Machinery,10**,"5,027,102",0.20**,0.17**,123
+South Carolina,2017,Natural/Environmental,35,"5,027,102",0.7,0.61,284
+South Carolina,2017,Overexertion,--,"5,027,102",--,--,--
+South Carolina,2017,Drug Poisoning,"1,008","5,027,102",20.05,20.55,"22,387"
+South Carolina,2017,Non-Drug Poisoning,70,"5,027,102",1.39,1.42,"1,265"
+South Carolina,2017,Struck by / against,22,"5,027,102",0.44,0.37,261
+South Carolina,2017,Suffocation,379,"5,027,102",7.54,7.61,"8,833"
+South Carolina,2017,"Motor vehicle, traffic","1,029","5,027,102",20.47,20.11,"23,169"
+South Carolina,2017,"Pedal cyclist, other",--,"5,027,102",--,--,--
+South Carolina,2017,"Pedestrian, other",21,"5,027,102",0.42,0.44,417
+South Carolina,2017,"Transport, other land",30,"5,027,102",0.6,0.58,652
+South Carolina,2017,"Transport, other (excl. drown by water transp)",--,"5,027,102",--,--,--
+South Carolina,2017,Other specified and classifiable,24,"5,027,102",0.48,0.49,747
+South Carolina,2017,Other specified / NEC,35,"5,027,102",0.7,0.61,355
+South Carolina,2017,Unspecified,180,"5,027,102",3.58,3.08,"1,026"
+South Carolina,2016,Cut/Pierce,53,"4,963,031",1.07,1.05,882
+South Carolina,2016,Drowning (includes water transport),98,"4,963,031",1.98,1.91,"2,303"
+South Carolina,2016,Fall,485,"4,963,031",9.77,8.64,"1,050"
+South Carolina,2016,Fire/Flame,86,"4,963,031",1.73,1.57,832
+South Carolina,2016,Hot object/Substance,--,"4,963,031",--,--,--
+South Carolina,2016,Firearm,891,"4,963,031",17.95,17.66,"20,556"
+South Carolina,2016,Machinery,15**,"4,963,031",0.30**,0.25**,126
+South Carolina,2016,Natural/Environmental,36,"4,963,031",0.73,0.62,270
+South Carolina,2016,Drug Poisoning,879,"4,963,031",17.71,18.02,"19,111"
+South Carolina,2016,Non-Drug Poisoning,77,"4,963,031",1.55,1.52,"1,402"
+South Carolina,2016,Struck by / against,24,"4,963,031",0.48,0.45,516
+South Carolina,2016,Suffocation,335,"4,963,031",6.75,6.65,"8,128"
+South Carolina,2016,"Motor vehicle, traffic","1,045","4,963,031",21.06,20.87,"24,228"
+South Carolina,2016,"Pedal cyclist, other",--,"4,963,031",--,--,--
+South Carolina,2016,"Pedestrian, other",17**,"4,963,031",0.34**,0.34**,356
+South Carolina,2016,"Transport, other land",29,"4,963,031",0.58,0.59,592
+South Carolina,2016,"Transport, other (excl. drown by water transp)",--,"4,963,031",--,--,--
+South Carolina,2016,Other specified and classifiable,24,"4,963,031",0.48,0.48,585
+South Carolina,2016,Other specified / NEC,38,"4,963,031",0.77,0.72,584
+South Carolina,2016,Unspecified,160,"4,963,031",3.22,2.87,"1,009"
+South Carolina,2015,Cut/Pierce,39,"4,896,006",0.8,0.79,868
+South Carolina,2015,Drowning (includes water transport),107,"4,896,006",2.19,2.09,"2,661"
+South Carolina,2015,Fall,444,"4,896,006",9.07,8.1,"1,400"
+South Carolina,2015,Fire/Flame,76,"4,896,006",1.55,1.36,926
+South Carolina,2015,Hot object/Substance,--,"4,896,006",--,--,--
+South Carolina,2015,Firearm,850,"4,896,006",17.36,17.14,"20,715"
+South Carolina,2015,Machinery,11**,"4,896,006",0.23**,0.21**,194
+South Carolina,2015,Natural/Environmental,32,"4,896,006",0.65,0.59,345
+South Carolina,2015,Drug Poisoning,761,"4,896,006",15.54,15.66,"15,687"
+South Carolina,2015,Non-Drug Poisoning,55,"4,896,006",1.12,1.12,"1,154"
+South Carolina,2015,Struck by / against,13**,"4,896,006",0.27**,0.26**,253
+South Carolina,2015,Suffocation,329,"4,896,006",6.72,6.73,"7,710"
+South Carolina,2015,"Motor vehicle, traffic",964,"4,896,006",19.69,19.26,"22,654"
+South Carolina,2015,"Pedal cyclist, other",--,"4,896,006",--,--,--
+South Carolina,2015,"Pedestrian, other",21,"4,896,006",0.43,0.44,361
+South Carolina,2015,"Transport, other land",22,"4,896,006",0.45,0.43,518
+South Carolina,2015,"Transport, other (excl. drown by water transp)",--,"4,896,006",--,--,--
+South Carolina,2015,Other specified and classifiable,23,"4,896,006",0.47,0.47,490
+South Carolina,2015,Other specified / NEC,40,"4,896,006",0.82,0.76,463
+South Carolina,2015,Unspecified,179,"4,896,006",3.66,3.4,"1,414"
+South Carolina,2014,Cut/Pierce,51,"4,826,858",1.06,1.02,"1,053"
+South Carolina,2014,Drowning (includes water transport),82,"4,826,858",1.7,1.73,"2,165"
+South Carolina,2014,Fall,421,"4,826,858",8.72,7.8,998
+South Carolina,2014,Fire/Flame,96,"4,826,858",1.99,1.88,"1,706"
+South Carolina,2014,Hot object/Substance,--,"4,826,858",--,--,--
+South Carolina,2014,Firearm,767,"4,826,858",15.89,15.43,"17,819"
+South Carolina,2014,Machinery,13**,"4,826,858",0.27**,0.25**,151
+South Carolina,2014,Natural/Environmental,41,"4,826,858",0.85,0.75,450
+South Carolina,2014,Drug Poisoning,701,"4,826,858",14.52,14.41,"13,715"
+South Carolina,2014,Non-Drug Poisoning,61,"4,826,858",1.26,1.22,"1,056"
+South Carolina,2014,Struck by / against,20**,"4,826,858",0.41**,0.40**,454
+South Carolina,2014,Suffocation,296,"4,826,858",6.13,6.12,"7,185"
+South Carolina,2014,"Motor vehicle, traffic",792,"4,826,858",16.41,15.98,"19,061"
+South Carolina,2014,"Pedal cyclist, other",--,"4,826,858",--,--,--
+South Carolina,2014,"Pedestrian, other",13**,"4,826,858",0.27**,0.29**,413
+South Carolina,2014,"Transport, other land",26,"4,826,858",0.54,0.53,449
+South Carolina,2014,"Transport, other (excl. drown by water transp)",11**,"4,826,858",0.23**,0.21**,229
+South Carolina,2014,Other specified and classifiable,24,"4,826,858",0.5,0.52,780
+South Carolina,2014,Other specified / NEC,29,"4,826,858",0.6,0.53,345
+South Carolina,2014,Unspecified,158,"4,826,858",3.27,3,"1,066"
+South Carolina,2013,Cut/Pierce,37,"4,766,469",0.78,0.75,783
+South Carolina,2013,Drowning (includes water transport),78,"4,766,469",1.64,1.62,"2,161"
+South Carolina,2013,Fall,375,"4,766,469",7.87,7.37,847
+South Carolina,2013,Fire/Flame,82,"4,766,469",1.72,1.48,"1,182"
+South Carolina,2013,Hot object/Substance,--,"4,766,469",--,--,--
+South Carolina,2013,Firearm,745,"4,766,469",15.63,15.2,"16,465"
+South Carolina,2013,Machinery,--,"4,766,469",--,--,--
+South Carolina,2013,Natural/Environmental,22,"4,766,469",0.46,0.43,326
+South Carolina,2013,Drug Poisoning,620,"4,766,469",13.01,12.99,"11,978"
+South Carolina,2013,Non-Drug Poisoning,53,"4,766,469",1.11,1.12,"1,070"
+South Carolina,2013,Struck by / against,15**,"4,766,469",0.32**,0.29**,278
+South Carolina,2013,Suffocation,268,"4,766,469",5.62,5.69,"6,389"
+South Carolina,2013,"Motor vehicle, traffic",767,"4,766,469",16.09,15.72,"17,676"
+South Carolina,2013,"Pedal cyclist, other",--,"4,766,469",--,--,--
+South Carolina,2013,"Pedestrian, other",18**,"4,766,469",0.38**,0.38**,462
+South Carolina,2013,"Transport, other land",18**,"4,766,469",0.38**,0.39**,327
+South Carolina,2013,"Transport, other (excl. drown by water transp)",23,"4,766,469",0.48,0.51,620
+South Carolina,2013,Other specified and classifiable,37,"4,766,469",0.78,0.76,861
+South Carolina,2013,Other specified / NEC,25,"4,766,469",0.52,0.5,357
+South Carolina,2013,Unspecified,160,"4,766,469",3.36,3.21,"1,390"
+South Carolina,2012,Cut/Pierce,44,"4,719,027",0.93,0.89,735
+South Carolina,2012,Drowning (includes water transport),96,"4,719,027",2.03,1.94,"2,402"
+South Carolina,2012,Fall,358,"4,719,027",7.59,7.06,846
+South Carolina,2012,Fire/Flame,87,"4,719,027",1.84,1.67,"1,221"
+South Carolina,2012,Firearm,743,"4,719,027",15.75,15.17,"16,552"
+South Carolina,2012,Machinery,12**,"4,719,027",0.25**,0.26**,208
+South Carolina,2012,Natural/Environmental,18**,"4,719,027",0.38**,0.36**,197
+South Carolina,2012,Drug Poisoning,587,"4,719,027",12.44,12.44,"12,196"
+South Carolina,2012,Non-Drug Poisoning,56,"4,719,027",1.19,1.14,"1,038"
+South Carolina,2012,Struck by / against,17**,"4,719,027",0.36**,0.38**,349
+South Carolina,2012,Suffocation,291,"4,719,027",6.17,6.25,"7,089"
+South Carolina,2012,"Motor vehicle, traffic",848,"4,719,027",17.97,17.75,"20,378"
+South Carolina,2012,"Pedal cyclist, other",--,"4,719,027",--,--,--
+South Carolina,2012,"Pedestrian, other",17**,"4,719,027",0.36**,0.36**,408
+South Carolina,2012,"Transport, other land",24,"4,719,027",0.51,0.5,538
+South Carolina,2012,"Transport, other (excl. drown by water transp)",--,"4,719,027",--,--,--
+South Carolina,2012,Other specified and classifiable,31,"4,719,027",0.66,0.67,881
+South Carolina,2012,Other specified / NEC,32,"4,719,027",0.68,0.65,474
+South Carolina,2012,Unspecified,156,"4,719,027",3.31,3.15,"1,148"
+South Carolina,2011,Cut/Pierce,50,"4,672,655",1.07,1.1,"1,176"
+South Carolina,2011,Drowning (includes water transport),73,"4,672,655",1.56,1.59,"2,237"
+South Carolina,2011,Fall,335,"4,672,655",7.17,6.86,"1,186"
+South Carolina,2011,Fire/Flame,70,"4,672,655",1.5,1.41,"1,095"
+South Carolina,2011,Hot object/Substance,--,"4,672,655",--,--,--
+South Carolina,2011,Firearm,705,"4,672,655",15.09,14.8,"16,425"
+South Carolina,2011,Machinery,--,"4,672,655",--,--,--
+South Carolina,2011,Natural/Environmental,21,"4,672,655",0.45,0.39,256
+South Carolina,2011,Drug Poisoning,618,"4,672,655",13.23,13.29,"13,467"
+South Carolina,2011,Non-Drug Poisoning,60,"4,672,655",1.28,1.22,987
+South Carolina,2011,Struck by / against,11**,"4,672,655",0.24**,0.23**,309
+South Carolina,2011,Suffocation,268,"4,672,655",5.74,5.67,"5,696"
+South Carolina,2011,"Motor vehicle, traffic",838,"4,672,655",17.93,17.78,"20,891"
+South Carolina,2011,"Pedal cyclist, other",--,"4,672,655",--,--,--
+South Carolina,2011,"Pedestrian, other",10**,"4,672,655",0.21**,0.20**,149
+South Carolina,2011,"Transport, other land",30,"4,672,655",0.64,0.67,738
+South Carolina,2011,"Transport, other (excl. drown by water transp)",--,"4,672,655",--,--,--
+South Carolina,2011,Other specified and classifiable,25,"4,672,655",0.54,0.57,558
+South Carolina,2011,Other specified / NEC,34,"4,672,655",0.73,0.71,631
+South Carolina,2011,Unspecified,178,"4,672,655",3.81,3.68,"1,611"
+South Carolina,2010,Cut/Pierce,41,"4,625,358",0.89,0.89,979
+South Carolina,2010,Drowning (includes water transport),89,"4,625,358",1.92,1.91,"2,633"
+South Carolina,2010,Fall,296,"4,625,358",6.4,6.29,"1,147"
+South Carolina,2010,Fire/Flame,75,"4,625,358",1.62,1.53,"1,250"
+South Carolina,2010,Hot object/Substance,--,"4,625,358",--,--,--
+South Carolina,2010,Firearm,648,"4,625,358",14.01,13.92,"15,657"
+South Carolina,2010,Machinery,--,"4,625,358",--,--,--
+South Carolina,2010,Natural/Environmental,24,"4,625,358",0.52,0.5,241
+South Carolina,2010,Drug Poisoning,678,"4,625,358",14.66,14.61,"14,435"
+South Carolina,2010,Non-Drug Poisoning,53,"4,625,358",1.15,1.11,964
+South Carolina,2010,Struck by / against,20**,"4,625,358",0.43**,0.45**,359
+South Carolina,2010,Suffocation,271,"4,625,358",5.86,5.83,"6,185"
+South Carolina,2010,"Motor vehicle, traffic",784,"4,625,358",16.95,16.93,"19,750"
+South Carolina,2010,"Pedal cyclist, other",--,"4,625,358",--,--,--
+South Carolina,2010,"Pedestrian, other",16**,"4,625,358",0.35**,0.34**,429
+South Carolina,2010,"Transport, other land",22,"4,625,358",0.48,0.46,431
+South Carolina,2010,"Transport, other (excl. drown by water transp)",15**,"4,625,358",0.32**,0.34**,362
+South Carolina,2010,Other specified and classifiable,34,"4,625,358",0.74,0.7,812
+South Carolina,2010,Other specified / NEC,29,"4,625,358",0.63,0.59,353
+South Carolina,2010,Unspecified,181,"4,625,358",3.91,3.9,"1,263"
+South Carolina,2009,Cut/Pierce,46,"4,589,872",1,1.03,"1,107"
+South Carolina,2009,Drowning (includes water transport),101,"4,589,872",2.2,2.2,"2,950"
+South Carolina,2009,Fall,257,"4,589,872",5.6,5.47,"1,272"
+South Carolina,2009,Fire/Flame,84,"4,589,872",1.83,1.74,"1,674"
+South Carolina,2009,Hot object/Substance,--,"4,589,872",--,--,--
+South Carolina,2009,Firearm,634,"4,589,872",13.81,13.52,"15,343"
+South Carolina,2009,Machinery,--,"4,589,872",--,--,--
+South Carolina,2009,Natural/Environmental,23,"4,589,872",0.5,0.46,271
+South Carolina,2009,Drug Poisoning,615,"4,589,872",13.4,13.3,"12,713"
+South Carolina,2009,Non-Drug Poisoning,64,"4,589,872",1.39,1.4,"1,130"
+South Carolina,2009,Struck by / against,19**,"4,589,872",0.41**,0.38**,272
+South Carolina,2009,Suffocation,251,"4,589,872",5.47,5.5,"6,028"
+South Carolina,2009,"Motor vehicle, traffic",883,"4,589,872",19.24,18.96,"22,904"
+South Carolina,2009,"Pedal cyclist, other",--,"4,589,872",--,--,--
+South Carolina,2009,"Pedestrian, other",13**,"4,589,872",0.28**,0.28**,287
+South Carolina,2009,"Transport, other land",22,"4,589,872",0.48,0.44,426
+South Carolina,2009,"Transport, other (excl. drown by water transp)",11**,"4,589,872",0.24**,0.21**,136
+South Carolina,2009,Other specified and classifiable,28,"4,589,872",0.61,0.63,957
+South Carolina,2009,Other specified / NEC,48,"4,589,872",1.05,1,694
+South Carolina,2009,Unspecified,129,"4,589,872",2.81,2.81,"1,253"
+South Carolina,2008,Cut/Pierce,42,"4,528,996",0.93,0.91,"1,015"
+South Carolina,2008,Drowning (includes water transport),94,"4,528,996",2.08,2.05,"2,436"
+South Carolina,2008,Fall,252,"4,528,996",5.56,5.62,"1,150"
+South Carolina,2008,Fire/Flame,91,"4,528,996",2.01,1.97,"1,586"
+South Carolina,2008,Hot object/Substance,--,"4,528,996",--,--,--
+South Carolina,2008,Firearm,615,"4,528,996",13.58,13.17,"14,503"
+South Carolina,2008,Machinery,10**,"4,528,996",0.22**,0.20**,204
+South Carolina,2008,Natural/Environmental,15**,"4,528,996",0.33**,0.31**,359
+South Carolina,2008,Drug Poisoning,565,"4,528,996",12.48,12.5,"12,108"
+South Carolina,2008,Non-Drug Poisoning,53,"4,528,996",1.17,1.16,"1,195"
+South Carolina,2008,Struck by / against,25,"4,528,996",0.55,0.52,471
+South Carolina,2008,Suffocation,289,"4,528,996",6.38,6.37,"7,199"
+South Carolina,2008,"Motor vehicle, traffic",939,"4,528,996",20.73,20.57,"23,956"
+South Carolina,2008,"Pedal cyclist, other",--,"4,528,996",--,--,--
+South Carolina,2008,"Pedestrian, other",12**,"4,528,996",0.27**,0.25**,233
+South Carolina,2008,"Transport, other land",22,"4,528,996",0.49,0.47,548
+South Carolina,2008,"Transport, other (excl. drown by water transp)",--,"4,528,996",--,--,--
+South Carolina,2008,Other specified and classifiable,26,"4,528,996",0.57,0.57,657
+South Carolina,2008,Other specified / NEC,43,"4,528,996",0.95,0.96,628
+South Carolina,2008,Unspecified,157,"4,528,996",3.47,3.53,"1,406"
+South Carolina,2007,Cut/Pierce,54,"4,444,110",1.22,1.23,"1,194"
+South Carolina,2007,Drowning (includes water transport),75,"4,444,110",1.69,1.72,"2,549"
+South Carolina,2007,Fall,245,"4,444,110",5.51,5.54,"1,198"
+South Carolina,2007,Fire/Flame,99,"4,444,110",2.23,2.17,"1,722"
+South Carolina,2007,Hot object/Substance,--,"4,444,110",--,--,--
+South Carolina,2007,Firearm,592,"4,444,110",13.32,13.09,"14,981"
+South Carolina,2007,Machinery,10**,"4,444,110",0.23**,0.22**,119
+South Carolina,2007,Natural/Environmental,36,"4,444,110",0.81,0.76,371
+South Carolina,2007,Drug Poisoning,545,"4,444,110",12.26,12.19,"11,603"
+South Carolina,2007,Non-Drug Poisoning,56,"4,444,110",1.26,1.22,"1,194"
+South Carolina,2007,Struck by / against,12**,"4,444,110",0.27**,0.27**,232
+South Carolina,2007,Suffocation,268,"4,444,110",6.03,6.12,"6,744"
+South Carolina,2007,"Motor vehicle, traffic","1,031","4,444,110",23.2,23.15,"27,774"
+South Carolina,2007,"Pedal cyclist, other",--,"4,444,110",--,--,--
+South Carolina,2007,"Pedestrian, other",19**,"4,444,110",0.43**,0.46**,599
+South Carolina,2007,"Transport, other land",27,"4,444,110",0.61,0.63,829
+South Carolina,2007,"Transport, other (excl. drown by water transp)",--,"4,444,110",--,--,--
+South Carolina,2007,Other specified and classifiable,29,"4,444,110",0.65,0.66,"1,031"
+South Carolina,2007,Other specified / NEC,44,"4,444,110",0.99,0.99,927
+South Carolina,2007,Unspecified,178,"4,444,110",4.01,4.01,"1,472"
+South Carolina,2006,Cut/Pierce,51,"4,357,847",1.17,1.2,"1,432"
+South Carolina,2006,Drowning (includes water transport),78,"4,357,847",1.79,1.8,"2,302"
+South Carolina,2006,Fall,206,"4,357,847",4.73,4.77,"1,087"
+South Carolina,2006,Fire/Flame,101,"4,357,847",2.32,2.33,"2,067"
+South Carolina,2006,Hot object/Substance,--,"4,357,847",--,--,--
+South Carolina,2006,Firearm,616,"4,357,847",14.14,13.88,"15,103"
+South Carolina,2006,Machinery,15**,"4,357,847",0.34**,0.32**,221
+South Carolina,2006,Natural/Environmental,22,"4,357,847",0.51,0.5,385
+South Carolina,2006,Drug Poisoning,554,"4,357,847",12.71,12.64,"12,325"
+South Carolina,2006,Non-Drug Poisoning,35,"4,357,847",0.8,0.79,593
+South Carolina,2006,Struck by / against,20**,"4,357,847",0.46**,0.45**,286
+South Carolina,2006,Suffocation,242,"4,357,847",5.55,5.7,"6,095"
+South Carolina,2006,"Motor vehicle, traffic","1,019","4,357,847",23.38,23.3,"26,827"
+South Carolina,2006,"Pedal cyclist, other",--,"4,357,847",--,--,--
+South Carolina,2006,"Pedestrian, other",17**,"4,357,847",0.39**,0.39**,452
+South Carolina,2006,"Transport, other land",21,"4,357,847",0.48,0.49,685
+South Carolina,2006,"Transport, other (excl. drown by water transp)",12**,"4,357,847",0.28**,0.29**,381
+South Carolina,2006,Other specified and classifiable,24,"4,357,847",0.55,0.55,659
+South Carolina,2006,Other specified / NEC,36,"4,357,847",0.83,0.82,669
+South Carolina,2006,Unspecified,193,"4,357,847",4.43,4.56,"1,849"
+South Carolina,2005,Cut/Pierce,45,"4,270,150",1.05,1.06,"1,261"
+South Carolina,2005,Drowning (includes water transport),87,"4,270,150",2.04,1.96,"2,243"
+South Carolina,2005,Fall,213,"4,270,150",4.99,5.16,908
+South Carolina,2005,Fire/Flame,86,"4,270,150",2.01,2.05,"1,854"
+South Carolina,2005,Hot object/Substance,--,"4,270,150",--,--,--
+South Carolina,2005,Firearm,589,"4,270,150",13.79,13.75,"14,792"
+South Carolina,2005,Machinery,16**,"4,270,150",0.38**,0.36**,354
+South Carolina,2005,Natural/Environmental,22,"4,270,150",0.52,0.51,288
+South Carolina,2005,Drug Poisoning,427,"4,270,150",10,9.9,"9,769"
+South Carolina,2005,Non-Drug Poisoning,59,"4,270,150",1.38,1.33,"1,075"
+South Carolina,2005,Struck by / against,20**,"4,270,150",0.47**,0.45**,256
+South Carolina,2005,Suffocation,247,"4,270,150",5.78,5.88,"5,912"
+South Carolina,2005,"Motor vehicle, traffic","1,052","4,270,150",24.64,24.49,"28,443"
+South Carolina,2005,"Pedal cyclist, other",--,"4,270,150",--,--,--
+South Carolina,2005,"Pedestrian, other",16**,"4,270,150",0.38**,0.37**,424
+South Carolina,2005,"Transport, other land",18**,"4,270,150",0.42**,0.42**,450
+South Carolina,2005,"Transport, other (excl. drown by water transp)",17**,"4,270,150",0.40**,0.37**,225
+South Carolina,2005,Other specified and classifiable,35,"4,270,150",0.82,0.85,"1,018"
+South Carolina,2005,Other specified / NEC,43,"4,270,150",1.01,1,833
+South Carolina,2005,Unspecified,170,"4,270,150",3.98,4.16,"1,510"
+South Carolina,2004,Cut/Pierce,60,"4,210,921",1.43,1.45,"1,423"
+South Carolina,2004,Drowning (includes water transport),77,"4,210,921",1.83,1.84,"2,633"
+South Carolina,2004,Fall,199,"4,210,921",4.73,4.94,"1,083"
+South Carolina,2004,Fire/Flame,96,"4,210,921",2.28,2.3,"1,938"
+South Carolina,2004,Hot object/Substance,--,"4,210,921",--,--,--
+South Carolina,2004,Firearm,574,"4,210,921",13.63,13.5,"13,997"
+South Carolina,2004,Machinery,13**,"4,210,921",0.31**,0.32**,314
+South Carolina,2004,Natural/Environmental,22,"4,210,921",0.52,0.53,324
+South Carolina,2004,Drug Poisoning,356,"4,210,921",8.45,8.43,"8,118"
+South Carolina,2004,Non-Drug Poisoning,36,"4,210,921",0.86,0.85,809
+South Carolina,2004,Struck by / against,22,"4,210,921",0.52,0.5,368
+South Carolina,2004,Suffocation,225,"4,210,921",5.34,5.47,"5,124"
+South Carolina,2004,"Motor vehicle, traffic","1,017","4,210,921",24.15,23.91,"27,188"
+South Carolina,2004,"Pedal cyclist, other",--,"4,210,921",--,--,--
+South Carolina,2004,"Pedestrian, other",16**,"4,210,921",0.38**,0.38**,475
+South Carolina,2004,"Transport, other land",15**,"4,210,921",0.36**,0.35**,500
+South Carolina,2004,"Transport, other (excl. drown by water transp)",20**,"4,210,921",0.48**,0.49**,529
+South Carolina,2004,Other specified and classifiable,29,"4,210,921",0.69,0.71,899
+South Carolina,2004,Other specified / NEC,34,"4,210,921",0.81,0.81,678
+South Carolina,2004,Unspecified,133,"4,210,921",3.16,3.33,"1,756"
+South Carolina,2003,Cut/Pierce,47,"4,150,297",1.13,1.16,"1,170"
+South Carolina,2003,Drowning (includes water transport),94,"4,150,297",2.27,2.23,"2,497"
+South Carolina,2003,Fall,187,"4,150,297",4.51,4.8,"1,112"
+South Carolina,2003,Fire/Flame,108,"4,150,297",2.6,2.62,"2,250"
+South Carolina,2003,Hot object/Substance,--,"4,150,297",--,--,--
+South Carolina,2003,Firearm,593,"4,150,297",14.29,14.17,"14,365"
+South Carolina,2003,Machinery,10**,"4,150,297",0.24**,0.24**,224
+South Carolina,2003,Natural/Environmental,18**,"4,150,297",0.43**,0.44**,321
+South Carolina,2003,Overexertion,--,"4,150,297",--,--,--
+South Carolina,2003,Drug Poisoning,287,"4,150,297",6.92,6.97,"6,557"
+South Carolina,2003,Non-Drug Poisoning,33,"4,150,297",0.8,0.79,616
+South Carolina,2003,Struck by / against,23,"4,150,297",0.55,0.55,562
+South Carolina,2003,Suffocation,194,"4,150,297",4.67,4.86,"3,706"
+South Carolina,2003,"Motor vehicle, traffic",921,"4,150,297",22.19,22.15,"24,132"
+South Carolina,2003,"Pedal cyclist, other",--,"4,150,297",--,--,--
+South Carolina,2003,"Pedestrian, other",21,"4,150,297",0.51,0.51,554
+South Carolina,2003,"Transport, other land",23,"4,150,297",0.55,0.55,555
+South Carolina,2003,"Transport, other (excl. drown by water transp)",--,"4,150,297",--,--,--
+South Carolina,2003,Other specified and classifiable,22,"4,150,297",0.53,0.53,613
+South Carolina,2003,Other specified / NEC,32,"4,150,297",0.77,0.78,705
+South Carolina,2003,Unspecified,132,"4,150,297",3.18,3.45,"1,130"
+South Carolina,2002,Cut/Pierce,52,"4,107,795",1.27,1.26,"1,181"
+South Carolina,2002,Drowning (includes water transport),75,"4,107,795",1.83,1.83,"2,467"
+South Carolina,2002,Fall,180,"4,107,795",4.38,4.64,"1,176"
+South Carolina,2002,Fire/Flame,88,"4,107,795",2.14,2.19,"1,746"
+South Carolina,2002,Hot object/Substance,--,"4,107,795",--,--,--
+South Carolina,2002,Firearm,566,"4,107,795",13.78,13.69,"14,436"
+South Carolina,2002,Machinery,11**,"4,107,795",0.27**,0.27**,204
+South Carolina,2002,Natural/Environmental,33,"4,107,795",0.8,0.81,283
+South Carolina,2002,Drug Poisoning,217,"4,107,795",5.28,5.34,"5,259"
+South Carolina,2002,Non-Drug Poisoning,43,"4,107,795",1.05,1.06,924
+South Carolina,2002,Struck by / against,31,"4,107,795",0.76,0.76,765
+South Carolina,2002,Suffocation,182,"4,107,795",4.43,4.63,"3,714"
+South Carolina,2002,"Motor vehicle, traffic","1,013","4,107,795",24.66,24.5,"28,071"
+South Carolina,2002,"Pedal cyclist, other",--,"4,107,795",--,--,--
+South Carolina,2002,"Pedestrian, other",14**,"4,107,795",0.34**,0.35**,273
+South Carolina,2002,"Transport, other land",19**,"4,107,795",0.46**,0.46**,438
+South Carolina,2002,"Transport, other (excl. drown by water transp)",19**,"4,107,795",0.46**,0.46**,462
+South Carolina,2002,Other specified and classifiable,22,"4,107,795",0.54,0.55,561
+South Carolina,2002,Other specified / NEC,46,"4,107,795",1.12,1.16,778
+South Carolina,2002,Unspecified,150,"4,107,795",3.65,3.98,"1,085"
+South Carolina,2001,Cut/Pierce,26,"4,064,995",0.64,0.64,604
+South Carolina,2001,Drowning (includes water transport),87,"4,064,995",2.14,2.12,"2,898"
+South Carolina,2001,Fall,198,"4,064,995",4.87,5.27,"1,246"
+South Carolina,2001,Fire/Flame,80,"4,064,995",1.97,2,"1,556"
+South Carolina,2001,Hot object/Substance,--,"4,064,995",--,--,--
+South Carolina,2001,Firearm,564,"4,064,995",13.88,13.73,"14,464"
+South Carolina,2001,Machinery,--,"4,064,995",--,--,--
+South Carolina,2001,Natural/Environmental,20**,"4,064,995",0.49**,0.52**,151
+South Carolina,2001,Drug Poisoning,242,"4,064,995",5.95,5.94,"5,665"
+South Carolina,2001,Non-Drug Poisoning,34,"4,064,995",0.84,0.82,590
+South Carolina,2001,Struck by / against,23,"4,064,995",0.57,0.57,531
+South Carolina,2001,Suffocation,220,"4,064,995",5.41,5.66,"4,654"
+South Carolina,2001,"Motor vehicle, traffic",975,"4,064,995",23.99,23.87,"28,033"
+South Carolina,2001,"Pedal cyclist, other",--,"4,064,995",--,--,--
+South Carolina,2001,"Pedestrian, other",37,"4,064,995",0.91,0.92,906
+South Carolina,2001,"Transport, other land",31,"4,064,995",0.76,0.74,890
+South Carolina,2001,"Transport, other (excl. drown by water transp)",--,"4,064,995",--,--,--
+South Carolina,2001,Other specified and classifiable,33,"4,064,995",0.81,0.81,868
+South Carolina,2001,Other specified / NEC,62,"4,064,995",1.53,1.55,"1,730"
+South Carolina,2001,Unspecified,153,"4,064,995",3.76,4.07,"1,078"
+Total,,,"78,716","97,792,327",80.49,79.42,"1,621,965"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: South Carolina,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,

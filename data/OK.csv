@@ -1,0 +1,433 @@
+State,Year,Mechanism,Deaths,Population,Crude Rate,Age-Adjusted Rate,Years of Potential Life Lost
+Oklahoma,2021,Cut/Pierce,41,"3,986,639",1.03,1.03,"1,043"
+Oklahoma,2021,Drowning (includes water transport),74,"3,986,639",1.86,1.84,"1,613"
+Oklahoma,2021,Fall,877,"3,986,639",22,19.67,"1,801"
+Oklahoma,2021,Fire/Flame,91,"3,986,639",2.28,2.09,"1,024"
+Oklahoma,2021,Hot object/Substance,--,"3,986,639",--,--,--
+Oklahoma,2021,Firearm,836,"3,986,639",20.97,21.18,"19,686"
+Oklahoma,2021,Machinery,--,"3,986,639",--,--,--
+Oklahoma,2021,Natural/Environmental,43,"3,986,639",1.08,0.99,403
+Oklahoma,2021,Drug Poisoning,960,"3,986,639",24.08,24.42,"19,317"
+Oklahoma,2021,Non-Drug Poisoning,61,"3,986,639",1.53,1.6,"1,162"
+Oklahoma,2021,Struck by / against,12**,"3,986,639",0.30**,0.30**,170
+Oklahoma,2021,Suffocation,299,"3,986,639",7.5,7.84,"8,467"
+Oklahoma,2021,"Motor vehicle, traffic",807,"3,986,639",20.24,20.04,"18,034"
+Oklahoma,2021,"Pedal cyclist, other",--,"3,986,639",--,--,--
+Oklahoma,2021,"Pedestrian, other",14**,"3,986,639",0.35**,0.36**,301
+Oklahoma,2021,"Transport, other land",18**,"3,986,639",0.45**,0.42**,245
+Oklahoma,2021,"Transport, other (excl. drown by water transp)",12**,"3,986,639",0.30**,0.27**,208
+Oklahoma,2021,Other specified and classifiable,51,"3,986,639",1.28,1.31,"1,090"
+Oklahoma,2021,Other specified / NEC,34,"3,986,639",0.85,0.8,458
+Oklahoma,2021,Unspecified,108,"3,986,639",2.71,2.61,"1,597"
+Oklahoma,2020,Cut/Pierce,41,"3,962,031",1.04,1.06,883
+Oklahoma,2020,Drowning (includes water transport),83,"3,962,031",2.1,2.11,"2,561"
+Oklahoma,2020,Fall,752,"3,962,031",18.98,16.79,"1,235"
+Oklahoma,2020,Fire/Flame,73,"3,962,031",1.84,1.58,705
+Oklahoma,2020,Firearm,826,"3,962,031",20.85,20.86,"19,169"
+Oklahoma,2020,Machinery,--,"3,962,031",--,--,--
+Oklahoma,2020,Natural/Environmental,30,"3,962,031",0.76,0.74,497
+Oklahoma,2020,Drug Poisoning,762,"3,962,031",19.23,19.45,"15,282"
+Oklahoma,2020,Non-Drug Poisoning,74,"3,962,031",1.87,1.85,"1,347"
+Oklahoma,2020,Struck by / against,20**,"3,962,031",0.51**,0.47**,389
+Oklahoma,2020,Suffocation,309,"3,962,031",7.8,8.1,"8,502"
+Oklahoma,2020,"Motor vehicle, traffic",685,"3,962,031",17.29,17.1,"15,273"
+Oklahoma,2020,"Pedal cyclist, other",--,"3,962,031",--,--,--
+Oklahoma,2020,"Pedestrian, other",18**,"3,962,031",0.45**,0.44**,291
+Oklahoma,2020,"Transport, other land",28,"3,962,031",0.71,0.61,390
+Oklahoma,2020,"Transport, other (excl. drown by water transp)",--,"3,962,031",--,--,--
+Oklahoma,2020,Other specified and classifiable,45,"3,962,031",1.14,1.24,"1,067"
+Oklahoma,2020,Other specified / NEC,34,"3,962,031",0.86,0.81,316
+Oklahoma,2020,Unspecified,110,"3,962,031",2.78,2.73,"1,627"
+Oklahoma,2019,Cut/Pierce,34,"3,960,676",0.86,0.89,678
+Oklahoma,2019,Drowning (includes water transport),70,"3,960,676",1.77,1.71,"1,824"
+Oklahoma,2019,Fall,716,"3,960,676",18.08,15.36,"1,166"
+Oklahoma,2019,Fire/Flame,76,"3,960,676",1.92,1.76,"1,344"
+Oklahoma,2019,Firearm,737,"3,960,676",18.61,18.56,"16,610"
+Oklahoma,2019,Machinery,--,"3,960,676",--,--,--
+Oklahoma,2019,Natural/Environmental,37,"3,960,676",0.93,0.85,374
+Oklahoma,2019,Drug Poisoning,645,"3,960,676",16.29,16.66,"12,778"
+Oklahoma,2019,Non-Drug Poisoning,79,"3,960,676",2,1.97,"1,609"
+Oklahoma,2019,Struck by / against,13**,"3,960,676",0.33**,0.31**,343
+Oklahoma,2019,Suffocation,323,"3,960,676",8.16,8.45,"9,303"
+Oklahoma,2019,"Motor vehicle, traffic",669,"3,960,676",16.89,16.44,"13,584"
+Oklahoma,2019,"Pedal cyclist, other",--,"3,960,676",--,--,--
+Oklahoma,2019,"Pedestrian, other",12**,"3,960,676",0.30**,0.31**,266
+Oklahoma,2019,"Transport, other land",17**,"3,960,676",0.43**,0.41**,346
+Oklahoma,2019,"Transport, other (excl. drown by water transp)",--,"3,960,676",--,--,--
+Oklahoma,2019,Other specified and classifiable,43,"3,960,676",1.09,1.12,"1,099"
+Oklahoma,2019,Other specified / NEC,36,"3,960,676",0.91,0.9,509
+Oklahoma,2019,Unspecified,141,"3,960,676",3.56,3.19,"1,539"
+Oklahoma,2018,Cut/Pierce,39,"3,943,488",0.99,1.02,928
+Oklahoma,2018,Drowning (includes water transport),79,"3,943,488",2,2.02,"2,343"
+Oklahoma,2018,Fall,737,"3,943,488",18.69,15.93,"1,365"
+Oklahoma,2018,Fire/Flame,84,"3,943,488",2.13,1.95,"1,253"
+Oklahoma,2018,Hot object/Substance,--,"3,943,488",--,--,--
+Oklahoma,2018,Firearm,665,"3,943,488",16.86,16.71,"14,412"
+Oklahoma,2018,Machinery,--,"3,943,488",--,--,--
+Oklahoma,2018,Natural/Environmental,20**,"3,943,488",0.51**,0.48**,341
+Oklahoma,2018,Drug Poisoning,716,"3,943,488",18.16,18.34,"14,147"
+Oklahoma,2018,Non-Drug Poisoning,90,"3,943,488",2.28,2.34,"1,846"
+Oklahoma,2018,Struck by / against,12**,"3,943,488",0.30**,0.27**,267
+Oklahoma,2018,Suffocation,341,"3,943,488",8.65,8.83,"8,486"
+Oklahoma,2018,"Motor vehicle, traffic",670,"3,943,488",16.99,16.66,"13,615"
+Oklahoma,2018,"Pedal cyclist, other",--,"3,943,488",--,--,--
+Oklahoma,2018,"Pedestrian, other",21,"3,943,488",0.53,0.55,452
+Oklahoma,2018,"Transport, other land",29,"3,943,488",0.74,0.69,447
+Oklahoma,2018,"Transport, other (excl. drown by water transp)",--,"3,943,488",--,--,--
+Oklahoma,2018,Other specified and classifiable,49,"3,943,488",1.24,1.21,"1,081"
+Oklahoma,2018,Other specified / NEC,42,"3,943,488",1.07,0.97,430
+Oklahoma,2018,Unspecified,138,"3,943,488",3.5,3.23,"1,962"
+Oklahoma,2017,Cut/Pierce,30,"3,933,602",0.76,0.84,712
+Oklahoma,2017,Drowning (includes water transport),71,"3,933,602",1.81,1.78,"2,191"
+Oklahoma,2017,Fall,675,"3,933,602",17.16,15.12,"1,452"
+Oklahoma,2017,Fire/Flame,62,"3,933,602",1.58,1.42,834
+Oklahoma,2017,Hot object/Substance,--,"3,933,602",--,--,--
+Oklahoma,2017,Firearm,681,"3,933,602",17.31,17.14,"16,579"
+Oklahoma,2017,Machinery,13**,"3,933,602",0.33**,0.28**,169
+Oklahoma,2017,Natural/Environmental,28,"3,933,602",0.71,0.67,252
+Oklahoma,2017,Drug Poisoning,775,"3,933,602",19.7,20.07,"15,434"
+Oklahoma,2017,Non-Drug Poisoning,94,"3,933,602",2.39,2.51,"2,212"
+Oklahoma,2017,Struck by / against,--,"3,933,602",--,--,--
+Oklahoma,2017,Suffocation,297,"3,933,602",7.55,7.73,"8,295"
+Oklahoma,2017,"Motor vehicle, traffic",692,"3,933,602",17.59,17.3,"15,634"
+Oklahoma,2017,"Pedal cyclist, other",--,"3,933,602",--,--,--
+Oklahoma,2017,"Pedestrian, other",13**,"3,933,602",0.33**,0.34**,297
+Oklahoma,2017,"Transport, other land",29,"3,933,602",0.74,0.7,671
+Oklahoma,2017,"Transport, other (excl. drown by water transp)",--,"3,933,602",--,--,--
+Oklahoma,2017,Other specified and classifiable,34,"3,933,602",0.86,0.9,561
+Oklahoma,2017,Other specified / NEC,71,"3,933,602",1.81,1.6,626
+Oklahoma,2017,Unspecified,126,"3,933,602",3.2,3.01,"2,058"
+Oklahoma,2016,Cut/Pierce,44,"3,928,143",1.12,1.16,"1,208"
+Oklahoma,2016,Drowning (includes water transport),86,"3,928,143",2.19,2.19,"2,501"
+Oklahoma,2016,Fall,621,"3,928,143",15.81,14.1,"1,027"
+Oklahoma,2016,Fire/Flame,72,"3,928,143",1.83,1.69,"1,136"
+Oklahoma,2016,Hot object/Substance,--,"3,928,143",--,--,--
+Oklahoma,2016,Firearm,766,"3,928,143",19.5,19.54,"17,518"
+Oklahoma,2016,Machinery,12**,"3,928,143",0.31**,0.30**,135
+Oklahoma,2016,Natural/Environmental,33,"3,928,143",0.84,0.8,435
+Oklahoma,2016,Overexertion,--,"3,928,143",--,--,--
+Oklahoma,2016,Drug Poisoning,813,"3,928,143",20.7,21.4,"16,774"
+Oklahoma,2016,Non-Drug Poisoning,81,"3,928,143",2.06,2.16,"1,488"
+Oklahoma,2016,Struck by / against,10**,"3,928,143",0.26**,0.26**,237
+Oklahoma,2016,Suffocation,302,"3,928,143",7.69,7.71,"7,192"
+Oklahoma,2016,"Motor vehicle, traffic",697,"3,928,143",17.74,17.57,"16,065"
+Oklahoma,2016,"Pedal cyclist, other",--,"3,928,143",--,--,--
+Oklahoma,2016,"Pedestrian, other",13**,"3,928,143",0.33**,0.30**,372
+Oklahoma,2016,"Transport, other land",17**,"3,928,143",0.43**,0.43**,516
+Oklahoma,2016,"Transport, other (excl. drown by water transp)",--,"3,928,143",--,--,--
+Oklahoma,2016,Other specified and classifiable,32,"3,928,143",0.82,0.84,766
+Oklahoma,2016,Other specified / NEC,50,"3,928,143",1.27,1.2,530
+Oklahoma,2016,Unspecified,145,"3,928,143",3.69,3.45,"1,867"
+Oklahoma,2015,Cut/Pierce,52,"3,910,518",1.33,1.32,"1,284"
+Oklahoma,2015,Drowning (includes water transport),91,"3,910,518",2.33,2.36,"2,468"
+Oklahoma,2015,Fall,622,"3,910,518",15.91,14.39,"1,069"
+Oklahoma,2015,Fire/Flame,62,"3,910,518",1.59,1.5,971
+Oklahoma,2015,Hot object/Substance,--,"3,910,518",--,--,--
+Oklahoma,2015,Firearm,706,"3,910,518",18.05,17.98,"15,617"
+Oklahoma,2015,Machinery,10**,"3,910,518",0.26**,0.24**,139
+Oklahoma,2015,Natural/Environmental,46,"3,910,518",1.18,1.07,515
+Oklahoma,2015,Drug Poisoning,725,"3,910,518",18.54,19,"14,957"
+Oklahoma,2015,Non-Drug Poisoning,86,"3,910,518",2.2,2.33,"1,701"
+Oklahoma,2015,Struck by / against,10**,"3,910,518",0.26**,0.21**,91
+Oklahoma,2015,Suffocation,298,"3,910,518",7.62,7.78,"7,435"
+Oklahoma,2015,"Motor vehicle, traffic",644,"3,910,518",16.47,16.3,"14,992"
+Oklahoma,2015,"Pedal cyclist, other",--,"3,910,518",--,--,--
+Oklahoma,2015,"Pedestrian, other",12**,"3,910,518",0.31**,0.28**,228
+Oklahoma,2015,"Transport, other land",30,"3,910,518",0.77,0.74,655
+Oklahoma,2015,"Transport, other (excl. drown by water transp)",--,"3,910,518",--,--,--
+Oklahoma,2015,Other specified and classifiable,31,"3,910,518",0.79,0.8,746
+Oklahoma,2015,Other specified / NEC,36,"3,910,518",0.92,0.88,438
+Oklahoma,2015,Unspecified,146,"3,910,518",3.73,3.55,"2,506"
+Oklahoma,2014,Cut/Pierce,41,"3,879,187",1.06,1.05,"1,035"
+Oklahoma,2014,Drowning (includes water transport),67,"3,879,187",1.73,1.72,"2,078"
+Oklahoma,2014,Fall,556,"3,879,187",14.33,12.93,780
+Oklahoma,2014,Fire/Flame,80,"3,879,187",2.06,1.97,"1,424"
+Oklahoma,2014,Hot object/Substance,--,"3,879,187",--,--,--
+Oklahoma,2014,Firearm,611,"3,879,187",15.75,15.61,"13,540"
+Oklahoma,2014,Machinery,20**,"3,879,187",0.52**,0.50**,327
+Oklahoma,2014,Natural/Environmental,30,"3,879,187",0.77,0.7,274
+Oklahoma,2014,Drug Poisoning,777,"3,879,187",20.03,20.37,"15,611"
+Oklahoma,2014,Non-Drug Poisoning,101,"3,879,187",2.6,2.65,"1,819"
+Oklahoma,2014,Struck by / against,--,"3,879,187",--,--,--
+Oklahoma,2014,Suffocation,286,"3,879,187",7.37,7.4,"7,604"
+Oklahoma,2014,"Motor vehicle, traffic",694,"3,879,187",17.89,17.68,"15,357"
+Oklahoma,2014,"Pedal cyclist, other",--,"3,879,187",--,--,--
+Oklahoma,2014,"Pedestrian, other",19**,"3,879,187",0.49**,0.48**,403
+Oklahoma,2014,"Transport, other land",30,"3,879,187",0.77,0.77,803
+Oklahoma,2014,"Transport, other (excl. drown by water transp)",--,"3,879,187",--,--,--
+Oklahoma,2014,Other specified and classifiable,16**,"3,879,187",0.41**,0.42**,390
+Oklahoma,2014,Other specified / NEC,40,"3,879,187",1.03,0.95,469
+Oklahoma,2014,Unspecified,140,"3,879,187",3.61,3.38,"1,804"
+Oklahoma,2013,Cut/Pierce,38,"3,853,891",0.99,1.02,850
+Oklahoma,2013,Drowning (includes water transport),67,"3,853,891",1.74,1.71,"2,287"
+Oklahoma,2013,Fall,543,"3,853,891",14.09,13,"1,394"
+Oklahoma,2013,Fire/Flame,72,"3,853,891",1.87,1.78,"1,356"
+Oklahoma,2013,Hot object/Substance,--,"3,853,891",--,--,--
+Oklahoma,2013,Firearm,632,"3,853,891",16.4,16.46,"14,286"
+Oklahoma,2013,Machinery,--,"3,853,891",--,--,--
+Oklahoma,2013,Natural/Environmental,67,"3,853,891",1.74,1.75,"1,706"
+Oklahoma,2013,Drug Poisoning,790,"3,853,891",20.5,20.48,"15,848"
+Oklahoma,2013,Non-Drug Poisoning,77,"3,853,891",2,2.11,"1,615"
+Oklahoma,2013,Struck by / against,10**,"3,853,891",0.26**,0.24**,76
+Oklahoma,2013,Suffocation,210,"3,853,891",5.45,5.59,"4,883"
+Oklahoma,2013,"Motor vehicle, traffic",700,"3,853,891",18.16,17.96,"16,099"
+Oklahoma,2013,"Pedal cyclist, other",--,"3,853,891",--,--,--
+Oklahoma,2013,"Pedestrian, other",21,"3,853,891",0.55,0.55,564
+Oklahoma,2013,"Transport, other land",23,"3,853,891",0.6,0.58,454
+Oklahoma,2013,"Transport, other (excl. drown by water transp)",13**,"3,853,891",0.34**,0.32**,230
+Oklahoma,2013,Other specified and classifiable,43,"3,853,891",1.12,1.17,"1,064"
+Oklahoma,2013,Other specified / NEC,50,"3,853,891",1.3,1.21,432
+Oklahoma,2013,Unspecified,123,"3,853,891",3.19,3.06,"1,588"
+Oklahoma,2012,Cut/Pierce,36,"3,819,320",0.94,0.97,"1,077"
+Oklahoma,2012,Drowning (includes water transport),78,"3,819,320",2.04,2.07,"2,838"
+Oklahoma,2012,Fall,511,"3,819,320",13.38,12.41,"1,011"
+Oklahoma,2012,Fire/Flame,63,"3,819,320",1.65,1.56,975
+Oklahoma,2012,Hot object/Substance,--,"3,819,320",--,--,--
+Oklahoma,2012,Firearm,619,"3,819,320",16.21,16.12,"14,395"
+Oklahoma,2012,Machinery,10**,"3,819,320",0.26**,0.29**,162
+Oklahoma,2012,Natural/Environmental,43,"3,819,320",1.13,1.03,661
+Oklahoma,2012,Drug Poisoning,771,"3,819,320",20.19,20.42,"16,283"
+Oklahoma,2012,Non-Drug Poisoning,75,"3,819,320",1.96,1.89,"1,522"
+Oklahoma,2012,Struck by / against,11**,"3,819,320",0.29**,0.28**,217
+Oklahoma,2012,Suffocation,245,"3,819,320",6.42,6.44,"6,023"
+Oklahoma,2012,"Motor vehicle, traffic",695,"3,819,320",18.2,18.22,"15,940"
+Oklahoma,2012,"Pedal cyclist, other",--,"3,819,320",--,--,--
+Oklahoma,2012,"Pedestrian, other",19**,"3,819,320",0.50**,0.50**,524
+Oklahoma,2012,"Transport, other land",27,"3,819,320",0.71,0.69,427
+Oklahoma,2012,"Transport, other (excl. drown by water transp)",--,"3,819,320",--,--,--
+Oklahoma,2012,Other specified and classifiable,47,"3,819,320",1.23,1.21,926
+Oklahoma,2012,Other specified / NEC,38,"3,819,320",1,0.91,340
+Oklahoma,2012,Unspecified,138,"3,819,320",3.61,3.55,"2,187"
+Oklahoma,2011,Cut/Pierce,39,"3,788,824",1.03,1.05,905
+Oklahoma,2011,Drowning (includes water transport),67,"3,788,824",1.77,1.8,"2,422"
+Oklahoma,2011,Fall,453,"3,788,824",11.96,11.19,"1,263"
+Oklahoma,2011,Fire/Flame,70,"3,788,824",1.85,1.79,"1,172"
+Oklahoma,2011,Hot object/Substance,--,"3,788,824",--,--,--
+Oklahoma,2011,Firearm,628,"3,788,824",16.58,16.54,"14,058"
+Oklahoma,2011,Machinery,11**,"3,788,824",0.29**,0.29**,167
+Oklahoma,2011,Natural/Environmental,54,"3,788,824",1.43,1.34,869
+Oklahoma,2011,Drug Poisoning,703,"3,788,824",18.56,18.92,"15,584"
+Oklahoma,2011,Non-Drug Poisoning,79,"3,788,824",2.09,2.17,"1,905"
+Oklahoma,2011,Struck by / against,--,"3,788,824",--,--,--
+Oklahoma,2011,Suffocation,221,"3,788,824",5.83,5.9,"4,980"
+Oklahoma,2011,"Motor vehicle, traffic",696,"3,788,824",18.37,18.42,"16,931"
+Oklahoma,2011,"Pedal cyclist, other",--,"3,788,824",--,--,--
+Oklahoma,2011,"Pedestrian, other",22,"3,788,824",0.58,0.59,560
+Oklahoma,2011,"Transport, other land",45,"3,788,824",1.19,1.18,"1,060"
+Oklahoma,2011,"Transport, other (excl. drown by water transp)",12**,"3,788,824",0.32**,0.29**,138
+Oklahoma,2011,Other specified and classifiable,42,"3,788,824",1.11,1.19,"1,307"
+Oklahoma,2011,Other specified / NEC,25,"3,788,824",0.66,0.59,222
+Oklahoma,2011,Unspecified,125,"3,788,824",3.3,3.22,"2,135"
+Oklahoma,2010,Cut/Pierce,31,"3,751,582",0.83,0.82,895
+Oklahoma,2010,Drowning (includes water transport),85,"3,751,582",2.27,2.26,"2,879"
+Oklahoma,2010,Fall,428,"3,751,582",11.41,10.84,932
+Oklahoma,2010,Fire/Flame,73,"3,751,582",1.95,1.85,"1,431"
+Oklahoma,2010,Firearm,538,"3,751,582",14.34,14.31,"12,842"
+Oklahoma,2010,Machinery,17**,"3,751,582",0.45**,0.44**,218
+Oklahoma,2010,Natural/Environmental,33,"3,751,582",0.88,0.84,469
+Oklahoma,2010,Drug Poisoning,717,"3,751,582",19.11,19.44,"15,654"
+Oklahoma,2010,Non-Drug Poisoning,100,"3,751,582",2.67,2.63,"1,657"
+Oklahoma,2010,Struck by / against,15**,"3,751,582",0.40**,0.41**,297
+Oklahoma,2010,Suffocation,222,"3,751,582",5.92,5.98,"5,374"
+Oklahoma,2010,"Motor vehicle, traffic",680,"3,751,582",18.13,18.14,"16,347"
+Oklahoma,2010,"Pedal cyclist, other",--,"3,751,582",--,--,--
+Oklahoma,2010,"Pedestrian, other",18**,"3,751,582",0.48**,0.45**,284
+Oklahoma,2010,"Transport, other land",27,"3,751,582",0.72,0.73,552
+Oklahoma,2010,"Transport, other (excl. drown by water transp)",13**,"3,751,582",0.35**,0.36**,241
+Oklahoma,2010,Other specified and classifiable,28,"3,751,582",0.75,0.76,843
+Oklahoma,2010,Other specified / NEC,26,"3,751,582",0.69,0.64,300
+Oklahoma,2010,Unspecified,173,"3,751,582",4.61,4.58,"2,210"
+Oklahoma,2009,Cut/Pierce,40,"3,717,572",1.08,1.08,"1,035"
+Oklahoma,2009,Drowning (includes water transport),74,"3,717,572",1.99,1.97,"2,184"
+Oklahoma,2009,Fall,307,"3,717,572",8.26,7.88,818
+Oklahoma,2009,Fire/Flame,76,"3,717,572",2.04,1.97,"1,402"
+Oklahoma,2009,Firearm,533,"3,717,572",14.34,14.33,"12,423"
+Oklahoma,2009,Machinery,17**,"3,717,572",0.46**,0.45**,317
+Oklahoma,2009,Natural/Environmental,44,"3,717,572",1.18,1.12,465
+Oklahoma,2009,Overexertion,--,"3,717,572",--,--,--
+Oklahoma,2009,Drug Poisoning,756,"3,717,572",20.34,20.68,"16,849"
+Oklahoma,2009,Non-Drug Poisoning,92,"3,717,572",2.48,2.58,"1,699"
+Oklahoma,2009,Struck by / against,12**,"3,717,572",0.32**,0.28**,302
+Oklahoma,2009,Suffocation,195,"3,717,572",5.25,5.33,"4,945"
+Oklahoma,2009,"Motor vehicle, traffic",696,"3,717,572",18.72,18.81,"17,603"
+Oklahoma,2009,"Pedal cyclist, other",--,"3,717,572",--,--,--
+Oklahoma,2009,"Pedestrian, other",19**,"3,717,572",0.51**,0.51**,434
+Oklahoma,2009,"Transport, other land",27,"3,717,572",0.73,0.73,722
+Oklahoma,2009,"Transport, other (excl. drown by water transp)",14**,"3,717,572",0.38**,0.37**,347
+Oklahoma,2009,Other specified and classifiable,40,"3,717,572",1.08,1.06,"1,320"
+Oklahoma,2009,Other specified / NEC,33,"3,717,572",0.89,0.88,545
+Oklahoma,2009,Unspecified,193,"3,717,572",5.19,5.04,"2,713"
+Oklahoma,2008,Cut/Pierce,45,"3,668,976",1.23,1.21,"1,066"
+Oklahoma,2008,Drowning (includes water transport),81,"3,668,976",2.21,2.2,"2,610"
+Oklahoma,2008,Fall,292,"3,668,976",7.96,7.59,779
+Oklahoma,2008,Fire/Flame,89,"3,668,976",2.43,2.34,"1,473"
+Oklahoma,2008,Hot object/Substance,--,"3,668,976",--,--,--
+Oklahoma,2008,Firearm,513,"3,668,976",13.98,13.91,"11,809"
+Oklahoma,2008,Machinery,19**,"3,668,976",0.52**,0.50**,375
+Oklahoma,2008,Natural/Environmental,27,"3,668,976",0.74,0.73,474
+Oklahoma,2008,Drug Poisoning,564,"3,668,976",15.37,15.7,"12,963"
+Oklahoma,2008,Non-Drug Poisoning,80,"3,668,976",2.18,2.28,"1,669"
+Oklahoma,2008,Struck by / against,19**,"3,668,976",0.52**,0.54**,384
+Oklahoma,2008,Suffocation,181,"3,668,976",4.93,5.03,"4,045"
+Oklahoma,2008,"Motor vehicle, traffic",732,"3,668,976",19.95,19.73,"18,772"
+Oklahoma,2008,"Pedal cyclist, other",--,"3,668,976",--,--,--
+Oklahoma,2008,"Pedestrian, other",17**,"3,668,976",0.46**,0.46**,530
+Oklahoma,2008,"Transport, other land",30,"3,668,976",0.82,0.76,481
+Oklahoma,2008,"Transport, other (excl. drown by water transp)",12**,"3,668,976",0.33**,0.32**,225
+Oklahoma,2008,Other specified and classifiable,31,"3,668,976",0.85,0.86,811
+Oklahoma,2008,Other specified / NEC,24,"3,668,976",0.65,0.62,316
+Oklahoma,2008,Unspecified,218,"3,668,976",5.94,5.78,"2,520"
+Oklahoma,2007,Cut/Pierce,45,"3,634,349",1.24,1.24,"1,229"
+Oklahoma,2007,Drowning (includes water transport),66,"3,634,349",1.82,1.8,"2,301"
+Oklahoma,2007,Fall,255,"3,634,349",7.02,6.77,"1,128"
+Oklahoma,2007,Fire/Flame,84,"3,634,349",2.31,2.18,"1,234"
+Oklahoma,2007,Firearm,482,"3,634,349",13.26,13.18,"10,939"
+Oklahoma,2007,Machinery,13**,"3,634,349",0.36**,0.35**,298
+Oklahoma,2007,Natural/Environmental,44,"3,634,349",1.21,1.16,489
+Oklahoma,2007,Drug Poisoning,666,"3,634,349",18.33,18.94,"16,170"
+Oklahoma,2007,Non-Drug Poisoning,77,"3,634,349",2.12,2.14,"1,612"
+Oklahoma,2007,Struck by / against,13**,"3,634,349",0.36**,0.33**,337
+Oklahoma,2007,Suffocation,190,"3,634,349",5.23,5.24,"4,421"
+Oklahoma,2007,"Motor vehicle, traffic",714,"3,634,349",19.65,19.46,"18,646"
+Oklahoma,2007,"Pedal cyclist, other",--,"3,634,349",--,--,--
+Oklahoma,2007,"Pedestrian, other",18**,"3,634,349",0.50**,0.52**,495
+Oklahoma,2007,"Transport, other land",23,"3,634,349",0.63,0.61,355
+Oklahoma,2007,"Transport, other (excl. drown by water transp)",16**,"3,634,349",0.44**,0.40**,352
+Oklahoma,2007,Other specified and classifiable,45,"3,634,349",1.24,1.26,"1,382"
+Oklahoma,2007,Other specified / NEC,35,"3,634,349",0.96,0.98,663
+Oklahoma,2007,Unspecified,222,"3,634,349",6.11,5.94,"2,429"
+Oklahoma,2006,Cut/Pierce,26,"3,594,090",0.72,0.73,737
+Oklahoma,2006,Drowning (includes water transport),66,"3,594,090",1.84,1.86,"2,242"
+Oklahoma,2006,Fall,248,"3,594,090",6.9,6.66,"1,103"
+Oklahoma,2006,Fire/Flame,68,"3,594,090",1.89,1.87,"1,724"
+Oklahoma,2006,Hot object/Substance,--,"3,594,090",--,--,--
+Oklahoma,2006,Firearm,482,"3,594,090",13.41,13.26,"11,487"
+Oklahoma,2006,Machinery,26,"3,594,090",0.72,0.71,427
+Oklahoma,2006,Natural/Environmental,51,"3,594,090",1.42,1.39,714
+Oklahoma,2006,Drug Poisoning,563,"3,594,090",15.67,16.16,"13,255"
+Oklahoma,2006,Non-Drug Poisoning,49,"3,594,090",1.36,1.34,922
+Oklahoma,2006,Struck by / against,17**,"3,594,090",0.47**,0.46**,291
+Oklahoma,2006,Suffocation,202,"3,594,090",5.62,5.64,"4,912"
+Oklahoma,2006,"Motor vehicle, traffic",760,"3,594,090",21.15,20.9,"20,644"
+Oklahoma,2006,"Pedal cyclist, other",--,"3,594,090",--,--,--
+Oklahoma,2006,"Pedestrian, other",25,"3,594,090",0.7,0.69,540
+Oklahoma,2006,"Transport, other land",28,"3,594,090",0.78,0.79,751
+Oklahoma,2006,"Transport, other (excl. drown by water transp)",17**,"3,594,090",0.47**,0.45**,357
+Oklahoma,2006,Other specified and classifiable,26,"3,594,090",0.72,0.74,540
+Oklahoma,2006,Other specified / NEC,27,"3,594,090",0.75,0.73,505
+Oklahoma,2006,Unspecified,181,"3,594,090",5.04,4.97,"1,558"
+Oklahoma,2005,Cut/Pierce,30,"3,548,597",0.85,0.84,754
+Oklahoma,2005,Drowning (includes water transport),69,"3,548,597",1.94,1.98,"2,244"
+Oklahoma,2005,Fall,222,"3,548,597",6.26,6.14,"1,197"
+Oklahoma,2005,Fire/Flame,95,"3,548,597",2.68,2.62,"1,563"
+Oklahoma,2005,Hot object/Substance,--,"3,548,597",--,--,--
+Oklahoma,2005,Firearm,468,"3,548,597",13.19,13.16,"11,276"
+Oklahoma,2005,Machinery,18**,"3,548,597",0.51**,0.48**,131
+Oklahoma,2005,Natural/Environmental,40,"3,548,597",1.13,1.1,872
+Oklahoma,2005,Drug Poisoning,478,"3,548,597",13.47,13.82,"11,506"
+Oklahoma,2005,Non-Drug Poisoning,52,"3,548,597",1.47,1.44,"1,004"
+Oklahoma,2005,Struck by / against,16**,"3,548,597",0.45**,0.47**,346
+Oklahoma,2005,Suffocation,181,"3,548,597",5.1,5.21,"4,564"
+Oklahoma,2005,"Motor vehicle, traffic",799,"3,548,597",22.52,22.26,"19,492"
+Oklahoma,2005,"Pedal cyclist, other",--,"3,548,597",--,--,--
+Oklahoma,2005,"Pedestrian, other",14**,"3,548,597",0.40**,0.38**,407
+Oklahoma,2005,"Transport, other land",37,"3,548,597",1.04,1.02,"1,168"
+Oklahoma,2005,"Transport, other (excl. drown by water transp)",14**,"3,548,597",0.40**,0.37**,265
+Oklahoma,2005,Other specified and classifiable,39,"3,548,597",1.1,1.07,"1,012"
+Oklahoma,2005,Other specified / NEC,46,"3,548,597",1.3,1.25,595
+Oklahoma,2005,Unspecified,194,"3,548,597",5.47,5.39,"2,201"
+Oklahoma,2004,Cut/Pierce,36,"3,525,233",1.02,1.02,912
+Oklahoma,2004,Drowning (includes water transport),75,"3,525,233",2.13,2.15,"2,510"
+Oklahoma,2004,Fall,211,"3,525,233",5.99,5.83,"1,000"
+Oklahoma,2004,Fire/Flame,84,"3,525,233",2.38,2.33,"1,998"
+Oklahoma,2004,Hot object/Substance,--,"3,525,233",--,--,--
+Oklahoma,2004,Firearm,457,"3,525,233",12.96,12.86,"10,140"
+Oklahoma,2004,Machinery,10**,"3,525,233",0.28**,0.29**,197
+Oklahoma,2004,Natural/Environmental,23,"3,525,233",0.65,0.65,353
+Oklahoma,2004,Drug Poisoning,476,"3,525,233",13.5,13.87,"11,457"
+Oklahoma,2004,Non-Drug Poisoning,51,"3,525,233",1.45,1.49,"1,021"
+Oklahoma,2004,Struck by / against,17**,"3,525,233",0.48**,0.49**,399
+Oklahoma,2004,Suffocation,187,"3,525,233",5.31,5.33,"4,918"
+Oklahoma,2004,"Motor vehicle, traffic",743,"3,525,233",21.08,20.74,"19,781"
+Oklahoma,2004,"Pedal cyclist, other",--,"3,525,233",--,--,--
+Oklahoma,2004,"Pedestrian, other",12**,"3,525,233",0.34**,0.35**,299
+Oklahoma,2004,"Transport, other land",24,"3,525,233",0.68,0.69,672
+Oklahoma,2004,"Transport, other (excl. drown by water transp)",14**,"3,525,233",0.40**,0.38**,128
+Oklahoma,2004,Other specified and classifiable,39,"3,525,233",1.11,1.18,"1,079"
+Oklahoma,2004,Other specified / NEC,23,"3,525,233",0.65,0.65,202
+Oklahoma,2004,Unspecified,255,"3,525,233",7.23,7.16,"3,326"
+Oklahoma,2003,Cut/Pierce,32,"3,504,892",0.91,0.88,875
+Oklahoma,2003,Drowning (includes water transport),78,"3,504,892",2.23,2.2,"2,308"
+Oklahoma,2003,Fall,202,"3,504,892",5.76,5.61,638
+Oklahoma,2003,Fire/Flame,72,"3,504,892",2.05,2.03,"1,517"
+Oklahoma,2003,Hot object/Substance,--,"3,504,892",--,--,--
+Oklahoma,2003,Firearm,449,"3,504,892",12.81,12.77,"11,056"
+Oklahoma,2003,Machinery,13**,"3,504,892",0.37**,0.37**,278
+Oklahoma,2003,Natural/Environmental,35,"3,504,892",1,0.99,447
+Oklahoma,2003,Drug Poisoning,400,"3,504,892",11.41,11.74,"9,721"
+Oklahoma,2003,Non-Drug Poisoning,33,"3,504,892",0.94,0.98,663
+Oklahoma,2003,Struck by / against,10**,"3,504,892",0.29**,0.28**,80
+Oklahoma,2003,Suffocation,175,"3,504,892",4.99,5.02,"4,178"
+Oklahoma,2003,"Motor vehicle, traffic",698,"3,504,892",19.92,19.9,"17,735"
+Oklahoma,2003,"Pedal cyclist, other",--,"3,504,892",--,--,--
+Oklahoma,2003,"Pedestrian, other",20**,"3,504,892",0.57**,0.57**,467
+Oklahoma,2003,"Transport, other land",37,"3,504,892",1.06,1.06,"1,014"
+Oklahoma,2003,"Transport, other (excl. drown by water transp)",--,"3,504,892",--,--,--
+Oklahoma,2003,Other specified and classifiable,37,"3,504,892",1.06,1.09,"1,034"
+Oklahoma,2003,Other specified / NEC,28,"3,504,892",0.8,0.8,327
+Oklahoma,2003,Unspecified,193,"3,504,892",5.51,5.41,"2,302"
+Oklahoma,2002,Cut/Pierce,41,"3,489,080",1.18,1.21,"1,106"
+Oklahoma,2002,Drowning (includes water transport),52,"3,489,080",1.49,1.49,"1,455"
+Oklahoma,2002,Fall,171,"3,489,080",4.9,4.8,881
+Oklahoma,2002,Fire/Flame,72,"3,489,080",2.06,2.06,"1,524"
+Oklahoma,2002,Firearm,452,"3,489,080",12.96,12.81,"10,766"
+Oklahoma,2002,Machinery,20**,"3,489,080",0.57**,0.57**,294
+Oklahoma,2002,Natural/Environmental,18**,"3,489,080",0.52**,0.52**,274
+Oklahoma,2002,Drug Poisoning,240,"3,489,080",6.88,7.06,"5,423"
+Oklahoma,2002,Non-Drug Poisoning,44,"3,489,080",1.26,1.27,921
+Oklahoma,2002,Struck by / against,14**,"3,489,080",0.40**,0.40**,278
+Oklahoma,2002,Suffocation,153,"3,489,080",4.39,4.4,"3,289"
+Oklahoma,2002,"Motor vehicle, traffic",757,"3,489,080",21.7,21.45,"19,651"
+Oklahoma,2002,"Pedal cyclist, other",--,"3,489,080",--,--,--
+Oklahoma,2002,"Pedestrian, other",11**,"3,489,080",0.32**,0.33**,261
+Oklahoma,2002,"Transport, other land",12**,"3,489,080",0.34**,0.33**,362
+Oklahoma,2002,"Transport, other (excl. drown by water transp)",10**,"3,489,080",0.29**,0.28**,172
+Oklahoma,2002,Other specified and classifiable,40,"3,489,080",1.15,1.17,"1,340"
+Oklahoma,2002,Other specified / NEC,18**,"3,489,080",0.52**,0.51**,221
+Oklahoma,2002,Unspecified,189,"3,489,080",5.42,5.33,"1,903"
+Oklahoma,2001,Cut/Pierce,27,"3,467,100",0.78,0.79,805
+Oklahoma,2001,Drowning (includes water transport),60,"3,467,100",1.73,1.7,"1,954"
+Oklahoma,2001,Fall,198,"3,467,100",5.71,5.54,"1,036"
+Oklahoma,2001,Fire/Flame,64,"3,467,100",1.85,1.84,"1,435"
+Oklahoma,2001,Hot object/Substance,--,"3,467,100",--,--,--
+Oklahoma,2001,Firearm,489,"3,467,100",14.1,14.01,"11,438"
+Oklahoma,2001,Machinery,17**,"3,467,100",0.49**,0.48**,164
+Oklahoma,2001,Natural/Environmental,32,"3,467,100",0.92,0.92,397
+Oklahoma,2001,Drug Poisoning,269,"3,467,100",7.76,7.99,"6,769"
+Oklahoma,2001,Non-Drug Poisoning,52,"3,467,100",1.5,1.56,"1,217"
+Oklahoma,2001,Struck by / against,14**,"3,467,100",0.40**,0.42**,373
+Oklahoma,2001,Suffocation,197,"3,467,100",5.68,5.64,"3,604"
+Oklahoma,2001,"Motor vehicle, traffic",708,"3,467,100",20.42,20.24,"19,253"
+Oklahoma,2001,"Pedal cyclist, other",--,"3,467,100",--,--,--
+Oklahoma,2001,"Pedestrian, other",25,"3,467,100",0.72,0.73,615
+Oklahoma,2001,"Transport, other land",25,"3,467,100",0.72,0.72,569
+Oklahoma,2001,"Transport, other (excl. drown by water transp)",16**,"3,467,100",0.46**,0.46**,501
+Oklahoma,2001,Other specified and classifiable,45,"3,467,100",1.3,1.31,"1,223"
+Oklahoma,2001,Other specified / NEC,28,"3,467,100",0.81,0.79,365
+Oklahoma,2001,Unspecified,212,"3,467,100",6.12,5.96,"1,730"
+Total,,,"68,708","78,867,790",87.12,86.13,"1,336,890"
+,,,,,,,
+Injury Outcome: Fatal,,,,,,,
+Injury Type: All Injury,,,,,,,
+Data Years: 2001 to 2021,,,,,,,
+Geography: Oklahoma,,,,,,,
+Intent: All Intents,,,,,,,
+Mechanism: All Injury,,,,,,,
+Age: All Ages,,,,,,,
+Sex: Both Sexes,,,,,,,
+Race: All Races,,,,,,,
+Ethnicity: All Ethnicities,,,,,,,
+Metro / Non-Metro Indicator: None Selected,,,,,,,
+YPLL Age: 65,,,,,,,
+Year and Race Options: 2001 - 2021 with No Race,,,,,,,
+"Produced by: National Center for Injury Prevention and Control, CDC.",,,,,,,
