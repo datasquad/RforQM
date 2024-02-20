@@ -1292,16 +1292,10 @@ would have seen that there are loots of agencies.</p>
 <p>Let’s have a look at one particular row of data to get a feel for the
 data.</p>
 <pre class="r"><code>officers_data[99,]</code></pre>
-<pre><code>##    data_year       ori pub_agency_name pub_agency_unit state_abbr
-## 99      2021 AL0120100       LaFayette                         AL
-##         division_name region_name county_name agency_type_name
-## 99 East South Central       South    CHAMBERS             City
-##           population_group_desc population male_officer_ct male_civilian_ct
-## 99 Cities from 2,500 thru 9,999       2858              11                0
-##    male_total_ct female_officer_ct female_civilian_ct female_total_ct
-## 99            11                 0                  1               1
-##    officer_ct civilian_ct total_pe_ct pe_ct_per_1000
-## 99         11           1          12            4.2</code></pre>
+<pre><code>##    data_year pub_agency_name state_abbr county_name agency_type_name
+## 99      2021       LaFayette         AL    CHAMBERS             City
+##    total_pe_ct pe_ct_per_1000
+## 99          12            4.2</code></pre>
 <p>Let’s start by changing the names of the State and Year
 variables.</p>
 <pre class="r"><code>names(officers_data)[names(officers_data)==&quot;data_year&quot;] &lt;- &quot;Year&quot;
