@@ -1,0 +1,256 @@
+---
+title: "R-work for Online Assessment (2024), ECON20222"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
+student_view <- 'hide'   # set to 'hide' to not reveal output, 'markup' to show
+solution_echo <- FALSE   # set to FALSE to not show full code, TRUE to show full code
+```
+
+# Instructions
+
+You should work through the code below and complete it.  Keep the completed code
+and all the resulting output.  Next you should answer the questions in the
+online quiz.  Every student will see a slightly different collection of
+questions (as we will randomly draw 10 questions from a pool of about 20
+questions).
+
+The questions are of four types.
+
+1) Questions that merely ask you to report output from your analysis.
+
+2) Some questions will ask you about R code.  For example, you will see a lot of
+gaps (`XXXX`) in the code and questions may ask you how to complete the code to
+make the code work.  Sometimes the `XXXX` will represent one word and on other occasions it will represent a full line (or two) of code. Other questions may ask you about the output to be produced
+by a particular bit of code.  
+
+3) The third type of questions will test your understanding of econometric
+issues.  For example:  "What is the meaning of an estimated coefficient?" "Is a
+particular coefficient statistically significant?"
+
+4) The fourth type of question, if asked, will be on general programming issues.
+For example:  what is the meaning of a particular error message, or, how would
+you search for a particular piece of information.
+
+# Preparing your workfile
+
+We add the basic libraries needed for this week's work:
+
+```{r}
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # to produce nice graphiscs
+library(stargazer)    # to produce nice results tables
+library(AER)          # access to HS robust standard errors
+library(knitr)
+source("stargazer_HC.r")  # includes the robust regression display
+```
+
+# Introduction
+
+The data used are data from the Gun restriction work that you would have seen before. Here we use the dataset "US_Gun_example_v3.csv". The data are 1071 state-year observations.
+
+The dataaset was created (see the detailed work through in the Group Project page) to replicate the work in: Siegel et al (2019) The Impact of State Firearm Laws on Homicide and Suicide Deaths in the USA, 1991–2016: a Panel Study, J Gen Intern Med 34(10):2021–8.
+
+
+
+# Data Upload - and understanding data structure
+
+Upload the data, which are saved in the csv. Making sure that the path to your file 
+
+```{r, eval = FALSE}
+data_us <- XXXX("data/US_Gun_example_v3.csv")
+names(XXXX)
+```
+```{r, echo = solution_echo}
+data_us <- read_csv("../data/US Gun_example_v3.csv")
+names(data_us)
+```
+
+You should have 1071 rows and 18 variables.
+
+Let us look at a particular observation so we can understand the data
+
+```{r}
+data_us[79,]
+```
+
+You should see an observation for Nebraska in Year 2002.
+
+Let us ensure that categorical variables are stored as `factor` variables. It is easiest to work with these in R. In particular the `State`, `State_code` and `Region` variables should be defined as a factor variables.
+
+```{r, eval  = FALSE}
+data_us$State <- XXXX
+XXXX
+XXXX
+
+```
+```{r, echo = solution_echo}
+data_us$State <- as_factor(data_us$State)
+data_us$State_code <- as_factor(data_us$State_code)
+data_us$Region <- as_factor(data_us$Region)
+```
+
+
+
+## Task 1
+
+Find out what the 10 observations with the highest rates of firearm deaths per 100,000 population (`firearm.deaths.pc`) are. In which states are they are and in what years did they occur (i.e. create a Top 10 League Table).
+
+```{r, eval = FALSE,results = student_view}
+task1 <- data_XXXX %>%  select(State, Year, XXXX) %>%  arrange(desc(XXXX)) 
+kable(task1[1:10,]) # in R %>% print() will show ok
+```
+You should find Mississippi in Year 2021 at the top of your table.
+
+```{r, echo = solution_echo, results=student_view}
+task1 <- data_us %>%  select(State, Year, firearm.deaths.pc) %>%  arrange(desc(firearm.deaths.pc)) 
+kable(task1[1:10,]) # in R %>% print() will show ok
+```
+
+Create a similar table for the top 10 observations for violent crimes per 100,000 (`vcrime.pc`).
+
+```{r, echo = solution_echo, results=student_view}
+task1 <- data_us %>%  select(State, Year, vcrime.pc) %>%  arrange(desc(vcrime.pc)) 
+kable(task1[1:10,]) # in R %>% print() will show ok
+```
+
+## Task 2 
+
+Now we add some new information to the table. We want to indicate whether in the 2020 presidential election the candidate of the Democratic Party (Joe Biden) or the caldidate of the Republican Party (Donald Trump) won the election. Add this information to the dataset using a new variable called `party2020`. The value of that variable should be either `Rep` or `Dem` depending on who won the election. Add this variable to all years not only 2020.
+
+There are plenty of sources you could use to get this information. It is your job to find the information and add it to your datafile.
+
+```{r, echo = solution_echo}
+data_uselec <- read_csv("../data/USPresElections2020.csv") # I created a spreadsheet with State names and a new variable
+                                                      # indicating Dem or Rep depending on the winning candidate
+data_us <- merge(data_us, data_uselec)
+```
+
+To test that you are right you should select the data for **2021 only** and confirm that 26 states were won by the Democratic Party candidate and 25 by the Republican Party candidate. 
+
+Calculate the mean, the median and the standard deviation for the variables `vcrime.pc` and `firearm.deaths.pc` for the 2021 data, grouped by the `party2020` variable. Further you should be able to confirm that, when averaging the `vcrime.pc` variable across the states won by the Democratic Party candidate, you get a value of 341.4821 for the 2021 data.
+
+```{r, echo=solution_echo, results=student_view}
+data_us_2021 <- data_us %>% filter(Year == 2021)
+data_us_2021 %>%  group_by(party2020) %>% summarise(avg_vcrime.pc = mean(vcrime.pc),
+                                                    med_vcrime.pc = median(vcrime.pc),
+                                                    sd_vcrime.pc = sd(vcrime.pc),
+                                                    avg_firearm.deaths.pc = mean(firearm.deaths.pc),
+                                                    med_firearm.deaths.pc = median(firearm.deaths.pc),
+                                                    sd_firearm.deaths.pc = sd(firearm.deaths.pc))
+```
+
+
+## Task 3
+
+In Task two you calculated a range of summary statistics across states, but we calculated unweighted statistics, meaning that California, with a population of almost 40 million in 2021, had the same weight as Rhode Island with about 1m population. Let's calculate a weighted mean for a number of variables for the 2021 data grouped by `party2020`. The variables for which you should calculate the weighted average are, `vcrime.pc`, `firearm.deaths.pc`, `ur`, `homi.pc` and `alcc.pc`. 
+
+```{r, echo=solution_echo, results=student_view}
+data_us_2021 %>%  group_by(party2020) %>% summarise(wavg_vcrime.pc = weighted.mean(vcrime.pc,Population),
+                                                    wavg_firearm.deaths.pc = weighted.mean(firearm.deaths.pc,Population),
+                                                    wavg_ur = weighted.mean(ur,Population),
+                                                    wavg_homi.pc = weighted.mean(homi.pc,Population),
+                                                    wavg_alcc.pc = weighted.mean(alcc.pc,Population))
+```
+
+You have it correct if you find that the population weighted average for `vcrime.pc` in states in which the Republican candidate won in 2021 is 420.8098. 
+
+## Task 4
+
+Here we create a number of plots. Unfortunately your lecturer has given you **faulty and incomplete** code. It is your task to fix this code.
+
+Create a time-series plot in which you show the development of the `ur` variable for the four states that had the biggest population in 2021.
+
+```{r, eval = FALSE}
+dataplot1 <- data_us %>% filter(XXXX XXXX c("CA","XXXX","XXXX","XXX")) 
+
+plot1 <- ggplot(XXXX, aes(x = XXXX, y = XXXX, colour > XXXX))   +
+            geomline() +
+            title("Unemployment rates in selected US states")
+plot1
+```
+
+```{r, echo = solution_echo, results=student_view}
+dataplot1 <- data_us %>% filter(State_code %in% c("CA","TX","FL","NY")) 
+
+plot1 <- ggplot(dataplot1, aes(x = Year, y = ur, colour = State))   +
+            geom_line() +
+            ggtitle("Unemployment rates in selected US states")
+plot1
+```
+
+You want to create histograms for the `alcc.pc` variable (using data for all years). But you want to create histograms for the different regions and display them in a grid. After searching the internet for code you adjusted the examples you found to work with your code: 
+
+```{r}
+plot2 <- ggplot(data_us, aes(x=alcc.pc)) +
+    geom_histogram(bins = 10,aes(y = ..density..)) +
+    facet_wrap(vars(Region)) +
+    labs(x="Alcohol consumption per capita")
+
+plot2
+```
+
+Look at online support to understand what the option `facet_wrap(vars(Region))` does.
+
+## Task 5
+
+Estimate the following regression models (using all available state=year observations in `data_us`).
+
+
+\[mod1: homi.pc = \beta_0 + \beta_1 ~ ur + \beta_2 ~ alcc.pc + c_s  + u\]
+
+and 
+
+\[mod2: homi.pc = \alpha_0 + \alpha_1 ~ ur + \alpha_2 ~ alcc.pc + \alpha_3 ~ incarc.pc + \alpha_4 ~ law.officers.pc + c_s + u\]
+
+The term $c_s$ represents State fixed effects. Estimate these models using the following skeleton code:
+
+```{r, eval = FALSE}
+mod1 <- lm(homi.pc ~ XXXX + XXXX + State, data = XXXX)
+mod2 <- lm(XXXX)
+stargazer_HC(mod1,mod2,type_out="text")
+```
+```{r, echo = solution_echo, results = student_view}
+mod1 <- lm(homi.pc ~ ur+alcc.pc+State, data = data_us)
+mod2 <- lm(homi.pc ~ ur+alcc.pc+incarc.pc+law.officers.pc+State, data = data_us)
+stargazer_HC(mod1,mod2, type_out="text")
+```
+
+You have done this correctly if the estimated constants of the two models are 4.521 (`mod1`) and 6.099 (`mod2`). 
+
+Think about the interpretation of the results, in particular the $R^2$ values and the parameter estimates for $\beta_1$ and $\beta_2$ as well as $\alpha_1$ to $\alpha_4$. In particular, does any of the above allow a causal interpretation? Also think about how you would perform inference (t-tests) on any of the estimated coefficients. For instance, how would you test $H_0: \alpha_1 = 0$ against $H_A: \alpha_1 \ne 0$. Or how would you test $H_0: \alpha_1 = -0.1$ against $H_A: \alpha_1 \ne -0.1$. Be prepared to be asked to do this during the test.
+
+
+## Task 6
+
+Undertake the following hypothesis tests and calculate the p-values (using heteroskedasticity robust standard errors):
+
+* $H_0: \beta_1 = 0, H_A: \beta_1 \neq 0$
+* $H_0: \beta_2 = 0, H_A: \beta_2 \neq 0$
+* $H_0: \beta_1 = -0.1, H_A: \beta_1 \neq -0.1$
+* $H_0: \beta_2 = 2, H_A: \beta_2 \neq 2$
+* $H_0: \beta_1 = 0~and~\beta_2 = 0, H_A: \beta_1 \neq 0~and/or~\beta_2 \neq 0$
+* $H_0: \alpha_3 = 0~and~\alpha_4 = 0, H_A: \alpha_3 \neq 0~and/or~\alpha_4 \neq 0$
+
+```{r, echo = solution_echo, results = student_view}
+lht(mod1,c("ur=0"), white.adjust = TRUE)
+lht(mod1,c("alcc.pc=0"), white.adjust = TRUE)
+lht(mod1,c("ur=-0.1"), white.adjust = TRUE)
+lht(mod1,c("alcc.pc=2"), white.adjust = TRUE)
+lht(mod1,c("ur=0","alcc.pc=0"), white.adjust = TRUE)
+lht(mod2,c("incarc.pc=0","law.officers.pc=0"), white.adjust = TRUE)
+#lht(mod1,c("ur=0","alcc.pc=0"), white.adjust = TRUE)
+```
+
+Attempt to understand what the following test does?
+
+```{r, results = 'hide'}
+coefs <- names(coef(mod2))
+lht(mod1,coefs[grep("State",coefs)], white.adjust = TRUE)
+```
+
+
+END OF INSTRUCTIONS
+
