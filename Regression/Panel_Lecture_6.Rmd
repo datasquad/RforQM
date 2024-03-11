@@ -42,7 +42,7 @@ The data are an extract from the [Understanding Society Survey](https://www.unde
 Upload the data, which are saved in a STATA datafile (extension `.dta`). There is a function which loads STATA file. It is called `read_dta` and is supplied by the `haven` package.
 
 ```{r}
-data_USoc <- read_dta("20222_USoc_extract.dta")
+data_USoc <- read_dta("../data/20222_USoc_extract.dta")
 data_USoc <- as.data.frame(data_USoc)    # ensure data frame structure
 names(data_USoc)
 ```

@@ -5,8 +5,8 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE)
-student_view <- 'hide'   # set to 'hide' to not reveal output, 'markup' to show
-solution_echo <- FALSE   # set to FALSE to not show full code, TRUE to show full code
+student_view <- 'markup'   # set to 'hide' to not reveal output, 'markup' to show
+solution_echo <- TRUE   # set to FALSE to not show full code, TRUE to show full code
 ```
 
 # Instructions
@@ -68,7 +68,7 @@ data_us <- read_csv("../data/US Gun_example_v3.csv")
 names(data_us)
 ```
 
-You should have 1071 rows and 18 variables.
+You should have 1071 rows and 17 variables.
 
 Let us look at a particular observation so we can understand the data
 
@@ -118,7 +118,7 @@ kable(task1[1:10,]) # in R %>% print() will show ok
 
 ## Task 2 
 
-Now we add some new information to the table. We want to indicate whether in the 2020 presidential election the candidate of the Democratic Party (Joe Biden) or the caldidate of the Republican Party (Donald Trump) won the election. Add this information to the dataset using a new variable called `party2020`. The value of that variable should be either `Rep` or `Dem` depending on who won the election. Add this variable to all years not only 2020.
+Now we add some new information to the table. We want to indicate whether in the 2020 presidential election the candidate of the Democratic Party (Joe Biden) or the candidate of the Republican Party (Donald Trump) won the election. Add this information to the dataset using a new variable called `party2020`. The value of that variable should be either `Rep` or `Dem` depending on who won the election. Add this variable to all years not only 2020.
 
 There are plenty of sources you could use to get this information. It is your job to find the information and add it to your datafile.
 
@@ -130,7 +130,7 @@ data_us <- merge(data_us, data_uselec)
 
 To test that you are right you should select the data for **2021 only** and confirm that 26 states were won by the Democratic Party candidate and 25 by the Republican Party candidate. 
 
-Calculate the mean, the median and the standard deviation for the variables `vcrime.pc` and `firearm.deaths.pc` for the 2021 data, grouped by the `party2020` variable. Further you should be able to confirm that, when averaging the `vcrime.pc` variable across the states won by the Democratic Party candidate, you get a value of 341.4821 for the 2021 data.
+Calculate the mean, the median and the standard deviation for the variables `vcrime.pc` and `firearm.deaths.pc` for the 2021 data, grouped by the `party2020` variable. Further you should be able to confirm that, when averaging the `vcrime.pc` variable across the states won by the Democratic Party candidate, you get a value of 340.3234 for the 2021 data (in a previous version this said 341.4821, but that was actually for the 2020 data, sorry) .
 
 ```{r, echo=solution_echo, results=student_view}
 data_us_2021 <- data_us %>% filter(Year == 2021)
@@ -155,7 +155,7 @@ data_us_2021 %>%  group_by(party2020) %>% summarise(wavg_vcrime.pc = weighted.me
                                                     wavg_alcc.pc = weighted.mean(alcc.pc,Population))
 ```
 
-You have it correct if you find that the population weighted average for `vcrime.pc` in states in which the Republican candidate won in 2021 is 420.8098. 
+You have it correct if you find that the population weighted average for `vcrime.pc` in states in which the Republican candidate won in 2021 is 406.8805 (a previous version said 420.8098 but that was for the 2020 data, sorry) . 
 
 ## Task 4
 
@@ -175,8 +175,8 @@ plot1
 ```{r, echo = solution_echo, results=student_view}
 dataplot1 <- data_us %>% filter(State_code %in% c("CA","TX","FL","NY")) 
 
-plot1 <- ggplot(dataplot1, aes(x = Year, y = ur, colour = State))   +
-            geom_line() +
+plot1 <- ggplot(dataplot1, aes(Year,ur,colour = State))   +
+            geom_line(size = 1) +
             ggtitle("Unemployment rates in selected US states")
 plot1
 ```
@@ -196,7 +196,7 @@ Look at online support to understand what the option `facet_wrap(vars(Region))` 
 
 ## Task 5
 
-Estimate the following regression models (using all available state=year observations in `data_us`).
+Estimate the following regression models (using all available state-year observations in `data_us`).
 
 
 \[mod1: homi.pc = \beta_0 + \beta_1 ~ ur + \beta_2 ~ alcc.pc + c_s  + u\]
@@ -223,6 +223,20 @@ You have done this correctly if the estimated constants of the two models are 4.
 Think about the interpretation of the results, in particular the $R^2$ values and the parameter estimates for $\beta_1$ and $\beta_2$ as well as $\alpha_1$ to $\alpha_4$. In particular, does any of the above allow a causal interpretation? Also think about how you would perform inference (t-tests) on any of the estimated coefficients. For instance, how would you test $H_0: \alpha_1 = 0$ against $H_A: \alpha_1 \ne 0$. Or how would you test $H_0: \alpha_1 = -0.1$ against $H_A: \alpha_1 \ne -0.1$. Be prepared to be asked to do this during the test.
 
 
+```{r, echo = solution_echo, results = student_view}
+# When interpreting regression coefficients you should always be prepared to 
+# interpret the effect size relative to the sample mean of the explanatory and
+# dependent variable such that you can judge whether the effect is economically 
+# important.
+# For instance, in mod1, the parameter estimate to alpha_1 is -0.151. This is interpreted as: 
+# If the unemployment rate increases by 1 percentage point we should expect the 
+# number of homicides per person to decrease by 0.151, 
+# which is less than 5% of the average homicide rate (which is 5.149). A one percentage
+# point increase in the unemployment rate would be a significant increase 
+# (as the average ur is 5.648 and 1 percentage point is represented by an increase of 1.0)
+
+```
+
 ## Task 6
 
 Undertake the following hypothesis tests and calculate the p-values (using heteroskedasticity robust standard errors):
@@ -241,16 +255,35 @@ lht(mod1,c("ur=-0.1"), white.adjust = TRUE)
 lht(mod1,c("alcc.pc=2"), white.adjust = TRUE)
 lht(mod1,c("ur=0","alcc.pc=0"), white.adjust = TRUE)
 lht(mod2,c("incarc.pc=0","law.officers.pc=0"), white.adjust = TRUE)
-#lht(mod1,c("ur=0","alcc.pc=0"), white.adjust = TRUE)
 ```
 
 Attempt to understand what the following test does?
 
-```{r, results = 'hide'}
+```{r, results = student_view}
 coefs <- names(coef(mod2))
 lht(mod1,coefs[grep("State",coefs)], white.adjust = TRUE)
 ```
 
+
+```{r, echo = solution_echo, results = student_view}
+# The p-value of this test is very small, such that Null hypothesis is rejected.
+```
+
+The above code was unfortunately not what I had intended. My plan was to test this
+
+```{r, results = student_view}
+coefs <- names(coef(mod1))
+lht(mod1,coefs[grep("State",coefs)], white.adjust = TRUE)
+```
+
+```{r, echo = solution_echo, results = student_view}
+# It tests whether the inclusion of the state dummy variables significantly adds 
+# to explaining variation in the dependent variable.
+
+# As I understand that I confused some as I used names of mod1 but testing
+# in mod 2, everyone who attempted to answer the question will get 0.5 marks for 
+# the interpretation of the test.
+```
 
 END OF INSTRUCTIONS
 

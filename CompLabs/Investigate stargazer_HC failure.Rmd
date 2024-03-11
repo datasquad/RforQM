@@ -1,0 +1,65 @@
+---
+title: "Investigate stargazer_HC failure"
+author: "Ralf Becker"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+
+# Introduction
+
+Let's start by loading some useful packages
+
+```{r}
+library(readxl)       # enable the read_excel function
+library(tidyverse)    # for almost all data handling tasks
+library(ggplot2)      # plotting toolbox
+library(stargazer)    # for nice regression output
+library(AER)          # access to HS robust standard errors
+```
+
+
+You should also save the separately supplied `stargazer_HC.r` file in your working directory. This will make it straightforward to estimate and compare regressions with robust standard errors. Once you have done that you should include the following line into your code which basically makes this function available to you.
+
+```{r}
+source("stargazer_HC.r")  # includes the robust regression 
+```
+
+
+# Data Import
+
+As in Computer Lab 2 we import the dataset for the gun law example, however, do upload the new csv file "US_Gun_example_v2.csv" which now includes the proportion of 18 to 24 years old and information on the region in which each state is located in. 
+
+```{r}
+data2 <- read.csv("../data/US_Gun_example_v2.csv", stringsAsFactors = TRUE)          # import data
+str(data2)
+
+```
+
+
+$mod2: AAR_i = \alpha + gamma_1~lo.pc_i + v_i$
+
+$mod3: AAR_i = \alpha + beta_1~lo.pc_i + \beta_2 ~ ur_i + \beta3 ~alcc.pc_i + u_i$
+
+```{r, eval = TRUE}
+mod2 <- lm(Age.Adjusted.Rate~law.officers.pc,data=data2)
+mod3 <- lm(Age.Adjusted.Rate~law.officers.pc+ur+alcc.pc+State,data=data2)
+stargazer(mod2,mod3,keep = c("law.officers.pc"),type = "text")
+```
+```{r, eval = TRUE}
+mod4 <- lm(Age.Adjusted.Rate~law.officers.pc+ur+alcc.pc+Region,data=data2)
+stargazer_HC(mod2,mod3,mod4,keep = c("law.officers.pc"),type_out = "text")
+```
+
+```{r, echo = FALSE, results = "hide"}
+mod5 <- lm(Age.Adjusted.Rate~law.officers.pc+ur+alcc.pc+State,data=data2)
+stargazer_HC(mod2,mod3,mod4,mod5,keep = c("law.officers.pc"),type_out = "text")
+```
+
+```{r, eval = TRUE}
+stargazer_HC(mod2,mod3,mod4,mod5,keep = c("law.officers.pc", "ur", "alcc.pc"),omit.stat=c("f"),type_out = "text")
+```
