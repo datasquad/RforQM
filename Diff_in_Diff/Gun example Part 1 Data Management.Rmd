@@ -578,7 +578,7 @@ Do we now have the homicide data used in the Siegel et al (2019) paper. Let's se
 merge_data %>% filter(State == "Louisiana", Year == 2016) %>% select(State, Year, homi.pc) %>% unique()
 ```
 
-As you can see the value is not exactly the same. The reason is that the data we got from the F.B.I. website are not age adjusted data (as are the data from the CDC). This means that in the later analysis we can either use the age adjusted forearm deaths data or the non-age adjusted homicide data. We could of course also attempt to apply the age adjustment procedure, but we will not do this here.
+As you can see the value is not exactly the same. The reason is that the data we got from the F.B.I. website are not age adjusted data (as are the data from the CDC). This means that in the later analysis we can either use the age adjusted firearm deaths data or the non-age adjusted homicide data. We could of course also attempt to apply the age adjustment procedure, but we will not do this here.
 
 
 ### Per-capita alcohol consumption

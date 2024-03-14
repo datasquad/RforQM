@@ -302,7 +302,7 @@ Note that we did not use cluster robust standard errors. Convention is that you 
 Note what variables were included by specifying the model as "log.fd.pc~State+d*Year":
 
 * a constant (which is included by default)
-* State dummy variables, 8 of them, Alabama is the base state here
+* State dummy variables, 8 of them, Rhode Island is the base state here
 
 The remaining variables are included as a result of "d*Year"
 
@@ -323,68 +323,29 @@ coefplot(mod_event_sub1, coefficients = coef_keep, innerCI = 0, horizontal = TRU
   guides(x = guide_axis(n.dodge = 2)) # this offsets every 2nd x axis label
 ```
 
-The confidence bars indicate +/- 2 standard errors. However, the standard errors used here are the normal standard errors and not the heteroskedasticity robust ones. Unfortunately the `coefplot` function does not have an option to feed in the correct standard errors. So for now we treat the standard errors are indicative only.
-
-There are two important observations from this. First, all the coefficients up to the period of policy implementation (2015) are close to 0. This suggests that there is no evidence against the parallel trends assumption prior to the policy implementation. Second, the coefficients after 2015 indicate that in the policy states there was a somewhat positive effect of the policy, although we are not sure about the statistical significance. But note that this result suggests that the effect only manifested itself a few years after the policy introduction (in 2013).
-
-You could re-run the plot without the confidence intervals by adding the option `outerCI = 0`.
+The confidence bars indicate +/- 2 standard errors. There are two important observations from this. First, all the coefficients up to the period of policy implementation (2015) are close to 0 and certainly statistically insignificant. This suggests that there is no evidence against the parallel trends assumption prior to the policy implementation. Second, the coefficients after 2015 indicate that in the policy states there was a somewhat positive effect of the policy, although the individual coefficients are all not statistically significantly different from 0. The confidence intervals still include the 0.
 
 We could run a hypothesis test to test the hypothesis that all of the post policy coefficients are equal to 0.
 
-```{r, eval = FALSE}
-coef_test <- c("d:Year2016","d:Year2014","d:Year2015","d:Year2016","d:Year2017","d:Year2018","d:Year2019","d:Year2020","d:Year2021")
+```{r}
+coef_test <- c("d:Year2016","d:Year2017","d:Year2018","d:Year2019","d:Year2020","d:Year2021")
 lht(mod_event_sub1,coef_test, white.adjust = TRUE)
 ```
 
 When you do this you will get an error message most likely saying something like "there are aliased coefficients in the model". The issue here is that the model still includes the variable `d`, the ever treated dummy. R excluded it in the regression output but the `lht` procedure does not do that and the above is R's charming way of saying that something isn't right in the model (`lm` brushed this underneath the carpet).
 
-So what we really need to do is to specify the same model as above without the `d`. But that means that we cannot use the neat trick of including `d*Year`. Let's do a little workaround to get there without having to define all of the more than 40 variables individually.
+So what we really need to do is to speify the same model as above without the `d`. But that means that we cannot use the neat trick of including `d*Year`.
 
 ```{r}
-X <- model.matrix(mod_event_sub1) # puts all the explanatory variables used in mod-event_sub into a matrix
-X. <- X[, -c(1,10)]  # we delete columns 1 - the the intercept - and 10 - the d variable 
-
-# now we re-estimate the model using matrix X. which contains all variables
-# from the earlier model but for d and the intercept
-# the lm function will automatically re-insert the intercept
+X <- model.matrix(mod_event_sub1) # puts all the explan variables used in mod-event_sub into a matrix
+X. <- X[, -c(1,10)]
 mod_event_sub1b <- lm(log.fd.pc~X., data = pdata_sub1)
 stargazer_HC(mod_event_sub1b, type_out="text")
 ```
-Now we can test the null hypothesis that all the coefficients for the interaction terms between `d` and the Years 2016 to 2021 are not different from 0.
 
 ```{r}
-# first collect all the variables we want to include into H0 in a list
-# Note that now the variables have a "X." at the beginning
-coef_test <- c("X.d:Year2013","X.d:Year2014","X.d:Year2015","X.d:Year2016","X.d:Year2017","X.d:Year2018","X.d:Year2019","X.d:Year2020","X.d:Year2021")
+coef_test <- c("X.d:Year2016","X.d:Year2017","X.d:Year2018","X.d:Year2019","X.d:Year2020","X.d:Year2021")
+coef_test <- c("X.d:Year2017")
 
-# Now we feed this into the lht function to test
-# we also feed in the heteroskedasticity robust standard errors
-lht(mod_event_sub1b,coef_test,  vcov = vcovHC(mod_event_sub1b, type = "HC1"))
+lht(mod_event_sub1b,coef_test, white.adjust = TRUE)
 ```
-
-The result suggests (p-value of 0.003) that there does seem to be a positive effect after the policy introduction. 
-
-Note that the `lht` function allows you to feed in the standard error procedure you need to use. Here, as we only had few states we fed in the procedure to estimate heteroskedasticity robust standard errors. What you see here is exactly what `stargazer_HC` does underneath the hood. If you were using cluster robust standard errors you would use `vcov = vcovCL(mod_event_sub1b, cluster = ~ State)` instead. 
-
-Another advantage of estimating the event study model is to be able to present some evidence which will allow you to make informed statements about the parallel trends assumption. If the parallel trends assumption holds you would expect all coefficients to `d:YearXXXX` interaction terms before the policy intervention to be 0. So we can test this hypothesis in the same manner as above, just by collecting a different list of coefficient names.
-
-```{r}
-# first collect all the variables we want to include into H0 in a list
-# Note that now the variables have a "X." at the beginning
-coef_test <- c("X.d:Year2002","X.d:Year2003","X.d:Year2004","X.d:Year2005","X.d:Year2006","X.d:Year2007",
-               "X.d:Year2008","X.d:Year2009","X.d:Year2012")
-
-# Now we feed this into the lht function to test
-# we also feed in the heteroskedasticity robust standard errors
-lht(mod_event_sub1b,coef_test,  vcov = vcovHC(mod_event_sub1b, type = "HC1"))
-```
-
-Now you see that the null hypothesis of all these coefficients being equal to 0 is not rejected. This means that there is, in these data, no evidence against the parallel trends assumption before the policy was implemented. Note that this is not the same as testing the parallel trends assumption. That refers to the assumption that after the policy was introduced both treatment and control group states would have evolved parallel. This result is merely suggestive as it used only coefficients from before the policy was introduced.
-
-## Outlook
-
-The event studies approach introduced here is a very nice way of setting up a clean treatment group in the sense that all states in the treatment group have implemented the policy in the same period. This then enabled us to estimate the time profile of the policy effect (here we found that the effect is delayed) and also obtain some good evidence regarding the parallel trends assumption.
-
-When we looked at the TWFE model we had a somewhat more flexible setup. In particular we allowed treatments to come in at different time-periods (staggered policy design). Very recent research into the properties of these estimation methods has concluded that estimating TWFE models with staggered policy design can be very problematic and deliver misleading results, in particular if the effects of the policy on outcome variables differs between states. Imagine that the introduction of a shall policy in Illinois had a different effect on firearm deaths than the introduction of that policy in Alabama. This is a situation which is not unlikely in most examples.
-
-Very recent methodological advances are dealing with such situations. They are not covered here. However, a simple way around this issue is to divide your sample into clean setups like the one above which only had Illinois and Alabama in the treatment group as they introduced the policy at the same time. If you go back to the earlier image that displays when states introduced policies you will find that you could construct another clean treatment group with Nebraska and Kansas. As it turns out, most of the recent advances in Difference in Difference estimation make clever use of such clean treatment groups.
