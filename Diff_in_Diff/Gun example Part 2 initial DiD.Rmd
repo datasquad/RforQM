@@ -131,7 +131,7 @@ Also create the above image for the `pol_vmisd` variable. You will see that ther
 
 ### Policy set-up
 
-We wish to evaluate whether a particular gun control policy has a causal effect. The policy considers re the universal background checks policy (`pol_ubc`), policies that prevent person with recorded violent misdemeanors from owning a gun (`pol_vmisd`) and so called may issue laws which gives. From the laws codebook:
+We wish to evaluate whether a particular gun control policy has a causal effect. The policy considered are the universal background checks policy (`pol_ubc`), policies that prevent person with recorded violent misdemeanors from owning a gun (`pol_vmisd`) and the so called may issue laws which gives. From the laws codebook:
 
 ```{r}
 print(toString(law_data_codebook[law_data_codebook$Variable.Name == "mayissue","Detailed.Description.of.Provision"]))
@@ -147,7 +147,7 @@ ggplot(data3, aes(x = Year, y = State)) +
 
 ```
 
-As you can see, these policies are generally being faced out, meaning that states are loosing the ability to deny firearm permits. In terms of a Diff-in-Diff setup we like to evaluate plicies that are being introduced, not phased out. Therefore, in the Siegel et al. paper, you will see a reference to a "Shall issue" policy, which is basically the absence of a "May issue" policy. This is defined as `1-pol_mayissue`. So let is add that variable to the data frame.
+As you can see, these policies are generally being faced out, meaning that authorities are loosing the ability to deny firearm permits. In terms of a Diff-in-Diff setup we like to evaluate plicies that are being introduced, not phased out. Therefore, in the Siegel et al. paper, you will see a reference to a "Shall issue" policy, which is basically the absence of a "May issue" policy. This is defined as `1-pol_mayissue`. So let is add that variable to the data frame.
 
 ```{r}
 data3$pol_shallissue <- 1 - data3$pol_mayissue 
@@ -162,6 +162,7 @@ ggplot(data3, aes(x = Year, y = State)) +
   labs(x="Year", y="State", title="Policy - Shall Issue Policy") 
 
 ```
+
 Now you can see that this is a policy being introduced. The policy is really to remove a gun control policy (that is still a political decision).
 
 
@@ -172,7 +173,7 @@ We will now estimate a TWFE model where $log(fd.pc_{st})$ is the log of the age 
 
 $$log(fd.pc_{st}) = \alpha_s + \gamma_t + \tau~ pol_{st} + error_{st}$$
 
-We extract the data we need and set them up as a panel data set. Before doing that we also calculate the log of the two potential outcome variables.
+We construct the logged outcome variables and set the dataframe up as a panel data set. 
 
 ```{r}
 data3 <- data3 %>% mutate(log.fd.pc = log(firearm.deaths.pc), log.homi.pc = log(homi.pc))
@@ -194,7 +195,7 @@ stargazer(mod_twfe1, mod_twfe2, keep = c("pol_ubc","pol_shallissue"), type="text
 
 The result for `pol_shallissue` is very close to that in Siegel et al. (2019), which is 0.082. Recall that the policy is actually the removal of a gun control policy and therefore the positive sign makes sense. The coefficient for the universal background policy has halfed (from -0.173 in the paper) to -0.086 here. This coefficient is now also statistically insignificant. 
 
-In the Siegel et al. paper they include state and year fixed effects (see their model on page 2022). Have we really included these by adding "State+Year"? In dataset `data3` the `Year` variable was an integer variable and if we include an interger or numerical variable then R will merely estimate one coefficient for that variable.
+In the Siegel et al. paper they include state and year fixed effects (see their model on page 2022). Have we really included these by adding "State+Year"? In dataset `data3` the `Year` variable was an integer variable and if we include an integer or numerical variable then R will merely estimate one coefficient for that variable.
 
 You can test what happened by looking at how many and which coefficients were estimated:
 
@@ -202,19 +203,21 @@ You can test what happened by looking at how many and which coefficients were es
 names(coef(mod_twfe1))
 ```
 
-As you can see the model did include year and state fixed effects. The reason for this is that we used the panel dataset and one of the things that happen when we create a panel dataframe (using `pdata.frame`) is that, if it uses `Year` as the time index it translates that variable into a factor (categorical) variable. It is for this reason that R did include Year fixed effects.
+As you can see the model did include year and state fixed effects. The reason for this is that we used the panel dataset and one of the things that happens when we create a panel dataframe (using `pdata.frame`) is that, if it uses `Year` as the time index it translates that variable into a factor (categorical) variable. It is for this reason that R did include Year fixed effects.
 
 ### Investigating the difference
 
-One possible reason for this is that a lot of the policy variation in that policy may have happened before 2001 and hence we do not see that in our sample. If you go back to the original policy file and check you will find that three states introduced universal background check policies before 2000, Cennecticut (CT), Massachusetts (MA) and Pennsylvania (PA).
+As we are attempting to replicate the results in the Siegel et al. (2019) paper we should attempt to investigate why we do not get identical results. One obvious reason is that we are not using the same sample period. Their sample starts in 1991 to 2016, ours are from 2001 to 2020.
+
+Another possible reason for this is that a lot of the policy variation in the policies may have happened before 2001 and hence we do not see that in our sample. If you go back to the original policy file and check you will find that three states introduced universal background check policies before 2000, Cennecticut (CT), Massachusetts (MA) and Pennsylvania (PA).
 
 A different reason why the results may be different is that we cannot be certain about the policy coding used by Siegel et al. (2019). We combined the two policies that had explicitly "universal" in their naming, however, there are more background check policies. In Table 1 of their paper they state which states had the policy implemented in 1991. They are CA, IL, MA, NJ and RI. However, in the above image we see that only CA and RI have the policy implemented in our coding. 
 
-You could go back to the policy details and you may find that other policies also imply background checks, such as "universalpermit" and "universalpermit". So you could see whether you can replicate Siegel et al. (2019) policy coding. I was unable to replicate this. This merel points to the importance of properly documenting what you do in your work such that someone reading your paper can replicate the work.
+You could go back to the policy details and you may find that other policies also imply background checks, such as "universalpermit". So you could see whether you can replicate Siegel et al. (2019) policy coding. I was unable to replicate this. This merely points to the importance of properly documenting what you do in your work such that someone reading your paper can replicate the work.
 
 Here we will not investigate this line of enquiry any further.
 
-Let us investigate why our results are different. The first possibility is that we are not yet using all the covariates that were included in the Siegel et al. (2019) paper. Once they are included, coefficients may well change as.
+Another reason for differences may be that we are not yet using all the covariates that were included in the Siegel et al. (2019) paper. Once they are included, coefficients may well change. We do not have data for all their covariates, but let's include the ones we have.
 
 
 ```{r}
@@ -230,7 +233,7 @@ stargazer(mod_twfe1c, mod_twfe2c, keep = c("pol_ubc","pol_shallissue"), type="te
 
 You can see that the inclusion of the covariates does not change the main conclusion. In fact, now the coefficient for the `pol_shallissue` variable has also moved away from that published in the paper, although it is still statistically significant.
 
-Let us interpret the coefficient to the the `pol_shallissue` variable. The estimated coefficient is 0.0465, let's say for ase of calculation 0.05. So if the policy went from 0 to 1 (here meaning the abolition of a "may issue" policy or the introduction of a "shall issue" policy) is estimated to have an affect of increasing the log of the firearm deaths by 0.05 log points. This is equivalent to a little more than 5.1% increase (using $100(exp(0.05)-1)$). What does that mean. The average of the `firearm.deaths.pc` variable is 12 firearm deaths per year per 100,000 population. 5% of that is 0.6 per 100,000. In Texas there is a population of about 30 Million. If we project that policy impact on a population of 30,000,000 that would be the equivalent of 180 people a year. 
+Let us interpret the coefficient to the the `pol_shallissue` variable. The estimated coefficient is 0.0465, let's say for ease of calculation 0.05. So if the policy went from 0 to 1 (here meaning the abolition of a "may issue" policy or the introduction of a "shall issue" policy) this is estimated to have an affect of increasing the log of the firearm deaths by 0.05 log points. This is equivalent to a little more than 5.1% increase (using $100(exp(0.05)-1)$). What does that mean? The average of the `firearm.deaths.pc` variable is 12 firearm deaths per year per 100,000 population. 5% of that is 0.6 per 100,000. In Texas there is a population of about 30 Million. If we project that policy impact on a population of 30,000,000 that would be the equivalent of 180 people a year. 
 
 Recall that we recognised that our data for the outcome variable is not the same as that used in Siegel et al. (2019). Above we used `firearm.deaths.pc` but we also acquired the `homi.pc` data from the F.B.I.. Let us re-run the above models (with covariates) with that outcome variable.
 
@@ -252,7 +255,7 @@ As you can see, we now get coefficients that are closer to those published in Si
 
 In the above we applied a TWFE model on a setup with staggered policy. Recently a lot of methodological research has been undertaken that investigates the properties of TWFE type models when there is staggered policy timing (meaning that different states implement policy at different times). It turns out that the resulting effects crucially depend, not only on the parallel trends assumption but also on assuming that the policy has the same effect in different states. Above we estimated that the effect of introducing the "may issue" policy was about 0.05 log points. Basically what we need is that this effect is the same in different states.
 
-It goes without saying that this assumption may be a valid one in some situations, but surely is not a correct assumption in some others. The current research frontier is designing adapted methods that allow for such policy heterogeneity. In this unit we are not covering such advanced methods and you are not expected to adopt these for your project. But we need you to be aware that what you learn in this unit is not the end of the road ... there is always more to learn.
+It goes without saying that this assumption may be a valid one in some situations, but surely is not a correct assumption in some others. The current research frontier is designing adapted methods that allow for such policy heterogeneity. In this unit we are not covering such advanced methods and you are not expected to adopt these for your project. But we need you to be aware that what you learn in this unit is not the end of the road ... there is always more to learn. In fact we will briefly return to this point at the end of this document.
 
 ## Event studies approach
 
@@ -269,7 +272,7 @@ ggplot(pdata, aes(x = Year, y = State)) +
   labs(x="Year", y="State", title="Policy - Shall Issue Policy") 
 ```
 
-From the full dataset we can create subsets of data that create a nice treatment and control group set. For instance pick out the following nine states:
+From the full dataset we can create subsets of data that creates a nice treatment and control group set. For instance pick out the following nine states:
 
 ```{r}
 State_sel <- c("Alabama", "Illinois", "Delaware", "Connecticut", "Rhode Island", "New York", "New Jersey", "Massachusetts", "Maryland")
@@ -293,11 +296,13 @@ State_treat <- c("Alabama", "Illinois")
 # this creates the ever treated dummy variable
 pdata_sub1 <- pdata_sub1 %>% mutate(d = case_when(State %in% State_treat ~ 1,
                                                   TRUE ~ 0))
-mod_event_sub1 <- lm(log.fd.pc~State+d*Year, data = pdata_sub1)
+
+# below we discuss what d*Year does
+mod_event_sub1 <- lm(log.fd.pc~State+d*Year, data = pdata_sub1) 
 stargazer_HC(mod_event_sub1, type_out="text")
 ```
 
-Note that we did not use cluster robust standard errors. Convention is that you should only use them if you have at least 50 clusters, here we only have 4. We therefore use the standard robust standard errors.
+Note that we did not use cluster robust standard errors. Convention is that you should only use them if you have at least 50 clusters, here we only have 9. We therefore use the standard robust standard errors.
 
 Note what variables were included by specifying the model as "log.fd.pc~State+d*Year":
 
@@ -307,7 +312,7 @@ Note what variables were included by specifying the model as "log.fd.pc~State+d*
 The remaining variables are included as a result of "d*Year"
 
 * The dummy variable d, the ever treated variable, but note that this is colinear as it is identical to "StateIllinois + StateAlabama". R realises this and does not report a coefficient, it excludes it from the model
-* Year dummy variables, for every year but the base year 2001m they are labeled "Year2002" to "Year2021"
+* Year dummy variables, for every year but the base year 2001, they are labeled "Year2002" to "Year2021"
 * Interaction terms between d and the Year dummy variables, they are labeled "d:Year2002" to "d:Year2021".
 
 All of these are automatically included by adding "d*Year" to the regression specification. 
@@ -332,7 +337,7 @@ You could re-run the plot without the confidence intervals by adding the option 
 We could run a hypothesis test to test the hypothesis that all of the post policy coefficients are equal to 0.
 
 ```{r, eval = FALSE}
-coef_test <- c("d:Year2016","d:Year2014","d:Year2015","d:Year2016","d:Year2017","d:Year2018","d:Year2019","d:Year2020","d:Year2021")
+coef_test <- c("d:Year2013","d:Year2014","d:Year2015","d:Year2016","d:Year2017","d:Year2018","d:Year2019","d:Year2020","d:Year2021")
 lht(mod_event_sub1,coef_test, white.adjust = TRUE)
 ```
 
@@ -341,8 +346,9 @@ When you do this you will get an error message most likely saying something like
 So what we really need to do is to specify the same model as above without the `d`. But that means that we cannot use the neat trick of including `d*Year`. Let's do a little workaround to get there without having to define all of the more than 40 variables individually.
 
 ```{r}
-X <- model.matrix(mod_event_sub1) # puts all the explanatory variables used in mod-event_sub into a matrix
+X <- model.matrix(mod_event_sub1) # puts all the explanatory variables used in mod_event_sub1 into a matrix
 X. <- X[, -c(1,10)]  # we delete columns 1 - the the intercept - and 10 - the d variable 
+# this new variable is called "X." unconventional but makes life a little easier below
 
 # now we re-estimate the model using matrix X. which contains all variables
 # from the earlier model but for d and the intercept
@@ -350,7 +356,9 @@ X. <- X[, -c(1,10)]  # we delete columns 1 - the the intercept - and 10 - the d 
 mod_event_sub1b <- lm(log.fd.pc~X., data = pdata_sub1)
 stargazer_HC(mod_event_sub1b, type_out="text")
 ```
-Now we can test the null hypothesis that all the coefficients for the interaction terms between `d` and the Years 2016 to 2021 are not different from 0.
+Note that the coefficient estimates are identical to those in `mod_event_sub1`. We basically estimated the same model without R having to silently drop some variables.
+
+Now we can test the null hypothesis that all the coefficients for the interaction terms between `d` and the Years 2013 to 2021 are not different from 0.
 
 ```{r}
 # first collect all the variables we want to include into H0 in a list
@@ -372,19 +380,20 @@ Another advantage of estimating the event study model is to be able to present s
 # first collect all the variables we want to include into H0 in a list
 # Note that now the variables have a "X." at the beginning
 coef_test <- c("X.d:Year2002","X.d:Year2003","X.d:Year2004","X.d:Year2005","X.d:Year2006","X.d:Year2007",
-               "X.d:Year2008","X.d:Year2009","X.d:Year2012")
+               "X.d:Year2008","X.d:Year2009", "X.d:Year2010","X.d:Year2011","X.d:Year2012")
 
 # Now we feed this into the lht function to test
 # we also feed in the heteroskedasticity robust standard errors
 lht(mod_event_sub1b,coef_test,  vcov = vcovHC(mod_event_sub1b, type = "HC1"))
 ```
 
-Now you see that the null hypothesis of all these coefficients being equal to 0 is not rejected. This means that there is, in these data, no evidence against the parallel trends assumption before the policy was implemented. Note that this is not the same as testing the parallel trends assumption. That refers to the assumption that after the policy was introduced both treatment and control group states would have evolved parallel. This result is merely suggestive as it used only coefficients from before the policy was introduced.
+Now you see that the null hypothesis of all these coefficients being equal to 0 is not rejected. This means that there is, in these data, no evidence against the parallel trends assumption before the policy was implemented. Note that this is not the same as testing the parallel trends assumption (which we cannot formally do). That refers to the assumption that after the policy was introduced both treatment and control group states would have evolved parallel. This result is merely suggestive as it used only coefficients from before the policy was introduced.
+
 
 ## Outlook
 
-The event studies approach introduced here is a very nice way of setting up a clean treatment group in the sense that all states in the treatment group have implemented the policy in the same period. This then enabled us to estimate the time profile of the policy effect (here we found that the effect is delayed) and also obtain some good evidence regarding the parallel trends assumption.
+For the event studies approach we set up a clean treatment group in the sense that all states in the treatment group have implemented the policy in the same period. This then enabled us to estimate the time profile of the policy effect (here we found that the effect is delayed) and also obtain some good evidence regarding the parallel trends assumption.
 
-When we looked at the TWFE model we had a somewhat more flexible setup. In particular we allowed treatments to come in at different time-periods (staggered policy design). Very recent research into the properties of these estimation methods has concluded that estimating TWFE models with staggered policy design can be very problematic and deliver misleading results, in particular if the effects of the policy on outcome variables differs between states. Imagine that the introduction of a shall policy in Illinois had a different effect on firearm deaths than the introduction of that policy in Alabama. This is a situation which is not unlikely in most examples.
+When we looked at the TWFE model we had a somewhat more flexible setup. In particular we allowed treatments to come in at different time-periods (staggered policy design). Very recent research into the properties of these estimation methods has concluded that estimating TWFE models with staggered policy design can be very problematic and deliver misleading results, in particular if the effects of the policy on outcome variables differs between states. Imagine that the introduction of a shall policy in Illinois had a different effect on firearm deaths than the introduction of the same policy in Alabama. This is a situation which is not unlikely in most examples.
 
 Very recent methodological advances are dealing with such situations. They are not covered here. However, a simple way around this issue is to divide your sample into clean setups like the one above which only had Illinois and Alabama in the treatment group as they introduced the policy at the same time. If you go back to the earlier image that displays when states introduced policies you will find that you could construct another clean treatment group with Nebraska and Kansas. As it turns out, most of the recent advances in Difference in Difference estimation make clever use of such clean treatment groups.
