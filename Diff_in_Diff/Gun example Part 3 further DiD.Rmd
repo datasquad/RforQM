@@ -204,9 +204,9 @@ stargazer(mod_twfe2c, mod_twfe2c_sub1, mod_twfe2c_sub2, mod_twfe2c_sub3,
 What you can  tell from this table is that in all three sub-samples the policy effect was estimated to be significantly larger than that in the full sample TWFE. The reason for the badly estimated policy effect in the full model is that the full TWFE model does not restrict itself to "clean" control groups. Consider Alabama and Illinois who introduced the policy in 2013. A full sample TWFE model basically also uses states that were previously treated (e.g. Wisconsin, Iowa, Kansas and Nebraska) as control states for Alabama and Illinois. 
 
 
-### Galloway and Santa'Anna (2021)
+### Callaway and Santa'Anna (2021)
 
-The approach by Galloway and Santa'Anna is to restrict the analysis to only "clean" combinations of treatment and control groups, such as those in subsamples 1 to 3 above. Although you should note that for early treatment states such as Kansas and Nebraska one could add later treatment states to the control group (shortening the sample period). Once multiple estimates are obtained, they are averaged to obtain an average treatment effect for the treated. 
+The approach by Callaway and Santa'Anna is to restrict the analysis to only "clean" combinations of treatment and control groups, such as those in subsamples 1 to 3 above. Although you should note that for early treatment states such as Kansas and Nebraska one could add later treatment states to the control group (shortening the sample period). Once multiple estimates are obtained, they are averaged to obtain an average treatment effect for the treated. 
 
 It should also be noted that this methodology is designed for binary policies (i.e. the policy is either implemented or not) that, once implemented, are not reversed. The identification assumption remains a parallel trends assumption, in particular the assumption that all states that are being treated would on average have the same trend in the outcome variable as the untreated states (starting from the time of the first group being treated) had they not been treated.
 
@@ -214,7 +214,7 @@ Additionally, as typically difference-in-difference methods do, we need to assum
 
 Here we will not discuss how exactly they perform this estimation but illustrate how to use the `did` package written by Callway and Santa'Anna. In order to apply their estimation procedure we do need one extra variable in our dataset. For each state we need to indicate in which year the policy was introduced the first time. 
 
-We will create a new variable called `pol_shallissue_time` which takes the value of 2013 for all Alabama and Illinois observations, 2011 for all Wisconsin and Iowa observations and 200 for all Kansas and Nebraska observations and so on. For different policies this timing will be different. The following lines create `pol_shallissue_time` and `pol_ubc_time`.
+We will create a new variable called `pol_shallissue_time` which takes the value of 2013 for all Alabama and Illinois observations, 2011 for all Wisconsin and Iowa observations and 2007 for all Kansas and Nebraska observations and so on. For different policies this timing will be different. The following lines create `pol_shallissue_time` and `pol_ubc_time`.
 
 We also need the year variable as a numeric variable which we need to create first as in `pdata` the `Year` variable is a factor variable. The different units (here states) also need a numeric representation. The dataset does already include the variable `State_num_code`.
 
@@ -243,8 +243,6 @@ pdata <- pdata %>% mutate(pol_ubc_time = case_when(pol_ubc_time>0 ~ pol_ubc_time
                                                   is.na(pol_ubc_time)~ 0)) 
 ```
 
-Now we can apply the Calloway and Santa'Anna estimator.
-
 It is now straighforward to see the different treatment groups available for the two policies considered. Here we only show the table for the shall issue policy.
 
 ```{r}
@@ -256,9 +254,11 @@ table1 <- pdata %>% select(State, pol_shallissue_time) %>%
 
 There are 10 states that never implemented the policy (`pol_shallissue_time = 0`), 31 states that had the policy in place right from the first sample period (2001) and then between 1 and 3 states that introduced the "shall issue" policy during the sample period in the indicated year.
 
+Now we can apply the Calloway and Santa'Anna estimator.
+
 #### Without Covariates
 
-Initially we shall estimate the model for lpog firearm deaths (`yname = "log.fd.pc"`) without any covariates other than a constant (`xformla = ~1`). The function `att_gt` further requires numeric variables representing the time and the unit (here `tname = "Year_num"`and `idname = "State_num_code"`) as well as an indicator variable indicating the group membership as defined by the time of the first policy implementation (`gname = "pol_shallissue_time"`).
+Initially we shall estimate the model for log firearm deaths (`yname = "log.fd.pc"`) without any covariates other than a constant (`xformla = ~1`). The function `att_gt` further requires numeric variables representing the time and the unit (here `tname = "Year_num"`and `idname = "State_num_code"`) as well as an indicator variable indicating the group membership as defined by the time of the first policy implementation (`gname = "pol_shallissue_time"`).
 
 ```{r}
 # estimate group-time average treatment effects using att_gt method
@@ -276,7 +276,7 @@ summary(gun_shall1_attgt)
 
 In the notes to the output you can see the note `Control Group:  Never Treated`. This means that for each of the treatment groups, the control group used is the group of states that have never implemented the policy. In this case these are the 10 states with value 0 in `pol_shallissue_time`.
 
-You can see that this model estimates a lot of coefficients as it basically estimates an event studies model for each of the five groups. It is usually more useful to visualise these parameter estimates.
+You can see that this model estimates a lot of coefficients as it basically estimates an event studies model for each of the five groups (as per different implementation years). It is usually more useful to visualise these parameter estimates.
 
 ```{r, out.width="100%"}
 p1 <- ggdid(gun_shall1_attgt, 
@@ -295,7 +295,7 @@ Why are there only five groups? In the summary table above we saw that there wer
 
 Recall that, when we estimated a policy effect of the shall policy of 0.06 this was basically some sort of average across groups and time. In some sense you can think of this, conceptually, as an average value of all the post-policy estimates of ATT(g,t) (the blue coloured dots in the above plot), just that it has been shown that the TWFE estimator is a biased estimator of this average.
 
-The `did` package allows you to aggregate the these in different ways.
+The `did` package allows you to aggregate these ATT(g,t)s in different ways.
 
 * weighted average of all post policy ATT(g,t)s weighted by group sizes (here number of treatment states in each group), `aggte(gun_shall1_attgt, type = "simple")`
 * weighted average of group ATT(g,t)s at different relative exposure times to the policy, `aggte(gun_shall1_attgt, type = "dynamic")`. This delivers the "traditional" event study plot
@@ -430,7 +430,9 @@ This methodology bases on a fundamentally different identification assumption co
 
 It is therefore important that, when applying this methodology, that a discussion of why the timing of the policy implementation can be seen as random. Beyond that, a discussion of parallel trends is not required.
 
-One feature of this methodology is that it is possible to deal with situation sin which there are no never treated units. For instance you may have the situation in which all states in a country impose a certain policy and the only thing that varies is the timing of the policy introduction. One consequence of such a setup is that this methodology will not estimate group and year specific average treatment/policy effects for the treated, $ATT(g,t)$, where, recall $g$ indicated the first year of the policy implementation. This methodology does identify the effect, at time $t$, of moving the policy introduction from the introduction time $g$ to another introduction time $g'$, $ATE(g,g',t)$. It is possible, but not required, to include units that never implement the policy (for which $g=\infty$) in which case one could look at $ATE(g,\infty,t)$, the effect of being treated at time $g$ as compared to being never treated $g'=\infty$.
+One feature of this methodology is that it is possible to deal with situation in which there are no never treated units. For instance you may have the situation in which all states in a country impose a certain policy and the only thing that varies is the timing of the policy introduction. One consequence of such a setup is that this methodology will not estimate group and year specific average treatment/policy effects for the treated, $ATT(g,t)$, where, recall $g$ indicated the first year of the policy implementation. This methodology does identify the effect, at time $t$, of moving the policy introduction from the introduction time $g$ to another introduction time $g'$, $ATE(g,g',t)$. It is possible, but not required, to include units that never implement the policy (for which $g=\infty$) in which case one could look at $ATE(g,\infty,t)$, the effect of being treated at time $g$ as compared to being never treated $g'=\infty$.
+
+TO BE CONTINUED ...
 
 ## Summary
 

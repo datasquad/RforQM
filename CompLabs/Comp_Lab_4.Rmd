@@ -17,7 +17,12 @@ In this computer lab we will have to achieve the following tasks/learning outcom
 * select a subset of data
 * estimate a Diff-in-Diff estimator to evaluate the effectiveness of a sugar tax
 
-The example is the example discussed in Demonstration CLass 2 and comes from the Doing Economics Project 3.
+The example is the example discussed in Demonstration Class 2 and comes from the Doing Economics Project 3 which is based on the work in this paper:
+
+These questions refer to the work presented in:
+
+Silver LD, Ng SW, Ryan-Ibarra S, Taillie LS, Induni M, Miles DR, et al. (2017) Changes in prices, sales, consumer spending, and beverage consumption one year after a tax on sugar-sweetened beverages in Berkeley, California, US: A before-and-after study. PLoS Med 14(4): e1002283.
+\url{https://doi.org/10.1371/journal.pmed.1002283}
 
 # Preparing your workfile
 
@@ -46,15 +51,17 @@ We will first look at price data from the treatment group (stores in Berkeley) t
 * The first tab of the Excel file contains the data dictionary. Make sure you read the data description column carefully, and check that each variable is in the Data tab.
 
 
-> Data Import and tidying
+# Data Import and tidying
+
+The authors use various data sources. The data used here are the data from the store survey in which prices for a range of beverages are observed in stores in Berkeley at three different points in time.
 
 This is an xlsx file and we use the `readxl` package to import this file. We also install (if you haven't done so yet) and load the `tidyverse` library as this includes packages that we will use later (piping and graphing). There are two worksheets, one with some info on the variables ("Data Dictionary") and the other with the data ("Data"). It is useful to import both into R so that you have the additional data info available while you are working without having to go back into EXCEL.
 
 Either use the R help function or google to find out how to use the `sheet =` option inside the `read_exel` function. 
 
 ```{r, echo = FALSE}
-var_info <- read_excel("sps_public.xlsx",sheet="Data Dictionary")
-dat <- read_excel("sps_public.xlsx",sheet="Data")
+var_info <- read_excel("C:/Rcode/RforQM/data/sps_public.xlsx",sheet="Data Dictionary")
+dat <- read_excel("C:/Rcode/RforQM/data/sps_public.xlsx",sheet="Data")
 ```
 
 ```{r, eval = FALSE}
@@ -62,7 +69,7 @@ var_info <- XXXX("sps_public.xlsx",XXXX="Data Dictionary")
 dat <- XXXX("sps_public.xlsx",XXXX="Data")
 ```
 
-Let's look at the datatypes this import process as assigned to the respective variables.
+Let's look at the datatypes this import process has assigned to the respective variables.
 
 ```{r, eval = FALSE}
 str(XXXX)
@@ -190,9 +197,9 @@ dat %>%  filter(type == "TEA-DIET" & time %in% c("DEC2014", "MAR2016")) %>%
           print()
 ```
 
-For how many stores do you have price observations in that product category for both these periods? Only one (`store_id`, 14 and 24). And only in store 24 did we record the price for the same `product_id`.
+For how many stores do you have price observations in that product category for both these periods? Only two stores (`store_id` 14 and 24) have observations from both periods, and only in store 24 did we record the price for the same `product_id`.
 
-In order to establish whether prices change following the tax introduction we want to restrict our data to only those products (identified by `product_id`) for which we have observations for all three periods (DEC2014, JUN2015 and MAR2016) it is best to create a new variable `period_test` which takes the value 1 (or TRUE) if we have observations for all periods and 0 (FALSE) otherwise for a product in a particular store. We call variables like this boolean variables. 
+In order to establish whether prices change following the tax introduction we want to restrict our data to only those products (identified by `product_id`) for which we have price observations for all three periods (DEC2014, JUN2015 and MAR2016) from the same store. It is best to create a new variable `period_test` which takes the value 1 (or TRUE) if we have observations for all periods for a particular product in a particular store and 0 (FALSE) otherwise. We call variables like this Boolean variables. 
 
 It turns out that this is not a task that is straightforward and the easiest way to achieve this is with a loop. Execute the code below. It is not crucial to understand everything now, but do, later, take some time to understand what is going on.
 
@@ -240,7 +247,7 @@ table_res <- dat_c %>%
 
 # Calculating the DiD estimator
 
-We now want to treat these as a panel dataset. You may remember that we need to define a panel dataset and let R know what variables identifies an "individual" and what variable defines the time dimension. Here an "individual" is a "particular product in a particular store". There is no variable which can serve as such an index, but we can create it by concatenating the `store_id` and `product_id` variables.
+We now want to treat these as a panel dataset. You may remember that we need to define a panel dataset and let R know what variables identifies an "individual" and what variable defines the time dimension. Here an "individual" or the "unit of observation" is a "particular product in a particular store". There is no variable which can serve as such an index, but we can create it by concatenating the `store_id` and `product_id` variables.
 
 ```{r}
 dat_c$sp_id <- paste0(dat_c$store_id,"_",dat_c$product_id) 
@@ -309,3 +316,5 @@ In fact, in Word the Table will look even better if you change the type to be a 
 ```{r, eval= FALSE, results='hide'}
 stargazer_HC(mod1, type_out = "html",out = "Table1.doc")
 ```
+
+Sometimes you will want to add information (say the mean of the dependent variable) or remove information (coefficient estimates that are not being discussed). You can then easily do these changes in word.

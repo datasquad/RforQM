@@ -35,16 +35,16 @@ periodicity(rGDP)   # check data availability
 ```
 
 ```
-## Quarterly periodicity from 1955-03-31 to 2022-12-31
+## Quarterly periodicity from 1955-03-31 to 2023-12-31
 ```
 
 ```r
 names(rGDP) <- "real GDP" # give a sensible name
 
-# keep all the data including 2020-Q3
+# keep all the data including 2023-Q4
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-rGDP <- rGDP["/2022-12"]  
+rGDP <- rGDP["/2023-12"]  
 
 # we prepare the data for being kept in long format
 # that is useful for plotting in ggplot
@@ -101,14 +101,14 @@ periodicity(ur_female)
 ```
 
 ```
-## Monthly periodicity from 1992-04-30 to 2023-01-31
+## Monthly periodicity from 1992-04-30 to 2023-11-30
 ```
 
 ```r
 # keep all the data including 2022-Jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-ur_female <- ur_female["/2022-12"]  
+ur_female <- ur_female["/2023-12"]  
 
 ur_female_l <- data.frame(index(ur_female),stack(as.data.frame(coredata(ur_female))))
 names(ur_female_l)[1] <- "Date"
@@ -122,14 +122,14 @@ periodicity(infl)
 ```
 
 ```
-## Monthly periodicity from 1988-02-29 to 2023-02-28
+## Monthly periodicity from 1988-02-29 to 2024-02-29
 ```
 
 ```r
 # keep all the data including 2022-jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-infl <- infl["/2022-12"]  
+infl <- infl["/2023-12"]  
 
 infl_l <- data.frame(index(infl),stack(as.data.frame(coredata(infl))))
 names(infl_l)[1] <- "Date"
@@ -233,21 +233,22 @@ We now have two quarterly series `rGDP` and `ur_female_q`. We shall merge them i
 
 ```r
 reg_data <- merge(rGDP, ur_female_q)
+reg_data <- reg_data["/2023-09"] # at the time of writing ur data were not complete for Q4 2023, hence exclude 
 tail(reg_data,10)
 ```
 
 ```
 ##            real.GDP ur_female.Close
-## 2020-09-30   503509             4.8
-## 2020-12-31   509621             5.1
-## 2021-03-31   504255             4.9
-## 2021-06-30   537175             4.5
-## 2021-09-30   546487             4.1
-## 2021-12-31   554821             3.9
-## 2022-03-31   557524             3.9
-## 2022-06-30   557810             3.7
-## 2022-09-30   557286             3.7
-## 2022-12-31   558005             3.8
+## 2021-06-30   546579             4.5
+## 2021-09-30   555956             4.1
+## 2021-12-31   564407             3.9
+## 2022-03-31   567396             3.9
+## 2022-06-30   567889             3.7
+## 2022-09-30   567445             3.9
+## 2022-12-31   568034             3.9
+## 2023-03-31   569027             3.8
+## 2023-06-30   569076             4.0
+## 2023-09-30   568397             3.7
 ```
 
 By looking at the last 10 observations we can see that automatically the dates have been matched. This is super convenient.
@@ -270,15 +271,15 @@ stargazer_HAC(mod1)
 ## real.GDP                         -0.00001***             
 ##                                   (0.00000)              
 ##                                                          
-## Constant                          9.829***               
-##                                    (0.653)               
+## Constant                          9.791***               
+##                                    (0.606)               
 ##                                                          
 ## ---------------------------------------------------------
-## Observations                         123                 
-## R2                                  0.271                
-## Adjusted R2                         0.265                
-## Residual Std. Error           1.116 (df = 121)           
-## F Statistic                44.959*** (df = 1; 121)       
+## Observations                         126                 
+## R2                                  0.297                
+## Adjusted R2                         0.291                
+## Residual Std. Error           1.102 (df = 124)           
+## F Statistic                52.302*** (df = 1; 124)       
 ## =========================================================
 ## Note:                         *p<0.1; **p<0.05; ***p<0.01
 ##                     Robust standard errors in parenthesis
@@ -309,10 +310,10 @@ bgtest(mod1,order=4)
 ## 	Breusch-Godfrey test for serial correlation of order up to 4
 ## 
 ## data:  mod1
-## LM test = 116.95, df = 4, p-value < 2.2e-16
+## LM test = 119.76, df = 4, p-value < 2.2e-16
 ```
 
-The p-value is virtually 0 suggesting that there is stistically significant evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? 
+The p-value is virtually 0 suggesting that there is staistically significant evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? 
 
 
 # Spurious correlations and regressions
@@ -433,44 +434,6 @@ Let's run a simple regression model with time series data.
 
 \[\Delta ur_t = \alpha + \beta ~ \Delta  rGDP_t + u_t\]
 
-As we have quarterly GDP series we will want to reduce the frequency of the monthly unemployment data to quarterly. the `xts` package which we have been using to deal with the dating aspect of our data has a handy little function to achieve this. `to.period()`.
-
-
-```r
-ur_female_q <- to.period(ur_female,period="quarters")
-```
-
-As a result we get four values for each quarter (start, end, high and low). We shall associate the last monthly unemployment rate with a particular quarter.
-
-
-```r
-ur_female_q <- ur_female_q$ur_female.Close
-```
-
-We now have two quarterly series `rGDP` and `ur_female_q`. We shall merge them into the same dataframe.
-
-
-```r
-reg_data <- merge(rGDP, ur_female_q)
-tail(reg_data,10)
-```
-
-```
-##            real.GDP ur_female.Close
-## 2020-09-30   503509             4.8
-## 2020-12-31   509621             5.1
-## 2021-03-31   504255             4.9
-## 2021-06-30   537175             4.5
-## 2021-09-30   546487             4.1
-## 2021-12-31   554821             3.9
-## 2022-03-31   557524             3.9
-## 2022-06-30   557810             3.7
-## 2022-09-30   557286             3.7
-## 2022-12-31   558005             3.8
-```
-
-By looking at the last 10 observations we can see that automatically the dates have been matched. This is super convenient.
-
 As we will be modelling the differenced logs of the GDP and unemployment rate it is most convenient to create these variables explicitely in the data frame, otherwise we will have to deal with very long variable names.
 
 
@@ -495,24 +458,22 @@ stargazer_HAC(mod4)
 ##                     -------------------------------------
 ##                                     d_lur                
 ## ---------------------------------------------------------
-## d_lgdp                             -0.218                
-##                                    (0.138)               
+## d_lgdp                             -0.214                
+##                                    (0.142)               
 ##                                                          
-## Constant                           -0.479                
-##                                    (0.375)               
+## Constant                           -0.483                
+##                                    (0.378)               
 ##                                                          
 ## ---------------------------------------------------------
-## Observations                         122                 
-## R2                                  0.020                
-## Adjusted R2                         0.012                
-## Residual Std. Error           4.087 (df = 120)           
-## F Statistic                  2.510 (df = 1; 120)         
+## Observations                         125                 
+## R2                                  0.018                
+## Adjusted R2                         0.010                
+## Residual Std. Error           4.151 (df = 123)           
+## F Statistic                  2.281 (df = 1; 123)         
 ## =========================================================
 ## Note:                         *p<0.1; **p<0.05; ***p<0.01
 ##                     Robust standard errors in parenthesis
 ```
-
-This seems to suggest that higher GDP, significantly, reduces the unemployment rate. 
 
 Let's have a look at the residuals.
 
@@ -523,7 +484,7 @@ plot(mod4$residuals, type = "l", main = "mod4 - Residuals")
 acf(mod4$residuals)
 ```
 
-![](TS_Modelling_files/figure-html/unnamed-chunk-29-1.png)<!-- -->
+![](TS_Modelling_files/figure-html/unnamed-chunk-26-1.png)<!-- -->
 
 We can see that, at lag 2, there is a small amount of autocorrelation in the residuals. We can again apply the hypothesis test the Breusch-Godfrey test (`bgtest`). The null hypothesis is that there is no autocorrelation.
 
@@ -537,7 +498,7 @@ bgtest(mod4,order=4)
 ## 	Breusch-Godfrey test for serial correlation of order up to 4
 ## 
 ## data:  mod4
-## LM test = 13.901, df = 4, p-value = 0.007618
+## LM test = 13.336, df = 4, p-value = 0.009745
 ```
 
 The p-value of 0.00085 suggests that there is still evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? Fortunately, here, despite the existence of autocorrelation in residuals they still look stationary. We already calculated HAC standard errors.
@@ -560,30 +521,30 @@ stargazer_HAC(mod5)
 ##                     -------------------------------------
 ##                                     d_lur                
 ## ---------------------------------------------------------
-## lag(d_lur, 1)                       0.070                
+## lag(d_lur, 1)                       0.019                
 ##                                    (0.085)               
 ##                                                          
-## lag(d_lur, 2)                      0.197**               
-##                                    (0.079)               
+## lag(d_lur, 2)                     0.218***               
+##                                    (0.080)               
 ##                                                          
-## d_lgdp                            -0.427***              
-##                                    (0.122)               
+## d_lgdp                            -0.433***              
+##                                    (0.127)               
 ##                                                          
-## lag(d_lgdp, 1)                    -0.694***              
-##                                    (0.131)               
+## lag(d_lgdp, 1)                    -0.718***              
+##                                    (0.136)               
 ##                                                          
-## lag(d_lgdp, 2)                    -0.524***              
-##                                    (0.130)               
+## lag(d_lgdp, 2)                    -0.558***              
+##                                    (0.136)               
 ##                                                          
-## Constant                            0.303                
-##                                    (0.334)               
+## Constant                            0.338                
+##                                    (0.342)               
 ##                                                          
 ## ---------------------------------------------------------
-## Observations                         120                 
-## R2                                  0.346                
-## Adjusted R2                         0.317                
-## Residual Std. Error           3.399 (df = 114)           
-## F Statistic                12.043*** (df = 5; 114)       
+## Observations                         123                 
+## R2                                  0.328                
+## Adjusted R2                         0.299                
+## Residual Std. Error           3.495 (df = 117)           
+## F Statistic                11.405*** (df = 5; 117)       
 ## =========================================================
 ## Note:                         *p<0.1; **p<0.05; ***p<0.01
 ##                     Robust standard errors in parenthesis
@@ -597,9 +558,9 @@ plot(mod5$residuals, type = "l",main = "mod5 - Residuals")
 acf(mod5$residuals)
 ```
 
-![](TS_Modelling_files/figure-html/unnamed-chunk-32-1.png)<!-- -->
+![](TS_Modelling_files/figure-html/unnamed-chunk-29-1.png)<!-- -->
 
-Now the coefficient to the real GDP growth rate at time t remains statistically insignificant, but only marginally. Most important appears to be the unemployment rate from two quarters prior (t-2), `lag(d_lur,2)`.
+Most of the coefficients appear as statistically significant. We can check the residual autocorrelation.
 
 
 
@@ -612,7 +573,7 @@ bgtest(mod5,order=4)
 ## 	Breusch-Godfrey test for serial correlation of order up to 4
 ## 
 ## data:  mod5
-## LM test = 2.1391, df = 4, p-value = 0.7102
+## LM test = 1.7154, df = 4, p-value = 0.7879
 ```
 
 Now we remove the contemporaneous GDP growth rate.
@@ -630,27 +591,27 @@ stargazer_HAC(mod6)
 ##                     -------------------------------------
 ##                                     d_lur                
 ## ---------------------------------------------------------
-## lag(d_lur, 1)                       0.108                
+## lag(d_lur, 1)                       0.057                
 ##                                    (0.088)               
 ##                                                          
-## lag(d_lur, 2)                      0.210**               
-##                                    (0.083)               
+## lag(d_lur, 2)                     0.230***               
+##                                    (0.084)               
 ##                                                          
-## lag(d_lgdp, 1)                    -0.540***              
-##                                    (0.129)               
-##                                                          
-## lag(d_lgdp, 2)                    -0.435***              
+## lag(d_lgdp, 1)                    -0.564***              
 ##                                    (0.134)               
 ##                                                          
-## Constant                            0.025                
-##                                    (0.340)               
+## lag(d_lgdp, 2)                    -0.468***              
+##                                    (0.139)               
+##                                                          
+## Constant                            0.039                
+##                                    (0.346)               
 ##                                                          
 ## ---------------------------------------------------------
-## Observations                         120                 
-## R2                                  0.275                
-## Adjusted R2                         0.250                
-## Residual Std. Error           3.562 (df = 115)           
-## F Statistic                10.914*** (df = 4; 115)       
+## Observations                         123                 
+## R2                                  0.261                
+## Adjusted R2                         0.236                
+## Residual Std. Error           3.649 (df = 118)           
+## F Statistic                10.405*** (df = 4; 118)       
 ## =========================================================
 ## Note:                         *p<0.1; **p<0.05; ***p<0.01
 ##                     Robust standard errors in parenthesis
@@ -662,7 +623,7 @@ plot(mod6$residuals, type = "l",main = "mod6 - Residuals")
 acf(mod6$residuals)
 ```
 
-![](TS_Modelling_files/figure-html/unnamed-chunk-34-1.png)<!-- -->
+![](TS_Modelling_files/figure-html/unnamed-chunk-31-1.png)<!-- -->
 
 ```r
 bgtest(mod6,order=4)
@@ -673,7 +634,7 @@ bgtest(mod6,order=4)
 ## 	Breusch-Godfrey test for serial correlation of order up to 4
 ## 
 ## data:  mod6
-## LM test = 1.9146, df = 4, p-value = 0.7515
+## LM test = 1.8257, df = 4, p-value = 0.7678
 ```
 
 # Autoregressive Models
@@ -693,21 +654,21 @@ stargazer_HAC(mod7)
 ##                     -------------------------------------
 ##                                     d_lur                
 ## ---------------------------------------------------------
-## lag(d_lur, 1)                     0.239***               
-##                                    (0.089)               
+## lag(d_lur, 1)                      0.192**               
+##                                    (0.090)               
 ##                                                          
-## lag(d_lur, 2)                      0.224**               
-##                                    (0.089)               
+## lag(d_lur, 2)                     0.247***               
+##                                    (0.090)               
 ##                                                          
-## Constant                           -0.340                
-##                                    (0.357)               
+## Constant                           -0.385                
+##                                    (0.360)               
 ##                                                          
 ## ---------------------------------------------------------
-## Observations                         120                 
-## R2                                  0.141                
-## Adjusted R2                         0.126                
-## Residual Std. Error           3.844 (df = 117)           
-## F Statistic                9.617*** (df = 2; 117)        
+## Observations                         123                 
+## R2                                  0.122                
+## Adjusted R2                         0.108                
+## Residual Std. Error           3.943 (df = 120)           
+## F Statistic                8.348*** (df = 2; 120)        
 ## =========================================================
 ## Note:                         *p<0.1; **p<0.05; ***p<0.01
 ##                     Robust standard errors in parenthesis
@@ -719,7 +680,7 @@ plot(mod7$residuals, type = "l",main = "mod7 - Residuals")
 acf(mod7$residuals)
 ```
 
-![](TS_Modelling_files/figure-html/unnamed-chunk-35-1.png)<!-- -->
+![](TS_Modelling_files/figure-html/unnamed-chunk-32-1.png)<!-- -->
 
 ```r
 bgtest(mod7,order=4)
@@ -730,7 +691,7 @@ bgtest(mod7,order=4)
 ## 	Breusch-Godfrey test for serial correlation of order up to 4
 ## 
 ## data:  mod7
-## LM test = 2.7834, df = 4, p-value = 0.5947
+## LM test = 3.3596, df = 4, p-value = 0.4995
 ```
 
 Let's look at all these models together in one table.
@@ -748,29 +709,29 @@ stargazer_HAC(mod4,mod5,mod6,mod7,type_out = "text", omit.stat = "f")
 ##                                                    d_lur                               
 ##                           (1)              (2)              (3)              (4)       
 ## ---------------------------------------------------------------------------------------
-## lag(d_lur, 1)                             0.070            0.108           0.239**     
-##                                          (0.093)          (0.094)          (0.110)     
+## lag(d_lur, 1)                             0.019            0.057            0.192*     
+##                                          (0.098)          (0.097)          (0.114)     
 ##                                                                                        
-## lag(d_lur, 2)                            0.197***         0.210***         0.224**     
-##                                          (0.069)          (0.074)          (0.103)     
+## lag(d_lur, 2)                            0.218***         0.230***         0.247**     
+##                                          (0.068)          (0.072)          (0.100)     
 ##                                                                                        
-## d_lgdp                   -0.218         -0.427***                                      
-##                         (0.230)          (0.122)                                       
+## d_lgdp                   -0.214         -0.433***                                      
+##                         (0.239)          (0.127)                                       
 ##                                                                                        
-## lag(d_lgdp, 1)                          -0.694***        -0.540***                     
-##                                          (0.073)          (0.073)                      
+## lag(d_lgdp, 1)                          -0.718***        -0.564***                     
+##                                          (0.074)          (0.077)                      
 ##                                                                                        
-## lag(d_lgdp, 2)                          -0.524***        -0.435***                     
-##                                          (0.068)          (0.056)                      
+## lag(d_lgdp, 2)                          -0.558***        -0.468***                     
+##                                          (0.072)          (0.056)                      
 ##                                                                                        
-## Constant                 -0.479           0.303            0.025            -0.340     
-##                         (0.432)          (0.317)          (0.339)          (0.413)     
+## Constant                 -0.483           0.338            0.039            -0.385     
+##                         (0.423)          (0.323)          (0.340)          (0.415)     
 ##                                                                                        
 ## ---------------------------------------------------------------------------------------
-## Observations              122              120              120              120       
-## R2                       0.020            0.346            0.275            0.141      
-## Adjusted R2              0.012            0.317            0.250            0.126      
-## Residual Std. Error 4.087 (df = 120) 3.399 (df = 114) 3.562 (df = 115) 3.844 (df = 117)
+## Observations              125              123              123              123       
+## R2                       0.018            0.328            0.261            0.122      
+## Adjusted R2              0.010            0.299            0.236            0.108      
+## Residual Std. Error 4.151 (df = 123) 3.495 (df = 117) 3.649 (df = 118) 3.943 (df = 120)
 ## =======================================================================================
 ## Note:                                                       *p<0.1; **p<0.05; ***p<0.01
 ##                                               Newey-West standard errors in parenthesis
@@ -797,38 +758,38 @@ stargazer_HAC(mod6,mod7,mod6_4,mod7_4,type_out = "text", omit.stat = "f")
 ##                                                    d_lur                               
 ##                           (1)              (2)              (3)              (4)       
 ## ---------------------------------------------------------------------------------------
-## lag(d_lur, 1)            0.108           0.239**           0.096           0.263**     
-##                         (0.094)          (0.110)          (0.114)          (0.115)     
+## lag(d_lur, 1)            0.057            0.192*           0.030            0.202*     
+##                         (0.097)          (0.114)          (0.117)          (0.117)     
 ##                                                                                        
-## lag(d_lur, 2)           0.210***         0.224**          0.228**          0.273***    
-##                         (0.074)          (0.103)          (0.093)          (0.093)     
+## lag(d_lur, 2)           0.230***         0.247**          0.256***         0.307***    
+##                         (0.072)          (0.100)          (0.098)          (0.096)     
 ##                                                                                        
-## lag(d_lur, 3)                                              -0.089           -0.113     
-##                                                           (0.097)          (0.114)     
+## lag(d_lur, 3)                                              -0.045           -0.072     
+##                                                           (0.095)          (0.114)     
 ##                                                                                        
-## lag(d_lur, 4)                                              -0.016           -0.063     
-##                                                           (0.085)          (0.083)     
+## lag(d_lur, 4)                                              -0.081           -0.134     
+##                                                           (0.093)          (0.094)     
 ##                                                                                        
-## lag(d_lgdp, 1)         -0.540***                         -0.579***                     
-##                         (0.073)                           (0.118)                      
+## lag(d_lgdp, 1)         -0.564***                         -0.597***                     
+##                         (0.077)                           (0.115)                      
 ##                                                                                        
-## lag(d_lgdp, 2)         -0.435***                         -0.489***                     
-##                         (0.056)                           (0.128)                      
+## lag(d_lgdp, 2)         -0.468***                         -0.529***                     
+##                         (0.056)                           (0.129)                      
 ##                                                                                        
-## lag(d_lgdp, 3)                                             -0.141                      
-##                                                           (0.153)                      
+## lag(d_lgdp, 3)                                             -0.155                      
+##                                                           (0.155)                      
 ##                                                                                        
-## lag(d_lgdp, 4)                                             0.087                       
-##                                                           (0.148)                      
+## lag(d_lgdp, 4)                                             0.098                       
+##                                                           (0.141)                      
 ##                                                                                        
-## Constant                 0.025            -0.340           0.040            -0.381     
-##                         (0.339)          (0.413)          (0.341)          (0.409)     
+## Constant                 0.039            -0.385           0.042            -0.447     
+##                         (0.340)          (0.415)          (0.350)          (0.410)     
 ##                                                                                        
 ## ---------------------------------------------------------------------------------------
-## Observations              120              120              118              118       
-## R2                       0.275            0.141            0.298            0.159      
-## Adjusted R2              0.250            0.126            0.247            0.129      
-## Residual Std. Error 3.562 (df = 115) 3.844 (df = 117) 3.599 (df = 109) 3.870 (df = 113)
+## Observations              123              123              121              121       
+## R2                       0.261            0.122            0.288            0.146      
+## Adjusted R2              0.236            0.108            0.237            0.117      
+## Residual Std. Error 3.649 (df = 118) 3.943 (df = 120) 3.676 (df = 112) 3.954 (df = 116)
 ## =======================================================================================
 ## Note:                                                       *p<0.1; **p<0.05; ***p<0.01
 ##                                               Newey-West standard errors in parenthesis
@@ -840,10 +801,10 @@ AIC(mod6, mod7, mod6_4,mod7_4)
 
 ```
 ##        df      AIC
-## mod6    6 652.3266
-## mod7    4 668.6806
-## mod6_4 10 647.7330
-## mod7_4  6 661.1150
+## mod6    6 674.3955
+## mod7    4 691.5328
+## mod6_4 10 669.0942
+## mod7_4  6 682.9785
 ```
 
 We chose the model with the smallest value for the information criterion and on this occasion this is the ADL model with 4 lags (despite lags 3 and 4 not being statistically significant).

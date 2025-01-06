@@ -35,10 +35,10 @@ rGDP <- pdfetch_ONS("ABMI","UKEA")
 periodicity(rGDP)   # check data availability
 names(rGDP) <- "real GDP" # give a sensible name
 
-# keep all the data including 2020-Q3
+# keep all the data including 2023-Q4
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-rGDP <- rGDP["/2022-12"]  
+rGDP <- rGDP["/2023-12"]  
 
 # we prepare the data for being kept in long format
 # that is useful for plotting in ggplot
@@ -86,7 +86,7 @@ periodicity(ur_female)
 # keep all the data including 2022-Jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-ur_female <- ur_female["/2022-12"]  
+ur_female <- ur_female["/2023-12"]  
 
 ur_female_l <- data.frame(index(ur_female),stack(as.data.frame(coredata(ur_female))))
 names(ur_female_l)[1] <- "Date"
@@ -101,7 +101,7 @@ periodicity(infl)
 # keep all the data including 2022-jan
 # this was the last observation available at the time this was written
 # remove this line if you want to use updated data
-infl <- infl["/2022-12"]  
+infl <- infl["/2023-12"]  
 
 infl_l <- data.frame(index(infl),stack(as.data.frame(coredata(infl))))
 names(infl_l)[1] <- "Date"
@@ -193,6 +193,7 @@ We now have two quarterly series `rGDP` and `ur_female_q`. We shall merge them i
 
 ```{r}
 reg_data <- merge(rGDP, ur_female_q)
+reg_data <- reg_data["/2023-09"] # at the time of writing ur data were not complete for Q4 2023, hence exclude 
 tail(reg_data,10)
 ```
 
@@ -221,7 +222,7 @@ We can see that there is a significant amount of autocorrelation in the residual
 bgtest(mod1,order=4)
 ```
 
-The p-value is virtually 0 suggesting that there is stistically significant evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? 
+The p-value is virtually 0 suggesting that there is staistically significant evidence that we should reject the null hypothesis of no autocorrelation. What is the consequence? 
 
 
 # Spurious correlations and regressions
@@ -282,27 +283,6 @@ Let's run a simple regression model with time series data.
 
 \[\Delta ur_t = \alpha + \beta ~ \Delta  rGDP_t + u_t\]
 
-As we have quarterly GDP series we will want to reduce the frequency of the monthly unemployment data to quarterly. the `xts` package which we have been using to deal with the dating aspect of our data has a handy little function to achieve this. `to.period()`.
-
-```{r}
-ur_female_q <- to.period(ur_female,period="quarters")
-```
-
-As a result we get four values for each quarter (start, end, high and low). We shall associate the last monthly unemployment rate with a particular quarter.
-
-```{r}
-ur_female_q <- ur_female_q$ur_female.Close
-```
-
-We now have two quarterly series `rGDP` and `ur_female_q`. We shall merge them into the same dataframe.
-
-```{r}
-reg_data <- merge(rGDP, ur_female_q)
-tail(reg_data,10)
-```
-
-By looking at the last 10 observations we can see that automatically the dates have been matched. This is super convenient.
-
 As we will be modelling the differenced logs of the GDP and unemployment rate it is most convenient to create these variables explicitely in the data frame, otherwise we will have to deal with very long variable names.
 
 ```{r}
@@ -318,8 +298,6 @@ We can now feed these data into the `lm` function.
 mod4 <- lm(d_lur~d_lgdp,data = reg_data)
 stargazer_HAC(mod4)
 ```
-
-This seems to suggest that higher GDP, significantly, reduces the unemployment rate. 
 
 Let's have a look at the residuals.
 
@@ -354,7 +332,7 @@ plot(mod5$residuals, type = "l",main = "mod5 - Residuals")
 acf(mod5$residuals)
 ```
 
-Now the coefficient to the real GDP growth rate at time t remains statistically insignificant, but only marginally. Most important appears to be the unemployment rate from two quarters prior (t-2), `lag(d_lur,2)`.
+Most of the coefficients appear as statistically significant. We can check the residual autocorrelation.
 
 
 ```{r}
