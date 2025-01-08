@@ -6,8 +6,8 @@ date: ""
 output: 
   beamer_presentation:
     includes:
-#      in_header: C:/Rcode/RforQM/latex_template.tex
-      in_header: C:/Rcode/RforQM/latex_student.tex  # use for student version
+      in_header: C:/Rcode/RforQM/latex_template.tex
+#      in_header: C:/Rcode/RforQM/latex_student.tex  # use for student version
       
 ---
 
